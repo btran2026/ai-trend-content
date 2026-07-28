@@ -1,0 +1,63 @@
+{
+  "contentVersion": 2,
+  "comment": "Input list for scripts/aggregate.mjs. Every fetcher is fail-soft: a dead feed logs a warning and contributes nothing. Add a feed by appending to `rss`; the aggregator needs no code change. Every URL here was probed and returns parseable entries — re-probe before adding one.",
+  "notes": {
+    "no-rss": "Anthropic, Meta AI, Nous Research, vLLM and DeepLearning.AI publish no working public RSS feed (all 404 as of 2026-07-28). Their releases reach us via Hacker News, AI News (smol.ai), Import AI, and Latent Space instead. Don't re-add those feeds without probing first.",
+    "403-from-corp-network": "huggingface.co and reddit.com return 403 behind a corporate TLS-inspecting proxy (Zscaler), so local dry runs show them empty. They work from GitHub Actions runners. Not a bug — don't 'fix' by disabling them."
+  },
+  "keywords": [
+    "LLM", "language model", "open weights", "open-weight", "agentic", "AI agent",
+    "agent orchestration", "multi-agent", "agent army", "tool calling", "MCP",
+    "Hermes", "openclaw", "Claude", "GPT", "Gemini", "Llama", "Qwen", "DeepSeek",
+    "Mistral", "Kimi", "GLM", "inference", "fine-tune", "RAG", "context window",
+    "eval", "benchmark", "distillation", "quantization", "self-host"
+  ],
+  "hackerNews": {
+    "enabled": true,
+    "minPoints": 40,
+    "queries": ["LLM", "AI agent", "open weights", "agentic", "language model", "MCP", "inference"]
+  },
+  "arxiv": {
+    "enabled": true,
+    "categories": ["cs.AI", "cs.CL", "cs.LG", "cs.MA"],
+    "maxPerCategory": 12
+  },
+  "huggingFace": {
+    "enabled": true,
+    "dailyPapers": true,
+    "trendingModels": true,
+    "maxModels": 15
+  },
+  "github": {
+    "enabled": true,
+    "queries": [
+      "topic:llm", "topic:ai-agents", "topic:agentic", "topic:mcp",
+      "topic:llm-agent", "topic:multi-agent", "topic:agent-orchestration"
+    ],
+    "minStars": 120,
+    "maxPerQuery": 8,
+    "createdWithinDays": 45
+  },
+  "reddit": {
+    "enabled": true,
+    "subreddits": ["LocalLLaMA", "MachineLearning", "AI_Agents"],
+    "minScore": 80,
+    "maxPerSub": 12
+  },
+  "rss": [
+    { "name": "OpenAI", "kind": "lab", "url": "https://openai.com/blog/rss.xml" },
+    { "name": "Google DeepMind", "kind": "lab", "url": "https://blog.google/technology/google-deepmind/rss/" },
+    { "name": "Google Research", "kind": "lab", "url": "https://research.google/blog/rss/" },
+    { "name": "Mistral AI", "kind": "lab", "url": "https://mistral.ai/rss.xml" },
+    { "name": "Qwen", "kind": "lab", "url": "https://qwenlm.github.io/blog/index.xml" },
+    { "name": "Hugging Face Blog", "kind": "lab", "url": "https://huggingface.co/blog/feed.xml" },
+    { "name": "EleutherAI", "kind": "lab", "url": "https://blog.eleuther.ai/index.xml" },
+    { "name": "Together AI", "kind": "lab", "url": "https://www.together.ai/blog/rss.xml" },
+    { "name": "AI News", "kind": "news", "url": "https://news.smol.ai/rss.xml" },
+    { "name": "Simon Willison", "kind": "news", "url": "https://simonwillison.net/atom/everything/" },
+    { "name": "Latent Space", "kind": "news", "url": "https://www.latent.space/feed" },
+    { "name": "Import AI", "kind": "news", "url": "https://importai.substack.com/feed" },
+    { "name": "The Gradient", "kind": "news", "url": "https://thegradient.pub/rss/" },
+    { "name": "Ollama", "kind": "tooling", "url": "https://ollama.com/blog/rss.xml" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ai-trend-content",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI aggregator + published digests for the AI Trend app",
+  "scripts": {
+    "aggregate": "node scripts/aggregate.mjs",
+    "aggregate:dry": "node scripts/aggregate.mjs --dry-run",
+    "aggregate:ondemand": "node scripts/aggregate.mjs --mode on-demand"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

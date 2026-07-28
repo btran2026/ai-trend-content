@@ -1,0 +1,137 @@
+name: Aggregate AI news
+
+# Three ways in:
+#   1. schedule          — every 6 hours, the shared digest every install reads
+#   2. workflow_dispatch — you, from the Actions tab, with custom inputs
+#   3. repository_dispatch — the AI Trend app's Admin Mode ("Refresh now")
+#
+# All three run the same script and commit to the same place, so an admin
+# refresh is indistinguishable from a cron run as far as the apps are concerned.
+on:
+  schedule:
+    # 00:00, 06:00, 12:00, 18:00 UTC. GitHub's scheduler is best-effort and can
+    # run late under load — the 36h default lookback covers a skipped tick.
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'scheduled (dated digest) or on-demand (its own digest)'
+        type: choice
+        options: [scheduled, on-demand]
+        default: on-demand
+      query:
+        description: 'Optional focus for an on-demand run (e.g. "agentic orchestration")'
+        type: string
+        required: false
+      window_hours:
+        description: 'How far back to look'
+        type: string
+        default: '72'
+      dry_run:
+        description: 'Fetch and rank only — no AI calls, no commit'
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [refresh-digest]
+
+# Serialise runs. Two aggregations racing would both try to write the manifest
+# and one would lose its work to a push rejection.
+concurrency:
+  group: aggregate
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Resolve inputs
+        id: cfg
+        env:
+          # Via the env block so a crafted dispatch payload can't inject shell.
+          EVENT: ${{ github.event_name }}
+          IN_MODE: ${{ inputs.mode }}
+          IN_QUERY: ${{ inputs.query }}
+          IN_WINDOW: ${{ inputs.window_hours }}
+          IN_DRY: ${{ inputs.dry_run }}
+          CP_MODE: ${{ github.event.client_payload.mode }}
+          CP_QUERY: ${{ github.event.client_payload.query }}
+          CP_WINDOW: ${{ github.event.client_payload.window_hours }}
+        run: |
+          set -euo pipefail
+          case "$EVENT" in
+            schedule)
+              mode=scheduled; query=""; window=36; dry=false ;;
+            workflow_dispatch)
+              mode="${IN_MODE:-on-demand}"; query="${IN_QUERY:-}"
+              window="${IN_WINDOW:-72}"; dry="${IN_DRY:-false}" ;;
+            repository_dispatch)
+              mode="${CP_MODE:-on-demand}"; query="${CP_QUERY:-}"
+              window="${CP_WINDOW:-72}"; dry=false ;;
+            *)
+              mode=on-demand; query=""; window=72; dry=false ;;
+          esac
+          {
+            echo "mode=$mode"
+            echo "window=$window"
+            echo "dry=$dry"
+          } >> "$GITHUB_OUTPUT"
+          # query is free text — use a heredoc so quotes and newlines survive.
+          {
+            echo "query<<QEOF"
+            echo "$query"
+            echo "QEOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Aggregate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional: overrides the default claude-opus-5.
+          AGGREGATOR_MODEL: ${{ vars.AGGREGATOR_MODEL }}
+          # Lifts the GitHub search rate limit for the repo-trending source.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MODE: ${{ steps.cfg.outputs.mode }}
+          QUERY: ${{ steps.cfg.outputs.query }}
+          WINDOW: ${{ steps.cfg.outputs.window }}
+          DRY: ${{ steps.cfg.outputs.dry }}
+          TRIGGER: ${{ github.event_name == 'schedule' && 'cron' || 'admin' }}
+        run: |
+          set -euo pipefail
+          args=(--mode "$MODE" --window-hours "$WINDOW" --triggered-by "$TRIGGER")
+          if [ -n "${QUERY//[[:space:]]/}" ]; then args+=(--query "$QUERY"); fi
+          if [ "$DRY" = "true" ]; then args+=(--dry-run); fi
+          node scripts/aggregate.mjs "${args[@]}"
+
+      - name: Commit and push
+        if: steps.cfg.outputs.dry != 'true'
+        run: |
+          set -euo pipefail
+          git config user.name  'ai-trend-bot'
+          git config user.email 'ai-trend-bot@users.noreply.github.com'
+          git add manifest.json digests models
+          if git diff --cached --quiet; then
+            echo 'Nothing changed — no digest published this run.'
+            exit 0
+          fi
+          headline=$(node -e "
+            const m = require('./manifest.json');
+            const d = (m.digests || []).find(x => x.id === m.latestDigestId);
+            process.stdout.write((d && d.headline) || 'digest update');
+          ")
+          git commit -m "Digest: ${headline}" -m "Triggered by ${{ github.event_name }}."
+          # Rebase in case a concurrent run landed first (concurrency makes this
+          # rare, not impossible — a manual commit can still race us).
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
