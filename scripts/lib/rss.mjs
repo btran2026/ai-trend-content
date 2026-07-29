@@ -56,6 +56,20 @@ function atomLink(xml) {
   return plain ? hrefOf(plain) : '';
 }
 
+/**
+ * Category terms. Atom puts them in an attribute (`<category term="cs.AI"/>`,
+ * which is how arXiv tags papers); RSS uses element text.
+ */
+function categories(xml) {
+  const out = [];
+  for (const m of xml.matchAll(/<category\b([^>]*?)(?:\/>|>([\s\S]*?)<\/category>)/gi)) {
+    const term = m[1]?.match(/term\s*=\s*["']([^"']+)["']/i);
+    const value = decode(term ? term[1] : m[2] || '');
+    if (value) out.push(value);
+  }
+  return out;
+}
+
 function parseDate(raw) {
   if (!raw) return null;
   const t = Date.parse(raw);
@@ -63,7 +77,7 @@ function parseDate(raw) {
 }
 
 /**
- * Parse a feed body into entries: { title, url, publishedAt, snippet }.
+ * Parse a feed body into entries: { title, url, publishedAt, snippet, categories }.
  * Returns [] for anything unparseable rather than throwing — one broken feed
  * must not take down an aggregation run.
  */
@@ -95,7 +109,7 @@ export function parseFeed(xml) {
         tag(block, 'content'),
     );
 
-    entries.push({ title, url, publishedAt, snippet });
+    entries.push({ title, url, publishedAt, snippet, categories: categories(block) });
   }
   return entries;
 }

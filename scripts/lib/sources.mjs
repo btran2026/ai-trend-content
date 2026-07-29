@@ -12,26 +12,69 @@
 import { parseFeed, stripHtml } from './rss.mjs';
 
 const UA = 'ai-trend-aggregator/1.0 (+https://github.com/btran2026/ai-trend-content)';
+// huggingface.co and reddit.com sit behind bot protection that 403s any
+// non-browser User-Agent — verified 403 both locally and from an Actions
+// runner. Those two get a browser UA; everything else keeps the honest one,
+// because arXiv and GitHub ask for a contactable identifier and don't block us.
+const BROWSER_UA =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36';
+// Hosts observed to 403 the honest UA. Substack is here for Import AI's feed.
+const BROWSER_UA_HOSTS = [/(^|\.)huggingface\.co$/i, /(^|\.)reddit\.com$/i, /(^|\.)substack\.com$/i];
 const FETCH_TIMEOUT_MS = 20000;
+
+/** Which UA a host gets. Keeps the choice in one place instead of per call site. */
+function uaFor(url) {
+  try {
+    return BROWSER_UA_HOSTS.some(re => re.test(new URL(url).hostname)) ? BROWSER_UA : UA;
+  } catch {
+    return UA;
+  }
+}
 
 function warn(source, err) {
   console.warn(`  ! ${source}: ${err?.message || err}`);
 }
 
-/** fetch with a timeout and a UA — some hosts 403 an absent User-Agent. */
-async function get(url, { headers = {}, json = false } = {}) {
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
-  try {
-    const res = await fetch(url, {
-      headers: { 'User-Agent': UA, Accept: json ? 'application/json' : '*/*', ...headers },
-      signal: ctrl.signal,
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return json ? await res.json() : await res.text();
-  } finally {
-    clearTimeout(timer);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/** Worth a second try: rate limits, upstream hiccups, and our own timeout. */
+function isTransient(err) {
+  return /HTTP (429|500|502|503|504)|aborted/i.test(err?.message || '');
+}
+
+/**
+ * fetch with a timeout, a UA, and optional retries — some hosts 403 an absent
+ * or non-browser User-Agent, and arXiv 429s cloud egress on the first ask but
+ * usually answers a beat later.
+ */
+async function get(url, {
+  headers = {},
+  json = false,
+  ua = uaFor(url),
+  attempts = 1,
+  backoffMs = 3000,
+  timeoutMs = FETCH_TIMEOUT_MS,
+} = {}) {
+  let lastErr;
+  for (let attempt = 0; attempt < attempts; attempt++) {
+    if (attempt) await sleep(backoffMs * attempt);
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': ua, Accept: json ? 'application/json' : '*/*', ...headers },
+        signal: ctrl.signal,
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return json ? await res.json() : await res.text();
+    } catch (err) {
+      lastErr = err;
+      if (!isTransient(err)) break;
+    } finally {
+      clearTimeout(timer);
+    }
   }
+  throw lastErr;
 }
 
 const iso = ms => new Date(ms).toISOString();
@@ -90,36 +133,45 @@ export async function fetchHackerNews(cfg, sinceMs) {
 // ---------------------------------------------------------------------------
 export async function fetchArxiv(cfg, sinceMs) {
   if (!cfg?.enabled) return [];
+  const cats = cfg.categories ?? [];
+  if (!cats.length) return [];
   const out = [];
-  for (const cat of cfg.categories ?? []) {
-    try {
-      const url =
-        'https://export.arxiv.org/api/query?' +
-        new URLSearchParams({
-          search_query: `cat:${cat}`,
-          sortBy: 'submittedDate',
-          sortOrder: 'descending',
-          max_results: String(cfg.maxPerCategory ?? 12),
-        });
-      const xml = await get(url);
-      for (const entry of parseFeed(xml)) {
-        const when = entry.publishedAt ? Date.parse(entry.publishedAt) : Date.now();
-        if (when < sinceMs) continue;
-        // arXiv ids look like http://arxiv.org/abs/2607.01234v1
-        const idMatch = entry.url.match(/abs\/([^v]+)(?:v\d+)?$/);
-        out.push({
-          id: `arxiv-${idMatch ? idMatch[1] : entry.url.slice(-16)}`,
-          title: entry.title.replace(/\s+/g, ' '),
-          url: entry.url,
-          source: `arXiv ${cat}`,
-          sourceKind: 'paper',
-          publishedAt: entry.publishedAt,
-          snippet: entry.snippet,
-        });
-      }
-    } catch (err) {
-      warn(`arXiv ${cat}`, err);
+
+  // ONE request for every category (`cat:cs.AI OR cat:cs.CL OR …`) rather than
+  // one per category. arXiv rate-limits shared cloud egress hard — four serial
+  // asks per run had us collecting 429s and timeouts on the runner, harvesting
+  // zero papers. A single ask, retried patiently, gets the same papers.
+  const perCat = cfg.maxPerCategory ?? 12;
+  try {
+    const url =
+      'https://export.arxiv.org/api/query?' +
+      new URLSearchParams({
+        search_query: cats.map(c => `cat:${c}`).join(' OR '),
+        sortBy: 'submittedDate',
+        sortOrder: 'descending',
+        max_results: String(Math.min(perCat * cats.length, 100)),
+      });
+    const xml = await get(url, { attempts: 3, backoffMs: 4000, timeoutMs: 30000 });
+    for (const entry of parseFeed(xml)) {
+      const when = entry.publishedAt ? Date.parse(entry.publishedAt) : Date.now();
+      if (when < sinceMs) continue;
+      // arXiv ids look like http://arxiv.org/abs/2607.01234v1
+      const idMatch = entry.url.match(/abs\/([^v]+)(?:v\d+)?$/);
+      // Label with the paper's own primary category when the feed gives us one,
+      // so the app keeps showing "arXiv cs.AI" and not a flat "arXiv".
+      const cat = (entry.categories ?? []).find(c => cats.includes(c));
+      out.push({
+        id: `arxiv-${idMatch ? idMatch[1] : entry.url.slice(-16)}`,
+        title: entry.title.replace(/\s+/g, ' '),
+        url: entry.url,
+        source: cat ? `arXiv ${cat}` : 'arXiv',
+        sourceKind: 'paper',
+        publishedAt: entry.publishedAt,
+        snippet: entry.snippet,
+      });
     }
+  } catch (err) {
+    warn(`arXiv (${cats.join(', ')})`, err);
   }
   return out;
 }
@@ -133,7 +185,7 @@ export async function fetchHuggingFace(cfg, sinceMs) {
 
   if (cfg.dailyPapers) {
     try {
-      const data = await get('https://huggingface.co/api/daily_papers', { json: true });
+      const data = await get('https://huggingface.co/api/daily_papers', { json: true, attempts: 2 });
       for (const row of Array.isArray(data) ? data : []) {
         const p = row.paper ?? row;
         const id = p.id || row.id;
@@ -166,7 +218,7 @@ export async function fetchHuggingFace(cfg, sinceMs) {
           limit: String(cfg.maxModels ?? 15),
           filter: 'text-generation',
         });
-      const data = await get(url, { json: true });
+      const data = await get(url, { json: true, attempts: 2 });
       for (const m of Array.isArray(data) ? data : []) {
         if (!m.id) continue;
         const createdAt = m.createdAt || null;
@@ -246,38 +298,78 @@ export async function fetchGitHub(cfg, sinceMs) {
 }
 
 // ---------------------------------------------------------------------------
-// Reddit — public .json endpoints. Frequently rate-limits unauthenticated CI
-// traffic; treated as a bonus source, never a dependency.
+// Reddit — public .json endpoints. Bot-protected: the honest UA gets a flat 403
+// from every IP we've tried, and even with a browser UA one endpoint shape can
+// be blocked while another answers. So we try three shapes per subreddit and
+// take the first that returns items. Still a bonus source, never a dependency.
 // ---------------------------------------------------------------------------
 export async function fetchReddit(cfg, sinceMs) {
   if (!cfg?.enabled) return [];
   const out = [];
+  const limit = cfg.maxPerSub ?? 12;
+  const minScore = cfg.minScore ?? 80;
+
   for (const sub of cfg.subreddits ?? []) {
-    try {
-      const url = `https://www.reddit.com/r/${sub}/top.json?t=day&limit=${cfg.maxPerSub ?? 12}`;
-      const data = await get(url, { json: true });
-      for (const child of data?.data?.children ?? []) {
-        const p = child?.data;
-        if (!p?.title || p.stickied) continue;
-        if ((p.score ?? 0) < (cfg.minScore ?? 80)) continue;
-        const createdMs = (p.created_utc ?? 0) * 1000;
-        if (createdMs < sinceMs) continue;
-        out.push({
-          id: `reddit-${p.id}`,
-          title: p.title,
-          // Link posts point outward; self posts point at the thread.
-          url: p.is_self ? `https://www.reddit.com${p.permalink}` : p.url_overridden_by_dest || p.url,
-          source: `r/${sub}`,
-          sourceKind: 'discussion',
-          publishedAt: iso(createdMs),
-          snippet: stripHtml(p.selftext || '', 400),
-          score: p.score ?? 0,
-          discussionUrl: `https://www.reddit.com${p.permalink}`,
-        });
+    const attempts = [
+      { kind: 'json', url: `https://www.reddit.com/r/${sub}/top.json?t=day&limit=${limit}&raw_json=1` },
+      { kind: 'json', url: `https://old.reddit.com/r/${sub}/top.json?t=day&limit=${limit}&raw_json=1` },
+      { kind: 'rss', url: `https://www.reddit.com/r/${sub}/top/.rss?t=day&limit=${limit}` },
+    ];
+
+    let got = 0;
+    const errors = [];
+    for (const attempt of attempts) {
+      try {
+        if (attempt.kind === 'json') {
+          const data = await get(attempt.url, { json: true, attempts: 2 });
+          for (const child of data?.data?.children ?? []) {
+            const p = child?.data;
+            if (!p?.title || p.stickied) continue;
+            if ((p.score ?? 0) < minScore) continue;
+            const createdMs = (p.created_utc ?? 0) * 1000;
+            if (createdMs < sinceMs) continue;
+            out.push({
+              id: `reddit-${p.id}`,
+              title: p.title,
+              // Link posts point outward; self posts point at the thread.
+              url: p.is_self ? `https://www.reddit.com${p.permalink}` : p.url_overridden_by_dest || p.url,
+              source: `r/${sub}`,
+              sourceKind: 'discussion',
+              publishedAt: iso(createdMs),
+              snippet: stripHtml(p.selftext || '', 400),
+              score: p.score ?? 0,
+              discussionUrl: `https://www.reddit.com${p.permalink}`,
+            });
+            got++;
+          }
+        } else {
+          // The .rss shape carries no score, so minScore can't be applied here.
+          // These land with score 0 and have to earn their place on recency and
+          // keyword hits in preRank — which is the right outcome for a fallback.
+          const entries = parseFeed(await get(attempt.url, { attempts: 2 }));
+          for (const e of entries) {
+            if (e.publishedAt && Date.parse(e.publishedAt) < sinceMs) continue;
+            out.push({
+              id: `reddit-rss-${e.url.replace(/[^a-z0-9]+/gi, '').slice(-24)}`,
+              title: e.title,
+              url: e.url,
+              source: `r/${sub}`,
+              sourceKind: 'discussion',
+              publishedAt: e.publishedAt,
+              snippet: e.snippet,
+              score: 0,
+              discussionUrl: e.url,
+            });
+            got++;
+          }
+        }
+        if (got) break;
+      } catch (err) {
+        errors.push(`${new URL(attempt.url).host}${attempt.kind === 'rss' ? ' (rss)' : ''}: ${err?.message || err}`);
       }
-    } catch (err) {
-      warn(`r/${sub}`, err);
     }
+    // Only complain once per subreddit, and only if every shape failed.
+    if (!got && errors.length) warn(`r/${sub}`, errors.join(' | '));
   }
   return out;
 }
