@@ -38,7 +38,8 @@ function warn(source, err) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /** Worth a second try: rate limits, upstream hiccups, and our own timeout. */
-function isTransient(err) {
+function isTransient(err, { retry403 = false } = {}) {
+  if (retry403 && /HTTP 403/.test(err?.message || '')) return true;
   return /HTTP (429|500|502|503|504)|aborted/i.test(err?.message || '');
 }
 
@@ -54,6 +55,7 @@ async function get(url, {
   attempts = 1,
   backoffMs = 3000,
   timeoutMs = FETCH_TIMEOUT_MS,
+  retry403 = false,
 } = {}) {
   let lastErr;
   for (let attempt = 0; attempt < attempts; attempt++) {
@@ -69,7 +71,7 @@ async function get(url, {
       return json ? await res.json() : await res.text();
     } catch (err) {
       lastErr = err;
-      if (!isTransient(err)) break;
+      if (!isTransient(err, { retry403 })) break;
     } finally {
       clearTimeout(timer);
     }
@@ -129,7 +131,7 @@ export async function fetchHackerNews(cfg, sinceMs) {
 }
 
 // ---------------------------------------------------------------------------
-// arXiv — Atom API, sorted by submission date.
+// arXiv — daily announcement RSS per category, query API as a fallback.
 // ---------------------------------------------------------------------------
 export async function fetchArxiv(cfg, sinceMs) {
   if (!cfg?.enabled) return [];
@@ -137,11 +139,56 @@ export async function fetchArxiv(cfg, sinceMs) {
   if (!cats.length) return [];
   const out = [];
 
-  // ONE request for every category (`cat:cs.AI OR cat:cs.CL OR …`) rather than
-  // one per category. arXiv rate-limits shared cloud egress hard — four serial
-  // asks per run had us collecting 429s and timeouts on the runner, harvesting
-  // zero papers. A single ask, retried patiently, gets the same papers.
   const perCat = cfg.maxPerCategory ?? 12;
+  const seen = new Set();
+
+  const push = (entry, cat) => {
+    // arXiv ids look like https://arxiv.org/abs/2607.01234v1
+    const idMatch = entry.url.match(/abs\/([^v]+?)(?:v\d+)?$/);
+    const id = `arxiv-${idMatch ? idMatch[1] : entry.url.slice(-16)}`;
+    if (seen.has(id)) return; // cross-listed papers appear in several categories
+    seen.add(id);
+    // Label with the paper's own category when the feed gives us one, so the
+    // app keeps showing "arXiv cs.AI" and not a flat "arXiv".
+    const own = (entry.categories ?? []).find(c => cats.includes(c));
+    out.push({
+      id,
+      title: entry.title.replace(/\s+/g, ' '),
+      url: entry.url,
+      source: `arXiv ${own || cat}`.trim(),
+      sourceKind: 'paper',
+      publishedAt: entry.publishedAt,
+      // The RSS abstracts open with "arXiv:2607.01234v1 Announce Type: new
+      // Abstract: …" — boilerplate we'd otherwise pay curation tokens for.
+      snippet: (entry.snippet || '').replace(/^arXiv:\S+\s*Announce Type:\s*\S+\s*Abstract:\s*/i, ''),
+    });
+  };
+
+  // Preferred path: the announcement RSS feeds on rss.arxiv.org. The query API
+  // on export.arxiv.org throttles shared cloud egress so hard that the runner
+  // harvested zero papers on every run — 429 per category, and 429 again when
+  // collapsed to one combined request. rss.arxiv.org is a separate CDN-fronted
+  // host serving the same daily submissions and doesn't throttle us.
+  for (const cat of cats) {
+    try {
+      const xml = await get(`https://rss.arxiv.org/rss/${cat}`, { attempts: 2, backoffMs: 2000 });
+      let kept = 0;
+      for (const entry of parseFeed(xml)) {
+        if (kept >= perCat) break;
+        const when = entry.publishedAt ? Date.parse(entry.publishedAt) : Date.now();
+        if (when < sinceMs) continue;
+        push(entry, cat);
+        kept++;
+      }
+    } catch (err) {
+      warn(`arXiv rss ${cat}`, err);
+    }
+  }
+  if (out.length) return out;
+
+  // Fallback: one combined `cat:A OR cat:B` query against the API. Kept for the
+  // case where the RSS host is down — never split this back out per category.
+  warn('arXiv rss', 'no papers from rss.arxiv.org — falling back to the query API');
   try {
     const url =
       'https://export.arxiv.org/api/query?' +
@@ -155,20 +202,7 @@ export async function fetchArxiv(cfg, sinceMs) {
     for (const entry of parseFeed(xml)) {
       const when = entry.publishedAt ? Date.parse(entry.publishedAt) : Date.now();
       if (when < sinceMs) continue;
-      // arXiv ids look like http://arxiv.org/abs/2607.01234v1
-      const idMatch = entry.url.match(/abs\/([^v]+)(?:v\d+)?$/);
-      // Label with the paper's own primary category when the feed gives us one,
-      // so the app keeps showing "arXiv cs.AI" and not a flat "arXiv".
-      const cat = (entry.categories ?? []).find(c => cats.includes(c));
-      out.push({
-        id: `arxiv-${idMatch ? idMatch[1] : entry.url.slice(-16)}`,
-        title: entry.title.replace(/\s+/g, ' '),
-        url: entry.url,
-        source: cat ? `arXiv ${cat}` : 'arXiv',
-        sourceKind: 'paper',
-        publishedAt: entry.publishedAt,
-        snippet: entry.snippet,
-      });
+      push(entry, '');
     }
   } catch (err) {
     warn(`arXiv (${cats.join(', ')})`, err);
@@ -309,7 +343,12 @@ export async function fetchReddit(cfg, sinceMs) {
   const limit = cfg.maxPerSub ?? 12;
   const minScore = cfg.minScore ?? 80;
 
-  for (const sub of cfg.subreddits ?? []) {
+  const subs = cfg.subreddits ?? [];
+  for (const [i, sub] of subs.entries()) {
+    // Reddit throttles per IP, not per subreddit: on the runner the first sub
+    // answered and the next two 403'd on every shape. Space them out.
+    if (i) await sleep(2500);
+
     const attempts = [
       { kind: 'json', url: `https://www.reddit.com/r/${sub}/top.json?t=day&limit=${limit}&raw_json=1` },
       { kind: 'json', url: `https://old.reddit.com/r/${sub}/top.json?t=day&limit=${limit}&raw_json=1` },
@@ -321,7 +360,12 @@ export async function fetchReddit(cfg, sinceMs) {
     for (const attempt of attempts) {
       try {
         if (attempt.kind === 'json') {
-          const data = await get(attempt.url, { json: true, attempts: 2 });
+          const data = await get(attempt.url, {
+            json: true,
+            attempts: 3,
+            backoffMs: 4000,
+            retry403: true, // a 403 here is throttling, not a permanent refusal
+          });
           for (const child of data?.data?.children ?? []) {
             const p = child?.data;
             if (!p?.title || p.stickied) continue;
@@ -346,7 +390,9 @@ export async function fetchReddit(cfg, sinceMs) {
           // The .rss shape carries no score, so minScore can't be applied here.
           // These land with score 0 and have to earn their place on recency and
           // keyword hits in preRank — which is the right outcome for a fallback.
-          const entries = parseFeed(await get(attempt.url, { attempts: 2 }));
+          const entries = parseFeed(
+            await get(attempt.url, { attempts: 3, backoffMs: 4000, retry403: true }),
+          );
           for (const e of entries) {
             if (e.publishedAt && Date.parse(e.publishedAt) < sinceMs) continue;
             out.push({
