@@ -1,0 +1,1043 @@
+{
+  "id": "ondemand-1785452749",
+  "kind": "on-demand",
+  "generatedAt": "2026-07-30T23:05:49.948Z",
+  "triggeredBy": "admin",
+  "query": null,
+  "windowHours": 72,
+  "brief": {
+    "headline": "MCP goes stateless, breaking assumptions across tool-calling stacks",
+    "summary": "The MCP spec update moves transport to stateless, which is a real breaking change for anyone with production tool integrations built on connection-oriented assumptions — expect client and server rework across the ecosystem, including projects like open-connector and codexpro that sit directly on MCP. Meanwhile OpenAI cut GPT-5.6 pricing on its Luna and Terra variants, tightening the price-performance gap with open models right as Gemma 4's 26B-A4B MoE demonstrated it can run in roughly 2GB of RAM on any M-series Mac — the efficiency floor for capable models keeps dropping on both sides of the open/closed line.\n\nOn the agentic side, the HN discussion around Handbook.md is worth reading closely: it argues long policy documents don't reliably govern agent behavior, which validates a shift toward runtime enforcement over prompt-level guardrails — and it lands alongside GateMem's benchmark for memory-governance leakage and continued growth of autonomous red-teaming (T3MP3ST). Separately, a distillation experiment moving DeepSeek V4 Flash into GPT-OSS-120B beat Kimi K3 on finance reasoning without inheriting the teacher's censorship behavior, which if it generalizes changes the calculus for using Chinese frontier models as teachers. The orchestration layer keeps crowding: pilotfish, dot-loom, Tokenless, and opencodex are all separate bets on the same idea — route cheap models for execution, frontier models for planning, and arbitrage the difference.",
+    "bullets": [
+      "MCP 2026-07-28 spec moves transport to stateless, forcing rework of client/server connection handling",
+      "GPT-5.6 'Luna' and 'Terra' variants get price cuts, tightening frontier price-performance",
+      "Gemma 4 26B-A4B MoE runs in ~2GB RAM on any M-series MacBook",
+      "Handbook.md thread argues policy documents don't reliably govern agent behavior — runtime enforcement needed instead",
+      "DeepSeek V4 Flash distilled into GPT-OSS-120B beats Kimi K3 on finance reasoning without inheriting teacher's censorship",
+      "Multi-model routing/orchestration layers (pilotfish, dot-loom, Tokenless, opencodex) keep multiplying for cost control"
+    ],
+    "signals": [
+      {
+        "label": "Local/edge inference efficiency",
+        "direction": "up",
+        "note": "Gemma 4 26B-A4B in ~2GB RAM and TurboVLA under 1GB VRAM at 32Hz show frontier-capable models increasingly deployable on commodity hardware."
+      },
+      {
+        "label": "Frontier model pricing pressure",
+        "direction": "down",
+        "note": "GPT-5.6 price cuts on Luna/Terra narrow the cost gap with open alternatives, while a wave of routing tools (Tokenless, pilotfish, dot-loom) exists specifically to arbitrage remaining price differences."
+      },
+      {
+        "label": "Agent governance via static policy",
+        "direction": "down",
+        "note": "Handbook.md discussion concludes long policy docs don't reliably constrain agents; GateMem and honeypot work signal the ecosystem is still building the runtime tooling to actually enforce behavior."
+      },
+      {
+        "label": "MCP ecosystem churn",
+        "direction": "up",
+        "note": "The stateless transport spec change lands as MCP-dependent projects (open-connector, codexpro) keep multiplying, meaning more surface area has to absorb the breaking update."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "An open-source project runs Gemma 4 26B-A4B inference in roughly 2GB of RAM on any M-series MacBook.",
+      "whyItMatters": "Drastically lowers the hardware bar for running a capable open MoE model locally, useful for on-device or offline product deployments.",
+      "category": "open-models",
+      "tags": [
+        "gemma",
+        "local-inference",
+        "macbook",
+        "moe"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "models": [
+        "Gemma 4 26B-A4B"
+      ],
+      "importance": 4,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49098510",
+      "score": 2019
+    },
+    {
+      "id": "hn-49096969",
+      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+      "url": "https://arxiv.org/abs/2607.25398",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T13:01:57Z",
+      "tldr": "HN discussion argues that long written policy documents ('Handbook.md') do not reliably constrain agent behavior.",
+      "whyItMatters": "Directly relevant to anyone relying on system prompts or policy docs to govern agent behavior at scale — suggests such controls are weaker than assumed and need runtime enforcement instead.",
+      "category": "agentic",
+      "tags": [
+        "governance",
+        "reliability",
+        "evals"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49096969",
+      "score": 321
+    },
+    {
+      "id": "hn-49088058",
+      "title": "MCP 2026-07-28 Specification: transport going stateless",
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-28T18:35:11Z",
+      "tldr": "The MCP specification (2026-07-28) moves transport to stateless.",
+      "whyItMatters": "A core protocol change to MCP affects anyone building tool integrations on it—stateless transport likely changes connection handling, scaling, and client implementation assumptions.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "protocol",
+        "transport"
+      ],
+      "entities": [
+        "MCP"
+      ],
+      "models": [],
+      "importance": 4,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49088058",
+      "score": 126
+    },
+    {
+      "id": "rss-openai-ormancefrontierwithgpt56",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "tldr": "OpenAI drops pricing on GPT-5.6 variants ('Luna' and 'Terra') targeting more efficient enterprise deployment.",
+      "whyItMatters": "Lower per-token costs on a frontier-tier model directly changes the economics of running GPT-5.6 in production agentic pipelines versus open alternatives.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "gpt-5.6",
+        "enterprise"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-5.6"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a universal provider proxy letting Codex CLI/App/SDK and Claude Code run against any backend model including Gemini, Grok, DeepSeek, or Ollama.",
+      "whyItMatters": "Removes vendor lock-in from two of the most popular coding-agent front-ends, letting you swap in cheaper or self-hosted models without changing your workflow.",
+      "category": "tooling",
+      "tags": [
+        "proxy",
+        "coding-agent",
+        "multi-model"
+      ],
+      "entities": [
+        "OpenAI Codex",
+        "Claude Code"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 3,
+      "score": 5910
+    },
+    {
+      "id": "gh-1287460663",
+      "title": "elder-plinius/T3MP3ST — autonomous red teaming platform; multi-agent offensive-security meta-harness",
+      "url": "https://github.com/elder-plinius/T3MP3ST",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-02T17:53:55Z",
+      "tldr": "T3MP3ST is an autonomous multi-agent red-teaming platform for offensive security testing, from a well-known jailbreak researcher's account.",
+      "whyItMatters": "High-engagement signal that autonomous offensive-security agents are maturing into usable meta-harnesses — directly relevant if you need to red-team your own AI-integrated systems.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "red-teaming",
+        "multi-agent"
+      ],
+      "entities": [
+        "elder-plinius"
+      ],
+      "models": [],
+      "importance": 3,
+      "score": 5311
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway connecting 1,000+ SaaS providers to AI agents via SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "whyItMatters": "Solves the tedious auth/integration plumbing for tool-calling agents at scale — high engagement (3,494 stars) suggests real adoption.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations",
+        "saas"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 3494
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "The Fable Workflow distills how 'Claude Fable 5' operates into reusable skills any model can run, paired with an eval to keep behavior honest.",
+      "whyItMatters": "A think/act/prove skill pattern that's model-agnostic could be a useful agentic scaffolding technique regardless of which backend you use, and it's gaining real traction (1,973 stars).",
+      "category": "agentic",
+      "tags": [
+        "skills",
+        "evals",
+        "workflow"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 3,
+      "score": 1973
+    },
+    {
+      "id": "gh-1282650900",
+      "title": "deer-flow/llm-space — A desktop app to prototype agent ideas, inspect every harness step, replay failures, and evaluate performance, all in one place. Local-first, cloud-ready for managed agents.",
+      "url": "https://github.com/deer-flow/llm-space",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-28T03:39:34Z",
+      "tldr": "llm-space is a local-first desktop app for prototyping agents, inspecting every harness step, replaying failures, and evaluating performance.",
+      "whyItMatters": "Directly addresses the debugging/observability gap in agentic systems that the reader cares about — failure inspection and replay at the harness level.",
+      "category": "tooling",
+      "tags": [
+        "debugging",
+        "agents",
+        "evals",
+        "observability"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 1421
+    },
+    {
+      "id": "gh-1293473664",
+      "title": "Nanako0129/pilotfish — Multi-model orchestration layer for Claude Code — the frontier model plans, cheaper models execute, verification guards quality. One-prompt install.",
+      "url": "https://github.com/Nanako0129/pilotfish",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-08T10:53:34Z",
+      "tldr": "pilotfish adds a multi-model orchestration layer to Claude Code where a frontier model plans, cheaper models execute, and a verification step guards output quality.",
+      "whyItMatters": "A concrete, installable pattern for cost/quality-optimized multi-model agent pipelines — directly applicable to production cost control strategies.",
+      "category": "agentic",
+      "tags": [
+        "orchestration",
+        "cost-optimization",
+        "claude-code"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 3,
+      "score": 548
+    },
+    {
+      "id": "gh-1271074936",
+      "title": "rzhub/GateMem — GateMem: a benchmark and evaluation toolkit for memory governance in multi-principal shared-memory LLM agents.",
+      "url": "https://github.com/rzhub/GateMem",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-16T10:03:13Z",
+      "tldr": "GateMem is a new benchmark and toolkit for evaluating memory governance in multi-principal, shared-memory LLM agent systems.",
+      "whyItMatters": "As multi-agent systems share memory across principals, access control and leakage become real production risks; this gives you a way to test for it before shipping.",
+      "category": "research",
+      "tags": [
+        "memory",
+        "multi-agent",
+        "benchmark",
+        "evals"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 192
+    },
+    {
+      "id": "hf-paper-2607.27205",
+      "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+      "url": "https://huggingface.co/papers/2607.27205",
+      "source": "HF Daily Papers",
+      "sourceKind": "paper",
+      "publishedAt": "2026-07-28T20:00:00.000Z",
+      "tldr": "TurboVLA reformulates vision-language-action models to skip the LLM decoding bottleneck, hitting 32Hz inference on an RTX 4090 with under 1GB VRAM.",
+      "whyItMatters": "Massive efficiency gain for robotics/embodied-AI VLA pipelines makes real-time control on commodity hardware feasible, relevant if you're building robotics or physical-agent products.",
+      "category": "research",
+      "tags": [
+        "vla",
+        "robotics",
+        "efficiency"
+      ],
+      "entities": [],
+      "models": [
+        "TurboVLA"
+      ],
+      "importance": 3,
+      "score": 119
+    },
+    {
+      "id": "hn-49105563",
+      "title": "Kuna: Decompiler Development in the Age of Coding Agents",
+      "url": "https://noelo.org/blog/kuna-release/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T02:41:16Z",
+      "tldr": "HN discussion examines how decompiler development practices need to change in the age of coding agents.",
+      "whyItMatters": "Practitioner perspective on adapting a specialized, precision-critical engineering discipline to agentic coding workflows — relevant if you're deploying agents into low-level or reverse-engineering tasks.",
+      "category": "agentic",
+      "tags": [
+        "coding-agents",
+        "reverse-engineering",
+        "practitioner"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49105563",
+      "score": 75
+    },
+    {
+      "id": "hn-49099143",
+      "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+      "url": "https://usetokenless.com/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T15:55:27Z",
+      "tldr": "YC-backed Tokenless launches an API gateway that dynamically switches models turn-by-turn to cut AI spend.",
+      "whyItMatters": "Another entrant in the model-routing/cost-arbitrage space signals growing demand for multi-model orchestration tooling as teams like Uber and Salesforce blow through AI budgets.",
+      "category": "business",
+      "tags": [
+        "model-routing",
+        "cost",
+        "api-gateway",
+        "yc"
+      ],
+      "entities": [
+        "Tokenless",
+        "Uber",
+        "Salesforce"
+      ],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49099143",
+      "score": 69
+    },
+    {
+      "id": "hn-49113599",
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T18:13:06Z",
+      "tldr": "A team distills DeepSeek V4 Flash into GPT-OSS-120B for finance reasoning and finds the resulting model beats Kimi K3 while censorship characteristics don't transfer from teacher to student.",
+      "whyItMatters": "If distillation genuinely decouples capability from censorship/safety behavior, it changes the calculus for using Chinese frontier models as teachers without inheriting their content restrictions.",
+      "category": "research",
+      "tags": [
+        "distillation",
+        "gpt-oss",
+        "deepseek",
+        "censorship"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek V4",
+        "GPT-OSS-120B",
+        "Kimi K3"
+      ],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49113599",
+      "score": 64
+    },
+    {
+      "id": "hn-49108542",
+      "title": "You can't solve computer use by ignoring the interface",
+      "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T11:28:51Z",
+      "tldr": "A discussion argues that computer-use agents fail when they bypass the actual UI instead of engaging with it properly.",
+      "whyItMatters": "Substantive practitioner critique of a core agentic capability (computer use) that's directly relevant if you're building or evaluating GUI-automation agents.",
+      "category": "agentic",
+      "tags": [
+        "computer-use",
+        "ui-automation",
+        "critique"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49108542",
+      "score": 63
+    },
+    {
+      "id": "hn-49101655",
+      "title": "How much can you delegate to agents?",
+      "url": "https://newsletter.posthog.com/p/agent-autonomy",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T19:07:13Z",
+      "tldr": "HN thread debates how much real work can currently be delegated to autonomous coding/agent systems.",
+      "whyItMatters": "Practitioner-level discussion of agent delegation limits and failure modes is directly useful for calibrating what to hand off to agents in production.",
+      "category": "agentic",
+      "tags": [
+        "delegation",
+        "autonomy",
+        "agents"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49101655",
+      "score": 61
+    },
+    {
+      "id": "hn-49104747",
+      "title": "Show HN: A local merge queue for parallel Claude Code agents",
+      "url": "https://github.com/funador/claude-code-merge-queue",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T00:20:16Z",
+      "tldr": "A developer built a local merge queue to serialize commits from 4-5 parallel Claude Code agents running on a resource-constrained laptop.",
+      "whyItMatters": "Concrete pattern for taming multi-agent coding chaos and CI cost when running several coding agents concurrently, directly applicable to teams scaling agentic dev workflows.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "merge-queue",
+        "multi-agent",
+        "ci"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49104747",
+      "score": 41
+    },
+    {
+      "id": "rss-google-deepmind-eepmindgeminiroboticser2",
+      "title": "Introducing Gemini Robotics ER 2",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/",
+      "source": "Google DeepMind",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T15:00:00.000Z",
+      "tldr": "Google DeepMind releases Gemini Robotics ER 2, improving video understanding, tool orchestration, and multi-robot collaboration.",
+      "whyItMatters": "If you're building embodied or multi-robot agentic systems, this is a new baseline for perception-to-action orchestration worth benchmarking against.",
+      "category": "closed-models",
+      "tags": [
+        "robotics",
+        "multimodal",
+        "orchestration"
+      ],
+      "entities": [
+        "Google DeepMind"
+      ],
+      "models": [
+        "Gemini Robotics ER 2"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "gh-1301140808",
+      "title": "img2threejs/img2threejs — Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+      "url": "https://github.com/img2threejs/img2threejs",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-15T02:58:39Z",
+      "tldr": "img2threejs converts a reference image into a code-only, procedural, animation-ready Three.js 3D model using a token-efficient pipeline.",
+      "whyItMatters": "A concrete, shippable image-to-3D generation approach that avoids raw mesh output — useful if you're building content pipelines with LLM-driven code generation.",
+      "category": "tooling",
+      "tags": [
+        "image-to-3d",
+        "codegen",
+        "threejs"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 8535
+    },
+    {
+      "id": "gh-1305663861",
+      "title": "Vincentwei1021/video-shotcraft — AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 106 shot recipe cards, 161 motion previews, a production-ready template",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-19T11:44:41Z",
+      "tldr": "A Claude Code/Codex skill generates cinematic product videos via Remotion with a library of shot recipes and motion presets.",
+      "whyItMatters": "Shows agentic coding tools expanding into structured creative production pipelines, a concrete template pattern for building agent 'skills'.",
+      "category": "tooling",
+      "tags": [
+        "video",
+        "claude-code",
+        "codex",
+        "skills"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Remotion"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 2880
+    },
+    {
+      "id": "gh-1284959612",
+      "title": "HUANGCHIHHUNGLeo/claude-real-video — Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-30T10:55:02Z",
+      "tldr": "claude-real-video gives any LLM the ability to actually 'watch' video via scene-aware deduplicated frame extraction plus transcript, running locally.",
+      "whyItMatters": "Practical utility for multimodal agent pipelines that need video understanding without expensive per-frame API calls.",
+      "category": "tooling",
+      "tags": [
+        "multimodal",
+        "video",
+        "local"
+      ],
+      "entities": [],
+      "models": [
+        "Claude"
+      ],
+      "importance": 2,
+      "score": 1904
+    },
+    {
+      "id": "gh-1271627791",
+      "title": "rebel0789/codexpro — Use ChatGPT Developer Mode as a local coding agent for your repo through MCP.",
+      "url": "https://github.com/rebel0789/codexpro",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-16T21:22:43Z",
+      "tldr": "codexpro lets ChatGPT Developer Mode act as a local coding agent on your repo through MCP.",
+      "whyItMatters": "Extends OpenAI's developer-mode surface into local repo automation via the increasingly standard MCP interface.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "coding-agent",
+        "openai"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "ChatGPT"
+      ],
+      "importance": 2,
+      "score": 1459
+    },
+    {
+      "id": "gh-1271239690",
+      "title": "internet-court/internet-court-skill — The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code pl",
+      "url": "https://github.com/internet-court/internet-court-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-16T13:20:01Z",
+      "tldr": "An open Claude Code skill implements agent-to-agent commerce with natural-language mandates, ERC-7710 delegated permissions, x402 payments, and dispute resolution.",
+      "whyItMatters": "Early infrastructure for autonomous agent-to-agent transactions and trust — relevant if you're exploring agentic commerce or need a reference model for agent authorization/escrow patterns.",
+      "category": "agentic",
+      "tags": [
+        "agent-commerce",
+        "payments",
+        "erc-7710",
+        "skills"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 1415
+    },
+    {
+      "id": "gh-1278926400",
+      "title": "amplifthq/opentag — Open-source @agent mentions for Slack and GitHub. OpenTag routes tagged requests to Codex, Claude Code, then returns results in thread.",
+      "url": "https://github.com/amplifthq/opentag",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-24T08:05:12Z",
+      "tldr": "OpenTag adds open-source @agent mentions to Slack and GitHub, routing tagged requests to Codex or Claude Code and posting results back in-thread.",
+      "whyItMatters": "A lightweight, reusable pattern for embedding coding agents into existing team workflows without custom integration work.",
+      "category": "agentic",
+      "tags": [
+        "slack",
+        "github",
+        "routing",
+        "integration"
+      ],
+      "entities": [
+        "Codex",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 1377
+    },
+    {
+      "id": "gh-1274399536",
+      "title": "sums001/Windows-Copilot-API — Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+      "url": "https://github.com/sums001/Windows-Copilot-API",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-19T13:24:44Z",
+      "tldr": "A reverse-engineered project exposes Windows Copilot as an OpenAI-compatible REST API, giving free access to GPT-4/GPT-5-class models without billing.",
+      "whyItMatters": "A ToS-violating but functionally useful hack that could break anytime; worth knowing about but not something to build production dependencies on.",
+      "category": "tooling",
+      "tags": [
+        "reverse-engineering",
+        "api",
+        "windows-copilot"
+      ],
+      "entities": [
+        "Microsoft",
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-4",
+        "GPT-5"
+      ],
+      "importance": 2,
+      "score": 1176
+    },
+    {
+      "id": "gh-1288102626",
+      "title": "ai4s-research/open-science — Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative built on Tauri + MCP + agent skills.",
+      "url": "https://github.com/ai4s-research/open-science",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T09:22:31Z",
+      "tldr": "Open Science Desktop is a local-first, model-agnostic research workbench built on Tauri, MCP, and agent skills, positioned as an open alternative to Claude's Science desktop.",
+      "whyItMatters": "Another example of the open-source ecosystem replicating closed-vendor agent products with a model-agnostic, self-hostable stack.",
+      "category": "tooling",
+      "tags": [
+        "research-tools",
+        "mcp",
+        "open-source"
+      ],
+      "entities": [],
+      "models": [
+        "Claude"
+      ],
+      "importance": 2,
+      "score": 1035
+    },
+    {
+      "id": "gh-1296107475",
+      "title": "William-Lu-stack/Flawless — AI SRE AgenticOps for Kubernetes and cloud infrastructure.",
+      "url": "https://github.com/William-Lu-stack/Flawless",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-10T05:57:02Z",
+      "tldr": "Flawless is an AI SRE agentic-ops platform for automated diagnosis and remediation across Kubernetes and cloud infrastructure.",
+      "whyItMatters": "Represents the growing trend of multi-agent systems taking on production ops/on-call work, a category worth tracking for reliability implications.",
+      "category": "agentic",
+      "tags": [
+        "sre",
+        "kubernetes",
+        "agenticops"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 857
+    },
+    {
+      "id": "gh-1272859739",
+      "title": "databufflabs/databuff — AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology",
+      "url": "https://github.com/databufflabs/databuff",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T02:06:27Z",
+      "tldr": "databuff is an AI-native OpenTelemetry APM that uses multi-agent root-cause analysis across traces, metrics, and service topology.",
+      "whyItMatters": "Applies agentic reasoning directly to observability/RCA, a practical infra use case that could replace manual debugging workflows.",
+      "category": "agentic",
+      "tags": [
+        "observability",
+        "apm",
+        "opentelemetry",
+        "rca"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 451
+    },
+    {
+      "id": "hn-49104117",
+      "title": "LLM Honeypot",
+      "url": "https://llm2human.pages.dev/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T22:51:03Z",
+      "tldr": "A discussion on building an LLM honeypot to detect and study automated scraping/attack bots interacting with AI systems.",
+      "whyItMatters": "Relevant to anyone exposing LLM-backed endpoints who needs to think about abuse detection and adversarial traffic.",
+      "category": "research",
+      "tags": [
+        "security",
+        "honeypot",
+        "llm"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49104117",
+      "score": 372
+    },
+    {
+      "id": "gh-1276595002",
+      "title": "NotASithLord/peerd — The first AI agent harness native to the browser. A browser extension that runs a full agent loop where you already work: it drives your tabs, spins up sandboxed compute (JS notebooks, WASM Linux VMs, client-side apps),",
+      "url": "https://github.com/NotASithLord/peerd",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-22T05:55:13Z",
+      "tldr": "peerd is a browser extension agent harness that drives your tabs and spins up sandboxed compute (JS notebooks, WASM VMs) with BYOK and no backend.",
+      "whyItMatters": "A no-backend, privacy-preserving architecture for browser-native agents is a notable design pattern for building client-side agentic products.",
+      "category": "agentic",
+      "tags": [
+        "browser-agent",
+        "byok",
+        "sandboxing"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 370
+    },
+    {
+      "id": "gh-1278320942",
+      "title": "usedotai/dot-loom — Provider-pluggable orchestration runtime for multi-model AI inference. ( Sakana Fugu style )",
+      "url": "https://github.com/usedotai/dot-loom",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-23T17:19:53Z",
+      "tldr": "dot-loom is a provider-pluggable orchestration runtime for multi-model AI inference, styled after Sakana's Fugu approach.",
+      "whyItMatters": "Adds to the growing toolkit of vendor-agnostic orchestration layers, useful if you need to swap providers without rewriting agent logic.",
+      "category": "tooling",
+      "tags": [
+        "orchestration",
+        "multi-model",
+        "provider-agnostic"
+      ],
+      "entities": [
+        "Sakana"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 254
+    },
+    {
+      "id": "gh-1290565606",
+      "title": "inclusionAI/Avernet — Distributed agent coordination platform where agents live, connect, coordinate, execute, and evolve together.",
+      "url": "https://github.com/inclusionAI/Avernet",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T03:52:54Z",
+      "tldr": "Avernet is a distributed agent coordination platform for agents to connect, coordinate, execute, and evolve together.",
+      "whyItMatters": "Another entrant in the multi-agent orchestration space — worth a glance if you're evaluating coordination frameworks beyond the usual suspects.",
+      "category": "agentic",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "distributed"
+      ],
+      "entities": [
+        "inclusionAI"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 253
+    },
+    {
+      "id": "gh-1301824521",
+      "title": "YoanWai/agent-manager — Terminal UI to manage AI coding-agent sessions (Claude Code, OpenCode, Codex, Grok Build) in tmux: live status, group tree, live pane preview, resource gauges.",
+      "url": "https://github.com/YoanWai/agent-manager",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-15T16:27:33Z",
+      "tldr": "A terminal UI lets you manage multiple coding-agent sessions (Claude Code, OpenCode, Codex, Grok Build) in tmux with live status and resource gauges.",
+      "whyItMatters": "Practical ops tooling for anyone running several coding agents in parallel, addressing a real pain point in agentic dev workflows.",
+      "category": "tooling",
+      "tags": [
+        "coding-agents",
+        "tmux",
+        "devtools"
+      ],
+      "entities": [
+        "Claude Code",
+        "OpenCode",
+        "Codex",
+        "Grok"
+      ],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49107749",
+      "score": 169
+    },
+    {
+      "id": "gh-1299827099",
+      "title": "blitzdotdev/blitzos — BlitzOS allows cloud agents to boot already knowing your work, and keep working with your laptop closed",
+      "url": "https://github.com/blitzdotdev/blitzos",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-13T23:44:04Z",
+      "tldr": "BlitzOS lets cloud agents boot up already loaded with your project context and continue working while your laptop is closed.",
+      "whyItMatters": "Addresses a real pain point in agentic coding workflows — persistent context and async execution — worth evaluating if you run long-lived coding agents.",
+      "category": "agentic",
+      "tags": [
+        "cloud-agents",
+        "context",
+        "async"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 143
+    },
+    {
+      "id": "gh-1302289233",
+      "title": "bbarit/bbarit-agent-oss — Open-source AI coding agent for your terminal — one Rust binary, 15+ LLM providers, 1,000+ models. A self-hostable Claude Code / Codex CLI alternative (MIT).",
+      "url": "https://github.com/bbarit/bbarit-agent-oss",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-16T04:00:27Z",
+      "tldr": "bbarit-agent-oss is a single Rust-binary, self-hostable terminal coding agent supporting 15+ providers and 1,000+ models as an MIT alternative to Claude Code/Codex CLI.",
+      "whyItMatters": "Another open, provider-agnostic coding agent option for teams wanting to avoid lock-in or run fully self-hosted.",
+      "category": "open-models",
+      "tags": [
+        "coding-agent",
+        "self-hosted",
+        "rust"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 123
+    },
+    {
+      "id": "hf-paper-2607.27180",
+      "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
+      "url": "https://huggingface.co/papers/2607.27180",
+      "source": "HF Daily Papers",
+      "sourceKind": "paper",
+      "publishedAt": "2026-07-28T20:00:00.000Z",
+      "tldr": "HumanCLAW is a new evaluation framework that decouples a VLM's decision-making from a robot's low-level motor execution to isolate failure causes.",
+      "whyItMatters": "Useful methodology if you're evaluating embodied/VLM-driven agents and need to distinguish planning failures from execution failures rather than treating end-to-end task success as a black box.",
+      "category": "research",
+      "tags": [
+        "vlm",
+        "robotics",
+        "evaluation"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 66
+    },
+    {
+      "id": "hn-49109721",
+      "title": "Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools",
+      "url": "https://prized.dev",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T13:29:03Z",
+      "tldr": "YC-backed Prized lets non-engineers generate internal tools via natural language, wired to company data behind SSO without API key exposure.",
+      "whyItMatters": "Another entrant in the LLM-generated internal-tooling space with a security angle worth watching if you're building similar access-controlled agent tooling for enterprises.",
+      "category": "adoption",
+      "tags": [
+        "internal-tools",
+        "low-code",
+        "security"
+      ],
+      "entities": [
+        "Prized",
+        "Y Combinator"
+      ],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49109721",
+      "score": 63
+    },
+    {
+      "id": "hn-49108778",
+      "title": "Go LLM SDK for streaming, tool-calling AI backends (plus frontend React lib)",
+      "url": "https://github.com/grafana/ai-sdk",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T11:55:39Z",
+      "tldr": "A new Go LLM SDK supports streaming and tool-calling against AI backends, with an accompanying frontend React library.",
+      "whyItMatters": "Fills a gap for teams building agentic backends in Go rather than Python/TypeScript.",
+      "category": "tooling",
+      "tags": [
+        "sdk",
+        "go",
+        "tool-calling",
+        "streaming"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49108778",
+      "score": 55
+    },
+    {
+      "id": "hf-paper-2607.26784",
+      "title": "SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution",
+      "url": "https://huggingface.co/papers/2607.26784",
+      "source": "HF Daily Papers",
+      "sourceKind": "paper",
+      "publishedAt": "2026-07-28T20:00:00.000Z",
+      "tldr": "SkillRise proposes a unified reinforcement learning framework letting agents learn and reuse skills across related tasks instead of treating each as an isolated episode.",
+      "whyItMatters": "Addresses a real gap in agentic RL—skill transfer across tasks—which could reduce redundant training/fine-tuning for multi-task agent deployments.",
+      "category": "research",
+      "tags": [
+        "reinforcement-learning",
+        "agents",
+        "skill-transfer"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 18
+    },
+    {
+      "id": "rss-google-research-meworkviachainofevidence",
+      "title": "Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "source": "Google Research",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "tldr": "Google Research publishes the Science One Framework, a verifiable autonomous research system built on chain-of-evidence reasoning.",
+      "whyItMatters": "Relevant if you're building agents that need auditable, evidence-backed outputs rather than black-box conclusions — a pattern applicable beyond science research agents.",
+      "category": "research",
+      "tags": [
+        "agentic",
+        "verification",
+        "research-agents"
+      ],
+      "entities": [
+        "Google Research"
+      ],
+      "models": [],
+      "importance": 2
+    },
+    {
+      "id": "hn-49111019",
+      "title": "Show HN: Claude-account – switch Claude Code accounts without logging in again",
+      "url": "https://github.com/hamzarehmandeveloper/claude-account",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T14:58:59Z",
+      "tldr": "A small CLI called claude-account lets developers switch between multiple Claude Code accounts without repeated login flows.",
+      "whyItMatters": "Minor but genuinely useful quality-of-life fix for anyone juggling work/personal Claude Code accounts.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "cli",
+        "dev-tools"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 1,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49111019",
+      "score": 41
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Multi-model routing and orchestration layers multiply",
+      "summary": "Separate teams are converging on the same pattern — frontier model plans, cheap model executes, a verification step or router arbitrates cost — via pilotfish, dot-loom, Tokenless, opencodex, and bbarit-agent-oss.",
+      "itemIds": [
+        "gh-1293473664",
+        "gh-1278320942",
+        "hn-49099143",
+        "gh-1273824907",
+        "gh-1302289233"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Embodied AI push: robotics and VLA efficiency",
+      "summary": "Gemini Robotics ER 2, TurboVLA's real-time low-VRAM inference, and HumanCLAW's planning-vs-execution eval framework all move embodied/robotic agent capability and evaluation forward this cycle.",
+      "itemIds": [
+        "rss-google-deepmind-eepmindgeminiroboticser2",
+        "hf-paper-2607.27205",
+        "hf-paper-2607.27180"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Agent governance and safety tooling still catching up",
+      "summary": "Handbook.md's finding that policy documents fail to govern agents, GateMem's memory-leakage benchmark, T3MP3ST's autonomous red-teaming, and an LLM honeypot discussion all point to production-grade agent safety still being built out rather than solved.",
+      "itemIds": [
+        "hn-49096969",
+        "gh-1271074936",
+        "gh-1287460663",
+        "hn-49104117"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Practitioners debate the real limits of agent delegation",
+      "summary": "Three HN threads independently argue that agentic capability claims outrun reality in specific ways — computer-use agents that bypass the UI, decompiler work resisting full delegation, and open debate over how much can actually be handed off.",
+      "itemIds": [
+        "hn-49108542",
+        "hn-49101655",
+        "hn-49105563"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 36552,
+    "outputTokens": 19617,
+    "usd": 0.4039,
+    "model": "claude-sonnet-5",
+    "calls": 6
+  },
+  "contentVersion": 1
+}

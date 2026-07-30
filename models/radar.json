@@ -1,5 +1,63 @@
 {
-  "contentVersion": 0,
-  "generatedAt": null,
-  "models": []
+  "contentVersion": 1,
+  "generatedAt": "2026-07-30T23:05:49.948Z",
+  "models": [
+    {
+      "id": "gpt-5-6",
+      "name": "GPT-5.6",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-30T23:05:49.948Z",
+      "timeline": [
+        {
+          "at": "2026-07-30T23:05:49.948Z",
+          "what": "OpenAI cut pricing on GPT-5.6 variants ('Luna' and 'Terra') to improve the price-performance frontier for enterprise deployment.",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
+        }
+      ]
+    },
+    {
+      "id": "turbovla",
+      "name": "TurboVLA",
+      "vendor": "unknown",
+      "openness": "unknown",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "preview",
+      "firstSeenAt": "2026-07-30T23:05:49.948Z",
+      "timeline": [
+        {
+          "at": "2026-07-30T23:05:49.948Z",
+          "what": "A new vision-language-action model reformulated to skip the LLM decoding bottleneck, achieving 32Hz real-time inference on an RTX 4090 with under 1GB VRAM.",
+          "url": "https://huggingface.co/papers/2607.27205"
+        }
+      ]
+    },
+    {
+      "id": "gemini-robotics-er-2",
+      "name": "Gemini Robotics ER 2",
+      "vendor": "Google DeepMind",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-30T23:05:49.948Z",
+      "timeline": [
+        {
+          "at": "2026-07-30T23:05:49.948Z",
+          "what": "Google DeepMind released Gemini Robotics ER 2, improving video understanding, tool orchestration, and multi-robot collaboration.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/"
+        }
+      ]
+    }
+  ]
 }
