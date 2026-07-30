@@ -151,11 +151,11 @@ const RADAR_SCHEMA = obj({
  * globally: curation is bulk classification, the brief is the editorial work.
  */
 async function callJson({ system, prompt, schema, maxTokens = 16000, effort = 'high' }) {
+  const supportsFallback = MODEL === 'claude-opus-5';
   const res = await client.beta.messages.create({
     model: MODEL,
     max_tokens: maxTokens,
-    betas: [FALLBACK_BETA],
-    fallbacks: 'default',
+    ...(supportsFallback ? { betas: [FALLBACK_BETA], fallbacks: 'default' } : {}),
     system,
     output_config: { format: { type: 'json_schema', schema }, effort },
     messages: [{ role: 'user', content: prompt }],
