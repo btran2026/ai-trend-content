@@ -1,7 +1,83 @@
 {
-  "contentVersion": 4,
-  "generatedAt": "2026-07-31T07:41:09.971Z",
+  "contentVersion": 5,
+  "generatedAt": "2026-07-31T08:43:32.922Z",
   "models": [
+    {
+      "id": "gpt-5-6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T08:43:32.922Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T08:43:32.922Z",
+          "what": "OpenAI cut GPT-5.6 Luna API pricing by 80%.",
+          "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T08:43:32.922Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T08:43:32.922Z",
+          "what": "OpenAI cut GPT-5.6 Terra API pricing by 20%.",
+          "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        }
+      ]
+    },
+    {
+      "id": "sol-fast",
+      "name": "Sol Fast",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T08:43:32.922Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T08:43:32.922Z",
+          "what": "OpenAI launched a new Sol Fast tier offering 2.5x lower latency at double the price, yielding roughly 10x lower net cost for agent workflows versus prior pricing.",
+          "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        }
+      ]
+    },
+    {
+      "id": "inkling-small",
+      "name": "Inkling-Small",
+      "vendor": "Thinking Machines",
+      "openness": "open-weights",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T08:43:32.922Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T08:43:32.922Z",
+          "what": "Thinking Machines released Inkling-Small, an open-weight 276B-total/12B-active-parameter MoE model matching the original Inkling's performance at a quarter of its size.",
+          "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        }
+      ]
+    },
     {
       "id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
