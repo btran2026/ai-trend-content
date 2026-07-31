@@ -73,12 +73,21 @@ digest doesn't have to wait for the next cron tick or burn an Actions run. It is
 the same `aggregate.mjs` the workflow runs — the script only adds the rebase,
 commit and push that otherwise live in `aggregate.yml`.
 
+Set the key once in a gitignored `.env` and the script picks it up:
+
 ```bash
-npm run publish:local:dry                       # fetch + rank, no AI, no commit
-ANTHROPIC_API_KEY=sk-ant-… npm run publish:local
-ANTHROPIC_API_KEY=sk-ant-… npm run publish:local -- --mode on-demand --query "agent harnesses"
-NO_PUSH=1 ANTHROPIC_API_KEY=sk-ant-… npm run publish:local   # commit, inspect, push yourself
+printf 'ANTHROPIC_API_KEY=sk-ant-…\nAGGREGATOR_MODEL=claude-sonnet-5\n' > .env
 ```
+
+```bash
+npm run publish:local:dry                        # fetch + rank, no AI, no commit
+npm run publish:local                            # full run, commits and pushes
+npm run publish:local -- --mode on-demand --query "agent harnesses"
+NO_PUSH=1 npm run publish:local                  # commit, inspect, push yourself
+```
+
+Run it **on `main`** — Pages serves `main`, so a digest published from a feature
+branch never reaches the app. The script warns when you're somewhere else.
 
 It refuses to start without a key unless dry-running, pulls with `--rebase`
 first (the aggregator reads `manifest.json` to compute version numbers, so a

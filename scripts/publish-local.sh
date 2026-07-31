@@ -21,6 +21,16 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+# Load .env if present (gitignored). Lets you set the key once instead of
+# prefixing every invocation — and keeps it out of your shell history.
+#   printf 'ANTHROPIC_API_KEY=sk-ant-…\nAGGREGATOR_MODEL=claude-sonnet-5\n' > .env
+if [ -f .env ]; then
+  set -a
+  # shellcheck disable=SC1091
+  . ./.env
+  set +a
+fi
+
 # Mirrors the workflow's `if: dry != 'true'` guard: a dry run must never commit.
 dry=false
 for a in "$@"; do [ "$a" = "--dry-run" ] && dry=true; done
@@ -35,6 +45,15 @@ fi
 # reads manifest.json to decide version numbers, so rebasing after the fact
 # would produce a manifest built against the wrong base.
 branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Pages serves `main`. Publishing from anywhere else produces a perfectly valid
+# digest that no app will ever read, which is a confusing way to lose an hour.
+if [ "$branch" != "main" ]; then
+  echo "WARNING: on '$branch', not main. GitHub Pages serves main, so this digest"
+  echo "         will not reach the app until the branch is merged."
+  echo
+fi
+
 git pull --rebase --autostash origin "$branch"
 
 node scripts/aggregate.mjs --triggered-by local "$@"
