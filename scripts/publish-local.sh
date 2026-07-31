@@ -36,9 +36,18 @@ dry=false
 for a in "$@"; do [ "$a" = "--dry-run" ] && dry=true; done
 [ "${DRY:-}" = "1" ] && { dry=true; set -- "$@" --dry-run; }
 
+# Two ways to reach the model, and no key is the normal local case: fall back to
+# the `claude` CLI and whatever session it is already logged into, which bills
+# the subscription instead of API credits. aggregate.mjs picks the same way.
 if [ "$dry" = false ] && [ -z "${ANTHROPIC_API_KEY:-}" ]; then
-  echo "ANTHROPIC_API_KEY is not set. Export it, or pass --dry-run to fetch without AI." >&2
-  exit 1
+  if command -v "${CLAUDE_BIN:-claude}" >/dev/null 2>&1; then
+    echo "No ANTHROPIC_API_KEY — using the ${CLAUDE_BIN:-claude} CLI session (subscription-billed)."
+    echo
+  else
+    echo "No ANTHROPIC_API_KEY and no '${CLAUDE_BIN:-claude}' on PATH." >&2
+    echo "Log in to Claude Code, set a key in .env, or pass --dry-run." >&2
+    exit 1
+  fi
 fi
 
 # A stale checkout is the one way a local publish can lose work: the aggregator

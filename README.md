@@ -73,7 +73,24 @@ digest doesn't have to wait for the next cron tick or burn an Actions run. It is
 the same `aggregate.mjs` the workflow runs — the script only adds the rebase,
 commit and push that otherwise live in `aggregate.yml`.
 
-Set the key once in a gitignored `.env` and the script picks it up:
+**No API key needed locally.** With no `ANTHROPIC_API_KEY` set, the aggregator
+calls `claude -p` and uses whatever session Claude Code is already logged into,
+so a local run comes out of your subscription rather than API credits. Actions
+always has the key, so the hosted path is unchanged.
+
+| `AI_BACKEND` | When | Notes |
+| --- | --- | --- |
+| `api` | auto when `ANTHROPIC_API_KEY` is set | Real structured outputs, refusal fallback. What cron uses. |
+| `cli` | auto when it isn't | Subscription-billed. No `json_schema` on the CLI, so the schema is embedded in the prompt and the reply is parsed defensively. |
+
+Set `AI_BACKEND` explicitly to override, and `CLAUDE_BIN` if `claude` isn't on
+your `PATH`.
+
+The CLI path runs with `--system-prompt` (replacing Claude Code's coding-agent
+prompt), `--allowed-tools ""` and `--strict-mcp-config` — it's a text transform
+and must not touch the repo or depend on your MCP setup.
+
+Optionally set a key in a gitignored `.env` to use the API path locally instead:
 
 ```bash
 printf 'ANTHROPIC_API_KEY=sk-ant-…\nAGGREGATOR_MODEL=claude-sonnet-5\n' > .env
@@ -94,11 +111,13 @@ first (the aggregator reads `manifest.json` to compute version numbers, so a
 stale checkout produces a manifest built against the wrong base), and skips the
 commit entirely when nothing changed.
 
-**On cost:** a local run bills your own key at the same rate as the hosted one —
-moving the work doesn't make it cheaper. What makes it cheaper is the model.
-Set `AGGREGATOR_MODEL=claude-sonnet-5` for local runs; the Actions *variable* of
-the same name is still unset, so every hosted run bills `claude-opus-5` at
-$5/$25 per Mtok, four times a day.
+**On cost:** on the `cli` backend the run consumes your Claude subscription, not
+API credits — the digest still records a `usd` figure, but it's what the run
+*would* have cost at API rates, flagged with `"billing": "subscription"`. On the
+`api` backend it's a real charge. Either way the model is the lever: set
+`AGGREGATOR_MODEL=claude-sonnet-5`. The Actions *variable* of the same name is
+still unset, so every hosted run bills `claude-opus-5` at $5/$25 per Mtok, four
+times a day.
 
 ## Triggering a refresh
 

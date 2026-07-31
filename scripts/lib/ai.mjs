@@ -14,10 +14,26 @@
  * Model: claude-opus-5. Override with AGGREGATOR_MODEL if you want to trade
  * quality for spend — see README.
  */
+import { spawn } from 'node:child_process';
 import Anthropic from '@anthropic-ai/sdk';
 
 const MODEL = process.env.AGGREGATOR_MODEL || 'claude-opus-5';
 const CURATION_BATCH_SIZE = 20;
+
+/**
+ * Which way we reach the model.
+ *
+ *   api — the Anthropic SDK on ANTHROPIC_API_KEY. What Actions uses. Gets real
+ *         structured outputs and the refusal fallback.
+ *   cli — `claude -p` against whatever session you're already logged into, so a
+ *         local run bills your subscription instead of API credits.
+ *
+ * Auto-selects: a key means api, no key means cli. Actions always has the key,
+ * so the hosted path is untouched. Force either with AI_BACKEND.
+ */
+const BACKEND = process.env.AI_BACKEND || (process.env.ANTHROPIC_API_KEY ? 'api' : 'cli');
+const CLI_BIN = process.env.CLAUDE_BIN || 'claude';
+const CLI_TIMEOUT_MS = 10 * 60_000;
 
 /** Server-side refusal fallback. Opus 5's safety classifiers can decline a
  * request (HTTP 200, stop_reason "refusal") — AI-security stories are exactly
@@ -25,10 +41,22 @@ const CURATION_BATCH_SIZE = 20;
  * routes by refusal category so we don't maintain a model list. */
 const FALLBACK_BETA = 'server-side-fallback-2026-07-01';
 
-const client = new Anthropic();
+// Lazy: constructing the SDK client is pointless (and needs a key) on the CLI
+// path, and `aggregate.mjs --dry-run` imports this module with neither.
+let _client = null;
+const client = () => (_client ??= new Anthropic());
 
 /** Accumulated across every call in a run; written into the digest's `cost`. */
-export const usage = { inputTokens: 0, outputTokens: 0, calls: 0, model: MODEL };
+export const usage = {
+  inputTokens: 0,
+  outputTokens: 0,
+  calls: 0,
+  model: MODEL,
+  backend: BACKEND,
+  /** What the CLI reported this run would have cost. Zero on the API path,
+   *  where we price it from token counts instead. */
+  reportedUsd: 0,
+};
 
 const PRICING = {
   // USD per 1M tokens. Opus 5 rates; edit if AGGREGATOR_MODEL points elsewhere.
@@ -38,6 +66,10 @@ const PRICING = {
 };
 
 export function estimateUsd() {
+  // The CLI reports what each call would have cost at API rates; on a
+  // subscription that's notional, not a charge, but it's the honest number to
+  // record and it already accounts for cache reads we can't see from here.
+  if (BACKEND === 'cli') return usage.reportedUsd;
   const p = PRICING[MODEL] ?? PRICING['claude-opus-5'];
   return (usage.inputTokens / 1e6) * p.in + (usage.outputTokens / 1e6) * p.out;
 }
@@ -169,6 +201,115 @@ const RADAR_SCHEMA = obj({
 });
 
 /**
+ * Pull a JSON object out of model prose.
+ *
+ * The API path gets schema-validated JSON from the server. The CLI path does
+ * not — there is no json_schema output format on `claude -p` — so we ask for
+ * bare JSON and then cope with the two things that still happen: a markdown
+ * fence, and a sentence of preamble before the brace.
+ */
+function extractJson(text) {
+  let t = String(text ?? '').trim();
+  const fence = t.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/);
+  if (fence) t = fence[1].trim();
+  try {
+    return JSON.parse(t);
+  } catch {
+    // Widest brace span — object bodies contain braces, so first-to-last is
+    // right where a naive first-to-first would truncate.
+    const start = t.indexOf('{');
+    const end = t.lastIndexOf('}');
+    if (start === -1 || end <= start) return null;
+    try {
+      return JSON.parse(t.slice(start, end + 1));
+    } catch {
+      return null;
+    }
+  }
+}
+
+/**
+ * One call through `claude -p`, using whatever session the CLI is logged into.
+ *
+ * Flags chosen deliberately:
+ *   --system-prompt      replaces Claude Code's coding-agent prompt rather than
+ *                        appending to it — we want an editor, not an engineer.
+ *   --allowed-tools ""   this is a text transform; it must not touch the repo.
+ *   --strict-mcp-config  no MCP servers, so the run doesn't depend on whatever
+ *                        the developer happens to have connected.
+ */
+function callCli({ system, prompt, schema }) {
+  const sys = `${system}
+
+Return ONLY a single JSON object conforming to this JSON Schema. No prose before or after it, no markdown code fence.
+
+${JSON.stringify(schema)}`;
+
+  return new Promise(resolve => {
+    const child = spawn(
+      CLI_BIN,
+      [
+        '-p',
+        '--output-format', 'json',
+        '--model', MODEL,
+        '--allowed-tools', '',
+        '--strict-mcp-config',
+        '--system-prompt', sys,
+      ],
+      { stdio: ['pipe', 'pipe', 'pipe'] },
+    );
+
+    let out = '';
+    let err = '';
+    const timer = setTimeout(() => {
+      child.kill('SIGKILL');
+      console.warn(`  ! claude CLI timed out after ${CLI_TIMEOUT_MS / 60000}m — skipping stage`);
+    }, CLI_TIMEOUT_MS);
+
+    child.stdout.on('data', d => (out += d));
+    child.stderr.on('data', d => (err += d));
+
+    child.on('error', e => {
+      clearTimeout(timer);
+      console.warn(`  ! cannot run "${CLI_BIN}": ${e.message}`);
+      resolve(null);
+    });
+
+    child.on('close', code => {
+      clearTimeout(timer);
+      if (code !== 0 || !out.trim()) {
+        console.warn(`  ! claude CLI exited ${code}: ${err.trim().slice(0, 300) || 'no output'}`);
+        return resolve(null);
+      }
+
+      let envelope;
+      try {
+        envelope = JSON.parse(out);
+      } catch {
+        console.warn('  ! claude CLI returned unparseable envelope');
+        return resolve(null);
+      }
+
+      usage.calls += 1;
+      usage.inputTokens += envelope.usage?.input_tokens ?? 0;
+      usage.outputTokens += envelope.usage?.output_tokens ?? 0;
+      usage.reportedUsd += envelope.total_cost_usd ?? 0;
+
+      if (envelope.is_error) {
+        console.warn(`  ! claude CLI error: ${String(envelope.result).slice(0, 200)}`);
+        return resolve(null);
+      }
+
+      const parsed = extractJson(envelope.result);
+      if (!parsed) console.warn('  ! could not extract JSON from CLI output — skipping stage');
+      resolve(parsed);
+    });
+
+    child.stdin.end(prompt);
+  });
+}
+
+/**
  * One structured call. Returns the validated object, or null if the model
  * refused (after the server-side fallback also declined) — callers treat null
  * as "this stage produced nothing" and carry on.
@@ -177,8 +318,13 @@ const RADAR_SCHEMA = obj({
  * globally: curation is bulk classification, the brief is the editorial work.
  */
 async function callJson({ system, prompt, schema, maxTokens = 16000, effort = 'high' }) {
+  if (BACKEND === 'cli') return callCli({ system, prompt, schema });
+  return callApi({ system, prompt, schema, maxTokens, effort });
+}
+
+async function callApi({ system, prompt, schema, maxTokens, effort }) {
   const supportsFallback = MODEL === 'claude-opus-5';
-  const res = await client.beta.messages.create({
+  const res = await client().beta.messages.create({
     model: MODEL,
     max_tokens: maxTokens,
     ...(supportsFallback ? { betas: [FALLBACK_BETA], fallbacks: 'default' } : {}),

@@ -96,7 +96,14 @@ One digest = one aggregation run. `id` is `YYYY-MM-DD` for scheduled runs, or
   "clusters": [
     { "id": "c1", "title": "Open-weight tool-calling", "summary": "...", "itemIds": ["hn-41234567"] }
   ],
-  "cost": { "inputTokens": 41233, "outputTokens": 8112, "usd": 0.2456, "model": "claude-sonnet-5" }
+  "cost": {
+    "inputTokens": 41233,
+    "outputTokens": 8112,
+    "usd": 0.2456,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "api"
+  }
 }
 ```
 
@@ -145,8 +152,17 @@ Once a release ships that reads `actionability` directly, drop that floor in
 
 ### `cost`
 
-What this digest cost to produce, server-side. Surfaced in the app's admin panel
-as the whole point of the shared backend: one run, one bill, every install reads it.
+What this digest cost to produce. Surfaced in the app's admin panel as the whole
+point of the shared backend: one run, one bill, every install reads it.
+
+`billing` is additive and tells you how to read `usd`:
+
+| `billing` | Meaning |
+| --- | --- |
+| `api` | A real charge against `ANTHROPIC_API_KEY`. Cron and any keyed run. |
+| `subscription` | The run went through a logged-in `claude -p` session. `usd` is what it *would* have cost at API rates, not what it charged. |
+
+Absent on digests published before the CLI backend existed; treat missing as `api`.
 
 ## `models/radar.json`
 
