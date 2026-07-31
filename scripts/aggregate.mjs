@@ -143,9 +143,15 @@ async function main() {
       usd: Number(estimateUsd().toFixed(4)),
       model: usage.model,
       calls: usage.calls,
+      backend: usage.backend,
       // `subscription` means usd is what this would have cost at API rates, not
       // what it charged — the run went through a logged-in CLI session.
-      billing: usage.backend === 'cli' ? 'subscription' : 'api',
+      // `copilot-subscription` means usd is 0 because Copilot reports nothing,
+      // not because the run was free.
+      billing:
+        usage.backend === 'cli' ? 'subscription'
+        : usage.backend === 'copilot' ? 'copilot-subscription'
+        : 'api',
     },
   };
 

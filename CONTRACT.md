@@ -161,8 +161,11 @@ point of the shared backend: one run, one bill, every install reads it.
 | --- | --- |
 | `api` | A real charge against `ANTHROPIC_API_KEY`. Cron and any keyed run. |
 | `subscription` | The run went through a logged-in `claude -p` session. `usd` is what it *would* have cost at API rates, not what it charged. |
+| `copilot-subscription` | The run went through `copilot -p`. **`usd` is 0 because Copilot reports no token counts — not because the run was free.** |
 
-Absent on digests published before the CLI backend existed; treat missing as `api`.
+`backend` (`api` / `cli` / `copilot`) records which transport produced the
+digest. Both fields are absent on digests published before the CLI backends
+existed; treat missing as `api`.
 
 ## `models/radar.json`
 
