@@ -51,6 +51,10 @@ const CATEGORIES = [
   'research',
   'use-cases',
   'business',
+  // Added: an item that hands the reader a command, flag, config or repo. This
+  // is the category the digest exists for; the app maps unknown values to
+  // `other`, so older binaries degrade instead of breaking.
+  'technique',
 ];
 
 /**
@@ -58,14 +62,26 @@ const CATEGORIES = [
  * the editorial voice is reviewable in one place rather than smeared across
  * three prompts.
  */
-const AUDIENCE = `The reader is a software development director and entrepreneur who ships production applications on top of multiple AI models — open-weight and closed, self-hosted and API. They care about:
+const AUDIENCE = `The reader is a development manager who ships production mobile apps largely solo, using AI coding agents as his team. He runs Claude Code with git worktrees, subagents, hooks and skills, and he is trying to get closer to one thing: describe the work, go to sleep, review a finished pull request in the morning.
 
-- Open vs closed model releases: capability, license, context window, price, and whether it's actually usable in a product.
-- Agentic orchestration: multi-agent topologies, handoffs, tool/MCP ecosystems, evals, cost and latency control, failure modes at scale.
-- Adoption and real use cases: what teams are actually shipping and what broke.
-- Discussion worth reading: substantive practitioner argument, not press-release chatter.
+What he wants from this digest, in priority order:
 
-They are technical. Do not explain what an LLM is. Do not hedge. They read this once a day, on a phone, and need to know what changed and whether it affects what they are building.`;
+1. Techniques he can apply tonight. A flag, a command, a config file, a hook, a repo to clone, a prompt structure. Anything that makes an agent run longer unattended, ask fewer questions, verify its own work, or produce a reviewable PR.
+2. Ways to spend less. Routing cheap work to local or open-weight models, prompt caching, batch calls, model tiering per subagent, self-hosted harnesses. Concrete costs and hardware requirements, not leaderboard positions.
+3. Controlling agents away from the desk. Phone, voice, chat bridges, remote and cloud sessions, scheduled and event-triggered runs.
+4. Honest failure reports. "We ran this unattended for six hours and here is exactly how it broke" is worth more than any launch announcement.
+
+THE TEST FOR EVERY ITEM: after reading it, is there something he can DO? If the answer is "now he knows a fact about a model or a specification", that item is noise no matter how important it sounds.
+
+Concretely, this is what he does NOT want, and what the feed has been failing on:
+- Protocol and spec revisions described in terms of their own internals ("the MCP spec makes transport stateless").
+- Model releases reported as spec sheets — parameter counts, context windows, MoE architecture, memory footprints, benchmark placings — with no action attached.
+- Research papers proposing frameworks nobody has shipped.
+- Funding, org and market news.
+
+The same underlying event can be either. "Gemma 3 runs in 2GB of RAM" is a spec sheet. "You can now run a coding-capable model on a 16GB laptop, here is the command" is a technique. Report the second version or drop the item.
+
+He is technical. Do not explain what an LLM is. Do not hedge. He reads this once a day, on a phone.`;
 
 /**
  * One shared JSON-schema helper. Structured outputs reject the numeric/string
@@ -97,6 +113,16 @@ const CURATION_SCHEMA = obj({
       entities: strArray,
       models: strArray,
       importance: { type: 'integer', enum: [1, 2, 3, 4, 5] },
+      // The ranking axis. `importance` measures how consequential a story is,
+      // which is why a spec revision used to lead the digest; `actionability`
+      // measures whether the reader can do anything about it.
+      actionability: { type: 'integer', enum: [1, 2, 3, 4, 5] },
+      // The concrete thing to do, or empty. Rendering this under the TL;DR is
+      // what turns a headline into a to-do.
+      tryThis: { type: 'string' },
+      // Set when the item reports something that broke in real use. Boosted on
+      // purpose: failure reports are how the reader avoids losing a night.
+      hasFailureReport: { type: 'boolean' },
     }),
   },
 });
@@ -212,11 +238,24 @@ ${AUDIENCE}
 
 For each item you are given, decide whether it belongs in the digest, then describe it.
 
-Rules:
-- keep: false for press releases with no substance, funding announcements with no product, listicles, SEO spam, duplicate coverage of something else in the batch, and anything that is not actually about AI models, AI adoption, or AI engineering. Be a harsh editor — most of a raw feed is noise. Dropping half the batch is a normal outcome.
+Apply these filters in order. They exist because this digest has been publishing
+technically-correct, entirely useless items.
+
+1. NO VERB, NO KEEP. If you cannot name something the reader could do — a command, flag, config change, repo to clone, setting to flip, decision to revisit — set keep: false. A protocol or spec revision described in terms of its own internals always fails this.
+2. A model release is keepable ONLY with a delta he can act on: a price cut he can switch to, a license change that unblocks shipping, a deprecation that breaks him, or a capability that now fits hardware he owns. Parameter counts, context windows, architecture and benchmark placings are not deltas.
+3. Require a named artifact. Reward items naming a real repo, flag, file, endpoint or command. Drop "researchers propose a framework".
+4. Benchmarks count only with cost or hardware attached. A leaderboard position is noise; "$X per task" or "runs in 48GB" is signal.
+5. Prefer first-person operator accounts over announcements. Someone reporting what they ran, and what it cost, outranks any vendor post about the same thing.
+6. Failure reports are a POSITIVE signal. An honest "this broke after six hours and here's why" is among the most valuable things you can keep. Set hasFailureReport: true.
+7. At most ONE research paper per batch, and only if it already changed someone's tooling.
+8. Be harsh. Dropping most of a batch is the normal and correct outcome. An empty-handed batch is better than a padded one.
+
+Then describe what survives:
 - tldr: ONE sentence. What happened. No preamble, no "This article discusses". Present tense.
-- whyItMatters: at most two sentences, aimed squarely at the reader described above. Say what it changes for someone building on these models. If it genuinely doesn't matter to them, set keep: false instead of writing filler.
-- importance: 5 = drop what you're doing (a major model shipped, a license changed, something you depend on broke). 4 = read today. 3 = worth knowing. 2 = skim. 1 = marginal.
+- whyItMatters: at most two sentences. What it changes for the reader. If you cannot answer without filler, set keep: false instead.
+- tryThis: the concrete next step, imperative, one line, naming the actual command/flag/repo where there is one ("Set the router's background slot to a local Qwen"). Empty string if the item is worth knowing but has no direct action — but if tryThis is empty AND actionability is below 3, prefer keep: false.
+- actionability: 5 = there is a command in here he can run tonight. 4 = a config or workflow change he can make this week. 3 = changes a decision he is going to make. 2 = background worth carrying. 1 = nothing to do.
+- importance: how consequential the news is in itself. 5 = something he depends on broke or shipped. 1 = marginal. Keep this honest and independent of actionability — ranking uses actionability first, and a high-importance/low-actionability item is exactly what we have been over-publishing.
 - models: only concrete model names actually involved ("Hermes 4", "Claude Opus 5"). Empty array if none.
 - entities: organizations, labs, or projects. Empty array if none.
 - tags: 2-4 lowercase keywords.
@@ -270,7 +309,16 @@ Rules:
         tags: verdict.tags ?? [],
         entities: verdict.entities ?? [],
         models: verdict.models ?? [],
-        importance: verdict.importance ?? 2,
+        // Shipped binaries filter the feed on `importance` alone (>= 2 for the
+        // feed, >= 4 for "Just the signal") — they know nothing about
+        // actionability. Left untouched, a 5-actionability item the model
+        // scored 1 for importance would be hidden by the very app this change
+        // is meant to fix. So importance carries actionability as a floor until
+        // a release ships that reads the new field directly.
+        importance: Math.max(verdict.importance ?? 2, verdict.actionability ?? 1),
+        actionability: verdict.actionability ?? 1,
+        hasFailureReport: verdict.hasFailureReport ?? false,
+        ...(verdict.tryThis?.trim() ? { tryThis: verdict.tryThis.trim() } : {}),
         ...(raw.discussionUrl ? { discussionUrl: raw.discussionUrl } : {}),
         ...(raw.score ? { score: raw.score } : {}),
       });
@@ -278,7 +326,17 @@ Rules:
     console.log(`  batch ${i + 1}/${batches.length}: kept ${keptInBatch}/${batch.length}`);
   }
 
-  kept.sort((a, b) => b.importance - a.importance || (b.score ?? 0) - (a.score ?? 0));
+  // Rank on actionability first. Sorting on importance is what put "the MCP
+  // spec changed transports" at the top of the digest: maximally consequential,
+  // nothing to do about it. A failure report breaks ties upward — knowing what
+  // breaks unattended is worth more than one more thing that shipped.
+  kept.sort(
+    (a, b) =>
+      b.actionability - a.actionability ||
+      Number(b.hasFailureReport) - Number(a.hasFailureReport) ||
+      b.importance - a.importance ||
+      (b.score ?? 0) - (a.score ?? 0),
+  );
   return kept;
 }
 
@@ -295,20 +353,23 @@ ${AUDIENCE}
 
 You are given the curated items for this cycle. Write the brief.
 
-- headline: under 70 characters. The single most consequential thing that happened. A statement, not a topic label — "Hermes 4 ships with native tool-calling", not "Open model news".
-- summary: two short paragraphs. What moved and what it means for someone shipping on these models. Connect items where there's a real thread; do not manufacture one. Plain language, no bullet-speak, no "In the world of AI".
-- bullets: 3-6 lines, one per thing that actually moved. Each line stands alone and names the specific thing. No trailing periods.
+- headline: under 70 characters. The most USEFUL thing that happened, which is not always the biggest — prefer the thing the reader can act on over the thing with the largest news value. A statement, not a topic label. "Route Claude Code's background calls to a local model", not "Agent tooling news".
+- summary: two short paragraphs. What moved and what he should do about it. Lead with anything that changes how he runs his agents tonight. Connect items where there's a real thread; do not manufacture one. Plain language, no bullet-speak, no "In the world of AI".
+- bullets: 3-6 lines, one per thing worth acting on. Write them as things to do or know, naming the specific flag, tool or repo. Each line stands alone. No trailing periods.
 - signals: 2-4 directional reads on where things are heading, each grounded in the items — not vibes. direction is up/down/flat for that trend's momentum.
 - clusters: group items that are genuinely about the same development. itemIds must be ids from the input. Omit items that don't cluster — a cluster of one is not a cluster. Return an empty array if nothing clusters.
 - Ground every claim in the supplied items. No outside knowledge, no invented numbers.${query ? `\n- This run was triggered on demand with the focus: "${query}". Lead with that.` : ''}`;
 
-  const prompt = `These are the curated items from the last ${windowHours} hours, highest importance first.\n\n${JSON.stringify(
+  const prompt = `These are the curated items from the last ${windowHours} hours, most actionable first.\n\n${JSON.stringify(
     items.map(i => ({
       id: i.id,
       title: i.title,
       source: i.source,
       category: i.category,
       importance: i.importance,
+      actionability: i.actionability,
+      hasFailureReport: i.hasFailureReport,
+      tryThis: i.tryThis ?? null,
       tldr: i.tldr,
       whyItMatters: i.whyItMatters,
       models: i.models,

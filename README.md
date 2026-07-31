@@ -66,10 +66,37 @@ ANTHROPIC_API_KEY=sk-ant-… node scripts/aggregate.mjs \
 `--dry-run` is the right first move after touching a fetcher: it exercises every
 source and needs no key.
 
+### Publishing from your own machine
+
+`npm run publish:local` runs the aggregation here and pushes the result, so a
+digest doesn't have to wait for the next cron tick or burn an Actions run. It is
+the same `aggregate.mjs` the workflow runs — the script only adds the rebase,
+commit and push that otherwise live in `aggregate.yml`.
+
+```bash
+npm run publish:local:dry                       # fetch + rank, no AI, no commit
+ANTHROPIC_API_KEY=sk-ant-… npm run publish:local
+ANTHROPIC_API_KEY=sk-ant-… npm run publish:local -- --mode on-demand --query "agent harnesses"
+NO_PUSH=1 ANTHROPIC_API_KEY=sk-ant-… npm run publish:local   # commit, inspect, push yourself
+```
+
+It refuses to start without a key unless dry-running, pulls with `--rebase`
+first (the aggregator reads `manifest.json` to compute version numbers, so a
+stale checkout produces a manifest built against the wrong base), and skips the
+commit entirely when nothing changed.
+
+**On cost:** a local run bills your own key at the same rate as the hosted one —
+moving the work doesn't make it cheaper. What makes it cheaper is the model.
+Set `AGGREGATOR_MODEL=claude-sonnet-5` for local runs; the Actions *variable* of
+the same name is still unset, so every hosted run bills `claude-opus-5` at
+$5/$25 per Mtok, four times a day.
+
 ## Triggering a refresh
 
-Three ways in, all landing in the same place:
+Four ways in, all landing in the same place:
 
+- **Your laptop** — `npm run publish:local`. Same script, same commit, same
+  published result as the hosted run; it just does the work here and pushes.
 - **Cron** — every 6 hours, `00/06/12/18` UTC.
 - **Actions tab** — *Aggregate AI news* → *Run workflow*, with inputs for mode,
   query, window, and dry-run.

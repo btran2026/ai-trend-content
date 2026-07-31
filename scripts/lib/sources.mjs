@@ -435,14 +435,23 @@ export async function fetchRss(feeds, sinceMs, keywords) {
           warn(feed.name, 'parsed 0 entries (feed shape changed?)');
           return [];
         }
-        return entries
+        const picked = entries
           .filter(e => {
             // No date means we can't window it. Keep it — first-party lab posts
             // without dates are rare and usually worth seeing.
             if (!e.publishedAt) return true;
             return Date.parse(e.publishedAt) >= sinceMs;
           })
-          .filter(e => (feed.kind === 'lab' ? true : matchesKeywords(e, keywords)))
+          // `alwaysKeep` bypasses the keyword gate. Needed for the feeds we
+          // added for technique coverage: a Claude Code changelog entry reads
+          // "Fixed /resume on Windows" and matches none of our model-shaped
+          // keywords, so keyword filtering silently emptied exactly the feeds
+          // that carry the most actionable content.
+          .filter(e => (feed.kind === 'lab' || feed.alwaysKeep ? true : matchesKeywords(e, keywords)));
+
+        // Per-feed cap for chatty feeds (a commits.atom fires on every merge).
+        // Entries are newest-first, so slicing keeps the freshest.
+        return (feed.maxItems ? picked.slice(0, feed.maxItems) : picked)
           .map(e => ({
             // Feed URLs are stable identifiers; hash-free slug keeps it readable.
             id: `rss-${feed.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${e.url.replace(/[^a-z0-9]+/gi, '').slice(-24)}`,
@@ -515,7 +524,12 @@ export async function fetchAll(config, sinceMs) {
   const raw = batches.flat();
 
   // First-party announcements outrank aggregators when they collide.
-  const kindRank = { lab: 5, model: 4, repo: 3, paper: 3, news: 2, discussion: 1, other: 0 };
+  // `release` and `tooling` were missing here: an unranked kind scores 0 and
+  // always loses a dedupe collision to any other copy. `release` outranks `lab`
+  // because a changelog entry is the most precise account of what changed.
+  const kindRank = {
+    release: 6, lab: 5, model: 4, repo: 3, paper: 3, tooling: 3, news: 2, discussion: 1, other: 0,
+  };
   const byUrl = new Map();
   const byTitle = new Map();
 
@@ -558,12 +572,35 @@ export async function fetchAll(config, sinceMs) {
 }
 
 /**
+ * How much of the candidate set any one kind may occupy.
+ *
+ * Without this, GitHub wins everything. A repo's `score` is its star count, so
+ * the engagement term saturates at 40 for anything over ~150 stars, while a
+ * changelog entry or a blog post has no score at all and starts from 0. Measured
+ * on a real run: 58 of the top 70 were GitHub repos and not one release-feed or
+ * newsletter item survived — the feeds carrying the actual techniques were
+ * fetched and then discarded. Kinds absent here are uncapped, because they're
+ * the scarce ones we're protecting.
+ */
+const KIND_QUOTA = { repo: 0.3, discussion: 0.25, paper: 0.05 };
+
+/**
  * Heuristic pre-rank so we only pay AI tokens for plausible candidates.
  * Cheap signals only: engagement score, first-party-ness, recency, keyword hits.
+ *
+ * Ranking is by score, but selection is quota'd per kind so one high-volume,
+ * high-score source can't crowd out every other kind. Leftover slots are
+ * backfilled by score, so a quiet day still returns a full set.
  */
 export function preRank(items, keywords, limit) {
   const now = Date.now();
-  const kindBoost = { lab: 30, model: 20, repo: 12, paper: 12, news: 8, discussion: 4, other: 0 };
+  // Mirrors kindRank's ordering. `release` leads and `paper` is demoted below
+  // `news`: a changelog entry names a flag you can set tonight, a preprint
+  // almost never does. `tooling` was absent entirely, which scored the Ollama
+  // feed at 0 and kept it out of every run's top 70.
+  const kindBoost = {
+    release: 34, lab: 30, model: 20, tooling: 16, repo: 12, news: 8, paper: 5, discussion: 4, other: 0,
+  };
 
   const scored = items.map(item => {
     let s = 0;
@@ -577,5 +614,32 @@ export function preRank(items, keywords, limit) {
   });
 
   scored.sort((a, b) => b.s - a.s);
-  return scored.slice(0, limit).map(x => x.item);
+
+  const caps = new Map(
+    Object.entries(KIND_QUOTA).map(([kind, share]) => [kind, Math.max(1, Math.floor(limit * share))]),
+  );
+  const used = new Map();
+  const picked = [];
+  const deferred = [];
+
+  for (const entry of scored) {
+    if (picked.length >= limit) break;
+    const kind = entry.item.sourceKind;
+    const cap = caps.get(kind);
+    const n = used.get(kind) ?? 0;
+    if (cap !== undefined && n >= cap) {
+      deferred.push(entry);
+      continue;
+    }
+    used.set(kind, n + 1);
+    picked.push(entry);
+  }
+
+  // Backfill in score order — an under-supplied day should still fill the set.
+  for (const entry of deferred) {
+    if (picked.length >= limit) break;
+    picked.push(entry);
+  }
+
+  return picked.map(x => x.item);
 }
