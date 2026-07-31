@@ -1,0 +1,1029 @@
+{
+  "id": "2026-07-31",
+  "kind": "scheduled",
+  "generatedAt": "2026-07-31T02:25:37.663Z",
+  "triggeredBy": "cron",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "GPT-5.6 ships as cost/routing tooling swarms around coding agents",
+    "summary": "OpenAI's GPT-5.6 update leads with price-performance gains on enterprise tiers (Luna, Terra), and a companion post shows two API flags — retaining reasoning and enabling context compaction — triple ARC-AGI-3 scores, which is worth testing against any long-horizon agent workload you're running today. On the open side, turbo-fieldfare gets Gemma 4 26B-A4B inferencing in ~2GB RAM on any M-series Mac, a meaningful drop in the bar for viable on-device deployment.\n\nThe bigger pattern is cost/routing infrastructure converging from three directions at once: pilotfish splits Claude Code into a frontier planner plus cheap executors with a verification guard, Tokenless (YC S26) does turn-by-turn model switching to cut spend, and opencodex lets you swap any backend into Codex or Claude Code without rewriting your harness. All three are solving the same problem — don't pay frontier prices for execution — and are worth stealing patterns from regardless of which you adopt. Meanwhile a published timeline of a July 2026 frontier-lab agent intrusion, plus new red-teaming (T3MP3ST) and honeypot tooling, is a reminder that privileged tool-execution agents are now a real attack surface, not a hypothetical one.",
+    "bullets": [
+      "GPT-5.6 ships with lower pricing on enterprise Luna/Terra tiers",
+      "Retaining reasoning + context compaction triples GPT-5.6's ARC-AGI-3 score",
+      "turbo-fieldfare runs Gemma 4 26B-A4B in ~2GB RAM on any M-series Mac",
+      "pilotfish, Tokenless, and opencodex all launch multi-model cost-routing layers for coding agents this cycle",
+      "Timeline published on a July 2026 frontier-lab agent intrusion; T3MP3ST red-teaming and an LLM honeypot both surface in parallel",
+      "Distilling DeepSeek V4 Flash into GPT-OSS-120B beats Kimi K3 on FinanceReasoning without transferring the teacher's censorship tuning"
+    ],
+    "signals": [
+      {
+        "label": "On-device open-model efficiency",
+        "direction": "up",
+        "note": "Gemma 4 26B-A4B now fits in ~2GB RAM on consumer Apple silicon via turbo-fieldfare"
+      },
+      {
+        "label": "Multi-model cost/routing tooling",
+        "direction": "up",
+        "note": "pilotfish, Tokenless, and opencodex all shipped plan/execute-split or dynamic-routing layers in the same cycle"
+      },
+      {
+        "label": "Agent security scrutiny",
+        "direction": "up",
+        "note": "A frontier-lab intrusion postmortem lands alongside new autonomous red-teaming (T3MP3ST) and honeypot projects"
+      },
+      {
+        "label": "Closed frontier pricing",
+        "direction": "flat",
+        "note": "GPT-5.6 is an incremental price-performance move on existing GPT-5.x tiers, not a capability leap"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "turbo-fieldfare runs Gemma 4 26B-A4B inference in roughly 2 GB of RAM on any M-series MacBook.",
+      "whyItMatters": "A drastic memory-footprint reduction for a capable open model makes local on-device deployment on consumer hardware genuinely viable.",
+      "category": "open-models",
+      "tags": [
+        "gemma",
+        "on-device",
+        "quantization",
+        "macbook"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "models": [
+        "Gemma 4 26B-A4B"
+      ],
+      "importance": 4,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49098510",
+      "score": 2089
+    },
+    {
+      "id": "gh-1293473664",
+      "title": "Nanako0129/pilotfish — Multi-model orchestration layer for Claude Code — the frontier model plans, cheaper models execute, verification guards quality. One-prompt install.",
+      "url": "https://github.com/Nanako0129/pilotfish",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-08T10:53:34Z",
+      "tldr": "pilotfish adds a multi-model orchestration layer to Claude Code where a frontier model plans and cheaper models execute, with a verification guard.",
+      "whyItMatters": "Directly addresses cost/latency control in agentic coding — a plan/execute/verify split with cheaper execution models is a pattern worth stealing for production agent pipelines.",
+      "category": "agentic",
+      "tags": [
+        "orchestration",
+        "cost-optimization",
+        "claude-code"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "score": 548
+    },
+    {
+      "id": "hn-49098466",
+      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Timeline of the July 2026 Incident",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T15:01:52Z",
+      "tldr": "A detailed timeline reconstructs a July 2026 security incident involving an intrusion via a frontier lab's agent.",
+      "whyItMatters": "A concrete agent-security failure case study is essential reading for anyone giving agents privileged access or tool execution in production.",
+      "category": "research",
+      "tags": [
+        "security",
+        "agent-safety",
+        "incident"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49098466",
+      "score": 140
+    },
+    {
+      "id": "rss-openai-ormancefrontierwithgpt56",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "tldr": "OpenAI ships GPT-5.6, pushing the price-performance frontier with lower pricing for enterprise-tier variants (Luna and Terra).",
+      "whyItMatters": "A pricing/efficiency update to a frontier model directly affects cost calculus for any production app running on the GPT-5.x line.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "gpt-5",
+        "enterprise"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-5.6"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "rss-openai-stripledourarcagi3scores",
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-29T15:00:00.000Z",
+      "tldr": "OpenAI shows two API settings—retaining reasoning and enabling context compaction—tripled GPT-5.6's ARC-AGI-3 benchmark scores.",
+      "whyItMatters": "A concrete, actionable API-level tuning insight for anyone running long-horizon reasoning tasks on GPT-5.6; worth testing against your own agentic workloads immediately.",
+      "category": "agentic",
+      "tags": [
+        "benchmark",
+        "reasoning",
+        "context-management"
+      ],
+      "entities": [
+        "OpenAI",
+        "ARC-AGI-3"
+      ],
+      "models": [
+        "GPT-5.6"
+      ],
+      "importance": 4
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a universal provider proxy letting Codex CLI/App/SDK and Claude Code route to any LLM backend including Claude, Gemini, Grok, DeepSeek, and Ollama.",
+      "whyItMatters": "Removes vendor lock-in from Codex and Claude Code tooling, useful if you want to swap models per-task without rewriting your agent harness.",
+      "category": "tooling",
+      "tags": [
+        "proxy",
+        "multi-model",
+        "codex",
+        "claude-code"
+      ],
+      "entities": [
+        "OpenAI Codex",
+        "Claude Code"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 3,
+      "score": 5951
+    },
+    {
+      "id": "gh-1287460663",
+      "title": "elder-plinius/T3MP3ST — autonomous red teaming platform; multi-agent offensive-security meta-harness",
+      "url": "https://github.com/elder-plinius/T3MP3ST",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-02T17:53:55Z",
+      "tldr": "T3MP3ST is an open-source autonomous multi-agent red-teaming platform for offensive security testing.",
+      "whyItMatters": "High-engagement project showing agentic tooling maturing into adversarial/security testing — relevant for anyone needing to stress-test their own AI-integrated systems.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "red-team",
+        "multi-agent"
+      ],
+      "entities": [
+        "elder-plinius"
+      ],
+      "models": [],
+      "importance": 3,
+      "score": 5313
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway connecting 1,000+ SaaS providers to AI agents via SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "whyItMatters": "Solves the tedious auth/integration layer for tool-calling agents at scale, directly relevant to MCP ecosystem build-out.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations"
+      ],
+      "entities": [
+        "MCP"
+      ],
+      "models": [],
+      "importance": 3,
+      "score": 3586
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "The Fable Method distills the workflow behind Claude Fable 5 into portable skills any model can run, with an eval to keep outputs honest.",
+      "whyItMatters": "Reusable think/act/prove pattern that's model-agnostic could be a useful agentic scaffolding to borrow directly.",
+      "category": "agentic",
+      "tags": [
+        "workflow",
+        "skills",
+        "eval"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 3,
+      "score": 1973
+    },
+    {
+      "id": "gh-1284959612",
+      "title": "HUANGCHIHHUNGLeo/claude-real-video — Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-30T10:55:02Z",
+      "tldr": "claude-real-video gives any LLM the ability to actually process video via scene-aware deduplicated frames plus transcript, running locally.",
+      "whyItMatters": "Practical local-first multimodal input pipeline you could bolt onto any model that lacks native video support.",
+      "category": "tooling",
+      "tags": [
+        "multimodal",
+        "video",
+        "local"
+      ],
+      "entities": [],
+      "models": [
+        "Claude"
+      ],
+      "importance": 3,
+      "score": 1904
+    },
+    {
+      "id": "gh-1282650900",
+      "title": "deer-flow/llm-space — A desktop app to prototype agent ideas, inspect every harness step, replay failures, and evaluate performance, all in one place. Local-first, cloud-ready for managed agents.",
+      "url": "https://github.com/deer-flow/llm-space",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-28T03:39:34Z",
+      "tldr": "llm-space is a local-first desktop app to prototype agents, inspect every harness step, replay failures, and evaluate performance.",
+      "whyItMatters": "Directly addresses agentic debugging/eval pain points at the harness level, which is where most production agent failures actually occur.",
+      "category": "tooling",
+      "tags": [
+        "debugging",
+        "eval",
+        "harness"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 1423
+    },
+    {
+      "id": "gh-1278926400",
+      "title": "amplifthq/opentag — Open-source @agent mentions for Slack and GitHub. OpenTag routes tagged requests to Codex, Claude Code, then returns results in thread.",
+      "url": "https://github.com/amplifthq/opentag",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-24T08:05:12Z",
+      "tldr": "OpenTag is an open-source Slack/GitHub @mention router that dispatches tagged requests to Codex or Claude Code and posts results back in-thread.",
+      "whyItMatters": "Practical pattern for embedding coding agents into existing team chat/issue workflows without building custom orchestration from scratch.",
+      "category": "agentic",
+      "tags": [
+        "slack",
+        "github",
+        "codex",
+        "claude-code"
+      ],
+      "entities": [
+        "Codex",
+        "Claude Code"
+      ],
+      "models": [
+        "Codex",
+        "Claude Code"
+      ],
+      "importance": 3,
+      "score": 1378
+    },
+    {
+      "id": "gh-1280990105",
+      "title": "lycorp-jp/sim-use — Give your AI agent eyes and hands on iOS Simulator and Android emulator/devices.",
+      "url": "https://github.com/lycorp-jp/sim-use",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-26T05:59:56Z",
+      "tldr": "sim-use gives AI agents direct control of iOS Simulator and Android emulators/devices for mobile computer-use tasks.",
+      "whyItMatters": "Extends agentic computer-use beyond desktop/browser into mobile testing and automation, useful for QA and app-agent pipelines.",
+      "category": "agentic",
+      "tags": [
+        "computer-use",
+        "mobile",
+        "ios",
+        "android"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 1131
+    },
+    {
+      "id": "gh-1296107475",
+      "title": "William-Lu-stack/Flawless — AI SRE AgenticOps for Kubernetes and cloud infrastructure.",
+      "url": "https://github.com/William-Lu-stack/Flawless",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-10T05:57:02Z",
+      "tldr": "Flawless is an AI SRE agentic-ops system for automated Kubernetes and cloud infrastructure operations.",
+      "whyItMatters": "Concrete example of multi-agent systems being applied to production infra ops — worth evaluating if you run k8s at scale and want AI-driven incident response.",
+      "category": "use-cases",
+      "tags": [
+        "sre",
+        "kubernetes",
+        "agentops"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 857
+    },
+    {
+      "id": "gh-1272859739",
+      "title": "databufflabs/databuff — AI-native OpenTelemetry APM with multi-agent root-cause analysis across traces, metrics, and service topology",
+      "url": "https://github.com/databufflabs/databuff",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T02:06:27Z",
+      "tldr": "databuff is an AI-native OpenTelemetry APM using multi-agent root-cause analysis across traces, metrics, and service topology.",
+      "whyItMatters": "Another concrete production use case pairing multi-agent reasoning with observability data — useful if you're building or buying AIOps tooling.",
+      "category": "use-cases",
+      "tags": [
+        "observability",
+        "apm",
+        "multi-agent"
+      ],
+      "entities": [
+        "OpenTelemetry"
+      ],
+      "models": [],
+      "importance": 3,
+      "score": 455
+    },
+    {
+      "id": "hn-49104117",
+      "title": "LLM Honeypot",
+      "url": "https://llm2human.pages.dev/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T22:51:03Z",
+      "tldr": "A project builds an LLM-based honeypot to attract and study malicious probing behavior.",
+      "whyItMatters": "Novel security application worth tracking as attackers increasingly probe systems with automated/LLM-driven tooling.",
+      "category": "use-cases",
+      "tags": [
+        "security",
+        "honeypot"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49104117",
+      "score": 375
+    },
+    {
+      "id": "gh-1276595002",
+      "title": "NotASithLord/peerd — The first AI agent harness native to the browser. A browser extension that runs a full agent loop where you already work: it drives your tabs, spins up sandboxed compute (JS notebooks, WASM Linux VMs, client-side apps),",
+      "url": "https://github.com/NotASithLord/peerd",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-22T05:55:13Z",
+      "tldr": "peerd is a browser-extension agent harness that runs a full agent loop natively in-browser with sandboxed compute, BYOK, and no backend.",
+      "whyItMatters": "Points to a trend of local-first, no-telemetry agent runtimes living directly in the browser rather than server-side orchestration — relevant if you're evaluating deployment models for agents.",
+      "category": "agentic",
+      "tags": [
+        "browser",
+        "byok",
+        "sandbox",
+        "local-first"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 370
+    },
+    {
+      "id": "gh-1302289233",
+      "title": "bbarit/bbarit-agent-oss — Open-source AI coding agent for your terminal — one Rust binary, 15+ LLM providers, 1,000+ models. A self-hostable Claude Code / Codex CLI alternative (MIT).",
+      "url": "https://github.com/bbarit/bbarit-agent-oss",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-16T04:00:27Z",
+      "tldr": "bbarit-agent-oss is a single-binary Rust terminal coding agent supporting 15+ LLM providers and 1,000+ models as a self-hostable Claude Code/Codex alternative.",
+      "whyItMatters": "Another entrant in the self-hosted coding-agent space giving you provider flexibility without SaaS lock-in.",
+      "category": "tooling",
+      "tags": [
+        "coding-agent",
+        "self-hosted",
+        "rust"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "score": 123
+    },
+    {
+      "id": "hn-49113599",
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T18:13:06Z",
+      "tldr": "Team distills DeepSeek V4 Flash into GPT-OSS-120B for finance tasks, beating Kimi K3 on FinanceReasoning, and finds censorship characteristics don't transfer through distillation.",
+      "whyItMatters": "If distillation doesn't carry over a teacher model's censorship/safety tuning, that changes how you think about using restricted-origin models as teachers for open-weight production models.",
+      "category": "research",
+      "tags": [
+        "distillation",
+        "censorship",
+        "finance",
+        "open-weights"
+      ],
+      "entities": [
+        "DeepSeek",
+        "GPT-OSS"
+      ],
+      "models": [
+        "DeepSeek V4 Flash",
+        "GPT-OSS-120B",
+        "Kimi K3"
+      ],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49113599",
+      "score": 85
+    },
+    {
+      "id": "hn-49105563",
+      "title": "Kuna: Decompiler Development in the Age of Coding Agents",
+      "url": "https://noelo.org/blog/kuna-release/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T02:41:16Z",
+      "tldr": "HN discussion on how coding agents are reshaping decompiler development, using Kuna as a case study.",
+      "whyItMatters": "Practitioner perspective on applying coding agents to a genuinely hard, ambiguous reverse-engineering domain — useful signal on where agentic coding actually holds up.",
+      "category": "agentic",
+      "tags": [
+        "coding-agents",
+        "decompilation",
+        "practitioner"
+      ],
+      "entities": [
+        "Kuna"
+      ],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49105563",
+      "score": 75
+    },
+    {
+      "id": "hn-49099143",
+      "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+      "url": "https://usetokenless.com/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-29T15:55:27Z",
+      "tldr": "YC-backed Tokenless launches an API gateway that dynamically switches models turn-by-turn across an agent conversation to cut AI spend.",
+      "whyItMatters": "Directly addresses a real pain point—runaway token costs at companies like Uber and Salesforce—by routing traffic to cheaper models when quality allows, relevant if you're managing multi-model cost/latency tradeoffs.",
+      "category": "tooling",
+      "tags": [
+        "cost-optimization",
+        "api-gateway",
+        "model-routing"
+      ],
+      "entities": [
+        "Tokenless",
+        "YC"
+      ],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49099143",
+      "score": 69
+    },
+    {
+      "id": "hn-49108542",
+      "title": "You can't solve computer use by ignoring the interface",
+      "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T11:28:51Z",
+      "tldr": "An essay argues that computer-use agents can't succeed while ignoring the underlying interface design problem.",
+      "whyItMatters": "Substantive practitioner critique relevant to anyone building computer-use/GUI agents — worth reading before investing further in screen-based agent approaches.",
+      "category": "agentic",
+      "tags": [
+        "computer-use",
+        "interface",
+        "critique"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49108542",
+      "score": 68
+    },
+    {
+      "id": "hn-49104747",
+      "title": "Show HN: A local merge queue for parallel Claude Code agents",
+      "url": "https://github.com/funador/claude-code-merge-queue",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T00:20:16Z",
+      "tldr": "A developer built a local merge queue that serializes and tests commits from 4-5 parallel Claude Code agents running on a single MacBook Air.",
+      "whyItMatters": "Shows a concrete pattern for taming multi-agent coding at scale on constrained hardware without burning CI minutes—useful if you're running parallel coding agents in production.",
+      "category": "agentic",
+      "tags": [
+        "multi-agent",
+        "claude-code",
+        "ci-cd",
+        "tooling"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 3,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49104747",
+      "score": 41
+    },
+    {
+      "id": "rss-google-deepmind-eepmindgeminiroboticser2",
+      "title": "Introducing Gemini Robotics ER 2",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/",
+      "source": "Google DeepMind",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T15:00:00.000Z",
+      "tldr": "Google DeepMind releases Gemini Robotics ER 2, improving video understanding, tool orchestration, and multi-robot collaboration.",
+      "whyItMatters": "If you're building on Gemini for embodied/robotics or multi-agent tool orchestration, this is a direct capability upgrade to evaluate against your current stack.",
+      "category": "closed-models",
+      "tags": [
+        "robotics",
+        "multimodal",
+        "orchestration"
+      ],
+      "entities": [
+        "Google DeepMind"
+      ],
+      "models": [
+        "Gemini Robotics ER 2"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "rss-google-research-meworkviachainofevidence",
+      "title": "Science One Framework: A verifiable autonomous research framework via Chain-of-Evidence",
+      "url": "https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/",
+      "source": "Google Research",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T20:36:36.000Z",
+      "tldr": "Google Research introduces Science One, a verifiable autonomous research framework using a Chain-of-Evidence approach.",
+      "whyItMatters": "Relevant if you need auditable, verifiable outputs from autonomous research agents rather than opaque chain-of-thought — a pattern applicable to any high-stakes agentic pipeline.",
+      "category": "research",
+      "tags": [
+        "verifiability",
+        "agents",
+        "research"
+      ],
+      "entities": [
+        "Google Research"
+      ],
+      "models": [],
+      "importance": 3
+    },
+    {
+      "id": "arxiv-2607.28282",
+      "title": "(Towards) Scalable Reliable Automated Evaluation with Large Language Models",
+      "url": "https://arxiv.org/abs/2607.28282v1",
+      "source": "arXiv cs.CL",
+      "sourceKind": "paper",
+      "publishedAt": "2026-07-30T14:31:07.000Z",
+      "tldr": "A new framework uses pairwise LLM comparisons to approximate expert-level evaluation of LLM outputs without reference standards.",
+      "whyItMatters": "Relevant to anyone building eval pipelines for agentic systems where ground-truth references aren't available—worth checking if it beats current LLM-as-judge setups.",
+      "category": "research",
+      "tags": [
+        "evals",
+        "llm-as-judge",
+        "benchmarking"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3
+    },
+    {
+      "id": "gh-1301140808",
+      "title": "img2threejs/img2threejs — Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+      "url": "https://github.com/img2threejs/img2threejs",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-15T02:58:39Z",
+      "tldr": "img2threejs generates procedural, animation-ready Three.js code from a single reference image instead of raw 3D mesh data.",
+      "whyItMatters": "A token-efficient image-to-3D pipeline via code generation is a cheaper alternative to diffusion-based 3D asset gen for product teams needing web-native 3D content.",
+      "category": "tooling",
+      "tags": [
+        "3d",
+        "image-to-code",
+        "threejs"
+      ],
+      "entities": [
+        "img2threejs"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 8569
+    },
+    {
+      "id": "gh-1288402762",
+      "title": "synthetic-sciences/openscience — The open-source AI workbench for scientific research",
+      "url": "https://github.com/synthetic-sciences/openscience",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T15:06:45Z",
+      "tldr": "openscience is an open-source AI workbench for scientific research with strong early traction (~3k stars).",
+      "whyItMatters": "Worth tracking as a candidate open framework for AI-assisted research workflows if you're building tools for scientific/technical domains.",
+      "category": "tooling",
+      "tags": [
+        "research",
+        "workbench",
+        "open-source"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 2969
+    },
+    {
+      "id": "gh-1305663861",
+      "title": "Vincentwei1021/video-shotcraft — AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 106 shot recipe cards, 161 motion previews, a production-ready template",
+      "url": "https://github.com/Vincentwei1021/video-shotcraft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-19T11:44:41Z",
+      "tldr": "New open-source skill package lets Claude Code and Codex generate cinematic product videos via Remotion with 106 shot templates.",
+      "whyItMatters": "Shows agent coding tools expanding into structured creative/video production pipelines, a niche but growing agentic use case.",
+      "category": "tooling",
+      "tags": [
+        "video",
+        "claude-code",
+        "codex",
+        "remotion"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Remotion"
+      ],
+      "models": [
+        "Claude Code",
+        "Codex"
+      ],
+      "importance": 2,
+      "score": 2891
+    },
+    {
+      "id": "gh-1273015953",
+      "title": "shy3130/tickflow-stock-panel — TSP自托管、零运维的 A 股「选股 + 监控 + 回测」量化工作台 | 基于 TickFlow 数据源  | LLM能力驱使策略定制+个股分析+复盘 | 自由接入第三方数据源与个性化扩展数据 | 个人开源 ,非TickFlow官方项目",
+      "url": "https://github.com/shy3130/tickflow-stock-panel",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T06:18:29Z",
+      "tldr": "A self-hosted quant workbench for Chinese A-share stocks adds LLM-driven strategy customization, stock analysis, and backtest review.",
+      "whyItMatters": "Concrete example of LLMs embedded into a domain-specific trading workflow, illustrative of real-world adoption patterns beyond chatbots.",
+      "category": "use-cases",
+      "tags": [
+        "quant",
+        "finance",
+        "self-hosted"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "score": 2426
+    },
+    {
+      "id": "gh-1274399536",
+      "title": "sums001/Windows-Copilot-API — Reverse engineered Windows Copilot into an OpenAI-compatible API. Access GPT-4 and GPT-5 models through a simple REST interface without API keys or billing.",
+      "url": "https://github.com/sums001/Windows-Copilot-API",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-19T13:24:44Z",
+      "tldr": "A reverse-engineered wrapper exposes Windows Copilot as an OpenAI-compatible REST API, claiming free access to GPT-4/GPT-5 without API keys.",
+      "whyItMatters": "Legally shaky and likely to get shut down, but signals how much demand exists for cheap GPT-5 access — don't build production dependencies on it.",
+      "category": "tooling",
+      "tags": [
+        "reverse-engineering",
+        "gpt-5",
+        "api"
+      ],
+      "entities": [
+        "Microsoft",
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-4",
+        "GPT-5"
+      ],
+      "importance": 2,
+      "score": 1176
+    },
+    {
+      "id": "gh-1287804060",
+      "title": "aipoch/open-science — Open Science is an open-source, local-first, model-agnostic AI research workbench for scientific discovery.",
+      "url": "https://github.com/aipoch/open-science",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T02:50:10Z",
+      "tldr": "Open Science is a local-first, model-agnostic AI research workbench for scientific discovery.",
+      "whyItMatters": "A self-hostable, model-agnostic research agent framework is relevant if you're building on-prem agentic research tooling without lock-in to one model provider.",
+      "category": "tooling",
+      "tags": [
+        "research",
+        "local-first",
+        "agents"
+      ],
+      "entities": [
+        "aipoch"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 1165
+    },
+    {
+      "id": "gh-1288102626",
+      "title": "ai4s-research/open-science — Open Science Desktop — local-first, model-agnostic AI research workbench for macOS, Windows & Linux. Open-source Claude Science desktop alternative built on Tauri + MCP + agent skills.",
+      "url": "https://github.com/ai4s-research/open-science",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T09:22:31Z",
+      "tldr": "Open Science Desktop is a local-first, model-agnostic research workbench built on Tauri + MCP + agent skills, positioned as an open alternative to Claude's science desktop.",
+      "whyItMatters": "Another data point in the trend of open, self-hosted alternatives to closed vendor agent products built on MCP.",
+      "category": "tooling",
+      "tags": [
+        "research",
+        "mcp",
+        "local-first"
+      ],
+      "entities": [
+        "Claude"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 1037
+    },
+    {
+      "id": "gh-1296366949",
+      "title": "nexu-io/codex-slides — 🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode renders every page in parallel. 🔍 Watch the whole chain live: r",
+      "url": "https://github.com/nexu-io/codex-slides",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-10T10:14:34Z",
+      "tldr": "codex-slides is an open-source AI slide generator built inside Codex that renders full visual decks in minutes via a research→outline→render pipeline.",
+      "whyItMatters": "Shows a concrete multi-stage agentic pipeline (research, style, parallel render, export) built on Codex that's a useful reference architecture for content-generation agents.",
+      "category": "agentic",
+      "tags": [
+        "codex",
+        "agentic-pipeline",
+        "content-gen"
+      ],
+      "entities": [
+        "nexu-io",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 730
+    },
+    {
+      "id": "gh-1301824521",
+      "title": "YoanWai/agent-manager — Terminal UI to manage AI coding-agent sessions (Claude Code, OpenCode, Codex, Grok Build) in tmux: live status, group tree, live pane preview, resource gauges.",
+      "url": "https://github.com/YoanWai/agent-manager",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-15T16:27:33Z",
+      "tldr": "agent-manager is a tmux-based terminal UI to manage multiple AI coding-agent sessions (Claude Code, OpenCode, Codex, Grok Build) with live status and resource gauges.",
+      "whyItMatters": "Useful ops layer if you're running several coding agents in parallel and need visibility into what each is doing.",
+      "category": "tooling",
+      "tags": [
+        "tmux",
+        "coding-agent",
+        "devtools"
+      ],
+      "entities": [
+        "Claude Code",
+        "OpenCode",
+        "Codex",
+        "Grok"
+      ],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49107749",
+      "score": 174
+    },
+    {
+      "id": "gh-1299827099",
+      "title": "blitzdotdev/blitzos — BlitzOS allows cloud agents to boot already knowing your work, and keep working with your laptop closed",
+      "url": "https://github.com/blitzdotdev/blitzos",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-13T23:44:04Z",
+      "tldr": "BlitzOS lets cloud agents boot with full context of your work and keep operating while your laptop is closed.",
+      "whyItMatters": "Addresses a real pain point in agentic coding workflows — persistent, laptop-independent agent state — worth evaluating for long-running dev agents.",
+      "category": "agentic",
+      "tags": [
+        "cloud-agents",
+        "persistence",
+        "dev-tools"
+      ],
+      "entities": [
+        "blitzdotdev"
+      ],
+      "models": [],
+      "importance": 2,
+      "score": 143
+    },
+    {
+      "id": "hn-49109721",
+      "title": "Launch HN: Prized (YC S26) – Let non-engineer staff build secure internal tools",
+      "url": "https://prized.dev",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T13:29:03Z",
+      "tldr": "YC-backed Prized lets non-engineer staff describe and generate full-stack internal tools wired to company data behind existing SSO, without exposing API keys.",
+      "whyItMatters": "Signals the low-code/no-code internal-tooling wedge maturing around LLM code generation with proper access control — a competitive space if you build dev tooling.",
+      "category": "business",
+      "tags": [
+        "yc",
+        "internal-tools",
+        "no-code"
+      ],
+      "entities": [
+        "Prized"
+      ],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49109721",
+      "score": 68
+    },
+    {
+      "id": "hn-49108778",
+      "title": "Go LLM SDK for streaming, tool-calling AI backends (plus frontend React lib)",
+      "url": "https://github.com/grafana/ai-sdk",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T11:55:39Z",
+      "tldr": "A new Go SDK handles streaming and tool-calling for LLM backends, paired with a React frontend library.",
+      "whyItMatters": "Fills a gap for Go-based backends wanting native streaming/tool-calling support instead of wrapping Python SDKs.",
+      "category": "tooling",
+      "tags": [
+        "sdk",
+        "go",
+        "streaming",
+        "tool-calling"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49108778",
+      "score": 56
+    },
+    {
+      "id": "hn-49111019",
+      "title": "Show HN: Claude-account – switch Claude Code accounts without logging in again",
+      "url": "https://github.com/hamzarehmandeveloper/claude-account",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T14:58:59Z",
+      "tldr": "A small CLI lets developers switch between multiple Claude Code accounts without repeated login flows.",
+      "whyItMatters": "Minor but genuinely useful quality-of-life fix if you run separate work/personal Claude Code sessions.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "cli",
+        "devtools"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 2,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49111019",
+      "score": 47
+    },
+    {
+      "id": "rss-hugging-face-blog-logDharmaAIgpumanagement",
+      "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+      "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+      "source": "Hugging Face Blog",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T15:09:09.000Z",
+      "tldr": "Hugging Face blog argues idle GPUs are as wasteful as grounded aircraft and covers GPU management/utilization strategy.",
+      "whyItMatters": "Direct relevance to anyone self-hosting open models — GPU utilization strategy is a real cost lever, though the post is more opinion than new tooling.",
+      "category": "tooling",
+      "tags": [
+        "gpu",
+        "infrastructure",
+        "cost"
+      ],
+      "entities": [
+        "Hugging Face"
+      ],
+      "models": [],
+      "importance": 2
+    },
+    {
+      "id": "rss-openai-psopenaicomindexavatarin",
+      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
+      "url": "https://openai.com/index/avatarin",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "tldr": "Retail company avatarin deployed a 24/7 multilingual shopping agent on GPT-Realtime, handling 30,000 users in two weeks with 92% positive feedback.",
+      "whyItMatters": "A concrete production deployment metric for GPT-Realtime in a customer-facing voice/chat agent—useful benchmark if you're evaluating realtime API for similar use cases.",
+      "category": "use-cases",
+      "tags": [
+        "gpt-realtime",
+        "retail",
+        "voice-agent"
+      ],
+      "entities": [
+        "OpenAI",
+        "avatarin",
+        "Yamada Denki"
+      ],
+      "models": [
+        "GPT-Realtime"
+      ],
+      "importance": 2
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "GPT-5.6 release and tuning insight",
+      "summary": "OpenAI's GPT-5.6 pricing update is paired with a concrete API-level finding — retaining reasoning and enabling context compaction triples ARC-AGI-3 scores.",
+      "itemIds": [
+        "rss-openai-ormancefrontierwithgpt56",
+        "rss-openai-stripledourarcagi3scores"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Multi-model cost and routing tooling",
+      "summary": "Three separate projects this cycle attack the same problem: routing cheaper models into frontier-model-orchestrated coding agent workflows to cut cost without rewriting harnesses.",
+      "itemIds": [
+        "gh-1293473664",
+        "hn-49099143",
+        "gh-1273824907"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Agent security: intrusions, red-teaming, honeypots",
+      "summary": "A postmortem on a real frontier-lab agent intrusion arrives alongside new offensive-security tooling built specifically to stress-test agentic systems.",
+      "itemIds": [
+        "hn-49098466",
+        "gh-1287460663",
+        "hn-49104117"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Open-source AI research workbenches",
+      "summary": "Two nearly identically named open-source, local-first, model-agnostic research workbenches both launched, both positioned as open alternatives to closed vendor science tools.",
+      "itemIds": [
+        "gh-1287804060",
+        "gh-1288102626"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 36896,
+    "outputTokens": 18014,
+    "usd": 0.3809,
+    "model": "claude-sonnet-5",
+    "calls": 6
+  },
+  "contentVersion": 1
+}
