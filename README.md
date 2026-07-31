@@ -81,10 +81,25 @@ always has the key, so the hosted path is unchanged.
 | `AI_BACKEND` | When | Notes |
 | --- | --- | --- |
 | `api` | auto when `ANTHROPIC_API_KEY` is set | Real structured outputs, refusal fallback. What cron uses. |
-| `cli` | auto when it isn't | Subscription-billed. No `json_schema` on the CLI, so the schema is embedded in the prompt and the reply is parsed defensively. |
+| `cli` | auto when it isn't | `claude -p`, subscription-billed. No `json_schema` on the CLI, so the schema is embedded in the prompt and the reply is parsed defensively. |
+| `copilot` | explicit only | `copilot -p` on your GitHub Copilot subscription. Opens up the GPT-5.6 / Gemini tiers, e.g. `AI_BACKEND=copilot AGGREGATOR_MODEL=gpt-5.6-sol`. |
 
-Set `AI_BACKEND` explicitly to override, and `CLAUDE_BIN` if `claude` isn't on
-your `PATH`.
+Set `AI_BACKEND` explicitly to override, and `CLAUDE_BIN` / `COPILOT_BIN` if the
+binaries aren't on your `PATH`.
+
+The Copilot path differs in three ways worth knowing. It **writes its JSON to a
+file** rather than stdout, because Copilot narrates and that narration is not
+reliably separable from the payload. It runs `--allow-tool write --deny-tool
+shell` — the only legitimate side effect of a text transform is creating one
+file, and an unattended run must not be able to execute anything. And it
+**retries 3×**: `Model "…" is not available` turns out to be transient, and the
+same slug that fails one call answers the next.
+
+Measured availability on this account (the CLI has no list command, so this was
+probed): `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`, `gpt-5.5`, `gpt-5.4`,
+`gpt-5.3-codex`, `gpt-5.4-mini`, `gpt-5-mini`, `gemini-3.5-flash`,
+`claude-sonnet-4.5`, `auto` all work. `gemini-3.1-pro` and `mai-code-1-flash`
+are **not** available.
 
 The CLI path runs with `--system-prompt` (replacing Claude Code's coding-agent
 prompt), `--allowed-tools ""` and `--strict-mcp-config` — it's a text transform
