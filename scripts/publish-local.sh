@@ -24,11 +24,18 @@ cd "$(dirname "$0")/.."
 # Load .env if present (gitignored). Lets you set the key once instead of
 # prefixing every invocation — and keeps it out of your shell history.
 #   printf 'ANTHROPIC_API_KEY=sk-ant-…\nAGGREGATOR_MODEL=claude-sonnet-5\n' > .env
+#
+# The caller wins. `set -a; . ./.env` would clobber variables the caller passed,
+# which silently overrode the model chosen in the Preflight AI News dashboard:
+# you picked Opus, .env said sonnet, and sonnet is what ran.
 if [ -f .env ]; then
-  set -a
-  # shellcheck disable=SC1091
-  . ./.env
-  set +a
+  while IFS= read -r line || [ -n "$line" ]; do
+    case "$line" in ''|\#*) continue ;; esac
+    key=${line%%=*}
+    [ "$key" = "$line" ] && continue           # no '=' — not an assignment
+    [ -n "${!key:-}" ] && continue             # already set by the caller
+    export "${key}=${line#*=}"
+  done < .env
 fi
 
 # Mirrors the workflow's `if: dry != 'true'` guard: a dry run must never commit.
@@ -65,7 +72,10 @@ fi
 
 git pull --rebase --autostash origin "$branch"
 
-node scripts/aggregate.mjs --triggered-by local "$@"
+# TRIGGERED_BY lets a caller label the run ("local-dashboard", "local-schedule")
+# without passing a second --triggered-by: aggregate.mjs takes the FIRST
+# occurrence of a flag, so an appended one would be silently ignored.
+node scripts/aggregate.mjs --triggered-by "${TRIGGERED_BY:-local}" "$@"
 
 if [ "$dry" = true ]; then
   echo "Dry run — nothing written, nothing committed."
