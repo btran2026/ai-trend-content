@@ -66,7 +66,9 @@ async function main() {
   console.log(`  mode:     ${mode}${query ? ` (query: "${query}")` : ''}`);
   console.log(`  digest:   ${id}`);
   console.log(`  window:   ${windowHours}h`);
-  console.log(`  model:    ${usage.model}${dryRun ? ' (dry run — no AI calls)' : ''}`);
+  console.log(
+    `  model:    ${usage.model}${dryRun ? ' (dry run — no AI calls)' : ` via ${usage.backend}${usage.backend === 'cli' ? ' (your logged-in session, not an API key)' : ''}`}`,
+  );
   console.log('');
 
   const config = JSON.parse(readFileSync(join(paths.ROOT, 'config', 'sources.json'), 'utf8'));
@@ -141,6 +143,9 @@ async function main() {
       usd: Number(estimateUsd().toFixed(4)),
       model: usage.model,
       calls: usage.calls,
+      // `subscription` means usd is what this would have cost at API rates, not
+      // what it charged — the run went through a logged-in CLI session.
+      billing: usage.backend === 'cli' ? 'subscription' : 'api',
     },
   };
 
