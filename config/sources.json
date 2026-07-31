@@ -1,7 +1,11 @@
 {
-  "contentVersion": 2,
+  "contentVersion": 3,
   "comment": "Input list for scripts/aggregate.mjs. Every fetcher is fail-soft: a dead feed logs a warning and contributes nothing. Add a feed by appending to `rss`; the aggregator needs no code change. Every URL here was probed and returns parseable entries — re-probe before adding one.",
   "notes": {
+    "why-the-technique-feeds": "The original list was a model-research corpus — lab blogs, arXiv, HF trending models — so the digest could only ever report model and spec announcements. The `release`-kind feeds and the two Simon Willison beat feeds carry the other half: a flag, a command, a config you can apply the same evening. Judge a candidate feed by whether a typical entry names something runnable.",
+    "github-atom-trick": "Any GitHub repo exposes /releases.atom, /tags.atom and /commits/<branch>.atom with no token and no API budget. That turns a release into an ordinary RSS source. All of them carry `maxItems` — a release feed can publish several versions in a day.",
+    "probed-and-rejected": "awesome-claude-code was probed as an ingest source and dropped: commits/main.atom is dominated by automated 'chore: update repo ticker data [skip ci]' commits and releases.atom yields 4 entries with titles like 'multi-list-backup'. It's a good thing to browse, not a feed. gemini-cli's releases.atom was rejected too — every entry is a dated nightly. Aider's releases.atom parses but the project's last release was 2026-02-12; it's kept because it's fail-soft and costs one request, and we want it if Aider revives.",
+    "alwaysKeep": "fetchRss keyword-filters every feed except kind `lab`. Changelog and release entries read like 'Fix /resume on Windows' and match none of the model-shaped keywords, so without `alwaysKeep` the highest-signal feeds arrive empty. Set it only on feeds curated tightly enough that everything they publish is on-topic.",
     "no-rss": "Anthropic, Meta AI, Nous Research, vLLM and DeepLearning.AI publish no working public RSS feed (all 404 as of 2026-07-28). Their releases reach us via Hacker News, AI News (smol.ai), Import AI, and Latent Space instead. Don't re-add those feeds without probing first.",
     "403-bot-protection": "CORRECTED 2026-07-28: huggingface.co and reddit.com 403 from GitHub Actions runners too, not only behind Zscaler — verified against run 30416137201, where both contributed 0 items. It's User-Agent-based bot protection, not the corporate proxy. sources.mjs now sends a browser UA to those hosts (plus substack.com, which 403'd Import AI on the runner) and tries three endpoint shapes for Reddit. If they go empty again, read the runner log before assuming it's the local network.",
     "arxiv-rate-limit": "export.arxiv.org 429s shared cloud egress no matter the request shape — per-category AND collapsed to one combined query, both harvested 0 papers on the runner. arXiv now comes from the announcement RSS feeds on rss.arxiv.org (a separate CDN-fronted host, 48 papers/run, works through Zscaler too); the combined query API is only a fallback for the RSS host being down. Don't move it back to export.arxiv.org.",
@@ -12,17 +16,28 @@
     "agent orchestration", "multi-agent", "agent army", "tool calling", "MCP",
     "Hermes", "openclaw", "Claude", "GPT", "Gemini", "Llama", "Qwen", "DeepSeek",
     "Mistral", "Kimi", "GLM", "inference", "fine-tune", "RAG", "context window",
-    "eval", "benchmark", "distillation", "quantization", "self-host"
+    "eval", "benchmark", "distillation", "quantization", "self-host",
+
+    "Claude Code", "Codex", "OpenCode", "Aider", "Cline", "OpenHands", "Gemini CLI",
+    "subagent", "worktree", "headless", "hooks", "skills", "slash command",
+    "spec-driven", "AGENTS.md", "CLAUDE.md", "autonomous", "overnight", "unattended",
+    "agent loop", "harness", "verification loop", "PR bot", "cron",
+    "router", "Ollama", "MLX", "LM Studio", "llama.cpp", "local model",
+    "prompt caching", "batch API", "cost per task", "tokens per second"
   ],
   "hackerNews": {
     "enabled": true,
     "minPoints": 40,
-    "queries": ["LLM", "AI agent", "open weights", "agentic", "language model", "MCP", "inference"]
+    "queries": [
+      "LLM", "AI agent", "open weights", "agentic", "language model", "MCP", "inference",
+      "Claude Code", "coding agent", "autonomous agent", "local LLM", "AI coding workflow"
+    ]
   },
   "arxiv": {
+    "comment": "Cut from 12/category (48 papers/run) to 2. Papers dominated the candidate pool and pushed the digest toward research reporting; preRank now also demotes `paper` below `news`. Research still reaches us via HN and the newsletters when it actually changes someone's tooling.",
     "enabled": true,
     "categories": ["cs.AI", "cs.CL", "cs.LG", "cs.MA"],
-    "maxPerCategory": 12
+    "maxPerCategory": 2
   },
   "huggingFace": {
     "enabled": true,
@@ -31,18 +46,21 @@
     "maxModels": 15
   },
   "github": {
+    "comment": "Window widened 45 -> 120 days. `created:` is still the right filter (see sources.mjs), but a 45-day window only ever surfaced brand-new repos riding a hype cycle. The tools worth adopting — routers, harnesses, hook collections — are a few months old and earn their stars steadily.",
     "enabled": true,
     "queries": [
       "topic:llm", "topic:ai-agents", "topic:agentic", "topic:mcp",
-      "topic:llm-agent", "topic:multi-agent", "topic:agent-orchestration"
+      "topic:llm-agent", "topic:multi-agent", "topic:agent-orchestration",
+      "topic:claude-code", "topic:coding-agent", "topic:ai-tools", "topic:local-llm"
     ],
     "minStars": 120,
-    "maxPerQuery": 8,
-    "createdWithinDays": 45
+    "maxPerQuery": 5,
+    "createdWithinDays": 90
   },
   "reddit": {
+    "comment": "r/MachineLearning stays listed but is known-blocked (see notes.still-blocked) and fail-soft. r/ClaudeAI and r/LocalLLaMA are where overnight-loop and local-offload field reports actually land.",
     "enabled": true,
-    "subreddits": ["LocalLLaMA", "MachineLearning", "AI_Agents"],
+    "subreddits": ["LocalLLaMA", "ClaudeAI", "AI_Agents", "MachineLearning"],
     "minScore": 80,
     "maxPerSub": 12
   },
@@ -60,6 +78,19 @@
     { "name": "Latent Space", "kind": "news", "url": "https://www.latent.space/feed" },
     { "name": "Import AI", "kind": "news", "url": "https://importai.substack.com/feed" },
     { "name": "The Gradient", "kind": "news", "url": "https://thegradient.pub/rss/" },
-    { "name": "Ollama", "kind": "tooling", "url": "https://ollama.com/blog/rss.xml" }
+    { "name": "Ollama", "kind": "tooling", "url": "https://ollama.com/blog/rss.xml" },
+
+    { "name": "Claude Code changelog", "kind": "release", "alwaysKeep": true, "url": "https://code.claude.com/docs/en/changelog/rss.xml" },
+    { "name": "Claude Updates", "kind": "release", "alwaysKeep": true, "maxItems": 10, "url": "https://www.claudeupdates.dev/feed/rss.xml" },
+    { "name": "OpenAI Engineering", "kind": "lab", "url": "https://openai.com/news/engineering/rss.xml" },
+
+    { "name": "Simon Willison (tools)", "kind": "news", "alwaysKeep": true, "url": "https://simonwillison.net/atom/beats/tool/" },
+    { "name": "Simon Willison (local LLMs)", "kind": "news", "alwaysKeep": true, "url": "https://simonwillison.net/tags/local-llms.atom" },
+    { "name": "Harper Reed", "kind": "news", "alwaysKeep": true, "url": "https://harper.blog/index.xml" },
+
+    { "name": "OpenCode releases", "kind": "release", "alwaysKeep": true, "maxItems": 5, "url": "https://github.com/sst/opencode/releases.atom" },
+    { "name": "Codex releases", "kind": "release", "alwaysKeep": true, "maxItems": 3, "url": "https://github.com/openai/codex/releases.atom" },
+    { "name": "claude-code-router releases", "kind": "release", "alwaysKeep": true, "maxItems": 5, "url": "https://github.com/musistudio/claude-code-router/releases.atom" },
+    { "name": "Aider releases", "kind": "release", "alwaysKeep": true, "maxItems": 5, "url": "https://github.com/Aider-AI/aider/releases.atom" }
   ]
 }

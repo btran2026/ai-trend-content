@@ -86,6 +86,9 @@ One digest = one aggregation run. `id` is `YYYY-MM-DD` for scheduled runs, or
       "entities": ["Nous Research"],
       "models": ["Hermes 4"],
       "importance": 4,
+      "actionability": 5,
+      "tryThis": "Set the router's background slot to a local Qwen",
+      "hasFailureReport": false,
       "discussionUrl": "https://news.ycombinator.com/item?id=41234567",
       "score": 412
     }
@@ -103,18 +106,42 @@ Drives the app's source filter chips. Closed set — the app maps anything
 unrecognised to `other`.
 
 `lab` (first-party lab announcements) · `paper` · `discussion` · `repo` ·
-`model` (a model card / weights drop) · `news` · `other`
+`model` (a model card / weights drop) · `news` · `release` (a changelog or
+release-notes entry) · `tooling` · `other`
+
+`release` is new. Binaries shipped before it render it as `other`, which is the
+intended degradation.
 
 ### `category`
 
 Drives the app's category filter. Closed set, mapped to `other` if unknown.
 
 `open-models` · `closed-models` · `agentic` · `adoption` · `tooling` ·
-`research` · `use-cases` · `business`
+`research` · `use-cases` · `business` · `technique`
+
+`technique` is new — an item that hands the reader something to run. Older
+binaries map it to `other`.
 
 ### `importance`
 
 1–5, AI-assigned. The app's feed defaults to `>= 2`; "Just the signal" filters to `>= 4`.
+
+### `actionability`, `tryThis`, `hasFailureReport`
+
+Added together, all optional for a reader, all additive for the app.
+
+| Field | Meaning |
+| --- | --- |
+| `actionability` | 1–5. 5 = there is a command in here the reader can run tonight. **This, not `importance`, is what the digest is now sorted by.** |
+| `tryThis` | Optional one-line imperative next step. Absent when the item is worth knowing but has no direct action. |
+| `hasFailureReport` | True when the item reports something that broke in real use. Sorted upward on purpose. |
+
+**Why `importance` still moves:** shipped binaries filter the feed on
+`importance` alone and know nothing about `actionability`, so a 5-actionability
+item scored 1 for importance would be invisible in the app this change exists to
+fix. The aggregator therefore writes `importance = max(importance, actionability)`.
+Once a release ships that reads `actionability` directly, drop that floor in
+`scripts/lib/ai.mjs` and let the two fields mean independent things again.
 
 ### `cost`
 
