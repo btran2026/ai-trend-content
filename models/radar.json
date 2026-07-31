@@ -1,7 +1,64 @@
 {
-  "contentVersion": 2,
-  "generatedAt": "2026-07-31T02:25:37.663Z",
+  "contentVersion": 3,
+  "generatedAt": "2026-07-31T05:59:02.679Z",
   "models": [
+    {
+      "id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T05:59:02.679Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T05:59:02.679Z",
+          "what": "OpenAI cut GPT-5.6 Luna pricing 80% to $0.20/$1.20 per million tokens, and the llm CLI made it the new default model.",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "name": "GPT-5.6 Terra",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-07-31T05:59:02.679Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T05:59:02.679Z",
+          "what": "OpenAI cut GPT-5.6 Terra tier pricing by 20% as part of a price-performance update.",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5.6-sol-fast",
+      "name": "GPT-5.6 Sol Fast",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "preview",
+      "firstSeenAt": "2026-07-31T05:59:02.679Z",
+      "timeline": [
+        {
+          "at": "2026-07-31T05:59:02.679Z",
+          "what": "OpenAI added a new Sol Fast tier to GPT-5.6 offering up to 2.5x lower latency at 2x the price.",
+          "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        }
+      ]
+    },
     {
       "id": "gpt-5-6",
       "name": "GPT-5.6",
