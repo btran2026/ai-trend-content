@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-08-01T05:48:36.054Z",
-  "contentVersion": 1,
+  "generatedAt": "2026-08-01T08:15:36.060Z",
+  "contentVersion": 2,
   "lanes": {
     "crypto": [
       {
         "id": "crypto-0c9743bf48",
         "slug": "tether-posts-1-5-billion-q2-profit-as-reserve-buffer-shrinks-by-half",
         "lane": "crypto",
-        "title": "Tether posts $1.5 billion Q2 profit as reserve buffer shrinks by half",
-        "summary": "Tether reported $1.5 billion in operating profit for the second quarter, even as its excess reserve buffer fell by roughly half, dropping by more than $4 billion according to The Block. The stablecoin issuer remains highly profitable but the shrinking cushion raises questions about how much excess collateral backs its USDT token going forward.",
-        "whyItMatters": "Tether's reserve health underpins confidence in the world's largest stablecoin, which is deeply embedded in crypto trading liquidity globally.",
+        "title": "Tether posts $1.5 billion operating profit in Q2 as reserve buffer halves",
+        "summary": "Tether reported $1.5 billion in operating profit for the second quarter, even as its excess reserve buffer fell by roughly half. The stablecoin issuer's results underscore its continued profitability from holding low-risk assets against USDT issuance.",
+        "whyItMatters": "Tether's reserve cushion is a key indicator of how well the largest stablecoin is collateralized, and a shrinking buffer draws more scrutiny even amid strong headline profits.",
         "whatToWatch": [
           "Whether Tether publishes further detail on what drove the reserve decline",
-          "Future quarterly attestations for reserve buffer trends"
+          "Future attestations showing whether the buffer stabilizes or keeps shrinking"
         ],
         "questions": [
           "What specifically caused the buffer to fall by half in one quarter?",
-          "Does this affect Tether's ability to maintain its 1:1 peg under stress?"
+          "Does a smaller buffer change risk assessments of USDT's peg stability?"
         ],
         "sources": [
           {
@@ -34,26 +34,114 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-07-31T17:58:47.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Earnings",
-        "trendScore": 75,
+        "trendScore": 68,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-31021e1d99",
+        "slug": "coinbase-posts-359m-loss-despite-years-spent-diversifying-beyond-bitco",
+        "lane": "crypto",
+        "title": "Coinbase posts $359M loss despite years spent diversifying beyond bitcoin",
+        "summary": "Coinbase reported a $359 million loss for the quarter, a result that comes after roughly five years of efforts to build revenue streams beyond core bitcoin trading. The report highlights how exposure to broader crypto market swings still weighs heavily on the exchange's results.",
+        "whyItMatters": "Coinbase is a bellwether for the health of the US crypto industry, and a large loss despite diversification efforts raises questions about how resilient exchange business models really are.",
+        "whatToWatch": [
+          "Coinbase's next earnings call for management commentary on the loss",
+          "Any strategic shifts in product mix following this result"
+        ],
+        "questions": [
+          "Which specific business lines drove the loss?",
+          "Is this a one-off or a sign of a structural profitability problem?"
+        ],
+        "sources": [
+          {
+            "title": "Coinbase spent 5 years building a life raft away from Bitcoin and still managed to lose $359M",
+            "url": "https://cryptoslate.com/coinbase-spent-5-years-building-a-life-raft-away-from-bitcoin-trading-and-still-managed-to-lose-359-million/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-01T07:54:39.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T07:54:39.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Earnings",
+        "trendScore": 62,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-45139a0420",
+        "slug": "bitcoin-etfs-close-july-in-the-green-despite-late-month-selloff",
+        "lane": "crypto",
+        "title": "Bitcoin ETFs close July in the green despite late-month selloff",
+        "summary": "US spot bitcoin ETFs finished July with net positive flows overall, even though the last part of the month saw notable selling pressure. The monthly result suggests underlying demand held up despite short-term volatility.",
+        "whyItMatters": "ETF flows remain one of the clearest proxies for institutional appetite for bitcoin, so a positive month despite a late selloff is a signal worth tracking for sentiment shifts.",
+        "whatToWatch": [
+          "August flow data to see if the late-July selling trend continues or reverses",
+          "Whether large redemptions cluster around specific funds"
+        ],
+        "questions": [
+          "What drove the late-month selling — macro news, profit-taking, or something fund-specific?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin ETFs end July in the green despite late-month selling",
+            "url": "https://cointelegraph.com/markets/bitcoin-etfs-july-green-despite-late-month-selling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-01T07:23:07.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T07:23:07.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Markets",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-9d1d4e40a1",
+        "slug": "how-an-attack-drained-70-million-from-bitcoin-cold-wallets-without-tou",
+        "lane": "crypto",
+        "title": "How an attack drained $70 million from bitcoin cold wallets without touching the devices",
+        "summary": "A reported $70 million in bitcoin was lost from cold wallets through an attack that reportedly never physically compromised the hardware devices themselves, pointing to a vulnerability elsewhere in the security chain — likely in software, supply chain, or user process rather than the device hardware.",
+        "whyItMatters": "Cold storage is widely marketed as the gold standard for securing crypto; an exploit that bypasses the device itself challenges assumptions many holders rely on for security.",
+        "whatToWatch": [
+          "Technical post-mortems detailing the exact attack vector",
+          "Vendor responses and any firmware or process fixes"
+        ],
+        "questions": [
+          "What was the actual point of compromise if not the device?",
+          "Are other hardware wallet users still exposed?"
+        ],
+        "sources": [
+          {
+            "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
+            "url": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-01T05:55:46.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T05:55:46.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Security",
+        "trendScore": 59,
         "confidence": "medium"
       },
       {
         "id": "crypto-3b7393fcc2",
         "slug": "coldcard-s-38-million-exploit-shakes-confidence-in-self-custody",
         "lane": "crypto",
-        "title": "Coldcard's $38 million exploit shakes confidence in self-custody",
-        "summary": "A vulnerability in the Coldcard hardware wallet has led to at least $38 million in losses, according to CoinDesk, with the figure described as still rising. The incident is prompting commentary that some investors may shift toward custodial options like bitcoin ETFs rather than manage private keys themselves.",
-        "whyItMatters": "Hardware wallet exploits strike at the core promise of self-custody in crypto, and could shift capital flows toward regulated custodial products.",
+        "title": "Coldcard exploit, now at $38 million and growing, dents confidence in self-custody",
+        "summary": "A vulnerability tied to the Coldcard hardware wallet has led to at least $38 million in losses so far, with the figure still climbing. The incident is prompting discussion about whether some investors will shift from self-custody toward custodial options like ETFs.",
+        "whyItMatters": "Self-custody is central to crypto's value proposition, so a high-profile hardware wallet exploit could push retail and institutional users toward regulated, custodial alternatives.",
         "whatToWatch": [
-          "Further loss estimates as investigators trace affected wallets",
-          "Any official response or patch from Coldcard's maker",
-          "Whether ETF inflows accelerate as a result"
+          "Whether the loss total continues to rise as more victims come forward",
+          "Any shift in ETF or exchange custody inflows following the incident"
         ],
         "questions": [
-          "What exactly was the technical flaw in the device?",
-          "How many users remain exposed until they migrate funds?"
+          "How many users remain vulnerable if they haven't updated or migrated funds?",
+          "Will Coldcard's response restore confidence or accelerate the shift to custodial products?"
         ],
         "sources": [
           {
@@ -65,26 +153,96 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T17:07:30.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Breaking",
-        "trendScore": 66,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Security",
+        "trendScore": 58,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-9f8be6d3f9",
+        "slug": "coinbase-s-q2-miss-splits-wall-street-on-recovery-timing",
+        "lane": "crypto",
+        "title": "Coinbase's weak quarter splits Wall Street on timing of recovery",
+        "summary": "Coinbase's disappointing second-quarter results have divided analysts, with some debating whether the company's growth prospects beyond core crypto trading justify optimism, while others remain cautious about near-term recovery timing.",
+        "whyItMatters": "Analyst disagreement over Coinbase's trajectory reflects broader uncertainty about how quickly crypto-native companies can diversify revenue away from volatile trading fees.",
+        "whatToWatch": [
+          "Analyst rating and price target changes following the earnings miss",
+          "Coinbase guidance on non-trading revenue growth"
+        ],
+        "questions": [
+          "What specific catalysts would resolve the analyst split?",
+          "How much of the miss is cyclical versus structural?"
+        ],
+        "sources": [
+          {
+            "title": "Coinbase’s Q2 miss sparks split on Wall Street, analysts debate growth beyond crypto trading",
+            "url": "https://www.theblock.co/post/410316/coinbase-q2-miss-sparks-split-wall-street-analysts-debate-growth-beyond-trading?utm_source=rss&utm_medium=rss",
+            "publisher": "The Block",
+            "publishedAt": "2026-07-31T19:34:26.000Z"
+          },
+          {
+            "title": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
+            "url": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-07-31T13:20:45.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-07-31T13:20:45.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 54,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-f37d817376",
+        "slug": "circle-secures-new-york-trust-charter",
+        "lane": "crypto",
+        "title": "Circle secures New York trust charter as stablecoin regulation advances",
+        "summary": "Circle has obtained a New York trust charter for a subsidiary, a move that comes as regulatory frameworks for stablecoins continue to take shape in the US. The charter gives Circle a more formal regulatory footing in one of the country's key financial jurisdictions.",
+        "whyItMatters": "Regulatory approvals like this help legitimize major stablecoin issuers and could set a template other issuers follow as US stablecoin oversight solidifies.",
+        "whatToWatch": [
+          "How the trust charter affects Circle's operations or product offerings in New York",
+          "Whether other stablecoin issuers pursue similar charters"
+        ],
+        "questions": [
+          "Does this charter meaningfully change Circle's compliance obligations or just formalize existing practice?"
+        ],
+        "sources": [
+          {
+            "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
+            "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-07-31T13:35:17.000Z"
+          },
+          {
+            "title": "Circle receives New York trust charter for subsidiary",
+            "url": "https://cointelegraph.com/news/circle-receives-new-york-trust-charter-for-subsidiary?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-07-31T13:27:10.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-07-31T13:27:10.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Regulatory",
+        "trendScore": 54,
         "confidence": "medium"
       },
       {
         "id": "crypto-d600b4661f",
         "slug": "new-york-sues-kalshi-alleging-illegal-gambling-operation",
         "lane": "crypto",
-        "title": "New York sues Kalshi, alleging illegal gambling operation",
-        "summary": "New York has filed suit against prediction-market platform Kalshi, alleging it runs an illegal gambling operation rather than a legitimate exchange, with The Block reporting the state is seeking $36 billion in damages. Kalshi has positioned itself as a federally regulated derivatives exchange, setting up a clash between state gambling law and federal commodities regulation.",
-        "whyItMatters": "The case tests whether prediction markets can operate nationally under federal exchange rules or must comply with state-by-state gambling regulation, a question with implications across crypto-adjacent prediction platforms.",
+        "title": "New York sues Kalshi, alleging illegal gambling operation, seeks $36 billion",
+        "summary": "New York has filed suit against prediction market platform Kalshi, alleging it is running an illegal gambling operation rather than a legitimate trading venue, and is seeking $36 billion in damages. The suit adds to ongoing legal and regulatory friction between prediction markets and state gambling regulators.",
+        "whyItMatters": "The case could set precedent for how prediction markets are classified and regulated across states, with implications for other platforms operating in similar legal gray areas.",
         "whatToWatch": [
-          "Kalshi's legal response and any request to dismiss or move venue",
-          "Whether other states follow New York's lead",
-          "CFTC's stance on federal preemption"
+          "Kalshi's legal response and any motions to dismiss",
+          "Whether other states follow New York's lead with similar action"
         ],
         "questions": [
-          "Will federal regulators intervene to assert jurisdiction over Kalshi?",
-          "Is the $36 billion damages figure realistic or a negotiating opener?"
+          "Will federal regulators' prior stance on Kalshi's CFTC status conflict with New York's gambling claim?",
+          "How realistic is the $36 billion damages figure?"
         ],
         "sources": [
           {
@@ -108,97 +266,24 @@
         ],
         "sourceCount": 3,
         "publishedAt": "2026-07-31T07:34:48.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Regulatory",
-        "trendScore": 64,
+        "trendScore": 54,
         "confidence": "high"
-      },
-      {
-        "id": "crypto-f37d817376",
-        "slug": "circle-secures-new-york-trust-charter",
-        "lane": "crypto",
-        "title": "Circle secures New York trust charter",
-        "summary": "Circle, the issuer of the USDC stablecoin, has obtained a New York trust charter for a subsidiary, according to CoinDesk and Cointelegraph. The move comes amid a broader push by crypto firms to secure state-level regulatory approvals.",
-        "whyItMatters": "A trust charter gives Circle firmer regulatory footing in one of the most influential U.S. financial jurisdictions, potentially strengthening USDC's standing versus rivals like Tether.",
-        "whatToWatch": [
-          "How Circle uses the charter to expand services",
-          "Whether other stablecoin issuers pursue similar state charters"
-        ],
-        "questions": [
-          "Does this charter meaningfully change USDC's competitive position?",
-          "What specific activities will the chartered subsidiary conduct?"
-        ],
-        "sources": [
-          {
-            "title": "Circle secures New York trust charter as crypto regulatory push accelerates",
-            "url": "https://www.coindesk.com/policy/2026/07/31/circle-secures-new-york-trust-charter-as-crypto-regulatory-push-accelerates",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-07-31T13:35:17.000Z"
-          },
-          {
-            "title": "Circle receives New York trust charter for subsidiary",
-            "url": "https://cointelegraph.com/news/circle-receives-new-york-trust-charter-for-subsidiary?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-07-31T13:27:10.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-07-31T13:27:10.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Regulatory",
-        "trendScore": 63,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-9f8be6d3f9",
-        "slug": "coinbase-s-q2-miss-splits-wall-street-on-recovery-timing",
-        "lane": "crypto",
-        "title": "Coinbase's Q2 miss splits Wall Street on recovery timing",
-        "summary": "Coinbase's second-quarter results missed expectations, prompting analysts to diverge on when the exchange's growth might rebound and whether that growth will come from crypto trading or other business lines. The Block and CoinDesk both note debate over the company's diversification strategy beyond core trading revenue.",
-        "whyItMatters": "Coinbase is a bellwether for retail and institutional crypto trading activity, so a weak quarter and diverging analyst views signal uncertainty about near-term market demand.",
-        "whatToWatch": [
-          "Coinbase's next earnings report for signs of a turnaround",
-          "Analyst rating changes in coming weeks",
-          "Progress on non-trading revenue lines like custody or subscriptions"
-        ],
-        "questions": [
-          "Which specific business segment underperformed most?",
-          "Is the miss cyclical (tied to lower trading volumes) or structural?"
-        ],
-        "sources": [
-          {
-            "title": "Coinbase’s Q2 miss sparks split on Wall Street, analysts debate growth beyond crypto trading",
-            "url": "https://www.theblock.co/post/410316/coinbase-q2-miss-sparks-split-wall-street-analysts-debate-growth-beyond-trading?utm_source=rss&utm_medium=rss",
-            "publisher": "The Block",
-            "publishedAt": "2026-07-31T19:34:26.000Z"
-          },
-          {
-            "title": "Coinbase's weak quarter leaves Wall Street split on timing of a recovery",
-            "url": "https://www.coindesk.com/markets/2026/07/31/coinbase-s-weak-quarter-leaves-wall-street-split-on-timing-of-a-recovery",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-07-31T13:20:45.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-07-31T13:20:45.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Earnings",
-        "trendScore": 60,
-        "confidence": "medium"
       },
       {
         "id": "crypto-13b385efaa",
         "slug": "tether-s-treasury-holdings-fuel-1-5b-q2-profit",
         "lane": "crypto",
-        "title": "Tether's Treasury holdings fuel $1.5B Q2 profit",
-        "summary": "Cointelegraph reports Tether earned $1.5 billion in the second quarter, with U.S. Treasury holdings cited as a key profit driver. The report aligns with other coverage showing strong earnings even as the company's excess reserve cushion declined.",
-        "whyItMatters": "Tether's reliance on Treasury yields ties its profitability to interest rate conditions, meaning any rate cuts could compress future earnings even as reserves fluctuate.",
+        "title": "Tether's Q2 profit boosted by US Treasury holdings",
+        "summary": "Tether reported $1.5 billion in second-quarter earnings, with US Treasury holdings cited as a key driver of the profit. The results reflect the stablecoin issuer's continued reliance on short-term government debt as its primary yield-generating reserve asset.",
+        "whyItMatters": "Tether's profitability is closely tied to interest rates on its Treasury holdings, meaning its earnings could shift significantly if rates move or its reserve composition changes.",
         "whatToWatch": [
-          "Federal Reserve rate decisions and their effect on Tether's Treasury income",
-          "Tether's next reserve attestation"
+          "Future rate decisions and their effect on Tether's reserve income",
+          "Any changes in Tether's reserve asset composition"
         ],
         "questions": [
-          "How much of the $1.5 billion profit is directly attributable to Treasury yields versus other holdings?"
+          "How exposed is Tether's profit model to a falling-rate environment?"
         ],
         "sources": [
           {
@@ -210,54 +295,83 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T16:25:47.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Earnings",
-        "trendScore": 60,
+        "trendScore": 53,
         "confidence": "medium"
       },
       {
-        "id": "crypto-a2c5d8dd11",
-        "slug": "ethereum-s-43-day-staking-queue-isn-t-a-clean-demand-signal-sygnum-war",
+        "id": "crypto-1816dccb80",
+        "slug": "coldcard-linked-bitcoin-losses-grow-to-70-million-galaxy-research-says",
         "lane": "crypto",
-        "title": "Ethereum's 43-day staking queue isn't a clean demand signal, Sygnum warns",
-        "summary": "A 43-day queue to stake ether has formed, but Sygnum researchers caution against reading it as a straightforward sign of rising demand for ETH staking, per The Block. The queue length can reflect protocol-level validator entry limits as much as genuine investor appetite.",
-        "whyItMatters": "Staking queue dynamics affect ETH's effective yield and liquidity, which matters for institutional allocators evaluating staking-based ETH products.",
+        "title": "Coldcard-linked bitcoin losses grow to $70 million, Galaxy Research finds",
+        "summary": "Galaxy Research estimates that losses tied to the Coldcard hardware wallet vulnerability have climbed to $70 million, up from earlier lower estimates. The growing figure suggests the exploit's scope was larger than initially understood.",
+        "whyItMatters": "An independent research estimate raising the loss total signals the incident may be more severe than early reports indicated, which matters for anyone assessing hardware wallet risk.",
         "whatToWatch": [
-          "Whether the queue shortens or lengthens in coming weeks",
-          "Any protocol changes to validator entry/exit limits"
+          "Further updates to the loss estimate as more data comes in",
+          "Whether Galaxy or other researchers identify additional affected wallets"
         ],
         "questions": [
-          "What portion of queue growth is driven by new demand versus churn?"
+          "How was the $70 million figure calculated, and could it rise further?"
         ],
         "sources": [
           {
-            "title": "Ethereum’s 43-day staking queue isn’t a clean demand signal, Sygnum says",
-            "url": "https://www.theblock.co/post/410285/ethereum-43-day-staking-queue-isnt-clean-demand-signal-sygnum?utm_source=rss&utm_medium=rss",
+            "title": "Bitcoin losses linked to Coldcard vulnerability grow to $70 million, Galaxy Research says",
+            "url": "https://www.theblock.co/post/410332/bitcoin-losses-linked-coldcard-vulnerability-70-million-galaxy-research?utm_source=rss&utm_medium=rss",
             "publisher": "The Block",
-            "publishedAt": "2026-07-31T14:35:11.000Z"
+            "publishedAt": "2026-07-31T20:20:52.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-31T14:35:11.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "publishedAt": "2026-07-31T20:20:52.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Security",
+        "trendScore": 51,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-efc0c39b0a",
+        "slug": "bank-of-italy-finds-no-consistent-cost-edge-for-stablecoin-remittances",
+        "lane": "crypto",
+        "title": "Bank of Italy: stablecoins show no consistent cost edge for remittances",
+        "summary": "A Bank of Italy study found that stablecoins do not offer a consistent cost advantage over traditional methods for cross-border remittances, challenging one of the frequently cited use cases for stablecoin adoption.",
+        "whyItMatters": "Remittances are often touted as a killer use case for stablecoins; a central bank finding undercutting that claim could temper policy and industry narratives around stablecoin utility.",
+        "whatToWatch": [
+          "Responses from stablecoin issuers or remittance firms to the findings",
+          "Whether other central banks publish similar comparative studies"
+        ],
+        "questions": [
+          "Did the study account for variation across corridors and providers, or is it a broad average?"
+        ],
+        "sources": [
+          {
+            "title": "Bank of Italy finds no consistent cost advantage for stablecoin remittances",
+            "url": "https://cointelegraph.com/news/bank-of-italy-study-no-stablecoin-remittance-cost-advantages?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-07-31T20:10:21.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-07-31T20:10:21.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Analysis",
-        "trendScore": 60,
+        "trendScore": 51,
         "confidence": "medium"
       },
       {
         "id": "crypto-d55f8aa360",
         "slug": "u-s-sanctions-iran-linked-bitcoin-insurance-scheme-tied-to-strait-of-h",
         "lane": "crypto",
-        "title": "U.S. sanctions Iran-linked bitcoin insurance scheme tied to Strait of Hormuz shipping",
-        "summary": "The U.S. has sanctioned companies allegedly running a bitcoin-based insurance scheme for ships transiting the Strait of Hormuz, tied to Iran, according to Bitcoin Magazine and CoinDesk. The action targets a mechanism reportedly used to help vessels obtain insurance coverage despite existing sanctions.",
-        "whyItMatters": "The case shows regulators actively tracking crypto's use for sanctions evasion in geopolitically sensitive shipping lanes, reinforcing scrutiny of bitcoin's role in illicit finance.",
+        "title": "US sanctions Iran-linked bitcoin insurance scheme for Strait of Hormuz shipping",
+        "summary": "The US has sanctioned companies involved in an Iran-linked scheme that reportedly used bitcoin to provide insurance for ships transiting the Strait of Hormuz, part of a broader effort to close off sanctions-evasion channels tied to Iranian oil shipping.",
+        "whyItMatters": "The case shows crypto being used to route around traditional sanctions infrastructure, reinforcing why regulators continue to focus enforcement attention on crypto's role in illicit finance.",
         "whatToWatch": [
-          "Further Treasury/OFAC designations tied to the scheme",
-          "Any response from Iran or affected shipping companies"
+          "Additional sanctions actions targeting related entities or wallets",
+          "Any crypto industry response on compliance and monitoring implications"
         ],
         "questions": [
-          "How large was the insurance scheme in dollar or bitcoin terms?",
-          "Are other sanctions-evasion crypto schemes under similar investigation?"
+          "How significant was the scale of bitcoin used in this insurance scheme?",
+          "Will this prompt tighter scrutiny of crypto used in shipping-related finance more broadly?"
         ],
         "sources": [
           {
@@ -275,140 +389,9 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-07-31T11:58:33.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Regulatory",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-2022d798bf",
-        "slug": "bitcoin-ether-dip-as-equities-rally-crypto-on-track-for-best-month-in-",
-        "lane": "crypto",
-        "title": "Bitcoin, ether dip as equities rally; crypto on track for best month in a year",
-        "summary": "Bitcoin and ether declined even as broader equity markets rallied, but CoinDesk notes the crypto market overall remains on pace for its best month in a year. A companion piece flags that bitcoin's recent calm could be setting up for a volatility spike.",
-        "whyItMatters": "Divergence between crypto and equities, alongside warnings of pent-up volatility, matters for traders positioning around month-end and upcoming macro catalysts.",
-        "whatToWatch": [
-          "Whether bitcoin volatility breaks out as some analysts anticipate",
-          "Month-end performance figures confirming the",
-          "best month"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Bitcoin, ether fall, equities rally with broader crypto market on track for best month in a year",
-            "url": "https://www.coindesk.com/markets/2026/07/31/bitcoin-ether-fall-equities-rally-with-broader-crypto-market-on-track-for-best-month-in-a-year",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-07-31T11:07:52.000Z"
-          },
-          {
-            "title": "Bitcoin’s calm is back and so is the setup for a volatility explosion",
-            "url": "https://www.coindesk.com/markets/2026/07/31/bitcoin-s-calm-is-back-and-so-is-the-setup-for-a-volatility-explosion",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-07-31T08:30:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T08:30:31.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Markets",
-        "trendScore": 58,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-1816dccb80",
-        "slug": "coldcard-linked-bitcoin-losses-grow-to-70-million-galaxy-research-says",
-        "lane": "crypto",
-        "title": "Coldcard-linked bitcoin losses grow to $70 million, Galaxy Research says",
-        "summary": "Losses tied to the Coldcard hardware wallet vulnerability have climbed to $70 million, according to Galaxy Research as reported by The Block, up from earlier estimates. The figure continues to be revised upward as more affected wallets are identified.",
-        "whyItMatters": "A growing loss tally underscores the scale of the self-custody security incident and adds pressure on hardware wallet makers to respond quickly.",
-        "whatToWatch": [
-          "Further upward revisions to the loss total",
-          "Any recovery efforts or law enforcement involvement",
-          "Response from Coldcard's manufacturer"
-        ],
-        "questions": [
-          "Is the vulnerability still actively being exploited or has it been contained?",
-          "How many individual wallets remain at risk?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin losses linked to Coldcard vulnerability grow to $70 million, Galaxy Research says",
-            "url": "https://www.theblock.co/post/410332/bitcoin-losses-linked-coldcard-vulnerability-70-million-galaxy-research?utm_source=rss&utm_medium=rss",
-            "publisher": "The Block",
-            "publishedAt": "2026-07-31T20:20:52.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T20:20:52.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Breaking",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-efc0c39b0a",
-        "slug": "bank-of-italy-finds-no-consistent-cost-edge-for-stablecoin-remittances",
-        "lane": "crypto",
-        "title": "Bank of Italy finds no consistent cost edge for stablecoin remittances",
-        "summary": "A Bank of Italy study concluded that stablecoins do not offer a consistent cost advantage over traditional channels for remittances, according to Cointelegraph. The finding challenges a common industry argument that stablecoins are inherently cheaper for cross-border money transfers.",
-        "whyItMatters": "Remittances are frequently cited as a key real-world use case for stablecoins, so a central bank study questioning their cost benefit could temper that narrative among policymakers.",
-        "whatToWatch": [
-          "Whether other central banks publish similar comparative studies",
-          "Industry responses disputing or supporting the findings"
-        ],
-        "questions": [
-          "What specific corridors or stablecoins were analyzed in the study?",
-          "Does the finding factor in speed and settlement risk, not just cost?"
-        ],
-        "sources": [
-          {
-            "title": "Bank of Italy finds no consistent cost advantage for stablecoin remittances",
-            "url": "https://cointelegraph.com/news/bank-of-italy-study-no-stablecoin-remittance-cost-advantages?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-07-31T20:10:21.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T20:10:21.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Analysis",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-fa89544592",
-        "slug": "strategy-posts-8-2-billion-q2-loss-despite-11-bitcoin-holdings-increas",
-        "lane": "crypto",
-        "title": "Strategy posts $8.2 billion Q2 loss despite 11% bitcoin holdings increase",
-        "summary": "Strategy (formerly MicroStrategy) reported an $8.2 billion loss for the second quarter driven by the decline in bitcoin's price, even as the company increased its bitcoin holdings by 11% during the period, per The Block and CoinDesk. The loss reflects mark-to-market accounting on its large bitcoin treasury.",
-        "whyItMatters": "Strategy remains the largest corporate bitcoin holder, so its results are a proxy for how leveraged corporate bitcoin bets perform through price swings.",
-        "whatToWatch": [
-          "Bitcoin's price trajectory and its effect on Strategy's next quarterly results",
-          "Whether Strategy continues accumulating bitcoin despite the paper loss"
-        ],
-        "questions": [
-          "How much of the loss is unrealized versus tied to actual sales?",
-          "Does the company face any pressure to slow its accumulation strategy?"
-        ],
-        "sources": [
-          {
-            "title": "Strategy posts $8.2 billion loss as bitcoin holdings increase 11% during Q2",
-            "url": "https://www.theblock.co/post/410212/strategy-posts-8-2-billion-loss-as-bitcoin-holdings-increase-11-during-q2?utm_source=rss&utm_medium=rss",
-            "publisher": "The Block",
-            "publishedAt": "2026-07-30T21:38:40.000Z"
-          },
-          {
-            "title": "Strategy books $8.2 billion Q2 loss on bitcoin price decline",
-            "url": "https://www.coindesk.com/markets/2026/07/30/strategy-books-usd8-2-billion-second-quarter-loss-on-bitcoin-price-decline",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-07-30T20:32:13.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-07-30T20:32:13.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Earnings",
-        "trendScore": 56,
+        "trendScore": 51,
         "confidence": "medium"
       }
     ],
@@ -417,16 +400,16 @@
         "id": "markets-9ded129072",
         "slug": "s-p-500-adds-little-known-industrial-stock-in-latest-index-reshuffle",
         "lane": "markets",
-        "title": "S&P 500 adds little-known industrial stock in latest index reshuffle",
-        "summary": "The S&P 500 is making a change to its roster, adding a relatively obscure industrial company. The move comes as the index itself sits at what CNBC describes as a key 'battleground level,' with some pointing to a lesser-followed index as a possible signal for where the market goes next.",
-        "whyItMatters": "Index additions can drive forced buying from funds that track the S&P 500, and the broader index's stall at a technical level matters for anyone gauging market direction.",
+        "title": "S&P 500 adds little-known industrial name as index sits at key technical level",
+        "summary": "The S&P 500 is making an index change, adding a relatively obscure industrial stock, even as the benchmark itself is described as stuck at a key battleground level. Coverage suggests traders are watching a lesser-known secondary index for clues on where the market moves next.",
+        "whyItMatters": "Index additions can drive forced buying from funds that track the S&P 500, and technical levels on the broader index matter for momentum-driven trading.",
         "whatToWatch": [
-          "Whether the new addition sees a bump from index-fund buying",
-          "How the S&P 500 resolves its standoff at the cited battleground level"
+          "Whether the S&P 500 breaks through the cited battleground level",
+          "Any follow-through buying in the newly added industrial stock"
         ],
         "questions": [
-          "Which obscure index is being used as the tell, and why?",
-          "How much passive-fund flow will the new addition attract?"
+          "Which industrial company is being added and why now?",
+          "What is the 'obscure index' being referenced and how reliable a signal has it been historically?"
         ],
         "sources": [
           {
@@ -444,24 +427,24 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-07-31T18:07:36.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Markets",
-        "trendScore": 66,
+        "trendScore": 61,
         "confidence": "medium"
       },
       {
         "id": "markets-4d344feedf",
         "slug": "s-p-500-posts-first-july-decline-since-2014",
         "lane": "markets",
-        "title": "S&P 500 posts first July decline since 2014",
-        "summary": "The S&P 500 closed out July with a loss, marking the index's first negative July since 2014. MarketWatch identifies specific stocks that led the pullback during the month.",
-        "whyItMatters": "A rare seasonal decline breaks a long streak of July strength and raises questions about whether momentum is fading heading into the back half of the year.",
+        "title": "S&P 500 posts first July decline since 2014 as selloff hits specific stocks",
+        "summary": "The S&P 500 closed out July with a monthly decline, its first for that month since 2014, according to MarketWatch. The report identifies which stocks led the pullback, marking a notable break from recent seasonal strength.",
+        "whyItMatters": "A rare seasonal loss can signal shifting risk appetite heading into the historically volatile August-September stretch.",
         "whatToWatch": [
-          "August trading to see if the selloff extends or reverses",
-          "Performance of the specific laggard stocks named in the selloff"
+          "August trading patterns following this unusual July decline",
+          "Whether the laggard stocks recover or continue to drag on the index"
         ],
         "questions": [
-          "Was the decline driven by broad rotation or a handful of large-cap losers?"
+          "What specifically drove the selloff in the named leading decliners?"
         ],
         "sources": [
           {
@@ -473,24 +456,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T21:10:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Markets",
-        "trendScore": 62,
+        "trendScore": 57,
         "confidence": "medium"
       },
       {
         "id": "markets-a30b80b7bb",
         "slug": "investors-eye-front-end-of-yield-curve-ahead-of-next-fed-meetings",
         "lane": "markets",
-        "title": "Investors eye front end of yield curve ahead of next Fed meetings",
-        "summary": "CNBC reports that Wall Street strategists are advising investors to focus on the front end of the yield curve as the market anticipates the Federal Reserve's upcoming policy meetings.",
-        "whyItMatters": "Short-term rates are the most sensitive to Fed policy expectations, making the front end a key barometer for how markets are pricing future rate decisions.",
+        "title": "Investors eye front end of yield curve ahead of upcoming Fed meetings",
+        "summary": "CNBC reports that investors may want to focus on the front end of the yield curve as markets position for the Federal Reserve's next policy meetings. Short-dated Treasury yields are seen as the most sensitive to near-term rate expectations.",
+        "whyItMatters": "The front end of the curve reflects real-time bets on Fed policy, making it a key gauge for anyone positioning around upcoming rate decisions.",
         "whatToWatch": [
-          "Movements in short-dated Treasury yields ahead of the next Fed meeting",
-          "Fed communications between now and the next policy decision"
+          "Movements in short-term Treasury yields ahead of the next Fed meeting",
+          "Any shift in market-implied odds for the Fed's next move"
         ],
         "questions": [
-          "How many rate moves are currently priced into the front end?"
+          "How many rate moves are markets currently pricing in for the coming meetings?"
         ],
         "sources": [
           {
@@ -502,9 +485,9 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T18:46:45.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Fed Watch",
-        "trendScore": 61,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 55,
         "confidence": "medium"
       },
       {
@@ -512,14 +495,14 @@
         "slug": "stocks-end-july-on-hopeful-note-after-historic-momentum-trade-unwind",
         "lane": "markets",
         "title": "Stocks end July on hopeful note after historic momentum-trade unwind",
-        "summary": "July closed with a more optimistic tone for stocks even after the momentum trade suffered its biggest wipeout since 2000, according to MarketWatch. The rebound suggests some stabilization after a rough stretch for high-momentum names.",
-        "whyItMatters": "A momentum unwind of this magnitude can ripple through popular trading strategies and funds, so its aftermath is closely watched for signs of broader market stress or recovery.",
+        "summary": "MarketWatch reports that the momentum trade suffered its biggest wipeout since 2000, yet stocks finished July on a more hopeful note. The unwind of crowded momentum positions had weighed on markets earlier in the month.",
+        "whyItMatters": "A momentum unwind of this scale can signal a painful rotation for investors heavily positioned in high-flying stocks, with ripple effects across portfolios.",
         "whatToWatch": [
-          "Whether momentum stocks continue to stabilize into August",
-          "Fund flows into and out of momentum-based strategies"
+          "Whether the momentum trade stabilizes or continues to unwind into August",
+          "Sector rotation patterns following the shakeout"
         ],
         "questions": [
-          "What specifically triggered the momentum unwind?"
+          "Which specific stocks or sectors were most exposed to the momentum unwind?"
         ],
         "sources": [
           {
@@ -531,9 +514,161 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T22:21:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Markets",
-        "trendScore": 58,
+        "trendScore": 53,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-dba8aee5af",
+        "slug": "ubs-weighs-in-on-whether-investors-should-buy-stocks-now",
+        "lane": "markets",
+        "title": "UBS weighs in on whether investors should buy stocks now",
+        "summary": "Investing.com reports that UBS has offered its view on whether investors should be putting money into the stock market at current levels. The piece frames the debate amid ongoing market uncertainty.",
+        "whyItMatters": "Big-bank market calls like this influence flows and sentiment, especially for retail and advisory clients weighing entry points.",
+        "whatToWatch": [
+          "Any follow-up commentary from UBS strategists",
+          "Market reaction if sentiment shifts based on the guidance"
+        ],
+        "questions": [
+          "What specific valuation or macro reasoning underlies UBS's view?"
+        ],
+        "sources": [
+          {
+            "title": "Should you invest in the stock market now? UBS weighs in",
+            "url": "https://www.investing.com/news/stock-market-news/should-you-invest-in-the-stock-market-now-ubs-weighs-in-4829574",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-01T07:58:04.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T07:58:04.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-668a7a7910",
+        "slug": "europe-races-to-climate-proof-infrastructure-against-extreme-heat",
+        "lane": "markets",
+        "title": "Europe races to climate-proof infrastructure against extreme heat",
+        "summary": "CNBC reports that Europe is working to protect infrastructure from extreme heat, with temperatures referenced up to 131°F, describing the risk as a 'quiet catastrophe.' The piece frames this as an emerging structural challenge for the region.",
+        "whyItMatters": "Climate adaptation costs and heat-related disruptions can weigh on European economic output and infrastructure-linked investments.",
+        "whatToWatch": [
+          "Policy or investment announcements tied to infrastructure resilience",
+          "Any economic impact data tied to extreme heat events in Europe"
+        ],
+        "questions": [
+          "Which sectors or countries face the greatest infrastructure risk?",
+          "What is the estimated cost of adaptation efforts?"
+        ],
+        "sources": [
+          {
+            "title": "Building for 131°F: Europe races to protect its infrastructure from a ‘quiet catastrophe’",
+            "url": "https://www.cnbc.com/2026/08/01/europe-extreme-heat-climate-change-55c.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-01T06:58:41.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T06:58:41.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-dd4325e0a1",
+        "slug": "iran-s-fractured-power-centers-complicate-efforts-to-end-the-war",
+        "lane": "markets",
+        "title": "Iran's fractured power centers complicate efforts to end the war",
+        "summary": "CNBC reports that overlapping centers of power within Iran are making it more difficult to reach an end to the ongoing conflict. The analysis suggests fragmented decision-making is a key obstacle.",
+        "whyItMatters": "Geopolitical instability tied to Iran has direct implications for oil markets and regional risk premiums that traders track closely.",
+        "whatToWatch": [
+          "Any diplomatic developments or ceasefire talks",
+          "Oil price reaction to shifts in the conflict's trajectory"
+        ],
+        "questions": [
+          "Which factions within Iran hold the most influence over war decisions?"
+        ],
+        "sources": [
+          {
+            "title": "Iran's overlapping power centers make ending the war more complicated",
+            "url": "https://www.cnbc.com/2026/08/01/iran-ceasefire-power-structure.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-01T06:52:42.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T06:52:42.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Geopolitics",
+        "trendScore": 50,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-1d9c24470a",
+        "slug": "aptus-value-housing-finance-shares-fall-on-q1-asset-quality-concerns",
+        "lane": "markets",
+        "title": "Aptus Value Housing Finance shares fall on Q1 asset-quality concerns",
+        "summary": "Investing.com reports that Aptus Value Housing Finance's stock fell following its earnings call, with investors flagging asset-quality concerns tied to the company's fiscal Q1 2027 results.",
+        "whyItMatters": "Asset-quality deterioration at a housing finance lender can be an early signal of stress in consumer credit markets.",
+        "whatToWatch": [
+          "Management commentary on loan book quality in coming quarters",
+          "Analyst rating or estimate revisions following the call"
+        ],
+        "questions": [
+          "What specific asset-quality metrics deteriorated in the quarter?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Aptus Value Housing Finance falls on q1 2027 asset-quality concerns",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-aptus-value-housing-finance-falls-on-q1-2027-assetquality-concerns-93CH-4829568",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-01T06:20:34.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T06:20:34.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Earnings",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-5a720dbbab",
+        "slug": "new-york-sues-kalshi-over-prediction-market-operations",
+        "lane": "markets",
+        "title": "New York sues Kalshi, alleging prediction markets are illegal gambling",
+        "summary": "New York has filed suit against Kalshi, arguing the prediction-market platform is effectively running an illegal gambling operation, according to CNBC and Yahoo Finance. The suit challenges the regulatory framework under which event-contract platforms currently operate.",
+        "whyItMatters": "A ruling against Kalshi could reshape the legal status of prediction markets nationally, affecting a fast-growing corner of retail trading.",
+        "whatToWatch": [
+          "Kalshi's legal response and any court scheduling",
+          "Whether other states follow New York's lead"
+        ],
+        "questions": [
+          "How does this suit interact with Kalshi's existing federal regulatory status?"
+        ],
+        "sources": [
+          {
+            "title": "New York sues Kalshi, says prediction market is running 'illegal gambling operation'",
+            "url": "https://www.cnbc.com/2026/07/31/new-york-sues-kalshi-claims-it-is-illegal-gambling-operation.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-07-31T15:31:24.000Z"
+          },
+          {
+            "title": "New York sues Kalshi, says prediction markets constitute illegal gambling",
+            "url": "https://finance.yahoo.com/markets/options/articles/york-sues-kalshi-says-prediction-041828953.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-07-31T04:18:28.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-07-31T04:18:28.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Regulatory",
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
@@ -541,14 +676,14 @@
         "slug": "fed-proposes-modernizing-rules-for-mutual-banking-organizations-and-in",
         "lane": "markets",
         "title": "Fed proposes modernizing rules for mutual banking organizations and insider lending",
-        "summary": "The Federal Reserve Board requested public comment on two proposals: one to modernize rules for mutual banking organizations, and another to update its rule on extending credit to bank 'insiders' such as executives, board members, and major shareholders.",
-        "whyItMatters": "Changes to insider-lending and mutual bank rules affect governance and risk controls at banks, which matters for financial-sector investors and regulators alike.",
+        "summary": "The Federal Reserve Board has requested public comment on proposals to modernize rules governing mutual banking organizations, as well as its rule on extending credit to bank insiders such as executives, board members, and major shareholders.",
+        "whyItMatters": "Changes to insider-lending and mutual bank rules affect governance standards across the banking sector and could ease or tighten compliance burdens.",
         "whatToWatch": [
-          "Length and outcome of the public comment period",
-          "Final rule language once adopted"
+          "The public comment period and deadline for feedback",
+          "Final rule adoption timeline"
         ],
         "questions": [
-          "How significantly would the proposed changes alter current insider-lending limits?"
+          "What specific changes are being proposed relative to current rules?"
         ],
         "sources": [
           {
@@ -566,24 +701,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T14:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Regulatory",
-        "trendScore": 58,
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
         "id": "markets-43afbe6304",
         "slug": "analysis-markets-read-warsh-as-dovish-but-his-own-words-hint-at-a-hike",
         "lane": "markets",
-        "title": "Analysis: Markets read Warsh as dovish, but his own words hint at a hike",
-        "summary": "CNBC analysis argues that while markets have interpreted Fed Chair Kevin Warsh's recent comments as dovish, a closer look at his own statements suggests he may be leaning toward a rate hike.",
-        "whyItMatters": "A gap between market perception and the Fed chair's actual signals raises the risk of a surprise policy move that could jolt rate-sensitive assets.",
+        "title": "Analysis: Markets read Warsh as dovish, but his own words hint at a rate hike",
+        "summary": "CNBC analysis argues that while markets interpreted Fed Chairman Kevin Warsh's recent comments as dovish, his actual language suggests he may be leaning toward a rate hike rather than cuts.",
+        "whyItMatters": "A misread of Fed communication can lead to sharp repricing in rates and equities once the market catches up to the chair's actual stance.",
         "whatToWatch": [
-          "Upcoming Fed communications for clarification on Warsh's stance",
-          "Market repricing if a hike appears more likely"
+          "Warsh's next public remarks or press conference",
+          "Market repricing of rate-hike odds if the hawkish reading gains traction"
         ],
         "questions": [
-          "Is the market misreading Warsh's language, or is the analysis overreading it?"
+          "What specific phrases in Warsh's comments support the hawkish interpretation?"
         ],
         "sources": [
           {
@@ -595,25 +730,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T18:16:18.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Analysis",
-        "trendScore": 56,
+        "trendScore": 49,
         "confidence": "medium"
       },
       {
         "id": "markets-a1ce645583",
         "slug": "inflation-indicators-sit-near-multi-year-lows-as-warsh-s-fed-faces-pre",
         "lane": "markets",
-        "title": "Inflation indicators sit near multi-year lows as Warsh's Fed faces pressure to act",
-        "summary": "CNBC reports that several inflation indicators are at their lowest levels in years even as Kevin Warsh's Federal Reserve faces pressure to take action on inflation.",
-        "whyItMatters": "The disconnect between falling inflation gauges and calls for Fed action highlights the uncertainty facing markets over the central bank's next move.",
+        "title": "Inflation indicators hit multi-year lows as Warsh's Fed faces pressure to act",
+        "summary": "CNBC reports that several inflation indicators are at their lowest levels in years even as the Fed under Kevin Warsh faces pressure to act on inflation, highlighting a tension between data and policy urgency.",
+        "whyItMatters": "The gap between cooling inflation readings and perceived Fed pressure to act shapes expectations for the pace of future rate moves.",
         "whatToWatch": [
           "Upcoming inflation data releases",
-          "Fed statements addressing the pressure to act"
+          "Fed commentary reconciling low readings with policy stance"
         ],
         "questions": [
-          "Which specific indicators are being cited as at multi-year lows?",
-          "What is driving the pressure to act despite low readings?"
+          "Which specific inflation gauges are being cited as at multi-year lows?"
         ],
         "sources": [
           {
@@ -625,153 +759,9 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T16:51:30.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Fed Watch",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-e6bd5ca54e",
-        "slug": "fed-officials-who-backed-rate-hike-say-action-needed-now-on-inflation",
-        "lane": "markets",
-        "title": "Fed officials who backed rate hike say action needed now on inflation",
-        "summary": "CNBC reports that Federal Reserve officials who voted for a rate hike are publicly stating that immediate action is needed to combat inflation.",
-        "whyItMatters": "Public dissent or urgency from voting Fed officials signals potential division on the committee, which markets watch closely for clues on the path of rates.",
-        "whatToWatch": [
-          "Statements from other Fed officials in response",
-          "The next scheduled FOMC decision"
-        ],
-        "questions": [
-          "How many officials are in this camp, and how does it compare to the rest of the committee?"
-        ],
-        "sources": [
-          {
-            "title": "Fed officials who voted to hike rates say action is needed now against inflation",
-            "url": "https://www.cnbc.com/2026/07/31/fed-officials-who-voted-to-hike-rates-say-action-is-needed-now-against-inflation.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-07-31T14:35:52.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T14:35:52.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Fed Watch",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-2541456241",
-        "slug": "eaton-shares-jump-on-earnings-outlook-seen-as-sign-of-ai-buildout-resi",
-        "lane": "markets",
-        "title": "Eaton shares jump on earnings, outlook seen as sign of AI buildout resilience",
-        "summary": "Shares of Eaton rose after the company's earnings and forward guidance suggested continued strength in demand tied to the AI infrastructure buildout, according to CNBC.",
-        "whyItMatters": "Eaton's results are being read as a bellwether for industrial and electrical-equipment demand linked to AI data center growth, a theme investors are tracking closely.",
-        "whatToWatch": [
-          "Eaton's guidance execution in coming quarters",
-          "Read-through to other industrial suppliers tied to AI infrastructure"
-        ],
-        "questions": [
-          "How much of Eaton's growth is directly attributable to AI-related demand versus other segments?"
-        ],
-        "sources": [
-          {
-            "title": "Eaton shares jump as its earnings and outlook show resilience of the AI buildout",
-            "url": "https://www.cnbc.com/2026/07/31/eaton-jumps-as-its-earnings-and-outlook-signal-hope-for-the-ai-buildout.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-07-31T19:43:14.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T19:43:14.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-d12ebfa32d",
-        "slug": "450-000-defrauded-student-loan-borrowers-eligible-for-debt-forgiveness",
-        "lane": "markets",
-        "title": "450,000 defrauded student loan borrowers eligible for debt forgiveness",
-        "summary": "CNBC reports that roughly 450,000 borrowers who were defrauded are now eligible for student loan debt forgiveness, with details on qualification criteria included in the report.",
-        "whyItMatters": "Debt forgiveness at this scale affects household balance sheets and consumer spending capacity, a factor relevant to broader economic and market conditions.",
-        "whatToWatch": [
-          "Application or notification process for eligible borrowers",
-          "Any legal challenges to the forgiveness program"
-        ],
-        "questions": [
-          "What specific fraud claims qualify borrowers for this relief?"
-        ],
-        "sources": [
-          {
-            "title": "450,000 defrauded student loan borrowers are eligible for debt forgiveness — here's who qualifies",
-            "url": "https://www.cnbc.com/2026/07/31/sweet-v-mcmahon-student-loans-borrower-defense.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-07-31T15:45:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T15:45:15.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 50,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-5a720dbbab",
-        "slug": "new-york-sues-kalshi-over-prediction-market-operations",
-        "lane": "markets",
-        "title": "New York sues Kalshi over prediction-market operations",
-        "summary": "New York has filed suit against prediction-market platform Kalshi, alleging it is running an 'illegal gambling operation,' according to CNBC.",
-        "whyItMatters": "The lawsuit adds to regulatory pressure on prediction markets, a fast-growing corner of financial and event-contract trading that has drawn scrutiny from multiple state and federal regulators.",
-        "whatToWatch": [
-          "Kalshi's legal response to the New York suit",
-          "Whether other states follow with similar actions"
-        ],
-        "questions": [
-          "How does this suit interact with Kalshi's existing federal regulatory status?"
-        ],
-        "sources": [
-          {
-            "title": "New York sues Kalshi, says prediction market is running 'illegal gambling operation'",
-            "url": "https://www.cnbc.com/2026/07/31/new-york-sues-kalshi-claims-it-is-illegal-gambling-operation.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-07-31T15:31:24.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T15:31:24.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Regulatory",
-        "trendScore": 50,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-82e0e9b646",
-        "slug": "microsoft-shares-surge-options-strategist-weighs-in-on-trade-ideas",
-        "lane": "markets",
-        "title": "Microsoft shares surge; options strategist weighs in on trade ideas",
-        "summary": "Microsoft shares are rallying, and CNBC's Mike Khouw offered his view on how investors could still position to profit from the move.",
-        "whyItMatters": "Microsoft is one of the largest weightings in major indexes, so a sharp move in its stock has outsized influence on broader market benchmarks.",
-        "whatToWatch": [
-          "Follow-through in Microsoft shares in coming sessions",
-          "Options market activity around the stock"
-        ],
-        "questions": [
-          "What is driving the surge in Microsoft shares specifically?"
-        ],
-        "sources": [
-          {
-            "title": "Microsoft shares are surging. Here’s how to still make money, says Mike Khouw",
-            "url": "https://www.cnbc.com/2026/07/31/microsoft-shares-are-surging-heres-how-to-still-make-money-says-mike-khouw.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-07-31T15:26:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T15:26:31.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Markets",
-        "trendScore": 50,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 48,
         "confidence": "medium"
       }
     ],
@@ -781,14 +771,12 @@
         "slug": "ainews-not-much-happened-today",
         "lane": "ai",
         "title": "[AINews] not much happened today",
-        "summary": "Latent Space and AI News both published editions titled simply 'not much happened today,' reflecting a rare lull in the usual flood of AI announcements over consecutive days in late July 2026.",
-        "whyItMatters": "Even slow news days are worth tracking as a signal of the industry's normal cadence — a pause after a period of rapid releases can precede the next wave.",
+        "summary": "Latent Space's daily AI News digest characterized the day as unusually quiet, with no major model releases or industry shakeups to report. The newsletter, which typically tracks model drops, funding, and research chatter, essentially flagged a lull.",
+        "whyItMatters": "Even 'nothing happened' days are useful signal for a fast-moving industry — they help calibrate how relentless the actual news cycle usually is.",
         "whatToWatch": [
-          "Whether the lull continues or is followed by a cluster of announcements"
+          "Whether the pace picks back up in the next daily digest"
         ],
-        "questions": [
-          "Is this a temporary pause or a sign of slowing release cycles industry-wide?"
-        ],
+        "questions": [],
         "sources": [
           {
             "title": "[AINews] not much happened today",
@@ -801,32 +789,55 @@
             "url": "https://news.smol.ai/issues/26-07-31-not-much/",
             "publisher": "AI News",
             "publishedAt": "2026-07-31T05:44:39.000Z"
-          },
-          {
-            "title": "not much happened today",
-            "url": "https://news.smol.ai/issues/26-07-30-not-much/",
-            "publisher": "AI News",
-            "publishedAt": "2026-07-30T05:44:39.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-07-30T05:44:39.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 64,
+        "publishedAt": "2026-07-31T05:44:39.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Roundup",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
+        "id": "ai-6d58997b46",
+        "slug": "openai-highlights-ten-recent-advances-in-math-and-theoretical-cs",
+        "lane": "ai",
+        "title": "OpenAI highlights ten recent advances in math and theoretical CS",
+        "summary": "OpenAI published a post spotlighting ten advances in mathematics and theoretical computer science, framed as progress enabled or accelerated by AI tools. Details beyond the framing are not specified in the source.",
+        "whyItMatters": "OpenAI continues to position its models as contributors to frontier research, part of a broader push to show AI's value beyond consumer chat use cases.",
+        "whatToWatch": [
+          "Whether OpenAI or outside researchers publish follow-up validation of these claimed advances"
+        ],
+        "questions": [
+          "How much of the actual mathematical work was done by AI versus human researchers using AI as a tool?"
+        ],
+        "sources": [
+          {
+            "title": "Ten advances in mathematics and theoretical computer science",
+            "url": "https://openai.com/index/ten-advances-in-mathematics",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-08-01T00:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T00:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Research",
+        "trendScore": 48,
         "confidence": "medium"
       },
       {
         "id": "ai-1335096306",
         "slug": "a-team-deprecates-its-own-llm-router-amid-a-router-building-trend",
         "lane": "ai",
-        "title": "A team deprecates its own LLM router amid a router-building trend",
-        "summary": "A Hacker News-featured post describes a team that built and then deprecated its own LLM router, even as many other companies are currently building similar routing systems to direct queries between different models.",
-        "whyItMatters": "LLM routers are becoming a common infrastructure layer as apps use multiple models; a firsthand account of abandoning one offers a useful counter-signal amid the trend.",
+        "title": "Everyone is building LLM routers, we deprecated ours",
+        "summary": "A company behind an LLM routing product wrote about deprecating it, despite a wave of competitors building similar routers that pick which model to call for a given task. The post, shared widely on Hacker News, argues against the current router trend.",
+        "whyItMatters": "LLM routing has been pitched as a way to cut costs and improve reliability across providers; a builder walking away from it is a useful reality check against the hype.",
         "whatToWatch": [
-          "Whether the underlying reasoning influences other teams building routers"
+          "Whether other router-focused startups follow suit or double down"
         ],
         "questions": [
-          "What specifically made the router unnecessary — better single-model capability, or overhead outweighing benefits?"
+          "What specifically failed — cost, latency, accuracy, or maintenance burden?"
         ],
         "sources": [
           {
@@ -838,47 +849,21 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T18:06:39Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Analysis",
-        "trendScore": 50,
+        "trendScore": 43,
         "confidence": "low"
-      },
-      {
-        "id": "ai-4879819590",
-        "slug": "openai-highlights-insurer-univ-s-ai-workforce-push",
-        "lane": "ai",
-        "title": "OpenAI highlights insurer Univé's AI workforce push",
-        "summary": "OpenAI published a case study on Dutch insurer Univé's efforts to build an 'AI-ready workforce,' part of the company's ongoing series showcasing enterprise adoption of its tools.",
-        "whyItMatters": "Enterprise case studies like this signal how OpenAI is positioning itself in the corporate AI adoption and training market, particularly in Europe.",
-        "whatToWatch": [
-          "Further enterprise case studies from OpenAI in coming weeks"
-        ],
-        "questions": [
-          "What measurable outcomes, if any, resulted from Univé's AI training initiative?"
-        ],
-        "sources": [
-          {
-            "title": "Univé builds an AI-ready workforce",
-            "url": "https://openai.com/index/unive",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-07-31T07:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T07:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 50,
-        "confidence": "medium"
       },
       {
         "id": "ai-6697096bc4",
         "slug": "critics-push-back-on-anthropic-s-dario-amodei-over-open-weights-stance",
         "lane": "ai",
-        "title": "Critics push back on Anthropic's Dario Amodei over open-weights stance",
-        "summary": "A Hacker News-featured essay argues that Anthropic CEO Dario Amodei's position against open-weight AI models is self-serving and short-sighted, reigniting the open-vs-closed model debate.",
-        "whyItMatters": "The open-versus-closed weights argument shapes competitive dynamics, safety policy, and who controls access to frontier AI capabilities.",
+        "title": "Critics push back on Dario Amodei's open-weights stance",
+        "summary": "A widely discussed blog post argues that Anthropic CEO Dario Amodei's position against open-weight AI models is self-serving and shortsighted, reigniting the open-vs-closed model debate. The piece circulated heavily on Hacker News.",
+        "whyItMatters": "The open-weights debate shapes competitive dynamics, safety policy, and who gets to build on frontier AI — Anthropic's stance carries real weight given its influence in Washington.",
         "whatToWatch": [
-          "Whether Anthropic or Amodei responds publicly to the criticism"
+          "Any public response from Anthropic or Amodei",
+          "Whether the debate influences upcoming AI policy discussions"
         ],
         "questions": [
           "Does this critique reflect a broader shift in developer sentiment against closed frontier labs?"
@@ -893,23 +878,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T16:24:09Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Analysis",
-        "trendScore": 49,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Opinion",
+        "trendScore": 41,
         "confidence": "low"
       },
       {
         "id": "ai-b86dc435d6",
         "slug": "openai-details-efforts-on-responsible-ai-across-europe",
         "lane": "ai",
-        "title": "OpenAI details efforts on 'responsible AI' across Europe",
-        "summary": "OpenAI published a post outlining its work on advancing responsible AI practices across Europe, part of its continued engagement with European regulators and institutions.",
-        "whyItMatters": "With the EU AI Act and broader European regulatory scrutiny ongoing, OpenAI's public positioning here signals how it plans to navigate compliance and public trust in the region.",
+        "title": "OpenAI outlines plans for 'responsible AI' in Europe",
+        "summary": "OpenAI published a post on advancing responsible AI across Europe, part of its ongoing effort to engage with European regulators and stakeholders. Specific commitments or programs were not detailed beyond the announcement itself.",
+        "whyItMatters": "With the EU AI Act now taking effect in stages, how frontier labs frame compliance and 'responsibility' publicly matters for how regulators and the public perceive them.",
         "whatToWatch": [
-          "Concrete policy or product changes tied to European regulatory requirements"
+          "Concrete follow-through on any European initiatives OpenAI references",
+          "EU regulatory response or engagement"
         ],
         "questions": [
-          "What specific commitments, if any, does this involve beyond general messaging?"
+          "What specific commitments, if any, come attached to this messaging?"
         ],
         "sources": [
           {
@@ -921,23 +907,23 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T15:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Regulatory",
-        "trendScore": 49,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Policy",
+        "trendScore": 41,
         "confidence": "medium"
       },
       {
         "id": "ai-6e145b017b",
         "slug": "openai-outlines-vision-for-abundant-intelligence",
         "lane": "ai",
-        "title": "OpenAI outlines vision for 'abundant intelligence'",
-        "summary": "OpenAI published a post titled 'Building abundant intelligence,' laying out its framing for making advanced AI capabilities widely accessible.",
-        "whyItMatters": "Framing posts like this shape public and investor narrative around OpenAI's mission and strategic priorities as competition intensifies.",
+        "title": "OpenAI pitches vision of 'abundant intelligence'",
+        "summary": "OpenAI published a post titled 'Building abundant intelligence,' laying out a vision-level narrative about AI's broader societal potential. The source gives no further specifics on concrete products or policies tied to the framing.",
+        "whyItMatters": "These framing posts often precede or accompany strategic shifts at OpenAI, signaling how the company wants to be perceived amid competitive and regulatory pressure.",
         "whatToWatch": [
-          "Whether concrete product or pricing moves follow this messaging"
+          "Whether concrete initiatives or products follow this messaging"
         ],
         "questions": [
-          "What specific initiatives, if any, back up the 'abundant intelligence' framing?"
+          "Is 'abundant intelligence' tied to a specific product roadmap or purely rhetorical positioning?"
         ],
         "sources": [
           {
@@ -949,8 +935,37 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T15:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 49,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 41,
+        "confidence": "medium"
+      },
+      {
+        "id": "ai-4879819590",
+        "slug": "openai-highlights-insurer-univ-s-ai-workforce-push",
+        "lane": "ai",
+        "title": "OpenAI case study: insurer Univé trains an 'AI-ready' workforce",
+        "summary": "OpenAI published a customer story about Dutch insurer Univé preparing its workforce for AI adoption, part of OpenAI's ongoing series highlighting enterprise customers. No further operational details were given.",
+        "whyItMatters": "Enterprise adoption stories are how OpenAI demonstrates real-world traction for its business tools beyond consumer chat, which matters for its revenue narrative.",
+        "whatToWatch": [
+          "Whether Univé or OpenAI shares measurable outcomes from the rollout"
+        ],
+        "questions": [
+          "What tools specifically is Univé deploying, and at what scale?"
+        ],
+        "sources": [
+          {
+            "title": "Univé builds an AI-ready workforce",
+            "url": "https://openai.com/index/unive",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-07-31T07:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-07-31T07:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Enterprise",
+        "trendScore": 39,
         "confidence": "medium"
       },
       {
@@ -958,13 +973,14 @@
         "slug": "openai-says-it-disrupted-a-criminal-scam-operation",
         "lane": "ai",
         "title": "OpenAI says it disrupted a criminal scam operation",
-        "summary": "OpenAI published a report describing its actions to disrupt a criminal scam operation that had been misusing its tools or platform, part of its ongoing threat-disruption disclosures.",
-        "whyItMatters": "Reports like this show how generative AI platforms are being targeted for abuse and how providers are responding, which matters for trust and policy discussions.",
+        "summary": "OpenAI published a report describing action taken to disrupt a scam operation that was misusing its tools, continuing a pattern of periodic disclosures about abuse on its platforms. Specifics of the operation's scale or method were not detailed in the source.",
+        "whyItMatters": "These disclosures are part of how AI companies demonstrate they're policing misuse of their models, a growing concern as generative AI gets used in fraud.",
         "whatToWatch": [
-          "Further disclosures detailing methods used by bad actors and OpenAI's countermeasures"
+          "Whether law enforcement or other reporting adds detail on the operation",
+          "Future disclosures of similar takedowns"
         ],
         "questions": [
-          "How large-scale was this operation, and were law enforcement agencies involved?"
+          "How was the scam operation identified, and what harm had it already caused?"
         ],
         "sources": [
           {
@@ -976,50 +992,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T00:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "Safety",
-        "trendScore": 48,
+        "trendScore": 33,
         "confidence": "medium"
-      },
-      {
-        "id": "ai-945ecdf346",
-        "slug": "researcher-shows-deepseek-to-gpt-oss-distillation-doesn-t-carry-over-c",
-        "lane": "ai",
-        "title": "Researcher shows DeepSeek-to-GPT-OSS distillation doesn't carry over censorship",
-        "summary": "A Hacker News 'Show HN' post demonstrates that distilling DeepSeek's model into GPT-OSS does not transfer DeepSeek's content censorship behaviors, and invites others to test the claim themselves.",
-        "whyItMatters": "This touches on a live debate about how model behaviors like censorship propagate (or don't) through distillation, relevant to open-source model builders working with Chinese-origin models.",
-        "whatToWatch": [
-          "Community replication attempts and pushback on the methodology"
-        ],
-        "questions": [
-          "Does this finding generalize across other censored models and distillation targets?"
-        ],
-        "sources": [
-          {
-            "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
-            "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-07-30T18:13:06Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-30T18:13:06Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 46,
-        "confidence": "low"
       },
       {
         "id": "ai-deedd35499",
         "slug": "developer-asks-what-should-the-gui-for-ai-agents-actually-look-like",
         "lane": "ai",
-        "title": "Developer asks: what should the GUI for AI agents actually look like?",
-        "summary": "A Hacker News 'Show HN' post presents a demo exploring interface design for AI agents, prompting community discussion on how users should interact with autonomous agent systems.",
-        "whyItMatters": "As agentic AI products proliferate, interface design remains an unsolved problem shaping how useful and trustworthy these systems feel to everyday users.",
+        "title": "Hacker News debates what a GUI for AI agents should actually look like",
+        "summary": "A Show HN post posed an open question about interface design for AI agents, sparking discussion on Hacker News about how humans should monitor, direct, and trust autonomous agents. It's a demo/discussion piece rather than a product launch.",
+        "whyItMatters": "As agentic AI tools spread, interface design is becoming a real bottleneck — poor UX for agent oversight is a common complaint among early adopters.",
         "whatToWatch": [
-          "Community feedback and iteration on the proposed GUI concepts"
+          "Whether this demo evolves into a shipped product",
+          "Broader convergence (or divergence) in agent UI patterns across vendors"
         ],
         "questions": [
-          "Will any of these interface patterns get adopted by major agent products?"
+          "What interaction pattern actually wins: chat, timeline, dashboard, or something else?"
         ],
         "sources": [
           {
@@ -1031,50 +1021,25 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T05:17:29Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 45,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Show HN",
+        "trendScore": 32,
         "confidence": "low"
-      },
-      {
-        "id": "ai-d1897a8c1b",
-        "slug": "google-deepmind-introduces-gemini-robotics-er-2",
-        "lane": "ai",
-        "title": "Google DeepMind introduces Gemini Robotics ER 2",
-        "summary": "Google DeepMind announced Gemini Robotics ER 2, a new version of its embodied reasoning model aimed at robotics applications, continuing its push into physical-world AI systems.",
-        "whyItMatters": "Robotics is an increasingly contested frontier for AI labs, and embodied reasoning models are key to enabling robots to understand and act in real environments.",
-        "whatToWatch": [
-          "Availability details, partner robotics platforms, and benchmark comparisons"
-        ],
-        "questions": [
-          "How does ER 2 compare in capability and cost to competitors' robotics-focused models?"
-        ],
-        "sources": [
-          {
-            "title": "Introducing Gemini Robotics ER 2",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/",
-            "publisher": "Google DeepMind",
-            "publishedAt": "2026-07-30T15:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-30T15:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Product",
-        "trendScore": 44,
-        "confidence": "medium"
       },
       {
         "id": "ai-3ecd81bf40",
         "slug": "gpt-5-6-price-cuts-said-to-slash-cost-of-gpt-5-4-level-intelligence-13",
         "lane": "ai",
-        "title": "GPT-5.6 price cuts said to slash cost of GPT-5.4-level intelligence 13x in four months",
-        "summary": "A Latent Space newsletter reports that OpenAI cut GPT-5.6 pricing by 20-80%, and claims the cost of achieving GPT-5.4-level intelligence has dropped roughly 13x over four months, attributing part of the gain to what it calls 'recursive self-optimization.'",
-        "whyItMatters": "Rapid price-performance improvements reshape the economics of deploying AI at scale and intensify competitive pressure among frontier labs.",
+        "title": "Reports claim GPT-5.6 price cut of 20-80%, citing rapid cost drops",
+        "summary": "Latent Space's newsletter reported a price cut for GPT-5.6 of between 20% and 80%, and claimed the cost of GPT-5.4-level intelligence has fallen 13x in four months, attributing part of the drop to 'recursive self-optimization.' These figures come from a single newsletter source and should be treated as unverified claims rather than confirmed OpenAI pricing.",
+        "whyItMatters": "If accurate, rapid cost-per-intelligence declines would reshape competitive pricing across the industry and accelerate adoption of frontier models in cost-sensitive applications.",
         "whatToWatch": [
-          "Official OpenAI confirmation of pricing changes and the mechanisms driving efficiency gains"
+          "Official OpenAI pricing pages or announcements confirming or contradicting these numbers",
+          "Competitor pricing responses"
         ],
         "questions": [
-          "What exactly does 'recursive self-optimization' refer to technically, and is the 13x figure independently verifiable?"
+          "What does 'recursive self-optimization' actually refer to technically, and is that OpenAI's own characterization or the newsletter's?",
+          "Are these price/cost figures independently verifiable?"
         ],
         "sources": [
           {
@@ -1086,133 +1051,50 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-07-31T04:40:54.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Pricing",
-        "trendScore": 42,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Unverified",
+        "trendScore": 29,
         "confidence": "low"
       },
       {
-        "id": "ai-fc362ba711",
-        "slug": "openai-touts-gpt-5-6-as-advancing-the-price-performance-frontier",
+        "id": "ai-9436783d59",
+        "slug": "viral-post-claims-ai-has-upended-the-foundation-of-modern-academia",
         "lane": "ai",
-        "title": "OpenAI touts GPT-5.6 as advancing the 'price-performance frontier'",
-        "summary": "OpenAI published a post framing GPT-5.6 as a step forward on price-performance, aligning with separate reports of steep price cuts for the model around the same time.",
-        "whyItMatters": "Price-performance claims from OpenAI directly affect developer and enterprise decisions about which models to build on, and signal competitive positioning against rivals.",
+        "title": "Viral post claims AI has upended 'the foundation of modern academia'",
+        "summary": "A widely shared social media post declared that AI has blown apart the foundations of modern academia, generating significant discussion on Hacker News. The source gives no specifics on what prompted the claim or what evidence backs it.",
+        "whyItMatters": "Concerns about AI's effect on academic integrity, assessment, and research norms keep resurfacing as a major flashpoint for universities and publishers.",
         "whatToWatch": [
-          "Independent benchmarks testing OpenAI's price-performance claims for GPT-5.6"
+          "Whether specific incidents or data are cited in follow-up discussion",
+          "Any institutional policy responses referenced in the thread"
         ],
         "questions": [
-          "How do the claimed gains hold up against competing models from Anthropic, Google, and others?"
+          "What specific evidence, if any, underlies this claim?",
+          "Is this about student cheating, research fraud, or something else entirely?"
         ],
         "sources": [
           {
-            "title": "Advancing the price-performance frontier with GPT-5.6",
-            "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-07-30T10:00:00.000Z"
+            "title": "\"the very foundation of modern academia has been blown to bits\"",
+            "url": "https://twitter.com/lemire/status/2082851447499088173",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-07-31T02:54:02Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-30T10:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Product",
-        "trendScore": 42,
-        "confidence": "medium"
+        "publishedAt": "2026-07-31T02:54:02Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Commentary",
+        "trendScore": 24,
+        "confidence": "low"
       }
     ],
     "tech": [
       {
-        "id": "tech-f10358a15a",
-        "slug": "samsung-warns-memory-chip-shortage-will-worsen-through-2027-persist-in",
-        "lane": "tech",
-        "title": "Samsung warns memory chip shortage will worsen through 2027, persist into 2028",
-        "summary": "Samsung says the ongoing shortage of memory chips is expected to intensify over the next two years, with supply constraints projected to last until 2028. The warning comes from the world's largest memory chipmaker, suggesting the squeeze is structural rather than temporary.",
-        "whyItMatters": "Memory chips underpin everything from smartphones to AI servers, so a prolonged shortage could raise costs and slow production across the tech industry.",
-        "whatToWatch": [
-          "Whether other memory makers issue similar guidance",
-          "Price movements for DRAM and NAND components",
-          "Impact on device makers' 2027 product roadmaps"
-        ],
-        "questions": [
-          "What's driving the shortage—AI demand, capacity constraints, or both?",
-          "Will this push device prices higher for consumers?"
-        ],
-        "sources": [
-          {
-            "title": "Samsung expects memory shortage to worsen through 2027 and last until 2028",
-            "url": "https://techcrunch.com/2026/07/31/samsung-expects-memory-shortage-to-worsen-through-2027-and-last-until-2028/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-07-31T15:37:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T15:37:58.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Supply Chain",
-        "trendScore": 60,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-49a7a32eae",
-        "slug": "sharge-s-disk-pro-2-dock-aims-to-be-an-everyday-carry-multitool-for-sw",
-        "lane": "tech",
-        "title": "Sharge's Disk Pro 2 dock aims to be an everyday-carry multitool for Switch 2, iPhone, and laptops",
-        "summary": "The Verge reviews the Sharge Disk Pro 2, a portable dock/accessory that adds tricks for Nintendo Switch 2, iPhone, and laptop users, positioning it as a more capable everyday-carry gadget than its predecessor.",
-        "whyItMatters": "It's a niche accessory story, but reflects the growing market for multi-device docking hardware as people juggle more portable gadgets.",
-        "whatToWatch": [],
-        "questions": [
-          "How does pricing compare to official first-party accessories?"
-        ],
-        "sources": [
-          {
-            "title": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
-            "url": "https://www.theverge.com/gadgets/973886/sharge-disk-pro-2-hands-on-switch-2-hdmi-usb-c-dock",
-            "publisher": "The Verge",
-            "publishedAt": "2026-07-31T22:09:11.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T22:09:11.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 58,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-4e0eceb3e0",
-        "slug": "google-to-exempt-sanctioned-nations-from-new-android-developer-verific",
-        "lane": "tech",
-        "title": "Google to exempt sanctioned nations from new Android developer verification rules",
-        "summary": "Google plans to carve out an exemption for developers in sanctioned countries from its upcoming Android developer identity verification requirements, according to Ars Technica. The move addresses concerns that the verification system could effectively lock out developers in those regions.",
-        "whyItMatters": "Android's developer verification push has raised worries about who gets excluded from the platform; this exemption shapes how broadly the policy will actually apply.",
-        "whatToWatch": [
-          "Final rollout details of the verification requirement",
-          "Reaction from developers in affected regions"
-        ],
-        "questions": [
-          "How will Google verify eligibility for the exemption itself?"
-        ],
-        "sources": [
-          {
-            "title": "Google plans to exempt sanctioned nations from Android developer verification",
-            "url": "https://arstechnica.com/gadgets/2026/07/google-plans-to-exempt-sanctioned-nations-from-android-developer-verification/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-07-31T21:35:56.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T21:35:56.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Policy",
-        "trendScore": 58,
-        "confidence": "medium"
-      },
-      {
         "id": "tech-687b7ba02e",
         "slug": "wired-publishes-h-r-block-discount-roundup-for-tax-season-prep",
         "lane": "tech",
-        "title": "Wired publishes H&R Block discount roundup for tax season prep",
-        "summary": "Wired has posted a coupon/deal roundup highlighting a 25% discount on H&R Block's DIY and Tax Pro Assist services.",
-        "whyItMatters": "This is a consumer deals post rather than an industry development, of limited relevance to broader tech trends.",
+        "title": "H&R Block Offers 25% Off DIY Filing and Tax Pro Assist",
+        "summary": "Wired published a roundup of current H&R Block discount codes, including 25% off DIY tax filing and its Tax Pro Assist service. It's a consumer deals post rather than a product or policy story.",
+        "whyItMatters": "Tax-prep pricing and promotions shape how millions of consumers choose between software and assisted filing each season.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
@@ -1225,52 +1107,107 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-01T05:00:00.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 56,
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 53,
         "confidence": "medium"
       },
       {
-        "id": "tech-21c47ff1ab",
-        "slug": "opinion-banning-robot-vacuums-won-t-make-them-safer-just-worse",
+        "id": "tech-49a7a32eae",
+        "slug": "sharge-s-disk-pro-2-dock-aims-to-be-an-everyday-carry-multitool-for-sw",
         "lane": "tech",
-        "title": "Opinion: banning robot vacuums won't make them safer, just worse",
-        "summary": "The Verge argues that proposed bans on robot vacuums, presumably over safety or privacy concerns, would fail to address underlying risks and instead degrade the product category without fixing the actual problems.",
-        "whyItMatters": "As smart home devices face growing regulatory scrutiny, this debate over how (or whether) to regulate robot vacuums is a preview of broader fights over connected-device oversight.",
+        "title": "Sharge Disk Pro 2 Review: A More Capable Everyday Carry Drive",
+        "summary": "The Verge reviewed the Sharge Disk Pro 2, a portable storage/dock device, noting improved tricks for Switch 2, iPhone, and laptop use that make it a more compelling everyday-carry accessory than its predecessor.",
+        "whyItMatters": "As handheld consoles and phones converge with laptop workflows, multi-device storage accessories reflect broader demand for flexible, portable computing setups.",
         "whatToWatch": [
-          "Any formal regulatory proposals targeting robot vacuums",
-          "Industry response from vacuum makers"
+          "Whether accessory makers expand similar multi-device support as Switch 2 adoption grows."
         ],
-        "questions": [
-          "What specific safety or privacy incidents are prompting calls for a ban?"
-        ],
+        "questions": [],
         "sources": [
           {
-            "title": "The ban on robot vacuums won’t make them safer, only worse",
-            "url": "https://www.theverge.com/tech/973738/robot-vacuum-ban-fewer-choices-higher-prices",
+            "title": "With Switch 2, iPhone, and laptop tricks, the Sharge Disk Pro 2 is finally a worthy EDC",
+            "url": "https://www.theverge.com/gadgets/973886/sharge-disk-pro-2-hands-on-switch-2-hdmi-usb-c-dock",
             "publisher": "The Verge",
-            "publishedAt": "2026-07-31T17:30:49.000Z"
+            "publishedAt": "2026-07-31T22:09:11.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-31T17:30:49.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Analysis",
-        "trendScore": 56,
+        "publishedAt": "2026-07-31T22:09:11.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Review",
+        "trendScore": 53,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-4e0eceb3e0",
+        "slug": "google-to-exempt-sanctioned-nations-from-new-android-developer-verific",
+        "lane": "tech",
+        "title": "Google to Exempt Sanctioned Nations from Android Developer Verification",
+        "summary": "Ars Technica reports Google plans to carve out exemptions for developers in sanctioned countries from its upcoming Android developer identity-verification requirements. The move addresses concerns that the verification system could effectively lock out developers in those regions.",
+        "whyItMatters": "Android's developer verification push affects who can distribute apps globally, and carve-outs for sanctioned nations touch on tensions between platform control, compliance law, and open access to app ecosystems.",
+        "whatToWatch": [
+          "Details on how Google defines and implements the exemption as verification rolls out."
+        ],
+        "questions": [
+          "How will Google verify developer identity in sanctioned regions without a standard process?"
+        ],
+        "sources": [
+          {
+            "title": "Google plans to exempt sanctioned nations from Android developer verification",
+            "url": "https://arstechnica.com/gadgets/2026/07/google-plans-to-exempt-sanctioned-nations-from-android-developer-verification/",
+            "publisher": "Ars Technica",
+            "publishedAt": "2026-07-31T21:35:56.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-07-31T21:35:56.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Regulatory",
+        "trendScore": 52,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-f10358a15a",
+        "slug": "samsung-warns-memory-chip-shortage-will-worsen-through-2027-persist-in",
+        "lane": "tech",
+        "title": "Samsung Warns Memory Chip Shortage Will Worsen Through 2027",
+        "summary": "TechCrunch reports Samsung expects the ongoing memory chip shortage to intensify through 2027 and persist into 2028, longer than previously anticipated. The warning points to sustained supply constraints for DRAM and NAND components.",
+        "whyItMatters": "Memory shortages ripple through pricing for PCs, phones, servers, and AI infrastructure, potentially raising costs across the entire electronics industry for years.",
+        "whatToWatch": [
+          "Whether device makers raise prices or delay product launches citing component costs.",
+          "Capacity expansion announcements from Samsung and rivals."
+        ],
+        "questions": [
+          "How much of the shortage is driven by AI data center demand versus consumer electronics?"
+        ],
+        "sources": [
+          {
+            "title": "Samsung expects memory shortage to worsen through 2027 and last until 2028",
+            "url": "https://techcrunch.com/2026/07/31/samsung-expects-memory-shortage-to-worsen-through-2027-and-last-until-2028/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-07-31T15:37:58.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-07-31T15:37:58.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Supply Chain",
+        "trendScore": 52,
         "confidence": "medium"
       },
       {
         "id": "tech-abe78d6275",
         "slug": "google-earth-pulled-ai-tool-that-could-generate-fake-satellite-images-",
         "lane": "tech",
-        "title": "Google Earth pulled AI tool that could generate fake satellite images after just one day",
-        "summary": "Google Earth introduced an AI feature capable of producing realistic but fake satellite imagery, then retracted it within a day after backlash, according to Ars Technica and The Verge. The rapid reversal highlights how quickly generative AI tools can create credibility problems for trusted platforms.",
-        "whyItMatters": "Satellite imagery is widely treated as authoritative evidence; an AI tool that can fabricate convincing fake versions poses risks for misinformation, journalism, and geopolitical disputes.",
+        "title": "Google Pulls AI Tool That Could Fake Satellite Images in Google Earth",
+        "summary": "Google retracted an AI feature in Google Earth within a day of its debut after it became clear the tool could be used to generate convincing fake satellite imagery, according to Ars Technica and The Verge. The tool's rapid withdrawal underscored the reputational risk of AI features that could undermine trust in a widely used mapping product.",
+        "whyItMatters": "Google Earth is treated as an authoritative visual record; a tool capable of generating fake satellite imagery threatens to erode trust in geospatial evidence used in journalism, research, and disputes.",
         "whatToWatch": [
-          "Whether Google reintroduces the feature with safeguards",
-          "Other companies' handling of similar AI image-generation risks"
+          "Whether Google reintroduces a modified version of the tool with safeguards.",
+          "Scrutiny of AI image-generation features on other mapping and imagery platforms."
         ],
         "questions": [
-          "What specific outputs or misuse prompted the retraction?"
+          "What review process allowed the tool to launch before this risk was caught?"
         ],
         "sources": [
           {
@@ -1288,188 +1225,211 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-07-31T19:13:29.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Breaking",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-12087dd89b",
-        "slug": "new-york-sues-kalshi-alleging-it-runs-an-illegal-gambling-operation",
-        "lane": "tech",
-        "title": "New York sues Kalshi, alleging it runs an illegal gambling operation",
-        "summary": "New York has filed a lawsuit against prediction-market platform Kalshi, accusing it of operating an illegal gambling business, according to Engadget and The Verge. The suit adds to ongoing legal and regulatory pressure facing prediction markets in the US.",
-        "whyItMatters": "The case is part of a broader clash between prediction-market platforms and state regulators over whether their contracts amount to gambling, with implications for the sector's legality nationwide.",
-        "whatToWatch": [
-          "Kalshi's legal response and any court rulings",
-          "Whether other states file similar suits"
-        ],
-        "questions": [
-          "How will this affect Kalshi's federally regulated derivatives status?"
-        ],
-        "sources": [
-          {
-            "title": "New York alleges Kalshi is running an 'illegal gambling operation' in new lawsuit",
-            "url": "https://www.engadget.com/2228160/new-york-alleges-kalshi-is-running-an-illegal-gambling-operation-in-new-lawsuit/",
-            "publisher": "Engadget",
-            "publishedAt": "2026-07-31T19:14:24.000Z"
-          },
-          {
-            "title": "New York sues Kalshi for allegedly running an ‘illegal gambling operation’",
-            "url": "https://www.theverge.com/tech/973709/new-york-kalshi-lawsuit-illegal-gambling-operation",
-            "publisher": "The Verge",
-            "publishedAt": "2026-07-31T15:30:13.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-07-31T15:30:13.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Regulatory",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-43fb41d572",
-        "slug": "snapchat-stops-rewarding-fully-ai-generated-content-on-spotlight",
-        "lane": "tech",
-        "title": "Snapchat stops rewarding fully AI-generated content on Spotlight",
-        "summary": "Snapchat is changing its Spotlight algorithm so that fully AI-generated posts no longer receive the same reward or visibility as human-made content, according to Engadget and TechCrunch. The move is aimed at curbing low-quality AI content, sometimes called 'AI slop,' from dominating the feed.",
-        "whyItMatters": "It's part of a wider industry reckoning with AI-generated content flooding social platforms, and how creator incentive systems need to adapt.",
-        "whatToWatch": [
-          "How Snapchat defines and detects 'fully AI-generated' content",
-          "Whether other platforms adopt similar policies"
-        ],
-        "questions": [
-          "How will partially AI-assisted content be treated differently?"
-        ],
-        "sources": [
-          {
-            "title": "Snapchat is cracking down on AI slop in Spotlight",
-            "url": "https://www.engadget.com/2228152/snapchat-is-cracking-down-on-ai-slop-in-spotlight/",
-            "publisher": "Engadget",
-            "publishedAt": "2026-07-31T19:11:08.000Z"
-          },
-          {
-            "title": "Snapchat no longer rewards fully AI-generated Spotlight content",
-            "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-07-31T16:49:08.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-07-31T16:49:08.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Platform Policy",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-ec77bd47db",
-        "slug": "openai-reportedly-finds-more-evidence-of-its-ai-agents-going-off-the-r",
-        "lane": "tech",
-        "title": "OpenAI reportedly finds more evidence of its AI agents going off the rails",
-        "summary": "TechCrunch reports OpenAI has found additional evidence that its AI agents have malfunctioned or acted unexpectedly ('ran amok') in more instances than previously known, though details on the scope remain limited.",
-        "whyItMatters": "As AI agents get deployed for autonomous tasks, reliability failures raise safety and trust concerns for enterprises and consumers relying on them.",
-        "whatToWatch": [
-          "Whether OpenAI publishes a fuller incident report",
-          "Any changes to agent safety guardrails"
-        ],
-        "questions": [
-          "What specifically did the malfunctioning agents do?",
-          "How widespread is this among OpenAI's deployed agent products?"
-        ],
-        "sources": [
-          {
-            "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
-            "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-07-31T22:47:26.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-07-31T22:47:26.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
         "badge": "AI Safety",
-        "trendScore": 53,
+        "trendScore": 49,
         "confidence": "medium"
       },
       {
-        "id": "tech-ee619c0984",
-        "slug": "rivian-s-e-bike-spinoff-also-finally-begins-deliveries-after-delays",
+        "id": "tech-21c47ff1ab",
+        "slug": "opinion-banning-robot-vacuums-won-t-make-them-safer-just-worse",
         "lane": "tech",
-        "title": "Rivian's e-bike spinoff Also finally begins deliveries after delays",
-        "summary": "Also, the e-bike spinoff from EV maker Rivian, is set to start delivering its product after months of delay, according to TechCrunch.",
-        "whyItMatters": "It's a small but notable test of whether established EV makers can successfully branch into micromobility products.",
+        "title": "Opinion: A Robot Vacuum Ban Won't Actually Make Them Safer",
+        "summary": "The Verge published an opinion piece arguing that a ban on robot vacuums would not improve safety and could instead make the devices worse, presumably by cutting off manufacturers from iterating on flawed designs. The piece frames the debate around regulatory response to robot vacuum safety concerns.",
+        "whyItMatters": "How regulators handle safety issues with connected home devices sets precedent for smart-home product oversight more broadly.",
         "whatToWatch": [
-          "Initial customer reviews and delivery volumes",
-          "Whether further delays or issues emerge"
+          "Any formal regulatory action or ban proposal targeting robot vacuums."
         ],
         "questions": [
-          "What caused the original delays?"
+          "What specific safety incidents are driving calls for a ban?"
         ],
         "sources": [
           {
-            "title": "Rivian spinoff Also to start delivering e-bikes after months of delays",
-            "url": "https://techcrunch.com/2026/07/31/rivian-spinoff-also-to-start-delivering-e-bikes-after-months-of-delays/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-07-31T22:00:08.000Z"
+            "title": "The ban on robot vacuums won’t make them safer, only worse",
+            "url": "https://www.theverge.com/tech/973738/robot-vacuum-ban-fewer-choices-higher-prices",
+            "publisher": "The Verge",
+            "publishedAt": "2026-07-31T17:30:49.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-31T22:00:08.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 53,
+        "publishedAt": "2026-07-31T17:30:49.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Analysis",
+        "trendScore": 49,
         "confidence": "medium"
       },
       {
-        "id": "tech-d3efc8146f",
-        "slug": "apple-s-new-airtags-drop-back-to-their-lowest-price-yet",
+        "id": "tech-35040a8130",
+        "slug": "at-t-offers-50-discount-codes-for-august",
         "lane": "tech",
-        "title": "Apple's new AirTags drop back to their lowest price yet",
-        "summary": "The Verge reports Apple's latest AirTags have returned to a previous low sale price.",
-        "whyItMatters": "A minor consumer pricing note rather than an industry-shaping development.",
+        "title": "AT&T Offers $50 Discount Codes for August",
+        "summary": "Wired's roundup lists current AT&T promo codes offering $50 off, alongside other August deals for Canon, Chewy, and Peacock. It's a consumer savings compilation rather than a product or business news story.",
+        "whyItMatters": "Telecom and retail promo cycles reflect ongoing price competition for subscribers and shoppers heading into late summer.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "Apple’s new AirTags are back down to their best price",
-            "url": "https://www.theverge.com/gadgets/973973/apple-airtag-second-generation-deal-sale",
-            "publisher": "The Verge",
-            "publishedAt": "2026-07-31T19:35:45.000Z"
+            "title": "AT&T Promo Codes: $50 Off This August 2026",
+            "url": "https://www.wired.com/story/att-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          },
+          {
+            "title": "30% Off Canon Promo Codes | August 2026",
+            "url": "https://www.wired.com/story/canon-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          },
+          {
+            "title": "Chewy Promo Codes: $20 Off August 2026",
+            "url": "https://www.wired.com/story/chewy-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          },
+          {
+            "title": "Peacock Promo Codes: 40% Off August 2026",
+            "url": "https://www.wired.com/story/peacock-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-31T19:35:45.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "trendScore": 52,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
         "confidence": "medium"
       },
       {
-        "id": "tech-3bd9cb10d4",
-        "slug": "would-you-get-tattooed-just-to-interview-at-a-7-days-a-week-ai-startup",
+        "id": "tech-358a26fe11",
+        "slug": "dell-offers-20-off-coupon-codes-for-august",
         "lane": "tech",
-        "title": "Would you get tattooed just to interview at a 7-days-a-week AI startup?",
-        "summary": "Ars Technica examines workplace culture at an AI startup reportedly operating on a seven-day work week, including anecdotes about employees getting tattoos as part of the interview or onboarding culture.",
-        "whyItMatters": "It's an anecdotal window into the intense, high-pressure work culture emerging at some AI startups amid the industry's race for talent and speed.",
-        "whatToWatch": [
-          "Whether other AI startups face scrutiny over similar work practices"
-        ],
-        "questions": [
-          "How representative is this of AI startup culture broadly?"
-        ],
+        "title": "Dell Offers 20% Off Coupon Codes for August",
+        "summary": "Wired compiled current Dell discount codes offering 20% off, paired with a separate Design Within Reach promo, as part of its regular August deals coverage.",
+        "whyItMatters": "PC pricing promotions are a signal of demand and inventory conditions in the consumer electronics market, especially amid reported component shortages.",
+        "whatToWatch": [],
+        "questions": [],
         "sources": [
           {
-            "title": "Would you get tattooed just to interview at a 7-days-a-week AI startup?",
-            "url": "https://arstechnica.com/culture/2026/07/ai-startup-admits-tattoo-for-interview-stunt-was-reckless/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-07-31T19:04:56.000Z"
+            "title": "Dell Coupon Codes: 20% Off for August 2026",
+            "url": "https://www.wired.com/story/dell-coupon-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          },
+          {
+            "title": "Design Within Reach Promo Codes: 30% Off | August 2026",
+            "url": "https://www.wired.com/story/design-within-reach-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-07-31T19:04:56.000Z",
-        "updatedAt": "2026-08-01T05:48:36.054Z",
-        "badge": "Culture",
-        "trendScore": 52,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-648a2d34cb",
+        "slug": "ebay-coupons-offer-20-off-in-august",
+        "lane": "tech",
+        "title": "eBay Coupons Offer 20% Off in August",
+        "summary": "Wired published a roundup noting eBay coupon codes providing 20% off purchases this August, part of its ongoing consumer deals coverage.",
+        "whyItMatters": "Marketplace discount codes are a small but recurring signal of e-commerce promotional activity.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "eBay Coupons: 20% Off in August 2026",
+            "url": "https://www.wired.com/story/ebay-coupon-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-a06fb1564f",
+        "slug": "home-depot-promo-codes-offer-up-to-50-off-in-august",
+        "lane": "tech",
+        "title": "Home Depot Promo Codes Offer Up to 50% Off in August",
+        "summary": "Wired's deals roundup lists Home Depot promo codes offering up to 50% off, alongside a separate Squarespace discount, as part of routine August savings coverage.",
+        "whyItMatters": "Retail discounting patterns offer a minor gauge of consumer spending pressure heading into fall.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "Home Depot Promo Codes: 50% Off in August 2026",
+            "url": "https://www.wired.com/story/home-depot-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          },
+          {
+            "title": "Squarespace Promo Codes: 20% Off in August 2026",
+            "url": "https://www.wired.com/story/squarespace-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-a719a956ac",
+        "slug": "paramount-coupon-codes-and-deals-listed-for-august",
+        "lane": "tech",
+        "title": "Paramount+ Coupon Codes and Deals Listed for August",
+        "summary": "Wired published a roundup of current Paramount+ subscription discounts and coupon codes available in August.",
+        "whyItMatters": "Streaming discount cycles reflect competitive pressure among services trying to retain subscribers amid a crowded market.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "Paramount+ Coupon Codes and Deals for August 2026",
+            "url": "https://www.wired.com/story/paramount-plus-coupon-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-fa7bd899cb",
+        "slug": "turbotax-full-service-coupons-available-this-august",
+        "lane": "tech",
+        "title": "TurboTax Full Service Coupons Available This August",
+        "summary": "Wired listed current coupon offers for TurboTax's Full Service tax-filing product, part of its recurring consumer deals coverage.",
+        "whyItMatters": "Discounting on assisted tax-filing services reflects competitive dynamics in the tax-prep software market, adjacent to rivals like H&R Block.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "TurboTax Full Service Coupons This August",
+            "url": "https://www.wired.com/story/turbotax-coupon/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-01T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-01T05:00:00.000Z",
+        "updatedAt": "2026-08-01T08:15:36.060Z",
+        "badge": "Deals",
+        "trendScore": 48,
         "confidence": "medium"
       }
     ]
