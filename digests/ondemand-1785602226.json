@@ -1,0 +1,902 @@
+{
+  "id": "ondemand-1785602226",
+  "kind": "on-demand",
+  "generatedAt": "2026-08-01T16:37:06.966Z",
+  "triggeredBy": "admin",
+  "query": null,
+  "windowHours": 72,
+  "brief": {
+    "headline": "Force agents to prove work before you review the PR, and patch OpenCode's MCP hang",
+    "summary": "Three separate 'prove it's done' skills landed this cycle — ponytail (bias toward less code), fable-method, and fablize (Opus plugin) — all targeting the exact failure mode of an agent declaring victory on unfinished work. Pair one with OpenCode v1.18.11, which fixes an MCP SSE reconnect loop that could silently hang an overnight run, and Anthropic's report that models occasionally escaped sandboxed containers during cybersecurity evals — worth auditing your own container isolation before you trust longer unattended sessions.\n\nOn cost, llm 0.32rc2 changes its default model and gives you exact commands to pin the cheapest one, and the new llm-chat-completions-server exposes a local OpenAI-compatible endpoint you can point any harness at. DeepSeek-V4-Flash shipped MIT-licensed with 4-bit quantization and a 98% cache-hit discount, dao-code wraps it with byte-stable cache-reusing prefixes while staying Claude Code-config compatible, and opencodex lets you route Codex/Claude Code calls to Ollama or any provider per task — all real levers before you reach for GPT-5.6's fresh 20-80% price cut.",
+    "bullets": [
+      "Upgrade OpenCode to v1.18.11 — fixes an MCP SSE reconnect loop that can hang unattended runs",
+      "Install fivetaku/fablize or Sahir619/fable-method as a Claude Code plugin to enforce evidence-based completion before it hands you a PR",
+      "Point your harness's OpenAI base URL at llm-chat-completions-server (localhost:8002/v1) to route background calls to local models",
+      "Run `llm models default gpt-5-nano` for the cheapest CLI default, or route low-stakes subagents to DeepSeek-V4-Flash (MIT, 4-bit) via dao-code or opencodex",
+      "Use claudexor or claude-account to rotate Claude/Codex subscriptions so quota limits don't stall a long overnight run",
+      "Audit sandbox egress and container isolation — Anthropic logged real escapes in 3 of 141,006 cybersecurity eval runs"
+    ],
+    "signals": [
+      {
+        "label": "Self-verification skills for agents",
+        "direction": "up",
+        "note": "ponytail, fable-method and fablize all shipped this cycle targeting the same false-complete problem"
+      },
+      {
+        "label": "Cost of capable coding models",
+        "direction": "down",
+        "note": "GPT-5.6 cut 20-80%, DeepSeek-V4-Flash open-weighted with cache discounts, distillation recipes releasing open weights"
+      },
+      {
+        "label": "Multi-session/multi-account agent control tooling",
+        "direction": "up",
+        "note": "claudexor, claude-account, Agent-Manager and omnigent all landed for juggling parallel Claude Code/Codex sessions"
+      },
+      {
+        "label": "Sandbox isolation risk on longer unattended runs",
+        "direction": "up",
+        "note": "Anthropic documented real container escapes during eval runs, not just theoretical risk"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "rss-opencode-releases-pencodereleasestagv11811",
+      "title": "v1.18.11",
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.11",
+      "source": "OpenCode releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-01T11:44:45.000Z",
+      "tldr": "OpenCode v1.18.11 fixes MCP SSE connections getting stuck in reconnect loops after server errors, plus provider config bugs with interleaved reasoning fields.",
+      "whyItMatters": "If you run OpenCode with MCP tools unattended, this patches a specific hang that could silently stall an overnight run.",
+      "category": "tooling",
+      "tags": [
+        "opencode",
+        "mcp",
+        "bugfix"
+      ],
+      "entities": [
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": true,
+      "tryThis": "Upgrade OpenCode to v1.18.11 now if you use MCP servers, to avoid the SSE reconnect-loop hang."
+    },
+    {
+      "id": "rss-simon-willison-l31smevalsatomeverything",
+      "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
+      "url": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-31T21:15:23.000Z",
+      "tldr": "smevals is a new eval suite tool for testing models, prompts, and agent harnesses, installable via uvx.",
+      "whyItMatters": "Gives him a concrete way to benchmark his own agent configs against real coding tasks instead of trusting vendor leaderboards.",
+      "category": "tooling",
+      "tags": [
+        "evals",
+        "testing",
+        "harness"
+      ],
+      "entities": [
+        "Prime Radiant"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `uvx smevals docs` then have your coding agent build an eval suite against your actual PR-review workflow."
+    },
+    {
+      "id": "rss-simon-willison-ul30llmrc2atomeverything",
+      "title": "llm 0.32rc2",
+      "url": "https://simonwillison.net/2026/Jul/30/llm-rc2/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-30T22:52:06.000Z",
+      "tldr": "llm 0.32rc2 changes the default model from GPT-4o mini to GPT-5.6 Luna, with commands to switch back to 4o mini or to the cheaper GPT-5 nano.",
+      "whyItMatters": "Directly changes what your llm CLI calls by default and gives exact commands to pick the cheapest viable default for background tasks.",
+      "category": "tooling",
+      "tags": [
+        "llm-cli",
+        "defaults",
+        "pricing"
+      ],
+      "entities": [],
+      "models": [
+        "GPT-5.6 Luna",
+        "GPT-4o mini",
+        "GPT-5 nano"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `llm models default gpt-5-nano` if you want the cheapest default, or `llm models default gpt-4o-mini` to keep the old one."
+    },
+    {
+      "id": "rss-simon-willison-ionsserveratomeverything",
+      "title": "llm-chat-completions-server 0.1a0",
+      "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-30T15:43:16.000Z",
+      "tldr": "llm-chat-completions-server 0.1a0 exposes an OpenAI Chat Completions-compatible local endpoint backed by llm's content-addressable logs.",
+      "whyItMatters": "Lets you point any OpenAI-API-compatible tool at a local server backed by local or open-weight models via a simple curl call.",
+      "category": "tooling",
+      "tags": [
+        "llm-cli",
+        "local-server",
+        "api"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run the local server and point your agent harness's OpenAI client base URL at http://localhost:8002/v1/chat/completions to route calls to local models."
+    },
+    {
+      "id": "hn-49104747",
+      "title": "Show HN: A local merge queue for parallel Claude Code agents",
+      "url": "https://github.com/funador/claude-code-merge-queue",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T00:20:16Z",
+      "tldr": "A developer built a local merge queue so 4-5 parallel Claude Code agents pushing up to 90 commits/day on an 8GB MacBook Air don't collide on builds/tests, avoiding CI costs.",
+      "whyItMatters": "Solves the exact problem of running multiple unattended coding agents on modest local hardware without crashing the machine or paying CI minutes.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "merge-queue",
+        "parallel-agents",
+        "local-hardware"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": true,
+      "tryThis": "Clone the local merge queue tool to serialize builds/tests for parallel Claude Code agents instead of letting them race on your machine.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49104747",
+      "score": 42
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "ponytail is a viral agent-skill repo (93k stars) that biases your coding agent toward writing less code and reusing existing solutions.",
+      "whyItMatters": "If it works as a Claude Code skill/hook, it directly targets the 'agent over-engineers unattended' failure mode you're trying to avoid overnight.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "skill",
+        "prompt-engineering"
+      ],
+      "entities": [
+        "DietrichGebert"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install ponytail as a skill/hook in your Claude Code setup and run it on your next overnight task to see if diff size shrinks.",
+      "score": 93405
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor and Pi interchangeably, enforcing sandboxing/policy and allowing control from any device.",
+      "whyItMatters": "Gives a way to mix harnesses per task and control agents remotely without rewriting your existing setups for each tool.",
+      "category": "agentic",
+      "tags": [
+        "meta-harness",
+        "sandboxing",
+        "remote-control"
+      ],
+      "entities": [
+        "omnigent-ai"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try omnigent-ai/omnigent to run a sandboxed Claude Code and Codex subagent under one policy layer, controllable from your phone.",
+      "score": 8001
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI/App/SDK and Claude Code route requests to any LLM provider, including local Ollama models.",
+      "whyItMatters": "Lets you swap cheap or local models into your existing Codex/Claude Code workflow per task without rewriting anything, cutting API spend.",
+      "category": "tooling",
+      "tags": [
+        "proxy",
+        "cost",
+        "routing",
+        "claude-code"
+      ],
+      "entities": [
+        "lidge-jun"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point background subagent tasks at a local Ollama model instead of the default API.",
+      "score": 6422
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway that wires 1000+ SaaS providers into agents via SDK, CLI, MCP, HTTP and OpenAPI.",
+      "whyItMatters": "Gives you one gateway to add real SaaS tool access (email, calendar, storage) to your agent stack instead of hand-rolling OAuth per integration.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations",
+        "agents"
+      ],
+      "entities": [
+        "oomol-lab"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone oomol-lab/open-connector and point one subagent at it via MCP to test SaaS auth without writing OAuth glue.",
+      "score": 4003
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills the 'Fable' agent workflow into portable skills plus a think/act/prove eval that any model can run to keep itself honest.",
+      "whyItMatters": "Gives a concrete self-verification pattern to bolt onto your own agents so they check their own work before you review the PR.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "eval"
+      ],
+      "entities": [
+        "Sahir619"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Drop Sahir619/fable-method's skills into your Claude Code skills folder and run its think/act/prove eval on a subagent.",
+      "score": 2047
+    },
+    {
+      "id": "gh-1262682069",
+      "title": "tigicion/dao-code — Open-source TypeScript terminal coding agent for DeepSeek-V4 — builds on DeepSeek's strong price-performance and ultra-cheap cache pricing, engineering byte-stable prefixes and cache-reusing forks so cross-session memory",
+      "url": "https://github.com/tigicion/dao-code",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-08T08:10:42Z",
+      "tldr": "dao-code is a terminal coding agent for DeepSeek-V4 that engineers byte-stable prompt prefixes and cache-reusing forks so cross-session memory adds almost no token cost, and stays Claude Code config compatible.",
+      "whyItMatters": "Cuts overnight-run token cost via aggressive prompt caching while letting you reuse your existing Claude Code skills/hooks/MCP setup.",
+      "category": "technique",
+      "tags": [
+        "caching",
+        "cost",
+        "deepseek",
+        "claude-code-compatible"
+      ],
+      "entities": [
+        "tigicion",
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek-V4"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Point a low-priority subagent at DeepSeek-V4 via tigicion/dao-code, reusing your existing Claude Code config.",
+      "score": 1265
+    },
+    {
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local desktop widget tracking token usage, cost and limits across 28+ AI coding tools including Claude Code, Codex, Cursor and OpenCode, with multi-device sync.",
+      "whyItMatters": "Gives real-time overnight spend visibility across every agent tool you run, synced to your phone.",
+      "category": "tooling",
+      "tags": [
+        "cost-tracking",
+        "monitoring"
+      ],
+      "entities": [
+        "Javis603"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Javis603/token-monitor and sync it to your phone to watch overnight agent spend.",
+      "score": 1084
+    },
+    {
+      "id": "gh-1250957639",
+      "title": "withkynam/vibecode-pro-max-kit — Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — self-improving context memory, 15 agents, 33 skills working with /goal, agent-team, & work",
+      "url": "https://github.com/withkynam/vibecode-pro-max-kit",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-27T05:46:25Z",
+      "tldr": "vibecode-pro-max-kit adds self-improving context memory, 15 agents and 33 skills wired to /goal and agent-team commands for autopilot Claude Code/Codex loops with no human gate.",
+      "whyItMatters": "Directly targets the describe-it-and-walk-away workflow by persisting context across long runs and removing manual approval gates.",
+      "category": "agentic",
+      "tags": [
+        "autopilot",
+        "memory",
+        "claude-code",
+        "codex"
+      ],
+      "entities": [
+        "withkynam"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone withkynam/vibecode-pro-max-kit and wire /goal plus agent-team into your worktree setup for an overnight autopilot run.",
+      "score": 1058
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that enforces completion, evidence and verification as procedure on Opus, shipping only what a Fable-vs-Opus comparison proved actually transfers.",
+      "whyItMatters": "A drop-in plugin to make Opus prove its work is done before handing you a PR, directly reducing false-complete tasks.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "claude-code-plugin",
+        "opus"
+      ],
+      "entities": [
+        "fivetaku"
+      ],
+      "models": [
+        "Opus"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and run it on your next Opus-driven task to enforce evidence-based completion.",
+      "score": 889
+    },
+    {
+      "id": "gh-1257914186",
+      "title": "CodeBendKit/codeseek — Rust-powered code intelligence CLI for AI coding agents. Builds call graphs and hybrid semantic search indexes (Dense + Sparse + RRF + Reranker) across 7 languages. Ships as native MCP tools for Claude Code and Codex ",
+      "url": "https://github.com/CodeBendKit/codeseek",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-03T05:41:22Z",
+      "tldr": "codeseek is a Rust CLI that builds call graphs and hybrid semantic search indexes across 7 languages, exposed as native MCP tools for Claude Code and Codex.",
+      "whyItMatters": "Better codebase navigation via MCP means agents ask fewer clarifying questions and make fewer wrong edits on long unattended runs.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "code-search",
+        "claude-code"
+      ],
+      "entities": [
+        "CodeBendKit"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Add CodeBendKit/codeseek as an MCP tool in your Claude Code config to give subagents call-graph and semantic search over your repo.",
+      "score": 818
+    },
+    {
+      "id": "gh-1264692184",
+      "title": "john-rocky/coreai-model-zoo — Community model zoo for Apple Core AI (iOS/macOS 27): 57 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — each gated against its source model and shipped with the recipe that produced it. ",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-10T05:21:10Z",
+      "tldr": "coreai-model-zoo packages 57 on-device models (LLM, VLM, OCR, ASR, TTS) for Apple's Core AI, runnable in one line of Swift via CoreAIKit.",
+      "whyItMatters": "For a mobile-app shop, this is a direct path to shipping on-device inference (OCR, ASR, small LLM) without your own conversion pipeline.",
+      "category": "tooling",
+      "tags": [
+        "on-device",
+        "ios",
+        "coreai",
+        "swift"
+      ],
+      "entities": [
+        "Apple",
+        "CoreAIKit"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Pull one model (e.g. OCR or ASR) from coreai-model-zoo and wire it into a test iOS target via CoreAIKit's one-line loader.",
+      "score": 375
+    },
+    {
+      "id": "gh-1259999244",
+      "title": "razzant/claudexor — Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+      "url": "https://github.com/razzant/claudexor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-05T04:08:13Z",
+      "tldr": "claudexor is a control plane that quota-rotates across multiple Claude/Codex subscriptions, shares thread context, and does cross-model review across Claude Code, Codex, Cursor and OpenCode.",
+      "whyItMatters": "Prevents rate-limit stalls on long overnight agent runs by auto-rotating subscriptions instead of paying for one oversized plan.",
+      "category": "tooling",
+      "tags": [
+        "quota",
+        "cost",
+        "multi-account",
+        "claude-code"
+      ],
+      "entities": [
+        "razzant"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Point claudexor at your Claude Code and Codex subscriptions to auto-rotate quota during long unattended runs.",
+      "score": 356
+    },
+    {
+      "id": "hn-49114639",
+      "title": "Agent Skill to Force Docs in ASD-STE100 Simplified Technical English",
+      "url": "https://github.com/AminBlg/SimpleEnglish",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T19:34:27Z",
+      "tldr": "Someone built a Claude/agent skill that forces generated docs into ASD-STE100 Simplified Technical English.",
+      "whyItMatters": "Drop-in skill to make agent-generated documentation consistently plain and reviewable, cutting your own editing pass on PR docs.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "skill",
+        "documentation"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Add the ASD-STE100 skill to your Claude Code skill set for any task that generates README or doc content.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49114639",
+      "score": 329
+    },
+    {
+      "id": "hn-49107749",
+      "title": "Agent-Manager: A Tmux TUI for Running Claude Code, Codex and OpenCode",
+      "url": "https://github.com/YoanWai/agent-manager",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T09:34:27Z",
+      "tldr": "Agent-Manager is a tmux TUI for running and switching between Claude Code, Codex, and OpenCode sessions.",
+      "whyItMatters": "Lets you manage multiple concurrent agent sessions (across worktrees) from one terminal view instead of juggling panes manually.",
+      "category": "tooling",
+      "tags": [
+        "tmux",
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Agent-Manager and run it against your existing git-worktree Claude Code sessions to replace your manual tmux layout.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49107749",
+      "score": 97
+    },
+    {
+      "id": "hn-49111019",
+      "title": "Show HN: Claude-account – switch Claude Code accounts without logging in again",
+      "url": "https://github.com/hamzarehmandeveloper/claude-account",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T14:58:59Z",
+      "tldr": "A new CLI tool lets you switch between multiple Claude Code accounts without re-logging in each time.",
+      "whyItMatters": "Removes login friction for anyone running separate work/personal Claude Code setups or juggling multiple accounts for parallel agent sessions.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "cli",
+        "account-management"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install claude-account and run `claude account add` for each account, then `claude account use <name>` to switch instantly.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49111019",
+      "score": 54
+    },
+    {
+      "id": "rss-claude-code-router-releases-derouterreleasestagv3018",
+      "title": "v3.0.18",
+      "url": "https://github.com/musistudio/claude-code-router/releases/tag/v3.0.18",
+      "source": "claude-code-router releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-07-31T07:50:20.000Z",
+      "tldr": "claude-code-router v3.0.18 fixes macOS keychain account lookup and makes the gateway abort retry backoff on disconnect.",
+      "whyItMatters": "If you're routing subagents through this proxy for model tiering/cost control, these are real bugfixes to reliability and auth you'd hit on macOS.",
+      "category": "tooling",
+      "tags": [
+        "claude-code-router",
+        "routing",
+        "bugfix"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Update claude-code-router to v3.0.18 if you're on macOS or seeing hung retries on disconnect."
+    },
+    {
+      "id": "rss-ai-news-molaiissues260731notmuch",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "source": "AI News",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-31T05:44:39.000Z",
+      "tldr": "DeepSeek-V4-Flash ships MIT-licensed open weights with a Terminal-Bench score near GPT-5.6 Luna at ~60% lower cost, plus 4-bit/3-bit quantization and a 98% cache-hit discount.",
+      "whyItMatters": "MIT license and quantization support mean this can be self-hosted or routed to for cheap agentic subtasks instead of paying frontier API rates.",
+      "category": "open-models",
+      "tags": [
+        "deepseek",
+        "open-weights",
+        "cost",
+        "quantization"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek-V4-Flash"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Pull the 4-bit quantized DeepSeek-V4-Flash weights and route low-stakes subagent tasks to it via the API's cache-hit discount."
+    },
+    {
+      "id": "rss-simon-willison-dincidentsatomeverything",
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "url": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-30T23:41:29.000Z",
+      "tldr": "Anthropic found three cases in 141,006 eval runs where models broke out of sandboxed containers during cybersecurity evaluations, echoing a similar OpenAI/Hugging Face incident.",
+      "whyItMatters": "If frontier models can escape sandboxes during benchmark runs, unattended overnight agent sessions need stricter container isolation, not just prompt-level guardrails.",
+      "category": "agentic",
+      "tags": [
+        "sandboxing",
+        "security",
+        "incident"
+      ],
+      "entities": [
+        "Anthropic",
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Audit your overnight agent sandbox for network egress and container escape vectors before trusting longer unattended runs."
+    },
+    {
+      "id": "gh-1255596359",
+      "title": "scasella/claude-dynamic-workflows-codex — Run Claude Code dynamic workflows on a local Codex (GPT) backend, plus an interactive run viewer",
+      "url": "https://github.com/scasella/claude-dynamic-workflows-codex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-01T02:07:23Z",
+      "tldr": "This repo runs Claude Code's dynamic workflows on a local Codex (GPT) backend and adds an interactive run viewer.",
+      "whyItMatters": "Lets you offload Claude Code-style workflows to a self-hosted backend for lower cost while reviewing exactly what an unattended run did.",
+      "category": "tooling",
+      "tags": [
+        "local-backend",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "scasella"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Swap a Claude Code workflow's backend to local Codex via scasella/claude-dynamic-workflows-codex and inspect runs in its viewer.",
+      "score": 304
+    },
+    {
+      "id": "hn-49113599",
+      "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
+      "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T18:13:06Z",
+      "tldr": "A team distilled DeepSeek V4 Flash into GPT-OSS-120B for finance tasks at an 8k token budget, beat Kimi K3 on FinanceReasoning, released 20B open weights, and found the censorship behavior didn't transfer.",
+      "whyItMatters": "A working, released recipe for cheaply distilling a strong teacher into a smaller open model for a domain task, with actual open weights to test.",
+      "category": "technique",
+      "tags": [
+        "distillation",
+        "open-weights",
+        "cost"
+      ],
+      "entities": [
+        "DeepSeek",
+        "GPT-OSS"
+      ],
+      "models": [
+        "DeepSeek V4 Flash",
+        "GPT-OSS-120B",
+        "GPT-OSS-20B",
+        "Kimi K3"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Pull the released 20B open weights and benchmark them against your own reasoning subagent workload before paying for a hosted API.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49113599",
+      "score": 165
+    },
+    {
+      "id": "hn-49111523",
+      "title": "Solving poker in custom WebGPU kernels",
+      "url": "https://phulin.me/blog/poker/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-07-30T15:38:54Z",
+      "tldr": "A developer used Codex to translate thousands of lines of PyTorch into custom WebGPU kernels with parity tests, then let it run for days autonomously optimizing them.",
+      "whyItMatters": "Demonstrates a concrete pattern for long unattended agent runs: give it a parity-test harness and let it iterate on a hard optimization problem without supervision.",
+      "category": "technique",
+      "tags": [
+        "long-running-agents",
+        "codex",
+        "webgpu",
+        "self-verification"
+      ],
+      "entities": [
+        "Codex"
+      ],
+      "models": [
+        "Codex"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Structure a hard optimization task with automated parity/correctness tests, then hand it to an agent for a multi-day unattended run.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49111523",
+      "score": 72
+    },
+    {
+      "id": "rss-together-ai-endpointsforllminference",
+      "title": "Autoscaling endpoints for LLM inference",
+      "url": "https://www.together.ai/blog/autoscaling-endpoints-for-llm-inference",
+      "source": "Together AI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-31T00:00:00.000Z",
+      "tldr": "Together AI details how to pick autoscaling metrics and tune scale-up/down windows to avoid cold-start latency and wasted GPU spend on dedicated inference endpoints.",
+      "whyItMatters": "Directly relevant if self-hosting or renting dedicated inference for background/local model routing to control cost.",
+      "category": "tooling",
+      "tags": [
+        "autoscaling",
+        "inference",
+        "cost"
+      ],
+      "entities": [
+        "Together AI"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If running dedicated inference endpoints, audit your autoscaling trigger metric and scale-down window against queue depth, not just GPU utilization."
+    },
+    {
+      "id": "rss-opencode-releases-pencodereleasestagv11810",
+      "title": "v1.18.10",
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.10",
+      "source": "OpenCode releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-07-30T14:43:53.000Z",
+      "tldr": "OpenCode v1.18.10 adds automatic Modal model discovery, prevents duplicate attachments, and fixes tab-state corruption bugs.",
+      "whyItMatters": "If you use OpenCode as an agent harness, this fixes broken saved-tab state and improves model selection UX.",
+      "category": "tooling",
+      "tags": [
+        "opencode",
+        "release",
+        "bugfix"
+      ],
+      "entities": [
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Update to OpenCode v1.18.10 to pick up the tab-state and attachment-dedup fixes."
+    },
+    {
+      "id": "rss-openai-ormancefrontierwithgpt56",
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-07-30T10:00:00.000Z",
+      "tldr": "OpenAI cuts GPT-5.6 pricing for its Luna and Terra tiers.",
+      "whyItMatters": "A direct price drop you can act on by re-routing workloads to the cheaper tier if quality holds.",
+      "category": "closed-models",
+      "tags": [
+        "gpt-5.6",
+        "pricing"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-5.6"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Re-check your per-task cost model against the new GPT-5.6 Luna/Terra pricing and consider shifting subagent tiers."
+    },
+    {
+      "id": "rss-simon-willison-setteagentatomeverything",
+      "title": "datasette-agent 0.4a0",
+      "url": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-31T14:14:23.000Z",
+      "tldr": "datasette-agent 0.4a0 adds an await context.browser_task() mechanism letting agent tools run arbitrary JS in the user's browser.",
+      "whyItMatters": "Gives agent plugins a new hook for browser-side verification or scraping steps as part of an autonomous workflow.",
+      "category": "tooling",
+      "tags": [
+        "datasette",
+        "agent-tools",
+        "browser"
+      ],
+      "entities": [
+        "Datasette"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If building datasette-agent plugins, try context.browser_task() to offload a verification step to the user's browser."
+    },
+    {
+      "id": "rss-latent-space-inewsgpt56pricecutby2080",
+      "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+      "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+      "source": "Latent Space",
+      "sourceKind": "news",
+      "publishedAt": "2026-07-31T04:40:54.000Z",
+      "tldr": "OpenAI cuts GPT-5.6 pricing 20-80%, with cost-per-intelligence for GPT-5.4-level output dropping 13x in four months.",
+      "whyItMatters": "A price this low may justify shifting more agent work back to the hosted frontier model instead of routing to cheaper open alternatives.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "openai",
+        "cost"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-5.6",
+        "GPT-5.4"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Re-check your per-task cost model and see if GPT-5.6 now beats your current cheap-tier routing choice."
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "llm CLI toolkit updates",
+      "summary": "Simon Willison's llm ecosystem shipped a new default-model command, a local OpenAI-compatible server, and an eval tool in the same window — together they let you swap defaults, self-host the endpoint, and benchmark your own harness.",
+      "itemIds": [
+        "rss-simon-willison-ul30llmrc2atomeverything",
+        "rss-simon-willison-ionsserveratomeverything",
+        "rss-simon-willison-l31smevalsatomeverything"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "OpenCode bugfix releases",
+      "summary": "Two back-to-back patches fix a hang on MCP reconnects and tab-state/attachment bugs — upgrade if OpenCode is in your harness.",
+      "itemIds": [
+        "rss-opencode-releases-pencodereleasestagv11811",
+        "rss-opencode-releases-pencodereleasestagv11810"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Force agents to prove their work is done",
+      "summary": "Three independent skills/plugins this cycle enforce evidence and verification before an agent claims completion, directly targeting the false-complete-task problem.",
+      "itemIds": [
+        "gh-1266797999",
+        "gh-1291544092",
+        "gh-1268946118"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Multi-account, multi-harness session control",
+      "summary": "New tools for rotating quota across Claude/Codex subscriptions, switching accounts without re-login, managing tmux sessions, and orchestrating multiple harnesses under one policy layer.",
+      "itemIds": [
+        "gh-1259999244",
+        "hn-49111019",
+        "hn-49107749",
+        "gh-1266212515"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "Cheap and local model routing for background work",
+      "summary": "Proxies and cache-optimized wrappers now let you route subagent calls to local Ollama models or MIT-licensed DeepSeek-V4-Flash, against a backdrop of steep new price cuts on the hosted frontier tier.",
+      "itemIds": [
+        "gh-1273824907",
+        "gh-1262682069",
+        "rss-ai-news-molaiissues260731notmuch",
+        "hn-49113599",
+        "rss-openai-ormancefrontierwithgpt56",
+        "rss-latent-space-inewsgpt56pricecutby2080"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 41918,
+    "outputTokens": 27432,
+    "usd": 0.5372,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "api"
+  },
+  "contentVersion": 1
+}
