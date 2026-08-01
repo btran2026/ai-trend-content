@@ -1,8 +1,17 @@
 {
-  "manifestVersion": 16,
-  "generatedAt": "2026-08-01T02:10:02.955Z",
-  "latestDigestId": "2026-08-01",
+  "manifestVersion": 19,
+  "generatedAt": "2026-08-01T05:42:30.436Z",
+  "latestDigestId": "ondemand-1785562950",
   "digests": [
+    {
+      "id": "ondemand-1785562950",
+      "url": "digests/ondemand-1785562950.json",
+      "kind": "on-demand",
+      "generatedAt": "2026-08-01T05:42:30.436Z",
+      "itemCount": 32,
+      "headline": "Add an evidence gate before Claude Code calls a task done",
+      "contentVersion": 1
+    },
     {
       "id": "2026-08-01",
       "url": "digests/2026-08-01.json",
@@ -33,19 +42,43 @@
   ],
   "radar": {
     "url": "models/radar.json",
-    "contentVersion": 8
+    "contentVersion": 9
   },
   "sources": {
     "url": "config/sources.json",
     "contentVersion": 1
   },
   "news": {
-    "frontPage": { "url": "news/frontpage.json", "contentVersion": 0, "generatedAt": null },
+    "frontPage": {
+      "url": "news/frontpage.json",
+      "contentVersion": 1,
+      "generatedAt": "2026-08-01T05:48:36.054Z"
+    },
     "lanes": {
-      "crypto": { "url": "news/lanes/crypto.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
-      "markets": { "url": "news/lanes/markets.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
-      "ai": { "url": "news/lanes/ai.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
-      "tech": { "url": "news/lanes/tech.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 }
+      "crypto": {
+        "url": "news/lanes/crypto.json",
+        "contentVersion": 1,
+        "generatedAt": "2026-08-01T05:48:36.054Z",
+        "storyCount": 12
+      },
+      "markets": {
+        "url": "news/lanes/markets.json",
+        "contentVersion": 1,
+        "generatedAt": "2026-08-01T05:48:36.054Z",
+        "storyCount": 12
+      },
+      "ai": {
+        "url": "news/lanes/ai.json",
+        "contentVersion": 1,
+        "generatedAt": "2026-08-01T05:48:36.054Z",
+        "storyCount": 12
+      },
+      "tech": {
+        "url": "news/lanes/tech.json",
+        "contentVersion": 1,
+        "generatedAt": "2026-08-01T05:48:36.054Z",
+        "storyCount": 12
+      }
     }
   }
 }

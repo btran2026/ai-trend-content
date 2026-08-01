@@ -1,7 +1,45 @@
 {
-  "contentVersion": 8,
-  "generatedAt": "2026-08-01T02:10:02.955Z",
+  "contentVersion": 9,
+  "generatedAt": "2026-08-01T05:42:30.436Z",
   "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek-V4-Flash-0731",
+      "vendor": "DeepSeek",
+      "openness": "open-weights",
+      "license": "MIT",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-01T05:42:30.436Z",
+      "timeline": [
+        {
+          "at": "2026-08-01T05:42:30.436Z",
+          "what": "DeepSeek released DeepSeek-V4-Flash-0731, a 304B-parameter open-weights model priced at $0.14/M input and $0.27/M output tokens, with a public API beta scoring near GPT-5.6 Luna on Terminal-Bench at roughly 60% lower cost and support for 4-bit/3-bit local quantization.",
+          "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything"
+        }
+      ]
+    },
+    {
+      "id": "gpt-oss-20b",
+      "name": "GPT-OSS-20B",
+      "vendor": "ctgt.ai",
+      "openness": "open-weights",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-01T05:42:30.436Z",
+      "timeline": [
+        {
+          "at": "2026-08-01T05:42:30.436Z",
+          "what": "A team distilled DeepSeek V4 Flash into a GPT-OSS-based architecture at an 8k token budget for finance tasks, beating Kimi K3, and released the resulting 20B-parameter open weights.",
+          "url": "https://www.ctgt.ai/research/distillation-censorship-transfer"
+        }
+      ]
+    },
     {
       "id": "deepseek-v4-flash-0731",
       "name": "DeepSeek-V4-Flash-0731",
@@ -200,6 +238,11 @@
           "at": "2026-07-31T19:18:39.411Z",
           "what": "OpenAI cut GPT-5.6 API pricing by 20-80%, claiming a 13x cost reduction for GPT-5.4-level intelligence achieved over four months via recursive self-optimization.",
           "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80"
+        },
+        {
+          "at": "2026-08-01T05:42:30.436Z",
+          "what": "OpenAI cut GPT-5.6 API pricing by 20-80% across its Luna and Terra tiers, dropping the cost of GPT-5.4-level intelligence roughly 13x over four months.",
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
         }
       ]
     },
