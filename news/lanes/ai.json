@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-01T16:43:23.021Z",
-  "contentVersion": 4,
+  "generatedAt": "2026-08-01T19:05:08.367Z",
+  "contentVersion": 5,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,61 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-01T16:43:23.021Z"
-    },
-    {
-      "id": "ai-00793f88f4",
-      "slug": "ainews-not-much-happened-today",
-      "lane": "ai",
-      "title": "[AINews] not much happened today",
-      "summary": "Latent Space and AI News both published editions titled 'not much happened today,' suggesting a lull in major AI developments over the last few days. The recurrence across multiple daily editions signals a brief slowdown in the usual flow of model releases and announcements.",
-      "whyItMatters": "Even quiet periods are worth noting for a lane that tracks pace of industry change — lulls often precede bursts of announcements.",
-      "whatToWatch": [
-        "Whether the pace picks back up in the next few days' editions"
-      ],
-      "questions": [
-        "Is this a genuine slowdown or just a lighter news cycle for these particular outlets?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-01T01:38:09.000Z"
-        },
-        {
-          "title": "not much happened today",
-          "url": "https://news.smol.ai/issues/26-07-31-not-much/",
-          "publisher": "AI News",
-          "publishedAt": "2026-07-31T05:44:39.000Z"
-        },
-        {
-          "title": "not much happened today",
-          "url": "https://news.smol.ai/issues/26-07-30-not-much/",
-          "publisher": "AI News",
-          "publishedAt": "2026-07-30T05:44:39.000Z"
-        }
-      ],
-      "sourceCount": 2,
-      "publishedAt": "2026-07-30T05:44:39.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!1adH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOiugSLbQAAck-3.jpg",
-      "badge": "Analysis",
-      "trendScore": 59,
-      "confidence": "medium"
+      "updatedAt": "2026-08-01T19:05:08.367Z"
     },
     {
       "id": "ai-6d58997b46",
       "slug": "openai-highlights-ten-recent-advances-in-math-and-theoretical-cs",
       "lane": "ai",
-      "title": "OpenAI highlights ten advances in math and theoretical computer science",
-      "summary": "OpenAI published a piece outlining ten advances in mathematics and theoretical computer science, though specifics of the advances were not detailed beyond the headline. The post appears to be part of OpenAI's ongoing effort to showcase research applications of its models.",
-      "whyItMatters": "OpenAI framing its models as contributors to pure math and theory research is part of a broader push to demonstrate scientific value beyond consumer products.",
+      "title": "OpenAI highlights ten advances in mathematics and theoretical computer science",
+      "summary": "OpenAI published a roundup describing ten advances in mathematics and theoretical computer science, framed around progress it attributes to AI-assisted research. Details beyond the publisher's own framing are not available.",
+      "whyItMatters": "OpenAI continues to position its models as contributors to frontier scientific research, a narrative that shapes how the company argues for AI's societal value.",
       "whatToWatch": [
-        "Whether independent researchers verify or build on any specific claims"
+        "Whether independent researchers verify or credit AI's role in these specific advances",
+        "Follow-up posts detailing methodology"
       ],
       "questions": [
-        "What are the actual ten advances, and were they human-led with AI assistance or AI-driven discoveries?"
+        "How much of the credited progress came from AI tools versus human researchers?",
+        "Are these results peer-reviewed or independently verifiable?"
       ],
       "sources": [
         {
@@ -189,23 +150,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-01T00:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5RUlCTeEvzWYd2DDpdcNgh/f38e144bf6f5911074b1939c1528ed2b/Frame__4_.png?w=1600&h=900&fit=fill",
-      "trendScore": 48,
+      "badge": "Research",
+      "trendScore": 39,
       "confidence": "medium"
     },
     {
       "id": "ai-1335096306",
       "slug": "a-team-deprecates-its-own-llm-router-amid-a-router-building-trend",
       "lane": "ai",
-      "title": "A team explains why it deprecated its LLM router amid a router-building wave",
-      "summary": "A blog post making the rounds on Hacker News argues that while many companies are building LLM routers to direct queries to different models, the author's team deprecated their own router. The piece appears to be a contrarian take against the current trend.",
-      "whyItMatters": "LLM routing is a popular infrastructure pattern for managing cost and quality across model providers; a builder walking it back is a useful data point for teams evaluating the approach.",
+      "title": "A team explains why it deprecated its own LLM router",
+      "summary": "A blog post on Hacker News describes a company's decision to deprecate its internal LLM router even as many others in the industry build similar routing systems to direct queries between different models. The piece reportedly argues against the current router trend.",
+      "whyItMatters": "LLM routing is a widely adopted architecture pattern for balancing cost and quality across models; a public case against it could influence how developers design multi-model systems.",
       "whatToWatch": [
-        "Reaction from other infrastructure teams building similar routing layers"
+        "Whether other engineering teams publish similar reassessments of routing architectures"
       ],
       "questions": [
-        "What specifically failed or proved unnecessary about the router, and does that generalize?"
+        "What specific problems led to deprecating the router?",
+        "What replaced it in their stack?"
       ],
       "sources": [
         {
@@ -217,52 +180,50 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-07-31T18:06:39Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
       "imageUrl": "https://manifest.build/images/blog/why-we-deprecated-our-llm-router.png",
-      "badge": "Analysis",
-      "trendScore": 46,
+      "badge": "Engineering",
+      "trendScore": 34,
       "confidence": "low"
     },
     {
-      "id": "ai-4879819590",
-      "slug": "openai-highlights-insurer-univ-s-ai-workforce-push",
+      "id": "ai-00793f88f4",
+      "slug": "ainews-not-much-happened-today",
       "lane": "ai",
-      "title": "OpenAI case study: Univé builds an 'AI-ready workforce'",
-      "summary": "OpenAI published a case study on Univé, apparently describing efforts to prepare its workforce for AI adoption. Details beyond the title were not provided in available sources.",
-      "whyItMatters": "Enterprise AI-adoption case studies from OpenAI signal which industries and use cases the company is prioritizing for its business narrative.",
-      "whatToWatch": [
-        "Further enterprise case studies from OpenAI in similar formats"
-      ],
-      "questions": [
-        "What concrete tools or training did Univé implement, and what results were measured?"
-      ],
+      "title": "[AINews] not much happened today",
+      "summary": "Latent Space's daily AI news roundup was headlined simply as 'not much happened today,' suggesting a lull in major AI announcements for that news cycle.",
+      "whyItMatters": "Even slow news days are a useful signal for gauging the pace of the AI news cycle relative to the frenetic releases of recent months.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Univé builds an AI-ready workforce",
-          "url": "https://openai.com/index/unive",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-07-31T07:00:00.000Z"
+          "title": "[AINews] not much happened today",
+          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-01T01:38:09.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-07-31T07:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/51FClMbesCrsWgyHryFSMk/0c934bcb653acf296263e893041e4e2a/oai_unive_SEO.png?w=1600&h=900&fit=fill",
-      "trendScore": 46,
-      "confidence": "medium"
+      "publishedAt": "2026-08-01T01:38:09.000Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!1adH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOiugSLbQAAck-3.jpg",
+      "trendScore": 32,
+      "confidence": "low"
     },
     {
       "id": "ai-6697096bc4",
       "slug": "critics-push-back-on-anthropic-s-dario-amodei-over-open-weights-stance",
       "lane": "ai",
-      "title": "Critics push back on Dario Amodei's open-weights stance",
-      "summary": "A widely discussed Hacker News post argues that Anthropic CEO Dario Amodei's position on open-weight AI models is self-serving and short-sighted, reigniting the open-vs-closed model debate. The piece reflects ongoing tension between labs favoring closed, controlled deployment and advocates for open weights.",
-      "whyItMatters": "The open-vs-closed debate shapes competitive dynamics, safety policy, and who gets access to frontier capabilities — Anthropic's stance carries weight given its safety-focused brand.",
+      "title": "Critics push back on Dario Amodei's stance against open-weight AI models",
+      "summary": "A widely discussed post argues that Anthropic CEO Dario Amodei's position on open-weight AI models is self-serving and short-sighted, reigniting the open-versus-closed AI debate. The piece was shared and discussed on Hacker News.",
+      "whyItMatters": "The open-weights debate is central to competitive dynamics in AI, affecting startups, national security policy, and who controls access to frontier capabilities.",
       "whatToWatch": [
-        "Any public response from Anthropic or Amodei to the criticism"
+        "Whether Anthropic or Amodei publicly respond to the criticism",
+        "Continued commentary from other labs on open vs. closed model strategy"
       ],
       "questions": [
-        "Does this critique reflect a broader shift in developer sentiment against closed-weight labs?"
+        "Does Amodei's stance reflect Anthropic's genuine safety concerns or competitive interests?",
+        "How might this debate influence upcoming model releases from open-weight labs?"
       ],
       "sources": [
         {
@@ -274,23 +235,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-07-31T16:24:09Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
       "badge": "Analysis",
-      "trendScore": 44,
+      "trendScore": 32,
       "confidence": "low"
     },
     {
       "id": "ai-b86dc435d6",
       "slug": "openai-details-efforts-on-responsible-ai-across-europe",
       "lane": "ai",
-      "title": "OpenAI outlines efforts on 'responsible AI' in Europe",
-      "summary": "OpenAI published a post on advancing responsible AI practices across Europe, likely tied to ongoing regulatory engagement under the EU's AI governance framework. Specific commitments or programs were not detailed in available sources.",
-      "whyItMatters": "Europe's regulatory environment, including the EU AI Act, is a major factor shaping how frontier labs operate internationally, making any public positioning from OpenAI notable.",
+      "title": "OpenAI outlines plans for 'responsible AI' expansion in Europe",
+      "summary": "OpenAI published a post describing efforts to advance responsible AI practices across Europe, though specifics of new commitments or programs were not detailed in the available source.",
+      "whyItMatters": "OpenAI's European engagement matters given the EU's active AI regulatory framework and the company's need to navigate compliance while expanding its footprint there.",
       "whatToWatch": [
-        "Concrete policy commitments or product changes tied to EU compliance"
+        "Any concrete policy commitments or partnerships OpenAI announces in Europe",
+        "EU regulator response to OpenAI's framing"
       ],
       "questions": [
-        "What specific regulatory requirements or partnerships does this initiative address?"
+        "What specific actions or investments back this responsible AI messaging?",
+        "How does this relate to EU AI Act compliance timelines?"
       ],
       "sources": [
         {
@@ -302,10 +265,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-07-31T15:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3wXKvwzV9IlUVcm3H8tcPb/3a66b4f38baf6c6f2594eddc0a8d6561/Frame.png?w=1600&h=900&fit=fill",
-      "badge": "Regulatory",
-      "trendScore": 44,
+      "badge": "Policy",
+      "trendScore": 32,
       "confidence": "medium"
     },
     {
@@ -313,13 +276,14 @@
       "slug": "openai-outlines-vision-for-abundant-intelligence",
       "lane": "ai",
       "title": "OpenAI publishes vision piece on 'building abundant intelligence'",
-      "summary": "OpenAI released a post titled 'Building abundant intelligence,' apparently laying out a broader vision for AI's economic or societal role. No further specifics were available beyond the title.",
-      "whyItMatters": "Vision-setting posts from OpenAI often precede or accompany strategic shifts in product direction or public messaging about AI's societal impact.",
+      "summary": "OpenAI released a post titled 'Building abundant intelligence,' apparently laying out a broader vision for AI's role in society, though the available source gives no further specifics.",
+      "whyItMatters": "OpenAI's public vision statements often signal strategic priorities and messaging ahead of product or policy announcements.",
       "whatToWatch": [
-        "Whether this framing shows up in subsequent product announcements or policy statements"
+        "Whether this vision post precedes concrete product or research announcements"
       ],
       "questions": [
-        "What concrete definition of 'abundant intelligence' is OpenAI using, and how does it differ from AGI messaging?"
+        "What concrete initiatives, if any, does 'abundant intelligence' refer to?",
+        "Is this framing tied to a specific upcoming release?"
       ],
       "sources": [
         {
@@ -331,124 +295,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-07-31T15:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
+      "updatedAt": "2026-08-01T19:05:08.367Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2nex5TzYgCDCspDRG54rgh/2be09e779b11b569ce391490323e86bb/Frame__8_.png?w=1600&h=900&fit=fill",
-      "trendScore": 44,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-c5ad624a6f",
-      "slug": "openai-says-it-disrupted-a-criminal-scam-operation",
-      "lane": "ai",
-      "title": "OpenAI says it disrupted a criminal scam operation",
-      "summary": "OpenAI published a report describing the disruption of a criminal scam operation, part of its recurring threat-intelligence disclosures about misuse of its models. Details of the scam's scale or method were not included in available sources.",
-      "whyItMatters": "These disclosures are OpenAI's main public evidence of how its models are being abused and how it responds, informing trust and safety debates around generative AI.",
-      "whatToWatch": [
-        "Follow-up reporting on the scale of the scam operation and how it used AI tools"
-      ],
-      "questions": [
-        "How was the operation detected, and were law enforcement agencies involved?"
-      ],
-      "sources": [
-        {
-          "title": "Disrupting a Criminal Scam Operation",
-          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-07-31T00:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-07-31T00:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/dmuaSeo4bAASzMWH9WOJ02MC5neBx/2ae54d71251640bbdcd8a8b9dc43cc0d/16x9___SCAM__Criminal_scam_operation.png?w=1600&h=900&fit=fill",
-      "badge": "Safety",
-      "trendScore": 43,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-945ecdf346",
-      "slug": "researcher-shows-distilling-deepseek-into-gpt-oss-doesn-t-carry-over-c",
-      "lane": "ai",
-      "title": "Researcher shows distilling DeepSeek into GPT-OSS doesn't carry over censorship",
-      "summary": "A Hacker News 'Show HN' post demonstrates that when DeepSeek's outputs are distilled into an open-weight GPT-OSS model, the censorship characteristics of DeepSeek don't transfer to the resulting model. The author invites others to test the claim themselves.",
-      "whyItMatters": "This touches a live concern about whether training on outputs from Chinese models imports politically sensitive censorship behavior into downstream open models — a relevant question for open-source AI governance.",
-      "whatToWatch": [
-        "Independent replication attempts by other researchers or the open-source community"
-      ],
-      "questions": [
-        "What specific censorship behaviors were tested, and how rigorous was the evaluation methodology?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: Distilling DeepSeek into GPT-OSS doesn't transfer censorship. Try it",
-          "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-07-30T18:13:06Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-07-30T18:13:06Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://cdn.prod.website-files.com/67c5c67a4c758597bd28fafd/6a69e158f9fd4e8b99da4607_OG%20Card-selection.png",
-      "badge": "Research",
-      "trendScore": 41,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-deedd35499",
-      "slug": "developer-asks-what-should-the-gui-for-ai-agents-actually-look-like",
-      "lane": "ai",
-      "title": "Developer poses open question: what should agent GUIs look like?",
-      "summary": "A Show HN post asks the community to weigh in on interface design for AI agents, reflecting ongoing uncertainty about how users should interact with autonomous AI systems beyond chat windows.",
-      "whyItMatters": "As agentic AI products proliferate, interface design remains an unsolved problem shaping usability and trust — this is a live design conversation rather than a settled answer.",
-      "whatToWatch": [
-        "Community responses and prototype designs emerging from the discussion"
-      ],
-      "questions": [
-        "Will any consensus UI pattern emerge, or will agent interfaces remain fragmented across products?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: What should the GUI for AI agents look like?",
-          "url": "https://marbleos.com/demo",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-07-31T05:17:29Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-07-31T05:17:29Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://marbleos.com/hn-og.png",
-      "trendScore": 40,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-d1897a8c1b",
-      "slug": "google-deepmind-launches-gemini-robotics-er-2",
-      "lane": "ai",
-      "title": "Google DeepMind launches Gemini Robotics ER 2",
-      "summary": "Google DeepMind introduced Gemini Robotics ER 2, a new version in its embodied reasoning robotics model line. The announcement continues DeepMind's push to apply Gemini-family models to physical robot control and reasoning tasks.",
-      "whyItMatters": "Robotics is an increasingly competitive front in AI, and DeepMind's continued iteration signals how seriously major labs are investing in embodied AI beyond chat and text applications.",
-      "whatToWatch": [
-        "Availability details, partner robots, or benchmark comparisons in follow-up coverage"
-      ],
-      "questions": [
-        "How does ER 2 compare in capability to prior Gemini Robotics versions or competitors' robotics models?"
-      ],
-      "sources": [
-        {
-          "title": "Introducing Gemini Robotics ER 2",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/",
-          "publisher": "Google DeepMind",
-          "publishedAt": "2026-07-30T15:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-07-30T15:00:00.000Z",
-      "updatedAt": "2026-08-01T16:43:23.021Z",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-robotics-2__blog__cover.max-600x600.format-webp.webp",
-      "badge": "Product",
-      "trendScore": 39,
+      "trendScore": 32,
       "confidence": "medium"
     }
   ]
