@@ -8,10 +8,10 @@ name: Aggregate AI news
 # All three run the same script and commit to the same place, so an admin
 # refresh is indistinguishable from a cron run as far as the apps are concerned.
 on:
-  schedule:
+  # schedule:
     # 00:00, 06:00, 12:00, 18:00 UTC. GitHub's scheduler is best-effort and can
     # run late under load — the 36h default lookback covers a skipped tick.
-    - cron: '0 9 * * *'
+    # - cron: '0 9 * * *'
   workflow_dispatch:
     inputs:
       mode:
