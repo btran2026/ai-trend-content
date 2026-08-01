@@ -253,10 +253,26 @@ interface NewsStory {
                                 // still lists both as receipts.
   publishedAt: string | null;  // earliest known report of the story
   updatedAt: string;           // when this run last touched the story
-  imageUrl?: string;           // reserved; not populated by the aggregator yet
+  imageUrl?: string;           // RSS media/embedded image, with article Open Graph fallback
   badge?: string;              // optional short label, e.g. "Regulatory"
   trendScore: number;          // 0-100, deterministic — see "Ranking" below
   confidence: 'high' | 'medium' | 'low'; // deterministic — never AI-assigned
+  tutorial?: {                  // optional original, actionable learning guide
+    level: string;
+    durationMinutes: number;
+    outcome: string;
+    prerequisites: string[];
+    steps: Array<{
+      number: number;
+      agentRole: string;
+      title: string;
+      instruction: string;
+      deliverable: string;
+      prompt: string;
+    }>;
+    qualityGates: string[];
+    costControls: string[];
+  };
 }
 
 interface LaneFeed {

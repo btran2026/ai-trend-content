@@ -31,7 +31,13 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { collectLane, rankAndSelect, representativeItem, distinctPublisherCount } from './lib/news-sources.mjs';
+import {
+  collectLane,
+  rankAndSelect,
+  representativeItem,
+  distinctPublisherCount,
+  hydrateRankedImages,
+} from './lib/news-sources.mjs';
 import { writeLaneStories } from './lib/news-ai.mjs';
 import { usage, estimateUsd } from './lib/ai.mjs';
 import { publishNewsLanes, NEWS_LANES, paths, readLaneFeed } from './lib/store.mjs';
@@ -71,6 +77,18 @@ function slugify(text) {
 function stableId(lane, url) {
   const hash = createHash('sha1').update(String(url)).digest('hex').slice(0, 10);
   return `${lane}-${hash}`;
+}
+
+function tutorialStoriesFor(lane, generatedAt) {
+  try {
+    const config = JSON.parse(readFileSync(join(paths.ROOT, 'config', 'tutorials.json'), 'utf8'));
+    return (config.tutorials ?? [])
+      .filter(story => story.lane === lane)
+      .map(story => ({ ...story, updatedAt: generatedAt }));
+  } catch (err) {
+    console.warn(`  ! tutorials: ${err?.message || err}`);
+    return [];
+  }
 }
 
 async function main() {
@@ -118,8 +136,13 @@ async function main() {
         continue;
       }
 
+      await hydrateRankedImages(ranked);
       const previousStories = readLaneFeed(lane)?.stories ?? [];
-      const stories = await writeLaneStories(lane, ranked, { generatedAt, slugify, stableId, previousStories });
+      const generatedStories = await writeLaneStories(lane, ranked, { generatedAt, slugify, stableId, previousStories });
+      const tutorials = tutorialStoriesFor(lane, generatedAt);
+      const stories = [...tutorials, ...generatedStories]
+        .filter((story, index, all) => all.findIndex(candidate => candidate.id === story.id) === index)
+        .slice(0, Math.max(maxPerLane, tutorials.length));
       if (stories.length === 0) {
         console.log(`  ${lane}: AI stage produced nothing — leaving the published feed untouched`);
         continue;

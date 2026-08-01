@@ -35,6 +35,25 @@ function warn(source, err) {
   console.warn(`  ! ${source}: ${err?.message || err}`);
 }
 
+export async function fetchPageImage(url) {
+  try {
+    const html = await get(url, { ua: BROWSER_UA, timeoutMs: 8000 });
+    const tags = [...html.matchAll(/<meta\b[^>]*>/gi)].map(match => match[0]);
+    for (const key of ['og:image', 'twitter:image']) {
+      const meta = tags.find(tag =>
+        new RegExp(`(?:property|name)\\s*=\\s*["']${key.replace(':', '\\:')}["']`, 'i').test(tag));
+      const raw = meta?.match(/content\s*=\s*["']([^"']+)["']/i)?.[1]
+        ?.replace(/&amp;/g, '&');
+      if (!raw) continue;
+      const resolved = new URL(raw, url);
+      if (resolved.protocol === 'http:' || resolved.protocol === 'https:') return resolved.href;
+    }
+  } catch {
+    // Article pages frequently block bots; RSS images remain the preferred path.
+  }
+  return null;
+}
+
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 /** Worth a second try: rate limits, upstream hiccups, and our own timeout. */
@@ -461,6 +480,7 @@ export async function fetchRss(feeds, sinceMs, keywords) {
             sourceKind: feed.kind || 'news',
             publishedAt: e.publishedAt,
             snippet: e.snippet,
+            ...(e.imageUrl ? { imageUrl: e.imageUrl } : {}),
           }));
       } catch (err) {
         warn(feed.name, err);

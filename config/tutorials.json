@@ -1,0 +1,125 @@
+{
+  "tutorials": [
+    {
+      "id": "ai-tutorial-software-factory-seven-agents",
+      "slug": "build-an-ai-software-factory-with-seven-agents",
+      "lane": "ai",
+      "title": "Build an AI software factory with seven specialized agents",
+      "summary": "Turn one product brief into reviewed, tested, releasable software by assigning seven agents clear roles and making every handoff an artifact. This practical setup uses isolated worktrees, dependency-aware tasks, explicit quality gates, and a human-controlled release step.",
+      "whyItMatters": "Multi-agent systems fail when every agent edits everything or communicates only through chat. Role boundaries, durable artifacts, and automated gates make parallel work understandable, recoverable, and safe enough to reuse.",
+      "whatToWatch": [
+        "Start with one small vertical slice before allowing parallel implementation",
+        "Give each agent one owned scope and require evidence with every handoff",
+        "Keep deployment, secrets, destructive operations, and final approval human-controlled"
+      ],
+      "questions": [
+        "Which repository workflow should you automate first?",
+        "What checks must pass before an agent can hand work to the next stage?",
+        "Which actions in your environment must always require human approval?"
+      ],
+      "sources": [
+        {
+          "title": "How to build a software factory with 7 Claude Fable Agents",
+          "url": "https://www.facebook.com/reel/27057812660564959/",
+          "publisher": "Raycfu",
+          "publishedAt": null
+        },
+        {
+          "title": "How to Build a Software Factory with Claude Code: From Vibe Coding to Agentic Development",
+          "url": "https://www.freecodecamp.org/news/how-to-build-software-factory-with-claude-code",
+          "publisher": "freeCodeCamp",
+          "publishedAt": null
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-01T00:00:00.000Z",
+      "imageUrl": "https://btran2026.github.io/ai-trend-content/images/ai-software-factory.png",
+      "badge": "Tutorial",
+      "trendScore": 100,
+      "confidence": "medium",
+      "tutorial": {
+        "level": "Intermediate",
+        "durationMinutes": 60,
+        "outcome": "A working seven-agent pipeline that takes a scoped issue through architecture, implementation, verification, review, and a human-approved release.",
+        "prerequisites": [
+          "A Git repository with a repeatable build and test command",
+          "An agent-capable coding CLI with permission limited to the repository",
+          "A task tracker or structured state store for dependencies and status",
+          "CI checks that can block merging when tests, types, lint, or security checks fail"
+        ],
+        "steps": [
+          {
+            "number": 1,
+            "agentRole": "Product agent",
+            "title": "Turn the request into an executable brief",
+            "instruction": "Collect the user outcome, constraints, non-goals, edge cases, and measurable acceptance criteria. Refuse to proceed when a product decision changes behavior and has no answer.",
+            "deliverable": "brief.md or an issue containing scope, acceptance criteria, non-goals, and open decisions.",
+            "prompt": "Convert this request into a one-page implementation brief. Separate facts, assumptions, open decisions, acceptance criteria, and non-goals. Do not propose code yet."
+          },
+          {
+            "number": 2,
+            "agentRole": "Architecture agent",
+            "title": "Map the system and contracts",
+            "instruction": "Inspect the repository, identify affected components and data contracts, find existing patterns to reuse, and document risks. Define interfaces before implementation details.",
+            "deliverable": "A change map listing files, APIs, schemas, dependencies, migrations, and rollback concerns.",
+            "prompt": "Read the brief and repository. Produce the smallest architecture that satisfies it, identify existing helpers to reuse, and list every contract that must remain backward compatible."
+          },
+          {
+            "number": 3,
+            "agentRole": "Planning agent",
+            "title": "Build a dependency-aware task graph",
+            "instruction": "Split the architecture into independently owned tasks. Mark dependencies, expected files, completion evidence, and integration order. Parallelize only tasks that do not edit the same surface.",
+            "deliverable": "A task graph with owners, dependencies, file scopes, and verification commands.",
+            "prompt": "Create executable tasks from the architecture. Each task must have one owner, a non-overlapping file scope, dependencies, a definition of done, and an exact verification command."
+          },
+          {
+            "number": 4,
+            "agentRole": "Implementation agent",
+            "title": "Implement in an isolated worktree",
+            "instruction": "Create a branch or worktree for one ready task, make surgical changes, follow repository conventions, and commit only owned files. Return the diff, assumptions, and command results.",
+            "deliverable": "A focused commit with code, tests, and a short handoff containing evidence.",
+            "prompt": "Own only this task and file scope. Implement the complete behavior, add focused tests, run the listed checks, and return the commit SHA plus any assumptions or remaining risks."
+          },
+          {
+            "number": 5,
+            "agentRole": "Verification agent",
+            "title": "Prove behavior independently",
+            "instruction": "Test the acceptance criteria rather than trusting the implementation report. Exercise success, failure, malformed input, concurrency, persistence, and upgrade paths that apply.",
+            "deliverable": "A verification report with commands, observed results, and reproducible failures.",
+            "prompt": "Treat the implementation as untrusted. Verify every acceptance criterion and the highest-risk edge cases. Report only reproducible failures with exact commands and evidence."
+          },
+          {
+            "number": 6,
+            "agentRole": "Review agent",
+            "title": "Review correctness and security",
+            "instruction": "Review the actual diff and surrounding call paths for logic errors, security boundaries, data loss, compatibility, and missing cleanup. Ignore style unless it creates risk.",
+            "deliverable": "A short list of high-confidence findings, each tied to a file, line, impact, and fix.",
+            "prompt": "Review this diff against the brief and repository contracts. Find only high-confidence correctness, security, compatibility, or data-loss issues. Explain impact and the smallest safe fix."
+          },
+          {
+            "number": 7,
+            "agentRole": "Release agent",
+            "title": "Integrate, release, and observe",
+            "instruction": "Rebase onto the target branch, rerun gates on the integrated result, produce release notes and a rollback plan, then pause for human approval before merge or deployment. After release, check health and error signals.",
+            "deliverable": "A merge-ready change, release checklist, rollback command, and post-release observation report.",
+            "prompt": "Prepare the integrated release candidate. Re-run all required gates, summarize user-visible changes and risks, provide rollback steps, and stop before merge or deployment until a human approves."
+          }
+        ],
+        "qualityGates": [
+          "No task starts without acceptance criteria and an owned file scope",
+          "No handoff is accepted without a diff or artifact plus command evidence",
+          "No merge occurs when required tests, type checks, lint, or security checks fail",
+          "The verifier and reviewer must not be the implementation agent",
+          "Deployment and destructive actions require explicit human approval"
+        ],
+        "costControls": [
+          "Use a smaller model for discovery, planning, and routine verification; reserve stronger models for architecture and difficult reviews",
+          "Cap retries and stop agents that repeat the same failed approach",
+          "Pass focused files and artifacts instead of the entire conversation",
+          "Parallelize independent tasks only; duplicate agents reviewing the same scope waste tokens",
+          "Record per-task runtime and token cost so expensive stages can be redesigned"
+        ]
+      }
+    }
+  ]
+}

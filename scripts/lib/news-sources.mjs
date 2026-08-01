@@ -9,7 +9,7 @@
  * rather than re-implementing fetch or URL canonicalisation — every fetcher
  * inherited from there is just as fail-soft: a dead feed logs and yields [].
  */
-import { fetchRss, fetchHackerNews, dedupeKey } from './sources.mjs';
+import { fetchRss, fetchHackerNews, fetchPageImage, dedupeKey } from './sources.mjs';
 
 const STOPWORDS = new Set([
   'the', 'a', 'an', 'of', 'to', 'in', 'on', 'for', 'and', 'or', 'is', 'are',
@@ -191,6 +191,27 @@ export function representativeItem(cluster) {
 
 export function representativeTitle(cluster) {
   return representativeItem(cluster).title;
+}
+
+export function imageForCluster(cluster) {
+  return [...cluster.items]
+    .filter(item => /^https?:\/\//i.test(item.imageUrl || ''))
+    .sort(
+      (a, b) =>
+        (b.authority ?? 1) - (a.authority ?? 1) ||
+        (Date.parse(b.publishedAt || 0) || 0) - (Date.parse(a.publishedAt || 0) || 0) ||
+        dedupeKey(a.url).localeCompare(dedupeKey(b.url)),
+    )[0]?.imageUrl ?? null;
+}
+
+export async function hydrateRankedImages(ranked) {
+  await Promise.all(ranked.map(async ({ cluster }) => {
+    if (imageForCluster(cluster)) return;
+    const representative = representativeItem(cluster);
+    const imageUrl = await fetchPageImage(representative.url);
+    if (imageUrl) representative.imageUrl = imageUrl;
+  }));
+  return ranked;
 }
 
 /**

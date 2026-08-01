@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#17223a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <text x="70" y="95" fill="#eef2ff" font-family="Arial, sans-serif" font-size="46" font-weight="700">AI SOFTWARE FACTORY</text>
+  <text x="72" y="137" fill="#9aa5c4" font-family="Arial, sans-serif" font-size="23">Seven agents. One controlled delivery pipeline.</text>
+  <path d="M120 345 H1080" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g transform="translate(120 345)">
+      <circle r="52" fill="#10263a" stroke="#22d3ee" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">1</text>
+      <text y="88" fill="#9ddff0" font-size="18">PRODUCT</text>
+    </g>
+    <g transform="translate(280 345)">
+      <circle r="52" fill="#10263a" stroke="#3bc7e6" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">2</text>
+      <text y="88" fill="#9ddff0" font-size="18">ARCHITECT</text>
+    </g>
+    <g transform="translate(440 345)">
+      <circle r="52" fill="#13243b" stroke="#61b9e2" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">3</text>
+      <text y="88" fill="#aec8ef" font-size="18">PLANNER</text>
+    </g>
+    <g transform="translate(600 345)">
+      <circle r="52" fill="#17223d" stroke="#829fdc" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">4</text>
+      <text y="88" fill="#c1bdf3" font-size="18">BUILDER</text>
+    </g>
+    <g transform="translate(760 345)">
+      <circle r="52" fill="#1b2140" stroke="#9a91d6" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">5</text>
+      <text y="88" fill="#d0b9f2" font-size="18">VERIFY</text>
+    </g>
+    <g transform="translate(920 345)">
+      <circle r="52" fill="#211f41" stroke="#a785d0" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">6</text>
+      <text y="88" fill="#d9b6ec" font-size="18">REVIEW</text>
+    </g>
+    <g transform="translate(1080 345)">
+      <circle r="52" fill="#251d40" stroke="#a78bfa" stroke-width="4"/><text y="8" fill="#eef2ff" font-size="27" font-weight="700">7</text>
+      <text y="88" fill="#dfc5ff" font-size="18">RELEASE</text>
+    </g>
+  </g>
+  <rect x="70" y="535" width="1060" height="80" rx="18" fill="#101827" stroke="#33405c"/>
+  <text x="600" y="585" fill="#eef2ff" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">
+    Brief → Contracts → Task graph → Code → Evidence → Review → Human approval
+  </text>
+</svg>

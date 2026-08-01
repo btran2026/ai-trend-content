@@ -29,6 +29,7 @@ import {
   titleTokens,
   distinctPublisherCount,
   anchorItem,
+  imageForCluster,
   matchPreviousStory,
 } from './news-sources.mjs';
 
@@ -232,6 +233,7 @@ export async function writeLaneStories(lane, ranked, { generatedAt, slugify, sta
       sourceCount: distinctPublisherCount(entry.cluster),
       publishedAt: entry.publishedAt,
       updatedAt: generatedAt,
+      ...(imageForCluster(entry.cluster) ? { imageUrl: imageForCluster(entry.cluster) } : {}),
       ...(entry.badge ? { badge: entry.badge } : {}),
       trendScore: entry.trendScore,
       confidence: entry.confidence,

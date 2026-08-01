@@ -17,6 +17,7 @@ import {
   clusterUrlKeys,
   matchPreviousStory,
   filterNoise,
+  imageForCluster,
 } from '../scripts/lib/news-sources.mjs';
 
 const HOUR = 3600_000;
@@ -263,6 +264,24 @@ describe('anchorItem', () => {
     const laterHighAuthority = item({ id: 'later', authority: 5, publishedAt: iso(HOUR), url: 'https://wire-b.com/x' });
     const cluster = { items: [laterHighAuthority, early] };
     assert.equal(anchorItem(cluster).id, 'early');
+  });
+
+  describe('imageForCluster', () => {
+    test('prefers the highest-authority source with a valid image', () => {
+      const cluster = {
+        items: [
+          item({ authority: 2, imageUrl: 'https://low.example.com/image.jpg' }),
+          item({ authority: 5, imageUrl: 'https://high.example.com/image.jpg' }),
+          item({ authority: 5, imageUrl: 'javascript:alert(1)' }),
+        ],
+      };
+
+      assert.equal(imageForCluster(cluster), 'https://high.example.com/image.jpg');
+    });
+
+    test('returns null when no source has a safe image URL', () => {
+      assert.equal(imageForCluster({ items: [item(), item({ imageUrl: 'data:image/png,x' })] }), null);
+    });
   });
 
   test('ties on publishedAt break on canonical URL, deterministically', () => {

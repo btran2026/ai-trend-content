@@ -76,6 +76,25 @@ function parseDate(raw) {
   return Number.isNaN(t) ? null : new Date(t).toISOString();
 }
 
+function imageUrl(xml) {
+  const candidates = [];
+  for (const match of xml.matchAll(/<(?:media:content|media:thumbnail|enclosure)\b([^>]*)\/?>/gi)) {
+    const attrs = match[1] || '';
+    if (/^enclosure$/i.test(match[0].match(/^<([^ >]+)/)?.[1] || '') &&
+        !/type\s*=\s*["']image\//i.test(attrs)) continue;
+    const url = attrs.match(/url\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (url) candidates.push(decode(url));
+  }
+
+  const description = tag(xml, 'description') || tag(xml, 'content:encoded') || tag(xml, 'content');
+  const embedded = description.match(/<img\b[^>]*\bsrc\s*=\s*["']([^"']+)["']/i)?.[1];
+  if (embedded) candidates.push(decode(embedded));
+
+  const nested = tag(tag(xml, 'image'), 'url');
+  if (nested) candidates.push(nested);
+  return candidates.find(url => /^https?:\/\//i.test(url)) || null;
+}
+
 /**
  * Parse a feed body into entries: { title, url, publishedAt, snippet, categories }.
  * Returns [] for anything unparseable rather than throwing — one broken feed
@@ -109,7 +128,14 @@ export function parseFeed(xml) {
         tag(block, 'content'),
     );
 
-    entries.push({ title, url, publishedAt, snippet, categories: categories(block) });
+    entries.push({
+      title,
+      url,
+      publishedAt,
+      snippet,
+      categories: categories(block),
+      imageUrl: imageUrl(block),
+    });
   }
   return entries;
 }
