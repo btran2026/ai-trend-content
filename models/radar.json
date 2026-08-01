@@ -1,7 +1,26 @@
 {
-  "contentVersion": 10,
-  "generatedAt": "2026-08-01T08:09:36.021Z",
+  "contentVersion": 11,
+  "generatedAt": "2026-08-01T13:04:12.673Z",
   "models": [
+    {
+      "id": "gpt-5.6",
+      "name": "GPT-5.6",
+      "vendor": "OpenAI",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-01T13:04:12.673Z",
+      "timeline": [
+        {
+          "at": "2026-08-01T13:04:12.673Z",
+          "what": "OpenAI cut GPT-5.6 pricing by 20-80%, dropping the cost of GPT-5.4-level intelligence 13x over four months.",
+          "url": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80"
+        }
+      ]
+    },
     {
       "id": "deepseek-v4-flash",
       "name": "DeepSeek-V4-Flash-0731",
@@ -60,6 +79,11 @@
         {
           "at": "2026-08-01T02:10:02.955Z",
           "what": "DeepSeek released V4-Flash-0731 with MIT-licensed open weights on Hugging Face (4-bit/3-bit quantization support), priced at $0.14/M input and $0.27/M output with a 98% cache-hit discount, outranking the larger MiniMax M3 on Artificial Analysis' intelligence index.",
+          "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything"
+        },
+        {
+          "at": "2026-08-01T13:04:12.673Z",
+          "what": "DeepSeek released V4 Flash-0731, a 304B MIT-licensed model in public beta on Hugging Face priced at $0.14/M input and $0.27/M output with a 98% cache-hit discount.",
           "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything"
         }
       ]
