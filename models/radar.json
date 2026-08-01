@@ -1,7 +1,26 @@
 {
-  "contentVersion": 7,
-  "generatedAt": "2026-07-31T19:18:39.411Z",
+  "contentVersion": 8,
+  "generatedAt": "2026-08-01T02:10:02.955Z",
   "models": [
+    {
+      "id": "deepseek-v4-flash-0731",
+      "name": "DeepSeek-V4-Flash-0731",
+      "vendor": "DeepSeek",
+      "openness": "open-weights",
+      "license": "MIT",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-01T02:10:02.955Z",
+      "timeline": [
+        {
+          "at": "2026-08-01T02:10:02.955Z",
+          "what": "DeepSeek released V4-Flash-0731 with MIT-licensed open weights on Hugging Face (4-bit/3-bit quantization support), priced at $0.14/M input and $0.27/M output with a 98% cache-hit discount, outranking the larger MiniMax M3 on Artificial Analysis' intelligence index.",
+          "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything"
+        }
+      ]
+    },
     {
       "id": "gpt-5-6-luna",
       "name": "GPT-5.6 Luna",
@@ -18,6 +37,11 @@
           "at": "2026-07-31T08:43:32.922Z",
           "what": "OpenAI cut GPT-5.6 Luna API pricing by 80%.",
           "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        },
+        {
+          "at": "2026-08-01T02:10:02.955Z",
+          "what": "OpenAI cut GPT-5.6 Luna's price by 80% as part of a price-performance update, and it became the new default model in the llm CLI (0.32rc2).",
+          "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything"
         }
       ]
     },
@@ -37,6 +61,11 @@
           "at": "2026-07-31T08:43:32.922Z",
           "what": "OpenAI cut GPT-5.6 Terra API pricing by 20%.",
           "url": "https://news.smol.ai/issues/26-07-30-not-much/"
+        },
+        {
+          "at": "2026-08-01T02:10:02.955Z",
+          "what": "OpenAI reduced the price of GPT-5.6 Terra by 20% as part of a broader price-performance frontier update.",
+          "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop/#atom-everything"
         }
       ]
     },
