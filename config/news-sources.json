@@ -1,0 +1,112 @@
+{
+  "contentVersion": 1,
+  "comment": "Input list for scripts/aggregate-news.mjs — the multi-lane news pipeline. Separate from config/sources.json on purpose: that file is an AI-only corpus (lab blogs, arXiv, HF trending) and does not cover crypto, markets or general tech. Every fetcher here reuses scripts/lib/sources.mjs (fetchRss / fetchHackerNews) and is just as fail-soft: a dead feed logs a warning and contributes nothing to its lane.",
+  "notes": {
+    "why-a-second-file": "The `ai` lane intentionally overlaps with config/sources.json's rss list (same labs, same newsletters) so the two pipelines fetch from the same reliable sources rather than maintaining two divergent AI corpora. The RSS fetch itself is free; only the AI edit at the end costs money, and it runs once per lane regardless of any overlap with the digest's own curation pass. That is one additional AI call per lane (four total for a full sweep) on top of the digest's three — accepted deliberately because correctness per lane matters more than shaving one more sweep.",
+    "authority": "Each rss entry carries `authority` 1-5, used only by the deterministic ranker (scripts/lib/news-sources.mjs) as one of five inputs to trendScore. 5 = wire services / regulators/ primary-source filings. 4 = large, long-established desks. 3 = respected trade press. 2 = blogs/aggregators. Hacker News discussion items default to `hackerNews.authority` (2) since a forum thread is not itself a primary source, however newsworthy.",
+    "alwaysKeep": "Every feed here is already topic-scoped by nature (a crypto wire doesn't publish general tech), so all are alwaysKeep: true — the lane keyword lists exist for the ranker's relevance term, not to gate what's fetched. An off-topic outlier a feed occasionally publishes is filtered out downstream by ranking (low relevance + low authority rarely reaches the top 8-12), not by a keyword veto here.",
+    "probed-2026-07-31": "Every URL below returned 200 when probed directly. bitcoinmagazine.com/feed and theblock.co/rss.xml returned 403 to a plain UA from this network — kept enabled and fail-soft (same posture as config/sources.json's known 403s) since they answer fine from other networks/runners; don't drop them without re-probing from Actions first.",
+    "excludeTitlePatterns": "Optional, per lane. Each entry is a regex source string compiled case-insensitively and matched against an item's title *before* clustering/ranking (scripts/lib/news-sources.mjs's filterNoise), because deterministic top-8-to-12 selection happens before the AI editor ever sees anything — a wasted slot there can't be recovered downstream. This exists to drop boilerplate that is technically on-topic but carries no discrete, reportable event (a raw SEC Form 3/4/5 filing headline, a routine officer/director stock-sale notice, a generic 'here's what happened today' roundup), not to gate real coverage. Seeded conservatively per lane below; add more here — never ad hoc in code — if a new noise pattern shows up in a dry run. A bad regex is skipped with a warning, not a crash (same fail-soft posture as a dead feed)."
+  },
+  "lanes": {
+    "crypto": {
+      "keywords": [
+        "bitcoin", "btc", "ethereum", "eth", "stablecoin", "defi", "etf",
+        "sec", "regulation", "exchange", "token", "blockchain", "mining",
+        "layer 2", "solana", "staking", "custody", "spot etf", "cbdc"
+      ],
+      "excludeTitlePatterns": [
+        "here.s what happened in crypto",
+        "\\bcrypto\\s+(daily|weekly)\\s+(news\\s+)?(recap|roundup|digest|wrap[- ]?up)\\b",
+        "\\b(daily|weekly)\\s+crypto\\s+(news\\s+)?(recap|roundup|digest|wrap[- ]?up)\\b",
+        "\\btoday in crypto\\b",
+        "\\bthis week in crypto\\b",
+        "\\bcrypto\\s+news\\s+recap\\b",
+        "\\bprice\\s+watch\\b.*\\b(daily|weekly)\\b"
+      ],
+      "rss": [
+        { "name": "CoinDesk", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+        { "name": "Cointelegraph", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://cointelegraph.com/rss" },
+        { "name": "Decrypt", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://decrypt.co/feed" },
+        { "name": "CryptoSlate", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://cryptoslate.com/feed/" },
+        { "name": "The Block", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://www.theblock.co/rss.xml" },
+        { "name": "Bitcoin Magazine", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://bitcoinmagazine.com/feed" }
+      ],
+      "hackerNews": {
+        "enabled": true,
+        "authority": 2,
+        "minPoints": 40,
+        "queries": ["bitcoin", "ethereum", "crypto", "stablecoin", "defi"]
+      }
+    },
+    "markets": {
+      "keywords": [
+        "stock", "stocks", "s&p", "nasdaq", "dow", "fed", "federal reserve",
+        "rate cut", "rate hike", "inflation", "earnings", "yield", "bond",
+        "treasury", "recession", "jobs report", "gdp", "cpi", "tariff"
+      ],
+      "excludeTitlePatterns": [
+        "\\bform\\s+[345]\\b",
+        "\\b(evp|svp|cfo|ceo|coo|cto|president|director|chairman|officer|insider)\\b[\\s\\S]{0,40}\\b(sells|sold)\\b[\\s\\S]{0,40}\\b[\\d,]+\\s+shares\\b",
+        "\\b(sells|sold)\\b[\\s\\S]{0,40}\\$[\\d,.]+\\s*(m|mm|k|b|million|billion|thousand)?\\b\\s*(in\\s+)?(stock|shares)\\b"
+      ],
+      "rss": [
+        { "name": "CNBC Markets", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html" },
+        { "name": "MarketWatch Top Stories", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories" },
+        { "name": "WSJ Markets", "kind": "news", "authority": 5, "alwaysKeep": true, "url": "https://feeds.a.dj.com/rss/RSSMarketsMain.xml" },
+        { "name": "Yahoo Finance", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://finance.yahoo.com/news/rssindex" },
+        { "name": "Federal Reserve press releases", "kind": "lab", "authority": 5, "alwaysKeep": true, "url": "https://www.federalreserve.gov/feeds/press_all.xml" },
+        { "name": "Investing.com", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://www.investing.com/rss/news.rss" }
+      ],
+      "hackerNews": {
+        "enabled": true,
+        "authority": 2,
+        "minPoints": 50,
+        "queries": ["stock market", "federal reserve", "inflation", "earnings", "interest rates"]
+      }
+    },
+    "ai": {
+      "comment": "Deliberately overlaps config/sources.json's rss list — see notes.why-a-second-file.",
+      "keywords": [
+        "LLM", "language model", "open weights", "agentic", "AI agent",
+        "Claude", "GPT", "Gemini", "Llama", "inference", "fine-tune",
+        "context window", "benchmark", "model release", "AI safety"
+      ],
+      "rss": [
+        { "name": "OpenAI", "kind": "lab", "authority": 5, "alwaysKeep": true, "url": "https://openai.com/blog/rss.xml" },
+        { "name": "Google DeepMind", "kind": "lab", "authority": 5, "alwaysKeep": true, "url": "https://blog.google/technology/google-deepmind/rss/" },
+        { "name": "Mistral AI", "kind": "lab", "authority": 4, "alwaysKeep": true, "url": "https://mistral.ai/rss.xml" },
+        { "name": "Hugging Face Blog", "kind": "lab", "authority": 4, "alwaysKeep": true, "url": "https://huggingface.co/blog/feed.xml" },
+        { "name": "AI News", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://news.smol.ai/rss.xml" },
+        { "name": "Latent Space", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://www.latent.space/feed" },
+        { "name": "The Gradient", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://thegradient.pub/rss/" }
+      ],
+      "hackerNews": {
+        "enabled": true,
+        "authority": 2,
+        "minPoints": 40,
+        "queries": ["LLM", "AI agent", "open weights", "language model", "AI safety"]
+      }
+    },
+    "tech": {
+      "keywords": [
+        "chip", "semiconductor", "startup", "iphone", "android", "cloud",
+        "data center", "antitrust", "privacy", "cybersecurity", "app store",
+        "robotics", "self-driving", "ev", "acquisition", "outage"
+      ],
+      "rss": [
+        { "name": "TechCrunch", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://techcrunch.com/feed/" },
+        { "name": "The Verge", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://www.theverge.com/rss/index.xml" },
+        { "name": "Ars Technica", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://feeds.arstechnica.com/arstechnica/index" },
+        { "name": "Wired", "kind": "news", "authority": 4, "alwaysKeep": true, "url": "https://www.wired.com/feed/rss" },
+        { "name": "Engadget", "kind": "news", "authority": 3, "alwaysKeep": true, "url": "https://www.engadget.com/rss.xml" }
+      ],
+      "hackerNews": {
+        "enabled": true,
+        "authority": 2,
+        "minPoints": 60,
+        "queries": ["startup", "semiconductor", "cybersecurity", "big tech", "outage"]
+      }
+    }
+  }
+}

@@ -67,12 +67,16 @@ git pull --rebase --autostash origin "$branch"
 
 node scripts/aggregate.mjs --triggered-by local "$@"
 
+# Same script the workflow runs for the news lanes — additive, and just as
+# fail-soft: a failure here must not stop the digest above from publishing.
+node scripts/aggregate-news.mjs --triggered-by local "$@" || echo "News lane aggregation had trouble — digest above still stands."
+
 if [ "$dry" = true ]; then
   echo "Dry run — nothing written, nothing committed."
   exit 0
 fi
 
-git add manifest.json digests models
+git add manifest.json digests models news
 if git diff --cached --quiet; then
   echo "Nothing changed — no digest published this run."
   exit 0

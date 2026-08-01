@@ -66,12 +66,69 @@ ANTHROPIC_API_KEY=sk-ant-… node scripts/aggregate.mjs \
 `--dry-run` is the right first move after touching a fetcher: it exercises every
 source and needs no key.
 
+### The news lanes
+
+A second, additive pipeline: `scripts/aggregate-news.mjs` fetches, dedupes,
+clusters and ranks four lanes — crypto, markets, AI, tech — then has AI write
+8-12 stories per lane. Same fail-soft posture as the digest, one level more
+granular: a lane that fetches nothing or whose AI call fails is skipped for
+that run, leaving its previously published feed untouched, while every other
+lane still publishes.
+
+```bash
+# Fetch, dedupe, cluster and rank only. No AI calls, no API key needed, no writes.
+npm run aggregate:news:dry
+
+# A full run — writes news/frontpage.json and news/lanes/<lane>.json.
+ANTHROPIC_API_KEY=sk-ant-… npm run aggregate:news
+
+# Just one or two lanes (useful after touching config/news-sources.json):
+node scripts/aggregate-news.mjs --lanes crypto,markets
+```
+
+| Flag | Default | Notes |
+| --- | --- | --- |
+| `--window-hours` | 48 | How far back to look, per lane. |
+| `--max-per-lane` | 12 | Upper bound on stories kept per lane after ranking (never padded up to a floor). |
+| `--lanes` | all four | Comma-separated subset of `crypto,markets,ai,tech`. |
+| `--dry-run` | off | Fetch + dedupe + cluster + rank, print the top candidates per lane, exit. No AI, no writes. |
+| `--triggered-by` | `cron` | Recorded for provenance in log output. |
+
+Ranking (`trendScore`, `confidence`) is entirely deterministic — freshness,
+distinct-publisher diversity, source authority, keyword relevance, and
+engagement/velocity, fixed weights, no model in the loop — and reviewable
+straight from the published `sources[]` (grouped by publisher; `sourceCount`
+is distinct publishers, not raw article count — three copies of one outlet's
+story count once). Before any of that, a per-lane, config-driven noise filter
+(`excludeTitlePatterns` in `config/news-sources.json`) drops fetched items
+whose title matches a lane-configured, case-insensitive regex — e.g. raw SEC
+Form 3/4/5 filing headlines and routine officer/director stock-sale
+boilerplate in `markets`, or generic no-discrete-event daily/weekly roundups
+in `crypto` — so junk never occupies one of a lane's 8-12 slots in the first
+place (selection happens before the AI editor ever sees a lane's candidates,
+so a wasted slot can't be recovered downstream). See CONTRACT.md's "Noise
+filtering" section for the full list and rationale. A story's `id`/`slug`
+also survive reruns: a continuing story is matched against the lane's
+currently-published feed by shared source URLs first, so a new outlet
+picking the story up later never mints a new id. The AI stage only ever
+writes prose about the clusters that ranking already picked, one story per
+cluster; see CONTRACT.md's "News lanes" section for the exact
+anti-fabrication guarantees (it cannot invent a source — the response schema
+has no field for one — and a repeated clusterId in its response can't
+produce two stories).
+
+The scheduled workflow runs this right after the digest and commits both
+together; a failure here is `continue-on-error` at the workflow level and
+try/caught per lane inside the script, so it can never block the digest from
+publishing. See `config/news-sources.json` for the per-lane source list.
+
 ### Publishing from your own machine
 
 `npm run publish:local` runs the aggregation here and pushes the result, so a
 digest doesn't have to wait for the next cron tick or burn an Actions run. It is
 the same `aggregate.mjs` the workflow runs — the script only adds the rebase,
-commit and push that otherwise live in `aggregate.yml`.
+commit and push that otherwise live in `aggregate.yml`. It also runs
+`aggregate-news.mjs` right after, same as the workflow.
 
 **No API key needed locally.** With no `ANTHROPIC_API_KEY` set, the aggregator
 calls `claude -p` and uses whatever session Claude Code is already logged into,
@@ -157,15 +214,22 @@ server — see the Phase 2 note in the app repo's `BACKLOG.md`.
 | `scripts/aggregate.mjs` | Orchestrator. |
 | `scripts/lib/sources.mjs` | Fetchers (HN, arXiv, HF, GitHub, Reddit, RSS) + dedupe + pre-rank. |
 | `scripts/lib/ai.mjs` | The three AI stages: curate → brief → radar. |
-| `scripts/lib/store.mjs` | Digest/manifest/radar writes. |
+| `scripts/lib/store.mjs` | Digest/manifest/radar writes, plus the additive news-lane publish path. |
 | `scripts/lib/rss.mjs` | Minimal zero-dependency RSS/Atom parser. |
+| `news/frontpage.json`, `news/lanes/<lane>.json` | The four news lanes' published output. |
+| `config/news-sources.json` | Per-lane (crypto/markets/ai/tech) source list + noise-filter patterns for the news pipeline. |
+| `scripts/aggregate-news.mjs` | News pipeline orchestrator. |
+| `scripts/lib/news-sources.mjs` | Fetch + noise filter + dedupe + deterministic clustering/ranking for the news pipeline. |
+| `scripts/lib/news-ai.mjs` | The news pipeline's single per-lane AI stage, with anti-fabrication guardrails. |
 
 ## Design notes
 
 **Everything is fail-soft.** A dead feed logs a warning and contributes nothing;
 a refused or truncated AI call skips that stage. The one thing that *does* stop a
 run is an empty curation result or a failed brief — a digest with no brief is
-useless, so we publish nothing rather than something broken.
+useless, so we publish nothing rather than something broken. The news pipeline
+applies the same rule per lane: a lane with nothing to say leaves its previous
+publish alone instead of overwriting it with an empty one.
 
 **The AI is a harsh editor by design.** Most of a raw AI feed is press releases,
 funding announcements, and SEO repos. The curation prompt says dropping half the
@@ -179,7 +243,25 @@ install count.
 **Adding a source:** append to `config/sources.json` → `rss`, then
 `npm run aggregate:dry` to confirm it parses. Probe the URL first — several
 obvious feeds (Anthropic, Meta AI, Nous Research, vLLM) return 404 and are
-covered indirectly via newsletters; see the `notes` block in that file.
+covered indirectly via newsletters; see the `notes` block in that file. For the
+news lanes, the equivalent file is `config/news-sources.json` and the dry-run
+is `npm run aggregate:news:dry`.
+
+**News ranking is deterministic and reviewable, on purpose.** `trendScore` and
+`confidence` are computed entirely from fetched data (freshness,
+distinct-publisher count, source authority, keyword relevance, engagement) —
+never from the AI stage's output — so a story's rank can be reconstructed by
+hand from its published `sources[]` instead of trusting a model's say-so.
+`sourceCount` is always distinct publishers, not raw article count, so one
+outlet's story landing in two feeds can't inflate a story's diversity,
+velocity or confidence. The AI stage's response schema has no field for a URL
+or source at all, so it structurally cannot fabricate one; `sources[]` on
+every published story is always rebuilt by code from the cluster's own
+fetched items, and a cluster is published as at most one story even if the
+model's response names it twice. A story's `id`/`slug` are similarly matched
+against the lane's currently-published feed by shared source URLs, not
+re-derived every run, so they survive a new outlet joining the story later.
+See CONTRACT.md's "News lanes" section for the full shape and guarantees.
 
 **Local 403s are expected.** `huggingface.co` and `reddit.com` return 403 behind
 a TLS-inspecting corporate proxy, so local dry runs show them empty. They work

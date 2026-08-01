@@ -8,8 +8,11 @@
     "aggregate": "node scripts/aggregate.mjs",
     "aggregate:dry": "node scripts/aggregate.mjs --dry-run",
     "aggregate:ondemand": "node scripts/aggregate.mjs --mode on-demand",
+    "aggregate:news": "node scripts/aggregate-news.mjs",
+    "aggregate:news:dry": "node scripts/aggregate-news.mjs --dry-run",
     "publish:local": "bash scripts/publish-local.sh",
-    "publish:local:dry": "bash scripts/publish-local.sh --dry-run"
+    "publish:local:dry": "bash scripts/publish-local.sh --dry-run",
+    "test": "node --test"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.0"

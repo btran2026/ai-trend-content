@@ -38,5 +38,14 @@
   "sources": {
     "url": "config/sources.json",
     "contentVersion": 1
+  },
+  "news": {
+    "frontPage": { "url": "news/frontpage.json", "contentVersion": 0, "generatedAt": null },
+    "lanes": {
+      "crypto": { "url": "news/lanes/crypto.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
+      "markets": { "url": "news/lanes/markets.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
+      "ai": { "url": "news/lanes/ai.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 },
+      "tech": { "url": "news/lanes/tech.json", "contentVersion": 0, "generatedAt": null, "storyCount": 0 }
+    }
   }
 }

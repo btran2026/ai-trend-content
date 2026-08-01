@@ -121,7 +121,7 @@ He is technical. Do not explain what an LLM is. Do not hedge. He reads this once
  * false plus a complete `required` list on every object — so build objects here
  * rather than hand-writing each schema and tripping over it.
  */
-function obj(properties) {
+export function obj(properties) {
   return {
     type: 'object',
     properties,
@@ -130,7 +130,7 @@ function obj(properties) {
   };
 }
 
-const strArray = { type: 'array', items: { type: 'string' } };
+export const strArray = { type: 'array', items: { type: 'string' } };
 
 const CURATION_SCHEMA = obj({
   items: {
@@ -316,8 +316,12 @@ ${JSON.stringify(schema)}`;
  *
  * `effort` is a real quality knob, so it's set per call site rather than
  * globally: curation is bulk classification, the brief is the editorial work.
+ *
+ * Exported so the news pipeline (scripts/lib/news-ai.mjs) reuses the exact
+ * same backend selection, refusal handling and CLI/API fallback instead of
+ * re-implementing it.
  */
-async function callJson({ system, prompt, schema, maxTokens = 16000, effort = 'high' }) {
+export async function callJson({ system, prompt, schema, maxTokens = 16000, effort = 'high' }) {
   if (BACKEND === 'cli') return callCli({ system, prompt, schema });
   return callApi({ system, prompt, schema, maxTokens, effort });
 }

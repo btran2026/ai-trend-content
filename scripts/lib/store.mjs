@@ -13,13 +13,20 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const MANIFEST_PATH = join(ROOT, 'manifest.json');
 const DIGEST_DIR = join(ROOT, 'digests');
 const RADAR_PATH = join(ROOT, 'models', 'radar.json');
+const NEWS_DIR = join(ROOT, 'news');
+const NEWS_LANES_DIR = join(NEWS_DIR, 'lanes');
+const FRONTPAGE_PATH = join(NEWS_DIR, 'frontpage.json');
 
 /** How many digests stay in the manifest index. Files older than this remain on
  * disk (permalinks keep working) but drop out of the index so the manifest —
  * fetched on every app launch — stays small. */
 const DIGEST_INDEX_LIMIT = 60;
 
-export const paths = { ROOT, MANIFEST_PATH, DIGEST_DIR, RADAR_PATH };
+/** The closed set of news lanes. Fixed here so a typo'd lane name in config
+ * can't silently create an untyped manifest entry. */
+export const NEWS_LANES = ['crypto', 'markets', 'ai', 'tech'];
+
+export const paths = { ROOT, MANIFEST_PATH, DIGEST_DIR, RADAR_PATH, NEWS_DIR, NEWS_LANES_DIR, FRONTPAGE_PATH };
 
 function readJson(path, fallback) {
   if (!existsSync(path)) return fallback;
@@ -181,4 +188,98 @@ export function mergeRadar(releases, generatedAt) {
   });
 
   return touched;
+}
+
+// ---------------------------------------------------------------------------
+// News lanes — additive. Never touches latestDigestId/digests/radar/sources.
+// ---------------------------------------------------------------------------
+
+export function readLaneFeed(lane) {
+  return readJson(join(NEWS_LANES_DIR, `${lane}.json`), null);
+}
+
+export function readFrontPage() {
+  return readJson(FRONTPAGE_PATH, null);
+}
+
+/** Real filesystem-backed I/O for publishNewsLanes. Exists as a seam so tests
+ * can inject an in-memory equivalent instead of touching the repo's own
+ * committed news/*.json and manifest.json. */
+function defaultNewsIo() {
+  return {
+    readManifest,
+    readLaneFeed,
+    readFrontPage,
+    writeLane: (lane, data) => writeJson(join(NEWS_LANES_DIR, `${lane}.json`), data),
+    writeFrontPage: data => writeJson(FRONTPAGE_PATH, data),
+    writeManifest: data => writeJson(MANIFEST_PATH, data),
+  };
+}
+
+/**
+ * Publish however many lanes produced stories this run, plus a stitched front
+ * page, and extend the manifest additively under `news`.
+ *
+ * `laneFeeds` is a partial map: `{ [lane]: { lane, generatedAt, stories } }`.
+ * A lane the caller omits (it failed, or fetched nothing this run) is left
+ * completely untouched — its on-disk feed file, its manifest entry, and its
+ * slot in the front page all keep whatever was last published there. That is
+ * the same "publish nothing rather than something broken" posture the digest
+ * uses, applied per lane instead of per run: one dead lane must never blank
+ * out, or block, the others.
+ *
+ * Each lane's contentVersion increments independently on every publish. There
+ * is no dated id to key on the way digests have one — the news feed is a
+ * rolling window, not a dated edition — so a same-cycle rerun (or any rerun)
+ * simply bumps the version, exactly like radar.json does.
+ */
+export function publishNewsLanes(laneFeeds, generatedAt, io = defaultNewsIo()) {
+  const lanesWithStories = Object.entries(laneFeeds ?? {}).filter(([, feed]) => feed?.stories?.length);
+  if (lanesWithStories.length === 0) return { published: false, lanes: {} };
+
+  const manifest = io.readManifest();
+  const newsManifest = manifest.news ?? { frontPage: null, lanes: {} };
+  const lanesOut = { ...(newsManifest.lanes ?? {}) };
+
+  for (const [lane, feed] of lanesWithStories) {
+    const existing = io.readLaneFeed(lane);
+    const contentVersion = existing ? (existing.contentVersion ?? 1) + 1 : 1;
+    const withVersion = {
+      lane,
+      generatedAt: feed.generatedAt,
+      contentVersion,
+      stories: feed.stories,
+    };
+    io.writeLane(lane, withVersion);
+    lanesOut[lane] = {
+      url: `news/lanes/${lane}.json`,
+      contentVersion,
+      generatedAt: feed.generatedAt,
+      storyCount: feed.stories.length,
+    };
+  }
+
+  // Stitch every lane into the front page — including lanes untouched this
+  // run, read back from disk, so a partial run never erases a healthy lane.
+  const frontLanes = {};
+  for (const lane of NEWS_LANES) {
+    const updated = laneFeeds?.[lane];
+    frontLanes[lane] = updated?.stories?.length ? updated.stories : io.readLaneFeed(lane)?.stories ?? [];
+  }
+
+  const existingFront = io.readFrontPage();
+  const frontContentVersion = existingFront ? (existingFront.contentVersion ?? 1) + 1 : 1;
+  const frontPage = { generatedAt, contentVersion: frontContentVersion, lanes: frontLanes };
+  io.writeFrontPage(frontPage);
+
+  io.writeManifest({
+    ...manifest,
+    manifestVersion: (manifest.manifestVersion ?? 0) + 1,
+    news: {
+      frontPage: { url: 'news/frontpage.json', contentVersion: frontContentVersion, generatedAt },
+      lanes: lanesOut,
+    },
+  });
+
+  return { published: true, lanes: lanesOut, frontPage: { contentVersion: frontContentVersion } };
 }

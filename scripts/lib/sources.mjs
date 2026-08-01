@@ -475,8 +475,12 @@ export async function fetchRss(feeds, sinceMs, keywords) {
 // Orchestration
 // ---------------------------------------------------------------------------
 
-/** Normalise a URL for dedupe: drop tracking params, trailing slash, scheme. */
-function dedupeKey(url) {
+/**
+ * Normalise a URL for dedupe: drop tracking params, trailing slash, scheme.
+ * Exported for reuse by the news pipeline (scripts/lib/news-sources.mjs),
+ * which needs the exact same canonicalisation for its own exact-URL dedupe.
+ */
+export function dedupeKey(url) {
   try {
     const u = new URL(url);
     for (const p of [...u.searchParams.keys()]) {
@@ -489,7 +493,7 @@ function dedupeKey(url) {
 }
 
 /** Normalise a title for near-duplicate detection across sources. */
-function titleKey(title) {
+export function titleKey(title) {
   return String(title)
     .toLowerCase()
     .replace(/[^a-z0-9 ]/g, '')
