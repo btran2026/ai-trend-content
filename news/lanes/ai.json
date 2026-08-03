@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-03T17:02:16.967Z",
-  "contentVersion": 6,
+  "generatedAt": "2026-08-03T23:01:02.970Z",
+  "contentVersion": 7,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,150 +123,23 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-03T17:02:16.967Z"
-    },
-    {
-      "id": "ai-f722651b21",
-      "slug": "minimax-h3-gets-day-0-support-in-comfyui-with-open-weights-native-audi",
-      "lane": "ai",
-      "title": "MiniMax H3 Gets Day-0 Support in ComfyUI With Open Weights, Native Audio, 2K Video",
-      "summary": "A post circulating on Hacker News highlights that MiniMax's H3 model has received day-zero integration in ComfyUI, the widely used open-source node-based interface for generative media workflows. The coverage describes H3 as shipping with open weights, native audio generation, and support for 2K video output. No further technical specifics were provided beyond this.",
-      "whyItMatters": "Open-weight video models with built-in audio and immediate tooling support lower the barrier for developers to build on frontier-adjacent generative video capabilities outside the closed labs.",
-      "whatToWatch": [
-        "Community adoption and example workflows in ComfyUI",
-        "Whether MiniMax publishes fuller technical documentation or benchmarks",
-        "How H3 stacks up against other open video/audio models"
-      ],
-      "questions": [
-        "What is H3's underlying architecture and parameter count?",
-        "How does its output quality compare to closed competitors?",
-        "Is the license permissive enough for commercial use?"
-      ],
-      "sources": [
-        {
-          "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
-          "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T13:34:43Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T13:34:43Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!w-S9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67ff80a9-2436-4749-a553-5f6c8c77e23c_1920x1080.png",
-      "badge": "Release",
-      "trendScore": 52,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-53ea25548c",
-      "slug": "blog-post-argues-developers-should-manually-retype-llm-generated-code-",
-      "lane": "ai",
-      "title": "Blog Post Argues Developers Should Manually Retype LLM-Generated Code to Avoid 'Cognitive Debt'",
-      "summary": "A blog post gaining attention on Hacker News argues that developers should manually retype AI-generated code rather than copy-pasting it, framing this as a way to avoid what the author calls 'cognitive debt' — a gradual loss of understanding and skill from leaning too heavily on LLM output. It reads as an individual developer's opinion and personal practice rather than an industry announcement.",
-      "whyItMatters": "It taps into a wider, ongoing debate about whether heavy reliance on AI coding assistants is eroding engineers' depth of understanding and ownership of their own code.",
-      "whatToWatch": [
-        "Whether the practice gets picked up more broadly or stays a niche suggestion",
-        "Responses from AI coding tool makers or engineering teams"
-      ],
-      "questions": [
-        "Is there evidence this practice measurably improves retention or skill?",
-        "How would it scale for large, AI-generated changes?"
-      ],
-      "sources": [
-        {
-          "title": "Prevent cognitive debt by manually retyping LLM-generated code",
-          "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T09:32:07Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T09:32:07Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "badge": "Analysis",
-      "trendScore": 50,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-6ff715560b",
-      "slug": "report-a-critical-cve-was-issued-for-a-hallucinated-sqlite-vulnerabili",
-      "lane": "ai",
-      "title": "Report: A Critical CVE Was Issued for a Hallucinated SQLite Vulnerability",
-      "summary": "A report shared on Hacker News describes a critical-severity CVE that was issued for a SQLite vulnerability which appears to have been hallucinated — meaning it doesn't correspond to a real flaw. The claim raises questions about how such an entry made it into the official vulnerability-tracking pipeline.",
-      "whyItMatters": "If AI-hallucinated vulnerabilities can be assigned real CVE numbers, it undermines trust in the systems security teams and vendors rely on to prioritize patching.",
-      "whatToWatch": [
-        "Whether the CVE is formally retracted or corrected",
-        "Any response from CVE Numbering Authorities on intake safeguards",
-        "Scrutiny of other recent CVEs for similar issues"
-      ],
-      "questions": [
-        "How did the hallucinated entry pass review?",
-        "What role, if any, did AI tools play in generating or submitting it?",
-        "What safeguards will be added to prevent recurrence?"
-      ],
-      "sources": [
-        {
-          "title": "Critical CVE issued for hallucinated SQLite vulnerability",
-          "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T11:28:54Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T11:28:54Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "badge": "Security",
-      "trendScore": 48,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-bc7a6f0eaf",
-      "slug": "nightcrawler-a-local-ai-pentesting-agent-built-to-run-on-a-smartphone",
-      "lane": "ai",
-      "title": "Nightcrawler: A Local AI Pentesting Agent Built to Run on a Smartphone",
-      "summary": "A project called Nightcrawler was shared on Hacker News as a 'Show HN' post, described as a local AI agent for penetration testing that runs directly on a smartphone rather than relying on cloud infrastructure. It appears to be an independent or community project rather than a commercial launch.",
-      "whyItMatters": "It's an example of capable AI agents being pushed onto low-power, on-device hardware for security tasks, part of a broader trend of shrinking agents outside the cloud.",
-      "whatToWatch": [
-        "Community feedback and technical scrutiny on GitHub",
-        "Whether concerns emerge about misuse for unauthorized testing"
-      ],
-      "questions": [
-        "What models and hardware does it require on-device?",
-        "What guardrails exist against unauthorized use?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
-          "url": "https://github.com/garagehq/nightcrawler/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T11:06:15Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T11:06:15Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "imageUrl": "https://opengraph.githubassets.com/622396f6e5ea90b3578ed6bafb0bcca5248df3a08f4334301470bdd5ec2bcab3/garagehq/nightcrawler",
-      "badge": "Show HN",
-      "trendScore": 44,
-      "confidence": "low"
+      "updatedAt": "2026-08-03T23:01:02.970Z"
     },
     {
       "id": "ai-245bd90370",
       "slug": "report-openai-linked-super-pac-funding-ai-generated-news-site-that-att",
       "lane": "ai",
-      "title": "Report: OpenAI-Linked Super PAC Funding AI-Generated News Site That Attacks Industry Critics",
-      "summary": "A report shared on Hacker News alleges that a super PAC funded by OpenAI is backing an AI-generated news site that publishes content targeting critics of the AI industry. The claim has not been corroborated beyond this reporting.",
-      "whyItMatters": "If accurate, it would signal an AI lab moving into political spending and media influence, raising transparency questions about using AI-generated content to shape debate over AI regulation.",
+      "title": "OpenAI's super PAC reportedly funding AI-generated news site attacking its critics",
+      "summary": "A report circulating on Hacker News alleges that a super PAC backed by OpenAI is funding an AI-generated news site that publishes attacks on people critical of the AI industry. The claim, as described in the shared source, points to a blurring of lines between political spending, media production, and AI-generated content used for reputational combat.",
+      "whyItMatters": "If accurate, this would mark one of the more direct examples of an AI lab using its political and financial muscle to shape the narrative around AI policy and its own critics, raising fresh questions about disclosure and influence.",
       "whatToWatch": [
-        "Any response or denial from OpenAI",
-        "Further reporting corroborating or disputing the claim",
-        "Scrutiny of super PAC funding disclosures"
+        "Whether OpenAI or the PAC in question issues any confirmation or denial",
+        "Whether other outlets independently verify the funding chain and the site's AI-generated content",
+        "Any regulatory or journalistic scrutiny of AI-generated political messaging"
       ],
       "questions": [
-        "What exactly is OpenAI's relationship to this PAC?",
-        "Who are the 'critics' being targeted and what does the site publish?",
-        "Are other AI labs engaged in similar efforts?"
+        "Who specifically funds and operates the news site, and is the AI-generation claim verifiable?",
+        "Which critics or topics are being targeted, and to what end?"
       ],
       "sources": [
         {
@@ -278,26 +151,212 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T02:30:30Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
       "imageUrl": "https://framerusercontent.com/images/654omgMZMMZgaGluHRcTrUOXN90.jpg?width=1200&height=630",
       "badge": "Policy",
-      "trendScore": 39,
+      "trendScore": 34,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-f722651b21",
+      "slug": "minimax-h3-gets-day-0-support-in-comfyui-with-open-weights-native-audi",
+      "lane": "ai",
+      "title": "MiniMax ships H3 with open weights, native audio, and 2K video — day-0 support in ComfyUI",
+      "summary": "MiniMax has released H3, a new open-weight model that reportedly supports native audio generation and 2K video output, with day-one integration into ComfyUI. The release gives the open-source generative media community immediate hands-on access rather than waiting for third-party ports.",
+      "whyItMatters": "Open-weight releases with day-0 tooling support lower the barrier for developers to experiment with high-end audio/video generation outside the closed labs, intensifying competition in generative media.",
+      "whatToWatch": [
+        "Community benchmarks comparing H3's video/audio quality to closed competitors",
+        "Adoption speed within the ComfyUI ecosystem",
+        "Any licensing restrictions on commercial use of the open weights"
+      ],
+      "questions": [
+        "What are the compute requirements for running H3 locally versus in the cloud?",
+        "How does H3's audio-video synchronization compare to established players like Runway or Pika?"
+      ],
+      "sources": [
+        {
+          "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+          "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T13:34:43Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T13:34:43Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!w-S9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67ff80a9-2436-4749-a553-5f6c8c77e23c_1920x1080.png",
+      "badge": "Release",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-489b06ed50",
+      "slug": "cloudflare-details-running-kimi-and-glm-models-at-scale",
+      "lane": "ai",
+      "title": "Cloudflare details running Kimi and GLM models at scale",
+      "summary": "Cloudflare published a technical post on serving the open-weight Kimi and GLM models — smaller, faster, and safer, according to the piece's framing — likely as part of its inference infrastructure offerings. The post appears aimed at developers looking to deploy these Chinese-origin open models in production.",
+      "whyItMatters": "Major infrastructure providers offering turnkey hosting for open Chinese models signals growing mainstream demand for alternatives to OpenAI, Anthropic, and Google models, especially on cost and openness grounds.",
+      "whatToWatch": [
+        "Pricing and performance benchmarks Cloudflare publishes for Kimi/GLM versus other hosted models",
+        "Whether other infrastructure providers follow with similar open-model hosting pushes"
+      ],
+      "questions": [
+        "What specific optimizations make these deployments 'smaller, faster, safer' compared to standard serving?",
+        "How does Cloudflare handle any export or compliance concerns tied to Chinese-origin models?"
+      ],
+      "sources": [
+        {
+          "title": "Smaller, faster, safer: running Kimi and GLM at scale",
+          "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T17:08:46Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T17:08:46Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://blog.cloudflare.com/_emdash/api/media/file/01KZ1Q04GM9SA4QGPGPKWJQSJ6.png",
+      "badge": "Engineering",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-d04cc35bd3",
+      "slug": "openai-describes-six-month-build-of-a-realtime-voice-ai-system",
+      "lane": "ai",
+      "title": "OpenAI describes six-month build of a realtime voice AI system",
+      "summary": "OpenAI published an engineering account of how it built a realtime system intended to make voice AI more responsive, describing the effort as a six-month project. The post is framed as a technical retrospective rather than a product announcement.",
+      "whyItMatters": "Latency and responsiveness remain key differentiators for conversational AI products; insight into how OpenAI approached this problem signals where voice-assistant competition is heading.",
+      "whatToWatch": [
+        "Whether the underlying techniques surface in ChatGPT's voice mode or the Realtime API",
+        "Any benchmarks OpenAI shares comparing latency before and after"
+      ],
+      "questions": [
+        "What specific bottlenecks took six months to solve?",
+        "Does this system apply broadly across OpenAI's voice products or just one?"
+      ],
+      "sources": [
+        {
+          "title": "How we built a realtime system for responsive voice AI in six months",
+          "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-03T07:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T07:00:00.000Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/yTlvMCvVXsIfkU2OOi99f/157c83857ebe75544195add9e1f75039/gpt-live-responsive-seo-card.png?w=1600&h=900&fit=fill",
+      "badge": "Engineering",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-6ff715560b",
+      "slug": "report-a-critical-cve-was-issued-for-a-hallucinated-sqlite-vulnerabili",
+      "lane": "ai",
+      "title": "Researchers question whether recent SQLite 'critical' CVEs are legitimate or AI-generated noise",
+      "summary": "A research post examines a batch of SQLite CVEs flagged as critical, asking whether they reflect real vulnerabilities or are 'LLM slop' — likely referring to low-quality, possibly AI-generated vulnerability reports submitted without proper verification. The piece appears to be a critical look at the growing volume of automated or AI-assisted security submissions.",
+      "whyItMatters": "As AI tools make it easier to mass-produce vulnerability reports, the security community faces a growing signal-to-noise problem that could erode trust in CVE databases and waste maintainer time.",
+      "whatToWatch": [
+        "Whether CVE maintainers or SQLite developers respond directly to the disputed entries",
+        "Any broader policy changes to CVE submission vetting in response to AI-generated reports"
+      ],
+      "questions": [
+        "How many of the disputed CVEs, if any, are eventually confirmed as genuine?",
+        "Is there evidence tying the questionable reports to a specific AI tool or workflow?"
+      ],
+      "sources": [
+        {
+          "title": "SQLite Critical CVEs or LLM Slop?",
+          "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T11:28:54Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T11:28:54Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "badge": "Research",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-0b4220142a",
+      "slug": "yc-backed-hoplite-launches-to-simplify-deploying-cloud-coding-agents",
+      "lane": "ai",
+      "title": "YC-backed Hoplite launches to simplify deploying cloud coding agents",
+      "summary": "Hoplite, a startup from YC's S26 batch, launched on Hacker News with a tool aimed at making it easier to deploy cloud-based coding agents. Details beyond the launch announcement are limited.",
+      "whyItMatters": "The proliferation of coding-agent infrastructure startups reflects how quickly the 'agentic coding' space is professionalizing beyond single-developer tools into deployable, scalable services.",
+      "whatToWatch": [
+        "Early user feedback and adoption from the Hacker News launch thread",
+        "Whether Hoplite differentiates on pricing, security, or integration with existing agent frameworks"
+      ],
+      "questions": [
+        "What specific problem does Hoplite solve that existing agent-deployment tools don't?",
+        "Who is the target customer — individual developers or enterprises?"
+      ],
+      "sources": [
+        {
+          "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+          "url": "https://hoplite.sh",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T16:32:06Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T16:32:06Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://hoplite.sh/opengraph.png",
+      "badge": "Launch",
+      "trendScore": 43,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-bc7a6f0eaf",
+      "slug": "nightcrawler-a-local-ai-pentesting-agent-built-to-run-on-a-smartphone",
+      "lane": "ai",
+      "title": "Show HN: Nightcrawler runs a local AI pentesting agent on a smartphone",
+      "summary": "A developer showcased Nightcrawler, described as a local AI pentesting agent that runs directly on a smartphone rather than relying on cloud infrastructure. It was shared as a Show HN project.",
+      "whyItMatters": "Running security-testing AI agents locally on consumer hardware points to a broader trend of shrinking capable AI tooling onto everyday devices, with implications for both defensive and offensive security use.",
+      "whatToWatch": [
+        "Community reaction and any security concerns raised about misuse potential",
+        "Whether the project gains traction or forks within the security research community"
+      ],
+      "questions": [
+        "What models or techniques allow a pentesting agent to run efficiently on phone-class hardware?",
+        "What safeguards, if any, exist against malicious use?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+          "url": "https://github.com/garagehq/nightcrawler/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T11:06:15Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T11:06:15Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://opengraph.githubassets.com/7ddf2977a1b69f6fe8c0a2a975de891be6b238b8d506f0ea706882d72234282e/garagehq/nightcrawler",
+      "badge": "Launch",
+      "trendScore": 40,
       "confidence": "low"
     },
     {
       "id": "ai-08d31deaaa",
       "slug": "show-hn-sprocket-an-ai-agent-for-hardware-and-software-development",
       "lane": "ai",
-      "title": "Show HN: Sprocket, an AI Agent for Hardware and Software Development",
-      "summary": "A project called Sprocket was posted to Hacker News as a 'Show HN' demo, pitched as an AI agent aimed at both hardware and software development work. Details come only from the demo submission rather than an official product announcement.",
-      "whyItMatters": "It reflects AI coding agents expanding beyond pure software into hardware design workflows, a niche with less existing tooling.",
+      "title": "Show HN: Sprocket pitches itself as an AI agent for hardware and software development",
+      "summary": "Sprocket was introduced on Hacker News as an AI agent aimed at both hardware and software development tasks, positioned by its creators as a leading option in that combined space. Details are limited to the launch listing itself.",
+      "whyItMatters": "Extending AI coding agents into hardware development workflows would be a notable expansion beyond the software-only agents that have dominated so far.",
       "whatToWatch": [
-        "Community reaction and technical scrutiny in the discussion thread",
-        "Whether it progresses from demo to a maintained product"
+        "Hacker News community reaction and any demos shared in the thread",
+        "Whether Sprocket publishes benchmarks against existing software-only coding agents"
       ],
       "questions": [
-        "What hardware development tasks can it actually handle today?",
-        "How does it compare to existing coding agents adapted for hardware?"
+        "What does 'hardware development' support concretely mean here — firmware, PCB design, or something else?",
+        "How does it substantiate the claim of being the 'best' in this category?"
       ],
       "sources": [
         {
@@ -309,70 +368,97 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-02T16:26:19Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "imageUrl": "https://opengraph.githubassets.com/5f1053f0c56d2b7a663d781625cbb80631be99e2aff22cd5c249c1a565ecdf4d/spikonado/sprocket",
-      "badge": "Show HN",
-      "trendScore": 34,
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://opengraph.githubassets.com/90cd95037c0eabf66385dd746ee2393a905beaf56e0e29bc871316c34db50a01/spikonado/sprocket",
+      "badge": "Launch",
+      "trendScore": 30,
       "confidence": "low"
     },
     {
-      "id": "ai-9ad28d2ed6",
-      "slug": "ai-mania-from-tulips-to-tokens-draws-bubble-comparisons-for-the-ai-boo",
+      "id": "ai-3e9781fff5",
+      "slug": "essay-argues-llms-disproportionately-reward-existing-expertise",
       "lane": "ai",
-      "title": "'AI Mania: From Tulips to Tokens' Draws Bubble Comparisons for the AI Boom",
-      "summary": "An essay titled 'AI Mania: From Tulips to Tokens' gained attention on Hacker News, drawing a historical comparison between the current AI investment boom and past speculative bubbles such as Dutch tulip mania. It reads as commentary and analysis rather than a news event.",
-      "whyItMatters": "Bubble-comparison narratives influence investor and public sentiment around AI valuations and spending, which affects the industry's fundraising and hiring climate.",
+      "title": "Essay argues LLMs disproportionately reward existing expertise",
+      "summary": "A blog post titled 'LLMs reward expertise' circulated on Hacker News, apparently arguing that people who already have deep domain knowledge get more value out of LLM assistance than novices do. No further detail beyond the title and source is available.",
+      "whyItMatters": "If this dynamic holds broadly, it complicates the popular narrative that AI tools primarily level the playing field for less-skilled workers, instead suggesting AI could widen expertise gaps.",
       "whatToWatch": [
-        "Whether the piece feeds into broader financial commentary",
-        "Any market moves in AI-linked stocks that fuel or dispute the comparison"
+        "Discussion and pushback in the Hacker News comments testing the essay's central claim"
       ],
       "questions": [
-        "What specific evidence does the piece cite for the bubble comparison?",
-        "Does it separate infrastructure spending from speculative valuation?"
+        "What evidence or examples does the essay use to support its argument?",
+        "Does the claim hold across different domains, or is it specific to certain kinds of expertise?"
       ],
       "sources": [
         {
-          "title": "AI Mania: From Tulips to Tokens",
-          "url": "https://seanhelvey.com/tools-and-their-tools/",
+          "title": "LLMs reward expertise",
+          "url": "https://www.seangoedecke.com/llms-reward-expertise/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-02T20:48:28Z"
+          "publishedAt": "2026-08-03T21:13:53Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-02T20:48:28Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "publishedAt": "2026-08-03T21:13:53Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://www.seangoedecke.com/og-image.jpg",
       "badge": "Analysis",
-      "trendScore": 32,
+      "trendScore": 54,
       "confidence": "low"
     },
     {
-      "id": "ai-4423410040",
-      "slug": "show-hn-fuse-a-new-statically-typed-functional-programming-language",
+      "id": "ai-53ea25548c",
+      "slug": "blog-post-argues-developers-should-manually-retype-llm-generated-code-",
       "lane": "ai",
-      "title": "Show HN: Fuse, a New Statically Typed Functional Programming Language",
-      "summary": "A developer introduced Fuse, a statically typed functional programming language, in a Hacker News 'Show HN' post. The available information doesn't specify any particular AI focus or connection for the language.",
-      "whyItMatters": "New languages sometimes emerge in response to AI-era coding workloads, though it's unclear from what's available whether that's a motivation here — worth noting for readers tracking the developer-tooling edges of the AI ecosystem.",
+      "title": "Blog post argues developers should retype LLM-generated code by hand to avoid 'cognitive debt'",
+      "summary": "A personal blog post suggests manually retyping code generated by LLMs as a way to prevent what it calls 'cognitive debt' — a loss of understanding or skill from passively accepting AI output. It's an individual opinion piece rather than a study or product announcement.",
+      "whyItMatters": "The idea reflects a growing undercurrent of concern among developers about skill atrophy and over-reliance on AI coding assistants, a debate likely to keep surfacing as agentic coding tools spread.",
       "whatToWatch": [
-        "Community discussion and technical feedback in the thread",
-        "Whether the language sees any adoption or tooling built around it"
+        "Whether the practice gains traction as a broader recommendation among engineering teams"
       ],
       "questions": [
-        "What specific problem is Fuse designed to solve?",
-        "Does it have any relationship to AI-assisted development workflows?"
+        "Is there any evidence beyond anecdote that retyping code actually preserves skill or understanding?",
+        "How would this practice scale for large AI-generated codebases?"
       ],
       "sources": [
         {
-          "title": "Show HN: Fuse – statically typed functional programming language",
-          "url": "https://fuselang.org",
+          "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+          "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-02T11:23:56Z"
+          "publishedAt": "2026-08-03T09:32:07Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-02T11:23:56Z",
-      "updatedAt": "2026-08-03T17:02:16.967Z",
-      "badge": "Show HN",
-      "trendScore": 25,
+      "publishedAt": "2026-08-03T09:32:07Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "badge": "Analysis",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-a8f46de4b5",
+      "slug": "latent-space-hosts-inference-engineering-masterclass-with-baseten-s-ph",
+      "lane": "ai",
+      "title": "Latent Space hosts 'Inference Engineering Masterclass' with Baseten's Philip Kiely and Ali Taha",
+      "summary": "Latent Space published an episode billed as an 'Inference Engineering Masterclass,' featuring Philip Kiely and Ali Taha from Baseten, a company focused on model inference infrastructure. The format suggests an in-depth technical discussion of serving and scaling LLM inference.",
+      "whyItMatters": "As inference costs and latency become central competitive concerns for AI companies, deep-dive discussions from infrastructure practitioners offer a window into how the industry is solving scaling challenges.",
+      "whatToWatch": [
+        "Specific techniques or benchmarks discussed that could influence how other teams approach inference optimization"
+      ],
+      "questions": [
+        "What novel inference techniques, if any, does Baseten reveal versus standard industry practice?"
+      ],
+      "sources": [
+        {
+          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
+          "url": "https://www.latent.space/p/inference-eng",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-03T21:44:03.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T21:44:03.000Z",
+      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!IohL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F209198968%2F6b756e14-9a18-4975-8d64-399d863f7af2%2Ftranscoded-1785525129.png",
+      "trendScore": 51,
       "confidence": "low"
     }
   ]

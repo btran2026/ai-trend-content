@@ -1,0 +1,580 @@
+{
+  "id": "2026-08-03",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-03T22:52:43.212Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Force Opus to prove its work before it calls a task done",
+    "summary": "Two repos this cycle (fablize, fable-method) take the completion/evidence/verification discipline that made Claude Fable reliable and package it as something installable on Opus or any subagent tonight — think/act/prove as a hard gate instead of trusting the model's own summary. Pair that with David Crawshaw's nightly cron prompt (pull upstream, rebase local changes, verify, swap in the new build) as a working template for the actual sleep-then-review loop, and ponytail's \"laziest senior dev\" skill set to keep the diffs small enough to review in the morning instead of wading through overengineered output.\n\nOn cost, a cluster of proxy and control-plane repos (opencodex, claudexor, omnigent, claude-dynamic-workflows-codex) let you keep Claude Code as the front end while routing individual subagent calls to local Ollama, DeepSeek, or a cheaper Codex backend — worth trialing on your lowest-stakes calls like lint fixes or commit messages before trusting anything bigger to them. AirLLM's 4GB-GPU 70B trick and dao-code's DeepSeek-V4 cache-prefix engineering point the same direction: real hardware-bound savings, not leaderboard talk. And the SQLite tracker getting flooded with plausible-but-fake AI-generated vulnerability reports is the failure report to actually heed — anything your agent writes up as a \"finding\" needs a repro script or failing test attached before it counts as verified.",
+    "bullets": [
+      "Install fivetaku/fablize as a Claude Code plugin to force Opus through completion/evidence/verification before it marks anything done",
+      "Cron David Crawshaw's nightly prompt — pull upstream, rebase, verify, swap in — as a template for the sleep-then-review loop",
+      "Clone Sahir619/fable-method and wire its think/act/prove eval as a hard completion gate on your subagents",
+      "Load DietrichGebert/ponytail's skill set to keep overnight diffs small and actually reviewable",
+      "Route lint/commit-message subagent calls through lidge-jun/opencodex to a local Ollama or DeepSeek model to cut API spend",
+      "Require a repro script or failing test before accepting any agent-authored bug or security finding — SQLite's tracker is drowning in plausible fake CVEs"
+    ],
+    "signals": [
+      {
+        "label": "Verification-before-done enforcement",
+        "direction": "up",
+        "note": "fablize and fable-method independently package Fable's think/act/prove discipline as installable gates for Opus and other subagents"
+      },
+      {
+        "label": "Harness-agnostic control planes",
+        "direction": "up",
+        "note": "omnigent, claudexor, opencodex, and claude-dynamic-workflows-codex all let you swap or mix Claude Code, Codex, Cursor and route calls by cost or quota"
+      },
+      {
+        "label": "Cheap local inference for subagent work",
+        "direction": "up",
+        "note": "AirLLM squeezes 70B inference onto a 4GB GPU, dao-code leans on DeepSeek-V4 cache pricing for near-free cross-session memory"
+      },
+      {
+        "label": "Trust in unverified agent claims",
+        "direction": "down",
+        "note": "SQLite's bug tracker flooded with plausible fake CVEs shows agent output that looks reviewable but isn't unless gated on a real repro"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "Claude Code plugin fablize forces Opus through the same completion/evidence/verification procedure that made Fable reliable, keeping only what testing proved transferable.",
+      "whyItMatters": "An installable enforcement layer that makes Opus verify its own work before declaring a task done — exactly the unattended-then-review workflow you want.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "plugin",
+        "verification",
+        "opus"
+      ],
+      "entities": [
+        "fivetaku"
+      ],
+      "models": [
+        "Claude Opus",
+        "Claude Fable"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and point it at your Opus subagents.",
+      "score": 891
+    },
+    {
+      "id": "rss-simon-willison-idcrawshawatomeverything",
+      "title": "Quoting David Crawshaw's prompt",
+      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-03T16:15:27.000Z",
+      "tldr": "David Crawshaw runs a nightly cron job whose prompt tells an agent to pull upstream changes, rebase local modifications on top, verify the software still works, and swap in the new build.",
+      "whyItMatters": "It's a ready template for the exact unattended 'describe it, sleep, review a working result' loop, applied to keeping a fork or vendored tool current.",
+      "category": "technique",
+      "tags": [
+        "cron",
+        "prompt-engineering",
+        "coding-agents",
+        "autonomy"
+      ],
+      "entities": [
+        "David Crawshaw"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Cron a nightly prompt: 'fetch upstream changes to <software>, rebase local changes on top, verify it still works, then replace the current version.'"
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "Ponytail, a viral (94.8k-star) prompt/skill framework, pushes agents toward a 'laziest senior dev' instinct — write the least code possible instead of over-engineering.",
+      "whyItMatters": "A drop-in prompting discipline to curb the bloated, hard-to-review diffs agents tend to produce on long unattended runs.",
+      "category": "technique",
+      "tags": [
+        "prompting",
+        "skills",
+        "minimalism",
+        "code-review"
+      ],
+      "entities": [
+        "DietrichGebert"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and load its skill/prompt set into your Claude Code config.",
+      "score": 94860
+    },
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering packages CLI tools (loop-audit, loop-init, loop-cost) and starter patterns for designing and orchestrating unattended AI coding-agent loops, inspired by Addy Osmani and Boris Cherny.",
+      "whyItMatters": "Gives you concrete commands to scaffold, audit, and cost-track long-running agent loops instead of hand-rolling your own harness around Claude Code.",
+      "category": "technique",
+      "tags": [
+        "coding-agents",
+        "cli",
+        "loop-engineering",
+        "orchestration"
+      ],
+      "entities": [
+        "cobusgreyling"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering, run loop-init to scaffold a loop, then loop-audit against one of your existing agent workflows.",
+      "score": 9820
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor, and Pi agents interchangeably, with policy enforcement, sandboxing, and control from any device.",
+      "whyItMatters": "Gives you one control plane to swap or mix harnesses and to check on or steer an overnight run remotely instead of being tied to your desk.",
+      "category": "agentic",
+      "tags": [
+        "orchestration",
+        "remote-control",
+        "sandboxing"
+      ],
+      "entities": [
+        "omnigent-ai"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and wire an existing worktree workflow through it to test steering a run from your phone.",
+      "score": 8074
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI/App/SDK and Claude Code call any LLM — Claude, Gemini, Grok, DeepSeek, or a local Ollama model.",
+      "whyItMatters": "Lets you route cheap or low-stakes subagent calls to a local/cheaper model without abandoning your existing Codex or Claude Code setup.",
+      "category": "tooling",
+      "tags": [
+        "model-routing",
+        "proxy",
+        "cost"
+      ],
+      "entities": [
+        "lidge-jun"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and route a low-stakes subagent (lint fixes, commit messages) through it to a local Ollama model.",
+      "score": 6940
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "A GitHub repo distills the Fable agent workflow into reusable skills plus an eval harness enforcing think/act/prove before work is marked done.",
+      "whyItMatters": "Gives you a portable verification loop you can bolt onto any subagent so it has to prove its work before you see the PR, not just trust its own summary.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "eval",
+        "claude-code"
+      ],
+      "entities": [
+        "Sahir619"
+      ],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and wire its eval as a completion gate in your subagent pipeline.",
+      "score": 2107
+    },
+    {
+      "id": "gh-1262682069",
+      "title": "tigicion/dao-code — Open-source TypeScript terminal coding agent for DeepSeek-V4 — builds on DeepSeek's strong price-performance and ultra-cheap cache pricing, engineering byte-stable prefixes and cache-reusing forks so cross-session memory",
+      "url": "https://github.com/tigicion/dao-code",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-08T08:10:42Z",
+      "tldr": "dao-code is a terminal coding agent built around DeepSeek-V4, engineered with byte-stable prompt prefixes and cache-reusing forks to make cross-session memory nearly free.",
+      "whyItMatters": "If you're paying per token, DeepSeek-V4's cache pricing plus this repo's prefix engineering can meaningfully cut the cost of long unattended sessions, and it's Claude Code config compatible (Skills/MCP/Hooks).",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "caching",
+        "deepseek"
+      ],
+      "entities": [
+        "tigicion",
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek-V4"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone tigicion/dao-code and use it as the backend for one long-context subagent to check actual cache-hit cost savings.",
+      "score": 1265
+    },
+    {
+      "id": "gh-1257914186",
+      "title": "CodeBendKit/codeseek — Rust-powered code intelligence CLI for AI coding agents. Builds call graphs and hybrid semantic search indexes (Dense + Sparse + RRF + Reranker) across 7 languages. Ships as native MCP tools for Claude Code and Codex ",
+      "url": "https://github.com/CodeBendKit/codeseek",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-03T05:41:22Z",
+      "tldr": "codeseek is a Rust CLI that builds call graphs and hybrid dense+sparse+reranked semantic search indexes across 7 languages, exposed as MCP tools for Claude Code and Codex CLI.",
+      "whyItMatters": "Better code retrieval means fewer clarifying questions and less back-and-forth for an agent working a large codebase — directly extends how long it can run unattended.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "code-search",
+        "context"
+      ],
+      "entities": [
+        "CodeBendKit"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Add CodeBendKit/codeseek as an MCP server in your Claude Code config so subagents get call-graph search instead of grep.",
+      "score": 818
+    },
+    {
+      "id": "gh-1259999244",
+      "title": "razzant/claudexor — Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+      "url": "https://github.com/razzant/claudexor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-05T04:08:13Z",
+      "tldr": "claudexor is a control plane that rotates across multiple Claude/Codex subscriptions by quota, shares thread context, and runs cross-model review on outputs.",
+      "whyItMatters": "Cross-model review gives you a second model checking your agent's work before a PR reaches you, and quota rotation avoids getting rate-limited mid-run.",
+      "category": "agentic",
+      "tags": [
+        "quota",
+        "cross-model-review",
+        "verification"
+      ],
+      "entities": [
+        "razzant"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Set up razzant/claudexor and route your overnight run's final review step to a different model than the one that wrote the code.",
+      "score": 367
+    },
+    {
+      "id": "gh-1255596359",
+      "title": "scasella/claude-dynamic-workflows-codex — Run Claude Code dynamic workflows on a local Codex (GPT) backend, plus an interactive run viewer",
+      "url": "https://github.com/scasella/claude-dynamic-workflows-codex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-01T02:07:23Z",
+      "tldr": "This repo runs Claude Code's dynamic workflow feature against a local Codex/GPT backend, plus an interactive viewer for inspecting runs.",
+      "whyItMatters": "Lets you keep your existing Workflow scripts while swapping a local or cheaper backend into some pipeline stages, and the run viewer helps you audit what an unattended run actually did.",
+      "category": "agentic",
+      "tags": [
+        "workflows",
+        "local-backend",
+        "cost"
+      ],
+      "entities": [
+        "scasella"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone scasella/claude-dynamic-workflows-codex and point one pipeline stage at a local Codex backend to compare cost against Claude Code proper.",
+      "score": 305
+    },
+    {
+      "id": "hn-49154228",
+      "title": "AirLLM 70B inference with single 4GB GPU",
+      "url": "https://github.com/lyogavin/airllm",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-03T11:15:48Z",
+      "tldr": "AirLLM runs 70B-parameter inference on a single 4GB GPU by streaming layers instead of loading the whole model into memory.",
+      "whyItMatters": "Puts a 70B-class model within reach of a modest local GPU for offline or low-priority subagent work instead of paying API rates.",
+      "category": "technique",
+      "tags": [
+        "local-inference",
+        "gpu",
+        "cost"
+      ],
+      "entities": [
+        "AirLLM"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try AirLLM on your existing 4GB+ GPU for a low-priority subagent task like commit-message drafting or lint triage.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49154228",
+      "score": 175
+    },
+    {
+      "id": "hn-49154332",
+      "title": "SQLite Critical CVEs or LLM Slop?",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-03T11:28:54Z",
+      "tldr": "AI-generated vulnerability reports are reportedly flooding SQLite's bug tracker with plausible-looking but fake CVEs.",
+      "whyItMatters": "A live example of agent output that looks reviewable but isn't — the same failure mode that can hide inside an unattended agent's PR if claims aren't checked against an actual repro.",
+      "category": "use-cases",
+      "tags": [
+        "failure-report",
+        "verification",
+        "security"
+      ],
+      "entities": [
+        "SQLite"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Require a repro script or failing test as a hard gate before any agent-authored bug or security report leaves draft.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49154332",
+      "score": 690
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "Open-connector is an open-source auth gateway exposing 1000+ SaaS providers to AI agents through one SDK/CLI/MCP/HTTP/OpenAPI interface.",
+      "whyItMatters": "Collapses the per-service boilerplate of wiring new SaaS accounts into your agents' MCP tool list into a single gateway.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations",
+        "saas"
+      ],
+      "entities": [
+        "oomol-lab"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone oomol-lab/open-connector and register it as an MCP server for the SaaS accounts your agents need.",
+      "score": 4181
+    },
+    {
+      "id": "gh-1237004640",
+      "title": "gi-dellav/zerostack — Lightweight coding agent written in Rust, optimized for memory footprint and performance",
+      "url": "https://github.com/gi-dellav/zerostack",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-12T19:31:49Z",
+      "tldr": "zerostack is a new lightweight coding agent written in Rust, built specifically to minimize memory footprint.",
+      "whyItMatters": "A leaner agent runtime could let you run more parallel subagents per machine or on smaller hardware than Electron/Node-based agents, cutting the resource cost of unattended overnight runs.",
+      "category": "agentic",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "local",
+        "efficiency"
+      ],
+      "entities": [
+        "gi-dellav"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone gi-dellav/zerostack and benchmark it as a cheap parallel subagent runner alongside Claude Code.",
+      "score": 1550
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE is an open-source agent-driven pipeline for automated CVE discovery, vulnerability verification, and report generation on source code.",
+      "whyItMatters": "Could slot in as an unattended security-review stage before you review a finished PR in the morning.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "cve",
+        "agentic",
+        "code-audit"
+      ],
+      "entities": [
+        "larlarua"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and add it as a pre-merge verification step alongside your test suite.",
+      "score": 1245
+    },
+    {
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local desktop widget tracking token usage, cost, and rate limits across 28+ AI coding tools with multi-device sync.",
+      "whyItMatters": "Gives you one place to see what overnight agent runs actually cost across Claude Code, Codex, Cursor, and others before you scale up unattended usage.",
+      "category": "tooling",
+      "tags": [
+        "cost-tracking",
+        "dashboard"
+      ],
+      "entities": [
+        "Javis603"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Install Javis603/token-monitor and cross-check its numbers against your provider billing dashboard for a week.",
+      "score": 1124
+    },
+    {
+      "id": "gh-1247671075",
+      "title": "ongridio/ongrid — An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk.",
+      "url": "https://github.com/ongridio/ongrid",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-23T16:16:44Z",
+      "tldr": "Ongrid is an ops AI agent that diagnoses and fixes infrastructure issues triggered directly from Slack, Telegram, Lark or DingTalk.",
+      "whyItMatters": "A concrete template for chat-triggered, event-driven agent runs you could adapt to kick off coding-agent tasks from your phone via chat.",
+      "category": "agentic",
+      "tags": [
+        "chat-bridge",
+        "ops",
+        "slack",
+        "remote-trigger"
+      ],
+      "entities": [
+        "ongridio"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Look at ongrid's Slack/Telegram bot wiring as a template for triggering your own agents from chat.",
+      "score": 597
+    },
+    {
+      "id": "hn-49157997",
+      "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+      "url": "https://hoplite.sh",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-03T16:32:06Z",
+      "tldr": "YC-backed Hoplite launches, porting your local Claude Code setup — sessions, memories, MCP servers — into cloud-hosted coding agents you can QA remotely.",
+      "whyItMatters": "A ready-made path to trigger and check on agents from your phone instead of your desk, if the import of your existing setup actually holds up.",
+      "category": "agentic",
+      "tags": [
+        "remote",
+        "cloud-agents",
+        "claude-code",
+        "mcp"
+      ],
+      "entities": [
+        "Hoplite"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Run Hoplite's onboarding import on one project and verify it carries over your MCP servers and skills intact.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49157997",
+      "score": 42
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Fable's prove-it-worked loop, made installable",
+      "summary": "Both repos distill Claude Fable's completion/evidence/verification procedure into a reusable gate — one as a Claude Code plugin for Opus, the other as a portable skills-plus-eval package for any subagent.",
+      "itemIds": [
+        "gh-1268946118",
+        "gh-1291544092"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Harness-agnostic control planes and proxies",
+      "summary": "A wave of repos this cycle all solve the same problem: keep Claude Code (or Codex) as the front end while swapping, rotating, or routing the backend model per subagent or per quota.",
+      "itemIds": [
+        "gh-1266212515",
+        "gh-1259999244",
+        "gh-1255596359",
+        "gh-1273824907"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Controlling agents away from the desk",
+      "summary": "Chat-triggered ops fixes and cloud-hosted coding-agent imports both point at the same workflow: kick off or check on an agent run from your phone instead of your desk.",
+      "itemIds": [
+        "gh-1247671075",
+        "hn-49157997"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 16,
+    "outputTokens": 40368,
+    "usd": 1.1015,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
