@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-01T19:05:08.367Z",
-  "contentVersion": 5,
+  "generatedAt": "2026-08-03T17:02:16.967Z",
+  "contentVersion": 6,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,182 +123,257 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-01T19:05:08.367Z"
+      "updatedAt": "2026-08-03T17:02:16.967Z"
     },
     {
-      "id": "ai-6d58997b46",
-      "slug": "openai-highlights-ten-recent-advances-in-math-and-theoretical-cs",
+      "id": "ai-f722651b21",
+      "slug": "minimax-h3-gets-day-0-support-in-comfyui-with-open-weights-native-audi",
       "lane": "ai",
-      "title": "OpenAI highlights ten advances in mathematics and theoretical computer science",
-      "summary": "OpenAI published a roundup describing ten advances in mathematics and theoretical computer science, framed around progress it attributes to AI-assisted research. Details beyond the publisher's own framing are not available.",
-      "whyItMatters": "OpenAI continues to position its models as contributors to frontier scientific research, a narrative that shapes how the company argues for AI's societal value.",
+      "title": "MiniMax H3 Gets Day-0 Support in ComfyUI With Open Weights, Native Audio, 2K Video",
+      "summary": "A post circulating on Hacker News highlights that MiniMax's H3 model has received day-zero integration in ComfyUI, the widely used open-source node-based interface for generative media workflows. The coverage describes H3 as shipping with open weights, native audio generation, and support for 2K video output. No further technical specifics were provided beyond this.",
+      "whyItMatters": "Open-weight video models with built-in audio and immediate tooling support lower the barrier for developers to build on frontier-adjacent generative video capabilities outside the closed labs.",
       "whatToWatch": [
-        "Whether independent researchers verify or credit AI's role in these specific advances",
-        "Follow-up posts detailing methodology"
+        "Community adoption and example workflows in ComfyUI",
+        "Whether MiniMax publishes fuller technical documentation or benchmarks",
+        "How H3 stacks up against other open video/audio models"
       ],
       "questions": [
-        "How much of the credited progress came from AI tools versus human researchers?",
-        "Are these results peer-reviewed or independently verifiable?"
+        "What is H3's underlying architecture and parameter count?",
+        "How does its output quality compare to closed competitors?",
+        "Is the license permissive enough for commercial use?"
       ],
       "sources": [
         {
-          "title": "Ten advances in mathematics and theoretical computer science",
-          "url": "https://openai.com/index/ten-advances-in-mathematics",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-01T00:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-01T00:00:00.000Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5RUlCTeEvzWYd2DDpdcNgh/f38e144bf6f5911074b1939c1528ed2b/Frame__4_.png?w=1600&h=900&fit=fill",
-      "badge": "Research",
-      "trendScore": 39,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-1335096306",
-      "slug": "a-team-deprecates-its-own-llm-router-amid-a-router-building-trend",
-      "lane": "ai",
-      "title": "A team explains why it deprecated its own LLM router",
-      "summary": "A blog post on Hacker News describes a company's decision to deprecate its internal LLM router even as many others in the industry build similar routing systems to direct queries between different models. The piece reportedly argues against the current router trend.",
-      "whyItMatters": "LLM routing is a widely adopted architecture pattern for balancing cost and quality across models; a public case against it could influence how developers design multi-model systems.",
-      "whatToWatch": [
-        "Whether other engineering teams publish similar reassessments of routing architectures"
-      ],
-      "questions": [
-        "What specific problems led to deprecating the router?",
-        "What replaced it in their stack?"
-      ],
-      "sources": [
-        {
-          "title": "Everyone is building LLM routers, we deprecated ours",
-          "url": "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
+          "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+          "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
           "publisher": "Hacker News",
-          "publishedAt": "2026-07-31T18:06:39Z"
+          "publishedAt": "2026-08-03T13:34:43Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-07-31T18:06:39Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
-      "imageUrl": "https://manifest.build/images/blog/why-we-deprecated-our-llm-router.png",
-      "badge": "Engineering",
+      "publishedAt": "2026-08-03T13:34:43Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!w-S9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67ff80a9-2436-4749-a553-5f6c8c77e23c_1920x1080.png",
+      "badge": "Release",
+      "trendScore": 52,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-53ea25548c",
+      "slug": "blog-post-argues-developers-should-manually-retype-llm-generated-code-",
+      "lane": "ai",
+      "title": "Blog Post Argues Developers Should Manually Retype LLM-Generated Code to Avoid 'Cognitive Debt'",
+      "summary": "A blog post gaining attention on Hacker News argues that developers should manually retype AI-generated code rather than copy-pasting it, framing this as a way to avoid what the author calls 'cognitive debt' — a gradual loss of understanding and skill from leaning too heavily on LLM output. It reads as an individual developer's opinion and personal practice rather than an industry announcement.",
+      "whyItMatters": "It taps into a wider, ongoing debate about whether heavy reliance on AI coding assistants is eroding engineers' depth of understanding and ownership of their own code.",
+      "whatToWatch": [
+        "Whether the practice gets picked up more broadly or stays a niche suggestion",
+        "Responses from AI coding tool makers or engineering teams"
+      ],
+      "questions": [
+        "Is there evidence this practice measurably improves retention or skill?",
+        "How would it scale for large, AI-generated changes?"
+      ],
+      "sources": [
+        {
+          "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+          "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T09:32:07Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T09:32:07Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "badge": "Analysis",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-6ff715560b",
+      "slug": "report-a-critical-cve-was-issued-for-a-hallucinated-sqlite-vulnerabili",
+      "lane": "ai",
+      "title": "Report: A Critical CVE Was Issued for a Hallucinated SQLite Vulnerability",
+      "summary": "A report shared on Hacker News describes a critical-severity CVE that was issued for a SQLite vulnerability which appears to have been hallucinated — meaning it doesn't correspond to a real flaw. The claim raises questions about how such an entry made it into the official vulnerability-tracking pipeline.",
+      "whyItMatters": "If AI-hallucinated vulnerabilities can be assigned real CVE numbers, it undermines trust in the systems security teams and vendors rely on to prioritize patching.",
+      "whatToWatch": [
+        "Whether the CVE is formally retracted or corrected",
+        "Any response from CVE Numbering Authorities on intake safeguards",
+        "Scrutiny of other recent CVEs for similar issues"
+      ],
+      "questions": [
+        "How did the hallucinated entry pass review?",
+        "What role, if any, did AI tools play in generating or submitting it?",
+        "What safeguards will be added to prevent recurrence?"
+      ],
+      "sources": [
+        {
+          "title": "Critical CVE issued for hallucinated SQLite vulnerability",
+          "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T11:28:54Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T11:28:54Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "badge": "Security",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-bc7a6f0eaf",
+      "slug": "nightcrawler-a-local-ai-pentesting-agent-built-to-run-on-a-smartphone",
+      "lane": "ai",
+      "title": "Nightcrawler: A Local AI Pentesting Agent Built to Run on a Smartphone",
+      "summary": "A project called Nightcrawler was shared on Hacker News as a 'Show HN' post, described as a local AI agent for penetration testing that runs directly on a smartphone rather than relying on cloud infrastructure. It appears to be an independent or community project rather than a commercial launch.",
+      "whyItMatters": "It's an example of capable AI agents being pushed onto low-power, on-device hardware for security tasks, part of a broader trend of shrinking agents outside the cloud.",
+      "whatToWatch": [
+        "Community feedback and technical scrutiny on GitHub",
+        "Whether concerns emerge about misuse for unauthorized testing"
+      ],
+      "questions": [
+        "What models and hardware does it require on-device?",
+        "What guardrails exist against unauthorized use?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+          "url": "https://github.com/garagehq/nightcrawler/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T11:06:15Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T11:06:15Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "imageUrl": "https://opengraph.githubassets.com/622396f6e5ea90b3578ed6bafb0bcca5248df3a08f4334301470bdd5ec2bcab3/garagehq/nightcrawler",
+      "badge": "Show HN",
+      "trendScore": 44,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-245bd90370",
+      "slug": "report-openai-linked-super-pac-funding-ai-generated-news-site-that-att",
+      "lane": "ai",
+      "title": "Report: OpenAI-Linked Super PAC Funding AI-Generated News Site That Attacks Industry Critics",
+      "summary": "A report shared on Hacker News alleges that a super PAC funded by OpenAI is backing an AI-generated news site that publishes content targeting critics of the AI industry. The claim has not been corroborated beyond this reporting.",
+      "whyItMatters": "If accurate, it would signal an AI lab moving into political spending and media influence, raising transparency questions about using AI-generated content to shape debate over AI regulation.",
+      "whatToWatch": [
+        "Any response or denial from OpenAI",
+        "Further reporting corroborating or disputing the claim",
+        "Scrutiny of super PAC funding disclosures"
+      ],
+      "questions": [
+        "What exactly is OpenAI's relationship to this PAC?",
+        "Who are the 'critics' being targeted and what does the site publish?",
+        "Are other AI labs engaged in similar efforts?"
+      ],
+      "sources": [
+        {
+          "title": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
+          "url": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-03T02:30:30Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T02:30:30Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "imageUrl": "https://framerusercontent.com/images/654omgMZMMZgaGluHRcTrUOXN90.jpg?width=1200&height=630",
+      "badge": "Policy",
+      "trendScore": 39,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-08d31deaaa",
+      "slug": "show-hn-sprocket-an-ai-agent-for-hardware-and-software-development",
+      "lane": "ai",
+      "title": "Show HN: Sprocket, an AI Agent for Hardware and Software Development",
+      "summary": "A project called Sprocket was posted to Hacker News as a 'Show HN' demo, pitched as an AI agent aimed at both hardware and software development work. Details come only from the demo submission rather than an official product announcement.",
+      "whyItMatters": "It reflects AI coding agents expanding beyond pure software into hardware design workflows, a niche with less existing tooling.",
+      "whatToWatch": [
+        "Community reaction and technical scrutiny in the discussion thread",
+        "Whether it progresses from demo to a maintained product"
+      ],
+      "questions": [
+        "What hardware development tasks can it actually handle today?",
+        "How does it compare to existing coding agents adapted for hardware?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Sprocket – The Best AI Agent for Hardware and Software Development",
+          "url": "https://sprocket-demo.spikonado.com",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-02T16:26:19Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-02T16:26:19Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "imageUrl": "https://opengraph.githubassets.com/5f1053f0c56d2b7a663d781625cbb80631be99e2aff22cd5c249c1a565ecdf4d/spikonado/sprocket",
+      "badge": "Show HN",
       "trendScore": 34,
       "confidence": "low"
     },
     {
-      "id": "ai-00793f88f4",
-      "slug": "ainews-not-much-happened-today",
+      "id": "ai-9ad28d2ed6",
+      "slug": "ai-mania-from-tulips-to-tokens-draws-bubble-comparisons-for-the-ai-boo",
       "lane": "ai",
-      "title": "[AINews] not much happened today",
-      "summary": "Latent Space's daily AI news roundup was headlined simply as 'not much happened today,' suggesting a lull in major AI announcements for that news cycle.",
-      "whyItMatters": "Even slow news days are a useful signal for gauging the pace of the AI news cycle relative to the frenetic releases of recent months.",
-      "whatToWatch": [],
-      "questions": [],
-      "sources": [
-        {
-          "title": "[AINews] not much happened today",
-          "url": "https://www.latent.space/p/ainews-not-much-happened-today-038",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-01T01:38:09.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-01T01:38:09.000Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!1adH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOiugSLbQAAck-3.jpg",
-      "trendScore": 32,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-6697096bc4",
-      "slug": "critics-push-back-on-anthropic-s-dario-amodei-over-open-weights-stance",
-      "lane": "ai",
-      "title": "Critics push back on Dario Amodei's stance against open-weight AI models",
-      "summary": "A widely discussed post argues that Anthropic CEO Dario Amodei's position on open-weight AI models is self-serving and short-sighted, reigniting the open-versus-closed AI debate. The piece was shared and discussed on Hacker News.",
-      "whyItMatters": "The open-weights debate is central to competitive dynamics in AI, affecting startups, national security policy, and who controls access to frontier capabilities.",
+      "title": "'AI Mania: From Tulips to Tokens' Draws Bubble Comparisons for the AI Boom",
+      "summary": "An essay titled 'AI Mania: From Tulips to Tokens' gained attention on Hacker News, drawing a historical comparison between the current AI investment boom and past speculative bubbles such as Dutch tulip mania. It reads as commentary and analysis rather than a news event.",
+      "whyItMatters": "Bubble-comparison narratives influence investor and public sentiment around AI valuations and spending, which affects the industry's fundraising and hiring climate.",
       "whatToWatch": [
-        "Whether Anthropic or Amodei publicly respond to the criticism",
-        "Continued commentary from other labs on open vs. closed model strategy"
+        "Whether the piece feeds into broader financial commentary",
+        "Any market moves in AI-linked stocks that fuel or dispute the comparison"
       ],
       "questions": [
-        "Does Amodei's stance reflect Anthropic's genuine safety concerns or competitive interests?",
-        "How might this debate influence upcoming model releases from open-weight labs?"
+        "What specific evidence does the piece cite for the bubble comparison?",
+        "Does it separate infrastructure spending from speculative valuation?"
       ],
       "sources": [
         {
-          "title": "Dario Amodei's stance on open weights is self-serving and short-sighted",
-          "url": "https://janilowski.pl/en/blog/2026/amodei-memo/",
+          "title": "AI Mania: From Tulips to Tokens",
+          "url": "https://seanhelvey.com/tools-and-their-tools/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-07-31T16:24:09Z"
+          "publishedAt": "2026-08-02T20:48:28Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-07-31T16:24:09Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
+      "publishedAt": "2026-08-02T20:48:28Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
       "badge": "Analysis",
       "trendScore": 32,
       "confidence": "low"
     },
     {
-      "id": "ai-b86dc435d6",
-      "slug": "openai-details-efforts-on-responsible-ai-across-europe",
+      "id": "ai-4423410040",
+      "slug": "show-hn-fuse-a-new-statically-typed-functional-programming-language",
       "lane": "ai",
-      "title": "OpenAI outlines plans for 'responsible AI' expansion in Europe",
-      "summary": "OpenAI published a post describing efforts to advance responsible AI practices across Europe, though specifics of new commitments or programs were not detailed in the available source.",
-      "whyItMatters": "OpenAI's European engagement matters given the EU's active AI regulatory framework and the company's need to navigate compliance while expanding its footprint there.",
+      "title": "Show HN: Fuse, a New Statically Typed Functional Programming Language",
+      "summary": "A developer introduced Fuse, a statically typed functional programming language, in a Hacker News 'Show HN' post. The available information doesn't specify any particular AI focus or connection for the language.",
+      "whyItMatters": "New languages sometimes emerge in response to AI-era coding workloads, though it's unclear from what's available whether that's a motivation here — worth noting for readers tracking the developer-tooling edges of the AI ecosystem.",
       "whatToWatch": [
-        "Any concrete policy commitments or partnerships OpenAI announces in Europe",
-        "EU regulator response to OpenAI's framing"
+        "Community discussion and technical feedback in the thread",
+        "Whether the language sees any adoption or tooling built around it"
       ],
       "questions": [
-        "What specific actions or investments back this responsible AI messaging?",
-        "How does this relate to EU AI Act compliance timelines?"
+        "What specific problem is Fuse designed to solve?",
+        "Does it have any relationship to AI-assisted development workflows?"
       ],
       "sources": [
         {
-          "title": "Advancing responsible AI across Europe",
-          "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-07-31T15:00:00.000Z"
+          "title": "Show HN: Fuse – statically typed functional programming language",
+          "url": "https://fuselang.org",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-02T11:23:56Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-07-31T15:00:00.000Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3wXKvwzV9IlUVcm3H8tcPb/3a66b4f38baf6c6f2594eddc0a8d6561/Frame.png?w=1600&h=900&fit=fill",
-      "badge": "Policy",
-      "trendScore": 32,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-6e145b017b",
-      "slug": "openai-outlines-vision-for-abundant-intelligence",
-      "lane": "ai",
-      "title": "OpenAI publishes vision piece on 'building abundant intelligence'",
-      "summary": "OpenAI released a post titled 'Building abundant intelligence,' apparently laying out a broader vision for AI's role in society, though the available source gives no further specifics.",
-      "whyItMatters": "OpenAI's public vision statements often signal strategic priorities and messaging ahead of product or policy announcements.",
-      "whatToWatch": [
-        "Whether this vision post precedes concrete product or research announcements"
-      ],
-      "questions": [
-        "What concrete initiatives, if any, does 'abundant intelligence' refer to?",
-        "Is this framing tied to a specific upcoming release?"
-      ],
-      "sources": [
-        {
-          "title": "Building abundant intelligence",
-          "url": "https://openai.com/index/building-abundant-intelligence",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-07-31T15:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-07-31T15:00:00.000Z",
-      "updatedAt": "2026-08-01T19:05:08.367Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2nex5TzYgCDCspDRG54rgh/2be09e779b11b569ce391490323e86bb/Frame__8_.png?w=1600&h=900&fit=fill",
-      "trendScore": 32,
-      "confidence": "medium"
+      "publishedAt": "2026-08-02T11:23:56Z",
+      "updatedAt": "2026-08-03T17:02:16.967Z",
+      "badge": "Show HN",
+      "trendScore": 25,
+      "confidence": "low"
     }
   ]
 }
