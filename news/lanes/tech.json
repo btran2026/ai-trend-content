@@ -1,22 +1,21 @@
 {
   "lane": "tech",
-  "generatedAt": "2026-08-03T23:01:02.970Z",
-  "contentVersion": 7,
+  "generatedAt": "2026-08-04T05:06:55.714Z",
+  "contentVersion": 8,
   "stories": [
     {
       "id": "tech-a75dc1773b",
       "slug": "samsung-bans-smart-tv-apps-that-turn-viewers-into-unwitting-internet-p",
       "lane": "tech",
-      "title": "Samsung Bans Smart TV Apps That Exposed Users' Internet Connections",
-      "summary": "Samsung says it is banning smart TV apps found to be sharing users' internet connections with third parties without adequate disclosure, according to Engadget and TechCrunch. Separately, a Samsung smart monitor is being discounted to $349.99, reportedly its lowest price yet.",
-      "whyItMatters": "Smart TVs have become a quiet vector for data and bandwidth practices consumers don't consent to, and a platform-level ban from a manufacturer as large as Samsung sets a precedent other TV and streaming device makers may face pressure to follow.",
+      "title": "Samsung bans smart TV apps that exposed users' internet connections to strangers",
+      "summary": "Samsung says it is banning smart TV apps found to be acting as residential proxy networks, secretly routing outside internet traffic through users' home connections without their knowledge, according to Engadget and TechCrunch. Separately, The Verge noted Samsung has discounted one of its smart monitors to $349.99, its lowest price yet, though that appears to be an unrelated promotion bundled into this coverage.",
+      "whyItMatters": "Proxy-style schemes hidden in ad-supported TV apps can expose users to security and even legal risk without their consent, and a major manufacturer cracking down signals wider scrutiny of what runs on smart TV platforms.",
       "whatToWatch": [
-        "Whether Samsung publishes a list of banned apps or a policy other developers must follow",
-        "Whether other smart TV makers announce similar crackdowns"
+        "Whether other smart TV makers announce similar app-vetting crackdowns",
+        "How Samsung enforces and communicates the ban to existing app developers"
       ],
       "questions": [
-        "Which specific apps were sharing users' internet connections, and how were they doing it?",
-        "Will Samsung retroactively notify affected users?"
+        "Which specific apps were removed, and how many users were affected before the ban?"
       ],
       "sources": [
         {
@@ -40,25 +39,57 @@
       ],
       "sourceCount": 3,
       "publishedAt": "2026-08-03T12:10:41.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
       "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Samsung-M80F-Lifestyle.png?quality=90&strip=all&crop=0,0,100,100",
       "badge": "Security",
-      "trendScore": 66,
+      "trendScore": 61,
       "confidence": "high"
+    },
+    {
+      "id": "tech-616b85d7ef",
+      "slug": "nomad-goods-offering-25-off-in-wired-s-august-promo-code-roundup",
+      "lane": "tech",
+      "title": "Nomad Goods offering 25% off in Wired's August promo-code roundup",
+      "summary": "Wired's deals coverage lists a 25%-off promo code for Nomad Goods, which makes phone cases, chargers, and other tech accessories, alongside a separate $5-off Starz streaming promo code for August 2026. These are aggregated discount-code listings rather than company or product news.",
+      "whyItMatters": "Mainly useful for shoppers hunting discounts; it has little bearing on broader tech industry developments.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "Nomad Goods Promo Codes: Get 25% Off in August 2026",
+          "url": "https://www.wired.com/story/nomad-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
+        },
+        {
+          "title": "Starz Promo Codes: $5 Off for August 2026",
+          "url": "https://www.wired.com/story/starz-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/66ea077283cd4f2fbb17d478/master/pass/WIRED-Coupons-2.jpg",
+      "badge": "Deals",
+      "trendScore": 56,
+      "confidence": "medium"
     },
     {
       "id": "tech-3a82c94b10",
       "slug": "aws-backs-vibe-coding-startup-superblocks-in-push-into-ai-assisted-dev",
       "lane": "tech",
-      "title": "AWS Backs Vibe-Coding Startup Superblocks in Push Into AI-Assisted Development",
-      "summary": "Amazon Web Services is providing support to Superblocks, a startup building tools for \"vibe coding\" — AI-assisted, prompt-driven software development — according to TechCrunch. The report frames the move as carrying broader implications for how cloud providers position themselves in the AI coding tools market.",
-      "whyItMatters": "Cloud giants aligning with AI-native coding startups signals where infrastructure providers expect developer spend to shift as AI increasingly writes and assembles code.",
+      "title": "AWS backs vibe-coding startup Superblocks, a sign of cloud giants courting AI-native dev tools",
+      "summary": "TechCrunch reports that Amazon Web Services is supporting Superblocks, a startup in the emerging 'vibe-coding' space, where developers build software largely through AI-driven, conversational tools rather than traditional programming. The report frames the involvement as carrying significant implications, though specifics on the scope of AWS's support aren't detailed.",
+      "whyItMatters": "Major cloud providers aligning with AI-coding startups could reshape how software gets built and which infrastructure providers capture that shift.",
       "whatToWatch": [
-        "Whether AWS deepens the relationship through investment, integration, or marketplace placement",
-        "How competing cloud providers respond with their own AI coding-tool partnerships"
+        "Further details on what AWS's support of Superblocks actually entails",
+        "Whether Google Cloud or Microsoft Azure respond with competing AI-coding partnerships"
       ],
       "questions": [
-        "What form does AWS's support of Superblocks actually take — investment, technical integration, or co-marketing?"
+        "Does AWS's involvement mean funding, cloud credits, or deeper infrastructure integration?",
+        "How does Superblocks distinguish itself from other AI coding assistants already on the market?"
       ],
       "sources": [
         {
@@ -70,26 +101,55 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T20:00:00.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
       "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/06/SuperBlocks-founder-Brad-Menezes.jpg?resize=1200,811",
-      "badge": "Partnership",
-      "trendScore": 58,
+      "trendScore": 53,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-3810279d9d",
+      "slug": "pok-mon-animation-studio-s-new-series-beast-of-reincarnation-gets-a-mi",
+      "lane": "tech",
+      "title": "Pokémon animation studio's new series Beast of Reincarnation gets a mixed reception",
+      "summary": "The Verge reports that the animation studio best known for the Pokémon anime is struggling to establish a distinct creative identity with its new series, Beast of Reincarnation. This is based on a single critical review rather than broader industry reaction.",
+      "whyItMatters": "This is primarily an entertainment/media story rather than a tech-industry development; it's included here as a note on a major anime production studio's output.",
+      "whatToWatch": [
+        "Whether the series is retooled or finds a wider audience"
+      ],
+      "questions": [
+        "What specifically sets this project apart creatively from the studio's Pokémon work?"
+      ],
+      "sources": [
+        {
+          "title": "The studio behind Pokémon struggles to find its voice in Beast of Reincarnation",
+          "url": "https://www.theverge.com/entertainment/974505/beast-of-reincarnation-review-ps5-xbox",
+          "publisher": "The Verge",
+          "publishedAt": "2026-08-04T00:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/BoR-Screenshot-66.png?quality=90&strip=all&crop=0,0,100,100",
+      "badge": "Entertainment",
+      "trendScore": 52,
       "confidence": "medium"
     },
     {
       "id": "tech-9dbd176d01",
       "slug": "apple-pushes-back-on-uk-government-s-renewed-icloud-backdoor-demand",
       "lane": "tech",
-      "title": "Apple Pushes Back on UK Government's Renewed iCloud Backdoor Demand",
-      "summary": "Apple is challenging a fresh demand from the UK government seeking backdoor access to encrypted iCloud data, according to a TechCrunch report. This follows earlier friction between Apple and UK authorities over similar access requests.",
-      "whyItMatters": "The dispute is a bellwether for the broader fight between governments and tech companies over encryption, with implications for how much access law enforcement can compel from major platforms worldwide.",
+      "title": "Apple reportedly challenges UK government's renewed demand for iCloud backdoor access",
+      "summary": "According to a TechCrunch report, Apple is pushing back against a fresh UK government demand to build backdoor access into iCloud, reviving the long-running fight over encrypted user data. This follows earlier UK efforts to compel weakened encryption for law-enforcement access, though the specifics of this renewed demand aren't yet public.",
+      "whyItMatters": "The outcome could set a precedent for whether governments can force tech companies to weaken encryption on user data, with implications for Apple's global privacy stance and other cloud providers.",
       "whatToWatch": [
-        "Whether the UK government escalates the demand through formal legal or regulatory channels",
-        "Whether Apple alters iCloud availability or encryption features in the UK as a result"
+        "Whether Apple again withdraws or alters an iCloud security feature in the UK",
+        "Any formal government statement or legal filing confirming the new demand",
+        "Reactions from privacy advocates and other major tech companies"
       ],
       "questions": [
-        "What specific legal authority is the UK government invoking in this latest demand?",
-        "Could this dispute affect Apple's broader international encryption policies?"
+        "How does this renewed demand differ from the UK's earlier order that led Apple to pull Advanced Data Protection?",
+        "Could this dispute prompt similar demands from other governments?"
       ],
       "sources": [
         {
@@ -101,281 +161,203 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T18:54:09.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
       "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/10/apple-icloud-drive.jpg?resize=1200,761",
       "badge": "Regulatory",
-      "trendScore": 58,
+      "trendScore": 52,
       "confidence": "medium"
     },
     {
-      "id": "tech-8363735012",
-      "slug": "sequoia-s-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomi",
+      "id": "tech-b573cdd422",
+      "slug": "bartesian-and-best-buy-discount-codes-featured-in-wired-s-august-deals",
       "lane": "tech",
-      "title": "Sequoia's Shaun Maguire Leads $1B Round for Nuclear Startup Valar Atomics",
-      "summary": "Sequoia Capital partner Shaun Maguire is leading a $1 billion funding round for Valar Atomics, a nuclear energy startup, according to TechCrunch. The size of the round marks one of the larger recent bets on advanced nuclear technology.",
-      "whyItMatters": "A billion-dollar round for a nuclear startup underscores growing investor appetite for next-generation energy technology as power-hungry computing infrastructure expands.",
-      "whatToWatch": [
-        "How Valar Atomics plans to deploy the capital — reactor development, manufacturing, or site permitting",
-        "Whether other major VC firms follow with competing nuclear-startup bets"
-      ],
-      "questions": [
-        "What reactor technology or timeline is Valar Atomics pursuing?",
-        "Who else is participating in the round alongside Sequoia?"
-      ],
+      "title": "Bartesian and Best Buy discount codes featured in Wired's August deals roundup",
+      "summary": "Wired's deals coverage includes a 35%-off code for Bartesian smart cocktail makers and up to 60% off at Best Buy, part of its regular promo-code listings for August 2026.",
+      "whyItMatters": "This is consumer deals content, not a development in the tech industry.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Sequoia’s Shaun Maguire leads $1B round for nuclear startup Valar Atomics",
-          "url": "https://techcrunch.com/2026/08/03/sequoias-shaun-maguire-leads-1b-round-for-nuclear-startup-valar-atomics/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T17:16:43.000Z"
+          "title": "Bartesian Discount Codes: 35% Off",
+          "url": "https://www.wired.com/story/bartesian-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
+        },
+        {
+          "title": "Best Buy Discount Codes: Up to 60% Off",
+          "url": "https://www.wired.com/story/best-buy-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T17:16:43.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/02/Mockup-of-Valar-Atomics-site.jpg?resize=1200,514",
-      "badge": "Funding",
-      "trendScore": 56,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-7e0f028a91",
-      "slug": "snap-ceo-dodges-questions-on-specs-ar-glasses-preorders-during-q2-earn",
+      "id": "tech-772628bbc3",
+      "slug": "expedia-coupon-codes-up-to-40-off-in-august-2026",
       "lane": "tech",
-      "title": "Snap CEO Dodges Questions on Specs AR Glasses Preorders During Q2 Earnings",
-      "summary": "On Snap's Q2 earnings call, CEO Evan Spiegel avoided directly answering analyst questions about preorder plans for the company's Specs augmented-reality glasses, according to TechCrunch. The evasiveness comes as investors look for signals on Snap's hardware strategy.",
-      "whyItMatters": "Snap's AR glasses are a bet on a future beyond its core social app, and ambiguity around preorders suggests uncertainty about timing, pricing, or demand that matters to anyone tracking consumer AR's commercial viability.",
-      "whatToWatch": [
-        "Whether Snap sets a firm preorder date or price for Specs in coming quarters",
-        "Analyst and investor reaction in the days following the earnings call"
-      ],
-      "questions": [
-        "Why is Snap's leadership reluctant to commit to preorder details?",
-        "Is the delay tied to manufacturing readiness, cost, or a strategic pivot?"
-      ],
+      "title": "Expedia coupon codes: up to 40% off in August 2026",
+      "summary": "Wired's deals section lists a 40%-off Expedia coupon code as part of its regular promo-code roundups for August 2026.",
+      "whyItMatters": "A travel-booking discount with no direct connection to the tech industry; included only as supplied deals content.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Snap CEO sidesteps Specs preorder questions on Q2 earnings call",
-          "url": "https://techcrunch.com/2026/08/03/snap-ceo-sidesteps-specs-pre-order-questions-on-q2-earnings-call/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T22:10:58.000Z"
+          "title": "Expedia Coupons: 40% Off",
+          "url": "https://www.wired.com/story/expedia-coupon/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T22:10:58.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2281915461.jpg?resize=1200,800",
-      "badge": "Earnings",
-      "trendScore": 55,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/66ea07733dd51041d9bb38c6/master/pass/WIRED-Coupons-1.jpg",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-f9e0e5bd92",
-      "slug": "fitbit-data-can-now-sync-directly-with-apple-health",
+      "id": "tech-bdc4f82fc5",
+      "slug": "instacart-sephora-and-target-promo-codes-for-august-2026",
       "lane": "tech",
-      "title": "Fitbit Data Can Now Sync Directly With Apple Health",
-      "summary": "Fitbit data can now connect directly to Apple Health, according to The Verge, allowing data from Google-owned Fitbit devices to flow into Apple's health tracking ecosystem. The change bridges two health platforms that have historically operated separately.",
-      "whyItMatters": "Interoperability between rival health ecosystems affects how much control users have over their own fitness and health data across devices from competing companies.",
-      "whatToWatch": [
-        "Whether the integration works both directions or is one-way",
-        "How Google/Fitbit and Apple continue to compete on wearable health features despite the data bridge"
-      ],
-      "questions": [
-        "Is this integration official and supported by both Google and Apple, or a third-party workaround?"
-      ],
+      "title": "Instacart, Sephora, and Target promo codes for August 2026",
+      "summary": "Wired rounded up several retail discount codes for August, including $15 off Instacart orders, 20% off Sephora, and $50 off Target, as part of its ongoing deals coverage.",
+      "whyItMatters": "These are consumer shopping discounts rather than tech industry news.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Your Fitbit data can now connect directly to Apple Health",
-          "url": "https://www.theverge.com/gadgets/974778/google-health-fitbit-data-apple-health-syncing",
-          "publisher": "The Verge",
-          "publishedAt": "2026-08-03T21:24:23.000Z"
+          "title": "Instacart Promo Code: $15 Off | August 2026",
+          "url": "https://www.wired.com/story/instacart-promo/code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
+        },
+        {
+          "title": "20% Off Sephora Promo Code | August 2026",
+          "url": "https://www.wired.com/story/sephora-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
+        },
+        {
+          "title": "Target Promo Code: $50 Off | August 2026",
+          "url": "https://www.wired.com/story/target-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T21:24:23.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/268538_Fitbit_Air_AKrales_0036.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "trendScore": 55,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b9079f27a355461c964/master/pass/WIRED-Coupons-R2_2.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-16873c05ce",
-      "slug": "palworld-is-expanding-to-mobile-with-a-new-mmorpg",
+      "id": "tech-7f25f8e754",
+      "slug": "lenovo-coupon-codes-and-deals-for-august-2026",
       "lane": "tech",
-      "title": "Palworld Is Coming to Mobile With a New MMORPG",
-      "summary": "Pocketpair is expanding its hit game Palworld to mobile platforms through a new MMORPG spinoff, according to The Verge. The move takes the creature-collecting survival game into a different genre and format than its original release.",
-      "whyItMatters": "Palworld's rapid rise made it one of the gaming industry's biggest breakout stories in recent memory, and a mobile MMORPG expansion tests whether that success can translate into a much larger, more competitive market.",
-      "whatToWatch": [
-        "Release date and platform details for the mobile MMORPG",
-        "Whether the mobile version retains Palworld's core mechanics or reworks them for the genre"
-      ],
-      "questions": [
-        "How will monetization differ between the original game and the mobile MMORPG?"
-      ],
+      "title": "Lenovo coupon codes and deals for August 2026",
+      "summary": "Wired published a roundup of Lenovo coupon codes and discounts on laptops and other hardware available in August 2026.",
+      "whyItMatters": "A minor savings item for shoppers eyeing Lenovo hardware; not indicative of a broader company or industry move.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Palworld’s expanding to mobile with a new MMORPG",
-          "url": "https://www.theverge.com/games/974450/palworld-online-mobile-mmo",
-          "publisher": "The Verge",
-          "publishedAt": "2026-08-03T14:50:29.000Z"
+          "title": "Lenovo Coupon Codes and Deals in August 2026",
+          "url": "https://www.wired.com/story/lenovo-coupon-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T14:50:29.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/palworld-online-announcement.png?quality=90&strip=all&crop=0,0,100,100",
-      "trendScore": 54,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b909468ebbf8f0cbc77/master/pass/WIRED-Coupons-R2_8.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-dfc41abf9e",
-      "slug": "who-s-legally-liable-when-anthropic-and-openai-s-ai-agents-go-rogue-in",
+      "id": "tech-8522697a02",
+      "slug": "litter-robot-promo-codes-up-to-150-off-smart-litter-boxes",
       "lane": "tech",
-      "title": "Who's Legally Liable When Anthropic and OpenAI's AI Agents Go Rogue in Hacks?",
-      "summary": "TechCrunch examines the murky legal question of who bears responsibility when autonomous AI systems from Anthropic and OpenAI are implicated in hacking incidents. The piece frames liability as genuinely unsettled, spanning the AI developers, deploying companies, and the humans who directed the systems.",
-      "whyItMatters": "As AI agents gain more autonomy to take real-world actions, unresolved liability questions could shape how companies deploy them and how regulators eventually respond to AI-driven security incidents.",
-      "whatToWatch": [
-        "Any regulatory or legislative moves to clarify liability for autonomous AI actions",
-        "Whether Anthropic or OpenAI face legal claims tied to these incidents"
-      ],
-      "questions": [
-        "What specific hacking incidents involving Anthropic's and OpenAI's systems prompted this legal debate?",
-        "Do existing laws even have a framework for autonomous-agent liability, or is this uncharted territory?"
-      ],
+      "title": "Litter-Robot promo codes: up to $150 off smart litter boxes",
+      "summary": "Wired listed promo codes offering up to $150 off Litter-Robot's connected, self-cleaning litter boxes as part of its August 2026 deals roundup.",
+      "whyItMatters": "A smart-home gadget discount with limited broader industry significance.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Who’s legally to blame for Anthropic and OpenAI’s autonomous AI hacks? It’s complicated",
-          "url": "https://techcrunch.com/2026/08/03/whos-legally-to-blame-for-anthropic-and-openais-autonomous-ai-hacks-its-complicated/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T19:45:35.000Z"
+          "title": "Litter-Robot Promo Codes: Up to $150 Off",
+          "url": "https://www.wired.com/story/litter-robot-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T19:45:35.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/sam-altman-dario-amodei-split-screen.jpeg?w=1021",
-      "badge": "Analysis",
-      "trendScore": 53,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-52116e7a3a",
-      "slug": "design-arena-raises-7-9m-to-bring-taste-to-ai-models",
+      "id": "tech-888eada4bf",
+      "slug": "loop-earplugs-discount-codes-40-off-for-august-2026",
       "lane": "tech",
-      "title": "Design Arena Raises $7.9M to Bring 'Taste' to AI Models",
-      "summary": "The creators of Design Arena have raised $7.9 million to build tools aimed at giving AI models better design judgment, according to TechCrunch. The startup positions its work around improving AI-generated aesthetic and design decision-making.",
-      "whyItMatters": "As AI tools increasingly generate visual and product design work, startups focused on encoding 'taste' or judgment into models could shape how AI-assisted design tools are evaluated and adopted.",
-      "whatToWatch": [
-        "How Design Arena's funding translates into product releases or partnerships",
-        "Whether other AI labs adopt similar design-evaluation benchmarks"
-      ],
-      "questions": [
-        "How is 'taste' actually measured or benchmarked in Design Arena's approach?"
-      ],
+      "title": "Loop Earplugs discount codes: 40% off for August 2026",
+      "summary": "Wired's deals coverage includes a 40%-off discount code for Loop Earplugs as part of its regular promo-code roundups.",
+      "whyItMatters": "A consumer discount item with minimal connection to broader tech industry news.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Design Arena creators raise $7.9 million to bring taste to AI models",
-          "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T19:28:57.000Z"
+          "title": "Loop Earplugs Discount Codes: 40% Off",
+          "url": "https://www.wired.com/story/loop-earplugs-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T19:28:57.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-03-at-12.31.35-PM.jpg?resize=1200,739",
-      "badge": "Funding",
-      "trendScore": 53,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b995a505b018b67ed92/master/pass/WIRED-Coupons-R2_10.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-0295a9d611",
-      "slug": "openai-s-first-luxury-influencer-trip-draws-backlash",
+      "id": "tech-98b82db6b6",
+      "slug": "lovehoney-coupon-codes-discounts-on-toys-lingerie-and-gift-sets",
       "lane": "tech",
-      "title": "OpenAI's First Luxury Influencer Trip Draws Backlash",
-      "summary": "Influencers who attended OpenAI's first luxury trip are facing public backlash, according to TechCrunch. The report indicates criticism has centered on the optics of the event, though specific details of the trip itself are limited.",
-      "whyItMatters": "How AI companies court influencers and public figures is becoming part of the broader story of AI marketing and image management, especially as scrutiny of AI industry spending and priorities grows.",
-      "whatToWatch": [
-        "Whether OpenAI or attending influencers respond publicly to the criticism",
-        "Whether the backlash affects OpenAI's future influencer or marketing strategy"
-      ],
-      "questions": [
-        "What exactly did the trip involve, and what specifically triggered the backlash?"
-      ],
+      "title": "Lovehoney coupon codes: discounts on toys, lingerie, and gift sets",
+      "summary": "Wired published a roundup of Lovehoney coupon offers covering toys, lingerie, and gift sets for August 2026.",
+      "whyItMatters": "This is consumer retail deals content unrelated to the tech industry.",
+      "whatToWatch": [],
+      "questions": [],
       "sources": [
         {
-          "title": "Influencers draw backlash for attending OpenAI’s first luxury trip",
-          "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T19:09:56.000Z"
+          "title": "Lovehoney Coupon Offers: Toys, Lingerie, and Gift Set Discounts",
+          "url": "https://www.wired.com/story/lovehoney-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-04T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-03T19:09:56.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/05/GettyImages-1502799666.jpg?resize=1200,633",
-      "trendScore": 53,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-9185cd51f7",
-      "slug": "leaked-images-reveal-a-lenovo-googlebook-laptop-and-2-in-1-tablet",
-      "lane": "tech",
-      "title": "Leaked Lenovo 'Googlebook' Images Reveal Laptop and 2-in-1 Tablet",
-      "summary": "Leaked images reportedly show a Lenovo \"Googlebook\" device lineup including a laptop and a 2-in-1 tablet, according to The Verge. Details beyond the leaked form factors have not been confirmed.",
-      "whyItMatters": "A Lenovo-Google hardware collaboration would be notable for the Chromebook/Google device market, signaling how PC makers and Google might be positioning new form factors ahead of any official announcement.",
-      "whatToWatch": [
-        "Whether Lenovo or Google formally announce or deny the leaked devices",
-        "Any additional leaks detailing specs, pricing, or release timing"
-      ],
-      "questions": [
-        "Is \"Googlebook\" an official product name or a placeholder used in the leak?",
-        "What operating system or Google integration would these devices run?"
-      ],
-      "sources": [
-        {
-          "title": "Lenovo Googlebook leaks reveal a laptop and 2-in-1 tablet",
-          "url": "https://www.theverge.com/tech/974377/lenovo-googlebook-google-image-leaks-laptops",
-          "publisher": "The Verge",
-          "publishedAt": "2026-08-03T13:12:03.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T13:12:03.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Lenovo-Googlebook-laptop-leak.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-      "trendScore": 53,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-4e67a54e57",
-      "slug": "cybersecurity-startup-horizon3-hits-2b-valuation-with-250m-series-e",
-      "lane": "tech",
-      "title": "Cybersecurity Startup Horizon3 Hits $2B Valuation With $250M Series E",
-      "summary": "Autonomous security testing startup Horizon3 has raised a $250 million Series E, valuing the company at $2 billion, according to TechCrunch. The report ties the raise to escalating AI-related security threats.",
-      "whyItMatters": "A major valuation jump for an autonomous pentesting and threat-detection company reflects how seriously investors are treating AI-driven offensive and defensive security risks right now.",
-      "whatToWatch": [
-        "How Horizon3 deploys the new capital — hiring, product expansion, or acquisitions",
-        "Whether competitors in autonomous security testing announce comparable raises"
-      ],
-      "questions": [
-        "What specific AI-related threats is Horizon3 citing as driving demand for its products?",
-        "Who led or participated in the Series E round?"
-      ],
-      "sources": [
-        {
-          "title": "Horizon3 hits $2 billion valuation with $250M Series E as AI threats escalate",
-          "url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-03T12:50:46.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T12:50:46.000Z",
-      "updatedAt": "2026-08-03T23:01:02.970Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1197780051.jpg?resize=1200,800",
-      "badge": "Funding",
-      "trendScore": 53,
+      "publishedAt": "2026-08-04T05:00:00.000Z",
+      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b919468ebbf8f0cbc7b/master/pass/WIRED-Coupons-R2_6.png",
+      "badge": "Deals",
+      "trendScore": 51,
       "confidence": "medium"
     }
   ]
