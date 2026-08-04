@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-04T11:08:54.625Z",
-  "contentVersion": 9,
+  "generatedAt": "2026-08-04T17:09:37.377Z",
+  "contentVersion": 10,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,173 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-04T11:08:54.625Z"
+      "updatedAt": "2026-08-04T17:09:37.377Z"
+    },
+    {
+      "id": "ai-2a0a276054",
+      "slug": "google-deepmind-recaps-its-july-2026-ai-announcements",
+      "lane": "ai",
+      "title": "Google DeepMind Recaps Its July 2026 AI Announcements",
+      "summary": "Google DeepMind published a roundup blog post summarizing the AI news and product announcements it made during July 2026. The post compiles the month's releases and updates in one place rather than disclosing anything new itself.",
+      "whyItMatters": "Monthly recap posts are a quick way to gauge the pace and breadth of Google's AI shipping cadence relative to rivals like OpenAI and Anthropic.",
+      "whatToWatch": [
+        "Whether any recapped items point to unannounced follow-up releases",
+        "Google's continued cadence of monthly recaps as a signal of shipping pace"
+      ],
+      "questions": [
+        "Which specific July announcements were significant enough to headline?"
+      ],
+      "sources": [
+        {
+          "title": "The latest AI news we announced in July 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
+          "publisher": "Google DeepMind",
+          "publishedAt": "2026-08-04T13:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T13:00:00.000Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
+      "badge": "Recap",
+      "trendScore": 52,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-a1ab18b7db",
+      "slug": "homebench-a-new-open-source-benchmark-for-local-llms",
+      "lane": "ai",
+      "title": "Homebench: A New Open-Source Benchmark for Local LLMs",
+      "summary": "A developer released Homebench, an open-source tool for benchmarking large language models running locally, measuring speed, memory usage, and output quality. It surfaced on Hacker News as a community project aimed at people running models on their own hardware.",
+      "whyItMatters": "As open-weight models proliferate, standardized local benchmarking tools help developers and hobbyists pick models that actually fit their hardware constraints.",
+      "whatToWatch": [
+        "Community adoption and contributions on GitHub",
+        "Whether results get compared against existing local-LLM benchmarks"
+      ],
+      "questions": [
+        "How does Homebench's methodology compare to existing local-inference benchmarks?"
+      ],
+      "sources": [
+        {
+          "title": "Homebench – Benchmark local LLMs for speed, memory, and quality",
+          "url": "https://github.com/david-g-3654/homebench",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-04T09:48:43Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T09:48:43Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
+      "imageUrl": "https://opengraph.githubassets.com/de63b528d63e0ffed909376862df9f7116510d580022ae236361a66995386512/david-g-3654/homebench",
+      "badge": "Open Source",
+      "trendScore": 52,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-7e39e4ebbb",
+      "slug": "new-study-examines-why-llms-struggle-at-tabular-prediction",
+      "lane": "ai",
+      "title": "New Study Examines Why LLMs Struggle at Tabular Prediction",
+      "summary": "A research paper posted to arXiv investigates why large language models underperform on tabular prediction tasks compared to specialized models. It gained traction after being shared on Hacker News.",
+      "whyItMatters": "Tabular data underlies much enterprise machine learning, so understanding where general-purpose LLMs fall short matters for deciding where they can realistically replace dedicated models.",
+      "whatToWatch": [
+        "Whether the findings influence future model architecture choices for structured data",
+        "Follow-up papers or rebuttals from other researchers"
+      ],
+      "questions": [
+        "Do the identified failure modes point to a fixable architectural gap or a more fundamental limitation?"
+      ],
+      "sources": [
+        {
+          "title": "Why Large Language Models Fail at Tabular Prediction",
+          "url": "https://arxiv.org/abs/2608.02412",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-04T10:07:06Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T10:07:06Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
+      "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+      "badge": "Research",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-1a17d34b3d",
+      "slug": "mistral-ai-introduces-shieldstral",
+      "lane": "ai",
+      "title": "Mistral AI Introduces Shieldstral",
+      "summary": "Mistral AI announced a new model called Shieldstral in an official blog post. The company has not yet detailed capabilities beyond the announcement itself, though the name suggests a focus on safety or moderation.",
+      "whyItMatters": "A dedicated safety-oriented model from a major open-weight lab would add to the industry's guardrail toolkit and signal where Mistral is positioning against rivals on trust and safety features.",
+      "whatToWatch": [
+        "Further detail on Shieldstral's capabilities and benchmarks",
+        "Whether it ships as open-weight or API-only"
+      ],
+      "questions": [
+        "What specific safety or moderation tasks is Shieldstral designed for?",
+        "Is it open-weight, and under what license?"
+      ],
+      "sources": [
+        {
+          "title": "Introducing Shieldstral.",
+          "url": "https://mistral.ai/news/shieldstral/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-04T12:00:26.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T12:00:26.000Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
+      "imageUrl": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
+      "badge": "Launch",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-b274d6785e",
+      "slug": "openai-adds-new-learning-and-teaching-tools-to-chatgpt-work-and-codex",
+      "lane": "ai",
+      "title": "OpenAI Adds New Learning and Teaching Tools to ChatGPT Work and Codex",
+      "summary": "OpenAI announced new ways to learn and teach using ChatGPT Work and Codex, according to a post on its site. The update extends OpenAI's workplace and coding-assistant products into education-focused use cases.",
+      "whyItMatters": "Signals OpenAI's continued push to embed its tools in classrooms and workplace training, broadening its footprint beyond pure productivity use cases.",
+      "whatToWatch": [
+        "Uptake among schools and enterprise training programs",
+        "Further detail on specific features and rollout timing"
+      ],
+      "questions": [
+        "What concrete features were introduced, and how will they be priced or licensed?"
+      ],
+      "sources": [
+        {
+          "title": "New ways to learn and teach with ChatGPT Work and Codex",
+          "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-04T00:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T00:00:00.000Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2ucoEDJhFKCnvweCx2DR4/d28e7c8e8acabba775c448de631a1276/16_9_SEO_Blog.jpg?w=1600&h=900&fit=fill",
+      "badge": "Product",
+      "trendScore": 46,
+      "confidence": "medium"
     },
     {
       "id": "ai-228546f1ca",
       "slug": "qwen-releases-new-open-weight-models-3-8-max-2-4t-and-27b-aimed-at-cod",
       "lane": "ai",
-      "title": "Alibaba's Qwen Team Ships New Open-Weight Models: 3.8 Max (2.4T) and 27B",
-      "summary": "A Latent Space AINews roundup reports that Alibaba's Qwen team has released new open-weight models, including a very large \"3.8 Max\" model reported at 2.4 trillion parameters alongside a smaller 27B variant. Both are positioned for coding and \"cowork\" (agentic collaboration) use cases.",
-      "whyItMatters": "Another large open-weight release from Qwen keeps pressure on the open-model race and gives developers building coding agents more free alternatives to closed frontier APIs.",
+      "title": "Qwen Releases 3.8 Max (2.4T) and 27B Open-Weight Models for Coding and Cowork",
+      "summary": "Alibaba's Qwen team released new open-weight models — a large 2.4-trillion-parameter 'Qwen 3.8 Max' and a smaller 27B variant — targeted at coding and collaborative work tasks, as covered by the Latent Space AI News newsletter.",
+      "whyItMatters": "Continues the rapid pace of frontier-scale open-weight releases from Chinese labs, intensifying competition with closed-weight frontier models on coding capability.",
       "whatToWatch": [
-        "Independent benchmark results for coding and agentic tasks",
-        "Licensing terms and availability through hosting providers"
+        "Independent benchmarks against GPT, Claude, and Gemini on coding tasks",
+        "Adoption by developers and local-hosting communities"
       ],
       "questions": [
-        "How does the 2.4T-parameter model's real-world performance compare to closed frontier models like GPT or Claude?",
-        "What compute is actually required to run 3.8 Max in practice?"
+        "How do these models perform on real-world coding benchmarks versus Western frontier models?",
+        "What license governs the weights?"
       ],
       "sources": [
         {
@@ -150,25 +301,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T03:49:14.000Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!W0RB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOw1F2ebgAAkpJJ.jpg",
       "badge": "Model Release",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-3e9781fff5",
       "slug": "essay-argues-llms-disproportionately-reward-existing-expertise",
       "lane": "ai",
-      "title": "Essay Argues LLMs Reward Users Who Already Have Domain Expertise",
-      "summary": "A widely discussed piece titled \"LLMs Reward Expertise,\" circulating on Hacker News, argues that large language models deliver outsized value to users who already bring domain expertise to their prompts and evaluations, while novices get comparatively less out of the same tools. The exact argument and evidence behind the claim aren't detailed beyond the title.",
-      "whyItMatters": "If true, this complicates the narrative that LLMs level the playing field for less-skilled workers, with implications for how companies think about AI-driven productivity gains and training.",
+      "title": "Blog Post Argues LLMs 'Reward Expertise'",
+      "summary": "A blog post titled 'LLMs reward expertise' circulated widely on Hacker News, making the case that large language models change the value of domain expertise rather than simply replacing it.",
+      "whyItMatters": "Reflects ongoing debate in the AI community about how these tools reshape the leverage and value of skilled human judgment across professions.",
       "whatToWatch": [
-        "Whether the argument gains traction in broader debates about AI's effect on skill development"
+        "How the discussion develops in comment threads and follow-up commentary"
       ],
       "questions": [
-        "What evidence supports the claim beyond anecdote?",
-        "Does this hold across different LLMs and task types?"
+        "What specific evidence or examples does the author use to support the thesis?"
       ],
       "sources": [
         {
@@ -180,25 +330,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T21:13:53Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "imageUrl": "https://www.seangoedecke.com/og-image.jpg",
       "badge": "Analysis",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-2163b41330",
       "slug": "openai-publishes-pointed-critique-apple-is-getting-this-wrong",
       "lane": "ai",
-      "title": "OpenAI Publishes Pointed Critique: \"Apple Is Getting This Wrong\"",
-      "summary": "OpenAI's blog published a piece titled \"Apple Is Getting This Wrong,\" pushing back on some aspect of Apple's approach to AI, though the specific product or policy in question isn't detailed in the information available.",
-      "whyItMatters": "Public friction between OpenAI and Apple — two companies whose products are deeply intertwined through the ChatGPT-Siri integration — is worth watching given how much leverage each holds over consumer AI distribution.",
+      "title": "OpenAI Publishes Pointed Critique: 'Apple Is Getting This Wrong'",
+      "summary": "OpenAI published a post on its site titled 'Apple is getting this wrong.' The specific subject of the critique beyond the title isn't detailed in the source available.",
+      "whyItMatters": "A public critique of Apple from OpenAI would be notable given the companies' ChatGPT integration into Apple platforms and their evolving partner-competitor dynamic.",
       "whatToWatch": [
-        "Any Apple response",
-        "Whether this signals strain in the OpenAI-Apple partnership"
+        "Any response from Apple",
+        "Whether this signals friction in the OpenAI-Apple relationship"
       ],
       "questions": [
-        "What specifically is OpenAI accusing Apple of getting wrong — a product decision, a policy, or a technical approach?"
+        "What exactly is OpenAI arguing Apple is getting wrong — product design, AI strategy, or policy?"
       ],
       "sources": [
         {
@@ -210,24 +360,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T22:00:00.000Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3LMWP6Zq4rgiX3gVyxKiX/667973a65cc5111e602f68338b9f1c87/Frame__13_.png?w=1600&h=900&fit=fill",
-      "badge": "Opinion",
-      "trendScore": 44,
+      "badge": "Analysis",
+      "trendScore": 39,
       "confidence": "medium"
     },
     {
       "id": "ai-a8f46de4b5",
       "slug": "latent-space-hosts-inference-engineering-masterclass-with-baseten-s-ph",
       "lane": "ai",
-      "title": "Latent Space Hosts \"Inference Engineering Masterclass\" with Baseten's Philip Kiely and Ali Taha",
-      "summary": "Latent Space published a session billed as \"The Inference Engineering Masterclass,\" featuring Baseten's Philip Kiely and Ali Taha discussing the practicalities of serving models in production. Details of the specific techniques covered aren't included beyond the title.",
-      "whyItMatters": "Inference costs and latency remain a central bottleneck for companies deploying AI at scale, so practitioner-level guidance from an inference infrastructure vendor is directly useful to teams building production AI systems.",
+      "title": "Latent Space Publishes 'Inference Engineering Masterclass' with Baseten",
+      "summary": "Latent Space released an episode featuring Baseten's Philip Kiely and Ali Taha discussing inference engineering, per the publication's listing.",
+      "whyItMatters": "Inference cost and latency are increasingly central to AI product economics, and practitioner deep-dives like this reflect where the industry's engineering attention is focused.",
       "whatToWatch": [
-        "Follow-up write-ups or benchmarks referenced in the session"
+        "Whether specific techniques or benchmarks from the episode get picked up more broadly in the industry"
       ],
       "questions": [
-        "What specific inference optimizations does the session recommend, and how vendor-specific are they to Baseten's stack?"
+        "What specific inference optimization techniques does the episode cover?"
       ],
       "sources": [
         {
@@ -239,26 +389,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T21:44:03.000Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!IohL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F209198968%2F6b756e14-9a18-4975-8d64-399d863f7af2%2Ftranscoded-1785525129.png",
-      "badge": "Podcast",
-      "trendScore": 41,
+      "badge": "Interview",
+      "trendScore": 36,
       "confidence": "low"
     },
     {
       "id": "ai-f722651b21",
       "slug": "minimax-h3-gets-day-0-support-in-comfyui-with-open-weights-native-audi",
       "lane": "ai",
-      "title": "MiniMax H3 Lands with Day-0 ComfyUI Support, Open Weights, Native Audio and 2K Video",
-      "summary": "MiniMax's new H3 model launched with immediate (\"day-0\") support in ComfyUI, according to a post covered on Hacker News. The model is open-weight and adds native audio generation alongside 2K-resolution video output.",
-      "whyItMatters": "Open-weight video/audio generation models with same-day tooling support lower the barrier for developers and creators to run high-end generative media locally rather than through closed APIs.",
+      "title": "ComfyUI Adds Day-0 Support for MiniMax H3 Open-Weight Video Model",
+      "summary": "ComfyUI announced day-zero support for MiniMax H3, an open-weight model featuring native audio and 2K video generation, according to a post on the ComfyUI blog surfaced via Hacker News.",
+      "whyItMatters": "Fast integration into popular open-source tooling accelerates real-world adoption of new open video-generation models and expands what self-hosted creators can build.",
       "whatToWatch": [
-        "Community benchmarks of H3's video and audio quality versus closed competitors like Sora or Veo",
-        "Adoption speed within the ComfyUI ecosystem"
+        "Community-generated examples using MiniMax H3",
+        "Comparisons against other open video-generation models"
       ],
       "questions": [
-        "What are the compute requirements to run H3 locally at 2K resolution?",
-        "How does licensing compare to other recent open video model releases?"
+        "How does MiniMax H3's output quality and speed compare to other open video models?"
       ],
       "sources": [
         {
@@ -270,26 +419,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T13:34:43Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!w-S9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67ff80a9-2436-4749-a553-5f6c8c77e23c_1920x1080.png",
-      "badge": "Model Release",
-      "trendScore": 38,
+      "badge": "Open Source",
+      "trendScore": 33,
       "confidence": "low"
     },
     {
       "id": "ai-6ff715560b",
       "slug": "report-a-critical-cve-was-issued-for-a-hallucinated-sqlite-vulnerabili",
       "lane": "ai",
-      "title": "JFrog Research Asks Whether Recent \"Critical\" SQLite CVEs Are Real or LLM-Generated Slop",
-      "summary": "A JFrog research post, discussed on Hacker News under the title \"SQLite Critical CVEs or LLM Slop?\", questions whether a batch of recently filed critical-severity SQLite CVEs represent genuine vulnerabilities or are low-quality, possibly AI-generated reports.",
-      "whyItMatters": "As LLMs are increasingly used to generate vulnerability reports and bug bounty submissions, the security community is grappling with a rising volume of low-quality or fabricated CVEs that waste maintainer time and erode trust in the CVE system.",
+      "title": "Researchers Question Whether SQLite 'Critical CVEs' Are Real or AI-Generated Slop",
+      "summary": "A JFrog research post examined a batch of reported 'critical' CVEs against SQLite, questioning whether they reflect genuine vulnerabilities or low-quality, AI-generated vulnerability reports, as discussed on Hacker News.",
+      "whyItMatters": "Highlights a growing problem in security research: LLM-assisted bug-hunting is flooding disclosure pipelines with low-quality reports, raising the bar for triage and trust in vulnerability databases.",
       "whatToWatch": [
-        "Whether CVE bodies or SQLite maintainers issue a formal response or retraction",
-        "Broader industry moves to filter or flag LLM-generated vulnerability submissions"
+        "How CVE authorities or SQLite maintainers respond",
+        "Whether similar 'slop' reports get identified in other widely used projects"
       ],
       "questions": [
-        "How many of the flagged CVEs, if any, turn out to be legitimate?",
-        "What process failures let low-quality reports get assigned CVE numbers in the first place?"
+        "How many of the flagged CVEs turned out to be genuine versus fabricated or low-quality?"
       ],
       "sources": [
         {
@@ -301,157 +449,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T11:28:54Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "updatedAt": "2026-08-04T17:09:37.377Z",
       "badge": "Security",
-      "trendScore": 38,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-d04cc35bd3",
-      "slug": "openai-describes-six-month-build-of-a-realtime-voice-ai-system",
-      "lane": "ai",
-      "title": "OpenAI Details Six-Month Build of a Realtime Voice AI System",
-      "summary": "OpenAI published an engineering write-up describing how its team built a realtime system for responsive voice AI over a six-month period. The post focuses on the engineering effort behind making voice interactions feel immediate and natural.",
-      "whyItMatters": "Latency and responsiveness are among the biggest remaining hurdles for voice-based AI assistants to feel natural in real conversation, so a first-party account of solving this at OpenAI's scale is useful signal for where voice AI products are headed.",
-      "whatToWatch": [
-        "Whether the improvements described roll out to ChatGPT's voice mode or the Realtime API"
-      ],
-      "questions": [
-        "What specific architectural bottlenecks took six months to resolve?",
-        "How much of this is applicable to smaller teams without OpenAI's infrastructure?"
-      ],
-      "sources": [
-        {
-          "title": "How we built a realtime system for responsive voice AI in six months",
-          "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-03T07:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T07:00:00.000Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/yTlvMCvVXsIfkU2OOi99f/157c83857ebe75544195add9e1f75039/gpt-live-responsive-seo-card.png?w=1600&h=900&fit=fill",
-      "badge": "Engineering",
-      "trendScore": 37,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-489b06ed50",
-      "slug": "cloudflare-details-running-kimi-and-glm-models-at-scale",
-      "lane": "ai",
-      "title": "Cloudflare Details Running Kimi and GLM Open Models at Scale",
-      "summary": "A Cloudflare blog post, titled \"Smaller, faster, safer: running Kimi and GLM at scale,\" describes the company's work serving the open-weight Kimi and GLM model families in production, with a focus on efficiency and safety at scale. Specific performance figures aren't detailed beyond the headline framing.",
-      "whyItMatters": "Major infrastructure providers optimizing delivery of Chinese open-weight models like Kimi and GLM signals growing mainstream demand for open alternatives to closed frontier APIs, and puts pressure on serving costs industry-wide.",
-      "whatToWatch": [
-        "Concrete latency/cost benchmarks Cloudflare publishes for these models",
-        "Whether other cloud providers follow with similar optimization efforts"
-      ],
-      "questions": [
-        "What specific safety measures does 'safer' refer to in this context?",
-        "How do Cloudflare's serving costs for these models compare to running them directly via Moonshot or Zhipu?"
-      ],
-      "sources": [
-        {
-          "title": "Smaller, faster, safer: running Kimi and GLM at scale",
-          "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T17:08:46Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T17:08:46Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
-      "imageUrl": "https://blog.cloudflare.com/_emdash/api/media/file/01KZ1Q04GM9SA4QGPGPKWJQSJ6.png",
-      "badge": "Infrastructure",
-      "trendScore": 36,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-53ea25548c",
-      "slug": "blog-post-argues-developers-should-manually-retype-llm-generated-code-",
-      "lane": "ai",
-      "title": "Blog Post Urges Developers to Manually Retype LLM-Generated Code to Avoid \"Cognitive Debt\"",
-      "summary": "A blog post gaining traction on Hacker News argues developers should manually retype AI-generated code rather than simply pasting it in, as a way to prevent what the author calls \"cognitive debt\" — the loss of understanding and skill that comes from over-relying on LLM output.",
-      "whyItMatters": "As AI coding assistants become standard in software teams, the tension between speed and genuine understanding is a live debate shaping how engineering organizations set norms for AI-assisted development.",
-      "whatToWatch": [
-        "Whether this practice gets adopted or referenced by engineering teams or educators"
-      ],
-      "questions": [
-        "Is there evidence beyond anecdote that retyping actually improves retention or code quality outcomes?"
-      ],
-      "sources": [
-        {
-          "title": "Prevent cognitive debt by manually retyping LLM-generated code",
-          "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T09:32:07Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T09:32:07Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
-      "badge": "Analysis",
-      "trendScore": 36,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-fdd1e8d3f0",
-      "slug": "show-hn-a-version-of-hacker-news-with-ai-stories-filtered-out",
-      "lane": "ai",
-      "title": "Show HN: A Version of Hacker News with AI Stories Filtered Out",
-      "summary": "A Show HN post introduces a tool that presents the Hacker News front page with AI-related stories stripped out, letting users browse non-AI tech news separately.",
-      "whyItMatters": "The project is a small but telling signal of fatigue within parts of the tech community around the sheer volume of AI coverage saturating tech discourse.",
-      "whatToWatch": [
-        "Community reception and whether similar filtering tools proliferate"
-      ],
-      "questions": [
-        "How is \"AI story\" being classified, and how accurate is the filter?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: Hacker News with AI stories filtered out",
-          "url": "https://hcker.news/?view=frontpage&ai=exclude",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T17:39:56Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T17:39:56Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
-      "imageUrl": "https://hcker.news/android-chrome-512x512.png",
-      "badge": "Community",
-      "trendScore": 34,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-0b4220142a",
-      "slug": "yc-backed-hoplite-launches-to-simplify-deploying-cloud-coding-agents",
-      "lane": "ai",
-      "title": "Launch HN: Hoplite (YC S26) Aims to Simplify Deploying Cloud Coding Agents",
-      "summary": "Hoplite, a startup from YC's Summer 2026 batch, launched on Hacker News with a pitch to make it effortless to deploy cloud-based coding agents. Details beyond the launch announcement are limited.",
-      "whyItMatters": "The crowded cloud coding-agent infrastructure space keeps attracting new YC-backed entrants, reflecting continued investor and developer appetite for tooling that operationalizes AI coding agents beyond local IDE use.",
-      "whatToWatch": [
-        "Early user feedback in the Hacker News comments",
-        "How Hoplite differentiates from other cloud agent deployment platforms"
-      ],
-      "questions": [
-        "What specifically does Hoplite handle that existing agent frameworks or cloud providers don't?"
-      ],
-      "sources": [
-        {
-          "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
-          "url": "https://hoplite.sh",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T16:32:06Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T16:32:06Z",
-      "updatedAt": "2026-08-04T11:08:54.625Z",
-      "imageUrl": "https://hoplite.sh/opengraph.png",
-      "badge": "Launch",
-      "trendScore": 34,
+      "trendScore": 33,
       "confidence": "low"
     }
   ]
