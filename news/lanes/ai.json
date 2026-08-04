@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-04T05:06:55.714Z",
-  "contentVersion": 8,
+  "generatedAt": "2026-08-04T11:08:54.625Z",
+  "contentVersion": 9,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,23 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-04T05:06:55.714Z"
+      "updatedAt": "2026-08-04T11:08:54.625Z"
     },
     {
       "id": "ai-228546f1ca",
       "slug": "qwen-releases-new-open-weight-models-3-8-max-2-4t-and-27b-aimed-at-cod",
       "lane": "ai",
-      "title": "Qwen Releases New Open-Weight Models: 3.8 Max (2.4T) and 27B, Aimed at Coding and 'Cowork'",
-      "summary": "Latent Space's AI News roundup reports that Qwen has released two new open-weight models — a large '3.8 Max' model cited at 2.4 trillion parameters, and a smaller 27B variant — positioned for coding and collaborative 'cowork' use cases. Both are being released as open weights, continuing Qwen's rapid cadence of model drops. Details beyond the roundup mention are limited.",
-      "whyItMatters": "Another large open-weight release from Qwen keeps pressure on Western labs' pricing and open-model strategy, especially for coding-focused use cases.",
+      "title": "Alibaba's Qwen Team Ships New Open-Weight Models: 3.8 Max (2.4T) and 27B",
+      "summary": "A Latent Space AINews roundup reports that Alibaba's Qwen team has released new open-weight models, including a very large \"3.8 Max\" model reported at 2.4 trillion parameters alongside a smaller 27B variant. Both are positioned for coding and \"cowork\" (agentic collaboration) use cases.",
+      "whyItMatters": "Another large open-weight release from Qwen keeps pressure on the open-model race and gives developers building coding agents more free alternatives to closed frontier APIs.",
       "whatToWatch": [
-        "Independent benchmarks comparing 3.8 Max and 27B against other open coding models",
-        "Licensing terms for commercial use",
-        "Uptake by inference providers and coding tool integrations"
+        "Independent benchmark results for coding and agentic tasks",
+        "Licensing terms and availability through hosting providers"
       ],
       "questions": [
-        "Is the 2.4T parameter figure a total or active/MoE parameter count?",
-        "How does the 27B model perform relative to similarly-sized open models?"
+        "How does the 2.4T-parameter model's real-world performance compare to closed frontier models like GPT or Claude?",
+        "What compute is actually required to run 3.8 Max in practice?"
       ],
       "sources": [
         {
@@ -151,25 +150,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T03:49:14.000Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!W0RB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOw1F2ebgAAkpJJ.jpg",
-      "badge": "Open Weights",
-      "trendScore": 51,
+      "badge": "Model Release",
+      "trendScore": 46,
       "confidence": "low"
     },
     {
       "id": "ai-3e9781fff5",
       "slug": "essay-argues-llms-disproportionately-reward-existing-expertise",
       "lane": "ai",
-      "title": "Essay Argues 'LLMs Reward Expertise'",
-      "summary": "A widely-discussed blog post argues that large language models reward users who already bring domain expertise to their prompts and evaluation, rather than leveling the playing field for novices. The piece, circulating on Hacker News, feeds an ongoing debate about who actually benefits most from AI coding and knowledge tools.",
-      "whyItMatters": "The claim cuts against a common narrative that AI tools democratize expertise, which matters for how enterprises think about training and hiring around AI adoption.",
+      "title": "Essay Argues LLMs Reward Users Who Already Have Domain Expertise",
+      "summary": "A widely discussed piece titled \"LLMs Reward Expertise,\" circulating on Hacker News, argues that large language models deliver outsized value to users who already bring domain expertise to their prompts and evaluations, while novices get comparatively less out of the same tools. The exact argument and evidence behind the claim aren't detailed beyond the title.",
+      "whyItMatters": "If true, this complicates the narrative that LLMs level the playing field for less-skilled workers, with implications for how companies think about AI-driven productivity gains and training.",
       "whatToWatch": [
-        "Whether the argument gains traction among AI practitioners and educators",
-        "Any follow-up responses or counterarguments"
+        "Whether the argument gains traction in broader debates about AI's effect on skill development"
       ],
       "questions": [
-        "Does the effect hold across different LLMs and task types?"
+        "What evidence supports the claim beyond anecdote?",
+        "Does this hold across different LLMs and task types?"
       ],
       "sources": [
         {
@@ -181,24 +180,54 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T21:13:53Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://www.seangoedecke.com/og-image.jpg",
       "badge": "Analysis",
-      "trendScore": 51,
+      "trendScore": 46,
       "confidence": "low"
+    },
+    {
+      "id": "ai-2163b41330",
+      "slug": "openai-publishes-pointed-critique-apple-is-getting-this-wrong",
+      "lane": "ai",
+      "title": "OpenAI Publishes Pointed Critique: \"Apple Is Getting This Wrong\"",
+      "summary": "OpenAI's blog published a piece titled \"Apple Is Getting This Wrong,\" pushing back on some aspect of Apple's approach to AI, though the specific product or policy in question isn't detailed in the information available.",
+      "whyItMatters": "Public friction between OpenAI and Apple — two companies whose products are deeply intertwined through the ChatGPT-Siri integration — is worth watching given how much leverage each holds over consumer AI distribution.",
+      "whatToWatch": [
+        "Any Apple response",
+        "Whether this signals strain in the OpenAI-Apple partnership"
+      ],
+      "questions": [
+        "What specifically is OpenAI accusing Apple of getting wrong — a product decision, a policy, or a technical approach?"
+      ],
+      "sources": [
+        {
+          "title": "Apple is getting this wrong",
+          "url": "https://openai.com/index/apple-is-getting-this-wrong",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-03T22:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-03T22:00:00.000Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3LMWP6Zq4rgiX3gVyxKiX/667973a65cc5111e602f68338b9f1c87/Frame__13_.png?w=1600&h=900&fit=fill",
+      "badge": "Opinion",
+      "trendScore": 44,
+      "confidence": "medium"
     },
     {
       "id": "ai-a8f46de4b5",
       "slug": "latent-space-hosts-inference-engineering-masterclass-with-baseten-s-ph",
       "lane": "ai",
-      "title": "Latent Space Hosts 'Inference Engineering Masterclass' with Baseten's Philip Kiely and Ali Taha",
-      "summary": "The Latent Space podcast published an episode billed as an 'Inference Engineering Masterclass,' featuring Baseten's Philip Kiely and Ali Taha discussing how to run model inference at scale. It adds to Latent Space's ongoing series of technical conversations with practitioners building AI infrastructure.",
-      "whyItMatters": "Inference cost and latency remain a central bottleneck for AI product economics, so practitioner-level detail from an infra vendor like Baseten is useful for teams making build-vs-buy decisions.",
+      "title": "Latent Space Hosts \"Inference Engineering Masterclass\" with Baseten's Philip Kiely and Ali Taha",
+      "summary": "Latent Space published a session billed as \"The Inference Engineering Masterclass,\" featuring Baseten's Philip Kiely and Ali Taha discussing the practicalities of serving models in production. Details of the specific techniques covered aren't included beyond the title.",
+      "whyItMatters": "Inference costs and latency remain a central bottleneck for companies deploying AI at scale, so practitioner-level guidance from an inference infrastructure vendor is directly useful to teams building production AI systems.",
       "whatToWatch": [
-        "Any specific techniques or benchmarks discussed that get picked up elsewhere"
+        "Follow-up write-ups or benchmarks referenced in the session"
       ],
       "questions": [
-        "What specific optimizations or tradeoffs does the episode highlight?"
+        "What specific inference optimizations does the session recommend, and how vendor-specific are they to Baseten's stack?"
       ],
       "sources": [
         {
@@ -210,25 +239,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T21:44:03.000Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!IohL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F209198968%2F6b756e14-9a18-4975-8d64-399d863f7af2%2Ftranscoded-1785525129.png",
       "badge": "Podcast",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-f722651b21",
       "slug": "minimax-h3-gets-day-0-support-in-comfyui-with-open-weights-native-audi",
       "lane": "ai",
-      "title": "MiniMax H3 Gets Day-0 Support in ComfyUI, Bringing Open-Weight Native Audio and 2K Video",
-      "summary": "ComfyUI announced day-zero support for MiniMax's H3 model, which is being released with open weights and includes native audio generation alongside 2K video output. The integration lets ComfyUI users run the model immediately upon release rather than waiting for community ports.",
-      "whyItMatters": "Open-weight video/audio generation models with day-0 tooling support lower the barrier for developers and studios to experiment with multimodal generation without relying on closed APIs.",
+      "title": "MiniMax H3 Lands with Day-0 ComfyUI Support, Open Weights, Native Audio and 2K Video",
+      "summary": "MiniMax's new H3 model launched with immediate (\"day-0\") support in ComfyUI, according to a post covered on Hacker News. The model is open-weight and adds native audio generation alongside 2K-resolution video output.",
+      "whyItMatters": "Open-weight video/audio generation models with same-day tooling support lower the barrier for developers and creators to run high-end generative media locally rather than through closed APIs.",
       "whatToWatch": [
-        "Community benchmarks of H3's video and audio quality versus closed competitors",
-        "Licensing terms for commercial use of the open weights"
+        "Community benchmarks of H3's video and audio quality versus closed competitors like Sora or Veo",
+        "Adoption speed within the ComfyUI ecosystem"
       ],
       "questions": [
-        "How does H3's 2K video quality and generation speed compare to leading closed models?"
+        "What are the compute requirements to run H3 locally at 2K resolution?",
+        "How does licensing compare to other recent open video model releases?"
       ],
       "sources": [
         {
@@ -240,25 +270,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T13:34:43Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!w-S9!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67ff80a9-2436-4749-a553-5f6c8c77e23c_1920x1080.png",
-      "badge": "Open Weights",
-      "trendScore": 43,
+      "badge": "Model Release",
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-6ff715560b",
       "slug": "report-a-critical-cve-was-issued-for-a-hallucinated-sqlite-vulnerabili",
       "lane": "ai",
-      "title": "Researchers Question Whether Recent 'Critical' SQLite CVEs Are Real Bugs or LLM-Generated Slop",
-      "summary": "A JFrog research post examines a batch of recently filed 'critical' CVEs against SQLite and raises doubts about whether they represent genuine vulnerabilities or are low-quality reports produced with the help of LLMs. It's part of a broader pattern of security researchers flagging AI-assisted vulnerability submissions that don't hold up to scrutiny.",
-      "whyItMatters": "As AI tools make it trivially easy to generate plausible-looking but unsubstantiated vulnerability reports, this adds friction and noise to open-source security triage — a real cost of AI adoption in the security ecosystem.",
+      "title": "JFrog Research Asks Whether Recent \"Critical\" SQLite CVEs Are Real or LLM-Generated Slop",
+      "summary": "A JFrog research post, discussed on Hacker News under the title \"SQLite Critical CVEs or LLM Slop?\", questions whether a batch of recently filed critical-severity SQLite CVEs represent genuine vulnerabilities or are low-quality, possibly AI-generated reports.",
+      "whyItMatters": "As LLMs are increasingly used to generate vulnerability reports and bug bounty submissions, the security community is grappling with a rising volume of low-quality or fabricated CVEs that waste maintainer time and erode trust in the CVE system.",
       "whatToWatch": [
-        "Whether SQLite maintainers formally respond to or dispute the flagged CVEs",
-        "Whether CVE assignment bodies tighten review standards in response"
+        "Whether CVE bodies or SQLite maintainers issue a formal response or retraction",
+        "Broader industry moves to filter or flag LLM-generated vulnerability submissions"
       ],
       "questions": [
-        "How many of the disputed CVEs get retracted or downgraded?"
+        "How many of the flagged CVEs, if any, turn out to be legitimate?",
+        "What process failures let low-quality reports get assigned CVE numbers in the first place?"
       ],
       "sources": [
         {
@@ -270,24 +301,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T11:28:54Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "badge": "Security",
-      "trendScore": 43,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-d04cc35bd3",
       "slug": "openai-describes-six-month-build-of-a-realtime-voice-ai-system",
       "lane": "ai",
-      "title": "OpenAI Details How It Built a Realtime Voice AI System in Six Months",
-      "summary": "OpenAI published an engineering blog post describing how its team built a realtime, responsive voice AI system over a six-month period. The post walks through the technical journey behind delivering low-latency conversational voice interactions.",
-      "whyItMatters": "Realtime voice is a key battleground for consumer and enterprise AI assistants, and engineering detail from OpenAI signals where the state of the art is heading on latency and responsiveness.",
+      "title": "OpenAI Details Six-Month Build of a Realtime Voice AI System",
+      "summary": "OpenAI published an engineering write-up describing how its team built a realtime system for responsive voice AI over a six-month period. The post focuses on the engineering effort behind making voice interactions feel immediate and natural.",
+      "whyItMatters": "Latency and responsiveness are among the biggest remaining hurdles for voice-based AI assistants to feel natural in real conversation, so a first-party account of solving this at OpenAI's scale is useful signal for where voice AI products are headed.",
       "whatToWatch": [
-        "Whether the techniques described get incorporated into OpenAI's public API or products",
-        "Competitor responses on voice latency benchmarks"
+        "Whether the improvements described roll out to ChatGPT's voice mode or the Realtime API"
       ],
       "questions": [
-        "Which specific product(s) does this realtime system power?"
+        "What specific architectural bottlenecks took six months to resolve?",
+        "How much of this is applicable to smaller teams without OpenAI's infrastructure?"
       ],
       "sources": [
         {
@@ -299,25 +330,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T07:00:00.000Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/yTlvMCvVXsIfkU2OOi99f/157c83857ebe75544195add9e1f75039/gpt-live-responsive-seo-card.png?w=1600&h=900&fit=fill",
       "badge": "Engineering",
-      "trendScore": 42,
+      "trendScore": 37,
       "confidence": "medium"
     },
     {
       "id": "ai-489b06ed50",
       "slug": "cloudflare-details-running-kimi-and-glm-models-at-scale",
       "lane": "ai",
-      "title": "Cloudflare Details Running Kimi and GLM Models at Scale: 'Smaller, Faster, Safer'",
-      "summary": "Cloudflare published a blog post describing its work running the Kimi and GLM open-weight model families at scale on its infrastructure, framed around making them smaller, faster, and safer to deploy. The post reflects the growing role of cloud/edge providers in serving Chinese open-weight models to a global developer base.",
-      "whyItMatters": "Major infrastructure providers hosting Kimi and GLM signals that these open models are becoming standard options in the mainstream inference stack, not just niche alternatives.",
+      "title": "Cloudflare Details Running Kimi and GLM Open Models at Scale",
+      "summary": "A Cloudflare blog post, titled \"Smaller, faster, safer: running Kimi and GLM at scale,\" describes the company's work serving the open-weight Kimi and GLM model families in production, with a focus on efficiency and safety at scale. Specific performance figures aren't detailed beyond the headline framing.",
+      "whyItMatters": "Major infrastructure providers optimizing delivery of Chinese open-weight models like Kimi and GLM signals growing mainstream demand for open alternatives to closed frontier APIs, and puts pressure on serving costs industry-wide.",
       "whatToWatch": [
-        "Pricing and performance details Cloudflare shares for these models",
-        "Whether other major cloud providers follow with similar hosting offers"
+        "Concrete latency/cost benchmarks Cloudflare publishes for these models",
+        "Whether other cloud providers follow with similar optimization efforts"
       ],
       "questions": [
-        "What specific optimizations does Cloudflare apply to make these models 'smaller, faster, safer'?"
+        "What specific safety measures does 'safer' refer to in this context?",
+        "How do Cloudflare's serving costs for these models compare to running them directly via Moonshot or Zhipu?"
       ],
       "sources": [
         {
@@ -329,24 +361,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T17:08:46Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://blog.cloudflare.com/_emdash/api/media/file/01KZ1Q04GM9SA4QGPGPKWJQSJ6.png",
       "badge": "Infrastructure",
-      "trendScore": 41,
+      "trendScore": 36,
       "confidence": "low"
     },
     {
       "id": "ai-53ea25548c",
       "slug": "blog-post-argues-developers-should-manually-retype-llm-generated-code-",
       "lane": "ai",
-      "title": "Blog Post Argues Developers Should Manually Retype LLM-Generated Code to Avoid 'Cognitive Debt'",
-      "summary": "A blog post circulating on Hacker News argues that developers should manually retype AI-generated code rather than copy-pasting it, to avoid what the author calls 'cognitive debt' — a loss of understanding and skill from over-relying on AI output. It adds to an ongoing conversation about how AI coding tools affect developer learning and code comprehension.",
-      "whyItMatters": "As AI coding assistants become standard in software teams, how organizations manage the tradeoff between speed and engineer skill retention is a live and unresolved question.",
+      "title": "Blog Post Urges Developers to Manually Retype LLM-Generated Code to Avoid \"Cognitive Debt\"",
+      "summary": "A blog post gaining traction on Hacker News argues developers should manually retype AI-generated code rather than simply pasting it in, as a way to prevent what the author calls \"cognitive debt\" — the loss of understanding and skill that comes from over-relying on LLM output.",
+      "whyItMatters": "As AI coding assistants become standard in software teams, the tension between speed and genuine understanding is a live debate shaping how engineering organizations set norms for AI-assisted development.",
       "whatToWatch": [
-        "Whether the practice gets adopted or discussed further in engineering team norms"
+        "Whether this practice gets adopted or referenced by engineering teams or educators"
       ],
       "questions": [
-        "Is there evidence beyond anecdote that manual retyping improves retention or code quality?"
+        "Is there evidence beyond anecdote that retyping actually improves retention or code quality outcomes?"
       ],
       "sources": [
         {
@@ -358,9 +390,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T09:32:07Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
-      "badge": "Opinion",
-      "trendScore": 40,
+      "updatedAt": "2026-08-04T11:08:54.625Z",
+      "badge": "Analysis",
+      "trendScore": 36,
       "confidence": "low"
     },
     {
@@ -368,12 +400,14 @@
       "slug": "show-hn-a-version-of-hacker-news-with-ai-stories-filtered-out",
       "lane": "ai",
       "title": "Show HN: A Version of Hacker News with AI Stories Filtered Out",
-      "summary": "A developer built and shared a tool that presents the Hacker News front page with AI-related stories filtered out, posted as a 'Show HN' submission. The project is a small, community-built response to the volume of AI content now dominating tech discussion forums.",
-      "whyItMatters": "The existence of a tool built specifically to avoid AI news is itself a data point on how saturated tech discourse has become with AI coverage.",
+      "summary": "A Show HN post introduces a tool that presents the Hacker News front page with AI-related stories stripped out, letting users browse non-AI tech news separately.",
+      "whyItMatters": "The project is a small but telling signal of fatigue within parts of the tech community around the sheer volume of AI coverage saturating tech discourse.",
       "whatToWatch": [
-        "Whether the tool gains meaningful adoption or spawns similar filters elsewhere"
+        "Community reception and whether similar filtering tools proliferate"
       ],
-      "questions": [],
+      "questions": [
+        "How is \"AI story\" being classified, and how accurate is the filter?"
+      ],
       "sources": [
         {
           "title": "Show HN: Hacker News with AI stories filtered out",
@@ -384,25 +418,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T17:39:56Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://hcker.news/android-chrome-512x512.png",
       "badge": "Community",
-      "trendScore": 39,
+      "trendScore": 34,
       "confidence": "low"
     },
     {
       "id": "ai-0b4220142a",
       "slug": "yc-backed-hoplite-launches-to-simplify-deploying-cloud-coding-agents",
       "lane": "ai",
-      "title": "Launch HN: Hoplite (YC S26) Lets Developers Deploy Cloud Coding Agents",
-      "summary": "Hoplite, a startup from Y Combinator's S26 batch, launched on Hacker News with a tool for deploying cloud-based coding agents. The Launch HN post is the company's public introduction of its product to the developer community.",
-      "whyItMatters": "The launch is another sign of how crowded the cloud coding-agent space has become, with new entrants continuing to target developer workflows around autonomous coding.",
+      "title": "Launch HN: Hoplite (YC S26) Aims to Simplify Deploying Cloud Coding Agents",
+      "summary": "Hoplite, a startup from YC's Summer 2026 batch, launched on Hacker News with a pitch to make it effortless to deploy cloud-based coding agents. Details beyond the launch announcement are limited.",
+      "whyItMatters": "The crowded cloud coding-agent infrastructure space keeps attracting new YC-backed entrants, reflecting continued investor and developer appetite for tooling that operationalizes AI coding agents beyond local IDE use.",
       "whatToWatch": [
-        "Community feedback and adoption from the Launch HN thread",
-        "How Hoplite differentiates from other cloud coding-agent platforms"
+        "Early user feedback in the Hacker News comments",
+        "How Hoplite differentiates from other cloud agent deployment platforms"
       ],
       "questions": [
-        "What specifically differentiates Hoplite's approach to deploying coding agents?"
+        "What specifically does Hoplite handle that existing agent frameworks or cloud providers don't?"
       ],
       "sources": [
         {
@@ -414,35 +448,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T16:32:06Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
+      "updatedAt": "2026-08-04T11:08:54.625Z",
       "imageUrl": "https://hoplite.sh/opengraph.png",
       "badge": "Launch",
-      "trendScore": 39,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-fd93919d87",
-      "slug": "hacker-news-monthly-who-wants-to-be-hired-thread-returns-for-august-20",
-      "lane": "ai",
-      "title": "Hacker News' Monthly 'Who Wants to Be Hired' Thread Returns for August 2026",
-      "summary": "Hacker News published its recurring monthly 'Who wants to be hired?' community thread for August 2026, where users post their skills and availability. It's not AI-specific, but these threads offer a rough, informal pulse-check on tech hiring sentiment, including for AI-related roles.",
-      "whyItMatters": "Recurring hiring threads offer an informal, low-cost signal of how tech workers — including those with AI skills — are positioning themselves in a shifting job market.",
-      "whatToWatch": [],
-      "questions": [
-        "Does this month's thread show any notable shift in AI-specific skills being advertised?"
-      ],
-      "sources": [
-        {
-          "title": "Ask HN: Who wants to be hired? (August 2026)",
-          "url": "https://news.ycombinator.com/item?id=49156682",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T15:00:54Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T15:00:54Z",
-      "updatedAt": "2026-08-04T05:06:55.714Z",
-      "trendScore": 38,
+      "trendScore": 34,
       "confidence": "low"
     }
   ]
