@@ -1,41 +1,41 @@
 {
   "id": "2026-08-05",
   "kind": "scheduled",
-  "generatedAt": "2026-08-05T17:12:07.623Z",
+  "generatedAt": "2026-08-05T23:12:41.780Z",
   "triggeredBy": "local",
   "query": null,
   "windowHours": 36,
   "brief": {
-    "headline": "Patch Claude Code now: worktree escape and hook bypass fixed",
-    "summary": "Claude Code 2.1.222 closes two holes that hit directly at the worktree-plus-hooks setup you run overnight: worktree-isolated sessions and subagents could run destructive git against your main checkout, and a PreToolUse hook could be bypassed inside background agent tasks. Update before your next unattended run — this is exactly the failure mode that turns \"describe the work, go to sleep\" into a damaged main branch.\n\nOn the verification side, fable-method and fablize both package the same \"think / act / prove\" idea into portable skills/plugins that force a completion-and-evidence check before an agent calls a task done — worth wiring in as your morning-PR trust gate. On cost, opencodex and claude-code-router (now on v3.0.19, with fixed provider routing and accurate model logging) let you point background subagents at local or cheap models like DeepSeek or Ollama without leaving your existing harness, and devspace lets you burn a ChatGPT/Claude web login instead of metered API tokens for background coding work. dao-code adds cache-reusing forks so long DeepSeek-V4 sessions don't re-pay full context every turn.",
+    "headline": "Patch now: Claude Code 2.1.222 fixes worktree and hook escapes",
+    "summary": "Update Claude Code to 2.1.222 first — it patches worktree-isolated subagents escaping to the main checkout and PreToolUse hooks getting bypassed in background tasks, which is exactly the worktree-plus-hooks setup you run. Layer self-verification on top: fable-method and fablize both distill Fable 5's think/act/prove procedure into a portable skill or Opus plugin, so the agent has to produce evidence before it calls a task done — install one tonight and point it at whatever you're about to hand off unattended. Willison's llm 0.32 adds visible reasoning traces and a redesigned SQLite log if you want a free CLI harness for scripting or auditing calls outside Claude Code proper.\n\nOn cost, opencodex and claude-code-router (now v3.0.19, fixing Codex 404s and a timing side-channel in its key check) let you route background subagent work to local or open-weight models while keeping Claude Code as the frontend, and dao-code's byte-stable-prefix caching is a concrete pattern worth copying for cross-session memory. Away from the desk, devspace turns Claude Web or ChatGPT into a full coding agent from a phone browser tab, and ongrid triggers infra fixes from Slack or Telegram. Keep an eye on two clocks: token-monitor gives one live view of spend across every harness, and Oracle's Always Free ARM cut to 2 OCPU/12GB (enforced Aug 18) may break anything you're self-hosting there.",
     "bullets": [
-      "Update Claude Code to 2.1.222 — fixes worktree-isolated agents running destructive git on your main checkout and a PreToolUse hook bypass in background tasks",
-      "Drop fable-method or the fablize plugin into your setup as a think/act/prove verification gate before Opus marks a task complete",
-      "Route background subagents through opencodex or claude-code-router v3.0.19 (now logs the actual routed model) to hit local/DeepSeek/Ollama endpoints instead of paying full API rates",
-      "Try dao-code with DeepSeek-V4's cache-reusing forks for long memory-heavy overnight sessions without re-paying full context each turn",
-      "Use devspace to run background coding tasks off your existing ChatGPT/Claude web login instead of separately metered API credits",
-      "Install codeseek as an MCP server so subagents get real call-graph/semantic search instead of grep-guessing into the wrong files"
+      "Update Claude Code to 2.1.222 now — fixes worktree subagents escaping to main checkout and PreToolUse hooks getting bypassed in background tasks",
+      "Install fable-method or fablize as a skill/plugin to force think/act/prove self-verification before an agent marks a task done",
+      "Route background subagent calls through opencodex or claude-code-router v3.0.19 to hit local/open-weight models and cut per-task spend",
+      "Load ponytail as a skill so agents default to minimal diffs — easier to review as a finished PR at 7am",
+      "Control sessions off your desk with devspace (Claude Web/ChatGPT as a coding agent from any browser) or trigger fixes via Slack/Telegram with ongrid",
+      "Track real-time spend across Claude Code, Codex, Cursor and OpenCode with token-monitor before your next overnight run"
     ],
     "signals": [
       {
-        "label": "Self-verification gates on agent output",
+        "label": "Self-verification skills for unattended runs",
         "direction": "up",
-        "note": "fable-method and fablize both converge on forcing completion/evidence/verification before an agent claims done — the missing piece for trusting an overnight PR"
+        "note": "fable-method, fablize, and ponytail all ship this cycle as portable think/act/prove or minimal-diff skills — convergence on making agents prove work before handoff"
       },
       {
-        "label": "Cost routing to cheap/local models",
+        "label": "Cheap-model routing plumbing",
         "direction": "up",
-        "note": "opencodex, dao-code, claude-code-router, devspace, Homebench and a wave of small open-weight releases (Shieldstral, Maple-Preview) all target moving subagent work off metered API tokens"
+        "note": "opencodex, claude-code-router v3.0.19, and dao-code's prefix-caching all give concrete routing/caching mechanics rather than just cheaper model announcements"
       },
       {
-        "label": "Unattended-run safety gaps still being found",
+        "label": "Away-from-desk control surfaces",
+        "direction": "up",
+        "note": "devspace (browser-to-agent) and ongrid (Slack/Telegram-triggered infra fixes) both shipped as ready chat/browser bridges this cycle"
+      },
+      {
+        "label": "Honest failure reports from long unattended runs",
         "direction": "flat",
-        "note": "Claude Code 2.1.222 had to patch a worktree isolation escape and a hook bypass — the exact primitives long unattended runs depend on"
-      },
-      {
-        "label": "Off-desk control plane tooling",
-        "direction": "up",
-        "note": "omnigent, ongrid and LiveAgent are all early attempts at checking on or steering agents from a phone or chat app rather than a laptop UI"
+        "note": "none of this cycle's items report an actual multi-hour breakage — still mostly capability and tooling announcements, not failure postmortems"
       }
     ]
   },
@@ -47,8 +47,8 @@
       "source": "Claude Code changelog",
       "sourceKind": "release",
       "publishedAt": "2026-08-04T22:46:55.000Z",
-      "tldr": "Claude Code 2.1.222 fixes worktree-isolated sessions/subagents being able to run destructive git commands against the main checkout, and closes a PreToolUse hook bypass in background agent tasks.",
-      "whyItMatters": "Both bugs directly undermine the worktree-plus-hooks setup you rely on for unattended runs; the isolation escape could have let a runaway agent damage your main checkout.",
+      "tldr": "Claude Code 2.1.222 fixes worktree-isolated sessions and subagents being able to run destructive git commands against the main checkout, and fixes PreToolUse auto-allow hooks bypassing tool restrictions in background agent tasks.",
+      "whyItMatters": "This directly patches the worktree-plus-hooks setup you rely on — previously an isolated subagent could escape to the main checkout, or a background task could dodge your hook restrictions.",
       "category": "tooling",
       "tags": [
         "claude-code",
@@ -62,61 +62,8 @@
       "models": [],
       "importance": 5,
       "actionability": 5,
-      "hasFailureReport": true,
-      "tryThis": "Update Claude Code to 2.1.222 before your next unattended overnight run."
-    },
-    {
-      "id": "gh-1263648864",
-      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
-      "url": "https://github.com/cobusgreyling/loop-engineering",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-06-09T06:28:20Z",
-      "tldr": "A new open-source repo ships CLI tools — loop-audit, loop-init, loop-cost — for designing and orchestrating multi-agent coding loops.",
-      "whyItMatters": "Gives you scaffolding to structure and audit long-running agent loops instead of hand-rolling prompts, plus a built-in way to track what each loop costs.",
-      "category": "agentic",
-      "tags": [
-        "agent-orchestration",
-        "cli",
-        "unattended-agents"
-      ],
-      "entities": [
-        "loop-engineering"
-      ],
-      "models": [],
-      "importance": 5,
-      "actionability": 5,
       "hasFailureReport": false,
-      "tryThis": "Clone cobusgreyling/loop-engineering and run `loop-init` to scaffold a loop, then `loop-audit` before you trust it unattended.",
-      "score": 9887
-    },
-    {
-      "id": "gh-1273824907",
-      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
-      "url": "https://github.com/lidge-jun/opencodex",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-06-18T23:03:18Z",
-      "tldr": "opencodex is a universal provider proxy that lets Codex CLI and Claude Code call any LLM — Claude, Gemini, Grok, DeepSeek, Ollama — through one config.",
-      "whyItMatters": "Lets him route cheap or local models into subagents inside his existing Claude Code/Codex setup without switching harnesses.",
-      "category": "tooling",
-      "tags": [
-        "proxy",
-        "model-routing",
-        "cost"
-      ],
-      "entities": [
-        "lidge-jun"
-      ],
-      "models": [
-        "DeepSeek",
-        "Ollama"
-      ],
-      "importance": 5,
-      "actionability": 5,
-      "hasFailureReport": false,
-      "tryThis": "Clone lidge-jun/opencodex and point a background subagent's model config at a local Ollama or DeepSeek endpoint tonight.",
-      "score": 7527
+      "tryThis": "Update Claude Code to 2.1.222 now if you run worktree-isolated subagents or depend on PreToolUse hooks for background tasks."
     },
     {
       "id": "rss-simon-willison-leaseofllmatomeverything",
@@ -125,47 +72,105 @@
       "source": "Simon Willison",
       "sourceKind": "news",
       "publishedAt": "2026-08-04T23:58:24.000Z",
-      "tldr": "LLM 0.32 ships visible reasoning traces (to stderr, suppress with --hide-reasoning/-R), OpenAI Responses API support, server-side provider tools, and redesigned content-addressable SQLite logging.",
-      "whyItMatters": "Lets you watch or hide a reasoning model's chain-of-thought from the CLI and get structured, queryable logs of every call for post-mortems on unattended runs.",
+      "tldr": "Simon Willison's LLM 0.32 adds visible reasoning traces to stderr, OpenAI Responses API support, server-side provider tools, and a redesigned content-addressable SQLite log.",
+      "whyItMatters": "Free, self-hosted CLI harness for routing and logging model calls across providers with cost-relevant features like caching-friendly logs and cheap CLI scripting — a real alternative to paying for a hosted orchestration layer.",
       "category": "tooling",
       "tags": [
         "llm-cli",
+        "reasoning-traces",
         "logging",
-        "reasoning"
+        "cli"
       ],
       "entities": [
-        "Simon Willison"
+        "Simon Willison",
+        "llm"
       ],
       "models": [],
       "importance": 5,
       "actionability": 5,
       "hasFailureReport": false,
-      "tryThis": "pip install -U llm, run a reasoning model and check stderr for traces, add --hide-reasoning/-R for clean output, and query the new SQLite log after a run."
+      "tryThis": "Run `pip install -U llm` (or `uv tool upgrade llm`), then re-run a reasoning-model prompt and check the trace on stderr with/without `--hide-reasoning`."
     },
     {
-      "id": "gh-1266212515",
-      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
-      "url": "https://github.com/omnigent-ai/omnigent",
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-06-11T12:18:13Z",
-      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor and custom agents under one policy/sandboxing layer, controllable from any device.",
-      "whyItMatters": "One control plane to mix harnesses and check on unattended runs from his phone instead of being locked into a single tool's UI.",
-      "category": "agentic",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "ponytail (96k+ stars) is a prompt/skill that pushes your AI coding agent to act like \"the laziest senior dev,\" minimizing code written.",
+      "whyItMatters": "A widely-adopted technique for keeping agent diffs small and reviewable, which is exactly the discipline a solo reviewer needs for morning PR review.",
+      "category": "technique",
       "tags": [
-        "meta-harness",
-        "remote-control",
-        "orchestration"
+        "prompt",
+        "minimal-diff",
+        "claude-code"
       ],
       "entities": [
-        "omnigent-ai"
+        "DietrichGebert"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone omnigent-ai/omnigent and wire an existing Claude Code worktree into it to test checking on a run from your phone.",
-      "score": 8166
+      "tryThis": "Clone DietrichGebert/ponytail and load it as a skill so agents default to minimal-diff changes.",
+      "score": 96674
+    },
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering ships CLI tools — loop-audit, loop-init, loop-cost — for structuring and orchestrating long-running AI coding agent loops.",
+      "whyItMatters": "These are concrete commands for auditing and costing out agent loops, directly usable in a solo overnight-agent workflow rather than another abstract framework.",
+      "category": "tooling",
+      "tags": [
+        "agent-orchestration",
+        "cli",
+        "loop-engineering"
+      ],
+      "entities": [
+        "cobusgreyling"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against your current agent loop setup to see what it flags.",
+      "score": 9893
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a provider proxy that lets Codex CLI/App/SDK and Claude Code call any LLM — Claude, Gemini, Grok, DeepSeek, Ollama — through one interface.",
+      "whyItMatters": "Lets you route cheap subagent work to local or open-weight models while keeping Claude Code as the frontend, cutting per-task spend without switching harnesses.",
+      "category": "tooling",
+      "tags": [
+        "model-routing",
+        "cost",
+        "proxy",
+        "claude-code"
+      ],
+      "entities": [
+        "lidge-jun/opencodex"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and route a background subagent through it to a local Ollama or DeepSeek model.",
+      "score": 7631
     },
     {
       "id": "gh-1269395331",
@@ -174,26 +179,24 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-14T16:57:27Z",
-      "tldr": "devspace turns a ChatGPT or Claude web login into a Codex/Claude-Code-style CLI agent.",
-      "whyItMatters": "Lets him tap web-subscription usage for agent coding tasks instead of separately metered API tokens — a direct cost lever.",
+      "tldr": "devspace turns the ChatGPT web app into a Codex-style coding agent, or Claude Web into Claude Code, without needing the CLI.",
+      "whyItMatters": "Gives you a way to kick off or steer an agent session from any browser tab, including a phone, when you're away from your terminal.",
       "category": "technique",
       "tags": [
-        "cost",
-        "web-to-cli",
-        "proxy"
+        "remote-control",
+        "phone",
+        "claude-code",
+        "codex"
       ],
       "entities": [
-        "Waishnav"
+        "Waishnav/devspace"
       ],
-      "models": [
-        "ChatGPT",
-        "Claude"
-      ],
+      "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone Waishnav/devspace and route a background coding task through your existing ChatGPT/Claude web login instead of API credits.",
-      "score": 3552
+      "tryThis": "Try Waishnav/devspace from your phone browser next time you need to nudge an agent without SSHing in.",
+      "score": 3554
     },
     {
       "id": "gh-1291544092",
@@ -202,23 +205,25 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-07-06T22:35:18Z",
-      "tldr": "fable-method distills a \"think / act / prove\" workflow into portable skills plus an eval, so any model self-checks its work before calling a task done.",
-      "whyItMatters": "This is the self-verification loop needed to trust an overnight PR without babysitting it — an eval that can gate any agent's output.",
+      "tldr": "A GitHub repo distills the \"Fable\" agent workflow into reusable skills any model can run, paired with an eval that keeps the agent honest.",
+      "whyItMatters": "Gives you a portable think/act/prove skill structure to force agents to self-verify before handing back a PR, which is exactly the unattended-run discipline you're after.",
       "category": "technique",
       "tags": [
-        "verification",
         "skills",
-        "eval"
+        "verification",
+        "claude-code"
       ],
       "entities": [
         "Sahir619"
       ],
-      "models": [],
+      "models": [
+        "Claude Fable 5"
+      ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone Sahir619/fable-method and drop its skills/eval into your Claude Code setup as a post-task verification gate.",
-      "score": 2138
+      "tryThis": "Clone Sahir619/fable-method and drop its skills into your Claude Code skills directory.",
+      "score": 2147
     },
     {
       "id": "gh-1262682069",
@@ -227,16 +232,17 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-08T08:10:42Z",
-      "tldr": "dao-code is a terminal coding agent for DeepSeek-V4 that uses byte-stable prompt prefixes and cache-reusing forks so cross-session memory adds almost no token cost.",
-      "whyItMatters": "A concrete way to run long, memory-heavy agent sessions on a cheap model without re-paying full context every turn, and it's Claude Code config compatible.",
+      "tldr": "dao-code is a terminal coding agent for DeepSeek-V4 that engineers byte-stable prompt prefixes and cache-reusing forks so cross-session memory adds almost no extra token cost.",
+      "whyItMatters": "It's a concrete prompt-caching pattern for cutting repeat-context cost on long agent sessions, not just a cheaper-model swap.",
       "category": "technique",
       "tags": [
-        "deepseek",
         "prompt-caching",
-        "cost"
+        "cost",
+        "deepseek",
+        "terminal-agent"
       ],
       "entities": [
-        "tigicion",
+        "tigicion/dao-code",
         "DeepSeek"
       ],
       "models": [
@@ -245,32 +251,8 @@
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone tigicion/dao-code, point it at DeepSeek-V4, and use its cache-fork setup for a long overnight task instead of paying full context cost each turn.",
+      "tryThis": "Clone tigicion/dao-code and study its prefix-caching/fork implementation to replicate the pattern in your own Claude Code hooks.",
       "score": 1267
-    },
-    {
-      "id": "gh-1243377527",
-      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
-      "url": "https://github.com/Javis603/token-monitor",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-05-19T09:33:54Z",
-      "tldr": "token-monitor is a local-first desktop widget tracking token usage, cost, and limits across 28+ AI coding tools including Claude Code, Codex, Cursor and OpenCode.",
-      "whyItMatters": "Real visibility into what overnight agent runs actually cost across every tool, not just one CLI's own counter.",
-      "category": "tooling",
-      "tags": [
-        "cost-tracking",
-        "dashboard"
-      ],
-      "entities": [
-        "Javis603"
-      ],
-      "models": [],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Install Javis603/token-monitor and check per-tool spend after your next unattended overnight run.",
-      "score": 1172
     },
     {
       "id": "gh-1250957639",
@@ -279,22 +261,23 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-05-27T05:46:25Z",
-      "tldr": "vibecode-pro-max-kit is a spec-driven harness with 15 agents and 33 skills built around /goal and agent-team commands to run autopilot loops with zero human gating.",
-      "whyItMatters": "This is the exact shape of the reader's goal — describe work, walk away — with named commands to test rather than a vague pitch.",
-      "category": "agentic",
+      "tldr": "vibecode-pro-max-kit is a spec-driven Claude Code/Codex harness with 15 agents and 33 skills that run '/goal' and 'agent-team' autopilot loops with zero human gate.",
+      "whyItMatters": "The '/goal' and 'agent-team' commands are a direct template for the describe-it-and-sleep workflow you're building toward, worth stealing even if you skip the rest of the kit.",
+      "category": "technique",
       "tags": [
         "autopilot",
         "skills",
+        "claude-code",
         "unattended"
       ],
       "entities": [
-        "withkynam"
+        "withkynam/vibecode-pro-max-kit"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone withkynam/vibecode-pro-max-kit and run /goal on a real ticket to see how far the autopilot loop gets before needing a human gate.",
+      "tryThis": "Clone withkynam/vibecode-pro-max-kit and read the /goal and agent-team skill definitions to adapt the no-human-gate loop into your own .claude/skills.",
       "score": 1064
     },
     {
@@ -304,26 +287,25 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-14T05:49:06Z",
-      "tldr": "fivetaku/fablize is a Claude Code plugin that forces Opus through completion, evidence and verification checks before it can call a task done.",
-      "whyItMatters": "Directly targets getting an agent to verify its own work overnight instead of just claiming it's finished.",
-      "category": "tooling",
+      "tldr": "fablize is a Claude Code plugin that makes Opus follow Fable's completion/evidence/verification procedure, shipping only what a head-to-head Fable-vs-Opus comparison proved actually transferred.",
+      "whyItMatters": "A drop-in way to make Opus prove its work with evidence before it calls a task done, cutting the babysitting needed on long unattended runs.",
+      "category": "technique",
       "tags": [
         "claude-code",
-        "plugin",
         "verification",
-        "opus"
+        "plugin"
       ],
       "entities": [
         "fivetaku"
       ],
       "models": [
         "Opus",
-        "Fable"
+        "Claude Fable"
       ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Install the fivetaku/fablize plugin and route your overnight Opus runs through it.",
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and enable its verification procedure on your agent runs.",
       "score": 890
     },
     {
@@ -333,23 +315,24 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-03T05:41:22Z",
-      "tldr": "codeseek is a Rust CLI building call graphs and hybrid dense/sparse/reranked search indexes across 7 languages, shipped as native MCP tools for Claude Code and Codex.",
-      "whyItMatters": "Gives agents real code navigation instead of grep-guessing, cutting the wrong-file edits and clarifying questions that break unattended runs.",
+      "tldr": "codeseek is a Rust CLI that builds call graphs and hybrid semantic/sparse search indexes across 7 languages, exposed as native MCP tools for Claude Code and Codex CLI.",
+      "whyItMatters": "Better code-context retrieval means an unattended agent can navigate and verify changes in your codebase without you hand-holding file lookups.",
       "category": "tooling",
       "tags": [
         "mcp",
         "code-search",
-        "code-intelligence"
+        "claude-code",
+        "context"
       ],
       "entities": [
-        "CodeBendKit"
+        "CodeBendKit/codeseek"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Install CodeBendKit/codeseek as an MCP server in your Claude Code config and have subagents query it instead of raw file search.",
-      "score": 820
+      "tryThis": "Add CodeBendKit/codeseek as an MCP server in your Claude Code config so agents get call-graph and semantic search tools automatically.",
+      "score": 821
     },
     {
       "id": "gh-1259999244",
@@ -358,23 +341,24 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-05T04:08:13Z",
-      "tldr": "claudexor is a control plane that rotates overnight work across multiple Claude/Codex subscriptions by quota, with shared thread context and cross-model review.",
-      "whyItMatters": "Directly cuts cost and throttling pain by spreading long unattended runs across accounts instead of hitting one subscription's cap.",
-      "category": "technique",
+      "tldr": "claudexor is a control plane that rotates work across multiple Claude Code/Codex subscriptions by quota, shares thread context between harnesses, and runs cross-model review on the same task.",
+      "whyItMatters": "Quota-aware rotation stretches subscription limits before you hit rate caps, and cross-model review gives you an automated second opinion on a PR before you're awake to read it.",
+      "category": "tooling",
       "tags": [
         "quota",
-        "cost",
-        "multi-account"
+        "multi-model-review",
+        "claude-code",
+        "cost"
       ],
       "entities": [
-        "razzant"
+        "razzant/claudexor"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Set up razzant/claudexor with your Claude/Codex subscriptions and let it round-robin an overnight run across quotas.",
-      "score": 372
+      "tryThis": "Try razzant/claudexor's cross-model review step as an automated pre-merge check on agent-generated PRs.",
+      "score": 373
     },
     {
       "id": "gh-1292072706",
@@ -383,52 +367,50 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-07-07T09:21:39Z",
-      "tldr": "codexloom turns OpenAI Codex threads into an organization of long-lived, domain-specific agents.",
-      "whyItMatters": "A concrete pattern for keeping persistent specialized subagents alive across sessions instead of re-briefing fresh context each run — same problem your worktree/subagent setup is solving.",
-      "category": "agentic",
+      "tldr": "codexloom is a new repo that turns Codex threads into long-lived, persistent domain-specific agents.",
+      "whyItMatters": "Directly relevant to running specialized subagents (like your Claude Code worktree setup) that persist context across sessions instead of starting cold each time.",
+      "category": "tooling",
       "tags": [
+        "subagents",
         "codex",
-        "multi-agent",
-        "persistence"
+        "orchestration"
       ],
       "entities": [
-        "yan5xu"
+        "codexloom"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone yan5xu/codexloom and wire one recurring task into a long-lived domain agent instead of a one-shot session.",
+      "tryThis": "Clone yan5xu/codexloom and try wiring one long-lived domain agent into your existing Codex/Claude Code subagent setup.",
       "score": 304
     },
     {
-      "id": "hn-49173984",
-      "title": "Show HN: Maple-Preview – Ternary 20B MoE running at 120 tok/s on a iPhone",
-      "url": "https://deepgrove.ai/maple-preview",
+      "id": "hn-49183750",
+      "title": "Oracle cut its Always Free ARM limits to 2 OCPU / 12GB, enforced Aug 18",
+      "url": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/",
       "source": "Hacker News",
       "sourceKind": "discussion",
-      "publishedAt": "2026-08-04T19:44:55Z",
-      "tldr": "Show HN: Maple-Preview runs a ternary 20B MoE model at 120 tok/s directly on an iPhone.",
-      "whyItMatters": "You ship mobile apps — this is a concrete on-device inference speed/size data point for building offline AI features without a server round-trip.",
-      "category": "open-models",
+      "publishedAt": "2026-08-05T14:46:36Z",
+      "tldr": "Oracle is cutting its Always Free ARM tier to 2 OCPU/12GB RAM, enforced starting August 18.",
+      "whyItMatters": "If you're running any self-hosted agent bridge, MCP server, or local model on Oracle's free ARM instances, it may stop fitting after the 18th.",
+      "category": "adoption",
       "tags": [
-        "on-device",
-        "ios",
-        "moe",
-        "inference"
+        "self-hosting",
+        "free-tier",
+        "deprecation",
+        "hardware"
       ],
       "entities": [
-        "Maple-Preview"
+        "Oracle"
       ],
-      "models": [
-        "Maple-Preview"
-      ],
+      "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Grab the Maple-Preview Show HN demo/repo and benchmark it on your target iPhone hardware.",
-      "discussionUrl": "https://news.ycombinator.com/item?id=49173984",
-      "score": 158
+      "tryThis": "Check your Oracle Always Free ARM instance specs now and plan a migration before Aug 18 if you're over 2 OCPU/12GB.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49183750",
+      "score": 169
     },
     {
       "id": "hn-49169640",
@@ -437,8 +419,8 @@
       "source": "Hacker News",
       "sourceKind": "discussion",
       "publishedAt": "2026-08-04T14:38:31Z",
-      "tldr": "A new set of agent skills packages team coding standards directly into Claude Code and Codex.",
-      "whyItMatters": "Lets you encode your own lint/style/PR rules once so every agent run follows them without you re-prompting each time.",
+      "tldr": "A project packages team coding standards as reusable \"agent skills\" for both Claude Code and Codex.",
+      "whyItMatters": "Lets you encode your own lint/style/PR conventions as a skill file instead of repeating them in every prompt, so agents produce more reviewable diffs unattended.",
       "category": "technique",
       "tags": [
         "skills",
@@ -446,43 +428,14 @@
         "codex",
         "standards"
       ],
-      "entities": [
-        "Claude Code",
-        "Codex"
-      ],
+      "entities": [],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Pull these skill files into your repo's .claude/skills (or Codex equivalent) and point them at your existing style guide.",
+      "tryThis": "Pull the skill files from this project into your Claude Code and Codex skills folders and adapt them to your own standards.",
       "discussionUrl": "https://news.ycombinator.com/item?id=49169640",
       "score": 75
-    },
-    {
-      "id": "hn-49166308",
-      "title": "Homebench – Benchmark local LLMs for speed, memory, and quality",
-      "url": "https://github.com/david-g-3654/homebench",
-      "source": "Hacker News",
-      "sourceKind": "discussion",
-      "publishedAt": "2026-08-04T09:48:43Z",
-      "tldr": "Homebench is a new open-source benchmark for testing local LLM speed, memory footprint, and output quality on your own machine.",
-      "whyItMatters": "Lets you empirically pick which open-weight model to route cheap or background subagent work to instead of trusting leaderboards.",
-      "category": "tooling",
-      "tags": [
-        "local-llm",
-        "benchmark",
-        "cost"
-      ],
-      "entities": [
-        "Homebench"
-      ],
-      "models": [],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Clone Homebench and run it against candidate local models on your dev machine to pick a router target for cheap tasks.",
-      "discussionUrl": "https://news.ycombinator.com/item?id=49166308",
-      "score": 59
     },
     {
       "id": "rss-claude-code-router-releases-derouterreleasestagv3019",
@@ -491,12 +444,12 @@
       "source": "claude-code-router releases",
       "sourceKind": "release",
       "publishedAt": "2026-08-05T11:04:35.000Z",
-      "tldr": "claude-code-router 3.0.19 fixes a Codex provider 404 routing bug, makes API key comparison constant-time, and now shows the actual routed model in request logs.",
-      "whyItMatters": "If you tier subagents across providers through this router, the constant-time key check closes a timing side-channel and the log fix stops you misdiagnosing which model actually ran a task.",
+      "tldr": "claude-code-router v3.0.19 fixes Codex provider requests 404ing, adds routed-model visibility in request logs, closes a timing side-channel in API-key comparison, and syncs local Codex OAuth credentials.",
+      "whyItMatters": "If you route subagents across providers/tiers for cost control, this fixes broken Codex routing and a real timing-attack bug in the gateway's key check.",
       "category": "tooling",
       "tags": [
-        "claude-code-router",
         "routing",
+        "claude-code-router",
         "security",
         "cost"
       ],
@@ -507,7 +460,7 @@
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Upgrade claude-code-router to v3.0.19 now."
+      "tryThis": "Update claude-code-router to v3.0.19, especially if you route any traffic through the Codex provider."
     },
     {
       "id": "rss-simon-willison-manthropicatomeverything",
@@ -516,77 +469,54 @@
       "source": "Simon Willison",
       "sourceKind": "news",
       "publishedAt": "2026-08-04T22:00:58.000Z",
-      "tldr": "llm-anthropic 0.26 adds claude-fable-5/sonnet-5/opus-5 and replaces ad-hoc web-search flags with a unified -T tool interface (WebSearch, WebFetch, CodeExecution, AnthropicMCP).",
-      "whyItMatters": "Gives you server-side tool calls straight from the llm CLI for quick scripted checks outside your main agent harness.",
+      "tldr": "llm-anthropic 0.26 adds Claude Fable 5/Sonnet 5/Opus 5 support plus server-side WebSearch, WebFetch, CodeExecution and AnthropicMCP tools via LLM's `-T` interface, replacing the old `-o web_search*` flags.",
+      "whyItMatters": "Gives you server-side tool calls (search, fetch, code exec, MCP) straight from the `llm` CLI without wiring your own tool loop — useful for scripting cheap, scoped subagent tasks outside Claude Code proper.",
       "category": "tooling",
       "tags": [
         "llm-cli",
-        "claude",
-        "tools"
+        "plugin",
+        "tool-use",
+        "anthropic"
       ],
       "entities": [
         "Anthropic",
-        "Simon Willison"
+        "Simon Willison",
+        "llm-anthropic"
       ],
       "models": [
-        "claude-fable-5",
-        "claude-sonnet-5",
-        "claude-opus-5"
+        "Claude Fable 5",
+        "Claude Sonnet 5",
+        "Claude Opus 5"
       ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "pip install -U llm-anthropic 'llm>=0.32', then call `llm -T WebSearch -T CodeExecution` instead of the old -o web_search flags."
+      "tryThis": "Run `llm install -U llm-anthropic` and swap any `-o web_search*` calls for `-T WebSearch`/`-T WebFetch`/`-T CodeExecution`."
     },
     {
-      "id": "gh-1266797999",
-      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "url": "https://github.com/DietrichGebert/ponytail",
+      "id": "gh-1245699721",
+      "title": "KunAgent/Kun — Local-first AI agent workspace for coding, writing, design, research, and automation — one runtime for desktop GUI and TUI.",
+      "url": "https://github.com/KunAgent/Kun",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-06-12T00:52:37Z",
-      "tldr": "ponytail is a tool aimed at biasing your AI agent toward the smallest possible diff — 'the best code is the code you never wrote.'",
-      "whyItMatters": "Smaller, lazier diffs are what makes an overnight PR reviewable in five minutes instead of fifty.",
-      "category": "technique",
+      "publishedAt": "2026-05-21T13:22:06Z",
+      "tldr": "Kun is a local-first AI agent workspace (desktop GUI + TUI) covering coding, writing, design, research and automation in one runtime.",
+      "whyItMatters": "A self-hosted option for offloading routine agent work to your own machine instead of metered hosted-agent tokens.",
+      "category": "open-models",
       "tags": [
-        "diff-minimization",
-        "skill",
-        "review"
+        "local-first",
+        "self-hosted",
+        "agent-workspace"
       ],
       "entities": [
-        "DietrichGebert"
+        "KunAgent"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Try DietrichGebert/ponytail as a skill/hook to nudge agents toward minimal-diff solutions before your next overnight run.",
-      "score": 96529
-    },
-    {
-      "id": "gh-1287460663",
-      "title": "elder-plinius/T3MP3ST — autonomous red teaming platform; multi-agent offensive-security meta-harness",
-      "url": "https://github.com/elder-plinius/T3MP3ST",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-07-02T17:53:55Z",
-      "tldr": "T3MP3ST is an autonomous, multi-agent red-teaming platform for offensive security testing.",
-      "whyItMatters": "A way to have agents adversarially probe his own shipped code for security holes before merging, instead of trusting the coding agent's own say-so.",
-      "category": "technique",
-      "tags": [
-        "security",
-        "red-team",
-        "verification"
-      ],
-      "entities": [
-        "elder-plinius"
-      ],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Clone elder-plinius/T3MP3ST and point it at a staging build the night before review for a security pass alongside the PR.",
-      "score": 5433
+      "tryThis": "Try KunAgent/Kun locally for lower-stakes tasks and compare it against your current hosted-agent spend.",
+      "score": 5696
     },
     {
       "id": "gh-1283907968",
@@ -595,14 +525,13 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-29T10:49:36Z",
-      "tldr": "open-connector is an open-source auth gateway giving agents authenticated access to 1000+ SaaS providers via SDK, CLI, MCP, HTTP or OpenAPI.",
-      "whyItMatters": "Removes a common reason overnight agent runs stall — missing credentials or tool access to the services they need mid-task.",
+      "tldr": "open-connector is an open-source auth gateway giving AI agents SDK/CLI/MCP/HTTP/OpenAPI access to over 1000 SaaS providers.",
+      "whyItMatters": "One place to handle OAuth for agent integrations instead of hand-rolling auth per tool you connect to Claude Code.",
       "category": "tooling",
       "tags": [
         "mcp",
         "auth",
-        "integration",
-        "saas"
+        "integrations"
       ],
       "entities": [
         "oomol-lab"
@@ -611,108 +540,34 @@
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Clone oomol-lab/open-connector and wire it up as an MCP server so agents can auth into SaaS tools without asking you first.",
-      "score": 4315
+      "tryThis": "Clone oomol-lab/open-connector and point your MCP config at it instead of managing per-service tokens.",
+      "score": 4322
     },
     {
-      "id": "gh-1250822765",
-      "title": "nexu-io/html-video — Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project b",
-      "url": "https://github.com/nexu-io/html-video",
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-05-27T02:08:11Z",
-      "tldr": "html-video is an Apache-2.0 repo that renders HTML/CSS/data into real MP4s locally, with pluggable engines and no per-render fees.",
-      "whyItMatters": "Lets an overnight coding agent auto-generate a walkthrough video attached to its PR, cutting the time you spend reviewing what changed in the morning.",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local-first desktop widget tracking token usage, cost, and rate limits across 28+ coding tools including Claude Code, Codex, Cursor, and OpenCode, synced across devices.",
+      "whyItMatters": "Gives you one real-time view of what overnight agent runs actually cost across every harness, instead of checking five dashboards.",
       "category": "tooling",
       "tags": [
-        "pr-review",
-        "video-generation",
-        "local-tooling"
+        "cost-tracking",
+        "dashboard",
+        "claude-code",
+        "multi-tool"
       ],
       "entities": [
-        "nexu-io"
+        "Javis603/token-monitor"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Clone nexu-io/html-video and have your agent pipe a demo HTML page through it to attach an MP4 to its PR.",
-      "score": 4258
-    },
-    {
-      "id": "gh-1240191065",
-      "title": "DenisSergeevitch/agents-best-practices — Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
-      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-05-15T21:32:21Z",
-      "tldr": "agents-best-practices packages provider-neutral guidance for designing Codex/Claude Code agent skills and harnesses as an installable Agent Skill.",
-      "whyItMatters": "A drop-in reference to sanity-check his own subagent/hook structure rather than reinventing harness conventions solo.",
-      "category": "technique",
-      "tags": [
-        "skills",
-        "best-practices",
-        "harness-design"
-      ],
-      "entities": [
-        "DenisSergeevitch"
-      ],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Add DenisSergeevitch/agents-best-practices as a skill and diff its recommendations against your current subagent/hook setup.",
-      "score": 2190
-    },
-    {
-      "id": "gh-1248011103",
-      "title": "Stack-Cairn/LiveAgent — A fully functional AI Agent desktop client that supports Webui access and can be creatively customized and expanded!",
-      "url": "https://github.com/Stack-Cairn/LiveAgent",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-05-24T04:22:22Z",
-      "tldr": "LiveAgent is an open-source desktop client with a WebUI for running and customizing AI agents.",
-      "whyItMatters": "Could serve as a lightweight self-hosted control panel for checking on or steering agents from another device.",
-      "category": "tooling",
-      "tags": [
-        "desktop-client",
-        "webui",
-        "remote-control"
-      ],
-      "entities": [
-        "Stack-Cairn"
-      ],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Try Stack-Cairn/LiveAgent's WebUI as a remote dashboard for monitoring agent runs away from your main machine.",
-      "score": 1660
-    },
-    {
-      "id": "gh-1270272670",
-      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
-      "url": "https://github.com/larlarua/AutoCVE",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-06-15T14:50:47Z",
-      "tldr": "AutoCVE is an agent-driven pipeline that finds, verifies, and writes reports for CVEs in source code.",
-      "whyItMatters": "Could slot in as an automated security-verification pass before an overnight agent's PR is handed to you for morning review.",
-      "category": "agentic",
-      "tags": [
-        "security",
-        "code-audit",
-        "verification"
-      ],
-      "entities": [
-        "AutoCVE"
-      ],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Clone larlarua/AutoCVE and run it against your repo's diff as a pre-merge check.",
-      "score": 1248
+      "tryThis": "Install Javis603/token-monitor and point it at your Claude Code and Codex accounts to watch spend in real time.",
+      "score": 1172
     },
     {
       "id": "gh-1247671075",
@@ -721,23 +576,50 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-05-23T16:16:44Z",
-      "tldr": "ongrid is an ops AI agent that diagnoses and fixes infrastructure issues, controllable from Slack, Telegram, Lark or DingTalk.",
-      "whyItMatters": "Gives you chat-based remote control for infra firefighting so you're not tethered to a laptop when something breaks off-hours.",
+      "tldr": "ongrid is an ops AI agent that diagnoses and fixes infrastructure issues, operable from Slack, Telegram, Lark or DingTalk.",
+      "whyItMatters": "A ready chat-bridge pattern for triggering and monitoring agent work from your phone instead of a terminal.",
       "category": "agentic",
       "tags": [
+        "chat-bridge",
         "ops",
-        "chatops",
-        "remote-control"
+        "remote"
       ],
       "entities": [
-        "ongrid"
+        "ongridio"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Deploy ongrid and wire it to Slack or Telegram to triage infra incidents remotely.",
+      "tryThis": "Deploy ongridio/ongrid and wire it to Slack or Telegram to trigger and monitor infra fixes remotely.",
       "score": 610
+    },
+    {
+      "id": "hn-49173984",
+      "title": "Show HN: Maple-Preview – Ternary 20B MoE running at 120 tok/s on a iPhone",
+      "url": "https://deepgrove.ai/maple-preview",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-04T19:44:55Z",
+      "tldr": "A Show HN demo runs a ternary 20B MoE model at 120 tok/s directly on an iPhone.",
+      "whyItMatters": "You ship mobile apps — this is a concrete data point on what on-device inference hardware can now handle if you want to bake AI features into your own apps without a server round-trip.",
+      "category": "open-models",
+      "tags": [
+        "on-device",
+        "mobile",
+        "moe",
+        "ternary"
+      ],
+      "entities": [],
+      "models": [
+        "Maple-Preview"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Pull up the Maple-Preview Show HN thread and repo to see if the ternary-MoE approach is reproducible for on-device features in your own iOS builds.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49173984",
+      "score": 161
     },
     {
       "id": "hn-49171766",
@@ -746,13 +628,13 @@
       "source": "Hacker News",
       "sourceKind": "discussion",
       "publishedAt": "2026-08-04T17:08:41Z",
-      "tldr": "Warp's Agent CLI is being discussed on HN as a terminal-native autonomous coding agent.",
-      "whyItMatters": "Another unattended-capable coding CLI worth benchmarking against your Claude Code + worktrees/subagents setup.",
-      "category": "tooling",
+      "tldr": "Warp's Agent CLI is getting discussed on HN as an alternative coding-agent terminal.",
+      "whyItMatters": "Another unattended-agent CLI to weigh against your current Claude Code + worktrees setup if it offers longer-running or less-supervised sessions.",
+      "category": "agentic",
       "tags": [
-        "cli",
+        "agent-cli",
         "coding-agent",
-        "terminal"
+        "warp"
       ],
       "entities": [
         "Warp"
@@ -761,91 +643,111 @@
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Run Warp Agent CLI on a side project and compare its autonomy and PR output against your current Claude Code workflow.",
+      "tryThis": "Skim the Warp Agent CLI thread/docs and compare its unattended-run and PR-review flow against your current Claude Code setup.",
       "discussionUrl": "https://news.ycombinator.com/item?id=49171766",
-      "score": 105
+      "score": 108
     },
     {
-      "id": "hn-49183750",
-      "title": "Oracle Just Halved Its Always Free ARM Limits",
-      "url": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/",
-      "source": "Hacker News",
-      "sourceKind": "discussion",
-      "publishedAt": "2026-08-05T14:46:36Z",
-      "tldr": "Oracle cut its Always Free tier ARM compute limits in half.",
-      "whyItMatters": "If you self-host local model inference or agent sandboxes on Oracle's free ARM VMs, your free capacity just shrank.",
-      "category": "business",
+      "id": "rss-opencode-releases-pencodereleasestagv11814",
+      "title": "v1.18.14",
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.14",
+      "source": "OpenCode releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-05T20:58:55.000Z",
+      "tldr": "OpenCode v1.18.14 simplifies xAI login to a single device-code flow for headless use, auto-retries more transient provider errors, and stops leaking the host directory path to remote workspaces.",
+      "whyItMatters": "These are exactly the rough edges that break unattended remote/headless agent sessions overnight.",
+      "category": "tooling",
       "tags": [
-        "oracle",
-        "free-tier",
-        "arm",
-        "cost"
+        "opencode",
+        "remote",
+        "reliability"
       ],
       "entities": [
-        "Oracle"
+        "OpenCode"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Check your OCI Always Free ARM allocation now and plan a migration or paid bump if you're near the new cap.",
-      "discussionUrl": "https://news.ycombinator.com/item?id=49183750",
-      "score": 72
+      "tryThis": "Update OpenCode to v1.18.14 if you run remote workspaces or have hit provider 5xx failures."
     },
     {
-      "id": "rss-ai-news-molaiissues260804notmuch",
-      "title": "not much happened today",
-      "url": "https://news.smol.ai/issues/26-08-04-not-much/",
-      "source": "AI News",
+      "id": "rss-simon-willison-ccoonheistatomeverything",
+      "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
+      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
+      "source": "Simon Willison",
       "sourceKind": "news",
-      "publishedAt": "2026-08-04T05:44:39.000Z",
-      "tldr": "Roundup: Mistral's Shieldstral (3B, on-device moderation) and DeepGrove's Maple-Preview (20B ternary-weight reasoning model tuned for Mac Mini M4) lead a wave of small open-weight releases alongside Pokee-Isaac 28B (10M context, single-GPU).",
-      "whyItMatters": "Shieldstral and Maple-Preview are small/quantized enough to run locally, giving free options for a background-tier model instead of paying API rates.",
-      "category": "open-models",
+      "publishedAt": "2026-08-05T19:42:38.000Z",
+      "tldr": "Simon Willison had Claude Fable 5 in Claude Code for web one-shot an entire playable game from a 4-year-old tweet, and posted the repo.",
+      "whyItMatters": "A concrete demo of how far a single unattended prompt-to-PR run can get on a self-contained project — the exact workflow you're optimizing for.",
+      "category": "agentic",
       "tags": [
-        "open-weights",
-        "local-models",
-        "cost"
+        "claude-code",
+        "one-shot",
+        "game-dev",
+        "demo"
       ],
       "entities": [
-        "Mistral AI",
-        "DeepGrove AI",
-        "Pokee AI"
+        "Anthropic",
+        "Claude Code"
       ],
       "models": [
-        "Shieldstral",
-        "Maple-Preview",
-        "Pokee-Isaac-28B"
+        "Claude Fable 5"
       ],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Pull Shieldstral or Maple-Preview weights and try one as your local/background-tier model in a router setup."
+      "tryThis": "Try Claude Code for web with Claude Fable 5 on a small scoped, self-contained feature to gauge one-shot PR quality before trusting it on real backlog items."
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21222",
+      "title": "Claude Code v2.1.222",
+      "url": "https://www.claudeupdates.dev/version/2.1.222",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-04T22:39:48.000Z",
+      "tldr": "Claude Code v2.1.222 shipped with 16 fixes and 3 improvements.",
+      "whyItMatters": "It's the tool you run unattended every night, so bug fixes in this exact build can change whether your overnight runs behave.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "release",
+        "update"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 2,
+      "actionability": 2,
+      "hasFailureReport": false,
+      "tryThis": "Run `claude update` (or check `claude --version`) to pick up v2.1.222 before your next overnight run."
     }
   ],
   "clusters": [
     {
       "id": "c1",
-      "title": "Think/act/prove verification for Claude Code",
-      "summary": "Two separate repos this cycle package the same completion-evidence-verification workflow so an agent (Opus or otherwise) proves its work before calling a task done.",
+      "title": "Claude Code 2.1.222 patches worktree and hook bugs",
+      "summary": "Same release covered by two feeds: fixes subagents escaping worktree isolation into the main checkout and PreToolUse auto-allow hooks being bypassed in background tasks.",
+      "itemIds": [
+        "rss-claude-code-changelog-ecomdocsenchangelog21222",
+        "rss-claude-updates-deupdatesdevversion21222"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Fable's think/act/prove procedure, made portable",
+      "summary": "Two separate repos distill Claude Fable 5's completion/evidence/verification workflow into reusable skills so other models (including Opus) self-verify before declaring a task finished.",
       "itemIds": [
         "gh-1291544092",
         "gh-1268946118"
       ]
     },
     {
-      "id": "c2",
-      "title": "Maple-Preview on-device model",
-      "summary": "The same ternary 20B MoE model shows up as both a raw iPhone inference demo and part of a small-open-weights roundup tuning it for Mac Mini M4.",
-      "itemIds": [
-        "hn-49173984",
-        "rss-ai-news-molaiissues260804notmuch"
-      ]
-    },
-    {
       "id": "c3",
-      "title": "Simon Willison's LLM CLI stack update",
-      "summary": "LLM 0.32 and its llm-anthropic 0.26 plugin shipped together, adding reasoning traces, a unified server-side tool interface, and new Claude model IDs.",
+      "title": "Willison's llm CLI ecosystem updates",
+      "summary": "llm 0.32 and its llm-anthropic 0.26 plugin both landed this cycle, adding reasoning traces, server-side tools, and Fable/Sonnet/Opus 5 support to the free scripting harness.",
       "itemIds": [
         "rss-simon-willison-leaseofllmatomeverything",
         "rss-simon-willison-manthropicatomeverything"
@@ -853,12 +755,12 @@
     }
   ],
   "cost": {
-    "inputTokens": 14,
-    "outputTokens": 57535,
-    "usd": 1.3859,
+    "inputTokens": 20,
+    "outputTokens": 50197,
+    "usd": 1.3149,
     "model": "claude-sonnet-5",
     "calls": 6,
     "billing": "subscription"
   },
-  "contentVersion": 2
+  "contentVersion": 3
 }
