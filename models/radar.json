@@ -1,7 +1,45 @@
 {
-  "contentVersion": 13,
-  "generatedAt": "2026-08-01T18:59:21.639Z",
+  "contentVersion": 14,
+  "generatedAt": "2026-08-05T11:07:30.155Z",
   "models": [
+    {
+      "id": "lfm2-5-2-6b",
+      "name": "LFM2.5-2.6B",
+      "vendor": "Liquid AI",
+      "openness": "open-weights",
+      "license": "unknown",
+      "contextTokens": 131072,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-05T11:07:30.155Z",
+      "timeline": [
+        {
+          "at": "2026-08-05T11:07:30.155Z",
+          "what": "Liquid AI released LFM2.5-2.6B, a 2.69B-parameter tool-calling model with 128K context that runs at 30 tok/s on a phone (under 2.5GB RAM as a 1.67GB Q4_K_M GGUF) and already works in llama.cpp.",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfn9vc/a_26b_model_with_tool_calling_and_128k_context/"
+        }
+      ]
+    },
+    {
+      "id": "maple-preview",
+      "name": "Maple-Preview",
+      "vendor": "Deepgrove",
+      "openness": "unknown",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "preview",
+      "firstSeenAt": "2026-08-05T11:07:30.155Z",
+      "timeline": [
+        {
+          "at": "2026-08-05T11:07:30.155Z",
+          "what": "Deepgrove showed Maple-Preview, a ternary 20B-parameter MoE model, running at 120 tok/s on an iPhone.",
+          "url": "https://deepgrove.ai/maple-preview"
+        }
+      ]
+    },
     {
       "id": "gpt-5.6",
       "name": "GPT-5.6",

@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-05T05:41:51.435Z",
-  "contentVersion": 12,
+  "generatedAt": "2026-08-05T11:17:52.123Z",
+  "contentVersion": 13,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,81 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-05T05:41:51.435Z"
+      "updatedAt": "2026-08-05T11:17:52.123Z"
+    },
+    {
+      "id": "ai-2e63953bef",
+      "slug": "rust-programming-language-project-adopts-formal-llm-policy",
+      "lane": "ai",
+      "title": "Rust Programming Language Project Adopts Formal LLM Policy",
+      "summary": "The rust-lang/rust project has adopted a policy governing how large language models can be used in contributions to the Rust compiler and ecosystem, according to a post surfaced on Hacker News. The specific rules of the policy weren't detailed in the source, but the move puts one of the most widely used open-source toolchains on record with explicit ground rules for AI-assisted contributions.",
+      "whyItMatters": "As LLM-assisted coding becomes routine, how flagship open-source infrastructure projects like Rust handle AI contributions could set a template other major codebases follow.",
+      "whatToWatch": [
+        "Whether other major open-source projects adopt similar formal LLM policies",
+        "How the Rust contributor community reacts to the policy"
+      ],
+      "questions": [
+        "What specific restrictions or requirements does the policy impose on LLM-generated code or LLM-assisted pull requests?"
+      ],
+      "sources": [
+        {
+          "title": "Rust-lang/rust is adopting an LLM policy",
+          "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-05T05:52:24Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T05:52:24Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "imageUrl": "https://www.rust-lang.org/static/images/rust-social-wide.jpg",
+      "badge": "Policy",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-d88745754c",
+      "slug": "zero-mem-a-proposed-zero-token-approach-to-llm-agent-memory",
+      "lane": "ai",
+      "title": "Zero-Mem: A Proposed Zero-Token Approach to LLM Agent Memory",
+      "summary": "A paper posted to arXiv titled \"Zero-Mem: Zero-Token Memory Operations for LLM Agents\" proposes a method for agents to read and write memory without consuming additional tokens from the context window, according to a submission surfaced on Hacker News. No further detail on the technique or benchmark results was included in the source.",
+      "whyItMatters": "Token-cheap memory for agents would address one of the biggest cost and context-window bottlenecks in running long-lived AI agents in production.",
+      "whatToWatch": [
+        "Whether agent framework builders test or adopt the technique",
+        "Peer reaction once the paper circulates more broadly"
+      ],
+      "questions": [
+        "How does the \"zero-token\" memory mechanism actually work, and what tradeoffs does it introduce in accuracy or latency?"
+      ],
+      "sources": [
+        {
+          "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+          "url": "https://arxiv.org/abs/2607.29377",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-05T04:36:44Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T04:36:44Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+      "badge": "Research",
+      "trendScore": 48,
+      "confidence": "low"
     },
     {
       "id": "ai-977f60f7e5",
       "slug": "openai-publishes-third-party-cyber-evaluations-of-its-models",
       "lane": "ai",
-      "title": "OpenAI publishes third-party cyber capability evaluations of its models",
-      "summary": "OpenAI released information on third-party evaluations assessing cyber-related capabilities of its models, part of its ongoing external safety-testing efforts. The publisher's post doesn't specify which models were tested or what the evaluations found beyond the announcement itself.",
-      "whyItMatters": "Independent cyber capability evaluations are a core piece of how frontier labs and regulators judge dual-use AI risk, so any new disclosure here feeds directly into the safety-framework debate.",
+      "title": "OpenAI Publishes Third-Party Cybersecurity Evaluations of Its Models",
+      "summary": "OpenAI has posted a piece describing third-party cyber evaluations involving its models, according to the company's own site. The post confirms external assessments took place but doesn't detail specific findings beyond that.",
+      "whyItMatters": "Independent evaluation of frontier models' cyber-offense capability is central to the AI safety and national-security debate, and OpenAI publishing such evaluations is notable regardless of the results.",
       "whatToWatch": [
-        "Whether OpenAI or the third-party evaluators release detailed findings",
-        "Whether other labs match this with their own third-party cyber evaluation disclosures"
+        "Whether detailed findings from the evaluations are released",
+        "How regulators or security researchers respond"
       ],
       "questions": [
-        "Which specific models were evaluated and by whom?",
-        "Did any evaluation results trigger new mitigations or risk-threshold flags?"
+        "Which third parties conducted the evaluations, and what capabilities did they specifically test?"
       ],
       "sources": [
         {
@@ -150,26 +209,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T19:00:00.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6RSPaWdKwEvT9xWx4IjQy2/a334438e4daf9f62c24541c00c212749/third-party-cyber-evaluations_16x9.png?w=1600&h=900&fit=fill",
       "badge": "Safety",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "medium"
     },
     {
       "id": "ai-8587445849",
       "slug": "megakernels-the-gpu-inference-optimization-trend-that-won-t-stay-dead",
       "lane": "ai",
-      "title": "Megakernels: the GPU inference optimization trend that won't stay dead",
-      "summary": "Latent Space's AINews roundup flags renewed engineering interest in 'megakernels,' a GPU kernel-fusion approach to speeding up LLM inference, after the technique had reportedly been written off by some in the field. The digest format means specifics beyond the headline framing aren't detailed here.",
-      "whyItMatters": "Inference-speed engineering tricks like kernel fusion directly affect the cost and latency of running LLMs at scale, which shapes deployment economics across the industry.",
+      "title": "AI News Roundup: Megakernels Make a Comeback for LLM Inference",
+      "summary": "Latent Space's \"AINews\" newsletter, in an edition headlined \"Megakernels are so dead and so back,\" covers renewed interest in megakernels — a GPU kernel-fusion technique for speeding up model inference. The item is part of a broader news roundup rather than a single standalone announcement.",
+      "whyItMatters": "Inference-speed engineering approaches like megakernels directly affect the cost and latency of running frontier models at scale, shaping competition among AI infrastructure providers.",
       "whatToWatch": [
-        "Whether inference providers publish benchmarks adopting megakernel techniques",
-        "Further technical write-ups explaining the renewed interest"
+        "Which labs or inference providers publicly adopt or benchmark megakernel techniques next"
       ],
       "questions": [
-        "What specifically revived interest in megakernels after they were seen as declining?",
-        "Which projects or labs are driving the approach forward?"
+        "What specifically revived interest in megakernels, and which teams are behind the renewed work?"
       ],
       "sources": [
         {
@@ -181,26 +238,55 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T01:21:47.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Gpou!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHNw6xyYaUAA_BVO.jpg",
-      "badge": "Engineering",
-      "trendScore": 43,
+      "badge": "Analysis",
+      "trendScore": 39,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-0779ce4614",
+      "slug": "flowise-a-visual-llm-app-building-tool-is-shutting-down",
+      "lane": "ai",
+      "title": "Flowise, a Visual LLM App-Building Tool, Is Shutting Down",
+      "summary": "Flowise, a tool for visually building LLM and agent workflows, is shutting down, according to a post surfaced on Hacker News. No further detail on the reasons or timeline was included in the source.",
+      "whyItMatters": "The shutdown underscores the tough economics facing no-code/low-code AI tooling startups as the agent-building market consolidates.",
+      "whatToWatch": [
+        "What migration path, if any, is offered to existing Flowise users",
+        "Whether an open-source version continues under community maintenance"
+      ],
+      "questions": [
+        "What led to the shutdown, and will any part of the codebase remain available?"
+      ],
+      "sources": [
+        {
+          "title": "Flowise is shutting down",
+          "url": "https://flowiseai.com/sunset",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-05T00:02:40Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T00:02:40Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "imageUrl": "https://remarkable-smakager-ddb2b7.netlify.app/opengraph-image.png?9ccfc0cd89ea0cda",
+      "badge": "Shutdown",
+      "trendScore": 39,
       "confidence": "low"
     },
     {
       "id": "ai-9ca725e460",
       "slug": "latent-space-breaks-down-chatgpt-work-openai-s-push-toward-a-billion-u",
       "lane": "ai",
-      "title": "Analysis: unpacking ChatGPT Work as 'the agent for a billion users'",
-      "summary": "Latent Space published an analysis examining OpenAI's ChatGPT Work product, framing it as OpenAI's attempt to build an agent capable of serving a billion users. The piece is an outside analysis rather than an OpenAI announcement, and specifics of the product beyond that framing aren't detailed in the source.",
-      "whyItMatters": "How ChatGPT Work is positioned as an agent product matters for OpenAI's push into enterprise and workplace AI, an arena also contested by Microsoft and Google.",
+      "title": "Analysis: Unpacking ChatGPT Work as 'the Agent for a Billion Users'",
+      "summary": "Latent Space published an analysis piece examining OpenAI's ChatGPT Work product, framing it as an agent aimed at reaching a billion users. The piece is commentary/analysis rather than a new OpenAI announcement.",
+      "whyItMatters": "ChatGPT Work represents OpenAI's push into enterprise and workplace agent products, putting it in direct competition with Microsoft Copilot and Google's Gemini-based Workspace tools.",
       "whatToWatch": [
-        "Any adoption or usage figures OpenAI shares for ChatGPT Work",
-        "Competitive responses from Microsoft Copilot or Google Workspace AI"
+        "Adoption or rollout figures for ChatGPT Work",
+        "Competitive responses from Microsoft and Google"
       ],
       "questions": [
-        "What distinguishes ChatGPT Work from prior ChatGPT enterprise offerings?",
-        "Is 'agent for a billion users' OpenAI's own framing or the analyst's?"
+        "What capabilities differentiate ChatGPT Work from other ChatGPT tiers, and how large is current uptake?"
       ],
       "sources": [
         {
@@ -212,26 +298,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T18:20:14.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Lavj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f4e59a2-820f-4225-abfd-6720ef85df8e_1315x1196.png",
       "badge": "Analysis",
-      "trendScore": 43,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-a1ab18b7db",
       "slug": "homebench-a-new-open-source-benchmark-for-local-llms",
       "lane": "ai",
-      "title": "Homebench offers a benchmark suite for locally run LLMs",
-      "summary": "A new open-source project called Homebench, shared on Hacker News, benchmarks locally run LLMs across speed, memory usage, and output quality. It's aimed at users running models on their own hardware rather than through cloud APIs.",
-      "whyItMatters": "Standardized local-LLM benchmarks help a growing community of hobbyists and developers compare hardware and open-weight models as home and on-device inference becomes more practical.",
+      "title": "Homebench: New Open-Source Benchmark for Local LLMs",
+      "summary": "A new project called Homebench, posted to GitHub and surfaced on Hacker News, benchmarks locally run LLMs on speed, memory usage, and output quality. The methodology wasn't detailed beyond the project's stated focus.",
+      "whyItMatters": "As capable models become runnable on consumer hardware, standardized local benchmarking helps developers compare tradeoffs across models, quantizations, and hardware setups.",
       "whatToWatch": [
-        "Community adoption and contributed benchmark results",
-        "Which models and hardware configurations get the most coverage"
+        "Community adoption and published comparison results across popular local models"
       ],
       "questions": [
-        "What hardware and model families does Homebench currently support?",
-        "How does it quantify 'quality' compared to speed and memory metrics?"
+        "Which hardware and models does Homebench currently support, and how does it define output \"quality\"?"
       ],
       "sources": [
         {
@@ -243,23 +327,23 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T09:48:43Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
-      "badge": "Open Source",
-      "trendScore": 42,
+      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-2a0a276054",
       "slug": "google-deepmind-recaps-its-july-2026-ai-announcements",
       "lane": "ai",
-      "title": "Google recaps its July 2026 AI announcements",
-      "summary": "Google DeepMind published its regular monthly roundup summarizing the AI news and product announcements it made in July 2026. The post is a digest rather than a single new announcement, so specific items aren't broken out here.",
-      "whyItMatters": "Monthly recaps are a useful gauge of Google's shipping cadence and breadth across its AI product lines, even when no single item stands out.",
+      "title": "Google Recaps Its AI Announcements from July 2026",
+      "summary": "Google DeepMind published a roundup post summarizing the AI news and product announcements it made in July 2026. The post is a monthly recap rather than a single new announcement.",
+      "whyItMatters": "Monthly recaps offer a window into the pace and breadth of Google's AI shipping cadence relative to rivals like OpenAI and Anthropic.",
       "whatToWatch": [
-        "Individual July announcements getting further coverage or follow-up"
+        "Google's next monthly recap",
+        "Whether any July items move from preview to general availability"
       ],
       "questions": [
-        "Which specific products or features does the July recap highlight?"
+        "Which specific July announcements does the recap highlight, and how many are shipped products versus research previews?"
       ],
       "sources": [
         {
@@ -271,26 +355,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T13:00:00.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
       "badge": "Recap",
-      "trendScore": 41,
+      "trendScore": 36,
       "confidence": "medium"
     },
     {
       "id": "ai-7e39e4ebbb",
       "slug": "new-study-examines-why-llms-struggle-at-tabular-prediction",
       "lane": "ai",
-      "title": "Study examines why large language models struggle with tabular prediction",
-      "summary": "A research paper circulating on Hacker News investigates why LLMs tend to underperform on tabular-data prediction tasks compared to traditional machine learning methods, a long-known weak spot. The title and discussion don't provide further specifics on the paper's methodology or proposed fixes.",
-      "whyItMatters": "Tabular data underlies much of enterprise ML — finance, operations, forecasting — so understanding where LLMs fall short there matters for realistic deployment decisions.",
+      "title": "Study Examines Why LLMs Struggle at Tabular Data Prediction",
+      "summary": "A paper titled \"Why Large Language Models Fail at Tabular Prediction,\" surfaced on Hacker News via arXiv, investigates why LLMs underperform on tabular prediction tasks compared with specialized methods. Specific findings weren't detailed in the source beyond the title.",
+      "whyItMatters": "Tabular data underlies much of enterprise analytics, so understanding where LLMs fall short matters for how far general-purpose models can realistically replace specialized ML in business settings.",
       "whatToWatch": [
-        "Responses from the ML research community",
-        "Whether the findings influence enterprise tooling or model choice for tabular tasks"
+        "Whether the paper's findings influence future model training approaches for structured data"
       ],
       "questions": [
-        "What specific failure modes does the paper identify?",
-        "Does it propose any architectural or training fixes?"
+        "What specific failure modes does the paper identify, and does it propose fixes or architectural changes?"
       ],
       "sources": [
         {
@@ -302,26 +384,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T10:07:06Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
       "badge": "Research",
-      "trendScore": 38,
+      "trendScore": 34,
       "confidence": "low"
     },
     {
       "id": "ai-1a17d34b3d",
       "slug": "mistral-ai-introduces-shieldstral",
       "lane": "ai",
-      "title": "Mistral AI introduces Shieldstral",
-      "summary": "Mistral AI announced a new model called Shieldstral. The announcement itself doesn't specify the model's exact purpose, capabilities, or availability beyond the introduction.",
-      "whyItMatters": "New releases from Mistral affect the pace and shape of competition in the open-weight model ecosystem, particularly against other labs building out safety- and guardrail-oriented tooling.",
+      "title": "Mistral AI Introduces Shieldstral",
+      "summary": "Mistral AI introduced a new model called Shieldstral, according to a post on the company's site. The name follows Mistral's \"-stral\" convention used for prior task-specific releases, but the source doesn't specify its exact intended use case.",
+      "whyItMatters": "Mistral has increasingly used dedicated, task-specific model releases to compete with larger labs' general-purpose offerings, and a \"Shield\"-branded model likely targets safety or moderation use cases that rivals are also racing to address.",
       "whatToWatch": [
-        "A technical report or benchmark release detailing Shieldstral's purpose and performance",
-        "Whether weights or an API are made publicly available"
+        "Official details on Shieldstral's intended use case and benchmarks",
+        "Availability — API access versus open weights"
       ],
       "questions": [
-        "What specific function does Shieldstral serve — moderation, guardrails, something else?",
-        "Is it open-weight or accessible only via Mistral's API?"
+        "What specific problem is Shieldstral designed to solve, and is it open-weight?"
       ],
       "sources": [
         {
@@ -333,26 +414,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T12:00:26.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
       "badge": "Launch",
-      "trendScore": 36,
+      "trendScore": 32,
       "confidence": "medium"
     },
     {
       "id": "ai-b274d6785e",
       "slug": "openai-adds-new-learning-and-teaching-tools-to-chatgpt-work-and-codex",
       "lane": "ai",
-      "title": "OpenAI adds new learning and teaching features to ChatGPT Work and Codex",
-      "summary": "OpenAI announced new capabilities aimed at learning and teaching use cases, built into its ChatGPT Work and Codex products. The announcement doesn't detail the specific features beyond this framing.",
-      "whyItMatters": "Extending workplace and coding tools into education signals OpenAI broadening its addressable market beyond enterprise productivity into academic and training settings.",
+      "title": "OpenAI Details New Learning and Teaching Features for ChatGPT Work and Codex",
+      "summary": "OpenAI published a post outlining new ways to learn and teach using ChatGPT Work and Codex, according to the company's site. The post frames these as educational applications of its workplace and coding-agent products.",
+      "whyItMatters": "OpenAI continues extending ChatGPT and Codex beyond productivity use into education, an area where it competes with Google and other AI-in-education efforts.",
       "whatToWatch": [
-        "Rollout details and availability for educators or students",
-        "Reception from schools or academic institutions"
+        "Specific feature rollouts or educational partnerships tied to this announcement"
       ],
       "questions": [
-        "What specific features are being added for learning and teaching?",
-        "Are these aimed at individual educators, institutions, or both?"
+        "What concrete new features were introduced, and are they broadly available or limited to pilots?"
       ],
       "sources": [
         {
@@ -364,103 +443,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T00:00:00.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "updatedAt": "2026-08-05T11:17:52.123Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2ucoEDJhFKCnvweCx2DR4/d28e7c8e8acabba775c448de631a1276/16_9_SEO_Blog.jpg?w=1600&h=900&fit=fill",
       "badge": "Product",
-      "trendScore": 35,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-3e9781fff5",
-      "slug": "essay-argues-llms-disproportionately-reward-existing-expertise",
-      "lane": "ai",
-      "title": "Blog post argues LLMs reward existing expertise",
-      "summary": "A widely discussed blog post contends that large language models produce better results for users who already have domain expertise, since expert users can prompt, verify, and correct outputs more effectively. The post is an independent opinion piece rather than a research study.",
-      "whyItMatters": "It feeds an ongoing debate about whether AI tools democratize skill or instead widen the gap between novice and expert users, which matters for how organizations plan AI training and adoption.",
-      "whatToWatch": [
-        "Community responses or rebuttals to the argument"
-      ],
-      "questions": [
-        "What evidence or examples does the post rely on?",
-        "Does the claim hold across domains, or mainly for tasks like coding?"
-      ],
-      "sources": [
-        {
-          "title": "LLMs reward expertise",
-          "url": "https://www.seangoedecke.com/llms-reward-expertise/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-03T21:13:53Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T21:13:53Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
-      "imageUrl": "https://www.seangoedecke.com/og-image.jpg",
-      "badge": "Opinion",
       "trendScore": 31,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-228546f1ca",
-      "slug": "qwen-releases-new-open-weight-models-3-8-max-2-4t-and-27b-aimed-at-cod",
-      "lane": "ai",
-      "title": "Qwen releases new open-weight models: 3.8 Max and 27B",
-      "summary": "Latent Space's AINews roundup covers the release of Qwen 3.8, including a large 'Max' variant reported at 2.4T parameters and a smaller 27B model, positioned as open-weight models for coding and collaborative 'cowork' use cases.",
-      "whyItMatters": "It continues the rapid cadence of open-weight model releases challenging closed, Western-built models, especially in coding, and keeps pressure on pricing and performance benchmarks industry-wide.",
-      "whatToWatch": [
-        "Independent benchmarks validating the performance claims",
-        "Licensing terms and commercial usability of the weights",
-        "Adoption by developers and inference providers"
-      ],
-      "questions": [
-        "Are the weights openly licensed for commercial use?",
-        "How does the 2.4T-parameter Max variant compare in real-world efficiency to competing dense or MoE models?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
-          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-04T03:49:14.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-04T03:49:14.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!W0RB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOw1F2ebgAAkpJJ.jpg",
-      "badge": "Open Weights",
-      "trendScore": 30,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-2163b41330",
-      "slug": "openai-publishes-pointed-critique-apple-is-getting-this-wrong",
-      "lane": "ai",
-      "title": "OpenAI: \"Apple is getting this wrong\"",
-      "summary": "OpenAI published a post titled 'Apple is getting this wrong,' apparently critiquing some aspect of Apple's approach to AI. The specific subject of the critique isn't detailed beyond the title.",
-      "whyItMatters": "Public friction between OpenAI and Apple — partners in bringing ChatGPT to Apple's platforms — is notable given how much the competitive and partnership dynamics between the two shape how AI reaches everyday consumers.",
-      "whatToWatch": [
-        "Any response from Apple",
-        "Whether this signals strain in the OpenAI-Apple partnership or is a broader industry critique"
-      ],
-      "questions": [
-        "What specifically is OpenAI criticizing — Apple's AI strategy, on-device approach, or something else?",
-        "Is this tied to their existing partnership or a general commentary piece?"
-      ],
-      "sources": [
-        {
-          "title": "Apple is getting this wrong",
-          "url": "https://openai.com/index/apple-is-getting-this-wrong",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-03T22:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T22:00:00.000Z",
-      "updatedAt": "2026-08-05T05:41:51.435Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3LMWP6Zq4rgiX3gVyxKiX/667973a65cc5111e602f68338b9f1c87/Frame__13_.png?w=1600&h=900&fit=fill",
-      "badge": "Commentary",
-      "trendScore": 29,
       "confidence": "medium"
     }
   ]
