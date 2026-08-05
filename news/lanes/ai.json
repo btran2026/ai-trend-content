@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-04T23:11:41.935Z",
-  "contentVersion": 11,
+  "generatedAt": "2026-08-05T05:41:51.435Z",
+  "contentVersion": 12,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-04T23:11:41.935Z"
+      "updatedAt": "2026-08-05T05:41:51.435Z"
     },
     {
       "id": "ai-977f60f7e5",
       "slug": "openai-publishes-third-party-cyber-evaluations-of-its-models",
       "lane": "ai",
-      "title": "OpenAI Publishes Third-Party Cyber Evaluations of Its Models",
-      "summary": "OpenAI released material describing third-party cybersecurity evaluations conducted on its models, according to a post on its own site. The available details don't specify which evaluators were involved or what findings resulted, but the move fits OpenAI's pattern of disclosing outside safety testing.",
-      "whyItMatters": "Independent security testing of frontier models is a key input into how regulators, enterprises, and rivals judge the risk profile of a lab's systems.",
+      "title": "OpenAI publishes third-party cyber capability evaluations of its models",
+      "summary": "OpenAI released information on third-party evaluations assessing cyber-related capabilities of its models, part of its ongoing external safety-testing efforts. The publisher's post doesn't specify which models were tested or what the evaluations found beyond the announcement itself.",
+      "whyItMatters": "Independent cyber capability evaluations are a core piece of how frontier labs and regulators judge dual-use AI risk, so any new disclosure here feeds directly into the safety-framework debate.",
       "whatToWatch": [
-        "Which third-party firms conducted the evaluations and what they found",
-        "Whether other frontier labs match this disclosure with their own"
+        "Whether OpenAI or the third-party evaluators release detailed findings",
+        "Whether other labs match this with their own third-party cyber evaluation disclosures"
       ],
       "questions": [
-        "What specific cyber risks or capabilities were tested?",
-        "Were any significant vulnerabilities identified?"
+        "Which specific models were evaluated and by whom?",
+        "Did any evaluation results trigger new mitigations or risk-threshold flags?"
       ],
       "sources": [
         {
@@ -150,26 +150,57 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T19:00:00.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6RSPaWdKwEvT9xWx4IjQy2/a334438e4daf9f62c24541c00c212749/third-party-cyber-evaluations_16x9.png?w=1600&h=900&fit=fill",
       "badge": "Safety",
-      "trendScore": 52,
+      "trendScore": 46,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-8587445849",
+      "slug": "megakernels-the-gpu-inference-optimization-trend-that-won-t-stay-dead",
+      "lane": "ai",
+      "title": "Megakernels: the GPU inference optimization trend that won't stay dead",
+      "summary": "Latent Space's AINews roundup flags renewed engineering interest in 'megakernels,' a GPU kernel-fusion approach to speeding up LLM inference, after the technique had reportedly been written off by some in the field. The digest format means specifics beyond the headline framing aren't detailed here.",
+      "whyItMatters": "Inference-speed engineering tricks like kernel fusion directly affect the cost and latency of running LLMs at scale, which shapes deployment economics across the industry.",
+      "whatToWatch": [
+        "Whether inference providers publish benchmarks adopting megakernel techniques",
+        "Further technical write-ups explaining the renewed interest"
+      ],
+      "questions": [
+        "What specifically revived interest in megakernels after they were seen as declining?",
+        "Which projects or labs are driving the approach forward?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-05T01:21:47.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T01:21:47.000Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!Gpou!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHNw6xyYaUAA_BVO.jpg",
+      "badge": "Engineering",
+      "trendScore": 43,
+      "confidence": "low"
     },
     {
       "id": "ai-9ca725e460",
       "slug": "latent-space-breaks-down-chatgpt-work-openai-s-push-toward-a-billion-u",
       "lane": "ai",
-      "title": "Latent Space Breaks Down ChatGPT Work, OpenAI's Push Toward a Billion-User Agent",
-      "summary": "Latent Space published an analysis unpacking ChatGPT Work, describing it as an agent OpenAI is positioning for a billion users. The piece examines OpenAI's strategy for turning ChatGPT into a work-focused agent product, though specifics beyond the framing weren't included in what's available here.",
-      "whyItMatters": "A work-oriented agent aimed at billion-user scale would be a major competitive escalation against Microsoft Copilot, Google Workspace, and other enterprise AI incumbents.",
+      "title": "Analysis: unpacking ChatGPT Work as 'the agent for a billion users'",
+      "summary": "Latent Space published an analysis examining OpenAI's ChatGPT Work product, framing it as OpenAI's attempt to build an agent capable of serving a billion users. The piece is an outside analysis rather than an OpenAI announcement, and specifics of the product beyond that framing aren't detailed in the source.",
+      "whyItMatters": "How ChatGPT Work is positioned as an agent product matters for OpenAI's push into enterprise and workplace AI, an arena also contested by Microsoft and Google.",
       "whatToWatch": [
-        "Further detail on ChatGPT Work's features and rollout",
-        "How enterprise customers and competitors respond"
+        "Any adoption or usage figures OpenAI shares for ChatGPT Work",
+        "Competitive responses from Microsoft Copilot or Google Workspace AI"
       ],
       "questions": [
-        "How does ChatGPT Work differ from ChatGPT Enterprise?",
-        "What does OpenAI mean by targeting a billion users?"
+        "What distinguishes ChatGPT Work from prior ChatGPT enterprise offerings?",
+        "Is 'agent for a billion users' OpenAI's own framing or the analyst's?"
       ],
       "sources": [
         {
@@ -181,25 +212,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T18:20:14.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Lavj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f4e59a2-820f-4225-abfd-6720ef85df8e_1315x1196.png",
       "badge": "Analysis",
-      "trendScore": 48,
+      "trendScore": 43,
       "confidence": "low"
     },
     {
       "id": "ai-a1ab18b7db",
       "slug": "homebench-a-new-open-source-benchmark-for-local-llms",
       "lane": "ai",
-      "title": "New Open-Source Tool 'Homebench' Benchmarks Local LLMs on Consumer Hardware",
-      "summary": "A project called Homebench, shared on Hacker News, benchmarks locally run LLMs for speed, memory usage, and output quality. It's designed to help users compare how different models actually perform on their own machines rather than relying on published specs.",
-      "whyItMatters": "As open-weight models multiply, practical local-performance benchmarking helps developers and hobbyists pick the right model for their hardware instead of guessing.",
+      "title": "Homebench offers a benchmark suite for locally run LLMs",
+      "summary": "A new open-source project called Homebench, shared on Hacker News, benchmarks locally run LLMs across speed, memory usage, and output quality. It's aimed at users running models on their own hardware rather than through cloud APIs.",
+      "whyItMatters": "Standardized local-LLM benchmarks help a growing community of hobbyists and developers compare hardware and open-weight models as home and on-device inference becomes more practical.",
       "whatToWatch": [
         "Community adoption and contributed benchmark results",
-        "Whether it gets folded into broader local-LLM leaderboards"
+        "Which models and hardware configurations get the most coverage"
       ],
       "questions": [
-        "Which models and hardware configurations are currently supported?"
+        "What hardware and model families does Homebench currently support?",
+        "How does it quantify 'quality' compared to speed and memory metrics?"
       ],
       "sources": [
         {
@@ -211,22 +243,23 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T09:48:43Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
-      "trendScore": 48,
+      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "badge": "Open Source",
+      "trendScore": 42,
       "confidence": "low"
     },
     {
       "id": "ai-2a0a276054",
       "slug": "google-deepmind-recaps-its-july-2026-ai-announcements",
       "lane": "ai",
-      "title": "Google DeepMind Recaps Its July 2026 AI Announcements",
-      "summary": "Google DeepMind published a roundup summarizing the AI news and product announcements it made during July 2026. It's a monthly digest rather than a single new disclosure, gathering prior updates in one place.",
-      "whyItMatters": "These recaps give a quick read on Google's cumulative AI momentum across products and research, useful for gauging its competitive position relative to OpenAI and other labs.",
+      "title": "Google recaps its July 2026 AI announcements",
+      "summary": "Google DeepMind published its regular monthly roundup summarizing the AI news and product announcements it made in July 2026. The post is a digest rather than a single new announcement, so specific items aren't broken out here.",
+      "whyItMatters": "Monthly recaps are a useful gauge of Google's shipping cadence and breadth across its AI product lines, even when no single item stands out.",
       "whatToWatch": [
-        "Whether any recapped items get individual follow-up coverage or launches in August"
+        "Individual July announcements getting further coverage or follow-up"
       ],
       "questions": [
-        "Which of the July items will matter most for competitive positioning?"
+        "Which specific products or features does the July recap highlight?"
       ],
       "sources": [
         {
@@ -238,25 +271,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T13:00:00.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
-      "badge": "Roundup",
-      "trendScore": 47,
+      "badge": "Recap",
+      "trendScore": 41,
       "confidence": "medium"
     },
     {
       "id": "ai-7e39e4ebbb",
       "slug": "new-study-examines-why-llms-struggle-at-tabular-prediction",
       "lane": "ai",
-      "title": "Study Examines Why Large Language Models Struggle with Tabular Prediction",
-      "summary": "A paper discussed on Hacker News examines why large language models underperform on tabular-data prediction tasks compared with specialized models. The discussion centers on a known gap between LLMs' strength with text and their weaker fit for structured, tabular data.",
-      "whyItMatters": "Understanding where LLMs fall short on structured data helps enterprises decide when to use LLMs versus traditional machine learning in data-heavy workflows.",
+      "title": "Study examines why large language models struggle with tabular prediction",
+      "summary": "A research paper circulating on Hacker News investigates why LLMs tend to underperform on tabular-data prediction tasks compared to traditional machine learning methods, a long-known weak spot. The title and discussion don't provide further specifics on the paper's methodology or proposed fixes.",
+      "whyItMatters": "Tabular data underlies much of enterprise ML — finance, operations, forecasting — so understanding where LLMs fall short there matters for realistic deployment decisions.",
       "whatToWatch": [
-        "Follow-up research proposing fixes or hybrid LLM/tabular approaches"
+        "Responses from the ML research community",
+        "Whether the findings influence enterprise tooling or model choice for tabular tasks"
       ],
       "questions": [
         "What specific failure modes does the paper identify?",
-        "Do the findings hold across model sizes and architectures?"
+        "Does it propose any architectural or training fixes?"
       ],
       "sources": [
         {
@@ -268,25 +302,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T10:07:06Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
       "badge": "Research",
-      "trendScore": 44,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-1a17d34b3d",
       "slug": "mistral-ai-introduces-shieldstral",
       "lane": "ai",
-      "title": "Mistral AI Introduces Shieldstral, a New Safety-Oriented Model",
-      "summary": "Mistral AI announced Shieldstral, a new addition to its model lineup, according to the company's own post. The name points to a safety, moderation, or guardrail focus, though the announcement excerpt available doesn't detail its technical specifics.",
-      "whyItMatters": "A dedicated safety/moderation model would bolster Mistral's enterprise pitch and shows open-weight labs competing on trust and safety features, not just raw capability.",
+      "title": "Mistral AI introduces Shieldstral",
+      "summary": "Mistral AI announced a new model called Shieldstral. The announcement itself doesn't specify the model's exact purpose, capabilities, or availability beyond the introduction.",
+      "whyItMatters": "New releases from Mistral affect the pace and shape of competition in the open-weight model ecosystem, particularly against other labs building out safety- and guardrail-oriented tooling.",
       "whatToWatch": [
-        "Technical details, benchmarks, and availability (open-weight vs. API-only) as more information emerges"
+        "A technical report or benchmark release detailing Shieldstral's purpose and performance",
+        "Whether weights or an API are made publicly available"
       ],
       "questions": [
-        "What exactly does Shieldstral do — content moderation, jailbreak defense, or something else?",
-        "Will it be released as open weights?"
+        "What specific function does Shieldstral serve — moderation, guardrails, something else?",
+        "Is it open-weight or accessible only via Mistral's API?"
       ],
       "sources": [
         {
@@ -298,26 +333,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T12:00:26.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
       "badge": "Launch",
-      "trendScore": 42,
+      "trendScore": 36,
       "confidence": "medium"
     },
     {
       "id": "ai-b274d6785e",
       "slug": "openai-adds-new-learning-and-teaching-tools-to-chatgpt-work-and-codex",
       "lane": "ai",
-      "title": "OpenAI Rolls Out New Learning and Teaching Features for ChatGPT Work and Codex",
-      "summary": "OpenAI announced new ways to use ChatGPT Work and Codex for learning and teaching, per a post on its site. This extends OpenAI's push to position ChatGPT Work beyond general productivity into education-oriented use.",
-      "whyItMatters": "Education is a major front in the AI assistant race, and tying new features to ChatGPT Work suggests OpenAI wants the product adopted in schools and training programs, not just offices.",
+      "title": "OpenAI adds new learning and teaching features to ChatGPT Work and Codex",
+      "summary": "OpenAI announced new capabilities aimed at learning and teaching use cases, built into its ChatGPT Work and Codex products. The announcement doesn't detail the specific features beyond this framing.",
+      "whyItMatters": "Extending workplace and coding tools into education signals OpenAI broadening its addressable market beyond enterprise productivity into academic and training settings.",
       "whatToWatch": [
-        "Uptake by schools and training programs",
-        "How these features intersect with academic-integrity concerns"
+        "Rollout details and availability for educators or students",
+        "Reception from schools or academic institutions"
       ],
       "questions": [
-        "What specific tools or modes were added?",
-        "How are they priced or licensed for educational use?"
+        "What specific features are being added for learning and teaching?",
+        "Are these aimed at individual educators, institutions, or both?"
       ],
       "sources": [
         {
@@ -329,54 +364,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-04T00:00:00.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2ucoEDJhFKCnvweCx2DR4/d28e7c8e8acabba775c448de631a1276/16_9_SEO_Blog.jpg?w=1600&h=900&fit=fill",
-      "trendScore": 41,
+      "badge": "Product",
+      "trendScore": 35,
       "confidence": "medium"
-    },
-    {
-      "id": "ai-228546f1ca",
-      "slug": "qwen-releases-new-open-weight-models-3-8-max-2-4t-and-27b-aimed-at-cod",
-      "lane": "ai",
-      "title": "Qwen Releases New Open-Weight Models: 3.8 Max (2.4T) and 27B",
-      "summary": "According to a Latent Space AI News roundup, new open-weight Qwen models have shipped — a large 2.4-trillion-parameter 'Max' version alongside a smaller 27B model — aimed at coding and collaborative work use cases.",
-      "whyItMatters": "Continued rapid-fire open-weight releases keep pressure on Western frontier labs and widen the pool of options for developers who want alternatives to closed models.",
-      "whatToWatch": [
-        "Independent benchmarks comparing Qwen 3.8 Max against other coding-focused models"
-      ],
-      "questions": [
-        "How does licensing and availability compare to earlier Qwen releases?",
-        "What benchmarks back up the 'Max' designation?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
-          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-04T03:49:14.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-04T03:49:14.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!W0RB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOw1F2ebgAAkpJJ.jpg",
-      "badge": "Open weights",
-      "trendScore": 36,
-      "confidence": "low"
     },
     {
       "id": "ai-3e9781fff5",
       "slug": "essay-argues-llms-disproportionately-reward-existing-expertise",
       "lane": "ai",
-      "title": "Essay Argues LLMs 'Reward Expertise' in How They Respond to Users",
-      "summary": "A widely discussed essay shared on Hacker News argues that large language models respond differently — and arguably better — to users who demonstrate domain expertise in their prompts. The piece has stirred discussion about how a user's background knowledge and prompting skill shape output quality.",
-      "whyItMatters": "If accurate, this raises equity questions about AI's benefits, since novice users may systematically get weaker results than experts asking the same underlying question.",
+      "title": "Blog post argues LLMs reward existing expertise",
+      "summary": "A widely discussed blog post contends that large language models produce better results for users who already have domain expertise, since expert users can prompt, verify, and correct outputs more effectively. The post is an independent opinion piece rather than a research study.",
+      "whyItMatters": "It feeds an ongoing debate about whether AI tools democratize skill or instead widen the gap between novice and expert users, which matters for how organizations plan AI training and adoption.",
       "whatToWatch": [
-        "Whether the claim gets tested more rigorously or draws responses from model providers"
+        "Community responses or rebuttals to the argument"
       ],
       "questions": [
-        "Is this a measured effect or an anecdotal observation?",
-        "Does it hold consistently across different model providers?"
+        "What evidence or examples does the post rely on?",
+        "Does the claim hold across domains, or mainly for tasks like coding?"
       ],
       "sources": [
         {
@@ -388,25 +394,58 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T21:13:53Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
       "imageUrl": "https://www.seangoedecke.com/og-image.jpg",
-      "badge": "Analysis",
-      "trendScore": 36,
+      "badge": "Opinion",
+      "trendScore": 31,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-228546f1ca",
+      "slug": "qwen-releases-new-open-weight-models-3-8-max-2-4t-and-27b-aimed-at-cod",
+      "lane": "ai",
+      "title": "Qwen releases new open-weight models: 3.8 Max and 27B",
+      "summary": "Latent Space's AINews roundup covers the release of Qwen 3.8, including a large 'Max' variant reported at 2.4T parameters and a smaller 27B model, positioned as open-weight models for coding and collaborative 'cowork' use cases.",
+      "whyItMatters": "It continues the rapid cadence of open-weight model releases challenging closed, Western-built models, especially in coding, and keeps pressure on pricing and performance benchmarks industry-wide.",
+      "whatToWatch": [
+        "Independent benchmarks validating the performance claims",
+        "Licensing terms and commercial usability of the weights",
+        "Adoption by developers and inference providers"
+      ],
+      "questions": [
+        "Are the weights openly licensed for commercial use?",
+        "How does the 2.4T-parameter Max variant compare in real-world efficiency to competing dense or MoE models?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Qwen 3.8 Max(2.4T) and 27B, new open weights models for Coding and Cowork",
+          "url": "https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-04T03:49:14.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-04T03:49:14.000Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!W0RB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHOw1F2ebgAAkpJJ.jpg",
+      "badge": "Open Weights",
+      "trendScore": 30,
       "confidence": "low"
     },
     {
       "id": "ai-2163b41330",
       "slug": "openai-publishes-pointed-critique-apple-is-getting-this-wrong",
       "lane": "ai",
-      "title": "OpenAI Publishes Pointed Critique Titled 'Apple Is Getting This Wrong'",
-      "summary": "OpenAI published a post titled \"Apple is getting this wrong,\" per its own site. The specific subject of the critique isn't detailed beyond the title in the material available.",
-      "whyItMatters": "Public friction from OpenAI toward Apple — a partner via Siri's ChatGPT integration — would be notable given how central that partnership has been to each company's AI strategy.",
+      "title": "OpenAI: \"Apple is getting this wrong\"",
+      "summary": "OpenAI published a post titled 'Apple is getting this wrong,' apparently critiquing some aspect of Apple's approach to AI. The specific subject of the critique isn't detailed beyond the title.",
+      "whyItMatters": "Public friction between OpenAI and Apple — partners in bringing ChatGPT to Apple's platforms — is notable given how much the competitive and partnership dynamics between the two shape how AI reaches everyday consumers.",
       "whatToWatch": [
-        "Whether Apple responds publicly",
-        "Any visible impact on the OpenAI-Apple product partnership"
+        "Any response from Apple",
+        "Whether this signals strain in the OpenAI-Apple partnership or is a broader industry critique"
       ],
       "questions": [
-        "What specifically is OpenAI criticizing — product design, strategy, or something else?"
+        "What specifically is OpenAI criticizing — Apple's AI strategy, on-device approach, or something else?",
+        "Is this tied to their existing partnership or a general commentary piece?"
       ],
       "sources": [
         {
@@ -418,38 +457,11 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-03T22:00:00.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
+      "updatedAt": "2026-08-05T05:41:51.435Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3LMWP6Zq4rgiX3gVyxKiX/667973a65cc5111e602f68338b9f1c87/Frame__13_.png?w=1600&h=900&fit=fill",
       "badge": "Commentary",
-      "trendScore": 34,
+      "trendScore": 29,
       "confidence": "medium"
-    },
-    {
-      "id": "ai-a8f46de4b5",
-      "slug": "latent-space-hosts-inference-engineering-masterclass-with-baseten-s-ph",
-      "lane": "ai",
-      "title": "Latent Space Hosts Inference Engineering Masterclass with Baseten's Philip Kiely and Ali Taha",
-      "summary": "Latent Space published a masterclass-style discussion on inference engineering featuring Baseten's Philip Kiely and Ali Taha, covering the technical work of serving AI models efficiently at scale.",
-      "whyItMatters": "Inference cost and speed increasingly determine which companies can profitably ship AI products, making infrastructure expertise like Baseten's commercially important.",
-      "whatToWatch": [
-        "Practical takeaways other infrastructure providers may adopt or respond to"
-      ],
-      "questions": [
-        "What specific optimization techniques or benchmarks does the discussion cover?"
-      ],
-      "sources": [
-        {
-          "title": "The Inference Engineering Masterclass — Philip Kiely & Ali Taha, Baseten",
-          "url": "https://www.latent.space/p/inference-eng",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-03T21:44:03.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-03T21:44:03.000Z",
-      "updatedAt": "2026-08-04T23:11:41.935Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!IohL!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F209198968%2F6b756e14-9a18-4975-8d64-399d863f7af2%2Ftranscoded-1785525129.png",
-      "trendScore": 31,
-      "confidence": "low"
     }
   ]
 }
