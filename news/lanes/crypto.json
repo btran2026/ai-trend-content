@@ -1,22 +1,60 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-05T11:17:52.123Z",
-  "contentVersion": 14,
+  "generatedAt": "2026-08-05T17:23:06.671Z",
+  "contentVersion": 15,
   "stories": [
+    {
+      "id": "crypto-0390492099",
+      "slug": "coldcard-exploit-reignites-hardware-wallet-security-debate",
+      "lane": "crypto",
+      "title": "Coldcard exploit reignites hardware-wallet security debate",
+      "summary": "A newly disclosed exploit targeting Coldcard hardware wallets has put self-custody security back in the spotlight. Cointelegraph examined whether the attacks mean hardware wallets broadly are now insecure, while CoinDesk reported analysts suggesting the scare could push some investors toward regulated bitcoin products instead of self-custody.",
+      "whyItMatters": "Confidence in self-custody tools underpins how much bitcoin sits outside exchanges and ETFs, so a credible hardware-wallet exploit can shift both behavior and flows.",
+      "whatToWatch": [
+        "Any official response or patch from Coldcard",
+        "Whether other hardware wallet makers report similar vulnerabilities",
+        "ETF flow data in the days following the disclosure"
+      ],
+      "questions": [
+        "What exactly is the scope and mechanism of the exploit?",
+        "Has Coldcard confirmed which devices or firmware versions are affected?"
+      ],
+      "sources": [
+        {
+          "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
+          "url": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-05T15:44:08.000Z"
+        },
+        {
+          "title": "Do the Coldcard attacks mean all hardware wallets are now insecure?",
+          "url": "https://cointelegraph.com/magazine/does-the-coldcard-attack-mean-all-hardware-wallets-are-now-insecure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-05T13:30:00.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-05T13:30:00.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/df75194a14ee0137a319a24c95c7971dfac737a2-4896x3268.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Security",
+      "trendScore": 78,
+      "confidence": "medium"
+    },
     {
       "id": "crypto-6298cced18",
       "slug": "bitcoin-etfs-snap-back-with-inflows-after-cold-wallet-hack-rattles-cus",
       "lane": "crypto",
-      "title": "Bitcoin ETFs snap back with inflows after cold-wallet hack rattles custody confidence",
-      "summary": "Spot Bitcoin ETFs logged fresh inflows, according to Cointelegraph, with CryptoSlate reporting that seven different Bitcoin ETFs simultaneously turned positive after a prior $265 million mass exit. The rebound comes as a cold wallet hack has reignited debate over custody practices for digital assets.",
-      "whyItMatters": "ETF flow swings are a key gauge of institutional sentiment, and a custody scare landing right as flows reverse raises the stakes on how safely investor assets are actually held.",
+      "title": "Bitcoin ETFs snap back with inflows after cold-wallet hack stokes custody worries",
+      "summary": "Bitcoin ETFs logged fresh inflows even as a cold-wallet hack reignited debate over custody security, according to Cointelegraph. CryptoSlate reported the rebound was notable given a prior single-day exit of about $265 million across Bitcoin ETFs, with seven funds bouncing back together.",
+      "whyItMatters": "Sharp reversals in ETF flows are one of the clearest real-time gauges of institutional sentiment toward bitcoin.",
       "whatToWatch": [
-        "Whether inflows hold or reverse again in coming sessions",
-        "Any regulatory or issuer response to the custody concerns raised by the hack"
+        "Whether inflows persist in the next reporting period",
+        "Any disclosed link between the mass exit and the custody incident"
       ],
       "questions": [
-        "What specifically caused the earlier $265 million outflow before the reversal?",
-        "Which cold wallet was hacked and does it affect ETF custodians directly?"
+        "What specifically triggered the earlier $265 million outflow?",
+        "Is the rebound tied to the hardware-wallet exploit story or a separate driver?"
       ],
       "sources": [
         {
@@ -34,63 +72,94 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-05T08:36:33.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-a-stronger-foundation-for-bitcoin-etf-applications1-1.jpg",
-      "badge": "Markets",
-      "trendScore": 74,
+      "badge": "Flows",
+      "trendScore": 69,
       "confidence": "medium"
     },
     {
       "id": "crypto-f093b4953e",
       "slug": "bitcoin-lags-as-global-equities-notch-record-highs-amid-yen-interventi",
       "lane": "crypto",
-      "title": "Bitcoin lags as global equities notch record highs amid yen-intervention jitters",
-      "summary": "CoinDesk reports Bitcoin and the broader crypto market failed to keep pace as global equity markets hit record highs. Cointelegraph adds that a US-related yen intervention has put Bitcoin and other risk assets on alert for potential liquidity disruption.",
-      "whyItMatters": "Bitcoin's underperformance against surging equities, paired with currency-market intervention risk, tests the asset's claim as a liquid, macro-resilient store of value.",
+      "title": "Bitcoin and broader crypto market lag as global equities hit record highs",
+      "summary": "Bitcoin and the wider crypto market failed to keep pace with global equities as stock indices set fresh records, CoinDesk reported. Separately, CryptoSlate highlighted one piece of crypto-adjacent corporate activity: a cellular chipmaker sold roughly 1,200 bitcoin, using the proceeds to erase its debt and double its cash position.",
+      "whyItMatters": "A widening gap between crypto and equity performance raises questions about bitcoin's current role as a risk asset versus a hedge, and corporate treasury sales add supply-side context.",
       "whatToWatch": [
-        "Whether Bitcoin narrows the gap with equities or falls further behind",
-        "Follow-through effects of yen intervention on global risk-asset liquidity"
+        "Whether the performance gap between bitcoin and equities widens or narrows",
+        "Any further corporate treasury bitcoin sales"
       ],
       "questions": [
-        "Is the underperformance a rotation out of crypto or simply slower momentum?",
-        "How directly does yen intervention transmit to crypto liquidity conditions?"
+        "Which chipmaker sold the bitcoin, and why now?",
+        "Is the equities-crypto divergence a rotation or a broader risk-off signal for crypto?"
       ],
       "sources": [
+        {
+          "title": "How dumping 1,200 Bitcoin helped a cellular chipmaker completely erase its debt and double its cash",
+          "url": "https://cryptoslate.com/how-dumping-1200-bitcoin-helped-a-cellular-chipmaker-completely-erase-its-debt-and-double-its-cash/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-05T15:10:08.000Z"
+        },
         {
           "title": "Bitcoin, broader market fail to keep pace as global equities hit record highs",
           "url": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs",
           "publisher": "CoinDesk",
           "publishedAt": "2026-08-05T11:01:15.000Z"
-        },
-        {
-          "title": "US yen intervention puts Bitcoin, risk assets on notice for liquidity flux",
-          "url": "https://cointelegraph.com/markets/us-yen-intervention-puts-bitcoin-risk-assets-on-notice-for-liquidity-flux?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-04T09:22:00.000Z"
         }
       ],
       "sourceCount": 2,
-      "publishedAt": "2026-08-04T09:22:00.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "publishedAt": "2026-08-05T11:01:15.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9b1f83688f4588197032a91f7adfaf3a6a9b6f01-3317x1697.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 69,
+      "trendScore": 67,
       "confidence": "medium"
+    },
+    {
+      "id": "crypto-e45f9f19f2",
+      "slug": "blackrock-s-etha-reverse-split-set-to-sharply-cut-ethereum-trading-cos",
+      "lane": "crypto",
+      "title": "BlackRock's ETHA reverse split set to sharply cut Ethereum trading costs",
+      "summary": "BlackRock is carrying out a reverse split of its spot Ether ETF, ETHA, which CryptoSlate reports will make trading the fund far cheaper per unit than buying ETH directly through Coinbase. The move restructures share pricing without changing the fund's underlying holdings.",
+      "whyItMatters": "Lower effective trading costs on a major spot ETH ETF could pull more volume away from direct exchange purchases and toward regulated wrappers.",
+      "whatToWatch": [
+        "The effective date of the reverse split",
+        "ETHA trading volume and flows following the change"
+      ],
+      "questions": [
+        "What prompted BlackRock to pursue a reverse split now?",
+        "Will other ETH ETF issuers follow with similar share restructurings?"
+      ],
+      "sources": [
+        {
+          "title": "BlackRock’s rare ETHA reverse split is about to make trading Ethereum 70 times cheaper than Coinbase",
+          "url": "https://cryptoslate.com/blackrocks-rare-etha-reverse-split-is-about-to-make-trading-ethereum-70-times-cheaper-than-coinbase/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-05T13:55:37.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T13:55:37.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etha-share-consolidation-crate.jpg",
+      "badge": "Markets",
+      "trendScore": 64,
+      "confidence": "low"
     },
     {
       "id": "crypto-f797e01bcf",
       "slug": "bitcoin-holds-near-64k-as-stocks-hit-records-hormuz-reopening-nears",
       "lane": "crypto",
-      "title": "Bitcoin holds near $64,000 as stocks hit records and Hormuz reopening nears",
-      "summary": "CoinDesk reports Bitcoin is trading flat around $64,000 even as stock indexes print fresh records and reports suggest a deal to reopen the Strait of Hormuz is approaching. Cointelegraph notes the S&P 500 pushed to a $70 trillion market cap milestone amid the same Hormuz reopening timeline.",
-      "whyItMatters": "A geopolitical resolution affecting oil-shipping routes typically eases macro risk premiums, and Bitcoin's flat reaction while equities rally raises questions about its current correlation to risk sentiment.",
+      "title": "Bitcoin holds flat near $64,000 as stocks hit records on Hormuz reopening hopes",
+      "summary": "Bitcoin traded roughly flat around $64,000 even as stock markets printed fresh records, with CoinDesk and Cointelegraph both citing progress toward a Hormuz Strait reopening deal as a driver of broader risk appetite. Cointelegraph noted the S&P 500's advance pushed its market cap to a reported $70 trillion.",
+      "whyItMatters": "Bitcoin's failure to rally alongside easing geopolitical risk and record equities tests the narrative that it trades as a macro risk-on asset.",
       "whatToWatch": [
-        "Confirmation or collapse of the Hormuz reopening timeline",
-        "Whether Bitcoin breaks out of its $64,000 range once geopolitical clarity arrives"
+        "Finalization of the Hormuz reopening deal",
+        "Bitcoin's price reaction if the deal is confirmed"
       ],
       "questions": [
-        "What exactly is the status of the Hormuz deal and who are the parties involved?",
-        "Why isn't Bitcoin participating in the equity rally this geopolitical news is driving?"
+        "What are the actual terms and timeline of the Hormuz deal?",
+        "Why has bitcoin decoupled from the equity rally?"
       ],
       "sources": [
         {
@@ -108,26 +177,57 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-04T16:38:54.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/5dff6ed058589d3d749c6423fadd99ca9476909d-5083x3388.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 69,
+      "trendScore": 64,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-a12c299688",
+      "slug": "crypto-whales-are-accumulating-as-bear-market-nears-late-stage-cryptoq",
+      "lane": "crypto",
+      "title": "Crypto whales are accumulating as bear market nears late stage, CryptoQuant says",
+      "summary": "On-chain analytics firm CryptoQuant said large crypto holders are accumulating, a pattern it associates with the later stages of a bear market, according to Cointelegraph. The report frames current whale behavior as a potential inflection signal rather than a confirmed trend reversal.",
+      "whyItMatters": "Whale accumulation is closely watched as a leading indicator, though it's a probabilistic signal, not a guarantee of a market turn.",
+      "whatToWatch": [
+        "Follow-up on-chain data confirming or reversing the accumulation trend",
+        "Price action in the weeks following the report"
+      ],
+      "questions": [
+        "What time frame and wallet thresholds define \"whale\" accumulation here?",
+        "How reliable has this indicator been in past cycles?"
+      ],
+      "sources": [
+        {
+          "title": "Crypto whales accumulate as bear market nears late stage: CryptoQuant",
+          "url": "https://cointelegraph.com/markets/crypto-whales-buy-bear-market-late-stage-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-05T14:08:27.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T14:08:27.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-34555-analysts-laugh-off-recent-one-whale-theory-of-btcs-2017-bull-run.jpg",
+      "badge": "Analysis",
+      "trendScore": 63,
       "confidence": "medium"
     },
     {
       "id": "crypto-f28b662483",
       "slug": "proposed-54-cut-to-ethereum-staking-rewards-could-flip-defi-s-favorite",
       "lane": "crypto",
-      "title": "Proposed 54% cut to Ethereum staking rewards could flip DeFi's favorite loop into a loss",
-      "summary": "CryptoSlate reports that a proposed 54% reduction in Ethereum staking rewards could undermine a popular DeFi leveraged-staking loop strategy, potentially turning it into a daily loss for participants if it passes. The piece frames this as a direct threat to yield strategies built around current issuance levels.",
-      "whyItMatters": "Leveraged staking loops have become a significant source of DeFi activity and demand for staked ETH; a reward cut steep enough to erase their profitability could trigger unwinding and liquidity shifts across DeFi.",
+      "title": "Proposed 54% cut to Ethereum staking rewards could break popular DeFi leverage loop",
+      "summary": "CryptoSlate reported that a proposed 54% reduction in Ethereum staking rewards could turn a widely used leveraged-staking strategy in DeFi from a yield play into a daily loss maker. The concern centers on strategies that borrow against staked ETH to amplify returns, which depend on rewards outpacing borrowing costs.",
+      "whyItMatters": "Changes to staking yield ripple through DeFi leverage products, and a reward cut steep enough to flip a popular strategy negative could trigger unwinding across protocols.",
       "whatToWatch": [
-        "Whether the issuance-cut proposal advances toward implementation",
-        "Signs of leveraged-loop positions unwinding in anticipation of the change"
+        "Progress of the proposal through Ethereum's governance process",
+        "Whether DeFi protocols adjust or wind down affected leverage products preemptively"
       ],
       "questions": [
-        "What is the exact mechanism and timeline for the proposed reward cut?",
-        "How much capital is currently deployed in the affected loop strategy?"
+        "Which specific proposal is driving this, and what's its timeline?",
+        "How much capital is currently deployed in the affected leverage strategy?"
       ],
       "sources": [
         {
@@ -139,30 +239,154 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T10:55:06.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-defi-leverage-trap.jpg",
-      "badge": "Analysis",
-      "trendScore": 67,
+      "badge": "Protocol",
+      "trendScore": 62,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-149e7f1309",
+      "slug": "strive-s-20-btc-purchase-came-with-dilution-that-cut-shareholders-bitc",
+      "lane": "crypto",
+      "title": "Strive's 20 BTC purchase came with dilution that cut shareholders' bitcoin exposure",
+      "summary": "Bitcoin treasury company Strive bought 20 BTC, but CryptoSlate reported the purchase was funded alongside the issuance of 110,000 new shares, which left existing shareholders with less bitcoin exposure per share than before. The report frames the deal as a case where a headline bitcoin purchase masked net dilution.",
+      "whyItMatters": "It's a concrete illustration of the dilution risk embedded in equity-financed bitcoin treasury strategies, a model several public companies now use.",
+      "whatToWatch": [
+        "Whether Strive makes further purchases financed by additional share issuance",
+        "Trends in bitcoin-per-share, the metric investors use to judge these treasury vehicles"
+      ],
+      "questions": [
+        "Why did Strive choose to fund this purchase via new shares rather than cash on hand?",
+        "Does Strive plan further capital raises tied to bitcoin accumulation?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin treasury Strive bought 20 BTC, but 110,000 new shares left holders with less Bitcoin exposure",
+          "url": "https://cryptoslate.com/bitcoin-treasury-firm-strive-bought-20-btc-but-110000-new-shares-left-holders-with-less-bitcoin-exposure/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-05T17:10:41.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T17:10:41.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/strive.jpg",
+      "badge": "Corporate",
+      "trendScore": 57,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-971c0d6775",
+      "slug": "ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
+      "lane": "crypto",
+      "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
+      "summary": "Tokenization platform Ondo Finance has hired Adam Schlisman, the former chief financial officer of Blockchain.com, according to CoinDesk. No further details on his mandate at Ondo were reported.",
+      "whyItMatters": "Senior finance hires from established crypto firms signal continued institutional buildout in the tokenized real-world-asset sector.",
+      "whatToWatch": [
+        "Schlisman's specific role and priorities at Ondo",
+        "Further executive hires as Ondo scales"
+      ],
+      "questions": [
+        "What prompted his departure from Blockchain.com?",
+        "What near-term initiatives will he lead at Ondo?"
+      ],
+      "sources": [
+        {
+          "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
+          "url": "https://www.coindesk.com/business/2026/08/05/ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-05T13:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T13:00:00.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a847196eb90f8db8671bc9cfaff6f4139272f8d3-1672x941.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Business",
+      "trendScore": 57,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-75d3f9479f",
+      "slug": "spacex-shares-extend-decline-to-11-on-lockup-expiration-and-capex-conc",
+      "lane": "crypto",
+      "title": "SpaceX shares extend decline to 11% on lockup expiration and capex concerns",
+      "summary": "SpaceX shares extended losses to an 11% decline, CoinDesk reported, attributing the drop to a lockup expiration freeing up shares for sale alongside investor concerns about the company's capital expenditure spending.",
+      "whyItMatters": "Large moves in major private/tech names are tracked by the same institutional and venture investor base active in crypto markets, making them a relevant cross-market signal.",
+      "whatToWatch": [
+        "Whether the decline continues as lockup shares are sold",
+        "Any company commentary addressing capex spending concerns"
+      ],
+      "questions": [
+        "How large is the lockup expiration relative to total shares outstanding?",
+        "What specific capex plans are driving investor concern?"
+      ],
+      "sources": [
+        {
+          "title": "SpaceX extends decline to 11% on lockup expiration and capex spending fears",
+          "url": "https://www.coindesk.com/markets/2026/08/05/spacex-stock-drops-11-premarket-as-lockup-spending-fears-hit-first-earnings",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-05T12:12:08.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T12:12:08.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/83d0912d3450cbd9352755a8558ea6c425c541a8-3000x2000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 57,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-7aad08ee5b",
+      "slug": "ethereum-proposal-would-zero-out-staking-rewards-once-half-of-eth-supp",
+      "lane": "crypto",
+      "title": "Ethereum proposal would zero out staking rewards once half of ETH supply is staked",
+      "summary": "Decrypt reported on an Ethereum proposal that would reduce staking rewards to zero if the share of ETH staked reaches 50% of supply, a mechanism intended to cap how much ETH gets locked into staking. The proposal is a policy change under discussion rather than a confirmed protocol update.",
+      "whyItMatters": "Staking-ratio caps would reshape ETH supply dynamics, validator economics, and the incentives behind liquid-staking and leverage products built on top of staking yield.",
+      "whatToWatch": [
+        "Discussion and potential vote on the proposal within Ethereum's governance process",
+        "The current trajectory of the total ETH staking ratio"
+      ],
+      "questions": [
+        "Who put forward this proposal and how much support does it have?",
+        "How close is the current staked share to the 50% threshold?"
+      ],
+      "sources": [
+        {
+          "title": "Ethereum Proposal Would Burn Staking Rewards to Zero if Half of ETH Is Staked",
+          "url": "https://decrypt.co/374944/ethereum-proposal-would-burn-staking-rewards-to-zero-if-half-of-eth-is-staked",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-08-05T11:29:23.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T11:29:23.000Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/08/ethereum-decrypt-style-07-gID_7.jpg@png",
+      "badge": "Protocol",
+      "trendScore": 57,
       "confidence": "low"
     },
     {
       "id": "crypto-5b1f4e4539",
       "slug": "circle-shares-rise-as-earnings-beat-offsets-revenue-miss-arc-blockchai",
       "lane": "crypto",
-      "title": "Circle shares rise as earnings beat offsets revenue miss; Arc blockchain wins Wall Street backing",
-      "summary": "CoinDesk reports Circle's stock jumped after the stablecoin issuer posted an earnings beat that outweighed a revenue miss. The report also notes Circle's Arc blockchain is gaining backing from Wall Street institutions.",
-      "whyItMatters": "Circle is a bellwether for stablecoin-sector health, and institutional buy-in for its Arc blockchain signals growing traditional-finance interest in stablecoin infrastructure.",
+      "title": "Circle shares fall 3% on revenue miss despite beating earnings expectations",
+      "summary": "Circle shares dropped about 3% after the stablecoin issuer reported earnings that beat expectations but revenue that fell short, according to CoinDesk. The mixed results suggest cost or margin dynamics offset top-line softness.",
+      "whyItMatters": "As the issuer of USDC, Circle's financial results serve as a bellwether for stablecoin economics and issuer profitability more broadly.",
       "whatToWatch": [
-        "Further detail on which Wall Street firms are backing Arc and in what capacity",
-        "Circle's next earnings report for whether the revenue miss was a one-off"
+        "Management commentary or guidance addressing the revenue miss",
+        "USDC circulation and market-share trends in coming quarters"
       ],
       "questions": [
-        "What drove the revenue miss even as earnings beat expectations?",
-        "What specifically does 'Wall Street backing' for Arc entail—investment, partnership, or usage?"
+        "What specifically drove the revenue shortfall?",
+        "Does the miss reflect competitive pressure on stablecoin market share?"
       ],
       "sources": [
         {
-          "title": "Circle shares jump as earnings beat offsets revenue miss, Arc blockchain gains Wall Street backing",
+          "title": "Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue",
           "url": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
           "publisher": "CoinDesk",
           "publishedAt": "2026-08-05T11:13:17.000Z"
@@ -170,226 +394,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T11:13:17.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
+      "updatedAt": "2026-08-05T17:23:06.671Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/13963e0d3858e00fbf1de77c79da7c5226d29b5a-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Earnings",
-      "trendScore": 61,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-874d009908",
-      "slug": "new-ethereum-proposal-would-zero-out-issuance-once-staked-eth-hits-112",
-      "lane": "crypto",
-      "title": "New Ethereum proposal would zero out issuance once staked ETH hits $112 billion",
-      "summary": "CoinDesk reports a new Ethereum proposal would cut issuance to zero once the total value of staked ETH reaches $112 billion. The proposal is a technical change to Ethereum's monetary policy tied to staking participation thresholds.",
-      "whyItMatters": "Issuance policy directly affects ETH's supply dynamics and staking economics, making this a significant potential shift for validators and holders alike.",
-      "whatToWatch": [
-        "Community and client-team discussion on whether the proposal advances",
-        "Current progress of staked ETH value toward the $112 billion threshold"
-      ],
-      "questions": [
-        "Who authored the proposal and what stage of Ethereum's governance process is it in?",
-        "How would a sudden move to zero issuance affect validator incentives?"
-      ],
-      "sources": [
-        {
-          "title": "New Ethereum proposal would cut issuance to zero if staked ETH reaches $112 billion",
-          "url": "https://www.coindesk.com/tech/2026/08/05/new-ethereum-proposal-would-cut-issuance-to-zero-if-staked-eth-reaches-usd112-billion",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T05:49:57.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T05:49:57.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/c357579ddef2051b405b9e89f8525dd02709081d-5760x3240.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Protocol",
-      "trendScore": 61,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-887148921e",
-      "slug": "s-p-awards-top-stability-rating-to-blackrock-s-tokenized-reserve-fund",
-      "lane": "crypto",
-      "title": "S&P awards top stability rating to BlackRock's tokenized reserve fund",
-      "summary": "Cointelegraph reports that S&P has given BlackRock's tokenized reserve fund its top stability rating. The rating covers the fund's structure as a tokenized product tied to reserve-style assets.",
-      "whyItMatters": "A top rating from a major agency for a tokenized fund from the world's largest asset manager lends credibility to tokenized real-world-asset products entering mainstream finance.",
-      "whatToWatch": [
-        "Whether other rating agencies follow with similar assessments of tokenized funds",
-        "Growth in assets under management for BlackRock's tokenized fund following the rating"
-      ],
-      "questions": [
-        "What specific criteria did S&P use to evaluate a tokenized fund versus a traditional one?",
-        "Does the rating affect the fund's eligibility for institutional mandates?"
-      ],
-      "sources": [
-        {
-          "title": "S&P gives BlackRock tokenized reserve fund top stability rating",
-          "url": "https://cointelegraph.com/news/sp-blackrock-tokenized-reserve-fund-stability?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T10:40:43.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T10:40:43.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/handshake-agreement-union-partnership-cooperation-collaboration-join-deal-blackrock-3.jpg",
-      "badge": "Ratings",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-be547cf6c7",
-      "slug": "coldcard-hack-prompts-calls-for-a-self-custody-security-overhaul-says-",
-      "lane": "crypto",
-      "title": "Coldcard hack prompts calls for a self-custody security overhaul, says Klippsten",
-      "summary": "CoinDesk reports that a hack affecting Coldcard hardware wallets has prompted Cory Klippsten to call for a broader overhaul of self-custody security practices. The incident has renewed scrutiny of how individuals secure their own private keys.",
-      "whyItMatters": "Self-custody is a core value proposition of Bitcoin, so a hardware-wallet security incident directly challenges the safety assumptions many holders rely on.",
-      "whatToWatch": [
-        "Technical details on how the Coldcard hack was carried out",
-        "Any firmware updates or security recommendations issued in response"
-      ],
-      "questions": [
-        "What specifically was compromised—the device, a supply-chain link, or user practices?",
-        "How many users or how much value was affected by the hack?"
-      ],
-      "sources": [
-        {
-          "title": "Coldcard hack sparks a self-custody security overhaul: Cory Klippsten",
-          "url": "https://www.coindesk.com/markets/2026/08/05/coldcard-hack-sparks-a-self-custody-security-overhaul-cory-klippsten",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T09:55:32.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T09:55:32.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/0903df38954495f9e1aeb6c9d49b67bdddee5d15-1008x567.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Security",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-f4ea23c47c",
-      "slug": "glassnode-bitcoin-price-metrics-show-longest-capitulation-stretch-sinc",
-      "lane": "crypto",
-      "title": "Glassnode: Bitcoin price metrics show longest capitulation stretch since FTX collapse",
-      "summary": "Cointelegraph reports that a basket of Bitcoin price metrics tracked by Glassnode is showing its longest capitulation phase since the FTX collapse. The on-chain analytics firm's data points to sustained bearish signals across multiple indicators.",
-      "whyItMatters": "Capitulation readings this extended are historically associated with market bottoms or prolonged weakness, making this a closely watched signal for the current cycle.",
-      "whatToWatch": [
-        "Whether Glassnode's capitulation metrics begin to turn as price action evolves",
-        "Any accompanying shifts in exchange flows or holder behavior"
-      ],
-      "questions": [
-        "Which specific metrics make up Glassnode's capitulation basket?",
-        "Has this capitulation signal historically preceded a bottom or further downside?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin price-metric basket sees longest capitulation since FTX blow-up: Glassnode",
-          "url": "https://cointelegraph.com/markets/bitcoin-price-metric-basket-sees-longest-capitulation-since-ftx-blow-up-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T09:34:41.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T09:34:41.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-66799-bitcoin-dominance-cycle-suggests-the-2017-crypto-rally-could-repeat.jpg",
-      "badge": "Analysis",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-d7c46a774b",
-      "slug": "blockchain-gaming-studio-proof-of-play-to-shut-down",
-      "lane": "crypto",
-      "title": "Blockchain gaming studio Proof of Play to shut down",
-      "summary": "Cointelegraph reports that Proof of Play is shutting down after its blockchain gaming thesis failed to pan out. The closure adds to a string of setbacks for play-to-earn and blockchain-based gaming projects.",
-      "whyItMatters": "The shutdown of a notable blockchain gaming studio underscores continued struggles for the sector to find sustainable product-market fit beyond speculative token incentives.",
-      "whatToWatch": [
-        "What happens to Proof of Play's existing games, tokens, and user base",
-        "Whether other blockchain gaming studios face similar pressure"
-      ],
-      "questions": [
-        "What specifically caused the studio's thesis to fail—user retention, tokenomics, or funding?",
-        "Are there implications for token holders or players with in-game assets?"
-      ],
-      "sources": [
-        {
-          "title": "Proof of Play to shut down after blockchain gaming thesis falls short",
-          "url": "https://cointelegraph.com/news/proof-of-play-shut-blockchain-gaming-thesis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T09:10:04.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T09:10:04.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/nft-gaming-entertainment-ecosystem.jpg",
-      "badge": "Industry",
-      "trendScore": 59,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-4384620031",
-      "slug": "bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
-      "lane": "crypto",
-      "title": "Bitcoin's '500-day rule' faces its biggest test yet",
-      "summary": "CoinDesk examines Bitcoin's so-called '500-day rule,' a market-cycle heuristic, noting that current price action presents its most significant test of that pattern to date. The piece frames this as a moment that could validate or undercut the rule's predictive track record.",
-      "whyItMatters": "Cycle-based heuristics like this shape trader expectations and positioning, so a high-profile test of one's validity matters for how the market reads current price behavior.",
-      "whatToWatch": [
-        "Whether Bitcoin's price action in coming weeks confirms or breaks the pattern",
-        "Commentary from other analysts on the rule's reliability this cycle"
-      ],
-      "questions": [
-        "What exactly does the '500-day rule' predict and what is its historical track record?",
-        "What would count as a definitive pass or fail for the rule this time?"
-      ],
-      "sources": [
-        {
-          "title": "Why bitcoin’s ‘500-day rule’ faces its biggest test yet",
-          "url": "https://www.coindesk.com/markets/2026/08/05/why-bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T09:06:15.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T09:06:15.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b72b4dd95175914ab42f1abbcbe7a1c1085f565e-4000x2250.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Analysis",
-      "trendScore": 59,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-3e83b84c05",
-      "slug": "forgd-s-crypto-market-maker-leaderboard-lands-on-defillama",
-      "lane": "crypto",
-      "title": "Forgd's crypto market-maker leaderboard lands on DefiLlama",
-      "summary": "Cointelegraph reports that Forgd has brought its market-maker leaderboard, which tracks crypto market-making activity, to data platform DefiLlama. The integration puts Forgd's rankings in front of DefiLlama's existing user base.",
-      "whyItMatters": "Greater transparency around market-maker performance and activity can help projects and traders better assess liquidity quality and counterparty behavior in crypto markets.",
-      "whatToWatch": [
-        "How the leaderboard's methodology is received by market makers and projects",
-        "Whether other data platforms adopt similar market-maker transparency tools"
-      ],
-      "questions": [
-        "What metrics does Forgd use to rank market makers?",
-        "Does inclusion on DefiLlama change how projects select market-making partners?"
-      ],
-      "sources": [
-        {
-          "title": "Forgd brings its crypto market-maker leaderboard to DefiLlama",
-          "url": "https://cointelegraph.com/news/forgd-market-maker-leaderboard-defillama?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T09:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T09:00:00.000Z",
-      "updatedAt": "2026-08-05T11:17:52.123Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-market-makers-vs-market-takers-key-differences-explained.png",
-      "trendScore": 59,
+      "trendScore": 56,
       "confidence": "medium"
     }
   ]

@@ -1,22 +1,60 @@
 {
-  "generatedAt": "2026-08-05T11:17:52.123Z",
-  "contentVersion": 14,
+  "generatedAt": "2026-08-05T17:23:06.671Z",
+  "contentVersion": 15,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-0390492099",
+        "slug": "coldcard-exploit-reignites-hardware-wallet-security-debate",
+        "lane": "crypto",
+        "title": "Coldcard exploit reignites hardware-wallet security debate",
+        "summary": "A newly disclosed exploit targeting Coldcard hardware wallets has put self-custody security back in the spotlight. Cointelegraph examined whether the attacks mean hardware wallets broadly are now insecure, while CoinDesk reported analysts suggesting the scare could push some investors toward regulated bitcoin products instead of self-custody.",
+        "whyItMatters": "Confidence in self-custody tools underpins how much bitcoin sits outside exchanges and ETFs, so a credible hardware-wallet exploit can shift both behavior and flows.",
+        "whatToWatch": [
+          "Any official response or patch from Coldcard",
+          "Whether other hardware wallet makers report similar vulnerabilities",
+          "ETF flow data in the days following the disclosure"
+        ],
+        "questions": [
+          "What exactly is the scope and mechanism of the exploit?",
+          "Has Coldcard confirmed which devices or firmware versions are affected?"
+        ],
+        "sources": [
+          {
+            "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
+            "url": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-05T15:44:08.000Z"
+          },
+          {
+            "title": "Do the Coldcard attacks mean all hardware wallets are now insecure?",
+            "url": "https://cointelegraph.com/magazine/does-the-coldcard-attack-mean-all-hardware-wallets-are-now-insecure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-05T13:30:00.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-05T13:30:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/df75194a14ee0137a319a24c95c7971dfac737a2-4896x3268.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Security",
+        "trendScore": 78,
+        "confidence": "medium"
+      },
       {
         "id": "crypto-6298cced18",
         "slug": "bitcoin-etfs-snap-back-with-inflows-after-cold-wallet-hack-rattles-cus",
         "lane": "crypto",
-        "title": "Bitcoin ETFs snap back with inflows after cold-wallet hack rattles custody confidence",
-        "summary": "Spot Bitcoin ETFs logged fresh inflows, according to Cointelegraph, with CryptoSlate reporting that seven different Bitcoin ETFs simultaneously turned positive after a prior $265 million mass exit. The rebound comes as a cold wallet hack has reignited debate over custody practices for digital assets.",
-        "whyItMatters": "ETF flow swings are a key gauge of institutional sentiment, and a custody scare landing right as flows reverse raises the stakes on how safely investor assets are actually held.",
+        "title": "Bitcoin ETFs snap back with inflows after cold-wallet hack stokes custody worries",
+        "summary": "Bitcoin ETFs logged fresh inflows even as a cold-wallet hack reignited debate over custody security, according to Cointelegraph. CryptoSlate reported the rebound was notable given a prior single-day exit of about $265 million across Bitcoin ETFs, with seven funds bouncing back together.",
+        "whyItMatters": "Sharp reversals in ETF flows are one of the clearest real-time gauges of institutional sentiment toward bitcoin.",
         "whatToWatch": [
-          "Whether inflows hold or reverse again in coming sessions",
-          "Any regulatory or issuer response to the custody concerns raised by the hack"
+          "Whether inflows persist in the next reporting period",
+          "Any disclosed link between the mass exit and the custody incident"
         ],
         "questions": [
-          "What specifically caused the earlier $265 million outflow before the reversal?",
-          "Which cold wallet was hacked and does it affect ETF custodians directly?"
+          "What specifically triggered the earlier $265 million outflow?",
+          "Is the rebound tied to the hardware-wallet exploit story or a separate driver?"
         ],
         "sources": [
           {
@@ -34,63 +72,94 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-08-05T08:36:33.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-a-stronger-foundation-for-bitcoin-etf-applications1-1.jpg",
-        "badge": "Markets",
-        "trendScore": 74,
+        "badge": "Flows",
+        "trendScore": 69,
         "confidence": "medium"
       },
       {
         "id": "crypto-f093b4953e",
         "slug": "bitcoin-lags-as-global-equities-notch-record-highs-amid-yen-interventi",
         "lane": "crypto",
-        "title": "Bitcoin lags as global equities notch record highs amid yen-intervention jitters",
-        "summary": "CoinDesk reports Bitcoin and the broader crypto market failed to keep pace as global equity markets hit record highs. Cointelegraph adds that a US-related yen intervention has put Bitcoin and other risk assets on alert for potential liquidity disruption.",
-        "whyItMatters": "Bitcoin's underperformance against surging equities, paired with currency-market intervention risk, tests the asset's claim as a liquid, macro-resilient store of value.",
+        "title": "Bitcoin and broader crypto market lag as global equities hit record highs",
+        "summary": "Bitcoin and the wider crypto market failed to keep pace with global equities as stock indices set fresh records, CoinDesk reported. Separately, CryptoSlate highlighted one piece of crypto-adjacent corporate activity: a cellular chipmaker sold roughly 1,200 bitcoin, using the proceeds to erase its debt and double its cash position.",
+        "whyItMatters": "A widening gap between crypto and equity performance raises questions about bitcoin's current role as a risk asset versus a hedge, and corporate treasury sales add supply-side context.",
         "whatToWatch": [
-          "Whether Bitcoin narrows the gap with equities or falls further behind",
-          "Follow-through effects of yen intervention on global risk-asset liquidity"
+          "Whether the performance gap between bitcoin and equities widens or narrows",
+          "Any further corporate treasury bitcoin sales"
         ],
         "questions": [
-          "Is the underperformance a rotation out of crypto or simply slower momentum?",
-          "How directly does yen intervention transmit to crypto liquidity conditions?"
+          "Which chipmaker sold the bitcoin, and why now?",
+          "Is the equities-crypto divergence a rotation or a broader risk-off signal for crypto?"
         ],
         "sources": [
+          {
+            "title": "How dumping 1,200 Bitcoin helped a cellular chipmaker completely erase its debt and double its cash",
+            "url": "https://cryptoslate.com/how-dumping-1200-bitcoin-helped-a-cellular-chipmaker-completely-erase-its-debt-and-double-its-cash/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-05T15:10:08.000Z"
+          },
           {
             "title": "Bitcoin, broader market fail to keep pace as global equities hit record highs",
             "url": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs",
             "publisher": "CoinDesk",
             "publishedAt": "2026-08-05T11:01:15.000Z"
-          },
-          {
-            "title": "US yen intervention puts Bitcoin, risk assets on notice for liquidity flux",
-            "url": "https://cointelegraph.com/markets/us-yen-intervention-puts-bitcoin-risk-assets-on-notice-for-liquidity-flux?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-04T09:22:00.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-08-04T09:22:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "publishedAt": "2026-08-05T11:01:15.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9b1f83688f4588197032a91f7adfaf3a6a9b6f01-3317x1697.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Markets",
-        "trendScore": 69,
+        "trendScore": 67,
         "confidence": "medium"
+      },
+      {
+        "id": "crypto-e45f9f19f2",
+        "slug": "blackrock-s-etha-reverse-split-set-to-sharply-cut-ethereum-trading-cos",
+        "lane": "crypto",
+        "title": "BlackRock's ETHA reverse split set to sharply cut Ethereum trading costs",
+        "summary": "BlackRock is carrying out a reverse split of its spot Ether ETF, ETHA, which CryptoSlate reports will make trading the fund far cheaper per unit than buying ETH directly through Coinbase. The move restructures share pricing without changing the fund's underlying holdings.",
+        "whyItMatters": "Lower effective trading costs on a major spot ETH ETF could pull more volume away from direct exchange purchases and toward regulated wrappers.",
+        "whatToWatch": [
+          "The effective date of the reverse split",
+          "ETHA trading volume and flows following the change"
+        ],
+        "questions": [
+          "What prompted BlackRock to pursue a reverse split now?",
+          "Will other ETH ETF issuers follow with similar share restructurings?"
+        ],
+        "sources": [
+          {
+            "title": "BlackRock’s rare ETHA reverse split is about to make trading Ethereum 70 times cheaper than Coinbase",
+            "url": "https://cryptoslate.com/blackrocks-rare-etha-reverse-split-is-about-to-make-trading-ethereum-70-times-cheaper-than-coinbase/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-05T13:55:37.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T13:55:37.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etha-share-consolidation-crate.jpg",
+        "badge": "Markets",
+        "trendScore": 64,
+        "confidence": "low"
       },
       {
         "id": "crypto-f797e01bcf",
         "slug": "bitcoin-holds-near-64k-as-stocks-hit-records-hormuz-reopening-nears",
         "lane": "crypto",
-        "title": "Bitcoin holds near $64,000 as stocks hit records and Hormuz reopening nears",
-        "summary": "CoinDesk reports Bitcoin is trading flat around $64,000 even as stock indexes print fresh records and reports suggest a deal to reopen the Strait of Hormuz is approaching. Cointelegraph notes the S&P 500 pushed to a $70 trillion market cap milestone amid the same Hormuz reopening timeline.",
-        "whyItMatters": "A geopolitical resolution affecting oil-shipping routes typically eases macro risk premiums, and Bitcoin's flat reaction while equities rally raises questions about its current correlation to risk sentiment.",
+        "title": "Bitcoin holds flat near $64,000 as stocks hit records on Hormuz reopening hopes",
+        "summary": "Bitcoin traded roughly flat around $64,000 even as stock markets printed fresh records, with CoinDesk and Cointelegraph both citing progress toward a Hormuz Strait reopening deal as a driver of broader risk appetite. Cointelegraph noted the S&P 500's advance pushed its market cap to a reported $70 trillion.",
+        "whyItMatters": "Bitcoin's failure to rally alongside easing geopolitical risk and record equities tests the narrative that it trades as a macro risk-on asset.",
         "whatToWatch": [
-          "Confirmation or collapse of the Hormuz reopening timeline",
-          "Whether Bitcoin breaks out of its $64,000 range once geopolitical clarity arrives"
+          "Finalization of the Hormuz reopening deal",
+          "Bitcoin's price reaction if the deal is confirmed"
         ],
         "questions": [
-          "What exactly is the status of the Hormuz deal and who are the parties involved?",
-          "Why isn't Bitcoin participating in the equity rally this geopolitical news is driving?"
+          "What are the actual terms and timeline of the Hormuz deal?",
+          "Why has bitcoin decoupled from the equity rally?"
         ],
         "sources": [
           {
@@ -108,26 +177,57 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-08-04T16:38:54.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/5dff6ed058589d3d749c6423fadd99ca9476909d-5083x3388.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Markets",
-        "trendScore": 69,
+        "trendScore": 64,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-a12c299688",
+        "slug": "crypto-whales-are-accumulating-as-bear-market-nears-late-stage-cryptoq",
+        "lane": "crypto",
+        "title": "Crypto whales are accumulating as bear market nears late stage, CryptoQuant says",
+        "summary": "On-chain analytics firm CryptoQuant said large crypto holders are accumulating, a pattern it associates with the later stages of a bear market, according to Cointelegraph. The report frames current whale behavior as a potential inflection signal rather than a confirmed trend reversal.",
+        "whyItMatters": "Whale accumulation is closely watched as a leading indicator, though it's a probabilistic signal, not a guarantee of a market turn.",
+        "whatToWatch": [
+          "Follow-up on-chain data confirming or reversing the accumulation trend",
+          "Price action in the weeks following the report"
+        ],
+        "questions": [
+          "What time frame and wallet thresholds define \"whale\" accumulation here?",
+          "How reliable has this indicator been in past cycles?"
+        ],
+        "sources": [
+          {
+            "title": "Crypto whales accumulate as bear market nears late stage: CryptoQuant",
+            "url": "https://cointelegraph.com/markets/crypto-whales-buy-bear-market-late-stage-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-05T14:08:27.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T14:08:27.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-34555-analysts-laugh-off-recent-one-whale-theory-of-btcs-2017-bull-run.jpg",
+        "badge": "Analysis",
+        "trendScore": 63,
         "confidence": "medium"
       },
       {
         "id": "crypto-f28b662483",
         "slug": "proposed-54-cut-to-ethereum-staking-rewards-could-flip-defi-s-favorite",
         "lane": "crypto",
-        "title": "Proposed 54% cut to Ethereum staking rewards could flip DeFi's favorite loop into a loss",
-        "summary": "CryptoSlate reports that a proposed 54% reduction in Ethereum staking rewards could undermine a popular DeFi leveraged-staking loop strategy, potentially turning it into a daily loss for participants if it passes. The piece frames this as a direct threat to yield strategies built around current issuance levels.",
-        "whyItMatters": "Leveraged staking loops have become a significant source of DeFi activity and demand for staked ETH; a reward cut steep enough to erase their profitability could trigger unwinding and liquidity shifts across DeFi.",
+        "title": "Proposed 54% cut to Ethereum staking rewards could break popular DeFi leverage loop",
+        "summary": "CryptoSlate reported that a proposed 54% reduction in Ethereum staking rewards could turn a widely used leveraged-staking strategy in DeFi from a yield play into a daily loss maker. The concern centers on strategies that borrow against staked ETH to amplify returns, which depend on rewards outpacing borrowing costs.",
+        "whyItMatters": "Changes to staking yield ripple through DeFi leverage products, and a reward cut steep enough to flip a popular strategy negative could trigger unwinding across protocols.",
         "whatToWatch": [
-          "Whether the issuance-cut proposal advances toward implementation",
-          "Signs of leveraged-loop positions unwinding in anticipation of the change"
+          "Progress of the proposal through Ethereum's governance process",
+          "Whether DeFi protocols adjust or wind down affected leverage products preemptively"
         ],
         "questions": [
-          "What is the exact mechanism and timeline for the proposed reward cut?",
-          "How much capital is currently deployed in the affected loop strategy?"
+          "Which specific proposal is driving this, and what's its timeline?",
+          "How much capital is currently deployed in the affected leverage strategy?"
         ],
         "sources": [
           {
@@ -139,30 +239,154 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T10:55:06.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-defi-leverage-trap.jpg",
-        "badge": "Analysis",
-        "trendScore": 67,
+        "badge": "Protocol",
+        "trendScore": 62,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-149e7f1309",
+        "slug": "strive-s-20-btc-purchase-came-with-dilution-that-cut-shareholders-bitc",
+        "lane": "crypto",
+        "title": "Strive's 20 BTC purchase came with dilution that cut shareholders' bitcoin exposure",
+        "summary": "Bitcoin treasury company Strive bought 20 BTC, but CryptoSlate reported the purchase was funded alongside the issuance of 110,000 new shares, which left existing shareholders with less bitcoin exposure per share than before. The report frames the deal as a case where a headline bitcoin purchase masked net dilution.",
+        "whyItMatters": "It's a concrete illustration of the dilution risk embedded in equity-financed bitcoin treasury strategies, a model several public companies now use.",
+        "whatToWatch": [
+          "Whether Strive makes further purchases financed by additional share issuance",
+          "Trends in bitcoin-per-share, the metric investors use to judge these treasury vehicles"
+        ],
+        "questions": [
+          "Why did Strive choose to fund this purchase via new shares rather than cash on hand?",
+          "Does Strive plan further capital raises tied to bitcoin accumulation?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin treasury Strive bought 20 BTC, but 110,000 new shares left holders with less Bitcoin exposure",
+            "url": "https://cryptoslate.com/bitcoin-treasury-firm-strive-bought-20-btc-but-110000-new-shares-left-holders-with-less-bitcoin-exposure/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-05T17:10:41.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T17:10:41.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/strive.jpg",
+        "badge": "Corporate",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-971c0d6775",
+        "slug": "ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
+        "lane": "crypto",
+        "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
+        "summary": "Tokenization platform Ondo Finance has hired Adam Schlisman, the former chief financial officer of Blockchain.com, according to CoinDesk. No further details on his mandate at Ondo were reported.",
+        "whyItMatters": "Senior finance hires from established crypto firms signal continued institutional buildout in the tokenized real-world-asset sector.",
+        "whatToWatch": [
+          "Schlisman's specific role and priorities at Ondo",
+          "Further executive hires as Ondo scales"
+        ],
+        "questions": [
+          "What prompted his departure from Blockchain.com?",
+          "What near-term initiatives will he lead at Ondo?"
+        ],
+        "sources": [
+          {
+            "title": "Ondo Finance hires former Blockchain.com CFO Adam Schlisman",
+            "url": "https://www.coindesk.com/business/2026/08/05/ondo-finance-hires-former-blockchain-com-cfo-adam-schlisman",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-05T13:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T13:00:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a847196eb90f8db8671bc9cfaff6f4139272f8d3-1672x941.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Business",
+        "trendScore": 57,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-75d3f9479f",
+        "slug": "spacex-shares-extend-decline-to-11-on-lockup-expiration-and-capex-conc",
+        "lane": "crypto",
+        "title": "SpaceX shares extend decline to 11% on lockup expiration and capex concerns",
+        "summary": "SpaceX shares extended losses to an 11% decline, CoinDesk reported, attributing the drop to a lockup expiration freeing up shares for sale alongside investor concerns about the company's capital expenditure spending.",
+        "whyItMatters": "Large moves in major private/tech names are tracked by the same institutional and venture investor base active in crypto markets, making them a relevant cross-market signal.",
+        "whatToWatch": [
+          "Whether the decline continues as lockup shares are sold",
+          "Any company commentary addressing capex spending concerns"
+        ],
+        "questions": [
+          "How large is the lockup expiration relative to total shares outstanding?",
+          "What specific capex plans are driving investor concern?"
+        ],
+        "sources": [
+          {
+            "title": "SpaceX extends decline to 11% on lockup expiration and capex spending fears",
+            "url": "https://www.coindesk.com/markets/2026/08/05/spacex-stock-drops-11-premarket-as-lockup-spending-fears-hit-first-earnings",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-05T12:12:08.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T12:12:08.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/83d0912d3450cbd9352755a8558ea6c425c541a8-3000x2000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Markets",
+        "trendScore": 57,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-7aad08ee5b",
+        "slug": "ethereum-proposal-would-zero-out-staking-rewards-once-half-of-eth-supp",
+        "lane": "crypto",
+        "title": "Ethereum proposal would zero out staking rewards once half of ETH supply is staked",
+        "summary": "Decrypt reported on an Ethereum proposal that would reduce staking rewards to zero if the share of ETH staked reaches 50% of supply, a mechanism intended to cap how much ETH gets locked into staking. The proposal is a policy change under discussion rather than a confirmed protocol update.",
+        "whyItMatters": "Staking-ratio caps would reshape ETH supply dynamics, validator economics, and the incentives behind liquid-staking and leverage products built on top of staking yield.",
+        "whatToWatch": [
+          "Discussion and potential vote on the proposal within Ethereum's governance process",
+          "The current trajectory of the total ETH staking ratio"
+        ],
+        "questions": [
+          "Who put forward this proposal and how much support does it have?",
+          "How close is the current staked share to the 50% threshold?"
+        ],
+        "sources": [
+          {
+            "title": "Ethereum Proposal Would Burn Staking Rewards to Zero if Half of ETH Is Staked",
+            "url": "https://decrypt.co/374944/ethereum-proposal-would-burn-staking-rewards-to-zero-if-half-of-eth-is-staked",
+            "publisher": "Decrypt",
+            "publishedAt": "2026-08-05T11:29:23.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T11:29:23.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/08/ethereum-decrypt-style-07-gID_7.jpg@png",
+        "badge": "Protocol",
+        "trendScore": 57,
         "confidence": "low"
       },
       {
         "id": "crypto-5b1f4e4539",
         "slug": "circle-shares-rise-as-earnings-beat-offsets-revenue-miss-arc-blockchai",
         "lane": "crypto",
-        "title": "Circle shares rise as earnings beat offsets revenue miss; Arc blockchain wins Wall Street backing",
-        "summary": "CoinDesk reports Circle's stock jumped after the stablecoin issuer posted an earnings beat that outweighed a revenue miss. The report also notes Circle's Arc blockchain is gaining backing from Wall Street institutions.",
-        "whyItMatters": "Circle is a bellwether for stablecoin-sector health, and institutional buy-in for its Arc blockchain signals growing traditional-finance interest in stablecoin infrastructure.",
+        "title": "Circle shares fall 3% on revenue miss despite beating earnings expectations",
+        "summary": "Circle shares dropped about 3% after the stablecoin issuer reported earnings that beat expectations but revenue that fell short, according to CoinDesk. The mixed results suggest cost or margin dynamics offset top-line softness.",
+        "whyItMatters": "As the issuer of USDC, Circle's financial results serve as a bellwether for stablecoin economics and issuer profitability more broadly.",
         "whatToWatch": [
-          "Further detail on which Wall Street firms are backing Arc and in what capacity",
-          "Circle's next earnings report for whether the revenue miss was a one-off"
+          "Management commentary or guidance addressing the revenue miss",
+          "USDC circulation and market-share trends in coming quarters"
         ],
         "questions": [
-          "What drove the revenue miss even as earnings beat expectations?",
-          "What specifically does 'Wall Street backing' for Arc entail—investment, partnership, or usage?"
+          "What specifically drove the revenue shortfall?",
+          "Does the miss reflect competitive pressure on stablecoin market share?"
         ],
         "sources": [
           {
-            "title": "Circle shares jump as earnings beat offsets revenue miss, Arc blockchain gains Wall Street backing",
+            "title": "Circle shares fall 3% despite earnings beat as stablecoin issuer misses on revenue",
             "url": "https://www.coindesk.com/markets/2026/08/05/circle-shares-jump-as-earnings-beat-offsets-revenue-miss-arc-blockchain-gains-wall-street-backing",
             "publisher": "CoinDesk",
             "publishedAt": "2026-08-05T11:13:17.000Z"
@@ -170,247 +394,63 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T11:13:17.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/13963e0d3858e00fbf1de77c79da7c5226d29b5a-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Earnings",
-        "trendScore": 61,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-874d009908",
-        "slug": "new-ethereum-proposal-would-zero-out-issuance-once-staked-eth-hits-112",
-        "lane": "crypto",
-        "title": "New Ethereum proposal would zero out issuance once staked ETH hits $112 billion",
-        "summary": "CoinDesk reports a new Ethereum proposal would cut issuance to zero once the total value of staked ETH reaches $112 billion. The proposal is a technical change to Ethereum's monetary policy tied to staking participation thresholds.",
-        "whyItMatters": "Issuance policy directly affects ETH's supply dynamics and staking economics, making this a significant potential shift for validators and holders alike.",
-        "whatToWatch": [
-          "Community and client-team discussion on whether the proposal advances",
-          "Current progress of staked ETH value toward the $112 billion threshold"
-        ],
-        "questions": [
-          "Who authored the proposal and what stage of Ethereum's governance process is it in?",
-          "How would a sudden move to zero issuance affect validator incentives?"
-        ],
-        "sources": [
-          {
-            "title": "New Ethereum proposal would cut issuance to zero if staked ETH reaches $112 billion",
-            "url": "https://www.coindesk.com/tech/2026/08/05/new-ethereum-proposal-would-cut-issuance-to-zero-if-staked-eth-reaches-usd112-billion",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-05T05:49:57.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T05:49:57.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/c357579ddef2051b405b9e89f8525dd02709081d-5760x3240.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Protocol",
-        "trendScore": 61,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-887148921e",
-        "slug": "s-p-awards-top-stability-rating-to-blackrock-s-tokenized-reserve-fund",
-        "lane": "crypto",
-        "title": "S&P awards top stability rating to BlackRock's tokenized reserve fund",
-        "summary": "Cointelegraph reports that S&P has given BlackRock's tokenized reserve fund its top stability rating. The rating covers the fund's structure as a tokenized product tied to reserve-style assets.",
-        "whyItMatters": "A top rating from a major agency for a tokenized fund from the world's largest asset manager lends credibility to tokenized real-world-asset products entering mainstream finance.",
-        "whatToWatch": [
-          "Whether other rating agencies follow with similar assessments of tokenized funds",
-          "Growth in assets under management for BlackRock's tokenized fund following the rating"
-        ],
-        "questions": [
-          "What specific criteria did S&P use to evaluate a tokenized fund versus a traditional one?",
-          "Does the rating affect the fund's eligibility for institutional mandates?"
-        ],
-        "sources": [
-          {
-            "title": "S&P gives BlackRock tokenized reserve fund top stability rating",
-            "url": "https://cointelegraph.com/news/sp-blackrock-tokenized-reserve-fund-stability?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-05T10:40:43.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T10:40:43.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/handshake-agreement-union-partnership-cooperation-collaboration-join-deal-blackrock-3.jpg",
-        "badge": "Ratings",
-        "trendScore": 60,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-be547cf6c7",
-        "slug": "coldcard-hack-prompts-calls-for-a-self-custody-security-overhaul-says-",
-        "lane": "crypto",
-        "title": "Coldcard hack prompts calls for a self-custody security overhaul, says Klippsten",
-        "summary": "CoinDesk reports that a hack affecting Coldcard hardware wallets has prompted Cory Klippsten to call for a broader overhaul of self-custody security practices. The incident has renewed scrutiny of how individuals secure their own private keys.",
-        "whyItMatters": "Self-custody is a core value proposition of Bitcoin, so a hardware-wallet security incident directly challenges the safety assumptions many holders rely on.",
-        "whatToWatch": [
-          "Technical details on how the Coldcard hack was carried out",
-          "Any firmware updates or security recommendations issued in response"
-        ],
-        "questions": [
-          "What specifically was compromised—the device, a supply-chain link, or user practices?",
-          "How many users or how much value was affected by the hack?"
-        ],
-        "sources": [
-          {
-            "title": "Coldcard hack sparks a self-custody security overhaul: Cory Klippsten",
-            "url": "https://www.coindesk.com/markets/2026/08/05/coldcard-hack-sparks-a-self-custody-security-overhaul-cory-klippsten",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-05T09:55:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:55:32.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/0903df38954495f9e1aeb6c9d49b67bdddee5d15-1008x567.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Security",
-        "trendScore": 60,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-f4ea23c47c",
-        "slug": "glassnode-bitcoin-price-metrics-show-longest-capitulation-stretch-sinc",
-        "lane": "crypto",
-        "title": "Glassnode: Bitcoin price metrics show longest capitulation stretch since FTX collapse",
-        "summary": "Cointelegraph reports that a basket of Bitcoin price metrics tracked by Glassnode is showing its longest capitulation phase since the FTX collapse. The on-chain analytics firm's data points to sustained bearish signals across multiple indicators.",
-        "whyItMatters": "Capitulation readings this extended are historically associated with market bottoms or prolonged weakness, making this a closely watched signal for the current cycle.",
-        "whatToWatch": [
-          "Whether Glassnode's capitulation metrics begin to turn as price action evolves",
-          "Any accompanying shifts in exchange flows or holder behavior"
-        ],
-        "questions": [
-          "Which specific metrics make up Glassnode's capitulation basket?",
-          "Has this capitulation signal historically preceded a bottom or further downside?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin price-metric basket sees longest capitulation since FTX blow-up: Glassnode",
-            "url": "https://cointelegraph.com/markets/bitcoin-price-metric-basket-sees-longest-capitulation-since-ftx-blow-up-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-05T09:34:41.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:34:41.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-66799-bitcoin-dominance-cycle-suggests-the-2017-crypto-rally-could-repeat.jpg",
-        "badge": "Analysis",
-        "trendScore": 60,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-d7c46a774b",
-        "slug": "blockchain-gaming-studio-proof-of-play-to-shut-down",
-        "lane": "crypto",
-        "title": "Blockchain gaming studio Proof of Play to shut down",
-        "summary": "Cointelegraph reports that Proof of Play is shutting down after its blockchain gaming thesis failed to pan out. The closure adds to a string of setbacks for play-to-earn and blockchain-based gaming projects.",
-        "whyItMatters": "The shutdown of a notable blockchain gaming studio underscores continued struggles for the sector to find sustainable product-market fit beyond speculative token incentives.",
-        "whatToWatch": [
-          "What happens to Proof of Play's existing games, tokens, and user base",
-          "Whether other blockchain gaming studios face similar pressure"
-        ],
-        "questions": [
-          "What specifically caused the studio's thesis to fail—user retention, tokenomics, or funding?",
-          "Are there implications for token holders or players with in-game assets?"
-        ],
-        "sources": [
-          {
-            "title": "Proof of Play to shut down after blockchain gaming thesis falls short",
-            "url": "https://cointelegraph.com/news/proof-of-play-shut-blockchain-gaming-thesis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-05T09:10:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:10:04.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/nft-gaming-entertainment-ecosystem.jpg",
-        "badge": "Industry",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-4384620031",
-        "slug": "bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
-        "lane": "crypto",
-        "title": "Bitcoin's '500-day rule' faces its biggest test yet",
-        "summary": "CoinDesk examines Bitcoin's so-called '500-day rule,' a market-cycle heuristic, noting that current price action presents its most significant test of that pattern to date. The piece frames this as a moment that could validate or undercut the rule's predictive track record.",
-        "whyItMatters": "Cycle-based heuristics like this shape trader expectations and positioning, so a high-profile test of one's validity matters for how the market reads current price behavior.",
-        "whatToWatch": [
-          "Whether Bitcoin's price action in coming weeks confirms or breaks the pattern",
-          "Commentary from other analysts on the rule's reliability this cycle"
-        ],
-        "questions": [
-          "What exactly does the '500-day rule' predict and what is its historical track record?",
-          "What would count as a definitive pass or fail for the rule this time?"
-        ],
-        "sources": [
-          {
-            "title": "Why bitcoin’s ‘500-day rule’ faces its biggest test yet",
-            "url": "https://www.coindesk.com/markets/2026/08/05/why-bitcoin-s-500-day-rule-faces-its-biggest-test-yet",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-05T09:06:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:06:15.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b72b4dd95175914ab42f1abbcbe7a1c1085f565e-4000x2250.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Analysis",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-3e83b84c05",
-        "slug": "forgd-s-crypto-market-maker-leaderboard-lands-on-defillama",
-        "lane": "crypto",
-        "title": "Forgd's crypto market-maker leaderboard lands on DefiLlama",
-        "summary": "Cointelegraph reports that Forgd has brought its market-maker leaderboard, which tracks crypto market-making activity, to data platform DefiLlama. The integration puts Forgd's rankings in front of DefiLlama's existing user base.",
-        "whyItMatters": "Greater transparency around market-maker performance and activity can help projects and traders better assess liquidity quality and counterparty behavior in crypto markets.",
-        "whatToWatch": [
-          "How the leaderboard's methodology is received by market makers and projects",
-          "Whether other data platforms adopt similar market-maker transparency tools"
-        ],
-        "questions": [
-          "What metrics does Forgd use to rank market makers?",
-          "Does inclusion on DefiLlama change how projects select market-making partners?"
-        ],
-        "sources": [
-          {
-            "title": "Forgd brings its crypto market-maker leaderboard to DefiLlama",
-            "url": "https://cointelegraph.com/news/forgd-market-maker-leaderboard-defillama?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-05T09:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-market-makers-vs-market-takers-key-differences-explained.png",
-        "trendScore": 59,
+        "trendScore": 56,
         "confidence": "medium"
       }
     ],
     "markets": [
       {
-        "id": "markets-517cef4bc4",
-        "slug": "dow-s-p-500-edge-higher-as-trump-signals-hormuz-deal-nearing-nasdaq-di",
+        "id": "markets-930f357bc3",
+        "slug": "5-things-to-know-about-the-stock-market-s-rapid-fire-comeback",
         "lane": "markets",
-        "title": "Dow, S&P 500 Edge Higher as Trump Signals Hormuz Deal Nearing; Nasdaq Digests Tech Earnings",
-        "summary": "The Dow and S&P 500 ticked higher after President Trump said a deal over the Strait of Hormuz was close, easing some geopolitical risk premium in markets. The Nasdaq was more muted as investors worked through a wave of big tech earnings reports.",
-        "whyItMatters": "Any easing of tension around the Hormuz shipping chokepoint has direct implications for oil flows and energy prices, while the tech earnings digestion will help set the tone for the AI-trade-heavy Nasdaq.",
+        "title": "5 things to know about the stock market's rapid-fire comeback",
+        "summary": "MarketWatch outlines five things investors should understand about the stock market's latest fast reversal higher. The piece frames the rebound as notable mainly for its speed following recent volatility, though it doesn't detail specific index levels or drivers beyond the recap itself.",
+        "whyItMatters": "Rapid rebounds test whether recent weakness was a buying opportunity or an early warning, which shapes how investors position heading into the next round of data.",
         "whatToWatch": [
-          "Further details or confirmation of a Hormuz-related deal",
-          "How remaining big tech earnings this week land with investors"
+          "Whether the rebound holds into next week's trading",
+          "Whether gains broaden beyond mega-cap leaders"
         ],
         "questions": [
-          "What would a Hormuz deal actually entail, and is it finalized or still being negotiated?"
+          "What specifically triggered the rapid reversal?",
+          "Which sectors led the comeback?"
         ],
         "sources": [
           {
-            "title": "Stock market today: Dow and S&P 500 edge higher as Trump says Hormuz deal is close, Nasdaq digests tech earnings",
+            "title": "5 things investors should know about the stock market’s latest rapid-fire comeback",
+            "url": "https://www.marketwatch.com/story/5-things-investors-should-know-about-the-stock-markets-latest-rapid-fire-comeback-55f23d87?mod=mw_rss_topstories",
+            "publisher": "MarketWatch Top Stories",
+            "publishedAt": "2026-08-05T16:02:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:02:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://images.mktw.net/im-00322352",
+        "badge": "Analysis",
+        "trendScore": 65,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-517cef4bc4",
+        "slug": "dow-s-p-500-edge-higher-as-trump-signals-hormuz-deal-nearing-nasdaq-di",
+        "lane": "markets",
+        "title": "Dow, S&P 500 climb as Trump says Hormuz deal is close; Nasdaq gives back gains",
+        "summary": "The Dow and S&P 500 advanced after President Trump said a deal over the Strait of Hormuz was close, easing some geopolitical concern. The Nasdaq initially rose alongside the other indexes but gave up its gains during the session, per Yahoo Finance.",
+        "whyItMatters": "The Strait of Hormuz is a critical oil-shipping chokepoint, so any easing of tension there ripples through energy prices and broader risk sentiment.",
+        "whatToWatch": [
+          "Further details or confirmation of the reported Hormuz deal",
+          "Whether the Nasdaq recovers or extends today's underperformance"
+        ],
+        "questions": [
+          "What exactly is the Hormuz deal Trump referenced?",
+          "Why did the Nasdaq lag the Dow and S&P 500 despite the same headline?"
+        ],
+        "sources": [
+          {
+            "title": "Stock market today: Dow, S&P 500 climb as Trump says Hormuz deal is close, Nasdaq gives up gains",
             "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-august-5-dow-sp-500-nasdaq-oil-093653327.html",
             "publisher": "Yahoo Finance",
             "publishedAt": "2026-08-05T09:36:53.000Z"
@@ -418,354 +458,320 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T09:36:53.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://s.yimg.com/uu/api/res/1.2/2WmdF0VwXW6Mf2iFF2Fjdw--~B/aD0yMjY4O3c9MzY4MTthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-08/a03e0372-ab2b-46c6-aefa-1242d4b1a886",
-        "badge": "Markets",
-        "trendScore": 66,
+        "trendScore": 61,
         "confidence": "low"
       },
       {
-        "id": "markets-a733ce91a5",
-        "slug": "musk-downplays-memory-chip-stock-worries-with-a-simple-observation",
+        "id": "markets-abcbdd3cc0",
+        "slug": "uber-issues-weaker-than-expected-bookings-earnings-guidance-for-q3",
         "lane": "markets",
-        "title": "Musk Downplays Memory-Chip Stock Worries With a Simple Observation",
-        "summary": "Elon Musk weighed in on investor concerns about memory-chip stocks, offering a brief observation aimed at calming nerves in the sector. Details of his specific comment weren't extensive in the report.",
-        "whyItMatters": "Musk's public comments can move sentiment quickly in chip and AI-adjacent stocks, a sector already sensitive to swings in AI infrastructure spending narratives.",
+        "title": "Uber shares drop 7% on weak guidance despite revenue growth",
+        "summary": "Uber stock fell about 7% after the company issued guidance that disappointed investors, even though revenue continued to grow, according to CNBC. The reaction suggests markets are weighting the forward outlook more heavily than the recent top-line results.",
+        "whyItMatters": "Uber is a bellwether for consumer spending on ride-hailing and delivery, so soft guidance can flag broader caution about demand or margins ahead.",
         "whatToWatch": [
-          "Whether memory-chip makers respond publicly or see stock moves following Musk's comments"
+          "Management commentary explaining the guidance shortfall",
+          "Analyst price target changes following the report"
         ],
         "questions": [
-          "What exactly did Musk say, and which companies or concerns was he responding to?"
+          "What specifically in the guidance disappointed investors?",
+          "Was the miss concentrated in a particular segment, like delivery or freight?"
         ],
         "sources": [
           {
-            "title": "Elon Musk addresses memory-chip stock concerns with one simple observation",
-            "url": "https://www.marketwatch.com/story/elon-musk-addresses-memory-chip-stock-concerns-with-one-simple-observation-df134d47?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-05T09:45:00.000Z"
+            "title": "Uber stock sinks 7% after weak guidance despite revenue growth",
+            "url": "https://www.cnbc.com/2026/08/05/uber-stock-q2-2026-earnings.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T16:18:31.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:45:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://images.mktw.net/im-50057077",
-        "badge": "Analysis",
-        "trendScore": 65,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-cbfe3477c0",
-        "slug": "spacex-shares-slide-12-as-ai-spending-concerns-overshadow-results",
-        "lane": "markets",
-        "title": "SpaceX Shares Slide 12% as AI Spending Concerns Overshadow Results",
-        "summary": "SpaceX shares fell as much as 12% after investors grew rattled by the scale of the company's AI-related spending, according to CNBC and Yahoo Finance. The selloff came even as early returns from that spending were reported, but the market focused on the cost side of the ledger.",
-        "whyItMatters": "The reaction underscores a broader investor pivot toward scrutinizing whether massive AI capital expenditure is translating into near-term payoff, a question hanging over multiple large-cap names right now.",
-        "whatToWatch": [
-          "Whether SpaceX or company insiders address the spending concerns directly",
-          "How other AI-capex-heavy names trade in sympathy"
-        ],
-        "questions": [
-          "What specifically counted as the 'early returns' investors found insufficient?"
-        ],
-        "sources": [
-          {
-            "title": "SpaceX dives 12% after AI spending surge rattles investors",
-            "url": "https://www.cnbc.com/2026/08/05/spacex-spcx-stock-today-earnings.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T10:56:48.000Z"
-          },
-          {
-            "title": "SpaceX slides as AI spending worries overshadow early returns",
-            "url": "https://finance.yahoo.com/technology/ai/articles/spacex-slides-ai-spending-worries-100228981.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-05T10:02:28.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-05T10:02:28.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.zenfs.com/en/reuters-finance.com/095e79c89a0f47306212f7bcb1d3269e",
+        "publishedAt": "2026-08-05T16:18:31.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108255725-1769094685480-7VYxj_8U.jpg?v=1769094774&w=1920&h=1080",
         "badge": "Earnings",
-        "trendScore": 64,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-44743abba5",
-        "slug": "amd-drops-8-in-premarket-despite-beating-estimates-as-investors-seek-b",
-        "lane": "markets",
-        "title": "AMD Drops 8% in Premarket Despite Beating Estimates, as Investors Seek Bigger AI Payoff",
-        "summary": "AMD shares plunged about 8% in premarket trading even after the company beat earnings expectations, per CNBC and Yahoo Finance. The drop suggests investors wanted stronger signals on AI-driven growth rather than just a beat against estimates.",
-        "whyItMatters": "It's another sign that for AI-exposed chipmakers, beating Wall Street numbers isn't enough anymore — the market is now pricing in outsized AI payoff expectations that make even solid results a sell trigger.",
-        "whatToWatch": [
-          "AMD's forward guidance and any management commentary on AI demand",
-          "Read-through to other chipmakers reporting this earnings season"
-        ],
-        "questions": [
-          "What specific guidance or metric fell short of the AI-growth bar investors were expecting?"
-        ],
-        "sources": [
-          {
-            "title": "AMD plummets 8% in premarket trading despite beating expectations",
-            "url": "https://www.cnbc.com/2026/08/05/amd-stock-today-earnings-q2.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T10:32:35.000Z"
-          },
-          {
-            "title": "AMD falls as investors seek bigger AI payoff",
-            "url": "https://finance.yahoo.com/technology/ai/articles/amd-falls-as-investors-seek-bigger-ai-payoff-082709887.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-05T08:27:09.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-05T08:27:09.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.zenfs.com/en/reuters-finance.com/4688c6e002f43ee85804b7d0dae8b30d",
-        "badge": "Earnings",
-        "trendScore": 64,
+        "trendScore": 60,
         "confidence": "medium"
       },
       {
         "id": "markets-8e466b1d06",
         "slug": "citadel-posts-best-month-in-years-after-betting-on-situational-awarene",
         "lane": "markets",
-        "title": "Citadel Posts Best Month in Years After Betting on 'Situational Awareness' Stocks",
-        "summary": "Ken Griffin's Citadel notched its best monthly performance in years, driven by gains in what CNBC describes as 'Situational Awareness' stocks. The report ties the hedge fund's strong month directly to that theme.",
-        "whyItMatters": "A top hedge fund's outsized win on a specific stock theme often signals where sophisticated money is positioning, which can influence flows into similar names.",
+        "title": "Citadel posts best month in years on 'Situational Awareness' stock bets",
+        "summary": "Ken Griffin's Citadel notched its best month in years after buying into so-called Situational Awareness stocks, CNBC reports. The report ties the fund's standout performance directly to that positioning, though it doesn't specify which stocks fall under the theme.",
+        "whyItMatters": "Citadel is one of the most closely watched multistrategy funds, so a standout month tied to a specific thematic bet signals where sophisticated capital is rotating.",
         "whatToWatch": [
-          "Whether Citadel discloses more detail on the specific positions behind the gains"
+          "Whether Citadel discloses more detail on the trade in future filings",
+          "Whether other large funds follow into the same theme"
         ],
         "questions": [
-          "What exactly falls under the 'Situational Awareness' stock category, and which companies does it include?"
+          "Which specific stocks make up Citadel's 'Situational Awareness' theme?",
+          "How large was the position relative to the fund's overall book?"
         ],
         "sources": [
           {
             "title": "Ken Griffin's Citadel posts best month in years after scooping up Situational Awareness stocks",
             "url": "https://www.cnbc.com/2026/08/05/ken-griffins-citadel-posts-best-month-in-years-after-scooping-up-situational-awareness-stocks.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T11:13:46.000Z"
+            "publishedAt": "2026-08-05T16:17:55.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:13:46.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "publishedAt": "2026-08-05T16:17:55.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://image.cnbcfm.com/api/v1/image/108222062-17623797172025-11-05t215330z_1884587288_rc2kqhanc0ib_rtrmadp_0_usa-abf.jpeg?v=1762379745&w=1920&h=1080",
-        "badge": "Hedge Funds",
-        "trendScore": 61,
+        "trendScore": 60,
         "confidence": "medium"
       },
       {
-        "id": "markets-dfedba6a83",
-        "slug": "cvs-health-raises-profit-forecast-after-beating-estimates-on-stronger-",
+        "id": "markets-44743abba5",
+        "slug": "amd-drops-8-in-premarket-despite-beating-estimates-as-investors-seek-b",
         "lane": "markets",
-        "title": "CVS Health Raises Profit Forecast After Beating Estimates on Stronger Insurance, Drug Revenue",
-        "summary": "CVS Health topped Wall Street estimates and raised its annual profit guidance, with CNBC and Yahoo Finance both pointing to continued improvement in the insurance unit and stronger drug revenues as key drivers.",
-        "whyItMatters": "CVS's insurance arm has been a persistent pain point for the stock in recent years, so sustained improvement there plus a raised outlook is a meaningful signal the turnaround is gaining traction.",
+        "title": "AMD stock sinks after earnings as Lisa Su brushes off Musk's Nvidia commitment",
+        "summary": "AMD shares fell following its latest earnings report, and CEO Lisa Su downplayed comments from Elon Musk about a commitment to Nvidia chips, according to CNBC. The stock decline came alongside the earnings release rather than being solely tied to the Musk remarks.",
+        "whyItMatters": "AMD is Nvidia's chief rival in AI chips, so any signal that major buyers favor Nvidia feeds directly into the competitive narrative investors are pricing into both stocks.",
         "whatToWatch": [
-          "Updated full-year guidance details and how the insurance unit trends in coming quarters"
+          "Full details of AMD's earnings results and forward guidance",
+          "Any follow-up comments from Musk or his companies on chip supplier plans"
         ],
         "questions": [
-          "How much of the beat came from the insurance unit specifically versus pharmacy/drug revenue?"
+          "What exactly did Musk commit to regarding Nvidia?",
+          "Did AMD's earnings themselves miss expectations, or is the stock reacting mainly to the Musk comments?"
         ],
         "sources": [
           {
-            "title": "CVS blows past estimates, hikes guidance as insurance unit continues to improve",
-            "url": "https://www.cnbc.com/2026/08/05/cvs-health-cvs-earnings-q2-2026.html",
+            "title": "Lisa Su brushes off Musk's Nvidia commitment as AMD stock sinks after earnings",
+            "url": "https://www.cnbc.com/2026/08/05/amd-stock-today-earnings-q2.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T10:59:02.000Z"
-          },
-          {
-            "title": "CVS raises annual profit forecast on improved drug revenues",
-            "url": "https://finance.yahoo.com/healthcare/articles/cvs-raises-annual-profit-forecast-103226223.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-05T10:32:26.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-05T10:32:26.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.zenfs.com/en/reuters.com/525eee38f772a4932063109666de1d5b",
-        "badge": "Earnings",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-44b906117f",
-        "slug": "oil-prices-rebound-after-houthis-claim-strike-on-saudi-tanker",
-        "lane": "markets",
-        "title": "Oil Prices Rebound After Houthis Claim Strike on Saudi Tanker",
-        "summary": "Oil prices moved higher after Yemen's Iran-backed Houthi rebels claimed responsibility for an attack on a Saudi tanker, according to CNBC and Yahoo Finance. The claim adds a fresh geopolitical risk premium to crude markets.",
-        "whyItMatters": "Attacks on tankers near key Middle East shipping routes have repeatedly driven volatility in oil prices, which feeds through to energy stocks, inflation expectations, and central bank calculus.",
-        "whatToWatch": [
-          "Confirmation or denial of the strike and any damage/casualty details",
-          "Whether shipping insurers or major carriers adjust routes through the region"
-        ],
-        "questions": [
-          "Has the tanker attack been independently verified beyond the Houthi claim?"
-        ],
-        "sources": [
-          {
-            "title": "Oil prices rebound after Houthis say they attacked Saudi tanker",
-            "url": "https://finance.yahoo.com/news/oil-steadies-two-day-slump-012604187.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-05T10:30:59.000Z"
-          },
-          {
-            "title": "Oil prices move higher after Yemen's Iran-backed Houthis claim Saudi tanker strike",
-            "url": "https://www.cnbc.com/2026/08/05/oil-prices-iran-war-houthis-saudi-tanker.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T09:53:06.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-05T09:53:06.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.zenfs.com/en/reuters.com/4b7abe164db90e13195edc6a2016e613",
-        "badge": "Geopolitics",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-a441c10150",
-        "slug": "softbank-jumps-10-as-asia-tech-tracks-wall-street-ai-rally",
-        "lane": "markets",
-        "title": "SoftBank Jumps 13% as Asia Tech Stocks Track Wall Street's AI Rally",
-        "summary": "SoftBank shares surged 13% as Asian tech stocks broadly rallied, following the lead of an AI-driven rally on Wall Street, per CNBC.",
-        "whyItMatters": "SoftBank's large AI and tech investment portfolio makes it a bellwether for how global investors are pricing AI-related assets, and a double-digit jump signals strong risk appetite carrying over into Asian trading.",
-        "whatToWatch": [
-          "Whether the AI rally extends into the next U.S. trading session",
-          "Other Asia tech names' performance in follow-through trading"
-        ],
-        "questions": [
-          "Which specific SoftBank holdings or announcements drove the 13% move?"
-        ],
-        "sources": [
-          {
-            "title": "SoftBank jumps 13% as Asia tech stocks track Wall Street AI rally",
-            "url": "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T08:05:03.000Z"
+            "publishedAt": "2026-08-05T16:00:55.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T08:05:03.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108263657-1770697316782-gettyimages-2228259809-TFSPI_07082025-9375.jpeg?v=1770697329&w=1920&h=1080",
+        "publishedAt": "2026-08-05T16:00:55.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108208259-1759767774187-gettyimages-2239199521-AMD_OPENAI.jpeg?v=1785945319&w=1920&h=1080",
+        "badge": "Earnings",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-720967f3ac",
+        "slug": "nasdaq-100-logs-one-of-its-most-bullish-stats-of-the-past-decade",
+        "lane": "markets",
+        "title": "Nasdaq 100 logs one of its most bullish stats of the past decade",
+        "summary": "The Nasdaq 100 registered a technical reading that CNBC ranks among the top 10 most bullish stats of the past decade, a move described as crushing short sellers who had bet against the rally. The report doesn't detail the underlying figures beyond that ranking.",
+        "whyItMatters": "Extreme bullish readings like this reflect how forcefully momentum has turned, which matters for gauging whether the rally has further room or is overextended.",
+        "whatToWatch": [
+          "Whether the bullish momentum persists or triggers a pullback",
+          "Short-interest data in the sessions ahead"
+        ],
+        "questions": [
+          "What is the specific statistic being referenced?",
+          "Which stocks or sectors drove the Nasdaq 100 move?"
+        ],
+        "sources": [
+          {
+            "title": "Stock bears obliterated as Nasdaq 100 logs top 10 bullish stat of past decade",
+            "url": "https://www.cnbc.com/2026/08/05/stock-bears-obliterated-as-nasdaq-logs-top-10-bullish-stat-of-past-decade.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T13:19:09.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T13:19:09.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108344532-1785853710277-Traders-Photo-20260803-KK-PRESS-007.jpg?v=1785853829&w=1920&h=1080",
         "trendScore": 58,
         "confidence": "medium"
       },
       {
-        "id": "markets-46f5d3fb32",
-        "slug": "new-york-times-shares-fall-6-despite-earnings-beat",
+        "id": "markets-f235cd4bc6",
+        "slug": "wall-street-sees-2-ai-stocks-with-more-than-218-upside-analysts-say",
         "lane": "markets",
-        "title": "New York Times Shares Fall 6% Despite Earnings Beat",
-        "summary": "New York Times Co. stock dropped about 6% even though the company beat earnings expectations, according to Investing.com. The report doesn't detail what specifically drove the disconnect between the beat and the stock reaction.",
-        "whyItMatters": "A stock selling off despite a beat typically points to concerns about forward guidance or subscriber/ad trends, relevant for how the market values media and subscription-based businesses.",
+        "title": "Wall Street sees 2 AI stocks with more than 218% upside, analysts say",
+        "summary": "A Yahoo Finance roundup highlights two AI-related stocks that Wall Street analysts believe could surge 218% or more. The source doesn't name the companies or the analysts behind the calls, so specifics beyond the headline figure are limited.",
+        "whyItMatters": "Steep analyst price targets on AI names reflect how much of the market's bullish thesis still rests on future earnings rather than current results.",
         "whatToWatch": [
-          "Any management commentary on subscriber growth or advertising trends going forward"
+          "Which stocks and analysts are behind the 218% call",
+          "Upcoming earnings that could validate or undercut the thesis"
         ],
         "questions": [
-          "What guidance or metric within the report disappointed investors enough to outweigh the beat?"
+          "Which two stocks and which analysts are being referenced?",
+          "What time frame is attached to the price targets?"
         ],
         "sources": [
           {
-            "title": "New York Times stock falls 6% despite earnings beat",
-            "url": "https://www.investing.com/news/earnings/new-york-times-stock-falls-6-despite-earnings-beat-93CH-4837212",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-05T18:13:17.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T18:13:17.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXMPECBE0OL_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-f862daf618",
-        "slug": "dow-futures-rise-s-p-500-at-highs-as-spacex-and-amd-slide-while-arista",
-        "lane": "markets",
-        "title": "Dow Futures Rise, S&P 500 at Highs as SpaceX and AMD Slide While Arista and Eli Lilly Jump",
-        "summary": "Dow Jones futures rose with the S&P 500 near record highs, even as SpaceX and AMD shares dropped sharply. Arista Networks and Eli Lilly were notable gainers, according to Yahoo Finance's markets roundup.",
-        "whyItMatters": "The mixed picture — index-level strength alongside sharp individual stock swings — highlights how this earnings season is rewarding and punishing specific companies rather than moving in lockstep with the broader market.",
-        "whatToWatch": [
-          "Whether the S&P 500 sets fresh highs as more earnings roll in this week"
-        ],
-        "questions": [
-          "What specifically drove Arista Networks' and Eli Lilly's gains today?"
-        ],
-        "sources": [
-          {
-            "title": "Dow Jones Futures Rise; SpaceX, AMD Dive As Arista, Eli Lilly Jump With S&P 500 At Highs",
-            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp-500-spacex-amd-arista-eli-lily-earnings/?src=A00220&yptr=yahoo",
+            "title": "2 AI Stocks to Buy Before They Surge 218% or More, According to Wall Street",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/2-ai-stocks-buy-surge-170500189.html",
             "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-05T10:55:13.000Z"
+            "publishedAt": "2026-08-05T17:05:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T10:55:13.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/29757ed95d49a1788c9fa15f200189c8",
-        "badge": "Markets",
+        "publishedAt": "2026-08-05T17:05:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/d8052e3e9daa2bc72c2df02ccc1f96db",
+        "badge": "Analysis",
         "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-a12e99660c",
-        "slug": "reader-q-a-will-medicare-cover-hospital-bills-after-a-car-accident",
+        "id": "markets-174a41042b",
+        "slug": "saudi-wealth-fund-and-kushner-s-affinity-finalize-55-billion-ea-sports",
         "lane": "markets",
-        "title": "Reader Q&A: Will Medicare Cover Hospital Bills After a Car Accident?",
-        "summary": "A MarketWatch reader account describes being T-boned by a teenage driver and asks whether Medicare will cover the resulting hospital bills. This is a personal-finance advice piece rather than a markets-moving story, and the source doesn't provide further detail on the specific coverage rules discussed.",
-        "whyItMatters": "It's a reminder for readers navigating Medicare and auto-insurance overlap after an accident, though it has no direct bearing on markets or rates.",
-        "whatToWatch": [],
+        "title": "Saudi wealth fund and Kushner's Affinity finalize $55 billion EA Sports deal",
+        "summary": "Saudi Arabia's Public Investment Fund and Jared Kushner's Affinity Partners have finalized a $55 billion deal involving EA Sports (Electronic Arts), CNBC reports. It's one of the largest gaming-related transactions involving the Saudi wealth fund to date.",
+        "whyItMatters": "A deal of this size underscores how deeply sovereign wealth capital is now embedded in major U.S. gaming franchises, with implications for EA's ownership and strategy.",
+        "whatToWatch": [
+          "Regulatory review or disclosures tied to the deal's close",
+          "EA's strategic plans following the transaction"
+        ],
         "questions": [
-          "What did the columnist's answer actually conclude about Medicare's coordination with auto insurance in this case?"
+          "What stake or assets specifically change hands in the deal?",
+          "What role will Affinity and PIF play in EA's governance going forward?"
         ],
         "sources": [
           {
-            "title": "‘My head hit the driver’s window’: A teenager T-boned our car. Will Medicare pay my hospital bills?",
-            "url": "https://www.marketwatch.com/story/my-head-hit-the-drivers-window-a-teenager-t-boned-our-car-will-medicare-pay-my-hospital-bills-0552d90d?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-05T11:15:00.000Z"
+            "title": "Saudi wealth fund and Jared Kushner's Affinity finalize $55 billion EA Sports deal",
+            "url": "https://www.cnbc.com/2026/08/05/saudi-wealth-fund-jared-kushner-ea-sports-deal.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T12:08:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:15:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://images.mktw.net/im-92089659",
-        "badge": "Personal Finance",
+        "publishedAt": "2026-08-05T12:08:58.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108205270-1759172132534-gettyimages-2238131191-_73a4422_50zn864s.jpeg?v=1759172185&w=1920&h=1080",
+        "badge": "Deal",
+        "trendScore": 57,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-cbfe3477c0",
+        "slug": "spacex-shares-slide-12-as-ai-spending-concerns-overshadow-results",
+        "lane": "markets",
+        "title": "SpaceX stock falls 10% as AI spending surge rattles investors",
+        "summary": "SpaceX shares dropped 10% after a surge in AI-related spending unsettled investors, according to CNBC. A companion report notes analysts likening a recent SpaceX moon-mission crash to the trajectory of the company's share price.",
+        "whyItMatters": "SpaceX's spending posture and share performance serve as a proxy for investor patience with capital-intensive AI and space bets more broadly.",
+        "whatToWatch": [
+          "Further details on the AI spending that spooked investors",
+          "Any company response addressing the moon-mission setback"
+        ],
+        "questions": [
+          "What specific AI spending figures or plans triggered the selloff?",
+          "What caused the moon-mission crash analysts are referencing?"
+        ],
+        "sources": [
+          {
+            "title": "SpaceX stock falls 10% after AI spending surge rattles investors",
+            "url": "https://www.cnbc.com/2026/08/05/spacex-spcx-stock-today-earnings.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T17:21:23.000Z"
+          },
+          {
+            "title": "SpaceX moon crash is a perfect metaphor for rocket maker’s share price, analysts say",
+            "url": "https://www.cnbc.com/2026/08/05/spacex-moon-crash-share-price-elon-musk.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T16:17:35.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:17:35.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108321428-17812944792026-06-12t161555z_305406967_rc2gsla0exkf_rtrmadp_0_spacex-ipo-california.jpeg?v=1784319677&w=1920&h=1080",
         "trendScore": 56,
         "confidence": "medium"
       },
       {
-        "id": "markets-abcbdd3cc0",
-        "slug": "uber-issues-weaker-than-expected-bookings-earnings-guidance-for-q3",
+        "id": "markets-25b75c7d3f",
+        "slug": "google-s-ai-leadership-reshuffle-jeff-dean-exits-demis-hassabis-steps-",
         "lane": "markets",
-        "title": "Uber Issues Weaker-Than-Expected Bookings, Earnings Guidance for Q3",
-        "summary": "Uber gave a third-quarter bookings and earnings forecast that came in below Wall Street expectations, according to CNBC.",
-        "whyItMatters": "Uber's guidance is watched as a gauge of consumer spending on ride-hailing and delivery, and a soft forecast could weigh on how investors view gig-economy and consumer-discretionary names heading into Q3.",
+        "title": "Google's AI leadership reshuffle: Jeff Dean exits, Demis Hassabis steps down as DeepMind CEO",
+        "summary": "Google is undergoing a shakeup atop its AI organization: chief scientist Jeff Dean is departing and Demis Hassabis is stepping down as CEO of DeepMind, according to CNBC. The moves mark a significant change in leadership of the company's AI research efforts.",
+        "whyItMatters": "Google's AI leadership has been central to its competitive standing against OpenAI and other rivals, so departures at this level raise questions about strategy and continuity.",
         "whatToWatch": [
-          "Uber's Q3 results when reported against this lowered bar",
-          "Stock reaction and analyst estimate revisions following the guidance"
+          "Who is named to succeed Dean and Hassabis",
+          "Any statement from Google or Alphabet on the reasons behind the exits"
         ],
         "questions": [
-          "Which segment — bookings growth or margins — drove the weaker forecast?"
+          "Why are Dean and Hassabis leaving now?",
+          "Are they exiting Alphabet entirely or shifting to other roles?"
         ],
         "sources": [
           {
-            "title": "Uber issues weaker-than-expected bookings, earnings forecasts for third quarter",
-            "url": "https://www.cnbc.com/2026/08/05/uber-stock-q2-2026-earnings.html",
+            "title": "Google's AI reshuffle: Chief scientist Jeff Dean exits and Demis Hassabis steps down as DeepMind CEO",
+            "url": "https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-05T11:06:28.000Z"
+            "publishedAt": "2026-08-05T17:18:50.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:06:28.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108255725-1769094685480-7VYxj_8U.jpg?v=1769094774&w=1920&h=1080",
-        "badge": "Earnings",
+        "publishedAt": "2026-08-05T17:18:50.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108255055-1769013531938-DSC00073.JPG?v=1769013764&w=1920&h=1080",
+        "badge": "Breaking",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-9c1ffc112b",
+        "slug": "etf-manager-behind-the-dram-chip-stock-trade-launches-new-ai-thematic-",
+        "lane": "markets",
+        "title": "ETF manager behind the DRAM chip stock trade launches new AI thematic bet",
+        "summary": "The manager behind a blockbuster ETF built around the DRAM memory chip stock trade is launching a new fund centered on an AI thematic bet, per CNBC. The report doesn't specify the manager's name or the new fund's exact focus beyond the AI theme.",
+        "whyItMatters": "Thematic ETF launches often signal where retail and institutional flows are being steered next within the broader AI trade.",
+        "whatToWatch": [
+          "Launch date and ticker for the new AI-themed ETF",
+          "Assets gathered in its first weeks of trading"
+        ],
+        "questions": [
+          "Who is the manager and what was the original DRAM ETF?",
+          "What specific AI sub-sector does the new fund target?"
+        ],
+        "sources": [
+          {
+            "title": "Manager of DRAM memory chip stock trade blockbuster ETF is back with new AI thematic bet",
+            "url": "https://www.cnbc.com/2026/08/05/chip-stocks-ai-investments-memory-dram.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T16:56:32.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:56:32.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108344711-1785865814969-gettyimages-2266485386-NVIDIA_GTC.jpeg?v=1785865841&w=1920&h=1080",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-f9bd75d341",
+        "slug": "trump-administration-refunds-100-billion-in-liberation-day-tariffs",
+        "lane": "markets",
+        "title": "Trump administration refunds $100 billion in 'liberation day' tariffs",
+        "summary": "The Trump administration has refunded $100 billion collected under its 'liberation day' tariff program, according to CNBC. The scale of the refund marks a significant reversal of revenue previously collected under the policy.",
+        "whyItMatters": "A refund of this size affects federal revenue projections and signals a shift in tariff policy that could change cost structures for importers and trade-exposed companies.",
+        "whatToWatch": [
+          "Which companies or sectors receive the refunds",
+          "Whether the underlying tariff rates are also being revised"
+        ],
+        "questions": [
+          "Why is the administration refunding these tariffs now?",
+          "Does this cover all 'liberation day' tariffs or a specific subset?"
+        ],
+        "sources": [
+          {
+            "title": "Trump admin refunds $100 billion in 'liberation day' tariffs",
+            "url": "https://www.cnbc.com/2026/08/05/trump-tariffs-refunds-ieepa-lawsuit.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-05T16:47:52.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:47:52.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108313767-1780058635774-gettyimages-2278708111-_24a5345_ifgxyjga.jpeg?v=1780058694&w=1920&h=1080",
+        "badge": "Policy",
         "trendScore": 56,
         "confidence": "medium"
       }
@@ -891,21 +897,112 @@
             "Record per-task runtime and token cost so expensive stages can be redesigned"
           ]
         },
-        "updatedAt": "2026-08-05T11:17:52.123Z"
+        "updatedAt": "2026-08-05T17:23:06.671Z"
+      },
+      {
+        "id": "ai-38e5715b66",
+        "slug": "position-paper-argues-llms-fundamentally-can-t-jump",
+        "lane": "ai",
+        "title": "Position Paper Argues LLMs Fundamentally Can't 'Jump'",
+        "summary": "A position paper titled \"Position: LLMs Can't Jump\" is circulating and being discussed on Hacker News. The piece appears to argue that large language models have a structural limitation preventing a certain kind of reasoning or capability leap, though the specifics beyond the title aren't detailed in what's been shared.",
+        "whyItMatters": "Position papers like this shape how researchers and practitioners frame the current ceiling on LLM capabilities, feeding into broader debates about scaling versus fundamental architectural limits.",
+        "whatToWatch": [
+          "Whether the paper gains traction or rebuttals from other researchers",
+          "Any follow-up commentary clarifying the specific limitation being described"
+        ],
+        "questions": [
+          "What exactly does \"jump\" refer to in this context — a reasoning task, a benchmark, or a capability class?",
+          "Is this empirical or purely argumentative/theoretical?"
+        ],
+        "sources": [
+          {
+            "title": "Position: LLMs Can't Jump",
+            "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DklU4737opt",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-05T11:01:37Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T11:01:37Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "badge": "Research",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-22575843c7",
+        "slug": "oracle-cuts-its-always-free-arm-compute-allowance-in-half",
+        "lane": "ai",
+        "title": "Oracle Cuts Its Always Free ARM Compute Allowance in Half",
+        "summary": "Oracle Cloud has reportedly reduced the resources available under its \"Always Free\" ARM-based compute tier, according to a blog post highlighted on Hacker News. The change affects developers who relied on the free tier for low-cost ARM instances.",
+        "whyItMatters": "Free ARM compute has been a popular option for hobbyists and small teams running lightweight inference and side projects, so a cut shrinks a low-cost entry point into cloud-based AI experimentation.",
+        "whatToWatch": [
+          "Whether Oracle issues an official statement or FAQ on the new limits",
+          "Any migration scramble from users moving workloads to other free-tier providers"
+        ],
+        "questions": [
+          "Does this apply retroactively to existing free-tier accounts or only new sign-ups?",
+          "What's driving the reduction — cost, abuse, or capacity constraints?"
+        ],
+        "sources": [
+          {
+            "title": "Oracle Just Halved Its Always Free ARM Limits",
+            "url": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-05T14:46:36Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T14:46:36Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/oracle-always-free-arm-vm-cut-in-half.png",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-b3d51e41d5",
+        "slug": "show-hn-pitches-a-fund-blending-tokenized-gold-tech-stocks-and-digital",
+        "lane": "ai",
+        "title": "Show HN Pitches a Fund Blending Tokenized Gold, Tech Stocks, and Digital Assets",
+        "summary": "A Hacker News \"Show HN\" post floats the idea of a single fund holding a mix of tokenized gold, tech stocks, and digital assets. Details beyond the concept pitch itself aren't available from the supplied source.",
+        "whyItMatters": "It's more a fintech/tokenization concept than an AI story, but it signals continued experimentation with blending traditional and crypto-native asset wrappers around tech-heavy portfolios.",
+        "whatToWatch": [
+          "Whether the concept moves from a Show HN pitch to an actual launched product",
+          "Community reaction and regulatory questions raised in the discussion"
+        ],
+        "questions": [
+          "Who is behind this and is it a live product or just a proposal?",
+          "What regulatory framework, if any, would govern such a tokenized fund?"
+        ],
+        "sources": [
+          {
+            "title": "Show HN: What if one fund held tokenized Gold, tech stocks and digital assets?",
+            "url": "https://wealtii.com/funds/wealtii-tech-digital-asset-growth-fund",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-05T14:11:14Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T14:11:14Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://wealtii.com/og-default.jpg",
+        "trendScore": 47,
+        "confidence": "low"
       },
       {
         "id": "ai-2e63953bef",
         "slug": "rust-programming-language-project-adopts-formal-llm-policy",
         "lane": "ai",
-        "title": "Rust Programming Language Project Adopts Formal LLM Policy",
-        "summary": "The rust-lang/rust project has adopted a policy governing how large language models can be used in contributions to the Rust compiler and ecosystem, according to a post surfaced on Hacker News. The specific rules of the policy weren't detailed in the source, but the move puts one of the most widely used open-source toolchains on record with explicit ground rules for AI-assisted contributions.",
-        "whyItMatters": "As LLM-assisted coding becomes routine, how flagship open-source infrastructure projects like Rust handle AI contributions could set a template other major codebases follow.",
+        "title": "The Rust Project Is Adopting a Formal LLM Policy",
+        "summary": "The rust-lang/rust project is putting in place a policy governing the use of LLMs in its development process, per a post highlighted on Hacker News. The move formalizes how AI-assisted contributions will be handled within one of the most widely used open-source language projects.",
+        "whyItMatters": "As major open-source projects set explicit rules for AI-generated code and contributions, their policies often become reference points for how other maintainers approach the same question.",
         "whatToWatch": [
-          "Whether other major open-source projects adopt similar formal LLM policies",
-          "How the Rust contributor community reacts to the policy"
+          "The specific rules the policy sets for disclosure, review, or use of LLM-generated code",
+          "Whether other large open-source projects adopt similar policies following Rust's lead"
         ],
         "questions": [
-          "What specific restrictions or requirements does the policy impose on LLM-generated code or LLM-assisted pull requests?"
+          "Does the policy restrict LLM use in contributions, reviews, or both?",
+          "Is this a response to a specific incident or a proactive governance move?"
         ],
         "sources": [
           {
@@ -917,25 +1014,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T05:52:24Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://www.rust-lang.org/static/images/rust-social-wide.jpg",
         "badge": "Policy",
-        "trendScore": 50,
+        "trendScore": 45,
         "confidence": "low"
       },
       {
         "id": "ai-d88745754c",
         "slug": "zero-mem-a-proposed-zero-token-approach-to-llm-agent-memory",
         "lane": "ai",
-        "title": "Zero-Mem: A Proposed Zero-Token Approach to LLM Agent Memory",
-        "summary": "A paper posted to arXiv titled \"Zero-Mem: Zero-Token Memory Operations for LLM Agents\" proposes a method for agents to read and write memory without consuming additional tokens from the context window, according to a submission surfaced on Hacker News. No further detail on the technique or benchmark results was included in the source.",
-        "whyItMatters": "Token-cheap memory for agents would address one of the biggest cost and context-window bottlenecks in running long-lived AI agents in production.",
+        "title": "New Research Proposes 'Zero-Token' Memory Operations for LLM Agents",
+        "summary": "A paper posted to arXiv, titled \"Zero-Mem: Zero-Token Memory Operations for LLM Agents,\" describes an approach for handling agent memory without consuming additional token budget. It was surfaced via Hacker News; no further technical detail is available beyond the title.",
+        "whyItMatters": "Memory handling is a persistent cost and design bottleneck for LLM agents, so techniques that reduce token overhead could meaningfully cut the cost of running long-lived or context-heavy agents.",
         "whatToWatch": [
-          "Whether agent framework builders test or adopt the technique",
-          "Peer reaction once the paper circulates more broadly"
+          "Whether the method is adopted or tested by agent frameworks in practice",
+          "Independent benchmarking against existing memory approaches"
         ],
         "questions": [
-          "How does the \"zero-token\" memory mechanism actually work, and what tradeoffs does it introduce in accuracy or latency?"
+          "How does \"zero-token\" memory actually work mechanically — is it offloaded to external storage or a separate model call?",
+          "What tradeoffs (latency, accuracy) does it introduce?"
         ],
         "sources": [
           {
@@ -947,25 +1045,56 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T04:36:44Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
         "badge": "Research",
-        "trendScore": 48,
+        "trendScore": 44,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-6d742f99ac",
+        "slug": "an-slm-trained-on-8-esp32-s3",
+        "lane": "ai",
+        "title": "An SLM trained on $8 ESP32-S3",
+        "summary": "A GitHub project demonstrates a small language model (SLM) trained on and for the ESP32-S3, a microcontroller that costs around $8, according to a post shared on Hacker News. It's an edge-AI proof-of-concept rather than a commercial product.",
+        "whyItMatters": "Projects like this illustrate how far model miniaturization has come, pointing toward a future where cheap, ubiquitous hardware can run useful AI locally without cloud dependence.",
+        "whatToWatch": [
+          "Whether the project gains a following and gets extended to other low-cost microcontrollers",
+          "Any benchmarks on what tasks the model can realistically perform"
+        ],
+        "questions": [
+          "What can the resulting model actually do, and how does its quality compare to cloud-hosted small models?",
+          "Is this reproducible by others without specialized hardware knowledge?"
+        ],
+        "sources": [
+          {
+            "title": "An SLM trained on $8 ESP32-S3",
+            "url": "https://github.com/Carloscodix/qapla",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-05T04:07:27Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T04:07:27Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://opengraph.githubassets.com/876d5ebf70615d5f5b9cb90b84dcdff94b554cebf4cfe697e405f44c4f6f59a9/Carloscodix/qapla",
+        "trendScore": 38,
         "confidence": "low"
       },
       {
         "id": "ai-977f60f7e5",
         "slug": "openai-publishes-third-party-cyber-evaluations-of-its-models",
         "lane": "ai",
-        "title": "OpenAI Publishes Third-Party Cybersecurity Evaluations of Its Models",
-        "summary": "OpenAI has posted a piece describing third-party cyber evaluations involving its models, according to the company's own site. The post confirms external assessments took place but doesn't detail specific findings beyond that.",
-        "whyItMatters": "Independent evaluation of frontier models' cyber-offense capability is central to the AI safety and national-security debate, and OpenAI publishing such evaluations is notable regardless of the results.",
+        "title": "OpenAI Publishes Index of Third-Party Cyber Evaluations of Its Models",
+        "summary": "OpenAI released an index covering third-party cybersecurity evaluations conducted on its models. The publication appears to catalog independent assessments of cyber-related risks or capabilities tied to OpenAI's model lineup.",
+        "whyItMatters": "External evaluation of AI models' offensive cyber capability is a key plank of AI safety governance, and OpenAI publishing this signals continued emphasis on third-party scrutiny ahead of any regulatory requirements.",
         "whatToWatch": [
-          "Whether detailed findings from the evaluations are released",
-          "How regulators or security researchers respond"
+          "Whether other frontier labs follow with similar public evaluation indexes",
+          "Any specific findings or risk flags that emerge from the cataloged evaluations"
         ],
         "questions": [
-          "Which third parties conducted the evaluations, and what capabilities did they specifically test?"
+          "Which third parties conducted the evaluations and what methodology did they use?",
+          "Do any of the evaluations flag capabilities that triggered mitigations or model changes?"
         ],
         "sources": [
           {
@@ -977,24 +1106,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-04T19:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6RSPaWdKwEvT9xWx4IjQy2/a334438e4daf9f62c24541c00c212749/third-party-cyber-evaluations_16x9.png?w=1600&h=900&fit=fill",
         "badge": "Safety",
-        "trendScore": 41,
+        "trendScore": 36,
         "confidence": "medium"
       },
       {
         "id": "ai-8587445849",
         "slug": "megakernels-the-gpu-inference-optimization-trend-that-won-t-stay-dead",
         "lane": "ai",
-        "title": "AI News Roundup: Megakernels Make a Comeback for LLM Inference",
-        "summary": "Latent Space's \"AINews\" newsletter, in an edition headlined \"Megakernels are so dead and so back,\" covers renewed interest in megakernels — a GPU kernel-fusion technique for speeding up model inference. The item is part of a broader news roundup rather than a single standalone announcement.",
-        "whyItMatters": "Inference-speed engineering approaches like megakernels directly affect the cost and latency of running frontier models at scale, shaping competition among AI infrastructure providers.",
+        "title": "AI Infra Debate: Are 'Megakernels' Back in Fashion?",
+        "summary": "Latent Space's AI News roundup covers a resurgence of interest in \"megakernels\" — a GPU kernel-fusion approach to speeding up model execution — after the technique had reportedly fallen out of favor. The piece frames it as a back-and-forth trend within AI infrastructure engineering circles.",
+        "whyItMatters": "Low-level inference optimization techniques like kernel fusion directly affect the cost and speed of running large models at scale, making them a quiet but consequential thread in the competitive infrastructure race.",
         "whatToWatch": [
-          "Which labs or inference providers publicly adopt or benchmark megakernel techniques next"
+          "Whether major inference providers publicly adopt megakernel approaches",
+          "Follow-up technical writeups quantifying performance gains"
         ],
         "questions": [
-          "What specifically revived interest in megakernels, and which teams are behind the renewed work?"
+          "What specifically caused megakernels to fall out of favor before this resurgence?",
+          "Which companies or open-source projects are driving the renewed interest?"
         ],
         "sources": [
           {
@@ -1006,25 +1137,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T01:21:47.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://substackcdn.com/image/fetch/$s_!Gpou!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHNw6xyYaUAA_BVO.jpg",
         "badge": "Analysis",
-        "trendScore": 39,
+        "trendScore": 34,
         "confidence": "low"
       },
       {
         "id": "ai-0779ce4614",
         "slug": "flowise-a-visual-llm-app-building-tool-is-shutting-down",
         "lane": "ai",
-        "title": "Flowise, a Visual LLM App-Building Tool, Is Shutting Down",
-        "summary": "Flowise, a tool for visually building LLM and agent workflows, is shutting down, according to a post surfaced on Hacker News. No further detail on the reasons or timeline was included in the source.",
-        "whyItMatters": "The shutdown underscores the tough economics facing no-code/low-code AI tooling startups as the agent-building market consolidates.",
+        "title": "Flowise, the Low-Code AI Agent Builder, Is Shutting Down",
+        "summary": "Flowise, a platform for visually building LLM and AI agent workflows, is shutting down, according to a post highlighted on Hacker News. No additional detail on the reasons or timeline is available beyond the announcement itself.",
+        "whyItMatters": "The shutdown of a known no-code/low-code AI agent tool is a data point on the competitive pressure facing smaller players in the crowded agent-tooling space, likely squeezed by well-funded platforms and built-in offerings from major labs.",
         "whatToWatch": [
-          "What migration path, if any, is offered to existing Flowise users",
-          "Whether an open-source version continues under community maintenance"
+          "Whether Flowise offers a migration path or open-sources its remaining codebase",
+          "What existing users and integrators plan to switch to"
         ],
         "questions": [
-          "What led to the shutdown, and will any part of the codebase remain available?"
+          "What specifically drove the shutdown — funding, competition, or acquisition?",
+          "Will the project's open-source components continue to be maintained by the community?"
         ],
         "sources": [
           {
@@ -1036,25 +1168,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-05T00:02:40Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://remarkable-smakager-ddb2b7.netlify.app/opengraph-image.png?9ccfc0cd89ea0cda",
         "badge": "Shutdown",
-        "trendScore": 39,
+        "trendScore": 34,
         "confidence": "low"
       },
       {
         "id": "ai-9ca725e460",
         "slug": "latent-space-breaks-down-chatgpt-work-openai-s-push-toward-a-billion-u",
         "lane": "ai",
-        "title": "Analysis: Unpacking ChatGPT Work as 'the Agent for a Billion Users'",
-        "summary": "Latent Space published an analysis piece examining OpenAI's ChatGPT Work product, framing it as an agent aimed at reaching a billion users. The piece is commentary/analysis rather than a new OpenAI announcement.",
-        "whyItMatters": "ChatGPT Work represents OpenAI's push into enterprise and workplace agent products, putting it in direct competition with Microsoft Copilot and Google's Gemini-based Workspace tools.",
+        "title": "Inside ChatGPT Work: OpenAI's Push for an Agent at Billion-User Scale",
+        "summary": "A Latent Space piece unpacks \"ChatGPT Work,\" describing it as an agent aimed at serving a billion users. The analysis digs into what the product represents for OpenAI's enterprise and mass-market ambitions, based on the framing given in the piece.",
+        "whyItMatters": "If OpenAI is positioning an agent product for billion-user scale, it underscores how central agentic features have become to the company's growth strategy beyond the core chatbot experience.",
         "whatToWatch": [
-          "Adoption or rollout figures for ChatGPT Work",
-          "Competitive responses from Microsoft and Google"
+          "Rollout pace and which user segments (enterprise vs. consumer) get access first",
+          "Competitive responses from Google, Anthropic, and Microsoft on similar agent products"
         ],
         "questions": [
-          "What capabilities differentiate ChatGPT Work from other ChatGPT tiers, and how large is current uptake?"
+          "What distinguishes ChatGPT Work technically or functionally from prior ChatGPT enterprise offerings?",
+          "Is \"a billion users\" an actual near-term target or aspirational framing?"
         ],
         "sources": [
           {
@@ -1066,24 +1199,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-04T18:20:14.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
         "imageUrl": "https://substackcdn.com/image/fetch/$s_!Lavj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f4e59a2-820f-4225-abfd-6720ef85df8e_1315x1196.png",
         "badge": "Analysis",
-        "trendScore": 38,
+        "trendScore": 33,
         "confidence": "low"
       },
       {
         "id": "ai-a1ab18b7db",
         "slug": "homebench-a-new-open-source-benchmark-for-local-llms",
         "lane": "ai",
-        "title": "Homebench: New Open-Source Benchmark for Local LLMs",
-        "summary": "A new project called Homebench, posted to GitHub and surfaced on Hacker News, benchmarks locally run LLMs on speed, memory usage, and output quality. The methodology wasn't detailed beyond the project's stated focus.",
-        "whyItMatters": "As capable models become runnable on consumer hardware, standardized local benchmarking helps developers compare tradeoffs across models, quantizations, and hardware setups.",
+        "title": "New Open-Source Tool 'Homebench' Benchmarks Local LLMs",
+        "summary": "A GitHub project called Homebench offers a benchmark suite for evaluating locally run LLMs on speed, memory usage, and output quality, per a post shared on Hacker News. It's aimed at people running models on their own hardware rather than via cloud APIs.",
+        "whyItMatters": "As more capable open-weight models become runnable on consumer hardware, standardized local benchmarking tools help users make informed tradeoffs between model choice and hardware constraints.",
         "whatToWatch": [
-          "Community adoption and published comparison results across popular local models"
+          "Community adoption and contributed benchmark results across different hardware setups",
+          "Whether it becomes a reference point cited alongside other local-LLM leaderboards"
         ],
         "questions": [
-          "Which hardware and models does Homebench currently support, and how does it define output \"quality\"?"
+          "Which models and hardware configurations does it currently support?",
+          "How does its quality scoring methodology work?"
         ],
         "sources": [
           {
@@ -1095,516 +1230,388 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-04T09:48:43Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "trendScore": 38,
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://opengraph.githubassets.com/ae356796561064d6fd5312057c04e0c1533b103ae9b0069411d3823e1a56d5aa/david-g-3654/homebench",
+        "trendScore": 33,
         "confidence": "low"
-      },
-      {
-        "id": "ai-2a0a276054",
-        "slug": "google-deepmind-recaps-its-july-2026-ai-announcements",
-        "lane": "ai",
-        "title": "Google Recaps Its AI Announcements from July 2026",
-        "summary": "Google DeepMind published a roundup post summarizing the AI news and product announcements it made in July 2026. The post is a monthly recap rather than a single new announcement.",
-        "whyItMatters": "Monthly recaps offer a window into the pace and breadth of Google's AI shipping cadence relative to rivals like OpenAI and Anthropic.",
-        "whatToWatch": [
-          "Google's next monthly recap",
-          "Whether any July items move from preview to general availability"
-        ],
-        "questions": [
-          "Which specific July announcements does the recap highlight, and how many are shipped products versus research previews?"
-        ],
-        "sources": [
-          {
-            "title": "The latest AI news we announced in July 2026",
-            "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-            "publisher": "Google DeepMind",
-            "publishedAt": "2026-08-04T13:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-04T13:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/July_AI_Recap_still.max-600x600.format-webp.webp",
-        "badge": "Recap",
-        "trendScore": 36,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-7e39e4ebbb",
-        "slug": "new-study-examines-why-llms-struggle-at-tabular-prediction",
-        "lane": "ai",
-        "title": "Study Examines Why LLMs Struggle at Tabular Data Prediction",
-        "summary": "A paper titled \"Why Large Language Models Fail at Tabular Prediction,\" surfaced on Hacker News via arXiv, investigates why LLMs underperform on tabular prediction tasks compared with specialized methods. Specific findings weren't detailed in the source beyond the title.",
-        "whyItMatters": "Tabular data underlies much of enterprise analytics, so understanding where LLMs fall short matters for how far general-purpose models can realistically replace specialized ML in business settings.",
-        "whatToWatch": [
-          "Whether the paper's findings influence future model training approaches for structured data"
-        ],
-        "questions": [
-          "What specific failure modes does the paper identify, and does it propose fixes or architectural changes?"
-        ],
-        "sources": [
-          {
-            "title": "Why Large Language Models Fail at Tabular Prediction",
-            "url": "https://arxiv.org/abs/2608.02412",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-04T10:07:06Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-04T10:07:06Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
-        "badge": "Research",
-        "trendScore": 34,
-        "confidence": "low"
-      },
-      {
-        "id": "ai-1a17d34b3d",
-        "slug": "mistral-ai-introduces-shieldstral",
-        "lane": "ai",
-        "title": "Mistral AI Introduces Shieldstral",
-        "summary": "Mistral AI introduced a new model called Shieldstral, according to a post on the company's site. The name follows Mistral's \"-stral\" convention used for prior task-specific releases, but the source doesn't specify its exact intended use case.",
-        "whyItMatters": "Mistral has increasingly used dedicated, task-specific model releases to compete with larger labs' general-purpose offerings, and a \"Shield\"-branded model likely targets safety or moderation use cases that rivals are also racing to address.",
-        "whatToWatch": [
-          "Official details on Shieldstral's intended use case and benchmarks",
-          "Availability — API access versus open weights"
-        ],
-        "questions": [
-          "What specific problem is Shieldstral designed to solve, and is it open-weight?"
-        ],
-        "sources": [
-          {
-            "title": "Introducing Shieldstral.",
-            "url": "https://mistral.ai/news/shieldstral/",
-            "publisher": "Mistral AI",
-            "publishedAt": "2026-08-04T12:00:26.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-04T12:00:26.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
-        "badge": "Launch",
-        "trendScore": 32,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-b274d6785e",
-        "slug": "openai-adds-new-learning-and-teaching-tools-to-chatgpt-work-and-codex",
-        "lane": "ai",
-        "title": "OpenAI Details New Learning and Teaching Features for ChatGPT Work and Codex",
-        "summary": "OpenAI published a post outlining new ways to learn and teach using ChatGPT Work and Codex, according to the company's site. The post frames these as educational applications of its workplace and coding-agent products.",
-        "whyItMatters": "OpenAI continues extending ChatGPT and Codex beyond productivity use into education, an area where it competes with Google and other AI-in-education efforts.",
-        "whatToWatch": [
-          "Specific feature rollouts or educational partnerships tied to this announcement"
-        ],
-        "questions": [
-          "What concrete new features were introduced, and are they broadly available or limited to pilots?"
-        ],
-        "sources": [
-          {
-            "title": "New ways to learn and teach with ChatGPT Work and Codex",
-            "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-08-04T00:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-04T00:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2ucoEDJhFKCnvweCx2DR4/d28e7c8e8acabba775c448de631a1276/16_9_SEO_Blog.jpg?w=1600&h=900&fit=fill",
-        "badge": "Product",
-        "trendScore": 31,
-        "confidence": "medium"
       }
     ],
     "tech": [
       {
-        "id": "tech-67d9c56c5b",
-        "slug": "texas-halts-new-data-center-grid-connections-orders-audits",
+        "id": "tech-41b6ee0e5f",
+        "slug": "sunbird-relaunches-its-imessage-for-android-app-three-years-after-priv",
         "lane": "tech",
-        "title": "Texas halts new data center grid connections amid power demand surge",
-        "summary": "Texas has paused new data center connections to the state's power grid after officials found requested capacity had ballooned to over 400 gigawatts. The governor has ordered audits of new data center projects in response to the overwhelming demand, according to Ars Technica, TechCrunch, and Engadget. The move highlights the growing strain AI-driven data center buildout is putting on regional power infrastructure.",
-        "whyItMatters": "Power availability is emerging as a hard limit on AI infrastructure expansion, and how Texas handles the crunch could shape policy in other states racing to host data centers.",
+        "title": "Sunbird relaunches its iMessage-for-Android app, three years after privacy scandal shut it down",
+        "summary": "Sunbird has brought back its app that lets Android users send and receive iMessages, roughly three years after pulling it amid a major privacy backlash. The original launch was scrapped when researchers found the app was mishandling user messages and credentials. The relaunch marks another attempt to solve the long-standing blue-bubble/green-bubble divide between iPhone and Android messaging.",
+        "whyItMatters": "Cross-platform iMessage access remains a recurring flashpoint in the mobile industry, and any credible attempt touches Apple's messaging lock-in and the security scrutiny that follows unofficial iMessage bridges.",
         "whatToWatch": [
-          "Results of the governor's ordered audit of new data centers",
-          "Whether other states impose similar grid-connection pauses",
-          "How long the Texas halt remains in effect and which projects are delayed"
+          "Whether security researchers re-examine the relaunched app for the same class of privacy issues",
+          "How Apple responds, if at all, to a renewed unofficial iMessage client"
         ],
         "questions": [
-          "Which companies' data center projects are directly affected by the halt?",
-          "What criteria will the audit use to approve future connections?"
+          "What specifically was fixed from the original privacy failure?",
+          "Is the new version built on different technical infrastructure than the 2023 app?"
         ],
         "sources": [
           {
-            "title": "Texas governor orders audit of new data centers after realizing over 400 gigawatts of power is a lot",
-            "url": "https://www.engadget.com/2230511/texas-governor-orders-audit-of-new-data-centers-after-realizing-over-400-gigawatts-of-power-is-a-lot/",
+            "title": "Sunbird's iMessage app for Android is back after a major privacy snafu",
+            "url": "https://www.engadget.com/2230890/sunbird-imessage-app-for-android-is-back/",
             "publisher": "Engadget",
-            "publishedAt": "2026-08-04T22:48:48.000Z"
+            "publishedAt": "2026-08-05T16:06:26.000Z"
           },
           {
-            "title": "Texas halts data center connections to power grid amid overwhelming demand",
-            "url": "https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-08-04T20:34:28.000Z"
-          },
-          {
-            "title": "Texas halts new data centers as governor calls for audits",
-            "url": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-04T15:42:35.000Z"
-          }
-        ],
-        "sourceCount": 3,
-        "publishedAt": "2026-08-04T15:42:35.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2288039036-1152x648.jpg",
-        "badge": "Regulatory",
-        "trendScore": 67,
-        "confidence": "high"
-      },
-      {
-        "id": "tech-2b6bc66913",
-        "slug": "trump-administration-s-ai-testing-plan-criticized-as-limited-and-vague",
-        "lane": "tech",
-        "title": "Trump administration's AI testing plan criticized as limited and vague",
-        "summary": "The Verge reports that the Trump administration's newly outlined plan for testing AI systems offers only limited detail, with few specifics on scope or enforcement. Little else about the plan's requirements or which systems it would cover has been detailed in available reporting.",
-        "whyItMatters": "The federal government's approach to AI testing will determine whether AI companies face substantive safety requirements or largely symbolic oversight.",
-        "whatToWatch": [
-          "Further details on the plan's scope and requirements",
-          "Reaction from AI companies and safety researchers"
-        ],
-        "questions": [
-          "What specific testing standards or thresholds does the plan set?",
-          "Which agency, if any, will enforce compliance?"
-        ],
-        "sources": [
-          {
-            "title": "Trump’s AI testing plan is limited and vague",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/975509/white-house-ai-framework-open-models-excluded",
+            "title": "Sunbird relaunched its iMessage app for Android users after three years away",
+            "url": "https://www.theverge.com/tech/975563/imessage-android-sunbird",
             "publisher": "The Verge",
-            "publishedAt": "2026-08-05T10:29:47.000Z"
-          },
-          {
-            "title": "Trump admin \"aware\" of deaths in explosive diarrhea outbreak, delays reporting",
-            "url": "https://arstechnica.com/health/2026/08/trump-admin-aware-of-deaths-in-explosive-diarrhea-outbreak-delays-reporting/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-08-04T15:06:07.000Z"
+            "publishedAt": "2026-08-05T14:13:15.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-08-04T15:06:07.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2285922416-1152x648.jpg",
-        "badge": "Regulatory",
-        "trendScore": 64,
+        "publishedAt": "2026-08-05T14:13:15.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/sunbird-messaging-relaunch.jpeg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Security",
+        "trendScore": 68,
         "confidence": "medium"
       },
       {
-        "id": "tech-db62e9447d",
-        "slug": "google-assistant-set-to-disappear-from-phones-next-month",
+        "id": "tech-b6aa5e4c7c",
+        "slug": "google-s-top-ai-researchers-reportedly-leaving-to-launch-a-startup-cal",
         "lane": "tech",
-        "title": "Google Assistant set to disappear from phones next month",
-        "summary": "Google Assistant is being phased out on phones next month, according to The Verge, as Google continues pushing users toward its Gemini AI assistant. The report did not detail a full timeline for every affected feature or device type.",
-        "whyItMatters": "It marks the end of one of the most widely used consumer AI assistants of the past decade as Google consolidates its assistant strategy around Gemini.",
+        "title": "Google's top AI researchers reportedly leaving to launch a startup called Discovery Loop",
+        "summary": "Wired reports that a group of senior Google AI researchers is departing to start a new venture called Discovery Loop. Details on funding, product focus, and who exactly is leaving are limited in what's been reported so far.",
+        "whyItMatters": "Departures of senior AI talent from Google to found independent labs signal continued churn in the AI talent market and could shift competitive dynamics if the new venture attracts major backing.",
         "whatToWatch": [
-          "The exact shutdown date next month",
-          "How Assistant-dependent features like routines and smart home controls transition to Gemini"
+          "Confirmation of which researchers are involved and their prior roles at Google",
+          "Any funding announcement or stated product direction for Discovery Loop"
         ],
         "questions": [
-          "What happens to third-party integrations built specifically for Assistant?",
-          "Will any Assistant features have no direct Gemini equivalent at launch?"
+          "What problem is Discovery Loop actually building toward?",
+          "Does this departure connect to broader leadership changes reported at Google's AI division?"
         ],
         "sources": [
           {
-            "title": "Google Assistant will disappear from your phone next month",
-            "url": "https://www.theverge.com/tech/975516/google-assistant-android-phones-tablets-shutdown",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-05T11:12:50.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:12:50.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19482921/acastro_180510_1777_google_assistant_0001.0.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Product",
-        "trendScore": 61,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-4d001c1206",
-        "slug": "new-device-aims-to-ease-an-uncomfortable-part-of-routine-physicals",
-        "lane": "tech",
-        "title": "New device aims to ease an uncomfortable part of routine physicals",
-        "summary": "Wired reports on a newly developed device designed to make a routine but often unpleasant part of a physical exam easier for patients. The report did not specify further details on how the device works, who makes it, or when it will be broadly available.",
-        "whyItMatters": "Reducing discomfort in routine checkups is a small but meaningful lever for improving how often people get preventive screenings.",
-        "whatToWatch": [
-          "Further reporting on the device's design and clinical rollout"
-        ],
-        "questions": [
-          "What exam step does the device specifically address?",
-          "Who developed it and when might it reach clinics?"
-        ],
-        "sources": [
-          {
-            "title": "A New Device Eases One of the Most Annoying Parts of Routine Physicals",
-            "url": "https://www.wired.com/story/iris-nodoca-ai-throat-exam-routine-physical/",
+            "title": "Google’s Top AI Brains Are Leaving to Launch Discovery Loop",
+            "url": "https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/",
             "publisher": "Wired",
-            "publishedAt": "2026-08-05T09:00:00.000Z"
+            "publishedAt": "2026-08-05T16:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T09:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.wired.com/photos/6a71ebb552a9268da4f14a1f/master/pass/3O6A1059.jpg",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-c633b11007",
-        "slug": "benq-s-gv50-portable-projector-trades-picture-quality-for-portability-",
-        "lane": "tech",
-        "title": "BenQ's GV50 portable projector trades picture quality for portability, Wired finds",
-        "summary": "Wired's review of the BenQ GV50 portable projector describes it as highly compact and easy to carry, but notes trade-offs in image quality compared to larger models. It's part of a broader push by device makers to shrink projectors for on-the-go use.",
-        "whyItMatters": "The review reflects ongoing competition in portable displays and projectors, a durable niche as buyers weigh convenience against picture quality.",
-        "whatToWatch": [
-          "Pricing and market reception for the GV50",
-          "Competing portable projector launches from rival makers"
-        ],
-        "questions": [
-          "How does the GV50 compare on price and performance to other portable projectors on the market?"
-        ],
-        "sources": [
-          {
-            "title": "BenQ GV50 Review: Highly Portable, but With Quality Trade-Offs",
-            "url": "https://www.wired.com/review/review-benq-gv50/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-05T11:01:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:01:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.wired.com/photos/6a722a7bae3498c6a7a1fa71/master/pass/Review--BenQ-GV50-Ceiling-Projector.jpg",
-        "badge": "Review",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-3b5b4867cf",
-        "slug": "gene-edited-puppies-bred-to-trigger-fewer-allergic-reactions",
-        "lane": "tech",
-        "title": "Gene-edited puppies bred to trigger fewer allergic reactions",
-        "summary": "Wired reports on gene-edited puppies developed to reduce the allergic reactions they trigger in humans, applying gene-editing technology to pets. The report frames it as a notable, if niche, commercial use of biotech tools beyond agriculture and human medicine.",
-        "whyItMatters": "It shows gene-editing technology extending into consumer pet markets, a sign of how broadly the tools first developed for medicine and agriculture are spreading.",
-        "whatToWatch": [
-          "Availability and pricing for consumers",
-          "Any regulatory or ethical scrutiny of gene-edited pets"
-        ],
-        "questions": [
-          "Which company or research group produced the puppies?",
-          "How is the reduced-allergen claim being independently verified?"
-        ],
-        "sources": [
-          {
-            "title": "Gene-Edited Puppies Will Melt Your Heart—but Won’t Trigger Your Allergies",
-            "url": "https://www.wired.com/story/gene-edited-puppies-wont-trigger-allergies/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-05T11:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.wired.com/photos/6a71e1f5ae3498c6a7a1f51b/master/pass/Alfie%20and%20Bailey%201.jpg",
-        "badge": "Biotech",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-9e579648a8",
-        "slug": "wired-s-picks-for-the-best-bluetooth-trackers-in-2026",
-        "lane": "tech",
-        "title": "Wired's picks for the best Bluetooth trackers in 2026",
-        "summary": "Wired published an updated buying guide highlighting three recommended tracking devices for keys, wallets, and other everyday items in 2026. The roundup reflects the continued popularity of Bluetooth item-trackers like Apple's AirTag and its rivals.",
-        "whyItMatters": "The item-tracker category remains a steady, competitive corner of consumer tech worth watching as more companies build in tracking chips.",
-        "whatToWatch": [
-          "Any new entrants or price shifts in the Bluetooth tracker category"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "3 Best Tracking Devices for Your Keys, Wallet, and More (2026)",
-            "url": "https://www.wired.com/story/the-best-bluetooth-trackers/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-05T10:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-05T10:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.wired.com/photos/6a722619fb6a38d5e63c1802/master/pass/The-Best-Tracking-Devices-So-You-Never-Lose-Your-Stuff-Again.jpg",
-        "badge": "Buying Guide",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-4dc7e9ce96",
-        "slug": "signal-now-lets-you-securely-link-multiple-phones-to-one-account",
-        "lane": "tech",
-        "title": "Signal now lets users securely link multiple phones to one account",
-        "summary": "Signal has added the ability to securely link multiple phones to a single account, The Verge reports. The update addresses a long-standing limitation for users who rely on more than one device for the encrypted messaging app.",
-        "whyItMatters": "Multi-device support is a significant usability upgrade for an app widely relied on for secure communications.",
-        "whatToWatch": [
-          "Rollout timeline across Signal's supported platforms",
-          "User feedback on the new device-linking process"
-        ],
-        "questions": [
-          "Is there a limit on how many phones can be linked to one account?"
-        ],
-        "sources": [
-          {
-            "title": "Now you can securely link multiple phones to one Signal account",
-            "url": "https://www.theverge.com/tech/975407/signal-linked-devices-sync",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-04T22:02:46.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-04T22:02:46.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/acastro_STK459_02.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Product",
-        "trendScore": 55,
+        "publishedAt": "2026-08-05T16:00:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://media.wired.com/photos/6a731599a89f1c896d22f70e/master/pass/Discovery%20Loop%20-%20Founders%202.jpg",
+        "badge": "Talent",
+        "trendScore": 65,
         "confidence": "medium"
       },
       {
         "id": "tech-ed45a6ea53",
         "slug": "spacex-s-first-public-earnings-show-it-now-makes-more-from-ai-than-fro",
         "lane": "tech",
-        "title": "SpaceX's first public earnings report shows AI, not rockets, driving revenue",
-        "summary": "SpaceX released its first public earnings statement in 2026, and it shows the company generated more revenue from AI-related business than from its core space launch operations, according to Engadget and The Verge. The disclosure offers a rare look inside the finances of Elon Musk's traditionally private company.",
-        "whyItMatters": "It signals how deeply AI infrastructure and services have become entangled with even industrial giants built on hardware, reshaping how the company and its competitors are valued.",
+        "title": "SpaceX's debut public earnings report unsettles investors",
+        "summary": "SpaceX released its first public earnings statement, and the numbers reportedly spooked investors, according to Ars Technica. Engadget frames the disclosure as showing a financial profile more typical of an AI company than a traditional space and satellite launch business.",
+        "whyItMatters": "SpaceX is one of the most valuable private companies in tech, and any hint of financial strain or unusual spending patterns has ripple effects across the launch, satellite-internet, and AI infrastructure markets it touches.",
         "whatToWatch": [
-          "Further financial disclosures from SpaceX",
-          "Investor and competitor reaction across both the space and AI sectors"
+          "Further detail on what specifically alarmed investors in the report",
+          "Any follow-up commentary from SpaceX or Elon Musk addressing the reaction"
         ],
         "questions": [
-          "What specific AI products or services are generating this revenue?",
-          "Is this tied to Starlink data infrastructure or a separate AI business line?"
+          "What line items in the earnings report are driving the AI-company comparison?",
+          "Is this a one-time disclosure or the start of regular public reporting?"
         ],
         "sources": [
+          {
+            "title": "SpaceX spooks investors with debut earnings report",
+            "url": "https://arstechnica.com/ai/2026/08/spacex-spooks-investors-with-debut-earnings-report/",
+            "publisher": "Ars Technica",
+            "publishedAt": "2026-08-05T13:59:17.000Z"
+          },
           {
             "title": "SpaceX's first public earnings statement shows the financials of an AI company in 2026",
             "url": "https://www.engadget.com/2230455/spacex-s-first-public-earnings-statement-shows-the-financials-of-an-ai-company-in-2026/",
             "publisher": "Engadget",
             "publishedAt": "2026-08-04T21:42:08.000Z"
-          },
-          {
-            "title": "SpaceX made more revenue as an AI company than a space company",
-            "url": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-04T20:47:55.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-08-04T20:47:55.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2286629860.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "publishedAt": "2026-08-04T21:42:08.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/spacex-nasdaq-1024x648.jpg",
         "badge": "Earnings",
-        "trendScore": 53,
+        "trendScore": 62,
         "confidence": "medium"
       },
       {
-        "id": "tech-40d8458ed3",
-        "slug": "can-windborne-turn-better-ai-weather-forecasts-into-a-real-business",
+        "id": "tech-823827dc08",
+        "slug": "macpaw-partners-with-liquid-ai-to-bring-on-device-inference-to-its-app",
         "lane": "tech",
-        "title": "Can WindBorne turn better AI weather forecasts into a real business?",
-        "summary": "TechCrunch profiles WindBorne, a startup using AI to improve weather prediction, and examines whether the company can convert forecasting accuracy gains into a sustainable business model.",
-        "whyItMatters": "Weather data is a high-value market, and AI-driven forecasting improvements could challenge incumbent providers, including government weather services.",
+        "title": "MacPaw partners with Liquid AI to bring on-device inference to its app store developers",
+        "summary": "MacPaw, the maker of CleanMyMac and operator of its own app store, is teaming up with Liquid AI to give developers building for that store access to on-device AI inference. TechCrunch reports the move as an effort to make local, on-device AI models easier to integrate into third-party apps.",
+        "whyItMatters": "On-device inference partnerships reflect a broader industry push to run AI locally rather than in the cloud, which affects cost, privacy, and latency for app developers.",
         "whatToWatch": [
-          "WindBorne's customer and revenue growth",
-          "Any new funding rounds or partnerships"
+          "Which developers or apps adopt the Liquid AI tooling first",
+          "Whether other app-store operators pursue similar on-device AI partnerships"
         ],
         "questions": [
-          "Who are WindBorne's paying customers today?",
-          "How does its forecasting accuracy compare with existing government models?"
+          "What specific models or hardware does the Liquid AI integration support?"
         ],
         "sources": [
           {
-            "title": "AI makes weather prediction better. Can WindBorne make it lucrative?",
-            "url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/",
+            "title": "MacPaw taps Liquid AI to offer on-device inference to devs building for its app store",
+            "url": "https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/",
             "publisher": "TechCrunch",
-            "publishedAt": "2026-08-05T11:00:00.000Z"
+            "publishedAt": "2026-08-05T12:28:38.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/6a1cc23a5fed8844a94b28ba_weather-params.jpg?resize=1200,722",
-        "badge": "Startups",
-        "trendScore": 51,
+        "publishedAt": "2026-08-05T12:28:38.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/MacPaw-x-Liquid-AI.png?resize=1200,675",
+        "trendScore": 57,
         "confidence": "medium"
       },
       {
-        "id": "tech-d4da50e24d",
-        "slug": "saudi-aramco-backs-indian-agtech-startup-mitti-labs-on-water-resilient",
+        "id": "tech-6c9837d228",
+        "slug": "eight-startups-set-to-pitch-at-startup-battlefield-australia",
         "lane": "tech",
-        "title": "Saudi Aramco backs Indian agtech startup Mitti Labs on water-resilient rice farming",
-        "summary": "Saudi Aramco is backing Mitti Labs, an Indian startup working to make rice farming across Asia more resilient to water scarcity, TechCrunch reports. The investment reflects growing interest from energy companies in climate-adjacent agriculture technology.",
-        "whyItMatters": "It shows a major energy company diversifying into climate and agriculture tech, underscoring pressure to make water-intensive rice farming more sustainable across Asia.",
+        "title": "Eight startups set to pitch at Startup Battlefield Australia",
+        "summary": "TechCrunch previewed the eight startups competing at its Startup Battlefield Australia event. The piece introduces the companies ahead of their pitches, per TechCrunch's coverage.",
+        "whyItMatters": "Startup Battlefield events are a recurring pipeline for early-stage companies seeking visibility and funding, offering a snapshot of where regional startup activity is concentrated.",
         "whatToWatch": [
-          "Size and terms of Aramco's investment",
-          "Mitti Labs' expansion plans across Asian rice-growing regions"
+          "Which startup wins or gets singled out from the Australia cohort",
+          "Follow-on funding announcements from participating companies"
         ],
-        "questions": [
-          "How much is Aramco investing in Mitti Labs?",
-          "What specific technology does Mitti Labs use to cut water use?"
-        ],
+        "questions": [],
         "sources": [
           {
-            "title": "Saudi Aramco backs India’s Mitti Labs to make Asia’s rice farming more water-resilient",
-            "url": "https://techcrunch.com/2026/08/05/saudi-aramco-backs-indias-mitti-labs-to-make-asias-rice-farming-more-water-resilient/",
+            "title": "Meet the eight startups pitching at Startup Battlefield Australia",
+            "url": "https://techcrunch.com/2026/08/05/meet-the-eight-startups-pitching-at-startup-battlefield-australia/",
             "publisher": "TechCrunch",
-            "publishedAt": "2026-08-05T11:00:00.000Z"
+            "publishedAt": "2026-08-05T17:02:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/mitti-labs-rice-farmer-andhra-pradesh-awd-program.jpg?resize=1200,800",
+        "publishedAt": "2026-08-05T17:02:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/11/54889167026_7a80a409c4_o.jpg?resize=1200,800",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-7f311dcf91",
+        "slug": "apple-s-private-relay-can-leak-your-real-ip-address-techcrunch-warns",
+        "lane": "tech",
+        "title": "Apple's Private Relay can leak your real IP address, TechCrunch warns",
+        "summary": "TechCrunch published a PSA-style report warning that Apple's Private Relay privacy feature can, under certain conditions, leak a user's real IP address rather than masking it as intended.",
+        "whyItMatters": "Private Relay is one of Apple's flagship privacy features across iOS and macOS, so any leak undermines a core promise Apple makes to hundreds of millions of users about browsing anonymity.",
+        "whatToWatch": [
+          "Whether Apple acknowledges the issue or ships a fix",
+          "Guidance on which conditions or configurations trigger the leak"
+        ],
+        "questions": [
+          "How widespread is the leak, and does it affect all Private Relay users or only specific setups?",
+          "Has Apple been notified, and is a patch timeline known?"
+        ],
+        "sources": [
+          {
+            "title": "PSA: Apple’s Private Relay can leak your real IP address",
+            "url": "https://techcrunch.com/2026/08/05/psa-apples-private-relay-can-leak-your-real-ip-address/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-05T16:52:29.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:52:29.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1237753209.jpg?resize=1200,800",
+        "badge": "Security",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-8b1ada3050",
+        "slug": "google-announces-a-major-shakeup-of-its-top-ai-leadership",
+        "lane": "tech",
+        "title": "Google announces a major shakeup of its top AI leadership",
+        "summary": "The Verge reports that Google has announced a significant reshuffling of leadership within its AI organization. Specifics on which roles and executives are affected are limited in the reporting available.",
+        "whyItMatters": "Leadership changes at the top of Google's AI division can signal strategic shifts in how the company competes with OpenAI, Anthropic, and other rivals in the AI race.",
+        "whatToWatch": [
+          "Official confirmation from Google of the new leadership structure",
+          "Any connection between this shakeup and reports of senior researchers departing to start new ventures"
+        ],
+        "questions": [
+          "Who specifically is moving into or out of leadership roles?",
+          "Does this reflect a strategy change or an internal power realignment?"
+        ],
+        "sources": [
+          {
+            "title": "Google just announced a major shakeup of its top AI leadership",
+            "url": "https://www.theverge.com/tech/975677/google-deepmind-ai-demis-hassabis-shakeup",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-05T16:47:23.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:47:23.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2273112113.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Leadership",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-a57a126957",
+        "slug": "disney-partners-with-tiktok-to-bring-fan-made-shorts-to-its-short-form",
+        "lane": "tech",
+        "title": "Disney+ partners with TikTok to bring fan-made shorts to its short-form video feed",
+        "summary": "Disney is partnering with TikTok to surface fan-created short-form video content within Disney+, according to Engadget and TechCrunch. The move brings creator content from TikTok into Disney's own streaming app rather than keeping it siloed on TikTok.",
+        "whyItMatters": "Legacy streamers are increasingly borrowing short-form and creator-driven formats popularized by TikTok to boost engagement, a sign of how much competitive pressure user-generated content platforms are putting on traditional media.",
+        "whatToWatch": [
+          "How Disney+ curates and moderates fan-made content in the new feed",
+          "Whether other studios or streamers strike similar TikTok content partnerships"
+        ],
+        "questions": [
+          "How is content selected or licensed for the Disney+ feed?"
+        ],
+        "sources": [
+          {
+            "title": "Disney partners with TikTok to bring fan-made shorts to Disney+",
+            "url": "https://www.engadget.com/2230726/disney-partners-with-tiktok-fan-made-shorts-disney/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-05T13:49:14.000Z"
+          },
+          {
+            "title": "Disney+ looks to TikTok creators to bring fan content to its short-form video feed",
+            "url": "https://techcrunch.com/2026/08/05/disney-looks-to-tiktok-creators-to-bring-fan-content-to-its-short-form-video-feed/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-05T13:21:43.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-05T13:21:43.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/disney-partners-with-tiktok-to-bring-fan-made-shorts-to-disney/l-intro-1785937589.jpg",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-4538eda215",
+        "slug": "indian-ev-maker-river-raises-120m-series-c-to-scale-production",
+        "lane": "tech",
+        "title": "Indian EV maker River raises $120M Series C to scale production",
+        "summary": "River, an Indian electric vehicle startup, has raised a $120 million Series C round, according to TechCrunch. The company plans to use the funding to scale up production and launch additional models.",
+        "whyItMatters": "Large funding rounds for EV makers in India point to continued investor appetite for electrification in fast-growing, price-sensitive markets outside the US and China.",
+        "whatToWatch": [
+          "Which new models River plans to launch with the fresh capital",
+          "Production scale-up timeline and any manufacturing partnerships"
+        ],
+        "questions": [
+          "Who led the Series C round?"
+        ],
+        "sources": [
+          {
+            "title": "Indian EV startup River raises $120M Series C to scale production, launch more models",
+            "url": "https://techcrunch.com/2026/08/05/indian-ev-two-wheeler-startup-river-raises-120m-after-scaling-with-one-model/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-05T11:26:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T11:26:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/river-co-founders-aravind-mani-vipin-george.jpg?resize=1200,800",
         "badge": "Funding",
-        "trendScore": 51,
+        "trendScore": 56,
         "confidence": "medium"
       },
       {
-        "id": "tech-50d7c63819",
-        "slug": "study-finds-cougars-reduce-deer-related-car-crashes-by-hunting-them",
+        "id": "tech-73d50818e4",
+        "slug": "analysis-spacex-s-business-looks-more-like-x-than-space-these-days",
         "lane": "tech",
-        "title": "Study finds cougars reduce deer-related car crashes by hunting them",
-        "summary": "Wired reports on research showing that cougar populations help lower the risk of car crashes involving deer by preying on and thinning deer numbers near roadways. The study links predator ecology directly to a measurable public-safety outcome.",
-        "whyItMatters": "It's a concrete example of wildlife research translating into public-safety and economic benefits, feeding into broader conservation policy debates.",
+        "title": "Analysis: SpaceX's business looks more like X than Space these days",
+        "summary": "Following SpaceX's debut public earnings disclosure, The Verge argues the company's financial picture is increasingly shaped by its ties to X (formerly Twitter) rather than its rocket and satellite operations. The piece is framed as analysis reacting to the same earnings report that reportedly spooked investors elsewhere.",
+        "whyItMatters": "If a company built on launch and satellite-internet revenue is now materially influenced by an unrelated social media investment, it complicates how investors and regulators should value and scrutinize SpaceX.",
         "whatToWatch": [
-          "Any policy proposals tying predator conservation to road-safety benefits"
+          "Further breakdown of how much of SpaceX's balance sheet ties back to X",
+          "Any investor or analyst response to the reframing of SpaceX's business mix"
         ],
         "questions": [
-          "How large is the measured reduction in crashes?",
-          "Which regions or road corridors were studied?"
+          "How exactly are SpaceX's and X's finances linked given they are separate companies?"
         ],
         "sources": [
           {
-            "title": "Cougars Lower the Risks of Car Crashes by Hunting Deer",
-            "url": "https://www.wired.com/story/cougars-lower-risks-car-crashes-by-hunting-deer/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-05T11:00:00.000Z"
+            "title": "SpaceX is barely Space and mostly X",
+            "url": "https://www.theverge.com/science/975545/spacex-x-earnings-ai-data-centers-compute-space",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-05T16:35:56.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-05T11:00:00.000Z",
-        "updatedAt": "2026-08-05T11:17:52.123Z",
-        "imageUrl": "https://media.wired.com/photos/6a722554fb6a38d5e63c17fb/master/pass/Cougars-Lower-Risks-of-Car-Crashes-by-Eating-All-the-Deer-Science-1399723814.jpg",
-        "badge": "Research",
-        "trendScore": 51,
+        "publishedAt": "2026-08-05T16:35:56.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKE012_SPACEX_IPO_2026_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Analysis",
+        "trendScore": 55,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-32802d2d5e",
+        "slug": "reddit-is-rolling-out-ai-as-a-moderator",
+        "lane": "tech",
+        "title": "Reddit is rolling out AI as a moderator",
+        "summary": "The Verge reports that Reddit is introducing AI-driven moderation on its platform, adding automated tools alongside its existing human and volunteer moderator system.",
+        "whyItMatters": "Content moderation at Reddit's scale is a persistent challenge, and AI moderation tools raise questions about accuracy, bias, and how much authority automated systems should have over community rules.",
+        "whatToWatch": [
+          "Which subreddits or moderation tasks get AI tools first",
+          "How human moderators' authority interacts with AI-driven decisions",
+          "Any user or moderator backlash over automated enforcement"
+        ],
+        "questions": [
+          "What happens when the AI moderator makes an incorrect call — is there an appeals process?"
+        ],
+        "sources": [
+          {
+            "title": "Reddit is introducing a new moderator: AI",
+            "url": "https://www.theverge.com/tech/975398/reddit-ai-rules-hub-moderator-old-reddit-developer-platform",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-05T16:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T16:00:00.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
+        "trendScore": 55,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-2c94353a06",
+        "slug": "startup-hark-previews-a-browser-use-ai-agent-for-completing-tasks",
+        "lane": "tech",
+        "title": "Startup Hark previews a browser-use AI agent for completing tasks",
+        "summary": "TechCrunch reports that startup Hark has previewed an AI agent designed to operate a web browser autonomously to complete tasks on a user's behalf.",
+        "whyItMatters": "Browser-use agents are a hotly contested frontier in AI, with major players and startups alike racing to let AI handle multi-step web tasks, so each new entrant shapes expectations for reliability and safety in this category.",
+        "whatToWatch": [
+          "A public launch or beta release date for Hark's agent",
+          "How it compares in capability to browser-agent efforts from larger AI companies"
+        ],
+        "questions": [
+          "What tasks is the agent actually reliable at completing today, versus still experimental?"
+        ],
+        "sources": [
+          {
+            "title": "Hark previews its browser use agent for completing tasks",
+            "url": "https://techcrunch.com/2026/08/05/hark-previews-its-browser-use-agent-for-completing-tasks/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-05T15:46:27.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-05T15:46:27.000Z",
+        "updatedAt": "2026-08-05T17:23:06.671Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Screenshot-2026-08-05-at-8.10.59-PM.jpg?resize=1200,596",
+        "trendScore": 55,
         "confidence": "medium"
       }
     ]
