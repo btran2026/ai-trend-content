@@ -1,23 +1,23 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-05T23:22:32.070Z",
-  "contentVersion": 16,
+  "generatedAt": "2026-08-06T05:25:48.120Z",
+  "contentVersion": 17,
   "stories": [
     {
       "id": "crypto-0390492099",
       "slug": "coldcard-exploit-reignites-hardware-wallet-security-debate",
       "lane": "crypto",
-      "title": "Coldcard Hardware Wallet Exploit Sparks Debate Over Self-Custody Security",
-      "summary": "An exploit affecting Coldcard hardware wallets has been disclosed, and CoinDesk reports analysts think the incident could push more investors toward regulated bitcoin products rather than self-custody. Cointelegraph separately examined whether the attack means hardware wallets as a category are now insecure.",
-      "whyItMatters": "Security incidents in self-custody tools can shift investor preference toward custodial, regulated products, with knock-on effects for how much trust the industry places in hardware wallets.",
+      "title": "Coldcard exploit fuels debate over hardware wallet security",
+      "summary": "A newly disclosed exploit against Coldcard hardware wallets has raised questions about self-custody security, with some analysts telling CoinDesk it could push more investors toward regulated bitcoin exposure like ETFs rather than self-custody. Cointelegraph separately examined whether the attack implicates hardware wallets broadly or is specific to Coldcard's design.",
+      "whyItMatters": "Security scares around self-custody tools can shift capital toward regulated products, affecting flows into bitcoin ETFs and custodial services.",
       "whatToWatch": [
-        "Any patch or official response from Coldcard",
-        "Whether other hardware wallet makers report similar vulnerabilities",
-        "Whether ETF or custodial-product flows tick up in response"
+        "Whether Coldcard or independent researchers publish a technical post-mortem",
+        "Responses from other hardware wallet makers",
+        "Any visible shift in flows toward regulated bitcoin products"
       ],
       "questions": [
-        "What exactly is the vulnerability, and has it been fixed?",
-        "Is the risk specific to Coldcard or a broader class of hardware wallets?"
+        "Is the vulnerability specific to Coldcard's architecture or a broader hardware wallet risk?",
+        "Has any user actually lost funds in the exploit?"
       ],
       "sources": [
         {
@@ -35,26 +35,115 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-05T13:30:00.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/df75194a14ee0137a319a24c95c7971dfac737a2-4896x3268.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Security",
-      "trendScore": 73,
+      "trendScore": 68,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-fed450d3f2",
+      "slug": "xrp-whales-keep-buying-the-dip-while-ether-shows-deeper-capitulation",
+      "lane": "crypto",
+      "title": "XRP whales keep buying the dip while ether shows deeper capitulation",
+      "summary": "CoinDesk reports large XRP holders continuing to accumulate through the recent pullback, while ether's price action points to more pronounced capitulation among its holders. The divergence suggests investor conviction is holding up better for XRP than for ETH in the current downturn.",
+      "whyItMatters": "Whale accumulation patterns are a closely watched signal for where conviction, or fear, is concentrated across major tokens during a drawdown.",
+      "whatToWatch": [
+        "Whether XRP whale buying continues if prices fall further",
+        "Any stabilization in ether's on-chain selling pressure"
+      ],
+      "questions": [
+        "How much of the XRP buying is exchange-based versus long-term wallet accumulation?"
+      ],
+      "sources": [
+        {
+          "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
+          "url": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-06T04:46:17.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T04:46:17.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b53d077c4e5949d0efd6629978ef575ece087f83-2400x1350.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 60,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-f7158d5b06",
+      "slug": "cashcat-surges-120-as-robinhood-chain-s-value-locked-tops-774-million",
+      "lane": "crypto",
+      "title": "CASHCAT surges 120% as Robinhood Chain's value locked tops $774 million",
+      "summary": "The token CASHCAT rallied 120% over the past week as Robinhood Chain's total value locked climbed to $774 million, according to CoinDesk. The move highlights fast-growing activity on the newer chain even as broader crypto markets have been choppy.",
+      "whyItMatters": "Rapid TVL growth and token spikes on emerging chains like Robinhood Chain signal where speculative capital and developer activity are migrating.",
+      "whatToWatch": [
+        "Whether Robinhood Chain's TVL growth holds or reverses",
+        "Whether CASHCAT's rally sustains or gives back gains"
+      ],
+      "questions": [
+        "What specifically is driving demand for CASHCAT versus other tokens on the chain?"
+      ],
+      "sources": [
+        {
+          "title": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
+          "url": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-06T04:31:41.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T04:31:41.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f021b8489c514048a19284a683921ac81755aa3c-2782x954.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "trendScore": 60,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-6899c9db28",
+      "slug": "bitcoin-red-team-audit-surfaces-roughly-5-000-findings",
+      "lane": "crypto",
+      "title": "Bitcoin Red Team audit surfaces roughly 5,000 findings",
+      "summary": "A sweeping security audit conducted by the Bitcoin Red Team turned up around 5,000 findings, according to Cointelegraph. Initial reporting did not specify a severity breakdown or exactly which parts of the ecosystem were covered.",
+      "whyItMatters": "Large-scale security reviews of core Bitcoin infrastructure matter for tracking protocol-level risk, even before findings are triaged into confirmed vulnerabilities.",
+      "whatToWatch": [
+        "A breakdown of critical versus low-severity findings",
+        "Any disclosed fixes or patches resulting from the audit"
+      ],
+      "questions": [
+        "How many of the 5,000 findings represent genuine vulnerabilities versus minor or informational issues?",
+        "Which projects or components were in scope?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin Red Team reports 5K findings in sweeping security audit",
+          "url": "https://cointelegraph.com/news/bitcoin-red-team-reports-5k-findings-in-sweeping-security-audit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-06T01:09:06.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T01:09:06.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bug-error-hack-red-mistake-malwire.jpg",
+      "badge": "Security",
+      "trendScore": 57,
       "confidence": "medium"
     },
     {
       "id": "crypto-f093b4953e",
       "slug": "bitcoin-lags-as-global-equities-notch-record-highs-amid-yen-interventi",
       "lane": "crypto",
-      "title": "Bitcoin Lags Record-Setting Equities Rally as a Corporate Holder Cashes Out",
-      "summary": "CoinDesk reports bitcoin and the broader crypto market failed to keep pace as global equities markets hit record highs. Separately, CryptoSlate reported a cellular chipmaker sold 1,200 bitcoin from its treasury, using the proceeds to erase its debt entirely and double its cash position.",
-      "whyItMatters": "Bitcoin's underperformance against a booming equities market, alongside a corporate holder liquidating its treasury position, raises questions about near-term demand and how corporate BTC holders are managing balance-sheet risk.",
+      "title": "Bitcoin lags as global equities hit record highs; chipmaker's BTC sale wipes out its debt",
+      "summary": "Bitcoin and the broader crypto market failed to keep pace as global equity indexes set fresh record highs, according to CoinDesk. Separately, CryptoSlate reported that a cellular chipmaker sold off 1,200 bitcoin from its treasury, using the proceeds to erase its debt and roughly double its cash position.",
+      "whyItMatters": "Bitcoin's underperformance against equities and a corporate treasury unwinding its BTC holdings both speak to how institutional and public-company sentiment toward bitcoin exposure is evolving.",
       "whatToWatch": [
-        "Whether bitcoin's relative underperformance versus equities persists",
-        "Whether other corporate treasuries follow with similar sales"
+        "Whether other corporate bitcoin treasuries make similar sales",
+        "Whether bitcoin's relative underperformance versus equities persists"
       ],
       "questions": [
-        "Which chipmaker sold the bitcoin, and when did the sale occur?",
-        "Is this an isolated treasury decision or part of a broader trend among corporate holders?"
+        "Which chipmaker sold the bitcoin, and does the move signal a broader trend among public companies holding BTC treasuries?"
       ],
       "sources": [
         {
@@ -72,25 +161,85 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-05T11:01:15.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9b1f83688f4588197032a91f7adfaf3a6a9b6f01-3317x1697.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 62,
+      "trendScore": 57,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-132799ab01",
+      "slug": "elizaos-token-hits-record-low-after-founder-calls-project-dead",
+      "lane": "crypto",
+      "title": "ElizaOS token hits record low after founder calls project 'dead'",
+      "summary": "The ElizaOS token fell 19% to a record low after its founder publicly declared the project dead, according to Cointelegraph. The statement triggered a sharp selloff among remaining holders.",
+      "whyItMatters": "Founder-declared project failures are a reminder of how concentrated and reflexive risk remains in smaller AI-crypto tokens.",
+      "whatToWatch": [
+        "Whether the founder or team issues a formal wind-down plan or further clarification",
+        "Any attempt by the community to fork or revive the project"
+      ],
+      "questions": [
+        "What specifically prompted the founder to call the project dead?"
+      ],
+      "sources": [
+        {
+          "title": "ElizaOS token sinks 19% to record low after founder declares it ‘dead’",
+          "url": "https://cointelegraph.com/markets/elizaos-token-record-low-founder-declares-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-06T05:08:04.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T05:08:04.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-solana-network-constantly-having-trouble-and-going-offline-sol-price.png",
+      "badge": "Breaking",
+      "trendScore": 56,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-a8fce2b1cd",
+      "slug": "bitcoin-holds-above-64-000-as-traders-eye-100-billion-spacex-unlock",
+      "lane": "crypto",
+      "title": "Bitcoin holds above $64,000 as traders eye $100 billion SpaceX unlock",
+      "summary": "Bitcoin steadied above $64,000, with traders reportedly watching a $100 billion SpaceX unlock event, according to CoinDesk. The report ties broader risk sentiment to the looming unlock, though details on its exact mechanics weren't specified.",
+      "whyItMatters": "Large unlock events tied to major private companies can inject volatility into risk assets, including crypto, depending on how any resulting liquidity is deployed.",
+      "whatToWatch": [
+        "The actual timing and mechanics of the SpaceX unlock",
+        "Bitcoin's price reaction once the unlock occurs"
+      ],
+      "questions": [
+        "What form does the SpaceX unlock take, and why is it being linked to bitcoin specifically?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock",
+          "url": "https://www.coindesk.com/markets/2026/08/06/bitcoin-steadies-above-usd64-000-as-traders-watch-usd100-billion-spacex-unlock",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-06T04:59:11.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T04:59:11.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/d1da7dc81bdeb62967c50f138ab1a3e5b4aea59f-4032x3024.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 56,
       "confidence": "medium"
     },
     {
       "id": "crypto-c342877d09",
       "slug": "all-six-us-solana-etfs-log-zero-net-flows-for-a-fifth-straight-day",
       "lane": "crypto",
-      "title": "All Six US Solana ETFs Log Zero Net Flows for a Fifth Straight Day",
-      "summary": "CryptoSlate reports that all six US-listed Solana ETFs recorded absolute zero net flows for five consecutive trading days.",
-      "whyItMatters": "Flat flows across an entire product category suggest fading or stalled investor interest, a useful signal for gauging demand for altcoin ETFs beyond bitcoin and ether.",
+      "title": "US Solana ETFs post five straight days of zero net flows",
+      "summary": "All six US-listed Solana ETFs recorded zero net flows for five consecutive trading days, according to CryptoSlate. The stretch of complete inactivity stands out against the daily inflow or outflow swings typically seen in crypto ETF categories.",
+      "whyItMatters": "Flat flows across an entire fund category can signal fading investor interest or a wait-and-see posture toward Solana exposure specifically.",
       "whatToWatch": [
-        "Whether flows resume in either direction in coming sessions",
-        "Any commentary from issuers on the flow drought"
+        "Whether flows resume in either direction in coming days",
+        "How Solana ETF flow trends compare with bitcoin and ether ETFs over the same period"
       ],
       "questions": [
-        "What's behind the stagnation — thin investor awareness, risk-off sentiment, or something specific to these products?"
+        "Is the zero-flow streak due to genuine lack of demand or a technical/reporting quirk?"
       ],
       "sources": [
         {
@@ -102,25 +251,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T20:35:44.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/solana-etf-zero-flow-valv.jpg",
       "badge": "ETF Flows",
-      "trendScore": 60,
+      "trendScore": 55,
       "confidence": "low"
     },
     {
       "id": "crypto-e45f9f19f2",
       "slug": "blackrock-s-etha-reverse-split-set-to-sharply-cut-ethereum-trading-cos",
       "lane": "crypto",
-      "title": "BlackRock's ETHA Reverse Split Set to Cut Ethereum Trading Costs Sharply",
-      "summary": "BlackRock is carrying out a rare reverse split of its ETHA ether ETF, which CryptoSlate says will make gaining ether exposure through the fund roughly 70 times cheaper than trading it directly on Coinbase.",
-      "whyItMatters": "A reverse split reshapes the price and liquidity profile of one of the largest ether ETFs, potentially redirecting where investors go to get ether exposure.",
+      "title": "BlackRock's ETHA reverse split set to undercut Coinbase on trading costs",
+      "summary": "BlackRock is carrying out a reverse split of its ETHA ether ETF, a move CryptoSlate reports will make trading the fund roughly 70 times cheaper than trading ether directly on Coinbase. Reverse splits raise a fund's per-share price without changing its total value, often used to align share price with peers or narrow trading spreads.",
+      "whyItMatters": "Lower effective trading costs on a regulated ether ETF could pull volume away from crypto-native exchanges toward traditional brokerage rails.",
       "whatToWatch": [
         "The effective date of the reverse split",
-        "How trading volume and bid-ask spreads shift once it takes effect"
+        "Whether ETHA trading volume shifts materially versus direct ether trading venues"
       ],
       "questions": [
-        "What's driving the reverse split now, and does it change ETHA's fees or underlying holdings?"
+        "How was the 70-times cost comparison calculated, and does it hold across different order sizes?"
       ],
       "sources": [
         {
@@ -132,26 +281,54 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T13:55:37.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etha-share-consolidation-crate.jpg",
       "badge": "ETF",
-      "trendScore": 59,
+      "trendScore": 54,
       "confidence": "low"
+    },
+    {
+      "id": "crypto-34a833499a",
+      "slug": "mysten-labs-technology-chief-departs-for-anthropic-s-ai-security-team",
+      "lane": "crypto",
+      "title": "Mysten Labs' technology chief departs for Anthropic's AI security team",
+      "summary": "The chief technology officer of Mysten Labs, the company behind the Sui blockchain, is leaving to join Anthropic to work on AI security, according to Cointelegraph.",
+      "whyItMatters": "Departures of senior technical leadership from blockchain infrastructure firms to AI labs highlight competition for talent between the crypto and AI sectors.",
+      "whatToWatch": [
+        "Who succeeds the departing CTO at Mysten Labs",
+        "Whether the move signals further crypto-to-AI talent migration"
+      ],
+      "questions": [
+        "What specific role will the executive have on Anthropic's AI security work?"
+      ],
+      "sources": [
+        {
+          "title": "Mysten Labs tech chief joins Anthropic to work on AI security",
+          "url": "https://cointelegraph.com/news/mysten-labs-tech-chief-joins-anthropic-to-work-on-ai-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-06T01:31:35.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T01:31:35.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bank-building-hall-entrance-door2-1.jpg",
+      "trendScore": 53,
+      "confidence": "medium"
     },
     {
       "id": "crypto-a12c299688",
       "slug": "crypto-whales-are-accumulating-as-bear-market-nears-late-stage-cryptoq",
       "lane": "crypto",
-      "title": "CryptoQuant: Whale Accumulation Suggests Bear Market Nearing 'Late Stage'",
-      "summary": "Cointelegraph reports that on-chain analytics firm CryptoQuant says large bitcoin holders have been accumulating, which the firm frames as a sign the current bear market is entering its late stage.",
-      "whyItMatters": "Whale accumulation is a closely watched on-chain signal, but calls about bear-market timing are inherently speculative and worth treating with caution rather than as a trading signal.",
+      "title": "Crypto whales keep accumulating as CryptoQuant flags late-stage bear market",
+      "summary": "Analytics firm CryptoQuant says large holders are accumulating crypto as indicators suggest the current bear market is entering its later stages, according to Cointelegraph. The report frames whale buying as a contrarian signal against prevailing bearish sentiment.",
+      "whyItMatters": "Whale accumulation during downturns is a metric traders watch for early signs of a market bottom, though it is not a guaranteed predictor.",
       "whatToWatch": [
-        "Whether accumulation trends continue in subsequent CryptoQuant reports",
-        "How price action develops relative to the claim"
+        "Follow-up CryptoQuant data on whether the accumulation trend continues",
+        "Price action that confirms or contradicts the 'late-stage bear market' thesis"
       ],
       "questions": [
-        "What specific on-chain metrics underlie this 'late stage' assessment?",
-        "How accurate have similar CryptoQuant bear-market calls been historically?"
+        "What specific on-chain metrics does CryptoQuant use to define a 'late-stage' bear market?"
       ],
       "sources": [
         {
@@ -163,226 +340,41 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T14:08:27.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-34555-analysts-laugh-off-recent-one-whale-theory-of-btcs-2017-bull-run.jpg",
       "badge": "Analysis",
-      "trendScore": 58,
+      "trendScore": 53,
       "confidence": "medium"
     },
     {
-      "id": "crypto-0e9032dcb5",
-      "slug": "russia-passes-law-to-regulate-crypto-exchanges-keeps-payment-ban-in-pl",
+      "id": "crypto-8f3df8a7d9",
+      "slug": "terawulf-s-bitcoin-mining-revenue-drops-73-as-ai-leases-dominate-sales",
       "lane": "crypto",
-      "title": "Russia Passes Law to Regulate Crypto Exchanges, Keeps Payment Ban in Place",
-      "summary": "Russia has passed legislation creating a regulatory framework for crypto exchanges, according to Bitcoin Magazine, while leaving its existing ban on using crypto for payments intact.",
-      "whyItMatters": "The law shows Russia tolerating regulated trading and investment activity while continuing to restrict crypto's everyday commercial use, relevant to global regulatory divergence and sanctions-related scrutiny.",
+      "title": "TeraWulf's bitcoin mining revenue drops 73% as AI leases dominate sales",
+      "summary": "TeraWulf reported a 73% decline in bitcoin mining revenue, with AI-related data center leases now accounting for 71% of total sales, according to CryptoSlate. The figures mark a significant shift in the miner's business mix away from bitcoin mining toward AI infrastructure hosting.",
+      "whyItMatters": "TeraWulf's pivot reflects a broader trend among publicly traded bitcoin miners diversifying into AI compute hosting as a hedge against tough mining economics.",
       "whatToWatch": [
-        "Implementation and licensing details for exchanges under the new law",
-        "Whether any carve-outs for cross-border payments emerge"
+        "TeraWulf's next quarterly results for further shifts in revenue mix",
+        "Whether other miners accelerate similar AI leasing pivots"
       ],
       "questions": [
-        "Which exchanges will qualify for licensing?",
-        "How strictly will the payment ban continue to be enforced?"
+        "Is the mining revenue decline driven mainly by lower bitcoin prices and network difficulty, or by deliberate capacity reallocation to AI leases?"
       ],
       "sources": [
         {
-          "title": "Russia Passes Law to Regulate Crypto Exchanges, Keeps Payment Ban in Place",
-          "url": "https://bitcoinmagazine.com/news/russia-keeps-payment-ban-in-place",
-          "publisher": "Bitcoin Magazine",
-          "publishedAt": "2026-08-05T17:39:39.000Z"
+          "title": "TeraWulf’s Bitcoin mining revenue fell 73% as AI related leases reached 71% of sales",
+          "url": "https://cryptoslate.com/terawulfs-bitcoin-mining-revenue-fell-73-as-hpc-leases-reached-71-of-sales/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-05T23:40:34.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-05T17:39:39.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/08/Russia-Passes-Law-to-Regulate-Crypto-Exchanges-Keeps-Payment-Ban-in-Place.jpg",
-      "badge": "Regulatory",
-      "trendScore": 57,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-92a599df48",
-      "slug": "redotpay-vows-to-vigorously-fight-binance-lawsuit",
-      "lane": "crypto",
-      "title": "RedotPay Vows to 'Vigorously' Fight Binance Lawsuit",
-      "summary": "Crypto payments firm RedotPay said it will defend itself vigorously against a lawsuit filed by Binance, according to CoinDesk.",
-      "whyItMatters": "Legal disputes between major crypto platforms can point to deeper business or compliance conflicts and carry contagion risk for partners and users of either firm.",
-      "whatToWatch": [
-        "Court filings detailing the specifics of Binance's claims",
-        "RedotPay's formal legal response"
-      ],
-      "questions": [
-        "What exactly is Binance alleging, and what's financially or operationally at stake?"
-      ],
-      "sources": [
-        {
-          "title": "Crypto firm RedotPay says it will defend itself ‘vigorously’ against Binance lawsuit",
-          "url": "https://www.coindesk.com/business/2026/08/05/binance-sues-redotpay-for-usd470-million-claiming-it-diverted-users",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T21:40:33.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T21:40:33.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7863e30b8c5511b68b91043a228ce3b5235c6c49-5616x3744.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Legal",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-4979cbc43b",
-      "slug": "white-house-reviewing-crypto-clarity-act-ethics-text-ahead-of-august-d",
-      "lane": "crypto",
-      "title": "White House Reviewing Crypto Clarity Act Ethics Text Ahead of August Deadline",
-      "summary": "Bitcoin Magazine reports the White House is now reviewing ethics-related text within the Crypto Clarity Act as an August deadline approaches.",
-      "whyItMatters": "The Crypto Clarity Act is a significant pending piece of market-structure legislation, and ethics-text review at this stage could affect its timing or final provisions.",
-      "whatToWatch": [
-        "Whether the White House completes its review before the August deadline",
-        "Any resulting changes to the bill's language"
-      ],
-      "questions": [
-        "What specific ethics provisions are under review?",
-        "Could this review delay the broader bill's progress?"
-      ],
-      "sources": [
-        {
-          "title": "White House Now Reviewing Crypto Clarity Act Ethics Text Ahead of August Deadline: Report",
-          "url": "https://bitcoinmagazine.com/news/white-house-reviewing-crypto-clarity-act",
-          "publisher": "Bitcoin Magazine",
-          "publishedAt": "2026-08-05T21:16:24.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T21:16:24.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/08/White-House-Now-Reviewing-Crypto-Clarity-Act-Ethics-Text-Ahead-of-August-Deadline.jpg",
-      "badge": "Regulatory",
-      "trendScore": 55,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-6298cced18",
-      "slug": "bitcoin-etfs-snap-back-with-inflows-after-cold-wallet-hack-rattles-cus",
-      "lane": "crypto",
-      "title": "Bitcoin ETFs Post Inflows Even as Cold Wallet Hack Reignites Custody Debate",
-      "summary": "Cointelegraph reports that US bitcoin ETFs logged inflows even as a cold wallet hack renewed debate over the safety of self-custody.",
-      "whyItMatters": "Continued ETF inflows despite a custody-related security incident suggest investors may be leaning further toward regulated custodial products over self-custody solutions.",
-      "whatToWatch": [
-        "Whether inflows persist in coming sessions",
-        "Further details on the cold wallet hack and any industry response"
-      ],
-      "questions": [
-        "How large were the inflows relative to recent trends?",
-        "Will the custody debate meaningfully shift assets from self-custody toward ETFs?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin ETFs log inflows as cold wallet hack reignites custody debate",
-          "url": "https://cointelegraph.com/markets/bitcoin-etfs-inflows-cold-wallet-hack-custody-debate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T10:43:05.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T10:43:05.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-a-stronger-foundation-for-bitcoin-etf-applications1-1.jpg",
-      "badge": "ETF Flows",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-90c421cb14",
-      "slug": "senator-warren-questions-us-ai-chip-policy-after-trump-crypto-investme",
-      "lane": "crypto",
-      "title": "Senator Warren Questions US AI Chip Policy After Trump Crypto Investment",
-      "summary": "Cointelegraph reports Senator Elizabeth Warren has raised questions about US AI chip policy in connection with a crypto investment tied to Trump.",
-      "whyItMatters": "The intersection of political figures' crypto holdings and government policy decisions raises conflict-of-interest concerns that could increase scrutiny of crypto-adjacent policymaking.",
-      "whatToWatch": [
-        "Any formal inquiry or administration response",
-        "Further statements from Warren or other lawmakers"
-      ],
-      "questions": [
-        "What specific investment and chip-policy decision is Warren referencing?",
-        "What conflict of interest, if any, is being alleged?"
-      ],
-      "sources": [
-        {
-          "title": "Senator Warren questions US AI chip policy after Trump crypto investment: Report",
-          "url": "https://cointelegraph.com/news/senator-warren-us-policy-uae-ai-chips-trump-crypto-investment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T21:15:37.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T21:15:37.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-us-chip-maker-crypto-company.png",
-      "badge": "Regulatory",
-      "trendScore": 54,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-52e375b5e3",
-      "slug": "visa-expands-stablecoin-payouts-through-zerohash-infrastructure",
-      "lane": "crypto",
-      "title": "Visa Expands Stablecoin Payouts Through Zerohash Infrastructure",
-      "summary": "Decrypt reports Visa is widening its stablecoin payout capabilities by building on infrastructure from Zerohash.",
-      "whyItMatters": "Continued build-out of stablecoin payment rails by a major payment network signals growing mainstream infrastructure adoption for stablecoin settlement.",
-      "whatToWatch": [
-        "Which partners or markets gain access to the expanded rails next",
-        "Usage or volume data once available"
-      ],
-      "questions": [
-        "Which stablecoins and currencies are supported?",
-        "Which merchants or partners will be first to use the new rails?"
-      ],
-      "sources": [
-        {
-          "title": "Visa Widens Stablecoin Payouts via Zerohash Rails",
-          "url": "https://decrypt.co/374994/visa-stablecoin-payouts-zerohash",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-08-05T19:42:48.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T19:42:48.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/07/visa-logo2-gID_7.jpg@png",
-      "badge": "Payments",
-      "trendScore": 54,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-f3dc5ead04",
-      "slug": "marex-invests-in-digital-prime-to-expand-institutional-crypto-lending",
-      "lane": "crypto",
-      "title": "Marex Invests in Digital Prime to Expand Institutional Crypto Lending",
-      "summary": "Cointelegraph reports that financial services firm Marex has made an investment in Digital Prime, aimed at expanding institutional crypto lending capacity.",
-      "whyItMatters": "A traditional financial firm deepening its ties to crypto lending infrastructure points to growing institutional demand for crypto-backed credit products.",
-      "whatToWatch": [
-        "Terms and size of Marex's investment",
-        "Rollout of expanded lending services and client uptake"
-      ],
-      "questions": [
-        "How large is the investment, and which institutional clients will the expanded lending target?"
-      ],
-      "sources": [
-        {
-          "title": "Marex invests in Digital Prime to expand institutional crypto lending",
-          "url": "https://cointelegraph.com/news/marex-digital-prime-tokenet-institutional-crypto-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T18:53:47.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T18:53:47.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-japan-ada-lending-copy.png",
-      "badge": "Institutional",
+      "publishedAt": "2026-08-05T23:40:34.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/terawulf-wolf-bitcoin-mining-to-hpc-transition.jpg",
+      "badge": "Earnings",
       "trendScore": 52,
-      "confidence": "medium"
+      "confidence": "low"
     }
   ]
 }

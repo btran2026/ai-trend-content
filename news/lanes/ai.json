@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-05T23:22:32.070Z",
-  "contentVersion": 15,
+  "generatedAt": "2026-08-06T05:25:48.120Z",
+  "contentVersion": 16,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,21 +123,49 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-05T23:22:32.070Z"
+      "updatedAt": "2026-08-06T05:25:48.120Z"
+    },
+    {
+      "id": "ai-cc74303149",
+      "slug": "llms-won-t-break-symmetric-crypto",
+      "lane": "ai",
+      "title": "LLMs won't break symmetric crypto",
+      "summary": "A widely-discussed post argues that large language models are not positioned to break symmetric-key cryptography, pushing back on hype suggesting AI could undermine well-established encryption methods. The piece circulated on Hacker News as a rebuttal to overstated claims about AI's cryptographic capabilities. Specific technical arguments beyond the headline claim aren't detailed in the supplied source.",
+      "whyItMatters": "Claims about AI threatening core encryption spread quickly online, so a grounded rebuttal matters for readers trying to separate real AI risk from overstated threat narratives.",
+      "whatToWatch": [
+        "Whether cryptography researchers respond further on LLMs' actual capabilities against symmetric ciphers"
+      ],
+      "questions": [
+        "What specific claims or incidents prompted this rebuttal?"
+      ],
+      "sources": [
+        {
+          "title": "LLMs won't break symmetric crypto",
+          "url": "https://www.bfswa.blog/p/llms-wont-break-symmetric-crypto",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-06T01:39:06Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T01:39:06Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!UXVg!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd8a4fb4a-8a41-4520-8f34-8634442a2612_2300x1272.png",
+      "badge": "Analysis",
+      "trendScore": 51,
+      "confidence": "low"
     },
     {
       "id": "ai-6437fe73ae",
       "slug": "hobby-programming-communities-push-back-against-llm-usage",
       "lane": "ai",
-      "title": "Hobby programming communities push back against LLM usage",
-      "summary": "An essay titled \"Born Against\" argues that hobbyist programming communities are increasingly rejecting LLM-assisted coding, exploring the cultural reasons behind the resistance. The piece gained traction on Hacker News on August 5, 2026.",
-      "whyItMatters": "It captures a countercurrent to mainstream AI-coding-tool adoption that's worth tracking as the debate over LLMs in software development continues.",
+      "title": "Why hobby programming communities are pushing back against LLM usage",
+      "summary": "A blog post titled \"Born Against\" examines why some hobbyist programming communities have grown resistant to LLM-assisted coding, highlighting friction between AI-assisted workflows and craft-focused coding culture. The piece drew significant discussion on Hacker News. The supplied source doesn't specify which communities or exact arguments are covered beyond the headline.",
+      "whyItMatters": "Grassroots resistance to AI coding tools is a cultural signal that could shape how developer communities and open-source projects treat LLM-generated contributions.",
       "whatToWatch": [
-        "Whether more hobbyist or open-source communities adopt explicit anti-LLM stances",
-        "How AI coding tool vendors respond to this kind of pushback"
+        "Whether more hobby or open-source communities adopt formal stances on LLM-assisted contributions"
       ],
       "questions": [
-        "Is this sentiment limited to hobbyist circles or spreading into professional dev teams?"
+        "Which specific communities or platforms are driving this pushback?"
       ],
       "sources": [
         {
@@ -149,24 +177,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T18:37:49Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "badge": "Analysis",
-      "trendScore": 51,
+      "trendScore": 47,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-3189f1ce0f",
+      "slug": "report-senior-google-deepmind-figures-said-to-be-departing-as-demis-mo",
+      "lane": "ai",
+      "title": "Report: senior Google DeepMind figures said to be departing as Demis moves to Chair, Koray to SVP",
+      "summary": "An AI industry newsletter roundup reports that several high-profile DeepMind figures — referred to as Jeff, Sanjay, Oriol, and Quoc — are departing, while Demis is said to be moving into a Chair role and Koray into an SVP position. The framing of the report (\"what is going on at GDM???\") suggests the reshuffle is still being parsed by industry watchers rather than fully confirmed. Full names, exact roles, and reasons for the moves aren't detailed in the supplied source.",
+      "whyItMatters": "Google DeepMind is one of the central labs shaping frontier AI, so a leadership overhaul at this level would be a material shift in the competitive landscape.",
+      "whatToWatch": [
+        "Official confirmation from Google or DeepMind on role and personnel changes",
+        "Who takes over day-to-day research leadership if senior figures exit"
+      ],
+      "questions": [
+        "Are these departures full exits from Google or internal role changes?",
+        "What prompted the timing of this reshuffle?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP — what is going on at GDM???",
+          "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-06T04:34:11.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T04:34:11.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!1S7v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57c9d273-aa50-4bc7-a7c4-caaf9b4952c2_1540x1624.png",
+      "badge": "Breaking",
+      "trendScore": 46,
       "confidence": "low"
     },
     {
       "id": "ai-8546e0173e",
       "slug": "prime-intellect-unveils-prime-agent-a-self-improving-rlm-agent",
       "lane": "ai",
-      "title": "Prime Intellect unveils 'Prime Agent,' a self-improving RLM agent",
-      "summary": "Prime Intellect published an announcement describing \"Prime Agent,\" billed as a self-improving RLM agent. The post surfaced on Hacker News on August 5, 2026; specifics beyond the announcement itself are not detailed in available sources.",
-      "whyItMatters": "Self-improving agent architectures sit at the frontier of agentic AI research, with real implications for autonomy and capability gains if the claims hold up.",
+      "title": "Prime Intellect introduces \"Prime Agent,\" a self-improving RLM-based agent",
+      "summary": "Prime Intellect published details on Prime Agent, described as a self-improving agent built on an RLM architecture, in a post that circulated on Hacker News. The supplied source doesn't include benchmark results, technical specifics, or availability details. It adds to a broader wave of startup efforts building autonomous, self-improving agent systems.",
+      "whyItMatters": "Self-improving agents are one of the more consequential frontiers in AI development, with implications for autonomy, capability growth, and safety oversight.",
       "whatToWatch": [
-        "Independent scrutiny or benchmarking of the self-improvement claims",
-        "Whether Prime Intellect releases code or weights"
+        "Whether Prime Intellect releases the agent for public use or independent benchmarking",
+        "Independent scrutiny of the \"self-improving\" claim"
       ],
       "questions": [
-        "What precisely does \"self-improving\" mean here, and how is it measured?"
+        "What does \"self-improving\" concretely mean in this system?",
+        "Is this a research demo or a shipping product?"
       ],
       "sources": [
         {
@@ -178,24 +238,52 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T21:11:57Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://primeintellect.ai/blog/prime-agent/cover.png?v=prime-agent",
       "badge": "Research",
-      "trendScore": 47,
+      "trendScore": 43,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-ed2fc769fb",
+      "slug": "yc-backed-hyperprobe-launches-agents-for-read-only-debugging-in-produc",
+      "lane": "ai",
+      "title": "YC-backed HyperProbe launches agents for read-only debugging in production",
+      "summary": "HyperProbe, part of Y Combinator's Summer 2026 batch, launched with a Hacker News \"Launch HN\" post pitching AI agents that perform read-only debugging directly in production environments. Pricing, customers, and technical implementation details aren't described in the supplied source.",
+      "whyItMatters": "It's another entrant in the growing crop of YC-backed startups applying AI agents to concrete dev-ops tasks like production debugging, a space drawing real investor interest.",
+      "whatToWatch": [
+        "Early customer or usage traction",
+        "Whether the \"read-only\" scope expands toward automated remediation"
+      ],
+      "questions": [
+        "How does HyperProbe guarantee safety and read-only access in production?",
+        "What differentiates it from existing observability and debugging tools?"
+      ],
+      "sources": [
+        {
+          "title": "Launch HN: HyperProbe (YC S26) – Agents that do read-only debugging in prod",
+          "url": "https://www.hyperprobe.co",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-05T16:47:15Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-05T16:47:15Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "badge": "Launch",
+      "trendScore": 43,
       "confidence": "low"
     },
     {
       "id": "ai-fb0d41f769",
       "slug": "a-decade-of-reading-hacker-news-distilled-into-an-s-tier-link-list",
       "lane": "ai",
-      "title": "A decade of reading Hacker News, distilled into an 'S-tier' link list",
-      "summary": "A longtime reader who has checked Hacker News twice daily for ten years published a curated list of what they consider the site's best-ever links, drawing attention on HN itself on August 5, 2026.",
-      "whyItMatters": "It's more community curation than hard news, but the list reflects HN's ongoing role as a bellwether for tech and AI discourse.",
-      "whatToWatch": [
-        "Whether any AI-related links in the list get renewed attention or discussion"
-      ],
+      "title": "A decade of reading Hacker News daily: one reader's list of \"S-Tier\" links",
+      "summary": "A personal blog post shares a curated list of what the author considers the best links from a decade of reading Hacker News twice a day. The post itself gained traction on Hacker News. The supplied source doesn't indicate what topics or links made the list.",
+      "whyItMatters": "It's a community/culture piece rather than a material AI industry development, worth noting mainly as a signal of what's resonating in tech discussion circles right now.",
+      "whatToWatch": [],
       "questions": [
-        "What criteria did the author use to define \"S-tier\"?"
+        "What criteria did the author use to define \"S-Tier\"?"
       ],
       "sources": [
         {
@@ -207,23 +295,23 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T14:12:35Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "trendScore": 46,
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-38e5715b66",
       "slug": "position-paper-argues-llms-fundamentally-can-t-jump",
       "lane": "ai",
-      "title": "New position paper argues 'LLMs Can't Jump'",
-      "summary": "A position paper titled \"Position: LLMs Can't Jump\" was posted to OpenReview, taking a critical stance on a fundamental capability gap in large language models. It circulated widely on Hacker News on August 5, 2026, though specifics beyond the title aren't detailed in what's available.",
-      "whyItMatters": "Position papers challenging core LLM capability claims feed the ongoing academic debate over what these models can and can't fundamentally do.",
+      "title": "New position paper argues \"LLMs Can't Jump\"",
+      "summary": "A position paper posted to OpenReview, titled \"LLMs Can't Jump,\" pushes back on claims about large language model capabilities, according to discussion on Hacker News. The supplied source doesn't specify what domain — reasoning, robotics, or benchmark performance — the \"jump\" claim addresses, so the paper's core argument isn't detailed here.",
+      "whyItMatters": "Position papers challenging LLM capability claims feed the ongoing debate over how far current architectures can go, which shapes research funding and product expectations.",
       "whatToWatch": [
-        "Rebuttals or follow-up commentary from other researchers",
-        "Whether the paper is accepted at a conference or workshop"
+        "Peer review outcome and rebuttals from other researchers"
       ],
       "questions": [
-        "What specific capability gap does \"jump\" refer to — planning, generalization, or something else?"
+        "What specific capability or benchmark does \"jump\" refer to?",
+        "Is the paper accepted at a venue or still under review?"
       ],
       "sources": [
         {
@@ -235,24 +323,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T11:01:37Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "badge": "Research",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-22575843c7",
       "slug": "oracle-cuts-its-always-free-arm-compute-allowance-in-half",
       "lane": "ai",
-      "title": "Oracle Cloud slashes Always Free ARM compute limits, effective Aug 18",
-      "summary": "Oracle is cutting its Always Free tier ARM compute allowance to 2 OCPUs and 12GB of RAM, with enforcement starting August 18, 2026, according to a report that circulated on Hacker News.",
-      "whyItMatters": "Oracle's free ARM tier has been a popular low-cost option for running small self-hosted inference and AI workloads, so a cut removes a cheap option many hobbyists relied on.",
+      "title": "Oracle cuts Always Free ARM compute limits to 2 OCPU/12GB, effective August 18",
+      "summary": "Oracle Cloud is reducing the resources available under its Always Free tier for ARM-based compute to 2 OCPUs and 12GB of RAM, with enforcement starting August 18, according to a blog post discussed on Hacker News. The free ARM tier has been popular among developers for self-hosting small projects, including lightweight AI/ML experiments.",
+      "whyItMatters": "Free ARM compute has been a go-to option for hobbyists running small models and side projects; tightening the limits could push some workloads to paid tiers or other providers.",
       "whatToWatch": [
-        "The August 18, 2026 enforcement date",
-        "How affected users migrate workloads to alternatives"
+        "Enforcement date of August 18, 2026",
+        "Reaction from developers who rely on the free tier for hosting"
       ],
       "questions": [
-        "Does the change affect only new sign-ups or existing free-tier accounts too?"
+        "Are existing free-tier users grandfathered, or does the cut apply retroactively?"
       ],
       "sources": [
         {
@@ -264,54 +352,55 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T14:46:36Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://www.cnelecar.com/blog/oracle-always-free-arm-limits-cut-2026/oracle-always-free-arm-vm-cut-in-half.png",
-      "badge": "Product",
-      "trendScore": 43,
+      "badge": "Policy",
+      "trendScore": 38,
       "confidence": "low"
     },
     {
-      "id": "ai-b3d51e41d5",
-      "slug": "show-hn-pitches-a-fund-blending-tokenized-gold-tech-stocks-and-digital",
+      "id": "ai-75d5d85be1",
+      "slug": "google-deepmind-described-as-undergoing-a-leadership-reset",
       "lane": "ai",
-      "title": "Show HN pitches a fund blending tokenized gold, tech stocks, and digital assets",
-      "summary": "A Show HN post proposes a hypothetical fund structure holding tokenized gold alongside tech stocks and digital assets, shared on Hacker News on August 5, 2026. No detail on backing, regulatory status, or launch timeline is available beyond the pitch itself.",
-      "whyItMatters": "It illustrates continued community experimentation at the intersection of tokenization and traditional asset classes, though it remains a speculative pitch rather than an operating product.",
+      "title": "Google DeepMind described as undergoing a \"leadership reset\"",
+      "summary": "A separate industry newsletter item characterizes recent moves at Google DeepMind as a \"leadership reset,\" consistent with other reports of senior departures and role changes atop the organization around the same date. The supplied source offers little detail beyond that framing.",
+      "whyItMatters": "Multiple outlets independently flagging structural change at one of the AI industry's leading labs underscores that this is a real, material shift rather than a single rumor.",
       "whatToWatch": [
-        "Whether the concept progresses beyond a Show HN post into an actual product or filing"
+        "Further reporting clarifying the scope of the reset"
       ],
       "questions": [
-        "Who would custody the underlying assets, and under what regulatory regime?"
+        "What specifically is being \"reset\" — personnel, strategy, or organizational structure?"
       ],
       "sources": [
         {
-          "title": "Show HN: What if one fund held tokenized Gold, tech stocks and digital assets?",
-          "url": "https://wealtii.com/funds/wealtii-tech-digital-asset-growth-fund",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-05T14:11:14Z"
+          "title": "GDM leadership reset",
+          "url": "https://news.smol.ai/issues/26-08-05-gdm-reset/",
+          "publisher": "AI News",
+          "publishedAt": "2026-08-05T05:44:39.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-05T14:11:14Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://wealtii.com/og-default.jpg",
-      "trendScore": 42,
+      "publishedAt": "2026-08-05T05:44:39.000Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "imageUrl": "https://news.smol.ai/api/og?title=GDM+leadership+reset&description=**Google+DeepMind**+undergoes+a+leadership+reshuffle+with+**Demis+Hassabis**+moving+to+Chair+and+Chief+Scientist+roles%2C+while+**Koray+Kavukcuoglu**+takes+operational+control+focusing+on+**Gemini**+and+product+execution.+The+launch+of+**Discovery+Loop**+by+founders+including+**Jeff+Dean**%2C+**Sanjay+Ghemawat**%2C+**Oriol+Vinyals**%2C+and+**Quoc+Le**+targets+automated+machine+learning+and+scientific+discovery%2C+backed+by+major+venture+firms.+**Meta+AI**+releases+**Muse+Spark+1.2**+and+**Muse+Code+%28beta%29**%2C+co-trained+model+and+harness+for+coding+agents%2C+achieving+strong+benchmark+scores+and+emphasizing+harness-model+co-design%2C+entering+the+coding-agent+competition+alongside+systems+like+**Claude+Code**+and+**Codex**.+The+market+views+these+moves+as+pivotal+for+AI-for-science+and+coding+agent+development.&type=issue&issueNumber=08&date=2026-08-05T05%3A44%3A39.731Z&companies=google-deepmind%2Calphabet%2Cdiscovery-loop%2Cradical-ventures%2Ckhosla-ventures%2Clightspeed%2Ckleiner-perkins%2Cdoerr-capital%2Cmeta-ai-fair%2Cartificial-analysis&models=gemini%2Cmuse-spark-1.2%2Cmuse-code%2Cclaude-code%2Ccodex",
+      "badge": "Analysis",
+      "trendScore": 37,
       "confidence": "low"
     },
     {
       "id": "ai-2e63953bef",
       "slug": "rust-programming-language-project-adopts-formal-llm-policy",
       "lane": "ai",
-      "title": "The Rust project adopts a formal policy on LLM use in contributions",
-      "summary": "The rust-lang/rust project has adopted a policy governing how large language models may be used in contributions to the language, according to a post shared on Hacker News on August 5, 2026.",
-      "whyItMatters": "As a major open-source language project, Rust's stance on AI-assisted contributions could set a precedent other large OSS projects look to when formalizing their own rules.",
+      "title": "Rust programming language project adopts a formal LLM usage policy",
+      "summary": "The rust-lang/rust project is adopting a policy governing the use of LLMs in contributions, according to a post discussed on Hacker News. This follows a broader pattern of major open-source projects setting explicit rules for AI-assisted code submissions. Specific policy terms aren't detailed in the supplied source.",
+      "whyItMatters": "As a foundational open-source project, Rust's stance on LLM-generated contributions could influence norms across other large software projects grappling with AI-assisted code provenance and review.",
       "whatToWatch": [
-        "Publication of the full policy text",
-        "Reaction from the Rust contributor community",
-        "Whether other major open-source projects adopt similar policies"
+        "Publication of the finalized policy text",
+        "How the policy handles disclosure and review of LLM-assisted pull requests"
       ],
       "questions": [
-        "What specific restrictions or disclosure requirements does the policy impose?"
+        "Does the policy restrict LLM use outright or just require disclosure?",
+        "How will enforcement work in practice?"
       ],
       "sources": [
         {
@@ -323,24 +412,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T05:52:24Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://www.rust-lang.org/static/images/rust-social-wide.jpg",
       "badge": "Policy",
-      "trendScore": 40,
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "ai-d88745754c",
       "slug": "zero-mem-a-proposed-zero-token-approach-to-llm-agent-memory",
       "lane": "ai",
-      "title": "'Zero-Mem' proposes zero-token memory operations for LLM agents",
-      "summary": "A paper titled \"Zero-Mem: Zero-Token Memory Operations for LLM Agents,\" posted to arXiv, describes a method for agent memory that avoids consuming additional tokens, according to a Hacker News post on August 5, 2026.",
-      "whyItMatters": "Memory efficiency is a major cost and context-window bottleneck for LLM agents, so approaches that reduce token overhead could lower the operating cost of agentic systems at scale.",
+      "title": "\"Zero-Mem\" proposes zero-token memory operations for LLM agents",
+      "summary": "A paper posted to arXiv, \"Zero-Mem: Zero-Token Memory Operations for LLM Agents,\" proposes a method for handling agent memory without consuming additional tokens, according to a Hacker News discussion. The supplied source doesn't include benchmark results or implementation specifics.",
+      "whyItMatters": "Token-efficient memory handling is a practical bottleneck for long-running agent systems, so approaches that cut overhead could matter for cost and latency in production agent deployments.",
       "whatToWatch": [
-        "Whether agent framework developers benchmark or adopt the technique"
+        "Independent reproduction or benchmarking of the approach",
+        "Whether it gets adopted into existing agent frameworks"
       ],
       "questions": [
-        "How does \"zero-token\" memory work without expanding context, and what are the tradeoffs?"
+        "How does \"zero-token\" memory work at the architecture level?",
+        "What tradeoffs in accuracy or latency does it introduce?"
       ],
       "sources": [
         {
@@ -352,96 +443,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-05T04:36:44Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
+      "updatedAt": "2026-08-06T05:25:48.120Z",
       "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
       "badge": "Research",
-      "trendScore": 39,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-6d742f99ac",
-      "slug": "an-slm-trained-on-8-esp32-s3",
-      "lane": "ai",
-      "title": "Developer trains a small language model on an $8 ESP32-S3 microcontroller",
-      "summary": "A GitHub project demonstrates training a small language model on the ESP32-S3, a microcontroller board costing roughly $8, according to a post that trended on Hacker News on August 5, 2026.",
-      "whyItMatters": "It's a data point in the broader push to run AI models on ultra-low-cost embedded hardware, part of the ongoing edge-AI and tinyML trend.",
-      "whatToWatch": [
-        "Community reproductions or benchmarks of the project",
-        "Whether it's extended to other low-cost boards"
-      ],
-      "questions": [
-        "What tasks can the resulting model actually perform, and how does it compare to other tinyML approaches?"
-      ],
-      "sources": [
-        {
-          "title": "An SLM trained on $8 ESP32-S3",
-          "url": "https://github.com/Carloscodix/qapla",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-05T04:07:27Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T04:07:27Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://opengraph.githubassets.com/38fe03123dfd6be48a5341e9a88c6a3a4dea1b886f5a3a4f9054cc20e9e5724e/Carloscodix/qapla",
-      "trendScore": 33,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-977f60f7e5",
-      "slug": "openai-publishes-third-party-cyber-evaluations-of-its-models",
-      "lane": "ai",
-      "title": "OpenAI publishes index of third-party cyber evaluations of its models",
-      "summary": "OpenAI released an index describing third-party evaluations of its models' cybersecurity-related capabilities and risks, published on August 4, 2026.",
-      "whyItMatters": "Independent cyber-risk evaluation is a key part of AI safety scrutiny for frontier models, and this signals continued formalization of OpenAI's external evaluation practices.",
-      "whatToWatch": [
-        "Findings or scores from the referenced third-party evaluators",
-        "Whether other AI labs publish similar cyber-risk evaluation indices"
-      ],
-      "questions": [
-        "Which third parties conducted the evaluations, and what specific risks or capabilities were assessed?"
-      ],
-      "sources": [
-        {
-          "title": "Third-party cyber evaluations involving OpenAI models",
-          "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-04T19:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-04T19:00:00.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "badge": "Safety",
-      "trendScore": 31,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-8587445849",
-      "slug": "megakernels-the-gpu-inference-optimization-trend-that-won-t-stay-dead",
-      "lane": "ai",
-      "title": "Latent Space's AINews recaps the 'megakernels' debate in AI infrastructure",
-      "summary": "Latent Space's AINews newsletter covered renewed interest in \"megakernels,\" a GPU kernel-fusion approach for inference, under the headline \"Megakernels are so dead and so back,\" published August 5, 2026.",
-      "whyItMatters": "Kernel-level optimization techniques like megakernels directly affect inference speed and cost for large models, an area of intense competition among infrastructure teams.",
-      "whatToWatch": [
-        "Specific projects or labs cited in the roundup reviving megakernel approaches"
-      ],
-      "questions": [
-        "What changed to bring megakernels back into favor after being written off?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] Megakernels are so dead and so back",
-          "url": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-05T01:21:47.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T01:21:47.000Z",
-      "updatedAt": "2026-08-05T23:22:32.070Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!Gpou!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHNw6xyYaUAA_BVO.jpg",
-      "trendScore": 29,
+      "trendScore": 34,
       "confidence": "low"
     }
   ]
