@@ -1,61 +1,84 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-07T10:07:46.310Z",
-  "contentVersion": 18,
+  "generatedAt": "2026-08-07T16:11:59.916Z",
+  "contentVersion": 19,
   "stories": [
     {
-      "id": "crypto-fed450d3f2",
-      "slug": "xrp-whales-keep-buying-the-dip-while-ether-shows-deeper-capitulation",
+      "id": "crypto-98da93bd4f",
+      "slug": "ethereum-s-eip-8363-staking-proposal-draws-fierce-community-backlash",
       "lane": "crypto",
-      "title": "XRP whales buy the dip as leverage outpaces spot 6-to-1, while ether shows deeper capitulation",
-      "summary": "XRP whales have kept accumulating through recent price weakness, even as leveraged trading volume in the token runs six times higher than spot volume, creating what CryptoSlate frames as a $2.36 billion risk exposure. CoinDesk reports that ether is showing more pronounced signs of capitulation than XRP over the same stretch.",
-      "whyItMatters": "A leverage-to-spot ratio this skewed raises the odds of sharp liquidation-driven moves, and the divergence between XRP whale buying and ether capitulation is a useful gauge of where risk is concentrated across majors.",
+      "title": "Ethereum's EIP-8363 staking proposal draws fierce community backlash",
+      "summary": "A proposal known as EIP-8363, which touches Ethereum's staking mechanics, has met strong pushback from parts of the community, according to Cointelegraph. The specific technical changes at the center of the dispute and who is driving the opposition were not detailed in the available reporting.",
+      "whyItMatters": "Ethereum's staking rules directly shape validator economics and yields for ETH holders, so a contested protocol change is worth tracking even before its outcome is clear.",
       "whatToWatch": [
-        "Whether the leverage-to-spot ratio in XRP normalizes or keeps widening",
-        "Continued on-chain whale accumulation data",
-        "Signs of stabilization or further capitulation in ether"
+        "Whether Ethereum core developers and client teams move forward with EIP-8363 despite objections",
+        "Any formal response or counter-proposal from the community"
       ],
       "questions": [
-        "What's specifically driving XRP whale buying amid broader softness?",
-        "Could the heavy leverage trigger a cascading liquidation event?"
+        "What specifically does EIP-8363 change about staking?",
+        "Who is leading the opposition, and what alternative are they proposing?"
       ],
       "sources": [
         {
-          "title": "With leverage outnumbering spot volume 6 to 1, XRP traders are walking a $2.36B tightrope",
-          "url": "https://cryptoslate.com/with-leverage-outnumbering-spot-volume-6-to-1-xrp-traders-are-walking-a-2-36b-tightrope/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-07T08:54:38.000Z"
-        },
-        {
-          "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
-          "url": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-06T04:46:17.000Z"
+          "title": "Fierce backlash to Ethereum’s EIP-8363 staking proposal",
+          "url": "https://cointelegraph.com/magazine/fierce-backlash-to-ethereums-latest-staking-proposal-eip-8363?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-07T13:30:00.000Z"
         }
       ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-06T04:46:17.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b53d077c4e5949d0efd6629978ef575ece087f83-2400x1350.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 78,
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T13:30:00.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/magazineback-to-ethereum.jpg",
+      "badge": "Protocol",
+      "trendScore": 69,
       "confidence": "medium"
+    },
+    {
+      "id": "crypto-284ebcb45c",
+      "slug": "bitcoin-etfs-pull-in-nearly-800m-following-coldcard-wallet-exploit",
+      "lane": "crypto",
+      "title": "Bitcoin ETFs pull in nearly $800M following Coldcard wallet exploit",
+      "summary": "US bitcoin ETFs added close to $800 million in inflows following a reported exploit affecting Coldcard hardware wallets, per Bitcoin Magazine. The report ties the timing of the inflows to the exploit but does not detail the vulnerability's scope or how many users were affected.",
+      "whyItMatters": "A security incident at a widely used self-custody hardware wallet, paired with a jump in ETF demand, points to capital potentially rotating from direct custody toward custodial fund products.",
+      "whatToWatch": [
+        "Further disclosure on the Coldcard exploit's scope and any manufacturer response",
+        "Whether ETF inflows continue at a similar pace in coming days"
+      ],
+      "questions": [
+        "What exactly was exploited in Coldcard's hardware or firmware?",
+        "Is the inflow surge actually connected to the exploit, or coincidental timing?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETFs Add Nearly $800 Million in the Wake of Coldcard Exploit",
+          "url": "https://bitcoinmagazine.com/news/bitcoin-etfs-800-million-coldcard",
+          "publisher": "Bitcoin Magazine",
+          "publishedAt": "2026-08-07T16:00:50.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T16:00:50.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/08/Bitcoin-ETFs-Add-Nearly-800-Million-in-the-Wake-of-Coldcard-Exploit.jpg",
+      "badge": "ETF Flows",
+      "trendScore": 67,
+      "confidence": "low"
     },
     {
       "id": "crypto-a8c170f4ac",
       "slug": "ethereum-staking-token-weeth-pulls-back-from-restaking-as-rewards-deba",
       "lane": "crypto",
-      "title": "Ethereum staking token weETH pulls back from restaking as rewards debate intensifies",
-      "summary": "weETH, a liquid staking token built on ether, is reportedly distancing itself from the restaking model it was originally built around, according to CoinDesk, as debate grows over how staking rewards should be structured. Specifics on the change are still limited.",
-      "whyItMatters": "Restaking has been a major growth engine for Ethereum's staking ecosystem, so a shift away from it by a prominent token could signal broader repricing of risk in DeFi yield products.",
+      "title": "Ethereum's weETH staking token splits from restaking amid rewards debate",
+      "summary": "Wrapped eETH (weETH), a liquid staking token, is separating from restaking mechanisms as debate intensifies over how staking rewards should be structured, according to CoinDesk. The change highlights growing friction within Ethereum's liquid staking and restaking ecosystem.",
+      "whyItMatters": "Liquid staking and restaking tokens like weETH underpin large amounts of DeFi collateral, so structural changes to how they earn rewards can ripple through lending and yield markets.",
       "whatToWatch": [
-        "Further detail on what structurally is changing at weETH",
-        "Whether other restaking protocols follow or diverge",
-        "Any impact on restaking TVL"
+        "How other liquid restaking tokens respond to the rewards debate",
+        "Any statement from weETH's issuer on the specifics of the split"
       ],
       "questions": [
-        "What exactly is changing in weETH's design?",
-        "Is this an isolated move or the start of a broader retreat from restaking?"
+        "What exactly is changing in weETH's reward structure?",
+        "How does this affect existing DeFi positions that use weETH as collateral?"
       ],
       "sources": [
         {
@@ -67,27 +90,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-07T08:01:28.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/75226292543672448cf8e2dd04e11059431479a1-1500x985.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "DeFi",
-      "trendScore": 69,
+      "badge": "Protocol",
+      "trendScore": 64,
       "confidence": "medium"
     },
     {
       "id": "crypto-3427c40020",
       "slug": "bitcoin-whales-load-up-on-1-2-billion-in-btc-as-etfs-attract-750-milli",
       "lane": "crypto",
-      "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
-      "summary": "Large bitcoin holders added roughly $1.2 billion worth of BTC while US spot bitcoin ETFs pulled in about $750 million in fresh inflows, according to CoinDesk.",
-      "whyItMatters": "Simultaneous whale accumulation and ETF inflows point to strengthening demand from both large individual holders and institutional channels, a combination that's historically been supportive for price.",
+      "title": "Bitcoin whales add $1.2B in BTC as ETFs draw $750M",
+      "summary": "Large bitcoin holders accumulated roughly $1.2 billion in BTC while US spot bitcoin ETFs pulled in about $750 million in inflows, CoinDesk reported. The concurrent buying points to renewed demand from both large individual holders and institutional fund investors.",
+      "whyItMatters": "Simultaneous whale accumulation and strong ETF inflows are typically read as a signal of broadening conviction behind bitcoin, beyond retail trading activity.",
       "whatToWatch": [
-        "Whether the ETF inflow streak continues",
-        "Further whale wallet accumulation",
-        "Any reversal in either flow"
+        "Whether ETF inflow momentum holds through the week",
+        "Continued on-chain accumulation from large wallets"
       ],
       "questions": [
-        "Do the whale purchases and ETF inflows trace back to overlapping buyers?",
-        "Is this pace of accumulation sustainable given current market conditions?"
+        "Do the whale purchases and ETF inflows come from overlapping entities or separate demand sources?"
       ],
       "sources": [
         {
@@ -99,26 +120,192 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-07T05:45:21.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/cdf7e8f4de8522a9a5bf3476f78117049a0d84cb-1280x853.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "ETF Flows",
-      "trendScore": 67,
+      "badge": "Flows",
+      "trendScore": 62,
       "confidence": "medium"
+    },
+    {
+      "id": "crypto-aa880075db",
+      "slug": "bitcoin-s-volatility-has-nearly-vanished-the-underlying-risk-hasn-t",
+      "lane": "crypto",
+      "title": "Bitcoin's volatility has nearly vanished — the underlying risk hasn't",
+      "summary": "Bitcoin's realized volatility has compressed sharply, CoinDesk reports, even as BTC holds near $64,000 heading into a closely watched macro data release, with private-sector hiring reportedly down 53%, per CryptoSlate. CoinDesk cautions that quiet price action doesn't equate to low risk, given the potential for a sharp move if support gives way.",
+      "whyItMatters": "Compressed volatility ahead of a macro data shock has historically preceded outsized bitcoin price swings, making this a moment traders watch closely for a break in either direction.",
+      "whatToWatch": [
+        "Today's macro/jobs data release and market reaction",
+        "Whether BTC holds the $64,000 support level",
+        "Follow-up coverage on volatility and positioning"
+      ],
+      "questions": [
+        "What specific mechanism is fueling concern that low volatility masks real risk?",
+        "How much further could weak hiring data shift Fed rate expectations?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin’s volatility has nearly disappeared. The risk hasn’t.",
+          "url": "https://www.coindesk.com/daybook-us/2026/08/07/bitcoin-s-volatility-has-nearly-disappeared-the-risk-hasn-t",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T11:42:20.000Z"
+        },
+        {
+          "title": "Bitcoin holds $64,000 as private hiring drops 53% before today’s macro test that could break support",
+          "url": "https://cryptoslate.com/bitcoin-holds-64000-as-private-hiring-drops-53-before-todays-macro-test-that-could-break-support/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-07T09:45:01.000Z"
+        },
+        {
+          "title": "Bitcoin’s low volatility doesn’t necessarily mean low risk",
+          "url": "https://www.coindesk.com/daybook-us/2026/08/06/bitcoin-s-low-volatility-doesn-t-necessarily-mean-low-risk",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-06T11:37:03.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-06T11:37:03.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/81d0b24b6ec479e14ecdef9b8c344af68514af6f-4244x2335.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Analysis",
+      "trendScore": 61,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-d04bb65b94",
+      "slug": "crypto-biz-crypto-s-biggest-business-is-starting-to-resemble-banking",
+      "lane": "crypto",
+      "title": "Crypto Biz: Crypto's biggest business is starting to resemble banking",
+      "summary": "Cointelegraph's Crypto Biz roundup argues that the industry's largest business lines are increasingly taking on characteristics of traditional banking. The supplied summary doesn't specify which companies or business models are cited.",
+      "whyItMatters": "If crypto's core revenue engines are converging with banking-style services, it raises questions about how existing bank regulation could eventually be applied to the sector.",
+      "whatToWatch": [
+        "The full Crypto Biz roundup for which specific companies or business lines are referenced"
+      ],
+      "questions": [
+        "Which crypto companies or products are being compared to banking, and why?",
+        "What regulatory implications would follow from a banking-like structure?"
+      ],
+      "sources": [
+        {
+          "title": "Crypto Biz: Crypto’s biggest business is starting to look a lot like banking",
+          "url": "https://cointelegraph.com/news/crypto-biz-crypto-business-converges-traditional-banking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-07T15:07:49.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T15:07:49.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/banks-road-crypto-1.jpg",
+      "badge": "Analysis",
+      "trendScore": 60,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-11361226a3",
+      "slug": "tokenized-asset-deposits-triple-to-7-4b-even-as-defi-shrinks",
+      "lane": "crypto",
+      "title": "Tokenized asset deposits triple to $7.4B even as DeFi shrinks",
+      "summary": "Deposits into tokenized real-world assets have tripled to $7.4 billion even as overall DeFi activity contracted, according to CoinShares data reported by Decrypt. The divergence suggests capital may be rotating toward tokenized asset products and away from traditional DeFi protocols.",
+      "whyItMatters": "Growth in tokenized assets alongside a shrinking DeFi sector signals a shift in where institutional and retail capital sees value on-chain, a trend regulators and asset managers are tracking closely.",
+      "whatToWatch": [
+        "Whether DeFi's contraction stabilizes or continues",
+        "Which tokenized asset categories drive further growth in future CoinShares data"
+      ],
+      "questions": [
+        "What's driving the DeFi shrinkage — outflows, price declines, or reduced usage?",
+        "Which specific tokenized assets make up most of the $7.4B?"
+      ],
+      "sources": [
+        {
+          "title": "Tokenized Asset Deposits Tripled to $7.4B as DeFi Shrank: CoinShares",
+          "url": "https://decrypt.co/375099/tokenized-asset-deposits-tripled-to-7-4b-as-defi-shrank-coinshares",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-08-07T13:26:19.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T13:26:19.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/Chart4_red-gID_7.png@png",
+      "badge": "Data",
+      "trendScore": 60,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-c799e7c0a0",
+      "slug": "bitcoiners-turn-to-dice-rolls-as-self-custody-security-gets-a-rethink",
+      "lane": "crypto",
+      "title": "Bitcoiners turn to dice rolls as self-custody security gets a rethink",
+      "summary": "Some bitcoin holders are turning to physical dice throws to generate private keys as they re-evaluate self-custody setups, according to a Cointelegraph feature. The trend reflects renewed scrutiny of hardware-wallet-based key generation amid broader security concerns in the space.",
+      "whyItMatters": "How everyday holders generate and store private keys is central to preventing theft, and renewed interest in manual entropy methods signals eroding trust in some existing hardware approaches.",
+      "whatToWatch": [
+        "Whether wallet makers respond with new guidance or product changes",
+        "Broader adoption trends in manual or dice-based key generation"
+      ],
+      "questions": [
+        "How widespread is this shift, and among which type of holders?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoiners turn to dice throws as self-custody setups are re-evaluated",
+          "url": "https://cointelegraph.com/features/bitcoiners-turn-to-dice-throws-as-self-custody-setups-are-re-evaluated?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-07T13:00:01.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T13:00:01.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-true-or-false-about-bitcoin-and-crypto-are-totally-wrong.png",
+      "badge": "Security",
+      "trendScore": 58,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-15fecbb2b3",
+      "slug": "american-bitcoin-s-8-002-btc-reserve-is-nearly-40-tied-up-with-bitmain",
+      "lane": "crypto",
+      "title": "American Bitcoin's 8,002 BTC reserve is nearly 40% tied up with Bitmain",
+      "summary": "American Bitcoin has built a reserve of 8,002 BTC, but close to 40% of those holdings are reportedly tied up in arrangements with mining hardware maker Bitmain, according to CryptoSlate. The concentration raises questions about how liquid or independently controlled the disclosed reserve actually is.",
+      "whyItMatters": "Corporate bitcoin treasuries are under growing scrutiny for how much of their disclosed holdings are truly free and liquid versus encumbered by counterparty arrangements.",
+      "whatToWatch": [
+        "Whether American Bitcoin discloses more detail on the nature of the Bitmain-linked holdings",
+        "Similar disclosures from other bitcoin mining or treasury companies"
+      ],
+      "questions": [
+        "What is the exact nature of the arrangement tying BTC to Bitmain — collateral, financing, or hosting?",
+        "Could this affect American Bitcoin's ability to sell or use those coins?"
+      ],
+      "sources": [
+        {
+          "title": "American Bitcoin built an 8,002 BTC reserve, but nearly 40% of it is quietly tied up with Bitmain",
+          "url": "https://cryptoslate.com/american-bitcoin-built-an-8002-btc-reserve-but-nearly-40-of-it-is-quietly-tied-up-with-bitmain/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-07T10:50:21.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T10:50:21.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/american-bitcoin-share-sales.jpg.jpg",
+      "badge": "Corporate",
+      "trendScore": 58,
+      "confidence": "low"
     },
     {
       "id": "crypto-03373a74d6",
       "slug": "bitcoin-wallet-dormant-since-2011-moves-3-2-million-toward-falconx-lin",
       "lane": "crypto",
-      "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
-      "summary": "A bitcoin wallet inactive since 2011 moved roughly $3.2 million worth of BTC toward an address linked to trading firm FalconX, according to CoinDesk.",
-      "whyItMatters": "Movements from long-dormant wallets are closely watched as potential signals of early-holder selling or institutional OTC activity, both of which can hint at shifting supply dynamics.",
+      "title": "Bitcoin wallet dormant since 2011 moves $3.2M toward FalconX-linked address",
+      "summary": "A bitcoin wallet inactive since 2011 has moved roughly $3.2 million worth of BTC toward an address linked to trading firm FalconX, according to CoinDesk. Long-dormant wallet movements often draw attention as potential signals of early holders repositioning or preparing to sell.",
+      "whyItMatters": "Movements from decade-old dormant wallets are closely watched as a barometer of early-holder sentiment and potential new sell-side supply.",
       "whatToWatch": [
-        "Whether the funds are sold, moved again, or held static",
-        "Any statement from FalconX on the transfer"
+        "Whether the funds move further, such as onto an exchange",
+        "Any statement from FalconX about the transaction"
       ],
       "questions": [
-        "Is this an early holder cashing out or a custody/OTC transfer?",
-        "Will other long-dormant wallets show similar movement?"
+        "Is this a sale, an OTC transfer, or a custody consolidation?",
+        "Who controls the original 2011 wallet?"
       ],
       "sources": [
         {
@@ -130,267 +317,69 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-07T04:50:44.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/70198f64252bcded39f90b505eb1a2f4f3b2fb92-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "On-chain",
-      "trendScore": 62,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-35a7d31549",
-      "slug": "coldcard-fallout-shows-up-on-chain-as-210-000-bitcoin-leaves-old-walle",
-      "lane": "crypto",
-      "title": "Coldcard fallout shows up on-chain as 210,000 bitcoin leaves old wallets",
-      "summary": "In the wake of a security issue involving hardware wallet maker Coldcard, roughly 210,000 bitcoin has moved out of long-dormant wallets, according to CoinDesk. The scale suggests holders are proactively migrating funds amid security concerns.",
-      "whyItMatters": "A security scare touching a hardware wallet used for self-custody, at a scale involving hundreds of thousands of bitcoin, is a significant operational-risk event for anyone holding crypto outside exchanges.",
-      "whatToWatch": [
-        "Official details on the nature and scope of the Coldcard issue",
-        "Further wallet migrations in coming days",
-        "Any response from Coldcard or affected custody providers"
-      ],
-      "questions": [
-        "What exactly went wrong with Coldcard?",
-        "How many affected holders have moved funds versus how many remain exposed?"
-      ],
-      "sources": [
-        {
-          "title": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
-          "url": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-07T09:24:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T09:24:00.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/26b8b4fba46a4ec6068433ab9d7d9a65df76fb6c-3200x1800.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Security",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-20c53e863e",
-      "slug": "crypto-market-maker-wintermute-lands-sec-approval-to-trade-equities-an",
-      "lane": "crypto",
-      "title": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
-      "summary": "Wintermute, a major crypto market maker, has received SEC approval to trade equities and ETF blocks, according to CoinDesk, extending its business beyond digital assets into traditional securities markets.",
-      "whyItMatters": "The approval reflects growing convergence between crypto-native trading firms and traditional finance, and suggests US regulators are becoming more open to letting crypto firms operate in conventional securities markets.",
-      "whatToWatch": [
-        "How quickly Wintermute begins trading equities and ETF blocks",
-        "Whether other crypto market makers pursue similar approvals"
-      ],
-      "questions": [
-        "What specific registration or license did Wintermute obtain?",
-        "Does this mark a broader regulatory opening for crypto-native trading firms?"
-      ],
-      "sources": [
-        {
-          "title": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
-          "url": "https://www.coindesk.com/business/2026/08/07/wintermute-gains-u-s-broker-dealer-status-in-wall-street-push",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-07T08:46:17.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T08:46:17.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7db3bf97253af39b70ae7cb86f74023bea1187e3-4323x2432.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Regulatory",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-cd588aa24f",
-      "slug": "bitcoin-holds-near-64-300-as-traders-await-us-jobs-report-with-oil-a-f",
-      "lane": "crypto",
-      "title": "Bitcoin holds near $64,300 as traders await US jobs report, with oil a fresh headwind",
-      "summary": "Bitcoin traded roughly flat near $64,300 heading into Friday's US jobs report, with CoinDesk's live markets coverage citing rising oil prices as an added headwind for risk assets. That follows a similarly flat session on Thursday near $64,000.",
-      "whyItMatters": "Macro data releases like the jobs report remain a key near-term catalyst for bitcoin, and a resurgence in oil prices points to inflation and rate concerns that can weigh on risk appetite broadly.",
-      "whatToWatch": [
-        "Bitcoin's reaction to the US jobs report",
-        "Whether price breaks out of its recent tight range",
-        "The trajectory of oil prices as a cross-asset headwind"
-      ],
-      "questions": [
-        "How would bitcoin react to a jobs report surprise in either direction?"
-      ],
-      "sources": [
-        {
-          "title": "Live updates: Bitcoin flat at $64,300 before US jobs report, with oil back as a headwind",
-          "url": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-07T07:44:57.000Z"
-        },
-        {
-          "title": "Live updates: Bitcoin flatlines near $64,000 ahead of Friday's jobs report",
-          "url": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-06T07:26:23.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-06T07:26:23.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/51c768b6675365b7ee90c719bc70e85b7a44150b-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 59,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-291914df45",
-      "slug": "ethereum-volume-plunged-73-on-bullish-but-a-72-spread-jump-saved-its-m",
-      "lane": "crypto",
-      "title": "Ethereum volume plunged 73% on Bullish, but a 72% spread jump saved its monthly bottom line",
-      "summary": "Ether trading volume on the Bullish exchange fell 73%, but a 72% jump in bid-ask spreads helped the platform preserve its monthly revenue, according to CryptoSlate.",
-      "whyItMatters": "Falling volume alongside widening spreads points to thinning liquidity in ether markets even as exchange revenue holds steady — a divergence that matters for anyone trading size in the asset.",
-      "whatToWatch": [
-        "Whether ether volumes recover on Bullish and other venues",
-        "Further movement in spreads",
-        "Bullish's next monthly disclosures"
-      ],
-      "questions": [
-        "Is the volume drop specific to Bullish or part of a broader ether liquidity slowdown?"
-      ],
-      "sources": [
-        {
-          "title": "Ethereum volume plunged 73% on Bullish, but a 72% spread jump saved its monthly bottom line",
-          "url": "https://cryptoslate.com/coindesk-owner-bullish-volume-fell-43-but-a-72-spread-jump-nearly-offset-the-annual-decline/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-07T06:00:39.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T06:00:39.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bullish.jpeg",
-      "badge": "Exchanges",
-      "trendScore": 59,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-eada6c2433",
-      "slug": "bitcoin-etf-inflows-surge-after-coldcard-hack-but-link-is-unclear-bloo",
-      "lane": "crypto",
-      "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
-      "summary": "US bitcoin ETFs saw a surge in inflows following a hack affecting hardware wallet maker Coldcard, though a Bloomberg analyst cautioned the connection between the two events isn't clear, according to Cointelegraph.",
-      "whyItMatters": "If a self-custody security scare is pushing holders toward ETF exposure instead, that would mark a notable shift in how investors choose to hold bitcoin — worth tracking even with causation unconfirmed.",
-      "whatToWatch": [
-        "Further analyst commentary on whether the events are linked",
-        "Continued ETF inflow data in coming days",
-        "More detail on the scope of the Coldcard hack"
-      ],
-      "questions": [
-        "Is the inflow surge a direct reaction to the hack or coincidental timing?",
-        "How many affected Coldcard users, if any, shifted into ETF exposure?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
-          "url": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-06T18:17:57.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-06T18:17:57.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/lost-bitcoins-etf-hack-hacking-falling-jeans.jpg",
-      "badge": "ETF Flows",
-      "trendScore": 58,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-417a5cc82e",
-      "slug": "sec-filings-show-a-17-4-billion-blackrock-crypto-reversal-as-mystery-i",
-      "lane": "crypto",
-      "title": "SEC filings show a $17.4 billion BlackRock crypto reversal as mystery investors redeem 106,000 BTC",
-      "summary": "SEC filings reportedly show a $17.4 billion reversal tied to BlackRock's crypto holdings, with unidentified investors redeeming roughly 106,000 bitcoin, according to CryptoSlate.",
-      "whyItMatters": "A redemption of this size involving the largest bitcoin ETF issuer would be a meaningful signal about institutional sentiment, and could pressure bitcoin's price if it reflects genuine sustained outflows.",
-      "whatToWatch": [
-        "Whether the identities behind the redemptions are confirmed",
-        "Whether outflows continue in subsequent filings",
-        "Any response or disclosure from BlackRock"
-      ],
-      "questions": [
-        "Who are the 'mystery investors,' and why redeem now?",
-        "Does this reflect one large holder exiting or a broader institutional retreat?"
-      ],
-      "sources": [
-        {
-          "title": "SEC filings show a $17.4 billion BlackRock crypto reversal as mystery investors redeem 106,000 BTC",
-          "url": "https://cryptoslate.com/blackrocks-crypto-etfs-shed-3-5-billion-as-last-years-creation-boom-turns-into-redemptions/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-07T03:50:04.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T03:50:04.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock.jpeg",
-      "badge": "ETF Flows",
       "trendScore": 57,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-e2350f36f8",
-      "slug": "xrp-leads-majors-losses-as-clarity-act-vote-slips-to-september",
-      "lane": "crypto",
-      "title": "XRP leads majors' losses as Clarity Act vote slips to September",
-      "summary": "XRP led losses among major cryptocurrencies after a vote on the Clarity Act, a US crypto market-structure bill, was pushed back to September, according to CoinDesk.",
-      "whyItMatters": "The Clarity Act is one of the most closely watched pieces of pending US crypto legislation, and delays add regulatory uncertainty that tends to hit tokens like XRP especially hard.",
-      "whatToWatch": [
-        "The rescheduled September vote",
-        "Any further delays to the timeline",
-        "XRP and broader market reaction as the vote approaches"
-      ],
-      "questions": [
-        "What specifically caused the delay?",
-        "Does the postponement change the bill's odds of passing?"
-      ],
-      "sources": [
-        {
-          "title": "XRP leads majors losses as Clarity Act vote slips to September",
-          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-07T04:17:01.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T04:17:01.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b1c014a2d37a67798524621c1d3d9c1251ff9030-1500x935.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Regulatory",
-      "trendScore": 56,
       "confidence": "medium"
     },
     {
-      "id": "crypto-8eaa5ab677",
-      "slug": "cleanspark-misses-wall-street-revenue-estimates-as-shares-sink",
+      "id": "crypto-bb424e1690",
+      "slug": "dormant-2011-bitcoin-wallet-stirs-moving-millions-in-btc",
       "lane": "crypto",
-      "title": "CleanSpark misses Wall Street revenue estimates as shares sink",
-      "summary": "Bitcoin miner CleanSpark reported revenue below Wall Street estimates, sending its shares lower, according to Cointelegraph.",
-      "whyItMatters": "Miner earnings are a key barometer of profitability pressure across the bitcoin mining industry, reflecting factors like hashprice and energy costs that ripple through network economics.",
+      "title": "Dormant 2011 Bitcoin wallet stirs, moving millions in BTC",
+      "summary": "A bitcoin wallet untouched since 2011 has become active again, moving millions of dollars' worth of BTC, according to Decrypt. The report does not specify the exact amount or destination beyond describing it as a multi-million dollar transfer.",
+      "whyItMatters": "Reactivation of decade-old wallets is a recurring signal watched for clues about early-adopter behavior and possible new supply entering the market.",
       "whatToWatch": [
-        "CleanSpark's forward guidance and cost commentary",
-        "Whether other public miners report similar shortfalls this earnings season"
+        "Follow-up reporting on where the funds ultimately land",
+        "Whether other long-dormant wallets show similar activity"
       ],
       "questions": [
-        "What drove the revenue miss — hashprice, difficulty, or operating costs?",
-        "Will peer miners show the same trend?"
+        "How much BTC moved, and to what kind of address — exchange, OTC desk, or cold storage?"
       ],
       "sources": [
         {
-          "title": "CleanSpark misses Wall Street revenue estimates as shares sink",
-          "url": "https://cointelegraph.com/news/cleanspark-wall-street-revenue-estimates-shares-sink?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-07T09:25:56.000Z"
+          "title": "Bitcoin Wallet Dormant Since 2011 Moves Millions in BTC",
+          "url": "https://decrypt.co/375114/bitcoin-wallet-dormant-since-2011-moves-millions-btc",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-08-07T15:27:35.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-07T09:25:56.000Z",
-      "updatedAt": "2026-08-07T10:07:46.310Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-cleanspark-1.jpg",
-      "badge": "Earnings",
+      "publishedAt": "2026-08-07T15:27:35.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-07-gID_7.png@png",
+      "badge": "On-chain",
+      "trendScore": 56,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-9ceb4c360f",
+      "slug": "bitcoin-hits-65-3k-august-high-as-weak-jobs-data-cools-fed-rate-bets",
+      "lane": "crypto",
+      "title": "Bitcoin hits $65.3K August high as weak jobs data cools Fed rate bets",
+      "summary": "Bitcoin touched a new August high of $65,300 after weaker-than-expected US jobs numbers reduced expectations for further Fed rate hikes, according to Cointelegraph. Softer labor data is often read by crypto markets as raising the odds of a more accommodative Fed stance.",
+      "whyItMatters": "Bitcoin continues to trade closely with shifting Fed rate expectations, making macro data releases a key short-term driver of price action.",
+      "whatToWatch": [
+        "Upcoming Fed commentary and meeting schedule for rate-policy signals",
+        "Whether BTC can hold above its new August high"
+      ],
+      "questions": [
+        "How much of this move reflects macro positioning versus crypto-specific demand, such as ETF flows?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin price tags $65.3K August high as low US jobs numbers cool Fed rate bets",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-tags-653k-august-high-as-low-us-jobs-numbers-cool-fed-rate-bets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-07T15:23:15.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T15:23:15.000Z",
+      "updatedAt": "2026-08-07T16:11:59.916Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-247420-bitcoin-reacts-to-major-us-jobs-data-beat-as-fed-rate-pause-odds-near-95-960x640.webp",
+      "badge": "Markets",
       "trendScore": 55,
       "confidence": "medium"
     }
