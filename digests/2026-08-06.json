@@ -1,0 +1,412 @@
+{
+  "id": "2026-08-06",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-06T18:27:16.019Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Update Claude Code now — bash permission bypass patched, try /teleport",
+    "summary": "Claude Code 2.1.223 closes a real hole: a crafted bash command could previously hide parts of itself from permission checks, so update before your next unattended run. The same release ships /teleport, which pulls a finished cloud session down to your machine — worth wiring into the describe-it-and-sleep loop you're already running. Pair it with codeseek, a Rust MCP tool that gives an agent call-graph and hybrid semantic search over your repo, so it stops guessing at structure and asking you where things live during a long overnight session.\n\nOn cost, a cluster of new control-plane repos (opencodex, claudexor, omnigent, and a Codex-backend adapter for Claude Code's dynamic workflows) all do the same thing: let you keep Claude Code or Codex as your interface while routing execution to Ollama, DeepSeek, Gemini or whatever's cheapest per subagent. dao-code sweetens this specifically for DeepSeek-V4 by engineering byte-stable prompt prefixes so cross-session memory barely adds token cost — a real lever for your longest-running sessions. And on the oversight side, a 40,000-run study found humans miss about one in three genuinely dangerous agent commands when eyeballing approval prompts — treat that as confirmation that your permission hooks and allowlists need to catch what you won't, and look at fable-method's 'prove' skill as a scripted verification step before a diff ever reaches your review queue.",
+    "bullets": [
+      "Update to Claude Code 2.1.223 and run claude --teleport to pull a finished cloud session onto your machine",
+      "Clone opencodex or claudexor to point subagents at Ollama, DeepSeek or Gemini backends and cut per-turn spend; claudexor adds quota-aware rotation across subscriptions plus cross-model review of the final diff",
+      "Try tigicion/dao-code as a DeepSeek-V4 backend for your longest sessions — its cache-reusing prompt prefixes keep cross-session memory nearly free",
+      "Install CodeBendKit/codeseek as an MCP tool so agents navigate call graphs and semantic search themselves instead of asking mid-run",
+      "Bolt fable-method's 'prove' skill onto your prompt as a self-verification pass before an agent opens a PR",
+      "Don't trust manual approval prompts as your safety net — humans missed 1 in 3 dangerous commands across 40k runs, so lock down permission hooks/allowlists instead"
+    ],
+    "signals": [
+      {
+        "label": "Multi-harness control planes for cost routing",
+        "direction": "up",
+        "note": "opencodex, claudexor, omnigent and the Codex-backend workflow adapter all launched to let Claude Code/Codex execution run on cheaper or local models without rewriting your setup."
+      },
+      {
+        "label": "Manual human oversight of agent actions",
+        "direction": "down",
+        "note": "40k-run study shows humans approving agent commands miss about a third of real threats — the case for policy-based blocking over eyeballing is getting harder data behind it."
+      },
+      {
+        "label": "Cloud-to-local session handoff",
+        "direction": "up",
+        "note": "Claude Code's new /teleport hint plus devspace's browser-driven agent control point toward treating remote/cloud runs and local review as one continuous workflow."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1240191065",
+      "title": "DenisSergeevitch/agents-best-practices — Provider-neutral Agent Skill for Codex, Claude Code, and agentic harness design.",
+      "url": "https://github.com/DenisSergeevitch/agents-best-practices",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-15T21:32:21Z",
+      "tldr": "agents-best-practices packages a provider-neutral Agent Skill for harness and prompt design, usable directly in Codex or Claude Code.",
+      "whyItMatters": "A ready-made skill file for agentic-harness design you can drop into your skills folder tonight instead of writing one from scratch.",
+      "category": "technique",
+      "tags": [
+        "skill",
+        "prompt-design",
+        "harness"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone DenisSergeevitch/agents-best-practices and copy the skill into your Claude Code skills directory.",
+      "score": 2193
+    },
+    {
+      "id": "gh-1257914186",
+      "title": "CodeBendKit/codeseek — Rust-powered code intelligence CLI for AI coding agents. Builds call graphs and hybrid semantic search indexes (Dense + Sparse + RRF + Reranker) across 7 languages. Ships as native MCP tools for Claude Code and Codex ",
+      "url": "https://github.com/CodeBendKit/codeseek",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-03T05:41:22Z",
+      "tldr": "codeseek is a Rust CLI that builds call graphs and hybrid semantic search indexes (dense + sparse + RRF + reranker) across 7 languages, exposed as native MCP tools for Claude Code and Codex CLI.",
+      "whyItMatters": "Better code retrieval lets an unattended agent navigate and verify a large codebase itself instead of guessing or asking you where things are — a direct lever for longer unsupervised runs.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "code-search",
+        "verification"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone CodeBendKit/codeseek, build the index for your repo, and register it as an MCP tool in your Claude Code config.",
+      "score": 821
+    },
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21223",
+      "title": "2.1.223",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-223",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-06T00:58:48.000Z",
+      "tldr": "Claude Code 2.1.223 fixes a Bash permission-bypass exploit, adds owner-wildcard entries for marketplace allow/block lists, and ships a /teleport hint for resuming cloud sessions locally.",
+      "whyItMatters": "The permission-bypass fix is a real security patch — a crafted command could previously hide parts of itself from permission checks — and /teleport is a direct route from an overnight cloud run to a local morning review.",
+      "category": "technique",
+      "tags": [
+        "security-fix",
+        "config",
+        "cloud-sessions"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code to 2.1.223 and run claude --teleport to pull a finished cloud session onto your machine."
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor and custom agents interchangeably, with policy enforcement, sandboxing, and control from any device.",
+      "whyItMatters": "A single control plane to swap harnesses per task and to check on or steer agents from your phone instead of being tied to your desk.",
+      "category": "tooling",
+      "tags": [
+        "meta-harness",
+        "remote-control",
+        "sandboxing"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and route one subagent through it to test cross-device control and its sandbox policies.",
+      "score": 8224
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI/SDK and Claude Code call any LLM backend — Claude, Gemini, Grok, DeepSeek, or local Ollama models.",
+      "whyItMatters": "Lets you route cheap or bulk agent work to a local/open-weight model while keeping your existing Claude Code or Codex workflow, cutting spend without switching harnesses.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "proxy",
+        "local-models",
+        "routing"
+      ],
+      "entities": [
+        "Codex",
+        "Claude Code",
+        "Ollama"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point one subagent's model config at a local Ollama model to test cost savings tonight.",
+      "score": 8016
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "devspace turns the ChatGPT web app into a Codex-like coding agent, or Claude's web chat into Claude Code, from the browser.",
+      "whyItMatters": "Lets you kick off or steer a coding agent from a phone or tablet browser session without a terminal, useful for controlling agents away from your desk.",
+      "category": "tooling",
+      "tags": [
+        "remote",
+        "browser",
+        "mobile"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "ChatGPT"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Waishnav/devspace and try driving a small task from Claude Web on your phone.",
+      "score": 3566
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills the workflow behind 'Claude Fable 5' into reusable skills plus a think/act/prove eval loop meant to keep any model's output honest.",
+      "whyItMatters": "The 'prove' step is a concrete self-verification pattern you can bolt onto your own agent prompts to get closer to a genuinely reviewable PR instead of trusting the agent's say-so.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "eval"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and adapt its 'prove' skill as a verification step before your agent opens a PR.",
+      "score": 2156
+    },
+    {
+      "id": "gh-1262682069",
+      "title": "tigicion/dao-code — Open-source TypeScript terminal coding agent for DeepSeek-V4 — builds on DeepSeek's strong price-performance and ultra-cheap cache pricing, engineering byte-stable prefixes and cache-reusing forks so cross-session memory",
+      "url": "https://github.com/tigicion/dao-code",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-08T08:10:42Z",
+      "tldr": "dao-code is an open-source terminal coding agent tuned for DeepSeek-V4, engineering byte-stable prompt prefixes so cross-session memory and self-correction add almost no extra token cost, and it's config-compatible with Claude Code.",
+      "whyItMatters": "DeepSeek-V4's cheap cache pricing plus this repo's prefix engineering is a concrete way to cut per-turn token spend on long unattended sessions without abandoning your Claude Code setup.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "deepseek",
+        "caching",
+        "cli"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek-V4"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone tigicion/dao-code and swap it in as a cheaper backend for your longest-running, highest-turn agent sessions.",
+      "score": 1267
+    },
+    {
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local-first desktop widget tracking token usage, cost and rate limits across 28+ coding tools including Claude Code and Codex, synced across devices.",
+      "whyItMatters": "One real-time cost readout across every harness instead of checking separate dashboards — useful once you're routing work across multiple models and subscriptions.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "monitoring",
+        "widget"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Javis603/token-monitor and point it at your Claude Code and Codex usage to see actual per-tool spend tonight.",
+      "score": 1192
+    },
+    {
+      "id": "gh-1250957639",
+      "title": "withkynam/vibecode-pro-max-kit — Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — self-improving context memory, 15 agents, 33 skills working with /goal, agent-team, & work",
+      "url": "https://github.com/withkynam/vibecode-pro-max-kit",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-27T05:46:25Z",
+      "tldr": "vibecode-pro-max-kit is a spec-driven Claude Code/Codex harness with /goal and agent-team commands that runs multi-agent workflows on autopilot with zero human approval gate.",
+      "whyItMatters": "It's a direct, ready-made template for the 'describe the work, go to sleep' loop you're building toward — worth trialing before rolling your own.",
+      "category": "tooling",
+      "tags": [
+        "autopilot",
+        "harness",
+        "skills"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone withkynam/vibecode-pro-max-kit and run /goal on a small feature to see whether its no-human-gate autopilot loop actually holds up.",
+      "score": 1064
+    },
+    {
+      "id": "gh-1259999244",
+      "title": "razzant/claudexor — Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+      "url": "https://github.com/razzant/claudexor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-05T04:08:13Z",
+      "tldr": "claudexor is a control plane that rotates work across multiple Claude/Codex subscriptions by quota, shares thread context across harnesses, and runs cross-model review.",
+      "whyItMatters": "Quota-aware rotation avoids rate-limit stalls on long unattended runs, and cross-model review gives an agent's finished PR a cheap second opinion before you wake up.",
+      "category": "tooling",
+      "tags": [
+        "quota",
+        "cross-model-review",
+        "harness"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone razzant/claudexor and route your overnight run through it to add automatic cross-model review of the final diff.",
+      "score": 374
+    },
+    {
+      "id": "gh-1255596359",
+      "title": "scasella/claude-dynamic-workflows-codex — Run Claude Code dynamic workflows on a local Codex (GPT) backend, plus an interactive run viewer",
+      "url": "https://github.com/scasella/claude-dynamic-workflows-codex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-01T02:07:23Z",
+      "tldr": "This repo runs Claude Code's dynamic workflows on a local Codex (GPT) backend, with an interactive viewer for watching the run.",
+      "whyItMatters": "Keeps Claude Code's workflow orchestration while routing execution to a cheaper/local backend, and the viewer helps you verify what happened without re-reading raw logs.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "workflows",
+        "local-backend"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone scasella/claude-dynamic-workflows-codex and rerun one existing dynamic workflow against the local Codex backend to compare cost and output.",
+      "score": 308
+    },
+    {
+      "id": "hn-49195468",
+      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-06T11:58:07Z",
+      "tldr": "Across 40,000 game runs, humans approving AI agent commands missed roughly one in three that were actually dangerous.",
+      "whyItMatters": "If you're relying on manual 'approve this command' prompts as your safety net for overnight runs, this says that net has a real hole — automated policy checks matter more than your own vigilance.",
+      "category": "agentic",
+      "tags": [
+        "safety",
+        "human-oversight",
+        "permissions"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Audit your permission hooks/allowlists so genuinely dangerous commands are blocked by policy, not caught by you eyeballing a prompt at 2am.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49195468",
+      "score": 187
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Wave of multi-harness, cost-routing control planes",
+      "summary": "Four new repos independently solve the same problem: keep Claude Code or Codex as the interface but route actual execution to whichever model or subscription is cheapest, with rotation and cross-model review layered on top.",
+      "itemIds": [
+        "gh-1266212515",
+        "gh-1273824907",
+        "gh-1259999244",
+        "gh-1255596359"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "The verification gap between agent output and human trust",
+      "summary": "One item ships a scripted 'prove' step to make agent output self-checking; the other shows why that matters — manual human approval of agent commands misses a third of real threats.",
+      "itemIds": [
+        "gh-1291544092",
+        "hn-49195468"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 4,
+    "outputTokens": 17052,
+    "usd": 0.3888,
+    "model": "claude-sonnet-5",
+    "calls": 2,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

@@ -1,61 +1,31 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-06T05:25:48.120Z",
-  "contentVersion": 17,
+  "generatedAt": "2026-08-07T10:07:46.310Z",
+  "contentVersion": 18,
   "stories": [
-    {
-      "id": "crypto-0390492099",
-      "slug": "coldcard-exploit-reignites-hardware-wallet-security-debate",
-      "lane": "crypto",
-      "title": "Coldcard exploit fuels debate over hardware wallet security",
-      "summary": "A newly disclosed exploit against Coldcard hardware wallets has raised questions about self-custody security, with some analysts telling CoinDesk it could push more investors toward regulated bitcoin exposure like ETFs rather than self-custody. Cointelegraph separately examined whether the attack implicates hardware wallets broadly or is specific to Coldcard's design.",
-      "whyItMatters": "Security scares around self-custody tools can shift capital toward regulated products, affecting flows into bitcoin ETFs and custodial services.",
-      "whatToWatch": [
-        "Whether Coldcard or independent researchers publish a technical post-mortem",
-        "Responses from other hardware wallet makers",
-        "Any visible shift in flows toward regulated bitcoin products"
-      ],
-      "questions": [
-        "Is the vulnerability specific to Coldcard's architecture or a broader hardware wallet risk?",
-        "Has any user actually lost funds in the exploit?"
-      ],
-      "sources": [
-        {
-          "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
-          "url": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T15:44:08.000Z"
-        },
-        {
-          "title": "Do the Coldcard attacks mean all hardware wallets are now insecure?",
-          "url": "https://cointelegraph.com/magazine/does-the-coldcard-attack-mean-all-hardware-wallets-are-now-insecure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T13:30:00.000Z"
-        }
-      ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-05T13:30:00.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/df75194a14ee0137a319a24c95c7971dfac737a2-4896x3268.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Security",
-      "trendScore": 68,
-      "confidence": "medium"
-    },
     {
       "id": "crypto-fed450d3f2",
       "slug": "xrp-whales-keep-buying-the-dip-while-ether-shows-deeper-capitulation",
       "lane": "crypto",
-      "title": "XRP whales keep buying the dip while ether shows deeper capitulation",
-      "summary": "CoinDesk reports large XRP holders continuing to accumulate through the recent pullback, while ether's price action points to more pronounced capitulation among its holders. The divergence suggests investor conviction is holding up better for XRP than for ETH in the current downturn.",
-      "whyItMatters": "Whale accumulation patterns are a closely watched signal for where conviction, or fear, is concentrated across major tokens during a drawdown.",
+      "title": "XRP whales buy the dip as leverage outpaces spot 6-to-1, while ether shows deeper capitulation",
+      "summary": "XRP whales have kept accumulating through recent price weakness, even as leveraged trading volume in the token runs six times higher than spot volume, creating what CryptoSlate frames as a $2.36 billion risk exposure. CoinDesk reports that ether is showing more pronounced signs of capitulation than XRP over the same stretch.",
+      "whyItMatters": "A leverage-to-spot ratio this skewed raises the odds of sharp liquidation-driven moves, and the divergence between XRP whale buying and ether capitulation is a useful gauge of where risk is concentrated across majors.",
       "whatToWatch": [
-        "Whether XRP whale buying continues if prices fall further",
-        "Any stabilization in ether's on-chain selling pressure"
+        "Whether the leverage-to-spot ratio in XRP normalizes or keeps widening",
+        "Continued on-chain whale accumulation data",
+        "Signs of stabilization or further capitulation in ether"
       ],
       "questions": [
-        "How much of the XRP buying is exchange-based versus long-term wallet accumulation?"
+        "What's specifically driving XRP whale buying amid broader softness?",
+        "Could the heavy leverage trigger a cascading liquidation event?"
       ],
       "sources": [
+        {
+          "title": "With leverage outnumbering spot volume 6 to 1, XRP traders are walking a $2.36B tightrope",
+          "url": "https://cryptoslate.com/with-leverage-outnumbering-spot-volume-6-to-1-xrp-traders-are-walking-a-2-36b-tightrope/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-07T08:54:38.000Z"
+        },
         {
           "title": "XRP whales keep buying the dip, but ether shows deeper capitulation",
           "url": "https://www.coindesk.com/markets/2026/08/06/xrp-whales-keep-buying-the-dip-but-ether-shows-deeper-capitulation",
@@ -63,318 +33,366 @@
           "publishedAt": "2026-08-06T04:46:17.000Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "publishedAt": "2026-08-06T04:46:17.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b53d077c4e5949d0efd6629978ef575ece087f83-2400x1350.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 60,
+      "trendScore": 78,
       "confidence": "medium"
     },
     {
-      "id": "crypto-f7158d5b06",
-      "slug": "cashcat-surges-120-as-robinhood-chain-s-value-locked-tops-774-million",
+      "id": "crypto-a8c170f4ac",
+      "slug": "ethereum-staking-token-weeth-pulls-back-from-restaking-as-rewards-deba",
       "lane": "crypto",
-      "title": "CASHCAT surges 120% as Robinhood Chain's value locked tops $774 million",
-      "summary": "The token CASHCAT rallied 120% over the past week as Robinhood Chain's total value locked climbed to $774 million, according to CoinDesk. The move highlights fast-growing activity on the newer chain even as broader crypto markets have been choppy.",
-      "whyItMatters": "Rapid TVL growth and token spikes on emerging chains like Robinhood Chain signal where speculative capital and developer activity are migrating.",
+      "title": "Ethereum staking token weETH pulls back from restaking as rewards debate intensifies",
+      "summary": "weETH, a liquid staking token built on ether, is reportedly distancing itself from the restaking model it was originally built around, according to CoinDesk, as debate grows over how staking rewards should be structured. Specifics on the change are still limited.",
+      "whyItMatters": "Restaking has been a major growth engine for Ethereum's staking ecosystem, so a shift away from it by a prominent token could signal broader repricing of risk in DeFi yield products.",
       "whatToWatch": [
-        "Whether Robinhood Chain's TVL growth holds or reverses",
-        "Whether CASHCAT's rally sustains or gives back gains"
+        "Further detail on what structurally is changing at weETH",
+        "Whether other restaking protocols follow or diverge",
+        "Any impact on restaking TVL"
       ],
       "questions": [
-        "What specifically is driving demand for CASHCAT versus other tokens on the chain?"
+        "What exactly is changing in weETH's design?",
+        "Is this an isolated move or the start of a broader retreat from restaking?"
       ],
       "sources": [
         {
-          "title": "CASHCAT jumps 120% in a week as Robinhood Chain hits $774 million of value locked",
-          "url": "https://www.coindesk.com/markets/2026/08/05/cashcat-jumps-120-in-a-week-as-robinhood-chain-tvl-hits-usd774-million",
+          "title": "Ethereum staking token weETH splits from restaking as rewards debate heats up",
+          "url": "https://www.coindesk.com/tech/2026/08/07/ethereum-staking-token-weeth-splits-from-restaking-as-rewards-debate-heats-up",
           "publisher": "CoinDesk",
-          "publishedAt": "2026-08-06T04:31:41.000Z"
+          "publishedAt": "2026-08-07T08:01:28.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-06T04:31:41.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f021b8489c514048a19284a683921ac81755aa3c-2782x954.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "publishedAt": "2026-08-07T08:01:28.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/75226292543672448cf8e2dd04e11059431479a1-1500x985.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "DeFi",
+      "trendScore": 69,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-3427c40020",
+      "slug": "bitcoin-whales-load-up-on-1-2-billion-in-btc-as-etfs-attract-750-milli",
+      "lane": "crypto",
+      "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+      "summary": "Large bitcoin holders added roughly $1.2 billion worth of BTC while US spot bitcoin ETFs pulled in about $750 million in fresh inflows, according to CoinDesk.",
+      "whyItMatters": "Simultaneous whale accumulation and ETF inflows point to strengthening demand from both large individual holders and institutional channels, a combination that's historically been supportive for price.",
+      "whatToWatch": [
+        "Whether the ETF inflow streak continues",
+        "Further whale wallet accumulation",
+        "Any reversal in either flow"
+      ],
+      "questions": [
+        "Do the whale purchases and ETF inflows trace back to overlapping buyers?",
+        "Is this pace of accumulation sustainable given current market conditions?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin whales load up on $1.2 billion in BTC as ETFs attract $750 million",
+          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-whales-load-up-on-usd1-2-billion-in-btc-as-etfs-attract-usd750-million",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T05:45:21.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T05:45:21.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/cdf7e8f4de8522a9a5bf3476f78117049a0d84cb-1280x853.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "ETF Flows",
+      "trendScore": 67,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-03373a74d6",
+      "slug": "bitcoin-wallet-dormant-since-2011-moves-3-2-million-toward-falconx-lin",
+      "lane": "crypto",
+      "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+      "summary": "A bitcoin wallet inactive since 2011 moved roughly $3.2 million worth of BTC toward an address linked to trading firm FalconX, according to CoinDesk.",
+      "whyItMatters": "Movements from long-dormant wallets are closely watched as potential signals of early-holder selling or institutional OTC activity, both of which can hint at shifting supply dynamics.",
+      "whatToWatch": [
+        "Whether the funds are sold, moved again, or held static",
+        "Any statement from FalconX on the transfer"
+      ],
+      "questions": [
+        "Is this an early holder cashing out or a custody/OTC transfer?",
+        "Will other long-dormant wallets show similar movement?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin wallet dormant since 2011 moves $3.2 million toward FalconX-linked address",
+          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-wallet-dormant-since-2011-moves-usd3-2-million-toward-falconx-linked-address",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T04:50:44.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T04:50:44.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/70198f64252bcded39f90b505eb1a2f4f3b2fb92-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "On-chain",
+      "trendScore": 62,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-35a7d31549",
+      "slug": "coldcard-fallout-shows-up-on-chain-as-210-000-bitcoin-leaves-old-walle",
+      "lane": "crypto",
+      "title": "Coldcard fallout shows up on-chain as 210,000 bitcoin leaves old wallets",
+      "summary": "In the wake of a security issue involving hardware wallet maker Coldcard, roughly 210,000 bitcoin has moved out of long-dormant wallets, according to CoinDesk. The scale suggests holders are proactively migrating funds amid security concerns.",
+      "whyItMatters": "A security scare touching a hardware wallet used for self-custody, at a scale involving hundreds of thousands of bitcoin, is a significant operational-risk event for anyone holding crypto outside exchanges.",
+      "whatToWatch": [
+        "Official details on the nature and scope of the Coldcard issue",
+        "Further wallet migrations in coming days",
+        "Any response from Coldcard or affected custody providers"
+      ],
+      "questions": [
+        "What exactly went wrong with Coldcard?",
+        "How many affected holders have moved funds versus how many remain exposed?"
+      ],
+      "sources": [
+        {
+          "title": "Coldcard fallout shows up onchain as 210,000 bitcoin leaves old wallets",
+          "url": "https://www.coindesk.com/markets/2026/08/07/coldcard-fallout-shows-up-onchain-as-210-000-bitcoin-leaves-old-wallets",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T09:24:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T09:24:00.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/26b8b4fba46a4ec6068433ab9d7d9a65df76fb6c-3200x1800.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Security",
       "trendScore": 60,
       "confidence": "medium"
     },
     {
-      "id": "crypto-6899c9db28",
-      "slug": "bitcoin-red-team-audit-surfaces-roughly-5-000-findings",
+      "id": "crypto-20c53e863e",
+      "slug": "crypto-market-maker-wintermute-lands-sec-approval-to-trade-equities-an",
       "lane": "crypto",
-      "title": "Bitcoin Red Team audit surfaces roughly 5,000 findings",
-      "summary": "A sweeping security audit conducted by the Bitcoin Red Team turned up around 5,000 findings, according to Cointelegraph. Initial reporting did not specify a severity breakdown or exactly which parts of the ecosystem were covered.",
-      "whyItMatters": "Large-scale security reviews of core Bitcoin infrastructure matter for tracking protocol-level risk, even before findings are triaged into confirmed vulnerabilities.",
+      "title": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
+      "summary": "Wintermute, a major crypto market maker, has received SEC approval to trade equities and ETF blocks, according to CoinDesk, extending its business beyond digital assets into traditional securities markets.",
+      "whyItMatters": "The approval reflects growing convergence between crypto-native trading firms and traditional finance, and suggests US regulators are becoming more open to letting crypto firms operate in conventional securities markets.",
       "whatToWatch": [
-        "A breakdown of critical versus low-severity findings",
-        "Any disclosed fixes or patches resulting from the audit"
+        "How quickly Wintermute begins trading equities and ETF blocks",
+        "Whether other crypto market makers pursue similar approvals"
       ],
       "questions": [
-        "How many of the 5,000 findings represent genuine vulnerabilities versus minor or informational issues?",
-        "Which projects or components were in scope?"
+        "What specific registration or license did Wintermute obtain?",
+        "Does this mark a broader regulatory opening for crypto-native trading firms?"
       ],
       "sources": [
         {
-          "title": "Bitcoin Red Team reports 5K findings in sweeping security audit",
-          "url": "https://cointelegraph.com/news/bitcoin-red-team-reports-5k-findings-in-sweeping-security-audit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-06T01:09:06.000Z"
+          "title": "Crypto market maker Wintermute lands SEC approval to trade equities and ETF blocks",
+          "url": "https://www.coindesk.com/business/2026/08/07/wintermute-gains-u-s-broker-dealer-status-in-wall-street-push",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T08:46:17.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-06T01:09:06.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bug-error-hack-red-mistake-malwire.jpg",
-      "badge": "Security",
-      "trendScore": 57,
+      "publishedAt": "2026-08-07T08:46:17.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7db3bf97253af39b70ae7cb86f74023bea1187e3-4323x2432.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 60,
       "confidence": "medium"
     },
     {
-      "id": "crypto-f093b4953e",
-      "slug": "bitcoin-lags-as-global-equities-notch-record-highs-amid-yen-interventi",
+      "id": "crypto-cd588aa24f",
+      "slug": "bitcoin-holds-near-64-300-as-traders-await-us-jobs-report-with-oil-a-f",
       "lane": "crypto",
-      "title": "Bitcoin lags as global equities hit record highs; chipmaker's BTC sale wipes out its debt",
-      "summary": "Bitcoin and the broader crypto market failed to keep pace as global equity indexes set fresh record highs, according to CoinDesk. Separately, CryptoSlate reported that a cellular chipmaker sold off 1,200 bitcoin from its treasury, using the proceeds to erase its debt and roughly double its cash position.",
-      "whyItMatters": "Bitcoin's underperformance against equities and a corporate treasury unwinding its BTC holdings both speak to how institutional and public-company sentiment toward bitcoin exposure is evolving.",
+      "title": "Bitcoin holds near $64,300 as traders await US jobs report, with oil a fresh headwind",
+      "summary": "Bitcoin traded roughly flat near $64,300 heading into Friday's US jobs report, with CoinDesk's live markets coverage citing rising oil prices as an added headwind for risk assets. That follows a similarly flat session on Thursday near $64,000.",
+      "whyItMatters": "Macro data releases like the jobs report remain a key near-term catalyst for bitcoin, and a resurgence in oil prices points to inflation and rate concerns that can weigh on risk appetite broadly.",
       "whatToWatch": [
-        "Whether other corporate bitcoin treasuries make similar sales",
-        "Whether bitcoin's relative underperformance versus equities persists"
+        "Bitcoin's reaction to the US jobs report",
+        "Whether price breaks out of its recent tight range",
+        "The trajectory of oil prices as a cross-asset headwind"
       ],
       "questions": [
-        "Which chipmaker sold the bitcoin, and does the move signal a broader trend among public companies holding BTC treasuries?"
+        "How would bitcoin react to a jobs report surprise in either direction?"
       ],
       "sources": [
         {
-          "title": "How dumping 1,200 Bitcoin helped a cellular chipmaker completely erase its debt and double its cash",
-          "url": "https://cryptoslate.com/how-dumping-1200-bitcoin-helped-a-cellular-chipmaker-completely-erase-its-debt-and-double-its-cash/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-05T15:10:08.000Z"
+          "title": "Live updates: Bitcoin flat at $64,300 before US jobs report, with oil back as a headwind",
+          "url": "https://www.coindesk.com/markets/2026/08/07/live-updates-bitcoin-flat-at-usd64-300-before-us-jobs-report-with-oil-back-as-a-headwind",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T07:44:57.000Z"
         },
         {
-          "title": "Bitcoin, broader market fail to keep pace as global equities hit record highs",
-          "url": "https://www.coindesk.com/markets/2026/08/05/bitcoin-broader-market-fail-to-keep-pace-as-global-equities-hit-record-highs",
+          "title": "Live updates: Bitcoin flatlines near $64,000 ahead of Friday's jobs report",
+          "url": "https://www.coindesk.com/tech/2026/08/06/live-updates-bitcoin-nears-usd65-000-as-oil-inflation-hopes-keep-macro-bid-alive",
           "publisher": "CoinDesk",
-          "publishedAt": "2026-08-05T11:01:15.000Z"
-        }
-      ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-05T11:01:15.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9b1f83688f4588197032a91f7adfaf3a6a9b6f01-3317x1697.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 57,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-132799ab01",
-      "slug": "elizaos-token-hits-record-low-after-founder-calls-project-dead",
-      "lane": "crypto",
-      "title": "ElizaOS token hits record low after founder calls project 'dead'",
-      "summary": "The ElizaOS token fell 19% to a record low after its founder publicly declared the project dead, according to Cointelegraph. The statement triggered a sharp selloff among remaining holders.",
-      "whyItMatters": "Founder-declared project failures are a reminder of how concentrated and reflexive risk remains in smaller AI-crypto tokens.",
-      "whatToWatch": [
-        "Whether the founder or team issues a formal wind-down plan or further clarification",
-        "Any attempt by the community to fork or revive the project"
-      ],
-      "questions": [
-        "What specifically prompted the founder to call the project dead?"
-      ],
-      "sources": [
-        {
-          "title": "ElizaOS token sinks 19% to record low after founder declares it ‘dead’",
-          "url": "https://cointelegraph.com/markets/elizaos-token-record-low-founder-declares-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-06T05:08:04.000Z"
+          "publishedAt": "2026-08-06T07:26:23.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-06T05:08:04.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-solana-network-constantly-having-trouble-and-going-offline-sol-price.png",
-      "badge": "Breaking",
-      "trendScore": 56,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-a8fce2b1cd",
-      "slug": "bitcoin-holds-above-64-000-as-traders-eye-100-billion-spacex-unlock",
-      "lane": "crypto",
-      "title": "Bitcoin holds above $64,000 as traders eye $100 billion SpaceX unlock",
-      "summary": "Bitcoin steadied above $64,000, with traders reportedly watching a $100 billion SpaceX unlock event, according to CoinDesk. The report ties broader risk sentiment to the looming unlock, though details on its exact mechanics weren't specified.",
-      "whyItMatters": "Large unlock events tied to major private companies can inject volatility into risk assets, including crypto, depending on how any resulting liquidity is deployed.",
-      "whatToWatch": [
-        "The actual timing and mechanics of the SpaceX unlock",
-        "Bitcoin's price reaction once the unlock occurs"
-      ],
-      "questions": [
-        "What form does the SpaceX unlock take, and why is it being linked to bitcoin specifically?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin steadies above $64,000 as traders watch $100 billion SpaceX unlock",
-          "url": "https://www.coindesk.com/markets/2026/08/06/bitcoin-steadies-above-usd64-000-as-traders-watch-usd100-billion-spacex-unlock",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-06T04:59:11.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-06T04:59:11.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/d1da7dc81bdeb62967c50f138ab1a3e5b4aea59f-4032x3024.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "publishedAt": "2026-08-06T07:26:23.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/51c768b6675365b7ee90c719bc70e85b7a44150b-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 56,
+      "trendScore": 59,
       "confidence": "medium"
     },
     {
-      "id": "crypto-c342877d09",
-      "slug": "all-six-us-solana-etfs-log-zero-net-flows-for-a-fifth-straight-day",
+      "id": "crypto-291914df45",
+      "slug": "ethereum-volume-plunged-73-on-bullish-but-a-72-spread-jump-saved-its-m",
       "lane": "crypto",
-      "title": "US Solana ETFs post five straight days of zero net flows",
-      "summary": "All six US-listed Solana ETFs recorded zero net flows for five consecutive trading days, according to CryptoSlate. The stretch of complete inactivity stands out against the daily inflow or outflow swings typically seen in crypto ETF categories.",
-      "whyItMatters": "Flat flows across an entire fund category can signal fading investor interest or a wait-and-see posture toward Solana exposure specifically.",
+      "title": "Ethereum volume plunged 73% on Bullish, but a 72% spread jump saved its monthly bottom line",
+      "summary": "Ether trading volume on the Bullish exchange fell 73%, but a 72% jump in bid-ask spreads helped the platform preserve its monthly revenue, according to CryptoSlate.",
+      "whyItMatters": "Falling volume alongside widening spreads points to thinning liquidity in ether markets even as exchange revenue holds steady — a divergence that matters for anyone trading size in the asset.",
       "whatToWatch": [
-        "Whether flows resume in either direction in coming days",
-        "How Solana ETF flow trends compare with bitcoin and ether ETFs over the same period"
+        "Whether ether volumes recover on Bullish and other venues",
+        "Further movement in spreads",
+        "Bullish's next monthly disclosures"
       ],
       "questions": [
-        "Is the zero-flow streak due to genuine lack of demand or a technical/reporting quirk?"
+        "Is the volume drop specific to Bullish or part of a broader ether liquidity slowdown?"
       ],
       "sources": [
         {
-          "title": "All six US Solana ETFs have suffered five consecutive days of absolute zero net flows",
-          "url": "https://cryptoslate.com/all-six-us-solana-etfs-have-suffered-five-consecutive-days-of-absolute-zero-net-flows/",
+          "title": "Ethereum volume plunged 73% on Bullish, but a 72% spread jump saved its monthly bottom line",
+          "url": "https://cryptoslate.com/coindesk-owner-bullish-volume-fell-43-but-a-72-spread-jump-nearly-offset-the-annual-decline/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-05T20:35:44.000Z"
+          "publishedAt": "2026-08-07T06:00:39.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-05T20:35:44.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/solana-etf-zero-flow-valv.jpg",
+      "publishedAt": "2026-08-07T06:00:39.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bullish.jpeg",
+      "badge": "Exchanges",
+      "trendScore": 59,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-eada6c2433",
+      "slug": "bitcoin-etf-inflows-surge-after-coldcard-hack-but-link-is-unclear-bloo",
+      "lane": "crypto",
+      "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
+      "summary": "US bitcoin ETFs saw a surge in inflows following a hack affecting hardware wallet maker Coldcard, though a Bloomberg analyst cautioned the connection between the two events isn't clear, according to Cointelegraph.",
+      "whyItMatters": "If a self-custody security scare is pushing holders toward ETF exposure instead, that would mark a notable shift in how investors choose to hold bitcoin — worth tracking even with causation unconfirmed.",
+      "whatToWatch": [
+        "Further analyst commentary on whether the events are linked",
+        "Continued ETF inflow data in coming days",
+        "More detail on the scope of the Coldcard hack"
+      ],
+      "questions": [
+        "Is the inflow surge a direct reaction to the hack or coincidental timing?",
+        "How many affected Coldcard users, if any, shifted into ETF exposure?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETF inflows surge after Coldcard hack, but link is unclear: Bloomberg analyst",
+          "url": "https://cointelegraph.com/news/bitcoin-etf-inflows-coldcard-hack-bloomberg-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-06T18:17:57.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-06T18:17:57.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/lost-bitcoins-etf-hack-hacking-falling-jeans.jpg",
       "badge": "ETF Flows",
-      "trendScore": 55,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-e45f9f19f2",
-      "slug": "blackrock-s-etha-reverse-split-set-to-sharply-cut-ethereum-trading-cos",
-      "lane": "crypto",
-      "title": "BlackRock's ETHA reverse split set to undercut Coinbase on trading costs",
-      "summary": "BlackRock is carrying out a reverse split of its ETHA ether ETF, a move CryptoSlate reports will make trading the fund roughly 70 times cheaper than trading ether directly on Coinbase. Reverse splits raise a fund's per-share price without changing its total value, often used to align share price with peers or narrow trading spreads.",
-      "whyItMatters": "Lower effective trading costs on a regulated ether ETF could pull volume away from crypto-native exchanges toward traditional brokerage rails.",
-      "whatToWatch": [
-        "The effective date of the reverse split",
-        "Whether ETHA trading volume shifts materially versus direct ether trading venues"
-      ],
-      "questions": [
-        "How was the 70-times cost comparison calculated, and does it hold across different order sizes?"
-      ],
-      "sources": [
-        {
-          "title": "BlackRock’s rare ETHA reverse split is about to make trading Ethereum 70 times cheaper than Coinbase",
-          "url": "https://cryptoslate.com/blackrocks-rare-etha-reverse-split-is-about-to-make-trading-ethereum-70-times-cheaper-than-coinbase/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-05T13:55:37.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-05T13:55:37.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etha-share-consolidation-crate.jpg",
-      "badge": "ETF",
-      "trendScore": 54,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-34a833499a",
-      "slug": "mysten-labs-technology-chief-departs-for-anthropic-s-ai-security-team",
-      "lane": "crypto",
-      "title": "Mysten Labs' technology chief departs for Anthropic's AI security team",
-      "summary": "The chief technology officer of Mysten Labs, the company behind the Sui blockchain, is leaving to join Anthropic to work on AI security, according to Cointelegraph.",
-      "whyItMatters": "Departures of senior technical leadership from blockchain infrastructure firms to AI labs highlight competition for talent between the crypto and AI sectors.",
-      "whatToWatch": [
-        "Who succeeds the departing CTO at Mysten Labs",
-        "Whether the move signals further crypto-to-AI talent migration"
-      ],
-      "questions": [
-        "What specific role will the executive have on Anthropic's AI security work?"
-      ],
-      "sources": [
-        {
-          "title": "Mysten Labs tech chief joins Anthropic to work on AI security",
-          "url": "https://cointelegraph.com/news/mysten-labs-tech-chief-joins-anthropic-to-work-on-ai-security?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-06T01:31:35.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-06T01:31:35.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bank-building-hall-entrance-door2-1.jpg",
-      "trendScore": 53,
+      "trendScore": 58,
       "confidence": "medium"
     },
     {
-      "id": "crypto-a12c299688",
-      "slug": "crypto-whales-are-accumulating-as-bear-market-nears-late-stage-cryptoq",
+      "id": "crypto-417a5cc82e",
+      "slug": "sec-filings-show-a-17-4-billion-blackrock-crypto-reversal-as-mystery-i",
       "lane": "crypto",
-      "title": "Crypto whales keep accumulating as CryptoQuant flags late-stage bear market",
-      "summary": "Analytics firm CryptoQuant says large holders are accumulating crypto as indicators suggest the current bear market is entering its later stages, according to Cointelegraph. The report frames whale buying as a contrarian signal against prevailing bearish sentiment.",
-      "whyItMatters": "Whale accumulation during downturns is a metric traders watch for early signs of a market bottom, though it is not a guaranteed predictor.",
+      "title": "SEC filings show a $17.4 billion BlackRock crypto reversal as mystery investors redeem 106,000 BTC",
+      "summary": "SEC filings reportedly show a $17.4 billion reversal tied to BlackRock's crypto holdings, with unidentified investors redeeming roughly 106,000 bitcoin, according to CryptoSlate.",
+      "whyItMatters": "A redemption of this size involving the largest bitcoin ETF issuer would be a meaningful signal about institutional sentiment, and could pressure bitcoin's price if it reflects genuine sustained outflows.",
       "whatToWatch": [
-        "Follow-up CryptoQuant data on whether the accumulation trend continues",
-        "Price action that confirms or contradicts the 'late-stage bear market' thesis"
+        "Whether the identities behind the redemptions are confirmed",
+        "Whether outflows continue in subsequent filings",
+        "Any response or disclosure from BlackRock"
       ],
       "questions": [
-        "What specific on-chain metrics does CryptoQuant use to define a 'late-stage' bear market?"
+        "Who are the 'mystery investors,' and why redeem now?",
+        "Does this reflect one large holder exiting or a broader institutional retreat?"
       ],
       "sources": [
         {
-          "title": "Crypto whales accumulate as bear market nears late stage: CryptoQuant",
-          "url": "https://cointelegraph.com/markets/crypto-whales-buy-bear-market-late-stage-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-05T14:08:27.000Z"
+          "title": "SEC filings show a $17.4 billion BlackRock crypto reversal as mystery investors redeem 106,000 BTC",
+          "url": "https://cryptoslate.com/blackrocks-crypto-etfs-shed-3-5-billion-as-last-years-creation-boom-turns-into-redemptions/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-07T03:50:04.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-05T14:08:27.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-34555-analysts-laugh-off-recent-one-whale-theory-of-btcs-2017-bull-run.jpg",
-      "badge": "Analysis",
-      "trendScore": 53,
+      "publishedAt": "2026-08-07T03:50:04.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock.jpeg",
+      "badge": "ETF Flows",
+      "trendScore": 57,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-e2350f36f8",
+      "slug": "xrp-leads-majors-losses-as-clarity-act-vote-slips-to-september",
+      "lane": "crypto",
+      "title": "XRP leads majors' losses as Clarity Act vote slips to September",
+      "summary": "XRP led losses among major cryptocurrencies after a vote on the Clarity Act, a US crypto market-structure bill, was pushed back to September, according to CoinDesk.",
+      "whyItMatters": "The Clarity Act is one of the most closely watched pieces of pending US crypto legislation, and delays add regulatory uncertainty that tends to hit tokens like XRP especially hard.",
+      "whatToWatch": [
+        "The rescheduled September vote",
+        "Any further delays to the timeline",
+        "XRP and broader market reaction as the vote approaches"
+      ],
+      "questions": [
+        "What specifically caused the delay?",
+        "Does the postponement change the bill's odds of passing?"
+      ],
+      "sources": [
+        {
+          "title": "XRP leads majors losses as Clarity Act vote slips to September",
+          "url": "https://www.coindesk.com/markets/2026/08/07/bitcoin-stuck-near-usd64-000-as-clarity-act-vote-slips-to-september",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-07T04:17:01.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T04:17:01.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b1c014a2d37a67798524621c1d3d9c1251ff9030-1500x935.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 56,
       "confidence": "medium"
     },
     {
-      "id": "crypto-8f3df8a7d9",
-      "slug": "terawulf-s-bitcoin-mining-revenue-drops-73-as-ai-leases-dominate-sales",
+      "id": "crypto-8eaa5ab677",
+      "slug": "cleanspark-misses-wall-street-revenue-estimates-as-shares-sink",
       "lane": "crypto",
-      "title": "TeraWulf's bitcoin mining revenue drops 73% as AI leases dominate sales",
-      "summary": "TeraWulf reported a 73% decline in bitcoin mining revenue, with AI-related data center leases now accounting for 71% of total sales, according to CryptoSlate. The figures mark a significant shift in the miner's business mix away from bitcoin mining toward AI infrastructure hosting.",
-      "whyItMatters": "TeraWulf's pivot reflects a broader trend among publicly traded bitcoin miners diversifying into AI compute hosting as a hedge against tough mining economics.",
+      "title": "CleanSpark misses Wall Street revenue estimates as shares sink",
+      "summary": "Bitcoin miner CleanSpark reported revenue below Wall Street estimates, sending its shares lower, according to Cointelegraph.",
+      "whyItMatters": "Miner earnings are a key barometer of profitability pressure across the bitcoin mining industry, reflecting factors like hashprice and energy costs that ripple through network economics.",
       "whatToWatch": [
-        "TeraWulf's next quarterly results for further shifts in revenue mix",
-        "Whether other miners accelerate similar AI leasing pivots"
+        "CleanSpark's forward guidance and cost commentary",
+        "Whether other public miners report similar shortfalls this earnings season"
       ],
       "questions": [
-        "Is the mining revenue decline driven mainly by lower bitcoin prices and network difficulty, or by deliberate capacity reallocation to AI leases?"
+        "What drove the revenue miss — hashprice, difficulty, or operating costs?",
+        "Will peer miners show the same trend?"
       ],
       "sources": [
         {
-          "title": "TeraWulf’s Bitcoin mining revenue fell 73% as AI related leases reached 71% of sales",
-          "url": "https://cryptoslate.com/terawulfs-bitcoin-mining-revenue-fell-73-as-hpc-leases-reached-71-of-sales/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-05T23:40:34.000Z"
+          "title": "CleanSpark misses Wall Street revenue estimates as shares sink",
+          "url": "https://cointelegraph.com/news/cleanspark-wall-street-revenue-estimates-shares-sink?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-07T09:25:56.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-05T23:40:34.000Z",
-      "updatedAt": "2026-08-06T05:25:48.120Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/terawulf-wolf-bitcoin-mining-to-hpc-transition.jpg",
+      "publishedAt": "2026-08-07T09:25:56.000Z",
+      "updatedAt": "2026-08-07T10:07:46.310Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-ai-is-now-paying-bitcoin-miners-more-than-mining-cleanspark-1.jpg",
       "badge": "Earnings",
-      "trendScore": 52,
-      "confidence": "low"
+      "trendScore": 55,
+      "confidence": "medium"
     }
   ]
 }
