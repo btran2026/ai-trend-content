@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-08T14:15:56.843Z",
-  "contentVersion": 20,
+  "generatedAt": "2026-08-08T18:52:13.153Z",
+  "contentVersion": 21,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,7 +123,246 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-08T14:15:56.843Z"
+      "updatedAt": "2026-08-08T18:52:13.153Z"
+    },
+    {
+      "id": "ai-b0cc69c201",
+      "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
+      "lane": "ai",
+      "title": "Gentoo Bugzilla Taken Offline Amid AI Bot Scraper Overload",
+      "summary": "Gentoo's Bugzilla bug-tracking instance was reportedly closed after being overwhelmed by traffic attributed to AI bot scrapers, according to a Hacker News post. No further detail on the scale of the load or which crawlers were responsible was provided.",
+      "whyItMatters": "It's another data point in the mounting friction between AI companies' data-hungry crawlers and the open-source infrastructure that gets caught in the crossfire, a recurring complaint across FOSS projects this year.",
+      "whatToWatch": [
+        "Whether Gentoo restores full Bugzilla access and what anti-scraping measures it puts in place",
+        "Whether other open-source projects report similar scraper-driven outages"
+      ],
+      "questions": [
+        "Which companies or bots were responsible for the overload?",
+        "Is this an isolated incident or part of a broader pattern hitting FOSS infrastructure?"
+      ],
+      "sources": [
+        {
+          "title": "Gentoo bugzilla closed due AI bot scraper overload",
+          "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-08T13:55:42Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-08T13:55:42Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "badge": "Infrastructure",
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-d8746b1ce6",
+      "slug": "google-showcases-builders-using-gemini-omni",
+      "lane": "ai",
+      "title": "Google Showcases Builders Using Gemini Omni",
+      "summary": "Google DeepMind published a post highlighting five builders and what they're creating with 'Gemini Omni,' framed as a showcase of developer projects rather than a new product or spec announcement.",
+      "whyItMatters": "It's part of Google's ongoing push to grow a developer ecosystem around its Gemini models, a front in the broader competition among AI labs for third-party app builders.",
+      "whatToWatch": [
+        "Whether Google follows up with wider availability, pricing, or technical details for Gemini Omni",
+        "Which of the highlighted use cases gain further traction or funding"
+      ],
+      "questions": [
+        "What distinguishes 'Omni' from other Gemini model variants?",
+        "Is this tied to a specific release milestone or an ongoing marketing series?"
+      ],
+      "sources": [
+        {
+          "title": "See what 5 builders are making with Gemini Omni",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
+          "publisher": "Google DeepMind",
+          "publishedAt": "2026-08-07T14:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T14:00:00.000Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Omni_hero.max-600x600.format-webp.webp",
+      "badge": "Product",
+      "trendScore": 36,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-0430b727e0",
+      "slug": "latent-space-newsletter-riffs-on-zawinski-s-law-of-multi-agents",
+      "lane": "ai",
+      "title": "Latent Space Newsletter Riffs on 'Zawinski's Law of Multi-Agents'",
+      "summary": "The Latent Space AI newsletter published an issue applying the classic 'Zawinski's Law' framing to multi-agent AI systems, as part of its regular AI News roundup. The source gives no further detail on the specific argument made.",
+      "whyItMatters": "Multi-agent system design is one of the most actively debated architecture questions in applied AI, and commentary from widely-read outlets like Latent Space influences how builders approach it.",
+      "whatToWatch": [
+        "Continued industry discussion around multi-agent framework complexity and design trends"
+      ],
+      "questions": [
+        "What specific critique or prediction does the piece make about multi-agent systems?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Zawinski's Law of MultiAgents",
+          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-08T01:12:07.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-08T01:12:07.000Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/87DyyMV0kCY",
+      "badge": "Analysis",
+      "trendScore": 32,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-833934ee3b",
+      "slug": "openai-addresses-next-frontier-of-critical-cyber-capabilities",
+      "lane": "ai",
+      "title": "OpenAI Addresses 'Next Frontier' of Critical Cyber Capabilities",
+      "summary": "OpenAI published a post discussing how it plans to respond to what it describes as the next frontier of critical cyber capabilities, apparently addressing rising AI-related cybersecurity risk. Specific measures or capability thresholds were not detailed in the source.",
+      "whyItMatters": "As frontier models become more capable of assisting with offensive cyber tasks, how leading labs frame and respond to that risk shapes both industry safety norms and the trajectory of AI regulation.",
+      "whatToWatch": [
+        "Any concrete safeguards, usage restrictions, or policy commitments OpenAI details as follow-up",
+        "Whether other labs issue comparable statements on cyber risk"
+      ],
+      "questions": [
+        "What specific capability or incident prompted this post?",
+        "Does this signal upcoming changes to model access or monitoring?"
+      ],
+      "sources": [
+        {
+          "title": "Responding to the next frontier of critical cyber capabilities",
+          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-07T15:20:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T15:20:00.000Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2OqBX7eh31rmzCVTZrZgb6/8c852b5a1f787c1fea8ac9de5a33d2db/Frame.png?w=1600&h=900&fit=fill",
+      "badge": "Safety",
+      "trendScore": 32,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-2ee94000fe",
+      "slug": "openai-case-study-hsp-gruppe-builds-ai-tools-for-tax-advisory",
+      "lane": "ai",
+      "title": "OpenAI Case Study: HSP GRUPPE Builds AI Tools for Tax Advisory",
+      "summary": "OpenAI published a customer case study describing how tax advisory firm HSP GRUPPE is building AI capabilities into its work, part of OpenAI's ongoing series of enterprise customer profiles.",
+      "whyItMatters": "Enterprise case studies like this are how OpenAI demonstrates real-world ROI beyond chatbots, aiming to expand adoption in white-collar professional services such as accounting and tax.",
+      "whatToWatch": [
+        "Whether similar case studies emerge from other professional-services firms",
+        "Broader enterprise AI adoption trends in accounting and tax fields"
+      ],
+      "questions": [
+        "Which specific OpenAI products is HSP GRUPPE using — API integration, ChatGPT Enterprise, or custom tools?"
+      ],
+      "sources": [
+        {
+          "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+          "url": "https://openai.com/index/hsp-gruppe",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-07T09:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T09:00:00.000Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5FS18GD9sd11U3iFcDFKSG/41b77f8496a19d63bedb99677527bd61/oai_HSPGruppe_SEO.png?w=1600&h=900&fit=fill",
+      "badge": "Enterprise",
+      "trendScore": 32,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-252eddff93",
+      "slug": "show-hn-new-wyzer-programming-language-launched",
+      "lane": "ai",
+      "title": "Show HN: New 'Wyzer' Programming Language Launched",
+      "summary": "A developer introduced a new programming language called Wyzer via a Show HN post on Hacker News. The source doesn't specify the language's design goals or whether it has any particular connection to AI or agentic coding.",
+      "whyItMatters": "New languages occasionally emerge specifically to ease AI-assisted or agentic coding workflows; it's worth tracking whether Wyzer is positioned that way, though that isn't confirmed by what's available.",
+      "whatToWatch": [
+        "Community reaction and technical detail as they surface in the Hacker News discussion"
+      ],
+      "questions": [
+        "What problem is Wyzer meant to solve, and does it relate to AI or agent tooling at all?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Wyzer Programming Language",
+          "url": "https://github.com/Wyzer-Lang/wyzer",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-07T12:28:55Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T12:28:55Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://opengraph.githubassets.com/04aa19ce4713358a4b0d10f95acae8e02e8e44e5a8642a5ab16b7da0008c42ef/Wyzer-Lang/wyzer",
+      "trendScore": 25,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-57a58ac603",
+      "slug": "i-won-t-read-llm-authored-fiction-says-viral-hacker-news-post",
+      "lane": "ai",
+      "title": "'I Won't Read LLM-Authored Fiction,' Says Viral Hacker News Post",
+      "summary": "A widely discussed Hacker News post lays out the author's refusal to read fiction written by large language models, reflecting a broader current of reader and writer pushback against AI-generated creative work.",
+      "whyItMatters": "It captures real, growing consumer resistance to AI-generated content in creative fields — a sentiment that could push publishers and platforms toward disclosure requirements or labeling for AI-authored work.",
+      "whatToWatch": [
+        "Whether publishers or platforms respond with disclosure policies for AI-authored fiction",
+        "How the debate intersects with self-publishing and marketplace moderation rules"
+      ],
+      "questions": [
+        "What specifically prompted the post — a particular book, platform trend, or incident?"
+      ],
+      "sources": [
+        {
+          "title": "I won't read LLM authored fiction",
+          "url": "https://mccormick.cx/news/entries/why-i-won-t-read-llm-authored-fiction",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-07T07:45:56Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T07:45:56Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "badge": "Opinion",
+      "trendScore": 25,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-26b03185c0",
+      "slug": "bulldozers-cut-through-big-bend-national-park-sparking-backlash-in-tex",
+      "lane": "ai",
+      "title": "Bulldozers Cut Through Big Bend National Park, Sparking Backlash in Texas",
+      "summary": "A Newsweek report circulated via Hacker News says bulldozers plowed through Big Bend National Park in Texas, angering residents and observers. The source does not say who ordered the work, its purpose, or whether it has any tie to AI infrastructure.",
+      "whyItMatters": "This story's connection to the AI industry isn't established in the available reporting; it may be included here pending confirmation of a link to data-center or industrial construction, so treat it as unconfirmed for this lane.",
+      "whatToWatch": [
+        "Clarification on who authorized the work and why",
+        "Whether any connection to AI data-center or industrial buildout is confirmed"
+      ],
+      "questions": [
+        "What is actually being built, and by whom?",
+        "Is there any substantiated tie to AI infrastructure expansion?"
+      ],
+      "sources": [
+        {
+          "title": "Bulldozers Plow Through Big Bend National Park, Sparking Fury in Texas",
+          "url": "https://www.newsweek.com/bulldozers-plow-through-big-bend-national-park-sparking-fury-in-texas-12295668",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-07T10:33:00Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-07T10:33:00Z",
+      "updatedAt": "2026-08-08T18:52:13.153Z",
+      "imageUrl": "https://assets.newsweek.com/wp-content/uploads/2026/08/RSborder-wall-construction-big-bend-Natalie-Newman-21.jpg?w=1200&crop=1",
+      "badge": "Unclear",
+      "trendScore": 22,
+      "confidence": "low"
     }
   ]
 }
