@@ -1,24 +1,23 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-09T18:09:18.495Z",
-  "contentVersion": 24,
+  "generatedAt": "2026-08-09T19:50:42.419Z",
+  "contentVersion": 25,
   "stories": [
     {
       "id": "crypto-46aef82337",
       "slug": "bitcoin-s-bip-110-soft-fork-begins-mandatory-signaling-with-miner-supp",
       "lane": "crypto",
-      "title": "BIP-110 Bitcoin fork chain stalls at two blocks as miners boycott it",
-      "summary": "BIP-110, a contested Bitcoin soft-fork proposal, entered mandatory signaling this week with backing from under 3% of miners. It briefly split Bitcoin into two chains, but the branch enforcing BIP-110 mined only two blocks before an apparent miner boycott halted its progress, and the gap between it and the main chain has continued to widen.",
-      "whyItMatters": "A fork attempt with almost no miner support stalling out is a real-time test of how Bitcoin's decentralized governance handles unilateral protocol changes pushed without broad consensus.",
+      "title": "BIP-110 Bitcoin fork splits the chain, then stalls after two blocks",
+      "summary": "The contested BIP-110 soft fork moved into mandatory signaling with reported miner support below 3%, and Bitcoin briefly split into two chains after block 961,632. The branch enforcing BIP-110 mined only two blocks before stalling, with reports describing a silent miner boycott starving it of further blocks as the gap to the main chain widened.",
+      "whyItMatters": "A live, if short-lived, chain split shows how little consensus a controversial protocol change can command and underscores the coordination risk any future contentious Bitcoin upgrade carries.",
       "whatToWatch": [
-        "Whether the BIP-110 chain resumes mining or is effectively abandoned",
-        "Statements from miners, pools, or exchanges on which chain they'll support",
-        "Any warnings about replay or double-spend risk during the split",
-        "Developer commentary on BIP-110's technical fate"
+        "Whether the BIP-110 branch resumes mining or is effectively abandoned",
+        "Miner support levels for BIP-110 in coming days",
+        "Any exchange or node-operator guidance on which chain to treat as canonical"
       ],
       "questions": [
-        "What change did BIP-110 actually propose, and who championed it without majority miner buy-in?",
-        "Will any exchanges list or credit the minority chain?"
+        "What specifically does BIP-110 change, and why did it draw a boycott rather than broad adoption?",
+        "Is this split fully resolved or could the minority chain persist?"
       ],
       "sources": [
         {
@@ -48,56 +47,25 @@
       ],
       "sourceCount": 3,
       "publishedAt": "2026-08-08T20:06:47.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-coinbase-seeks-ipo.png",
       "badge": "Breaking",
-      "trendScore": 77,
+      "trendScore": 75,
       "confidence": "high"
-    },
-    {
-      "id": "crypto-e6209ebe75",
-      "slug": "bip-110-fork-attempt-mines-two-blocks-then-stalls",
-      "lane": "crypto",
-      "title": "Bitcoin's BIP-110 fork mines two blocks, then halts",
-      "summary": "The controversial BIP-110 Bitcoin soft-fork attempt produced two blocks on its own chain before mining activity on that branch stopped, according to an early CoinDesk report. The halt came shortly after the fork's mandatory signaling period began with only a small sliver of miner support.",
-      "whyItMatters": "It's an early signal that a fork lacking broad miner backing may fail to gain traction, which matters for anyone tracking risks to Bitcoin's network stability.",
-      "whatToWatch": [
-        "Whether mining on the BIP-110 branch resumes",
-        "Follow-up reporting on why the branch stopped"
-      ],
-      "questions": [
-        "Was the halt due to lack of miners or a technical issue?"
-      ],
-      "sources": [
-        {
-          "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
-          "url": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-09T05:08:20.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-09T05:08:20.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f224848aaca775da0faa59a78c4901d5e0ae5d09-2560x1707.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Developing",
-      "trendScore": 50,
-      "confidence": "medium"
     },
     {
       "id": "crypto-fb3ccff8a8",
       "slug": "wall-street-has-put-7b-into-tokenized-funds-but-almost-none-of-it-touc",
       "lane": "crypto",
-      "title": "Wall Street has put $7B into tokenized funds — but almost none of it touches DeFi",
-      "summary": "Institutional investors have moved roughly $7 billion into tokenized funds, but new data cited by CryptoSlate shows less than 1% of that capital is actually being used within DeFi protocols. The finding suggests tokenization adoption on Wall Street is happening largely in isolation from the on-chain ecosystem it was expected to plug into.",
-      "whyItMatters": "It's a reality check on the narrative that institutional tokenization automatically fuels DeFi activity — the capital and the on-chain utility appear to be two separate stories.",
+      "title": "Wall Street's $7B tokenized-fund pile sees under 1% actually used in DeFi",
+      "summary": "Institutional investors have put roughly $7 billion into tokenized funds, but according to a CryptoSlate report, less than 1% of that value is actively deployed within DeFi protocols. The bulk of the tokenized assets appear to sit largely idle rather than being used as on-chain collateral or in yield strategies.",
+      "whyItMatters": "It's a reality check on the tokenization narrative: institutional money is showing up on-chain, but the promised composability with DeFi hasn't materialized at scale yet.",
       "whatToWatch": [
-        "Whether tokenized-fund issuers build more DeFi-compatible use cases",
-        "Any regulatory clarity on using tokenized funds as on-chain collateral"
+        "Whether tokenized-fund issuers build more direct DeFi integrations",
+        "Growth in on-chain usage rates for tokenized treasury and fund products"
       ],
       "questions": [
-        "What's specifically blocking tokenized fund holders from deploying into DeFi?",
-        "Which funds and issuers make up the $7 billion figure?"
+        "What's the specific barrier keeping tokenized fund holders out of DeFi — regulatory, custody, or lack of demand?"
       ],
       "sources": [
         {
@@ -109,26 +77,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T15:00:16.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/defi-capital-refinery.jpg",
       "badge": "Analysis",
-      "trendScore": 64,
+      "trendScore": 63,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-1f6699c2c0",
+      "slug": "bitcoin-miner-burned-357-btc-on-undisclosed-compute-deals-as-output-fe",
+      "lane": "crypto",
+      "title": "Bitcoin miner burned 357 BTC on undisclosed compute deals as output fell",
+      "summary": "A major Bitcoin mining company reportedly spent 357 BTC on compute-related deals that weren't previously disclosed, even as its Bitcoin production output dropped sharply, according to CryptoSlate. The report ties the spending to a broader trend of miners diversifying into AI/compute infrastructure.",
+      "whyItMatters": "Miner economics and transparency directly affect network hashrate and security, and investors in public mining companies rely on disclosed spending to assess whether a miner's core business is deteriorating.",
+      "whatToWatch": [
+        "Whether the miner discloses further details on the compute deals",
+        "Next production/output reports from the company",
+        "Any investor or regulatory reaction to the disclosure gap"
+      ],
+      "questions": [
+        "Which miner is involved, and were these deals disclosed to shareholders through any other channel?",
+        "Is the output decline temporary or a sign of a broader pivot away from mining?"
+      ],
+      "sources": [
+        {
+          "title": "A major Bitcoin miner burned through 357 BTC on secret compute deals while its output plummeted",
+          "url": "https://cryptoslate.com/a-major-bitcoin-miner-burned-through-357-btc-on-secret-compute-deals-while-its-output-plummeted/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-09T19:00:46.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T19:00:46.000Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitfufu-bitcoin-transfusion.jpg",
+      "trendScore": 61,
       "confidence": "low"
     },
     {
       "id": "crypto-5d150598a2",
       "slug": "spot-bitcoin-etfs-pull-in-853m-with-blackrock-s-ibit-leading",
       "lane": "crypto",
-      "title": "Spot Bitcoin ETFs pull in $853M, with BlackRock's IBIT leading",
-      "summary": "US spot Bitcoin ETFs took in about $853 million in net inflows, with BlackRock's IBIT capturing the largest share, per CoinDesk. The inflow points to renewed institutional appetite for regulated Bitcoin exposure.",
-      "whyItMatters": "ETF flows remain one of the clearest read-throughs on institutional demand for Bitcoin, and IBIT's continued dominance underscores BlackRock's outsized influence on that demand.",
+      "title": "Bitcoin spot ETFs pull in $853M, with BlackRock's IBIT leading inflows",
+      "summary": "US spot Bitcoin ETFs took in a combined $853 million in fresh inflows, with BlackRock's IBIT accounting for the bulk of the total, according to CoinDesk. The inflow marks a notably strong single-period showing for the ETF category.",
+      "whyItMatters": "ETF flows are one of the clearest real-time gauges of institutional demand for Bitcoin exposure, and concentration in IBIT continues to reinforce BlackRock's dominant role in the market.",
       "whatToWatch": [
-        "Whether inflows continue in coming daily/weekly reports",
-        "Flow comparisons across competing spot Bitcoin ETFs"
+        "Whether inflows continue at this pace in subsequent sessions",
+        "Flow trends at competing issuers relative to IBIT"
       ],
       "questions": [
-        "Is this inflow part of a sustained streak or a one-off spike?",
-        "What drove the specific timing of this demand?"
+        "What's driving the inflow spike — is it tied to a specific price move or catalyst?"
       ],
       "sources": [
         {
@@ -140,27 +138,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T14:19:35.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/e183c12b5e1dbaf0e0175a58c3a9425adb7b3de5-1920x1440.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "ETF Flows",
-      "trendScore": 63,
+      "trendScore": 61,
       "confidence": "medium"
     },
     {
       "id": "crypto-ef2d0177ff",
       "slug": "brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers",
       "lane": "crypto",
-      "title": "Brazil orders crypto exchanges to delay large overseas transfers by up to 24 hours",
-      "summary": "Brazil's central bank has ordered crypto exchanges to hold large crypto transfers sent abroad for up to 24 hours, aiming to give authorities a window to catch fraud before funds leave the country. The rule specifically targets outbound crypto flows rather than all transactions.",
-      "whyItMatters": "It's a concrete regulatory intervention in one of Latin America's biggest crypto markets and could become a template for other regulators worried about cross-border fraud and capital flight.",
+      "title": "Brazil's central bank orders up to 24-hour delay on crypto transfers abroad",
+      "summary": "Brazil's central bank has directed crypto exchanges to hold large transfers sent abroad for as long as 24 hours, a measure aimed at curbing crypto-related fraud, per CoinDesk and Cointelegraph. The rule targets outbound transfers specifically rather than all crypto activity.",
+      "whyItMatters": "It's a concrete example of a major emerging-market regulator using transaction friction, rather than outright bans, to police crypto fraud — a model other regulators may watch.",
       "whatToWatch": [
-        "Implementation timeline and compliance guidance for exchanges",
-        "Effect on outbound transfer volumes",
-        "Whether other central banks consider similar transfer holds"
+        "How exchanges implement the hold and whether it affects transfer volumes",
+        "Whether other jurisdictions adopt similar delay-based fraud controls"
       ],
       "questions": [
-        "What transfer size or risk criteria trigger the hold?",
-        "How will exchanges assess fraud risk within the window?"
+        "What transfer size or transaction type triggers the mandatory hold?"
       ],
       "sources": [
         {
@@ -178,26 +173,25 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-08T15:25:38.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-latin-america-and-blockchain-2.jpg",
       "badge": "Regulatory",
-      "trendScore": 62,
+      "trendScore": 60,
       "confidence": "medium"
     },
     {
       "id": "crypto-161d320141",
       "slug": "crypto-audited-badges-are-giving-investors-a-false-sense-of-security-a",
       "lane": "crypto",
-      "title": "Crypto 'audited' badges are giving investors a false sense of security, analysis warns",
-      "summary": "A CryptoSlate analysis argues that crypto projects' 'audited' badges often overstate the protection they offer, since audits can have narrow scope, go stale, or be commissioned and paid for by the project itself. The piece warns investors treat these badges as a blanket safety guarantee even though real risks — like admin-key exploits or uncovered logic bugs — can slip through.",
-      "whyItMatters": "Audit badges are a widely used trust signal in a market plagued by hacks and rug pulls, so an unreliable signal leaves investors under-protected without realizing it.",
+      "title": "Crypto 'audited' badges may give investors false confidence, report warns",
+      "summary": "A CryptoSlate report argues that smart-contract 'audited' badges are increasingly used as a marketing signal rather than a genuine safety guarantee, potentially misleading investors about a project's actual risk. The piece raises concerns that audits vary widely in scope and rigor.",
+      "whyItMatters": "Retail and institutional investors alike often treat an audit badge as a green light, so gaps between audit marketing and actual security coverage directly affect fraud and exploit risk in DeFi.",
       "whatToWatch": [
-        "Whether audit firms respond to the criticism",
-        "Any push for standardized audit scope or disclosure requirements"
+        "Whether exchanges or platforms start requiring standardized audit disclosures",
+        "Any incidents involving previously 'audited' protocols"
       ],
       "questions": [
-        "Which specific incidents or audits prompted this analysis?",
-        "Are there concrete proposals to close the disclosure gap?"
+        "What specific audit practices does the report say fall short, and which firms are named?"
       ],
       "sources": [
         {
@@ -209,27 +203,54 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T09:59:56.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-transfer-interface-deception-collage.jpg",
       "badge": "Analysis",
-      "trendScore": 60,
+      "trendScore": 59,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-7fdc52b2f1",
+      "slug": "bitcoin-s-anti-spam-bip-110-fork-halts-after-mining-only-two-blocks",
+      "lane": "crypto",
+      "title": "Bitcoin's 'anti-spam' BIP-110 fork halts after mining only two blocks",
+      "summary": "The BIP-110 soft fork, pitched as an anti-spam measure for Bitcoin, ground to a halt after producing just two blocks, according to Decrypt. The stall follows the fork's attempted activation amid reportedly thin miner backing.",
+      "whyItMatters": "A high-profile Bitcoin protocol change failing to gain traction so quickly is a signal of how difficult it is to push contentious changes through Bitcoin's miner-driven consensus process.",
+      "whatToWatch": [
+        "Whether BIP-110 proponents attempt another activation push",
+        "Any statements from Bitcoin Core developers or major mining pools on the outcome"
+      ],
+      "questions": [
+        "Is this fork attempt now considered dead, or could it resume?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin 'Anti-Spam' Fork Sputters to a Halt After Mining Just Two Blocks",
+          "url": "https://decrypt.co/375177/bitcoin-anti-spam-fork-splutters-halt-mining-just-two-blocks",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-08-09T19:33:09.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T19:33:09.000Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/09/Bitcoin-decrypt-style-23-gID_7.jpg@png",
+      "trendScore": 57,
       "confidence": "low"
     },
     {
       "id": "crypto-5fa7547b83",
       "slug": "bitwise-s-solana-etf-drew-267m-in-inflows-then-market-losses-wiped-it-",
       "lane": "crypto",
-      "title": "Bitwise's Solana ETF drew $267M in inflows — then market losses wiped it out",
-      "summary": "Bitwise's Solana ETF pulled in roughly $267 million from investors, but a subsequent decline in Solana's price erased those gains, leaving the fund's value little changed despite the fresh capital. It's a reminder that strong inflows don't insulate a fund from the underlying asset's price moves.",
-      "whyItMatters": "It highlights the added volatility risk of newer altcoin ETFs and pushes back on narratives that treat inflows alone as evidence of a healthy investment.",
+      "title": "Bitwise's Solana ETF pulled in $267M, but market losses wiped out the gains",
+      "summary": "Bitwise's Solana ETF attracted $267 million in investor inflows, but according to CryptoSlate, market losses on the underlying position erased those gains entirely. The result leaves investors in the fund roughly flat despite the strong inflow figure.",
+      "whyItMatters": "It illustrates that ETF inflow headlines can mask underlying price weakness in the asset itself — a distinction that matters for anyone judging demand for altcoin ETF products.",
       "whatToWatch": [
-        "Solana's price trajectory in coming weeks",
-        "Subsequent flow data for the ETF",
-        "Performance comparisons with other altcoin ETFs"
+        "Whether inflows continue despite the negative price performance",
+        "Solana's price trajectory relative to the fund's cost basis"
       ],
       "questions": [
-        "What specifically drove the Solana price decline during this period?",
-        "How does this fund's flow-to-performance ratio compare with peers?"
+        "Over what time window were the $267 million in inflows measured?"
       ],
       "sources": [
         {
@@ -241,26 +262,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T18:00:50.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitwise-solana-hourglass.jpg",
-      "badge": "ETF Flows",
-      "trendScore": 57,
+      "trendScore": 55,
       "confidence": "low"
     },
     {
       "id": "crypto-c429ab576c",
       "slug": "ai-financial-advisers-reportedly-carry-a-hidden-bitcoin-bias",
       "lane": "crypto",
-      "title": "AI financial advisers reportedly carry a hidden Bitcoin bias",
-      "summary": "A CryptoSlate report describes findings that AI-based financial advisory tools carry a hidden tilt toward recommending Bitcoin, which can be triggered by a specific setting or prompt. The finding raises concerns about undisclosed skew shaping automated investment advice.",
-      "whyItMatters": "As more investors lean on AI tools for portfolio guidance, an undisclosed bias toward a volatile asset like Bitcoin could influence decisions without users knowing it's there.",
+      "title": "AI financial advisers show a hidden Bitcoin bias, report claims",
+      "summary": "A CryptoSlate report says some AI-based financial advisory tools carry a latent bias toward or against Bitcoin that can be triggered by a specific prompt or setting. Details on which tools and how the bias manifests are limited in the report.",
+      "whyItMatters": "As more retail investors lean on AI tools for portfolio guidance, undisclosed biases in those systems could skew allocation advice around crypto without users' knowledge.",
       "whatToWatch": [
-        "Whether AI advisory platforms respond or add disclosures",
-        "Any regulatory interest in transparency for AI-driven investment advice"
+        "Whether AI advisory platforms respond to or dispute the findings",
+        "Any follow-up testing of other AI tools for similar bias"
       ],
       "questions": [
-        "Which AI tools or models were actually tested?",
-        "What exactly is the 'switch' that triggers the bias?"
+        "Which AI tools were tested, and what exactly is the 'switch' that triggers the bias?"
       ],
       "sources": [
         {
@@ -272,26 +291,55 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T13:00:56.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ai-adviser-bitcoin-bias-machine-vision.jpg",
       "badge": "Analysis",
-      "trendScore": 53,
+      "trendScore": 51,
       "confidence": "low"
+    },
+    {
+      "id": "crypto-d56ec20d25",
+      "slug": "is-the-clarity-act-s-delay-actually-good-news-for-crypto",
+      "lane": "crypto",
+      "title": "Is the CLARITY Act's delay actually good news for crypto?",
+      "summary": "CoinDesk's State of Crypto column examines whether the delay of the CLARITY market-structure legislation could ultimately benefit the industry rather than hurt it. The piece is framed as analysis rather than a report of new regulatory action.",
+      "whyItMatters": "Market-structure legislation is the biggest pending piece of the US regulatory puzzle for crypto, and how its timeline unfolds affects exchange compliance planning and institutional participation.",
+      "whatToWatch": [
+        "Any new timeline or markup schedule for the legislation",
+        "Reactions from industry groups or lawmakers to the delay"
+      ],
+      "questions": [
+        "What specifically caused the delay, and what's the argument for it being beneficial?"
+      ],
+      "sources": [
+        {
+          "title": "Is Clarity's delay a blessing in disguise?: State of Crypto",
+          "url": "https://www.coindesk.com/policy/2026/08/09/is-clarity-s-delay-a-blessing-in-disguise-state-of-crypto",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-09T18:30:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T18:30:00.000Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/eb8dcd6a8ff7a00d092a7e659c13193ec9cd42ea-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 50,
+      "confidence": "medium"
     },
     {
       "id": "crypto-f2f78664d9",
       "slug": "saylor-says-chatgpt-helped-strategy-unlock-15b-in-bitcoin-buying-capac",
       "lane": "crypto",
-      "title": "Saylor says ChatGPT helped Strategy unlock $15B in Bitcoin-buying capacity",
-      "summary": "Michael Saylor said Strategy (formerly MicroStrategy) used ChatGPT as part of the process that helped unlock $15 billion in financing capacity to keep expanding its Bitcoin holdings. Details beyond Saylor's own account of the AI-assisted process are limited.",
-      "whyItMatters": "Strategy is one of the largest corporate Bitcoin holders, so any expansion of its buying capacity is meaningful for institutional BTC demand.",
+      "title": "Saylor says ChatGPT helped Strategy unlock $15 billion for Bitcoin buys",
+      "summary": "Michael Saylor has said that ChatGPT played a role in helping Strategy structure a path to unlock $15 billion for its Bitcoin acquisition strategy, according to CryptoSlate. Specifics of how the AI tool was used weren't detailed beyond Saylor's account.",
+      "whyItMatters": "Strategy remains one of the largest corporate Bitcoin holders, so any change in how it finances further purchases is closely watched by the market as a demand signal.",
       "whatToWatch": [
         "Whether Strategy deploys the $15 billion into further Bitcoin purchases",
-        "Any further detail on how ChatGPT was actually used in the financing process"
+        "Any additional detail from Saylor or Strategy on the financing structure"
       ],
       "questions": [
-        "What specific task did ChatGPT perform in unlocking the financing?",
-        "Is the $15 billion already secured, or still being arranged?"
+        "What financial mechanism did ChatGPT reportedly help identify or structure?"
       ],
       "sources": [
         {
@@ -303,105 +351,38 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T16:00:26.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/saylor-ai-credit-system.jpg",
-      "trendScore": 50,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-cc8578b358",
-      "slug": "bitcoin-treasury-firm-empery-sells-1-635-btc-cutting-reserves-76-in-we",
-      "lane": "crypto",
-      "title": "Bitcoin treasury firm Empery sells 1,635 BTC, cutting reserves 76% in weeks",
-      "summary": "Empery offloaded about 1,635 BTC, shrinking its Bitcoin reserves by roughly 76% over just a few weeks — a sharp break from the 'never sell' corporate treasury philosophy popularized by firms like Strategy. The sale suggests at least some corporate Bitcoin holders are more willing to liquidate than the dominant narrative around treasury companies suggests.",
-      "whyItMatters": "It tests the durability of the accumulate-and-never-sell corporate Bitcoin treasury model that has underpinned a chunk of institutional BTC demand.",
-      "whatToWatch": [
-        "Whether other Bitcoin treasury companies follow with sales of their own",
-        "Any stated rationale from Empery for the liquidation",
-        "Effects on valuation premiums of publicly traded treasury companies"
-      ],
-      "questions": [
-        "Why did Empery sell — liquidity needs, risk management, or a change in conviction?",
-        "Are other treasury firms showing similar early signals?"
-      ],
-      "sources": [
-        {
-          "title": "Never sell treasury model cracks again as 1,635 BTC is offloaded shrinking Empery reserves by 76% in weeks",
-          "url": "https://cryptoslate.com/never-sell-treasury-model-cracks-again-as-1635-btc-is-offloaded-shrinking-empery-reserves-by-76-in-weeks/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-09T14:00:20.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-09T14:00:20.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/empery-collateral-box.jpg",
-      "badge": "Corporate Treasury",
       "trendScore": 49,
       "confidence": "low"
     },
     {
-      "id": "crypto-358b75294c",
-      "slug": "hyperliquid-s-rwa-perps-boom-may-be-eating-into-revenue-that-backs-hyp",
+      "id": "crypto-e6209ebe75",
+      "slug": "bip-110-fork-attempt-mines-two-blocks-then-stalls",
       "lane": "crypto",
-      "title": "Hyperliquid's RWA perps boom may be eating into revenue that backs HYPE",
-      "summary": "Growing trading volume in real-world-asset perpetual futures on Hyperliquid is reportedly cutting into the protocol revenue that ultimately supports its HYPE token, according to CoinDesk, since RWA perps carry different fee economics than the platform's core crypto perps. The shift raises questions about how HYPE's value-accrual model holds up as the platform's business mix changes.",
-      "whyItMatters": "HYPE's valuation has been closely tied to Hyperliquid's revenue-sharing mechanics, so a change in revenue composition could directly affect token holders.",
+      "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
+      "summary": "CoinDesk reported that the controversial BIP-110 Bitcoin soft fork managed to mine two blocks before activity on it stopped. The report is an early account of the fork's stalled activation attempt.",
+      "whyItMatters": "Even a brief, failed fork attempt highlights the difficulty of pushing disputed protocol changes through Bitcoin's consensus mechanism without broad miner buy-in.",
       "whatToWatch": [
-        "Hyperliquid's revenue disclosures and any fee-structure changes",
-        "Whether the protocol adjusts incentives to rebalance the mix",
-        "HYPE price and valuation reaction"
+        "Whether mining on the BIP-110 branch resumes",
+        "Follow-up reporting on miner support levels"
       ],
       "questions": [
-        "How exactly do RWA perps' fees or revenue split differ from standard crypto perps?",
-        "How large is the RWA perps segment relative to Hyperliquid's total volume?"
+        "Was this a permanent halt or a pause pending more miner support?"
       ],
       "sources": [
         {
-          "title": "Hyperliquid’s RWA perps boom is eating into the revenue that backs HYPE",
-          "url": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype",
+          "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
+          "url": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
           "publisher": "CoinDesk",
-          "publishedAt": "2026-08-09T15:00:00.000Z"
+          "publishedAt": "2026-08-09T05:08:20.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-09T15:00:00.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/6b102cddb380dca88f7d3599a562e146ee51abda-6000x4000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Analysis",
-      "trendScore": 48,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-c1c55d3dbb",
-      "slug": "crypto-is-seeing-a-dot-com-style-shakeout-with-over-100-projects-foldi",
-      "lane": "crypto",
-      "title": "Crypto is seeing a dot-com-style shakeout, with over 100 projects folding in 2026",
-      "summary": "CoinDesk reports the crypto industry is going through a shakeout reminiscent of the dot-com bust, with more than 100 projects shutting down so far in 2026. The wave of failures points to a thinning-out of speculative or unsustainable ventures left over from the last market cycle.",
-      "whyItMatters": "A large die-off of projects can be read either as a healthy market correction clearing out weak players or as a warning sign of deeper capital and revenue problems across the sector.",
-      "whatToWatch": [
-        "Whether the pace of shutdowns accelerates or slows through the rest of 2026",
-        "Which categories — DeFi, NFTs, L1s, or others — are hit hardest",
-        "Knock-on effects for investors and employees of failed projects"
-      ],
-      "questions": [
-        "What counted as a project 'folding' — shutdown, token abandonment, or formal bankruptcy?",
-        "Which sectors of crypto are proving most and least resilient?"
-      ],
-      "sources": [
-        {
-          "title": "Crypto is going through a massive dot-com style shakeout as over 100 projects fold in 2026",
-          "url": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-09T13:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-09T13:00:00.000Z",
-      "updatedAt": "2026-08-09T18:09:18.495Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9ec4de39272adf8841b32cdceccdf8abe655e2fd-8256x5504.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Analysis",
-      "trendScore": 47,
+      "publishedAt": "2026-08-09T05:08:20.000Z",
+      "updatedAt": "2026-08-09T19:50:42.419Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f224848aaca775da0faa59a78c4901d5e0ae5d09-2560x1707.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "trendScore": 49,
       "confidence": "medium"
     }
   ]
