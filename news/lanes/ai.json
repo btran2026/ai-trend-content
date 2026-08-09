@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-09T06:54:12.351Z",
-  "contentVersion": 23,
+  "generatedAt": "2026-08-09T18:09:18.495Z",
+  "contentVersion": 24,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-09T06:54:12.351Z"
+      "updatedAt": "2026-08-09T18:09:18.495Z"
     },
     {
       "id": "ai-b0cc69c201",
       "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
       "lane": "ai",
-      "title": "Gentoo's Bugzilla taken offline after AI scraper bot overload",
-      "summary": "Gentoo Linux's Bugzilla bug-tracking instance was reportedly closed after being overwhelmed by AI bot scrapers, according to a Hacker News post. Details on which bots, how long the outage lasted, or what mitigation Gentoo is pursuing are not yet clear from available reporting.",
-      "whyItMatters": "It's another sign of AI crawlers straining open-source infrastructure, a recurring friction point between AI companies' data-hungry bots and the projects that maintain the software much of the internet runs on.",
+      "title": "Gentoo Shuts Down Bugzilla After AI Bot Scraper Overload",
+      "summary": "Gentoo Linux's Bugzilla instance was taken offline after being overwhelmed by traffic from AI bot scrapers, according to a report circulating on Hacker News. The single-source report doesn't detail which crawlers were responsible or how long the outage lasted.",
+      "whyItMatters": "It's another data point in a growing pattern of AI crawlers straining open-source infrastructure, forcing maintainers to choose between accessibility and uptime.",
       "whatToWatch": [
-        "Whether Gentoo restores Bugzilla access and what anti-scraping measures it puts in place",
+        "Whether Gentoo restores Bugzilla access and what mitigations (rate limits, blocks, CAPTCHAs) it puts in place",
         "Whether other open-source projects report similar scraper-driven outages"
       ],
       "questions": [
-        "Which AI companies or crawlers were responsible for the load?",
-        "Is this an isolated incident or part of a broader pattern hitting open-source infrastructure?"
+        "Which companies or crawlers were driving the load?",
+        "Is this an isolated incident or part of a broader wave hitting open-source project infrastructure?"
       ],
       "sources": [
         {
@@ -150,38 +150,34 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T13:55:42Z",
-      "updatedAt": "2026-08-09T06:54:12.351Z",
-      "badge": "Breaking",
-      "trendScore": 36,
+      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "badge": "Infrastructure",
+      "trendScore": 27,
       "confidence": "low"
     },
     {
-      "id": "ai-0430b727e0",
-      "slug": "latent-space-newsletter-riffs-on-zawinski-s-law-of-multi-agents",
+      "id": "ai-226d6abbcd",
+      "slug": "1998-retrospective-on-the-alpha-21264-cpu-resurfaces-on-hacker-news",
       "lane": "ai",
-      "title": "Latent Space newsletter: 'Zawinski's Law of MultiAgents'",
-      "summary": "The Latent Space AI newsletter published an edition titled 'Zawinski's Law of MultiAgents,' riffing on the classic software adage that programs expand until they can do everything (or get replaced by ones that can) — applied here to multi-agent AI systems. Beyond the title, specifics of the newsletter's content aren't available from the source provided.",
-      "whyItMatters": "Multi-agent architectures are a live debate in AI engineering circles right now, and commentary framing their growing complexity through an old software-engineering law suggests the industry is grappling with whether multi-agent systems are converging on unwieldy scope creep.",
-      "whatToWatch": [
-        "Whether the multi-agent-complexity critique gains traction among AI engineering commentators"
-      ],
+      "title": "1998 Retrospective on the Alpha 21264 CPU Resurfaces on Hacker News",
+      "summary": "A 1998 article revisiting the Alpha 21264, a RISC processor once run under Windows NT, is trending on Hacker News. It's a retro hardware piece rather than a current industry development, and no further detail beyond the title and posting is available.",
+      "whyItMatters": "It's a niche computing-history item with no apparent connection to current AI industry developments; included here mainly because of its visibility on Hacker News.",
+      "whatToWatch": [],
       "questions": [
-        "What specific argument or examples does the newsletter make about multi-agent systems ballooning in scope?"
+        "Why is a 1998 CPU retrospective resurfacing in discussion now?"
       ],
       "sources": [
         {
-          "title": "[AINews] Zawinski's Law of MultiAgents",
-          "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-08T01:12:07.000Z"
+          "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
+          "url": "https://halfhill.com/byte/1998-12_alpha.html",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-09T10:06:37Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-08T01:12:07.000Z",
-      "updatedAt": "2026-08-09T06:54:12.351Z",
-      "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/87DyyMV0kCY",
-      "badge": "Analysis",
-      "trendScore": 22,
+      "publishedAt": "2026-08-09T10:06:37Z",
+      "updatedAt": "2026-08-09T18:09:18.495Z",
+      "trendScore": 42,
       "confidence": "low"
     }
   ]

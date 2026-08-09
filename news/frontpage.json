@@ -1,25 +1,38 @@
 {
-  "generatedAt": "2026-08-09T06:54:12.351Z",
-  "contentVersion": 24,
+  "generatedAt": "2026-08-09T18:09:18.495Z",
+  "contentVersion": 25,
   "lanes": {
     "crypto": [
       {
         "id": "crypto-46aef82337",
         "slug": "bitcoin-s-bip-110-soft-fork-begins-mandatory-signaling-with-miner-supp",
         "lane": "crypto",
-        "title": "Bitcoin's BIP-110 soft fork enters mandatory signaling with miner support under 3%",
-        "summary": "A contested Bitcoin Improvement Proposal, BIP-110, entered its mandatory signaling phase at block 961,632, according to CoinDesk and Cointelegraph. Miner support for the proposal is running below 3%, well short of the broad consensus soft forks typically need to activate cleanly.",
-        "whyItMatters": "Thin miner buy-in for a live signaling attempt is a live test of how Bitcoin's governance handles contested protocol changes, with implications for network stability if the attempt stalls or splits opinion.",
+        "title": "BIP-110 Bitcoin fork chain stalls at two blocks as miners boycott it",
+        "summary": "BIP-110, a contested Bitcoin soft-fork proposal, entered mandatory signaling this week with backing from under 3% of miners. It briefly split Bitcoin into two chains, but the branch enforcing BIP-110 mined only two blocks before an apparent miner boycott halted its progress, and the gap between it and the main chain has continued to widen.",
+        "whyItMatters": "A fork attempt with almost no miner support stalling out is a real-time test of how Bitcoin's decentralized governance handles unilateral protocol changes pushed without broad consensus.",
         "whatToWatch": [
-          "Whether miner signaling support rises before any activation deadline",
-          "Statements from core developers or major mining pools on the proposal",
-          "Whether the signaling attempt is allowed to run its course or is abandoned"
+          "Whether the BIP-110 chain resumes mining or is effectively abandoned",
+          "Statements from miners, pools, or exchanges on which chain they'll support",
+          "Any warnings about replay or double-spend risk during the split",
+          "Developer commentary on BIP-110's technical fate"
         ],
         "questions": [
-          "What happens to the fork attempt if the signaling threshold is never met?",
-          "Who is driving BIP-110 and what problem is it meant to solve?"
+          "What change did BIP-110 actually propose, and who championed it without majority miner buy-in?",
+          "Will any exchanges list or credit the minority chain?"
         ],
         "sources": [
+          {
+            "title": "BIP-110 Bitcoin branch stalls after two blocks as gap widens",
+            "url": "https://cointelegraph.com/news/bitcoin-bip-110-branch-stalls-miner-support?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-09T11:00:53.000Z"
+          },
+          {
+            "title": "Bitcoin split into two chains overnight, but a silent miner boycott just halted the enforcing BIP-110 chain",
+            "url": "https://cryptoslate.com/bitcoin-split-into-two-chains-overnight-but-a-silent-miner-boycott-just-halted-the-enforcing-chain/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T11:00:45.000Z"
+          },
           {
             "title": "Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%",
             "url": "https://cointelegraph.com/news/bitcoin-bip-110-mandatory-signaling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -33,28 +46,27 @@
             "publishedAt": "2026-08-08T20:06:47.000Z"
           }
         ],
-        "sourceCount": 2,
+        "sourceCount": 3,
         "publishedAt": "2026-08-08T20:06:47.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/the-bitcoin-and-bitcoin-cash-wars.png",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-coinbase-seeks-ipo.png",
         "badge": "Breaking",
-        "trendScore": 61,
-        "confidence": "medium"
+        "trendScore": 77,
+        "confidence": "high"
       },
       {
         "id": "crypto-e6209ebe75",
         "slug": "bip-110-fork-attempt-mines-two-blocks-then-stalls",
         "lane": "crypto",
-        "title": "BIP-110 fork attempt mines two blocks, then stalls",
-        "summary": "A day after mandatory signaling began with miner support under 3%, the BIP-110 soft-fork attempt mined two blocks before stopping, CoinDesk reports. No further detail on the cause was provided.",
-        "whyItMatters": "An early stall so soon after launch suggests the low miner support seen at signaling translated directly into the attempt losing momentum, a useful data point on how contested Bitcoin protocol changes fare in practice.",
+        "title": "Bitcoin's BIP-110 fork mines two blocks, then halts",
+        "summary": "The controversial BIP-110 Bitcoin soft-fork attempt produced two blocks on its own chain before mining activity on that branch stopped, according to an early CoinDesk report. The halt came shortly after the fork's mandatory signaling period began with only a small sliver of miner support.",
+        "whyItMatters": "It's an early signal that a fork lacking broad miner backing may fail to gain traction, which matters for anyone tracking risks to Bitcoin's network stability.",
         "whatToWatch": [
-          "Whether proponents restart or formally abandon the attempt",
-          "Any technical post-mortem from developers on why it stopped"
+          "Whether mining on the BIP-110 branch resumes",
+          "Follow-up reporting on why the branch stopped"
         ],
         "questions": [
-          "Was the stoppage a technical failure or a deliberate pause?",
-          "Does this effectively end the BIP-110 push?"
+          "Was the halt due to lack of miners or a technical issue?"
         ],
         "sources": [
           {
@@ -66,250 +78,97 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-09T05:08:20.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f224848aaca775da0faa59a78c4901d5e0ae5d09-2560x1707.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Update",
-        "trendScore": 60,
+        "badge": "Developing",
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
-        "id": "crypto-e8ba0e633e",
-        "slug": "bitcoin-and-ether-etfs-pull-in-over-1b-in-their-best-week-since-april-",
+        "id": "crypto-fb3ccff8a8",
+        "slug": "wall-street-has-put-7b-into-tokenized-funds-but-almost-none-of-it-touc",
         "lane": "crypto",
-        "title": "Bitcoin and Ether ETFs pull in over $1B in their best week since April, with BlackRock taking 80%",
-        "summary": "US spot Bitcoin and Ethereum ETFs combined took in more than $1 billion over the week, their strongest week since April, per CryptoSlate. BlackRock's funds captured roughly 80% of that inflow, far outpacing rival issuers.",
-        "whyItMatters": "Weekly ETF flows remain one of the clearest read-outs of institutional demand for crypto exposure, and the concentration in one issuer says something about where big allocators are choosing to route money.",
+        "title": "Wall Street has put $7B into tokenized funds — but almost none of it touches DeFi",
+        "summary": "Institutional investors have moved roughly $7 billion into tokenized funds, but new data cited by CryptoSlate shows less than 1% of that capital is actually being used within DeFi protocols. The finding suggests tokenization adoption on Wall Street is happening largely in isolation from the on-chain ecosystem it was expected to plug into.",
+        "whyItMatters": "It's a reality check on the narrative that institutional tokenization automatically fuels DeFi activity — the capital and the on-chain utility appear to be two separate stories.",
         "whatToWatch": [
-          "Whether next week's flow data sustains or reverses the rebound",
-          "Whether other issuers narrow BlackRock's share of inflows"
+          "Whether tokenized-fund issuers build more DeFi-compatible use cases",
+          "Any regulatory clarity on using tokenized funds as on-chain collateral"
         ],
         "questions": [
-          "What specifically drove the pickup in demand this week?",
-          "How much of the flow is new money versus rotation between funds?"
+          "What's specifically blocking tokenized fund holders from deploying into DeFi?",
+          "Which funds and issuers make up the $7 billion figure?"
         ],
         "sources": [
           {
-            "title": "Bitcoin and Ethereum ETFs break $1B in their best week since April and BlackRock brought in 80% of the cash",
-            "url": "https://cryptoslate.com/bitcoin-and-ethereum-etfs-break-1b-in-their-best-week-since-april-and-blackrock-brought-in-80-of-the-cash/",
+            "title": "Wall Street put $7B into tokenized funds, but under 1% is actually being used in DeFi",
+            "url": "https://cryptoslate.com/wall-street-put-7b-into-tokenized-funds-but-under-1-is-actually-being-used-in-defi/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-08T18:40:18.000Z"
+            "publishedAt": "2026-08-09T15:00:16.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T18:40:18.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etf-crane.jpg",
-        "badge": "ETF Flows",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-8c3eea7630",
-        "slug": "btcpay-server-restricts-remote-lightning-access-after-attackers-steal-",
-        "lane": "crypto",
-        "title": "BTCPay Server restricts remote Lightning access after attackers steal funds",
-        "summary": "BTCPay Server has locked down remote access to its Lightning Network functionality after attackers exploited it to steal funds, according to Cointelegraph. The report did not specify the scale of losses or the exact vulnerability used.",
-        "whyItMatters": "BTCPay is widely used self-hosted payment infrastructure for Bitcoin merchants, so a theft-driven lockdown of its Lightning access is a concrete security incident for anyone relying on it for payments.",
-        "whatToWatch": [
-          "Official disclosure of losses and the attack vector",
-          "Whether a patch or permanent fix follows the restriction"
-        ],
-        "questions": [
-          "How much was actually stolen?",
-          "Is the restriction temporary or a lasting change to how remote Lightning access works?"
-        ],
-        "sources": [
-          {
-            "title": "BTCPay restricts remote Lightning access after attackers steal funds",
-            "url": "https://cointelegraph.com/news/btcpay-restricts-remote-lightning-access-after-attackers-steal-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-09T05:46:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T05:46:07.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/thief-bitcoin.png",
-        "badge": "Security",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-ce450b8f4a",
-        "slug": "bitcoin-xrp-solana-and-tron-have-outpaced-ethereum-and-cardano-in-inve",
-        "lane": "crypto",
-        "title": "Bitcoin, XRP, Solana and Tron have outpaced Ethereum and Cardano in investor buying every month since 2022",
-        "summary": "CryptoSlate reports that Bitcoin, XRP, Solana and Tron have beaten Ethereum and Cardano on investor buying in every single month going back to 2022, per its analysis.",
-        "whyItMatters": "A multi-year pattern in relative demand across large-cap tokens is a signal for how investor preference among major chains has shifted, beyond any single month's noise.",
-        "whatToWatch": [
-          "Whether Ethereum or Cardano interrupt the streak in coming months",
-          "Any catalysts (ETF approvals, upgrades) that could shift the pattern"
-        ],
-        "questions": [
-          "What exact metric is being used to define \"investor buying\" here?",
-          "Does this reflect retail flows, institutional flows, or both?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin, XRP, Solana and Tron beat Ethereum and Cardano every month since 2022 on investor buying",
-            "url": "https://cryptoslate.com/bitcoin-xrp-solana-and-tron-beat-ethereum-and-cardano-every-month-since-2022-on-investor-buying/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-08T16:10:55.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T16:10:55.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/crypto-dca-gains-losses.jpg",
+        "publishedAt": "2026-08-09T15:00:16.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/defi-capital-refinery.jpg",
         "badge": "Analysis",
-        "trendScore": 55,
+        "trendScore": 64,
         "confidence": "low"
       },
       {
-        "id": "crypto-b731ca6046",
-        "slug": "us-spot-bitcoin-etfs-post-best-week-since-april-with-1b-in-inflows",
+        "id": "crypto-5d150598a2",
+        "slug": "spot-bitcoin-etfs-pull-in-853m-with-blackrock-s-ibit-leading",
         "lane": "crypto",
-        "title": "US spot Bitcoin ETFs post $1B inflow week, best since April",
-        "summary": "US spot Bitcoin ETFs logged roughly $1 billion in net inflows over the week, their strongest showing since April, according to Cointelegraph.",
-        "whyItMatters": "Bitcoin ETF flows are a primary gauge of institutional appetite, and a best-in-months week is worth tracking against recent softer periods.",
+        "title": "Spot Bitcoin ETFs pull in $853M, with BlackRock's IBIT leading",
+        "summary": "US spot Bitcoin ETFs took in about $853 million in net inflows, with BlackRock's IBIT capturing the largest share, per CoinDesk. The inflow points to renewed institutional appetite for regulated Bitcoin exposure.",
+        "whyItMatters": "ETF flows remain one of the clearest read-throughs on institutional demand for Bitcoin, and IBIT's continued dominance underscores BlackRock's outsized influence on that demand.",
         "whatToWatch": [
-          "Whether the pace of inflows holds into next week's data",
-          "How this week's total compares issuer-by-issuer"
+          "Whether inflows continue in coming daily/weekly reports",
+          "Flow comparisons across competing spot Bitcoin ETFs"
         ],
         "questions": [
-          "What triggered the acceleration in inflows this particular week?"
+          "Is this inflow part of a sustained streak or a one-off spike?",
+          "What drove the specific timing of this demand?"
         ],
         "sources": [
           {
-            "title": "US spot Bitcoin ETFs post best week since April with $1B inflows",
-            "url": "https://cointelegraph.com/news/us-bitcoin-etfs-best-weekly-inflows-april-coldcard-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-08T16:20:17.000Z"
+            "title": "Bitcoin investors pour $853 million into spot ETFs. BlackRock’s IBIT claims the bulk",
+            "url": "https://www.coindesk.com/markets/2026/08/09/bitcoin-investors-pour-usd853-million-into-spot-etfs-blackrock-s-ibit-claims-the-bulk",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-09T14:19:35.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T16:20:17.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-part-2-where-oh-where-has-btc-volatility-gone-etf.jpg",
+        "publishedAt": "2026-08-09T14:19:35.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/e183c12b5e1dbaf0e0175a58c3a9425adb7b3de5-1920x1440.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "ETF Flows",
-        "trendScore": 54,
+        "trendScore": 63,
         "confidence": "medium"
-      },
-      {
-        "id": "crypto-aa880075db",
-        "slug": "bitcoin-s-volatility-has-nearly-vanished-the-underlying-risk-hasn-t",
-        "lane": "crypto",
-        "title": "Bitcoin's first 'institutional bear market' takes shape as liquidity drains",
-        "summary": "CryptoSlate argues Bitcoin is showing early signs of its first bear market driven primarily by institutional dynamics, with liquidity draining from the market. Separately, the outlet reported that an AI-driven security sprint aimed at Bitcoin's ecosystem flagged 6,700 potential issues in 55 hours, though it's unclear how many of those findings are genuine vulnerabilities.",
-        "whyItMatters": "A liquidity-driven downturn led by institutional behavior would mark a different dynamic than past retail-driven Bitcoin bear markets, and the scale of the AI security sprint's findings raises questions about signal versus noise in automated vulnerability hunting.",
-        "whatToWatch": [
-          "Further liquidity and flow data confirming or denying the bear-market thesis",
-          "Triage results on how many of the 6,700 flagged issues are validated as real"
-        ],
-        "questions": [
-          "What specifically distinguishes this as an \"institutional\" bear market?",
-          "How many of the AI-flagged issues will turn out to be false positives?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin’s first institutional bear market is starting to take shape and draining liquidity",
-            "url": "https://cryptoslate.com/bitcoins-first-institutional-bear-market-is-starting-to-take-shape-and-draining-liquidity/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-08T15:05:54.000Z"
-          },
-          {
-            "title": "Bitcoin’s AI security sprint found 6,700 issues in 55 hours, but no one knows how many are real",
-            "url": "https://cryptoslate.com/bitcoins-ai-security-sprint-found-6700-issues-in-55-hours-but-no-one-knows-how-many-are-real/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-07T22:55:38.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-07T22:55:38.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-bear-market-redemption-machine.jpg",
-        "badge": "Analysis",
-        "trendScore": 54,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-38d4f75bd7",
-        "slug": "senate-to-vote-on-advancing-the-clarity-act-in-september-after-thune-f",
-        "lane": "crypto",
-        "title": "Senate to vote on advancing crypto market-structure CLARITY Act in September",
-        "summary": "Senate Majority Leader Thune has filed cloture on the CLARITY Act, setting up a vote to advance the crypto market-structure bill in September, according to Cointelegraph.",
-        "whyItMatters": "CLARITY Act is a central piece of pending US crypto market-structure legislation, and a scheduled cloture vote is a concrete step toward (or away from) regulatory clarity the industry has been waiting on.",
-        "whatToWatch": [
-          "The September cloture vote outcome",
-          "Any amendments or negotiated changes ahead of the vote"
-        ],
-        "questions": [
-          "Does the bill currently have enough votes to clear cloture?",
-          "What sticking points remain between the parties?"
-        ],
-        "sources": [
-          {
-            "title": "US Senate to vote on advancing CLARITY Act in September after Thune files cloture",
-            "url": "https://cointelegraph.com/news/us-senate-clarity-act-september-vote-thune-cloture?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-08T15:08:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T15:08:06.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-regulation-is-pushing-its-way-to-clarity-act-2.jpg",
-        "badge": "Regulatory",
-        "trendScore": 48,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-6dc96b59ad",
-        "slug": "bitcoin-red-team-says-ai-tools-are-surfacing-critical-exploits-across-",
-        "lane": "crypto",
-        "title": "Bitcoin Red Team says AI tools are surfacing critical exploits across core projects",
-        "summary": "Decrypt reports that the Bitcoin Red Team says AI-based tools have identified critical exploits across a range of core Bitcoin-adjacent projects, in line with a separately reported large-scale AI security sprint across the ecosystem.",
-        "whyItMatters": "If AI tooling is reliably surfacing critical, previously unknown flaws in core Bitcoin infrastructure, that changes how the ecosystem needs to think about vulnerability discovery and disclosure.",
-        "whatToWatch": [
-          "Which specific projects have confirmed and patched flagged exploits",
-          "Whether findings are disclosed responsibly before being made public"
-        ],
-        "questions": [
-          "Which projects specifically were flagged as having critical exploits?",
-          "Have any of these findings been independently verified as genuine?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
-            "url": "https://decrypt.co/375169/bitcoin-red-team-ai-finding-critical-vulnerabilities",
-            "publisher": "Decrypt",
-            "publishedAt": "2026-08-08T17:31:03.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T17:31:03.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-17-gID_7.png@png",
-        "badge": "Security",
-        "trendScore": 46,
-        "confidence": "low"
       },
       {
         "id": "crypto-ef2d0177ff",
         "slug": "brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers",
         "lane": "crypto",
-        "title": "Brazil's central bank orders crypto exchanges to delay large overseas transfers",
-        "summary": "Brazil's central bank has ordered crypto exchanges operating in the country to delay large transfers sent abroad, according to CoinDesk. The report did not specify the transaction threshold or effective date.",
-        "whyItMatters": "Capital-flow restrictions on crypto exchanges from a major Latin American regulator signal tightening oversight that could affect how funds move in and out of the country via crypto rails.",
+        "title": "Brazil orders crypto exchanges to delay large overseas transfers by up to 24 hours",
+        "summary": "Brazil's central bank has ordered crypto exchanges to hold large crypto transfers sent abroad for up to 24 hours, aiming to give authorities a window to catch fraud before funds leave the country. The rule specifically targets outbound crypto flows rather than all transactions.",
+        "whyItMatters": "It's a concrete regulatory intervention in one of Latin America's biggest crypto markets and could become a template for other regulators worried about cross-border fraud and capital flight.",
         "whatToWatch": [
-          "Exchange compliance and any public guidance on the new rule",
-          "Reaction from Brazil's crypto industry and possible legal challenges"
+          "Implementation timeline and compliance guidance for exchanges",
+          "Effect on outbound transfer volumes",
+          "Whether other central banks consider similar transfer holds"
         ],
         "questions": [
-          "What transaction size triggers the mandated delay?",
-          "Is the rationale capital flight, fraud prevention, or something else?"
+          "What transfer size or risk criteria trigger the hold?",
+          "How will exchanges assess fraud risk within the window?"
         ],
         "sources": [
+          {
+            "title": "Brazil targets crypto fraud with up to 24-hour transfer hold",
+            "url": "https://cointelegraph.com/news/brazil-targets-crypto-fraud-with-up-to-24-hour-transfer-hold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-09T09:10:39.000Z"
+          },
           {
             "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
             "url": "https://www.coindesk.com/business/2026/08/08/brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers-abroad",
@@ -317,444 +176,593 @@
             "publishedAt": "2026-08-08T15:25:38.000Z"
           }
         ],
-        "sourceCount": 1,
+        "sourceCount": 2,
         "publishedAt": "2026-08-08T15:25:38.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a010b6e8d5d9fab88360e6939414f5b12c6bf695-1920x1272.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-latin-america-and-blockchain-2.jpg",
         "badge": "Regulatory",
-        "trendScore": 43,
+        "trendScore": 62,
         "confidence": "medium"
       },
       {
-        "id": "crypto-31d05ae690",
-        "slug": "danish-high-schoolers-will-have-to-verbally-defend-written-assignments",
+        "id": "crypto-161d320141",
+        "slug": "crypto-audited-badges-are-giving-investors-a-false-sense-of-security-a",
         "lane": "crypto",
-        "title": "Danish high schools to require students to verbally defend written assignments",
-        "summary": "Denmark plans to require high school students to defend their written assignments verbally, according to a report shared via Hacker News. No further detail on rollout timing or rationale was included in the source.",
-        "whyItMatters": "This item concerns education policy, not digital-asset markets or regulation, and has no direct bearing on crypto markets or investors.",
+        "title": "Crypto 'audited' badges are giving investors a false sense of security, analysis warns",
+        "summary": "A CryptoSlate analysis argues that crypto projects' 'audited' badges often overstate the protection they offer, since audits can have narrow scope, go stale, or be commissioned and paid for by the project itself. The piece warns investors treat these badges as a blanket safety guarantee even though real risks — like admin-key exploits or uncovered logic bugs — can slip through.",
+        "whyItMatters": "Audit badges are a widely used trust signal in a market plagued by hacks and rug pulls, so an unreliable signal leaves investors under-protected without realizing it.",
         "whatToWatch": [
-          "Further reporting on the policy's implementation timeline and stated rationale"
+          "Whether audit firms respond to the criticism",
+          "Any push for standardized audit scope or disclosure requirements"
         ],
         "questions": [
-          "What is driving the policy change?",
-          "When would it take effect?"
+          "Which specific incidents or audits prompted this analysis?",
+          "Are there concrete proposals to close the disclosure gap?"
         ],
         "sources": [
           {
-            "title": "Danish high schoolers will have to verbally defend written assignments",
-            "url": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-08T18:09:31Z"
+            "title": "Why crypto ‘audited’ badges are giving investors a dangerous false sense of security",
+            "url": "https://cryptoslate.com/why-crypto-audited-badges-are-giving-investors-a-dangerous-false-sense-of-security/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T09:59:56.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T18:09:31Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://mezha.net/eng/kd_image_generate/ca117584_denmark_requires_oral/3348978.jpg?ver=2.0.15",
-        "trendScore": 42,
+        "publishedAt": "2026-08-09T09:59:56.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-transfer-interface-deception-collage.jpg",
+        "badge": "Analysis",
+        "trendScore": 60,
         "confidence": "low"
       },
       {
-        "id": "crypto-97803c07a1",
-        "slug": "bitwise-s-matt-hougan-trillions-in-institutional-money-have-yet-to-flo",
+        "id": "crypto-5fa7547b83",
+        "slug": "bitwise-s-solana-etf-drew-267m-in-inflows-then-market-losses-wiped-it-",
         "lane": "crypto",
-        "title": "Bitwise's Matt Hougan predicts trillions in institutional money will flow into Bitcoin",
-        "summary": "Bitwise CIO Matt Hougan says trillions of dollars in institutional capital are set to flow into Bitcoin, according to CoinDesk. The report did not detail a specific timeline or the basis for the forecast.",
-        "whyItMatters": "Institutional-adoption forecasts from prominent asset managers shape market narratives, but this is a single executive's projection rather than confirmed flow data and should be weighed accordingly.",
+        "title": "Bitwise's Solana ETF drew $267M in inflows — then market losses wiped it out",
+        "summary": "Bitwise's Solana ETF pulled in roughly $267 million from investors, but a subsequent decline in Solana's price erased those gains, leaving the fund's value little changed despite the fresh capital. It's a reminder that strong inflows don't insulate a fund from the underlying asset's price moves.",
+        "whyItMatters": "It highlights the added volatility risk of newer altcoin ETFs and pushes back on narratives that treat inflows alone as evidence of a healthy investment.",
         "whatToWatch": [
-          "Actual ETF and institutional flow data in coming months as a check on the forecast"
+          "Solana's price trajectory in coming weeks",
+          "Subsequent flow data for the ETF",
+          "Performance comparisons with other altcoin ETFs"
         ],
         "questions": [
-          "What timeline or catalysts underpin the \"trillions\" figure?",
-          "Is this projection tied to any specific policy or market development?"
+          "What specifically drove the Solana price decline during this period?",
+          "How does this fund's flow-to-performance ratio compare with peers?"
         ],
         "sources": [
           {
-            "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
-            "url": "https://www.coindesk.com/business/2026/08/08/trillions-in-institutional-money-to-flow-into-bitcoin-says-bitwise-s-matt-hougan",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-08T14:00:00.000Z"
+            "title": "Investors poured $267 million into Bitwise’s Solana ETF, but market losses erased every cent",
+            "url": "https://cryptoslate.com/investors-poured-267-million-into-bitwises-solana-etf-but-market-losses-erased-every-cent/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T18:00:50.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T14:00:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/18172463a019e513e643fd2ed9ab0e0806baf68b-1440x810.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Commentary",
-        "trendScore": 42,
-        "confidence": "medium"
-      }
-    ],
-    "markets": [
-      {
-        "id": "markets-05f9c446a4",
-        "slug": "earnings-beats-ease-worries-over-record-u-s-stock-rally",
-        "lane": "markets",
-        "title": "Earnings beats ease worries over record U.S. stock rally",
-        "summary": "A wave of stronger-than-expected corporate earnings is helping quiet concerns that the recent record run in U.S. stocks has gotten ahead of itself. Investors have been watching for signs the rally was outpacing fundamentals, and the current beat rate is being read as evidence that profit growth is keeping pace with prices, per Investing.com.",
-        "whyItMatters": "If earnings keep validating the rally, it lowers the risk of a sharp, valuation-driven pullback that would ripple across major indices.",
-        "whatToWatch": [
-          "Remaining big-name earnings reports this season",
-          "Whether beat rates hold up as more companies report",
-          "Any shift in forward guidance from reporting companies"
-        ],
-        "questions": [
-          "Is the beat rate broad-based across sectors or concentrated in a few names?",
-          "How much of the rally is already priced for continued beats?"
-        ],
-        "sources": [
-          {
-            "title": "Earnings beats ease concerns over record U.S. stock rally",
-            "url": "https://www.investing.com/news/stock-market-news/earnings-beats-ease-concerns-over-record-us-stock-rally-4847712",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T13:38:20.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T13:38:20.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXMPEBBR0PM_M.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-08-09T18:00:50.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitwise-solana-hourglass.jpg",
+        "badge": "ETF Flows",
         "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-17165d0127",
-        "slug": "lyell-immunopharma-beats-on-earnings-but-revenue-falls-short",
-        "lane": "markets",
-        "title": "Lyell Immunopharma beats on earnings but revenue falls short",
-        "summary": "Lyell Immunopharma reported quarterly earnings that topped estimates by $0.22 per share, though revenue came in below analyst expectations, according to Investing.com.",
-        "whyItMatters": "The mixed print underscores the gap between cost control and top-line demand that markets are parsing across smaller biotech names this earnings season.",
+        "id": "crypto-c429ab576c",
+        "slug": "ai-financial-advisers-reportedly-carry-a-hidden-bitcoin-bias",
+        "lane": "crypto",
+        "title": "AI financial advisers reportedly carry a hidden Bitcoin bias",
+        "summary": "A CryptoSlate report describes findings that AI-based financial advisory tools carry a hidden tilt toward recommending Bitcoin, which can be triggered by a specific setting or prompt. The finding raises concerns about undisclosed skew shaping automated investment advice.",
+        "whyItMatters": "As more investors lean on AI tools for portfolio guidance, an undisclosed bias toward a volatile asset like Bitcoin could influence decisions without users knowing it's there.",
         "whatToWatch": [
-          "Any updated guidance from Lyell Immunopharma",
-          "Analyst estimate revisions following the report"
+          "Whether AI advisory platforms respond or add disclosures",
+          "Any regulatory interest in transparency for AI-driven investment advice"
         ],
         "questions": [
-          "What drove the revenue shortfall relative to estimates?"
+          "Which AI tools or models were actually tested?",
+          "What exactly is the 'switch' that triggers the bias?"
         ],
         "sources": [
           {
-            "title": "Lyell Immunopharma earnings beat by $0.22, revenue fell short of estimates",
-            "url": "https://www.investing.com/news/earnings/lyell-immunopharma-earnings-beat-by-022-revenue-fell-short-of-estimates-4847705",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T11:31:07.000Z"
+            "title": "AI financial advisers carry a hidden Bitcoin bias activated by a single specific switch",
+            "url": "https://cryptoslate.com/ai-financial-advisers-carry-a-hidden-bitcoin-bias-activated-by-a-single-specific-switch/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T13:00:56.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-09T11:31:07.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXMPED0C0KP_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-6b3a81e8d9",
-        "slug": "talkspace-misses-on-both-earnings-and-revenue",
-        "lane": "markets",
-        "title": "Talkspace misses on both earnings and revenue",
-        "summary": "Talkspace reported quarterly earnings that missed estimates by $0.04 per share, with revenue also falling short of expectations, per Investing.com.",
-        "whyItMatters": "The double miss adds to questions about growth momentum in telehealth names as investors reassess demand trends in the sector.",
-        "whatToWatch": [
-          "Talkspace's guidance and management commentary on the miss",
-          "Stock reaction and any analyst rating changes"
-        ],
-        "questions": [
-          "Was the shortfall driven by user growth, pricing, or both?"
-        ],
-        "sources": [
-          {
-            "title": "Talkspace earnings missed by $0.04, revenue fell short of estimates",
-            "url": "https://www.investing.com/news/earnings/talkspace-earnings-missed-by-004-revenue-fell-short-of-estimates-4847704",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T11:20:08.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T11:20:08.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXNPEC0Q1B5_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-d932d50ca5",
-        "slug": "china-s-factory-gate-inflation-slows-more-than-expected-in-july",
-        "lane": "markets",
-        "title": "China's factory-gate inflation slows more than expected in July",
-        "summary": "China's producer prices fell more than economists had forecast in July, according to Investing.com, adding to signs of soft pricing pressure in the world's second-largest economy.",
-        "whyItMatters": "Weak factory-gate prices point to soft domestic demand and deflationary pressure in China, a factor global markets watch closely for signs of slowing growth and commodity demand.",
-        "whatToWatch": [
-          "Upcoming Chinese CPI and trade data",
-          "Any policy response from Beijing to counter deflationary pressure"
-        ],
-        "questions": [
-          "How much of the slowdown reflects weak domestic demand versus industrial overcapacity?"
-        ],
-        "sources": [
-          {
-            "title": "China factory-gate inflation slows more than expected in July",
-            "url": "https://www.investing.com/news/economy-news/china-factorygate-inflation-slows-more-than-expected-in-july-4847700",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T09:41:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T09:41:15.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC100YB_M.jpg",
-        "badge": "Data",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-0fccc8ac1f",
-        "slug": "myspace-eyes-a-comeback-as-an-antidote-to-social-media-fatigue",
-        "lane": "markets",
-        "title": "Myspace eyes a comeback as an antidote to social media fatigue",
-        "summary": "Myspace is reportedly angling for a return, positioning itself as an alternative for users tired of current social media platforms, per CNBC Markets. The report frames the effort as a long shot given the challenge of rebuilding a platform that lost its dominant position years ago.",
-        "whyItMatters": "A revival attempt is a reminder that social-fatigue sentiment could open space for challengers to incumbent platforms, though the report itself is skeptical of the odds.",
-        "whatToWatch": [
-          "Any concrete relaunch plans or funding details from Myspace",
-          "User and investor reaction if a comeback effort advances"
-        ],
-        "questions": [
-          "Who is backing this effort and what's the business model?",
-          "Can a legacy brand realistically compete with entrenched platforms?"
-        ],
-        "sources": [
-          {
-            "title": "Myspace eyes comeback as an an 'antidote' to social media fatigue — but it may be a long shot",
-            "url": "https://www.cnbc.com/2026/08/09/myspace-comeback-rival-social-media-giants.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-09T05:00:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T05:00:01.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108345803-1785998066617-gettyimages-2281779040-boivin-notitle260619_npy5i.jpeg?v=1785998230&w=1920&h=1080",
+        "publishedAt": "2026-08-09T13:00:56.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ai-adviser-bitcoin-bias-machine-vision.jpg",
         "badge": "Analysis",
-        "trendScore": 49,
-        "confidence": "medium"
+        "trendScore": 53,
+        "confidence": "low"
       },
       {
-        "id": "markets-60ce364a60",
-        "slug": "otis-wants-to-be-a-defensive-stock-in-a-volatile-market-but-it-has-to-",
-        "lane": "markets",
-        "title": "Otis wants to be a defensive play — but has to prove it first",
-        "summary": "Elevator maker Otis is positioning itself as a defensive stock for a volatile market, but CNBC Markets reports the company still needs to demonstrate that thesis holds up under pressure.",
-        "whyItMatters": "Whether Otis can credibly claim defensive status matters for investors rotating into steadier, less cyclical names amid market volatility.",
+        "id": "crypto-f2f78664d9",
+        "slug": "saylor-says-chatgpt-helped-strategy-unlock-15b-in-bitcoin-buying-capac",
+        "lane": "crypto",
+        "title": "Saylor says ChatGPT helped Strategy unlock $15B in Bitcoin-buying capacity",
+        "summary": "Michael Saylor said Strategy (formerly MicroStrategy) used ChatGPT as part of the process that helped unlock $15 billion in financing capacity to keep expanding its Bitcoin holdings. Details beyond Saylor's own account of the AI-assisted process are limited.",
+        "whyItMatters": "Strategy is one of the largest corporate Bitcoin holders, so any expansion of its buying capacity is meaningful for institutional BTC demand.",
         "whatToWatch": [
-          "Otis's next earnings report for signs of resilience",
-          "How the stock trades relative to broader market swings"
+          "Whether Strategy deploys the $15 billion into further Bitcoin purchases",
+          "Any further detail on how ChatGPT was actually used in the financing process"
         ],
         "questions": [
-          "What specifically would prove Otis's defensive thesis to skeptical investors?"
+          "What specific task did ChatGPT perform in unlocking the financing?",
+          "Is the $15 billion already secured, or still being arranged?"
         ],
         "sources": [
           {
-            "title": "Elevator giant Otis wants to be a defensive play in a volatile market. It has to prove itself first",
-            "url": "https://www.cnbc.com/2026/08/08/elevator-giant-otis-stock-wall-street.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-08T15:43:23.000Z"
+            "title": "Michael Saylor reveals how ChatGPT helped Strategy unlock $15 billion for its Bitcoin machine",
+            "url": "https://cryptoslate.com/michael-saylor-reveals-how-ai-helped-strategy-unlock-15-billion-for-its-bitcoin-machine/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T16:00:26.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T15:43:23.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108339933-1784912434971-Screenshot_2026-07-24_at_122353_PM.png?v=1784913656&w=1920&h=1080",
+        "publishedAt": "2026-08-09T16:00:26.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/saylor-ai-credit-system.jpg",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-cc8578b358",
+        "slug": "bitcoin-treasury-firm-empery-sells-1-635-btc-cutting-reserves-76-in-we",
+        "lane": "crypto",
+        "title": "Bitcoin treasury firm Empery sells 1,635 BTC, cutting reserves 76% in weeks",
+        "summary": "Empery offloaded about 1,635 BTC, shrinking its Bitcoin reserves by roughly 76% over just a few weeks — a sharp break from the 'never sell' corporate treasury philosophy popularized by firms like Strategy. The sale suggests at least some corporate Bitcoin holders are more willing to liquidate than the dominant narrative around treasury companies suggests.",
+        "whyItMatters": "It tests the durability of the accumulate-and-never-sell corporate Bitcoin treasury model that has underpinned a chunk of institutional BTC demand.",
+        "whatToWatch": [
+          "Whether other Bitcoin treasury companies follow with sales of their own",
+          "Any stated rationale from Empery for the liquidation",
+          "Effects on valuation premiums of publicly traded treasury companies"
+        ],
+        "questions": [
+          "Why did Empery sell — liquidity needs, risk management, or a change in conviction?",
+          "Are other treasury firms showing similar early signals?"
+        ],
+        "sources": [
+          {
+            "title": "Never sell treasury model cracks again as 1,635 BTC is offloaded shrinking Empery reserves by 76% in weeks",
+            "url": "https://cryptoslate.com/never-sell-treasury-model-cracks-again-as-1635-btc-is-offloaded-shrinking-empery-reserves-by-76-in-weeks/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-09T14:00:20.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T14:00:20.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/empery-collateral-box.jpg",
+        "badge": "Corporate Treasury",
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-358b75294c",
+        "slug": "hyperliquid-s-rwa-perps-boom-may-be-eating-into-revenue-that-backs-hyp",
+        "lane": "crypto",
+        "title": "Hyperliquid's RWA perps boom may be eating into revenue that backs HYPE",
+        "summary": "Growing trading volume in real-world-asset perpetual futures on Hyperliquid is reportedly cutting into the protocol revenue that ultimately supports its HYPE token, according to CoinDesk, since RWA perps carry different fee economics than the platform's core crypto perps. The shift raises questions about how HYPE's value-accrual model holds up as the platform's business mix changes.",
+        "whyItMatters": "HYPE's valuation has been closely tied to Hyperliquid's revenue-sharing mechanics, so a change in revenue composition could directly affect token holders.",
+        "whatToWatch": [
+          "Hyperliquid's revenue disclosures and any fee-structure changes",
+          "Whether the protocol adjusts incentives to rebalance the mix",
+          "HYPE price and valuation reaction"
+        ],
+        "questions": [
+          "How exactly do RWA perps' fees or revenue split differ from standard crypto perps?",
+          "How large is the RWA perps segment relative to Hyperliquid's total volume?"
+        ],
+        "sources": [
+          {
+            "title": "Hyperliquid’s RWA perps boom is eating into the revenue that backs HYPE",
+            "url": "https://www.coindesk.com/business/2026/08/09/hyperliquid-s-rwa-perps-boom-is-eating-into-the-revenue-that-backs-hype",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-09T15:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T15:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/6b102cddb380dca88f7d3599a562e146ee51abda-6000x4000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Analysis",
         "trendScore": 48,
         "confidence": "medium"
       },
       {
-        "id": "markets-cac1e75082",
-        "slug": "germany-s-trade-deficit-with-china-widens-as-beijing-leans-less-on-eur",
-        "lane": "markets",
-        "title": "Germany's trade deficit with China widens as Beijing leans less on European industry",
-        "summary": "Germany's trade deficit with China has grown, with Investing.com reporting that Beijing is increasingly relying less on European industry, a shift with implications for German exporters.",
-        "whyItMatters": "A widening deficit signals weakening demand for German industrial goods in China, a key pressure point for Europe's largest economy and its export-heavy sectors.",
+        "id": "crypto-c1c55d3dbb",
+        "slug": "crypto-is-seeing-a-dot-com-style-shakeout-with-over-100-projects-foldi",
+        "lane": "crypto",
+        "title": "Crypto is seeing a dot-com-style shakeout, with over 100 projects folding in 2026",
+        "summary": "CoinDesk reports the crypto industry is going through a shakeout reminiscent of the dot-com bust, with more than 100 projects shutting down so far in 2026. The wave of failures points to a thinning-out of speculative or unsustainable ventures left over from the last market cycle.",
+        "whyItMatters": "A large die-off of projects can be read either as a healthy market correction clearing out weak players or as a warning sign of deeper capital and revenue problems across the sector.",
         "whatToWatch": [
-          "Upcoming German trade and industrial production data",
-          "Any policy response from Berlin or Brussels on the China trade imbalance"
+          "Whether the pace of shutdowns accelerates or slows through the rest of 2026",
+          "Which categories — DeFi, NFTs, L1s, or others — are hit hardest",
+          "Knock-on effects for investors and employees of failed projects"
         ],
         "questions": [
-          "Is this shift structural, as China builds domestic capacity, or cyclical?"
+          "What counted as a project 'folding' — shutdown, token abandonment, or formal bankruptcy?",
+          "Which sectors of crypto are proving most and least resilient?"
         ],
         "sources": [
           {
-            "title": "German trade deficit with China grows as Beijing relies less on European industry",
-            "url": "https://www.investing.com/news/economic-indicators/german-trade-deficit-with-china-grows-as-beijing-relies-less-on-european-industry-4847711",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T13:36:30.000Z"
+            "title": "Crypto is going through a massive dot-com style shakeout as over 100 projects fold in 2026",
+            "url": "https://www.coindesk.com/business/2026/08/09/crypto-is-going-through-a-massive-dot-com-style-shakeout-as-over-100-projects-fold-in-2026",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-09T13:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-09T13:36:30.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/fa8a2f803ea2ddf92359d55091dcde0a_M.jpg",
-        "badge": "Data",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-b708133d80",
-        "slug": "humanoid-robots-are-as-much-a-compute-story-as-a-robotics-one",
-        "lane": "markets",
-        "title": "Humanoid robots are as much a compute story as a robotics one",
-        "summary": "A piece from Investing.com argues that progress in humanoid robotics is increasingly tied to compute capacity and AI infrastructure, not just mechanical engineering.",
-        "whyItMatters": "Framing humanoids as a compute play links their fortunes to the broader AI-infrastructure trade that's been a major market driver, widening the pool of stocks tied to the theme.",
-        "whatToWatch": [
-          "Compute and chip demand tied to robotics developers",
-          "Earnings commentary from AI-infrastructure or robotics firms on this link"
-        ],
-        "questions": [
-          "Which companies stand to benefit most from a compute-driven humanoid buildout?"
-        ],
-        "sources": [
-          {
-            "title": "Humanoids are as much a compute story as a robotics one",
-            "url": "https://www.investing.com/news/economy-news/humanoids-are-as-much-a-compute-story-as-a-robotics-one-4847709",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T13:00:38.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T13:00:38.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://content-media.investing.com/news/Robots_800x533_L_1780417114.jpg",
-        "badge": "Analysis",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-af22d6a910",
-        "slug": "more-workers-join-strike-at-bhp-s-port-hedland-iron-ore-hub",
-        "lane": "markets",
-        "title": "More workers join strike at BHP's Port Hedland iron ore hub",
-        "summary": "The strike at BHP's Port Hedland iron ore operations in Australia has grown as additional workers joined the action, according to Investing.com.",
-        "whyItMatters": "Port Hedland is a major global iron ore export hub, so an escalating strike raises the risk of supply disruptions that could move iron ore prices and affect BHP's output.",
-        "whatToWatch": [
-          "Whether the strike expands further or moves toward resolution",
-          "Any BHP guidance on shipment or production impact",
-          "Iron ore price reaction"
-        ],
-        "questions": [
-          "What are the workers' core demands and is a settlement near?",
-          "How much shipping volume has already been affected?"
-        ],
-        "sources": [
-          {
-            "title": "More workers join strike at BHP’s Port Hedland iron ore operations",
-            "url": "https://www.investing.com/news/stock-market-news/more-workers-join-strike-at-bhps-port-hedland-iron-ore-operations-4847699",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T11:48:29.000Z"
-          },
-          {
-            "title": "More workers join BHP strike at Port Hedland iron ore hub",
-            "url": "https://www.investing.com/news/company-news/more-workers-join-bhp-strike-at-port-hedland-iron-ore-hub-4847706",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T11:47:16.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T11:47:16.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXNPEC0Q0MJ_M.jpg",
-        "badge": "Commodities",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-78c8162102",
-        "slug": "fire-at-saudi-aramco-s-jazan-refinery-extinguished-no-injuries-reporte",
-        "lane": "markets",
-        "title": "Fire at Saudi Aramco's Jazan refinery extinguished, no injuries reported",
-        "summary": "A fire broke out at Saudi Aramco's Jazan refinery and has since been extinguished, with no injuries reported, according to Investing.com.",
-        "whyItMatters": "Incidents at major refineries can stir concerns about oil-product supply and prices even when quickly contained, given Saudi Aramco's central role in global energy markets.",
-        "whatToWatch": [
-          "Any Aramco statement on cause or impact to refinery operations",
-          "Oil price reaction, if any"
-        ],
-        "questions": [
-          "Did the fire affect production or throughput at Jazan?"
-        ],
-        "sources": [
-          {
-            "title": "Fire at Saudi Aramco’s Jazan refinery extinguished, no injuries reported",
-            "url": "https://www.investing.com/news/economy-news/fire-at-saudi-aramcos-jazan-refinery-extinguished-no-injuries-reported-4847703",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T11:03:50.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T11:03:50.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPED4G0W4_M.jpg",
-        "badge": "Breaking",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-87e23411c5",
-        "slug": "how-coordinated-currency-buying-interventions-actually-work",
-        "lane": "markets",
-        "title": "How coordinated currency-buying interventions actually work",
-        "summary": "An Investing.com explainer breaks down the mechanics of coordinated currency-buying interventions, a tool central banks and governments can use to influence exchange rates.",
-        "whyItMatters": "Understanding intervention mechanics matters for markets readers, since currency volatility and intervention speculation have been recurring themes in FX markets.",
-        "whatToWatch": [
-          "Any signals that major central banks are weighing coordinated action"
-        ],
-        "questions": [
-          "Is this explainer tied to a specific current currency-market situation?"
-        ],
-        "sources": [
-          {
-            "title": "How coordinated currency buying interventions work",
-            "url": "https://www.investing.com/news/forex-news/how-coordinated-currency-buying-interventions-work-4847702",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-09T10:22:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-09T10:22:32.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://content-media.investing.com/news/jpy_2_M_1440048047.jpg",
-        "badge": "Explainer",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-2d86b9ebb4",
-        "slug": "how-cnbc-s-investing-club-played-this-week-s-rebound-in-ai-stocks",
-        "lane": "markets",
-        "title": "How one trading desk played the rebound in AI stocks this week",
-        "summary": "CNBC Markets recaps how a trading desk approached this week's sharp rebound in AI-related stocks, detailing the moves made as the group bounced back.",
-        "whyItMatters": "AI stocks have been a dominant swing factor for major indices, so how professional investors traded the rebound offers a read on sentiment and positioning in the group.",
-        "whatToWatch": [
-          "Whether the AI-stock rebound extends or fades next week",
-          "Upcoming earnings from major AI-linked companies"
-        ],
-        "questions": [
-          "Was the rebound driven by a specific catalyst or broad short-covering?"
-        ],
-        "sources": [
-          {
-            "title": "Here’s how we played the massive rebound in AI stocks this week",
-            "url": "https://www.cnbc.com/2026/08/08/heres-how-we-played-the-massive-rebound-in-ai-stocks-this-week.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-08T14:07:30.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T14:07:30.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108344590-17858573052026-08-04t144622z_956187213_rc2prma6pii7_rtrmadp_0_usa-stocks.jpeg?v=1785857332&w=1920&h=1080",
+        "publishedAt": "2026-08-09T13:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/9ec4de39272adf8841b32cdceccdf8abe655e2fd-8256x5504.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Analysis",
         "trendScore": 47,
         "confidence": "medium"
+      }
+    ],
+    "markets": [
+      {
+        "id": "markets-59eb5b5b7d",
+        "slug": "s-p-500-sales-growth-hits-a-nearly-5-year-high-as-investors-size-up-th",
+        "lane": "markets",
+        "title": "S&P 500 sales growth hits a nearly 5-year high as investors size up the week ahead",
+        "summary": "S&P 500 companies are posting sales growth at its strongest pace in almost five years, according to MarketWatch. A companion CNBC piece frames the week ahead around two key things traders are watching in the stock market, though the specific catalysts weren't detailed beyond that framing.",
+        "whyItMatters": "Broadening top-line growth across the index is a different story than earnings beats driven by cost-cutting, and it shapes how investors judge whether the market's gains are backed by real demand.",
+        "whatToWatch": [
+          "Whether sales-growth strength shows up broadly across sectors or stays concentrated in a few names",
+          "The two catalysts CNBC flagged for the week ahead as they become clearer"
+        ],
+        "questions": [
+          "Is the sales-growth surge concentrated in a handful of mega-cap names or broad-based?",
+          "What exactly are the '2 big things' CNBC says the market is watching this week?"
+        ],
+        "sources": [
+          {
+            "title": "S&P 500 sales growth is at a nearly 5-year high. Here’s what’s behind the surge.",
+            "url": "https://www.marketwatch.com/story/s-p-500-sales-growth-is-at-a-nearly-5-year-high-heres-whats-behind-the-surge-a4ccf06d?mod=mw_rss_topstories",
+            "publisher": "MarketWatch Top Stories",
+            "publishedAt": "2026-08-09T14:00:00.000Z"
+          },
+          {
+            "title": "Here are the 2 big things we're watching in the stock market in the week ahead",
+            "url": "https://www.cnbc.com/2026/08/09/here-are-the-2-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-09T13:11:52.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-09T13:11:52.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://images.mktw.net/im-77846389",
+        "badge": "Analysis",
+        "trendScore": 71,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-f4b63c5cb2",
+        "slug": "stocks-beating-the-s-p-500-hit-a-4-year-high-marketwatch-says-that-num",
+        "lane": "markets",
+        "title": "Stocks beating the S&P 500 hit a 4-year high — MarketWatch says that number could keep climbing",
+        "summary": "MarketWatch reports the share of individual stocks outperforming the S&P 500 index is at its highest level in four years. The piece argues that market breadth — participation beyond the index's biggest names — has room to widen further.",
+        "whyItMatters": "Wider breadth is generally read as a healthier, less concentrated rally, which matters to anyone worried the market's gains have been riding on a small handful of mega-cap stocks.",
+        "whatToWatch": [
+          "Whether breadth continues improving or reverts back toward mega-cap concentration"
+        ],
+        "questions": [
+          "What's driving the shift — sector rotation, earnings, or falling rates?"
+        ],
+        "sources": [
+          {
+            "title": "The number of stocks beating the S&P 500 is the highest in 4 years. Why that number should rise.",
+            "url": "https://www.marketwatch.com/story/the-number-of-stocks-beating-the-s-p-500-is-the-highest-in-4-years-why-that-number-should-rise-b9bd05b3?mod=mw_rss_topstories",
+            "publisher": "MarketWatch Top Stories",
+            "publishedAt": "2026-08-09T13:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T13:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://images.mktw.net/im-40258482",
+        "badge": "Analysis",
+        "trendScore": 62,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-1ca3c6eb70",
+        "slug": "top-wall-street-analysts-name-3-stocks-with-strong-growth-potential",
+        "lane": "markets",
+        "title": "Top Wall Street analysts name 3 stocks with strong growth potential",
+        "summary": "CNBC rounds up top-ranked Wall Street analysts who are backing three specific stocks for their growth prospects. The report doesn't name the tickers in the headline, but frames the picks around durable growth potential rather than short-term trading calls.",
+        "whyItMatters": "Analyst conviction picks give readers a read on where professional sentiment is concentrating bullish bets right now.",
+        "whatToWatch": [
+          "Whether the named stocks see follow-through buying or price-target upgrades from other desks"
+        ],
+        "questions": [
+          "Which three stocks are being highlighted, and what's the specific growth thesis for each?"
+        ],
+        "sources": [
+          {
+            "title": "Top Wall Street analysts like these 3 stocks for their solid growth potential",
+            "url": "https://www.cnbc.com/2026/08/09/top-analysts-like-these-3-stocks-for-their-solid-growth-potential.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-09T12:01:56.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T12:01:56.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108290462-1776090075898-gettyimages-2257538683-img_6685.jpeg?v=1779976895&w=1920&h=1080",
+        "badge": "Analysis",
+        "trendScore": 61,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-4e0426e6ef",
+        "slug": "dow-futures-hold-steady-as-market-bulls-stay-in-control-cisco-lumentum",
+        "lane": "markets",
+        "title": "Dow futures hold steady as market bulls stay in control; Cisco, Lumentum earnings loom",
+        "summary": "Dow Jones futures are pointing to continued control by market bulls, per Yahoo Finance, as investors look ahead to earnings from Cisco and Lumentum. The report frames the broader tape as still favoring buyers heading into these reports.",
+        "whyItMatters": "Cisco is a bellwether for enterprise tech spending and networking demand, while Lumentum's results speak to optical and datacenter/AI infrastructure demand — both are read as signals for the broader tech trade.",
+        "whatToWatch": [
+          "Cisco's upcoming earnings report",
+          "Lumentum's upcoming earnings report",
+          "Whether the bullish futures setup holds through the trading session"
+        ],
+        "questions": [
+          "Will Cisco and Lumentum confirm continued strength in enterprise and AI-infrastructure spending?"
+        ],
+        "sources": [
+          {
+            "title": "Dow Jones Futures Loom As Market Bulls Rule; Cisco, Lumentum Earnings Ahead",
+            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-warren-buffett-cisco-lumentum-earnings/?src=A00220&yptr=yahoo",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-09T16:25:05.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T16:25:05.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://media.zenfs.com/en/ibd.com/4042396af994870132facc7050d3148e",
+        "badge": "Earnings",
+        "trendScore": 56,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d27d704773",
+        "slug": "warsh-the-fed-should-play-a-smaller-role-in-markets",
+        "lane": "markets",
+        "title": "Warsh: The Fed should play a smaller role in markets",
+        "summary": "Warsh is arguing for a Federal Reserve that takes a smaller, less interventionist role in financial markets, according to Investing.com. The report doesn't detail the specific policy mechanics behind that stance beyond the headline framing.",
+        "whyItMatters": "Debates over how activist the Fed should be in markets carry weight given ongoing speculation about the central bank's leadership and policy direction, which feeds directly into rate expectations.",
+        "whatToWatch": [
+          "Whether this view gains traction among other Fed voices or officials",
+          "Any market reaction tied to shifting expectations about the Fed's posture"
+        ],
+        "questions": [
+          "What specific Fed actions or tools is Warsh referring to when he says the role should shrink?"
+        ],
+        "sources": [
+          {
+            "title": "Warsh wants a Fed that plays a smaller role in markets",
+            "url": "https://www.investing.com/news/economy-news/warsh-wants-a-fed-that-plays-a-smaller-role-in-markets-4847750",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T23:01:07.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T23:01:07.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM6N190_1200_L.jpg",
+        "badge": "Fed",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-e4076edcd4",
+        "slug": "ceva-earnings-on-deck-can-licensing-revenue-sustain-the-wait-for-royal",
+        "lane": "markets",
+        "title": "CEVA earnings on deck: can licensing revenue sustain the wait for royalties?",
+        "summary": "Chip-IP licensor CEVA reports earnings soon, with Investing.com framing the key question as whether its licensing business can hold up while the company waits for royalty revenue to catch up.",
+        "whyItMatters": "CEVA's licensing-to-royalty pipeline is a proxy for demand in the semiconductor IP market, relevant to anyone tracking chip-sector momentum.",
+        "whatToWatch": [
+          "CEVA's upcoming earnings report and royalty revenue trajectory"
+        ],
+        "questions": [
+          "How long can licensing bookings sustain the company before royalties materialize?"
+        ],
+        "sources": [
+          {
+            "title": "CEVA earnings on deck: Can licensing sustain royalty wait?",
+            "url": "https://www.investing.com/news/earnings/ceva-earnings-on-deck-can-licensing-sustain-royalty-wait-93CH-4847747",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:41:19.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:41:19.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/moved_LYNXMPEM450ND_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-494a7d9c83",
+        "slug": "berkshire-hathaway-earnings-on-deck-as-abel-faces-a-cash-pile-test",
+        "lane": "markets",
+        "title": "Berkshire Hathaway earnings on deck as Abel faces a cash-pile test",
+        "summary": "Berkshire Hathaway is set to report earnings, with Investing.com framing the report as a test of how Abel handles the company's large cash position.",
+        "whyItMatters": "Berkshire's cash deployment decisions are closely watched as a barometer of how one of the market's most prominent investors sees current valuations and opportunities.",
+        "whatToWatch": [
+          "Berkshire's upcoming earnings report and any commentary on cash deployment"
+        ],
+        "questions": [
+          "Will Berkshire signal a shift toward deploying its cash pile, or continued patience?"
+        ],
+        "sources": [
+          {
+            "title": "Berkshire Hathaway earnings on deck as Abel faces cash test",
+            "url": "https://www.investing.com/news/earnings/berkshire-hathaway-earnings-on-deck-as-abel-faces-cash-test-93CH-4847746",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:40:27.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:40:27.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/WarrenBuffet_800x533_L_1620052447.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-267eb3943e",
+        "slug": "trimble-earnings-on-deck-amid-its-portfolio-simplification-push",
+        "lane": "markets",
+        "title": "Trimble earnings on deck amid its portfolio-simplification push",
+        "summary": "Trimble reports earnings soon, with Investing.com framing the report around the company's ongoing push to simplify its business portfolio.",
+        "whyItMatters": "How Trimble's simplification effort is landing with results will inform whether the strategy is paying off in margins and focus.",
+        "whatToWatch": [
+          "Trimble's upcoming earnings report and updates on the portfolio-simplification effort"
+        ],
+        "questions": [
+          "Which parts of the portfolio is Trimble simplifying, and what's the expected financial impact?"
+        ],
+        "sources": [
+          {
+            "title": "Trimble earnings on deck amid portfolio simplification push",
+            "url": "https://www.investing.com/news/earnings/trimble-earnings-on-deck-amid-portfolio-simplification-push-93CH-4847745",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:39:33.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:39:33.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXNPEB8506G_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-48aca99462",
+        "slug": "silicon-labs-faces-earnings-test-amid-its-texas-instruments-deal",
+        "lane": "markets",
+        "title": "Silicon Labs faces earnings test amid its Texas Instruments deal",
+        "summary": "Silicon Labs is due to report earnings, with Investing.com framing the report against the backdrop of a deal involving Texas Instruments. Details of the deal itself aren't specified beyond that framing.",
+        "whyItMatters": "A tie-up involving a major analog/semiconductor player like Texas Instruments would be significant for the competitive landscape in chips, making the earnings context especially notable.",
+        "whatToWatch": [
+          "Silicon Labs' upcoming earnings report",
+          "Further details on the Texas Instruments deal"
+        ],
+        "questions": [
+          "What exactly is the nature of the Texas Instruments deal referenced here?"
+        ],
+        "sources": [
+          {
+            "title": "Silicon Labs faces earnings test amid Texas Instruments deal",
+            "url": "https://www.investing.com/news/earnings/silicon-labs-faces-earnings-test-amid-texas-instruments-deal-93CH-4847744",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:38:39.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:38:39.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXNPEC0L0PD_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d5a819481c",
+        "slug": "hub-group-earnings-ahead-can-execution-match-the-freight-rebound",
+        "lane": "markets",
+        "title": "Hub Group earnings ahead: can execution match the freight rebound?",
+        "summary": "Trucking and logistics company Hub Group is set to report earnings, with Investing.com framing the key question as whether its execution can keep pace with a rebound in freight demand.",
+        "whyItMatters": "Freight volumes are a real-time read on goods demand and broader economic activity, making Hub Group's results a useful data point for the macro picture.",
+        "whatToWatch": [
+          "Hub Group's upcoming earnings report and commentary on freight volumes/pricing"
+        ],
+        "questions": [
+          "Is the freight rebound broad-based or concentrated in specific routes/sectors?"
+        ],
+        "sources": [
+          {
+            "title": "Hub Group earnings ahead: Can execution match freight rebound?",
+            "url": "https://www.investing.com/news/earnings/hub-group-earnings-ahead-can-execution-match-freight-rebound-93CH-4847743",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:37:44.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:37:44.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/LYNXNPEB9M0BY_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d1dc9bf451",
+        "slug": "biohaven-earnings-set-to-show-cash-burn-ahead-of-epilepsy-trial-data",
+        "lane": "markets",
+        "title": "Biohaven earnings set to show cash burn ahead of epilepsy trial data",
+        "summary": "Biotech Biohaven is due to report earnings, with Investing.com framing the report around the company's cash burn as it awaits data from an epilepsy program.",
+        "whyItMatters": "Cash runway is critical for clinical-stage biotechs, so this print will help gauge whether Biohaven can fund its pipeline through to key trial readouts.",
+        "whatToWatch": [
+          "Biohaven's upcoming earnings report and cash-burn figures",
+          "Pending epilepsy trial data"
+        ],
+        "questions": [
+          "How much runway does Biohaven's current cash position give it before the epilepsy data arrives?"
+        ],
+        "sources": [
+          {
+            "title": "Biohaven earnings set to show cash burn ahead of epilepsy data",
+            "url": "https://www.investing.com/news/earnings/biohaven-earnings-set-to-show-cash-burn-ahead-of-epilepsy-data-93CH-4847742",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-09T20:36:51.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T20:36:51.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://i-invdn-com.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-92eb96e012",
+        "slug": "want-to-become-a-stock-market-millionaire-history-points-to-one-invest",
+        "lane": "markets",
+        "title": "Want to become a stock-market millionaire? History points to one investment",
+        "summary": "A Yahoo Finance piece makes the case that a specific type of investment has historically been the most reliable path to building million-dollar wealth in the stock market. The report frames this as a long-term, history-based argument rather than a short-term trading call.",
+        "whyItMatters": "Long-horizon wealth-building framing is a reminder for readers focused on daily market moves that time in the market and compounding often matter more than any single catalyst.",
+        "whatToWatch": [],
+        "questions": [
+          "What specific investment vehicle is being pointed to, and over what time horizon does the historical case hold?"
+        ],
+        "sources": [
+          {
+            "title": "Want to Become a Stock Market Millionaire? History Says This Investment Can Get You There.",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/want-become-stock-market-millionaire-175000530.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-09T17:50:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T17:50:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/03298c50637751fc34ed50ac58ddf382",
+        "trendScore": 52,
+        "confidence": "low"
       }
     ],
     "ai": [
@@ -878,22 +886,22 @@
             "Record per-task runtime and token cost so expensive stages can be redesigned"
           ]
         },
-        "updatedAt": "2026-08-09T06:54:12.351Z"
+        "updatedAt": "2026-08-09T18:09:18.495Z"
       },
       {
         "id": "ai-b0cc69c201",
         "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
         "lane": "ai",
-        "title": "Gentoo's Bugzilla taken offline after AI scraper bot overload",
-        "summary": "Gentoo Linux's Bugzilla bug-tracking instance was reportedly closed after being overwhelmed by AI bot scrapers, according to a Hacker News post. Details on which bots, how long the outage lasted, or what mitigation Gentoo is pursuing are not yet clear from available reporting.",
-        "whyItMatters": "It's another sign of AI crawlers straining open-source infrastructure, a recurring friction point between AI companies' data-hungry bots and the projects that maintain the software much of the internet runs on.",
+        "title": "Gentoo Shuts Down Bugzilla After AI Bot Scraper Overload",
+        "summary": "Gentoo Linux's Bugzilla instance was taken offline after being overwhelmed by traffic from AI bot scrapers, according to a report circulating on Hacker News. The single-source report doesn't detail which crawlers were responsible or how long the outage lasted.",
+        "whyItMatters": "It's another data point in a growing pattern of AI crawlers straining open-source infrastructure, forcing maintainers to choose between accessibility and uptime.",
         "whatToWatch": [
-          "Whether Gentoo restores Bugzilla access and what anti-scraping measures it puts in place",
+          "Whether Gentoo restores Bugzilla access and what mitigations (rate limits, blocks, CAPTCHAs) it puts in place",
           "Whether other open-source projects report similar scraper-driven outages"
         ],
         "questions": [
-          "Which AI companies or crawlers were responsible for the load?",
-          "Is this an isolated incident or part of a broader pattern hitting open-source infrastructure?"
+          "Which companies or crawlers were driving the load?",
+          "Is this an isolated incident or part of a broader wave hitting open-source project infrastructure?"
         ],
         "sources": [
           {
@@ -905,406 +913,356 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-08T13:55:42Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "badge": "Breaking",
-        "trendScore": 36,
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "badge": "Infrastructure",
+        "trendScore": 27,
         "confidence": "low"
       },
       {
-        "id": "ai-0430b727e0",
-        "slug": "latent-space-newsletter-riffs-on-zawinski-s-law-of-multi-agents",
+        "id": "ai-226d6abbcd",
+        "slug": "1998-retrospective-on-the-alpha-21264-cpu-resurfaces-on-hacker-news",
         "lane": "ai",
-        "title": "Latent Space newsletter: 'Zawinski's Law of MultiAgents'",
-        "summary": "The Latent Space AI newsletter published an edition titled 'Zawinski's Law of MultiAgents,' riffing on the classic software adage that programs expand until they can do everything (or get replaced by ones that can) — applied here to multi-agent AI systems. Beyond the title, specifics of the newsletter's content aren't available from the source provided.",
-        "whyItMatters": "Multi-agent architectures are a live debate in AI engineering circles right now, and commentary framing their growing complexity through an old software-engineering law suggests the industry is grappling with whether multi-agent systems are converging on unwieldy scope creep.",
-        "whatToWatch": [
-          "Whether the multi-agent-complexity critique gains traction among AI engineering commentators"
-        ],
+        "title": "1998 Retrospective on the Alpha 21264 CPU Resurfaces on Hacker News",
+        "summary": "A 1998 article revisiting the Alpha 21264, a RISC processor once run under Windows NT, is trending on Hacker News. It's a retro hardware piece rather than a current industry development, and no further detail beyond the title and posting is available.",
+        "whyItMatters": "It's a niche computing-history item with no apparent connection to current AI industry developments; included here mainly because of its visibility on Hacker News.",
+        "whatToWatch": [],
         "questions": [
-          "What specific argument or examples does the newsletter make about multi-agent systems ballooning in scope?"
+          "Why is a 1998 CPU retrospective resurfacing in discussion now?"
         ],
         "sources": [
           {
-            "title": "[AINews] Zawinski's Law of MultiAgents",
-            "url": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
-            "publisher": "Latent Space",
-            "publishedAt": "2026-08-08T01:12:07.000Z"
+            "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
+            "url": "https://halfhill.com/byte/1998-12_alpha.html",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-09T10:06:37Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T01:12:07.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/87DyyMV0kCY",
-        "badge": "Analysis",
-        "trendScore": 22,
+        "publishedAt": "2026-08-09T10:06:37Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "trendScore": 42,
         "confidence": "low"
       }
     ],
     "tech": [
       {
-        "id": "tech-43cda8333a",
-        "slug": "x-scraps-misaligned-creator-revenue-sharing-program-for-new-original-c",
+        "id": "tech-e9cd45f00b",
+        "slug": "the-downsides-of-switching-from-iphone-to-android",
         "lane": "tech",
-        "title": "X scraps revenue-sharing program, launches 'Original Content Rewards'",
-        "summary": "X is ending its long-running ad revenue-sharing program for creators and replacing it with a new initiative called Original Content Rewards. TechCrunch reported the company described the old program as 'misaligned.' Full details on how payouts will work under the new system weren't specified in initial coverage.",
-        "whyItMatters": "Revenue-sharing terms heavily influence where creators and media accounts choose to post, so a structural change on X could shift creator activity across the social platform landscape.",
-        "whatToWatch": [
-          "How payouts are calculated under the new program",
-          "Whether X publishes clear eligibility criteria",
-          "Whether creators shift activity to competing platforms"
-        ],
-        "questions": [
-          "What specifically made the old revenue-sharing model 'misaligned'?",
-          "How will Original Content Rewards determine payouts?"
-        ],
-        "sources": [
-          {
-            "title": "X replaces its revenue-sharing program with ‘Original Content Rewards’",
-            "url": "https://www.theverge.com/tech/977143/x-revenue-sharing-original-content-rewards",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-08T21:15:12.000Z"
-          },
-          {
-            "title": "X replaces ‘misaligned’ revenue sharing program with Original Content Rewards",
-            "url": "https://techcrunch.com/2026/08/08/x-replaces-misaligned-revenue-sharing-program-with-original-content-rewards/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-08T16:34:22.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-08T16:34:22.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/STK160_X_TWITTER__B.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Platform",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-2b6c433816",
-        "slug": "planned-amazon-data-center-could-become-the-biggest-climate-polluter-i",
-        "lane": "tech",
-        "title": "Planned Amazon data center could become the biggest climate polluter in the US",
-        "summary": "A planned Amazon data center project could end up as the single largest source of climate pollution in the country, according to TechCrunch. The scale reflects the enormous power demands of AI-driven cloud infrastructure expansion. The report didn't detail the site's location, power source, or specific emissions figures.",
-        "whyItMatters": "Data centers are increasingly the biggest lever on big tech's carbon footprint as cloud providers race to add AI compute, making this a test case for how the industry squares growth with climate pledges.",
-        "whatToWatch": [
-          "Whether Amazon responds publicly to the projection",
-          "What power source ultimately supplies the facility",
-          "Any regulatory or community pushback on permitting"
-        ],
-        "questions": [
-          "What is driving the emissions estimate — the power source, scale, or both?",
-          "Has Amazon disputed or confirmed the report?"
-        ],
-        "sources": [
-          {
-            "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
-            "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-08T21:24:02.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T21:24:02.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/08/GettyImages-692150220.jpeg?resize=1200,800",
-        "badge": "Climate",
-        "trendScore": 48,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-c932997800",
-        "slug": "openai-acquires-presentation-startup-nextslide",
-        "lane": "tech",
-        "title": "OpenAI acquires presentation startup NextSlide",
-        "summary": "OpenAI has acquired NextSlide, a startup building presentation software, TechCrunch reported. The deal extends OpenAI's pattern of buying smaller product teams to bolt onto its platform. Financial terms and integration plans were not disclosed.",
-        "whyItMatters": "Presentations are a core piece of office productivity software; folding NextSlide into OpenAI signals a deeper push into everyday work tools, putting OpenAI in more direct competition with Microsoft and Google's productivity suites.",
-        "whatToWatch": [
-          "Whether NextSlide's technology surfaces inside ChatGPT or a new product",
-          "What happens to NextSlide's existing customers and team",
-          "Disclosure of deal terms"
-        ],
-        "questions": [
-          "What will happen to NextSlide's current product?",
-          "How much did OpenAI pay for the acquisition?"
-        ],
-        "sources": [
-          {
-            "title": "OpenAI acquires presentation startup NextSlide",
-            "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-08T19:41:13.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T19:41:13.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2259148891.jpg?resize=1200,686",
-        "badge": "M&A",
-        "trendScore": 47,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-3835de70aa",
-        "slug": "amazon-data-center-could-be-tied-to-the-country-s-most-polluting-power",
-        "lane": "tech",
-        "title": "An Amazon data center could house the country's worst-polluting power plant",
-        "summary": "A separate report from The Verge similarly finds that a planned Amazon data center site could end up hosting what becomes the most polluting power plant in the US. The finding underscores the environmental costs tied to the current AI computing buildout. Location, power source, and timeline details weren't included in the initial report.",
-        "whyItMatters": "As AI infrastructure investment accelerates, the power sourcing choices behind individual data centers are emerging as a flashpoint for climate accountability among major cloud providers.",
-        "whatToWatch": [
-          "Confirmation of the facility's planned power source",
-          "Any Amazon statement addressing the reporting",
-          "Follow-up analysis from environmental groups"
-        ],
-        "questions": [
-          "Is this the same project referenced in other recent reports on Amazon data centers?",
-          "What emissions modeling underlies the 'worst-polluting' claim?"
-        ],
-        "sources": [
-          {
-            "title": "An Amazon data center could have the worst polluting power plant in the country",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/977124/amazon-data-center-worst-polluting-power-plant",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-08T17:53:34.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T17:53:34.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_A.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Climate",
-        "trendScore": 45,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-b8e98f2116",
-        "slug": "a-450-laptop-from-an-unknown-brand-raises-a-too-good-to-be-true-questi",
-        "lane": "tech",
-        "title": "A $450 laptop from an unknown brand raises questions about budget PC quality",
-        "summary": "The Verge takes a close look at a $450 laptop from a little-known manufacturer, questioning whether the low price comes with hidden trade-offs. The piece points to a growing wave of budget laptops from lesser-known brands competing largely on price. The brand name and detailed specs weren't included beyond the headline.",
-        "whyItMatters": "A flood of low-cost, off-brand laptops in online marketplaces raises broader questions about quality control and consumer protection in a corner of the PC hardware market that gets far less scrutiny than major brands.",
+        "title": "The downsides of switching from iPhone to Android",
+        "summary": "Engadget published a piece examining the friction points users run into when switching from iPhone to Android, looking at where the transition falls short of expectations. The supplied source doesn't detail specific features or numbers beyond the general framing.",
+        "whyItMatters": "Ecosystem lock-in and switching costs remain a core dynamic shaping competition between Apple and Google, affecting how much real choice consumers have.",
         "whatToWatch": [],
         "questions": [
-          "Which manufacturer is behind the laptop?",
-          "What specific quality or performance issues, if any, did the review find?"
+          "Which specific features or workflows does the piece identify as the biggest switching pain points?"
         ],
         "sources": [
           {
-            "title": "Is this $450 laptop from an unknown brand too good to be true?",
-            "url": "https://www.theverge.com/tech/977031/chuwi-unibook-laptop-intel-wildcat-lake-review",
+            "title": "The downsides of switching from iPhone to Android",
+            "url": "https://www.engadget.com/2230980/biggest-downside-switching-from-iphone-to-android/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-09T14:30:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T14:30:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/the-downsides-of-switching-from-iphone-to-android/l-intro-1784723860.jpg",
+        "badge": "Analysis",
+        "trendScore": 59,
+        "confidence": "low"
+      },
+      {
+        "id": "tech-2383646773",
+        "slug": "zuckerberg-s-yacht-was-nearby-but-someone-else-rescued-a-stranded-boat",
+        "lane": "tech",
+        "title": "Zuckerberg's yacht was nearby, but someone else rescued a stranded boat",
+        "summary": "The Verge reported that Mark Zuckerberg's yacht was closer to a stranded boat in need of help, but it was another vessel that ultimately carried out the rescue. Details on the location and circumstances weren't included beyond that.",
+        "whyItMatters": "A minor anecdote, but it feeds the ongoing public narrative around how tech billionaires and their conspicuous personal assets are perceived.",
+        "whatToWatch": [],
+        "questions": [
+          "Why didn't Zuckerberg's yacht assist, and who ended up performing the rescue?"
+        ],
+        "sources": [
+          {
+            "title": "Zuckerberg’s yacht was closer, but someone else saved a stranded boat",
+            "url": "https://www.theverge.com/tech/977161/mark-zuckerberg-yacht-wilderness-legacy-stranded-boat",
             "publisher": "The Verge",
-            "publishedAt": "2026-08-08T12:00:00.000Z"
+            "publishedAt": "2026-08-09T17:20:30.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T12:00:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268691_Chuwi_UniBook_laptop_review_ADiBenedetto_0015.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "trendScore": 45,
+        "publishedAt": "2026-08-09T17:20:30.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2190858037.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "trendScore": 55,
         "confidence": "medium"
       },
       {
-        "id": "tech-da9c1e9c32",
-        "slug": "mars-first-self-driving-vehicle-proves-a-smashing-success",
+        "id": "tech-e230eba676",
+        "slug": "how-to-hide-and-unhide-an-app-on-your-iphone-or-ipad",
         "lane": "tech",
-        "title": "Mars's first self-driving vehicle proves a smashing success",
-        "summary": "Ars Technica reports that the first self-driving vehicle deployed on Mars has performed successfully, though the report doesn't specify which mission or vehicle is involved or how success was measured. The milestone points to autonomous navigation software being put to a real test in one of the harshest environments available.",
-        "whyItMatters": "Autonomy software proven under Mars's extreme conditions serves as a stress test for self-driving systems, and lessons learned can feed back into terrestrial autonomous vehicle and robotics development.",
-        "whatToWatch": [
-          "Further performance data on the vehicle's autonomous operation",
-          "Any follow-up statements on mission plans"
-        ],
-        "questions": [
-          "Which mission or vehicle is this referring to?",
-          "What metrics define 'smashing success' here?"
-        ],
-        "sources": [
-          {
-            "title": "The first self-driving vehicle on Mars has proven to be a smashing success",
-            "url": "https://arstechnica.com/space/2026/08/the-first-self-driving-vehicle-on-mars-has-proven-to-be-a-smashing-success/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-08-08T11:30:48.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T11:30:48.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/PIA26379-Sol-1295-Navcam-NLF_1295_0781909732_909RZS_N0603852NCAM02295_0A0195J01-1152x648.jpg",
-        "badge": "Space",
-        "trendScore": 45,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-f092b94bca",
-        "slug": "amazon-s-kindle-scribe-colorsoft-brings-color-e-ink-to-its-writable-ta",
-        "lane": "tech",
-        "title": "Amazon's Kindle Scribe Colorsoft: fun, but not a must-have upgrade",
-        "summary": "TechCrunch's review of Amazon's Kindle Scribe Colorsoft finds the color e-ink note-taking device enjoyable to use but not essential for most owners of the existing Kindle Scribe. It marks Amazon's continued push to bring color e-ink to its device lineup. Pricing and full spec details weren't covered in the source.",
-        "whyItMatters": "Amazon's expansion into color e-ink shows where the broader e-reader and note-taking device market is heading, and how the dominant player is responding to smaller competitors already selling color e-ink hardware.",
-        "whatToWatch": [
-          "Broader reviewer and consumer reception of the Colorsoft",
-          "Whether color e-ink becomes standard across future Kindle Scribe models"
-        ],
-        "questions": [
-          "How is the Colorsoft priced relative to the standard Kindle Scribe?"
-        ],
-        "sources": [
-          {
-            "title": "The Kindle Scribe Colorsoft is a lot of fun, but it’s not a must-have",
-            "url": "https://techcrunch.com/2026/08/08/the-kindle-scribe-colorsoft-is-a-lot-of-fun-but-its-not-a-must-have/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-08T16:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T16:00:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/kindle-scribe-colorsoft.jpg?resize=1200,900",
-        "trendScore": 44,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-7d0e3e965a",
-        "slug": "census-proposal-would-drop-counts-of-undocumented-immigrants-race-and-",
-        "lane": "tech",
-        "title": "Census proposal would drop counts of undocumented immigrants, race, and sexual orientation",
-        "summary": "Wired reports on a proposal that would change how the US Census counts the population — no longer counting undocumented immigrants and dropping data collection on race and sexual orientation. This would mark a significant shift in what demographic data the federal government collects. Who is behind the proposal and its current status weren't detailed beyond the report.",
-        "whyItMatters": "Census data underpins how companies, researchers, and policymakers model demographics and target resources; removing these categories would ripple into data-driven decisions well beyond government, including in tech and research sectors that rely on that data.",
-        "whatToWatch": [
-          "Whether the proposal advances through any official rulemaking process",
-          "Reaction from civil-rights and data-advocacy groups",
-          "Any stated timeline for implementation"
-        ],
-        "questions": [
-          "Who introduced this proposal and at what stage is it?",
-          "Would any replacement methodology be used for the removed categories?"
-        ],
-        "sources": [
-          {
-            "title": "Census Proposal Would Stop Counting Undocumented Immigrants—and Ignore Race and Sexual Orientation",
-            "url": "https://www.wired.com/story/census-proposal-would-stop-counting-undocumented-immigrants-and-ignore-race-and-sexual-orientation/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-08T14:03:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-08T14:03:58.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://media.wired.com/photos/6a7630b55d2ebc1c5247b509/master/pass/GettyImages-157580450-edited.jpg",
-        "badge": "Policy",
-        "trendScore": 42,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-1201796266",
-        "slug": "tips-for-getting-more-battery-life-out-of-retro-handheld-game-consoles",
-        "lane": "tech",
-        "title": "How to get the most battery life out of your retro handheld game console",
-        "summary": "Engadget published a practical guide on maximizing battery life for retro-style handheld gaming devices, a hardware category that has grown popular alongside the resurgence of retro emulation handhelds. It's a how-to piece rather than a news event, and no specific device models or settings were detailed in the source.",
-        "whyItMatters": "Retro handhelds have become a notable niche in gaming hardware, and battery performance is a key factor in how these devices compete against mainstream options like the Switch or Steam Deck.",
+        "title": "How to hide and unhide an app on your iPhone or iPad",
+        "summary": "Engadget published a how-to guide explaining Apple's built-in feature for hiding and unhiding apps on iPhone and iPad, along with reasons a user might want to use it.",
+        "whyItMatters": "Reflects continued user interest in the privacy and home-screen customization tools Apple has layered into recent iOS versions.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "How to get the best battery life from your retro handheld game console",
-            "url": "https://www.engadget.com/2230359/retro-handheld-game-console-how-to-best-battery-life/",
+            "title": "How to hide and unhide an app on your iPhone or iPad (and why you may want to)",
+            "url": "https://www.engadget.com/2230843/how-to-hide-unhide-app-iphone-ipad-why-may-want-to/",
             "publisher": "Engadget",
-            "publishedAt": "2026-08-08T17:30:00.000Z"
+            "publishedAt": "2026-08-09T15:30:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T17:30:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://www.engadget.com/img/gallery/how-to-get-the-best-battery-life-from-your-retro-handheld-game-console/l-intro-1785873741.jpg",
-        "trendScore": 41,
+        "publishedAt": "2026-08-09T15:30:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/how-to-hide-and-unhide-an-app-on-your-iphone-or-ipad-and-why-you-may-want-to/l-intro-1785943020.jpg",
+        "trendScore": 55,
         "confidence": "low"
       },
       {
-        "id": "tech-cda3c39df1",
-        "slug": "sharpest-image-ever-taken-of-the-sun-reveals-a-previously-hidden-pheno",
+        "id": "tech-c7fe0574fd",
+        "slug": "techcrunch-mobility-zoox-preps-for-launch-as-uber-expands-its-robotaxi",
         "lane": "tech",
-        "title": "Sharpest image ever taken of the Sun reveals a hidden phenomenon",
-        "summary": "Wired reports that a new solar image — described as the sharpest ever captured — has revealed a previously hidden phenomenon. The achievement reflects advances in solar-imaging instrumentation. Which observatory or instrument produced the image, and exactly what phenomenon was found, weren't detailed beyond the headline.",
-        "whyItMatters": "Higher-resolution solar imaging helps scientists better understand and eventually predict solar activity that can disrupt satellites, power grids, and communications infrastructure the tech industry depends on.",
+        "title": "TechCrunch Mobility: Zoox preps for launch as Uber expands its robotaxi reach",
+        "summary": "TechCrunch's Mobility newsletter covered Amazon-owned Zoox's preparations for a commercial robotaxi launch, alongside a look at Uber's growing footprint in autonomous vehicles. The roundup frames both within the wider competitive race among self-driving operators.",
+        "whyItMatters": "Autonomous vehicles are one of tech's most capital-intensive bets, and movement from Zoox and Uber signals how close robotaxi services are to real commercial scale.",
         "whatToWatch": [
-          "Publication of detailed findings from the imaging breakthrough",
-          "Follow-up observations building on the discovery"
+          "Timing and location of Zoox's commercial launch",
+          "Additional Uber autonomous-vehicle partnership news"
         ],
         "questions": [
-          "Which telescope or observatory captured the image?",
-          "What is the newly identified phenomenon?"
+          "Which markets is Zoox targeting first, and how does that compare with Uber's AV partner rollout?"
         ],
         "sources": [
           {
-            "title": "The Sharpest Image Ever Taken of the Sun Reveals a Hidden Phenomenon",
-            "url": "https://www.wired.com/story/the-sharpest-image-ever-taken-of-the-sun-reveals-a-beautiful-hidden-phenomenon/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-08T13:00:00.000Z"
+            "title": "TechCrunch Mobility: Zoox prepares for launch and Uber’s AV empire",
+            "url": "https://techcrunch.com/2026/08/09/techcrunch-mobility-zoox-prepares-for-launch-and-ubers-av-empire/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-09T16:05:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T13:00:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://media.wired.com/photos/6a763d9eaaeaaaadb9031470/master/pass/fotografia%20del%20sol.jpg",
-        "badge": "Science",
-        "trendScore": 41,
+        "publishedAt": "2026-08-09T16:05:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Zoox-Robotaxi-Vegas.jpg?resize=1200,676",
+        "badge": "Industry",
+        "trendScore": 54,
         "confidence": "medium"
       },
       {
-        "id": "tech-ced37a307d",
-        "slug": "xteink-x4-pro-pocket-e-reader-reviewed-fun-but-limited",
+        "id": "tech-3f7c800bfd",
+        "slug": "the-ai-safety-test-is-becoming-a-safety-risk",
         "lane": "tech",
-        "title": "Xteink X4 Pro pocket e-reader: fun but limited, per new review",
-        "summary": "Wired's review of the Xteink X4 Pro, a pocket-sized e-reader, describes it as fun to use but limited in capability. It's part of a wave of smaller, niche e-reader hardware from lesser-known brands entering the market. Pricing and spec details weren't included beyond the review's headline.",
-        "whyItMatters": "Devices like the X4 Pro show how the e-reader hardware market is fragmenting beyond established players like Amazon and Kobo, giving buyers more choice but more variable quality.",
+        "title": "The AI safety test is becoming a safety risk",
+        "summary": "TechCrunch reported on concerns that some current AI safety-testing practices may themselves be introducing new risks rather than only catching them. The piece doesn't specify which labs or tests are involved beyond the general premise.",
+        "whyItMatters": "As AI companies race to ship increasingly capable models, questions about whether existing safety evaluation methods are adequate matter to regulators, enterprises, and the public relying on those checks.",
         "whatToWatch": [],
         "questions": [
-          "What specifically limits the device's usefulness according to the review?"
+          "Which specific safety-testing practices are flagged as risky, and by which researchers or labs?"
         ],
         "sources": [
           {
-            "title": "Xteink X4 Pro Pocket E-Reader Review (2026): Fun but Limited",
-            "url": "https://www.wired.com/review/xteink-x4-pro-e-reader/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-08T10:36:00.000Z"
+            "title": "The AI safety test is becoming a safety risk",
+            "url": "https://techcrunch.com/2026/08/09/the-ai-safety-test-is-becoming-a-safety-risk/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-09T14:30:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T10:36:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://media.wired.com/photos/6a7697d0de0a40f999466696/master/pass/Review--Xteink-X4-Pro-E-Reader.jpg",
-        "trendScore": 39,
+        "publishedAt": "2026-08-09T14:30:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2255991416.jpg?resize=1200,795",
+        "badge": "Analysis",
+        "trendScore": 53,
         "confidence": "medium"
       },
       {
-        "id": "tech-9f3617953e",
-        "slug": "flock-s-plans-for-rideshare-dashcams-and-coaching-police-revealed",
+        "id": "tech-7b665f29e0",
+        "slug": "an-adversarial-pattern-can-reportedly-stop-surveillance-cameras-from-d",
         "lane": "tech",
-        "title": "Flock's plans for rideshare dashcams and 'coaching' police revealed",
-        "summary": "Wired reports on newly revealed plans from surveillance-tech company Flock involving dashcams for rideshare vehicles and a system for 'coaching' police officers, expanding the company's footprint beyond its known automated license-plate-reader network. Specifics on the products and rollout timeline weren't detailed beyond the report.",
-        "whyItMatters": "Flock has become a major player in law-enforcement surveillance technology, and its expansion into rideshare monitoring and police-coaching tools raises fresh questions about the scope and oversight of private surveillance infrastructure.",
+        "title": "An 'adversarial' pattern can reportedly stop surveillance cameras from detecting you",
+        "summary": "TechCrunch covered an 'adversarial' visual pattern designed to prevent AI-driven surveillance camera systems from detecting a person wearing it. The source doesn't specify who developed it or how it was tested.",
+        "whyItMatters": "Adds another data point to the ongoing arms race between AI-powered surveillance systems and countermeasures aimed at preserving individual privacy.",
         "whatToWatch": [
-          "Any official confirmation or response from Flock",
-          "Reaction from privacy advocates or regulators",
-          "Rollout timeline for the new products"
+          "Whether surveillance vendors respond with updated detection models"
         ],
         "questions": [
-          "What does 'coaching police' via this system actually involve?",
-          "Which rideshare companies, if any, are participating?"
+          "Who created the pattern, and how effective is it against widely deployed camera systems?"
         ],
         "sources": [
           {
-            "title": "Flock’s Plans for Rideshare Dashcams and Coaching Police, Revealed",
-            "url": "https://www.wired.com/story/flocks-plans-for-rideshare-dashcams-and-coaching-police-revealed/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-08T10:30:00.000Z"
+            "title": "This ‘adversarial’ pattern can prevent surveillance cameras from detecting you",
+            "url": "https://techcrunch.com/2026/08/09/this-adversarial-pattern-can-prevent-surveillance-cameras-from-detecting-you/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-09T14:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-08T10:30:00.000Z",
-        "updatedAt": "2026-08-09T06:54:12.351Z",
-        "imageUrl": "https://media.wired.com/photos/6a761d7874fba122f8d7a913/master/pass/Security-News-Flock-Rideshare-Spies-Security.jpg",
-        "badge": "Surveillance",
-        "trendScore": 39,
+        "publishedAt": "2026-08-09T14:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/donut-media-car-swearingen.jpg?resize=1151,1200",
+        "trendScore": 53,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-46a586af45",
+        "slug": "how-to-format-a-usb-drive-on-windows",
+        "lane": "tech",
+        "title": "How to format a USB drive on Windows",
+        "summary": "Engadget published a step-by-step guide covering how to format a USB drive using Windows.",
+        "whyItMatters": "A practical utility guide rather than a news event, included as a widely relevant everyday computing task.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "Here's how to format a USB drive on Windows",
+            "url": "https://www.engadget.com/2230979/how-to-format-usb-drive-on-windows/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-09T17:30:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T17:30:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/heres-how-to-format-a-usb-drive-on-windows/l-intro-1785419822.jpg",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "tech-cb658900a9",
+        "slug": "49ers-coach-says-his-tesla-was-on-autopilot-when-he-crashed",
+        "lane": "tech",
+        "title": "49ers coach says his Tesla was on Autopilot when he crashed",
+        "summary": "The Verge reported that a San Francisco 49ers coach said his Tesla was operating on Autopilot at the time he was involved in a crash. Further details on the crash's circumstances weren't included in the supplied source.",
+        "whyItMatters": "Adds to a continuing string of incidents drawing regulatory and legal scrutiny toward Tesla's Autopilot and driver-assistance systems.",
+        "whatToWatch": [
+          "Whether an official investigation into the crash is opened",
+          "Any response from Tesla or regulators"
+        ],
+        "questions": [
+          "What do the vehicle's logs show about Autopilot's role in the crash?"
+        ],
+        "sources": [
+          {
+            "title": "49ers coach says his Tesla was on Autopilot when he crashed",
+            "url": "https://www.theverge.com/transportation/977155/49ers-coach-tesla-autopilot-crash",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-09T15:56:49.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T15:56:49.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2275684974.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Safety",
+        "trendScore": 49,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-8a140677d0",
+        "slug": "tcl-s-note-a1-nxtpaper-reviewed-as-a-hybrid-note-taking-and-video-tabl",
+        "lane": "tech",
+        "title": "TCL's Note A1 NXTPAPER reviewed as a hybrid note-taking and video tablet",
+        "summary": "Wired reviewed the TCL Note A1 NXTPAPER, a tablet positioned to handle both note-taking and video viewing using TCL's paper-like display technology.",
+        "whyItMatters": "Shows continued competition in the budget and hybrid tablet segment as vendors look for footholds outside Apple's iPad and traditional e-readers.",
+        "whatToWatch": [],
+        "questions": [
+          "How does its display and pricing stack up against rival note-taking tablets?"
+        ],
+        "sources": [
+          {
+            "title": "TCL Note A1 Nxtpaper Review (2026): A Hybrid Tablet for Taking Notes and Watching Video",
+            "url": "https://www.wired.com/review/tcl-note-a1-nxtpaper-tablet/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-09T10:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T10:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://media.wired.com/photos/6a7777951b168fc0244a387c/master/pass/Review--TCL-Note-A1-Nxtpaper.jpg",
+        "badge": "Review",
+        "trendScore": 49,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-e5c33fdec6",
+        "slug": "wired-rounds-up-the-best-workout-headphones-and-earbuds-of-2026",
+        "lane": "tech",
+        "title": "Wired rounds up the best workout headphones and earbuds of 2026",
+        "summary": "Wired published a buying guide covering top workout headphones and earbuds, including options from Beats, Bose, and Apple.",
+        "whyItMatters": "A consumer buying guide rather than a news event, useful mainly as a snapshot of which audio brands currently lead the fitness-earbud category.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "8 Best Workout Headphones & Earbuds: Beats, Bose, Apple (2026)",
+            "url": "https://www.wired.com/story/the-best-workout-headphones-and-earbuds/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-09T09:37:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T09:37:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://media.wired.com/photos/6a7774ae9524e31475152b8b/master/pass/The-Best-Workout-Headphones-and-Earbuds-for-Your-Sweatiest-Training-Sessions.jpg",
+        "trendScore": 49,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-9d1b3cc68d",
+        "slug": "historian-jill-lepore-says-silicon-valley-misreads-science-fiction-and",
+        "lane": "tech",
+        "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+        "summary": "TechCrunch reported on comments from historian Jill Lepore arguing that Silicon Valley's reading of science fiction shapes its worldview in ways that can undermine democratic norms.",
+        "whyItMatters": "Feeds a broader ongoing debate about the ideology and cultural influences behind tech-industry leadership and product decisions.",
+        "whatToWatch": [],
+        "questions": [
+          "Which specific tech leaders or companies does Lepore cite as examples?"
+        ],
+        "sources": [
+          {
+            "title": "Historian Jill Lepore says Silicon Valley misreads science fiction and undermines democracy",
+            "url": "https://techcrunch.com/2026/08/09/historian-jill-lepore-says-the-tech-industry-is-led-by-bad-readers-who-are-undermining-democracy/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-09T15:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T15:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-491300440.jpg?w=1024",
+        "badge": "Analysis",
+        "trendScore": 48,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-12c14b40d4",
+        "slug": "a-former-red-light-district-has-become-one-of-the-world-s-top-ai-hubs",
+        "lane": "tech",
+        "title": "A former red-light district has become one of the world's top AI hubs",
+        "summary": "TechCrunch reported that a neighborhood once known as a notorious red-light district has transformed into a major hub for AI companies and talent. The supplied source doesn't name the specific city or companies involved.",
+        "whyItMatters": "Illustrates how AI investment is reshaping urban economies and tech clusters beyond the traditional Silicon Valley map.",
+        "whatToWatch": [],
+        "questions": [
+          "Which city and district is this, and which companies are driving the shift?"
+        ],
+        "sources": [
+          {
+            "title": "This former notorious red-light district is now one of the world’s top AI hubs",
+            "url": "https://techcrunch.com/2026/08/09/this-former-notorious-red-light-district-is-now-one-of-the-worlds-top-ai-hubs/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-09T13:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-09T13:00:00.000Z",
+        "updatedAt": "2026-08-09T18:09:18.495Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/VladSt.jpg?resize=1200,737",
+        "trendScore": 47,
         "confidence": "medium"
       }
     ]
