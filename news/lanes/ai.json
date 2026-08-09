@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-09T00:53:56.597Z",
-  "contentVersion": 22,
+  "generatedAt": "2026-08-09T06:54:12.351Z",
+  "contentVersion": 23,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,23 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-09T00:53:56.597Z"
+      "updatedAt": "2026-08-09T06:54:12.351Z"
     },
     {
       "id": "ai-b0cc69c201",
       "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
       "lane": "ai",
-      "title": "Gentoo Bugzilla Taken Offline Amid AI Bot Scraper Overload",
-      "summary": "Gentoo's Bugzilla bug tracker was reportedly closed after being overwhelmed by traffic from AI bot scrapers, according to a post on Hacker News. Details on which bots or companies were responsible, and how long the outage will last, are not yet clear from available reporting.",
-      "whyItMatters": "It's another data point in the mounting friction between aggressive AI data-scraping crawlers and the open-source infrastructure that underpins much of the software world, with real operational costs falling on volunteer maintainers.",
+      "title": "Gentoo's Bugzilla taken offline after AI scraper bot overload",
+      "summary": "Gentoo Linux's Bugzilla bug-tracking instance was reportedly closed after being overwhelmed by AI bot scrapers, according to a Hacker News post. Details on which bots, how long the outage lasted, or what mitigation Gentoo is pursuing are not yet clear from available reporting.",
+      "whyItMatters": "It's another sign of AI crawlers straining open-source infrastructure, a recurring friction point between AI companies' data-hungry bots and the projects that maintain the software much of the internet runs on.",
       "whatToWatch": [
-        "Whether Gentoo restores full Bugzilla access and on what timeline",
-        "Any anti-scraping or rate-limiting measures Gentoo puts in place",
-        "Whether other open-source projects report similar overload incidents"
+        "Whether Gentoo restores Bugzilla access and what anti-scraping measures it puts in place",
+        "Whether other open-source projects report similar scraper-driven outages"
       ],
       "questions": [
-        "Which AI companies' bots are driving the overload?",
-        "Is this a temporary closure or a longer-term access change?"
+        "Which AI companies or crawlers were responsible for the load?",
+        "Is this an isolated incident or part of a broader pattern hitting open-source infrastructure?"
       ],
       "sources": [
         {
@@ -151,57 +150,23 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T13:55:42Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "badge": "Open Source",
-      "trendScore": 41,
+      "updatedAt": "2026-08-09T06:54:12.351Z",
+      "badge": "Breaking",
+      "trendScore": 36,
       "confidence": "low"
-    },
-    {
-      "id": "ai-d8746b1ce6",
-      "slug": "google-showcases-builders-using-gemini-omni",
-      "lane": "ai",
-      "title": "Google Showcases 5 Builders Using Gemini Omni",
-      "summary": "Google DeepMind published a post spotlighting five builders and the projects they've made using Gemini Omni. The post appears to be a developer-facing showcase rather than a new product announcement, though specifics on what Gemini Omni adds beyond existing Gemini models aren't detailed in the available source.",
-      "whyItMatters": "Highlighting concrete builder projects is part of how Google demonstrates developer traction for its Gemini line as it competes with OpenAI and Anthropic for mindshare among app developers.",
-      "whatToWatch": [
-        "Whether Google follows up with broader availability or pricing details for Gemini Omni",
-        "Additional builder spotlights or case studies",
-        "Developer reaction and adoption signals"
-      ],
-      "questions": [
-        "What distinguishes Gemini Omni from other Gemini models?",
-        "Is this a limited preview program or generally available today?"
-      ],
-      "sources": [
-        {
-          "title": "See what 5 builders are making with Gemini Omni",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/",
-          "publisher": "Google DeepMind",
-          "publishedAt": "2026-08-07T14:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T14:00:00.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Omni_hero.max-600x600.format-webp.webp",
-      "badge": "Product",
-      "trendScore": 31,
-      "confidence": "medium"
     },
     {
       "id": "ai-0430b727e0",
       "slug": "latent-space-newsletter-riffs-on-zawinski-s-law-of-multi-agents",
       "lane": "ai",
-      "title": "Latent Space Newsletter: 'Zawinski's Law of Multi-Agents'",
-      "summary": "Latent Space's AINews roundup published a piece framed around 'Zawinski's Law of Multi-Agents,' riffing on the classic software adage to comment on trends in multi-agent AI system design. The available source is a newsletter headline without further detail on the specific argument or examples cited.",
-      "whyItMatters": "Multi-agent architectures are one of the most actively debated design patterns in AI engineering right now, and commentary from a widely-read newsletter can shape how builders think about their tradeoffs.",
+      "title": "Latent Space newsletter: 'Zawinski's Law of MultiAgents'",
+      "summary": "The Latent Space AI newsletter published an edition titled 'Zawinski's Law of MultiAgents,' riffing on the classic software adage that programs expand until they can do everything (or get replaced by ones that can) — applied here to multi-agent AI systems. Beyond the title, specifics of the newsletter's content aren't available from the source provided.",
+      "whyItMatters": "Multi-agent architectures are a live debate in AI engineering circles right now, and commentary framing their growing complexity through an old software-engineering law suggests the industry is grappling with whether multi-agent systems are converging on unwieldy scope creep.",
       "whatToWatch": [
-        "Whether the 'Zawinski's Law' framing gets picked up elsewhere as shorthand for multi-agent critique",
-        "Follow-on discussion from AI engineers and framework builders"
+        "Whether the multi-agent-complexity critique gains traction among AI engineering commentators"
       ],
       "questions": [
-        "What specific multi-agent pattern or products does the piece critique?",
-        "Is this framed as a warning against over-engineering multi-agent systems?"
+        "What specific argument or examples does the newsletter make about multi-agent systems ballooning in scope?"
       ],
       "sources": [
         {
@@ -213,43 +178,11 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T01:12:07.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/87DyyMV0kCY",
       "badge": "Analysis",
-      "trendScore": 27,
+      "trendScore": 22,
       "confidence": "low"
-    },
-    {
-      "id": "ai-833934ee3b",
-      "slug": "openai-addresses-next-frontier-of-critical-cyber-capabilities",
-      "lane": "ai",
-      "title": "OpenAI Addresses 'Next Frontier' of Critical Cyber Capabilities",
-      "summary": "OpenAI published a post describing how it is responding to what it calls the next frontier of critical cyber capabilities, language that points to growing concern over AI models' offensive or defensive cybersecurity potential. The source available doesn't specify the concrete measures or triggering findings behind the post.",
-      "whyItMatters": "As frontier models grow more capable, how leading labs frame and mitigate cyber-related risks feeds directly into industry safety norms and the broader AI regulation debate.",
-      "whatToWatch": [
-        "Any concrete safeguards or policy changes OpenAI details as follow-up",
-        "Whether other AI labs issue comparable statements on cyber risk",
-        "Regulatory or government reaction"
-      ],
-      "questions": [
-        "What specific capability advances prompted this response?",
-        "What concrete safeguards, if any, is OpenAI committing to?"
-      ],
-      "sources": [
-        {
-          "title": "Responding to the next frontier of critical cyber capabilities",
-          "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-07T15:20:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-07T15:20:00.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2OqBX7eh31rmzCVTZrZgb6/8c852b5a1f787c1fea8ac9de5a33d2db/Frame.png?w=1600&h=900&fit=fill",
-      "badge": "Safety",
-      "trendScore": 27,
-      "confidence": "medium"
     }
   ]
 }

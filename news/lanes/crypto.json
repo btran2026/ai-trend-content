@@ -1,23 +1,23 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-09T00:53:56.597Z",
-  "contentVersion": 22,
+  "generatedAt": "2026-08-09T06:54:12.351Z",
+  "contentVersion": 23,
   "stories": [
     {
       "id": "crypto-46aef82337",
       "slug": "bitcoin-s-bip-110-soft-fork-begins-mandatory-signaling-with-miner-supp",
       "lane": "crypto",
-      "title": "Bitcoin's BIP-110 soft fork begins mandatory signaling with miner support under 3%",
-      "summary": "Bitcoin's contested BIP-110 proposal has moved into its mandatory signaling phase, with CoinDesk pegging the start around block 961,632. Cointelegraph reports miner support is currently below 3%, far short of the levels soft forks typically need to activate. Both outlets describe the proposal as controversial within the mining and developer community.",
-      "whyItMatters": "Soft forks change Bitcoin's consensus rules, and unusually low miner buy-in raises real doubt about whether this one activates — a concrete protocol-risk signal for anyone tracking Bitcoin's technical roadmap.",
+      "title": "Bitcoin's BIP-110 soft fork enters mandatory signaling with miner support under 3%",
+      "summary": "A contested Bitcoin Improvement Proposal, BIP-110, entered its mandatory signaling phase at block 961,632, according to CoinDesk and Cointelegraph. Miner support for the proposal is running below 3%, well short of the broad consensus soft forks typically need to activate cleanly.",
+      "whyItMatters": "Thin miner buy-in for a live signaling attempt is a live test of how Bitcoin's governance handles contested protocol changes, with implications for network stability if the attempt stalls or splits opinion.",
       "whatToWatch": [
-        "Whether miner signaling support rises toward an activation threshold in the coming weeks",
-        "Reaction from major mining pools and core developers",
-        "What happens if the signaling window closes without sufficient support"
+        "Whether miner signaling support rises before any activation deadline",
+        "Statements from core developers or major mining pools on the proposal",
+        "Whether the signaling attempt is allowed to run its course or is abandoned"
       ],
       "questions": [
-        "Why is miner support starting so low?",
-        "Is this fork attempt likely to be abandoned or retried?"
+        "What happens to the fork attempt if the signaling threshold is never met?",
+        "Who is driving BIP-110 and what problem is it meant to solve?"
       ],
       "sources": [
         {
@@ -35,27 +35,57 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-08T20:06:47.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/the-bitcoin-and-bitcoin-cash-wars.png",
-      "badge": "Protocol",
-      "trendScore": 66,
+      "badge": "Breaking",
+      "trendScore": 61,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-e6209ebe75",
+      "slug": "bip-110-fork-attempt-mines-two-blocks-then-stalls",
+      "lane": "crypto",
+      "title": "BIP-110 fork attempt mines two blocks, then stalls",
+      "summary": "A day after mandatory signaling began with miner support under 3%, the BIP-110 soft-fork attempt mined two blocks before stopping, CoinDesk reports. No further detail on the cause was provided.",
+      "whyItMatters": "An early stall so soon after launch suggests the low miner support seen at signaling translated directly into the attempt losing momentum, a useful data point on how contested Bitcoin protocol changes fare in practice.",
+      "whatToWatch": [
+        "Whether proponents restart or formally abandon the attempt",
+        "Any technical post-mortem from developers on why it stopped"
+      ],
+      "questions": [
+        "Was the stoppage a technical failure or a deliberate pause?",
+        "Does this effectively end the BIP-110 push?"
+      ],
+      "sources": [
+        {
+          "title": "Controversial Bitcoin fork BIP-110 mines two blocks, then stops",
+          "url": "https://www.coindesk.com/tech/2026/08/09/controversial-bitcoin-fork-bip-110-mines-two-blocks-then-stops",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-09T05:08:20.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T05:08:20.000Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f224848aaca775da0faa59a78c4901d5e0ae5d09-2560x1707.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Update",
+      "trendScore": 60,
       "confidence": "medium"
     },
     {
       "id": "crypto-e8ba0e633e",
       "slug": "bitcoin-and-ether-etfs-pull-in-over-1b-in-their-best-week-since-april-",
       "lane": "crypto",
-      "title": "Bitcoin and Ether ETFs post $1B week, best since April, with BlackRock taking 80% of inflows",
-      "summary": "US spot Bitcoin and Ether ETFs together pulled in more than $1 billion over the week, their strongest showing since April, according to CryptoSlate. BlackRock's funds accounted for roughly 80% of that new money, underscoring how concentrated the inflow rebound has been among issuers.",
-      "whyItMatters": "A return of sizable ETF inflows — especially this concentrated in one issuer — is a concrete, trackable sign of institutional demand rather than sentiment alone.",
+      "title": "Bitcoin and Ether ETFs pull in over $1B in their best week since April, with BlackRock taking 80%",
+      "summary": "US spot Bitcoin and Ethereum ETFs combined took in more than $1 billion over the week, their strongest week since April, per CryptoSlate. BlackRock's funds captured roughly 80% of that inflow, far outpacing rival issuers.",
+      "whyItMatters": "Weekly ETF flows remain one of the clearest read-outs of institutional demand for crypto exposure, and the concentration in one issuer says something about where big allocators are choosing to route money.",
       "whatToWatch": [
-        "Whether inflows continue into next week",
-        "How flows split between Bitcoin and Ether funds",
-        "Whether other issuers start closing the gap with BlackRock"
+        "Whether next week's flow data sustains or reverses the rebound",
+        "Whether other issuers narrow BlackRock's share of inflows"
       ],
       "questions": [
-        "What specifically drove this week's rebound?",
-        "Is BlackRock's outsized share reshaping ETF market structure long-term?"
+        "What specifically drove the pickup in demand this week?",
+        "How much of the flow is new money versus rotation between funds?"
       ],
       "sources": [
         {
@@ -67,26 +97,57 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T18:40:18.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/blackrock-etf-crane.jpg",
       "badge": "ETF Flows",
-      "trendScore": 62,
+      "trendScore": 57,
       "confidence": "low"
+    },
+    {
+      "id": "crypto-8c3eea7630",
+      "slug": "btcpay-server-restricts-remote-lightning-access-after-attackers-steal-",
+      "lane": "crypto",
+      "title": "BTCPay Server restricts remote Lightning access after attackers steal funds",
+      "summary": "BTCPay Server has locked down remote access to its Lightning Network functionality after attackers exploited it to steal funds, according to Cointelegraph. The report did not specify the scale of losses or the exact vulnerability used.",
+      "whyItMatters": "BTCPay is widely used self-hosted payment infrastructure for Bitcoin merchants, so a theft-driven lockdown of its Lightning access is a concrete security incident for anyone relying on it for payments.",
+      "whatToWatch": [
+        "Official disclosure of losses and the attack vector",
+        "Whether a patch or permanent fix follows the restriction"
+      ],
+      "questions": [
+        "How much was actually stolen?",
+        "Is the restriction temporary or a lasting change to how remote Lightning access works?"
+      ],
+      "sources": [
+        {
+          "title": "BTCPay restricts remote Lightning access after attackers steal funds",
+          "url": "https://cointelegraph.com/news/btcpay-restricts-remote-lightning-access-after-attackers-steal-funds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-09T05:46:07.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T05:46:07.000Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/thief-bitcoin.png",
+      "badge": "Security",
+      "trendScore": 55,
+      "confidence": "medium"
     },
     {
       "id": "crypto-ce450b8f4a",
       "slug": "bitcoin-xrp-solana-and-tron-have-outpaced-ethereum-and-cardano-in-inve",
       "lane": "crypto",
-      "title": "Bitcoin, XRP, Solana and Tron have outpaced Ethereum and Cardano every month since 2022, CryptoSlate analysis finds",
-      "summary": "A CryptoSlate analysis of investor buying activity reportedly shows Bitcoin, XRP, Solana and Tron beating Ethereum and Cardano on a monthly basis in every month since 2022. The piece frames this as a multi-year pattern in where investor money has gone.",
-      "whyItMatters": "If accurate, a multi-year divergence in investor demand between these two groups of assets would matter for anyone weighing allocation among major chains beyond short-term price moves.",
+      "title": "Bitcoin, XRP, Solana and Tron have outpaced Ethereum and Cardano in investor buying every month since 2022",
+      "summary": "CryptoSlate reports that Bitcoin, XRP, Solana and Tron have beaten Ethereum and Cardano on investor buying in every single month going back to 2022, per its analysis.",
+      "whyItMatters": "A multi-year pattern in relative demand across large-cap tokens is a signal for how investor preference among major chains has shifted, beyond any single month's noise.",
       "whatToWatch": [
-        "Whether the pattern holds through coming months",
-        "Any follow-up detailing the underlying data or methodology"
+        "Whether Ethereum or Cardano interrupt the streak in coming months",
+        "Any catalysts (ETF approvals, upgrades) that could shift the pattern"
       ],
       "questions": [
-        "What exactly is being measured — price, net inflows, or on-chain activity?",
-        "Does 'beating' account for market-cap differences between these assets?"
+        "What exact metric is being used to define \"investor buying\" here?",
+        "Does this reflect retail flows, institutional flows, or both?"
       ],
       "sources": [
         {
@@ -98,25 +159,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T16:10:55.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/crypto-dca-gains-losses.jpg",
       "badge": "Analysis",
-      "trendScore": 60,
+      "trendScore": 55,
       "confidence": "low"
     },
     {
       "id": "crypto-b731ca6046",
       "slug": "us-spot-bitcoin-etfs-post-best-week-since-april-with-1b-in-inflows",
       "lane": "crypto",
-      "title": "US spot Bitcoin ETFs post best week since April with $1B in inflows",
-      "summary": "US spot Bitcoin ETFs took in roughly $1 billion over the past week, their strongest week since April, according to Cointelegraph. The report frames it as a notable pickup after a quieter stretch for the funds.",
-      "whyItMatters": "ETF flow data is one of the cleaner real-time gauges of institutional Bitcoin demand, and a multi-month-high week is worth tracking regardless of daily price noise.",
+      "title": "US spot Bitcoin ETFs post $1B inflow week, best since April",
+      "summary": "US spot Bitcoin ETFs logged roughly $1 billion in net inflows over the week, their strongest showing since April, according to Cointelegraph.",
+      "whyItMatters": "Bitcoin ETF flows are a primary gauge of institutional appetite, and a best-in-months week is worth tracking against recent softer periods.",
       "whatToWatch": [
-        "Whether the pace of inflows continues next week",
-        "How this week's total compares once final daily figures are in"
+        "Whether the pace of inflows holds into next week's data",
+        "How this week's total compares issuer-by-issuer"
       ],
       "questions": [
-        "What is driving the pickup in demand right now?"
+        "What triggered the acceleration in inflows this particular week?"
       ],
       "sources": [
         {
@@ -128,26 +189,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T16:20:17.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-part-2-where-oh-where-has-btc-volatility-gone-etf.jpg",
       "badge": "ETF Flows",
-      "trendScore": 59,
+      "trendScore": 54,
       "confidence": "medium"
     },
     {
       "id": "crypto-aa880075db",
       "slug": "bitcoin-s-volatility-has-nearly-vanished-the-underlying-risk-hasn-t",
       "lane": "crypto",
-      "title": "Bitcoin's 'first institutional bear market' is starting to take shape, CryptoSlate reports",
-      "summary": "CryptoSlate reports early signs of what it calls Bitcoin's first institutional bear market, marked by draining liquidity rather than the retail-driven selloffs of past cycles. The same outlet separately noted Bitcoin's ongoing AI-assisted security review flagged roughly 6,700 potential issues in 55 hours, though it's unclear how many represent genuine vulnerabilities.",
-      "whyItMatters": "A liquidity drain led by institutional rather than retail positioning would be a meaningfully different market dynamic than prior downturns, and is worth distinguishing from routine price volatility.",
+      "title": "Bitcoin's first 'institutional bear market' takes shape as liquidity drains",
+      "summary": "CryptoSlate argues Bitcoin is showing early signs of its first bear market driven primarily by institutional dynamics, with liquidity draining from the market. Separately, the outlet reported that an AI-driven security sprint aimed at Bitcoin's ecosystem flagged 6,700 potential issues in 55 hours, though it's unclear how many of those findings are genuine vulnerabilities.",
+      "whyItMatters": "A liquidity-driven downturn led by institutional behavior would mark a different dynamic than past retail-driven Bitcoin bear markets, and the scale of the AI security sprint's findings raises questions about signal versus noise in automated vulnerability hunting.",
       "whatToWatch": [
-        "Further liquidity and positioning data from CryptoSlate or other trackers",
-        "Any triage results narrowing the 6,700 flagged security issues down to confirmed ones"
+        "Further liquidity and flow data confirming or denying the bear-market thesis",
+        "Triage results on how many of the 6,700 flagged issues are validated as real"
       ],
       "questions": [
-        "What specifically defines this as an 'institutional' bear market versus prior ones?",
-        "How many of the flagged security issues turn out to be real?"
+        "What specifically distinguishes this as an \"institutional\" bear market?",
+        "How many of the AI-flagged issues will turn out to be false positives?"
       ],
       "sources": [
         {
@@ -165,27 +226,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-07T22:55:38.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-bear-market-redemption-machine.jpg",
-      "badge": "Markets",
-      "trendScore": 59,
+      "badge": "Analysis",
+      "trendScore": 54,
       "confidence": "low"
     },
     {
       "id": "crypto-38d4f75bd7",
       "slug": "senate-to-vote-on-advancing-the-clarity-act-in-september-after-thune-f",
       "lane": "crypto",
-      "title": "Senate to vote on advancing the CLARITY Act in September after Thune files cloture",
-      "summary": "Senate Majority Leader John Thune has filed cloture on the CLARITY Act, setting up a vote in September to advance the crypto market-structure bill, per Cointelegraph. The move is a procedural step toward getting the bill to the floor.",
-      "whyItMatters": "CLARITY Act is the central piece of US legislation meant to settle which regulator — the SEC or CFTC — oversees most crypto assets, making this vote a genuine milestone rather than routine political noise.",
+      "title": "Senate to vote on advancing crypto market-structure CLARITY Act in September",
+      "summary": "Senate Majority Leader Thune has filed cloture on the CLARITY Act, setting up a vote to advance the crypto market-structure bill in September, according to Cointelegraph.",
+      "whyItMatters": "CLARITY Act is a central piece of pending US crypto market-structure legislation, and a scheduled cloture vote is a concrete step toward (or away from) regulatory clarity the industry has been waiting on.",
       "whatToWatch": [
-        "The September cloture vote and whether it clears the 60-vote threshold",
-        "Any amendments attached before a floor vote",
-        "Industry and regulator reaction in the run-up"
+        "The September cloture vote outcome",
+        "Any amendments or negotiated changes ahead of the vote"
       ],
       "questions": [
-        "Does the bill currently have the votes to pass?",
-        "What amendments might be added that change its substance?"
+        "Does the bill currently have enough votes to clear cloture?",
+        "What sticking points remain between the parties?"
       ],
       "sources": [
         {
@@ -197,27 +257,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T15:08:06.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-us-crypto-regulation-is-pushing-its-way-to-clarity-act-2.jpg",
       "badge": "Regulatory",
-      "trendScore": 53,
+      "trendScore": 48,
       "confidence": "medium"
     },
     {
       "id": "crypto-6dc96b59ad",
       "slug": "bitcoin-red-team-says-ai-tools-are-surfacing-critical-exploits-across-",
       "lane": "crypto",
-      "title": "Bitcoin Red Team says AI tools are finding critical exploits across core projects",
-      "summary": "Bitcoin Red Team, per Decrypt, says AI-assisted tools are uncovering critical exploits across core Bitcoin-related projects. The report doesn't specify which projects or how many issues have been confirmed as genuine vulnerabilities.",
-      "whyItMatters": "AI-assisted vulnerability hunting turning up critical flaws in core infrastructure is a real security development, though the lack of specifics makes it hard to gauge actual exposure yet.",
+      "title": "Bitcoin Red Team says AI tools are surfacing critical exploits across core projects",
+      "summary": "Decrypt reports that the Bitcoin Red Team says AI-based tools have identified critical exploits across a range of core Bitcoin-adjacent projects, in line with a separately reported large-scale AI security sprint across the ecosystem.",
+      "whyItMatters": "If AI tooling is reliably surfacing critical, previously unknown flaws in core Bitcoin infrastructure, that changes how the ecosystem needs to think about vulnerability discovery and disclosure.",
       "whatToWatch": [
-        "Which specific projects are named as affected",
-        "Any resulting patches or disclosures",
-        "Follow-up on how many flagged exploits are confirmed versus false positives"
+        "Which specific projects have confirmed and patched flagged exploits",
+        "Whether findings are disclosed responsibly before being made public"
       ],
       "questions": [
-        "Which core projects are actually affected?",
-        "How many of these findings are exploitable in practice?"
+        "Which projects specifically were flagged as having critical exploits?",
+        "Have any of these findings been independently verified as genuine?"
       ],
       "sources": [
         {
@@ -229,27 +288,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T17:31:03.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/Bitcoin-decrypt-style-17-gID_7.png@png",
       "badge": "Security",
-      "trendScore": 51,
+      "trendScore": 46,
       "confidence": "low"
     },
     {
       "id": "crypto-ef2d0177ff",
       "slug": "brazil-s-central-bank-orders-exchanges-to-delay-large-crypto-transfers",
       "lane": "crypto",
-      "title": "Brazil's central bank orders exchanges to delay large crypto transfers abroad",
-      "summary": "Brazil's central bank has ordered crypto exchanges operating in the country to delay large transfers of crypto assets abroad, according to CoinDesk. Specific thresholds and implementation timelines weren't detailed in the report.",
-      "whyItMatters": "A major emerging-market central bank imposing friction on crypto outflows is a concrete regulatory action that could affect liquidity and set a precedent other jurisdictions watch closely.",
+      "title": "Brazil's central bank orders crypto exchanges to delay large overseas transfers",
+      "summary": "Brazil's central bank has ordered crypto exchanges operating in the country to delay large transfers sent abroad, according to CoinDesk. The report did not specify the transaction threshold or effective date.",
+      "whyItMatters": "Capital-flow restrictions on crypto exchanges from a major Latin American regulator signal tightening oversight that could affect how funds move in and out of the country via crypto rails.",
       "whatToWatch": [
-        "What transfer size triggers the delay requirement",
-        "How exchanges implement compliance and by when",
-        "Whether other Latin American regulators follow suit"
+        "Exchange compliance and any public guidance on the new rule",
+        "Reaction from Brazil's crypto industry and possible legal challenges"
       ],
       "questions": [
-        "What's driving the order — capital flight concerns, AML, something else?",
-        "How long is the mandated delay?"
+        "What transaction size triggers the mandated delay?",
+        "Is the rationale capital flight, fraud prevention, or something else?"
       ],
       "sources": [
         {
@@ -261,115 +319,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T15:25:38.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a010b6e8d5d9fab88360e6939414f5b12c6bf695-1920x1272.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Regulatory",
-      "trendScore": 48,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-97803c07a1",
-      "slug": "bitwise-s-matt-hougan-trillions-in-institutional-money-have-yet-to-flo",
-      "lane": "crypto",
-      "title": "Bitwise's Matt Hougan: 'trillions' in institutional money still to flow into bitcoin",
-      "summary": "Bitwise executive Matt Hougan says trillions of dollars in institutional capital have yet to flow into bitcoin, according to CoinDesk. The comments are framed as a forward-looking prediction rather than a report of actual flows.",
-      "whyItMatters": "Worth noting as a sentiment data point from a prominent crypto asset manager, but it's a forecast from someone whose firm sells bitcoin investment products — actual ETF flow figures are the better gauge of real institutional demand.",
-      "whatToWatch": [
-        "Whether reported ETF and institutional flow data trends toward this thesis",
-        "Any specifics Hougan or Bitwise provide on timeline or sourcing for the claim"
-      ],
-      "questions": [
-        "What's the basis and timeframe behind the 'trillions' figure?",
-        "How does this square with the more modest weekly inflow numbers reported elsewhere?"
-      ],
-      "sources": [
-        {
-          "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
-          "url": "https://www.coindesk.com/business/2026/08/08/trillions-in-institutional-money-to-flow-into-bitcoin-says-bitwise-s-matt-hougan",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-08T14:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-08T14:00:00.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/18172463a019e513e643fd2ed9ab0e0806baf68b-1440x810.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Opinion",
-      "trendScore": 47,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-fdfb42d5a7",
-      "slug": "nansen-founder-predicts-bitcoin-will-never-trade-below-60-000-again",
-      "lane": "crypto",
-      "title": "Nansen founder predicts bitcoin will never trade below $60,000 again",
-      "summary": "Nansen founder Alex Svanevik is quoted by Cointelegraph predicting bitcoin will never fall below $60,000 again. No supporting data or methodology is detailed in the report beyond the prediction itself.",
-      "whyItMatters": "Price-floor predictions like this circulate widely and shape sentiment, but they reflect one person's view rather than confirmed market data — worth noting, not acting on.",
-      "whatToWatch": [
-        "How bitcoin's price behaves relative to this claim over time"
-      ],
-      "questions": [
-        "What analysis, if any, underpins this specific price floor?",
-        "Has bitcoin traded near that level at any point this cycle?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin will never fall below $60K again: Nansen founder",
-          "url": "https://cointelegraph.com/magazine/bitcoin-will-never-fall-below-60k-again-nansen-founder?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-08T13:30:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-08T13:30:00.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/alex-svanevik-interview.jpg",
-      "badge": "Opinion",
-      "trendScore": 47,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-a91bd03adb",
-      "slug": "another-bitcoin-infrastructure-exploit-drains-lightning-network-paymen",
-      "lane": "crypto",
-      "title": "Bitcoin Lightning payment servers hit in latest infrastructure exploit",
-      "summary": "CoinDesk reports another exploit against Bitcoin infrastructure, this time draining Lightning Network payment servers. The report frames it as part of a pattern of recent infrastructure-level incidents rather than an isolated event.",
-      "whyItMatters": "Repeated exploits against Lightning infrastructure raise real operational-security concerns for a network that payment apps and merchants increasingly rely on for fast, low-cost bitcoin transactions.",
-      "whatToWatch": [
-        "Which specific providers or servers were affected and how much was drained",
-        "Any funds recovery or compensation for affected users",
-        "Patches or hardening measures from Lightning implementations"
-      ],
-      "questions": [
-        "How much was actually drained, and from how many servers?",
-        "Is this connected to the broader wave of AI-discovered vulnerabilities being reported elsewhere?"
-      ],
-      "sources": [
-        {
-          "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
-          "url": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-08T07:46:04.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-08T07:46:04.000Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f2f6731511c468648ae94fe05f6331efb1318c2f-1500x1071.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Security",
-      "trendScore": 47,
+      "trendScore": 43,
       "confidence": "medium"
     },
     {
       "id": "crypto-31d05ae690",
       "slug": "danish-high-schoolers-will-have-to-verbally-defend-written-assignments",
       "lane": "crypto",
-      "title": "Danish high schoolers will have to verbally defend written assignments",
-      "summary": "According to a Hacker News-linked report, Danish high school students will be required to verbally defend their written assignments. No further detail on the policy's rationale, scope, or timeline was included in the supplied source.",
-      "whyItMatters": "This falls outside the crypto lane's usual focus on markets, protocols and regulation — it's included here only because it was among today's sourced items, and readers tracking digital-asset markets can safely skip it.",
-      "whatToWatch": [],
+      "title": "Danish high schools to require students to verbally defend written assignments",
+      "summary": "Denmark plans to require high school students to defend their written assignments verbally, according to a report shared via Hacker News. No further detail on rollout timing or rationale was included in the source.",
+      "whyItMatters": "This item concerns education policy, not digital-asset markets or regulation, and has no direct bearing on crypto markets or investors.",
+      "whatToWatch": [
+        "Further reporting on the policy's implementation timeline and stated rationale"
+      ],
       "questions": [
-        "What is driving this policy change, and when does it take effect?"
+        "What is driving the policy change?",
+        "When would it take effect?"
       ],
       "sources": [
         {
@@ -381,10 +349,40 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T18:09:31Z",
-      "updatedAt": "2026-08-09T00:53:56.597Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
       "imageUrl": "https://mezha.net/eng/kd_image_generate/ca117584_denmark_requires_oral/3348978.jpg?ver=2.0.15",
-      "trendScore": 46,
+      "trendScore": 42,
       "confidence": "low"
+    },
+    {
+      "id": "crypto-97803c07a1",
+      "slug": "bitwise-s-matt-hougan-trillions-in-institutional-money-have-yet-to-flo",
+      "lane": "crypto",
+      "title": "Bitwise's Matt Hougan predicts trillions in institutional money will flow into Bitcoin",
+      "summary": "Bitwise CIO Matt Hougan says trillions of dollars in institutional capital are set to flow into Bitcoin, according to CoinDesk. The report did not detail a specific timeline or the basis for the forecast.",
+      "whyItMatters": "Institutional-adoption forecasts from prominent asset managers shape market narratives, but this is a single executive's projection rather than confirmed flow data and should be weighed accordingly.",
+      "whatToWatch": [
+        "Actual ETF and institutional flow data in coming months as a check on the forecast"
+      ],
+      "questions": [
+        "What timeline or catalysts underpin the \"trillions\" figure?",
+        "Is this projection tied to any specific policy or market development?"
+      ],
+      "sources": [
+        {
+          "title": "Trillions in institutional money to flow into bitcoin, says Bitwise's Matt Hougan",
+          "url": "https://www.coindesk.com/business/2026/08/08/trillions-in-institutional-money-to-flow-into-bitcoin-says-bitwise-s-matt-hougan",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-08T14:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-08T14:00:00.000Z",
+      "updatedAt": "2026-08-09T06:54:12.351Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/18172463a019e513e643fd2ed9ab0e0806baf68b-1440x810.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Commentary",
+      "trendScore": 42,
+      "confidence": "medium"
     }
   ]
 }
