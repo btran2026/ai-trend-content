@@ -1,0 +1,726 @@
+{
+  "id": "2026-08-09",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-09T00:44:05.355Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Claude Code sessions can now message each other directly",
+    "summary": "Claude Code v2.1.224 lets separate sessions send messages to each other (confirmed working on macOS), which is the first real alternative to manually relaying context between your parallel worktree terminals — the HN thread on \"Message your other Claude Code sessions\" has the mechanism if you want to steer a background session without walking to the desk. Separately, auto mode becomes the default permission mode for Pro/Max/Team plans on August 14 — check your settings before then if you don't want more autonomous behavior forced on without you choosing it.\n\nOn the cost side, llama.cpp PR 26291 adds a GGML_RPC_LOAD_THREADS env var that cuts a 300GB model's RPC load time from five minutes to 90 seconds — a real fix if you're pooling VRAM across boxes, which is the same technique behind the Kimi K3 local run people are testing. If you're on vLLM with multiple consumer GPUs, enabling PCI-E p2p is a free config change with a bigger speedup than expected. On the trust side, a WebFetch PSA is worth taking seriously: Opus 5's WebFetch quietly routes page content through a smaller summarizing model that can fabricate stats and citations, so don't take agent-cited numbers at face value without checking raw tool output — which is exactly the gap that plugins like fablize (forces evidence/verification before Opus calls a task done) and AutoCVE (agent-driven vuln scan before merge) are built to close, alongside newer multi-harness control planes (claudexor, opencodex, omnigent) that add quota failover and cross-model review so an overnight run doesn't die mid-task or ship unchecked.",
+    "bullets": [
+      "Update Claude Code to v2.1.224+ and try cross-session messaging for worktree/subagent handoffs instead of manual copy-paste",
+      "Before Aug 14, check Claude Code settings and pin your permission mode if you don't want auto mode forced on by default",
+      "Set GGML_RPC_LOAD_THREADS (llama.cpp PR 26291) to cut a 300GB RPC model load from ~5min to ~1:30",
+      "Enable PCI-E p2p on multi-GPU vLLM setups for a free inference speedup on consumer Nvidia cards",
+      "Verify WebFetch output against the raw tool-call result before trusting any stat or citation Claude pulls from a page",
+      "Install fablize or AutoCVE to force evidence/verification or a CVE pass before merging an unattended agent's PR"
+    ],
+    "signals": [
+      {
+        "label": "Agent-to-agent coordination",
+        "direction": "up",
+        "note": "Cross-session messaging in Claude Code plus new control planes (claudexor, omnigent, codexloom) all target the same problem: keeping multiple agent sessions synced without a human relaying context."
+      },
+      {
+        "label": "Default autonomy",
+        "direction": "up",
+        "note": "Auto mode becoming the Claude Code default on Aug 14 means less permission-asking out of the box, shifting the burden to you to configure guardrails upfront."
+      },
+      {
+        "label": "Self-hosted/multi-GPU cost control",
+        "direction": "up",
+        "note": "RPC load-time fix, PCI-E p2p gains, and MoE-vs-dense tiering (Qwen 35B-A3B at ~4x throughput) are concrete, shippable ways to cut local inference cost and time."
+      },
+      {
+        "label": "Unverified agent output",
+        "direction": "flat",
+        "note": "WebFetch silently fabricating cited stats shows autonomy is outpacing built-in verification — plugins like fablize and AutoCVE are filling that gap manually, not the platform itself."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "reddit-rss-00gbmodelloadstaking5min",
+      "title": "I got tired of my 300GB model loads taking 5min on RPC. PR 26291 speeds it 300% to 1min30sec (4060ti+ddr4) + (4060ti+ddr5)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T03:37:37.000Z",
+      "tldr": "llama.cpp PR 26291 parallelizes RPC model loading across CPU threads via a new GGML_RPC_LOAD_THREADS env var, cutting a 300GB model load from ~5 minutes to ~1:30 on 4060ti+DDR4/DDR5 rigs.",
+      "whyItMatters": "If you run large local models over llama.cpp RPC, this is a direct, near-3x load-time fix you can apply today rather than eating minutes of dead time before every session.",
+      "category": "technique",
+      "tags": [
+        "llama.cpp",
+        "rpc",
+        "local-llm",
+        "performance"
+      ],
+      "entities": [
+        "ggml-org"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": true,
+      "tryThis": "Pull llama.cpp PR 26291 (or wait for merge) and set GGML_RPC_LOAD_THREADS=12 (tune to your core count) when loading large models over RPC.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vilcil/i_got_tired_of_my_300gb_model_loads_taking_5min/"
+    },
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering is an open-source CLI toolkit (loop-audit, loop-init, loop-cost) for designing and auditing the prompt loops that orchestrate AI coding agents.",
+      "whyItMatters": "Gives you ready-made commands to audit and cost-check the agent loops you're already running instead of hand-rolling orchestration scripts.",
+      "category": "technique",
+      "tags": [
+        "loop-engineering",
+        "cli",
+        "agent-orchestration"
+      ],
+      "entities": [
+        "cobusgreyling"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against your current agent setup.",
+      "score": 9993
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI/App/SDK and Claude Code call any backend LLM — Claude, Gemini, Grok, DeepSeek, or a local Ollama model.",
+      "whyItMatters": "Lets you keep Claude Code as your driver while routing cheap or verification subagent work to a free local model instead of paying API rates for every step.",
+      "category": "tooling",
+      "tags": [
+        "proxy",
+        "cost",
+        "local-models",
+        "codex"
+      ],
+      "entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Ollama"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point a background/verification subagent at a local Ollama model through it.",
+      "score": 8586
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that forces Opus through a completion/evidence/verification procedure distilled from comparing 'Fable' against Opus, shipping only the parts proven to transfer.",
+      "whyItMatters": "A drop-in plugin that makes Opus prove its work before calling a task done — the exact self-verification behavior needed to trust an unattended overnight run.",
+      "category": "technique",
+      "tags": [
+        "plugin",
+        "verification",
+        "opus",
+        "self-check"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Claude Opus",
+        "Claude Fable"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin to enforce evidence-and-verification steps on Opus runs.",
+      "score": 892
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "ponytail is a 98k-star prompt/skill package that pushes a coding agent to act like 'the laziest senior dev in the room' — the best code is code you never wrote.",
+      "whyItMatters": "A concrete anti-bloat instruction set to drop into an agent's system prompt to cut down on the over-engineered, hard-to-review diffs unattended agents tend to produce.",
+      "category": "technique",
+      "tags": [
+        "prompt",
+        "minimalism",
+        "code-review"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Add DietrichGebert/ponytail's prompt/skill to your Claude Code config to bias agents toward minimal diffs.",
+      "score": 98797
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor, and other agents under one policy/sandboxing layer, manageable from any device.",
+      "whyItMatters": "Gives you a single remote control surface and sandbox policy across whatever agent you're running, instead of babysitting each CLI separately from your desk.",
+      "category": "agentic",
+      "tags": [
+        "harness",
+        "remote-control",
+        "sandboxing"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and register your Claude Code setup to check/redirect it from your phone.",
+      "score": 8406
+    },
+    {
+      "id": "gh-1250822765",
+      "title": "nexu-io/html-video — Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project b",
+      "url": "https://github.com/nexu-io/html-video",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-27T02:08:11Z",
+      "tldr": "html-video is an Apache-2.0 tool that renders HTML/CSS/data straight to MP4 on your own machine, with no per-render fees, built for coding agents.",
+      "whyItMatters": "Lets an agent produce a reviewable video artifact (e.g. a UI demo) as part of a PR without paying a rendering API per call.",
+      "category": "tooling",
+      "tags": [
+        "video",
+        "coding-agent",
+        "self-hosted",
+        "open-source"
+      ],
+      "entities": [
+        "html-video",
+        "Open Design"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone nexu-io/html-video and have an agent render a demo MP4 as part of its PR output.",
+      "score": 4287
+    },
+    {
+      "id": "gh-1237004640",
+      "title": "gi-dellav/zerostack — Lightweight coding agent written in Rust, optimized for memory footprint and performance",
+      "url": "https://github.com/gi-dellav/zerostack",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-12T19:31:49Z",
+      "tldr": "zerostack is a lightweight coding agent written in Rust, purpose-built to minimize memory footprint and maximize performance.",
+      "whyItMatters": "A low-memory agent binary is what lets you run more parallel unattended sessions (worktrees, subagents) on one machine without choking it.",
+      "category": "tooling",
+      "tags": [
+        "coding-agent",
+        "rust",
+        "performance"
+      ],
+      "entities": [
+        "zerostack"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone gi-dellav/zerostack and swap it in for one parallel worktree agent run to check memory use.",
+      "score": 1564
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE is an open-source agent pipeline that discovers, verifies, and writes reports on CVEs in source code.",
+      "whyItMatters": "Gives you a self-verifying security pass you can run against an agent-authored PR before merging instead of trusting the agent's own say-so.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "cve",
+        "agent-pipeline"
+      ],
+      "entities": [
+        "AutoCVE"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and run it against a repo before merging an agent-written PR.",
+      "score": 1280
+    },
+    {
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local-first desktop widget tracking token usage, cost, and limits across 28+ AI coding tools, including Claude Code, Codex, Cursor, and OpenCode, synced across devices.",
+      "whyItMatters": "One place to see what all your overnight agent runs actually cost, rather than checking each provider's billing page separately.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "monitoring",
+        "widget"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Javis603/token-monitor and link your Claude Code/Codex/Cursor accounts for a combined spend view.",
+      "score": 1237
+    },
+    {
+      "id": "gh-1250957639",
+      "title": "withkynam/vibecode-pro-max-kit — Your AI forgets. This remembers. Spec-driven coding harness for vibecoders, product owners, CEOs and real builders — self-improving context memory, 15 agents, 33 skills working with /goal, agent-team, & work",
+      "url": "https://github.com/withkynam/vibecode-pro-max-kit",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-27T05:46:25Z",
+      "tldr": "vibecode-pro-max-kit is a spec-driven harness with self-improving context memory, 15 agents and 33 skills that run autopilot loops with zero required human gate, for Claude Code and Codex.",
+      "whyItMatters": "It's built for exactly the 'describe the work, go to sleep, review a finished PR' loop — the autopilot-with-no-gate design is the target state, not a nice-to-have.",
+      "category": "agentic",
+      "tags": [
+        "autopilot",
+        "harness",
+        "spec-driven",
+        "memory"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone withkynam/vibecode-pro-max-kit and run /goal on a real task to test an unattended agent-team loop.",
+      "score": 1064
+    },
+    {
+      "id": "gh-1259999244",
+      "title": "razzant/claudexor — Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+      "url": "https://github.com/razzant/claudexor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-05T04:08:13Z",
+      "tldr": "claudexor is a control plane that quota-rotates across multiple Claude/Codex subscriptions, shares thread context, and runs cross-model review across Claude Code, Codex, Cursor, and OpenCode.",
+      "whyItMatters": "Stops a long unattended run from dying mid-task when it hits a usage cap, and adds an automatic second-model review pass before you see the PR.",
+      "category": "tooling",
+      "tags": [
+        "quota",
+        "multi-model",
+        "review",
+        "harness"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone razzant/claudexor and add a second Claude/Codex account for automatic quota failover.",
+      "score": 381
+    },
+    {
+      "id": "gh-1292072706",
+      "title": "yan5xu/codexloom — Turn Codex threads into an organization of long-lived domain agents.",
+      "url": "https://github.com/yan5xu/codexloom",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-07T09:21:39Z",
+      "tldr": "Codexloom turns Codex conversation threads into persistent, long-lived domain-specific agents you can keep delegating to.",
+      "whyItMatters": "Gives you a pattern for keeping specialized agents alive across sessions instead of re-establishing context every time you kick off overnight work.",
+      "category": "tooling",
+      "tags": [
+        "codex",
+        "long-running-agents",
+        "subagents"
+      ],
+      "entities": [
+        "Codex"
+      ],
+      "models": [
+        "Codex"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone yan5xu/codexloom and turn one recurring Codex task into a long-lived domain agent.",
+      "score": 322
+    },
+    {
+      "id": "rss-simon-willison-g8automodeatomeverything",
+      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-08T22:36:03.000Z",
+      "tldr": "Anthropic is making Claude Code's auto mode the default for new sessions on Pro, Max and Team plans starting August 14.",
+      "whyItMatters": "Auto mode changes how much Claude Code does without asking permission — decide before the 14th whether that's your default or whether you need to pin your current permission settings.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "auto-mode",
+        "permissions"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Before Aug 14, check your Claude Code settings and explicitly set your preferred permission mode if you don't want auto mode forced on."
+    },
+    {
+      "id": "reddit-rss-essionscannowmessageeach",
+      "title": "Claude code : your sessions can now message each other.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vio0w9/claude_code_your_sessions_can_now_message_each/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T06:00:08.000Z",
+      "tldr": "Claude Code v2.1.224 adds cross-session messaging so separate Claude Code sessions (e.g. backend/frontend agents) can sync and hand off context to each other directly.",
+      "whyItMatters": "Directly relevant to multi-worktree/subagent setups — sessions can now coordinate handoffs instead of you manually relaying context between terminals.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "multi-agent",
+        "worktrees",
+        "update"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Update to Claude Code v2.1.224 and try cross-session messaging to hand off context between your parallel worktree sessions instead of manual copy-paste.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vio0w9/claude_code_your_sessions_can_now_message_each/"
+    },
+    {
+      "id": "reddit-rss-tingclaudeusewebfetchfor",
+      "title": "PSA: Be careful letting Claude use WebFetch for research 😵‍💫",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vim8b7/psa_be_careful_letting_claude_use_webfetch_for/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T04:22:21.000Z",
+      "tldr": "A user discovered Claude Opus 5's WebFetch tool routes page content through a smaller, cheaper model that summarizes and sometimes fabricates stats and citations before they reach the main model.",
+      "whyItMatters": "Any research or fact-gathering your agent does via WebFetch is passing through an uninspected compression layer that can silently invent numbers — don't trust WebFetch-sourced citations without checking raw tool output.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "webfetch",
+        "hallucination",
+        "reliability"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Opus 5"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Inspect raw WebFetch tool-call output (not just the agent's summary) before trusting any cited stat or quote it produced.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vim8b7/psa_be_careful_letting_claude_use_webfetch_for/"
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "devspace bridges the ChatGPT and Claude web chat UIs so they act like the Codex CLI and Claude Code agents, driven through a normal chat subscription instead of an API key.",
+      "whyItMatters": "If the bridge holds up, it's a way to run agent coding sessions on flat-rate subscription pricing instead of metered API spend — worth a cautious look, not a blind swap.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "web-bridge",
+        "subscription"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone Waishnav/devspace and read the README for exactly how it maps a web session to CLI-agent calls before trusting it with real work.",
+      "score": 3617
+    },
+    {
+      "id": "gh-1252294823",
+      "title": "hhyqhh/inno-agent — An open-source personal learning agent with three-layer memory (learner profile / wiki knowledge base / cross-conversation recall), a proactive scheduler, personal IM channels, and a workspace-scoped Practice Lab — built",
+      "url": "https://github.com/hhyqhh/inno-agent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-28T11:32:12Z",
+      "tldr": "inno-agent is an open-source personal agent with layered memory, a proactive scheduler, and personal IM channels, built on the Pi SDK.",
+      "whyItMatters": "The scheduler and IM-channel pieces are the plumbing for triggering and checking on unattended agent runs from your phone instead of a terminal.",
+      "category": "tooling",
+      "tags": [
+        "personal-agent",
+        "scheduler",
+        "chat-bridge"
+      ],
+      "entities": [
+        "inno-agent",
+        "Pi SDK"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone hhyqhh/inno-agent and wire its IM channel to get scheduler pings on a run instead of babysitting a terminal.",
+      "score": 655
+    },
+    {
+      "id": "gh-1247671075",
+      "title": "ongridio/ongrid — An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk.",
+      "url": "https://github.com/ongridio/ongrid",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-23T16:16:44Z",
+      "tldr": "Ongrid is an open-source ops agent that diagnoses and fixes infrastructure problems directly from Slack, Telegram, Lark or DingTalk chat commands.",
+      "whyItMatters": "It's a working template for triggering and reviewing agent-driven fixes from your phone via a chat bridge — the same remote-control loop you want for coding agents.",
+      "category": "tooling",
+      "tags": [
+        "chat-bridge",
+        "ops-agent",
+        "remote-control"
+      ],
+      "entities": [
+        "ongrid"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone ongridio/ongrid and wire it to a Slack channel to test remote-triggered fixes.",
+      "score": 623
+    },
+    {
+      "id": "hn-49222824",
+      "title": "Message your other Claude Code sessions",
+      "url": "https://code.claude.com/docs/en/cross-session-messaging",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T15:34:49Z",
+      "tldr": "A new trick/tool lets you send messages into your other already-running Claude Code sessions instead of switching terminal windows to check on them.",
+      "whyItMatters": "Directly useful for anyone running several parallel worktree sessions unattended and wanting to redirect one without walking to the desk.",
+      "category": "technique",
+      "tags": [
+        "multi-session",
+        "remote-control",
+        "claude-code"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Read the HN thread for the mechanism and try messaging a background Claude Code session from another to steer it mid-task.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49222824",
+      "score": 52
+    },
+    {
+      "id": "reddit-rss-rconsumernvidiacardswill",
+      "title": "enabling PCI-E p2p for consumer Nvidia cards will yield you more than you think",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vj7wey/enabling_pcie_p2p_for_consumer_nvidia_cards_will/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T21:42:00.000Z",
+      "tldr": "A LocalLLaMA operator shows enabling PCI-E peer-to-peer on consumer Nvidia GPUs under vLLM yields a bigger multi-GPU inference speedup than expected, even on a high-bandwidth EPYC server.",
+      "whyItMatters": "If you run local models across multiple consumer GPUs to cut inference costs, p2p is a free config change most people leave off.",
+      "category": "technique",
+      "tags": [
+        "local-inference",
+        "vllm",
+        "gpu",
+        "cost"
+      ],
+      "entities": [
+        "vLLM"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Enable PCI-E p2p for your vLLM multi-GPU setup and re-run llama-benchy to compare latency before/after.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vj7wey/enabling_pcie_p2p_for_consumer_nvidia_cards_will/"
+    },
+    {
+      "id": "reddit-rss-ssessionstalktoeachother",
+      "title": "Claude Code now lets sessions talk to each other on macOS",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vj4aqt/claude_code_now_lets_sessions_talk_to_each_other/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T19:07:50.000Z",
+      "tldr": "Claude Code on macOS now lets separate sessions message each other, prompting questions about overlap with subagents.",
+      "whyItMatters": "If session-to-session messaging works well, it could simplify or replace some of your current worktree/subagent handoff patterns.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "subagents",
+        "macos"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code on macOS and test cross-session messaging against your current subagent coordination setup.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vj4aqt/claude_code_now_lets_sessions_talk_to_each_other/"
+    },
+    {
+      "id": "reddit-rss-evs27bdenseinlocalcoding",
+      "title": "Qwen 35B-A3B MoE vs 27B dense in local coding tests: ~4× faster, much smaller quality gap than I expected",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T05:44:38.000Z",
+      "tldr": "An operator benchmarked Qwen 3.6 35B-A3B MoE against Qwen 3.6 27B dense on local coding-maintenance tasks and got ~4x the throughput (116 vs 30 tok/s) on an R9700 with llama.cpp, with the dense model only pulling ahead on edge-case/invariant-heavy tasks.",
+      "whyItMatters": "Gives a concrete basis for tiering local models: route routine bug fixes/multi-file edits to the faster MoE model and reserve dense 27B for tricky edge-case work.",
+      "category": "open-models",
+      "tags": [
+        "local-llm",
+        "moe",
+        "llama.cpp",
+        "model-routing"
+      ],
+      "entities": [
+        "Qwen"
+      ],
+      "models": [
+        "Qwen 3.6 35B-A3B",
+        "Qwen 3.6 27B"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If running local coding models via llama.cpp, benchmark Qwen 3.6 35B-A3B (MoE) against your current dense model on your own hardware before defaulting to dense for everything.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vinr66/qwen_35ba3b_moe_vs_27b_dense_in_local_coding/"
+    },
+    {
+      "id": "reddit-rss-yfirstrunofkimik3locally",
+      "title": "My first run of Kimi K3 locally.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vj0hil/my_first_run_of_kimi_k3_locally/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T16:34:31.000Z",
+      "tldr": "A hobbyist runs Kimi K3 split across two GPU clusters via llama.cpp's RPC backend, offloading what doesn't fit in memory while testing quantization levels from IQ1_M toward Q2_K_XL.",
+      "whyItMatters": "A concrete path (llama.cpp --rpc) for pooling VRAM across multiple machines to run a model too big for any single box, with a coding-quality test still pending.",
+      "category": "technique",
+      "tags": [
+        "local-llm",
+        "llama.cpp",
+        "quantization"
+      ],
+      "entities": [
+        "Kimi K3"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 2,
+      "actionability": 2,
+      "hasFailureReport": false,
+      "tryThis": "If you have spare GPU boxes, try llama.cpp's RPC server to pool VRAM across machines for models that don't fit on one.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vj0hil/my_first_run_of_kimi_k3_locally/"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Claude Code sessions can talk to each other",
+      "summary": "Multiple reports confirm the same new capability: separate Claude Code sessions can now message each other directly (v2.1.224, macOS-confirmed), replacing manual copy-paste handoffs between parallel worktree or subagent terminals.",
+      "itemIds": [
+        "reddit-rss-essionscannowmessageeach",
+        "hn-49222824",
+        "reddit-rss-ssessionstalktoeachother"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "New control planes for routing across agent harnesses",
+      "summary": "Three separate open-source projects launched around the same problem: sitting above Claude Code/Codex/Cursor to route to cheaper backend models, rotate across quota-limited accounts, or enforce cross-model review.",
+      "itemIds": [
+        "gh-1273824907",
+        "gh-1259999244",
+        "gh-1266212515"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "llama.cpp RPC backend for scaling past one machine",
+      "summary": "Two reports on the same llama.cpp RPC mechanism used to run models too big for one box — one speeding up load times, the other pooling VRAM across two GPU clusters to run Kimi K3.",
+      "itemIds": [
+        "reddit-rss-00gbmodelloadstaking5min",
+        "reddit-rss-yfirstrunofkimik3locally"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 16,
+    "outputTokens": 46551,
+    "usd": 1.2272,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
