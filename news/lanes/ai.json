@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-09T19:50:42.419Z",
-  "contentVersion": 25,
+  "generatedAt": "2026-08-10T01:50:16.454Z",
+  "contentVersion": 26,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,49 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-09T19:50:42.419Z"
-    },
-    {
-      "id": "ai-226d6abbcd",
-      "slug": "1998-retrospective-on-the-alpha-21264-cpu-resurfaces-on-hacker-news",
-      "lane": "ai",
-      "title": "1998 Retrospective on the Alpha 21264 CPU Resurfaces on Hacker News",
-      "summary": "A Hacker News post is drawing attention to a 1998 article revisiting the DEC Alpha 21264, a RISC processor once regarded as a standout performer of its era. The piece looks back at the chip's design and legacy from a computing-history angle. Beyond the Hacker News listing itself, no further details are available.",
-      "whyItMatters": "This is a retro-computing curiosity rather than a development in today's AI industry — it's of interest to engineers and computer-architecture enthusiasts more than to anyone tracking AI releases, policy, or competitive dynamics.",
-      "whatToWatch": [],
-      "questions": [
-        "Why is a 1998 piece resurfacing in discussion now?"
-      ],
-      "sources": [
-        {
-          "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
-          "url": "https://halfhill.com/byte/1998-12_alpha.html",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-09T10:06:37Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-09T10:06:37Z",
-      "updatedAt": "2026-08-09T19:50:42.419Z",
-      "badge": "Retro",
-      "trendScore": 41,
-      "confidence": "low"
+      "updatedAt": "2026-08-10T01:50:16.454Z"
     },
     {
       "id": "ai-b0cc69c201",
       "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
       "lane": "ai",
-      "title": "Gentoo's Bugzilla Taken Offline After AI Bot Scraper Overload",
-      "summary": "Gentoo Linux's Bugzilla bug tracker was closed after being overwhelmed by traffic from AI bot scrapers, according to a report circulating on Hacker News. The single available source doesn't specify which bots or companies were involved. It's the latest sign of open-source infrastructure straining under aggressive automated crawling.",
-      "whyItMatters": "It's a concrete, operational cost of the AI data-scraping boom landing on volunteer-run open-source infrastructure, adding to pressure for scraper etiquette, rate limits, or pushback against AI crawlers.",
+      "title": "Gentoo shuts down Bugzilla after AI scraper bots overwhelm it",
+      "summary": "Gentoo Linux closed its Bugzilla issue tracker after a flood of traffic from AI bot scrapers overloaded the system, according to a report circulating on Hacker News. The closure is the latest instance of an open-source project having to take infrastructure offline or restrict access because of aggressive automated crawling.",
+      "whyItMatters": "AI companies' hunger for training and retrieval data is increasingly straining the free infrastructure open-source projects rely on, forcing maintainers to spend time and money defending against bots instead of building software.",
       "whatToWatch": [
         "Whether Gentoo restores full Bugzilla access and what mitigations it puts in place",
-        "Whether other open-source projects report similar AI-scraper-driven outages",
-        "Any response or acknowledgment from AI companies whose crawlers may be implicated"
+        "Whether other open-source projects report similar scraper-driven outages"
       ],
       "questions": [
-        "Which bot(s) or company were responsible for the overload?",
-        "Is this an isolated incident or part of a broader pattern hitting other open-source sites?"
+        "Which bots or companies are responsible for the overload?",
+        "How long will the tracker remain restricted, and will Gentoo adopt bot-blocking tools other projects have used?"
       ],
       "sources": [
         {
@@ -177,9 +150,94 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-08T13:55:42Z",
-      "updatedAt": "2026-08-09T19:50:42.419Z",
+      "updatedAt": "2026-08-10T01:50:16.454Z",
       "badge": "Infrastructure",
-      "trendScore": 25,
+      "trendScore": 21,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-8588e85d5a",
+      "slug": "new-tool-tracks-line-by-line-human-vs-ai-provenance-in-edited-text",
+      "lane": "ai",
+      "title": "New tool tracks line-by-line human vs. AI provenance in edited text",
+      "summary": "A project surfaced on Hacker News proposes a diff-based, line-level system for tracking whether each line of a document was written by a human or by an AI agent, aimed at text that goes through agentic editing. The approach works by comparing diffs over the course of edits rather than judging a finished document after the fact.",
+      "whyItMatters": "As AI coding and writing agents increasingly make autonomous edits alongside humans, tools that can attribute authorship at a granular level speak to a growing need for accountability, trust, and auditability in collaborative human-AI workflows.",
+      "whatToWatch": [
+        "Whether the tool sees adoption in editors, IDEs, or version-control workflows",
+        "Any response from the developer community on Hacker News about accuracy or edge cases"
+      ],
+      "questions": [
+        "How reliably can diff-based tracking distinguish human touch-ups of AI text from genuine AI authorship?",
+        "Could the method be gamed by rewording or re-typing AI output?"
+      ],
+      "sources": [
+        {
+          "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+          "url": "https://github.com/eighttrigrams/us-vs-them",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-09T15:25:29Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T15:25:29Z",
+      "updatedAt": "2026-08-10T01:50:16.454Z",
+      "imageUrl": "https://opengraph.githubassets.com/68b0486a324055ed850f3f7a0b00af915ffbb7d200a9b6402af0d978d33fda51/eighttrigrams/us-vs-them",
+      "badge": "Open Source",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-a7c4d93e02",
+      "slug": "a-personal-take-on-using-llms-to-learn-complex-topics-gains-traction-o",
+      "lane": "ai",
+      "title": "A personal take on using LLMs to learn complex topics gains traction on Hacker News",
+      "summary": "A blog post describing one person's approach to using large language models as a learning aid for complex subjects has been shared and discussed on Hacker News. Beyond the title, no further detail on the specific methods or topics has been verified.",
+      "whyItMatters": "Posts like this reflect a broader shift in how people are folding LLMs into everyday learning and research, beyond the more heavily covered coding and enterprise use cases.",
+      "whatToWatch": [
+        "Whether the discussion on Hacker News surfaces notable pushback or alternative methods from readers"
+      ],
+      "questions": [
+        "What specific techniques or prompting strategies does the post recommend?",
+        "Does the approach hold up for highly technical or rapidly evolving subject matter?"
+      ],
+      "sources": [
+        {
+          "title": "How I use LLMs to learn complex topics",
+          "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-09T19:16:49Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T19:16:49Z",
+      "updatedAt": "2026-08-10T01:50:16.454Z",
+      "trendScore": 51,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-226d6abbcd",
+      "slug": "1998-retrospective-on-the-alpha-21264-cpu-resurfaces-on-hacker-news",
+      "lane": "ai",
+      "title": "Retro look at DEC's Alpha 21264 CPU resurfaces on Hacker News",
+      "summary": "A 1998 piece on the Alpha 21264, a RISC processor from Digital Equipment Corporation, was recirculated and discussed on Hacker News. The article is a piece of computing history rather than current news, with no new developments reported.",
+      "whyItMatters": "This is a retro-computing history piece rather than an AI industry development; its relevance to readers tracking AI is minimal beyond general engineering interest in processor design lineage.",
+      "whatToWatch": [],
+      "questions": [
+        "Why has this decades-old article resurfaced now, and does the Hacker News discussion tie it to any current hardware topic?"
+      ],
+      "sources": [
+        {
+          "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
+          "url": "https://halfhill.com/byte/1998-12_alpha.html",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-09T10:06:37Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T10:06:37Z",
+      "updatedAt": "2026-08-10T01:50:16.454Z",
+      "badge": "Analysis",
+      "trendScore": 36,
       "confidence": "low"
     }
   ]

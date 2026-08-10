@@ -1,0 +1,706 @@
+{
+  "id": "2026-08-10",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-10T01:40:23.380Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Claude Code auto-approves risky commands by default from Aug 14",
+    "summary": "Anthropic is flipping Claude Code's Auto Mode to on-by-default for Pro/Max/Team plans on August 14, citing data that its classifier blocks ~89% of dangerous commands versus ~14% caught by human manual approval. That's the thing to act on before tonight's runs: go check your permission settings now and decide whether to accept the new default or pin back to manual approval, especially for anything touching prod or secrets during unattended sessions. Pair that with two skill drops worth trying this week — \"grill-me,\" which forces 10-15 clarifying questions before any non-trivial build starts, and the fablize/fable-method plugins, which bolt a completion-evidence-verification loop onto Opus so the agent has to prove its work before you see the PR.\n\nOn cost, the pattern across tonight's tooling is routing cheap and background work off the metered API: opencodex proxies Codex/Claude Code calls to Ollama or DeepSeek endpoints, dao-code shows a concrete byte-stable-prefix-plus-cache-fork pattern for DeepSeek-V4 sessions, and token-monitor gives you one dashboard to catch an overnight run burning budget across 28+ tools. If you're weighing local hardware, a sub-€1000 Ryzen/Radeon 780M box now runs Qwen 3.6 35B-A3B via llama.cpp/Vulkan, and a patched llama.cpp roughly doubles usable context on AMD cards for free. For running things away from the desk, claudexor and omnigent both offer multi-harness control planes with quota rotation and remote sandboxing, and there's now a way to message between concurrent Claude Code sessions instead of tabbing terminals. Also worth a five-minute check: GitHub Models is fully retired, so grep your CI for calls to it, and if anyone trials Meta's Muse Code against a real repo, its free tier feeds your CLAUDE.md and code into training unless you switch to standard pricing.",
+    "bullets": [
+      "Review Claude Code permission settings before Aug 14 — Auto Mode becomes the default for Pro/Max/Team plans",
+      "Install the grill-me skill so the agent asks 10-15 clarifying questions and confirms a spec before writing code",
+      "Try fablize or fable-method as Claude Code plugins to enforce a completion-evidence-verification loop on Opus",
+      "Route background/cheap subagent calls through opencodex to a local Ollama or DeepSeek endpoint instead of the metered API",
+      "Grep CI workflows for GitHub Models API calls and swap them for direct Anthropic/OpenAI/OpenRouter keys — the service is retired",
+      "On AMD/local serving, drop --enforce-eager and add --speculative-config for Ling-3.0-flash, or apply the llama.cpp MTP buffer patch to roughly double context/throughput"
+    ],
+    "signals": [
+      {
+        "label": "Agent autonomy defaults",
+        "direction": "up",
+        "note": "Claude Code's Auto Mode goes from opt-in to default Aug 14, shifting unattended risk decisions from you to the classifier"
+      },
+      {
+        "label": "Self-verification tooling for PRs",
+        "direction": "up",
+        "note": "grill-me, fablize, fable-method, and AutoCVE all push toward agents that front-load spec-checking or prove their own work before you review"
+      },
+      {
+        "label": "Cheap/local inference offload",
+        "direction": "up",
+        "note": "opencodex, dao-code's cache-reuse pattern, token-monitor, and budget iGPU/AMD rigs are all aimed at cutting per-token spend on background agent work"
+      },
+      {
+        "label": "Multi-harness remote control",
+        "direction": "up",
+        "note": "claudexor, omnigent, and cross-session messaging show growing tooling for running and coordinating agents away from the desk"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering is an open-source CLI toolkit (loop-audit, loop-init, loop-cost) for designing and orchestrating multi-agent coding loops.",
+      "whyItMatters": "Gives you ready-made commands to audit an agent loop's behavior and track its cost instead of hand-rolling your own harness around Claude Code.",
+      "category": "tooling",
+      "tags": [
+        "agents",
+        "cli",
+        "orchestration",
+        "cost"
+      ],
+      "entities": [
+        "cobusgreyling"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against one of your existing agent loops.",
+      "score": 10077
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is an open-source proxy that lets Codex CLI/App/SDK and Claude Code call any backend LLM — Gemini, Grok, DeepSeek, Ollama — instead of only the vendor's own model.",
+      "whyItMatters": "Lets him route cheap or background subagent work through a local Ollama model or DeepSeek while keeping Claude Code's existing UX, cutting API spend without switching harnesses.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "routing",
+        "proxy",
+        "local-models"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Ollama",
+        "DeepSeek"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point it at a local Ollama or DeepSeek endpoint for your cheap/background subagent tasks.",
+      "score": 8730
+    },
+    {
+      "id": "gh-1243377527",
+      "title": "Javis603/token-monitor — Local-first desktop widget for tracking token usage, costs, and limits across 28+ AI coding tools—including Claude Code, Codex, Cursor, OpenCode, and OpenClaw—with multi-device sync.",
+      "url": "https://github.com/Javis603/token-monitor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-19T09:33:54Z",
+      "tldr": "token-monitor is a local-first desktop widget tracking token usage, cost, and limits in real time across 28+ AI coding tools, including Claude Code, Codex, Cursor and OpenCode, with multi-device sync.",
+      "whyItMatters": "One dashboard for cost instead of checking each tool separately — useful for catching an overnight run that's burning through budget.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "monitoring",
+        "dashboard"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install Javis603/token-monitor and point it at your Claude Code/Codex accounts for one cross-tool cost view.",
+      "score": 1253
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that forces Opus to follow a completion-evidence-verification procedure modeled on Fable, shipping only behaviors proven to transfer in a Fable-vs-Opus comparison.",
+      "whyItMatters": "A drop-in plugin for enforcing self-verification on Opus specifically, aimed straight at 'produce a reviewable PR' rather than a from-scratch skill build.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "plugin",
+        "claude-code"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Opus",
+        "Claude Fable"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and run it on Opus for a task you currently double-check by hand.",
+      "score": 892
+    },
+    {
+      "id": "reddit-rss-etsolutionradeon780migpu",
+      "title": "Underestimated budget solution: radeon 780m iGPU",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjs3sf/underestimated_budget_solution_radeon_780m_igpu/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T15:01:52.000Z",
+      "tldr": "An operator details a sub-€1000 budget PC (Ryzen + Radeon 780M iGPU, 64GB DDR5) running Qwen 3.6 35B-A3B locally via llama.cpp/Vulkan with specific kernel params.",
+      "whyItMatters": "Gives you a cheap, concrete local-inference box for offloading background/cheap agent tasks instead of paying API rates for everything.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "igpu",
+        "llama-cpp",
+        "cost"
+      ],
+      "entities": [
+        "AMD"
+      ],
+      "models": [
+        "Qwen 3.6 35B-A3B"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "On a 780M-equipped box, set amdgpu.gttsize=49152 amd_iommu=off ttm.pages_limit=16777216 and run Qwen 3.6 35B-A3B (Unsloth Q8) via llama.cpp Vulkan.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vjs3sf/underestimated_budget_solution_radeon_780m_igpu/"
+    },
+    {
+      "id": "reddit-rss-psclaudecodetoautomodeby",
+      "title": "Anthropic Flips Claude Code to Auto Mode by Default Aug 14, after finding AI blocks 80%+ dangerous queries while humans only 14%",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vjqcvf/anthropic_flips_claude_code_to_auto_mode_by/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T13:48:32.000Z",
+      "tldr": "Anthropic is switching Claude Code to Auto Mode by default on August 14, citing data that its classifier blocks ~89% of dangerous commands versus ~14% caught by human manual approval.",
+      "whyItMatters": "This changes what gets auto-approved in your unattended overnight runs starting Aug 14 — check your permission settings before then and decide whether to keep the new default.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "auto-mode",
+        "permissions",
+        "unattended"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Before Aug 14, review your Claude Code permission/approval settings and explicitly decide whether to accept Auto Mode or opt back into manual approval for risky commands.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vjqcvf/anthropic_flips_claude_code_to_auto_mode_by/"
+    },
+    {
+      "id": "reddit-rss-eallylovethegrillmeskill",
+      "title": "Really love the grill-me skill",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vk0tps/really_love_the_grillme_skill/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T20:46:09.000Z",
+      "tldr": "A Reddit user shares a full Claude Code skill ('grill-me') that forces the agent to ask 10-15 targeted questions and confirm a spec before writing any code for non-trivial requests.",
+      "whyItMatters": "Front-loading clarification before the agent starts means fewer wrong assumptions baked into an overnight unattended run, and a spec you can sanity-check before walking away.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "skill",
+        "spec-first",
+        "unattended"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Drop the grill-me skill (name/description/trigger as posted) into your Claude Code skills directory so it fires automatically on non-trivial build requests.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vk0tps/really_love_the_grillme_skill/"
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor and Pi side by side, lets you swap harnesses without rewriting prompts, and enforces sandboxing/policy while collaborating from any device.",
+      "whyItMatters": "Directly supports controlling agents away from the desk and mixing harnesses per task instead of locking into one tool.",
+      "category": "agentic",
+      "tags": [
+        "orchestration",
+        "remote-control",
+        "multi-harness"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and put it in front of your worktree setup to test controlling a session remotely.",
+      "score": 8433
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills the workflow behind 'Claude Fable 5' into a reusable think/act/prove skill set with an eval, runnable on any model.",
+      "whyItMatters": "Packages a concrete verify-your-own-work loop — evidence plus an eval — he can drop into Claude Code skills to reduce unreviewed agent output.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "workflow"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method, install the think/act/prove skills into Claude Code, and run its eval against a real task.",
+      "score": 2184
+    },
+    {
+      "id": "gh-1262682069",
+      "title": "tigicion/dao-code — Open-source TypeScript terminal coding agent for DeepSeek-V4 — builds on DeepSeek's strong price-performance and ultra-cheap cache pricing, engineering byte-stable prefixes and cache-reusing forks so cross-session memory",
+      "url": "https://github.com/tigicion/dao-code",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-08T08:10:42Z",
+      "tldr": "dao-code is an open-source terminal coding agent for DeepSeek-V4 that engineers byte-stable prompt prefixes and cache-reusing session forks so cross-session memory adds almost no token cost.",
+      "whyItMatters": "Gives a concrete pattern — stable prefixes plus forked caches — for cutting repeat-prompt costs on long agent sessions, and it's already Claude Code config compatible.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "prompt-caching",
+        "deepseek"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek-V4"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone tigicion/dao-code and compare its prefix-caching setup against your own Claude Code hooks/skills to replicate the cache-reuse pattern.",
+      "score": 1266
+    },
+    {
+      "id": "gh-1259999244",
+      "title": "razzant/claudexor — Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+      "url": "https://github.com/razzant/claudexor",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-05T04:08:13Z",
+      "tldr": "claudexor is a control plane that quota-aware-rotates work across multiple Claude/Codex subscriptions, keeping shared thread context and enabling cross-model review.",
+      "whyItMatters": "Solves the specific pain of an overnight unattended run stalling on rate limits — rotation keeps the job going without manual account-swapping.",
+      "category": "agentic",
+      "tags": [
+        "quota",
+        "cost",
+        "multi-account"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone razzant/claudexor and register multiple Claude/Codex accounts so long runs auto-rotate instead of stalling on quota.",
+      "score": 390
+    },
+    {
+      "id": "hn-49222824",
+      "title": "Message your other Claude Code sessions",
+      "url": "https://code.claude.com/docs/en/cross-session-messaging",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-08T15:34:49Z",
+      "tldr": "A new technique/tool lets you send messages between separate running Claude Code sessions instead of tabbing between terminals.",
+      "whyItMatters": "Directly useful for a worktree/subagent setup — coordinate parallel overnight sessions or nudge a stuck one from another session or a phone.",
+      "category": "agentic",
+      "tags": [
+        "multi-session",
+        "worktrees",
+        "orchestration"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Read the thread and try sending a message between two concurrent Claude Code sessions on your worktree setup.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49222824",
+      "score": 153
+    },
+    {
+      "id": "reddit-rss-31hits827onterminalbench",
+      "title": "DeepSeek V4 Flash 0731 hits 82.7% on Terminal-Bench 2.1 in an independent public-harness run (445 trials)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjklwo/deepseek_v4_flash_0731_hits_827_on_terminalbench/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T08:39:12.000Z",
+      "tldr": "An independent researcher reproduces DeepSeek V4 Flash 0731's 82.7% Terminal-Bench 2.1 score using the public, open-source Ante harness (368/445 trials) instead of DeepSeek's unreleased proprietary harness.",
+      "whyItMatters": "Gives you a way to independently verify vendor agentic-coding benchmark claims before trusting a model for unattended terminal/agent work.",
+      "category": "open-models",
+      "tags": [
+        "benchmark",
+        "terminal-bench",
+        "verification",
+        "harness"
+      ],
+      "entities": [
+        "DeepSeek",
+        "OpenRouter"
+      ],
+      "models": [
+        "DeepSeek V4 Flash 0731"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Run Ante 0.preview.71 against deepseek/deepseek-v4-flash-0731 via OpenRouter yourself, or point it at whatever model you're evaluating for agent tasks.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vjklwo/deepseek_v4_flash_0731_hits_827_on_terminalbench/"
+    },
+    {
+      "id": "rss-simon-willison-nowretiredatomeverything",
+      "title": "GitHub Models is now retired",
+      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-09T22:48:05.000Z",
+      "tldr": "GitHub Models, the free unified LLM API playground usable inside GitHub Actions via the built-in GITHUB_TOKEN, has been fully retired.",
+      "whyItMatters": "If any of your CI workflows or scripts called GitHub Models' API, they're now broken and need to move to a direct provider API key.",
+      "category": "business",
+      "tags": [
+        "deprecation",
+        "github-actions",
+        "ci"
+      ],
+      "entities": [
+        "GitHub"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Grep your GitHub Actions workflows for calls to the GitHub Models endpoint and swap them for direct Anthropic/OpenAI/OpenRouter API keys."
+    },
+    {
+      "id": "reddit-rss-gmtpbufferoverheadgaveme",
+      "title": "AMD llama.cpp: reducing MTP buffer overhead gave me 64K → 149K context for Qwen 27B",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjmay5/amd_llamacpp_reducing_mtp_buffer_overhead_gave_me/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T10:21:35.000Z",
+      "tldr": "A patch to llama.cpp fixes an overly conservative MTP compute-buffer estimate on AMD GPUs, roughly doubling usable context (e.g. 64K→149K for Qwen 27B on a 16GB card).",
+      "whyItMatters": "Same hardware now handles far longer local-agent context windows for free — a direct win if you're running self-hosted models on AMD GPUs.",
+      "category": "technique",
+      "tags": [
+        "llama-cpp",
+        "amd",
+        "context-length",
+        "self-hosting"
+      ],
+      "entities": [
+        "AMD"
+      ],
+      "models": [
+        "Qwen 27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Grab the patch and launch scripts linked in the post and apply it to your llama-server build if you're on ROCm/Vulkan with an AMD GPU.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vjmay5/amd_llamacpp_reducing_mtp_buffer_overhead_gave_me/"
+    },
+    {
+      "id": "rss-simon-willison-g8automodeatomeverything",
+      "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-08T22:36:03.000Z",
+      "tldr": "Claude Code's Auto mode becomes the default for Pro, Max, and Team plan sessions starting August 14.",
+      "whyItMatters": "This changes how much autonomy Claude Code takes by default in the exact tool you run overnight, including how it handles risk like prompt injection during unattended sessions.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "auto-mode",
+        "autonomy",
+        "defaults"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Before Aug 14, check your Claude Code settings and decide whether to keep auto mode on for unattended runs or pin it back to manual approval."
+    },
+    {
+      "id": "reddit-rss-sclaudemdtometaonstartby",
+      "title": "Muse Code Sends claude.md to Meta On Start by Default",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vji3f8/muse_code_sends_claudemd_to_meta_on_start_by/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T06:12:11.000Z",
+      "tldr": "Meta's new Muse Code agent reads CLAUDE.md/AGENTS.md for project context, and on its default contributor/free tier it feeds that code and those prompts into Meta's training pipeline unless you switch to standard pricing.",
+      "whyItMatters": "If anyone on your team trials Muse Code against a real or proprietary repo, the default tier leaks your CLAUDE.md instructions and code into Meta's training data.",
+      "category": "tooling",
+      "tags": [
+        "privacy",
+        "muse-code",
+        "claude-md",
+        "data-leakage"
+      ],
+      "entities": [
+        "Meta",
+        "Muse Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Before pointing Muse Code at any real repo, switch off the free contributor tier to standard pricing so code/prompts aren't used for training.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vji3f8/muse_code_sends_claudemd_to_meta_on_start_by/"
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "A viral new agent tool (ponytail, 99k+ stars) nudges coding agents to write the least code possible instead of over-engineering.",
+      "whyItMatters": "Less scope creep per task means smaller, easier-to-review diffs from unattended overnight runs.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "agent-behavior",
+        "minimalism"
+      ],
+      "entities": [
+        "DietrichGebert/ponytail"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and check whether it's a skill/hook you can drop into your Claude Code config.",
+      "score": 99367
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE is an open-source agent pipeline that audits source code, verifies vulnerabilities, and generates CVE reports.",
+      "whyItMatters": "You could wire this in as an automated security-verification pass before an agent-produced PR lands, adding a self-check step beyond tests.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "agents",
+        "code-audit"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and point it at a repo as a pre-merge security scan step.",
+      "score": 1283
+    },
+    {
+      "id": "gh-1292072706",
+      "title": "yan5xu/codexloom — Turn Codex threads into an organization of long-lived domain agents.",
+      "url": "https://github.com/yan5xu/codexloom",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-07T09:21:39Z",
+      "tldr": "New tool (codexloom) turns individual Codex chat threads into persistent, long-lived domain-specific subagents.",
+      "whyItMatters": "Gives you a pattern for keeping specialized agent context alive across sessions instead of re-explaining domain context every run.",
+      "category": "agentic",
+      "tags": [
+        "codex",
+        "subagents",
+        "long-lived-context"
+      ],
+      "entities": [
+        "codexloom"
+      ],
+      "models": [
+        "Codex"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone yan5xu/codexloom and wire a long-lived domain agent for one recurring area of your codebase, e.g. your CI pipeline.",
+      "score": 339
+    },
+    {
+      "id": "hn-49232300",
+      "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+      "url": "https://github.com/eighttrigrams/us-vs-them",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T15:25:29Z",
+      "tldr": "A new tool does diff-based, line-level provenance tracking to mark which lines of text were written by a human versus an AI agent through an editing session.",
+      "whyItMatters": "Could be adapted to flag exactly which lines of a PR an agent generated versus a human touched, speeding up morning PR review.",
+      "category": "tooling",
+      "tags": [
+        "pr-review",
+        "provenance",
+        "diff-tracking"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Check the tool's repo and see if its provenance diffing can be scripted into your PR-review step to auto-flag agent-written lines.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49232300",
+      "score": 44
+    },
+    {
+      "id": "reddit-rss-kv4flash0731locallyoncpu",
+      "title": "DeepSeek v4 Flash 0731 locally on CPU",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjsysx/deepseek_v4_flash_0731_locally_on_cpu/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T15:36:32.000Z",
+      "tldr": "An operator upgrades to 128GB RAM plus an RTX 4090 and Tesla P40 (176GB combined memory) to run DeepSeek V4 Flash 0731 locally at Unsloth 4-bit K_XL quant (~144GB).",
+      "whyItMatters": "Concrete hardware bill of materials for self-hosting a GLM-5.2-class model instead of paying per-token API rates.",
+      "category": "open-models",
+      "tags": [
+        "self-hosting",
+        "quantization",
+        "hardware"
+      ],
+      "entities": [
+        "Unsloth"
+      ],
+      "models": [
+        "DeepSeek V4 Flash 0731"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If you have a similar rig, install a 4-bit K_XL Unsloth quant of DeepSeek V4 Flash 0731 (~144GB) split across CPU RAM and GPU VRAM.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vjsysx/deepseek_v4_flash_0731_locally_on_cpu/"
+    },
+    {
+      "id": "reddit-rss-icialling30flashint4from",
+      "title": "Two flags took the official Ling-3.0-flash INT4 from 20.8 to 38.7 tok/s on one DGX Spark",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjttcc/two_flags_took_the_official_ling30flash_int4_from/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-09T16:10:23.000Z",
+      "tldr": "Dropping --enforce-eager and enabling the checkpoint's built-in MTP speculative decoding nearly doubles Ling-3.0-flash INT4 throughput on a single DGX Spark, from 20.8 to 38.7 tok/s.",
+      "whyItMatters": "A free, reproducible serving config for squeezing more speed out of a local quantized model on prosumer inference hardware — exactly the kind of tuning that makes self-hosted background/verification work cheaper.",
+      "category": "technique",
+      "tags": [
+        "local-llm",
+        "inference-speed",
+        "dgx-spark",
+        "quantization"
+      ],
+      "entities": [
+        "inclusionAI"
+      ],
+      "models": [
+        "Ling-3.0-flash"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "When serving Ling-3.0-flash INT4, drop --enforce-eager and add --speculative-config '{\"method\": \"bailing_hybrid_v3_mtp\", \"num_speculative_tokens\": 1}'.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vjttcc/two_flags_took_the_official_ling30flash_int4_from/"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Claude Code Auto Mode becomes default Aug 14",
+      "summary": "Anthropic is switching Claude Code to Auto Mode by default for Pro/Max/Team plans, based on data showing its classifier catches far more dangerous commands than manual human approval — check and adjust your settings before the switch.",
+      "itemIds": [
+        "reddit-rss-psclaudecodetoautomodeby",
+        "rss-simon-willison-g8automodeatomeverything"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Fable-derived verification skills for Claude Code",
+      "summary": "Two separate projects distill the 'Fable' completion/evidence/verification workflow into installable Claude Code skills/plugins so any model, including Opus, follows a think/act/prove loop before shipping code.",
+      "itemIds": [
+        "gh-1268946118",
+        "gh-1291544092"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "DeepSeek V4 Flash momentum on cost and verification",
+      "summary": "DeepSeek V4 Flash 0731's agentic benchmark score got independently reproduced on an open harness, someone built a full local CPU+GPU rig to self-host it, and a separate terminal agent engineers cache-reuse specifically around its pricing — three angles on the same cheap-model push.",
+      "itemIds": [
+        "reddit-rss-31hits827onterminalbench",
+        "reddit-rss-kv4flash0731locallyoncpu",
+        "gh-1262682069"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Multi-harness control planes",
+      "summary": "claudexor and omnigent both position themselves as meta-harnesses that orchestrate Claude Code, Codex, Cursor and others side by side with quota rotation, shared context, and remote/sandboxed control.",
+      "itemIds": [
+        "gh-1259999244",
+        "gh-1266212515"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 20,
+    "outputTokens": 45574,
+    "usd": 1.2782,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
