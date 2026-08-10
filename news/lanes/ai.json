@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-10T01:50:16.454Z",
-  "contentVersion": 26,
+  "generatedAt": "2026-08-10T07:50:56.368Z",
+  "contentVersion": 27,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,82 +123,82 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-10T01:50:16.454Z"
+      "updatedAt": "2026-08-10T07:50:56.368Z"
     },
     {
-      "id": "ai-b0cc69c201",
-      "slug": "gentoo-bugzilla-taken-offline-amid-ai-bot-scraper-overload",
+      "id": "ai-778cdf7794",
+      "slug": "docker-debuts-disposable-sandboxes-for-ai-agents",
       "lane": "ai",
-      "title": "Gentoo shuts down Bugzilla after AI scraper bots overwhelm it",
-      "summary": "Gentoo Linux closed its Bugzilla issue tracker after a flood of traffic from AI bot scrapers overloaded the system, according to a report circulating on Hacker News. The closure is the latest instance of an open-source project having to take infrastructure offline or restrict access because of aggressive automated crawling.",
-      "whyItMatters": "AI companies' hunger for training and retrieval data is increasingly straining the free infrastructure open-source projects rely on, forcing maintainers to spend time and money defending against bots instead of building software.",
+      "title": "Docker debuts disposable sandboxes for AI agents",
+      "summary": "A product listing surfaced on Hacker News describes \"Docker Sandboxes,\" a feature offering disposable, isolated sandbox environments for AI agents to execute code. Beyond the product description itself, no further launch details, pricing, or availability information is available from the source.",
+      "whyItMatters": "As AI agents take on more autonomous code-execution tasks, container-platform players like Docker building dedicated sandboxing infrastructure signals that safe agent execution is becoming a mainstream enterprise requirement, not a niche startup feature.",
       "whatToWatch": [
-        "Whether Gentoo restores full Bugzilla access and what mitigations it puts in place",
-        "Whether other open-source projects report similar scraper-driven outages"
+        "Whether Docker publishes fuller launch details or pricing",
+        "How the feature integrates with existing Docker Desktop/Engine tooling",
+        "Uptake among AI agent framework developers"
       ],
       "questions": [
-        "Which bots or companies are responsible for the overload?",
-        "How long will the tracker remain restricted, and will Gentoo adopt bot-blocking tools other projects have used?"
+        "How does this compare to existing agent-sandbox providers?",
+        "What isolation/security guarantees does it offer?"
       ],
       "sources": [
         {
-          "title": "Gentoo bugzilla closed due AI bot scraper overload",
-          "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
+          "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+          "url": "https://www.docker.com/products/docker-sandboxes/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-08T13:55:42Z"
+          "publishedAt": "2026-08-10T06:02:38Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-08T13:55:42Z",
-      "updatedAt": "2026-08-10T01:50:16.454Z",
-      "badge": "Infrastructure",
-      "trendScore": 21,
+      "publishedAt": "2026-08-10T06:02:38Z",
+      "updatedAt": "2026-08-10T07:50:56.368Z",
+      "imageUrl": "https://www.docker.com/app/uploads/2024/02/docker-default-meta-image-1110x583.png",
+      "badge": "Product",
+      "trendScore": 53,
       "confidence": "low"
     },
     {
-      "id": "ai-8588e85d5a",
-      "slug": "new-tool-tracks-line-by-line-human-vs-ai-provenance-in-edited-text",
+      "id": "ai-4e6949d8a9",
+      "slug": "show-hn-project-lets-players-voice-interrogate-ai-murder-mystery-suspe",
       "lane": "ai",
-      "title": "New tool tracks line-by-line human vs. AI provenance in edited text",
-      "summary": "A project surfaced on Hacker News proposes a diff-based, line-level system for tracking whether each line of a document was written by a human or by an AI agent, aimed at text that goes through agentic editing. The approach works by comparing diffs over the course of edits rather than judging a finished document after the fact.",
-      "whyItMatters": "As AI coding and writing agents increasingly make autonomous edits alongside humans, tools that can attribute authorship at a granular level speak to a growing need for accountability, trust, and auditability in collaborative human-AI workflows.",
+      "title": "Show HN project lets players voice-interrogate AI murder-mystery suspects",
+      "summary": "A developer posted a \"Show HN\" project on Hacker News for a voice-driven murder mystery game, where players interview AI-controlled suspects using their own voice. It appears to be an early or indie showcase rather than a commercial release, and no additional details on the underlying tech are given in the source.",
+      "whyItMatters": "It's a small but telling example of conversational and voice AI moving into interactive entertainment, an area outside the usual enterprise-tool AI news cycle.",
       "whatToWatch": [
-        "Whether the tool sees adoption in editors, IDEs, or version-control workflows",
-        "Any response from the developer community on Hacker News about accuracy or edge cases"
+        "Community reaction and feedback in the Show HN thread",
+        "Whether the project develops into a wider release"
       ],
       "questions": [
-        "How reliably can diff-based tracking distinguish human touch-ups of AI text from genuine AI authorship?",
-        "Could the method be gamed by rewording or re-typing AI output?"
+        "What voice and language models power the suspects?",
+        "Is this a demo, a hobby project, or an early commercial product?"
       ],
       "sources": [
         {
-          "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
-          "url": "https://github.com/eighttrigrams/us-vs-them",
+          "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
+          "url": "https://www.whodunnitai.com/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-09T15:25:29Z"
+          "publishedAt": "2026-08-10T03:18:40Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-09T15:25:29Z",
-      "updatedAt": "2026-08-10T01:50:16.454Z",
-      "imageUrl": "https://opengraph.githubassets.com/68b0486a324055ed850f3f7a0b00af915ffbb7d200a9b6402af0d978d33fda51/eighttrigrams/us-vs-them",
-      "badge": "Open Source",
-      "trendScore": 45,
+      "publishedAt": "2026-08-10T03:18:40Z",
+      "updatedAt": "2026-08-10T07:50:56.368Z",
+      "imageUrl": "https://www.whodunnitai.com/whodunnitai-metadata.jpg",
+      "badge": "Launch",
+      "trendScore": 50,
       "confidence": "low"
     },
     {
       "id": "ai-a7c4d93e02",
       "slug": "a-personal-take-on-using-llms-to-learn-complex-topics-gains-traction-o",
       "lane": "ai",
-      "title": "A personal take on using LLMs to learn complex topics gains traction on Hacker News",
-      "summary": "A blog post describing one person's approach to using large language models as a learning aid for complex subjects has been shared and discussed on Hacker News. Beyond the title, no further detail on the specific methods or topics has been verified.",
-      "whyItMatters": "Posts like this reflect a broader shift in how people are folding LLMs into everyday learning and research, beyond the more heavily covered coding and enterprise use cases.",
-      "whatToWatch": [
-        "Whether the discussion on Hacker News surfaces notable pushback or alternative methods from readers"
-      ],
+      "title": "A developer's take on using LLMs to learn complex topics",
+      "summary": "A blog post shared on Hacker News lays out one author's personal approach to using large language models as a learning aid for complex subjects. The source gives only the headline and publication details, not the specific methods described in the piece.",
+      "whyItMatters": "It reflects the broader, ongoing shift of LLMs from novelty chatbots into everyday personal learning and research tools, a trend that shapes how the public perceives and adopts AI day to day.",
+      "whatToWatch": [],
       "questions": [
-        "What specific techniques or prompting strategies does the post recommend?",
-        "Does the approach hold up for highly technical or rapidly evolving subject matter?"
+        "What specific prompting or study techniques does the author use?",
+        "Do the methods generalize beyond the author's own field?"
       ],
       "sources": [
         {
@@ -210,20 +210,52 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T19:16:49Z",
-      "updatedAt": "2026-08-10T01:50:16.454Z",
-      "trendScore": 51,
+      "updatedAt": "2026-08-10T07:50:56.368Z",
+      "badge": "Analysis",
+      "trendScore": 47,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-8588e85d5a",
+      "slug": "new-tool-tracks-line-by-line-human-vs-ai-provenance-in-edited-text",
+      "lane": "ai",
+      "title": "Open-source tool tracks human vs. AI authorship line-by-line in edited text",
+      "summary": "A GitHub project shared on Hacker News introduces a diff-based system for tracking line-level provenance of text as it passes through agentic AI editing, aiming to distinguish which lines a human wrote versus which an AI agent inserted or changed. Details beyond the project's stated purpose aren't provided in the available source.",
+      "whyItMatters": "As AI agents increasingly co-write documents, code, and articles, provenance-tracking tools speak directly to growing transparency and accountability concerns among writers, developers, and publishers.",
+      "whatToWatch": [
+        "Whether editors or IDEs adopt or integrate the tool",
+        "Community response and further development on GitHub"
+      ],
+      "questions": [
+        "How accurate is the line-level attribution in practice?",
+        "Does it work across different AI coding/editing agents?"
+      ],
+      "sources": [
+        {
+          "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+          "url": "https://github.com/eighttrigrams/us-vs-them",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-09T15:25:29Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-09T15:25:29Z",
+      "updatedAt": "2026-08-10T07:50:56.368Z",
+      "imageUrl": "https://opengraph.githubassets.com/1867ddff9057b7891a1ba1d25c9216ce1d9f12d1bf70a159a7e4c0cbc9493a4e/eighttrigrams/us-vs-them",
+      "badge": "Tool",
+      "trendScore": 40,
       "confidence": "low"
     },
     {
       "id": "ai-226d6abbcd",
       "slug": "1998-retrospective-on-the-alpha-21264-cpu-resurfaces-on-hacker-news",
       "lane": "ai",
-      "title": "Retro look at DEC's Alpha 21264 CPU resurfaces on Hacker News",
-      "summary": "A 1998 piece on the Alpha 21264, a RISC processor from Digital Equipment Corporation, was recirculated and discussed on Hacker News. The article is a piece of computing history rather than current news, with no new developments reported.",
-      "whyItMatters": "This is a retro-computing history piece rather than an AI industry development; its relevance to readers tracking AI is minimal beyond general engineering interest in processor design lineage.",
+      "title": "Retrospective revisits the Alpha 21264, the 1998 RISC chip dubbed 'NT's greatest'",
+      "summary": "A 1998 retrospective article resurfaced on Hacker News examines the Alpha 21264, a RISC microprocessor noted for its performance running Windows NT systems at the time. It's a historical/technical piece rather than current AI industry news.",
+      "whyItMatters": "For readers following today's AI chip race, older architecture debates like this offer background on how processor design priorities looked before the current GPU- and accelerator-driven era, though this piece itself isn't about AI.",
       "whatToWatch": [],
       "questions": [
-        "Why has this decades-old article resurfaced now, and does the Hacker News discussion tie it to any current hardware topic?"
+        "Is there any direct connection drawn to current AI chip design, or is this purely nostalgia?"
       ],
       "sources": [
         {
@@ -235,9 +267,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-09T10:06:37Z",
-      "updatedAt": "2026-08-10T01:50:16.454Z",
-      "badge": "Analysis",
-      "trendScore": 36,
+      "updatedAt": "2026-08-10T07:50:56.368Z",
+      "badge": "Retro",
+      "trendScore": 31,
       "confidence": "low"
     }
   ]
