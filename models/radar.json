@@ -1,7 +1,45 @@
 {
-  "contentVersion": 16,
-  "generatedAt": "2026-08-05T23:12:41.780Z",
+  "contentVersion": 17,
+  "generatedAt": "2026-08-10T21:52:25.358Z",
   "models": [
+    {
+      "id": "muse-glimmer",
+      "name": "Muse Glimmer",
+      "vendor": "Meta Superintelligence Labs",
+      "openness": "open-weights",
+      "license": "Apache 2.0",
+      "contextTokens": 131072,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-10T21:52:25.358Z",
+      "timeline": [
+        {
+          "at": "2026-08-10T21:52:25.358Z",
+          "what": "Meta Superintelligence Labs released Muse Glimmer, its first open model, a 30B multimodal (image-input) model with 128K+ context, now runnable locally via Ollama's MLX engine.",
+          "url": "https://ollama.com/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "id": "ling-3.0-tiny",
+      "name": "Ling-3.0-tiny",
+      "vendor": "inclusionAI",
+      "openness": "open-weights",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-08-10T21:52:25.358Z",
+      "timeline": [
+        {
+          "at": "2026-08-10T21:52:25.358Z",
+          "what": "inclusionAI open-weighted Ling-3.0-tiny, an 8B-A1.3B MoE model, achieving roughly 100 tok/s on a DGX Spark and 86-90 tok/s on an M4 Pro MacBook under 8.4GiB memory.",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkqwso/inclusionailing30tiny_8b_a13b_moe_hugging_face/"
+        }
+      ]
+    },
     {
       "id": "claude-opus-5",
       "name": "Claude Opus 5",
