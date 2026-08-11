@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-10T22:03:34.066Z",
-  "contentVersion": 28,
+  "generatedAt": "2026-08-11T04:07:23.417Z",
+  "contentVersion": 29,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,23 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-10T22:03:34.066Z"
+      "updatedAt": "2026-08-11T04:07:23.417Z"
     },
     {
       "id": "ai-635b267ac0",
       "slug": "show-hn-needle2-is-a-14mb-agentic-llm-aimed-at-phones-wearables-and-ro",
       "lane": "ai",
-      "title": "Show HN: 'Needle2' is a 14MB agentic LLM aimed at phones, wearables, and robots",
-      "summary": "A Show HN post introduces Needle2, described as a 14-megabyte agentic language model built to run on resource-constrained devices like phones, wearables, smart-home hardware, and robots. The listing is a developer showcase rather than a formal product launch, and details beyond the size and target use cases are not specified. It adds to a growing category of ultra-compact models meant to bring agentic capability on-device rather than through cloud APIs.",
-      "whyItMatters": "If real-world capable, tiny on-device agentic models could shift where AI workloads run, with implications for latency, privacy, and cost versus cloud-hosted LLMs.",
+      "title": "Show HN: Needle2, a 14MB agentic LLM built for phones, wearables and robots",
+      "summary": "A developer posted a Show HN introducing Needle2, described as a 14MB agentic LLM designed to run directly on phones, wearables, smart home devices, and robots. It's a community-shared project rather than a major lab release, aimed at squeezing agentic capability into extremely small, on-device footprints.",
+      "whyItMatters": "It's another data point in the push toward tiny, on-device agentic models that don't depend on cloud inference — a trend worth tracking even when it comes from outside the big labs.",
       "whatToWatch": [
-        "Independent benchmarks or third-party testing of Needle2's actual capabilities",
-        "Whether it sees adoption in real hardware products",
-        "More detail from the developer on training approach and limitations"
+        "Independent benchmarks or community testing of its actual task capability",
+        "Whether the project is open-sourced or gets adopted by hobbyist hardware projects"
       ],
       "questions": [
-        "How capable is a 14MB model compared to mainstream cloud LLMs for genuine agentic tasks?",
-        "Who is behind the project and is it commercially backed?"
+        "How much real agentic capability can a 14MB model actually deliver versus a toy demo?",
+        "What tasks and hardware has it actually been validated on?"
       ],
       "sources": [
         {
@@ -151,26 +150,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T17:22:07Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://cactuscompute.com/opengraph-image?9df76a35fe8276e2",
       "badge": "Release",
-      "trendScore": 55,
+      "trendScore": 52,
       "confidence": "low"
     },
     {
       "id": "ai-c7b962b1d9",
       "slug": "openai-case-study-model-ml-says-gpt-5-6-sol-speeds-up-finance-work",
       "lane": "ai",
-      "title": "OpenAI case study: Model ML says GPT-5.6 Sol speeds up finance work",
-      "summary": "OpenAI published a customer case study describing how a company called Model ML is using OpenAI's GPT-5.6 Sol model to complete finance-related work more efficiently. The post is promotional material from OpenAI rather than independent reporting, and it does not specify quantified efficiency gains beyond the headline claim.",
-      "whyItMatters": "It signals OpenAI's continued push to embed its models into specialized enterprise functions like finance, competing directly with vertical-focused AI vendors.",
+      "title": "OpenAI case study: Model ML says finance clients work faster with GPT-5.6 Sol",
+      "summary": "OpenAI published a customer story stating that Model ML, a finance-focused AI vendor, has clients completing finance work more efficiently using GPT-5.6 Sol, a specific model version. Details are limited to what's presented in OpenAI's own promotional writeup.",
+      "whyItMatters": "It signals how OpenAI is positioning newer model variants for finance-industry workflows, part of its broader enterprise push into regulated, high-value verticals.",
       "whatToWatch": [
-        "Broader availability and pricing details for GPT-5.6 Sol",
-        "Additional enterprise case studies from OpenAI in finance or other verticals"
+        "Whether other finance vendors publish similar GPT-5.6 Sol adoption stories",
+        "Any independent benchmarking of Sol's finance-task performance"
       ],
       "questions": [
-        "What specific efficiency gains were achieved, and how were they measured?",
-        "Is GPT-5.6 Sol generally available or limited to select customers?"
+        "How much of the efficiency claim is quantified versus anecdotal?",
+        "What distinguishes GPT-5.6 Sol from other GPT-5.6 variants?"
       ],
       "sources": [
         {
@@ -182,26 +181,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T12:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7i6SdT5kG4y6MXKSP9lOtK/cb719d5c67c96695c7de9048d7562fd8/modelml-og.png?w=1600&h=900&fit=fill",
       "badge": "Case Study",
-      "trendScore": 52,
+      "trendScore": 47,
       "confidence": "medium"
     },
     {
       "id": "ai-7a678e9a26",
       "slug": "what-building-an-ai-native-finance-function-taught-me",
       "lane": "ai",
-      "title": "What building an AI-native finance function taught me",
-      "summary": "OpenAI published a reflective post on lessons learned while building what it calls an 'AI-native' finance function, presumably describing hands-on integration of AI tools into finance operations. The source gives no further specifics on the scale, organization, or concrete changes involved beyond the title.",
-      "whyItMatters": "It offers a data point on how deeply AI tools are being woven into core business operations like finance, beyond pilot projects.",
+      "title": "OpenAI reflects on building an 'AI-native' finance function",
+      "summary": "OpenAI published a first-person reflection on lessons learned building what it calls an AI-native finance function, apparently drawing on its own internal experience. The post is framed as a lessons-learned piece rather than a product announcement.",
+      "whyItMatters": "It offers a glimpse into how an AI-forward company restructures its own back-office operations around AI tools, which other enterprises may look to as a template.",
       "whatToWatch": [
-        "Whether OpenAI or others publish follow-up detail on what specifically changed",
-        "Similar 'AI-native function' writeups from other business areas"
+        "Whether specifics (tools, headcount, workflow changes) surface in follow-up coverage"
       ],
       "questions": [
-        "Whose finance function is being described — OpenAI's own or a customer's?",
-        "What concrete tools or workflows were adopted, and what was the measured impact?"
+        "Which concrete workflows or tools does 'AI-native' actually refer to?",
+        "Are the lessons OpenAI-specific or generalizable to other finance teams?"
       ],
       "sources": [
         {
@@ -213,26 +211,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T17:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/213JFHmpZq0cEizbZT3ghf/ed4a63030460c3822bdfc5ec91b87227/Frame__13_.png?w=1600&h=900&fit=fill",
       "badge": "Analysis",
-      "trendScore": 51,
+      "trendScore": 46,
       "confidence": "medium"
     },
     {
       "id": "ai-3a8585570c",
       "slug": "openai-expands-daybreak-cyber-defense-effort-as-threat-window-narrows",
       "lane": "ai",
-      "title": "OpenAI expands 'Daybreak' cyber defense effort as threat window narrows",
-      "summary": "OpenAI announced an expansion of a program it calls 'Daybreak,' framed around the idea that the window for defenders to respond to cyber threats is shrinking. The post does not detail Daybreak's full scope, but ties it to OpenAI's broader positioning around AI and cybersecurity.",
-      "whyItMatters": "AI companies are increasingly positioning their models as core infrastructure for cyber defense, raising the stakes in an emerging AI-versus-AI security dynamic.",
+      "title": "OpenAI expands its Daybreak cyber defense effort",
+      "summary": "OpenAI announced it is expanding Daybreak, described as its cyber defense initiative, framing the move around a narrowing window for defenders to keep pace with AI-enabled threats. The announcement is light on operational specifics.",
+      "whyItMatters": "It reflects growing urgency among AI labs about the offense/defense balance in cybersecurity as capable models proliferate — a theme likely to shape both product and policy decisions.",
       "whatToWatch": [
-        "Who gains access to the expanded Daybreak effort",
-        "Any related policy or access-control announcements from OpenAI"
+        "Which organizations or sectors gain access to expanded Daybreak capabilities",
+        "Follow-on detail about what 'expanding' concretely involves"
       ],
       "questions": [
-        "What exactly is Daybreak, and how long has it existed prior to this expansion?",
-        "How is OpenAI measuring the claimed narrowing of the cyber defense window?"
+        "What specifically has narrowed the defense window — a capability jump, or observed real-world attacks?",
+        "Who qualifies for Daybreak access?"
       ],
       "sources": [
         {
@@ -244,27 +242,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T10:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/126iXrjsNVMlUR3pgI1PbS/80445f60ec21f0b051acb893fdf5dac4/16x9_SEO.png?w=1600&h=900&fit=fill",
       "badge": "Security",
-      "trendScore": 50,
+      "trendScore": 45,
       "confidence": "medium"
     },
     {
       "id": "ai-61282b7420",
       "slug": "openai-sends-letter-to-texas-gov-abbott-on-responsible-ai-infrastructu",
       "lane": "ai",
-      "title": "OpenAI sends letter to Texas Gov. Abbott on 'responsible AI infrastructure'",
-      "summary": "OpenAI published a letter addressed to Texas Governor Greg Abbott concerning what it terms responsible AI infrastructure development in the state. The letter comes as OpenAI and other AI companies continue expanding data-center and compute capacity, but the specific asks, commitments, or triggering project are not detailed in the source.",
-      "whyItMatters": "AI infrastructure buildouts are increasingly entangled with state-level energy, land, and regulatory politics, and Texas is a major hub for that expansion.",
+      "title": "OpenAI sends letter to Texas Governor Abbott on AI infrastructure",
+      "summary": "OpenAI published a letter addressed to Texas Governor Greg Abbott focused on responsible AI infrastructure development in the state. The letter's specific asks or commitments aren't detailed beyond the headline framing.",
+      "whyItMatters": "It's a visible instance of an AI lab engaging directly with state government on infrastructure policy, relevant as data center buildouts increasingly draw local political attention.",
       "whatToWatch": [
-        "Any public response from Governor Abbott's office",
-        "Related permitting, incentive, or siting decisions in Texas",
-        "Whether other AI companies send similar letters to state officials"
+        "Any response or policy action from Abbott's office or the Texas legislature",
+        "Whether similar letters go to other states with major AI data center activity"
       ],
       "questions": [
-        "What specific infrastructure project or policy prompted this letter?",
-        "What concrete commitments, if any, is OpenAI offering in exchange?"
+        "What specifically prompted the letter — pending legislation, community opposition, or a planned OpenAI project in Texas?",
+        "What commitments, if any, does OpenAI offer versus request?"
       ],
       "sources": [
         {
@@ -276,26 +273,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T14:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2uFbydWeRIYgmgAqjUVskz/f2672582154a6c597e42e7319059adbc/gov_abbott_letter_9x16.png?w=1600&h=900&fit=fill",
-      "badge": "Policy",
-      "trendScore": 48,
+      "badge": "Regulatory",
+      "trendScore": 43,
       "confidence": "medium"
     },
     {
       "id": "ai-c3789a1f16",
       "slug": "opinion-humanizing-llm-outputs-is-a-mistake",
       "lane": "ai",
-      "title": "Opinion: 'Humanizing' LLM outputs is a mistake",
-      "summary": "A blog post shared on Hacker News argues against the common practice of tuning LLM outputs to sound more casual or human-like, calling the approach misguided. The post is an opinion piece rather than a product or research announcement, and its specific arguments beyond the headline are not detailed here.",
-      "whyItMatters": "It taps into an ongoing industry debate about chatbot tone, authenticity, and user trust that shapes how AI products are designed and perceived.",
+      "title": "Blog post argues 'humanising' LLM outputs is a mistake",
+      "summary": "An essay shared on Hacker News argues that efforts to make LLM outputs sound more human — softened tone, filler language, human-mimicking quirks — are misguided, prompting discussion in the comments. It's an opinion piece rather than a news event.",
+      "whyItMatters": "It taps into an ongoing industry debate about chatbot tone and AI-writing detection that affects product design choices at every AI company.",
       "whatToWatch": [
-        "Whether the piece sparks responses from AI labs or product teams",
-        "Any resulting shifts in how chatbot personas are designed"
+        "Whether the argument gains traction or pushback in wider AI commentary"
       ],
       "questions": [
-        "What alternative to 'humanized' output does the author propose?",
-        "Is this a fringe take or does it reflect a broader industry shift?"
+        "What alternative to 'humanising' does the author propose?",
+        "Do any major AI labs change output style guidance in response to this kind of critique?"
       ],
       "sources": [
         {
@@ -307,27 +303,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T13:35:40Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://kuber.studio/blog/static/social-images/content-Reflections-Humanising%20LLM%20Outputs%20is%20Actually%20Dumb.md.webp",
-      "badge": "Opinion",
-      "trendScore": 48,
+      "badge": "Analysis",
+      "trendScore": 43,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-a05534f803",
+      "slug": "show-hn-a-tiny-llm-hits-21-000-tokens-sec-on-a-250-fpga",
+      "lane": "ai",
+      "title": "Show HN: A tiny LLM hits 21,000 tokens/sec on a $250 FPGA",
+      "summary": "A hobbyist project demoed a small on-chip LLM running at 21,000 tokens per second on a $250 FPGA board, shared via a live Show HN demo. It's an individual hardware project, not a commercial product.",
+      "whyItMatters": "It's a striking illustration of how fast and cheap on-device inference hardware is improving, even outside major chipmakers — relevant context for the broader edge-AI hardware race.",
+      "whatToWatch": [
+        "Whether the approach scales to larger, more capable models",
+        "Any commercial interest in productizing the technique"
+      ],
+      "questions": [
+        "What model size and quality tradeoffs come with that throughput?",
+        "How does power consumption compare to GPU-based inference at similar speed?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: A tiny LLM running at 21,000 tok/s on a $250 FPGA (Live Demo)",
+          "url": "https://www.mikeayles.com/blog/on-chip-llm-kv260/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-10T11:52:07Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-10T11:52:07Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
+      "badge": "Release",
+      "trendScore": 40,
       "confidence": "low"
     },
     {
       "id": "ai-7f776d7829",
       "slug": "openai-restricts-frontier-cyber-models-to-more-trusted-users",
       "lane": "ai",
-      "title": "OpenAI restricts frontier cyber models to 'more trusted' users",
-      "summary": "OpenAI described an approach to limit access to its most advanced cybersecurity-capable models to a vetted set of trusted organizations or individuals, published alongside its related announcement about expanding the Daybreak cyber defense effort. The vetting criteria and process are not detailed in the source.",
-      "whyItMatters": "It signals that leading AI labs are treating powerful cyber-capable models as dual-use technology requiring gatekeeping, a stance that could shape norms across the industry.",
+      "title": "OpenAI moves to restrict frontier cyber models to vetted users",
+      "summary": "OpenAI outlined steps to limit access to its most capable cyber-related models to what it calls 'more trusted hands,' published alongside its Daybreak expansion announcement. Specifics of the vetting process aren't detailed in the announcement.",
+      "whyItMatters": "It's a concrete governance move addressing dual-use risk in AI-powered cyber capabilities, a topic regulators and security researchers are watching closely.",
       "whatToWatch": [
-        "Which organizations qualify as 'trusted' under this policy",
-        "Whether other AI labs adopt similar access restrictions",
-        "Any government or regulatory involvement in defining trust criteria"
+        "Details on vetting criteria and who qualifies as 'trusted'",
+        "Whether this affects general API access to cyber-capable models"
       ],
       "questions": [
-        "Who decides what counts as a 'trusted' hand, and is there outside oversight?",
-        "How does this restriction affect independent security researchers?"
+        "How does OpenAI verify trustworthiness in practice?",
+        "Does this restrict existing customers or only new capabilities going forward?"
       ],
       "sources": [
         {
@@ -339,9 +364,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T10:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2K3VyXH2uGsLnY0S85Jkr8/c410a7b19c35a1264e751c5b87a1d6e2/SEO_Card.png?w=1600&h=900&fit=fill",
       "badge": "Security",
-      "trendScore": 45,
+      "trendScore": 40,
       "confidence": "medium"
     },
     {
@@ -349,16 +375,15 @@
       "slug": "docker-debuts-disposable-sandboxes-for-ai-agents",
       "lane": "ai",
       "title": "Docker launches disposable sandboxes for AI agents",
-      "summary": "Docker introduced 'Docker Sandboxes,' offering disposable, isolated environments designed for AI agents to execute code or actions safely. The announcement was shared via Hacker News, and pricing or availability details beyond the product concept are not specified in the source.",
-      "whyItMatters": "As agentic AI coding and automation tools proliferate, safe execution environments are becoming critical infrastructure, and Docker's entry signals major dev-tooling vendors are building specifically for agent workloads.",
+      "summary": "Docker introduced 'Docker Sandboxes,' disposable, isolated environments designed specifically for AI agents to execute code safely, announced via a Show HN post. This positions Docker's infrastructure toward the growing agentic-AI execution market.",
+      "whyItMatters": "It shows established dev-tooling infrastructure players building dedicated products for agent workloads, signaling that agent execution safety is becoming a standard infrastructure layer rather than a niche concern.",
       "whatToWatch": [
-        "Pricing and general availability details",
-        "Integration with popular agent frameworks",
-        "Competing offerings from cloud providers or other dev-tools vendors"
+        "Adoption by popular agent frameworks",
+        "Pricing and availability details as the product matures"
       ],
       "questions": [
-        "How does this differ technically from existing container-based sandboxing?",
-        "What is the pricing and resource model for running agent workloads at scale?"
+        "How does this differ meaningfully from existing container-based sandboxing?",
+        "What's the pricing model for at-scale agent usage?"
       ],
       "sources": [
         {
@@ -370,27 +395,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T06:02:38Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "imageUrl": "https://www.docker.com/app/uploads/2024/02/docker-default-meta-image-1110x583.png",
-      "badge": "Product",
-      "trendScore": 44,
+      "badge": "Release",
+      "trendScore": 39,
       "confidence": "low"
     },
     {
       "id": "ai-311d3f683f",
       "slug": "new-30b-parameter-model-muse-glimmer-targets-always-on-local-ai-agents",
       "lane": "ai",
-      "title": "New 30B-parameter model 'Muse Glimmer' targets always-on local AI agents",
-      "summary": "A model called Muse Glimmer, reportedly a 30-billion-parameter model, was introduced with an emphasis on powering always-on local agent workflows. The post was shared via Hacker News; its precise origin and further technical details, including benchmarks and licensing, are not confirmed beyond the stated size and intended use case.",
-      "whyItMatters": "It reflects continued competition to build mid-size models efficient enough to run persistently on local or edge hardware for agentic use cases, an area several major labs are racing in.",
+      "title": "New 30B model 'Muse Glimmer' targets always-on local agent workflows",
+      "summary": "A new 30-billion-parameter model called Muse Glimmer was introduced, described as optimized for always-on local agent workflows, and shared via Hacker News. Beyond the parameter count and stated purpose, few technical details are available.",
+      "whyItMatters": "It adds to a wave of mid-size models specifically tuned for persistent, local agent use rather than one-off cloud queries — a shift relevant to how agentic AI gets deployed outside data centers.",
       "whatToWatch": [
-        "Official release notes, benchmarks, or documentation confirming the model's origin",
-        "Whether weights are released openly or access is restricted",
-        "Developer reception and real-world always-on use cases"
+        "Benchmark comparisons against other local-agent-oriented models",
+        "Availability of weights or an open release"
       ],
       "questions": [
-        "Who developed Muse Glimmer, and is it tied to a major lab?",
-        "What makes it specifically suited to 'always-on' operation versus other 30B models?"
+        "What hardware is required to run it 'always-on' locally?",
+        "How does it compare to existing 30B-class open models on agentic benchmarks?"
       ],
       "sources": [
         {
@@ -402,72 +426,41 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T10:10:02Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
+      "updatedAt": "2026-08-11T04:07:23.417Z",
       "badge": "Release",
-      "trendScore": 43,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
-      "id": "ai-ee449db47d",
-      "slug": "openai-adds-premium-seats-to-chatgpt-business",
+      "id": "ai-8f3f7b5717",
+      "slug": "virgin-atlantic-adopts-chatgpt-work-to-refine-customer-journeys",
       "lane": "ai",
-      "title": "OpenAI adds premium seats to ChatGPT Business",
-      "summary": "OpenAI announced that 'premium seats' are coming to ChatGPT Business, introducing a higher-tier option within its enterprise product line. The announcement does not detail which features distinguish premium seats from standard ones, nor pricing or rollout timing.",
-      "whyItMatters": "It points to OpenAI's continued push to increase per-seat enterprise revenue and compete more directly with Microsoft Copilot and other workplace AI offerings.",
+      "title": "Virgin Atlantic adopts ChatGPT Work to refine customer journeys",
+      "summary": "OpenAI published a case study saying Virgin Atlantic is using ChatGPT Work, OpenAI's enterprise product, to improve customer journey processes. The writeup is promotional in nature and light on quantified results.",
+      "whyItMatters": "It's another enterprise adoption datapoint for OpenAI's workplace product, this time from a major airline brand, reflecting continued travel-sector interest in AI tools.",
       "whatToWatch": [
-        "Specific features included with premium seats",
-        "Pricing details and rollout timeline",
-        "Customer uptake among existing ChatGPT Business accounts"
+        "Whether Virgin Atlantic or OpenAI shares measurable outcomes down the line",
+        "Expansion of ChatGPT Work use to other airline functions"
       ],
       "questions": [
-        "What capabilities justify the premium tier over standard ChatGPT Business seats?",
-        "How will pricing compare to competitors' enterprise AI tiers?"
+        "What specific customer journey processes changed, and by how much?",
+        "Which teams within Virgin Atlantic are using the tool?"
       ],
       "sources": [
         {
-          "title": "Premium seats are coming to ChatGPT Business",
-          "url": "https://openai.com/index/premium-seats-chatgpt-business",
+          "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+          "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
           "publisher": "OpenAI",
           "publishedAt": "2026-08-10T00:00:00.000Z"
         }
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-10T00:00:00.000Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1qTt5Tfbx2Uxm4KkaAlsvL/620bc01bbd5cd6346cb5ca32d9ca4715/premium-seats-seo-16x9.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 42,
+      "updatedAt": "2026-08-11T04:07:23.417Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2D8DFH38WMdgasAYYA59oq/8ac7e51eea7443331de30805b82c9b24/oai_VirginAtlantic_SEO.png?w=1600&h=900&fit=fill",
+      "badge": "Case Study",
+      "trendScore": 37,
       "confidence": "medium"
-    },
-    {
-      "id": "ai-4e6949d8a9",
-      "slug": "show-hn-project-lets-players-voice-interrogate-ai-murder-mystery-suspe",
-      "lane": "ai",
-      "title": "Show HN: A voice-driven AI murder mystery game",
-      "summary": "A Show HN post introduces a game in which players interview AI-controlled suspects using their own voice to solve a murder mystery, showcasing a consumer entertainment application of conversational voice AI. It appears to be an independent or small-team project shared for community feedback rather than a major industry release.",
-      "whyItMatters": "It illustrates how conversational voice-AI capabilities are trickling down into niche indie entertainment products, broadening the range of consumer AI applications beyond chatbots and assistants.",
-      "whatToWatch": [
-        "Community reception and feedback on Hacker News",
-        "Whether the project gains further development or funding"
-      ],
-      "questions": [
-        "What underlying voice and language models power the game?",
-        "Is this a hobby project or does it have commercial ambitions?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
-          "url": "https://www.whodunnitai.com/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T03:18:40Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-10T03:18:40Z",
-      "updatedAt": "2026-08-10T22:03:34.066Z",
-      "imageUrl": "https://www.whodunnitai.com/whodunnitai-metadata.jpg",
-      "trendScore": 40,
-      "confidence": "low"
     }
   ]
 }
