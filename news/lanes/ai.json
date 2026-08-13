@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-11T04:07:23.417Z",
-  "contentVersion": 29,
+  "generatedAt": "2026-08-13T00:01:47.808Z",
+  "contentVersion": 30,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,344 +123,326 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-11T04:07:23.417Z"
+      "updatedAt": "2026-08-13T00:01:47.808Z"
     },
     {
-      "id": "ai-635b267ac0",
-      "slug": "show-hn-needle2-is-a-14mb-agentic-llm-aimed-at-phones-wearables-and-ro",
+      "id": "ai-fb21820d80",
+      "slug": "openai-outlines-how-enterprises-are-moving-from-ai-assistance-to-ai-ex",
       "lane": "ai",
-      "title": "Show HN: Needle2, a 14MB agentic LLM built for phones, wearables and robots",
-      "summary": "A developer posted a Show HN introducing Needle2, described as a 14MB agentic LLM designed to run directly on phones, wearables, smart home devices, and robots. It's a community-shared project rather than a major lab release, aimed at squeezing agentic capability into extremely small, on-device footprints.",
-      "whyItMatters": "It's another data point in the push toward tiny, on-device agentic models that don't depend on cloud inference — a trend worth tracking even when it comes from outside the big labs.",
+      "title": "OpenAI outlines how enterprises are moving from AI assistance to AI execution",
+      "summary": "OpenAI published a post describing a shift among enterprise customers from using AI as a passive assistant to deploying it for more autonomous task execution. The piece frames this as an evolution in how companies structure AI adoption internally, though it doesn't name specific customers or metrics in what's available.",
+      "whyItMatters": "How OpenAI frames enterprise adoption patterns signals where it sees its commercial AI business heading next.",
       "whatToWatch": [
-        "Independent benchmarks or community testing of its actual task capability",
-        "Whether the project is open-sourced or gets adopted by hobbyist hardware projects"
+        "Whether specific customer case studies follow this framing",
+        "How competitors describe similar shifts in their own enterprise messaging"
       ],
       "questions": [
-        "How much real agentic capability can a 14MB model actually deliver versus a toy demo?",
-        "What tasks and hardware has it actually been validated on?"
+        "What concrete examples or metrics support the 'assistance to execution' framing?"
       ],
       "sources": [
         {
-          "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-          "url": "https://cactuscompute.com/needle",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T17:22:07Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-10T17:22:07Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://cactuscompute.com/opengraph-image?9df76a35fe8276e2",
-      "badge": "Release",
-      "trendScore": 52,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-c7b962b1d9",
-      "slug": "openai-case-study-model-ml-says-gpt-5-6-sol-speeds-up-finance-work",
-      "lane": "ai",
-      "title": "OpenAI case study: Model ML says finance clients work faster with GPT-5.6 Sol",
-      "summary": "OpenAI published a customer story stating that Model ML, a finance-focused AI vendor, has clients completing finance work more efficiently using GPT-5.6 Sol, a specific model version. Details are limited to what's presented in OpenAI's own promotional writeup.",
-      "whyItMatters": "It signals how OpenAI is positioning newer model variants for finance-industry workflows, part of its broader enterprise push into regulated, high-value verticals.",
-      "whatToWatch": [
-        "Whether other finance vendors publish similar GPT-5.6 Sol adoption stories",
-        "Any independent benchmarking of Sol's finance-task performance"
-      ],
-      "questions": [
-        "How much of the efficiency claim is quantified versus anecdotal?",
-        "What distinguishes GPT-5.6 Sol from other GPT-5.6 variants?"
-      ],
-      "sources": [
-        {
-          "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
-          "url": "https://openai.com/index/model-ml",
+          "title": "From assistance to execution: How enterprises put AI to work",
+          "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
           "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T12:00:00.000Z"
+          "publishedAt": "2026-08-12T06:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T12:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7i6SdT5kG4y6MXKSP9lOtK/cb719d5c67c96695c7de9048d7562fd8/modelml-og.png?w=1600&h=900&fit=fill",
-      "badge": "Case Study",
-      "trendScore": 47,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-7a678e9a26",
-      "slug": "what-building-an-ai-native-finance-function-taught-me",
-      "lane": "ai",
-      "title": "OpenAI reflects on building an 'AI-native' finance function",
-      "summary": "OpenAI published a first-person reflection on lessons learned building what it calls an AI-native finance function, apparently drawing on its own internal experience. The post is framed as a lessons-learned piece rather than a product announcement.",
-      "whyItMatters": "It offers a glimpse into how an AI-forward company restructures its own back-office operations around AI tools, which other enterprises may look to as a template.",
-      "whatToWatch": [
-        "Whether specifics (tools, headcount, workflow changes) surface in follow-up coverage"
-      ],
-      "questions": [
-        "Which concrete workflows or tools does 'AI-native' actually refer to?",
-        "Are the lessons OpenAI-specific or generalizable to other finance teams?"
-      ],
-      "sources": [
-        {
-          "title": "What building an AI-native finance function taught me",
-          "url": "https://openai.com/index/building-an-ai-native-finance-function",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T17:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-10T17:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/213JFHmpZq0cEizbZT3ghf/ed4a63030460c3822bdfc5ec91b87227/Frame__13_.png?w=1600&h=900&fit=fill",
+      "publishedAt": "2026-08-12T06:00:00.000Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
       "badge": "Analysis",
-      "trendScore": 46,
+      "trendScore": 50,
       "confidence": "medium"
     },
     {
-      "id": "ai-3a8585570c",
-      "slug": "openai-expands-daybreak-cyber-defense-effort-as-threat-window-narrows",
+      "id": "ai-a0f3dc1efe",
+      "slug": "what-sort-of-maths-are-llms-actually-good-at",
       "lane": "ai",
-      "title": "OpenAI expands its Daybreak cyber defense effort",
-      "summary": "OpenAI announced it is expanding Daybreak, described as its cyber defense initiative, framing the move around a narrowing window for defenders to keep pace with AI-enabled threats. The announcement is light on operational specifics.",
-      "whyItMatters": "It reflects growing urgency among AI labs about the offense/defense balance in cybersecurity as capable models proliferate — a theme likely to shape both product and policy decisions.",
+      "title": "What sort of maths are LLMs actually good at?",
+      "summary": "A blog post gaining traction on Hacker News examines which categories of mathematics large language models handle well versus poorly. It reads as an individual technical exploration rather than a formal benchmark study, based on the details available.",
+      "whyItMatters": "Mapping LLMs' mathematical strengths and blind spots matters for anyone evaluating these tools for technical or quantitative work.",
       "whatToWatch": [
-        "Which organizations or sectors gain access to expanded Daybreak capabilities",
-        "Follow-on detail about what 'expanding' concretely involves"
+        "Community response and any follow-up benchmarks addressing the gaps identified"
       ],
       "questions": [
-        "What specifically has narrowed the defense window — a capability jump, or observed real-world attacks?",
-        "Who qualifies for Daybreak access?"
+        "Which model(s) were examined, and what methodology was used to draw conclusions?"
       ],
       "sources": [
         {
-          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
-          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T10:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/126iXrjsNVMlUR3pgI1PbS/80445f60ec21f0b051acb893fdf5dac4/16x9_SEO.png?w=1600&h=900&fit=fill",
-      "badge": "Security",
-      "trendScore": 45,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-61282b7420",
-      "slug": "openai-sends-letter-to-texas-gov-abbott-on-responsible-ai-infrastructu",
-      "lane": "ai",
-      "title": "OpenAI sends letter to Texas Governor Abbott on AI infrastructure",
-      "summary": "OpenAI published a letter addressed to Texas Governor Greg Abbott focused on responsible AI infrastructure development in the state. The letter's specific asks or commitments aren't detailed beyond the headline framing.",
-      "whyItMatters": "It's a visible instance of an AI lab engaging directly with state government on infrastructure policy, relevant as data center buildouts increasingly draw local political attention.",
-      "whatToWatch": [
-        "Any response or policy action from Abbott's office or the Texas legislature",
-        "Whether similar letters go to other states with major AI data center activity"
-      ],
-      "questions": [
-        "What specifically prompted the letter — pending legislation, community opposition, or a planned OpenAI project in Texas?",
-        "What commitments, if any, does OpenAI offer versus request?"
-      ],
-      "sources": [
-        {
-          "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
-          "url": "https://openai.com/index/responsible-ai-infrastructure-texas",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T14:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-10T14:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2uFbydWeRIYgmgAqjUVskz/f2672582154a6c597e42e7319059adbc/gov_abbott_letter_9x16.png?w=1600&h=900&fit=fill",
-      "badge": "Regulatory",
-      "trendScore": 43,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-c3789a1f16",
-      "slug": "opinion-humanizing-llm-outputs-is-a-mistake",
-      "lane": "ai",
-      "title": "Blog post argues 'humanising' LLM outputs is a mistake",
-      "summary": "An essay shared on Hacker News argues that efforts to make LLM outputs sound more human — softened tone, filler language, human-mimicking quirks — are misguided, prompting discussion in the comments. It's an opinion piece rather than a news event.",
-      "whyItMatters": "It taps into an ongoing industry debate about chatbot tone and AI-writing detection that affects product design choices at every AI company.",
-      "whatToWatch": [
-        "Whether the argument gains traction or pushback in wider AI commentary"
-      ],
-      "questions": [
-        "What alternative to 'humanising' does the author propose?",
-        "Do any major AI labs change output style guidance in response to this kind of critique?"
-      ],
-      "sources": [
-        {
-          "title": "Humanising LLM Outputs Is Dumb",
-          "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+          "title": "What sort of maths are LLMs good at?",
+          "url": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T13:35:40Z"
+          "publishedAt": "2026-08-12T10:04:25Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T13:35:40Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://kuber.studio/blog/static/social-images/content-Reflections-Humanising%20LLM%20Outputs%20is%20Actually%20Dumb.md.webp",
+      "publishedAt": "2026-08-12T10:04:25Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://s0.wp.com/i/blank.jpg?m=1383295312i",
       "badge": "Analysis",
-      "trendScore": 43,
+      "trendScore": 44,
       "confidence": "low"
     },
     {
-      "id": "ai-a05534f803",
-      "slug": "show-hn-a-tiny-llm-hits-21-000-tokens-sec-on-a-250-fpga",
+      "id": "ai-1d70a737f6",
+      "slug": "discovered-materials-launches-with-ai-agents-for-materials-discovery",
       "lane": "ai",
-      "title": "Show HN: A tiny LLM hits 21,000 tokens/sec on a $250 FPGA",
-      "summary": "A hobbyist project demoed a small on-chip LLM running at 21,000 tokens per second on a $250 FPGA board, shared via a live Show HN demo. It's an individual hardware project, not a commercial product.",
-      "whyItMatters": "It's a striking illustration of how fast and cheap on-device inference hardware is improving, even outside major chipmakers — relevant context for the broader edge-AI hardware race.",
+      "title": "Discovered Materials launches with AI agents for materials discovery",
+      "summary": "Discovered Materials, a Y Combinator startup from the Summer 2026 batch, launched publicly via a Hacker News post, pitching AI agents built to discover new materials. Details on funding, team, or specific discoveries aren't included in the available source.",
+      "whyItMatters": "Materials science is a prime target for AI-driven discovery, with potential to speed up hardware and manufacturing breakthroughs.",
       "whatToWatch": [
-        "Whether the approach scales to larger, more capable models",
-        "Any commercial interest in productizing the technique"
+        "Early customer traction or published results from the startup",
+        "Follow-on funding announcements"
       ],
       "questions": [
-        "What model size and quality tradeoffs come with that throughput?",
-        "How does power consumption compare to GPU-based inference at similar speed?"
+        "Which materials or industries is the company targeting first?",
+        "How does its agent-based approach differ from existing computational materials science tools?"
       ],
       "sources": [
         {
-          "title": "Show HN: A tiny LLM running at 21,000 tok/s on a $250 FPGA (Live Demo)",
-          "url": "https://www.mikeayles.com/blog/on-chip-llm-kv260/",
+          "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+          "url": "https://discoveredmaterials.com/research/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T11:52:07Z"
+          "publishedAt": "2026-08-12T07:51:20Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T11:52:07Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "badge": "Release",
-      "trendScore": 40,
+      "publishedAt": "2026-08-12T07:51:20Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://discoveredmaterials.com/assets/og-image.png",
+      "badge": "Launch",
+      "trendScore": 41,
       "confidence": "low"
     },
     {
-      "id": "ai-7f776d7829",
-      "slug": "openai-restricts-frontier-cyber-models-to-more-trusted-users",
+      "id": "ai-1a8475db80",
+      "slug": "llama-cpp-draws-renewed-attention-on-hacker-news",
       "lane": "ai",
-      "title": "OpenAI moves to restrict frontier cyber models to vetted users",
-      "summary": "OpenAI outlined steps to limit access to its most capable cyber-related models to what it calls 'more trusted hands,' published alongside its Daybreak expansion announcement. Specifics of the vetting process aren't detailed in the announcement.",
-      "whyItMatters": "It's a concrete governance move addressing dual-use risk in AI-powered cyber capabilities, a topic regulators and security researchers are watching closely.",
+      "title": "llama.cpp draws renewed attention on Hacker News",
+      "summary": "The open-source llama.cpp project, widely used for efficient local large language model inference, was trending on Hacker News again. The specific update or discussion driving the renewed attention isn't detailed in the source.",
+      "whyItMatters": "llama.cpp underpins much of the open-weight and local-inference LLM ecosystem, so continued attention reflects that ecosystem's ongoing activity.",
       "whatToWatch": [
-        "Details on vetting criteria and who qualifies as 'trusted'",
-        "Whether this affects general API access to cyber-capable models"
+        "Any specific release notes or feature announcements tied to this discussion"
       ],
       "questions": [
-        "How does OpenAI verify trustworthiness in practice?",
-        "Does this restrict existing customers or only new capabilities going forward?"
+        "What prompted this particular spike in attention — a release, benchmark, or feature?"
       ],
       "sources": [
         {
-          "title": "Putting frontier cyber models in more trusted hands",
-          "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T10:00:00.000Z"
+          "title": "llama.cpp",
+          "url": "https://llama.app",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-12T04:51:59Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T10:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2K3VyXH2uGsLnY0S85Jkr8/c410a7b19c35a1264e751c5b87a1d6e2/SEO_Card.png?w=1600&h=900&fit=fill",
-      "badge": "Security",
+      "publishedAt": "2026-08-12T04:51:59Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://llama.app/og-image-llama-cpp.png",
+      "trendScore": 41,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-cad35e6294",
+      "slug": "ringcentral-details-its-approach-to-ai-native-work-with-openai",
+      "lane": "ai",
+      "title": "RingCentral details its approach to 'AI-native' work with OpenAI",
+      "summary": "OpenAI published a case-study style post on how RingCentral is building AI-native workflows spanning engineering and operations. Specific tools used or measured outcomes aren't included beyond that framing.",
+      "whyItMatters": "These vendor case studies are how OpenAI markets enterprise adoption and show which companies are furthest along operationalizing AI internally.",
+      "whatToWatch": [
+        "Whether RingCentral shares independent details on results tied to this work"
+      ],
+      "questions": [
+        "What measurable outcomes has RingCentral seen, and which specific OpenAI products are involved?"
+      ],
+      "sources": [
+        {
+          "title": "How RingCentral builds AI-native work from engineering to ops",
+          "url": "https://openai.com/index/ringcentral",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-12T00:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2k1A67ewu2PHI2pt2Wh6zG/b0e09c92f1db264476fd343a1dfd63a8/ringcentral-drive-seo.png?w=1600&h=900&fit=fill",
+      "badge": "Case study",
       "trendScore": 40,
       "confidence": "medium"
     },
     {
-      "id": "ai-778cdf7794",
-      "slug": "docker-debuts-disposable-sandboxes-for-ai-agents",
+      "id": "ai-4d5da3ea46",
+      "slug": "woxi-an-open-source-reimplementation-of-the-wolfram-language",
       "lane": "ai",
-      "title": "Docker launches disposable sandboxes for AI agents",
-      "summary": "Docker introduced 'Docker Sandboxes,' disposable, isolated environments designed specifically for AI agents to execute code safely, announced via a Show HN post. This positions Docker's infrastructure toward the growing agentic-AI execution market.",
-      "whyItMatters": "It shows established dev-tooling infrastructure players building dedicated products for agent workloads, signaling that agent execution safety is becoming a standard infrastructure layer rather than a niche concern.",
+      "title": "Woxi: an open-source reimplementation of the Wolfram Language",
+      "summary": "A developer showcased 'Woxi' on Hacker News, an open-source project aiming to reimplement Mathematica/Wolfram Language functionality. As a Show HN post, details are limited to the project's stated goal at this early stage.",
+      "whyItMatters": "Open alternatives to proprietary computational tools can matter to technical users, including those building AI or scientific-computing systems reliant on symbolic math.",
       "whatToWatch": [
-        "Adoption by popular agent frameworks",
-        "Pricing and availability details as the product matures"
+        "Community reception and how much of Wolfram Language's functionality the project ultimately covers"
       ],
       "questions": [
-        "How does this differ meaningfully from existing container-based sandboxing?",
-        "What's the pricing model for at-scale agent usage?"
+        "How complete is the implementation, and is it meant to interoperate with AI/ML tooling?"
       ],
       "sources": [
         {
-          "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
-          "url": "https://www.docker.com/products/docker-sandboxes/",
+          "title": "Show HN: Woxi - Open-source Mathematica / Wolfram Language reimplementation",
+          "url": "https://woxi.ad-si.com",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T06:02:38Z"
+          "publishedAt": "2026-08-12T10:06:29Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T06:02:38Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://www.docker.com/app/uploads/2024/02/docker-default-meta-image-1110x583.png",
-      "badge": "Release",
+      "publishedAt": "2026-08-12T10:06:29Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://woxi.ad-si.com/images/social-preview.png",
       "trendScore": 39,
       "confidence": "low"
     },
     {
-      "id": "ai-311d3f683f",
-      "slug": "new-30b-parameter-model-muse-glimmer-targets-always-on-local-ai-agents",
+      "id": "ai-800ebb0d78",
+      "slug": "faster-local-llm-inference-on-apple-silicon-macos-vms-via-llama-cpp",
       "lane": "ai",
-      "title": "New 30B model 'Muse Glimmer' targets always-on local agent workflows",
-      "summary": "A new 30-billion-parameter model called Muse Glimmer was introduced, described as optimized for always-on local agent workflows, and shared via Hacker News. Beyond the parameter count and stated purpose, few technical details are available.",
-      "whyItMatters": "It adds to a wave of mid-size models specifically tuned for persistent, local agent use rather than one-off cloud queries — a shift relevant to how agentic AI gets deployed outside data centers.",
+      "title": "Faster local LLM inference on Apple Silicon macOS VMs via llama.cpp",
+      "summary": "A technical write-up shared on Hacker News describes methods for speeding up LLM inference using llama.cpp inside macOS virtual machines running on Apple Silicon. It's aimed at developers running models locally rather than announcing a new product.",
+      "whyItMatters": "Performance gains for local inference lower the barrier to running capable models without cloud costs, part of the broader push toward open-weight, local AI.",
       "whatToWatch": [
-        "Benchmark comparisons against other local-agent-oriented models",
-        "Availability of weights or an open release"
+        "Whether these techniques get merged into mainstream llama.cpp or VM tooling"
       ],
       "questions": [
-        "What hardware is required to run it 'always-on' locally?",
-        "How does it compare to existing 30B-class open models on agentic benchmarks?"
+        "How large are the reported speedups, and do they generalize beyond the specific VM setup tested?"
       ],
       "sources": [
         {
-          "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
-          "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+          "title": "Apple Silicon and macOS VMs: Faster LLM Inference with llama.cpp",
+          "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-10T10:10:02Z"
+          "publishedAt": "2026-08-11T14:50:33Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T10:10:02Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "badge": "Release",
-      "trendScore": 38,
+      "publishedAt": "2026-08-11T14:50:33Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://opengraph.githubassets.com/d2ed949b36478cb5b1b462899eda5f5d1313a9a65343e3a519b08c5511e852a6/trycua/cua",
+      "trendScore": 39,
       "confidence": "low"
     },
     {
-      "id": "ai-8f3f7b5717",
-      "slug": "virgin-atlantic-adopts-chatgpt-work-to-refine-customer-journeys",
+      "id": "ai-27a641e4d1",
+      "slug": "ai-news-roundup-covers-how-to-steal-a-reasoning-trace",
       "lane": "ai",
-      "title": "Virgin Atlantic adopts ChatGPT Work to refine customer journeys",
-      "summary": "OpenAI published a case study saying Virgin Atlantic is using ChatGPT Work, OpenAI's enterprise product, to improve customer journey processes. The writeup is promotional in nature and light on quantified results.",
-      "whyItMatters": "It's another enterprise adoption datapoint for OpenAI's workplace product, this time from a major airline brand, reflecting continued travel-sector interest in AI tools.",
+      "title": "AI News roundup covers 'how to steal a reasoning trace'",
+      "summary": "Latent Space's AI News newsletter covered research on extracting, or 'stealing,' reasoning traces from proprietary LLM APIs as part of its regular roundup of AI developments. This tracks with separate research coverage of the same underlying topic circulating elsewhere.",
+      "whyItMatters": "Reasoning-trace extraction touches on IP and security concerns for AI labs that keep chain-of-thought hidden as a safety and product differentiator.",
       "whatToWatch": [
-        "Whether Virgin Atlantic or OpenAI shares measurable outcomes down the line",
-        "Expansion of ChatGPT Work use to other airline functions"
+        "Any response from major API providers about hardening against this kind of extraction"
       ],
       "questions": [
-        "What specific customer journey processes changed, and by how much?",
-        "Which teams within Virgin Atlantic are using the tool?"
+        "Which providers' APIs were shown to be susceptible, and what mitigations exist?"
       ],
       "sources": [
         {
-          "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-          "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-10T00:00:00.000Z"
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "url": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-12T07:11:08.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-10T00:00:00.000Z",
-      "updatedAt": "2026-08-11T04:07:23.417Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2D8DFH38WMdgasAYYA59oq/8ac7e51eea7443331de30805b82c9b24/oai_VirginAtlantic_SEO.png?w=1600&h=900&fit=fill",
-      "badge": "Case Study",
-      "trendScore": 37,
+      "publishedAt": "2026-08-12T07:11:08.000Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!nQZJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHPcJLMtagAAx07t.jpg",
+      "trendScore": 33,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-ea88abba61",
+      "slug": "paper-claims-evidence-of-emergent-introspective-awareness-in-llms",
+      "lane": "ai",
+      "title": "Paper claims evidence of 'emergent introspective awareness' in LLMs",
+      "summary": "A research paper circulating on Hacker News reports findings the authors describe as emergent introspective awareness in large language models. The paper's specific methodology and which models were tested aren't detailed beyond the title in available sources.",
+      "whyItMatters": "Claims about AI models' self-awareness or introspection draw significant attention and fuel ongoing debate over interpretability and AI safety.",
+      "whatToWatch": [
+        "Peer response and replication attempts from the research community",
+        "Whether major AI labs comment on or dispute the findings"
+      ],
+      "questions": [
+        "What exactly is meant by 'introspective awareness' here, and what evidence rules out simpler explanations?"
+      ],
+      "sources": [
+        {
+          "title": "Emergent Introspective Awareness in Large Language Models",
+          "url": "https://arxiv.org/abs/2601.01828",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-11T21:14:10Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-11T21:14:10Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
+      "badge": "Research",
+      "trendScore": 32,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-dbc30e8614",
+      "slug": "google-deepmind-s-amie-demonstrates-real-time-clinical-video-consultat",
+      "lane": "ai",
+      "title": "Google DeepMind's AMIE demonstrates real-time clinical video consultations",
+      "summary": "Google DeepMind said its research medical AI system, AMIE, demonstrated real-time clinical video consultation capabilities in what it calls a first-of-its-kind study. Further specifics on the study's scope, participants, and outcomes aren't detailed in the available source.",
+      "whyItMatters": "Moving medical AI from text-based interaction to live video consultation would be a meaningful capability step for AI in healthcare delivery.",
+      "whatToWatch": [
+        "Publication of full study details or peer review",
+        "Any movement toward clinical trials or real-world deployment"
+      ],
+      "questions": [
+        "How was the study designed, and how did AMIE's performance compare with human clinicians?"
+      ],
+      "sources": [
+        {
+          "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+          "publisher": "Google DeepMind",
+          "publishedAt": "2026-08-11T17:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-11T17:00:00.000Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AIME_SIZZLE_THUMBNAIL.Aug10.max-600x600.format-webp.webp",
+      "badge": "Research",
+      "trendScore": 29,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-3932451524",
+      "slug": "research-details-how-to-extract-reasoning-traces-from-proprietary-llm-",
+      "lane": "ai",
+      "title": "Research details how to extract reasoning traces from proprietary LLM APIs",
+      "summary": "A security research write-up, widely shared on Hacker News, describes techniques for extracting reasoning traces from proprietary LLM APIs that normally keep chain-of-thought hidden from end users.",
+      "whyItMatters": "If reasoning traces can be reliably extracted, it raises IP, security, and competitive concerns for AI labs that treat hidden chain-of-thought as both a safety measure and a product moat.",
+      "whatToWatch": [
+        "Responses or API changes from affected providers",
+        "Whether other researchers replicate or extend the technique"
+      ],
+      "questions": [
+        "Which specific providers or models were tested, and how practical is the attack at scale?"
+      ],
+      "sources": [
+        {
+          "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+          "url": "https://stolen-thoughts.com/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-11T13:22:00Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-11T13:22:00Z",
+      "updatedAt": "2026-08-13T00:01:47.808Z",
+      "badge": "Research",
+      "trendScore": 29,
+      "confidence": "low"
     }
   ]
 }
