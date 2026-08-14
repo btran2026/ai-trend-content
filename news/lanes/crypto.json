@@ -1,343 +1,401 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-13T00:01:47.808Z",
-  "contentVersion": 29,
+  "generatedAt": "2026-08-14T09:30:29.455Z",
+  "contentVersion": 30,
   "stories": [
     {
-      "id": "crypto-b5e525e6da",
-      "slug": "goldman-sachs-to-acquire-etf-manager-neos-in-2-25b-deal",
+      "id": "crypto-0f392c2361",
+      "slug": "trezor-warns-14-000-customers-after-shipping-partner-suffers-data-brea",
       "lane": "crypto",
-      "title": "Goldman Sachs to acquire ETF manager NEOS in $2.25B deal",
-      "summary": "Goldman Sachs has agreed to acquire ETF issuer NEOS Investments in a deal valued at $2.25 billion, according to Cointelegraph. NEOS is known for options-income ETF strategies, some of which are tied to Bitcoin. The deal would give Goldman direct ownership of a crypto-adjacent product lineup rather than just distributing third-party funds.",
-      "whyItMatters": "A bulge-bracket bank buying an ETF issuer with bitcoin-linked products is a concrete sign that crypto exposure is moving further into mainstream asset management.",
+      "title": "Trezor warns 14,000 customers after shipping partner suffers data breach",
+      "summary": "Hardware wallet maker Trezor has notified roughly 14,000 customers that their personal data was exposed through a breach at a third-party fulfilment/shipping provider, not Trezor's own systems. CryptoSlate frames the exposure as especially serious given a reported surge in violent home invasions targeting crypto holders, since leaked shipping data can link real names and addresses to wallet ownership. Cointelegraph and CoinDesk confirm the scope at around 14,000 affected users.",
+      "whyItMatters": "When a hardware-wallet vendor's shipping data leaks, it can hand physical-security risk to real people, not just a phishing list — a distinct threat from typical exchange breaches.",
       "whatToWatch": [
-        "Regulatory approval and closing timeline for the acquisition",
-        "Whether Goldman keeps, rebrands, or expands NEOS's bitcoin income ETFs"
+        "Whether Trezor names the fulfilment partner and details how the breach occurred",
+        "Reports of affected customers being targeted for phishing or in-person theft",
+        "Any compensation or added security guidance Trezor offers affected users"
       ],
       "questions": [
-        "What multiple/terms underlie the $2.25B price versus NEOS's assets under management?"
+        "Which fulfilment partner was compromised, and how large is its blast radius beyond Trezor?",
+        "Did the exposed data include order contents that reveal wallet ownership, or just shipping details?"
       ],
       "sources": [
         {
-          "title": "Goldman Sachs to acquire ETF manager NEOS in $2.25B deal",
-          "url": "https://cointelegraph.com/news/goldman-sachs-to-acquire-etf-manager-neos-225b-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "title": "With violent crypto home invasions surging, a data breach exposing over 10,000 Trezor owners puts physical safety on the line",
+          "url": "https://cryptoslate.com/with-violent-crypto-home-invasions-surging-a-data-breach-exposing-over-10000-trezor-owners-puts-physical-safety-on-the-line/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-14T07:50:01.000Z"
+        },
+        {
+          "title": "Trezor warns 14,000 customers after fulfilment partner suffers data breach",
+          "url": "https://www.coindesk.com/tech/2026/08/13/trezor-warns-14-000-users-after-fulfilment-partner-suffers-data-breach",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T17:10:57.000Z"
+        },
+        {
+          "title": "Trezor reports data from 14K users exposed through shipping provider",
+          "url": "https://cointelegraph.com/news/trezor-customer-data-shipping-provider-shipmonk?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-12T20:37:55.000Z"
+          "publishedAt": "2026-08-13T15:25:14.000Z"
         }
       ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T20:37:55.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-goldman-sachs-and-crypto-recap.png",
-      "badge": "M&A",
+      "sourceCount": 3,
+      "publishedAt": "2026-08-13T15:25:14.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/71a0ed456470eda07e70c0505f537f85cdd80d1e-1280x853.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Security",
+      "trendScore": 71,
+      "confidence": "high"
+    },
+    {
+      "id": "crypto-d1995a7ec7",
+      "slug": "bitcoin-stalls-near-63-000-64-000-as-monero-and-hyperliquid-outperform",
+      "lane": "crypto",
+      "title": "Bitcoin stalls near $63,000-$64,000 as monero and hyperliquid outperform",
+      "summary": "Bitcoin is holding in the $63,000-$64,000 range; CoinDesk calls it steady while CryptoSlate frames the stall as a sign of weakening buyer conviction, notable given the S&P 500 is at record highs. Monero and Hyperliquid's token were among the relative outperformers during the stretch. Separately, CoinDesk reports bitcoin-focused firms are pushing AI labs to share the same threat-detection tooling attackers already use.",
+      "whyItMatters": "A crypto market unable to keep pace with a record-setting stock market suggests demand is narrower than headline prices imply, a signal worth watching for anyone gauging risk appetite.",
+      "whatToWatch": [
+        "Whether bitcoin breaks decisively above or below the $63k-$64k range",
+        "Continued relative strength in monero and hyperliquid versus bitcoin"
+      ],
+      "questions": [
+        "Is the stall a sign of genuine demand weakness or just thinner summer trading volume?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin’s stall around $63,000 exposes how weak its buyers have become amid record high S&P 500",
+          "url": "https://cryptoslate.com/bitcoins-stall-around-63000-exposes-how-weak-its-buyers-have-become-amid-record-high-sp-500/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-14T09:10:45.000Z"
+        },
+        {
+          "title": "Bitcoin holds steady near $64,000 as monero, hyperliquid outperform",
+          "url": "https://www.coindesk.com/markets/2026/08/13/bitcoin-holds-steady-near-usd64-000-as-monero-hyperliquid-outperform",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T11:02:43.000Z"
+        },
+        {
+          "title": "Bitcoin firms ask AI labs for same tools attackers already have",
+          "url": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T05:21:21.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-13T05:21:21.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/ba7672d4f2121273de99ff0b2b3822f98d720778-1756x988.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 69,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-2495b0c04d",
+      "slug": "figure-s-blockchain-loan-marketplace-hits-4-3b-in-volume-as-profit-nea",
+      "lane": "crypto",
+      "title": "Figure's blockchain loan marketplace hits $4.3B in volume as profit nearly triples",
+      "summary": "Figure reported $4.3 billion in loan marketplace volume, with Cointelegraph noting profit nearly tripled and CoinDesk reporting revenue doubled as blockchain-based loan volumes surged. The figures point to accelerating adoption of Figure's blockchain rails for loan origination and trading.",
+      "whyItMatters": "Figure is one of the more established players applying blockchain infrastructure to real-world lending markets, making strong volume and profit growth a concrete data point for the broader tokenized-credit thesis.",
+      "whatToWatch": [
+        "Whether volume growth continues into the next reporting period",
+        "Any read-through to other blockchain-based lending platforms"
+      ],
+      "questions": [
+        "How much of the growth comes from new loan originations versus existing loans moving onto the marketplace?"
+      ],
+      "sources": [
+        {
+          "title": "Figure reports $4.3B in loan marketplace volume as profit nearly triples",
+          "url": "https://cointelegraph.com/news/figure-q2-loan-marketplace-volume-profit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-14T02:06:37.000Z"
+        },
+        {
+          "title": "Figure revenue doubles as blockchain loan marketplace volumes surge",
+          "url": "https://www.coindesk.com/business/2026/08/13/figure-revenue-doubles-as-blockchain-loan-marketplace-volumes-surge",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T13:29:28.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-13T13:29:28.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/loan-cash.jpg",
+      "badge": "Earnings",
       "trendScore": 63,
       "confidence": "medium"
     },
     {
-      "id": "crypto-6010f57349",
-      "slug": "fidelity-files-with-sec-to-add-staking-to-its-ethereum-etf",
+      "id": "crypto-dc8bf786a7",
+      "slug": "cluster-of-headwinds-weighs-on-bitcoin-as-xrp-teeters-near-1",
       "lane": "crypto",
-      "title": "Fidelity files with SEC to add staking to its Ethereum ETF",
-      "summary": "Fidelity has filed with the SEC to add staking to its spot Ethereum ETF, per Cointelegraph. The filing would let the fund earn staking rewards on its ether holdings rather than simply holding the asset unstaked.",
-      "whyItMatters": "Staking approval for a major issuer's ETH ETF would let investors capture native network yield through a regulated wrapper, a step regulators have been cautious about.",
+      "title": "Cluster of headwinds weighs on bitcoin as XRP teeters near $1",
+      "summary": "CoinDesk reports bitcoin is facing a cluster of headwinds, with XRP hovering near the $1 level. The available reporting is limited on the specific drivers behind the pressure.",
+      "whyItMatters": "XRP slipping toward a round-number psychological level alongside broader bitcoin weakness is a signal traders watch for confirmation of a wider risk-off shift.",
       "whatToWatch": [
-        "SEC review and comment period on the filing",
-        "Whether other Ethereum ETF issuers file similar amendments"
+        "Whether XRP holds above $1",
+        "Follow-up reporting detailing the specific headwinds cited"
       ],
       "questions": [
-        "How would staking risk (slashing, lockups) be disclosed and managed within the ETF structure?"
+        "What exactly are the 'cluster of headwinds' referenced — macro, regulatory, or flow-driven?"
       ],
       "sources": [
         {
-          "title": "Fidelity files with SEC to add staking to Ethereum ETF",
-          "url": "https://cointelegraph.com/news/fidelity-staking-ethereum-etf-sec-filing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-12T12:42:58.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T12:42:58.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/option-1-bold-white-montserrat.jpeg",
-      "badge": "Regulatory",
-      "trendScore": 62,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-178237a80e",
-      "slug": "fidelity-files-to-let-its-ethereum-etf-stake-and-pay-investors",
-      "lane": "crypto",
-      "title": "Fidelity files to let its Ethereum ETF stake and pay investors",
-      "summary": "Fidelity has submitted an SEC filing seeking to enable staking within its Ethereum ETF and pass resulting rewards on to investors, according to Decrypt. The move would turn the fund from a pure price-tracking vehicle into one that also generates and distributes staking income.",
-      "whyItMatters": "Turning a spot ETH ETF into an income-paying product could reshape how institutional investors access Ethereum, adding a yield component regulators have so far kept out of these funds.",
-      "whatToWatch": [
-        "SEC's response to the filing and any requested changes",
-        "Timeline for staking rewards to begin flowing to shareholders if approved"
-      ],
-      "questions": [
-        "How frequently and in what form (cash vs. reinvested) would payouts be made?"
-      ],
-      "sources": [
-        {
-          "title": "Fidelity Files to Let Its Ethereum ETF Stake and Pay Investors",
-          "url": "https://decrypt.co/375457/fidelity-files-ethereum-etf-stake-pay-investors",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-08-12T17:13:43.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T17:13:43.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/08/ethereum-decrypt-style-08-scaled-gID_7.jpeg@png",
-      "badge": "Regulatory",
-      "trendScore": 61,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-59aca61bd1",
-      "slug": "securitize-shares-fall-20-after-tokenization-revenue-misses-estimates",
-      "lane": "crypto",
-      "title": "Securitize shares fall 20% after tokenization revenue misses estimates",
-      "summary": "Shares of tokenization firm Securitize dropped 20% following an earnings report in which revenue from its tokenization business fell short of expectations, CoinDesk reported. The miss raises questions about near-term demand for the real-world-asset tokenization services the company has been building out.",
-      "whyItMatters": "Securitize is a bellwether for the tokenized-asset sector; a revenue shortfall tempers the narrative that tokenization demand is scaling as fast as boosters claim.",
-      "whatToWatch": [
-        "Management commentary on pipeline and guidance in the earnings call",
-        "Whether other tokenization platforms report similar softness"
-      ],
-      "questions": [
-        "Is the shortfall a timing issue with specific deals or a broader demand problem?"
-      ],
-      "sources": [
-        {
-          "title": "Securitize falls 20% after earnings miss as tokenization revenue falls short",
-          "url": "https://www.coindesk.com/markets/2026/08/12/securitize-falls-20-after-earnings-miss-as-tokenization-revenue-falls-short",
+          "title": "Cluster of headwinds weigh on bitcoin. XRP teeters near $1",
+          "url": "https://www.coindesk.com/markets/2026/08/14/cluster-of-headwinds-weigh-on-bitcoin-xrp-teeters-near-usd1",
           "publisher": "CoinDesk",
-          "publishedAt": "2026-08-12T22:26:24.000Z"
+          "publishedAt": "2026-08-14T07:14:37.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-12T22:26:24.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/0df058fe321b648948d8a5b690588aaafbb157fe-2048x1152.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Earnings",
-      "trendScore": 60,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-2eda926090",
-      "slug": "russia-designates-bitcoin-ethereum-and-usdt-for-public-trading-with-a-",
-      "lane": "crypto",
-      "title": "Russia designates Bitcoin, Ethereum and USDT for public trading, with a $58,000 cap for retail",
-      "summary": "Russian authorities have selected Bitcoin, Ethereum and USDT as the assets eligible for a public crypto trading regime, with retail participation reportedly subject to a $58,000 cap, according to CryptoSlate. The move appears to formalize a limited, regulated on-ramp for crypto trading inside Russia.",
-      "whyItMatters": "Russia has long occupied a gray zone on crypto regulation; a formal, asset-specific trading framework with retail limits would be a notable shift toward controlled legalization rather than a blanket ban or free-for-all.",
-      "whatToWatch": [
-        "Official confirmation and detailed rules on the retail cap's scope (per-trade, per-account, or annual)",
-        "Which exchanges or platforms are authorized to offer this trading"
-      ],
-      "questions": [
-        "Is the $58,000 figure a per-transaction limit, an account cap, or something else, and how will it be enforced?"
-      ],
-      "sources": [
-        {
-          "title": "Russia picks Bitcoin, Ethereum and USDT for public trading as retail faces $58,000 cap",
-          "url": "https://cryptoslate.com/russia-picks-bitcoin-ethereum-and-usdt-for-public-trading-as-retail-faces-58000-cap/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-12T20:40:31.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T20:40:31.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/russia-crypto-turnstile.jpg",
-      "badge": "Regulatory",
+      "publishedAt": "2026-08-14T07:14:37.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/08b73b53b7d99907e25db584d50c4b5d0065ff53-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
       "trendScore": 59,
-      "confidence": "low"
+      "confidence": "medium"
     },
     {
-      "id": "crypto-1cc44523d6",
-      "slug": "bank-of-england-tests-stablecoin-and-digital-pound-interoperability-fo",
+      "id": "crypto-34b0126a7f",
+      "slug": "bitcoin-slips-below-63-000-as-oil-prices-and-yields-climb",
       "lane": "crypto",
-      "title": "Bank of England tests stablecoin and digital pound interoperability for cross-border payments",
-      "summary": "The Bank of England is running tests on how stablecoins and a potential digital pound could interoperate in cross-border payment settings, according to Cointelegraph and CoinDesk. The work sits alongside the central bank's broader, still-unresolved digital pound project.",
-      "whyItMatters": "A G7 central bank actively testing stablecoin interoperability signals that regulators are preparing practical rails for stablecoins to coexist with future central bank digital currency, rather than treating them as mutually exclusive.",
+      "title": "Bitcoin slips below $63,000 as oil prices and yields climb",
+      "summary": "CoinDesk's live markets update reports bitcoin dropped below $63,000 as oil prices and bond yields rose, pointing to a broader macro risk-off move rather than a crypto-specific catalyst.",
+      "whyItMatters": "Bitcoin trading in step with oil and yields reinforces its correlation to macro risk sentiment rather than acting as an independent or safe-haven asset.",
       "whatToWatch": [
-        "Publication of test results or a follow-up consultation from the Bank of England",
-        "Any timeline update on the digital pound decision"
+        "Whether bitcoin finds support below $63,000",
+        "Further moves in oil prices and Treasury yields that could extend the pressure"
+      ],
+      "questions": [],
+      "sources": [
+        {
+          "title": "Live updates: Bitcoin slips below $63,000 as oil, yields climb",
+          "url": "https://www.coindesk.com/tech/2026/08/14/live-updates-bitcoin-slips-below-usd63-000-as-oil-yields-climb",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-14T08:51:48.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-14T08:51:48.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/bce0f33371330b08e2ce67dd4abee833c362a946-8000x4500.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 55,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-a661433cea",
+      "slug": "sec-cancels-key-crypto-regulatory-meeting",
+      "lane": "crypto",
+      "title": "SEC cancels key crypto regulatory meeting",
+      "summary": "The SEC has cancelled a closely watched crypto regulatory meeting, according to Cointelegraph. The cancellation adds uncertainty to the timeline for pending crypto rulemaking.",
+      "whyItMatters": "A cancelled SEC meeting on crypto rules directly delays regulatory clarity that exchanges, issuers, and investors have been waiting on.",
+      "whatToWatch": [
+        "Whether the SEC reschedules the meeting with a new date",
+        "Related agenda items, including tokenization exemptions and Reg Crypto proposals, that may be affected"
       ],
       "questions": [
-        "Which stablecoins or platforms are involved in the testing, and is this pre-decisional or building toward a specific pilot?"
+        "Why was the meeting cancelled — internal disagreement or an administrative delay?"
       ],
       "sources": [
         {
-          "title": "Bank of England tests stablecoin, digital pound interoperability in cross-border payments",
-          "url": "https://cointelegraph.com/news/bank-of-england-tests-stablecoin-digital-pound-interoperability-in-cross-border-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "title": "SEC cancels key crypto regulatory meeting",
+          "url": "https://cointelegraph.com/news/sec-cancels-crypto-regulatory-meeting?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-12T16:50:25.000Z"
-        },
-        {
-          "title": "Bank of England to test stablecoin, digital currency use in cross-border finance",
-          "url": "https://www.coindesk.com/business/2026/08/12/bank-of-england-to-test-stablecoin-digital-currency-use-in-cross-border-finance",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-12T10:17:05.000Z"
-        }
-      ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-12T10:17:05.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-a-list-of-most-prominent-fiat-backed-stablecoins-uk-1.jpg",
-      "badge": "Regulatory",
-      "trendScore": 58,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-0a1fb47bef",
-      "slug": "blackrock-s-bitcoin-income-etf-covered-less-than-30-of-its-1-2m-crypto",
-      "lane": "crypto",
-      "title": "BlackRock's Bitcoin income ETF covered less than 30% of its $1.2M crypto losses with options",
-      "summary": "BlackRock's Bitcoin income ETF, which uses an options-based strategy to generate yield, offset less than 30% of roughly $1.2 million in crypto-related losses, CryptoSlate reported. The figures suggest the fund's options overlay provided only partial downside protection during the period covered.",
-      "whyItMatters": "It's a concrete data point on how well options-income crypto ETFs actually perform their advertised cushioning role, relevant to investors weighing these products for downside protection versus straightforward spot exposure.",
-      "whatToWatch": [
-        "Performance disclosures in subsequent reporting periods",
-        "Whether the shortfall changes marketing or strategy for similar income ETFs"
-      ],
-      "questions": [
-        "What time period and market conditions produced this $1.2M loss figure, and is it representative of the fund's typical hedge effectiveness?"
-      ],
-      "sources": [
-        {
-          "title": "BlackRock’s Bitcoin income ETF offset less than 30% of its $1.2M crypto losses with options",
-          "url": "https://cryptoslate.com/blackrocks-bitcoin-income-etf-offset-less-than-30-of-its-1-2m-crypto-losses-with-options/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-12T23:40:03.000Z"
+          "publishedAt": "2026-08-14T08:02:18.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-12T23:40:03.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bita-bitcoin-safety-net.jpg",
-      "badge": "Analysis",
-      "trendScore": 57,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-a6d4a78d85",
-      "slug": "standard-chartered-backed-anchorpoint-launches-hong-kong-dollar-stable",
-      "lane": "crypto",
-      "title": "Standard Chartered-backed Anchorpoint launches Hong Kong dollar stablecoin",
-      "summary": "Anchorpoint, a venture backed by Standard Chartered, has launched a stablecoin pegged to the Hong Kong dollar, according to CoinDesk. The launch adds to a growing field of bank-affiliated stablecoin issuers seeking to operate under Hong Kong's stablecoin licensing regime.",
-      "whyItMatters": "A major international bank backing a locally-pegged stablecoin shows traditional finance moving from stablecoin experimentation to actual issuance in jurisdictions building out clear licensing frameworks.",
-      "whatToWatch": [
-        "Uptake and initial trading volume for the new stablecoin",
-        "Whether other banks in Hong Kong follow with their own issuances"
-      ],
-      "questions": [
-        "What licensing status does the stablecoin hold under Hong Kong's regime, and who are its initial distribution partners?"
-      ],
-      "sources": [
-        {
-          "title": "Standard Chartered-led Anchorpoint launches Hong Kong dollar stablecoin",
-          "url": "https://www.coindesk.com/business/2026/08/12/standard-chartered-led-anchorpoint-launches-hong-kong-dollar-stablecoin",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-12T13:13:49.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T13:13:49.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/df9f1a75636b8bc1ae82ee873b7d7a30e1b25182-1920x1440.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "publishedAt": "2026-08-14T08:02:18.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-setting-court-precedent-for-btc.jpg",
       "badge": "Regulatory",
-      "trendScore": 57,
+      "trendScore": 55,
       "confidence": "medium"
     },
     {
-      "id": "crypto-e372cca3f1",
-      "slug": "goldman-sachs-to-acquire-neos-investments-in-2-25b-deal-adding-bitcoin",
+      "id": "crypto-a3446206f6",
+      "slug": "strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-pr",
       "lane": "crypto",
-      "title": "Goldman Sachs to acquire NEOS Investments in $2.25B deal, adding Bitcoin income ETFs to its lineup",
-      "summary": "Goldman Sachs is acquiring ETF manager NEOS Investments for $2.25 billion, a deal that brings NEOS's Bitcoin income ETF products into Goldman's fund lineup, per Bitcoin Magazine. The acquisition extends Goldman's push into options-income strategies tied to crypto.",
-      "whyItMatters": "It puts bitcoin-linked income products directly under a major bank's brand, a step beyond simply offering spot bitcoin ETF access.",
+      "title": "Strategy and Metaplanet face stock-index exclusion under MSCI's new proposal",
+      "summary": "MSCI has proposed rules that could exclude bitcoin treasury companies Strategy and Metaplanet from its stock indexes, according to CoinDesk. Both companies hold large bitcoin positions on their balance sheets, which appears to be the basis for the proposed exclusion criteria.",
+      "whyItMatters": "Index exclusion can trigger forced selling by index-tracking funds, making this a direct threat to the share prices of the most prominent public bitcoin-treasury companies.",
       "whatToWatch": [
-        "Deal closing and regulatory sign-off",
-        "How Goldman brands and distributes the acquired bitcoin income funds"
+        "MSCI's consultation timeline and final decision on the proposal",
+        "Whether other index providers adopt similar exclusion criteria",
+        "Any response or lobbying from Strategy and Metaplanet"
       ],
       "questions": [
-        "Will NEOS's existing bitcoin income ETF strategies change under Goldman ownership?"
+        "What specific threshold of bitcoin holdings would trigger exclusion under MSCI's criteria?"
       ],
       "sources": [
         {
-          "title": "Goldman Sachs to Acquire NEOS Investments in $2.25B Deal, Adding Bitcoin Income ETFs to Lineup",
-          "url": "https://bitcoinmagazine.com/news/goldman-sachs-to-acquire-neos-investments",
+          "title": "Bitcoin holders Strategy and Metaplanet face stock-index exclusion under MSCI’s new proposal",
+          "url": "https://www.coindesk.com/markets/2026/08/14/bitcoin-holders-strategy-and-metaplanet-face-stock-index-exclusion-under-msci-s-new-proposal",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-14T06:20:54.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-14T06:20:54.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/90e55252ca8600f3f161a4c428bcbc02de07fb89-2316x1046.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 53,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-88d1965279",
+      "slug": "ethereum-foundation-pivots-away-from-poseidon-in-post-quantum-roadmap",
+      "lane": "crypto",
+      "title": "Ethereum Foundation pivots away from Poseidon in post-quantum roadmap",
+      "summary": "The Ethereum Foundation is shifting its post-quantum cryptography plans away from the Poseidon hash function, according to Cointelegraph. The move is part of ongoing efforts to prepare Ethereum's cryptographic foundations for eventual quantum-computing threats.",
+      "whyItMatters": "Post-quantum readiness is a long-lead-time infrastructure decision for Ethereum, and a change of direction on core cryptographic primitives signals how seriously the foundation is treating the threat timeline.",
+      "whatToWatch": [
+        "What replaces Poseidon in the post-quantum design",
+        "Any formal roadmap or timeline update from the Ethereum Foundation"
+      ],
+      "questions": [
+        "Why was Poseidon deprioritized — performance, security concerns, or standardization issues?"
+      ],
+      "sources": [
+        {
+          "title": "Ethereum Foundation pivots away from Poseidon in post-quantum plan",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-drops-poseidon-post-quantum-plan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-13T23:34:56.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-13T23:34:56.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-eth-20-progress.jpg",
+      "badge": "Technical",
+      "trendScore": 53,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-655c1dee7d",
+      "slug": "sec-set-to-again-delay-innovation-exemption-for-tokenization",
+      "lane": "crypto",
+      "title": "SEC set to again delay 'innovation exemption' for tokenization",
+      "summary": "The SEC is expected to again delay its proposed 'innovation exemption' for tokenization, per CoinDesk, amid concerns raised by both Wall Street firms and the White House. This is reportedly not the first delay to this specific proposal.",
+      "whyItMatters": "The innovation exemption has been viewed as a key pathway for traditional finance to experiment with tokenized securities under lighter-touch rules, so repeated delays slow institutional tokenization efforts.",
+      "whatToWatch": [
+        "Any new timeline the SEC provides for the exemption",
+        "Specific concerns raised by Wall Street and the White House driving the delay"
+      ],
+      "questions": [
+        "What specific objections from Wall Street and the White House are behind the repeated delays?"
+      ],
+      "sources": [
+        {
+          "title": "U.S. SEC to again delay 'innovation exemption' for tokenization amid Wall Street, White House concerns",
+          "url": "https://www.coindesk.com/policy/2026/08/13/u-s-sec-to-again-delay-innovation-exemption-for-tokenization-amid-wall-street-white-house-concerns",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T23:09:14.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-13T23:09:14.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/027ad48cfa40c0b6f4997f516abebf656a10a0e9-720x406.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 52,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-9d627813af",
+      "slug": "sec-cancels-long-awaited-reg-crypto-proposal-postpones-meeting-indefin",
+      "lane": "crypto",
+      "title": "SEC cancels long-awaited Reg Crypto proposal, postpones meeting indefinitely",
+      "summary": "The SEC has cancelled a long-awaited proposal known as Reg Crypto and postponed the related meeting without setting a new date, according to CoinDesk. This appears connected to the broader SEC meeting cancellation reported elsewhere this week.",
+      "whyItMatters": "Reg Crypto has been anticipated as a foundational rulebook for how digital assets are regulated, so an indefinite postponement extends the uncertainty market participants have navigated for years.",
+      "whatToWatch": [
+        "Whether the SEC announces a new date for the meeting or proposal",
+        "Public statements from SEC commissioners explaining the postponement"
+      ],
+      "questions": [
+        "Is the postponement driven by internal SEC disagreement, external pressure, or scheduling issues?"
+      ],
+      "sources": [
+        {
+          "title": "SEC cancels long-awaited proposal of Reg Crypto, postponing meeting without new date",
+          "url": "https://www.coindesk.com/policy/2026/08/13/sec-cancels-long-awaited-proposal-of-reg-crypto-postponing-meeting-without-new-date",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-13T22:18:07.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-13T22:18:07.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/090e5c77bf9a39a85f3ba365ccf65e1cbecb6a4f-3781x2129.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Regulatory",
+      "trendScore": 52,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-7871256a40",
+      "slug": "tether-completes-independent-audit-of-reserves-with-kpmg",
+      "lane": "crypto",
+      "title": "Tether completes independent audit of reserves with KPMG",
+      "summary": "Tether has completed an independent audit of its reserves conducted by KPMG, according to Bitcoin Magazine. This addresses a long-standing demand from critics and regulators for third-party verification of the stablecoin issuer's backing assets.",
+      "whyItMatters": "Tether's reserve composition underpins the largest stablecoin by market cap, so an independent audit — long promised but repeatedly delayed — is a significant step toward transparency the market has pushed for.",
+      "whatToWatch": [
+        "Publication of the full audit findings and reserve breakdown",
+        "Market and regulatory reaction to the audit results",
+        "Whether Tether commits to a recurring independent audit cadence going forward"
+      ],
+      "questions": [
+        "What did the audit find regarding the composition and sufficiency of Tether's reserves?",
+        "Is this a one-time audit or the start of a recurring independent audit process?"
+      ],
+      "sources": [
+        {
+          "title": "Tether Finally Completes Independent Audit of Reserves With KPMG",
+          "url": "https://bitcoinmagazine.com/news/tether-completes-audit-with-kpmg",
           "publisher": "Bitcoin Magazine",
-          "publishedAt": "2026-08-12T21:20:05.000Z"
+          "publishedAt": "2026-08-13T20:01:40.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-12T21:20:05.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/08/Goldman-Sachs-to-Acquire-NEOS-Investments.jpg",
-      "badge": "M&A",
-      "trendScore": 55,
+      "publishedAt": "2026-08-13T20:01:40.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/05/Tether-Takes-Control-of-Twenty-One-Capital-After-Buying-Out-SoftBank.jpg",
+      "badge": "Breaking",
+      "trendScore": 51,
       "confidence": "low"
     },
     {
-      "id": "crypto-98b7be8470",
-      "slug": "goldman-sachs-leaps-into-bitcoin-income-etfs-with-2-25-billion-neos-bu",
+      "id": "crypto-2cf6f1107c",
+      "slug": "ether-fi-adds-tokenized-stocks-and-portfolio-backed-loans",
       "lane": "crypto",
-      "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
-      "summary": "Goldman Sachs is buying ETF issuer NEOS Investments for $2.25 billion, giving it entry into bitcoin income ETFs, CoinDesk reported. The purchase marks one of the largest moves yet by a major bank into the options-income crypto ETF niche.",
-      "whyItMatters": "It underscores how quickly options-income crypto ETFs have gone from niche products to acquisition targets for Wall Street banks.",
+      "title": "Ether.fi adds tokenized stocks and portfolio-backed loans",
+      "summary": "Ethereum DeFi platform Ether.fi has launched support for tokenized stocks and loans backed by users' portfolios, according to Decrypt. The addition expands the platform beyond its original staking and lending focus into broader tokenized asset products.",
+      "whyItMatters": "Bringing tokenized equities and portfolio-backed lending onto a DeFi platform is part of a broader trend blurring the line between traditional securities and on-chain finance, which regulators are watching closely.",
       "whatToWatch": [
-        "Regulatory approval process for the acquisition",
-        "Competitive response from other asset managers in the bitcoin income ETF space"
+        "Which stocks are available for tokenization on the platform",
+        "Regulatory response to DeFi platforms offering tokenized equities",
+        "User adoption of the portfolio-backed loan product"
       ],
       "questions": [
-        "How does this deal value NEOS relative to its current assets under management and revenue?"
+        "How does Ether.fi handle custody and regulatory compliance for the tokenized stock offerings?"
       ],
       "sources": [
         {
-          "title": "Goldman Sachs leaps into bitcoin income ETFs with $2.25 billion NEOS buyout",
-          "url": "https://www.coindesk.com/business/2026/08/12/goldman-sachs-leaps-into-bitcoin-income-etfs-with-usd2-25-billion-neos-buyout",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-12T17:21:03.000Z"
+          "title": "Ethereum DeFi Platform Ether.fi Adds Tokenized Stocks and Portfolio-Backed Loans",
+          "url": "https://decrypt.co/375529/ethereum-defi-etherfi-tokenized-stocks",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-08-13T14:01:03.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-12T17:21:03.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7146178019a1ec7dc2d3b45b9e54eb4155bc8715-1280x720.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "M&A",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-5153aece8d",
-      "slug": "fidelity-moves-to-add-staking-and-quarterly-payouts-to-its-near-900-mi",
-      "lane": "crypto",
-      "title": "Fidelity moves to add staking and quarterly payouts to its near-$900 million ether ETF",
-      "summary": "Fidelity has filed to add staking capability and quarterly payouts to its spot Ethereum ETF, which holds close to $900 million in assets, according to CoinDesk. The filing would let the fund generate staking rewards and distribute them to shareholders on a regular schedule.",
-      "whyItMatters": "Adding an income component to an ETF of this size would be a meaningful test case for how the SEC treats staking and yield distribution within regulated crypto investment vehicles.",
-      "whatToWatch": [
-        "SEC review timeline and any conditions attached to approval",
-        "First payout date and amount if the filing is approved"
-      ],
-      "questions": [
-        "Would staking exposure introduce new risks (slashing, validator downtime) that offset the added yield for shareholders?"
-      ],
-      "sources": [
-        {
-          "title": "Fidelity moves to add staking, quarterly payouts to near $900 million ether ETF",
-          "url": "https://www.coindesk.com/business/2026/08/12/fidelity-moves-to-add-staking-quarterly-payouts-to-near-usd900-million-ether-etf",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-12T09:30:20.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-12T09:30:20.000Z",
-      "updatedAt": "2026-08-13T00:01:47.808Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/b2b575e5fb400b044ebb5d3c2d88d2a80846eafb-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Regulatory",
-      "trendScore": 54,
-      "confidence": "medium"
+      "publishedAt": "2026-08-13T14:01:03.000Z",
+      "updatedAt": "2026-08-14T09:30:29.455Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/Ethereum-decrypt-style-03-gID_7.png@png",
+      "badge": "Product",
+      "trendScore": 51,
+      "confidence": "low"
     }
   ]
 }
