@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-15T17:33:05.461Z",
-  "contentVersion": 33,
+  "generatedAt": "2026-08-15T23:35:46.836Z",
+  "contentVersion": 34,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,79 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-15T17:33:05.461Z"
+      "updatedAt": "2026-08-15T23:35:46.836Z"
+    },
+    {
+      "id": "ai-3e34ba37fa",
+      "slug": "yadda-3-0-0-brings-bdd-testing-into-the-age-of-ai-agents",
+      "lane": "ai",
+      "title": "Yadda 3.0.0 Brings BDD Testing Into the Age of AI Agents",
+      "summary": "Yadda, a behavior-driven-development (BDD) framework, has shipped version 3.0.0, with its release framed around adapting BDD practices for a world where AI agents increasingly write and modify code, per a Hacker News post. Beyond the release announcement's framing, no further specifics on what changed are available.",
+      "whyItMatters": "As AI coding agents take on more implementation work, tooling that reasserts human-readable specs and test discipline could shape how teams keep agent-generated code trustworthy.",
+      "whatToWatch": [
+        "Hacker News community reaction and adoption signals",
+        "Whether a fuller changelog details agent-specific features"
+      ],
+      "questions": [
+        "What concretely changed in 3.0.0 for AI-agent workflows?",
+        "How does it differentiate from established BDD tools like Cucumber?"
+      ],
+      "sources": [
+        {
+          "title": "Yadda 3.0.0: BDD in the Age of AI Agents",
+          "url": "http://www.stephen-cresswell.com/2026/08/15/Yadda-3.0.0-BDD-in-the-Age-of-AI-Agents.html",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-15T13:43:46Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-15T13:43:46Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
+      "badge": "Dev Tools",
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-84691f8174",
+      "slug": "first-at-home-test-for-infected-ticks-could-improve-lyme-disease-diagn",
+      "lane": "ai",
+      "title": "At-Home Test Aims to Detect Infected Ticks for Faster Lyme Disease Diagnosis",
+      "summary": "A newly reported at-home test could let people check ticks for infection, potentially speeding up Lyme disease diagnosis, according to a Hacker News-flagged Smithsonian Magazine item. The supplied information is limited to the headline, with no detail on how the test works or its accuracy.",
+      "whyItMatters": "This is a health-diagnostics story with no AI-industry angle stated in the supplied source; it's included here for completeness rather than as core AI news.",
+      "whatToWatch": [],
+      "questions": [
+        "How does the test detect infection, and how accurate is it?",
+        "When and where might it become available to consumers?"
+      ],
+      "sources": [
+        {
+          "title": "At-home test for infected ticks could improve Lyme Disease diagnosis",
+          "url": "https://www.smithsonianmag.com/innovation/the-first-at-home-test-for-infected-ticks-could-improve-lyme-disease-diagnosis-180989235/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-15T14:04:49Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-15T14:04:49Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
+      "imageUrl": "https://th-thumbnailer.cdn-si-edu.com/zHvX_MeCmgyz7Mfc3JnZBzfRUgU=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/44/ad/44ad8f8b-e8c6-4c3b-9d22-10eececf06c3/gettyimages-1602304607.jpg",
+      "trendScore": 43,
+      "confidence": "low"
     },
     {
       "id": "ai-aaca96fa0e",
       "slug": "debian-opens-a-vote-on-rules-for-ai-llm-contributions",
       "lane": "ai",
-      "title": "Debian Opens a Vote on Rules for AI/LLM Contributions",
-      "summary": "The Debian project has begun a formal vote among its developers on how to handle AI- and LLM-assisted contributions to the distribution, according to a discussion thread highlighted on Hacker News. The move follows broader friction across open-source communities over whether and how AI-generated code and patches should be disclosed, reviewed, or restricted.",
-      "whyItMatters": "As a foundational distribution with wide downstream influence, whatever rules Debian settles on could become a reference point for how other major open-source projects govern AI-assisted contributions.",
+      "title": "Debian Begins Formal Vote on Rules for AI/LLM-Assisted Contributions",
+      "summary": "Debian's developer community has opened a formal vote on how the project should treat AI and LLM-assisted contributions, per a thread on the Debian developers mailing list flagged on Hacker News. The vote is expected to shape policy on code or patches produced with AI assistance going forward.",
+      "whyItMatters": "Debian is one of the most influential open-source projects, and its decision could become a reference point for how major FOSS communities formally regulate AI-generated contributions.",
       "whatToWatch": [
-        "The outcome of the vote and its specific terms",
-        "Whether other large open-source projects (Fedora, GNOME, etc.) cite Debian's decision as precedent"
+        "Outcome of the vote and the final policy language adopted",
+        "Reactions from maintainers and other distros considering similar rules"
       ],
       "questions": [
-        "What exactly is being voted on — an outright ban, a disclosure requirement, or review guidelines?",
-        "How would any rule actually be enforced across thousands of contributors?"
+        "What specific proposals or options are on the ballot?",
+        "Will the policy require disclosure of AI use, restrict it, or both?"
       ],
       "sources": [
         {
@@ -150,24 +207,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T09:20:07Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
-      "badge": "Policy",
-      "trendScore": 47,
+      "updatedAt": "2026-08-15T23:35:46.836Z",
+      "badge": "Governance",
+      "trendScore": 42,
       "confidence": "low"
     },
     {
       "id": "ai-73924d397f",
       "slug": "astro-s-creator-brings-react-style-hooks-to-his-agent-meta-harness-flu",
       "lane": "ai",
-      "title": "Astro's Creator Brings React-Style Hooks to His Agent Meta-Harness, Flue",
-      "summary": "Latent Space reports that the creator of the Astro web framework has added React-like hooks to Flue, his 'meta-harness' for building AI agents, aiming to bring familiar frontend-development patterns to agent construction.",
-      "whyItMatters": "It's another sign that agent-building frameworks are borrowing heavily from established web-dev abstractions as the ecosystem searches for a standard way to compose and manage agent behavior.",
+      "title": "Astro's Creator Brings React-Style Hooks to His Agent Framework, Flue",
+      "summary": "Per Latent Space, the creator of the Astro web framework has applied a React-style hooks pattern to a new 'meta-harness' for building AI agents, called Flue. The piece frames it as porting familiar frontend-development idioms into agent construction.",
+      "whyItMatters": "As agent-building frameworks multiply, borrowing proven patterns from frontend development could influence how developers structure and reuse agent logic going forward.",
       "whatToWatch": [
-        "Whether Flue gains adoption or additional hook patterns beyond this release"
+        "Public availability or open-sourcing of Flue",
+        "Reception among agent developers and possible copycat frameworks"
       ],
       "questions": [
-        "How does Flue's hooks model differ practically from existing agent frameworks?",
-        "Is Flue open source, and who is it aimed at — solo developers or teams?"
+        "How closely does 'hooks for agents' map to React's actual hooks model?",
+        "Is Flue intended as a personal project or a maintained framework?"
       ],
       "sources": [
         {
@@ -179,9 +237,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T15:46:22.000Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Osie!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F131d402d-63bf-4895-b5e7-b8990972a14c_1280x720.png",
-      "trendScore": 46,
+      "badge": "Dev Tools",
+      "trendScore": 40,
       "confidence": "low"
     },
     {
@@ -189,14 +248,15 @@
       "slug": "show-hn-thoughtdag-an-editable-context-graph-for-llm-conversations",
       "lane": "ai",
       "title": "Show HN: ThoughtDAG, an Editable Context Graph for LLM Conversations",
-      "summary": "A developer posted ThoughtDAG on Hacker News, a tool that represents LLM conversations as an editable graph rather than a linear thread, letting users branch, prune, or restructure context.",
-      "whyItMatters": "It reflects continued grassroots experimentation around a real pain point — managing and steering long or branching context in LLM chats and agent workflows — that established chat products haven't fully solved.",
+      "summary": "A developer introduced ThoughtDAG on Hacker News, a tool that represents LLM conversation context as an editable directed graph rather than a linear chat thread. The Show HN post presents it as a way to restructure and manage context fed into language models.",
+      "whyItMatters": "Better context management addresses a real pain point in long or branching LLM interactions, an area many chat and agent products are actively experimenting with.",
       "whatToWatch": [
-        "Community reaction and any follow-on forks or integrations"
+        "Hacker News community feedback and feature requests",
+        "Any integration with existing chat or agent tools"
       ],
       "questions": [
-        "Does it work with existing chat UIs or major model providers out of the box?",
-        "How does it handle context window limits as graphs grow large?"
+        "How does it compare to existing branching-chat interfaces?",
+        "Is the project open source, and who maintains it?"
       ],
       "sources": [
         {
@@ -208,9 +268,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T04:42:07Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
       "imageUrl": "https://chenxiachan.github.io/thoughtdag/assets/thoughtdag-story-poster-en-horizontal.jpg",
-      "trendScore": 44,
+      "badge": "Dev Tools",
+      "trendScore": 39,
       "confidence": "low"
     },
     {
@@ -218,14 +279,15 @@
       "slug": "researchers-propose-a-contract-grade-verifier-for-llm-generated-gpu-ke",
       "lane": "ai",
       "title": "Researchers Propose a Contract-Grade Verifier for LLM-Generated GPU Kernels",
-      "summary": "A paper circulating via Hacker News describes a 'contract-grade' verification approach for checking the correctness of GPU kernels written by LLMs, addressing the risk that AI-generated low-level code may pass basic tests while still containing subtle bugs.",
-      "whyItMatters": "As LLMs increasingly get used to write performance-critical, hard-to-audit code like GPU kernels, verification tooling like this speaks to a real trust gap that could shape how comfortable teams are relying on AI-generated systems code.",
+      "summary": "A paper shared on Hacker News describes a 'contract-grade' verification method for checking GPU kernels generated by large language models, aiming to formally validate correctness rather than relying on testing alone.",
+      "whyItMatters": "As LLMs are increasingly used to generate low-level performance code such as GPU kernels, verification tooling addresses a key trust gap before such code can be used in production systems.",
       "whatToWatch": [
-        "Whether the verification approach gets adopted or tested by ML framework or chip vendors"
+        "Whether the verifier is released as open tooling",
+        "Adoption by projects that generate GPU kernels with LLMs"
       ],
       "questions": [
-        "How does this compare to existing formal verification or fuzz-testing approaches for kernels?",
-        "What overhead does the verifier add to development or compile time?"
+        "What guarantees does 'contract-grade' verification actually provide?",
+        "What's the performance overhead of running the verifier?"
       ],
       "sources": [
         {
@@ -237,25 +299,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-14T16:57:14Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
       "imageUrl": "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png",
       "badge": "Research",
-      "trendScore": 33,
+      "trendScore": 28,
       "confidence": "low"
     },
     {
       "id": "ai-5aabe20e89",
       "slug": "show-hn-mole-an-open-source-deep-research-agent-for-the-terminal",
       "lane": "ai",
-      "title": "Show HN: Mole, an Open-Source Deep Research Agent for the Terminal",
-      "summary": "A developer released Mole on Hacker News, described as a deep research agent that runs from the terminal, joining a growing list of open-source alternatives to commercial 'deep research' agent products.",
-      "whyItMatters": "It's part of a wider pattern of developers building local, open alternatives to the deep-research features that major AI labs have folded into their flagship chat products.",
+      "title": "Show HN: Mole, a Deep Research Agent for the Terminal",
+      "summary": "A developer posted Mole on Hacker News, a terminal-based AI agent built for deep research tasks, adding to a growing field of command-line AI research assistants.",
+      "whyItMatters": "Terminal-native research agents reflect the broader shift of AI tools into developer workflows outside the browser.",
       "whatToWatch": [
-        "Uptake within developer communities and any comparisons to commercial deep-research offerings"
+        "Community adoption and comparisons to other CLI research agents",
+        "Any roadmap or model-support updates from the creator"
       ],
       "questions": [
-        "Which underlying models does Mole support, and can it run against local/open-weight models?",
-        "How does its research quality compare to commercial deep-research tools?"
+        "Which models or APIs power Mole's research capability?",
+        "How does it source and verify the information it gathers?"
       ],
       "sources": [
         {
@@ -267,25 +330,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-14T18:52:48Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
-      "imageUrl": "https://opengraph.githubassets.com/86fb9765b01a445fc18a038e74b090010f0ce27d3e98458aa3149c97b83b4767/lajosdeme/mole",
-      "trendScore": 31,
+      "updatedAt": "2026-08-15T23:35:46.836Z",
+      "imageUrl": "https://opengraph.githubassets.com/5a047b93c97b7da116d3bf72ead8fa68707a98a5fdc5aa79850528c3ea96dddb/lajosdeme/mole",
+      "badge": "Dev Tools",
+      "trendScore": 26,
       "confidence": "low"
     },
     {
       "id": "ai-9351d217fc",
       "slug": "hashagent-lets-you-share-an-ai-agent-as-a-url-running-locally-via-webg",
       "lane": "ai",
-      "title": "HashAgent Lets You Share an AI Agent as a URL, Running Locally via WebGPU",
-      "summary": "A Hacker News post introduces HashAgent, a project that packages an AI agent so it can be shared as a simple URL and run entirely client-side in the browser using WebGPU, without a server-side backend.",
-      "whyItMatters": "It's a notable data point in the push toward local, in-browser AI inference, which could lower distribution friction and hosting costs for small agent projects as WebGPU support matures.",
+      "title": "HashAgent Lets Users Share AI Agents as a URL, Running Locally via WebGPU",
+      "summary": "HashAgent, shared on Hacker News, allows people to package and share an AI agent as a link that runs entirely in the browser using WebGPU, without server-side inference.",
+      "whyItMatters": "Local, in-browser agent execution via WebGPU points to a path for distributing AI tools without server costs or sending user data off-device.",
       "whatToWatch": [
-        "Browser and hardware support as WebGPU adoption widens",
-        "Whether larger or more capable models become feasible under this approach"
+        "Real-world performance and model-size limits on consumer hardware",
+        "Browser and GPU compatibility as WebGPU support matures"
       ],
       "questions": [
-        "What model sizes and capabilities are practical to run this way today?",
-        "What are the security implications of running a shared, third-party agent locally?"
+        "Which models does HashAgent currently support?",
+        "What are the privacy implications of fully local execution?"
       ],
       "sources": [
         {
@@ -297,38 +361,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-14T12:57:02Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
+      "updatedAt": "2026-08-15T23:35:46.836Z",
       "imageUrl": "https://hashagent.pages.dev/og-card-v2.png?v=20260809",
-      "trendScore": 30,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-84691f8174",
-      "slug": "first-at-home-test-for-infected-ticks-could-improve-lyme-disease-diagn",
-      "lane": "ai",
-      "title": "First At-Home Test for Infected Ticks Could Improve Lyme Disease Diagnosis",
-      "summary": "A Smithsonian Magazine piece, surfaced via Hacker News, describes what's said to be the first at-home test for detecting infected ticks, aimed at helping people assess Lyme disease risk after a tick bite.",
-      "whyItMatters": "This is a health-diagnostics story rather than an AI industry development; it's included here mainly as a notable item from the same feed, with no described connection to AI models, tools, or policy.",
-      "whatToWatch": [
-        "Further details on availability, accuracy, and regulatory status of the test"
-      ],
-      "questions": [
-        "How accurate is the test compared to lab-based tick testing?",
-        "When and where will it become available to consumers?"
-      ],
-      "sources": [
-        {
-          "title": "The First At-Home Test for Infected Ticks Could Improve Lyme Disease Diagnosis",
-          "url": "https://www.smithsonianmag.com/innovation/the-first-at-home-test-for-infected-ticks-could-improve-lyme-disease-diagnosis-180989235/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-15T14:04:49Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-15T14:04:49Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
-      "imageUrl": "https://th-thumbnailer.cdn-si-edu.com/zHvX_MeCmgyz7Mfc3JnZBzfRUgU=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/44/ad/44ad8f8b-e8c6-4c3b-9d22-10eececf06c3/gettyimages-1602304607.jpg",
-      "trendScore": 47,
+      "badge": "Dev Tools",
+      "trendScore": 25,
       "confidence": "low"
     },
     {
@@ -336,13 +372,12 @@
       "slug": "show-hn-luacad-a-parametric-cad-tool-scripted-in-lua",
       "lane": "ai",
       "title": "Show HN: LuaCAD, a Parametric CAD Tool Scripted in Lua",
-      "summary": "A Hacker News Show post introduces LuaCAD, a parametric computer-aided design tool that lets users script 3D models using the Lua programming language.",
-      "whyItMatters": "This is a developer-tools/CAD story rather than an AI industry development; it appears here as a notable item from the same feed rather than a genuine AI release or policy shift.",
-      "whatToWatch": [
-        "Community adoption relative to established scripted-CAD tools like OpenSCAD"
-      ],
+      "summary": "A Hacker News Show HN post introduces LuaCAD, a parametric CAD tool that uses the Lua scripting language to define models. The supplied details are limited to the announcement itself.",
+      "whyItMatters": "This is a CAD/scripting tool with no AI component stated in the supplied information; it's included here for completeness rather than as AI-industry news.",
+      "whatToWatch": [],
       "questions": [
-        "How does LuaCAD's feature set and performance compare to OpenSCAD or other scripted CAD tools?"
+        "Could future versions add AI-assisted design generation?",
+        "How does it compare to existing script-based CAD tools like OpenSCAD?"
       ],
       "sources": [
         {
@@ -354,8 +389,8 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-14T16:43:22Z",
-      "updatedAt": "2026-08-15T17:33:05.461Z",
-      "trendScore": 29,
+      "updatedAt": "2026-08-15T23:35:46.836Z",
+      "trendScore": 24,
       "confidence": "low"
     }
   ]
