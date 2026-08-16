@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-16T14:37:27.984Z",
-  "contentVersion": 36,
+  "generatedAt": "2026-08-16T19:15:53.602Z",
+  "contentVersion": 37,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-16T14:37:27.984Z"
+      "updatedAt": "2026-08-16T19:15:53.602Z"
     },
     {
       "id": "ai-15b37688df",
       "slug": "ask-hn-has-any-company-gone-back-to-hand-written-code",
       "lane": "ai",
-      "title": "Ask HN: Has any company gone back to hand-written code?",
-      "summary": "A Hacker News discussion thread asks whether any company has abandoned AI-assisted coding and reverted to writing software by hand. The post itself doesn't name a company — it's posing the question to the community, seeking first-hand examples.",
-      "whyItMatters": "The question, and the engagement it's drawing, is a useful barometer of how much skepticism about AI-generated code is building up among practicing developers.",
+      "title": "Ask HN: Has any company gone back to hand-written code after using AI?",
+      "summary": "A widely discussed \"Ask HN\" thread poses the question of whether any company has abandoned AI-generated code and returned to hand-written code. The post itself doesn't name specific companies — it's soliciting examples from the community — but its traction reflects growing debate over AI coding tools in production.",
+      "whyItMatters": "It's a signal of a more skeptical, maturing phase in enterprise AI-coding adoption, offering a counterpoint to vendor claims about AI-driven productivity gains.",
       "whatToWatch": [
-        "Whether commenters surface concrete named examples of reversion",
-        "Whether this spawns a wider trend piece if credible examples emerge"
+        "Whether concrete case studies of reversal emerge in the thread or follow-up coverage",
+        "Whether other outlets pick up specific examples"
       ],
       "questions": [
-        "Are there verified cases of companies actually reverting, or is this mostly anecdotal?",
-        "If it happens, is it driven by code quality, cost, or maintainability concerns?"
+        "Are there verified companies that reversed course, or is this mostly anecdotal?",
+        "What failure modes (bugs, tech debt, review burden) would be driving any such reversal?"
       ],
       "sources": [
         {
@@ -150,25 +150,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-16T11:05:47Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "badge": "Discussion",
-      "trendScore": 51,
+      "trendScore": 48,
       "confidence": "low"
     },
     {
       "id": "ai-81ad09ea24",
       "slug": "what-happens-when-an-llm-never-sees-material-beyond-5th-grade",
       "lane": "ai",
-      "title": "What happens when an LLM never sees material beyond 5th grade?",
-      "summary": "A project shared via Hacker News explores training or restricting a language model so it's never exposed to material more advanced than a fifth-grade reading level, then examining what capabilities emerge or fail to emerge. Details beyond the framing question aren't specified in what's been published so far.",
-      "whyItMatters": "It's a small but pointed data point in the ongoing debate over how training-data composition, rather than just scale, shapes what an LLM can and can't do.",
+      "title": "What happens when an LLM never sees material beyond a fifth-grade level?",
+      "summary": "A project called LittleLearner explores training a language model exclusively on material that doesn't exceed a fifth-grade reading/complexity level, then examining what capabilities do or don't emerge. It's being shared and discussed on Hacker News as a research-style experiment into how training-data ceilings shape model behavior. The available source doesn't detail specific results or metrics.",
+      "whyItMatters": "It's a small but illustrative data point in the ongoing industry debate over training-data quality and composition versus raw scale, which underpins how labs think about future model training.",
       "whatToWatch": [
-        "Any published results or benchmark comparisons from the project",
-        "Whether other researchers attempt to replicate or extend the experiment"
+        "Whether researchers pick up or replicate the experiment",
+        "Any follow-up posts detailing concrete findings"
       ],
       "questions": [
-        "What tasks or benchmarks were used to evaluate the resulting model?",
-        "How does its performance compare to similarly sized models trained without the restriction?"
+        "What specific capabilities were tested, and how were they measured?",
+        "How does the resulting model compare to a standard model of similar size and compute?"
       ],
       "sources": [
         {
@@ -180,9 +180,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-16T07:37:53Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "badge": "Research",
-      "trendScore": 50,
+      "trendScore": 46,
       "confidence": "low"
     },
     {
@@ -190,8 +190,8 @@
       "slug": "the-quirky-personal-homepages-of-programming-language-creators",
       "lane": "ai",
       "title": "The quirky personal homepages of programming language creators",
-      "summary": "A piece circulating on Hacker News rounds up the personal websites of well-known programming language creators, noting their distinctly old-school or idiosyncratic design choices. No further detail on which creators or languages are featured has been provided.",
-      "whyItMatters": "It's a lighter cultural item rather than an industry-moving development, of interest mainly as a nostalgia/trivia piece for programmers.",
+      "summary": "A piece circulating on Hacker News rounds up the personal websites of well-known programming language creators, highlighting their idiosyncratic, old-web design choices. It's a light, nostalgic look rather than an industry news story, and the source doesn't specify which creators or languages are featured.",
+      "whyItMatters": "It has no stated connection to AI industry developments; it's included here only as a trending item in the same developer-community discussion space this lane draws from.",
       "whatToWatch": [],
       "questions": [],
       "sources": [
@@ -204,22 +204,21 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-16T04:24:00Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "imageUrl": "https://breck.lol/plMakers.jpg",
-      "badge": "Culture",
-      "trendScore": 40,
+      "trendScore": 37,
       "confidence": "low"
     },
     {
       "id": "ai-a01eaa04be",
       "slug": "abdominal-fat-may-predict-heart-disease-risk-better-than-bmi",
       "lane": "ai",
-      "title": "Abdominal fat may predict heart disease risk better than BMI",
-      "summary": "A report flagged on Hacker News states that abdominal fat is a better predictor of heart disease risk than body mass index (BMI). No further methodological detail has been supplied.",
-      "whyItMatters": "This is a health/medical research finding rather than an AI industry development, but it may be of general interest to readers of this digest.",
+      "title": "Abdominal fat may predict heart disease risk better than BMI, study suggests",
+      "summary": "A press release shared via Hacker News reports that abdominal fat measurements may better predict heart disease risk than the commonly used body mass index (BMI). No methodology, sample size, or publishing organization details are given in the available source.",
+      "whyItMatters": "This is a health-science item with no stated AI angle; it doesn't bear on AI industry developments and is noted here only because it appeared in the source list.",
       "whatToWatch": [],
       "questions": [
-        "What study or data underlies this finding, and what population was studied?"
+        "Which organization or researchers conducted this work, and has it been peer-reviewed?"
       ],
       "sources": [
         {
@@ -231,24 +230,21 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T21:14:34Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "imageUrl": "http://www.acc.org/-/media/9E7FA8BE7B44449AB9993CC9237EF455.png",
-      "badge": "Health",
-      "trendScore": 37,
+      "trendScore": 33,
       "confidence": "low"
     },
     {
       "id": "ai-fcff5fe0d2",
       "slug": "us-credit-card-debt-climbs-to-1-26-trillion-nearing-record",
       "lane": "ai",
-      "title": "US credit card debt climbs to $1.26 trillion, nearing record",
-      "summary": "US credit card debt has risen to $1.26 trillion, approaching its all-time high, according to a report picked up via Hacker News. No additional breakdown of the underlying data has been provided.",
-      "whyItMatters": "It's a consumer-finance data point rather than an AI story, but it feeds broader narratives about economic strain that intersect with tech-sector spending and hiring.",
-      "whatToWatch": [
-        "Whether debt levels surpass the prior all-time record in coming reports"
-      ],
+      "title": "US credit card debt climbs to $1.26 trillion, nearing record high",
+      "summary": "A report cited via Hacker News says total US credit card debt has risen to about $1.26 trillion, approaching its all-time record. No breakdown by demographics, delinquency rates, or underlying drivers is provided in the available source.",
+      "whyItMatters": "It's a broad macroeconomic indicator with no stated connection to the AI industry; included here only because it surfaced among this lane's supplied sources.",
+      "whatToWatch": [],
       "questions": [
-        "What's driving the increase — inflation, spending patterns, or interest rates?"
+        "What's driving the increase — inflation, interest rates, or spending patterns?"
       ],
       "sources": [
         {
@@ -260,25 +256,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T23:22:59Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "imageUrl": "https://cdn.abcotvs.com/dip/images/19667293_081226-cc-adobestock-tapping-cc-img.jpg?w=1600",
-      "badge": "Finance",
-      "trendScore": 36,
+      "trendScore": 32,
       "confidence": "low"
     },
     {
       "id": "ai-3e34ba37fa",
       "slug": "yadda-3-0-0-adapts-behavior-driven-development-for-ai-coding-agents",
       "lane": "ai",
-      "title": "Yadda 3.0.0 adapts behavior-driven development for AI coding agents",
-      "summary": "Yadda, a behavior-driven development (BDD) tool, has reached version 3.0.0 with a focus on adapting BDD practices for use with AI coding agents. Specifics of the new features weren't detailed beyond the release announcement itself.",
-      "whyItMatters": "It reflects a broader trend of established software-engineering practices being retooled to keep AI coding agents accountable to specifications rather than just generating plausible-looking code.",
+      "title": "Yadda 3.0.0 released, pitched as BDD for the age of AI agents",
+      "summary": "A new version, 3.0.0, of the behavior-driven-development (BDD) tool Yadda has been released, framed around adapting BDD testing practices for workflows involving AI coding agents. It's being discussed on Hacker News; the available source doesn't detail the specific new features beyond that framing.",
+      "whyItMatters": "It's a concrete example of developer tooling being rebuilt around agentic coding workflows, part of the broader shift in software practices as AI agents take on more development work.",
       "whatToWatch": [
-        "Adoption by teams using AI coding agents in production workflows",
-        "Follow-on releases or integrations with specific agent frameworks"
+        "Adoption signals from teams already using AI coding agents",
+        "Whether other testing/BDD tools follow with similar 'agent-aware' updates"
       ],
       "questions": [
-        "How does Yadda 3.0.0 concretely integrate with AI agent workflows versus prior versions?"
+        "What concrete features does 3.0.0 add specifically for AI agents versus prior versions?"
       ],
       "sources": [
         {
@@ -290,23 +285,21 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T13:43:46Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "badge": "Release",
-      "trendScore": 33,
+      "trendScore": 29,
       "confidence": "low"
     },
     {
       "id": "ai-84691f8174",
       "slug": "new-at-home-test-aims-to-detect-infected-ticks-for-faster-lyme-diagnos",
       "lane": "ai",
-      "title": "New at-home test aims to detect infected ticks for faster Lyme diagnosis",
-      "summary": "A newly developed at-home test is designed to identify infected ticks, potentially speeding up Lyme disease diagnosis, per a report surfaced on Hacker News. Further technical or availability details weren't provided.",
-      "whyItMatters": "A health/biotech development rather than an AI story, included here as a general-interest item.",
-      "whatToWatch": [
-        "Availability timeline and regulatory clearance, if any"
-      ],
+      "title": "At-home tick test could improve Lyme disease diagnosis",
+      "summary": "Smithsonian Magazine reports on an at-home test designed to check whether a tick was infected, which could help with earlier Lyme disease diagnosis. The available source doesn't indicate any AI or machine-learning component to the test.",
+      "whyItMatters": "This is a health-diagnostics story without a stated AI connection; it's noted here only because it appeared among this lane's supplied sources.",
+      "whatToWatch": [],
       "questions": [
-        "How accurate is the test compared to lab-based tick testing?"
+        "Does the test rely on any AI/ML-based detection, or is it a purely chemical/biological kit?"
       ],
       "sources": [
         {
@@ -318,27 +311,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T14:04:49Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "imageUrl": "https://th-thumbnailer.cdn-si-edu.com/zHvX_MeCmgyz7Mfc3JnZBzfRUgU=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/44/ad/44ad8f8b-e8c6-4c3b-9d22-10eececf06c3/gettyimages-1602304607.jpg",
-      "badge": "Health",
-      "trendScore": 31,
+      "trendScore": 27,
       "confidence": "low"
     },
     {
       "id": "ai-aaca96fa0e",
       "slug": "debian-opens-vote-on-policy-for-ai-llm-assisted-contributions",
       "lane": "ai",
-      "title": "Debian opens vote on policy for AI/LLM-assisted contributions",
-      "summary": "The Debian project has begun a formal vote among its developers on how to handle code and packaging contributions made with the assistance of AI or large language models, according to a mailing-list discussion surfaced on Hacker News. Specific policy options on the ballot haven't been detailed.",
-      "whyItMatters": "Debian is one of the most influential open-source distributions, and its stance on AI-assisted contributions could set a precedent other open-source projects look to when writing their own policies.",
+      "title": "Debian opens formal vote on rules for AI/LLM-generated contributions",
+      "summary": "The Debian developer community has begun a formal vote, via its mailing list, on how to handle code and documentation contributions generated with AI or large language model tools. This follows broader open-source debate over disclosure, review, and acceptance standards for AI-assisted submissions.",
+      "whyItMatters": "A major open-source project setting explicit, voted-on policy for AI-generated contributions could become a reference point other projects look to as they face the same question.",
       "whatToWatch": [
-        "The outcome of the Debian developer vote",
-        "Resulting policy language and how it defines acceptable AI-assisted contributions",
-        "Reactions or parallel policy moves from other major open-source projects"
+        "The outcome and specific terms of the Debian vote",
+        "Whether other large open-source projects adopt comparable policies"
       ],
       "questions": [
-        "What are the actual policy options being voted on?",
-        "How would compliance or disclosure be enforced in practice?"
+        "What are the specific proposed rules — mandatory disclosure, restrictions, or an outright ban?",
+        "When does the vote close and how is it decided?"
       ],
       "sources": [
         {
@@ -350,25 +341,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T09:20:07Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
-      "badge": "Governance",
-      "trendScore": 30,
+      "updatedAt": "2026-08-16T19:15:53.602Z",
+      "badge": "Policy",
+      "trendScore": 26,
       "confidence": "low"
     },
     {
       "id": "ai-73924d397f",
       "slug": "astro-s-creator-brings-react-style-hooks-to-his-ai-agent-framework-flu",
       "lane": "ai",
-      "title": "Astro's creator brings React-style hooks to his AI agent framework, Flue",
-      "summary": "Latent Space reported on Flue, a 'meta-harness' for building AI agents created by the developer behind the Astro web framework, which borrows the hooks pattern popularized by React to structure agent logic. Beyond this framing, further technical specifics weren't provided in the source.",
-      "whyItMatters": "It's a sign of the fast-moving experimentation in agent-building frameworks, as developers import familiar patterns from web development to tame the complexity of building AI agents.",
+      "title": "Astro creator brings React-style hooks to his AI agent framework, Flue",
+      "summary": "According to Latent Space, the creator of the Astro web framework has extended his 'meta-harness' project Flue with a hooks-style API modeled on React, aimed at building AI agents. The piece frames this as porting familiar frontend patterns into agent orchestration.",
+      "whyItMatters": "It reflects a wider trend of experienced tool-builders adapting proven software patterns for the fast-evolving AI agent-framework space, which could shape how agent developer tooling standardizes.",
       "whatToWatch": [
-        "Uptake of Flue among developers building AI agents",
-        "Comparisons with other agent frameworks as more details emerge"
+        "Developer reception of Flue's hooks-style API",
+        "Whether other agent frameworks adopt similar React-inspired patterns"
       ],
       "questions": [
-        "Is Flue open source and generally available today?",
-        "How does its hooks-based model differ practically from existing agent frameworks?"
+        "How does Flue's hooks model functionally differ from React's?",
+        "Is Flue openly available now, and to what extent has it seen real-world use?"
       ],
       "sources": [
         {
@@ -380,41 +371,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-15T15:46:22.000Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
+      "updatedAt": "2026-08-16T19:15:53.602Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Osie!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F131d402d-63bf-4895-b5e7-b8990972a14c_1280x720.png",
-      "badge": "Tooling",
-      "trendScore": 28,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-221adc0985",
-      "slug": "show-hn-thoughtdag-an-editable-context-graph-for-llm-conversations",
-      "lane": "ai",
-      "title": "Show HN: ThoughtDAG, an editable context graph for LLM conversations",
-      "summary": "A developer posted ThoughtDAG on Hacker News, a tool that represents LLM conversation context as an editable graph rather than a simple linear chat log. Details on implementation and availability beyond the Show HN post weren't specified.",
-      "whyItMatters": "Context management is a persistent pain point in long or complex LLM sessions, and tools like this point to growing interest in more structured ways to steer and reuse conversation context.",
-      "whatToWatch": [
-        "Community feedback and feature requests on the Show HN thread",
-        "Whether the project is open-sourced or developed further"
-      ],
-      "questions": [
-        "How does ThoughtDAG handle context window limits as conversations grow?",
-        "Does it integrate with existing chat interfaces or require a standalone client?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: ThoughtDAG – An editable context graph for LLM conversations",
-          "url": "https://chenxiachan.github.io/thoughtdag/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-15T04:42:07Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-15T04:42:07Z",
-      "updatedAt": "2026-08-16T14:37:27.984Z",
-      "imageUrl": "https://chenxiachan.github.io/thoughtdag/assets/thoughtdag-story-poster-en-horizontal.jpg",
-      "badge": "Show HN",
-      "trendScore": 27,
+      "badge": "Analysis",
+      "trendScore": 24,
       "confidence": "low"
     }
   ]
