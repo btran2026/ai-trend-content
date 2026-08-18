@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-17T22:00:30.400Z",
-  "contentVersion": 39,
+  "generatedAt": "2026-08-18T21:00:35.938Z",
+  "contentVersion": 40,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,55 +123,211 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-17T22:00:30.400Z"
+      "updatedAt": "2026-08-18T21:00:35.938Z"
     },
     {
-      "id": "ai-e9bd6d4edb",
-      "slug": "voice-ai-startup-speko-launches-pitching-itself-as-an-openrouter-for-v",
+      "id": "ai-9757553db8",
+      "slug": "stripe-reportedly-acquires-openrouter-for-7-billion",
       "lane": "ai",
-      "title": "Voice AI startup Speko launches, pitching itself as an 'OpenRouter for Voice AI'",
-      "summary": "Speko, a company in Y Combinator's Summer 2026 batch, publicly launched via a 'Launch HN' post on Hacker News, describing itself as an 'OpenRouter for Voice AI' — suggesting a routing or aggregation layer across voice AI models. Beyond the headline description, specifics on which providers or models it supports were not detailed in the available sourcing.",
-      "whyItMatters": "It reflects continued investor and founder interest in building middleware/abstraction layers atop foundation model providers, this time for the fast-growing voice AI segment.",
+      "title": "Stripe Reportedly Acquires OpenRouter for $7 Billion",
+      "summary": "Latent Space's AINews newsletter reports that Stripe has acquired OpenRouter, the widely used AI model-routing platform, in a deal valued at $7 billion. OpenRouter lets developers switch between many different AI model providers through one interface. The report does not include deal structure, official confirmation, or Stripe's stated rationale.",
+      "whyItMatters": "If confirmed, this would be one of the largest AI-infrastructure deals to date, and a major bet by Stripe on becoming a core layer of the AI economy.",
       "whatToWatch": [
-        "Hacker News community reaction and technical scrutiny in the comments",
-        "Whether Speko discloses which voice model providers it routes to",
-        "Any follow-on funding or partnership news"
+        "Official confirmation from Stripe or OpenRouter",
+        "Reported deal terms and structure",
+        "What happens to OpenRouter's existing customers and pricing",
+        "Reaction from competing model-routing services"
       ],
       "questions": [
-        "Which voice AI providers or models does Speko actually route between?",
-        "What is the pricing or business model?"
+        "Is this deal officially confirmed by either company?",
+        "Why would a payments company want a model-routing platform?"
       ],
       "sources": [
         {
-          "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
-          "url": "https://speko.ai/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-17T15:36:18Z"
+          "title": "[AINews] Stripe buys OpenRouter for $7B",
+          "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-17T23:13:41.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-17T15:36:18Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://speko.ai/opengraph-image?b1c5b7b39189286b",
-      "badge": "Launch",
-      "trendScore": 54,
+      "publishedAt": "2026-08-17T23:13:41.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/QHBjufYK8TA",
+      "badge": "Breaking",
+      "trendScore": 29,
       "confidence": "low"
+    },
+    {
+      "id": "ai-67f37d861d",
+      "slug": "openai-publishes-position-on-democratic-oversight-of-ai-in-national-se",
+      "lane": "ai",
+      "title": "OpenAI Publishes Position on Democratic Oversight of AI in National Security",
+      "summary": "OpenAI published a post titled \"Strengthening Democratic Oversight in National Security,\" addressing AI's role in national-security work and how such systems should be governed. The available source does not detail specific proposals or commitments made in the post. It reads as part of OpenAI's continuing public policy engagement.",
+      "whyItMatters": "OpenAI's public stance on oversight of AI in national security could shape its dealings with government agencies and the broader regulatory debate.",
+      "whatToWatch": [
+        "Whether OpenAI proposes concrete oversight mechanisms",
+        "Response from lawmakers or regulators"
+      ],
+      "questions": [
+        "What specific oversight measures, if any, does the post propose?",
+        "Is this tied to a specific government contract or policy debate?"
+      ],
+      "sources": [
+        {
+          "title": "Strengthening Democratic Oversight in National Security",
+          "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-18T19:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T19:00:00.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6HEG4BoWGKBEoSJWCReHz0/1b1c0b24720bb3faec4a71e48e8ceef7/openai-democratic-oversight-page-seo-v004.png?w=1600&h=900&fit=fill",
+      "badge": "Policy",
+      "trendScore": 53,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-01003c6680",
+      "slug": "openai-launches-chatgpt-for-teens-with-added-protections",
+      "lane": "ai",
+      "title": "OpenAI Launches ChatGPT for Teens With Added Protections",
+      "summary": "OpenAI introduced \"ChatGPT for Teens,\" which it describes as built for learning and backed by additional protections for younger users. The announcement positions it as a dedicated product rather than just an age setting inside the standard app. Specific safety features and rollout details are not included in the available source.",
+      "whyItMatters": "Youth safety is a major flashpoint for AI regulation, so a dedicated teen product signals how OpenAI plans to manage that scrutiny while keeping younger users on the platform.",
+      "whatToWatch": [
+        "How OpenAI verifies age",
+        "Rollout timeline and availability",
+        "Regulator and parent-group response"
+      ],
+      "questions": [
+        "What protections specifically differ from standard ChatGPT?",
+        "How is age verified in practice?"
+      ],
+      "sources": [
+        {
+          "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+          "url": "https://openai.com/index/chatgpt-for-teens",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-18T11:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T11:00:00.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7fiopp4CCayK6yzFnX7svI/8b5c67ab59a666d95e90b144c705d530/Art_Card-TEENS-16x93x.png?w=1600&h=900&fit=fill",
+      "badge": "Product",
+      "trendScore": 52,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-68c52c8131",
+      "slug": "openai-discusses-pacing-model-development-as-cyber-capabilities-grow",
+      "lane": "ai",
+      "title": "OpenAI Discusses Pacing Model Development as Cyber Capabilities Grow",
+      "summary": "OpenAI published a post titled \"Pacing model development in an era of cyber-critical capabilities,\" addressing how it thinks about release speed as models gain more cyber-relevant capability. The source does not specify new commitments, timelines, or a named model tied to this discussion. It appears to be part of OpenAI's ongoing public safety messaging.",
+      "whyItMatters": "How frontier labs frame the tradeoff between release speed and cyber risk affects future model launch timelines across the industry.",
+      "whatToWatch": [
+        "Whether this ties to a specific upcoming model release",
+        "Responses from other AI labs on pacing and cyber risk"
+      ],
+      "questions": [
+        "What concrete pacing decisions follow from this post?",
+        "Does this apply to a specific model already in development?"
+      ],
+      "sources": [
+        {
+          "title": "Pacing model development in an era of cyber-critical capabilities",
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-18T11:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T11:00:00.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&h=900&fit=fill",
+      "badge": "Safety",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-9765648ad5",
+      "slug": "openai-partners-with-codeai-to-prepare-students-for-an-ai-driven-futur",
+      "lane": "ai",
+      "title": "OpenAI Partners With CodeAI to Prepare Students for an AI-Driven Future",
+      "summary": "OpenAI announced a partnership with CodeAI, described as an effort to prepare what it calls \"the first AI generation.\" The available source does not detail the partnership's scope, funding, or target audience beyond the announcement title. It appears to be part of OpenAI's broader education and workforce outreach.",
+      "whyItMatters": "Partnerships like this shape how AI tools and literacy reach students and early-career workers, an area educators and regulators are watching closely.",
+      "whatToWatch": [
+        "Details on any resulting curriculum or programs",
+        "Uptake among schools or students"
+      ],
+      "questions": [
+        "What does CodeAI do, and what is the partnership's actual scope?",
+        "Is this a paid deal, grant, or philanthropic initiative?"
+      ],
+      "sources": [
+        {
+          "title": "Partnering with CodeAI to prepare the first AI generation",
+          "url": "https://openai.com/index/partnering-with-codeai",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-18T11:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T11:00:00.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5rhd6nhvVokZZ5L6uu2tz9/daaf6fd9186ebe2c1914adaaaac65cf4/a11y-seo-v002.png?w=1600&h=900&fit=fill",
+      "badge": "Partnership",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-7d7eacff40",
+      "slug": "openai-says-asana-used-codex-to-compress-5-years-of-engineering-work-i",
+      "lane": "ai",
+      "title": "OpenAI Says Asana Used Codex to Compress 5 Years of Engineering Work Into 2 Weeks",
+      "summary": "OpenAI published a customer case study claiming Asana used its Codex coding tool to complete roughly five years' worth of engineering work in two weeks. The figures come from OpenAI's own vendor-published content, and the source does not describe independent verification. It is positioned as evidence of Codex's impact on enterprise engineering speed.",
+      "whyItMatters": "Bold productivity claims like this are central to how OpenAI markets Codex against rival coding assistants, even though the numbers are self-reported.",
+      "whatToWatch": [
+        "Whether Asana or independent reporting corroborates the specific figures",
+        "Similar case studies from other OpenAI enterprise customers"
+      ],
+      "questions": [
+        "How was \"5 years of engineering work\" actually measured?",
+        "Who verified this claim besides OpenAI and Asana?"
+      ],
+      "sources": [
+        {
+          "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+          "url": "https://openai.com/index/asana",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-18T07:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T07:00:00.000Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/QuPTOlw5BZCStCK9oVFW2/d80ca15c2876853ba7789109f075e8f5/oai_asana_SEO.real.png?w=1600&h=900&fit=fill",
+      "badge": "Case Study",
+      "trendScore": 43,
+      "confidence": "medium"
     },
     {
       "id": "ai-10a5b0bc83",
       "slug": "report-ai-generated-github-copilot-autofix-suggestion-enabled-compromi",
       "lane": "ai",
-      "title": "Report: AI-generated GitHub Copilot 'Autofix' suggestion enabled compromise of Snowflake's Jira",
-      "summary": "A report circulating on Hacker News states that an AI-generated code fix produced by GitHub Copilot's 'Autofix' feature allowed a compromise of Snowflake's Jira instance. The available sourcing consists of the headline itself; further specifics of how the fix led to compromise were not detailed.",
-      "whyItMatters": "It's a concrete example of the risk enterprises face as they lean on AI-generated code remediation, raising questions about oversight of automated security fixes.",
+      "title": "AI-Generated Copilot 'Autofix' Suggestion Reportedly Enabled Snowflake Jira Compromise",
+      "summary": "A report circulating on Hacker News describes an AI-generated fix from GitHub Copilot's \"Autofix\" feature that allegedly introduced or enabled a vulnerability leading to compromise of Snowflake's Jira instance. The available source does not include the full technical attack chain. It is presented as a case study in the risks of applying AI-suggested code fixes without adequate review.",
+      "whyItMatters": "It is a concrete example of AI-assisted coding tools potentially creating security risk rather than only reducing it, relevant as more teams lean on automated fixes.",
       "whatToWatch": [
-        "Any official statement from GitHub or Snowflake confirming or disputing the report",
-        "Further security researcher analysis of the underlying vulnerability",
-        "Whether other organizations using Copilot Autofix reassess its use"
+        "Confirmation and root-cause details from Snowflake or GitHub",
+        "Whether other AI autofix tools face similar scrutiny"
       ],
       "questions": [
-        "What specifically did the AI-generated fix get wrong?",
-        "Has Snowflake confirmed a breach occurred, and what was its scope?"
+        "What exactly was the vulnerability, and did Snowflake confirm the cause?",
+        "Has GitHub changed how Autofix suggestions get reviewed?"
       ],
       "sources": [
         {
@@ -183,225 +339,133 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-17T14:18:38Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
       "imageUrl": "https://www.datocms-assets.com/75231/1786964856-image.png?fm=webp",
       "badge": "Security",
+      "trendScore": 26,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-6b6e5cd934",
+      "slug": "yc-backed-machine0-launches-persistent-cpu-and-gpu-vms-managed-from-th",
+      "lane": "ai",
+      "title": "YC-Backed machine0 Launches Persistent CPU and GPU VMs Managed From the CLI",
+      "summary": "machine0, a Y Combinator (S26) startup, launched on Hacker News with a product offering persistent CPU and GPU virtual machines that developers manage from the command line. The launch post frames it as infrastructure for always-on compute, including AI workloads. Further product and pricing details are not included in the available source.",
+      "whyItMatters": "Simpler, persistent GPU access lowers the barrier for developers building and training AI models outside the major cloud providers.",
+      "whatToWatch": [
+        "Pricing and GPU availability details",
+        "Competitive response from established GPU rental providers"
+      ],
+      "questions": [
+        "How does machine0's pricing compare to existing GPU rental services?",
+        "What is its reliability track record?"
+      ],
+      "sources": [
+        {
+          "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
+          "url": "https://machine0.io",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-18T16:26:42Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-18T16:26:42Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://machine0.io/opengraph-image?8d23f96a9593a7fa",
+      "badge": "Launch",
       "trendScore": 45,
       "confidence": "low"
     },
     {
-      "id": "ai-f137d9ea2f",
-      "slug": "openai-publishes-the-defender-s-window",
+      "id": "ai-e9bd6d4edb",
+      "slug": "voice-ai-startup-speko-launches-pitching-itself-as-an-openrouter-for-v",
       "lane": "ai",
-      "title": "OpenAI publishes 'The Defender's Window'",
-      "summary": "OpenAI posted a piece titled 'The Defender's Window' on its site. The supplied sourcing includes only the title and publication details, so the specific arguments or proposals in the post are not confirmed here.",
-      "whyItMatters": "OpenAI has been increasingly vocal on cybersecurity and defense-adjacent themes, and posts like this can foreshadow product moves or policy positioning.",
+      "title": "YC-Backed Speko Launches as an 'OpenRouter for Voice AI'",
+      "summary": "Speko, a Y Combinator (S26) company, launched on Hacker News describing itself as a routing layer for voice AI models, similar in concept to OpenRouter for text models. The launch post positions it as a way for developers to access multiple voice AI providers through one interface. Additional specifics are not detailed in the available source.",
+      "whyItMatters": "A routing layer for voice models could simplify how developers choose among the fast-growing set of voice AI providers.",
       "whatToWatch": [
-        "Any follow-up product or partnership announcements tied to the post's themes",
-        "Reaction from security researchers or industry commentators"
+        "Which voice AI providers Speko integrates",
+        "Early customer adoption"
       ],
       "questions": [
-        "What specific claim or proposal does 'The Defender's Window' refer to?",
-        "Does this connect to a product launch or a policy push?"
+        "Which specific voice model providers does Speko route to?",
+        "How does its pricing model work?"
       ],
       "sources": [
         {
-          "title": "The Defender’s Window",
-          "url": "https://openai.com/index/the-defenders-window",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-17T05:30:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-17T05:30:00.000Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/yYqBqvM2uvc7B9HulIW4O/a3fa616ce523411cc59534295c4e6ec9/the-defenders-window-seo.png?w=1600&h=900&fit=fill",
-      "badge": "OpenAI",
-      "trendScore": 41,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-ad5623d5cc",
-      "slug": "openai-joins-the-ports-pike-project",
-      "lane": "ai",
-      "title": "OpenAI joins the 'PORTS-Pike' project",
-      "summary": "OpenAI announced on its site that it is joining an initiative referred to as the 'PORTS-Pike project.' The available sourcing does not specify the project's goals, scope, or other participants beyond OpenAI's own announcement.",
-      "whyItMatters": "Any new institutional partnership expands OpenAI's footprint into new sectors, and readers tracking the competitive landscape will want to know what this project actually involves.",
-      "whatToWatch": [
-        "Additional detail from OpenAI or partner organizations on what PORTS-Pike does",
-        "Identification of other participants in the project"
-      ],
-      "questions": [
-        "What is the PORTS-Pike project, and what sector or problem does it address?",
-        "What role will OpenAI play beyond membership?"
-      ],
-      "sources": [
-        {
-          "title": "OpenAI joins PORTS-Pike project",
-          "url": "https://openai.com/index/openai-joins-ports-pike-project",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-17T05:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-17T05:00:00.000Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7lncHUlLeigB0CzEnnpkvX/79fb3bd6db518d2946417c35a981d973/openai-joins-ports-pike-project-seo-v001.png?w=1600&h=900&fit=fill",
-      "badge": "Partnership",
-      "trendScore": 41,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-96670aeff6",
-      "slug": "openai-proposes-new-policy-ideas-for-the-intelligence-age",
-      "lane": "ai",
-      "title": "OpenAI proposes new policy ideas for the 'Intelligence Age'",
-      "summary": "OpenAI published a post outlining what it calls 'new policy ideas for the Intelligence Age.' The supplied sourcing gives only the title, so the substance of the proposals is not detailed here.",
-      "whyItMatters": "OpenAI's policy advocacy has real influence on AI regulation debates, and new proposals from the company are worth tracking for signs of where legislative and regulatory conversations may head next.",
-      "whatToWatch": [
-        "Reaction from policymakers or regulators to the specific proposals",
-        "Whether rival labs stake out competing policy positions",
-        "Any legislative or regulatory follow-through"
-      ],
-      "questions": [
-        "What concrete policies is OpenAI proposing (e.g., on compute, safety, labor, or competition)?",
-        "How do these ideas differ from OpenAI's past policy positions?"
-      ],
-      "sources": [
-        {
-          "title": "New policy ideas for the Intelligence Age",
-          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-17T03:15:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-17T03:15:00.000Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/3ui6fuXDbnmCfn6AqK9xkn/b8f4d1d81779680070c147b1ae685c9f/new-policy-ideas-for-the-intelligence-age--seo-v001.png?w=1600&h=900&fit=fill",
-      "badge": "Policy",
-      "trendScore": 39,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-f94f3ec49f",
-      "slug": "gimp-shares-a-development-update",
-      "lane": "ai",
-      "title": "GIMP shares a development update",
-      "summary": "A GIMP development update was shared and discussed on Hacker News. The supplied sourcing is limited to the headline and does not indicate whether the update includes any AI-related features.",
-      "whyItMatters": "GIMP is a widely used open-source image editor whose roadmap can matter to creative workflows that increasingly intersect with AI tools, though this particular update's relevance to AI specifically isn't established by the available sourcing.",
-      "whatToWatch": [
-        "Whether the update includes AI-assisted editing features",
-        "Community reaction on Hacker News"
-      ],
-      "questions": [
-        "Does this update include any AI-related functionality?",
-        "What are the headline changes in this release?"
-      ],
-      "sources": [
-        {
-          "title": "GIMP Development Update",
-          "url": "https://www.gimp.org/news/2026/08/16/dev-update-august-2026/",
+          "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
+          "url": "https://speko.ai/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-17T03:08:47Z"
+          "publishedAt": "2026-08-17T15:36:18Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-17T03:08:47Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://www.gimp.org/images/frontpage/wilber-big.png",
+      "publishedAt": "2026-08-17T15:36:18Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://speko.ai/opengraph-image?b1c5b7b39189286b",
+      "badge": "Launch",
       "trendScore": 35,
       "confidence": "low"
     },
     {
-      "id": "ai-186740912b",
-      "slug": "futurism-young-people-express-strong-dislike-of-ai-industry-ceos",
+      "id": "ai-1e907c1ba3",
+      "slug": "anthropic-s-claude-code-weekly-limits-promotion-draws-hacker-news-atte",
       "lane": "ai",
-      "title": "Futurism: young people express strong dislike of AI industry CEOs",
-      "summary": "Futurism published a piece asserting that young people hold intensely negative views of AI company CEOs. The available sourcing is limited to the headline, so the underlying data or survey basis for the claim isn't confirmed here.",
-      "whyItMatters": "Generational backlash against AI industry leadership could shape talent recruitment, public trust, and political pressure on AI companies going forward.",
+      "title": "Anthropic's Claude Code Weekly Limits Promotion Draws Hacker News Attention",
+      "summary": "A support.claude.com article describing a \"weekly limits promotion\" for Claude Code, covering May through August 2026, became a discussion point on Hacker News. The available source does not detail the promotion's specific terms or what changes once it ends. It concerns how Anthropic manages usage caps for its coding assistant.",
+      "whyItMatters": "Usage limits directly affect developers relying on Claude Code day to day, and changes here ripple through the competitive coding-assistant market.",
       "whatToWatch": [
-        "Any polling or survey data cited to support the claim",
-        "Whether specific CEOs or companies become focal points of criticism"
+        "Whether Anthropic extends, changes, or ends the promotion after August 2026",
+        "Community reaction to any resulting limit changes"
       ],
       "questions": [
-        "What data or survey underlies this characterization?",
-        "Which AI CEOs specifically are named as targets of the sentiment?"
+        "What exactly changes about weekly limits when the promotion ends?",
+        "Is this a temporary offer or a preview of permanent policy?"
       ],
       "sources": [
         {
-          "title": "Young People Hate AI CEOs So Passionately That It's Almost Hard to Believe",
-          "url": "https://futurism.com/artificial-intelligence/young-people-ai-ceos-executives-poll",
+          "title": "Claude Code May–August 2026 weekly limits promotion",
+          "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-16T21:34:06Z"
+          "publishedAt": "2026-08-18T17:02:15Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-16T21:34:06Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "imageUrl": "https://futurism.com/wp-content/uploads/2026/08/young-people-ai-ceos-executives-poll.jpg?quality=85&w=1200",
-      "badge": "Analysis",
-      "trendScore": 30,
+      "publishedAt": "2026-08-18T17:02:15Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
+      "badge": "Product",
+      "trendScore": 53,
       "confidence": "low"
     },
     {
-      "id": "ai-519f2391d1",
-      "slug": "mathcode-a-coding-agent-for-mathematical-tasks-surfaces-on-hacker-news",
+      "id": "ai-a3faa36ed3",
+      "slug": "the-verge-amazon-s-order-confirmation-emails-have-gotten-less-useful",
       "lane": "ai",
-      "title": "MathCode, a coding agent for mathematical tasks, surfaces on Hacker News",
-      "summary": "A project called MathCode, described as a mathematical coding agent, was shared on Hacker News. The supplied sourcing is limited to the title, so its specific capabilities, benchmarks, or licensing are unconfirmed.",
-      "whyItMatters": "It's part of a broader trend of AI coding agents specializing in narrow technical domains rather than general-purpose coding, reflecting agents moving into more specialized professional use cases.",
+      "title": "The Verge: Amazon's Order Confirmation Emails Have Gotten Less Useful",
+      "summary": "A Verge article, flagged via Hacker News, examines why Amazon's order confirmation emails have become less informative over time. The available source does not specify whether automation or AI-generated text is behind the change. It is included here as a case study in how everyday automated communications are shifting.",
+      "whyItMatters": "If automated or AI-generated systems are driving the change, it is a small but telling example of AI's growing, sometimes user-unfriendly footprint in routine consumer communication.",
       "whatToWatch": [
-        "Hacker News community feedback and any benchmark comparisons",
-        "Whether the project is open-sourced or commercialized"
+        "Whether Amazon responds to the criticism or changes the emails",
+        "Further reporting on AI's role in the shift"
       ],
       "questions": [
-        "How does MathCode perform against general-purpose coding agents on math-heavy tasks?",
-        "Is the project open source, and who built it?"
+        "Is AI-generated content actually driving this change?",
+        "Or is it a separate automation or cost-cutting decision?"
       ],
       "sources": [
         {
-          "title": "MathCode, Mathematical Coding Agent",
-          "url": "https://math-ai-org.github.io/mathcode/",
+          "title": "Why your Amazon order confirmation emails have become so unhelpful",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-16T18:17:10Z"
+          "publishedAt": "2026-08-18T16:54:42Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-16T18:17:10Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "badge": "Launch",
-      "trendScore": 27,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-15b37688df",
-      "slug": "ask-hn-has-any-company-gone-back-to-hand-written-code-after-using-ai",
-      "lane": "ai",
-      "title": "Ask HN: has any company gone back to hand-written code after using AI?",
-      "summary": "A Hacker News 'Ask HN' thread posed the question of whether companies have reverted from AI-generated code to hand-written code, prompting community discussion. No specific companies or case studies are confirmed in the supplied sourcing.",
-      "whyItMatters": "The thread reflects growing scrutiny within engineering communities about whether early enthusiasm for AI-generated code is giving way to reconsideration in some organizations.",
-      "whatToWatch": [
-        "Concrete examples or case studies shared in the thread",
-        "Any follow-up reporting naming specific companies"
-      ],
-      "questions": [
-        "Which companies, if any, actually reverted to hand-written code?",
-        "What specific problems drove any such reversal?"
-      ],
-      "sources": [
-        {
-          "title": "Ask HN: Do you know of any company that went back to hand-written code?",
-          "url": "https://news.ycombinator.com/item?id=49318906",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-16T11:05:47Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-16T11:05:47Z",
-      "updatedAt": "2026-08-17T22:00:30.400Z",
-      "badge": "Discussion",
-      "trendScore": 26,
+      "publishedAt": "2026-08-18T16:54:42Z",
+      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-10-at-10.31.39-AM.png?quality=90&strip=all&crop=0,9.5560437679216,100,80.887912464157",
+      "trendScore": 45,
       "confidence": "low"
     }
   ]
