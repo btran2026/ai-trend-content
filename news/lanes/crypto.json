@@ -1,22 +1,83 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-18T21:00:35.938Z",
-  "contentVersion": 35,
+  "generatedAt": "2026-08-19T09:37:16.635Z",
+  "contentVersion": 36,
   "stories": [
+    {
+      "id": "crypto-715de29e88",
+      "slug": "bitcoin-etfs-add-189m-push-august-inflows-near-1b",
+      "lane": "crypto",
+      "title": "Bitcoin ETFs add $189M, push August inflows near $1B",
+      "summary": "US spot bitcoin ETFs took in $189 million in new money. August net inflows are now close to $1 billion. The inflows point to steady institutional demand for bitcoin exposure through regulated funds.",
+      "whyItMatters": "ETF flows show how much institutional money enters bitcoin without direct purchases.",
+      "whatToWatch": [
+        "Whether August inflows pass $1 billion",
+        "Next daily ETF flow reports"
+      ],
+      "questions": [
+        "Which issuers drove the inflows?",
+        "Is the money from new investors or existing ones?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETFs add $189M as August net inflows approach $1B",
+          "url": "https://cointelegraph.com/markets/bitcoin-etf-august-net-inflows-approach-1b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-19T07:59:16.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T07:59:16.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bitcoin-investment-pump.jpg",
+      "badge": "Markets",
+      "trendScore": 65,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-1318cf4859",
+      "slug": "new-method-cuts-ethereum-proving-from-12-gpus-to-4",
+      "lane": "crypto",
+      "title": "New method cuts Ethereum proving from 12 GPUs to 4",
+      "summary": "A new technical approach lowers the GPU count needed for Ethereum zero-knowledge proving. It cuts the requirement from twelve GPUs to four. Lower hardware needs could cut the cost of running proof systems for Ethereum's scaling layers.",
+      "whyItMatters": "Cheaper proving lowers the barrier to running Ethereum scaling infrastructure, which affects who can compete to run it.",
+      "whatToWatch": [
+        "Adoption by rollup teams",
+        "Independent tests of the claimed efficiency gain"
+      ],
+      "questions": [
+        "Which team built this method?",
+        "Has it run in production yet?"
+      ],
+      "sources": [
+        {
+          "title": "Ethereum’s 12-GPU proving problem just got a 4-GPU answer",
+          "url": "https://cryptoslate.com/ethereums-12-gpu-proving-problem-just-got-a-4-gpu-answer/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-19T07:00:12.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T07:00:12.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/zisk-gpu-inspection-case.jpg",
+      "badge": "Technical",
+      "trendScore": 60,
+      "confidence": "low"
+    },
     {
       "id": "crypto-2ab2906882",
       "slug": "falconx-and-interstice-link-canton-network-to-ethereum-solana-robinhoo",
       "lane": "crypto",
-      "title": "FalconX and Interstice Link Canton Network to Ethereum, Solana, Robinhood Chain",
-      "summary": "FalconX and Interstice built connections between the Canton Network and Ethereum, Solana, and Robinhood's chain. The links let assets and data move across these networks instead of staying locked on Canton alone.",
-      "whyItMatters": "Links between institutional chains like Canton and major public or retail chains support wider use of tokenized assets and deeper liquidity.",
+      "title": "FalconX and Interstice link Canton to Ethereum, Solana, and Robinhood Chain",
+      "summary": "FalconX and Interstice built new links between the Canton network and Ethereum, Solana, and Robinhood Chain. The links let assets and data move across these separate blockchains. The project is part of a wider push to connect institutional and retail-facing chains.",
+      "whyItMatters": "Links between chains can widen access to tokenized assets and cut fragmentation between institutional and consumer platforms.",
       "whatToWatch": [
-        "Which institutions or assets use the new links first",
-        "Whether more chains get added to the connection"
+        "Which assets move across the new links first",
+        "Whether more chains join the network"
       ],
       "questions": [
-        "How is custody and security handled across the connected chains?",
-        "How much volume moves through the new links at launch?"
+        "What use cases will use this link first?"
       ],
       "sources": [
         {
@@ -28,64 +89,181 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T20:45:48.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-chainlink-a-beginners-guide-to-the-cross-chain-interoperability-protocol.png",
       "badge": "Infrastructure",
-      "trendScore": 71,
+      "trendScore": 60,
       "confidence": "medium"
     },
     {
-      "id": "crypto-43e0715720",
-      "slug": "ethereum-s-next-upgrade-aims-to-hide-trades-from-bots-and-rewrites-gas",
+      "id": "crypto-2fff7beddc",
+      "slug": "maya-protocol-exploit-drains-assets-pool-value-falls-11m",
       "lane": "crypto",
-      "title": "Ethereum's Next Upgrade Aims to Hide Trades From Bots and Rewrites Gas Rules",
-      "summary": "Ethereum's next upgrade will try to hide pending trades from bots so they cannot front-run traders. The upgrade also changes the flat 21,000-gas cost that wallets have long used for simple transfers.",
-      "whyItMatters": "The gas-cost change and the anti-bot measure touch every wallet and app on Ethereum, and could shift both fees and bot behavior.",
+      "title": "Maya Protocol exploit drains assets; pool value falls $11M",
+      "summary": "An exploit hit Maya Protocol and drained bitcoin and other assets from its pools. The protocol's pool value fell by $11 million. The exact method of the attack and any recovery plan are not yet known.",
+      "whyItMatters": "DeFi exploits like this are a recurring risk for protocols that hold user funds, and they hurt trust in cross-chain and liquidity protocols.",
       "whatToWatch": [
-        "The upgrade's confirmed name and activation date",
-        "How wallet developers update their gas-estimation code",
-        "Whether bot front-running activity drops after launch"
+        "An official statement from Maya Protocol",
+        "Whether any funds are recovered"
       ],
       "questions": [
-        "What replaces the old 21,000-gas assumption?",
-        "Does the anti-front-running design also block legitimate arbitrage activity?"
+        "What vulnerability did the attacker use?",
+        "Will affected users get reimbursed?"
       ],
       "sources": [
         {
-          "title": "Ethereum wants to hide your trades from bots before they can attack",
-          "url": "https://cryptoslate.com/ethereum-wants-to-hide-your-trades-from-bots-before-they-can-attack/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-18T17:50:20.000Z"
-        },
-        {
-          "title": "Ethereum’s next upgrade breaks the '21,000 gas' rule wallets rely on",
-          "url": "https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on",
+          "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
+          "url": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
           "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T12:17:05.000Z"
+          "publishedAt": "2026-08-19T06:36:11.000Z"
         }
       ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-18T12:17:05.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/ab4b4ef3ea79c164c0b08b3c99452c33eac9a552-1500x1042.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Technical",
-      "trendScore": 67,
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T06:36:11.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/5844591d4fc53908b4ecc1fda0511af88a269620-6024x4024.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Security",
+      "trendScore": 58,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-c41d9d7dbc",
+      "slug": "bitcoin-holds-64-000-solana-leads-gains-as-korean-chip-stocks-fall-7",
+      "lane": "crypto",
+      "title": "Bitcoin holds $64,000; solana leads gains as Korean chip stocks fall 7%",
+      "summary": "Bitcoin stayed above $64,000 while solana posted the largest gains among major tokens. The moves came as South Korean semiconductor stocks fell 7%. Crypto markets held up better than that part of the equity market.",
+      "whyItMatters": "This shows how crypto prices react to stress in equity markets, which matters for anyone watching cross-market correlation.",
+      "whatToWatch": [
+        "Whether bitcoin holds the $64,000 level",
+        "Further moves in Asian equity markets"
+      ],
+      "questions": [
+        "What caused the chip stock slide?",
+        "Will crypto stay correlated with equities?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide",
+          "url": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-19T04:25:42.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T04:25:42.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/04f05b5cd4023bff86ebd19b9d5981356f50f8eb-8640x5760.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 57,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-6211efcf91",
+      "slug": "bitcoin-stays-above-64-000-as-oil-rises-and-kospi-drops-6",
+      "lane": "crypto",
+      "title": "Bitcoin stays above $64,000 as oil rises and Kospi drops 6%",
+      "summary": "Bitcoin held above $64,000 in a rolling market update. Oil prices rose in the same period, and South Korea's Kospi index fell 6%. No single cause was given for the combined moves.",
+      "whyItMatters": "Bitcoin's steadiness during a sharp equity and oil move tests whether it acts as a hedge or tracks risk assets.",
+      "whatToWatch": [
+        "Further Kospi and oil price moves",
+        "Whether bitcoin keeps the $64,000 level"
+      ],
+      "questions": [
+        "What triggered the Kospi drop?",
+        "Will crypto decouple from the equity slide?"
+      ],
+      "sources": [
+        {
+          "title": "Live updates: Bitcoin remains above $64,000 as oil rises and the Kospi tumbles 6%",
+          "url": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-19T09:05:45.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T09:05:45.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7e419388b6426c6ba82d7484f7cca17b98b220bf-1280x853.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+      "badge": "Markets",
+      "trendScore": 56,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-228589bdeb",
+      "slug": "solana-treasury-firm-may-sell-sol-after-defi-loan-locks-up-its-holding",
+      "lane": "crypto",
+      "title": "Solana treasury firm may sell SOL after DeFi loan locks up its holdings",
+      "summary": "A corporate Solana treasury company may sell SOL. A DeFi loan has tied up more than half of its treasury. It is not yet clear if a sale will happen.",
+      "whyItMatters": "Corporate treasuries that use DeFi leverage can face liquidity squeezes that force asset sales, a risk for anyone tracking treasury-company stocks.",
+      "whatToWatch": [
+        "Whether the company confirms a SOL sale",
+        "The status of the DeFi loan"
+      ],
+      "questions": [
+        "Which company is this?",
+        "What led the loan to tie up so much of the treasury?"
+      ],
+      "sources": [
+        {
+          "title": "This Solana treasury company may sell SOL as a DeFi loan ties up more than half its treasury",
+          "url": "https://cryptoslate.com/this-solana-treasury-company-may-sell-sol-as-a-defi-loan-ties-up-more-than-half-its-treasury/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-19T08:30:45.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T08:30:45.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/sol-strategies-liability-jump.jpg",
+      "badge": "Markets",
+      "trendScore": 56,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-de3926bbd2",
+      "slug": "fasb-proposes-rules-for-treating-stablecoins-as-cash-equivalents",
+      "lane": "crypto",
+      "title": "FASB proposes rules for treating stablecoins as cash equivalents",
+      "summary": "The US Financial Accounting Standards Board proposed conditions for classifying stablecoins as cash equivalents. The proposal would set accounting rules for how companies report stablecoin holdings. It follows growing corporate use of stablecoins for payments and treasury work.",
+      "whyItMatters": "Clear accounting rules make it easier for companies to hold and use stablecoins, which could speed up corporate adoption.",
+      "whatToWatch": [
+        "The public comment period on the proposal",
+        "The timeline for a final rule"
+      ],
+      "questions": [
+        "Which conditions must a stablecoin meet?",
+        "Which stablecoins would qualify?"
+      ],
+      "sources": [
+        {
+          "title": "US accounting board FASB proposes conditions for stablecoins as cash equivalents",
+          "url": "https://cointelegraph.com/news/us-accounting-board-fasb-proposes-conditions-for-stablecoins-as-cash-equivalents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-19T03:58:13.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T03:58:13.000Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-monitoring-payers-cryptocurrency-compliance.jpg",
+      "badge": "Regulatory",
+      "trendScore": 56,
       "confidence": "medium"
     },
     {
       "id": "crypto-4c30088b54",
       "slug": "neuberger-berman-partners-with-securitize-on-multi-chain-tokenized-bon",
       "lane": "crypto",
-      "title": "Neuberger Berman Partners With Securitize on Multi-Chain Tokenized Bond Fund",
-      "summary": "Asset manager Neuberger Berman is working with tokenization platform Securitize to launch a tokenized fixed-income fund. The fund will run across multiple blockchains.",
-      "whyItMatters": "A large traditional asset manager moving fixed-income products on-chain adds weight to the growing tokenized bond and treasury market.",
+      "title": "Neuberger Berman and Securitize launch multi-chain tokenized bond fund",
+      "summary": "Neuberger Berman partnered with Securitize to launch a tokenized fixed-income fund. The fund runs across multiple blockchains. It adds to a growing list of asset managers that put traditional products on blockchain rails.",
+      "whyItMatters": "Tokenized funds from established asset managers show deepening institutional use of blockchain-based financial products.",
       "whatToWatch": [
-        "The fund's launch date and supported chains",
-        "The fund's initial size and who can invest"
+        "The fund's launch date and initial size",
+        "Which chains it supports at launch"
       ],
       "questions": [
-        "Which specific chains will the fund support?",
-        "Is the fund open to retail investors or institutions only?"
+        "Which blockchains will the fund use?",
+        "What is the minimum investment?"
       ],
       "sources": [
         {
@@ -97,76 +275,27 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T15:59:54.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-sbuidl-blackrocks-tokenized-treasury-fund.png",
-      "badge": "Tokenization",
-      "trendScore": 67,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-891d787213",
-      "slug": "bitcoin-miners-ai-pivot-pays-off-but-mining-could-make-a-comeback",
-      "lane": "crypto",
-      "title": "Bitcoin Miners' AI Pivot Pays Off, but Mining Could Make a Comeback",
-      "summary": "Bitcoin miners that added AI data-center hosting are seeing that bet pay off. At the same time, a widening strain in the energy market is raising fresh questions about power costs, and some see a shift that could make mining itself attractive again. Bitcoin traded near $64,000 as the broader market slipped.",
-      "whyItMatters": "Miner economics affect network security and hash rate, and the AI pivot has changed how mining firms make money beyond block rewards.",
-      "whatToWatch": [
-        "New AI-hosting deals from mining companies",
-        "How energy-market stress affects miner power costs",
-        "Bitcoin's price action near the $64,000 level"
-      ],
-      "questions": [
-        "What specific change could revive mining economics?",
-        "How exposed are miners to further energy-price swings?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin miners’ AI pivot pays off, but mining could revive with one twist",
-          "url": "https://www.coindesk.com/business/2026/08/18/bitcoin-miners-ai-pivot-pays-off-but-mining-could-revive-with-one-twist",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T14:41:31.000Z"
-        },
-        {
-          "title": "The 'crack' in the energy market is wider than ever. Bitcoin might feel it.",
-          "url": "https://www.coindesk.com/daybook-us/2026/08/18/the-crack-in-the-energy-market-is-wider-than-ever-bitcoin-might-feel-it",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T11:21:51.000Z"
-        },
-        {
-          "title": "Bitcoin pauses at $64,000 as rising yields, oil drag equities lower",
-          "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-pauses-at-usd64-000-as-rising-yields-oil-drag-equities-lower",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T10:38:56.000Z"
-        },
-        {
-          "title": "Bitcoin climbs above $64,000 while most majors slip",
-          "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-climbs-above-usd64-000-while-most-majors-slip",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T04:32:38.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T04:32:38.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/d6e1749f04a0187af2f1d76a17a98a67944f6cb4-1000x667.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Mining",
-      "trendScore": 66,
+      "badge": "Institutional",
+      "trendScore": 56,
       "confidence": "medium"
     },
     {
       "id": "crypto-e738bc0d5d",
       "slug": "sec-proposes-its-first-major-crypto-rule-in-a-surprise-move",
       "lane": "crypto",
-      "title": "SEC Proposes Its First Major Crypto Rule in a Surprise Move",
-      "summary": "The SEC proposed what is described as its first major crypto-specific rule. The announcement came without prior warning, and the rule's exact scope is not yet clear.",
-      "whyItMatters": "A first formal SEC crypto rule would mark a significant step in how the agency plans to regulate digital assets.",
+      "title": "SEC proposes its first major crypto rule in surprise move",
+      "summary": "The US Securities and Exchange Commission proposed its first major crypto-specific rule. The announcement came as a surprise to the market. The SEC has mostly used enforcement actions in the past, not formal rules.",
+      "whyItMatters": "A formal rule, instead of enforcement action, could give the crypto industry clearer and more lasting guardrails.",
       "whatToWatch": [
-        "Publication of the full rule text",
-        "The public comment period and industry reaction"
+        "The full text and scope of the proposed rule",
+        "The public comment period",
+        "Industry reaction"
       ],
       "questions": [
-        "What does the rule actually cover?",
-        "Why did the SEC announce it now, without notice?"
+        "What does the rule cover?",
+        "Why did the SEC act now, and why the surprise?"
       ],
       "sources": [
         {
@@ -178,27 +307,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T19:09:33.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f5e51d142f4aa8a9a66d07435fa821e33f12872b-4858x2733.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Regulatory",
-      "trendScore": 64,
+      "trendScore": 54,
       "confidence": "medium"
     },
     {
       "id": "crypto-81fbb587dd",
       "slug": "wyoming-joins-15-billion-exodus-from-layerzero-with-state-stablecoin-m",
       "lane": "crypto",
-      "title": "Wyoming Joins $15 Billion Exodus From LayerZero With State Stablecoin Move",
-      "summary": "Wyoming is moving its state-backed stablecoin project away from LayerZero. The state joins what is described as a $15 billion exodus from the interoperability protocol.",
-      "whyItMatters": "Wyoming's stablecoin is a closely watched test case for government-backed stablecoins, so its infrastructure choice signals what other states may do.",
+      "title": "Wyoming moves its state stablecoin, joins $15B exodus from LayerZero",
+      "summary": "Wyoming moved its state-issued stablecoin away from LayerZero. The move is part of a larger $15 billion shift away from the network. Other projects have reportedly made similar exits.",
+      "whyItMatters": "A state-backed stablecoin's choice to leave LayerZero signals confidence concerns that matter to anyone who relies on its cross-chain messaging.",
       "whatToWatch": [
-        "Which protocol Wyoming moves to instead",
-        "Whether other LayerZero users follow",
-        "The timeline for Wyoming's stablecoin launch"
+        "Which infrastructure Wyoming moves to",
+        "Whether more projects leave LayerZero"
       ],
       "questions": [
         "What prompted the move away from LayerZero?",
-        "Is this driven by cost, security, or performance concerns?"
+        "How large is the full exodus, in projects and value?"
       ],
       "sources": [
         {
@@ -210,26 +338,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T18:57:00.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/1932072d58873b310db7b6f8591fcacdca08ee50-1920x1303.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Stablecoins",
-      "trendScore": 64,
+      "badge": "Infrastructure",
+      "trendScore": 54,
       "confidence": "medium"
     },
     {
       "id": "crypto-638630c50a",
       "slug": "cash-app-expands-crypto-support-beyond-bitcoin-and-usdc-via-moonpay",
       "lane": "crypto",
-      "title": "Cash App Expands Crypto Support Beyond Bitcoin and USDC via MoonPay",
-      "summary": "Cash App is widening its crypto offering past bitcoin and USDC. The expansion adds more assets through a partnership with MoonPay.",
-      "whyItMatters": "Cash App has a large retail user base, so wider asset support there can meaningfully expand mainstream crypto access.",
+      "title": "Cash App adds more crypto assets beyond bitcoin and USDC via MoonPay",
+      "summary": "Cash App expanded its crypto support beyond bitcoin and USDC. The expansion runs through a partnership with MoonPay. It adds to the range of tokens users can access in the app.",
+      "whyItMatters": "Wider crypto access on a mainstream payment app expands retail exposure to digital assets beyond the largest tokens.",
       "whatToWatch": [
-        "Which new tokens become available",
-        "The rollout timeline and fee structure"
+        "Which new assets Cash App adds",
+        "User adoption of the expanded support"
       ],
       "questions": [
-        "Which specific coins are being added?",
-        "Are there geographic limits on the new assets?"
+        "Which cryptocurrencies are being added?",
+        "Does MoonPay add extra fees?"
       ],
       "sources": [
         {
@@ -241,174 +369,11 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T13:00:00.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
+      "updatedAt": "2026-08-19T09:37:16.635Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7aad17172474a7876af59da08b2b538535468c12-2048x1365.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Consumer",
-      "trendScore": 64,
+      "badge": "Product",
+      "trendScore": 54,
       "confidence": "medium"
-    },
-    {
-      "id": "crypto-7aa4ba0b89",
-      "slug": "bitcoin-goes-quiet-as-traders-chase-bigger-payoffs-elsewhere",
-      "lane": "crypto",
-      "title": "Bitcoin Goes Quiet as Traders Chase Bigger Payoffs Elsewhere",
-      "summary": "Bitcoin's volatility has cooled, and some traders are reportedly rotating into other assets in search of \"5x or 10x\" gains. Still, bitcoin scored a rare win over stocks, rising 2.6% while the S&P 500 fell 0.5%.",
-      "whyItMatters": "Lower bitcoin volatility alongside capital rotation into riskier bets is worth tracking, even though bitcoin's outperformance versus equities complicates a simple \"bitcoin is boring\" read.",
-      "whatToWatch": [
-        "Whether bitcoin's low volatility continues",
-        "Where the rotating capital is flowing",
-        "Bitcoin's performance against equities going forward"
-      ],
-      "questions": [
-        "What exactly is drawing traders toward \"5x or 10x\" bets?",
-        "Is this rotation coming out of bitcoin, or is it new capital bypassing it?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin has gone quiet as traders chase ‘5x or 10x’ payoffs elsewhere",
-          "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-has-gone-quiet-as-traders-chase-5x-or-10x-payoffs-elsewhere",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T17:00:00.000Z"
-        },
-        {
-          "title": "Bitcoin scores a rare win over S&P 500 with 2.6% rise versus 0.5% fall",
-          "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-scored-a-rare-win-over-s-and-p-500-on-monday",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T10:01:23.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T10:01:23.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/6672a5d2a8a0b0c765a25b027489beb81e47b436-7875x5250.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 58,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-c4c87318f4",
-      "slug": "metaplanet-expands-bitcoin-treasury-strategy-to-the-us-with-2-100-btc-",
-      "lane": "crypto",
-      "title": "Metaplanet Expands Bitcoin Treasury Strategy to the US With 2,100-BTC Nasdaq Move",
-      "summary": "Japanese firm Metaplanet, known for its bitcoin treasury strategy, is expanding into the US market. The move involves 2,100 BTC and a Nasdaq listing.",
-      "whyItMatters": "Metaplanet has been a bellwether for corporate bitcoin treasury adoption, so its US move could draw more Nasdaq-listed firms toward the same strategy.",
-      "whatToWatch": [
-        "The structure and name of the Nasdaq vehicle",
-        "Whether Metaplanet adds to its bitcoin holdings further"
-      ],
-      "questions": [
-        "How is the 2,100 BTC being deployed structurally?",
-        "What is funding the expansion?"
-      ],
-      "sources": [
-        {
-          "title": "Metaplanet expands Bitcoin treasury strategy to US with 2,100-BTC Nasdaq play",
-          "url": "https://cointelegraph.com/news/metaplanet-expands-bitcoin-treasury-strategy-super-league?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-18T16:21:58.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T16:21:58.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-defi-wont-last-long-without-unlocking-bitcoins-treasure-chest-metaplanet-3.jpg",
-      "badge": "Corporate Treasury",
-      "trendScore": 57,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-4c533ba5a2",
-      "slug": "kraken-adds-us-stock-trading-in-europe-as-the-crypto-tradfi-line-blurs",
-      "lane": "crypto",
-      "title": "Kraken Adds US Stock Trading in Europe as the Crypto-TradFi Line Blurs",
-      "summary": "Kraken now offers US stock trading to customers in Europe. The move extends the crypto exchange further into traditional finance.",
-      "whyItMatters": "Crypto exchanges expanding into equities show the platforms converging with traditional brokerages, which changes competition on both sides.",
-      "whatToWatch": [
-        "Which US stocks are available, and in which European markets",
-        "How European securities regulators respond"
-      ],
-      "questions": [
-        "What licensing allows Kraken to offer stock trading?",
-        "Will Kraken expand this to more regions?"
-      ],
-      "sources": [
-        {
-          "title": "Kraken adds U.S. stocks in Europe as TradFi-crypto divide blurs",
-          "url": "https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-18T16:08:46.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T16:08:46.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a5d0f75b04392e25a31f206a3e9a16e752cb4a2c-2872x1915.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 57,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-4d333f8fcc",
-      "slug": "sec-proposes-crypto-fundraising-exemptions-in-abrupt-about-face",
-      "lane": "crypto",
-      "title": "SEC Proposes Crypto Fundraising Exemptions in Abrupt About-Face",
-      "summary": "The SEC proposed new exemptions for crypto fundraising. The move reverses its earlier stance on token offerings and came abruptly, with little advance signal.",
-      "whyItMatters": "Fundraising exemptions could make it easier for crypto projects to raise capital legally in the US, long a pain point for the industry.",
-      "whatToWatch": [
-        "The scope and conditions of the proposed exemptions",
-        "The comment period and pushback from investor-protection groups"
-      ],
-      "questions": [
-        "What changed the SEC's position on crypto fundraising?",
-        "Which types of token offerings would qualify?"
-      ],
-      "sources": [
-        {
-          "title": "SEC Proposes Crypto Fundraising Exemptions in Abrupt About-Face",
-          "url": "https://decrypt.co/375902/sec-regulation-crypto-fundraising-exemptions",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-08-18T20:00:25.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T20:00:25.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/08/paul-atkins-decrypt-style-01-gID_7.jpg@png",
-      "badge": "Regulatory",
-      "trendScore": 56,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-eb3bdb4770",
-      "slug": "sec-proposes-crypto-rulebook-as-clarity-act-stalls-in-congress",
-      "lane": "crypto",
-      "title": "SEC Proposes Crypto Rulebook as Clarity Act Stalls in Congress",
-      "summary": "The SEC put forward a proposed crypto rulebook while the Clarity Act, a crypto market-structure bill, remains stalled in Congress. The agency's move suggests it will not wait for legislation to act.",
-      "whyItMatters": "With Congress stalled on crypto market-structure law, SEC rulemaking could become the framework the industry has to work with in the meantime.",
-      "whatToWatch": [
-        "Whether the Clarity Act regains momentum in Congress",
-        "The details of the SEC's proposed rulebook",
-        "Reactions from industry groups and lawmakers"
-      ],
-      "questions": [
-        "Does the SEC rulebook overlap or conflict with the stalled Clarity Act?",
-        "What happens if Congress later passes conflicting legislation?"
-      ],
-      "sources": [
-        {
-          "title": "SEC Proposes Crypto Rulebook as Clarity Act Stalls",
-          "url": "https://bitcoinmagazine.com/news/sec-proposes-crypto-rules",
-          "publisher": "Bitcoin Magazine",
-          "publishedAt": "2026-08-18T19:46:11.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T19:46:11.000Z",
-      "updatedAt": "2026-08-18T21:00:35.938Z",
-      "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/05/SEC-Delaying-Plan-to-Allow-Crypto-Versions-of-US-Stocks-Report.jpg",
-      "badge": "Regulatory",
-      "trendScore": 56,
-      "confidence": "low"
     }
   ]
 }

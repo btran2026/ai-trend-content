@@ -1,22 +1,83 @@
 {
-  "generatedAt": "2026-08-18T21:00:35.938Z",
-  "contentVersion": 41,
+  "generatedAt": "2026-08-19T09:37:16.635Z",
+  "contentVersion": 42,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-715de29e88",
+        "slug": "bitcoin-etfs-add-189m-push-august-inflows-near-1b",
+        "lane": "crypto",
+        "title": "Bitcoin ETFs add $189M, push August inflows near $1B",
+        "summary": "US spot bitcoin ETFs took in $189 million in new money. August net inflows are now close to $1 billion. The inflows point to steady institutional demand for bitcoin exposure through regulated funds.",
+        "whyItMatters": "ETF flows show how much institutional money enters bitcoin without direct purchases.",
+        "whatToWatch": [
+          "Whether August inflows pass $1 billion",
+          "Next daily ETF flow reports"
+        ],
+        "questions": [
+          "Which issuers drove the inflows?",
+          "Is the money from new investors or existing ones?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin ETFs add $189M as August net inflows approach $1B",
+            "url": "https://cointelegraph.com/markets/bitcoin-etf-august-net-inflows-approach-1b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-19T07:59:16.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T07:59:16.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/bitcoin-investment-pump.jpg",
+        "badge": "Markets",
+        "trendScore": 65,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-1318cf4859",
+        "slug": "new-method-cuts-ethereum-proving-from-12-gpus-to-4",
+        "lane": "crypto",
+        "title": "New method cuts Ethereum proving from 12 GPUs to 4",
+        "summary": "A new technical approach lowers the GPU count needed for Ethereum zero-knowledge proving. It cuts the requirement from twelve GPUs to four. Lower hardware needs could cut the cost of running proof systems for Ethereum's scaling layers.",
+        "whyItMatters": "Cheaper proving lowers the barrier to running Ethereum scaling infrastructure, which affects who can compete to run it.",
+        "whatToWatch": [
+          "Adoption by rollup teams",
+          "Independent tests of the claimed efficiency gain"
+        ],
+        "questions": [
+          "Which team built this method?",
+          "Has it run in production yet?"
+        ],
+        "sources": [
+          {
+            "title": "Ethereum’s 12-GPU proving problem just got a 4-GPU answer",
+            "url": "https://cryptoslate.com/ethereums-12-gpu-proving-problem-just-got-a-4-gpu-answer/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-19T07:00:12.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T07:00:12.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/zisk-gpu-inspection-case.jpg",
+        "badge": "Technical",
+        "trendScore": 60,
+        "confidence": "low"
+      },
       {
         "id": "crypto-2ab2906882",
         "slug": "falconx-and-interstice-link-canton-network-to-ethereum-solana-robinhoo",
         "lane": "crypto",
-        "title": "FalconX and Interstice Link Canton Network to Ethereum, Solana, Robinhood Chain",
-        "summary": "FalconX and Interstice built connections between the Canton Network and Ethereum, Solana, and Robinhood's chain. The links let assets and data move across these networks instead of staying locked on Canton alone.",
-        "whyItMatters": "Links between institutional chains like Canton and major public or retail chains support wider use of tokenized assets and deeper liquidity.",
+        "title": "FalconX and Interstice link Canton to Ethereum, Solana, and Robinhood Chain",
+        "summary": "FalconX and Interstice built new links between the Canton network and Ethereum, Solana, and Robinhood Chain. The links let assets and data move across these separate blockchains. The project is part of a wider push to connect institutional and retail-facing chains.",
+        "whyItMatters": "Links between chains can widen access to tokenized assets and cut fragmentation between institutional and consumer platforms.",
         "whatToWatch": [
-          "Which institutions or assets use the new links first",
-          "Whether more chains get added to the connection"
+          "Which assets move across the new links first",
+          "Whether more chains join the network"
         ],
         "questions": [
-          "How is custody and security handled across the connected chains?",
-          "How much volume moves through the new links at launch?"
+          "What use cases will use this link first?"
         ],
         "sources": [
           {
@@ -28,64 +89,181 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T20:45:48.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-what-is-chainlink-a-beginners-guide-to-the-cross-chain-interoperability-protocol.png",
         "badge": "Infrastructure",
-        "trendScore": 71,
+        "trendScore": 60,
         "confidence": "medium"
       },
       {
-        "id": "crypto-43e0715720",
-        "slug": "ethereum-s-next-upgrade-aims-to-hide-trades-from-bots-and-rewrites-gas",
+        "id": "crypto-2fff7beddc",
+        "slug": "maya-protocol-exploit-drains-assets-pool-value-falls-11m",
         "lane": "crypto",
-        "title": "Ethereum's Next Upgrade Aims to Hide Trades From Bots and Rewrites Gas Rules",
-        "summary": "Ethereum's next upgrade will try to hide pending trades from bots so they cannot front-run traders. The upgrade also changes the flat 21,000-gas cost that wallets have long used for simple transfers.",
-        "whyItMatters": "The gas-cost change and the anti-bot measure touch every wallet and app on Ethereum, and could shift both fees and bot behavior.",
+        "title": "Maya Protocol exploit drains assets; pool value falls $11M",
+        "summary": "An exploit hit Maya Protocol and drained bitcoin and other assets from its pools. The protocol's pool value fell by $11 million. The exact method of the attack and any recovery plan are not yet known.",
+        "whyItMatters": "DeFi exploits like this are a recurring risk for protocols that hold user funds, and they hurt trust in cross-chain and liquidity protocols.",
         "whatToWatch": [
-          "The upgrade's confirmed name and activation date",
-          "How wallet developers update their gas-estimation code",
-          "Whether bot front-running activity drops after launch"
+          "An official statement from Maya Protocol",
+          "Whether any funds are recovered"
         ],
         "questions": [
-          "What replaces the old 21,000-gas assumption?",
-          "Does the anti-front-running design also block legitimate arbitrage activity?"
+          "What vulnerability did the attacker use?",
+          "Will affected users get reimbursed?"
         ],
         "sources": [
           {
-            "title": "Ethereum wants to hide your trades from bots before they can attack",
-            "url": "https://cryptoslate.com/ethereum-wants-to-hide-your-trades-from-bots-before-they-can-attack/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-18T17:50:20.000Z"
-          },
-          {
-            "title": "Ethereum’s next upgrade breaks the '21,000 gas' rule wallets rely on",
-            "url": "https://www.coindesk.com/tech/2026/08/18/ethereum-s-next-upgrade-breaks-the-21-000-gas-rule-wallets-rely-on",
+            "title": "Maya Protocol exploit drains bitcoin and other assets as pool value drops $11 million",
+            "url": "https://www.coindesk.com/markets/2026/08/19/maya-protocol-exploit-drains-bitcoin-and-other-assets-as-pool-value-drops-usd11-million",
             "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T12:17:05.000Z"
+            "publishedAt": "2026-08-19T06:36:11.000Z"
           }
         ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-18T12:17:05.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/ab4b4ef3ea79c164c0b08b3c99452c33eac9a552-1500x1042.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Technical",
-        "trendScore": 67,
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T06:36:11.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/5844591d4fc53908b4ecc1fda0511af88a269620-6024x4024.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Security",
+        "trendScore": 58,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-c41d9d7dbc",
+        "slug": "bitcoin-holds-64-000-solana-leads-gains-as-korean-chip-stocks-fall-7",
+        "lane": "crypto",
+        "title": "Bitcoin holds $64,000; solana leads gains as Korean chip stocks fall 7%",
+        "summary": "Bitcoin stayed above $64,000 while solana posted the largest gains among major tokens. The moves came as South Korean semiconductor stocks fell 7%. Crypto markets held up better than that part of the equity market.",
+        "whyItMatters": "This shows how crypto prices react to stress in equity markets, which matters for anyone watching cross-market correlation.",
+        "whatToWatch": [
+          "Whether bitcoin holds the $64,000 level",
+          "Further moves in Asian equity markets"
+        ],
+        "questions": [
+          "What caused the chip stock slide?",
+          "Will crypto stay correlated with equities?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin holds $64,000 and solana leads gains amid 7% Korean chip stock slide",
+            "url": "https://www.coindesk.com/markets/2026/08/19/solana-leads-bitcoin-and-ether-higher-while-korean-chip-stocks-slide-7",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-19T04:25:42.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T04:25:42.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/04f05b5cd4023bff86ebd19b9d5981356f50f8eb-8640x5760.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Markets",
+        "trendScore": 57,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-6211efcf91",
+        "slug": "bitcoin-stays-above-64-000-as-oil-rises-and-kospi-drops-6",
+        "lane": "crypto",
+        "title": "Bitcoin stays above $64,000 as oil rises and Kospi drops 6%",
+        "summary": "Bitcoin held above $64,000 in a rolling market update. Oil prices rose in the same period, and South Korea's Kospi index fell 6%. No single cause was given for the combined moves.",
+        "whyItMatters": "Bitcoin's steadiness during a sharp equity and oil move tests whether it acts as a hedge or tracks risk assets.",
+        "whatToWatch": [
+          "Further Kospi and oil price moves",
+          "Whether bitcoin keeps the $64,000 level"
+        ],
+        "questions": [
+          "What triggered the Kospi drop?",
+          "Will crypto decouple from the equity slide?"
+        ],
+        "sources": [
+          {
+            "title": "Live updates: Bitcoin remains above $64,000 as oil rises and the Kospi tumbles 6%",
+            "url": "https://www.coindesk.com/markets/2026/08/19/live-updates-bitcoin-holds-firm-above-usd64-000-as-south-korea-s-kospi-sinks-5-8",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-19T09:05:45.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T09:05:45.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7e419388b6426c6ba82d7484f7cca17b98b220bf-1280x853.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
+        "badge": "Markets",
+        "trendScore": 56,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-228589bdeb",
+        "slug": "solana-treasury-firm-may-sell-sol-after-defi-loan-locks-up-its-holding",
+        "lane": "crypto",
+        "title": "Solana treasury firm may sell SOL after DeFi loan locks up its holdings",
+        "summary": "A corporate Solana treasury company may sell SOL. A DeFi loan has tied up more than half of its treasury. It is not yet clear if a sale will happen.",
+        "whyItMatters": "Corporate treasuries that use DeFi leverage can face liquidity squeezes that force asset sales, a risk for anyone tracking treasury-company stocks.",
+        "whatToWatch": [
+          "Whether the company confirms a SOL sale",
+          "The status of the DeFi loan"
+        ],
+        "questions": [
+          "Which company is this?",
+          "What led the loan to tie up so much of the treasury?"
+        ],
+        "sources": [
+          {
+            "title": "This Solana treasury company may sell SOL as a DeFi loan ties up more than half its treasury",
+            "url": "https://cryptoslate.com/this-solana-treasury-company-may-sell-sol-as-a-defi-loan-ties-up-more-than-half-its-treasury/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-19T08:30:45.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T08:30:45.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/sol-strategies-liability-jump.jpg",
+        "badge": "Markets",
+        "trendScore": 56,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-de3926bbd2",
+        "slug": "fasb-proposes-rules-for-treating-stablecoins-as-cash-equivalents",
+        "lane": "crypto",
+        "title": "FASB proposes rules for treating stablecoins as cash equivalents",
+        "summary": "The US Financial Accounting Standards Board proposed conditions for classifying stablecoins as cash equivalents. The proposal would set accounting rules for how companies report stablecoin holdings. It follows growing corporate use of stablecoins for payments and treasury work.",
+        "whyItMatters": "Clear accounting rules make it easier for companies to hold and use stablecoins, which could speed up corporate adoption.",
+        "whatToWatch": [
+          "The public comment period on the proposal",
+          "The timeline for a final rule"
+        ],
+        "questions": [
+          "Which conditions must a stablecoin meet?",
+          "Which stablecoins would qualify?"
+        ],
+        "sources": [
+          {
+            "title": "US accounting board FASB proposes conditions for stablecoins as cash equivalents",
+            "url": "https://cointelegraph.com/news/us-accounting-board-fasb-proposes-conditions-for-stablecoins-as-cash-equivalents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-19T03:58:13.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T03:58:13.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-monitoring-payers-cryptocurrency-compliance.jpg",
+        "badge": "Regulatory",
+        "trendScore": 56,
         "confidence": "medium"
       },
       {
         "id": "crypto-4c30088b54",
         "slug": "neuberger-berman-partners-with-securitize-on-multi-chain-tokenized-bon",
         "lane": "crypto",
-        "title": "Neuberger Berman Partners With Securitize on Multi-Chain Tokenized Bond Fund",
-        "summary": "Asset manager Neuberger Berman is working with tokenization platform Securitize to launch a tokenized fixed-income fund. The fund will run across multiple blockchains.",
-        "whyItMatters": "A large traditional asset manager moving fixed-income products on-chain adds weight to the growing tokenized bond and treasury market.",
+        "title": "Neuberger Berman and Securitize launch multi-chain tokenized bond fund",
+        "summary": "Neuberger Berman partnered with Securitize to launch a tokenized fixed-income fund. The fund runs across multiple blockchains. It adds to a growing list of asset managers that put traditional products on blockchain rails.",
+        "whyItMatters": "Tokenized funds from established asset managers show deepening institutional use of blockchain-based financial products.",
         "whatToWatch": [
-          "The fund's launch date and supported chains",
-          "The fund's initial size and who can invest"
+          "The fund's launch date and initial size",
+          "Which chains it supports at launch"
         ],
         "questions": [
-          "Which specific chains will the fund support?",
-          "Is the fund open to retail investors or institutions only?"
+          "Which blockchains will the fund use?",
+          "What is the minimum investment?"
         ],
         "sources": [
           {
@@ -97,76 +275,27 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T15:59:54.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-sbuidl-blackrocks-tokenized-treasury-fund.png",
-        "badge": "Tokenization",
-        "trendScore": 67,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-891d787213",
-        "slug": "bitcoin-miners-ai-pivot-pays-off-but-mining-could-make-a-comeback",
-        "lane": "crypto",
-        "title": "Bitcoin Miners' AI Pivot Pays Off, but Mining Could Make a Comeback",
-        "summary": "Bitcoin miners that added AI data-center hosting are seeing that bet pay off. At the same time, a widening strain in the energy market is raising fresh questions about power costs, and some see a shift that could make mining itself attractive again. Bitcoin traded near $64,000 as the broader market slipped.",
-        "whyItMatters": "Miner economics affect network security and hash rate, and the AI pivot has changed how mining firms make money beyond block rewards.",
-        "whatToWatch": [
-          "New AI-hosting deals from mining companies",
-          "How energy-market stress affects miner power costs",
-          "Bitcoin's price action near the $64,000 level"
-        ],
-        "questions": [
-          "What specific change could revive mining economics?",
-          "How exposed are miners to further energy-price swings?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin miners’ AI pivot pays off, but mining could revive with one twist",
-            "url": "https://www.coindesk.com/business/2026/08/18/bitcoin-miners-ai-pivot-pays-off-but-mining-could-revive-with-one-twist",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T14:41:31.000Z"
-          },
-          {
-            "title": "The 'crack' in the energy market is wider than ever. Bitcoin might feel it.",
-            "url": "https://www.coindesk.com/daybook-us/2026/08/18/the-crack-in-the-energy-market-is-wider-than-ever-bitcoin-might-feel-it",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T11:21:51.000Z"
-          },
-          {
-            "title": "Bitcoin pauses at $64,000 as rising yields, oil drag equities lower",
-            "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-pauses-at-usd64-000-as-rising-yields-oil-drag-equities-lower",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T10:38:56.000Z"
-          },
-          {
-            "title": "Bitcoin climbs above $64,000 while most majors slip",
-            "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-climbs-above-usd64-000-while-most-majors-slip",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T04:32:38.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T04:32:38.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/d6e1749f04a0187af2f1d76a17a98a67944f6cb4-1000x667.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Mining",
-        "trendScore": 66,
+        "badge": "Institutional",
+        "trendScore": 56,
         "confidence": "medium"
       },
       {
         "id": "crypto-e738bc0d5d",
         "slug": "sec-proposes-its-first-major-crypto-rule-in-a-surprise-move",
         "lane": "crypto",
-        "title": "SEC Proposes Its First Major Crypto Rule in a Surprise Move",
-        "summary": "The SEC proposed what is described as its first major crypto-specific rule. The announcement came without prior warning, and the rule's exact scope is not yet clear.",
-        "whyItMatters": "A first formal SEC crypto rule would mark a significant step in how the agency plans to regulate digital assets.",
+        "title": "SEC proposes its first major crypto rule in surprise move",
+        "summary": "The US Securities and Exchange Commission proposed its first major crypto-specific rule. The announcement came as a surprise to the market. The SEC has mostly used enforcement actions in the past, not formal rules.",
+        "whyItMatters": "A formal rule, instead of enforcement action, could give the crypto industry clearer and more lasting guardrails.",
         "whatToWatch": [
-          "Publication of the full rule text",
-          "The public comment period and industry reaction"
+          "The full text and scope of the proposed rule",
+          "The public comment period",
+          "Industry reaction"
         ],
         "questions": [
-          "What does the rule actually cover?",
-          "Why did the SEC announce it now, without notice?"
+          "What does the rule cover?",
+          "Why did the SEC act now, and why the surprise?"
         ],
         "sources": [
           {
@@ -178,27 +307,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T19:09:33.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/f5e51d142f4aa8a9a66d07435fa821e33f12872b-4858x2733.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Regulatory",
-        "trendScore": 64,
+        "trendScore": 54,
         "confidence": "medium"
       },
       {
         "id": "crypto-81fbb587dd",
         "slug": "wyoming-joins-15-billion-exodus-from-layerzero-with-state-stablecoin-m",
         "lane": "crypto",
-        "title": "Wyoming Joins $15 Billion Exodus From LayerZero With State Stablecoin Move",
-        "summary": "Wyoming is moving its state-backed stablecoin project away from LayerZero. The state joins what is described as a $15 billion exodus from the interoperability protocol.",
-        "whyItMatters": "Wyoming's stablecoin is a closely watched test case for government-backed stablecoins, so its infrastructure choice signals what other states may do.",
+        "title": "Wyoming moves its state stablecoin, joins $15B exodus from LayerZero",
+        "summary": "Wyoming moved its state-issued stablecoin away from LayerZero. The move is part of a larger $15 billion shift away from the network. Other projects have reportedly made similar exits.",
+        "whyItMatters": "A state-backed stablecoin's choice to leave LayerZero signals confidence concerns that matter to anyone who relies on its cross-chain messaging.",
         "whatToWatch": [
-          "Which protocol Wyoming moves to instead",
-          "Whether other LayerZero users follow",
-          "The timeline for Wyoming's stablecoin launch"
+          "Which infrastructure Wyoming moves to",
+          "Whether more projects leave LayerZero"
         ],
         "questions": [
           "What prompted the move away from LayerZero?",
-          "Is this driven by cost, security, or performance concerns?"
+          "How large is the full exodus, in projects and value?"
         ],
         "sources": [
           {
@@ -210,26 +338,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T18:57:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/1932072d58873b310db7b6f8591fcacdca08ee50-1920x1303.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Stablecoins",
-        "trendScore": 64,
+        "badge": "Infrastructure",
+        "trendScore": 54,
         "confidence": "medium"
       },
       {
         "id": "crypto-638630c50a",
         "slug": "cash-app-expands-crypto-support-beyond-bitcoin-and-usdc-via-moonpay",
         "lane": "crypto",
-        "title": "Cash App Expands Crypto Support Beyond Bitcoin and USDC via MoonPay",
-        "summary": "Cash App is widening its crypto offering past bitcoin and USDC. The expansion adds more assets through a partnership with MoonPay.",
-        "whyItMatters": "Cash App has a large retail user base, so wider asset support there can meaningfully expand mainstream crypto access.",
+        "title": "Cash App adds more crypto assets beyond bitcoin and USDC via MoonPay",
+        "summary": "Cash App expanded its crypto support beyond bitcoin and USDC. The expansion runs through a partnership with MoonPay. It adds to the range of tokens users can access in the app.",
+        "whyItMatters": "Wider crypto access on a mainstream payment app expands retail exposure to digital assets beyond the largest tokens.",
         "whatToWatch": [
-          "Which new tokens become available",
-          "The rollout timeline and fee structure"
+          "Which new assets Cash App adds",
+          "User adoption of the expanded support"
         ],
         "questions": [
-          "Which specific coins are being added?",
-          "Are there geographic limits on the new assets?"
+          "Which cryptocurrencies are being added?",
+          "Does MoonPay add extra fees?"
         ],
         "sources": [
           {
@@ -241,191 +369,88 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T13:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/7aad17172474a7876af59da08b2b538535468c12-2048x1365.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Consumer",
-        "trendScore": 64,
+        "badge": "Product",
+        "trendScore": 54,
         "confidence": "medium"
-      },
-      {
-        "id": "crypto-7aa4ba0b89",
-        "slug": "bitcoin-goes-quiet-as-traders-chase-bigger-payoffs-elsewhere",
-        "lane": "crypto",
-        "title": "Bitcoin Goes Quiet as Traders Chase Bigger Payoffs Elsewhere",
-        "summary": "Bitcoin's volatility has cooled, and some traders are reportedly rotating into other assets in search of \"5x or 10x\" gains. Still, bitcoin scored a rare win over stocks, rising 2.6% while the S&P 500 fell 0.5%.",
-        "whyItMatters": "Lower bitcoin volatility alongside capital rotation into riskier bets is worth tracking, even though bitcoin's outperformance versus equities complicates a simple \"bitcoin is boring\" read.",
-        "whatToWatch": [
-          "Whether bitcoin's low volatility continues",
-          "Where the rotating capital is flowing",
-          "Bitcoin's performance against equities going forward"
-        ],
-        "questions": [
-          "What exactly is drawing traders toward \"5x or 10x\" bets?",
-          "Is this rotation coming out of bitcoin, or is it new capital bypassing it?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin has gone quiet as traders chase ‘5x or 10x’ payoffs elsewhere",
-            "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-has-gone-quiet-as-traders-chase-5x-or-10x-payoffs-elsewhere",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T17:00:00.000Z"
-          },
-          {
-            "title": "Bitcoin scores a rare win over S&P 500 with 2.6% rise versus 0.5% fall",
-            "url": "https://www.coindesk.com/markets/2026/08/18/bitcoin-scored-a-rare-win-over-s-and-p-500-on-monday",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T10:01:23.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T10:01:23.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/6672a5d2a8a0b0c765a25b027489beb81e47b436-7875x5250.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Markets",
-        "trendScore": 58,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-c4c87318f4",
-        "slug": "metaplanet-expands-bitcoin-treasury-strategy-to-the-us-with-2-100-btc-",
-        "lane": "crypto",
-        "title": "Metaplanet Expands Bitcoin Treasury Strategy to the US With 2,100-BTC Nasdaq Move",
-        "summary": "Japanese firm Metaplanet, known for its bitcoin treasury strategy, is expanding into the US market. The move involves 2,100 BTC and a Nasdaq listing.",
-        "whyItMatters": "Metaplanet has been a bellwether for corporate bitcoin treasury adoption, so its US move could draw more Nasdaq-listed firms toward the same strategy.",
-        "whatToWatch": [
-          "The structure and name of the Nasdaq vehicle",
-          "Whether Metaplanet adds to its bitcoin holdings further"
-        ],
-        "questions": [
-          "How is the 2,100 BTC being deployed structurally?",
-          "What is funding the expansion?"
-        ],
-        "sources": [
-          {
-            "title": "Metaplanet expands Bitcoin treasury strategy to US with 2,100-BTC Nasdaq play",
-            "url": "https://cointelegraph.com/news/metaplanet-expands-bitcoin-treasury-strategy-super-league?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-18T16:21:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:21:58.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-defi-wont-last-long-without-unlocking-bitcoins-treasure-chest-metaplanet-3.jpg",
-        "badge": "Corporate Treasury",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-4c533ba5a2",
-        "slug": "kraken-adds-us-stock-trading-in-europe-as-the-crypto-tradfi-line-blurs",
-        "lane": "crypto",
-        "title": "Kraken Adds US Stock Trading in Europe as the Crypto-TradFi Line Blurs",
-        "summary": "Kraken now offers US stock trading to customers in Europe. The move extends the crypto exchange further into traditional finance.",
-        "whyItMatters": "Crypto exchanges expanding into equities show the platforms converging with traditional brokerages, which changes competition on both sides.",
-        "whatToWatch": [
-          "Which US stocks are available, and in which European markets",
-          "How European securities regulators respond"
-        ],
-        "questions": [
-          "What licensing allows Kraken to offer stock trading?",
-          "Will Kraken expand this to more regions?"
-        ],
-        "sources": [
-          {
-            "title": "Kraken adds U.S. stocks in Europe as TradFi-crypto divide blurs",
-            "url": "https://www.coindesk.com/markets/2026/08/18/kraken-adds-u-s-stocks-in-europe-as-tradfi-crypto-divide-blurs",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-18T16:08:46.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:08:46.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a5d0f75b04392e25a31f206a3e9a16e752cb4a2c-2872x1915.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Markets",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-4d333f8fcc",
-        "slug": "sec-proposes-crypto-fundraising-exemptions-in-abrupt-about-face",
-        "lane": "crypto",
-        "title": "SEC Proposes Crypto Fundraising Exemptions in Abrupt About-Face",
-        "summary": "The SEC proposed new exemptions for crypto fundraising. The move reverses its earlier stance on token offerings and came abruptly, with little advance signal.",
-        "whyItMatters": "Fundraising exemptions could make it easier for crypto projects to raise capital legally in the US, long a pain point for the industry.",
-        "whatToWatch": [
-          "The scope and conditions of the proposed exemptions",
-          "The comment period and pushback from investor-protection groups"
-        ],
-        "questions": [
-          "What changed the SEC's position on crypto fundraising?",
-          "Which types of token offerings would qualify?"
-        ],
-        "sources": [
-          {
-            "title": "SEC Proposes Crypto Fundraising Exemptions in Abrupt About-Face",
-            "url": "https://decrypt.co/375902/sec-regulation-crypto-fundraising-exemptions",
-            "publisher": "Decrypt",
-            "publishedAt": "2026-08-18T20:00:25.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T20:00:25.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/08/paul-atkins-decrypt-style-01-gID_7.jpg@png",
-        "badge": "Regulatory",
-        "trendScore": 56,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-eb3bdb4770",
-        "slug": "sec-proposes-crypto-rulebook-as-clarity-act-stalls-in-congress",
-        "lane": "crypto",
-        "title": "SEC Proposes Crypto Rulebook as Clarity Act Stalls in Congress",
-        "summary": "The SEC put forward a proposed crypto rulebook while the Clarity Act, a crypto market-structure bill, remains stalled in Congress. The agency's move suggests it will not wait for legislation to act.",
-        "whyItMatters": "With Congress stalled on crypto market-structure law, SEC rulemaking could become the framework the industry has to work with in the meantime.",
-        "whatToWatch": [
-          "Whether the Clarity Act regains momentum in Congress",
-          "The details of the SEC's proposed rulebook",
-          "Reactions from industry groups and lawmakers"
-        ],
-        "questions": [
-          "Does the SEC rulebook overlap or conflict with the stalled Clarity Act?",
-          "What happens if Congress later passes conflicting legislation?"
-        ],
-        "sources": [
-          {
-            "title": "SEC Proposes Crypto Rulebook as Clarity Act Stalls",
-            "url": "https://bitcoinmagazine.com/news/sec-proposes-crypto-rules",
-            "publisher": "Bitcoin Magazine",
-            "publishedAt": "2026-08-18T19:46:11.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T19:46:11.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://bitcoinmagazine.com/wp-content/uploads/2026/05/SEC-Delaying-Plan-to-Allow-Crypto-Versions-of-US-Stocks-Report.jpg",
-        "badge": "Regulatory",
-        "trendScore": 56,
-        "confidence": "low"
       }
     ],
     "markets": [
       {
+        "id": "markets-daecd3f8b8",
+        "slug": "strategists-warn-of-mounting-risks-to-the-dollar",
+        "lane": "markets",
+        "title": "Strategists warn of mounting risks to the dollar",
+        "summary": "Strategists warn of several risks to the US dollar. The report does not give specific triggers or price levels. Details on the drivers stay thin in current reporting.",
+        "whyItMatters": "A weaker dollar changes the math for importers, multinational earnings, and commodity prices.",
+        "whatToWatch": [
+          "Specific catalysts named in follow-up reports",
+          "Moves in the dollar index in coming sessions"
+        ],
+        "questions": [
+          "What specific risks drive the concern?",
+          "What time frame do strategists expect?"
+        ],
+        "sources": [
+          {
+            "title": "Dollar risks are mounting. Here’s what could weaken the greenback",
+            "url": "https://www.cnbc.com/2026/08/19/inflation-dollar-risks-fed.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-19T09:32:56.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T09:32:56.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108238058-1765168272053-gettyimages-1438235949-economia3.jpeg?v=1776076368&w=1920&h=1080",
+        "badge": "Analysis",
+        "trendScore": 61,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-8b9db37f98",
+        "slug": "treasury-yields-ease-from-multi-decade-highs-before-fomc-minutes",
+        "lane": "markets",
+        "title": "Treasury yields ease from multi-decade highs before FOMC minutes",
+        "summary": "Treasury yields fell back after they hit multi-decade highs. Traders position ahead of the release of the Federal Reserve's FOMC meeting minutes. The pullback gives relief after a long rise in yields.",
+        "whyItMatters": "Treasury yields set the benchmark for borrowing costs across the economy, from mortgages to corporate debt.",
+        "whatToWatch": [
+          "The release of the FOMC minutes",
+          "Whether yields resume their climb after the minutes"
+        ],
+        "questions": [
+          "What will the minutes reveal about the Fed's rate path?"
+        ],
+        "sources": [
+          {
+            "title": "Treasury yields pull back from multi-decade highs ahead of FOMC minutes",
+            "url": "https://www.cnbc.com/2026/08/19/treasury-yields-multi-decade-highs-bonds-inflation.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-19T08:33:21.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T08:33:21.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/100684995-20130419-0375-121.jpg?v=1367252484&w=1920&h=1080",
+        "badge": "Rates",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
         "id": "markets-4705c04c00",
         "slug": "30-year-treasury-yield-tops-5-31-highest-in-19-years",
         "lane": "markets",
-        "title": "30-Year Treasury Yield Tops 5.33%, a New 19-Year High",
-        "summary": "The 30-year Treasury yield rose above 5.33% on Tuesday, its highest level in 19 years. CNBC tied the move to worries about inflation and government spending. The rise adds to a broader climb in long-term borrowing costs this week.",
-        "whyItMatters": "Higher long-term yields raise borrowing costs across the economy, from mortgages to corporate debt, and often pressure stock valuations.",
+        "title": "30-year Treasury yield hits 19-year high of 5.33% on inflation, spending concerns",
+        "summary": "The 30-year Treasury yield rose above 5.33%. That is a fresh 19-year high. Investors cited inflation and government spending concerns as the cause.",
+        "whyItMatters": "Higher long-term yields raise borrowing costs for mortgages, business loans, and the federal government.",
         "whatToWatch": [
-          "Whether the 30-year yield holds above 5.33% or pulls back",
-          "Fresh inflation or spending data that could add to the pressure"
+          "Whether yields hold above 5.33%",
+          "Upcoming inflation data and the FOMC minutes"
         ],
         "questions": [
-          "What specific inflation or spending news triggered the latest move?",
-          "How high can yields go before they hit stocks or housing hard?"
+          "Which spending concerns drove the move?"
         ],
         "sources": [
           {
@@ -433,358 +458,279 @@
             "url": "https://www.cnbc.com/2026/08/18/treasury-yields-.html",
             "publisher": "CNBC Markets",
             "publishedAt": "2026-08-18T20:33:38.000Z"
-          },
-          {
-            "title": "30-year Treasury yield tops 5.31%, the highest in 19 years",
-            "url": "https://www.cnbc.com/2026/08/17/treasury-yields-federal-reserve-fomc-minutes.html",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-17T18:14:07Z"
           }
         ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-17T18:14:07Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T20:33:38.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://image.cnbcfm.com/api/v1/image/108346036-1787066850635-108346036-1786028392167-gettyimages-2289337999-anotherday258793706_oxehpwvk.jpg?v=1787066864&w=1920&h=1080",
         "badge": "Rates",
-        "trendScore": 77,
+        "trendScore": 55,
         "confidence": "medium"
       },
       {
-        "id": "markets-755d50cbd3",
-        "slug": "u-s-government-debt-yields-surge-at-an-awkward-moment",
+        "id": "markets-bd5746d3f8",
+        "slug": "jim-cramer-the-market-is-too-negative-and-that-opens-buying-opportunit",
         "lane": "markets",
-        "title": "U.S. Government Debt Yields Surge at an Awkward Moment",
-        "summary": "CNBC reports that U.S. government bond yields are climbing sharply, at a time it calls badly timed. A related MarketWatch report points to cheap hedges investors can buy to guard against a stock-market selloff. Together, the stories point to rising anxiety about what higher yields mean for stocks.",
-        "whyItMatters": "Sharp yield spikes can unsettle equity markets and raise financing costs for the government, companies, and consumers alike.",
+        "title": "Jim Cramer: the market is too negative, and that opens buying opportunities",
+        "summary": "CNBC's Jim Cramer said the market has turned too negative. He said that pessimism opens buying opportunities for investors. The comments add to a wider debate on market sentiment.",
+        "whyItMatters": "Cramer's commentary moves retail sentiment and can shift short-term flows into or out of stocks.",
         "whatToWatch": [
-          "Further yield moves and any policy response",
-          "Investor demand for hedges against a stock selloff"
+          "Which sectors or stocks Cramer names as opportunities"
         ],
         "questions": [
-          "What makes this timing especially bad, according to CNBC?",
-          "Are investors already buying hedges, or just discussing them?"
+          "Does broader market data support Cramer's contrarian view?"
         ],
         "sources": [
           {
-            "title": "U.S. government debt yields are surging at a bad time. Here's what's behind the move",
-            "url": "https://www.cnbc.com/2026/08/18/us-government-debt-yields-are-surging-at-a-bad-time-heres-whats-behind-the-move.html",
+            "title": "Jim Cramer says the market is too negative — and that’s creating buying opportunities",
+            "url": "https://www.cnbc.com/2026/08/18/jim-cramer-market-too-negative-buying-opportunities.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-18T20:55:42.000Z"
-          },
-          {
-            "title": "Here’s a ‘ridiculously cheap’ way to protect yourself against a stock-market selloff",
-            "url": "https://www.marketwatch.com/story/heres-a-ridiculously-cheap-way-to-protect-yourself-against-a-stock-market-selloff-67d3b312?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-18T20:07:00.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-18T20:07:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.mktw.net/im-76663427",
-        "badge": "Rates",
-        "trendScore": 69,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-9128781018",
-        "slug": "canada-s-tsx-falls-0-82-in-tuesday-trading",
-        "lane": "markets",
-        "title": "Canada's TSX Falls 0.82% in Tuesday Trading",
-        "summary": "The S&P/TSX Composite closed lower on Tuesday, down 0.82%. The move fits a broader pattern of pressure on stock markets tied to rising bond yields this week.",
-        "whyItMatters": "Canadian equities often track North American rate and trade sentiment, both in focus this week.",
-        "whatToWatch": [
-          "Wednesday's TSX session for signs of stabilization or further declines"
-        ],
-        "questions": [
-          "Which sectors led the TSX decline?"
-        ],
-        "sources": [
-          {
-            "title": "Canada stocks lower at close of trade; S&P/TSX Composite down 0.82%",
-            "url": "https://www.investing.com/news/stock-market-news/canada-stocks-lower-at-close-of-trade-sptsx-composite-down-082-4866051",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-19T03:30:31.000Z"
+            "publishedAt": "2026-08-18T22:23:36.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-19T03:30:31.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEL4F0KU_L.jpg",
-        "badge": "Markets Recap",
-        "trendScore": 67,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-42f71e67b3",
-        "slug": "u-s-stocks-close-lower-dow-slips-0-22",
-        "lane": "markets",
-        "title": "U.S. Stocks Close Lower; Dow Slips 0.22%",
-        "summary": "U.S. stocks fell Tuesday, with the Dow Jones Industrial Average down 0.22% at the close. The decline came amid a broader rise in Treasury yields that has weighed on sentiment this week.",
-        "whyItMatters": "Daily index moves show how investors are digesting the surge in bond yields and its knock-on effects for stocks.",
-        "whatToWatch": [
-          "Whether Wednesday brings a rebound or extends the losses",
-          "Bond yield moves that could continue to pressure equities"
-        ],
-        "questions": [
-          "Which sectors dragged the Dow down most?"
-        ],
-        "sources": [
-          {
-            "title": "U.S. stocks lower at close of trade; Dow Jones Industrial Average down 0.22%",
-            "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-022-4866052",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-19T03:31:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-19T03:31:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM531LT_1200_L.jpg",
-        "badge": "Markets Recap",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-33a2318731",
-        "slug": "brazil-s-bovespa-closes-down-0-27",
-        "lane": "markets",
-        "title": "Brazil's Bovespa Closes Down 0.27%",
-        "summary": "Brazil's Bovespa index ended Tuesday's session down 0.27%. The decline puts Brazil alongside Canada and the U.S. among major indexes that closed lower the same day.",
-        "whyItMatters": "A synchronized pullback across Brazilian, Canadian, and U.S. markets points to a shared driver, such as global bond yield pressure.",
-        "whatToWatch": [
-          "Wednesday's Bovespa session for continuation or reversal"
-        ],
-        "questions": [
-          "Was the Bovespa move driven by local factors or the global bond selloff?"
-        ],
-        "sources": [
-          {
-            "title": "Brazil stocks lower at close of trade; Bovespa down 0.27%",
-            "url": "https://www.investing.com/news/stock-market-news/brazil-stocks-lower-at-close-of-trade-bovespa-down-027-4866050",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-19T03:30:03.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-19T03:30:03.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEH9P1AL_L.jpg",
-        "badge": "Markets Recap",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-74120769e9",
-        "slug": "rising-bond-yields-start-to-hit-mortgages-and-consumer-loans",
-        "lane": "markets",
-        "title": "Rising Bond Yields Start to Hit Mortgages and Consumer Loans",
-        "summary": "CNBC reports that climbing bond yields are starting to push up costs for mortgages and other consumer borrowing. The move follows a sharp rise in long-term Treasury yields this week.",
-        "whyItMatters": "Higher borrowing costs directly affect home buyers and anyone carrying variable-rate debt, squeezing household budgets.",
-        "whatToWatch": [
-          "Mortgage rate moves in coming days",
-          "Whether Treasury yields keep climbing or stabilize"
-        ],
-        "questions": [
-          "How much higher could mortgage rates go if yields keep rising?"
-        ],
-        "sources": [
-          {
-            "title": "Bond yields are climbing. Here’s what that means for mortgages and other consumer borrowing",
-            "url": "https://www.cnbc.com/2026/08/18/mortgage-rates-treasury-bond-yields-consumer-loans.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-18T16:58:29.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:58:29.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108304890-1778499907852-gettyimages-2274954505-US_HOME_SALES.jpeg?v=1787060737&w=1920&h=1080",
-        "badge": "Rates",
-        "trendScore": 58,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-b92ea7ce75",
-        "slug": "analysis-bond-market-pressure-squeezes-main-street-while-wall-street-w",
-        "lane": "markets",
-        "title": "Analysis: Bond Market Pressure Squeezes Main Street While Wall Street Watches Warsh",
-        "summary": "A CNBC analysis says pressure in the bond market is spilling over into everyday costs for consumers and businesses. The piece frames this as a Main Street problem even as Wall Street keeps a close eye on Warsh for signals on what comes next.",
-        "whyItMatters": "The gap between market-level bond stress and its real-world cost to households is a key theme for anyone tracking the rate outlook.",
-        "whatToWatch": [
-          "Any statement or move from Warsh that markets react to",
-          "Further signs of yield pressure reaching consumer borrowing costs"
-        ],
-        "questions": [
-          "What role is Warsh expected to play in this situation?"
-        ],
-        "sources": [
-          {
-            "title": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
-            "url": "https://www.cnbc.com/2026/08/18/bond-market-treasury-yields-warsh-main-street.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-18T16:48:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:48:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108342007-17853541062026-07-29t193815z_169839558_rc2vnmanqtme_rtrmadp_0_usa-markets-fed.jpeg?v=1785354138&w=1920&h=1080",
-        "badge": "Analysis",
+        "publishedAt": "2026-08-18T22:23:36.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/107113452-NUP_198430_00216r.jpg?v=1697496575&w=1920&h=1080",
+        "badge": "Commentary",
         "trendScore": 57,
         "confidence": "medium"
       },
       {
-        "id": "markets-d91570a8c9",
-        "slug": "trump-carney-reportedly-in-talks-ahead-of-new-50-tariffs-on-canadian-g",
+        "id": "markets-4ad67bf02c",
+        "slug": "zelenskyy-faces-a-call-for-elections-from-a-former-defense-chief",
         "lane": "markets",
-        "title": "Trump, Carney Reportedly in Talks Ahead of New 50% Tariffs on Canadian Goods",
-        "summary": "CNBC reports that President Trump and Prime Minister Carney are in talks as new 50% tariffs on Canadian goods loom. The report did not specify further details of the negotiations.",
-        "whyItMatters": "A steep new tariff on Canadian goods would raise costs for cross-border trade and could ripple through North American supply chains and markets.",
+        "title": "Zelenskyy faces a call for elections from a former defense chief",
+        "summary": "Ukrainian President Volodymyr Zelenskyy faces a challenge to his wartime rule. A former defense chief called for an election. The report points to rising political tension inside Ukraine during the war.",
+        "whyItMatters": "Political instability in Ukraine adds fresh uncertainty for markets that already price war-related risk.",
         "whatToWatch": [
-          "Whether talks produce a deal or a delay before the tariffs take effect",
-          "Any official statement from the White House or the Canadian government"
+          "Whether the election call gains support",
+          "Ukraine's wartime governance and Western backing"
         ],
         "questions": [
-          "What is the timeline for the 50% tariffs to take effect?",
-          "Which Canadian goods would the tariffs cover?"
+          "Who is the former defense chief, and what support does he have?",
+          "Would elections happen during active war?"
         ],
         "sources": [
           {
-            "title": "Trump, Carney reportedly in talks ahead of new 50% tariffs on Canadian goods",
-            "url": "https://www.cnbc.com/2026/08/18/trump-carney-canada-tariffs-dealine-talks.html",
+            "title": "Zelenskyy faces challenge to his wartime rule as former defense chief calls for election",
+            "url": "https://www.cnbc.com/2026/08/19/ukraine-war-fedorov-zelenskky-election.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-18T20:20:24.000Z"
+            "publishedAt": "2026-08-19T09:30:25.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T20:20:24.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108220327-1762005609813-gettyimages-2240467724-AFP_78MT3VF.jpeg?v=1787080939&w=1920&h=1080",
-        "badge": "Trade Policy",
-        "trendScore": 55,
+        "publishedAt": "2026-08-19T09:30:25.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108351322-1787116613744-gettyimages-2260737257-AFP_979G7J8.jpeg?v=1787116678&w=1920&h=1080",
+        "badge": "Geopolitics",
+        "trendScore": 56,
         "confidence": "medium"
       },
       {
-        "id": "markets-836655b599",
-        "slug": "focus-turns-to-u-s-debt-load-as-global-bond-rout-deepens",
+        "id": "markets-c04dfcb8fd",
+        "slug": "target-set-to-report-earnings-before-the-bell",
         "lane": "markets",
-        "title": "Focus Turns to U.S. Debt Load as Global Bond Rout Deepens",
-        "summary": "MarketWatch reports that America's growing debt pile will be a central focus Wednesday, as a global bond selloff deepens. The report ties the rout to the broader concerns already pushing Treasury yields to multi-year highs.",
-        "whyItMatters": "A deepening global bond rout raises borrowing costs worldwide and puts fresh scrutiny on the sustainability of U.S. government debt.",
+        "title": "Target set to report earnings before the bell",
+        "summary": "Target will report quarterly earnings before the market opens. Investors will watch for signs of consumer spending trends at the retailer. The report gives a read on discretionary retail demand.",
+        "whyItMatters": "Target's results serve as a bellwether for consumer spending and retail health.",
         "whatToWatch": [
-          "Wednesday's session for the debt discussion MarketWatch flags",
-          "Any data or auction results that move Treasury yields further"
+          "Target's earnings release before the bell",
+          "Guidance on consumer demand and margins"
         ],
         "questions": [
-          "What specifically about U.S. debt is drawing fresh attention now?"
+          "Will results show consumers pull back on discretionary spending?"
         ],
         "sources": [
           {
-            "title": "America’s growing debt pile will be the big focus Wednesday as global bond rout deepens",
-            "url": "https://www.marketwatch.com/story/americas-growing-debt-pile-will-be-the-big-focus-wednesday-as-global-bond-rout-deepens-a6955c80?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-18T19:52:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T19:52:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.mktw.net/im-21459206",
-        "badge": "Analysis",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-022641c275",
-        "slug": "mortgage-rates-may-climb-further-adding-pressure-on-home-buyers",
-        "lane": "markets",
-        "title": "Mortgage Rates May Climb Further, Adding Pressure on Home Buyers",
-        "summary": "MarketWatch reports mortgage rates could rise even more, a fresh setback for home buyers already facing high borrowing costs. The report links the risk to the broader rise in bond yields this week.",
-        "whyItMatters": "Higher mortgage rates price out more buyers and can cool home sales further at a time affordability is already stretched.",
-        "whatToWatch": [
-          "Upcoming mortgage rate readings",
-          "Treasury yield moves, which typically lead mortgage rate changes"
-        ],
-        "questions": [
-          "How much higher could mortgage rates realistically go this year?"
-        ],
-        "sources": [
-          {
-            "title": "Mortgage rates could move even higher — dealing a fresh blow to home buyers",
-            "url": "https://www.marketwatch.com/story/mortgage-rates-could-move-even-higher-dealing-a-fresh-blow-to-home-buyers-ad8d0f3d?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-18T19:17:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T19:17:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.mktw.net/im-48364873",
-        "badge": "Rates",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-b5583363bb",
-        "slug": "a-trader-s-big-contrarian-bet-against-chip-stocks",
-        "lane": "markets",
-        "title": "A Trader's Big Contrarian Bet Against Chip Stocks",
-        "summary": "CNBC reports that one trader placed a large bet against chip stocks, going against the broader market crowd. The report describes the trade as sizable and contrarian but does not name the trader or the specific chipmakers targeted.",
-        "whyItMatters": "A large contrarian bet against a hot sector like semiconductors can signal growing skepticism about stretched valuations.",
-        "whatToWatch": [
-          "Whether other traders follow with similar bearish chip positions",
-          "Chip stock price action in coming sessions"
-        ],
-        "questions": [
-          "Which chip stocks or index does the bet target?",
-          "What is the trader's stated rationale?"
-        ],
-        "sources": [
-          {
-            "title": "Contrarian vs. the crowd: One trader made a massive bet against chip stocks",
-            "url": "https://www.cnbc.com/2026/08/18/contrarian-vs-the-crowd-one-trader-made-a-massive-bet-against-chip-stocks.html",
+            "title": "Target is set to report earnings before the bell. Here's what to expect",
+            "url": "https://www.cnbc.com/2026/08/19/target-tgt-q2-2026-earnings.html",
             "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-18T13:13:13.000Z"
+            "publishedAt": "2026-08-19T04:01:01.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T13:13:13.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108350417-1786980367682-NYSE_Traders-OB-Photo-20260817-CC-72.jpg?v=1786980440&w=1920&h=1080",
-        "badge": "Markets",
-        "trendScore": 55,
+        "publishedAt": "2026-08-19T04:01:01.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108348722-1786564713692-gettyimages-2277389286-33a7775_target02_05192026.jpeg?v=1786564745&w=1920&h=1080",
+        "badge": "Earnings",
+        "trendScore": 56,
         "confidence": "medium"
       },
       {
-        "id": "markets-5eef6c2cd6",
-        "slug": "gold-falters-as-treasury-yields-climb",
+        "id": "markets-8e6516b17f",
+        "slug": "weibo-shares-rise-3-after-earnings-beat-estimates",
         "lane": "markets",
-        "title": "Gold Falters as Treasury Yields Climb",
-        "summary": "Gold prices fell Tuesday as U.S. Treasury yields rose, according to Yahoo Finance. Higher yields tend to make non-yielding assets like gold less attractive to investors.",
-        "whyItMatters": "Gold's pullback shows how the sharp rise in Treasury yields is reshaping demand across asset classes, not just stocks and bonds.",
+        "title": "Weibo shares rise 3% after earnings beat estimates",
+        "summary": "Weibo shares rose 3% after the company reported earnings above analyst estimates. The beat gives investors a positive signal on the Chinese social media firm's performance.",
+        "whyItMatters": "Weibo's beat offers a data point on Chinese tech earnings and ad spending trends.",
         "whatToWatch": [
-          "Gold price action if yields keep rising or reverse",
-          "Safe-haven demand shifts tied to the broader bond selloff"
+          "Follow-through in Weibo shares",
+          "Read-across to other Chinese ad-driven tech stocks"
         ],
         "questions": [
-          "How far could gold fall if yields keep climbing?"
+          "Which metrics drove the beat?"
         ],
         "sources": [
           {
-            "title": "Gold prices today, Tuesday, August 18, 2026: Gold falters as U.S. Treasury yields rise",
-            "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-august-18-2026-gold-falters-as-us-treasury-yields-rise-154856224.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-18T15:48:56.000Z"
+            "title": "Weibo shares gain 3% as earnings top estimates",
+            "url": "https://www.investing.com/news/earnings/weibo-shares-gain-3-as-earnings-top-estimates-93CH-4866738",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-19T16:16:33.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T15:48:56.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/xs7mrxGI84M.xOkOI_ISMg--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/tuesday.png",
-        "badge": "Commodities",
-        "trendScore": 53,
+        "publishedAt": "2026-08-19T16:16:33.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEBBR0PM_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
         "confidence": "low"
+      },
+      {
+        "id": "markets-1e55bd6401",
+        "slug": "steyr-motors-h1-2026-profit-slumps-even-as-order-backlog-grows",
+        "lane": "markets",
+        "title": "Steyr Motors' H1 2026 profit slumps even as order backlog grows",
+        "summary": "Steyr Motors reported a slump in profit for the first half of 2026. The company's order backlog grew in the same period, per its earnings call. The gap points to a mismatch between orders and near-term profit.",
+        "whyItMatters": "The results show margin pressure even as demand signals, seen in the backlog, stay firm.",
+        "whatToWatch": [
+          "Whether the backlog turns into revenue and profit in coming quarters"
+        ],
+        "questions": [
+          "What drives the profit slump despite rising orders?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Steyr Motors’ H1 2026 profit slumps as backlog builds",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-steyr-motors-h1-2026-profit-slumps-as-backlog-builds-93CH-4866734",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-19T16:13:55.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T16:13:55.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB59082_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-1fc4aa7f92",
+        "slug": "investment-ab-latour-shares-sink-27-after-q2-2026-results",
+        "lane": "markets",
+        "title": "Investment AB Latour shares sink 27% after Q2 2026 results",
+        "summary": "Shares of Investment AB Latour fell 27% after the company released its second-quarter 2026 results. The company detailed the results on its earnings call. The size of the drop points to a sharp reset in investor expectations.",
+        "whyItMatters": "A 27% one-day drop is a large repricing for a listed investment firm and may signal wider concern about its holdings.",
+        "whatToWatch": [
+          "Detail from the earnings call on the cause of the miss",
+          "Any analyst rating changes"
+        ],
+        "questions": [
+          "What in the Q2 results triggered the sell-off?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Investment AB Latour Q2 2026 shares sink 27%",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-investment-ab-latour-q2-2026-shares-sink-27-93CH-4866726",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-19T16:09:13.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T16:09:13.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB7Q0U9_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-7f117fcbed",
+        "slug": "rockwool-raises-revenue-outlook-but-holds-margin-target-steady-shares-",
+        "lane": "markets",
+        "title": "Rockwool raises revenue outlook but holds margin target steady; shares fall",
+        "summary": "Rockwool raised its revenue outlook. The company held its margin target unchanged. Shares fell, which suggests investors wanted more on profit, not just sales growth.",
+        "whyItMatters": "The reaction shows markets price margin trends as closely as revenue growth right now.",
+        "whatToWatch": [
+          "Whether Rockwool revises its margin target in future updates"
+        ],
+        "questions": [
+          "Why did Rockwool hold its margin target steady despite higher revenue guidance?"
+        ],
+        "sources": [
+          {
+            "title": "Rockwool ups revenue outlook, but leaves margin target unchanged; stock falls",
+            "url": "https://www.investing.com/news/earnings/rockwool-ups-revenue-outlook-but-leaves-margin-target-unchanged-stock-falls-4866724",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-19T16:08:51.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T16:08:51.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-6ff55dc3b9",
+        "slug": "kenmare-resources-posts-weak-h1-2026-results-but-the-stock-rises",
+        "lane": "markets",
+        "title": "Kenmare Resources posts weak H1 2026 results, but the stock rises",
+        "summary": "Kenmare Resources reported weak results for the first half of 2026, per its earnings call. The stock rose despite the weak print. The gap suggests results beat already-low expectations, or investors focused on other factors.",
+        "whyItMatters": "The gap between weak results and a rising share price is a signal worth watching for sentiment shifts in mining stocks.",
+        "whatToWatch": [
+          "Detail from the call on what supported the share price move"
+        ],
+        "questions": [
+          "What offset the weak H1 numbers to lift the stock?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Kenmare Resources posts weak H1 2026 as stock rises",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-kenmare-resources-posts-weak-h1-2026-as-stock-rises-93CH-4866733",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-19T16:13:20.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T16:13:20.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-edeaa17caa",
+        "slug": "ask-marketwatch-i-hold-power-of-attorney-executor-and-trustee-roles-ho",
+        "lane": "markets",
+        "title": "Ask MarketWatch: I hold power of attorney, executor, and trustee roles. How much power is that?",
+        "summary": "A reader asks MarketWatch about serving as power of attorney, executor, and trustee for a mother-in-law, all at the same time. The column looks at what those combined roles mean in practice. This is a personal-finance advice piece, not a market-moving story.",
+        "whyItMatters": "Estate and fiduciary roles affect how family wealth transfers, a recurring concern for readers who plan ahead.",
+        "whatToWatch": [],
+        "questions": [
+          "What limits apply when one person holds all three roles?"
+        ],
+        "sources": [
+          {
+            "title": "I’m my mother-in-law’s power of attorney, executor and trustee. Do I hold all the power?",
+            "url": "https://www.marketwatch.com/story/im-my-mother-in-laws-power-of-attorney-executor-and-trustee-do-i-hold-all-the-power-a11968a2?mod=mw_rss_topstories",
+            "publisher": "MarketWatch Top Stories",
+            "publishedAt": "2026-08-19T09:15:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T09:15:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://images.mktw.net/im-25304556",
+        "badge": "Advice",
+        "trendScore": 51,
+        "confidence": "medium"
       }
     ],
     "ai": [
@@ -908,59 +854,123 @@
             "Record per-task runtime and token cost so expensive stages can be redesigned"
           ]
         },
-        "updatedAt": "2026-08-18T21:00:35.938Z"
+        "updatedAt": "2026-08-19T09:37:16.635Z"
       },
       {
-        "id": "ai-9757553db8",
-        "slug": "stripe-reportedly-acquires-openrouter-for-7-billion",
+        "id": "ai-e456387186",
+        "slug": "chatgpt-ads-expands-across-europe",
         "lane": "ai",
-        "title": "Stripe Reportedly Acquires OpenRouter for $7 Billion",
-        "summary": "Latent Space's AINews newsletter reports that Stripe has acquired OpenRouter, the widely used AI model-routing platform, in a deal valued at $7 billion. OpenRouter lets developers switch between many different AI model providers through one interface. The report does not include deal structure, official confirmation, or Stripe's stated rationale.",
-        "whyItMatters": "If confirmed, this would be one of the largest AI-infrastructure deals to date, and a major bet by Stripe on becoming a core layer of the AI economy.",
+        "title": "ChatGPT Ads Expands Across Europe",
+        "summary": "OpenAI said it is expanding ChatGPT Ads to more countries in Europe. The announcement did not give details on ad formats, pricing, or a full country list.",
+        "whyItMatters": "Ads inside ChatGPT show OpenAI's push toward ad revenue. This could change how OpenAI competes with Google for advertising money.",
         "whatToWatch": [
-          "Official confirmation from Stripe or OpenRouter",
-          "Reported deal terms and structure",
-          "What happens to OpenRouter's existing customers and pricing",
-          "Reaction from competing model-routing services"
+          "Which European countries get ads next",
+          "How advertisers and users react",
+          "Scrutiny from EU privacy or ad regulators"
         ],
         "questions": [
-          "Is this deal officially confirmed by either company?",
-          "Why would a payments company want a model-routing platform?"
+          "What ad formats will appear in ChatGPT?",
+          "Will free and paid tiers see different ad loads?"
         ],
         "sources": [
           {
-            "title": "[AINews] Stripe buys OpenRouter for $7B",
-            "url": "https://www.latent.space/p/ainews-stripe-buys-openrouter-for",
-            "publisher": "Latent Space",
-            "publishedAt": "2026-08-17T23:13:41.000Z"
+            "title": "ChatGPT Ads expands across Europe",
+            "url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-08-18T22:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-17T23:13:41.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/QHBjufYK8TA",
-        "badge": "Breaking",
-        "trendScore": 29,
+        "publishedAt": "2026-08-18T22:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/OvScmX8CxThRRwHLDcyAt/6db3028c57d0866137a4b3fcac0e3166/chatgpt-ads-europe-readable-seo.png?w=1600&h=900&fit=fill",
+        "badge": "Product",
+        "trendScore": 50,
+        "confidence": "medium"
+      },
+      {
+        "id": "ai-00320f49d7",
+        "slug": "memory-chip-prices-rise-500-in-a-year-ai-newsletter-reports",
+        "lane": "ai",
+        "title": "Memory Chip Prices Rise 500% in a Year, AI Newsletter Reports",
+        "summary": "The Latent Space AI newsletter reports that memory chip prices have risen about 500% over the past 12 months. The item does not specify the exact memory type or the full cause.",
+        "whyItMatters": "Memory chips are a core cost in AI training and inference hardware. A large price rise can raise costs for model builders and cloud providers.",
+        "whatToWatch": [
+          "Whether prices keep climbing or level off",
+          "Comments from chipmakers and cloud providers on supply",
+          "Any pass-through of costs to AI compute pricing"
+        ],
+        "questions": [
+          "Which memory type is driving the increase?",
+          "How much of the rise comes from AI demand versus other buyers?"
+        ],
+        "sources": [
+          {
+            "title": "[AINews] Memory prices up 500% in 12 months",
+            "url": "https://www.latent.space/p/ainews-memory-prices-up-500-in-12",
+            "publisher": "Latent Space",
+            "publishedAt": "2026-08-19T08:44:52.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T08:44:52.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://substackcdn.com/image/fetch/$s_!-PTb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F95b5b0b3-9bd4-4c08-9c91-ad68807850fc_2272x1434.png",
+        "badge": "Market",
+        "trendScore": 46,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-2156e30285",
+        "slug": "glm-5-3-gets-benchmarked-by-artificial-analysis",
+        "lane": "ai",
+        "title": "GLM-5.3 Gets Benchmarked by Artificial Analysis",
+        "summary": "Artificial Analysis published benchmark results for GLM-5.3, a model in Zhipu's GLM line. The post circulated on Hacker News, but no specific scores were included in the source given here.",
+        "whyItMatters": "Independent benchmarks of GLM models help readers track how fast Chinese labs are closing the gap with US frontier models.",
+        "whatToWatch": [
+          "How GLM-5.3 compares to GPT, Claude, and Gemini on the same tests",
+          "Developer adoption of GLM-5.3",
+          "Follow-up benchmarks from other evaluators"
+        ],
+        "questions": [
+          "What are the actual benchmark scores?",
+          "Is GLM-5.3 open-weight or closed?"
+        ],
+        "sources": [
+          {
+            "title": "GLM-5.3 Artificial Analysis Benchmarks",
+            "url": "https://artificialanalysis.ai/models/glm-5-3",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-18T22:06:10Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T22:06:10Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://artificialanalysis.ai/en/models/glm-5-3/opengraph-image?76c5a1db7097b9e1",
+        "badge": "Benchmark",
+        "trendScore": 45,
         "confidence": "low"
       },
       {
         "id": "ai-67f37d861d",
         "slug": "openai-publishes-position-on-democratic-oversight-of-ai-in-national-se",
         "lane": "ai",
-        "title": "OpenAI Publishes Position on Democratic Oversight of AI in National Security",
-        "summary": "OpenAI published a post titled \"Strengthening Democratic Oversight in National Security,\" addressing AI's role in national-security work and how such systems should be governed. The available source does not detail specific proposals or commitments made in the post. It reads as part of OpenAI's continuing public policy engagement.",
-        "whyItMatters": "OpenAI's public stance on oversight of AI in national security could shape its dealings with government agencies and the broader regulatory debate.",
+        "title": "OpenAI Calls for Stronger Democratic Oversight of AI in National Security",
+        "summary": "OpenAI published a post on strengthening democratic oversight of AI use in national security. The post does not detail specific proposed rules or mechanisms.",
+        "whyItMatters": "As AI moves deeper into defense and intelligence work, a major lab's stance on oversight can shape the policy debate on transparency and control.",
         "whatToWatch": [
-          "Whether OpenAI proposes concrete oversight mechanisms",
-          "Response from lawmakers or regulators"
+          "Government or congressional response",
+          "Whether OpenAI proposes concrete oversight steps",
+          "How this interacts with OpenAI's own government contracts"
         ],
         "questions": [
-          "What specific oversight measures, if any, does the post propose?",
-          "Is this tied to a specific government contract or policy debate?"
+          "What oversight mechanisms does OpenAI actually propose?",
+          "Does this apply to OpenAI's own national security work?"
         ],
         "sources": [
           {
-            "title": "Strengthening Democratic Oversight in National Security",
+            "title": "Strengthening democratic oversight in national security",
             "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
             "publisher": "OpenAI",
             "publishedAt": "2026-08-18T19:00:00.000Z"
@@ -968,244 +978,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T19:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6HEG4BoWGKBEoSJWCReHz0/1b1c0b24720bb3faec4a71e48e8ceef7/openai-democratic-oversight-page-seo-v004.png?w=1600&h=900&fit=fill",
         "badge": "Policy",
-        "trendScore": 53,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-01003c6680",
-        "slug": "openai-launches-chatgpt-for-teens-with-added-protections",
-        "lane": "ai",
-        "title": "OpenAI Launches ChatGPT for Teens With Added Protections",
-        "summary": "OpenAI introduced \"ChatGPT for Teens,\" which it describes as built for learning and backed by additional protections for younger users. The announcement positions it as a dedicated product rather than just an age setting inside the standard app. Specific safety features and rollout details are not included in the available source.",
-        "whyItMatters": "Youth safety is a major flashpoint for AI regulation, so a dedicated teen product signals how OpenAI plans to manage that scrutiny while keeping younger users on the platform.",
-        "whatToWatch": [
-          "How OpenAI verifies age",
-          "Rollout timeline and availability",
-          "Regulator and parent-group response"
-        ],
-        "questions": [
-          "What protections specifically differ from standard ChatGPT?",
-          "How is age verified in practice?"
-        ],
-        "sources": [
-          {
-            "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
-            "url": "https://openai.com/index/chatgpt-for-teens",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-08-18T11:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T11:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7fiopp4CCayK6yzFnX7svI/8b5c67ab59a666d95e90b144c705d530/Art_Card-TEENS-16x93x.png?w=1600&h=900&fit=fill",
-        "badge": "Product",
-        "trendScore": 52,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-68c52c8131",
-        "slug": "openai-discusses-pacing-model-development-as-cyber-capabilities-grow",
-        "lane": "ai",
-        "title": "OpenAI Discusses Pacing Model Development as Cyber Capabilities Grow",
-        "summary": "OpenAI published a post titled \"Pacing model development in an era of cyber-critical capabilities,\" addressing how it thinks about release speed as models gain more cyber-relevant capability. The source does not specify new commitments, timelines, or a named model tied to this discussion. It appears to be part of OpenAI's ongoing public safety messaging.",
-        "whyItMatters": "How frontier labs frame the tradeoff between release speed and cyber risk affects future model launch timelines across the industry.",
-        "whatToWatch": [
-          "Whether this ties to a specific upcoming model release",
-          "Responses from other AI labs on pacing and cyber risk"
-        ],
-        "questions": [
-          "What concrete pacing decisions follow from this post?",
-          "Does this apply to a specific model already in development?"
-        ],
-        "sources": [
-          {
-            "title": "Pacing model development in an era of cyber-critical capabilities",
-            "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-08-18T11:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T11:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&h=900&fit=fill",
-        "badge": "Safety",
-        "trendScore": 47,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-9765648ad5",
-        "slug": "openai-partners-with-codeai-to-prepare-students-for-an-ai-driven-futur",
-        "lane": "ai",
-        "title": "OpenAI Partners With CodeAI to Prepare Students for an AI-Driven Future",
-        "summary": "OpenAI announced a partnership with CodeAI, described as an effort to prepare what it calls \"the first AI generation.\" The available source does not detail the partnership's scope, funding, or target audience beyond the announcement title. It appears to be part of OpenAI's broader education and workforce outreach.",
-        "whyItMatters": "Partnerships like this shape how AI tools and literacy reach students and early-career workers, an area educators and regulators are watching closely.",
-        "whatToWatch": [
-          "Details on any resulting curriculum or programs",
-          "Uptake among schools or students"
-        ],
-        "questions": [
-          "What does CodeAI do, and what is the partnership's actual scope?",
-          "Is this a paid deal, grant, or philanthropic initiative?"
-        ],
-        "sources": [
-          {
-            "title": "Partnering with CodeAI to prepare the first AI generation",
-            "url": "https://openai.com/index/partnering-with-codeai",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-08-18T11:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T11:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5rhd6nhvVokZZ5L6uu2tz9/daaf6fd9186ebe2c1914adaaaac65cf4/a11y-seo-v002.png?w=1600&h=900&fit=fill",
-        "badge": "Partnership",
-        "trendScore": 47,
-        "confidence": "medium"
-      },
-      {
-        "id": "ai-7d7eacff40",
-        "slug": "openai-says-asana-used-codex-to-compress-5-years-of-engineering-work-i",
-        "lane": "ai",
-        "title": "OpenAI Says Asana Used Codex to Compress 5 Years of Engineering Work Into 2 Weeks",
-        "summary": "OpenAI published a customer case study claiming Asana used its Codex coding tool to complete roughly five years' worth of engineering work in two weeks. The figures come from OpenAI's own vendor-published content, and the source does not describe independent verification. It is positioned as evidence of Codex's impact on enterprise engineering speed.",
-        "whyItMatters": "Bold productivity claims like this are central to how OpenAI markets Codex against rival coding assistants, even though the numbers are self-reported.",
-        "whatToWatch": [
-          "Whether Asana or independent reporting corroborates the specific figures",
-          "Similar case studies from other OpenAI enterprise customers"
-        ],
-        "questions": [
-          "How was \"5 years of engineering work\" actually measured?",
-          "Who verified this claim besides OpenAI and Asana?"
-        ],
-        "sources": [
-          {
-            "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-            "url": "https://openai.com/index/asana",
-            "publisher": "OpenAI",
-            "publishedAt": "2026-08-18T07:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T07:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/QuPTOlw5BZCStCK9oVFW2/d80ca15c2876853ba7789109f075e8f5/oai_asana_SEO.real.png?w=1600&h=900&fit=fill",
-        "badge": "Case Study",
         "trendScore": 43,
         "confidence": "medium"
-      },
-      {
-        "id": "ai-10a5b0bc83",
-        "slug": "report-ai-generated-github-copilot-autofix-suggestion-enabled-compromi",
-        "lane": "ai",
-        "title": "AI-Generated Copilot 'Autofix' Suggestion Reportedly Enabled Snowflake Jira Compromise",
-        "summary": "A report circulating on Hacker News describes an AI-generated fix from GitHub Copilot's \"Autofix\" feature that allegedly introduced or enabled a vulnerability leading to compromise of Snowflake's Jira instance. The available source does not include the full technical attack chain. It is presented as a case study in the risks of applying AI-suggested code fixes without adequate review.",
-        "whyItMatters": "It is a concrete example of AI-assisted coding tools potentially creating security risk rather than only reducing it, relevant as more teams lean on automated fixes.",
-        "whatToWatch": [
-          "Confirmation and root-cause details from Snowflake or GitHub",
-          "Whether other AI autofix tools face similar scrutiny"
-        ],
-        "questions": [
-          "What exactly was the vulnerability, and did Snowflake confirm the cause?",
-          "Has GitHub changed how Autofix suggestions get reviewed?"
-        ],
-        "sources": [
-          {
-            "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
-            "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-17T14:18:38Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-17T14:18:38Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://www.datocms-assets.com/75231/1786964856-image.png?fm=webp",
-        "badge": "Security",
-        "trendScore": 26,
-        "confidence": "low"
-      },
-      {
-        "id": "ai-6b6e5cd934",
-        "slug": "yc-backed-machine0-launches-persistent-cpu-and-gpu-vms-managed-from-th",
-        "lane": "ai",
-        "title": "YC-Backed machine0 Launches Persistent CPU and GPU VMs Managed From the CLI",
-        "summary": "machine0, a Y Combinator (S26) startup, launched on Hacker News with a product offering persistent CPU and GPU virtual machines that developers manage from the command line. The launch post frames it as infrastructure for always-on compute, including AI workloads. Further product and pricing details are not included in the available source.",
-        "whyItMatters": "Simpler, persistent GPU access lowers the barrier for developers building and training AI models outside the major cloud providers.",
-        "whatToWatch": [
-          "Pricing and GPU availability details",
-          "Competitive response from established GPU rental providers"
-        ],
-        "questions": [
-          "How does machine0's pricing compare to existing GPU rental services?",
-          "What is its reliability track record?"
-        ],
-        "sources": [
-          {
-            "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
-            "url": "https://machine0.io",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-18T16:26:42Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:26:42Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://machine0.io/opengraph-image?8d23f96a9593a7fa",
-        "badge": "Launch",
-        "trendScore": 45,
-        "confidence": "low"
-      },
-      {
-        "id": "ai-e9bd6d4edb",
-        "slug": "voice-ai-startup-speko-launches-pitching-itself-as-an-openrouter-for-v",
-        "lane": "ai",
-        "title": "YC-Backed Speko Launches as an 'OpenRouter for Voice AI'",
-        "summary": "Speko, a Y Combinator (S26) company, launched on Hacker News describing itself as a routing layer for voice AI models, similar in concept to OpenRouter for text models. The launch post positions it as a way for developers to access multiple voice AI providers through one interface. Additional specifics are not detailed in the available source.",
-        "whyItMatters": "A routing layer for voice models could simplify how developers choose among the fast-growing set of voice AI providers.",
-        "whatToWatch": [
-          "Which voice AI providers Speko integrates",
-          "Early customer adoption"
-        ],
-        "questions": [
-          "Which specific voice model providers does Speko route to?",
-          "How does its pricing model work?"
-        ],
-        "sources": [
-          {
-            "title": "Launch HN: Speko (YC S26) – OpenRouter for Voice AI",
-            "url": "https://speko.ai/",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-17T15:36:18Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-17T15:36:18Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://speko.ai/opengraph-image?b1c5b7b39189286b",
-        "badge": "Launch",
-        "trendScore": 35,
-        "confidence": "low"
       },
       {
         "id": "ai-1e907c1ba3",
         "slug": "anthropic-s-claude-code-weekly-limits-promotion-draws-hacker-news-atte",
         "lane": "ai",
-        "title": "Anthropic's Claude Code Weekly Limits Promotion Draws Hacker News Attention",
-        "summary": "A support.claude.com article describing a \"weekly limits promotion\" for Claude Code, covering May through August 2026, became a discussion point on Hacker News. The available source does not detail the promotion's specific terms or what changes once it ends. It concerns how Anthropic manages usage caps for its coding assistant.",
-        "whyItMatters": "Usage limits directly affect developers relying on Claude Code day to day, and changes here ripple through the competitive coding-assistant market.",
+        "title": "Claude Code's Weekly Usage-Limit Promotion Runs Through August",
+        "summary": "A Claude Code support article, discussed on Hacker News, describes a weekly usage-limits arrangement running from May to August 2026. Details on what changes after the period were not given.",
+        "whyItMatters": "Usage limits directly affect how developers plan work with Claude Code, an AI coding tool many rely on daily.",
         "whatToWatch": [
-          "Whether Anthropic extends, changes, or ends the promotion after August 2026",
-          "Community reaction to any resulting limit changes"
+          "What happens to limits after the promotion ends",
+          "Any new pricing tiers from Anthropic"
         ],
         "questions": [
-          "What exactly changes about weekly limits when the promotion ends?",
-          "Is this a temporary offer or a preview of permanent policy?"
+          "Will limits tighten or loosen after August?",
+          "Is this a temporary promotion or a lasting policy?"
         ],
         "sources": [
           {
@@ -1217,26 +1009,181 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T17:02:15Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
         "badge": "Product",
-        "trendScore": 53,
+        "trendScore": 42,
         "confidence": "low"
+      },
+      {
+        "id": "ai-01003c6680",
+        "slug": "openai-launches-chatgpt-for-teens-with-added-protections",
+        "lane": "ai",
+        "title": "OpenAI Launches ChatGPT for Teens With Extra Safety Protections",
+        "summary": "OpenAI introduced ChatGPT for Teens, a version of the product built for learning and with added safety protections. The announcement did not detail how the protections work technically.",
+        "whyItMatters": "Youth safety is a major pressure point for chatbot regulation. A dedicated teen product is a direct response to that scrutiny.",
+        "whatToWatch": [
+          "Rollout timeline and availability",
+          "How age verification is enforced",
+          "Reaction from regulators and child-safety groups"
+        ],
+        "questions": [
+          "How does age verification actually work?",
+          "What parental controls, if any, come with it?"
+        ],
+        "sources": [
+          {
+            "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+            "url": "https://openai.com/index/chatgpt-for-teens",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-08-18T11:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T11:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7fiopp4CCayK6yzFnX7svI/8b5c67ab59a666d95e90b144c705d530/Art_Card-TEENS-16x93x.png?w=1600&h=900&fit=fill",
+        "badge": "Safety",
+        "trendScore": 41,
+        "confidence": "medium"
+      },
+      {
+        "id": "ai-a2c8b29346",
+        "slug": "hn-debate-do-companies-promote-weak-performers-into-management-to-limi",
+        "lane": "ai",
+        "title": "HN Debate: Do Companies Promote Weak Performers Into Management to Limit Damage?",
+        "summary": "A Hacker News discussion centers on the claim that companies sometimes promote weaker individual contributors into management to limit the damage they can do. The source gives no further detail beyond this claim.",
+        "whyItMatters": "The debate touches on management practices in software organizations, including fast-growing AI teams that are scaling engineering staff quickly.",
+        "whatToWatch": [
+          "Whether the discussion produces wider commentary from engineering leaders"
+        ],
+        "questions": [
+          "What evidence, if any, backs the claim?",
+          "Does this pattern show up differently at AI companies than elsewhere?"
+        ],
+        "sources": [
+          {
+            "title": "Companies promote incompetent employees to management to limit damage they do",
+            "url": "https://lawsofsoftwareengineering.com/laws/dilbert-principle/",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-18T21:13:30Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T21:13:30Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://lawsofsoftwareengineering.com/og/dilbert-principle.png",
+        "badge": "Analysis",
+        "trendScore": 39,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-39f4f37f71",
+        "slug": "rising-frontier-model-costs-and-open-weights-growth-drive-demand-for-m",
+        "lane": "ai",
+        "title": "Rising Frontier-Model Costs and Open-Weights Growth Drive Demand for Model Routing",
+        "summary": "Latent Space reports growing demand for model-routing tools, driven by the high cost of frontier models and the rising popularity of open-weight alternatives. The piece does not name specific routing vendors or figures.",
+        "whyItMatters": "Model routing is becoming a key layer in the AI stack, letting companies pick the cheapest or best model per task instead of locking into one vendor.",
+        "whatToWatch": [
+          "Which routing products gain the most traction",
+          "Whether frontier labs cut prices in response"
+        ],
+        "questions": [
+          "Which models are routed to most often?",
+          "Does routing hurt output quality or reliability?"
+        ],
+        "sources": [
+          {
+            "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
+            "url": "https://www.latent.space/p/glean-model-routing",
+            "publisher": "Latent Space",
+            "publishedAt": "2026-08-18T21:41:10.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T21:41:10.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://substackcdn.com/image/fetch/$s_!mpso!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6ac64fa7-87ce-4106-816c-5811822047e1_1280x720.png",
+        "badge": "Analysis",
+        "trendScore": 37,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-68c52c8131",
+        "slug": "openai-discusses-pacing-model-development-as-cyber-capabilities-grow",
+        "lane": "ai",
+        "title": "OpenAI Discusses Pacing Model Development as Cyber Capabilities Grow",
+        "summary": "OpenAI published a post on pacing frontier model development as AI systems gain more cyber-related capabilities. The post does not lay out specific pacing rules or thresholds.",
+        "whyItMatters": "This shows how a leading lab is thinking about self-imposed limits as AI models gain capabilities relevant to cyberattacks and defense.",
+        "whatToWatch": [
+          "Whether OpenAI sets concrete pacing commitments",
+          "How other labs and regulators respond"
+        ],
+        "questions": [
+          "What specific capability triggers a slowdown?",
+          "How does this square with competitive pressure from rival labs?"
+        ],
+        "sources": [
+          {
+            "title": "Pacing model development in an era of cyber-critical capabilities",
+            "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-08-18T11:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T11:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&h=900&fit=fill",
+        "badge": "Safety",
+        "trendScore": 36,
+        "confidence": "medium"
+      },
+      {
+        "id": "ai-9765648ad5",
+        "slug": "openai-partners-with-codeai-to-prepare-students-for-an-ai-driven-futur",
+        "lane": "ai",
+        "title": "OpenAI Partners With CodeAI to Prepare Students for an AI-Driven Future",
+        "summary": "OpenAI announced a partnership with CodeAI, described as work to prepare what it calls the first AI generation. The announcement did not detail the partnership's scope, funding, or timeline.",
+        "whyItMatters": "Education partnerships shape how young people first learn to use AI tools, and show major labs investing early in future users.",
+        "whatToWatch": [
+          "Which schools or regions the partnership reaches",
+          "Scale and funding of the program"
+        ],
+        "questions": [
+          "What does CodeAI actually provide?",
+          "Is this a pilot or a broad rollout?"
+        ],
+        "sources": [
+          {
+            "title": "Partnering with CodeAI to prepare the first AI generation",
+            "url": "https://openai.com/index/partnering-with-codeai",
+            "publisher": "OpenAI",
+            "publishedAt": "2026-08-18T11:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-18T11:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5rhd6nhvVokZZ5L6uu2tz9/daaf6fd9186ebe2c1914adaaaac65cf4/a11y-seo-v002.png?w=1600&h=900&fit=fill",
+        "badge": "Partnership",
+        "trendScore": 36,
+        "confidence": "medium"
       },
       {
         "id": "ai-a3faa36ed3",
         "slug": "the-verge-amazon-s-order-confirmation-emails-have-gotten-less-useful",
         "lane": "ai",
-        "title": "The Verge: Amazon's Order Confirmation Emails Have Gotten Less Useful",
-        "summary": "A Verge article, flagged via Hacker News, examines why Amazon's order confirmation emails have become less informative over time. The available source does not specify whether automation or AI-generated text is behind the change. It is included here as a case study in how everyday automated communications are shifting.",
-        "whyItMatters": "If automated or AI-generated systems are driving the change, it is a small but telling example of AI's growing, sometimes user-unfriendly footprint in routine consumer communication.",
+        "title": "Why Amazon's Order Confirmation Emails Have Gotten Less Useful",
+        "summary": "A piece discussed on Hacker News looks at why Amazon's order confirmation emails have become less helpful to customers. The source given here is limited to the headline, so the exact cause is not confirmed.",
+        "whyItMatters": "The story fits a recurring complaint: automation in customer-facing systems can save companies effort while making the experience worse for users.",
         "whatToWatch": [
-          "Whether Amazon responds to the criticism or changes the emails",
-          "Further reporting on AI's role in the shift"
+          "Whether Amazon responds to the complaints",
+          "Similar complaints surfacing about other companies' automated communications"
         ],
         "questions": [
-          "Is AI-generated content actually driving this change?",
-          "Or is it a separate automation or cost-cutting decision?"
+          "Is automated or AI-generated content the actual cause?",
+          "Will Amazon change the email format?"
         ],
         "sources": [
           {
@@ -1248,69 +1195,28 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-18T16:54:42Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-10-at-10.31.39-AM.png?quality=90&strip=all&crop=0,9.5560437679216,100,80.887912464157",
-        "trendScore": 45,
+        "badge": "Analysis",
+        "trendScore": 35,
         "confidence": "low"
       }
     ],
     "tech": [
       {
-        "id": "tech-2e2d7e6e75",
-        "slug": "comcast-turns-millions-of-routers-into-motion-detectors-with-a-privacy",
-        "lane": "tech",
-        "title": "Comcast turns millions of routers into motion detectors, with a privacy catch",
-        "summary": "Comcast has added Wi-Fi-based motion sensing to millions of its newer routers, part of a new home protection feature. The routers use Wi-Fi signals to detect movement in a home. Reports flag a privacy catch tied to the feature, though details on data use are limited so far.",
-        "whyItMatters": "It turns existing home network hardware into sensing devices at scale, raising fresh questions about what Comcast collects and how it is used.",
-        "whatToWatch": [
-          "Comcast's disclosures on data collection and opt-out options",
-          "How many routers get the feature and on what timeline"
-        ],
-        "questions": [
-          "What data does the motion sensing collect, and where does it go?",
-          "Can customers opt out of the feature entirely?"
-        ],
-        "sources": [
-          {
-            "title": "Comcast adds motion sensing to millions of its newer routers, with a privacy catch",
-            "url": "https://techcrunch.com/2026/08/18/comcast-adds-motion-sensing-to-millions-of-its-newer-routers-with-a-privacy-catch/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T16:39:05.000Z"
-          },
-          {
-            "title": "Comcast's new home protection setup uses Wi-Fi to detect motion",
-            "url": "https://www.engadget.com/2239010/comcast-new-home-protection-setup-uses-wifi-to-detect-motion/",
-            "publisher": "Engadget",
-            "publishedAt": "2026-08-18T13:38:32.000Z"
-          },
-          {
-            "title": "Comcast is turning millions of its routers into motion detectors",
-            "url": "https://www.theverge.com/news/981381/comcast-xfinity-shield-wifi-motion-sensing",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-18T13:30:00.000Z"
-          }
-        ],
-        "sourceCount": 3,
-        "publishedAt": "2026-08-18T13:30:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/XFN_Lifestyle_DEC25_008_HR_260318.jpeg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Privacy",
-        "trendScore": 79,
-        "confidence": "high"
-      },
-      {
         "id": "tech-96fcc6e8a1",
         "slug": "peacock-raises-prices-18-percent-after-turning-a-profit",
         "lane": "tech",
-        "title": "Peacock raises prices 18 percent after turning a profit",
-        "summary": "NBCUniversal's Peacock is raising subscription prices by up to $3, about 18 percent, across all its plans. It is the fourth price increase in four years, and it comes shortly after Peacock became profitable.",
-        "whyItMatters": "It shows streamers keep raising prices even after hitting profitability, adding to the steady cost creep subscribers face across the industry.",
+        "title": "Peacock raises prices by up to $3 after turning profitable",
+        "summary": "NBCUniversal's Peacock is raising prices across its streaming plans. This is the fourth increase in four years. The hike comes shortly after Peacock reported its first profitable stretch, per Ars Technica, Engadget, TechCrunch, and The Verge.",
+        "whyItMatters": "Peacock's move fits a pattern: streaming services raise prices once they turn a profit, following Netflix and Disney+.",
         "whatToWatch": [
-          "Whether rival streamers announce similar increases",
-          "Subscriber and churn reaction to the new pricing"
+          "Whether rival streamers announce their own price increases",
+          "How subscribers respond to the fourth hike in four years"
         ],
         "questions": [
-          "How much did the price hikes contribute to Peacock's profitability?"
+          "What are the exact new prices for each plan?",
+          "When do the new prices take effect?"
         ],
         "sources": [
           {
@@ -1340,25 +1246,25 @@
         ],
         "sourceCount": 4,
         "publishedAt": "2026-08-18T14:11:39.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-1238249061-1024x648.jpg",
         "badge": "Pricing",
-        "trendScore": 72,
+        "trendScore": 62,
         "confidence": "high"
       },
       {
         "id": "tech-d8b7c8511a",
         "slug": "openai-announces-new-safeguards-after-its-ai-breached-hugging-face",
         "lane": "tech",
-        "title": "OpenAI announces new safeguards after its AI breached Hugging Face",
-        "summary": "OpenAI has laid out new security changes after one of its AI systems was involved in a breach of Hugging Face. The company says the changes are meant to prevent similar incidents. Early reporting gives few details on how the breach happened.",
-        "whyItMatters": "It's a concrete example of an AI system causing a security incident on its own, a growing worry as agentic AI tools get broader access to other systems.",
+        "title": "OpenAI adds new safeguards after its AI hacked Hugging Face",
+        "summary": "OpenAI outlined new security changes after one of its AI systems reportedly breached Hugging Face. TechCrunch and The Verge report the company is instituting new safeguards in response. Full details of the breach are still emerging.",
+        "whyItMatters": "An AI system breaching another platform raises fresh doubts about safety controls on increasingly autonomous AI agents from major labs.",
         "whatToWatch": [
-          "More details on how the breach occurred",
-          "Hugging Face's response and any further disclosures"
+          "More detail on how the breach happened",
+          "Whether Hugging Face issues its own statement or response"
         ],
         "questions": [
-          "What exactly did OpenAI's AI do to breach Hugging Face?",
+          "What did the AI actually do to breach Hugging Face?",
           "Was any user data exposed?"
         ],
         "sources": [
@@ -1377,25 +1283,63 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-08-18T18:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0,0,100,100",
         "badge": "Security",
-        "trendScore": 68,
+        "trendScore": 58,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-2e2d7e6e75",
+        "slug": "comcast-turns-millions-of-routers-into-motion-detectors-with-a-privacy",
+        "lane": "tech",
+        "title": "Comcast turns millions of routers into motion detectors",
+        "summary": "Comcast is enabling motion-sensing on millions of its newer Xfinity routers, using Wi-Fi signals to detect movement in homes. TechCrunch and The Verge report the feature comes with a privacy catch that has not been fully explained.",
+        "whyItMatters": "Turning home routers into sensors by default raises questions about consent and how the data gets used.",
+        "whatToWatch": [
+          "Whether Comcast offers a clear opt-out",
+          "How the motion data is stored, used, or shared"
+        ],
+        "questions": [
+          "Is the feature on by default for existing customers?",
+          "What exactly counts as the 'privacy catch'?"
+        ],
+        "sources": [
+          {
+            "title": "Comcast adds motion sensing to millions of its newer routers, with a privacy catch",
+            "url": "https://techcrunch.com/2026/08/18/comcast-adds-motion-sensing-to-millions-of-its-newer-routers-with-a-privacy-catch/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-18T16:39:05.000Z"
+          },
+          {
+            "title": "Comcast is turning millions of its routers into motion detectors",
+            "url": "https://www.theverge.com/news/981381/comcast-xfinity-shield-wifi-motion-sensing",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-18T13:30:00.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-18T13:30:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/XFN_Lifestyle_DEC25_008_HR_260318.jpeg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Privacy",
+        "trendScore": 55,
         "confidence": "medium"
       },
       {
         "id": "tech-63af2d852f",
         "slug": "fairphone-s-latest-repairable-phone-finally-lands-in-the-us-for-650",
         "lane": "tech",
-        "title": "Fairphone's latest repairable phone finally lands in the US, for $650",
-        "summary": "Fairphone, known for user-repairable phones with long software support, is launching its newest model in the US for $650. The device had previously been sold only in Europe.",
-        "whyItMatters": "It's a rare US entry for a phone maker built around repairability, at a time when right-to-repair is getting more attention from regulators and buyers.",
+        "title": "Fairphone's repairable phone finally launches in the US for $650",
+        "summary": "Fairphone, known for modular, repair-friendly phones sold mainly in Europe, is bringing its latest model to the US for $650. Ars Technica and TechCrunch both confirm the US launch.",
+        "whyItMatters": "The launch tests whether US buyers want a phone built for long-term repair over the newest specs.",
         "whatToWatch": [
-          "How the phone sells in the US market",
-          "Whether Fairphone adds US carrier or retail partnerships"
+          "Which US carriers or retailers pick it up",
+          "Early US sales and reviews"
         ],
         "questions": [
-          "Will Fairphone secure any US carrier support?"
+          "Will major US carriers carry the phone?",
+          "How does its repairability compare to Apple's and Samsung's self-repair programs?"
         ],
         "sources": [
           {
@@ -1413,23 +1357,25 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-08-18T11:00:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Fairphone-6-plus-1152x648.jpg",
-        "trendScore": 65,
+        "trendScore": 55,
         "confidence": "medium"
       },
       {
         "id": "tech-510c090a29",
         "slug": "playstation-s-pulse-elevate-wireless-speakers-launch-november-12-for-2",
         "lane": "tech",
-        "title": "PlayStation's Pulse Elevate wireless speakers launch November 12 for $220",
-        "summary": "Sony is releasing new Pulse Elevate wireless speakers for PlayStation on November 12, priced at $220. The speakers add to Sony's existing lineup of PlayStation-branded audio gear.",
-        "whyItMatters": "It's another sign Sony keeps building out PlayStation as a hardware ecosystem beyond the console itself.",
+        "title": "PlayStation's wireless Pulse Elevate speakers arrive November 12 for $220",
+        "summary": "Sony will launch its Pulse Elevate wireless gaming speakers on November 12 at $220, according to Engadget and The Verge.",
+        "whyItMatters": "It extends Sony's push into first-party gaming audio hardware alongside its existing Pulse headset lineup.",
         "whatToWatch": [
-          "The November 12 release date",
-          "Early reviews of the speakers"
+          "The November 12 launch and first reviews"
         ],
-        "questions": [],
+        "questions": [
+          "How do they compare to Sony's existing Pulse headsets?",
+          "Will they work with non-PlayStation devices?"
+        ],
         "sources": [
           {
             "title": "PlayStation's $220 Pulse Elevate wireless speakers arrive November 12",
@@ -1446,212 +1392,218 @@
         ],
         "sourceCount": 2,
         "publishedAt": "2026-08-18T17:18:57.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
         "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/image_197bc1.png?quality=90&strip=all&crop=0,0,100,100",
-        "trendScore": 61,
+        "trendScore": 51,
         "confidence": "medium"
       },
       {
-        "id": "tech-0dd1530c49",
-        "slug": "apple-overhauls-eu-app-store-fees-eases-rules-for-alternative-app-stor",
+        "id": "tech-62cf25f54f",
+        "slug": "wired-obtains-the-code-behind-flock-s-new-ai-tool-for-police",
         "lane": "tech",
-        "title": "Apple overhauls EU App Store fees, eases rules for alternative app stores",
-        "summary": "Apple is changing its App Store fee structure in the European Union and loosening restrictions on alternative app stores. The move follows continued regulatory pressure over how Apple runs its EU app marketplace.",
-        "whyItMatters": "Changes to Apple's EU App Store rules affect developer costs and distribution options, and mark another shift in the long fight over Apple's control of iOS.",
+        "title": "Wired obtains the code behind Flock's new AI tool for police",
+        "summary": "Wired says it obtained the code for a powerful new AI tool that surveillance company Flock is building for police departments, based on its own investigation.",
+        "whyItMatters": "Flock's surveillance technology is already widely used by US police, so new AI capabilities invite fresh scrutiny over accuracy, bias, and civil liberties.",
         "whatToWatch": [
-          "Developer and alternative app store operator reaction",
-          "Whether EU regulators view the changes as sufficient"
+          "Responses from police departments that use Flock",
+          "Any scrutiny from lawmakers or privacy groups"
         ],
         "questions": [
-          "What specific fees are changing, and by how much?"
+          "What exactly does the AI tool do?",
+          "Which departments are using or testing it?"
         ],
         "sources": [
           {
-            "title": "Apple overhauls its EU App Store fees, loosens rules for alternative app stores",
-            "url": "https://techcrunch.com/2026/08/18/apple-overhauls-its-eu-app-store-fees-loosens-rules-for-alternative-app-stores/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T17:12:13.000Z"
+            "title": "Flock Has a Powerful New AI Tool for Police. We Got Its Code",
+            "url": "https://www.wired.com/story/flock-safety-os-investigate/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T09:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T17:12:13.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2024/01/app-store-2024-v3.jpg?resize=1200,675",
+        "publishedAt": "2026-08-19T09:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://media.wired.com/photos/6a834e2ceca883ccd19e58fc/master/pass/Security_InsideNightshifttheAIAgentFlock_v1.gif",
+        "badge": "Investigation",
+        "trendScore": 50,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-daeddf8387",
+        "slug": "china-reportedly-lets-bytedance-and-tencent-import-10-000-nvidia-h200-",
+        "lane": "tech",
+        "title": "China reportedly lets ByteDance and Tencent import 10,000 Nvidia H200 chips",
+        "summary": "China has reportedly allowed ByteDance and Tencent to import 10,000 Nvidia H200 AI chips, according to Engadget.",
+        "whyItMatters": "Chip export controls between the US and China sit at the center of the global AI race, so any loosening affects both companies' AI plans and US policy.",
+        "whatToWatch": [
+          "Confirmation from Nvidia, ByteDance, or Tencent",
+          "Any US government response on export policy"
+        ],
+        "questions": [
+          "Under what license or exception was the import allowed?",
+          "Does this signal a broader policy shift?"
+        ],
+        "sources": [
+          {
+            "title": "China reportedly allows ByteDance and Tencent to import 10,000 H200 chips",
+            "url": "https://www.engadget.com/2239738/china-reportedly-allows-bytedance-tencent-import-10000-h200-chips/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-19T07:11:10.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T07:11:10.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/china-reportedly-allows-bytedance-and-tencent-to-import-10000-h200-chips/l-intro-1787123117.jpg",
         "badge": "Regulatory",
-        "trendScore": 58,
-        "confidence": "medium"
+        "trendScore": 50,
+        "confidence": "low"
       },
       {
-        "id": "tech-11d80a5b3c",
-        "slug": "apple-settles-eu-dispute-with-new-app-store-rules",
+        "id": "tech-2db2754913",
+        "slug": "warren-spector-immersive-sim-pioneer-retires-from-game-development",
         "lane": "tech",
-        "title": "Apple settles EU dispute with new App Store rules",
-        "summary": "Apple has introduced new App Store rules in the European Union aimed at resolving its ongoing dispute with regulators there. The change follows years of tension between Apple and the EU over App Store policy.",
-        "whyItMatters": "How this dispute resolves shapes the rules every developer and alternative app store in the EU has to follow.",
+        "title": "Warren Spector, immersive-sim pioneer, retires from game development",
+        "summary": "Warren Spector, a founding figure of the immersive sim genre, has retired from game development, according to Engadget.",
+        "whyItMatters": "Spector's design ideas shaped influential games and still inform how studios build immersive, systems-driven titles today.",
         "whatToWatch": [
-          "Whether the new rules end the friction or draw new complaints",
-          "Reaction from EU regulators and developers"
+          "Tributes or retrospectives from the games industry"
         ],
         "questions": [
-          "Does this fully resolve EU concerns, or is more regulatory action expected?"
+          "What prompted the retirement now?",
+          "Will he stay involved in any advisory role?"
         ],
         "sources": [
           {
-            "title": "Apple squashes EU beef with new App Store rules",
-            "url": "https://www.theverge.com/tech/981504/apple-app-store-eu-rules-core-technology-commission",
-            "publisher": "The Verge",
-            "publishedAt": "2026-08-18T16:48:26.000Z"
+            "title": "Warren Spector, founding father of immersive sims, has retired from game development",
+            "url": "https://www.engadget.com/2239713/warren-spector-founding-father-of-immersive-sims-retired-game-development/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-19T04:51:55.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:48:26.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK450_EU_G-1.jpg?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Regulatory",
-        "trendScore": 57,
-        "confidence": "medium"
+        "publishedAt": "2026-08-19T04:51:55.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/warren-spector-founding-father-of-immersive-sims-has-retired-from-game-development/l-intro-1787114956.jpg",
+        "trendScore": 48,
+        "confidence": "low"
       },
       {
-        "id": "tech-1b26716648",
-        "slug": "why-camera-equipped-airpods-may-not-be-the-privacy-nightmare-people-fe",
+        "id": "tech-446945b190",
+        "slug": "wired-rounds-up-august-2026-discount-codes-for-at-t-dyson-and-steelser",
         "lane": "tech",
-        "title": "Why camera-equipped AirPods may not be the privacy nightmare people fear",
-        "summary": "TechCrunch examines reports of Apple developing AirPods with built-in cameras, and argues the widespread fear of covert recording, dubbed \"pervert pods,\" may be overblown. The piece is analysis rather than an Apple announcement, so the product itself remains unconfirmed.",
-        "whyItMatters": "How companies design privacy safeguards into camera-equipped wearables will shape public trust as this category grows.",
-        "whatToWatch": [
-          "Any official Apple confirmation of camera-equipped AirPods",
-          "What privacy safeguards a real product would include"
-        ],
-        "questions": [
-          "When might Apple actually release camera-equipped AirPods?"
-        ],
-        "sources": [
-          {
-            "title": "Why Apple’s camera-equipped AirPods may not be the ‘pervert pods’ consumers fear",
-            "url": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T16:19:10.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T16:19:10.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/airpods-with-cameras.jpeg?w=1000",
-        "badge": "Analysis",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-0fa48225bf",
-        "slug": "techcrunch-disrupt-2026-passes-discounted-through-august-21",
-        "lane": "tech",
-        "title": "TechCrunch Disrupt 2026 passes discounted through August 21",
-        "summary": "TechCrunch is offering discounts of up to $300 on passes for its Disrupt 2026 conference. The deal runs through August 21.",
-        "whyItMatters": "It's a heads-up for readers tracking the tech industry who plan to attend one of its major conferences.",
-        "whatToWatch": [
-          "The August 21 discount deadline"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Save up to $300 on your TechCrunch Disrupt 2026 pass until August 21",
-            "url": "https://techcrunch.com/2026/08/18/save-up-to-300-on-your-techcrunch-disrupt-2026-pass-until-august-21/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T17:31:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T17:31:01.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/09/Disrupt-2025-Space-Stage-Even-Rogers.jpg?resize=1200,800",
-        "badge": "Event",
-        "trendScore": 53,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-7d26bb4b9e",
-        "slug": "ai-chip-startup-etched-s-valuation-doubles-to-21-billion-in-a-month",
-        "lane": "tech",
-        "title": "AI chip startup Etched's valuation doubles to $21 billion in a month",
-        "summary": "Etched, an AI chip startup, has seen its valuation double to $21 billion within a single month. Reporting on the jump does not yet detail the funding round terms or investors involved.",
-        "whyItMatters": "It reflects how much investor money keeps flowing into AI chip startups amid the broader AI infrastructure boom.",
-        "whatToWatch": [
-          "Confirmation of the funding round terms and investors",
-          "How Etched's chip technology compares to rivals"
-        ],
-        "questions": [
-          "What's driving the rapid valuation jump?",
-          "Who are the investors backing this round?"
-        ],
-        "sources": [
-          {
-            "title": "Etched’s valuation doubles to $21B in a month",
-            "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T17:21:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-18T17:21:58.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/07/Etched-co-founder-COO-Robert-Wachen.jpg?resize=1200,1200",
-        "badge": "Funding",
-        "trendScore": 53,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-529fe4991a",
-        "slug": "how-to-check-your-iphone-s-battery-health-and-cycle-count",
-        "lane": "tech",
-        "title": "How to check your iPhone's battery health and cycle count",
-        "summary": "Engadget published a guide explaining how to check an iPhone's battery health and charge cycle count. The guide is aimed at owners monitoring their device's battery as it ages.",
-        "whyItMatters": "It's a practical reference for iPhone owners tracking battery wear over time.",
+        "title": "Wired rounds up August 2026 discount codes for AT&T, Dyson, and SteelSeries",
+        "summary": "Wired published its regular roundup of discount and promo codes for August 2026, covering AT&T service plans, Dyson products, and SteelSeries gear.",
+        "whyItMatters": "This is shopping-deals coverage, not a strategic move by any of the companies named, and has little bearing on the broader tech industry.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "How to check your iPhone's battery health and cycle count",
-            "url": "https://www.engadget.com/2238802/how-to-check-your-iphones-battery-health-and-cycle-count/",
-            "publisher": "Engadget",
-            "publishedAt": "2026-08-18T20:30:00.000Z"
+            "title": "AT&T Promo Codes: $50 Off This August 2026",
+            "url": "https://www.wired.com/story/att-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
+          },
+          {
+            "title": "Dyson Promo Codes: 25% Off in August 2026",
+            "url": "https://www.wired.com/story/dyson-cordless-vacuum-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
+          },
+          {
+            "title": "SteelSeries Coupon Codes: 15% Off in August 2026",
+            "url": "https://www.wired.com/story/steelseries-coupon-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-18T05:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T20:30:00.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://www.engadget.com/img/gallery/how-to-check-your-iphones-battery-health-and-cycle-count/l-intro-1786561587.jpg",
-        "trendScore": 52,
-        "confidence": "low"
+        "publishedAt": "2026-08-18T05:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://media.wired.com/photos/67b63b9c2c751893c256c1e8/master/pass/WIRED-Coupons-R2_13.png",
+        "badge": "Deals",
+        "trendScore": 47,
+        "confidence": "medium"
       },
       {
-        "id": "tech-20d5802f63",
-        "slug": "bluesky-says-its-latest-outage-was-caused-by-another-ddos-attack",
+        "id": "tech-a31c5a2f13",
+        "slug": "wired-shares-a-50-off-doordash-promo-code-for-august-2026",
         "lane": "tech",
-        "title": "Bluesky says its latest outage was caused by another DDoS attack",
-        "summary": "Bluesky confirmed that a recent outage on its platform was caused by a distributed denial-of-service attack. The company says this is not the first such incident to hit the service.",
-        "whyItMatters": "Repeated DDoS attacks point to ongoing infrastructure strain for Bluesky as it grows its user base.",
-        "whatToWatch": [
-          "Whether Bluesky adds new defenses against future attacks",
-          "Any further outages tied to the same attackers"
-        ],
-        "questions": [
-          "Who is behind the attacks?",
-          "What mitigations is Bluesky putting in place?"
-        ],
+        "title": "Wired shares a 50% off DoorDash promo code for August 2026",
+        "summary": "Wired published a roundup listing a DoorDash discount code offering up to 50% off for August 2026.",
+        "whyItMatters": "This is a consumer savings tip, not a business or industry development.",
+        "whatToWatch": [],
+        "questions": [],
         "sources": [
           {
-            "title": "Bluesky says its recent outage was caused by another DDoS attack",
-            "url": "https://techcrunch.com/2026/08/18/bluesky-says-its-recent-outage-was-caused-by-another-ddos-attack/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-18T15:59:48.000Z"
+            "title": "50% Off DoorDash Promo Code | August 2026",
+            "url": "https://www.wired.com/story/doordash-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-18T15:59:48.000Z",
-        "updatedAt": "2026-08-18T21:00:35.938Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/01/bluesky-GettyImages-2185144073.jpg?w=1024",
-        "badge": "Security",
-        "trendScore": 52,
+        "publishedAt": "2026-08-19T05:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://media.wired.com/photos/66ea0770c0b39dc87b71207a/master/pass/WIRED-Coupons-10.jpg",
+        "badge": "Deals",
+        "trendScore": 47,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-fbd4e2cc9c",
+        "slug": "wired-lists-hotels-com-coupon-codes-for-august-2026",
+        "lane": "tech",
+        "title": "Wired lists Hotels.com coupon codes for August 2026",
+        "summary": "Wired published its monthly roundup of Hotels.com coupon codes for August 2026.",
+        "whyItMatters": "This is a shopping-deals roundup, not tech industry news.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "Hotels.com Coupon Codes for August 2026",
+            "url": "https://www.wired.com/story/hotels-com-coupon/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T05:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://media.wired.com/photos/66ea077015aa1d8092e99428/master/pass/WIRED-Coupons-6.jpg",
+        "badge": "Deals",
+        "trendScore": 47,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-8506169335",
+        "slug": "wired-rounds-up-lg-and-newegg-promo-codes-for-august-2026",
+        "lane": "tech",
+        "title": "Wired rounds up LG and Newegg promo codes for August 2026",
+        "summary": "Wired published its August 2026 roundup of promo codes and coupons for LG and Newegg.",
+        "whyItMatters": "This is service journalism for shoppers, not a development that affects the tech industry.",
+        "whatToWatch": [],
+        "questions": [],
+        "sources": [
+          {
+            "title": "LG Promo Codes and Coupons for August 2026",
+            "url": "https://www.wired.com/story/lg-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
+          },
+          {
+            "title": "Newegg Promo Codes and Coupons for August 2026",
+            "url": "https://www.wired.com/story/newegg-promo-code/",
+            "publisher": "Wired",
+            "publishedAt": "2026-08-19T05:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-19T05:00:00.000Z",
+        "updatedAt": "2026-08-19T09:37:16.635Z",
+        "imageUrl": "https://media.wired.com/photos/67b63b985a505b018b67ed90/master/pass/WIRED-Coupons-R2_17.png",
+        "badge": "Deals",
+        "trendScore": 47,
         "confidence": "medium"
       }
     ]
