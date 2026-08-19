@@ -1,0 +1,787 @@
+{
+  "id": "2026-08-19",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-19T22:06:05.137Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Force your agent to prove it's done before you review the PR",
+    "summary": "Two new plugins enforce Anthropic's internal 'Fable' workflow on Claude Code. Fablize wraps Opus in a completion-evidence-verification procedure. Fable-method packages the same think/act/prove eval as skills for any model. Install one before your next overnight run, so the agent must prove its work instead of just claiming done. Also update Claude Code to 2.1.235 tonight — it fixes a cache bug where a disconnected language server forced full re-caching and quietly raised your token bill.\n\nFor cost, opencodex routes Claude Code's subagent calls to a local Ollama or DeepSeek endpoint, and turbo-fieldfare runs Gemma 4 26B-A4B in 2GB of RAM on any M-series Mac — both give you free local inference for routine tasks. Skip Qwen 3.8 27B for real coding work: one operator's failure report says it is still weak at agentic coding through Cline and MCP, even though a new llama.cpp patch called dflash2 triples its raw speed. For control away from the desk, omnigent and devspace let you steer or approve agent runs from your phone, and machine0 gives you a per-minute cloud box to hand a long job to and walk away.",
+    "bullets": [
+      "Install fivetaku/fablize or Sahir619/fable-method as a Claude Code plugin to force evidence and verification before a task counts as done",
+      "Update Claude Code to 2.1.235 now to stop a language-server disconnect bug from forcing full cache re-reads",
+      "Clone lidge-jun/opencodex to route subagent calls to a local Ollama or DeepSeek endpoint",
+      "Run drumih/turbo-fieldfare to get Gemma 4 26B-A4B working locally in 2GB RAM on an M-series Mac",
+      "Build llama.cpp PR #27342 for dflash2 decoding, but keep Qwen 3.8 27B off real agentic coding tasks",
+      "Try omnigent-ai/omnigent or Waishnav/devspace to steer or approve agent runs from your phone"
+    ],
+    "signals": [
+      {
+        "label": "Self-verification before PR review",
+        "direction": "up",
+        "note": "fablize and fable-method both add enforced evidence and verification steps, aimed directly at making unattended runs safe to review as a finished PR"
+      },
+      {
+        "label": "Local and cheap model routing",
+        "direction": "up",
+        "note": "opencodex, turbo-fieldfare, deepseek-harness, and the dflash2 decoding patch all point at running or speeding subagent work locally instead of paying per token"
+      },
+      {
+        "label": "Open-weight models for real agentic coding",
+        "direction": "down",
+        "note": "a hands-on Qwen 3.8 27B failure report shows a gap between benchmark claims like Ornith-1.5 and actual coding-agent performance via Cline and MCP"
+      },
+      {
+        "label": "Control away from the desk",
+        "direction": "up",
+        "note": "omnigent, devspace, machine0, and OneCLI each ship a phone, chat-approval, or per-minute cloud-VM path to run or approve agents remotely"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI, Codex SDK, and Claude Code call any LLM, including local Ollama models.",
+      "whyItMatters": "You can route routine subagent work to a free local model or a cheaper API. Claude Code stays the front end.",
+      "category": "technique",
+      "tags": [
+        "proxy",
+        "cost",
+        "local-models",
+        "claude-code"
+      ],
+      "entities": [
+        "opencodex"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point Claude Code at a local Ollama or DeepSeek endpoint for cheap subagent tasks.",
+      "score": 11272
+    },
+    {
+      "id": "gh-1333135492",
+      "title": "Leutenegger/book-to-skill — Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "url": "https://github.com/Leutenegger/book-to-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T13:15:23Z",
+      "tldr": "book-to-skill converts a technical book PDF into a ready-to-use Claude Code skill.",
+      "whyItMatters": "Turn a reference book you already rely on into a skill your agent consults mid-task, instead of guessing at APIs.",
+      "category": "technique",
+      "tags": [
+        "skills",
+        "claude-code",
+        "documentation"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone Leutenegger/book-to-skill and run it against a reference PDF for your mobile stack.",
+      "score": 1202
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that forces Opus to follow a completion, evidence, and verification procedure before marking a task done.",
+      "whyItMatters": "It directly targets the 'review a finished PR in the morning' goal by making the agent prove its work instead of just claiming done.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "plugin",
+        "claude-code"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Opus"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and require it on any Opus task you run unattended overnight.",
+      "score": 895
+    },
+    {
+      "id": "rss-codex-releases-dexreleasestagrustv01480",
+      "title": "0.148.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0",
+      "source": "Codex releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-18T22:27:29.000Z",
+      "tldr": "Codex CLI 0.148.0 adds session forking, Markdown export, live credit-cost display, and native Amazon Bedrock support.",
+      "whyItMatters": "Forking sessions and checking live credit cost let you branch long unattended runs and track spend without leaving the CLI.",
+      "category": "agentic",
+      "tags": [
+        "codex",
+        "cli",
+        "session-fork",
+        "cost-tracking"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-5.6"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `codex exec fork` to branch a session, and check `/status` for live credit cost."
+    },
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21235",
+      "title": "2.1.235",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-235",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-18T22:28:55.000Z",
+      "tldr": "Claude Code 2.1.235 fixes prompt-cache invalidation caused by a language server disconnecting mid-session.",
+      "whyItMatters": "That bug was silently forcing full re-caching and driving up token cost. Updating stops the waste.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "prompt-cache",
+        "cost",
+        "update"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code to 2.1.235 now to stop paying for avoidable cache misses."
+    },
+    {
+      "id": "gh-1333065091",
+      "title": "deepseek-ai/deepseek-harness — DeepSeek Harness: Everything is a Plugin.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T11:56:32Z",
+      "tldr": "DeepSeek shipped deepseek-harness, a plugin-based agent harness, already at 166,938 stars.",
+      "whyItMatters": "A DeepSeek-native harness could route whole coding-agent workflows through cheaper DeepSeek models instead of paying per token on every subagent call.",
+      "category": "open-models",
+      "tags": [
+        "harness",
+        "cost",
+        "plugin"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone deepseek-ai/deepseek-harness and trial one low-stakes subagent task to compare cost against your Claude Code setup.",
+      "score": 166938
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "Ponytail is a widely-starred prompt pack that pushes coding agents to write less code, not more.",
+      "whyItMatters": "It gives you a ready prompt for agents to favor deletion and simplicity, which cuts PR review time.",
+      "category": "technique",
+      "tags": [
+        "skill",
+        "code-review",
+        "simplicity",
+        "prompt"
+      ],
+      "entities": [
+        "DietrichGebert"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and load it as a Claude Code skill or system prompt.",
+      "score": 105931
+    },
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering ships CLI tools, loop-audit, loop-init, and loop-cost, for designing agent orchestration loops.",
+      "whyItMatters": "It gives you ready commands to audit and cost your agent loops instead of hand-rolling scripts.",
+      "category": "tooling",
+      "tags": [
+        "orchestration",
+        "cli",
+        "loop-engineering",
+        "cost"
+      ],
+      "entities": [
+        "cobusgreyling"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-init to scaffold a new agent loop.",
+      "score": 10480
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor, and custom agents under one policy layer, controllable from any device.",
+      "whyItMatters": "One sandboxing and policy layer across your tools, plus control from your phone, moves you closer to reviewing PRs without sitting at a desktop.",
+      "category": "agentic",
+      "tags": [
+        "multi-agent",
+        "remote-control",
+        "sandboxing"
+      ],
+      "entities": [
+        "Omnigent"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and wrap one existing Claude Code workflow in its policy layer before testing remote control.",
+      "score": 9060
+    },
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "turbo-fieldfare runs Gemma 4 26B-A4B locally in about 2GB RAM on any M-series MacBook.",
+      "whyItMatters": "You can route cheap subagent tasks to a free local model on hardware you already own.",
+      "category": "open-models",
+      "tags": [
+        "local-model",
+        "gemma",
+        "cost",
+        "macbook"
+      ],
+      "entities": [
+        "drumih"
+      ],
+      "models": [
+        "Gemma 4"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone drumih/turbo-fieldfare and wire local Gemma 4 as your router's cheap-task model.",
+      "score": 6191
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway that wires 1000+ SaaS providers to agents via SDK, CLI, MCP, HTTP, or OpenAPI.",
+      "whyItMatters": "One gateway authenticates your agent against services like GitHub or App Store Connect, instead of you hand-rolling OAuth for each integration.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone oomol-lab/open-connector and register one SaaS credential your agent now needs manual handoff for.",
+      "score": 4807
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "devspace turns the ChatGPT or Claude web app into a Codex- or Claude-Code-style coding agent interface.",
+      "whyItMatters": "You can start or steer a coding task from your phone's browser, without a separate remote-session setup.",
+      "category": "technique",
+      "tags": [
+        "remote",
+        "mobile",
+        "claude-web"
+      ],
+      "entities": [
+        "devspace"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Waishnav/devspace and drive one coding task from Claude Web on your phone.",
+      "score": 3852
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills the 'Fable' agent workflow into Claude Code skills with a built-in think/act/prove eval.",
+      "whyItMatters": "It packages a self-check step so an agent can verify its own work before you review the PR in the morning.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "claude-code"
+      ],
+      "entities": [
+        "Fable"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and add its skills to your Claude Code setup as a pre-PR self-check pass.",
+      "score": 2233
+    },
+    {
+      "id": "gh-1270584305",
+      "title": "eneskirca/nodeterm — Node-based terminal manager for AI coding agents — tmux-backed terminals and parallel agent sessions as draggable nodes on an infinite pan/zoom canvas. macOS, Linux, and a browser Server Edition.",
+      "url": "https://github.com/eneskirca/nodeterm",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T21:25:13Z",
+      "tldr": "nodeterm gives a tmux-backed, node-based canvas for running parallel AI coding agent terminals.",
+      "whyItMatters": "It replaces manual tmux/worktree juggling with a visual layout for many unattended agent sessions at once.",
+      "category": "tooling",
+      "tags": [
+        "tmux",
+        "parallel-agents",
+        "worktrees",
+        "terminal"
+      ],
+      "entities": [
+        "eneskirca"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install eneskirca/nodeterm and map one node per active git worktree or agent session.",
+      "score": 949
+    },
+    {
+      "id": "hn-49348136",
+      "title": "Launch HN: machine0 (YC S26) – Persistent CPU and GPU VMs from the CLI",
+      "url": "https://machine0.io",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-18T16:26:42Z",
+      "tldr": "machine0 launches a CLI that spins up persistent, per-minute-billed CPU/GPU VMs for agents, from $0.013/hr.",
+      "whyItMatters": "It lets you hand a long unattended agent run to a cloud box, up to 60 vCPU/240GB RAM or an H100, and walk away.",
+      "category": "agentic",
+      "tags": [
+        "remote-compute",
+        "gpu",
+        "vm",
+        "pricing"
+      ],
+      "entities": [
+        "machine0"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Run `machine0 new mybox` and point your agent's CLI or MCP driver at it for an overnight job.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49348136",
+      "score": 80
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21236",
+      "title": "Claude Code v2.1.236",
+      "url": "https://www.claudeupdates.dev/version/2.1.236",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-19T20:01:58.000Z",
+      "tldr": "Claude Code v2.1.236 ships 33 changes: 3 added, 4 improved, 16 fixed, 1 changed, 9 other.",
+      "whyItMatters": "One of these 16 fixes could touch the hooks, skills, or worktree behavior your overnight runs depend on.",
+      "category": "tooling",
+      "tags": [
+        "release",
+        "changelog",
+        "claude-code"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code and scan the changelog for anything touching hooks, skills, or git worktree handling."
+    },
+    {
+      "id": "reddit-rss-peedsqwen3827bupto4times",
+      "title": "DFlash2 speeds Qwen 3.8 27B up to 4 times",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsuaoj/dflash2_speeds_qwen_38_27b_up_to_4_times/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-19T18:10:35.000Z",
+      "tldr": "llama.cpp PR #27342 adds dflash2 speculative decoding, roughly tripling Qwen 3.8 27B throughput (47 to 141 tok/s on a rented RTX 6000).",
+      "whyItMatters": "A drop-in decoding change lifts local inference speed without a new model, cutting time and cost for self-hosted agent runs.",
+      "category": "technique",
+      "tags": [
+        "speculative-decoding",
+        "llama-cpp",
+        "local-inference"
+      ],
+      "entities": [
+        "llama.cpp"
+      ],
+      "models": [
+        "Qwen 3.8 27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Build llama.cpp from PR #27342 and enable dflash2 decoding for your local model to cut generation time.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vsuaoj/dflash2_speeds_qwen_38_27b_up_to_4_times/"
+    },
+    {
+      "id": "reddit-rss-thingwrongqwen3827bseems",
+      "title": "Am I doing something wrong? Qwen 3.8 27B seems useless for agentic coding",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsinej/am_i_doing_something_wrong_qwen_38_27b_seems/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-19T10:32:34.000Z",
+      "tldr": "An operator finds Qwen 3.8 27B (Q6_K quant) underwhelming for agentic coding via Cline and MCP servers, well behind Claude Code.",
+      "whyItMatters": "Confirms this open-weight model isn't ready to take over real agentic coding tasks, so don't route serious coding work to it yet.",
+      "category": "open-models",
+      "tags": [
+        "local-models",
+        "agentic-coding",
+        "benchmark"
+      ],
+      "entities": [
+        "r/LocalLLaMA",
+        "Cline"
+      ],
+      "models": [
+        "Qwen 3.8 27B",
+        "Deepseek V4 Flash"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Skip Qwen 3.8 27B for agentic coding; keep local use to simpler tasks like config editing with Deepseek V4 Flash.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vsinej/am_i_doing_something_wrong_qwen_38_27b_seems/"
+    },
+    {
+      "id": "gh-1250822765",
+      "title": "nexu-io/html-video — Programmatic video for coding agents — HTML to video on your laptop. Turn HTML, CSS & data into real MP4s with pluggable render engines, 21 templates, AI soundtrack. Apache-2.0, no per-render fees. An official project b",
+      "url": "https://github.com/nexu-io/html-video",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-27T02:08:11Z",
+      "tldr": "html-video renders HTML, CSS, and data into MP4s locally, Apache-2.0 licensed with no per-render fees.",
+      "whyItMatters": "Lets an agent generate demo or changelog clips on your own machine instead of paying a hosted rendering API per call.",
+      "category": "tooling",
+      "tags": [
+        "video-generation",
+        "self-hosted",
+        "apache-2.0"
+      ],
+      "entities": [
+        "html-video"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone nexu-io/html-video and hook it into a PR or release step to auto-generate demo videos.",
+      "score": 4385
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "NanoNets/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/NanoNets/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft gives Claude Code, Cursor, Codex, and Gemini codebase-specific context to run faster and cheaper.",
+      "whyItMatters": "Less redundant context-building per subagent call means fewer tokens spent per PR on your repo.",
+      "category": "tooling",
+      "tags": [
+        "context",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "NanoNets"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone NanoNets/Graft, point it at your repo, and compare context tokens per session before and after.",
+      "score": 3770
+    },
+    {
+      "id": "gh-1252432466",
+      "title": "Gitlawb/zero — The coding agent that answers to you, your model, your machine, your rules.",
+      "url": "https://github.com/Gitlawb/zero",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-28T14:11:35Z",
+      "tldr": "Zero is an open-source coding agent built to run against your own model on your own machine.",
+      "whyItMatters": "A candidate harness if you want to route some coding work to a local or non-Anthropic model to cut spend.",
+      "category": "tooling",
+      "tags": [
+        "local-model",
+        "self-hosted",
+        "coding-agent"
+      ],
+      "entities": [
+        "Zero"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone Gitlawb/zero and test it with a local model on low-stakes tasks to compare cost against your current setup.",
+      "score": 1589
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE is an open-source agent that scans source code to find, verify, and report CVEs.",
+      "whyItMatters": "Gives you a security-verification subagent to run against agent-written code before you merge, catching known vulnerability patterns automatically.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "code-review",
+        "cve",
+        "agent"
+      ],
+      "entities": [
+        "AutoCVE"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and run it against a repo as a pre-merge security check.",
+      "score": 1266
+    },
+    {
+      "id": "gh-1266808913",
+      "title": "solo-agent/solo — Solo Agent — an open-source, local-first workspace where humans and AI coding agents collaborate through channels, tasks, teams, and persistent memory.",
+      "url": "https://github.com/solo-agent/solo",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T01:13:02Z",
+      "tldr": "Solo Agent is an open-source, local-first Go workspace where you and coding agents share channels, tasks, teams, and persistent memory.",
+      "whyItMatters": "Offers a chat-like coordination layer for multi-agent work instead of juggling separate terminal sessions, worth a look if you want to steer agents outside your editor.",
+      "category": "tooling",
+      "tags": [
+        "agent-coordination",
+        "local-first",
+        "open-source"
+      ],
+      "entities": [
+        "Solo Agent"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone solo-agent/solo and try its channels/tasks layer over your current Claude Code workflow.",
+      "score": 531
+    },
+    {
+      "id": "hn-49348751",
+      "title": "Claude Code May–August 2026 weekly limits promotion",
+      "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-18T17:02:15Z",
+      "tldr": "An HN thread tracks Anthropic's Claude Code weekly usage-limit changes from May through August 2026.",
+      "whyItMatters": "Your overnight unattended runs depend on weekly quota; a limit change caps how much autonomous work you can queue.",
+      "category": "business",
+      "tags": [
+        "usage-limits",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Check your current weekly limit against your overnight run cadence and adjust how many worktrees you queue.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49348751",
+      "score": 290
+    },
+    {
+      "id": "hn-49363710",
+      "title": "Launch HN: OneCLI (YC S26) – OSS sandboxed agent harness for teams",
+      "url": "https://github.com/onecli/onecli",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-19T16:29:02Z",
+      "tldr": "OneCLI launches on HN as an open-source sandboxed agent harness with chat-based approval for teams.",
+      "whyItMatters": "It offers a self-hostable pattern for approving agent actions from chat, useful for control away from the desk.",
+      "category": "agentic",
+      "tags": [
+        "sandbox",
+        "harness",
+        "approval",
+        "remote"
+      ],
+      "entities": [
+        "OneCLI"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Try OneCLI's sandboxed GitHub connector and test its chat-based approval step on a small task.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49363710",
+      "score": 44
+    },
+    {
+      "id": "reddit-rss-h15397bdeepswe5635ba3b9b",
+      "title": "Ornith-1.5 (397B [DeepSWE 56], 35B-A3B, 9B)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vsou3a/ornith15_397b_deepswe_56_35ba3b_9b/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-19T14:58:07.000Z",
+      "tldr": "Ornith-1.5 open-weights family (9B, 35B-A3B, 397B) claims coding and agentic performance near Claude Opus 4.8, weights on Hugging Face.",
+      "whyItMatters": "The 35B-A3B and 9B sizes are small enough to run on a single workstation GPU, a possible local stand-in for expensive frontier coding calls if the benchmarks hold up.",
+      "category": "open-models",
+      "tags": [
+        "open-weights",
+        "agentic-coding",
+        "benchmark"
+      ],
+      "entities": [
+        "Hugging Face"
+      ],
+      "models": [
+        "Ornith-1.5",
+        "Claude Opus 4.8"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Pull the 35B-A3B checkpoint from the Ornith-1.5 Hugging Face collection and test it against your own coding-agent tasks before trusting the vendor benchmarks.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vsou3a/ornith15_397b_deepswe_56_35ba3b_9b/"
+    },
+    {
+      "id": "hn-49364658",
+      "title": "Opus 5.0 drives incoherence into the stratosphere",
+      "url": "https://github.com/anthropics/claude-code/issues/77136",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-19T17:40:06Z",
+      "tldr": "An HN thread reports Opus 5.0 output growing increasingly incoherent in production use.",
+      "whyItMatters": "If you route overnight unattended runs to Opus 5.0, check recent PR output closely before you trust a longer session on it.",
+      "category": "closed-models",
+      "tags": [
+        "failure-report",
+        "model-quality",
+        "opus"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Opus 5.0"
+      ],
+      "importance": 3,
+      "actionability": 2,
+      "hasFailureReport": true,
+      "tryThis": "Before your next long unattended run, review a few recent Opus 5.0 PRs for coherence drift.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49364658",
+      "score": 158
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Fable workflow codified into Claude Code plugins",
+      "summary": "fablize and fable-method both turn Anthropic's internal 'Fable' think/act/prove workflow into installable Claude Code procedures that force evidence and verification before a task counts as done.",
+      "itemIds": [
+        "gh-1268946118",
+        "gh-1291544092"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Qwen 3.8 27B: faster, still not agent-ready",
+      "summary": "A new llama.cpp decoding patch roughly triples local Qwen 3.8 27B throughput, but a separate operator report says the model still underperforms Claude Code on real agentic coding tasks.",
+      "itemIds": [
+        "reddit-rss-peedsqwen3827bupto4times",
+        "reddit-rss-thingwrongqwen3827bseems"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Back-to-back Claude Code point releases",
+      "summary": "2.1.235 fixes a prompt-cache invalidation bug tied to language-server disconnects, and 2.1.236 follows immediately with 33 more changes worth scanning for hook, skill, or worktree fixes.",
+      "itemIds": [
+        "rss-claude-code-changelog-ecomdocsenchangelog21235",
+        "rss-claude-updates-deupdatesdevversion21236"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 24,
+    "outputTokens": 52766,
+    "usd": 1.4111,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

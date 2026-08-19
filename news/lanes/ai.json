@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-19T09:37:16.635Z",
-  "contentVersion": 41,
+  "generatedAt": "2026-08-19T22:16:59.204Z",
+  "contentVersion": 42,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,23 +123,144 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-19T09:37:16.635Z"
+      "updatedAt": "2026-08-19T22:16:59.204Z"
+    },
+    {
+      "id": "ai-ef913e9fda",
+      "slug": "openai-adds-zero-data-retention-option-for-frontier-models",
+      "lane": "ai",
+      "title": "OpenAI adds Zero Data Retention option for frontier models",
+      "summary": "OpenAI announced a Zero Data Retention (ZDR) option for its frontier models. Under this option, OpenAI does not store customer data sent to these models. OpenAI shared no further detail on which models or customer tiers qualify.",
+      "whyItMatters": "Enterprises with strict compliance or privacy rules often avoid frontier AI models over data-retention concerns. This option removes one barrier to adoption.",
+      "whatToWatch": [
+        "Which models and customer tiers get ZDR access",
+        "Whether rival labs match this offer",
+        "Any published terms on how ZDR works technically"
+      ],
+      "questions": [
+        "Does ZDR apply to all frontier models or only some?",
+        "Does the option cost extra or slow response times?"
+      ],
+      "sources": [
+        {
+          "title": "Offering Zero Data Retention for frontier models",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-19T19:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T19:00:00.000Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
+      "badge": "Product",
+      "trendScore": 57,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-b9b9c0da4a",
+      "slug": "developer-essay-on-extensible-software-in-the-age-of-llms-gains-tracti",
+      "lane": "ai",
+      "title": "Developer essay on \"Extensible Software in the age of LLMs\" gains traction",
+      "summary": "A blog post titled \"Extensible Software in the age of LLMs\" spread on Hacker News. The post, by developer Jeremy Morrell, argues for a new view of software extensibility now that LLMs write and modify code. No further detail on the post's specific claims is available here.",
+      "whyItMatters": "How developers design software for an LLM-assisted world shapes tooling and architecture choices across the industry.",
+      "whatToWatch": [
+        "Whether the ideas influence tool or framework design",
+        "Follow-up posts or rebuttals from other developers"
+      ],
+      "questions": [
+        "What specific extensibility patterns does the post propose?"
+      ],
+      "sources": [
+        {
+          "title": "Extensible Software in the age of LLMs",
+          "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-19T16:26:05Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T16:26:05Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
+      "imageUrl": "https://jeremymorrell.dev/_astro/omg-meme-social.BBc_Z2VQ.png",
+      "badge": "Analysis",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-9ac0643f24",
+      "slug": "replit-expands-software-creation-access-with-gpt-5-6-luna",
+      "lane": "ai",
+      "title": "Replit expands software creation access with GPT-5.6 Luna",
+      "summary": "OpenAI announced that Replit is expanding access to software creation tools built on its GPT-5.6 Luna model. The announcement came from OpenAI's own site. Details on rollout scope and which Replit users get access were not specified.",
+      "whyItMatters": "Wider access to AI-assisted coding tools on a popular platform like Replit speeds adoption of AI-driven software development.",
+      "whatToWatch": [
+        "Rollout pace to different Replit user tiers",
+        "Developer feedback on GPT-5.6 Luna's coding performance"
+      ],
+      "questions": [
+        "Which Replit plans or regions get access first?"
+      ],
+      "sources": [
+        {
+          "title": "Replit expands access to software creation with GPT-5.6 Luna",
+          "url": "https://openai.com/index/replit",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-19T07:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T07:00:00.000Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4613fXufQuf1JibaxyPveS/165050780487162a64929413fdfedd79/replit-customer-story-seo-16x9.png?w=1600&h=900&fit=fill",
+      "badge": "Release",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-11b62d30a2",
+      "slug": "onecli-an-open-source-sandboxed-agent-harness-launches-out-of-yc",
+      "lane": "ai",
+      "title": "OneCLI, an open-source sandboxed agent harness, launches out of YC",
+      "summary": "OneCLI, a Y Combinator S26 startup, launched an open-source sandboxed agent harness for teams. The launch appeared as a \"Launch HN\" post. It targets teams that want to run AI coding agents safely.",
+      "whyItMatters": "Sandboxed agent harnesses address a real gap: giving teams control and safety guardrails as AI coding agents take on more autonomous work.",
+      "whatToWatch": [
+        "Community and enterprise adoption of the open-source tool",
+        "Competing agent-harness projects responding"
+      ],
+      "questions": [
+        "How does OneCLI's sandboxing differ from existing agent frameworks?"
+      ],
+      "sources": [
+        {
+          "title": "Launch HN: OneCLI (YC S26) – OSS sandboxed agent harness for teams",
+          "url": "https://github.com/onecli/onecli",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-19T16:29:02Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T16:29:02Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
+      "imageUrl": "https://repository-images.githubusercontent.com/1175900220/ddf244eb-befe-4ea2-a784-b1b91be1d0eb",
+      "badge": "Launch",
+      "trendScore": 44,
+      "confidence": "low"
     },
     {
       "id": "ai-e456387186",
       "slug": "chatgpt-ads-expands-across-europe",
       "lane": "ai",
-      "title": "ChatGPT Ads Expands Across Europe",
-      "summary": "OpenAI said it is expanding ChatGPT Ads to more countries in Europe. The announcement did not give details on ad formats, pricing, or a full country list.",
-      "whyItMatters": "Ads inside ChatGPT show OpenAI's push toward ad revenue. This could change how OpenAI competes with Google for advertising money.",
+      "title": "ChatGPT Ads expands across Europe",
+      "summary": "OpenAI announced that ChatGPT Ads is expanding across Europe. The announcement gives no further detail on which countries, ad formats, or timeline apply.",
+      "whyItMatters": "Advertising inside ChatGPT is a major new revenue channel for OpenAI and a shift in how users encounter ads in AI chat interfaces.",
       "whatToWatch": [
-        "Which European countries get ads next",
-        "How advertisers and users react",
-        "Scrutiny from EU privacy or ad regulators"
+        "Which European markets get ads first",
+        "User and regulator reaction to ads inside ChatGPT",
+        "EU privacy and advertising rule compliance"
       ],
       "questions": [
-        "What ad formats will appear in ChatGPT?",
-        "Will free and paid tiers see different ad loads?"
+        "What ad formats will appear, and how are they labeled?",
+        "How does this align with EU data and advertising regulations?"
       ],
       "sources": [
         {
@@ -151,27 +272,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T22:00:00.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/OvScmX8CxThRRwHLDcyAt/6db3028c57d0866137a4b3fcac0e3166/chatgpt-ads-europe-readable-seo.png?w=1600&h=900&fit=fill",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "badge": "Product",
-      "trendScore": 50,
+      "trendScore": 40,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-7b614d757e",
+      "slug": "modular-open-sources-the-mojo-programming-language",
+      "lane": "ai",
+      "title": "Modular open-sources the Mojo programming language",
+      "summary": "Modular, the company behind the Mojo programming language and now part of Qualcomm, has made Mojo open-source. The news spread through a Modular blog post shared on Hacker News.",
+      "whyItMatters": "Mojo targets high-performance AI and systems programming. Open-sourcing it under Qualcomm's ownership could widen its use in AI infrastructure and hardware tooling.",
+      "whatToWatch": [
+        "Developer and open-source community uptake of Mojo",
+        "How Qualcomm integrates Mojo into its own hardware and software plans"
+      ],
+      "questions": [
+        "What license governs the open-source release?",
+        "How does Qualcomm plan to use Mojo commercially?"
+      ],
+      "sources": [
+        {
+          "title": "The Mojo language (by Modular, now Qualcomm) is now open-source",
+          "url": "https://www.modular.com/blog/modcon-announcements",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-19T07:47:19Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-19T07:47:19Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
+      "imageUrl": "https://cdn.prod.website-files.com/68c9c3107effc2ea46e1a82c/6a845980ea521c5fbe46a88c_Highlights.png",
+      "badge": "Open Source",
+      "trendScore": 39,
+      "confidence": "low"
     },
     {
       "id": "ai-00320f49d7",
       "slug": "memory-chip-prices-rise-500-in-a-year-ai-newsletter-reports",
       "lane": "ai",
-      "title": "Memory Chip Prices Rise 500% in a Year, AI Newsletter Reports",
-      "summary": "The Latent Space AI newsletter reports that memory chip prices have risen about 500% over the past 12 months. The item does not specify the exact memory type or the full cause.",
-      "whyItMatters": "Memory chips are a core cost in AI training and inference hardware. A large price rise can raise costs for model builders and cloud providers.",
+      "title": "Memory chip prices reportedly up 500% in a year, driven by AI demand",
+      "summary": "A Latent Space AINews report says memory prices have risen 500% over the past 12 months. The report ties the spike to AI-driven demand, though it does not specify which memory type or manufacturers are affected.",
+      "whyItMatters": "Memory costs feed directly into the price of training and running AI models, affecting everyone from labs to cloud providers.",
       "whatToWatch": [
-        "Whether prices keep climbing or level off",
-        "Comments from chipmakers and cloud providers on supply",
-        "Any pass-through of costs to AI compute pricing"
+        "Whether AI hardware makers pass higher memory costs to customers",
+        "Any supply response from memory manufacturers"
       ],
       "questions": [
-        "Which memory type is driving the increase?",
-        "How much of the rise comes from AI demand versus other buyers?"
+        "Which memory type (DRAM, HBM, or other) is driving the increase?",
+        "How much of AI compute cost pressure comes from this versus GPU supply?"
       ],
       "sources": [
         {
@@ -183,27 +333,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T08:44:52.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!-PTb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F95b5b0b3-9bd4-4c08-9c91-ad68807850fc_2272x1434.png",
       "badge": "Market",
-      "trendScore": 46,
+      "trendScore": 36,
       "confidence": "low"
     },
     {
       "id": "ai-2156e30285",
       "slug": "glm-5-3-gets-benchmarked-by-artificial-analysis",
       "lane": "ai",
-      "title": "GLM-5.3 Gets Benchmarked by Artificial Analysis",
-      "summary": "Artificial Analysis published benchmark results for GLM-5.3, a model in Zhipu's GLM line. The post circulated on Hacker News, but no specific scores were included in the source given here.",
-      "whyItMatters": "Independent benchmarks of GLM models help readers track how fast Chinese labs are closing the gap with US frontier models.",
+      "title": "GLM-5.3 benchmark results published by Artificial Analysis",
+      "summary": "Artificial Analysis published benchmark results for the GLM-5.3 model, and the results circulated on Hacker News. No score details or comparisons are available from the supplied information.",
+      "whyItMatters": "Independent benchmarks like this help the industry track how fast Chinese and other non-US labs are closing the gap with leading frontier models.",
       "whatToWatch": [
-        "How GLM-5.3 compares to GPT, Claude, and Gemini on the same tests",
-        "Developer adoption of GLM-5.3",
-        "Follow-up benchmarks from other evaluators"
+        "How GLM-5.3 compares against other frontier models on future benchmark rounds",
+        "Any response from GLM's developer"
       ],
       "questions": [
-        "What are the actual benchmark scores?",
-        "Is GLM-5.3 open-weight or closed?"
+        "Where does GLM-5.3 rank against current leading models?",
+        "Which capabilities did Artificial Analysis test?"
       ],
       "sources": [
         {
@@ -215,27 +364,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T22:06:10Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "imageUrl": "https://artificialanalysis.ai/en/models/glm-5-3/opengraph-image?76c5a1db7097b9e1",
       "badge": "Benchmark",
-      "trendScore": 45,
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "ai-67f37d861d",
       "slug": "openai-publishes-position-on-democratic-oversight-of-ai-in-national-se",
       "lane": "ai",
-      "title": "OpenAI Calls for Stronger Democratic Oversight of AI in National Security",
-      "summary": "OpenAI published a post on strengthening democratic oversight of AI use in national security. The post does not detail specific proposed rules or mechanisms.",
-      "whyItMatters": "As AI moves deeper into defense and intelligence work, a major lab's stance on oversight can shape the policy debate on transparency and control.",
+      "title": "OpenAI publishes stance on democratic oversight of AI in national security",
+      "summary": "OpenAI published a post titled \"Strengthening democratic oversight in national security,\" addressing how AI use in national-security contexts should stay accountable to democratic institutions. Specific policy proposals were not detailed in the supplied information.",
+      "whyItMatters": "As governments adopt AI for defense and intelligence work, how labs like OpenAI frame oversight shapes the policy debate around AI and national security.",
       "whatToWatch": [
-        "Government or congressional response",
-        "Whether OpenAI proposes concrete oversight steps",
-        "How this interacts with OpenAI's own government contracts"
+        "Government or regulator response to OpenAI's position",
+        "Whether other AI labs publish similar statements"
       ],
       "questions": [
-        "What oversight mechanisms does OpenAI actually propose?",
-        "Does this apply to OpenAI's own national security work?"
+        "What concrete oversight mechanisms does OpenAI propose?",
+        "Does this relate to a specific government contract or policy debate?"
       ],
       "sources": [
         {
@@ -247,26 +395,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T19:00:00.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6HEG4BoWGKBEoSJWCReHz0/1b1c0b24720bb3faec4a71e48e8ceef7/openai-democratic-oversight-page-seo-v004.png?w=1600&h=900&fit=fill",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "badge": "Policy",
-      "trendScore": 43,
+      "trendScore": 32,
       "confidence": "medium"
     },
     {
       "id": "ai-1e907c1ba3",
       "slug": "anthropic-s-claude-code-weekly-limits-promotion-draws-hacker-news-atte",
       "lane": "ai",
-      "title": "Claude Code's Weekly Usage-Limit Promotion Runs Through August",
-      "summary": "A Claude Code support article, discussed on Hacker News, describes a weekly usage-limits arrangement running from May to August 2026. Details on what changes after the period were not given.",
-      "whyItMatters": "Usage limits directly affect how developers plan work with Claude Code, an AI coding tool many rely on daily.",
+      "title": "Anthropic details Claude Code's weekly limits promotion for May–August 2026",
+      "summary": "A Claude Code support article outlining a weekly usage limits promotion running May through August 2026 drew attention on Hacker News. Specific limit numbers or eligibility terms were not included in the supplied information.",
+      "whyItMatters": "Usage limits and promotions directly affect how developers rely on Claude Code for daily coding work, especially heavy users.",
       "whatToWatch": [
-        "What happens to limits after the promotion ends",
-        "Any new pricing tiers from Anthropic"
+        "What happens to limits when the promotion period ends",
+        "Developer reaction on pricing and usage forums"
       ],
       "questions": [
-        "Will limits tighten or loosen after August?",
-        "Is this a temporary promotion or a lasting policy?"
+        "What are the actual weekly limit numbers before and after the promotion?",
+        "Does the promotion apply to all Claude Code plans?"
       ],
       "sources": [
         {
@@ -278,27 +425,27 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T17:02:15Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "imageUrl": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
       "badge": "Product",
-      "trendScore": 42,
+      "trendScore": 32,
       "confidence": "low"
     },
     {
       "id": "ai-01003c6680",
       "slug": "openai-launches-chatgpt-for-teens-with-added-protections",
       "lane": "ai",
-      "title": "OpenAI Launches ChatGPT for Teens With Extra Safety Protections",
-      "summary": "OpenAI introduced ChatGPT for Teens, a version of the product built for learning and with added safety protections. The announcement did not detail how the protections work technically.",
-      "whyItMatters": "Youth safety is a major pressure point for chatbot regulation. A dedicated teen product is a direct response to that scrutiny.",
+      "title": "OpenAI launches ChatGPT for Teens with added protections",
+      "summary": "OpenAI introduced ChatGPT for Teens, a version of ChatGPT built for learning with additional safety protections for younger users. The announcement did not specify the exact protections or age-verification method.",
+      "whyItMatters": "Teen safety in AI products is a growing regulatory and public concern, and this launch signals how major labs plan to address it directly.",
       "whatToWatch": [
-        "Rollout timeline and availability",
-        "How age verification is enforced",
-        "Reaction from regulators and child-safety groups"
+        "Details on age verification and specific safety features",
+        "Regulator and parent-group reaction",
+        "Whether competitors launch similar teen-focused products"
       ],
       "questions": [
-        "How does age verification actually work?",
-        "What parental controls, if any, come with it?"
+        "How does OpenAI verify a user's age?",
+        "What specific protections differ from standard ChatGPT?"
       ],
       "sources": [
         {
@@ -310,165 +457,11 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-18T11:00:00.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
+      "updatedAt": "2026-08-19T22:16:59.204Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7fiopp4CCayK6yzFnX7svI/8b5c67ab59a666d95e90b144c705d530/Art_Card-TEENS-16x93x.png?w=1600&h=900&fit=fill",
-      "badge": "Safety",
-      "trendScore": 41,
+      "badge": "Launch",
+      "trendScore": 31,
       "confidence": "medium"
-    },
-    {
-      "id": "ai-a2c8b29346",
-      "slug": "hn-debate-do-companies-promote-weak-performers-into-management-to-limi",
-      "lane": "ai",
-      "title": "HN Debate: Do Companies Promote Weak Performers Into Management to Limit Damage?",
-      "summary": "A Hacker News discussion centers on the claim that companies sometimes promote weaker individual contributors into management to limit the damage they can do. The source gives no further detail beyond this claim.",
-      "whyItMatters": "The debate touches on management practices in software organizations, including fast-growing AI teams that are scaling engineering staff quickly.",
-      "whatToWatch": [
-        "Whether the discussion produces wider commentary from engineering leaders"
-      ],
-      "questions": [
-        "What evidence, if any, backs the claim?",
-        "Does this pattern show up differently at AI companies than elsewhere?"
-      ],
-      "sources": [
-        {
-          "title": "Companies promote incompetent employees to management to limit damage they do",
-          "url": "https://lawsofsoftwareengineering.com/laws/dilbert-principle/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-18T21:13:30Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T21:13:30Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://lawsofsoftwareengineering.com/og/dilbert-principle.png",
-      "badge": "Analysis",
-      "trendScore": 39,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-39f4f37f71",
-      "slug": "rising-frontier-model-costs-and-open-weights-growth-drive-demand-for-m",
-      "lane": "ai",
-      "title": "Rising Frontier-Model Costs and Open-Weights Growth Drive Demand for Model Routing",
-      "summary": "Latent Space reports growing demand for model-routing tools, driven by the high cost of frontier models and the rising popularity of open-weight alternatives. The piece does not name specific routing vendors or figures.",
-      "whyItMatters": "Model routing is becoming a key layer in the AI stack, letting companies pick the cheapest or best model per task instead of locking into one vendor.",
-      "whatToWatch": [
-        "Which routing products gain the most traction",
-        "Whether frontier labs cut prices in response"
-      ],
-      "questions": [
-        "Which models are routed to most often?",
-        "Does routing hurt output quality or reliability?"
-      ],
-      "sources": [
-        {
-          "title": "Frontier Model Cost and Open-Weights Popularity is Driving Demand for Model Routing",
-          "url": "https://www.latent.space/p/glean-model-routing",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-18T21:41:10.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T21:41:10.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!mpso!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6ac64fa7-87ce-4106-816c-5811822047e1_1280x720.png",
-      "badge": "Analysis",
-      "trendScore": 37,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-68c52c8131",
-      "slug": "openai-discusses-pacing-model-development-as-cyber-capabilities-grow",
-      "lane": "ai",
-      "title": "OpenAI Discusses Pacing Model Development as Cyber Capabilities Grow",
-      "summary": "OpenAI published a post on pacing frontier model development as AI systems gain more cyber-related capabilities. The post does not lay out specific pacing rules or thresholds.",
-      "whyItMatters": "This shows how a leading lab is thinking about self-imposed limits as AI models gain capabilities relevant to cyberattacks and defense.",
-      "whatToWatch": [
-        "Whether OpenAI sets concrete pacing commitments",
-        "How other labs and regulators respond"
-      ],
-      "questions": [
-        "What specific capability triggers a slowdown?",
-        "How does this square with competitive pressure from rival labs?"
-      ],
-      "sources": [
-        {
-          "title": "Pacing model development in an era of cyber-critical capabilities",
-          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-18T11:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T11:00:00.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/55UVJLAaFr5hqOom9Il3Ou/2a7c6a08571daf98a0643d76cc243add/index-pacing-model-development-cyber-capabilities-dark-seo.png?w=1600&h=900&fit=fill",
-      "badge": "Safety",
-      "trendScore": 36,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-9765648ad5",
-      "slug": "openai-partners-with-codeai-to-prepare-students-for-an-ai-driven-futur",
-      "lane": "ai",
-      "title": "OpenAI Partners With CodeAI to Prepare Students for an AI-Driven Future",
-      "summary": "OpenAI announced a partnership with CodeAI, described as work to prepare what it calls the first AI generation. The announcement did not detail the partnership's scope, funding, or timeline.",
-      "whyItMatters": "Education partnerships shape how young people first learn to use AI tools, and show major labs investing early in future users.",
-      "whatToWatch": [
-        "Which schools or regions the partnership reaches",
-        "Scale and funding of the program"
-      ],
-      "questions": [
-        "What does CodeAI actually provide?",
-        "Is this a pilot or a broad rollout?"
-      ],
-      "sources": [
-        {
-          "title": "Partnering with CodeAI to prepare the first AI generation",
-          "url": "https://openai.com/index/partnering-with-codeai",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-18T11:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T11:00:00.000Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5rhd6nhvVokZZ5L6uu2tz9/daaf6fd9186ebe2c1914adaaaac65cf4/a11y-seo-v002.png?w=1600&h=900&fit=fill",
-      "badge": "Partnership",
-      "trendScore": 36,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-a3faa36ed3",
-      "slug": "the-verge-amazon-s-order-confirmation-emails-have-gotten-less-useful",
-      "lane": "ai",
-      "title": "Why Amazon's Order Confirmation Emails Have Gotten Less Useful",
-      "summary": "A piece discussed on Hacker News looks at why Amazon's order confirmation emails have become less helpful to customers. The source given here is limited to the headline, so the exact cause is not confirmed.",
-      "whyItMatters": "The story fits a recurring complaint: automation in customer-facing systems can save companies effort while making the experience worse for users.",
-      "whatToWatch": [
-        "Whether Amazon responds to the complaints",
-        "Similar complaints surfacing about other companies' automated communications"
-      ],
-      "questions": [
-        "Is automated or AI-generated content the actual cause?",
-        "Will Amazon change the email format?"
-      ],
-      "sources": [
-        {
-          "title": "Why your Amazon order confirmation emails have become so unhelpful",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-18T16:54:42Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T16:54:42Z",
-      "updatedAt": "2026-08-19T09:37:16.635Z",
-      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-10-at-10.31.39-AM.png?quality=90&strip=all&crop=0,9.5560437679216,100,80.887912464157",
-      "badge": "Analysis",
-      "trendScore": 35,
-      "confidence": "low"
     }
   ]
 }
