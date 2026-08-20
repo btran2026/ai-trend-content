@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-20T04:24:28.885Z",
-  "contentVersion": 43,
+  "generatedAt": "2026-08-20T18:50:49.334Z",
+  "contentVersion": 44,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,142 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-20T04:24:28.885Z"
+      "updatedAt": "2026-08-20T18:50:49.334Z"
+    },
+    {
+      "id": "ai-0ac0123bfb",
+      "slug": "a-separate-llm-cleans-up-claude-5-s-verbose-output",
+      "lane": "ai",
+      "title": "A separate LLM cleans up Claude 5's verbose output",
+      "summary": "A Hacker News post describes a tool that uses a second LLM to clean up excess, verbose text from Claude 5. The tool sits between Claude 5's raw output and the final result shown to users. Details on the method and its effectiveness are limited to the post itself.",
+      "whyItMatters": "It shows a real user pain point: Claude 5's raw output is too verbose for some workflows, so developers build workarounds instead of waiting for a fix.",
+      "whatToWatch": [
+        "Whether Anthropic addresses verbosity directly in a future update",
+        "Adoption of this workaround by other developers"
+      ],
+      "questions": [
+        "How well does the cleanup LLM preserve accuracy?",
+        "Will Anthropic build this capability natively?"
+      ],
+      "sources": [
+        {
+          "title": "Clean up Claude 5's token vomit with a separate LLM",
+          "url": "https://github.com/zachahn/vomit",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-20T15:26:02Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-20T15:26:02Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
+      "imageUrl": "https://opengraph.githubassets.com/f21e46fbd5da3ba172ed761321719e812274e53e6d325ec31bdd9f83397e51cc/zachahn/vomit",
+      "trendScore": 57,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-234f8833cf",
+      "slug": "mistral-ai-launches-agentic-search",
+      "lane": "ai",
+      "title": "Mistral AI launches Agentic Search",
+      "summary": "Mistral AI introduced Agentic Search, a feature meant to give AI systems more accurate and efficient results. Mistral describes it as an upgrade over standard search integrations for its models. No further technical detail is available yet.",
+      "whyItMatters": "Search quality is a key way AI labs compete for developers and enterprise customers, so Mistral's move sharpens that competition.",
+      "whatToWatch": [
+        "Independent benchmarks against search tools from OpenAI, Google, and Anthropic",
+        "Rollout to Mistral's API and enterprise customers"
+      ],
+      "questions": [
+        "How does Agentic Search compare on cost and latency?",
+        "Which Mistral models get access first?"
+      ],
+      "sources": [
+        {
+          "title": "Agentic Search. More accurate and efficient results from your AI systems.",
+          "url": "https://mistral.ai/news/agentic-search/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-20T12:00:17.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-20T12:00:17.000Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
+      "imageUrl": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Blog-Agenticsearch.png",
+      "trendScore": 50,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-4bafc696f3",
+      "slug": "open-source-stripe-connect-alternative-launches-on-hacker-news",
+      "lane": "ai",
+      "title": "Open-source Stripe Connect alternative launches on Hacker News",
+      "summary": "A new open-source project positions itself as an alternative to Stripe Connect, the payments infrastructure product. The team shared it as a Show HN post. The available information does not describe how, or whether, it connects to AI tooling.",
+      "whyItMatters": "Payment infrastructure underpins many AI-agent and SaaS products, so a cheaper open alternative could matter to builders, though its AI relevance is not yet clear.",
+      "whatToWatch": [
+        "Community response to the Show HN post",
+        "Whether the project adds features aimed at AI-agent commerce"
+      ],
+      "questions": [
+        "What does this replace in AI-agent commerce, if anything?",
+        "Who is building and backing it?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Open-source Stripe Connect alternative",
+          "url": "https://zoneless.com",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-20T14:38:45Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-20T14:38:45Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
+      "imageUrl": "https://zoneless.com/assets/images/screenshots/og.png",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-cb030de2dd",
+      "slug": "openai-details-how-chatgpt-work-helps-stampli-move-ideas-to-market",
+      "lane": "ai",
+      "title": "OpenAI details how ChatGPT Work helps Stampli move ideas to market",
+      "summary": "OpenAI published a case study on how Stampli uses ChatGPT Work to move ideas to market faster. The piece is a customer story about adoption of OpenAI's workplace product. It does not include specific usage numbers.",
+      "whyItMatters": "Customer case studies show how enterprises actually use ChatGPT Work, a signal of real adoption beyond OpenAI's own marketing.",
+      "whatToWatch": [
+        "Whether OpenAI shares usage or ROI figures in later updates",
+        "Similar case studies from other ChatGPT Work customers"
+      ],
+      "questions": [
+        "How much of this reflects broad adoption versus a marketing partnership?"
+      ],
+      "sources": [
+        {
+          "title": "How ChatGPT Work helps Stampli move ideas to market",
+          "url": "https://openai.com/index/stampli",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-20T00:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7hfd4vHZo2TJaamnedJgMp/6c8bc17d7e3acbee99a8971ad9aac0a2/stampli-seo-16x9-v2-ribbed.png?w=1600&h=900&fit=fill",
+      "badge": "Case study",
+      "trendScore": 44,
+      "confidence": "medium"
     },
     {
       "id": "ai-ef913e9fda",
       "slug": "openai-adds-zero-data-retention-option-for-frontier-models",
       "lane": "ai",
-      "title": "OpenAI offers zero data retention for frontier models",
-      "summary": "OpenAI announced a zero data retention option for its frontier models. The option lets customers use the models without OpenAI storing their data. OpenAI published the announcement on August 19, 2026.",
-      "whyItMatters": "Strict data handling terms matter to enterprise and government buyers who need privacy guarantees before they adopt frontier models.",
+      "title": "OpenAI offers Zero Data Retention for frontier models",
+      "summary": "OpenAI announced a Zero Data Retention option for its frontier models. Qualifying customers can use these models without OpenAI keeping their data. The offering targets enterprise and regulated customers with strict data rules.",
+      "whyItMatters": "Data retention policy is a major factor in enterprise AI adoption, so this could help OpenAI win business in regulated industries.",
       "whatToWatch": [
-        "Which customers or industries adopt the option first",
-        "Whether rival labs match this data policy"
+        "Which customers or industries qualify for Zero Data Retention",
+        "Whether competitors match this offering"
       ],
       "questions": [
-        "Which models and API tiers does the option cover?",
-        "Does the option change pricing or response speed?"
+        "What qualifies a customer for this option?",
+        "Does it apply to all frontier models or only some?"
       ],
       "sources": [
         {
@@ -150,24 +270,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T19:00:00.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4bH42IUP1LSYL5WNIs0ya1/ed6b0e324c8f142d964229474d7ee601/codex-seo-private-intelligence-v3-1787157696296.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 52,
+      "badge": "Enterprise",
+      "trendScore": 40,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-5759140205",
+      "slug": "z-ai-s-ceo-argues-post-training-not-parameter-count-now-drives-model-g",
+      "lane": "ai",
+      "title": "Z.ai's CEO argues post-training, not parameter count, now drives model gains",
+      "summary": "Latent Space's AINews newsletter covered an interview with Z.ai CEO Jie Tang about GLM 5.3 and what he calls a new post-training scaling law. The framing suggests gains now come more from post-training methods than from raw parameter count. The newsletter summary does not give further specifics of his argument.",
+      "whyItMatters": "If post-training methods matter more than model size, it reshapes where AI labs invest and how they compete, beyond simply building bigger models.",
+      "whatToWatch": [
+        "Independent evaluation of GLM 5.3's claimed gains",
+        "Whether other labs adopt a similar post-training-focused strategy"
+      ],
+      "questions": [
+        "What exactly does Tang mean by \"post-training scaling law\"?",
+        "How does GLM 5.3 perform against rival models?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Death of Params: Z.ai CEO Jie Tang on GLM 5.3 and the new Post-training Scaling Law",
+          "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-20T05:17:12.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-20T05:17:12.000Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!Xdc0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b1d78e9-d676-408c-9f84-8c9f244ef898_864x1821.png",
+      "badge": "Analysis",
+      "trendScore": 36,
+      "confidence": "low"
     },
     {
       "id": "ai-b9b9c0da4a",
       "slug": "developer-essay-on-extensible-software-in-the-age-of-llms-gains-tracti",
       "lane": "ai",
-      "title": "Essay on \"Extensible Software in the age of LLMs\" gains traction",
-      "summary": "A developer blog post titled \"Extensible Software in the age of LLMs\" drew attention on Hacker News. The post discusses how large language models change the way developers build extensible software. The source gives no further detail on its arguments.",
-      "whyItMatters": "The discussion reflects growing interest among developers in how LLMs reshape software architecture and coding practice.",
+      "title": "Essay: what \"extensible software\" means in the age of LLMs",
+      "summary": "A developer blog post, discussed on Hacker News, explores what extensible software design means now that LLMs can write and modify code. It is an opinion piece, not a product announcement. The available information does not detail its specific arguments.",
+      "whyItMatters": "As LLMs take on more coding work, how teams should design extensible software is a live debate that shapes how AI-assisted development tools evolve.",
       "whatToWatch": [
-        "Whether the ideas influence how AI coding tools get built"
+        "Hacker News community reaction and counterarguments",
+        "Whether the ideas influence tooling or framework design"
       ],
       "questions": [
-        "What specific architecture patterns does the post recommend?"
+        "What specific practices does the author recommend?"
       ],
       "sources": [
         {
@@ -179,26 +331,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T16:26:05Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://jeremymorrell.dev/_astro/omg-meme-social.BBc_Z2VQ.png",
       "badge": "Analysis",
-      "trendScore": 45,
+      "trendScore": 33,
       "confidence": "low"
     },
     {
       "id": "ai-9ac0643f24",
       "slug": "replit-expands-software-creation-access-with-gpt-5-6-luna",
       "lane": "ai",
-      "title": "Replit expands access to software creation with GPT-5.6 Luna",
-      "summary": "OpenAI said Replit is expanding access to software creation tools built on its GPT-5.6 Luna model. The announcement points to deeper integration between Replit's coding platform and OpenAI's newest model. OpenAI published the update on August 19, 2026.",
-      "whyItMatters": "Wider access to AI coding tools inside Replit shows continued competition among AI-assisted software development platforms.",
+      "title": "Replit expands software creation access with GPT-5.6 Luna",
+      "summary": "OpenAI said Replit is expanding access to software creation using GPT-5.6 Luna, a model tied to the two companies' partnership. This extends OpenAI and Replit's existing work on AI-assisted coding. Further detail on rollout scope is not yet available.",
+      "whyItMatters": "Coding assistants are one of the clearest commercial uses of LLMs, and wider Replit access signals continued competition for developer-tool market share.",
       "whatToWatch": [
-        "How fast the rollout reaches new Replit users",
-        "Response from rival coding assistants"
+        "Rollout timeline and which Replit users get access",
+        "Performance comparisons of GPT-5.6 Luna against other coding models"
       ],
       "questions": [
-        "What does GPT-5.6 Luna add over earlier models?",
-        "Is the expanded access free or paid?"
+        "What sets GPT-5.6 Luna apart from earlier GPT-5 versions for coding?",
+        "Is access limited to paying Replit tiers?"
       ],
       "sources": [
         {
@@ -210,25 +362,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T07:00:00.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4613fXufQuf1JibaxyPveS/165050780487162a64929413fdfedd79/replit-customer-story-seo-16x9.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 42,
+      "badge": "Partnership",
+      "trendScore": 30,
       "confidence": "medium"
     },
     {
       "id": "ai-11b62d30a2",
       "slug": "onecli-an-open-source-sandboxed-agent-harness-launches-out-of-yc",
       "lane": "ai",
-      "title": "OneCLI (YC S26) launches as an open-source sandboxed agent harness",
-      "summary": "A Y Combinator S26 startup launched OneCLI, an open-source sandboxed harness for running AI agents in teams. The launch appeared on Hacker News. The source gives no further product detail.",
-      "whyItMatters": "Sandboxed agent harnesses address safety and control concerns as more teams put autonomous coding agents into daily use.",
+      "title": "OneCLI launches as an open-source sandboxed agent harness",
+      "summary": "OneCLI, a Y Combinator S26 startup, launched an open-source sandboxed harness for running AI agents in team settings. The Launch HN post frames it as infrastructure for teams that need to run agents safely. Further technical and business detail is not yet available.",
+      "whyItMatters": "Sandboxed agent infrastructure addresses a real safety and reliability gap as more teams put autonomous AI agents into production.",
       "whatToWatch": [
-        "Adoption among engineering teams",
-        "Whether larger vendors add similar sandboxing features"
+        "Developer adoption following the Hacker News launch",
+        "Funding or customer announcements as OneCLI grows out of YC"
       ],
       "questions": [
-        "How does OneCLI's sandboxing differ from existing agent tools?"
+        "How does OneCLI's sandboxing differ from existing agent-harness tools?",
+        "What is OneCLI's business model?"
       ],
       "sources": [
         {
@@ -240,81 +393,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T16:29:02Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://repository-images.githubusercontent.com/1175900220/ddf244eb-befe-4ea2-a784-b1b91be1d0eb",
       "badge": "Launch",
-      "trendScore": 39,
+      "trendScore": 27,
       "confidence": "low"
-    },
-    {
-      "id": "ai-2d5ff31681",
-      "slug": "not-much-happened-today",
-      "lane": "ai",
-      "title": "not much happened today",
-      "summary": "AI News' daily roundup reported that not much happened in the AI industry today. No major release or announcement stood out.",
-      "whyItMatters": "Quiet days remind readers that the AI news cycle does not move at the same pace every day.",
-      "whatToWatch": [],
-      "questions": [],
-      "sources": [
-        {
-          "title": "not much happened today",
-          "url": "https://news.smol.ai/issues/26-08-19-not-much/",
-          "publisher": "AI News",
-          "publishedAt": "2026-08-19T05:44:39.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-19T05:44:39.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
-      "imageUrl": "https://news.smol.ai/api/og?title=not+much+happened+today&description=**Ornith-1.5**+launches+as+a+new+open-weight+model+family+with+**9B+dense%2C+35B+MoE%2C+and+397B+MoE**+variants+under+**MIT+license**%2C+featuring+quantized+formats+like+**FP8%2C+GGUF%2C+MLX%2C+and+NVFP4**+and+showcasing+end-to-end+**self-improvement**+capabilities.+Compression+techniques+improve+accuracy+and+efficiency%2C+with+**Qwen3.8-27B+GGUFs**+using+**Dynamic+V3**+achieving+**10%25+higher+accuracy**+and+1-bit+quantization+retaining+**77%25+BF16+accuracy**+on+**8GB+RAM**.+Agent+evaluation+boards+highlight+models+like+**Claude+Opus+5+%28High%29**%2C+**Kimi+K3**%2C+**GLM+5.2**%2C+**Grok+4.5**%2C+and+**GPT-5.6+Luna**+leading+in+quality+and+value.+**DeepSeek+Harness+%28DSH%29**+introduces+a+plugin-based+open+agent+runtime+architecture+optimized+for+extensibility+and+tooling.+**TrueFoundry**+open-sources+**TrueForge**%2C+a+self-hostable%2C+vendor-neutral+agent+harness+that+reduces+token+usage+by+**30%25**+and+cuts+costs+by+**75%25**+while+maintaining+accuracy%2C+emphasizing+the+growing+importance+of+session%2C+environment%2C+memory%2C+and+tools+layers+in+agent+platforms.&type=issue&issueNumber=08&date=2026-08-19T05%3A44%3A39.731Z&companies=ornith%2Cvllm%2Collama%2Cunsloth%2Cqwen%2Carena%2Cvalsai%2Cdeepseek%2Ctruefoundry%2Cclaude&models=ornith-1.5%2Cqwen3.8-27b%2Cclaude-opus-5%2Ckimi-k3%2Cglm-5.2%2Cgrok-4.5%2Cgpt-5.6-luna%2Cgrok-4.6%2Cglm-5.3%2Ctrueforge",
-      "trendScore": 38,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-e456387186",
-      "slug": "chatgpt-ads-expands-across-europe",
-      "lane": "ai",
-      "title": "ChatGPT Ads expands across Europe",
-      "summary": "OpenAI announced that ChatGPT Ads is expanding across Europe. The move extends OpenAI's advertising product beyond its earlier markets. OpenAI published the announcement on August 18, 2026.",
-      "whyItMatters": "The expansion shows OpenAI building new revenue streams beyond subscriptions, and raises questions about ad-supported AI chat.",
-      "whatToWatch": [
-        "Which European countries get access first",
-        "How European regulators respond to AI-driven ads"
-      ],
-      "questions": [
-        "How does OpenAI target ads within ChatGPT conversations?",
-        "What privacy safeguards apply under EU rules?"
-      ],
-      "sources": [
-        {
-          "title": "ChatGPT Ads expands across Europe",
-          "url": "https://openai.com/index/chatgpt-ads-expands-across-europe",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-18T22:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T22:00:00.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/OvScmX8CxThRRwHLDcyAt/6db3028c57d0866137a4b3fcac0e3166/chatgpt-ads-europe-readable-seo.png?w=1600&h=900&fit=fill",
-      "badge": "Business",
-      "trendScore": 35,
-      "confidence": "medium"
     },
     {
       "id": "ai-7b614d757e",
       "slug": "modular-open-sources-the-mojo-programming-language",
       "lane": "ai",
-      "title": "Mojo language, now under Qualcomm's Modular, goes open-source",
-      "summary": "Modular, the company behind the Mojo programming language and now part of Qualcomm, open-sourced Mojo. The move makes the language's source code publicly available. Hacker News discussed the news on August 19, 2026.",
-      "whyItMatters": "Open-sourcing Mojo could widen adoption of a language built for AI and machine-learning performance, and signals Qualcomm's growing stake in AI tooling.",
+      "title": "Modular open-sources Mojo after move to Qualcomm",
+      "summary": "Modular, the company behind the Mojo programming language, is now part of Qualcomm and has made Mojo open source. Mojo was built for high-performance AI and systems programming. The Hacker News discussion links the open-sourcing decision to the Qualcomm move.",
+      "whyItMatters": "Mojo's shift to open source under a major chipmaker's ownership could reshape tooling for AI performance engineering and hardware-software integration.",
       "whatToWatch": [
-        "Community contribution activity after the release",
-        "How Qualcomm folds Mojo into its own AI hardware plans"
+        "How Qualcomm's ownership shapes Mojo's roadmap and hardware ties",
+        "Developer adoption now that the language is open source"
       ],
       "questions": [
-        "What license does Mojo use?",
-        "Why did Qualcomm keep the open-source plan after acquiring Modular?"
+        "What did Qualcomm's acquisition of Modular involve, and when did it happen?",
+        "Does open-sourcing change Mojo's ties to Nvidia-centric AI tooling?"
       ],
       "sources": [
         {
@@ -326,26 +424,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T07:47:19Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://cdn.prod.website-files.com/68c9c3107effc2ea46e1a82c/6a845980ea521c5fbe46a88c_Highlights.png",
-      "badge": "Open Source",
-      "trendScore": 34,
+      "badge": "Open source",
+      "trendScore": 22,
       "confidence": "low"
     },
     {
       "id": "ai-00320f49d7",
       "slug": "memory-chip-prices-rise-500-in-a-year-ai-newsletter-reports",
       "lane": "ai",
-      "title": "Memory prices jump 500% in a year, Latent Space reports",
-      "summary": "A Latent Space newsletter roundup reported that memory prices rose 500% over the past 12 months. The report ties the surge to demand from the AI industry. The source does not specify which memory type or suppliers drive the increase.",
-      "whyItMatters": "Rising memory prices raise the cost of training and running AI models, and could squeeze margins across the AI supply chain.",
+      "title": "AI-driven demand pushes memory chip prices up 500% in a year",
+      "summary": "Latent Space's AINews newsletter reported that memory chip prices rose 500% over the past 12 months. The report ties the rise to demand from AI systems. It does not specify which memory types or sources drive the figure.",
+      "whyItMatters": "Memory is a major cost input for AI infrastructure, so a steep price rise could raise the cost of training and running AI models industry-wide.",
       "whatToWatch": [
-        "Whether prices keep climbing or level off",
-        "Chipmaker earnings calls for comment on memory supply"
+        "Whether the price rise feeds through to AI hardware and cloud pricing",
+        "How memory makers respond to sustained AI-driven demand"
       ],
       "questions": [
-        "Which memory type—DRAM, HBM, or both—drives the increase?",
-        "How much of the demand comes directly from AI data centers?"
+        "Which memory types, such as HBM or DRAM, saw the increase?",
+        "How much of this rise comes from AI demand versus other sources?"
       ],
       "sources": [
         {
@@ -357,102 +455,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-19T08:44:52.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
+      "updatedAt": "2026-08-20T18:50:49.334Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!-PTb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F95b5b0b3-9bd4-4c08-9c91-ad68807850fc_2272x1434.png",
       "badge": "Market",
-      "trendScore": 31,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-2156e30285",
-      "slug": "glm-5-3-gets-benchmarked-by-artificial-analysis",
-      "lane": "ai",
-      "title": "GLM-5.3 benchmark results published by Artificial Analysis",
-      "summary": "Artificial Analysis published benchmark results for GLM-5.3, a new large language model. Hacker News discussed the results on August 18, 2026. The source does not include specific scores or comparisons.",
-      "whyItMatters": "Independent benchmarks help readers track how new models from Chinese AI labs compare against leading Western frontier models.",
-      "whatToWatch": [
-        "Where GLM-5.3 lands on the broader model leaderboard",
-        "Any response from GLM's developer to the results"
-      ],
-      "questions": [
-        "How does GLM-5.3 compare on cost and speed, not just accuracy?"
-      ],
-      "sources": [
-        {
-          "title": "GLM-5.3 Artificial Analysis Benchmarks",
-          "url": "https://artificialanalysis.ai/models/glm-5-3",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-18T22:06:10Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T22:06:10Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
-      "imageUrl": "https://artificialanalysis.ai/en/models/glm-5-3/opengraph-image?76c5a1db7097b9e1",
-      "badge": "Benchmark",
-      "trendScore": 30,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-67f37d861d",
-      "slug": "openai-publishes-position-on-democratic-oversight-of-ai-in-national-se",
-      "lane": "ai",
-      "title": "OpenAI calls for stronger democratic oversight of AI in national security",
-      "summary": "OpenAI published a post titled \"Strengthening democratic oversight in national security,\" addressing how AI should be governed in national security settings. OpenAI published the post on August 18, 2026. The source gives no specific policy proposals beyond the title.",
-      "whyItMatters": "As AI models enter defense and intelligence work, oversight proposals from a leading lab can shape upcoming government policy debates.",
-      "whatToWatch": [
-        "Whether lawmakers respond to or adopt the proposals",
-        "Similar statements from other AI labs or government bodies"
-      ],
-      "questions": [
-        "What specific oversight mechanisms does OpenAI propose?",
-        "Does this apply to OpenAI's own government contracts?"
-      ],
-      "sources": [
-        {
-          "title": "Strengthening democratic oversight in national security",
-          "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-18T19:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T19:00:00.000Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6HEG4BoWGKBEoSJWCReHz0/1b1c0b24720bb3faec4a71e48e8ceef7/openai-democratic-oversight-page-seo-v004.png?w=1600&h=900&fit=fill",
-      "badge": "Policy",
-      "trendScore": 27,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-1e907c1ba3",
-      "slug": "anthropic-s-claude-code-weekly-limits-promotion-draws-hacker-news-atte",
-      "lane": "ai",
-      "title": "Anthropic details Claude Code weekly usage limits for May–August 2026",
-      "summary": "Anthropic published a support article covering Claude Code's weekly usage limits from May through August 2026. Hacker News discussed the article on August 18, 2026. The source does not include the actual limit numbers.",
-      "whyItMatters": "Usage limits directly affect how developers rely on Claude Code for daily work, and changes can push users toward or away from competing tools.",
-      "whatToWatch": [
-        "Whether Anthropic extends or changes the limits after August",
-        "Developer reaction on forums like Hacker News"
-      ],
-      "questions": [
-        "What are the actual weekly limit numbers?",
-        "Does the change apply to all subscription tiers?"
-      ],
-      "sources": [
-        {
-          "title": "Claude Code May–August 2026 weekly limits promotion",
-          "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-18T17:02:15Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-18T17:02:15Z",
-      "updatedAt": "2026-08-20T04:24:28.885Z",
-      "imageUrl": "https://downloads.intercomcdn.com/i/o/lupk8zyo/792494/717b10d3ebd874823db64841659b/76f3062d78ebbb04863fb1de3ef9cca0.png",
-      "badge": "Product",
-      "trendScore": 27,
+      "trendScore": 19,
       "confidence": "low"
     }
   ]
