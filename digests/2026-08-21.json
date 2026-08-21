@@ -1,0 +1,418 @@
+{
+  "id": "2026-08-21",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-21T13:35:54.806Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Force Opus to prove its work before you sleep",
+    "summary": "Two new tools make an unattended Opus task show proof before it calls itself done. Fablize is a Claude Code plugin that requires completion evidence and passed verification on any Opus task run away from the keyboard. Fable-method ships the same idea as loadable skills, with a think/act/prove eval you can run against a finished task. Install one tonight, so tomorrow's PR review checks proof, not a claim. Separately, OpenCode v1.18.20 stops subagent permission prompts from stalling an overnight run and makes failed subagents resumable — a plain upgrade worth doing regardless of harness.\n\nOn cost, route background subagent work to local or open models: opencodex proxies Claude Code and Codex CLI calls to Ollama, Gemini, Grok, and DeepSeek, so only the parts that need Claude use Claude. AT&T reports cutting coding costs 56% by routing 40% of usage to open models, with only a 2% quality drop at 45B tokens a day — a real number to test against your own subagent routing. Put a hard turn or dollar cap on any setup where agents check each other's work: one dev burned $40 in a night when two agents fell into a mutual fact-checking loop. For control away from the desk, devspace bridges Claude Code to the Claude Web app on your phone.",
+    "bullets": [
+      "Install fivetaku/fablize on any unattended Opus task to require completion evidence and verification before it's marked done",
+      "Load Sahir619/fable-method's think/act/prove skills and eval to check a finished task's work",
+      "Update OpenCode to v1.18.20 to stop subagent permission prompts from stalling overnight runs and to resume failed subagents by task_id",
+      "Set a hard turn or spend cap before letting agents cross-verify each other — one dev lost $40 in a night to a mutual fact-checking loop",
+      "Point a background subagent at lidge-jun/opencodex to run it on Ollama, Gemini, Grok, or DeepSeek instead of Claude",
+      "Use Waishnav/devspace to start and steer a Claude Code task from Claude Web on your phone"
+    ],
+    "signals": [
+      {
+        "label": "Verification-before-done enforcement",
+        "direction": "up",
+        "note": "fablize and fable-method both turn the Fable 5 workflow into an install-and-require procedure for Opus"
+      },
+      {
+        "label": "Routing routine work to open/local models",
+        "direction": "up",
+        "note": "opencodex adds the plumbing and AT&T reports a 56% cost cut at 40% routing with only 2% quality loss"
+      },
+      {
+        "label": "Overnight-run reliability fixes",
+        "direction": "up",
+        "note": "OpenCode v1.18.20 directly targets the permission-prompt and subagent-crash stalls that kill unattended runs"
+      },
+      {
+        "label": "Unbounded multi-agent loops still burn cash",
+        "direction": "flat",
+        "note": "the $40-in-one-night report shows this failure mode has no built-in fix yet, only manual caps"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering ships CLI tools — loop-audit, loop-init, loop-cost — for designing and orchestrating unattended AI coding-agent loops.",
+      "whyItMatters": "Named commands for auditing and costing agent loops mean you don't have to hand-roll your own harness around Claude Code worktrees/subagents.",
+      "category": "technique",
+      "tags": [
+        "loop-engineering",
+        "cli",
+        "orchestration",
+        "unattended-agents"
+      ],
+      "entities": [
+        "cobusgreyling",
+        "Addy Osmani",
+        "Boris Cherny"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering, run loop-init to scaffold a loop, then loop-audit against an existing long-running agent run.",
+      "score": 10526
+    },
+    {
+      "id": "gh-1333135492",
+      "title": "Leutenegger/book-to-skill — Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "url": "https://github.com/Leutenegger/book-to-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T13:15:23Z",
+      "tldr": "Book-to-skill converts any technical book PDF into a Claude Code skill you can reference while you work.",
+      "whyItMatters": "You can turn a manual you already own into a lookup skill instead of re-explaining it to the agent every session.",
+      "category": "tooling",
+      "tags": [
+        "skills",
+        "claude-code",
+        "documentation"
+      ],
+      "entities": [
+        "book-to-skill"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run Leutenegger/book-to-skill against one reference PDF you use often and load the resulting skill into Claude Code.",
+      "score": 1223
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "Fablize is a Claude Code plugin that forces Opus to produce completion evidence and pass verification before it calls a task done.",
+      "whyItMatters": "This makes an unattended agent prove its work before you review the PR, not just claim it finished.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "claude-code",
+        "plugin"
+      ],
+      "entities": [
+        "fablize"
+      ],
+      "models": [
+        "Opus"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize and require it on any Opus task that runs while you are away from the keyboard.",
+      "score": 895
+    },
+    {
+      "id": "rss-opencode-releases-pencodereleasestagv11820",
+      "title": "v1.18.20",
+      "url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.20",
+      "source": "OpenCode releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-21T08:09:31.000Z",
+      "tldr": "OpenCode v1.18.20 makes subagent failures resumable with a task_id, retries more network-error variants, and answers permission prompts triggered by subagents mid-run.",
+      "whyItMatters": "These are the failure modes that stall an overnight run. Upgrading lowers the chance you wake up to a stuck session.",
+      "category": "tooling",
+      "tags": [
+        "reliability",
+        "subagents",
+        "unattended",
+        "release-notes"
+      ],
+      "entities": [
+        "OpenCode"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Update OpenCode to v1.18.20 and check that permission requests from subagents no longer block a run overnight."
+    },
+    {
+      "id": "reddit-rss-anetokencostswhenletting",
+      "title": "How do you handle insane token costs when letting agents run autonomously?",
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1vuarwo/how_do_you_handle_insane_token_costs_when_letting/",
+      "source": "r/AI_Agents",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-21T08:52:00.000Z",
+      "tldr": "A dev burned $40 in one night after two of three autonomous research agents fell into an endless mutual fact-checking loop.",
+      "whyItMatters": "Unbounded agent-to-agent verification is a real, reported cost sink in unattended multi-agent runs, not a hypothetical.",
+      "category": "technique",
+      "tags": [
+        "cost-control",
+        "multi-agent",
+        "guardrails"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": true,
+      "tryThis": "Add a hard turn/spend cap (a hook or wrapper that kills the run past N iterations or $X) before letting agents cross-verify each other unattended.",
+      "discussionUrl": "https://www.reddit.com/r/AI_Agents/comments/1vuarwo/how_do_you_handle_insane_token_costs_when_letting/"
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "Opencodex adds a universal proxy so Codex CLI, Codex App, and Claude Code can call Claude, Gemini, Grok, DeepSeek, or local Ollama models.",
+      "whyItMatters": "You can route cheap or local models to background subagents and save Claude for the parts of the job that need it.",
+      "category": "tooling",
+      "tags": [
+        "proxy",
+        "model-routing",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "opencodex"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point one subagent's model config at a local Ollama model.",
+      "score": 11629
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "Devspace lets you drive Codex from the ChatGPT web app, or Claude Code from the Claude Web app.",
+      "whyItMatters": "You get a phone-friendly chat bridge to your coding agent without opening a terminal.",
+      "category": "tooling",
+      "tags": [
+        "chat-bridge",
+        "remote-control",
+        "claude-code"
+      ],
+      "entities": [
+        "devspace"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Waishnav/devspace and start a Claude Code task from Claude Web on your phone.",
+      "score": 3917
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "Fable-method distills the Claude Fable 5 workflow into skills any model can run, plus an eval that checks the work.",
+      "whyItMatters": "It gives you a concrete think/act/prove structure to enforce verification before an agent calls a task done.",
+      "category": "technique",
+      "tags": [
+        "skills",
+        "verification",
+        "claude-code"
+      ],
+      "entities": [
+        "fable-method"
+      ],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Drop the fable-method skills into your Claude Code skills folder and run its eval against a finished task.",
+      "score": 2240
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "Open-connector is an open-source auth gateway that connects over 1000 SaaS providers to AI agents through MCP, SDK, CLI, and HTTP.",
+      "whyItMatters": "It removes the manual OAuth setup that normally blocks an agent from reaching third-party services while you are asleep.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integration"
+      ],
+      "entities": [
+        "open-connector"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Point one MCP-based subagent at open-connector to authenticate a SaaS tool it needs for an overnight task.",
+      "score": 4836
+    },
+    {
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "Moli is a headless browser for AI agents, built in Rust for speed and compatibility.",
+      "whyItMatters": "A faster, more reliable browser tool cuts one common source of hangs when a subagent browses or scrapes during an unattended run.",
+      "category": "tooling",
+      "tags": [
+        "browser-automation",
+        "rust",
+        "agentic-tools"
+      ],
+      "entities": [
+        "moli"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Swap your agent's browser-automation tool call for lexmount/moli in one workflow and compare hang rate.",
+      "score": 829
+    },
+    {
+      "id": "hn-49378768",
+      "title": "Show HN: Huzzah – a novel approach to coding with AI",
+      "url": "https://www.danielvaughn.dev/posts/huzzah/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-20T19:05:36Z",
+      "tldr": "Huzzah is a new editor built after its author grew exhausted writing full sentences for every change to coding agents.",
+      "whyItMatters": "This is a first-person account of the same agent fatigue you are trying to engineer away. It is early, but worth watching.",
+      "category": "tooling",
+      "tags": [
+        "editor",
+        "workflow",
+        "show-hn"
+      ],
+      "entities": [
+        "Huzzah"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Read the Huzzah Show HN thread and try the editor on one small task.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49378768",
+      "score": 341
+    },
+    {
+      "id": "hn-49375996",
+      "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+      "url": "https://github.com/zachahn/vomit",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-20T15:26:02Z",
+      "tldr": "Vomit runs a separate LLM as a cleanup pass over Claude 5's raw token output before you read it.",
+      "whyItMatters": "A cheap second model can strip verbosity from an agent's output, so your morning review takes less time.",
+      "category": "technique",
+      "tags": [
+        "post-processing",
+        "cost",
+        "output-cleanup"
+      ],
+      "entities": [],
+      "models": [
+        "Claude 5"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Add a small local model as a post-process filter on your agent's output before it lands in the PR description.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49375996",
+      "score": 274
+    },
+    {
+      "id": "rss-ai-news-molaiissues260820notmuch",
+      "title": "not much happened today",
+      "url": "https://news.smol.ai/issues/26-08-20-not-much/",
+      "source": "AI News",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-20T05:44:39.000Z",
+      "tldr": "AT&T says routing 40% of employee AI usage to open models cut coding costs 56% with only a 2% quality drop at 45B tokens/day, while GPT-5.6 Sol and GitHub Copilot/VS Code get steep price cuts.",
+      "whyItMatters": "Concrete evidence that tiering routine coding work to open-weight models cuts spend with minimal quality loss, plus a fresh price cut worth checking against your current subagent routing.",
+      "category": "adoption",
+      "tags": [
+        "cost",
+        "open-models",
+        "routing",
+        "pricing"
+      ],
+      "entities": [
+        "AT&T",
+        "OpenAI",
+        "Anthropic",
+        "GitHub Copilot"
+      ],
+      "models": [
+        "GPT-5.6 Sol"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Check current GPT-5.6 Sol and Copilot/VS Code pricing, and route low-stakes subagent work to an open model to test AT&T's cost/quality tradeoff yourself."
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Enforcing proof-of-work on unattended Opus tasks",
+      "summary": "Fablize and fable-method both distill the Claude Fable 5 workflow into a requirement that an agent produce completion evidence and pass verification before it calls a task done.",
+      "itemIds": [
+        "gh-1268946118",
+        "gh-1291544092"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Cutting agent spend by routing to open/local models",
+      "summary": "Opencodex gives you the proxy to send subagent calls to local or open-weight models, and AT&T's reported 56% cost cut at 40% routing is the evidence that it's worth doing.",
+      "itemIds": [
+        "gh-1273824907",
+        "rss-ai-news-molaiissues260820notmuch"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 12,
+    "outputTokens": 44611,
+    "usd": 1.0796,
+    "model": "claude-sonnet-5",
+    "calls": 5,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
