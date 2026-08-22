@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-22T16:25:30.012Z",
-  "contentVersion": 49,
+  "generatedAt": "2026-08-22T21:57:00.683Z",
+  "contentVersion": 50,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,56 +123,53 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-22T16:25:30.012Z"
+      "updatedAt": "2026-08-22T21:57:00.683Z"
     },
     {
-      "id": "ai-9a19920264",
-      "slug": "nvidia-reportedly-absorbs-poolside-in-12b-reverse-acquihire-deal",
+      "id": "ai-c0f9d10986",
+      "slug": "why-your-local-llm-feels-dumber-than-it-is",
       "lane": "ai",
-      "title": "Report: Poolside Strikes $12B 'Reverse Execuhire' Deal With NVIDIA",
-      "summary": "Latent Space's AI News newsletter reports a $12 billion deal between AI startup Poolside and NVIDIA, described as a 'reverse execuhire.' Per the report, Poolside's founders stay on and receive $1 billion of the deal, while employees move to NVIDIA for $6 billion. The report also describes an 'Infraco' entity scaling toward 7 gigawatts of 'neocloud' capacity. These figures come from one newsletter summary and are not yet confirmed elsewhere.",
-      "whyItMatters": "A deal this size would be one of the largest AI talent-and-infrastructure moves of the year and would deepen NVIDIA's ties to a frontier AI lab.",
+      "title": "Why your local LLM feels dumber than it is",
+      "summary": "A Hacker News post looks at why models run on personal hardware often seem weaker than their benchmark scores suggest. It points to factors like quantization, prompt handling, and context limits. The piece reflects growing interest in running large language models locally.",
+      "whyItMatters": "Local and on-device LLM use is growing. Readers weighing cloud versus local setups need to know these gaps exist.",
       "whatToWatch": [
-        "Confirmation from Poolside or NVIDIA directly",
-        "More detail on the Infraco entity and its 7GW buildout",
-        "How the deal splits founders from employees in final terms"
+        "More guides on tuning local LLM setups.",
+        "Wider discussion of quantization tradeoffs in local tooling."
       ],
       "questions": [
-        "What counts as a 'reverse execuhire' here, exactly?",
-        "Why structure this as an execuhire instead of a straight acquisition?",
-        "What happens to Poolside's existing products and customers?"
+        "Which specific models or benchmarks does the post reference?",
+        "How much of the gap can better local tooling fix?"
       ],
       "sources": [
         {
-          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
-          "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-21T05:45:21.000Z"
+          "title": "Why your local LLM feels dumber than it is",
+          "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-22T18:14:16Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-21T05:45:21.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!mQfw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1a668ad4-aca6-4c1c-ac78-5132b8f3d7a8_834x844.png",
-      "badge": "Breaking",
-      "trendScore": 18,
+      "publishedAt": "2026-08-22T18:14:16Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png",
+      "badge": "Analysis",
+      "trendScore": 51,
       "confidence": "low"
     },
     {
       "id": "ai-9e98c378bd",
       "slug": "ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-taking-ov",
       "lane": "ai",
-      "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-      "summary": "Latent Space's AI News newsletter argues that simulation-based methods are starting to replace some traditional AI approaches. It frames the trade-off as results that are 10% worse, but 100 times cheaper and 10,000 times faster. The supplied source gives this framing only, with no further detail on which tasks or companies it covers.",
-      "whyItMatters": "If this trade-off holds up broadly, it could reset how AI teams weigh cost and speed against raw performance.",
+      "title": "10% worse, 100x cheaper, 10,000x faster: why simulation is taking over",
+      "summary": "A Latent Space newsletter roundup argues that cheaper, faster simulation-based methods are gaining ground, even when they perform somewhat worse than heavier approaches. The piece frames this as a broader shift in how AI systems get built and tested.",
+      "whyItMatters": "If cost and speed increasingly beat raw accuracy, this could reshape how labs and startups prioritize research spending.",
       "whatToWatch": [
-        "Follow-up detail from Latent Space on which use cases apply",
-        "Other outlets picking up or challenging the framing",
-        "Companies publicly adopting simulation-based methods"
+        "Whether major labs adopt simulation-first methods publicly.",
+        "Follow-up commentary from other AI newsletters and researchers."
       ],
       "questions": [
-        "Which tasks does the 10%-worse trade-off apply to?",
-        "Which companies are already using this approach?"
+        "Which specific tasks or products does this trend apply to?",
+        "Who is driving the shift toward simulation?"
       ],
       "sources": [
         {
@@ -184,57 +181,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:36:00.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Vw9p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc661e612-544b-4eaa-9603-78e5f28276b7_1956x1228.png",
       "badge": "Analysis",
-      "trendScore": 40,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-7fc8fd49db",
-      "slug": "simile-ai-s-joon-sung-park-pitches-simulation-as-a-new-scaling-law",
-      "lane": "ai",
-      "title": "Simile AI's Joon Sung Park: Simulation Is a New Scaling Law",
-      "summary": "Latent Space published a conversation with Joon Sung Park of Simile AI, who argues that simulation is a new kind of scaling law for AI. The interview pairs with a separate Latent Space newsletter piece on simulation-based methods gaining ground. No further detail on the argument's evidence was supplied.",
-      "whyItMatters": "If simulation becomes a recognized scaling axis alongside compute and data, it could redirect where AI labs put research money.",
-      "whatToWatch": [
-        "Product or research announcements from Simile AI",
-        "Other labs adopting or disputing the 'simulation as scaling law' framing"
-      ],
-      "questions": [
-        "What evidence backs treating simulation as a scaling law?",
-        "How does Simile AI plan to make money from this?"
-      ],
-      "sources": [
-        {
-          "title": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
-          "url": "https://www.latent.space/p/simile",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-21T23:37:38.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-21T23:37:38.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!KTvP!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F212197985%2F1be75a53-fbfd-411e-9c15-042f080b6e34%2Ftranscoded-1787341808.png",
-      "badge": "Analysis",
-      "trendScore": 33,
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "ai-80c0bfdc85",
       "slug": "how-the-ai-agent-harness-has-evolved",
       "lane": "ai",
-      "title": "Latent Space Traces How the AI Agent Harness Has Evolved",
-      "summary": "Latent Space published a piece on the evolution of the 'agent harness' — the software layer that lets an AI agent take action. The article traces how this layer has changed, according to the publisher. No further specifics were supplied beyond the title.",
-      "whyItMatters": "The harness layer shapes how reliably AI agents work in real products, so shifts here affect the wider agent tooling market.",
+      "title": "The evolution of the agent harness",
+      "summary": "A Latent Space piece traces how the tooling and scaffolding around AI agents, known as agent harnesses, has changed over time. It examines how this scaffolding shapes what agents can reliably do.",
+      "whyItMatters": "Agent harness design increasingly determines which AI agent products work in practice. This is a key factor in coding and automation tools.",
       "whatToWatch": [
-        "Concrete harness design patterns adopted by vendors",
-        "Any moves toward standardizing this layer"
+        "New agent harness releases from major AI coding tool vendors.",
+        "Continued Latent Space coverage of agent tooling trends."
       ],
       "questions": [
-        "What specific harness changes does the piece identify?",
-        "Which companies' agent products does it draw on?"
+        "Which specific harnesses or companies does the piece focus on?"
       ],
       "sources": [
         {
@@ -246,70 +211,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:30:52.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!bUv7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F758de9a0-631f-43a0-a331-fd871432a60b_1280x720.png",
       "badge": "Analysis",
-      "trendScore": 40,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-455c502973",
-      "slug": "google-deepmind-asks-what-full-stack-ai-actually-means",
-      "lane": "ai",
-      "title": "Google DeepMind Asks What 'Full-Stack' AI Actually Means",
-      "summary": "Google DeepMind published a blog post that examines what the term 'full-stack' means when applied to AI. The post reflects on the concept rather than announcing a new product, based on the supplied title.",
-      "whyItMatters": "Google is a top AI lab, so how it frames 'full-stack AI' hints at how it plans to compete and package its offerings against rivals.",
-      "whatToWatch": [
-        "Follow-up posts or products that use this framing",
-        "Whether competitors adopt or push back on the term"
-      ],
-      "questions": [
-        "Does this signal a coming product bundle from Google?",
-        "How does Google's definition differ from how competitors use the term?"
-      ],
-      "sources": [
-        {
-          "title": "What does “full-stack” AI actually mean?",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/what-full-stack-development-means/",
-          "publisher": "Google DeepMind",
-          "publishedAt": "2026-08-21T16:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-21T16:00:00.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnail_BfIj9lP.max-600x600.format-webp.webp",
-      "badge": "Analysis",
-      "trendScore": 35,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-aa49782e4e",
-      "slug": "developer-builds-a-self-hosted-sandboxed-agentic-software-factory",
-      "lane": "ai",
-      "title": "Developer Builds a Self-Hosted, Sandboxed Agentic Software Factory",
-      "summary": "A blog post shared on Hacker News describes an almost fully self-hosted, sandboxed system of AI agents that write software. The author calls it a personal 'software factory' project. Details beyond the post's title were not supplied.",
-      "whyItMatters": "It shows how individual developers are assembling self-hosted, sandboxed agent pipelines, a grassroots counterpart to commercial agentic-coding tools.",
-      "whatToWatch": [
-        "Whether the project is released as open source",
-        "Community adoption or forks"
-      ],
-      "questions": [
-        "What models or frameworks power the sandboxing?",
-        "How does it compare to commercial agentic coding tools?"
-      ],
-      "sources": [
-        {
-          "title": "Building an (almost) fully self-hosted, sandboxed, agentic software factory",
-          "url": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-21T16:27:52Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-21T16:27:52Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/agentic-developer.png",
       "trendScore": 35,
       "confidence": "low"
     },
@@ -317,16 +221,16 @@
       "id": "ai-ec74d4d3ec",
       "slug": "ozbrain-launches-as-a-shared-knowledge-base-for-ai-agents-and-teams",
       "lane": "ai",
-      "title": "Show HN: OzBrain Pitches a Shared Knowledge Base for Agents and Teams",
-      "summary": "A developer posted OzBrain on Hacker News, describing it as a shared 'brain' for knowledge that both AI agents and human team members can draw on. It is a Show HN launch post, so detail is limited to the pitch itself.",
-      "whyItMatters": "Shared memory between agents and people is a recurring gap in multi-agent workflows, so tools like this test how much demand exists for that layer.",
+      "title": "OzBrain: a shared knowledge base for AI agents and teams",
+      "summary": "A developer launched OzBrain on Hacker News's Show HN. The project aims to give AI agents and human teams access to a shared memory, or \"brain,\" of knowledge. Details beyond the launch post are limited.",
+      "whyItMatters": "Shared memory tools are a growing category in agent tooling. They address a common weakness in today's AI agents: lack of persistent, shared context.",
       "whatToWatch": [
-        "Reaction in the Hacker News comment thread",
-        "Whether early adopters or integrations emerge"
+        "Community reaction and adoption on Hacker News.",
+        "Whether the project gains integrations with existing agent frameworks."
       ],
       "questions": [
-        "How does OzBrain handle data privacy across a team?",
-        "Does it integrate with existing agent frameworks?"
+        "How does OzBrain store and share knowledge technically?",
+        "Is it open source, and under what license?"
       ],
       "sources": [
         {
@@ -338,25 +242,145 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T23:09:06Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://ozbrain.com/og.png?v=4",
-      "trendScore": 35,
+      "badge": "Show HN",
+      "trendScore": 30,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-aa49782e4e",
+      "slug": "developer-builds-a-self-hosted-sandboxed-agentic-software-factory",
+      "lane": "ai",
+      "title": "A developer's self-hosted, sandboxed agentic software factory",
+      "summary": "A Hacker News post describes one developer's project to build an almost fully self-hosted, sandboxed system for agentic software development. It is a personal build writeup, not a commercial product launch.",
+      "whyItMatters": "It shows how individual developers experiment with self-hosted alternatives to cloud-based agentic coding tools.",
+      "whatToWatch": [
+        "Hacker News discussion for follow-up ideas or forks.",
+        "Whether the approach influences other self-hosted agent projects."
+      ],
+      "questions": [
+        "What tools or models does the setup rely on?",
+        "How production-ready is it beyond a personal project?"
+      ],
+      "sources": [
+        {
+          "title": "Building an (almost) fully self-hosted, sandboxed, agentic software factory",
+          "url": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-21T16:27:52Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-21T16:27:52Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/agentic-developer.png",
+      "trendScore": 30,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-455c502973",
+      "slug": "google-deepmind-asks-what-full-stack-ai-actually-means",
+      "lane": "ai",
+      "title": "Google DeepMind explains what \"full-stack\" AI means",
+      "summary": "Google DeepMind published a blog post examining what \"full-stack\" AI means, covering layers from infrastructure to models to applications. It is a conceptual explainer, not a product announcement.",
+      "whyItMatters": "Google is a leading AI lab. Its framing of \"full-stack\" AI signals how it positions its strategy against rivals like OpenAI and Microsoft.",
+      "whatToWatch": [
+        "Whether Google ties this framing to future product or infrastructure announcements."
+      ],
+      "questions": [
+        "Does the post preview any specific new Google AI products?"
+      ],
+      "sources": [
+        {
+          "title": "What does “full-stack” AI actually mean?",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/what-full-stack-development-means/",
+          "publisher": "Google DeepMind",
+          "publishedAt": "2026-08-21T16:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-21T16:00:00.000Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnail_BfIj9lP.max-600x600.format-webp.webp",
+      "badge": "Analysis",
+      "trendScore": 30,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-aed0c7e69c",
+      "slug": "proliferate-an-open-source-self-hostable-codex-alternative-for-coding-",
+      "lane": "ai",
+      "title": "Proliferate: an open-source, self-hostable Codex alternative for coding agents",
+      "summary": "A Hacker News Show HN post introduced Proliferate, an open-source tool billed as a self-hostable alternative to Codex-style coding agent infrastructure. Public detail on the project is still limited.",
+      "whyItMatters": "Open-source alternatives to proprietary coding agent infrastructure give developers more control. They could pressure closed platforms on price and flexibility.",
+      "whatToWatch": [
+        "Adoption and stars on GitHub after launch.",
+        "Feedback from the Hacker News community on functionality."
+      ],
+      "questions": [
+        "Which coding agents or models does Proliferate support?",
+        "How does it compare functionally to Codex?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+          "url": "https://github.com/proliferate-ai/proliferate",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-21T16:47:15Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-21T16:47:15Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://repository-images.githubusercontent.com/1226062469/50b40d4c-7024-47d3-ae18-42af0df14ea6",
+      "badge": "Show HN",
+      "trendScore": 29,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-7fc8fd49db",
+      "slug": "simile-ai-s-joon-sung-park-pitches-simulation-as-a-new-scaling-law",
+      "lane": "ai",
+      "title": "Simile AI's Joon Sung Park: simulation as the next scaling law",
+      "summary": "In a Latent Space conversation, Joon Sung Park of Simile AI argues that simulation, not traditional model scaling, is becoming a new driver of AI progress. This builds on the simulation theme running through recent Latent Space coverage.",
+      "whyItMatters": "If simulation-based methods become a recognized scaling paradigm, labs and investors may shift research resources toward them.",
+      "whatToWatch": [
+        "Further public work or papers from Simile AI.",
+        "Whether other labs adopt or respond to the \"simulation scaling law\" framing."
+      ],
+      "questions": [
+        "What evidence supports simulation as a scaling law, versus a useful technique?",
+        "How does Simile AI's approach differ from existing simulation work?"
+      ],
+      "sources": [
+        {
+          "title": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
+          "url": "https://www.latent.space/p/simile",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-21T23:37:38.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-21T23:37:38.000Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!KTvP!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F212197985%2F1be75a53-fbfd-411e-9c15-042f080b6e34%2Ftranscoded-1787341808.png",
+      "badge": "Analysis",
+      "trendScore": 28,
       "confidence": "low"
     },
     {
       "id": "ai-c241503165",
       "slug": "opinion-llms-prove-the-unix-philosophy-won",
       "lane": "ai",
-      "title": "Blog Post Argues Large Language Models Prove 'Unix Won'",
-      "summary": "A blog post shared on Hacker News argues that the design and behavior of large language models show that Unix philosophy won out in the end. It is an opinion piece connecting LLM tooling to long-standing Unix design ideas, based on the supplied title.",
-      "whyItMatters": "It shows how some engineers read current LLM tooling trends as validation of older software design principles, which can shape how people build around models.",
+      "title": "Opinion: LLMs are proof that Unix won",
+      "summary": "A blog post shared on Hacker News argues that the success of large language models reflects the lasting influence of Unix design philosophy. It is a personal opinion essay linking AI systems to older computing traditions.",
+      "whyItMatters": "The essay offers a philosophical lens on why today's AI tooling looks the way it does. This gives context for readers who think about AI infrastructure design.",
       "whatToWatch": [
-        "Discussion in the Hacker News comment thread",
-        "Rebuttals or follow-up posts from other engineers"
+        "Hacker News discussion threads for pushback or elaboration."
       ],
       "questions": [
-        "What specific parallels does the author draw between Unix design and LLM behavior?",
-        "Is this a technical claim or mainly a rhetorical framing?"
+        "What specific Unix principles does the author link to LLM design?"
       ],
       "sources": [
         {
@@ -368,21 +392,21 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T15:59:16Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "badge": "Analysis",
-      "trendScore": 33,
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "badge": "Opinion",
+      "trendScore": 28,
       "confidence": "low"
     },
     {
       "id": "ai-fb937fcbd3",
       "slug": "lawrence-paulson-recounts-how-he-co-wrote-a-paper-with-leslie-lamport",
       "lane": "ai",
-      "title": "Computer Scientist Recalls Co-Writing a Paper With Leslie Lamport",
-      "summary": "A blog post recounts how its author came to co-write a paper with Leslie Lamport, the noted computer scientist. It is a personal reminiscence, not a new AI development, based on the supplied title.",
-      "whyItMatters": "It touches the broader computer science lineage AI research builds on, though it is tangential to current AI industry news.",
+      "title": "How I came to write that paper with Leslie Lamport",
+      "summary": "A personal essay, shared on Hacker News, recounts how the author came to co-write a paper with computer scientist Leslie Lamport. It is a historical and personal reflection, not AI industry news.",
+      "whyItMatters": "Lamport's work on distributed systems and formal verification underpins infrastructure that modern AI systems rely on, though this post itself is a personal history piece.",
       "whatToWatch": [],
       "questions": [
-        "Which paper is being described, and does it bear on current AI research?"
+        "What paper and topic does the essay describe?"
       ],
       "sources": [
         {
@@ -394,33 +418,7 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T14:46:01Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "trendScore": 27,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-27762536ec",
-      "slug": "ai-news-digest-not-much-happened-today",
-      "lane": "ai",
-      "title": "not much happened today",
-      "summary": "The smol.ai 'AI News' newsletter titled its August 21 issue 'not much happened today,' signaling a lighter news cycle than usual for the AI industry.",
-      "whyItMatters": "Slow days are still useful signal for readers tracking the pace of AI news, and often precede bursts of activity around major releases.",
-      "whatToWatch": [
-        "Whether the next issue reports a pickup in activity"
-      ],
-      "questions": [],
-      "sources": [
-        {
-          "title": "not much happened today",
-          "url": "https://news.smol.ai/issues/26-08-21-not-much/",
-          "publisher": "AI News",
-          "publishedAt": "2026-08-21T05:44:39.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-21T05:44:39.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://news.smol.ai/api/og?title=not+much+happened+today&description=**Ox+Alpha**+emerged+as+a+mystery+model+with+strong+coding+and+agentic+performance%2C+likely+a+**Zhipu%2FGLM-family**+model+such+as+**GLM-5.3+Vision**.+Analysts+suggest+its+gains+come+from+post-training+and+infrastructure+improvements+rather+than+sheer+size%2C+based+on+the+**743B+base**+of+**GLM-5.2**+with+enhancements+like+**SAO**+for+long-horizon+tasks.+**DeepSeek**+released+**DeepSeek-V4-Flash-Vision-Exp**%2C+adding+multimodal+support+and+mixed+text%2Bimage+API+capabilities%2C+with+performance+near+**Opus-4.8**.+Chinese+AI+labs+are+advancing+on+price%2Fperformance+and+multimodal+agents%2C+pressuring+US+labs.+**OpenAI**+cut+**GPT-5.6+Sol**+pricing+by+over+20%25+for+three+months+and+reported+explosive+**Codex**+usage+hitting+20M+active+users%2C+while+adding+better+spend+controls+for+API+usage.&type=issue&issueNumber=08&date=2026-08-21T05%3A44%3A39.731Z&companies=zhipu-ai%2Cdeepseek-ai%2Copenai&models=glm-5.3-vision%2Cglm-5.2%2Cdeepseek-v4-flash-vision-exp%2Copus-4.8%2Cgpt-5.6-sol%2Ccodex",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "trendScore": 23,
       "confidence": "low"
     }

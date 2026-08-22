@@ -1,23 +1,23 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-22T16:25:30.012Z",
-  "contentVersion": 43,
+  "generatedAt": "2026-08-22T21:57:00.683Z",
+  "contentVersion": 44,
   "stories": [
     {
       "id": "crypto-2e050859eb",
       "slug": "solana-cuts-block-time-to-350-milliseconds-as-first-governance-vote-ne",
       "lane": "crypto",
-      "title": "Solana cuts block time to 350 milliseconds as first governance vote nears",
-      "summary": "Solana reduced its slot time to 350 milliseconds, a change meant to speed up block production on the network. Separately, Solana's first-ever governance vote is approaching, but a live quorum display showing 60% appears to have a bug, per CryptoSlate.",
-      "whyItMatters": "Faster block times affect Solana's competitiveness against other chains, and a buggy quorum display raises questions about the reliability of the network's first governance process.",
+      "title": "Solana cuts slot time to 350ms as first governance vote nears",
+      "summary": "Solana reduced its blockchain slot time to 350 milliseconds, speeding up how fast the network processes transactions. The change lands as Solana approaches its first governance vote. CryptoSlate reported that a live quorum display for the vote showed 60%, but flagged the number as an error.",
+      "whyItMatters": "Faster slot times may help Solana compete for high-throughput applications, but a broken quorum readout raises doubts about the reliability of its new governance tools.",
       "whatToWatch": [
-        "Result of Solana's first governance vote",
+        "Outcome of Solana's first governance vote",
         "Whether the quorum display error gets fixed or explained",
-        "Stability of the network after the 350ms slot time change"
+        "Any network performance changes after the slot-time cut"
       ],
       "questions": [
-        "What does the governance vote actually decide?",
-        "Is the quorum bug just a display issue, or does it affect real vote counts?"
+        "What caused the quorum display error?",
+        "Does the faster slot time add new risks to network stability?"
       ],
       "sources": [
         {
@@ -35,63 +35,27 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-21T13:45:13.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/hi-china-solana-is-ready-new-1.jpg",
-      "badge": "Protocol Update",
-      "trendScore": 74,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-ffa2f57cb4",
-      "slug": "treasury-buyback-tweak-fuels-bitcoin-s-surge-toward-80-000",
-      "lane": "crypto",
-      "title": "Bitcoin surges 25% toward $80,000 as Treasury bond buyback tweak lifts risk appetite",
-      "summary": "Bitcoin jumped about 25% in a matter of days, nearing $80,000, a rally CoinDesk links to a tweak in the US Treasury's bond buyback program. Separately, the Treasury set a deadline for offshore stablecoin issuers to keep their access to US customers, per CryptoSlate.",
-      "whyItMatters": "The rally ties bitcoin's price to macro liquidity policy rather than crypto-specific news, while the stablecoin deadline signals tighter US enforcement on offshore issuers.",
-      "whatToWatch": [
-        "Whether bitcoin holds its gains near $80,000",
-        "The Treasury's stablecoin deadline and which issuers must comply"
-      ],
-      "questions": [
-        "What exactly changed in the Treasury buyback program?",
-        "Which offshore stablecoin issuers are affected by the deadline?"
-      ],
-      "sources": [
-        {
-          "title": "Treasury just put a deadline on offshore stablecoins’ access to US customers",
-          "url": "https://cryptoslate.com/treasury-just-put-a-deadline-on-offshore-stablecoins-access-to-us-customers/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-22T08:35:21.000Z"
-        },
-        {
-          "title": "How a Treasury buyback tweak helped bitcoin surge 25% to nearly $80,000 in days",
-          "url": "https://www.coindesk.com/markets/2026/08/22/how-a-treasury-buyback-tweak-helped-bitcoin-surge-nearly-25-in-days",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-22T05:05:13.000Z"
-        }
-      ],
-      "sourceCount": 2,
-      "publishedAt": "2026-08-22T05:05:13.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/67b45979a1b02d081d74dd1cb768215b598664d5-4858x3239.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 73,
+      "badge": "Technical",
+      "trendScore": 69,
       "confidence": "medium"
     },
     {
       "id": "crypto-8b3b08bfe9",
       "slug": "sec-proposes-75-million-raise-pathway-that-lets-tokens-later-exit-secu",
       "lane": "crypto",
-      "title": "SEC proposes $75 million raise pathway that lets tokens later exit securities status",
-      "summary": "The SEC has proposed a rule that would let crypto projects raise up to $75 million and later end the token's classification as a security, according to CryptoSlate. Few other details of the proposal have surfaced yet.",
-      "whyItMatters": "A defined path for tokens to exit securities status would resolve years of regulatory uncertainty and could reshape how new projects structure token sales.",
+      "title": "SEC floats path for crypto projects to raise $75M and exit securities status",
+      "summary": "The SEC proposed a rule that would let crypto projects raise up to $75 million and later end their token's status as a securities contract. CryptoSlate reports the proposal would give projects a defined offramp from securities regulation once conditions are met.",
+      "whyItMatters": "A formal exit from securities status would remove a major legal overhang for token issuers and could reshape how US projects structure fundraising.",
       "whatToWatch": [
-        "Formal proposed rule text and comment period",
-        "Industry and issuer reaction to the plan"
+        "Publication of formal SEC rule text and a comment period",
+        "Industry and legal reaction to the $75 million cap",
+        "Whether already-trading tokens could qualify"
       ],
       "questions": [
-        "What conditions would a token need to meet to end its securities status?",
-        "Would this apply to tokens already sold under securities rules?"
+        "What conditions must a project meet to end securities status?",
+        "Would this apply retroactively to tokens already trading?"
       ],
       "sources": [
         {
@@ -103,26 +67,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T13:45:53.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/sec-crypto-funding-rules.jpg",
       "badge": "Regulatory",
-      "trendScore": 65,
+      "trendScore": 60,
       "confidence": "low"
     },
     {
       "id": "crypto-00ad894775",
       "slug": "eu-regulators-eye-defi-vaults-under-mica-but-enforcement-won-t-be-easy",
       "lane": "crypto",
-      "title": "EU regulators eye DeFi vaults under MiCA, but enforcement won't be easy",
-      "summary": "Cointelegraph reports that the EU's MiCA framework is turning attention to DeFi vaults, the automated smart-contract products that pool and manage user funds. Applying licensing rules built for centralized firms to decentralized, code-based systems poses real practical problems.",
-      "whyItMatters": "How MiCA treats DeFi vaults will determine whether decentralized protocols can keep serving EU users or face the same compliance load as centralized exchanges.",
+      "title": "MiCA regulators turn attention to DeFi vaults",
+      "summary": "The EU's MiCA framework is starting to focus on DeFi vaults, Cointelegraph reports. The report says applying securities-style rules to decentralized, code-governed vaults will be technically and legally difficult.",
+      "whyItMatters": "How MiCA treats DeFi vaults will help decide whether decentralized products can operate legally in the EU or face the same compliance burden as centralized platforms.",
       "whatToWatch": [
-        "Formal MiCA guidance or enforcement targeting DeFi vaults",
-        "Whether major protocols restrict EU access in response"
+        "Specific MiCA guidance or enforcement actions on DeFi vaults",
+        "Response from vault protocols and their operators"
       ],
       "questions": [
-        "Who would be held liable for a vault with no central operator?",
-        "Which DeFi products count as vaults under the rule?"
+        "How will regulators identify a responsible party for a decentralized vault?",
+        "Will enforcement target front-end operators instead of the underlying protocol?"
       ],
       "sources": [
         {
@@ -134,26 +98,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T13:30:00.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/defi-lending-vaults-live-in-micas-blind-spot-but-brussels-may-be-about-to-close-it.jpg",
       "badge": "Regulatory",
-      "trendScore": 64,
+      "trendScore": 59,
       "confidence": "medium"
     },
     {
       "id": "crypto-f54dcf21ee",
       "slug": "crypto-s-week-short-squeeze-pummels-bears-x-eyes-stablecoin-payouts-fo",
       "lane": "crypto",
-      "title": "Crypto's week: short squeeze pummels bears, X eyes stablecoin payouts for creators",
-      "summary": "CoinDesk's weekly roundup covers a squeeze-led rally that hit bitcoin and ether short-sellers hard this week, plus reports that Elon Musk's X wants to pay creators using stablecoins. The roundup groups five stories from the week's crypto markets and business news.",
-      "whyItMatters": "A short squeeze can push prices further than fundamentals justify, while X adopting stablecoin payouts would be a notable use case for the technology beyond trading.",
+      "title": "Crypto's week: bears get squeezed as bitcoin and ether rally, X eyes stablecoin payouts",
+      "summary": "CoinDesk's weekly roundup says short sellers in bitcoin and ether took heavy losses as a squeeze-led rally pushed prices higher. Separately, Elon Musk's X is reportedly looking at paying creators in stablecoins.",
+      "whyItMatters": "A squeeze-driven rally reflects trader positioning more than fundamentals, and a platform the size of X adopting stablecoin payouts would mark a real step toward mainstream stablecoin use.",
       "whatToWatch": [
-        "Whether the rally holds once short positions are cleared out",
-        "Any official rollout details from X on stablecoin payments"
+        "Whether X confirms or launches stablecoin creator payments",
+        "Whether the rally holds once short positions clear out"
       ],
       "questions": [
-        "How much of the rally was short-covering versus new demand?",
-        "Which stablecoin would X actually use, and where?"
+        "How much of the rally was short covering versus new buying?",
+        "Which stablecoin, and on which chain, would X use?"
       ],
       "sources": [
         {
@@ -165,56 +129,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T12:00:00.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/e5935e0dfa2e7f85bd8761d8a1d6e4e8f1cce2c3-8192x5464.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Weekly Roundup",
-      "trendScore": 62,
+      "trendScore": 58,
       "confidence": "medium"
     },
     {
-      "id": "crypto-55500fbae7",
-      "slug": "bitcoin-nears-80-000-as-etf-buying-pauses-for-the-weekend",
+      "id": "crypto-2df1e16746",
+      "slug": "instant-bitcoin-validation-would-need-17-gpu-years-of-compute-report-f",
       "lane": "crypto",
-      "title": "Bitcoin nears $80,000 as ETF buying support fades into the weekend",
-      "summary": "Bitcoin approached $80,000, but CryptoSlate notes the buying support from spot ETFs typically disappears over the weekend since funds don't trade Saturday or Sunday. That leaves weekend price moves more exposed to thinner spot-market trading.",
-      "whyItMatters": "ETF flows have become a major driver of bitcoin's price, so a weekend without that support is a real test of whether the current rally has staying power.",
+      "title": "Instant Bitcoin validation would need 17 GPU-years of compute, report finds",
+      "summary": "A CryptoSlate report estimates that achieving 27-millisecond transaction validation on Bitcoin would take roughly 17 GPU years of compute power. The figure shows the scale of hardware needed for near-instant settlement on Bitcoin's current design.",
+      "whyItMatters": "The estimate gives a concrete benchmark for judging Bitcoin speed-up proposals against a real technical constraint, rather than marketing claims.",
       "whatToWatch": [
-        "ETF inflow and outflow data when markets reopen Monday",
-        "Whether bitcoin holds near $80,000 over the weekend"
+        "Any proposals that would cut the compute requirement",
+        "Follow-up analysis from other researchers"
       ],
       "questions": [
-        "How much of the recent rally is ETF-driven versus organic spot demand?"
+        "What assumptions sit behind the 17 GPU-year estimate?",
+        "Which project or team is pursuing 27ms validation?"
       ],
       "sources": [
         {
-          "title": "Bitcoin hits $80,000’s doorstep just as the ETF bid disappears for the weekend",
-          "url": "https://cryptoslate.com/bitcoin-hits-80000s-doorstep-just-as-the-etf-bid-disappears-for-the-weekend/",
+          "title": "Reaching instant 27ms validation on Bitcoin will take 17 GPU years of compute power",
+          "url": "https://cryptoslate.com/reaching-instant-27ms-validation-on-bitcoin-will-take-17-gpu-years-of-compute-power/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-22T09:45:03.000Z"
+          "publishedAt": "2026-08-22T20:45:15.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-22T09:45:03.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-weekend-market-blackout.jpg",
-      "badge": "Markets",
-      "trendScore": 61,
+      "publishedAt": "2026-08-22T20:45:15.000Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-stopwatch-gpu.jpg",
+      "badge": "Analysis",
+      "trendScore": 56,
       "confidence": "low"
     },
     {
       "id": "crypto-3f4a80a149",
       "slug": "riot-may-free-up-1-500-btc-after-crash-forced-a-1-825-btc-pledge",
       "lane": "crypto",
-      "title": "Riot's bitcoin rally could free up 1,500 BTC pledged during earlier crash",
-      "summary": "Bitcoin miner Riot Platforms had pledged 1,825 BTC as collateral after a previous price crash. CryptoSlate reports the recent rally may now let Riot release as much as 1,500 BTC of that pledged collateral.",
-      "whyItMatters": "It shows how mining companies lean on bitcoin holdings as loan collateral, and how price swings directly affect their financial flexibility.",
+      "title": "Riot Platforms may free up 1,500 BTC as rally reverses crash-era pledge",
+      "summary": "CryptoSlate reports that a bitcoin price crash had forced miner Riot Platforms to pledge 1,825 BTC, likely as loan collateral. The recent rally may now let Riot release roughly 1,500 BTC of that pledge.",
+      "whyItMatters": "Miner collateral moves show how leveraged bitcoin holders behave through price swings, and a large unlock can affect coins available to the market.",
       "whatToWatch": [
         "Confirmation from Riot on any collateral release",
-        "Riot's disclosed BTC holdings in upcoming updates"
+        "Whether freed BTC is sold or held"
       ],
       "questions": [
-        "What loan or obligation was the pledged BTC securing?",
-        "Would Riot sell freed-up bitcoin or keep holding it?"
+        "What loan or facility required the original pledge?",
+        "Would a released 1,500 BTC be sold into the market?"
       ],
       "sources": [
         {
@@ -226,10 +190,41 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T10:50:30.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/riot-bitcoin-collateral-release.jpg",
-      "badge": "Corporate",
-      "trendScore": 57,
+      "trendScore": 53,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-3000d23431",
+      "slug": "illinois-rule-could-hit-crypto-users-with-monthly-tax-bills-on-total-h",
+      "lane": "crypto",
+      "title": "Illinois rule could hit crypto users with monthly tax bills on total holdings",
+      "summary": "CryptoSlate reports that new Illinois rules could require everyday crypto users to pay monthly tax bills based on the total value of their holdings, if their broker fails to collect the tax first.",
+      "whyItMatters": "Taxing total asset value, rather than gains or transactions, would be a major departure from typical crypto tax treatment and could set a precedent other states watch.",
+      "whatToWatch": [
+        "Which brokers count as 'covered' under the rule",
+        "The rule's effective date and any legal challenges",
+        "Guidance on how users self-report if a broker doesn't collect"
+      ],
+      "questions": [
+        "Does the tax apply to unrealized gains or to total value regardless of gains?",
+        "How would Illinois enforce this against out-of-state exchanges?"
+      ],
+      "sources": [
+        {
+          "title": "Everyday crypto users face monthly tax bills on total asset value if covered brokers fail to collect under new Illinois rules",
+          "url": "https://cryptoslate.com/everyday-crypto-users-face-monthly-tax-bills-on-total-asset-value-if-covered-brokers-fail-to-collect-under-new-illinois-rules/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-22T21:55:10.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-22T21:55:10.000Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/illinois-broker-tax-burden.jpg",
+      "badge": "Regulatory",
+      "trendScore": 52,
       "confidence": "low"
     },
     {
@@ -237,15 +232,15 @@
       "slug": "zcash-jumps-48-to-over-800-on-grayscale-etf-push",
       "lane": "crypto",
       "title": "Zcash surges 48% past $800 on Grayscale spot ETF push",
-      "summary": "Zcash jumped about 48% to trade above $800, a move CoinDesk ties to Grayscale's push for a spot Zcash ETF. The rally has fueled talk of Zcash as a \"next bitcoin\" candidate, a comparison worth treating with caution.",
-      "whyItMatters": "A privacy coin drawing ETF interest would mark a notable shift, given regulators' historical wariness toward privacy-focused crypto assets.",
+      "summary": "Zcash jumped 48% to trade above $800, CoinDesk reports, as a Grayscale push for a spot Zcash ETF fueled speculation the privacy coin could be the 'next bitcoin.'",
+      "whyItMatters": "A sharp rally tied to ETF speculation, not a fundamental change, is a reminder that filing news can move prices well ahead of any regulatory decision.",
       "whatToWatch": [
-        "Whether Grayscale formally files for a spot Zcash ETF",
-        "Any SEC response to the filing push"
+        "SEC action on a Grayscale spot Zcash ETF",
+        "Whether the rally holds or fades"
       ],
       "questions": [
-        "Has Grayscale actually filed, or is this speculative positioning?",
-        "How much of the price move survives once ETF speculation cools?"
+        "Has Grayscale filed a spot Zcash ETF, or is this speculation about a future filing?",
+        "How does Zcash's privacy design affect its ETF approval odds?"
       ],
       "sources": [
         {
@@ -257,25 +252,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T05:37:43.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/d29e6d7594033495762bede569ca03135e9b62c4-1514x840.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Markets",
-      "trendScore": 57,
+      "trendScore": 52,
       "confidence": "medium"
     },
     {
       "id": "crypto-c7481c2132",
       "slug": "bitmart-considers-partial-restart-and-creditor-payouts-weeks-after-shu",
       "lane": "crypto",
-      "title": "BitMart considers partial restart and creditor payouts weeks after shutdown",
-      "summary": "Crypto exchange BitMart, which announced a shutdown weeks ago, is reportedly weighing a partial restart along with payouts to creditors, according to CoinDesk. The situation remains unresolved.",
-      "whyItMatters": "How BitMart handles creditor claims will be watched as a test case for exchange wind-downs and user fund recovery in crypto.",
+      "title": "BitMart weighs partial restart and creditor payouts weeks after shutdown",
+      "summary": "CoinDesk reports that crypto exchange BitMart is now considering a partial restart of operations and payouts to creditors, weeks after announcing it would shut down.",
+      "whyItMatters": "A reversal from shutdown to partial restart matters for affected users' odds of recovering funds, and shows how exchange failures can play out.",
       "whatToWatch": [
-        "A formal announcement on restart timing or payout terms"
+        "A formal announcement on restart scope and timeline",
+        "Terms and size of any creditor payouts"
       ],
       "questions": [
-        "What caused the original shutdown, and has that issue been fixed?",
-        "How much of creditor funds would actually be recovered?"
+        "Why did BitMart originally shut down, and what changed?",
+        "What share of creditors would be made whole?"
       ],
       "sources": [
         {
@@ -287,26 +283,27 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T15:16:41.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/420f2af41b8e84b394d9798060c7ccfa92703ed7-2280x1284.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Exchange",
-      "trendScore": 55,
+      "badge": "Breaking",
+      "trendScore": 50,
       "confidence": "medium"
     },
     {
       "id": "crypto-3ddf5c3231",
       "slug": "the-sandbox-halts-base-and-bnb-chain-bridging-after-exploit",
       "lane": "crypto",
-      "title": "The Sandbox halts Base and BNB Chain bridging after exploit",
-      "summary": "Web3 gaming platform The Sandbox suspended bridging on Base and BNB Chain after an exploit, CoinDesk reports. The pause is a precaution while the incident is investigated.",
-      "whyItMatters": "Bridge exploits remain one of the most common ways funds are stolen in crypto, and this incident shows the risk persists even at established web3 platforms.",
+      "title": "Sandbox halts Base and BNB Chain bridging after exploit",
+      "summary": "Web3 gaming network The Sandbox has paused bridging on Base and BNB Chain following an exploit, CoinDesk reports.",
+      "whyItMatters": "Bridge exploits remain one of crypto's most persistent security weak points, and a pause affects users' ability to move assets between chains.",
       "whatToWatch": [
-        "A post-mortem from Sandbox on the exploit's cause and scope",
-        "When bridging resumes on Base and BNB Chain"
+        "Sandbox's post-mortem on the exploit's cause and losses",
+        "Timeline for restoring bridging",
+        "Any reimbursement plan for affected users"
       ],
       "questions": [
         "How much was lost in the exploit?",
-        "Are user funds affected, or only the bridge contract?"
+        "Was the vulnerability in Sandbox's own bridge code or a third-party dependency?"
       ],
       "sources": [
         {
@@ -318,25 +315,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T14:10:17.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/c910fc1d77a080b35fa9ee1b719813158511ee07-1600x900.png?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Security Incident",
-      "trendScore": 54,
+      "badge": "Breaking",
+      "trendScore": 50,
       "confidence": "medium"
     },
     {
       "id": "crypto-71db380fd0",
       "slug": "tokenized-stocks-could-repeat-wall-street-s-1960s-paper-crisis-fairmin",
       "lane": "crypto",
-      "title": "Tokenized stocks could repeat Wall Street's 1960s 'paper crisis,' Fairmint CEO warns",
-      "summary": "The CEO of Fairmint warns that tokenized stocks risk recreating the settlement backlog problems of Wall Street's 1960s \"paper crisis,\" when overwhelmed back-office paperwork forced markets to close early, according to CoinDesk.",
-      "whyItMatters": "As tokenized equities gain traction, unresolved settlement and infrastructure questions could undercut the argument that blockchain fixes old market plumbing rather than repeating it.",
+      "title": "Tokenized stocks risk a 1960s-style 'paper crisis,' Fairmint CEO warns",
+      "summary": "CoinDesk reports that Fairmint's CEO warns tokenized stocks could repeat Wall Street's 1960s 'paper crisis,' when back-office paperwork failures nearly broke the settlement system.",
+      "whyItMatters": "As tokenized equities grow, operational and settlement risk, not just technology, could decide whether the market scales safely.",
       "whatToWatch": [
-        "How tokenized stock platforms address settlement infrastructure as volumes grow"
+        "Specific back-office or settlement fixes proposed by tokenization platforms",
+        "Regulatory scrutiny of tokenized stock infrastructure"
       ],
       "questions": [
-        "What specific infrastructure gaps is Fairmint's CEO pointing to?",
-        "Which tokenized stock platforms are most exposed to this risk?"
+        "What specific operational gaps exist today?",
+        "Which platforms are most exposed to this risk?"
       ],
       "sources": [
         {
@@ -348,25 +346,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T14:00:00.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/155e3ead47a755d673f9182dd4ef2a4d2eaecf98-1500x1001.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Analysis",
-      "trendScore": 54,
+      "trendScore": 49,
       "confidence": "medium"
     },
     {
       "id": "crypto-42d26d3381",
       "slug": "ai-driven-attacks-target-bitcoin-software-prompting-a-new-defense-effo",
       "lane": "crypto",
-      "title": "AI-driven attacks target Bitcoin software, prompting a new defense effort",
-      "summary": "Decrypt reports that Bitcoin's core software has become a target for AI-assisted attacks, and a group has formed to counter the threat. The initial report offers limited detail on the specific attack methods or the group's approach.",
-      "whyItMatters": "If AI tools are lowering the barrier to finding or exploiting flaws in Bitcoin's codebase, that raises the stakes for how the network's core software gets reviewed and secured.",
+      "title": "AI is making Bitcoin's software a bigger target, security group says",
+      "summary": "Decrypt reports that AI tools have made Bitcoin's underlying software a more attractive target for attackers, prompting a group to organize a defense effort.",
+      "whyItMatters": "Bitcoin's security depends on the integrity of its core software, so a rise in AI-assisted attacks on that code is a systemic risk worth tracking.",
       "whatToWatch": [
-        "Further details the group releases on identified attacks or defenses built"
+        "Details on the group's defensive measures",
+        "Any disclosed vulnerabilities or attempted exploits"
       ],
       "questions": [
-        "What kind of vulnerabilities have AI tools actually found in Bitcoin software?",
-        "Who is organizing and funding the defense effort?"
+        "What does the group's defense effort actually involve, such as audits, bounties, or tooling?",
+        "Has an AI-assisted attack on Bitcoin software already succeeded?"
       ],
       "sources": [
         {
@@ -378,10 +377,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T15:31:04.000Z",
-      "updatedAt": "2026-08-22T16:25:30.012Z",
+      "updatedAt": "2026-08-22T21:57:00.683Z",
       "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/bitcoin-decrypt-style-specs-gID_7.png@png",
       "badge": "Security",
-      "trendScore": 51,
+      "trendScore": 47,
       "confidence": "low"
     }
   ]
