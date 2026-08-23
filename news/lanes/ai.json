@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-23T17:35:34.849Z",
-  "contentVersion": 53,
+  "generatedAt": "2026-08-23T22:35:20.039Z",
+  "contentVersion": 54,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,21 +123,21 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-23T17:35:34.849Z"
+      "updatedAt": "2026-08-23T22:35:20.039Z"
     },
     {
       "id": "ai-c0f9d10986",
       "slug": "why-your-local-llm-feels-dumber-than-it-is",
       "lane": "ai",
       "title": "Why your local LLM feels dumber than it is",
-      "summary": "A Hacker News post explores why LLMs run locally often feel weaker than their benchmark scores suggest. It reflects a common complaint among people who run open models on their own hardware, rather than through hosted APIs. The post gives no vendor or product details in its title alone.",
-      "whyItMatters": "Trust in local, self-hosted models depends on their real-world performance matching published benchmarks.",
+      "summary": "A discussion piece circulating on Hacker News looks at why models run locally often seem less capable than the same models accessed through a hosted API. No further detail on the article's specific claims is available yet.",
+      "whyItMatters": "Local and open-weight model deployment is a growing part of the AI landscape, and gaps between perceived and actual model quality affect how builders choose between local and hosted setups.",
       "whatToWatch": [
-        "Follow-up discussion or tooling fixes from the local-LLM community."
+        "Whether the discussion identifies specific fixable causes worth tracking"
       ],
       "questions": [
-        "What specific factors cause the gap between benchmark scores and felt performance?",
-        "Do model or tooling makers plan to respond?"
+        "What specific factors does the piece blame for the perceived gap?",
+        "Does this reflect a real technical issue or user setup problems?"
       ],
       "sources": [
         {
@@ -149,70 +149,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T18:14:16Z",
-      "updatedAt": "2026-08-23T17:35:34.849Z",
+      "updatedAt": "2026-08-23T22:35:20.039Z",
       "imageUrl": "https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png",
       "badge": "Analysis",
-      "trendScore": 37,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-9e98c378bd",
-      "slug": "ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-taking-ov",
-      "lane": "ai",
-      "title": "Why simulation is taking over: 10% worse, 100x cheaper, 10000x faster",
-      "summary": "A Latent Space newsletter roundup argues that simulated approaches are gaining ground because they are far cheaper and faster, even when the output quality is somewhat lower. The piece frames this as a broader tradeoff reshaping how some AI work gets done. No further detail on the specific method or product is given beyond the title.",
-      "whyItMatters": "If cost and speed keep winning out over small quality losses, it could shift how AI teams choose to build and test their systems.",
-      "whatToWatch": [
-        "Whether this simulation-first approach spreads to more parts of the AI pipeline."
-      ],
-      "questions": [
-        "What kind of simulation is being described, and in which part of the AI workflow?",
-        "Who is adopting this approach, and at what scale?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-          "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-22T07:36:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-22T07:36:00.000Z",
-      "updatedAt": "2026-08-23T17:35:34.849Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!Vw9p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc661e612-544b-4eaa-9603-78e5f28276b7_1956x1228.png",
-      "badge": "Analysis",
-      "trendScore": 19,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-80c0bfdc85",
-      "slug": "how-the-ai-agent-harness-has-evolved",
-      "lane": "ai",
-      "title": "The evolution of the agent harness",
-      "summary": "A Latent Space piece traces how the software scaffolding around AI agents, the \"harness\" that manages tools, memory, and orchestration, has changed over time. The title alone does not specify which harnesses or vendors it covers. It reads as an analysis piece rather than a news report of a specific release.",
-      "whyItMatters": "The agent harness is a key layer for anyone building or evaluating AI agents, since it shapes how reliably an agent can act.",
-      "whatToWatch": [
-        "Whether the piece's framing gets picked up by agent framework builders."
-      ],
-      "questions": [
-        "Which specific harnesses or frameworks does the piece compare?",
-        "What does it say counts as meaningful progress versus incremental change?"
-      ],
-      "sources": [
-        {
-          "title": "The Evolution of the Agent Harness",
-          "url": "https://www.latent.space/p/attention-interface",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-08-22T07:30:52.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-22T07:30:52.000Z",
-      "updatedAt": "2026-08-23T17:35:34.849Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!bUv7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F758de9a0-631f-43a0-a331-fd871432a60b_1280x720.png",
-      "badge": "Analysis",
-      "trendScore": 19,
+      "trendScore": 33,
       "confidence": "low"
     }
   ]
