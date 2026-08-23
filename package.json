@@ -10,6 +10,7 @@
     "aggregate:ondemand": "node scripts/aggregate.mjs --mode on-demand",
     "aggregate:news": "node scripts/aggregate-news.mjs",
     "aggregate:news:dry": "node scripts/aggregate-news.mjs --dry-run",
+    "backfill:published": "node scripts/backfill-published.mjs",
     "publish:local": "bash scripts/publish-local.sh",
     "publish:local:dry": "bash scripts/publish-local.sh --dry-run",
     "test": "node --test"

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Publish the digest once a day from this Mac.
+
+  Why this exists: the `schedule:` block in .github/workflows/aggregate.yml is
+  commented out, so nothing publishes on its own. Over the first 24 days that
+  left four days with no digest at all (08-02, 08-11, 08-12, 08-14) and four
+  days published twice. An app whose promise is a daily brief cannot depend on
+  someone remembering to trigger it.
+
+  There are two ways to fix that. Re-enabling the Actions cron needs
+  ANTHROPIC_API_KEY in the repo secrets and bills API credits per run. This
+  plist instead runs publish-local.sh, which falls back to the logged-in
+  `claude` CLI session and bills the subscription. Pick one — running both
+  publishes the same day twice.
+
+  Install:
+    cp scripts/launchd/com.baotran.aitrend.daily.plist ~/Library/LaunchAgents/
+    # edit WorkingDirectory and the claude/node paths below to match this machine
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.baotran.aitrend.daily.plist
+
+  Check on it:
+    launchctl print gui/$(id -u)/com.baotran.aitrend.daily
+    tail -f /tmp/aitrend-daily.log
+
+  Remove:
+    launchctl bootout gui/$(id -u)/com.baotran.aitrend.daily
+
+  Caveat worth knowing: launchd will not wake a sleeping Mac for this. If the
+  machine is asleep at 09:05 the run fires when it next wakes, so a closed lid
+  all day still means a missed day. The Actions cron is the only option that is
+  genuinely independent of this laptop.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.baotran.aitrend.daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <!-- Login shell so PATH picks up `claude` and `node` the way it does in a
+         terminal. launchd's own environment has almost nothing on PATH, which
+         is the usual reason a plist that works by hand fails on a timer. -->
+    <string>./scripts/publish-local.sh &gt;&gt; /tmp/aitrend-daily.log 2&gt;&amp;1</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/btran/.superset/projects/ai-trend-content</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <!-- 09:05 local. Five past the hour, not on it: the source feeds are
+         themselves cron-driven and the top of the hour is when they are
+         mid-update. -->
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>5</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/aitrend-daily.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/aitrend-daily.log</string>
+
+  <!-- Deliberately absent: RunAtLoad. Loading the plist should not publish a
+       digest as a side effect of installing it. -->
+</dict>
+</plist>
