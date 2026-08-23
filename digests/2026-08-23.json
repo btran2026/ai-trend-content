@@ -1,0 +1,941 @@
+{
+  "id": "2026-08-23",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-23T03:48:41.374Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Fablize forces Opus to prove its work before it reports done",
+    "summary": "Tonight's real changes are the verification and loop tools, not the model news. Fablize wraps Opus in a completion-evidence-verification procedure, so it must show proof before it calls a task done. loop-engineering ships loop-init, loop-audit, and loop-cost, ready commands to scaffold and check an agent loop. A plain-language output style trims Opus 5 review replies by 17% without losing bug coverage, worth adding before your next overnight run. Also: Anthropic confirmed it silently tests reduced effort tiers in Claude Code, so a quality dip overnight may not be your prompt's fault.\n\nOn cost, Kimi K3 (2.78 trillion parameters) now runs locally across three separate projects: an 8.24GB CPU-only build, a 55GB Linux server, and a single-device OpenAI-compatible API you can point a subagent at. DeepSeek V4 and Qwen MoE models get similar local runtimes, one even streams weights onto an iPhone. opencodex and devspace let you route cheap or subscription-based models into your existing Claude Code and Codex setup without rewriting prompts. Away from the desk, omnigent, OpenBot, and nodeterm add remote control, pre-action approval, and visual tracking for agents you leave running unattended overnight.",
+    "bullets": [
+      "Install fivetaku/fablize on Opus runs to force completion-evidence-verification before it reports done",
+      "Clone cobusgreyling/loop-engineering and run loop-init to scaffold a loop, then loop-audit and loop-cost to check it",
+      "Add a plain-language output style to Claude Code and Codex CLI, cuts review replies 17% shorter with no lost bug coverage",
+      "Run Kimi K3 locally for free: FareedKhan-dev/kimi-k3-in-c needs 8.24GB RAM on CPU, wangeai/K3Flight needs about 55GB on Linux",
+      "Route routine subagent calls to a local or cheaper model through lidge-jun/opencodex without changing your prompts",
+      "Pin your effort level in Claude Code; Anthropic confirmed it silently tests lower effort tiers on some sessions"
+    ],
+    "signals": [
+      {
+        "label": "Frontier-scale models running on hardware you own",
+        "direction": "up",
+        "note": "Three separate projects now run the 2.78T-parameter Kimi K3 locally (8.24GB CPU build, 55GB Linux server, single-device API), alongside local DeepSeek V4 and Qwen MoE runtimes, one on iPhone."
+      },
+      {
+        "label": "Self-verification tooling for unattended agents",
+        "direction": "up",
+        "note": "fablize, loop-engineering, and the plain-language output style all target making agent output trustworthy and reviewable without babysitting."
+      },
+      {
+        "label": "Trust in default agent behavior",
+        "direction": "down",
+        "note": "Anthropic confirmed Claude Code silently A/B tests reduced effort tiers, meaning overnight run quality can shift with no config change on your end."
+      },
+      {
+        "label": "Tooling for controlling agents away from the desk",
+        "direction": "up",
+        "note": "omnigent, OpenBot, and nodeterm all shipped in this window adding remote sandbox control, pre-action approval logs, and visual multi-session tracking."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "The loop-engineering repo ships CLI tools loop-audit, loop-init, and loop-cost for designing and orchestrating multi-agent coding loops.",
+      "whyItMatters": "These commands give him ready patterns to audit agent loops and track cost, matching his goal of longer unattended runs he can verify each morning.",
+      "category": "tooling",
+      "tags": [
+        "agent-orchestration",
+        "cli",
+        "cost-tracking",
+        "claude-code"
+      ],
+      "entities": [
+        "cobusgreyling",
+        "loop-engineering"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-init on a repo to scaffold an agent loop, then loop-audit to check it.",
+      "score": 10556
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A 2.78-trillion-parameter Kimi K3 model now runs inference on one CPU in 8.24 GB of RAM, with no GPU, no BLAS, and no framework.",
+      "whyItMatters": "A frontier-scale model now fits hardware you likely already own, so you can test heavy reasoning tasks locally at zero API cost.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "cost"
+      ],
+      "entities": [],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and run it on a spare machine to benchmark against your paid API calls.",
+      "score": 6291
+    },
+    {
+      "id": "gh-1333135492",
+      "title": "Leutenegger/book-to-skill — Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "url": "https://github.com/Leutenegger/book-to-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T13:15:23Z",
+      "tldr": "book-to-skill converts any technical book PDF into a ready-to-use Claude Code skill.",
+      "whyItMatters": "You can turn reference material you already own into a skill your agents consult mid-task, instead of re-explaining rules in every prompt.",
+      "category": "tooling",
+      "tags": [
+        "skills",
+        "claude-code",
+        "documentation"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run Leutenegger/book-to-skill on a PDF you reference often and drop the output into .claude/skills.",
+      "score": 1229
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that forces Opus through a completion-evidence-verification procedure before it reports work done.",
+      "whyItMatters": "This is a direct way to get self-verifying agent runs and fewer false 'done' claims overnight.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "claude-code",
+        "unattended"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Opus"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize and require it on any overnight Opus run.",
+      "score": 895
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "ponytail is a prompt/skill that pushes AI coding agents toward minimal, lazy-senior-dev-style code instead of over-engineering.",
+      "whyItMatters": "Drop it in as a skill to cut down on bloated agent-generated diffs you'd otherwise trim during PR review.",
+      "category": "technique",
+      "tags": [
+        "prompt-engineering",
+        "skill",
+        "code-quality"
+      ],
+      "entities": [
+        "DietrichGebert"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and add it as a Claude Code skill.",
+      "score": 108273
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Codex CLI, Codex App/SDK, and Claude Code call any model, including Gemini, Grok, DeepSeek, and local Ollama models.",
+      "whyItMatters": "You can route cheap or local models into your existing Claude Code setup and cut API spend without changing your prompts or workflow.",
+      "category": "technique",
+      "tags": [
+        "routing",
+        "cost",
+        "proxy",
+        "claude-code"
+      ],
+      "entities": [
+        "Claude Code",
+        "OpenAI Codex",
+        "Ollama"
+      ],
+      "models": [
+        "Claude",
+        "Gemini",
+        "Grok",
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point Claude Code at a local Ollama model for routine subagent tasks.",
+      "score": 11821
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor, and Pi under one sandbox and policy layer, controllable from any device.",
+      "whyItMatters": "One place to enforce sandbox rules across agents and check on runs remotely, without rewriting prompts per tool.",
+      "category": "agentic",
+      "tags": [
+        "multi-agent",
+        "sandboxing",
+        "remote-control"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex",
+        "Cursor"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try omnigent-ai/omnigent to wrap your existing Claude Code and Codex sessions under one sandbox policy.",
+      "score": 9177
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "NanoNets/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/NanoNets/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft (NanoNets) adds codebase-specific context to Claude Code, Cursor, Codex, and Gemini to make agent runs faster and cheaper.",
+      "whyItMatters": "Less wasted context per call means shorter unattended runs and lower token spend on repetitive lookups.",
+      "category": "tooling",
+      "tags": [
+        "context",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "NanoNets",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install NanoNets/Graft and point it at your repo before your next overnight Claude Code run.",
+      "score": 4161
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "devspace turns a ChatGPT or Claude web session into a full coding agent like Codex or Claude Code.",
+      "whyItMatters": "You can offload some agent work to a web chat subscription instead of paying per-token API costs.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "web-chat",
+        "agent-bridge"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Waishnav/devspace and test it on a low-stakes task to see if it replaces a paid API call.",
+      "score": 3946
+    },
+    {
+      "id": "gh-1336502227",
+      "title": "CopilotKit/OpenBot — Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T00:44:59Z",
+      "tldr": "CopilotKit's OpenBot gives open-source AI coworkers their own computer, browser, and files, with every action approved before it runs and logged after.",
+      "whyItMatters": "The pre-action gate and action log give him a built-in audit trail for unattended agent runs, useful for reviewing what an agent did overnight.",
+      "category": "tooling",
+      "tags": [
+        "agent-sandbox",
+        "audit-log",
+        "unattended-agents"
+      ],
+      "entities": [
+        "CopilotKit",
+        "OpenBot",
+        "AG-UI"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone CopilotKit/OpenBot and wire an AG-UI agent to it to get pre-action approval and a post-run action log.",
+      "score": 2345
+    },
+    {
+      "id": "gh-1333111893",
+      "title": "ccch1mneyyy/dsh-TUI — DSH 官方公众号收录的 TUI 补位插件：Claude Code 风，鲸鱼顶栏/实时状态/流式思考/双击 Esc 回滚/上下文进度+TPS。npm 一键装。  DSH official WeChat featured TUI plugin — Claude Code style: whale bar, live status, streaming thoughts, double-Esc rollback, context bar",
+      "url": "https://github.com/ccch1mneyyy/dsh-TUI",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T12:49:31Z",
+      "tldr": "dsh-TUI is an npm-installable terminal UI for DeepSeek Harness with a Claude-Code-style status bar, streaming thoughts, double-Esc rollback, and a context/TPS meter.",
+      "whyItMatters": "It gives you the same run visibility and rollback you rely on in Claude Code, if you try DeepSeek Harness.",
+      "category": "tooling",
+      "tags": [
+        "tui",
+        "monitoring",
+        "deepseek-harness"
+      ],
+      "entities": [
+        "DeepSeek Harness"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "npm install the ccch1mneyyy/dsh-TUI plugin if you try DeepSeek Harness this week.",
+      "score": 2321
+    },
+    {
+      "id": "gh-1270584305",
+      "title": "eneskirca/nodeterm — Node-based terminal manager for AI coding agents — tmux-backed terminals and parallel agent sessions as draggable nodes on an infinite pan/zoom canvas. macOS, Linux, and a browser Server Edition.",
+      "url": "https://github.com/eneskirca/nodeterm",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T21:25:13Z",
+      "tldr": "nodeterm is a tmux-backed terminal manager that shows parallel AI agent sessions as draggable nodes on an infinite canvas, for macOS, Linux, and browser.",
+      "whyItMatters": "Built for a worktree-plus-subagents workflow — track multiple unattended agent runs visually instead of juggling terminal tabs.",
+      "category": "tooling",
+      "tags": [
+        "terminal",
+        "parallel-agents",
+        "tmux",
+        "worktrees"
+      ],
+      "entities": [
+        "eneskirca"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone eneskirca/nodeterm and attach it to your tmux sessions running parallel Claude Code worktrees.",
+      "score": 1059
+    },
+    {
+      "id": "gh-1317239419",
+      "title": "wangeai/K3Flight — Run Kimi K3 locally on CPU with ~55GB measured runtime RAM. A single-file Linux inference server powered by cPilot Runtime.",
+      "url": "https://github.com/wangeai/K3Flight",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-30T12:21:48Z",
+      "tldr": "K3Flight runs Kimi K3 on CPU-only Linux boxes using about 55GB RAM via a single-file inference server (cPilot Runtime).",
+      "whyItMatters": "Lets you route heavy coding tasks to a free local model instead of paying API fees, on hardware you likely already own.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cost",
+        "cpu",
+        "open-models"
+      ],
+      "entities": [
+        "wangeai"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone wangeai/K3Flight and run the single-file server on a spare Linux box with 64GB RAM.",
+      "score": 1019
+    },
+    {
+      "id": "gh-1253566852",
+      "title": "notatestuser/ds4-control — macOS menubar app for fast local DeepSeek V4 Pro/Flash, with 1M context.",
+      "url": "https://github.com/notatestuser/ds4-control",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-05-29T15:41:13Z",
+      "tldr": "ds4-control is a macOS menubar app for running local DeepSeek V4 Pro/Flash with 1M context.",
+      "whyItMatters": "One-click local model with huge context for cost-free background or bulk-context work off the API meter.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "macos",
+        "cost",
+        "long-context"
+      ],
+      "entities": [
+        "notatestuser"
+      ],
+      "models": [
+        "DeepSeek V4 Pro",
+        "DeepSeek V4 Flash"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install notatestuser/ds4-control and route long-context, low-stakes tasks to local DeepSeek V4 instead of the API.",
+      "score": 962
+    },
+    {
+      "id": "gh-1314404827",
+      "title": "gavamedia/deltafin — Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
+      "url": "https://github.com/gavamedia/deltafin",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-28T01:01:23Z",
+      "tldr": "The deltafin repo runs the full Kimi K3 model on a single device and exposes an OpenAI-compatible API server for local chat and coding agents.",
+      "whyItMatters": "He can point his existing OpenAI-compatible agent tooling at a local Kimi K3 server, cutting API spend on background or subagent work.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "openai-compatible",
+        "self-hosted"
+      ],
+      "entities": [
+        "gavamedia",
+        "deltafin"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone gavamedia/deltafin, run its OpenAI-compatible server locally, and point a low-priority subagent at it instead of a paid API.",
+      "score": 775
+    },
+    {
+      "id": "gh-1321790489",
+      "title": "leonickson1/Swiftlet — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low RAM, including on iPh",
+      "url": "https://github.com/leonickson1/Swiftlet",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-03T13:03:37Z",
+      "tldr": "Swiftlet is a Swift/Metal runtime that streams MoE expert weights from storage to run 35B and 80B Qwen models on Apple devices, iPhone included, with low RAM.",
+      "whyItMatters": "Opens a path to on-device coding-model tooling on Mac or iPhone without any cloud call or API cost.",
+      "category": "open-models",
+      "tags": [
+        "on-device",
+        "apple",
+        "moe",
+        "local-inference"
+      ],
+      "entities": [
+        "leonickson1"
+      ],
+      "models": [
+        "Qwen"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone leonickson1/Swiftlet and try streaming a 35B Qwen MoE model on your Mac.",
+      "score": 556
+    },
+    {
+      "id": "hn-49390739",
+      "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+      "url": "https://github.com/proliferate-ai/proliferate",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-21T16:47:15Z",
+      "tldr": "Proliferate is an open-source, self-hostable AI IDE that runs Claude Code, Codex, OpenCode, Cursor, and Grok side by side.",
+      "whyItMatters": "Gives you a single self-hosted front end to orchestrate multiple coding agents instead of juggling separate terminals.",
+      "category": "tooling",
+      "tags": [
+        "self-hosted",
+        "multi-agent",
+        "ide"
+      ],
+      "entities": [
+        "Proliferate"
+      ],
+      "models": [
+        "Claude Code",
+        "Codex",
+        "OpenCode",
+        "Cursor",
+        "Grok"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone proliferate-ai/proliferate and wire it up to your existing Claude Code and Codex sessions.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49390739",
+      "score": 44
+    },
+    {
+      "id": "reddit-rss-2prbuildinllamacpponqwen",
+      "title": "I benchmark DFlash 2 (PR build) in llama.cpp on Qwen 3.8 27B against all speculative methods for 3 days. 2.26x on 100 real coding prompts, 4.68x with one n-gram drafter on top. Up to 8x on specific cases.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvncyh/i_benchmark_dflash_2_pr_build_in_llamacpp_on_qwen/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-22T20:41:35.000Z",
+      "tldr": "A developer builds Inco AI's DFlash 2 speculative-decoding PR for llama.cpp and gets 2.26x faster Qwen 3.8 27B coding generation, 4.68x with an added n-gram drafter.",
+      "whyItMatters": "This cuts local-inference latency for coding tasks on hardware he could own. It also shows exactly where n-gram drafting helps and where it does not.",
+      "category": "technique",
+      "tags": [
+        "speculative-decoding",
+        "llama.cpp",
+        "local-inference",
+        "qwen"
+      ],
+      "entities": [
+        "Inco AI",
+        "llama.cpp"
+      ],
+      "models": [
+        "Qwen 3.8 27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Build the DFlash 2 PR branch in llama.cpp and pair it with an n-gram drafter for Qwen 3.8 27B coding runs.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vvncyh/i_benchmark_dflash_2_pr_build_in_llamacpp_on_qwen/"
+    },
+    {
+      "id": "reddit-rss-agestandarddoestoacoding",
+      "title": "What a plain language standard does to a coding agent",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vveyvm/what_a_plain_language_standard_does_to_a_coding/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-22T15:12:20.000Z",
+      "tldr": "A developer ships a plain-language plugin for Claude Code and Codex CLI that cuts Opus 5 review replies by 17% in length and 32% in sentence count without losing bugs found.",
+      "whyItMatters": "A plain-language output style shortens agent review replies without dropping bug coverage. He can add this to Claude Code tonight to cut token spend on reviews.",
+      "category": "technique",
+      "tags": [
+        "output-style",
+        "skills",
+        "plain-language",
+        "cost"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex CLI"
+      ],
+      "models": [
+        "Opus 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install a plain-language skill and output style in Claude Code and Codex CLI, then compare review verbosity before and after.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vveyvm/what_a_plain_language_standard_does_to_a_coding/"
+    },
+    {
+      "id": "rss-simon-willison-et2026Aug21llmopenrouter",
+      "title": "llm-openrouter 0.7",
+      "url": "https://simonwillison.net/2026/Aug/21/llm-openrouter/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-21T16:58:19.000Z",
+      "tldr": "llm-openrouter 0.7 adds OpenRouter's Responses API and three server-side tools: Shell, WebFetch, and WebSearch, enabled with flags like -T WebSearch.",
+      "whyItMatters": "This lets him route agent tool calls through OpenRouter with built-in web search and shell tools, useful for model tiering and cost control.",
+      "category": "tooling",
+      "tags": [
+        "openrouter",
+        "tool-use",
+        "model-routing"
+      ],
+      "entities": [
+        "OpenRouter",
+        "Simon Willison",
+        "llm"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Upgrade llm-openrouter to 0.7 and add -T WebSearch (or Shell, WebFetch) to a call to test the server-side tools."
+    },
+    {
+      "id": "gh-1333065091",
+      "title": "deepseek-ai/deepseek-harness — DeepSeek Harness: Everything is a Plugin.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T11:56:32Z",
+      "tldr": "DeepSeek released DeepSeek Harness, a plugin-based coding agent harness, already the most-starred repo in this batch.",
+      "whyItMatters": "It is a potential lower-cost alternative or companion to Claude Code for routing routine subagent work.",
+      "category": "agentic",
+      "tags": [
+        "harness",
+        "cost",
+        "deepseek"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Try deepseek-ai/deepseek-harness on one throwaway repo this week and compare cost and quality against Claude Code.",
+      "score": 185481
+    },
+    {
+      "id": "hn-49401549",
+      "title": "Anthropic appears to be A/B testing reduced effort levels in Claude Code",
+      "url": "https://twitter.com/argofowl/status/2091150597374537729",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-22T16:58:49Z",
+      "tldr": "Users report Anthropic is A/B testing reduced effort levels inside Claude Code without disclosure.",
+      "whyItMatters": "If your overnight runs get a quietly lower effort tier, output quality can drop with no config change on your side.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "effort",
+        "reliability"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Check your Claude Code session for an explicit effort setting and pin it before your next unattended run.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49401549",
+      "score": 171
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway connecting over 1000 SaaS providers to AI agents via SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "whyItMatters": "It gives unattended agents one place to authenticate against outside services instead of hand-rolling API keys per integration.",
+      "category": "tooling",
+      "tags": [
+        "auth",
+        "mcp",
+        "integrations"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Self-host oomol-lab/open-connector and wire one service you use often through its MCP endpoint.",
+      "score": 4884
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE is an agent-driven platform that finds, verifies, and reports CVEs during source code audits.",
+      "whyItMatters": "He can add this as a security-audit subagent step in his pipeline, so overnight PRs get a vulnerability pass before morning review.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "cve",
+        "agent-audit"
+      ],
+      "entities": [
+        "AutoCVE"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and run it as a subagent step against a branch before merging.",
+      "score": 1273
+    },
+    {
+      "id": "hn-49402232",
+      "title": "Why your local LLM feels dumber than it is",
+      "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-22T18:14:16Z",
+      "tldr": "A widely discussed post argues local LLMs underperform mainly from wrong prompt templates, sampling settings, and quantization, not model quality.",
+      "whyItMatters": "If you route work to local models to save cost, a template or quant mismatch looks like a bad model and wastes your setup time.",
+      "category": "technique",
+      "tags": [
+        "local-models",
+        "quantization",
+        "prompting"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Before blaming a local model's output, verify its chat template and quantization match the model card.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49402232",
+      "score": 214
+    },
+    {
+      "id": "hn-49393051",
+      "title": "A week of using Codex more than Claude",
+      "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-21T19:51:48Z",
+      "tldr": "A developer reports on a week spent running Codex as the primary daily driver instead of Claude Code.",
+      "whyItMatters": "Direct, first-person comparison between the two agentic coding tools you'd weigh for unattended overnight runs.",
+      "category": "adoption",
+      "tags": [
+        "codex",
+        "claude-code",
+        "comparison"
+      ],
+      "entities": [],
+      "models": [
+        "Codex",
+        "Claude"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Read the thread for concrete workflow differences before trialing Codex alongside Claude Code.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49393051",
+      "score": 144
+    },
+    {
+      "id": "hn-49390463",
+      "title": "Building an (almost) fully self-hosted, sandboxed, agentic software factory",
+      "url": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-21T16:27:52Z",
+      "tldr": "A developer describes building a nearly fully self-hosted, sandboxed pipeline of agentic coding tools, a 'software factory'.",
+      "whyItMatters": "A blueprint for the sandboxed, unattended-overnight-agent setup you're already building with worktrees and hooks.",
+      "category": "agentic",
+      "tags": [
+        "self-hosted",
+        "sandboxing",
+        "agentic",
+        "architecture"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Read the writeup for the sandboxing approach and adapt it to your own worktree/hook setup.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49390463",
+      "score": 116
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21241",
+      "title": "Claude Code v2.1.241",
+      "url": "https://www.claudeupdates.dev/version/2.1.241",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-23T00:52:11.000Z",
+      "tldr": "Claude Code shipped v2.1.241 with one bug fix.",
+      "whyItMatters": "Small point releases like this can quietly change unattended-run behavior.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "release",
+        "update"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [
+        "Claude"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code to v2.1.241 and check the changelog for the fixed issue before your next long run."
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21239",
+      "title": "Claude Code v2.1.239",
+      "url": "https://www.claudeupdates.dev/version/2.1.239",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-21T19:54:17.000Z",
+      "tldr": "Claude Code 2.1.239 ships 59 changes: 2 added, 1 improved, 38 fixed, 18 other.",
+      "whyItMatters": "A release this size touches the tool you run every night unattended and is worth updating for immediately.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "release",
+        "update"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code to 2.1.239 and skim the changelog for the 2 added features before your next overnight run."
+    },
+    {
+      "id": "rss-simon-willison-nwillisonnet2026Aug22llm",
+      "title": "llm 0.33",
+      "url": "https://simonwillison.net/2026/Aug/22/llm/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-22T17:01:16.000Z",
+      "tldr": "Simon Willison ships llm 0.33, moving to the OpenAI Python 3.x library and httpx2, and adding a --key flag to llm embed and llm embed-multi.",
+      "whyItMatters": "This fixes the httpx dependency break from 0.32 and lets per-call API keys pass to embedding plugins without touching shared model state.",
+      "category": "tooling",
+      "tags": [
+        "llm-cli",
+        "embeddings",
+        "dependency-fix"
+      ],
+      "entities": [
+        "Simon Willison",
+        "llm"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Run pip install -U llm to pick up 0.33, and pass --key on llm embed calls that need a per-call API key."
+    },
+    {
+      "id": "reddit-rss-412bfora27ximprovementon",
+      "title": "I fine tuned Gemma 4 12B for a 2.7x improvement on tool calling because I can't fit anything else comfortably into my 16 GBs of Vram",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vvtu9z/i_fine_tuned_gemma_4_12b_for_a_27x_improvement_on/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-23T01:30:21.000Z",
+      "tldr": "A LocalLLaMA user fine-tuned Gemma 4 12B for a 2.7x jump in tool-calling accuracy and 15.7% more tool-call attempts, sized to fit 16GB VRAM.",
+      "whyItMatters": "Gives you a smaller open model tuned specifically for agentic tool/CLI use that runs on consumer GPU memory, a candidate for routing cheap subagent work off the paid API.",
+      "category": "technique",
+      "tags": [
+        "fine-tuning",
+        "tool-calling",
+        "local-model",
+        "vram"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "models": [
+        "Gemma 4 12B"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Track down the fine-tuned Gemma 4 12B checkpoint from the thread and test it as a local tool-calling model for low-stakes subagent tasks on a 16GB GPU.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vvtu9z/i_fine_tuned_gemma_4_12b_for_a_27x_improvement_on/"
+    },
+    {
+      "id": "reddit-rss-ealthnerfingeffortlevels",
+      "title": "Anthropic Stealth Nerfing Effort Levels",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vvjr5n/anthropic_stealth_nerfing_effort_levels/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-22T18:20:27.000Z",
+      "tldr": "Anthropic confirms Claude Code sometimes tests alternate effort-serving configs, so the displayed effort number can shift without any actual behavior change.",
+      "whyItMatters": "If your effort readout suddenly looks different, it's a serving experiment, not a quality regression, so you don't need to change your workflow over it.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "effort-levels",
+        "regression"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Ignore the numeric effort value; if you see a real quality drop, report it via /feedback with the conversation ID.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vvjr5n/anthropic_stealth_nerfing_effort_levels/"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Kimi K3 runs locally, three ways",
+      "summary": "Three independent projects get the 2.78T-parameter Kimi K3 running outside the API: a CPU-only 8.24GB build, a ~55GB Linux server, and a single-device OpenAI-compatible server for pointing subagents at.",
+      "itemIds": [
+        "gh-1319154759",
+        "gh-1317239419",
+        "gh-1314404827"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Anthropic confirms stealth effort-level testing",
+      "summary": "Users noticed Claude Code silently varying effort tiers, and Anthropic confirmed it runs alternate effort-serving configs, so a displayed drop isn't necessarily a real quality regression.",
+      "itemIds": [
+        "hn-49401549",
+        "reddit-rss-ealthnerfingeffortlevels"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Claude Code point releases",
+      "summary": "Two back-to-back point releases (v2.1.239 with 59 changes, v2.1.241 with a follow-up fix) landed in the tool he runs every night unattended.",
+      "itemIds": [
+        "rss-claude-updates-deupdatesdevversion21239",
+        "rss-claude-updates-deupdatesdevversion21241"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 18,
+    "outputTokens": 54357,
+    "usd": 1.4546,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

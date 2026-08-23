@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-22T21:57:00.683Z",
-  "contentVersion": 50,
+  "generatedAt": "2026-08-23T03:59:07.924Z",
+  "contentVersion": 51,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-22T21:57:00.683Z"
+      "updatedAt": "2026-08-23T03:59:07.924Z"
     },
     {
       "id": "ai-c0f9d10986",
       "slug": "why-your-local-llm-feels-dumber-than-it-is",
       "lane": "ai",
-      "title": "Why your local LLM feels dumber than it is",
-      "summary": "A Hacker News post looks at why models run on personal hardware often seem weaker than their benchmark scores suggest. It points to factors like quantization, prompt handling, and context limits. The piece reflects growing interest in running large language models locally.",
-      "whyItMatters": "Local and on-device LLM use is growing. Readers weighing cloud versus local setups need to know these gaps exist.",
+      "title": "Why local LLMs feel dumber than they are",
+      "summary": "A Hacker News post argues that locally run large language models often perform worse in practice than their benchmark scores suggest. It points to likely causes such as quantization and weak tooling around the model. The piece reflects an ongoing community debate about the gap between benchmark scores and real-world results.",
+      "whyItMatters": "Local and open-weight models are a core option for many teams, so understanding this gap affects deployment choices.",
       "whatToWatch": [
-        "More guides on tuning local LLM setups.",
-        "Wider discussion of quantization tradeoffs in local tooling."
+        "Community responses that confirm or challenge the claims.",
+        "Whether model makers address the tooling and quantization issues raised."
       ],
       "questions": [
-        "Which specific models or benchmarks does the post reference?",
-        "How much of the gap can better local tooling fix?"
+        "Which factor explains most of the gap: quantization, prompts, or tooling?",
+        "Does the issue affect all local model families equally?"
       ],
       "sources": [
         {
@@ -150,26 +150,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T18:14:16Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png",
       "badge": "Analysis",
-      "trendScore": 51,
+      "trendScore": 48,
       "confidence": "low"
     },
     {
       "id": "ai-9e98c378bd",
       "slug": "ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-taking-ov",
       "lane": "ai",
-      "title": "10% worse, 100x cheaper, 10,000x faster: why simulation is taking over",
-      "summary": "A Latent Space newsletter roundup argues that cheaper, faster simulation-based methods are gaining ground, even when they perform somewhat worse than heavier approaches. The piece frames this as a broader shift in how AI systems get built and tested.",
-      "whyItMatters": "If cost and speed increasingly beat raw accuracy, this could reshape how labs and startups prioritize research spending.",
+      "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+      "summary": "A Latent Space newsletter roundup describes a shift toward simulation-based methods that trade some accuracy for large gains in cost and speed. It frames this as a broader trend in how AI systems get built. The source gives the headline claim but no further specifics.",
+      "whyItMatters": "If cheaper, faster simulation methods keep gaining ground, they could reshape how AI teams balance accuracy against cost at scale.",
       "whatToWatch": [
-        "Whether major labs adopt simulation-first methods publicly.",
-        "Follow-up commentary from other AI newsletters and researchers."
+        "Follow-up pieces that detail which use cases the tradeoff applies to.",
+        "Which companies adopt simulation-first methods."
       ],
       "questions": [
-        "Which specific tasks or products does this trend apply to?",
-        "Who is driving the shift toward simulation?"
+        "What specific use cases show simulation replacing precise computation?",
+        "Whose numbers back the '10,000x faster' claim?"
       ],
       "sources": [
         {
@@ -181,10 +181,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:36:00.000Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Vw9p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc661e612-544b-4eaa-9603-78e5f28276b7_1956x1228.png",
       "badge": "Analysis",
-      "trendScore": 35,
+      "trendScore": 30,
       "confidence": "low"
     },
     {
@@ -192,14 +192,13 @@
       "slug": "how-the-ai-agent-harness-has-evolved",
       "lane": "ai",
       "title": "The evolution of the agent harness",
-      "summary": "A Latent Space piece traces how the tooling and scaffolding around AI agents, known as agent harnesses, has changed over time. It examines how this scaffolding shapes what agents can reliably do.",
-      "whyItMatters": "Agent harness design increasingly determines which AI agent products work in practice. This is a key factor in coding and automation tools.",
+      "summary": "A Latent Space piece traces how the software \"harness\" around AI agents has changed, moving from simple prompt wrappers toward more structured agent frameworks. It is an analysis piece rather than a product announcement. The source gives no further detail beyond this framing.",
+      "whyItMatters": "The harness around a model — its tools, memory, and orchestration — increasingly decides how useful an AI agent is in practice.",
       "whatToWatch": [
-        "New agent harness releases from major AI coding tool vendors.",
-        "Continued Latent Space coverage of agent tooling trends."
+        "New harness designs referenced in follow-up discussion."
       ],
       "questions": [
-        "Which specific harnesses or companies does the piece focus on?"
+        "Which harness patterns does the piece identify as most effective?"
       ],
       "sources": [
         {
@@ -211,26 +210,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:30:52.000Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!bUv7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F758de9a0-631f-43a0-a331-fd871432a60b_1280x720.png",
       "badge": "Analysis",
-      "trendScore": 35,
+      "trendScore": 30,
       "confidence": "low"
     },
     {
       "id": "ai-ec74d4d3ec",
       "slug": "ozbrain-launches-as-a-shared-knowledge-base-for-ai-agents-and-teams",
       "lane": "ai",
-      "title": "OzBrain: a shared knowledge base for AI agents and teams",
-      "summary": "A developer launched OzBrain on Hacker News's Show HN. The project aims to give AI agents and human teams access to a shared memory, or \"brain,\" of knowledge. Details beyond the launch post are limited.",
-      "whyItMatters": "Shared memory tools are a growing category in agent tooling. They address a common weakness in today's AI agents: lack of persistent, shared context.",
+      "title": "Show HN: OzBrain, a shared knowledge base for AI agents and teams",
+      "summary": "A developer introduced OzBrain on Hacker News. It is described as a shared \"brain\" for storing and sharing knowledge between AI agents and human team members. The post is an independent project shared for community feedback, with few other details given.",
+      "whyItMatters": "Shared memory across agents and teams is a common pain point in multi-agent workflows, so new tools here are worth tracking.",
       "whatToWatch": [
-        "Community reaction and adoption on Hacker News.",
-        "Whether the project gains integrations with existing agent frameworks."
+        "Community reception on the Hacker News thread.",
+        "Whether the project sees further development or adoption."
       ],
       "questions": [
-        "How does OzBrain store and share knowledge technically?",
-        "Is it open source, and under what license?"
+        "How does OzBrain handle access control across agents and team members?"
       ],
       "sources": [
         {
@@ -242,26 +240,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T23:09:06Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://ozbrain.com/og.png?v=4",
       "badge": "Show HN",
-      "trendScore": 30,
+      "trendScore": 25,
       "confidence": "low"
     },
     {
       "id": "ai-aa49782e4e",
       "slug": "developer-builds-a-self-hosted-sandboxed-agentic-software-factory",
       "lane": "ai",
-      "title": "A developer's self-hosted, sandboxed agentic software factory",
-      "summary": "A Hacker News post describes one developer's project to build an almost fully self-hosted, sandboxed system for agentic software development. It is a personal build writeup, not a commercial product launch.",
-      "whyItMatters": "It shows how individual developers experiment with self-hosted alternatives to cloud-based agentic coding tools.",
+      "title": "Building an almost fully self-hosted, sandboxed agentic software factory",
+      "summary": "A Hacker News post describes one developer's build of a largely self-hosted, sandboxed system for running agentic software-development pipelines. It is a personal write-up, not a commercial launch. The source gives no further detail on the stack or tools used.",
+      "whyItMatters": "Self-hosted agentic pipelines speak to growing concerns about cost, control, and data exposure when using hosted coding agents.",
       "whatToWatch": [
-        "Hacker News discussion for follow-up ideas or forks.",
-        "Whether the approach influences other self-hosted agent projects."
+        "Whether the developer open-sources or further documents the setup."
       ],
       "questions": [
-        "What tools or models does the setup rely on?",
-        "How production-ready is it beyond a personal project?"
+        "What sandboxing tradeoffs does the setup make for security?"
       ],
       "sources": [
         {
@@ -273,23 +269,23 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T16:27:52Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/agentic-developer.png",
-      "trendScore": 30,
+      "trendScore": 25,
       "confidence": "low"
     },
     {
       "id": "ai-455c502973",
       "slug": "google-deepmind-asks-what-full-stack-ai-actually-means",
       "lane": "ai",
-      "title": "Google DeepMind explains what \"full-stack\" AI means",
-      "summary": "Google DeepMind published a blog post examining what \"full-stack\" AI means, covering layers from infrastructure to models to applications. It is a conceptual explainer, not a product announcement.",
-      "whyItMatters": "Google is a leading AI lab. Its framing of \"full-stack\" AI signals how it positions its strategy against rivals like OpenAI and Microsoft.",
+      "title": "What does 'full-stack' AI actually mean?",
+      "summary": "Google DeepMind published a blog post that examines what \"full-stack\" means when applied to AI, likely touching on control across chips, models, and applications. The source gives only the headline framing, not the post's specific arguments.",
+      "whyItMatters": "How a major lab defines \"full-stack\" AI signals its competitive strategy against rivals who buy compute or rely on third-party models.",
       "whatToWatch": [
-        "Whether Google ties this framing to future product or infrastructure announcements."
+        "Whether Google references this framing in later product or strategy announcements."
       ],
       "questions": [
-        "Does the post preview any specific new Google AI products?"
+        "Does the post position Google's own stack against competitors like OpenAI or Anthropic?"
       ],
       "sources": [
         {
@@ -301,26 +297,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T16:00:00.000Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/thumbnail_BfIj9lP.max-600x600.format-webp.webp",
       "badge": "Analysis",
-      "trendScore": 30,
+      "trendScore": 25,
       "confidence": "medium"
     },
     {
       "id": "ai-aed0c7e69c",
       "slug": "proliferate-an-open-source-self-hostable-codex-alternative-for-coding-",
       "lane": "ai",
-      "title": "Proliferate: an open-source, self-hostable Codex alternative for coding agents",
-      "summary": "A Hacker News Show HN post introduced Proliferate, an open-source tool billed as a self-hostable alternative to Codex-style coding agent infrastructure. Public detail on the project is still limited.",
-      "whyItMatters": "Open-source alternatives to proprietary coding agent infrastructure give developers more control. They could pressure closed platforms on price and flexibility.",
+      "title": "Show HN: Proliferate, an open-source self-hostable alternative to Codex",
+      "summary": "A developer launched Proliferate on Hacker News, described as an open-source, self-hostable tool built to work like Codex but for any coding agent. It was shared as a Show HN post for community feedback. The source gives no further technical detail.",
+      "whyItMatters": "Open-source, self-hostable alternatives to proprietary coding-agent infrastructure give teams more control over cost and data.",
       "whatToWatch": [
-        "Adoption and stars on GitHub after launch.",
-        "Feedback from the Hacker News community on functionality."
+        "Community feedback and adoption on the Hacker News thread.",
+        "Which coding agents the project ends up supporting."
       ],
       "questions": [
-        "Which coding agents or models does Proliferate support?",
-        "How does it compare functionally to Codex?"
+        "Which coding agents does Proliferate support today?"
       ],
       "sources": [
         {
@@ -332,26 +327,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T16:47:15Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://repository-images.githubusercontent.com/1226062469/50b40d4c-7024-47d3-ae18-42af0df14ea6",
       "badge": "Show HN",
-      "trendScore": 29,
+      "trendScore": 24,
       "confidence": "low"
     },
     {
       "id": "ai-7fc8fd49db",
       "slug": "simile-ai-s-joon-sung-park-pitches-simulation-as-a-new-scaling-law",
       "lane": "ai",
-      "title": "Simile AI's Joon Sung Park: simulation as the next scaling law",
-      "summary": "In a Latent Space conversation, Joon Sung Park of Simile AI argues that simulation, not traditional model scaling, is becoming a new driver of AI progress. This builds on the simulation theme running through recent Latent Space coverage.",
-      "whyItMatters": "If simulation-based methods become a recognized scaling paradigm, labs and investors may shift research resources toward them.",
+      "title": "Simulation: the new scaling law, with Joon Sung Park of Simile AI",
+      "summary": "Latent Space published a talk with Joon Sung Park of Simile AI, who argues that simulation, not raw scale, may be the next driver of AI progress. The piece is framed as a thesis on where future gains come from. The source gives no further supporting detail.",
+      "whyItMatters": "If simulation becomes a new scaling axis, it could shift where AI research and investment focus next.",
       "whatToWatch": [
-        "Further public work or papers from Simile AI.",
-        "Whether other labs adopt or respond to the \"simulation scaling law\" framing."
+        "Reception of Park's thesis among researchers and other labs.",
+        "Further work from Simile AI following the talk."
       ],
       "questions": [
-        "What evidence supports simulation as a scaling law, versus a useful technique?",
-        "How does Simile AI's approach differ from existing simulation work?"
+        "What evidence supports simulation as a scaling law versus compute scaling?"
       ],
       "sources": [
         {
@@ -363,24 +357,22 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T23:37:38.000Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!KTvP!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F212197985%2F1be75a53-fbfd-411e-9c15-042f080b6e34%2Ftranscoded-1787341808.png",
       "badge": "Analysis",
-      "trendScore": 28,
+      "trendScore": 23,
       "confidence": "low"
     },
     {
       "id": "ai-c241503165",
       "slug": "opinion-llms-prove-the-unix-philosophy-won",
       "lane": "ai",
-      "title": "Opinion: LLMs are proof that Unix won",
-      "summary": "A blog post shared on Hacker News argues that the success of large language models reflects the lasting influence of Unix design philosophy. It is a personal opinion essay linking AI systems to older computing traditions.",
-      "whyItMatters": "The essay offers a philosophical lens on why today's AI tooling looks the way it does. This gives context for readers who think about AI infrastructure design.",
-      "whatToWatch": [
-        "Hacker News discussion threads for pushback or elaboration."
-      ],
+      "title": "LLMs are proof that Unix won",
+      "summary": "A Hacker News-linked blog post argues that the design and success of large language models reflect the lasting influence of Unix philosophy, such as small composable tools. It is an opinion piece, not a news event. The source gives no further detail beyond the headline claim.",
+      "whyItMatters": "The framing offers a lens on why simple, composable tool patterns keep recurring in AI agent design.",
+      "whatToWatch": [],
       "questions": [
-        "What specific Unix principles does the author link to LLM design?"
+        "Which specific Unix principles does the author link to LLM design?"
       ],
       "sources": [
         {
@@ -392,33 +384,8 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-21T15:59:16Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
-      "badge": "Opinion",
-      "trendScore": 28,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-fb937fcbd3",
-      "slug": "lawrence-paulson-recounts-how-he-co-wrote-a-paper-with-leslie-lamport",
-      "lane": "ai",
-      "title": "How I came to write that paper with Leslie Lamport",
-      "summary": "A personal essay, shared on Hacker News, recounts how the author came to co-write a paper with computer scientist Leslie Lamport. It is a historical and personal reflection, not AI industry news.",
-      "whyItMatters": "Lamport's work on distributed systems and formal verification underpins infrastructure that modern AI systems rely on, though this post itself is a personal history piece.",
-      "whatToWatch": [],
-      "questions": [
-        "What paper and topic does the essay describe?"
-      ],
-      "sources": [
-        {
-          "title": "How I came to write that paper with Leslie Lamport",
-          "url": "https://lawrencecpaulson.github.io//2026/08/21/Lamport.html",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-21T14:46:01Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-21T14:46:01Z",
-      "updatedAt": "2026-08-22T21:57:00.683Z",
+      "updatedAt": "2026-08-23T03:59:07.924Z",
+      "badge": "Analysis",
       "trendScore": 23,
       "confidence": "low"
     }
