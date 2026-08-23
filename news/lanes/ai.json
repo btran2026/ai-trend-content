@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-23T11:55:27.582Z",
-  "contentVersion": 52,
+  "generatedAt": "2026-08-23T17:35:34.849Z",
+  "contentVersion": 53,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,21 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-23T11:55:27.582Z"
+      "updatedAt": "2026-08-23T17:35:34.849Z"
     },
     {
       "id": "ai-c0f9d10986",
       "slug": "why-your-local-llm-feels-dumber-than-it-is",
       "lane": "ai",
       "title": "Why your local LLM feels dumber than it is",
-      "summary": "A widely discussed Hacker News post digs into why LLMs run on local hardware often feel weaker than their benchmark scores suggest. The piece points to the gap between raw model capability and the real-world setup around it, such as quantization and inference settings. Only the discussion itself is confirmed here; the underlying technical claims are not independently verified.",
-      "whyItMatters": "Many developers now run open-weight models locally, so understanding this benchmark-to-experience gap affects real deployment choices, not just lab comparisons.",
+      "summary": "A Hacker News post explores why LLMs run locally often feel weaker than their benchmark scores suggest. It reflects a common complaint among people who run open models on their own hardware, rather than through hosted APIs. The post gives no vendor or product details in its title alone.",
+      "whyItMatters": "Trust in local, self-hosted models depends on their real-world performance matching published benchmarks.",
       "whatToWatch": [
-        "Whether tool makers respond with fixes to local inference setups",
-        "Follow-up posts testing or disputing the claims"
+        "Follow-up discussion or tooling fixes from the local-LLM community."
       ],
       "questions": [
-        "What specific factors does the post blame for the gap?",
-        "Does this apply to all local models or only certain ones?"
+        "What specific factors cause the gap between benchmark scores and felt performance?",
+        "Do model or tooling makers plan to respond?"
       ],
       "sources": [
         {
@@ -150,26 +149,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T18:14:16Z",
-      "updatedAt": "2026-08-23T11:55:27.582Z",
+      "updatedAt": "2026-08-23T17:35:34.849Z",
       "imageUrl": "https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png",
       "badge": "Analysis",
-      "trendScore": 42,
+      "trendScore": 37,
       "confidence": "low"
     },
     {
       "id": "ai-9e98c378bd",
       "slug": "ainews-10-worse-100x-cheaper-10000x-faster-why-simulation-is-taking-ov",
       "lane": "ai",
-      "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
-      "summary": "A Latent Space newsletter roundup argues that simulation-based methods are spreading through AI development because they are far cheaper and faster than alternatives, even at a cost in accuracy. The piece frames this as a broader trade-off shaping how models and agents get trained and tested. Details beyond this framing are not available from the source alone.",
-      "whyItMatters": "If cost and speed are winning out over precision, that trade-off could reshape how AI labs train and evaluate models going forward.",
+      "title": "Why simulation is taking over: 10% worse, 100x cheaper, 10000x faster",
+      "summary": "A Latent Space newsletter roundup argues that simulated approaches are gaining ground because they are far cheaper and faster, even when the output quality is somewhat lower. The piece frames this as a broader tradeoff reshaping how some AI work gets done. No further detail on the specific method or product is given beyond the title.",
+      "whyItMatters": "If cost and speed keep winning out over small quality losses, it could shift how AI teams choose to build and test their systems.",
       "whatToWatch": [
-        "Whether major labs adopt simulation-heavy training or evaluation pipelines",
-        "Any pushback from researchers over accuracy trade-offs"
+        "Whether this simulation-first approach spreads to more parts of the AI pipeline."
       ],
       "questions": [
-        "Which specific labs or products is this trend based on?",
-        "How is 'simulation' being defined here — synthetic data, environments, or something else?"
+        "What kind of simulation is being described, and in which part of the AI workflow?",
+        "Who is adopting this approach, and at what scale?"
       ],
       "sources": [
         {
@@ -181,25 +179,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:36:00.000Z",
-      "updatedAt": "2026-08-23T11:55:27.582Z",
+      "updatedAt": "2026-08-23T17:35:34.849Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Vw9p!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc661e612-544b-4eaa-9603-78e5f28276b7_1956x1228.png",
       "badge": "Analysis",
-      "trendScore": 23,
+      "trendScore": 19,
       "confidence": "low"
     },
     {
       "id": "ai-80c0bfdc85",
       "slug": "how-the-ai-agent-harness-has-evolved",
       "lane": "ai",
-      "title": "How the AI agent harness is evolving",
-      "summary": "A Latent Space piece traces how the software layer that wraps language models into working agents, known as the agent harness, is changing over time. The article covers this as an ongoing trend rather than a single announcement. No specific products, companies, or version numbers are confirmed beyond the title itself.",
-      "whyItMatters": "The agent harness is the plumbing that turns raw models into usable tools, so shifts here affect how reliable and capable AI agents become in practice.",
+      "title": "The evolution of the agent harness",
+      "summary": "A Latent Space piece traces how the software scaffolding around AI agents, the \"harness\" that manages tools, memory, and orchestration, has changed over time. The title alone does not specify which harnesses or vendors it covers. It reads as an analysis piece rather than a news report of a specific release.",
+      "whyItMatters": "The agent harness is a key layer for anyone building or evaluating AI agents, since it shapes how reliably an agent can act.",
       "whatToWatch": [
-        "New harness designs or frameworks referenced in follow-up coverage"
+        "Whether the piece's framing gets picked up by agent framework builders."
       ],
       "questions": [
-        "Which harness designs or tools does the piece hold up as the leading edge?",
-        "Is this framed as a past trend, a current shift, or a prediction?"
+        "Which specific harnesses or frameworks does the piece compare?",
+        "What does it say counts as meaningful progress versus incremental change?"
       ],
       "sources": [
         {
@@ -211,10 +209,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T07:30:52.000Z",
-      "updatedAt": "2026-08-23T11:55:27.582Z",
+      "updatedAt": "2026-08-23T17:35:34.849Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!bUv7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F758de9a0-631f-43a0-a331-fd871432a60b_1280x720.png",
       "badge": "Analysis",
-      "trendScore": 23,
+      "trendScore": 19,
       "confidence": "low"
     }
   ]
