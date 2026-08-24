@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-23T22:35:20.039Z",
-  "contentVersion": 54,
+  "generatedAt": "2026-08-24T04:35:36.969Z",
+  "contentVersion": 55,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,21 +123,21 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-23T22:35:20.039Z"
+      "updatedAt": "2026-08-24T04:35:36.969Z"
     },
     {
       "id": "ai-c0f9d10986",
       "slug": "why-your-local-llm-feels-dumber-than-it-is",
       "lane": "ai",
       "title": "Why your local LLM feels dumber than it is",
-      "summary": "A discussion piece circulating on Hacker News looks at why models run locally often seem less capable than the same models accessed through a hosted API. No further detail on the article's specific claims is available yet.",
-      "whyItMatters": "Local and open-weight model deployment is a growing part of the AI landscape, and gaps between perceived and actual model quality affect how builders choose between local and hosted setups.",
+      "summary": "A Hacker News discussion looks at why models run locally often seem weaker than the same models hosted by big providers. The piece points to setup factors like quantization, context handling, and default settings, not the underlying model itself. No new product or policy news is involved — this is community commentary on local-model performance.",
+      "whyItMatters": "Local and open-weight models are a growing alternative to hosted AI, so understanding real-world gaps helps buyers judge self-hosting versus cloud APIs.",
       "whatToWatch": [
-        "Whether the discussion identifies specific fixable causes worth tracking"
+        "Whether model providers or tooling projects respond with guidance or fixes for common local setup issues"
       ],
       "questions": [
-        "What specific factors does the piece blame for the perceived gap?",
-        "Does this reflect a real technical issue or user setup problems?"
+        "Which specific factors (quantization, prompt templates, context limits) matter most for the performance gap?",
+        "Does this apply broadly across local LLM tools, or mainly to specific setups?"
       ],
       "sources": [
         {
@@ -149,10 +149,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-22T18:14:16Z",
-      "updatedAt": "2026-08-23T22:35:20.039Z",
+      "updatedAt": "2026-08-24T04:35:36.969Z",
       "imageUrl": "https://level1techs.us-east-1.linodeobjects.com/original/4X/d/8/7/d87c01532439840126d90ea94abfdfcf6501f42f.png",
       "badge": "Analysis",
-      "trendScore": 33,
+      "trendScore": 28,
       "confidence": "low"
     }
   ]
