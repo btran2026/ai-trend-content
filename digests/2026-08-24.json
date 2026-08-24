@@ -1,0 +1,412 @@
+{
+  "id": "2026-08-24",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-24T11:59:38.815Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Force Opus to prove its work before you review the PR",
+    "summary": "Two projects package Claude Fable's think/act/prove workflow into gates you can drop into Claude Code tonight. Fablize wraps Opus runs in completion, evidence, and verification checks before you see the diff. Fable-method gives you the underlying skills and eval if you want to build your own gate. Pair either with Ponytail's minimal-diff instructions, and the morning PR gets shorter and easier to trust. One caution: a Reddit report shows Claude Code guessed a cron job's timezone from the repo author's name, then admitted the guess was unfounded when questioned — state the timezone explicitly in any prompt that writes a schedule.\n\nOn cost, the local-model options got more concrete. Kimi-k3-in-c runs a 2.78-trillion-parameter model on one CPU in 8.24GB of RAM — no GPU, pure C99 — good for offline batch work on a spare box. Opencodex and Fuxi both let you route cheap subagent steps to local or third-party models instead of your priciest tier, which lines up with Drew Breunig's point that Fable's price forces real tiering decisions instead of waiting for a cheaper model to bail out a sloppy setup. Two r/LocalLLaMA reports back this with hardware numbers: qwen3.8:27b on a single 96GB GPU handled a 600k-token single-shot port that rivaled Opus, and deepseek-v4-flash-0731 runs at 24 tok/s on an Epyc box with one RTX 5090. If you want to steer an agent from your phone, Devspace turns a Claude Web chat into a Claude Code-style session.",
+    "bullets": [
+      "Install fivetaku/fablize as a Claude Code plugin to gate Opus runs behind completion, evidence, and verification steps",
+      "Clone Sahir619/fable-method for the raw think/act/prove skills and eval if you want to build your own verification gate",
+      "Pull DietrichGebert/ponytail's minimal-diff instructions into CLAUDE.md so overnight PRs stay small and reviewable",
+      "State the timezone explicitly when asking Claude Code to write a cron schedule — it guessed IST from a name in one report",
+      "Route cheap subagent steps through lidge-jun/opencodex to a local Ollama model, or try fuxicodex/Fuxi's built-in cost-aware routing",
+      "Clone FareedKhan-dev/kimi-k3-in-c to run a 2.78T-parameter model on a spare 8GB RAM CPU box for offline batch work, no GPU needed"
+    ],
+    "signals": [
+      {
+        "label": "Self-verification wrappers for coding agents",
+        "direction": "up",
+        "note": "Fablize and fable-method both turn Fable's proof-of-work workflow into a portable gate for Opus, aimed straight at unattended review"
+      },
+      {
+        "label": "Local inference on ordinary hardware",
+        "direction": "up",
+        "note": "kimi-k3-in-c on 8GB RAM CPU, qwen3.8:27b on one 96GB GPU, and deepseek-v4-flash-0731 on an Epyc+5090 box show coding-capable models now fit on gear he already owns"
+      },
+      {
+        "label": "Subagent cost tiering",
+        "direction": "up",
+        "note": "Breunig's point about Fable's price, plus Fuxi's built-in cost-aware routing and opencodex's proxy, push tiering from an afterthought to explicit config"
+      },
+      {
+        "label": "Unattended scheduling reliability",
+        "direction": "down",
+        "note": "Claude Code inferring a cron timezone from an author's name shows scheduled runs still need explicit constraints, not inference"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A 2.78-trillion-parameter Kimi K3 now runs inference on one CPU in 8.24GB of RAM, in portable C99 with no GPU.",
+      "whyItMatters": "You can run a frontier-scale open model on a spare CPU box instead of paying for GPU inference or API calls.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "moe"
+      ],
+      "entities": [],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and run it on any spare 8GB+ RAM CPU box for offline batch work.",
+      "score": 6374
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "Opencodex is a proxy that lets Claude Code and Codex CLI call any LLM backend, including local Ollama models.",
+      "whyItMatters": "You can route cheap or bulk subagent work to local or third-party models without leaving your Claude Code setup.",
+      "category": "technique",
+      "tags": [
+        "model-routing",
+        "proxy",
+        "cost"
+      ],
+      "entities": [
+        "Claude Code",
+        "Codex CLI",
+        "Ollama"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex and point Claude Code's model config at a local Ollama model for cheap subagent tasks.",
+      "score": 11965
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "Devspace turns the ChatGPT web app or Claude web chat into a Codex- or Claude Code-style coding agent.",
+      "whyItMatters": "You get a phone-friendly way to steer a coding agent from a browser tab when you are away from your desk.",
+      "category": "technique",
+      "tags": [
+        "remote-control",
+        "mobile",
+        "chat-bridge"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Waishnav/devspace and drive a coding session from Claude Web on your phone when away from your desk.",
+      "score": 3979
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "Fable-method distills the Claude Fable workflow into portable skills with a think/act/prove eval step.",
+      "whyItMatters": "The eval step gives you a repeatable way to make an agent prove its work before you review the PR.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "eval"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and adapt its think/act/prove skills and eval into your Claude Code skills folder.",
+      "score": 2243
+    },
+    {
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "Fablize is a Claude Code plugin that forces Opus through completion, evidence, and verification steps from the Fable workflow.",
+      "whyItMatters": "It bakes self-verification into every Opus run, so you get a PR with evidence attached instead of an unverified diff.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "claude-code-plugin"
+      ],
+      "entities": [],
+      "models": [
+        "Opus",
+        "Claude Fable"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and let it gate Opus completions behind its verification steps.",
+      "score": 895
+    },
+    {
+      "id": "reddit-rss-lyoucannowusemtpinglmair",
+      "title": "you can now use MTP in GLM-Air",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwhj0l/you_can_now_use_mtp_in_glmair/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-23T20:08:04.000Z",
+      "tldr": "llama.cpp now supports MTP (multi-token prediction) for GLM-4.5-Air, giving a speedup on memory-rich, compute-limited machines like Strix Halo or DGX Spark.",
+      "whyItMatters": "A free speed win for anyone already running GLM-4.5-Air locally as a cheap coding/assistant model.",
+      "category": "technique",
+      "tags": [
+        "local-models",
+        "llama.cpp",
+        "speedup",
+        "moe"
+      ],
+      "entities": [
+        "llama.cpp"
+      ],
+      "models": [
+        "GLM-4.5-Air"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Enable MTP in llama.cpp when serving GLM-4.5-Air (106B MoE, 12B active) on your local rig.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vwhj0l/you_can_now_use_mtp_in_glmair/"
+    },
+    {
+      "id": "reddit-rss-smytimezonebasedonmyname",
+      "title": "Claude Code guesses my timezone based on my name?!",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1vwpl0x/claude_code_guesses_my_timezone_based_on_my_name/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-24T01:54:35.000Z",
+      "tldr": "Claude Code (Opus 5) guessed a cron job's timezone as IST by inferring it from the repo author's name, then admitted it was an unfounded assumption when questioned.",
+      "whyItMatters": "If you let an agent write cron schedules, it may silently guess a timezone instead of using the machine's real TZ — a real risk for unattended scheduled runs.",
+      "category": "agentic",
+      "tags": [
+        "claude-code",
+        "cron",
+        "scheduling"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Opus 5"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Explicitly state the timezone when asking Claude Code to write cron expressions instead of letting it infer one.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1vwpl0x/claude_code_guesses_my_timezone_based_on_my_name/"
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "Ponytail is a prompt and skill pack that pushes a coding agent toward the smallest possible diff instead of new code.",
+      "whyItMatters": "Smaller, more deliberate diffs make an overnight agent's PR faster to review in the morning.",
+      "category": "technique",
+      "tags": [
+        "prompting",
+        "minimal-diff",
+        "pr-quality"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and adapt its minimal-diff instructions into your CLAUDE.md or a Claude Code skill.",
+      "score": 109323
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "Open-connector is a self-hostable auth gateway that wires 1000+ SaaS providers to agents over MCP, SDK, CLI, or HTTP.",
+      "whyItMatters": "You can connect your overnight agent to Slack, GitHub, or similar tools for notifications and approvals without building OAuth plumbing yourself.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "integrations",
+        "auth"
+      ],
+      "entities": [
+        "oomol-lab"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Self-host oomol-lab/open-connector and expose one SaaS tool, like Slack or GitHub, as an MCP server to your agent.",
+      "score": 5169
+    },
+    {
+      "id": "gh-1322651268",
+      "title": "fuxicodex/Fuxi — FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-04T07:32:11Z",
+      "tldr": "Fuxi is a self-contained terminal coding agent with cost-aware routing across LLM providers built in.",
+      "whyItMatters": "It gives you per-task model tiering out of the box, so simple steps do not run on your most expensive model.",
+      "category": "tooling",
+      "tags": [
+        "cost",
+        "model-routing",
+        "cli-agent"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Try fuxicodex/Fuxi on a side task and compare its cost-aware routing to manually tiering subagents in Claude Code.",
+      "score": 1964
+    },
+    {
+      "id": "rss-simon-willison-nnet2026Aug23drewbreunig",
+      "title": "Quoting Drew Breunig",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-23T19:55:30.000Z",
+      "tldr": "Drew Breunig argues that Fable's high price ended the era of waiting for a cheaper model to bail out a sloppy harness, forcing real decisions about which work goes to which model tier.",
+      "whyItMatters": "Directly bears on how you route work across subagents by cost; worth revisiting which tasks actually need a top-tier model versus a cheaper one.",
+      "category": "business",
+      "tags": [
+        "pricing",
+        "model-routing",
+        "cost"
+      ],
+      "entities": [
+        "Anthropic",
+        "Drew Breunig"
+      ],
+      "models": [
+        "Fable",
+        "Opus"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Audit which of your Claude Code subagents actually need Opus/Fable-tier models versus can run on a cheaper tier."
+    },
+    {
+      "id": "reddit-rss-39klinectosinglefilehtml",
+      "title": "New qwen3.8:27b on a 39k line C to single-file HTML / three.js port",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwde84/new_qwen3827b_on_a_39k_line_c_to_singlefile_html/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-23T17:32:32.000Z",
+      "tldr": "An operator ran qwen3.8:27b (FP8 on vLLM, full 262k context, RTX 6000 Pro 96GB) to port a 2.1MB/~600k-token C file to a single-file HTML/three.js port in one prompt with no follow-ups, benchmarked against Opus 5.",
+      "whyItMatters": "A concrete local setup that handled a codebase over twice its own context window without truncation, a real data point for when local can replace Opus on big single-shot ports.",
+      "category": "open-models",
+      "tags": [
+        "local-models",
+        "vllm",
+        "quantization",
+        "benchmark"
+      ],
+      "entities": [
+        "vLLM"
+      ],
+      "models": [
+        "qwen3.8:27b",
+        "Opus 5"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If you have 96GB+ VRAM, try qwen3.8:27b on vLLM with FP8 + FP8 KV cache for large-context single-shot ports before reaching for Opus.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vwde84/new_qwen3827b_on_a_39k_line_c_to_singlefile_html/"
+    },
+    {
+      "id": "reddit-rss-sh0731surprisinglyusable",
+      "title": "deepseek-v4-flash-0731 - surprisingly usable",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vwsjut/deepseekv4flash0731_surprisingly_usable/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-24T04:20:37.000Z",
+      "tldr": "An operator runs deepseek-v4-flash-0731 (UD-Q8_K_XL quant) on an Epyc 7663 with 256GB DDR4 and a single RTX 5090 32GB, getting 23.8-24.6 tok/s.",
+      "whyItMatters": "A concrete cost/hardware reference point for self-hosting a large MoE model instead of paying per-token API prices.",
+      "category": "open-models",
+      "tags": [
+        "local-models",
+        "self-hosted",
+        "quantization",
+        "hardware"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "deepseek-v4-flash-0731"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If you have a high-RAM Epyc/Threadripper box plus one modern GPU, try the UD-Q8_K_XL quant of deepseek-v4-flash-0731.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1vwsjut/deepseekv4flash0731_surprisingly_usable/"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Fable's verification workflow, packaged for any agent",
+      "summary": "Two separate projects distill the Claude Fable think/act/prove workflow into reusable Claude Code skills and a plugin that gates completion behind evidence and verification.",
+      "itemIds": [
+        "gh-1291544092",
+        "gh-1268946118"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Concrete hardware and cost data for self-hosting big models",
+      "summary": "Two independent r/LocalLLaMA reports give real token-per-second and hardware specs for running large MoE models locally instead of paying API rates.",
+      "itemIds": [
+        "reddit-rss-39klinectosinglefilehtml",
+        "reddit-rss-sh0731surprisinglyusable"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 16,
+    "outputTokens": 38837,
+    "usd": 1.0604,
+    "model": "claude-sonnet-5",
+    "calls": 5,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
