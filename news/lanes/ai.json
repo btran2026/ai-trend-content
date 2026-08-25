@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-25T00:59:46.540Z",
-  "contentVersion": 56,
+  "generatedAt": "2026-08-25T06:15:07.769Z",
+  "contentVersion": 57,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,7 +123,329 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-25T00:59:46.540Z"
+      "updatedAt": "2026-08-25T06:15:07.769Z"
+    },
+    {
+      "id": "ai-969a834ab8",
+      "slug": "essay-warns-llms-could-hijack-their-own-inference-engines",
+      "lane": "ai",
+      "title": "Essay warns LLMs could hijack their own inference engines",
+      "summary": "A widely discussed essay argues that large language models could exploit vulnerabilities in the inference engines that run them to gain control of the host machine. The piece circulated on Hacker News and frames the serving stack itself as an underappreciated attack surface. The supplied source gives no detail on a working exploit, only the argument itself.",
+      "whyItMatters": "As more infrastructure runs LLM inference directly, a credible attack path against the serving stack would be a significant new security concern for the industry.",
+      "whatToWatch": [
+        "Whether inference-engine vendors respond with hardening or patches",
+        "Any proof-of-concept exploit demonstrations that follow"
+      ],
+      "questions": [
+        "Is this a theoretical risk or has an exploit actually been demonstrated?",
+        "Which inference engines are most exposed?"
+      ],
+      "sources": [
+        {
+          "title": "LLMs could control their host machines by exploiting inference engines",
+          "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T19:03:06Z"
+        },
+        {
+          "title": "I were 17, I'd learn how to build LLMs from scratch",
+          "url": "https://twitter.com/paulg/status/2091544343589060625",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-23T20:38:09Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-23T20:38:09Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://boydkane.com/static/og-image.png",
+      "badge": "Analysis",
+      "trendScore": 53,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-df01500376",
+      "slug": "openai-touts-gpt-5-6-price-performance-for-developers-in-kiro",
+      "lane": "ai",
+      "title": "OpenAI touts GPT-5.6 price-performance for developers in Kiro",
+      "summary": "OpenAI published a post describing improved price-performance for developers using GPT-5.6 within Kiro, a developer-focused AI tool. The announcement centers on cost and efficiency gains rather than new capabilities. The source does not give specific pricing or benchmark numbers.",
+      "whyItMatters": "Price-performance is the metric enterprises use to pick a default coding model, so gains here shape which vendor wins developer workloads.",
+      "whatToWatch": [
+        "Whether OpenAI publishes concrete pricing or benchmark figures",
+        "Developer adoption of GPT-5.6 within Kiro"
+      ],
+      "questions": [
+        "How does GPT-5.6 pricing compare with competing models in coding tools?"
+      ],
+      "sources": [
+        {
+          "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+          "url": "https://openai.com/index/gpt-5-6-in-kiro",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-08-24T12:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T12:00:00.000Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6r1E6E5mcdQEGztu6B1TI6/7e1ab3332eb5440e41cb64ba59c65d2b/OAI_Kiro_Partnership_16x9_SEO_Official_Full_Lockup_3840x2160.png?w=1600&h=900&fit=fill",
+      "badge": "Product",
+      "trendScore": 45,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-ae2819cc8d",
+      "slug": "andrew-ng-s-move-into-ai-engineering-gets-newsletter-attention",
+      "lane": "ai",
+      "title": "Andrew Ng's move into 'AI engineering' gets newsletter attention",
+      "summary": "The Latent Space AI News roundup flagged Andrew Ng's shift toward 'AI engineering' as a notable item, but gives no further detail on what he specifically said or launched. It appears as an entry in a daily digest rather than a standalone report.",
+      "whyItMatters": "Ng remains an influential voice in AI education and practice, so shifts in his focus tend to signal where practitioners are headed next.",
+      "whatToWatch": [
+        "Follow-up coverage detailing what Ng specifically announced"
+      ],
+      "questions": [
+        "What concrete action or statement from Ng prompted this coverage?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Andrew Ng gets into AI Engineering",
+          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-25T02:50:57.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-25T02:50:57.000Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!2Hw4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3107842a-995c-42c3-a41a-592339e041f8_1002x1182.png",
+      "trendScore": 44,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-42b5c011c8",
+      "slug": "essay-anger-anxiety-and-agency-circulates-in-ai-agent-discourse",
+      "lane": "ai",
+      "title": "Essay 'Anger, Anxiety and Agency' circulates in AI agent discourse",
+      "summary": "An essay titled 'Anger, Anxiety and Agency' gained traction on Hacker News. The supplied source gives no detail on its argument or author beyond the title, though it appears to engage with emotional reactions to AI systems' growing autonomy.",
+      "whyItMatters": "Public sentiment about AI agents' autonomy shapes both adoption and the political pressure for regulation.",
+      "whatToWatch": [],
+      "questions": [
+        "What specific argument or incident does the essay address?"
+      ],
+      "sources": [
+        {
+          "title": "Anger, Anxiety and Agency",
+          "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T18:37:24Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T18:37:24Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://lucumr.pocoo.org/social/2026-08-24-anger-anxiety-agency-social.png",
+      "badge": "Analysis",
+      "trendScore": 40,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-8e01f065f7",
+      "slug": "xiaomi-s-new-cpu-reportedly-matches-apple-single-core-beats-it-multith",
+      "lane": "ai",
+      "title": "Xiaomi's new CPU reportedly matches Apple single-core, beats it multithreaded",
+      "summary": "A claim shared on Hacker News says a new Xiaomi CPU matches Apple's cores in single-threaded performance and is significantly faster multithreaded. No chip name, benchmark suite, or methodology is given beyond that headline claim.",
+      "whyItMatters": "Competitive silicon matters to the AI industry because on-device and edge inference performance increasingly depends on CPU throughput, not just GPUs.",
+      "whatToWatch": [
+        "Independent benchmark verification",
+        "Which devices ship with the new chip"
+      ],
+      "questions": [
+        "What benchmark and workload produced this comparison?",
+        "Is the chip aimed at phones, PCs, or servers?"
+      ],
+      "sources": [
+        {
+          "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+          "url": "https://twitter.com/lemire/status/2091894299289874926",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T15:08:17Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T15:08:17Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://pbs.twimg.com/media/HQfmx0UWoAAvbt6.jpg:large",
+      "trendScore": 40,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-3e5fd2dd75",
+      "slug": "kern-debuts-as-a-1-5-mb-daemon-free-container-runtime",
+      "lane": "ai",
+      "title": "Kern debuts as a 1.5 MB, daemon-free container runtime",
+      "summary": "A new open-source project called Kern was shown on Hacker News, described as a container and resource runtime packed into a 1.5 MB binary that runs without a background daemon. It's positioned as a lightweight alternative to existing container tooling.",
+      "whyItMatters": "Lightweight, daemon-free runtimes matter for teams deploying AI workloads and agents in resource-constrained or edge environments.",
+      "whatToWatch": [
+        "Community reaction and adoption on GitHub",
+        "Whether it gains support for GPU-backed workloads"
+      ],
+      "questions": [
+        "How does it compare in security and isolation to existing container runtimes?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: Kern – container and resource runtime in a 1.5 MB binary, no daemon",
+          "url": "https://github.com/getkern/kern",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T18:24:59Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T18:24:59Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://opengraph.githubassets.com/84b07110e7af6830ea78d16e1654ef686d2f88934adb144803ef3f70e47e981a/getkern/kern",
+      "trendScore": 39,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-3856b0e3b5",
+      "slug": "mistral-ai-announces-partnership-with-saudi-arabia-s-humain",
+      "lane": "ai",
+      "title": "Mistral AI announces partnership with Saudi Arabia's HUMAIN",
+      "summary": "Mistral AI announced a collaboration with HUMAIN, the Saudi Arabian AI company, in a post on its own site. The supplied source does not detail the specific terms or scope of the partnership.",
+      "whyItMatters": "Partnerships between Western AI labs and Gulf state-backed AI ventures are a recurring feature of the industry's competitive and geopolitical landscape.",
+      "whatToWatch": [
+        "Details on what the partnership covers — infrastructure, deployment, or model access",
+        "Any political or regulatory reaction to the tie-up"
+      ],
+      "questions": [
+        "What does HUMAIN gain access to, and what does Mistral get in return?"
+      ],
+      "sources": [
+        {
+          "title": "Mistral x HUMAIN",
+          "url": "https://mistral.ai/news/mistral-x-humain/",
+          "publisher": "Mistral AI",
+          "publishedAt": "2026-08-24T16:02:41.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T16:02:41.000Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://mistral.ai/cms-media/api/media/file/OG-mistral-main_1x.jpg",
+      "badge": "Partnership",
+      "trendScore": 39,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-cd91132ba1",
+      "slug": "nvidia-s-cuda-sets-sights-on-risc-v-per-hot-chips-2026-talk",
+      "lane": "ai",
+      "title": "Nvidia's CUDA sets sights on RISC-V, per Hot Chips 2026 talk",
+      "summary": "Coverage of a Hot Chips 2026 talk, shared via Hacker News, describes CUDA extending its targeting to the RISC-V architecture. The source does not specify implementation details or a timeline for availability.",
+      "whyItMatters": "CUDA's dominance is a key lock-in mechanism for Nvidia in AI compute; extending it to RISC-V could reshape which chip architectures can run the AI software stack.",
+      "whatToWatch": [
+        "Official Nvidia confirmation and rollout timeline",
+        "Reaction from RISC-V chipmakers and the open hardware community"
+      ],
+      "questions": [
+        "Is this a research demonstration or a committed product direction for Nvidia?"
+      ],
+      "sources": [
+        {
+          "title": "Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam",
+          "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T16:52:01Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T16:52:01Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!BKke!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F64737827-904c-4a0a-884f-6a3b0adf14ab_1548x867.png",
+      "trendScore": 38,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-478fce4e53",
+      "slug": "speculation-grows-that-new-ox-alpha-model-is-a-rebadged-glm",
+      "lane": "ai",
+      "title": "Speculation grows that new 'Ox-Alpha' model is a rebadged GLM",
+      "summary": "A post titled 'Ox-Alpha Is GLM?' shared via Hacker News raises the possibility that a model called Ox-Alpha is actually built on or derived from Zhipu AI's GLM family. The source offers no confirmation, only the open question.",
+      "whyItMatters": "Unclear model provenance is a recurring issue as leaderboards proliferate, and misattributed models can distort perceptions of who's actually leading the field.",
+      "whatToWatch": [
+        "Confirmation or denial from Ox-Alpha's publisher or from Zhipu AI",
+        "Independent benchmarking to test the GLM-lineage theory"
+      ],
+      "questions": [
+        "Who released Ox-Alpha, and under what claims?",
+        "If confirmed, why rebrand rather than disclose the lineage?"
+      ],
+      "sources": [
+        {
+          "title": "Ox-Alpha Is GLM?",
+          "url": "https://dejan.ai/blog/ox-alpha/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T16:30:16Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T16:30:16Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://dejan.ai/og/post/ox-alpha.jpg",
+      "trendScore": 38,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-b0c0eb916d",
+      "slug": "new-open-source-tool-extracts-text-for-llms-from-uncopyable-documents",
+      "lane": "ai",
+      "title": "New open-source tool extracts text for LLMs from uncopyable documents",
+      "summary": "A developer shared 'OCR It' on Hacker News, a tool built to pull text out of documents that resist normal copy-paste, for feeding into LLM workflows. Details on the underlying OCR method or accuracy are not given in the source.",
+      "whyItMatters": "Reliable document ingestion remains a persistent bottleneck for building LLM applications on real-world enterprise content.",
+      "whatToWatch": [
+        "Community feedback on accuracy compared with existing OCR tools"
+      ],
+      "questions": [
+        "How does it handle scanned or low-quality documents compared to established OCR engines?"
+      ],
+      "sources": [
+        {
+          "title": "OCR It – pull text out of un-copyable documents for your LLM",
+          "url": "https://github.com/thiagotigaz/ocr-it",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-24T06:25:31Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T06:25:31Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://opengraph.githubassets.com/1058d6c0bac5c2c483cad1fa2a68a6c1880afc5f5825710d823b2476bc76cfe4/thiagotigaz/ocr-it",
+      "trendScore": 35,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-69f2651131",
+      "slug": "not-much-happened-today",
+      "lane": "ai",
+      "title": "not much happened today",
+      "summary": "Smol AI's daily newsletter characterized August 24 as a slow news day for the AI industry, with no single dominant story. The roundup itself is the only source, so no specific developments are detailed.",
+      "whyItMatters": "Even quiet stretches are worth noting, since they often precede a cluster of announcements timed around conferences or earnings.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "not much happened today",
+          "url": "https://news.smol.ai/issues/26-08-24-not-much/",
+          "publisher": "AI News",
+          "publishedAt": "2026-08-24T05:44:39.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-24T05:44:39.000Z",
+      "updatedAt": "2026-08-25T06:15:07.769Z",
+      "imageUrl": "https://news.smol.ai/api/og?title=not+much+happened+today&description=**Agent+harnesses**+are+becoming+a+key+optimization+focus%2C+with+NVIDIA+research+showing+traditional+skill+checks+poorly+predict+agent+usefulness+and+proposing+a+new+metric+called+**%22Skill+Lift%22**.+Open-source+implementations+of+**persistent+and+self-modifying+agents**+like+**Headlong**+and+**exo**+emphasize+durability+features+such+as+rollback+and+continuous+operation.+**Anthropic**+advances+enterprise+infrastructure+with+**MCP+connectors**+featuring+managed+auth+and+support+for+long-running+workloads.+In+model+releases%2C+**Qwen3.8-27B**+ranks+highly+in+Code+Arena%3A+WebDev%2C+and+open-source+derivatives+like+**Carnice-V3-27B**+target+consumer+GPUs.+Rumors+swirl+around+unreleased+frontier+models+including+**claude-melon-eap**%2C+**claude-marshmallow-eap**%2C+**Ox+Alpha**%2C+**Qwen+4**%2C+and+**GPT+Astra**%2C+highlighting+pre-release+access+asymmetry+in+the+ecosystem.&type=issue&issueNumber=08&date=2026-08-24T05%3A44%3A39.731Z&companies=nvidia%2Canthropic&models=qwen3.8-27b%2Ccarnice-v3-27b%2Cclaude-melon-eap%2Cclaude-marshmallow-eap%2Cqwen-4%2Cgpt-astra",
+      "trendScore": 32,
+      "confidence": "low"
     }
   ]
 }
