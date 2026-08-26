@@ -1,22 +1,23 @@
 {
   "lane": "tech",
-  "generatedAt": "2026-08-25T21:30:09.027Z",
-  "contentVersion": 53,
+  "generatedAt": "2026-08-26T05:08:13.474Z",
+  "contentVersion": 54,
   "stories": [
     {
       "id": "tech-198147ad1e",
       "slug": "apple-unveils-m5-ultra-and-m6-chips",
       "lane": "tech",
-      "title": "Apple unveils M5 Ultra and M6 chips",
-      "summary": "Apple introduced two new chips: the M5 Ultra and the M6. Apple calls them its most powerful chips yet. The chips will likely power upcoming Mac models.",
-      "whyItMatters": "Apple's chip design sets the pace for its whole Mac lineup and its position against rival chipmakers.",
+      "title": "Apple unveils M5 Ultra and M6 chips, its most powerful yet",
+      "summary": "Apple introduced two new chips, the M5 Ultra and the M6. The company calls the M5 Ultra its most powerful chip ever. Reports from TechCrunch and Hacker News confirm the announcement, but detailed specs and pricing were not included.",
+      "whyItMatters": "New silicon sets the pace for Apple's Mac lineup and its push into on-device AI, an area where it competes with Nvidia and Qualcomm.",
       "whatToWatch": [
-        "Which Mac models ship with the M5 Ultra and M6",
-        "Independent performance benchmarks",
-        "Pricing for new Macs"
+        "Which Mac models ship with the new chips",
+        "Independent benchmark results",
+        "Developer response to new AI capabilities"
       ],
       "questions": [
-        "How much of the improvement targets AI workloads versus general tasks?"
+        "What are the exact performance gains over the prior generation?",
+        "When will devices with these chips go on sale?"
       ],
       "sources": [
         {
@@ -34,26 +35,26 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-25T13:01:22Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Apple-M6-and-M5-Ultra-hero-260825_big.jpg.medium_2x.jpg?resize=1200,675",
-      "badge": "Product",
-      "trendScore": 70,
+      "badge": "Hardware",
+      "trendScore": 64,
       "confidence": "medium"
     },
     {
       "id": "tech-a037d648cf",
       "slug": "apple-s-new-desktop-macs-target-local-ai-development",
       "lane": "tech",
-      "title": "Apple's new desktop Macs target local AI development",
-      "summary": "Apple introduced new desktop computers built for local AI development. The machines let developers do AI work on the device itself. This follows Apple's push into more powerful in-house chips.",
-      "whyItMatters": "The move shows Apple courting AI developers directly, an area now dominated by cloud computing providers.",
+      "title": "Apple's new desktops target local AI work, as it reverses an email privacy change",
+      "summary": "Apple unveiled new desktop computers built specifically for local AI development, according to Ars Technica. Separately, Engadget reported that Apple decided to undo a change it had made to an email privacy feature. Both moves came from Apple on the same day.",
+      "whyItMatters": "The new desktops show Apple chasing on-device AI workloads, while the privacy reversal points to added scrutiny over feature tradeoffs.",
       "whatToWatch": [
-        "Specs and pricing for the new machines",
-        "Adoption among AI developers",
-        "How the hardware pairs with Apple's new M5 Ultra and M6 chips"
+        "Full specs and pricing for the new desktops",
+        "Whether the email privacy feature returns to its original design"
       ],
       "questions": [
-        "How does the cost of local AI work on these Macs compare with renting cloud GPUs?"
+        "Which desktop models are involved?",
+        "What exactly changed in the email privacy feature, and why did Apple reverse it?"
       ],
       "sources": [
         {
@@ -71,25 +72,55 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-25T13:00:11.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Mac-Studio-2026-1152x648-1787611177.jpg",
-      "badge": "Product",
-      "trendScore": 65,
+      "badge": "Hardware",
+      "trendScore": 59,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-5700b1aa91",
+      "slug": "robotics-startup-generalist-reportedly-reaches-3-billion-valuation",
+      "lane": "tech",
+      "title": "Robotics startup Generalist reportedly reaches $3 billion valuation",
+      "summary": "Robotics startup Generalist has reached a $3 billion valuation, TechCrunch reports, citing unnamed sources. No details on the funding round size or investors were included in the report.",
+      "whyItMatters": "The valuation shows continued investor appetite for robotics and physical-AI startups even as broader tech funding stays selective.",
+      "whatToWatch": [
+        "An official funding announcement from Generalist",
+        "Confirmation of the investors involved"
+      ],
+      "questions": [
+        "What does Generalist build, and who is funding this round?"
+      ],
+      "sources": [
+        {
+          "title": "Robotics startup Generalist reaches $3B valuation, sources say",
+          "url": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
+          "publisher": "TechCrunch",
+          "publishedAt": "2026-08-26T00:40:59.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T00:40:59.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-640351099.jpg?resize=1200,849",
+      "badge": "Funding",
+      "trendScore": 57,
       "confidence": "medium"
     },
     {
       "id": "tech-1b8db47ad7",
       "slug": "instagram-tests-first-draft-to-auto-trim-reels-clips",
       "lane": "tech",
-      "title": "Instagram tests 'First Draft' to auto-trim Reels clips",
-      "summary": "Instagram launched a feature called First Draft. It automatically trims Reels clips for creators. Meta says this cuts down on tedious manual editing.",
-      "whyItMatters": "The feature lowers the effort needed to make short video, a key front in Meta's competition with TikTok for creators.",
+      "title": "Instagram's new First Draft tool auto-trims Reels clips",
+      "summary": "Instagram launched First Draft, a feature that automatically trims Reels clips to make editing less tedious. TechCrunch and The Verge both reported the rollout.",
+      "whyItMatters": "Meta keeps lowering the effort needed to make short-form video, sharpening its competition with TikTok for creator time and attention.",
       "whatToWatch": [
-        "Wider rollout beyond the initial test",
+        "Full rollout to all Instagram users",
         "Creator feedback on the automatic edits"
       ],
       "questions": [
-        "How much control do creators keep over the AI-trimmed clips?"
+        "How does the feature decide where to trim a clip?"
       ],
       "sources": [
         {
@@ -107,269 +138,232 @@
       ],
       "sourceCount": 2,
       "publishedAt": "2026-08-25T17:12:31.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/insta-first-draft.png?quality=90&strip=all&crop=0,0,100,100",
       "badge": "Product",
-      "trendScore": 63,
+      "trendScore": 56,
       "confidence": "medium"
     },
     {
-      "id": "tech-4047d817d8",
-      "slug": "nothing-os-5-0-adds-a-glyph-interface-app-and-more-homescreen-options",
+      "id": "tech-bae87cb127",
+      "slug": "openai-loses-a-top-data-center-executive-amid-ongoing-departures",
       "lane": "tech",
-      "title": "Nothing OS 5.0 adds a Glyph Interface app and more homescreen options",
-      "summary": "Nothing released OS 5.0 for its phones. The update adds a dedicated Glyph Interface app. It also adds more ways to customize the homescreen.",
-      "whyItMatters": "Nothing competes on software design, not just specs, and this update pushes further into that lane inside the Android market.",
+      "title": "OpenAI loses a top data center executive amid ongoing departures",
+      "summary": "OpenAI has lost a senior data center executive, according to TechCrunch. The report frames this as the latest in a series of high-profile departures at the company.",
+      "whyItMatters": "Data center leadership is central to OpenAI's compute buildout, so repeated exits raise questions about stability as it scales infrastructure.",
       "whatToWatch": [
-        "Rollout timeline across Nothing devices"
-      ],
-      "questions": [],
-      "sources": [
-        {
-          "title": "Nothing OS 5.0 brings a new Glyph Interface app and a more customizable homescreen",
-          "url": "https://www.theverge.com/gadgets/984430/nothing-os-5-launch-android-17",
-          "publisher": "The Verge",
-          "publishedAt": "2026-08-25T16:58:53.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T16:58:53.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/nothing-os-5-customization.png?quality=90&strip=all&crop=0,0,100,100",
-      "badge": "Update",
-      "trendScore": 57,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-ac9a43b91a",
-      "slug": "x-sends-cease-and-desist-to-open-source-twitter-viewer-nitter",
-      "lane": "tech",
-      "title": "X sends cease-and-desist to open-source Twitter viewer Nitter",
-      "summary": "X sent a cease-and-desist letter to Nitter, an open-source project. X alleges Nitter scraped its platform without permission. Nitter lets people view X posts without an account.",
-      "whyItMatters": "The action fits a pattern of platforms shutting out third-party tools, which narrows open access to social data.",
-      "whatToWatch": [
-        "Whether Nitter shuts down or changes how it operates",
-        "Any legal action beyond the letter"
+        "Who OpenAI names to fill the role",
+        "Whether additional executives leave"
       ],
       "questions": [
-        "What is the legal basis for X's scraping claim?",
-        "Will other open-source viewers face the same action?"
+        "Why did the executive leave, and where are they going?"
       ],
       "sources": [
         {
-          "title": "X sends cease-and-desist to open-source project Nitter over alleged scraping",
-          "url": "https://techcrunch.com/2026/08/25/x-sends-cease-and-desist-to-open-source-project-nitter-over-alleged-scraping/",
+          "title": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
+          "url": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
           "publisher": "TechCrunch",
-          "publishedAt": "2026-08-25T20:44:12.000Z"
+          "publishedAt": "2026-08-26T00:06:20.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T20:44:12.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/08/twitter-x-logo-musk-2.jpg?resize=1200,675",
-      "badge": "Legal",
-      "trendScore": 55,
+      "publishedAt": "2026-08-26T00:06:20.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2236544023.jpeg?resize=1200,800",
+      "badge": "Personnel",
+      "trendScore": 52,
       "confidence": "medium"
     },
     {
-      "id": "tech-4687f74a61",
-      "slug": "apple-reverses-plan-to-weaken-hide-my-email",
+      "id": "tech-78d9dd7fe9",
+      "slug": "wired-publishes-promo-codes-for-adidas-and-sephora",
       "lane": "tech",
-      "title": "Apple reverses plan to weaken Hide My Email",
-      "summary": "Apple decided to keep its Hide My Email feature intact. Apple had earlier moved to undermine the privacy tool. Hide My Email lets users sign up for services with a masked address.",
-      "whyItMatters": "The reversal tests Apple's privacy-first brand and shows it will walk back changes under pushback.",
-      "whatToWatch": [
-        "An official Apple explanation of the reversal",
-        "Whether related changes also get rolled back"
-      ],
-      "questions": [
-        "What prompted Apple to undermine the feature in the first place?"
-      ],
-      "sources": [
-        {
-          "title": "Apple rescues Hide My Email feature from the privacy scrap heap",
-          "url": "https://techcrunch.com/2026/08/25/apple-rescues-hide-my-email-feature-from-the-privacy-scrap-heap/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-25T14:46:32.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T14:46:32.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2021/08/icloud-pattern-with-key-red.jpg?resize=1200,675",
-      "badge": "Privacy",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-530fd375bf",
-      "slug": "self-driving-truck-startup-gatik-raises-200m-after-pepsico-deal",
-      "lane": "tech",
-      "title": "Self-driving truck startup Gatik raises $200M after PepsiCo deal",
-      "summary": "Gatik, a startup that builds self-driving trucks for short-haul freight, raised $200 million. The round follows a deal with PepsiCo. Gatik focuses on shorter, repeatable delivery routes.",
-      "whyItMatters": "The raise shows investors still back autonomous freight, even as parts of the wider self-driving industry consolidate.",
-      "whatToWatch": [
-        "How Gatik uses the new funding",
-        "Growth of the PepsiCo partnership",
-        "New retail or logistics partners"
-      ],
-      "questions": [
-        "What is Gatik's path to profitability?"
-      ],
-      "sources": [
-        {
-          "title": "Self-driving truck startup Gatik raises $200M following PepsiCo deal",
-          "url": "https://techcrunch.com/2026/08/25/self-driving-truck-startup-gatik-raises-200m-following-pepsico-deal/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-25T14:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T14:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Gatik-PepsiCo-flet.jpg?resize=1200,800",
-      "badge": "Funding",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-1e76f41fb2",
-      "slug": "google-s-pixel-11-pro-fold-improves-but-doesn-t-lead-the-foldable-mark",
-      "lane": "tech",
-      "title": "Google's Pixel 11 Pro Fold improves, but doesn't lead the foldable market",
-      "summary": "Wired reviewed Google's Pixel 11 Pro Fold and called it better than before, but not the best foldable available. The review points to steady, not dramatic, progress in Google's foldable line.",
-      "whyItMatters": "Foldables are a test of Google's hardware ambitions against Samsung, and incremental gains suggest the category is maturing slowly.",
-      "whatToWatch": [
-        "Sales performance of the Pixel 11 Pro Fold",
-        "Samsung's response with its own foldable line"
-      ],
-      "questions": [
-        "What specifically keeps the Pixel Fold from leading the category?"
-      ],
-      "sources": [
-        {
-          "title": "Google Pixel 11 Pro Fold Review: Better, Not Best",
-          "url": "https://www.wired.com/review/google-pixel-11-pro-fold/",
-          "publisher": "Wired",
-          "publishedAt": "2026-08-25T18:45:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T18:45:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://media.wired.com/photos/6a8ddc85c2027e53c53387d2/master/pass/Pixel%2011%20Pro%20Fold%208%20SOURCE%20Simon%20Hill.jpg",
-      "badge": "Review",
-      "trendScore": 54,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-e02934519a",
-      "slug": "google-rolls-out-anti-nausea-motion-assist-dots-on-android",
-      "lane": "tech",
-      "title": "Google rolls out anti-nausea 'Motion Assist' dots on Android",
-      "summary": "Google is rolling out a feature called Motion Assist on Android. It shows moving dots on screen to reduce motion sickness. The rollout comes after the feature was announced earlier.",
-      "whyItMatters": "It shows platform makers investing in comfort and accessibility, not just speed or camera specs.",
-      "whatToWatch": [
-        "Which devices get the feature first",
-        "User reaction once it reaches more phones"
-      ],
-      "questions": [],
-      "sources": [
-        {
-          "title": "Google's anti-nausea Motion Assist dots finally rolling out on Android",
-          "url": "https://arstechnica.com/gadgets/2026/08/google-begins-rolling-out-anti-motion-sickness-feature-on-android-17/",
-          "publisher": "Ars Technica",
-          "publishedAt": "2026-08-25T18:32:30.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T18:32:30.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Motion-Assist-Pixel-11-1152x648.jpg",
-      "badge": "Update",
-      "trendScore": 54,
-      "confidence": "medium"
-    },
-    {
-      "id": "tech-b0531d2c7e",
-      "slug": "when-you-should-turn-off-find-my-iphone",
-      "lane": "tech",
-      "title": "When you should turn off Find My iPhone",
-      "summary": "A guide explains when to turn off Apple's Find My iPhone feature. Common reasons include selling or transferring a device, or addressing personal safety concerns. The feature is normally left on for theft recovery.",
-      "whyItMatters": "It highlights how device-tracking features cut both ways: useful for recovery, but a risk if misused for monitoring someone.",
+      "title": "Wired publishes promo codes for Adidas and Sephora",
+      "summary": "Wired posted a page listing an Adidas discount code and a Sephora discount code for August 2026. This is a coupon roundup, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
       "whatToWatch": [],
       "questions": [],
       "sources": [
         {
-          "title": "How to turn off Find My iPhone (and when you definitely should)",
-          "url": "https://www.engadget.com/2242751/how-to-turn-off-find-my-iphone-when-should/",
-          "publisher": "Engadget",
-          "publishedAt": "2026-08-25T18:30:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T18:30:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://www.engadget.com/img/gallery/how-to-turn-off-find-my-iphone-and-when-you-definitely-should/l-intro-1787333461.jpg",
-      "trendScore": 54,
-      "confidence": "low"
-    },
-    {
-      "id": "tech-c80af17b0d",
-      "slug": "andy-dunn-s-pie-shifts-from-events-app-to-social-network",
-      "lane": "tech",
-      "title": "Andy Dunn's Pie shifts from events app to social network",
-      "summary": "Pie, the startup from Bonobos co-founder Andy Dunn, is moving away from being mainly an events app. It is becoming more of a general social network. The shift marks a change in the app's core focus.",
-      "whyItMatters": "It reflects ongoing experimentation by founders looking for a social app format that can grow beyond incumbents like Instagram and X.",
-      "whatToWatch": [
-        "New features tied to the social network pivot",
-        "User growth after the shift"
-      ],
-      "questions": [
-        "How will Pie differentiate itself from existing social apps?"
-      ],
-      "sources": [
+          "title": "25% Off Adidas Promo Code | August 2026",
+          "url": "https://www.wired.com/story/adidas-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        },
         {
-          "title": "Andy Dunn’s startup Pie becomes less of an events app and more of a social network",
-          "url": "https://techcrunch.com/2026/08/25/andy-dunns-startup-pie-becomes-less-of-an-events-app-and-more-of-a-social-network/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-25T13:00:00.000Z"
+          "title": "20% Off Sephora Promo Code | August 2026",
+          "url": "https://www.wired.com/story/sephora-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T13:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/lolla-2-comments-ticket-negotiation.png?resize=1200,825",
-      "badge": "Startups",
-      "trendScore": 54,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/66ea077251891e6d3cb5d5cf/master/pass/WIRED-Coupons-3.jpg",
+      "trendScore": 51,
       "confidence": "medium"
     },
     {
-      "id": "tech-16e90e0008",
-      "slug": "techcrunch-opens-audience-choice-vote-for-founder-summit-sessions",
+      "id": "tech-51764bf095",
+      "slug": "wired-publishes-promo-codes-for-airdoctor-and-google-workspace",
       "lane": "tech",
-      "title": "TechCrunch opens Audience Choice vote for Founder Summit sessions",
-      "summary": "TechCrunch is asking readers to vote on which Audience Choice sessions appear at its Founder Summit. The vote lets the audience help shape part of the event's agenda.",
-      "whyItMatters": "It matters mainly to founders and investors planning to attend the summit.",
-      "whatToWatch": [
-        "The vote's closing date",
-        "The announced session lineup"
-      ],
+      "title": "Wired publishes promo codes for AirDoctor and Google Workspace",
+      "summary": "Wired posted a page listing an AirDoctor coupon code and a Google Workspace promo code for August 2026. This is a coupon roundup, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
       "questions": [],
       "sources": [
         {
-          "title": "Your vote matters! Decide which Audience Choice sessions will make it to TechCrunch Founder Summit",
-          "url": "https://techcrunch.com/2026/08/25/your-vote-matters-decide-which-audience-choice-sessions-will-make-it-to-techcrunch-founder-summit/",
-          "publisher": "TechCrunch",
-          "publishedAt": "2026-08-25T18:22:50.000Z"
+          "title": "AirDoctor Coupon Codes: 40% Off | August 2026",
+          "url": "https://www.wired.com/story/airdoctor-coupon-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        },
+        {
+          "title": "Google Workspace Promo Codes: 14% Off for August 2026",
+          "url": "https://www.wired.com/story/google-workspace-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T18:22:50.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/founder-summit-audience-choice.png?resize=1200,675",
-      "badge": "Event",
-      "trendScore": 53,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/66ea07733dd51041d9bb38c6/master/pass/WIRED-Coupons-1.jpg",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-a510ec4479",
+      "slug": "wired-publishes-discount-codes-for-corsair-and-target",
+      "lane": "tech",
+      "title": "Wired publishes discount codes for Corsair and Target",
+      "summary": "Wired posted a page listing a Corsair discount code and a Target promo code for August 2026. This is a coupon roundup, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "Corsair Discount Code: Up to 50% Off for August 2026",
+          "url": "https://www.wired.com/story/corsair-coupon/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        },
+        {
+          "title": "Target Promo Code: $50 Off | August 2026",
+          "url": "https://www.wired.com/story/target-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-ba04824536",
+      "slug": "wired-publishes-hp-coupon-codes-and-deals",
+      "lane": "tech",
+      "title": "Wired publishes HP coupon codes and deals",
+      "summary": "Wired posted a page listing HP coupon codes and deals for August 2026. This is a coupon roundup, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "HP Coupon Codes and Deals August 2026",
+          "url": "https://www.wired.com/story/hp-coupon-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b9079f27a355461c964/master/pass/WIRED-Coupons-R2_2.png",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-485e38c74f",
+      "slug": "wired-publishes-a-legalzoom-promo-code-for-llc-formations",
+      "lane": "tech",
+      "title": "Wired publishes a LegalZoom promo code for LLC formations",
+      "summary": "Wired posted a page offering a LegalZoom promo code for a 10% discount on LLC formations. This is a coupon listing, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "LegalZoom Promo Code: Exclusive 10% Off LLC Formations",
+          "url": "https://www.wired.com/story/legalzoom-promo-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b9b7d355db73b38e0c2/master/pass/WIRED-Coupons-R2_11.png",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-616b85d7ef",
+      "slug": "wired-publishes-promo-codes-for-nomad-goods-and-surfshark",
+      "lane": "tech",
+      "title": "Wired publishes promo codes for Nomad Goods and Surfshark",
+      "summary": "Wired posted a page listing a Nomad Goods promo code and a Surfshark promo code for August 2026. This is a coupon roundup, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "Nomad Goods Promo Codes: Get 25% Off in August 2026",
+          "url": "https://www.wired.com/story/nomad-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        },
+        {
+          "title": "Surfshark Promo Codes: 87% Off | August 2026",
+          "url": "https://www.wired.com/story/surfshark-coupon/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/66ea077283cd4f2fbb17d478/master/pass/WIRED-Coupons-2.jpg",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "tech-972d98204f",
+      "slug": "wired-publishes-a-playstation-discount-code-for-ps5-games",
+      "lane": "tech",
+      "title": "Wired publishes a PlayStation discount code for PS5 games",
+      "summary": "Wired posted a page listing a PlayStation discount code for PS5 games in August 2026. This is a coupon listing, not a news event.",
+      "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+      "whatToWatch": [],
+      "questions": [],
+      "sources": [
+        {
+          "title": "PlayStation Discount Code: Save on PS5 Games August 2026",
+          "url": "https://www.wired.com/story/playstation-discount-code/",
+          "publisher": "Wired",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-26T05:00:00.000Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png",
+      "trendScore": 51,
       "confidence": "medium"
     }
   ]

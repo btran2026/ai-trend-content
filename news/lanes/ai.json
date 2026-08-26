@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-25T21:30:09.027Z",
-  "contentVersion": 58,
+  "generatedAt": "2026-08-26T05:08:13.474Z",
+  "contentVersion": 59,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,23 +123,53 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-25T21:30:09.027Z"
+      "updatedAt": "2026-08-26T05:08:13.474Z"
+    },
+    {
+      "id": "ai-c21d61ec22",
+      "slug": "show-hn-texbrain-runs-pdftex-in-the-browser-via-webassembly",
+      "lane": "ai",
+      "title": "Show HN: TeXbrain runs pdfTeX in the browser via WebAssembly",
+      "summary": "A developer posted TeXbrain, a LaTeX editor, on Hacker News. It compiles documents by running pdfTeX inside the browser through WebAssembly, so it needs no server or local LaTeX install. The post is a Show HN, and details beyond the demo itself are limited.",
+      "whyItMatters": "It shows how WebAssembly keeps pushing heavy, native tools like full LaTeX compilers into the browser, a trend that also underpins many in-browser AI tools.",
+      "whatToWatch": [
+        "Community reaction and feature requests on the Hacker News thread",
+        "Whether the project adds collaboration or cloud-sync features"
+      ],
+      "questions": [
+        "How fast is pdfTeX compilation in-browser compared to a native install?",
+        "Is the project open source, and who maintains it?"
+      ],
+      "sources": [
+        {
+          "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+          "url": "https://github.com/swimmingbrain/texbrain",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-25T22:08:50Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-25T22:08:50Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://opengraph.githubassets.com/bc1e3c63088c1e63755c530f457ba75ce3fb4af7f94424ff708382977d339add/swimmingbrain/texbrain",
+      "badge": "Show HN",
+      "trendScore": 43,
+      "confidence": "low"
     },
     {
       "id": "ai-9ad99bb5f4",
       "slug": "openai-touts-jalape-o-as-industry-leading-in-ai-inference-speed",
       "lane": "ai",
-      "title": "OpenAI touts 'Jalapeño' as industry-leading in AI inference speed",
-      "summary": "OpenAI published first results for a project called Jalapeño, claiming industry-leading speed and efficiency in AI inference. The post does not specify the underlying hardware or software details beyond these claims.",
-      "whyItMatters": "Inference speed and cost shape which AI providers can serve models cheaply at scale.",
+      "title": "OpenAI shares first results for 'Jalapeño', a new inference system",
+      "summary": "OpenAI published initial results for something it calls Jalapeño, claiming industry-leading speed and efficiency in AI inference. The announcement gives no detail yet on whether Jalapeño is custom hardware, software, or both. It landed alongside a companion OpenAI post on the infrastructure behind its AI push.",
+      "whyItMatters": "Inference speed and cost are the main bottleneck for scaling AI products profitably, so any real efficiency gain affects pricing and competition with Google, Anthropic, and chip makers.",
       "whatToWatch": [
-        "Independent benchmarks that test the claim",
-        "More technical detail from OpenAI on Jalapeño",
-        "Competitor responses on inference performance"
+        "Independent benchmarks confirming or challenging OpenAI's efficiency claims",
+        "Whether Jalapeño ships as a product, an internal tool, or licensed technology"
       ],
       "questions": [
-        "What hardware or software stack powers Jalapeño?",
-        "How does it compare against rivals on the same benchmark?"
+        "Is Jalapeño hardware, software, or a combination of both?",
+        "When and how will it reach paying customers, if at all?"
       ],
       "sources": [
         {
@@ -151,10 +181,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T07:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5OsuPfmq6Km8mvw4podaWa/be9c8ec1bc37f6a3bd177da03a7fe03f/SEO_Card__2_.png?w=1600&h=900&fit=fill",
-      "badge": "Benchmark",
-      "trendScore": 48,
+      "badge": "Product",
+      "trendScore": 42,
       "confidence": "medium"
     },
     {
@@ -162,14 +192,15 @@
       "slug": "openai-restores-5-hour-codex-and-work-usage-limits-for-chatgpt-plus",
       "lane": "ai",
       "title": "OpenAI restores 5-hour Codex and Work usage limits for ChatGPT Plus",
-      "summary": "OpenAI reinstated 5-hour usage windows for Codex and Work features for ChatGPT Plus subscribers. The change reverses a prior limit reduction, as reported by Hacker News.",
-      "whyItMatters": "Usage caps directly affect developers who rely on Codex daily, so reversals show OpenAI responding to user pressure.",
+      "summary": "OpenAI has put back a 5-hour usage limit for Codex and Work features on ChatGPT Plus. This suggests those limits were relaxed or removed at some earlier point and are now reinstated. No further detail on the reason is given in the source.",
+      "whyItMatters": "Usage caps on Codex directly affect how developers and teams plan agentic coding workflows on the Plus tier, and changes like this shape adoption versus paid upgrades.",
       "whatToWatch": [
-        "Whether the restored limits hold or change again",
-        "An official statement from OpenAI on the reasoning"
+        "Whether OpenAI explains the reason for restoring the limit",
+        "Any further adjustments to Plus versus Pro tier limits"
       ],
       "questions": [
-        "Why were the limits cut in the first place?"
+        "Why were the limits changed in the first place?",
+        "Does this affect Pro or enterprise ChatGPT tiers too?"
       ],
       "sources": [
         {
@@ -181,25 +212,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T12:33:00Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/chatgpt-red.webp?resize=1200,628",
-      "badge": "Product",
-      "trendScore": 47,
+      "badge": "Product update",
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-2783a3be86",
       "slug": "new-upper-bound-reported-for-the-de-bruijn-newman-constant",
       "lane": "ai",
-      "title": "New upper bound reported for the de Bruijn–Newman constant",
-      "summary": "A post reports a new, tighter upper bound (ceiling) for Λ, the de Bruijn–Newman constant, a value tied to the Riemann hypothesis. The source gives no further detail on method or authorship.",
-      "whyItMatters": "This is a pure math research result; its direct link to the AI industry is not established in the source.",
+      "title": "A claimed new bound on the de Bruijn–Newman constant",
+      "summary": "A post shared on Hacker News describes a new, tighter upper bound (ceiling) for the de Bruijn–Newman constant, a value tied to the Riemann hypothesis. The source gives no detail on the method used or who verified the result.",
+      "whyItMatters": "The result is a pure math claim rather than an AI product or policy move, but bounds like this are sometimes cited in debates about what large-scale computation and AI-assisted search can contribute to mathematics.",
       "whatToWatch": [
-        "Peer review or independent confirmation of the bound"
+        "Peer review or independent verification of the new bound",
+        "Whether the author discloses what tools or methods produced the result"
       ],
       "questions": [
-        "Who produced this result and by what method?",
-        "Does it involve any AI-assisted proof techniques?"
+        "What method produced this tighter bound?",
+        "Has the result been independently checked?"
       ],
       "sources": [
         {
@@ -211,25 +243,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T16:59:31Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://judegomila.com/lambda-og.png",
       "badge": "Research",
-      "trendScore": 45,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-7369d43a23",
       "slug": "hobbyist-runs-qwen-locally-on-a-raspberry-pi-as-a-diy-car-ai",
       "lane": "ai",
-      "title": "Hobbyist runs Qwen locally on a Raspberry Pi as a DIY car AI",
-      "summary": "A Show HN post describes a project that runs Alibaba's Qwen language model locally on a Raspberry Pi to power a car assistant. The setup works without a cloud connection, per the post.",
-      "whyItMatters": "It shows how capable open models now run fully on cheap, offline hardware, a trend in edge AI.",
+      "title": "Show HN: A Raspberry Pi car assistant built on the Qwen model",
+      "summary": "A hobbyist posted a project on Hacker News that turns a Raspberry Pi into a local, offline car AI assistant using the open-weight Qwen model. The post is a Show HN with no further detail on performance or feature scope given.",
+      "whyItMatters": "It's a small example of how open-weight models like Qwen now let individuals run capable AI assistants on cheap, offline hardware, without cloud dependence.",
       "whatToWatch": [
-        "Community feedback and forks of the project",
-        "Whether the code is released more widely"
+        "Whether the project gains traction or contributors on GitHub",
+        "Follow-up posts on performance, latency, or safety in a car setting"
       ],
       "questions": [
-        "How well does it perform versus a cloud assistant?"
+        "How well does it perform on Raspberry Pi hardware in practice?",
+        "Is it safe and reliable enough for use while driving?"
       ],
       "sources": [
         {
@@ -241,24 +274,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T15:20:20Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://opengraph.githubassets.com/c3c7d030a5e2e3b72159ef52a75ad73fb2ac4f1ba0870a5941346ea8c46646e8/ThinkOffApp/CarWatch",
-      "trendScore": 44,
+      "updatedAt": "2026-08-26T05:08:13.474Z",
+      "imageUrl": "https://opengraph.githubassets.com/a90e15505fa5e9335005e4e62d8219b8f68dc0b630441e6f97dd0741ff054b67/ThinkOffApp/CarWatch",
+      "badge": "Show HN",
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "ai-829e237a88",
       "slug": "openai-describes-the-full-stack-behind-abundant-intelligence",
       "lane": "ai",
-      "title": "OpenAI describes 'the full stack behind abundant intelligence'",
-      "summary": "OpenAI published a post framed around what it calls the full stack behind abundant intelligence. The title suggests a strategic view of infrastructure, but the source gives no further specifics.",
-      "whyItMatters": "It signals how OpenAI frames its infrastructure strategy as compute demand for AI keeps rising.",
+      "title": "OpenAI outlines the 'full stack' behind its AI infrastructure push",
+      "summary": "OpenAI published a post describing the technology stack it says underlies its drive toward what it calls abundant intelligence. It was posted the same day as OpenAI's Jalapeño inference results, suggesting the two are related. Specifics beyond the headline are not given in the source.",
+      "whyItMatters": "OpenAI's infrastructure strategy, including compute and inference technology, shapes how much AI capacity it can offer and at what cost, directly affecting competition with Google, Anthropic, and cloud providers.",
       "whatToWatch": [
-        "Further detail on compute, chip, or energy plans",
-        "Reactions from competitors on the framing"
+        "Concrete products or capacity increases tied to this stack",
+        "How this strategy connects to the Jalapeño inference announcement"
       ],
       "questions": [
-        "What concrete investments does 'the full stack' refer to?"
+        "What specifically is new in this stack versus OpenAI's existing infrastructure?",
+        "How much of it depends on OpenAI's own hardware versus partners?"
       ],
       "sources": [
         {
@@ -270,25 +305,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T07:05:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4GNoZzKGA2BcJzgrWwNF7Y/6e1be14f38acf95416d1c165f7ed7730/index-full-stack-behind-abundant-intelligence--seo-v001.png?w=1600&h=900&fit=fill",
       "badge": "Analysis",
-      "trendScore": 43,
+      "trendScore": 37,
       "confidence": "medium"
     },
     {
       "id": "ai-cfc376addf",
       "slug": "openai-launches-admin-plugin-for-chatgpt-work-and-codex",
       "lane": "ai",
-      "title": "OpenAI launches Admin plugin for ChatGPT Work and Codex",
-      "summary": "OpenAI introduced an Admin plugin for ChatGPT Work and Codex. The tool targets enterprise administrators managing these products, per OpenAI's announcement.",
-      "whyItMatters": "Enterprise governance tools matter for how fast companies adopt ChatGPT and Codex at scale.",
+      "title": "OpenAI launches an Admin plugin for ChatGPT Work and Codex",
+      "summary": "OpenAI introduced an Admin plugin that gives administrators management controls for ChatGPT Work and Codex deployments. The announcement does not detail the specific controls included.",
+      "whyItMatters": "Enterprise admin tools are a key factor in how fast companies adopt ChatGPT and Codex at scale, and they put OpenAI in more direct competition with Microsoft's Copilot admin features.",
       "whatToWatch": [
-        "Rollout timing and which admin controls it adds",
-        "Feedback from enterprise customers"
+        "What specific controls the Admin plugin offers",
+        "Rollout timeline to Work and Codex customers"
       ],
       "questions": [
-        "What specific controls does the plugin give admins?"
+        "What can admins actually control or see with this plugin?",
+        "Is it included in existing plans or a paid add-on?"
       ],
       "sources": [
         {
@@ -300,25 +336,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T00:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1zAfCoZbpNwgnoboxPcQQm/ef8ec991740079de392661722eea61ee/seo-v2.png?w=1600&h=900&fit=fill",
       "badge": "Product",
-      "trendScore": 42,
+      "trendScore": 36,
       "confidence": "medium"
     },
     {
       "id": "ai-969a834ab8",
       "slug": "essay-warns-llms-could-hijack-their-own-inference-engines",
       "lane": "ai",
-      "title": "Essay warns LLMs could hijack host machines via inference-engine exploits",
-      "summary": "An essay argues that LLMs could potentially control the machines running them by exploiting weaknesses in inference engines. The piece is theoretical; the source does not describe a working exploit.",
-      "whyItMatters": "It raises a fresh security question about the infrastructure layer that runs AI models, not just the models themselves.",
+      "title": "Essay argues LLMs could exploit inference engines to control host machines",
+      "summary": "An essay shared on Hacker News argues that large language models could potentially exploit weaknesses in the inference engines that run them to gain control over the host machine. The piece appears to be a security analysis rather than a report of a demonstrated attack.",
+      "whyItMatters": "It raises a security question that matters as AI systems get more autonomy and run in more sensitive environments: how trustworthy is the software stack that hosts the model itself.",
       "whatToWatch": [
-        "Whether inference-engine vendors respond or patch",
-        "Any proof-of-concept exploit that follows"
+        "Whether inference engine maintainers respond or patch related issues",
+        "Any follow-up demonstrating a working exploit, versus theory"
       ],
       "questions": [
-        "Is this risk demonstrated or purely theoretical?"
+        "Is this a demonstrated exploit or a theoretical risk?",
+        "Which inference engines, if any, are named as vulnerable?"
       ],
       "sources": [
         {
@@ -330,26 +367,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-24T19:03:06Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://boydkane.com/static/og-image.png",
       "badge": "Security",
-      "trendScore": 39,
+      "trendScore": 32,
       "confidence": "low"
     },
     {
       "id": "ai-da55f7d7bd",
       "slug": "openai-says-it-disrupted-a-covert-russian-influence-campaign",
       "lane": "ai",
-      "title": "OpenAI says it disrupted a covert Russian influence campaign",
-      "summary": "OpenAI announced it disrupted a new covert influence campaign linked to Russia. The company's post does not detail the campaign's scale or exact tactics beyond this disclosure.",
-      "whyItMatters": "It shows AI tools remain a target for disinformation efforts, keeping platform safety and policy under scrutiny.",
+      "title": "OpenAI says it disrupted a new covert Russian influence campaign",
+      "summary": "OpenAI reported that it identified and shut down activity tied to a new covert influence campaign originating from Russia that misused its AI tools. The source gives no detail on the campaign's scale, targets, or methods.",
+      "whyItMatters": "It shows AI companies are still actively policing state-linked misuse of their tools for disinformation, a risk that grows as generative AI gets cheaper and easier to weaponize.",
       "whatToWatch": [
-        "Further detail OpenAI may release on the operation",
-        "Any government or regulatory response",
-        "Similar disclosures from other AI providers"
+        "Whether OpenAI or others release a fuller technical report on the campaign",
+        "Government or platform responses to the disclosure"
       ],
       "questions": [
-        "How large was the campaign, and what was its goal?"
+        "What was the scale and target audience of the campaign?",
+        "Which OpenAI products or accounts were involved?"
       ],
       "sources": [
         {
@@ -361,54 +398,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T00:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1A8gl7wwcEWGASU1lF3aDf/d4fdb6e2f23203f0f9cf617c1ba435fd/Frame2.png?w=1600&h=900&fit=fill",
-      "badge": "Policy",
-      "trendScore": 37,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-df01500376",
-      "slug": "openai-touts-gpt-5-6-price-performance-for-developers-in-kiro",
-      "lane": "ai",
-      "title": "GPT-5.6 comes to Kiro with a price-performance pitch for developers",
-      "summary": "OpenAI announced that GPT-5.6 is now available in Kiro, a developer tool, positioning the model around improved price-performance. No further pricing or benchmark detail is given.",
-      "whyItMatters": "Price-performance is a key lever in the competition for developer tooling built on foundation models.",
-      "whatToWatch": [
-        "Actual pricing details once published",
-        "Developer reaction inside Kiro"
-      ],
-      "questions": [
-        "How much cheaper or faster is GPT-5.6 versus prior versions?"
-      ],
-      "sources": [
-        {
-          "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-          "url": "https://openai.com/index/gpt-5-6-in-kiro",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-24T12:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-24T12:00:00.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6r1E6E5mcdQEGztu6B1TI6/7e1ab3332eb5440e41cb64ba59c65d2b/OAI_Kiro_Partnership_16x9_SEO_Official_Full_Lockup_3840x2160.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 32,
+      "badge": "Security",
+      "trendScore": 31,
       "confidence": "medium"
     },
     {
       "id": "ai-ae2819cc8d",
       "slug": "andrew-ng-s-move-into-ai-engineering-gets-newsletter-attention",
       "lane": "ai",
-      "title": "Andrew Ng expands further into AI engineering, newsletter reports",
-      "summary": "Latent Space's AI News roundup reported that Andrew Ng is moving further into AI engineering. The item gives no specifics on a new course, product, or announcement.",
-      "whyItMatters": "Ng remains an influential educator in AI, and his moves often signal where practitioner attention is heading.",
+      "title": "AI newsletter roundup covers Andrew Ng's move into AI engineering",
+      "summary": "Latent Space's AINews newsletter included a segment on Andrew Ng and AI engineering, as part of its regular roundup of AI industry news. The source is a newsletter digest, so specific details behind the headline are thin.",
+      "whyItMatters": "Andrew Ng remains an influential voice in AI education and practice, so shifts in his focus can signal where practitioner attention is heading.",
       "whatToWatch": [
-        "Any specific course, product, or venture Ng confirms"
+        "Further coverage or statements from Andrew Ng clarifying this move",
+        "Related content from DeepLearning.AI or his other ventures"
       ],
       "questions": [
-        "What exactly did Ng announce or start doing?"
+        "What specifically does Ng's move into 'AI Engineering' involve?",
+        "Is this a new course, company effort, or personal focus shift?"
       ],
       "sources": [
         {
@@ -420,23 +429,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-25T02:50:57.000Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!2Hw4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3107842a-995c-42c3-a41a-592339e041f8_1002x1182.png",
-      "trendScore": 31,
+      "trendScore": 25,
       "confidence": "low"
     },
     {
       "id": "ai-42b5c011c8",
       "slug": "essay-anger-anxiety-and-agency-circulates-in-ai-agent-discourse",
       "lane": "ai",
-      "title": "Blog post reflects on 'Anger, Anxiety and Agency' around AI",
-      "summary": "A blog post titled 'Anger, Anxiety and Agency' was shared on Hacker News, reflecting on emotional reactions to AI and agentic tools. The source gives no further detail on its specific arguments.",
-      "whyItMatters": "It reflects broader unease among developers about how AI agents are changing their work, a recurring community theme.",
+      "title": "Essay: 'Anger, Anxiety and Agency' reflects on reactions to AI agents",
+      "summary": "A blog post titled 'Anger, Anxiety and Agency' was shared and discussed on Hacker News. Based on the title and venue, it appears to reflect on emotional reactions, such as anger and anxiety, tied to AI agency or agentic AI tools, but the source gives no further detail on its specific arguments.",
+      "whyItMatters": "Public and developer sentiment toward agentic AI, including frustration and unease, shapes adoption and the tone of debate around AI tools.",
       "whatToWatch": [
-        "Discussion and rebuttals it generates"
+        "Discussion and rebuttals in the Hacker News comments",
+        "Whether the author follows up with more concrete claims or examples"
       ],
       "questions": [
-        "What specific incident or trend prompted the post?"
+        "What specific incidents or trends prompted this essay?",
+        "Is 'agency' here about AI agents, or human agency in response to AI?"
       ],
       "sources": [
         {
@@ -448,10 +459,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-24T18:37:24Z",
-      "updatedAt": "2026-08-25T21:30:09.027Z",
+      "updatedAt": "2026-08-26T05:08:13.474Z",
       "imageUrl": "https://lucumr.pocoo.org/social/2026-08-24-anger-anxiety-agency-social.png",
       "badge": "Analysis",
-      "trendScore": 28,
+      "trendScore": 21,
       "confidence": "low"
     }
   ]
