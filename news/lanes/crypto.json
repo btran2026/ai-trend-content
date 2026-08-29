@@ -1,23 +1,52 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-08-29T16:25:06.011Z",
-  "contentVersion": 60,
+  "generatedAt": "2026-08-29T22:43:29.457Z",
+  "contentVersion": 61,
   "stories": [
+    {
+      "id": "crypto-3e0f216ab3",
+      "slug": "bitcoin-etf-inflows-halt-after-3-billion-streak-but-eth-xrp-and-solana",
+      "lane": "crypto",
+      "title": "Bitcoin ETF inflows halt after $3 billion streak, but ETH, XRP, and Solana funds keep buying",
+      "summary": "US spot Bitcoin ETFs snapped a $3 billion inflow streak, CryptoSlate reports. At the same time, ETFs tied to Ethereum, XRP, and Solana kept pulling in net inflows. The split suggests money is rotating within crypto funds, not leaving the asset class.",
+      "whyItMatters": "ETF flows are a core gauge of institutional demand, and a pause for bitcoin while altcoin funds keep growing points to a shift in where big money now sits.",
+      "whatToWatch": [
+        "Whether bitcoin ETF flows turn negative or resume",
+        "Whether ETH, XRP, and Solana funds keep pace with recent inflows"
+      ],
+      "questions": [
+        "What is pulling investors toward ETH, XRP, and Solana funds over bitcoin right now?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETF inflows snap after $3 billion streak as ETH, XRP and Solana keep buying",
+          "url": "https://cryptoslate.com/bitcoin-etf-inflows-snap-after-3-billion-streak-as-eth-xrp-and-solana-keep-buying/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-29T17:40:52.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T17:40:52.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/crypto-etf-flow-escalators.jpg",
+      "badge": "ETF Flows",
+      "trendScore": 63,
+      "confidence": "low"
+    },
     {
       "id": "crypto-ddb4f247d3",
       "slug": "bitcoin-s-rally-stalls-near-81-000-but-its-gold-like-behavior-stands-o",
       "lane": "crypto",
-      "title": "Bitcoin's rally stalls near $81,000, but its gold-like behavior stands out",
-      "summary": "Bitcoin hit a three-month high this week and briefly outperformed stocks while trading more like gold, according to CoinDesk. But a failed breakout above $81,000 pulled it back below $78,000, and CryptoSlate notes some analysts now see $75,000 as the next support level. Separately, bitcoin miners are increasingly selling high-performance computing capacity alongside mining, a shift away from being pure crypto-price proxies.",
-      "whyItMatters": "The gold-like correlation and miner diversification are read as maturation signals, but the failed breakout shows the rally still lacks conviction.",
+      "title": "Bitcoin outperforms stocks and tracks gold as traders eye $75,000 support",
+      "summary": "Bitcoin has outperformed stocks and started to move more in line with gold, CoinDesk reports. The shift comes after bitcoin's push toward $81,000 failed, per CryptoSlate, which puts the $75,000 level back in focus as a possible support test. Separately, CryptoSlate reports that bitcoin miners now draw meaningful revenue from high-performance computing work, not just mining.",
+      "whyItMatters": "A closer link to gold could change how investors treat bitcoin as a hedge, and the miner shift toward computing work changes what \"bitcoin exposure\" means for stock investors.",
       "whatToWatch": [
-        "Whether $75,000 holds if bitcoin keeps falling",
-        "Whether the correlation with gold persists or fades",
-        "How far miners' shift into HPC revenue goes"
+        "Whether bitcoin holds $75,000 if the pullback continues",
+        "Whether the gold correlation lasts beyond a short window",
+        "How much revenue miners draw from HPC work in coming quarters"
       ],
       "questions": [
-        "Is the gold correlation a real shift or a short-term coincidence?",
-        "How much miner revenue will come from HPC versus mining over time?"
+        "Is the gold correlation a durable trend or a short-term coincidence?"
       ],
       "sources": [
         {
@@ -37,36 +66,126 @@
           "url": "https://www.coindesk.com/daybook-us/2026/08/28/bitcoin-is-outperforming-stocks-and-correlating-with-gold-just-when-it-matters-most",
           "publisher": "CoinDesk",
           "publishedAt": "2026-08-28T11:43:19.000Z"
-        },
-        {
-          "title": "Bitcoin hits highest level in 3 months before pulling back as altcoins consolidate",
-          "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-hits-highest-level-in-3-months-before-pulling-back-as-altcoins-consolidate",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-28T10:37:35.000Z"
         }
       ],
       "sourceCount": 2,
-      "publishedAt": "2026-08-28T10:37:35.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "publishedAt": "2026-08-28T11:43:19.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/2f8437e589e595529cc560ac6a76355d8b08defb-5184x3456.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Markets",
-      "trendScore": 67,
+      "badge": "Analysis",
+      "trendScore": 62,
       "confidence": "medium"
+    },
+    {
+      "id": "crypto-4c42011f7f",
+      "slug": "fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-",
+      "lane": "crypto",
+      "title": "Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of supply",
+      "summary": "Layer 1 blockchain Fogo halted its mainnet after an attacker received 400 million FOGO tokens, about 10% of the circulating supply, The Block reports. The halt aims to stop further movement of the tokens while the network responds.",
+      "whyItMatters": "An exploit worth 10% of a token's supply is a serious incident that can hit confidence and price, and it shows the risk that still sits in newer layer 1 networks.",
+      "whatToWatch": [
+        "Fogo's explanation of how the tokens were obtained",
+        "Whether mainnet resumes and when",
+        "Any exchange action on the affected tokens"
+      ],
+      "questions": [
+        "How did the attacker obtain the tokens?",
+        "Will affected holders get compensation?"
+      ],
+      "sources": [
+        {
+          "title": "Layer 1 blockchain Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of circulating supply",
+          "url": "https://www.theblock.co/news/defi/2026-08-29-layer-1-blockchain-fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-of-circulating-supply-413064",
+          "publisher": "The Block",
+          "publishedAt": "2026-08-29T21:16:51.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T21:16:51.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General-1200x675.jpg",
+      "badge": "Breaking",
+      "trendScore": 60,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-b3566dec21",
+      "slug": "tokenized-asset-activity-may-be-undercounted-opinion-piece-argues",
+      "lane": "crypto",
+      "title": "Tokenized stock transfer volume jumps 415% in a month to $29.5 billion",
+      "summary": "Monthly transfer volume for tokenized stocks rose 415% to $29.5 billion, Cointelegraph reports. CoinDesk adds that on-chain activity for tokenized assets overall is running well ahead of what headline figures show.",
+      "whyItMatters": "Fast growth in tokenized stock volume points to real use of blockchain rails for traditional assets, a key test of crypto's use beyond speculation.",
+      "whatToWatch": [
+        "Whether the growth rate holds up next month",
+        "Which platforms and issuers drive most of the volume"
+      ],
+      "questions": [
+        "How much of this volume is genuine investor activity rather than internal transfers?"
+      ],
+      "sources": [
+        {
+          "title": "Tokenized stock transfer volume jumps 415% in 30 days to $29.5B",
+          "url": "https://cointelegraph.com/markets/tokenized-stock-transfer-volume-jumps-416-in-30-days-to-295b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-29T16:27:28.000Z"
+        },
+        {
+          "title": "Tokenized assets are busier than the data shows",
+          "url": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
+          "publisher": "CoinDesk",
+          "publishedAt": "2026-08-29T13:00:00.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-08-29T13:00:00.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M174Y6XQHY999NVSQCZY6B3V/hi-cryptocurrency-vs-stocks-breaking-news-1.png",
+      "trendScore": 59,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-b1a2f352ea",
+      "slug": "bitcoin-miner-iren-still-draws-82-of-revenue-from-btc-despite-microsof",
+      "lane": "crypto",
+      "title": "Bitcoin miner IREN still draws 82% of revenue from BTC despite Microsoft AI cloud deal",
+      "summary": "Bitcoin miner IREN gets 82% of its revenue from bitcoin mining, even after it freed up capacity for a Microsoft AI cloud computing deal, CryptoSlate reports. The figure shows the AI hosting business is still a minority part of IREN's operation.",
+      "whyItMatters": "IREN's revenue mix shows how bitcoin miners can add AI compute work without giving up mining, which matters for how investors value miner stocks.",
+      "whatToWatch": [
+        "Whether IREN's AI revenue share grows in coming quarters",
+        "How the Microsoft partnership scales over time"
+      ],
+      "questions": [
+        "How much capacity has IREN committed to Microsoft, and for how long?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin miner IREN still gets 82% of revenue from BTC after clearing room for Microsoft AI cloud",
+          "url": "https://cryptoslate.com/iren-ai-cloud-revenue-639m-impairment-bitcoin-82-revenue/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-29T22:10:38.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T22:10:38.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/iren-mining-ai-crossing.jpg",
+      "trendScore": 57,
+      "confidence": "low"
     },
     {
       "id": "crypto-f1d75a804d",
       "slug": "sec-reviews-faster-etf-filing-rules-after-flood-of-crypto-and-event-li",
       "lane": "crypto",
-      "title": "SEC reviews faster ETF filing rules after flood of crypto and event-linked proposals",
-      "summary": "The SEC is reviewing automatic, or generic, filing pathways for ETFs after a wave of exotic crypto and event-linked fund proposals hit regulators' desks, CryptoSlate reports. The review suggests the agency is looking for a way to process the surge without slowing standard approvals.",
-      "whyItMatters": "Filing rules determine how fast new crypto ETFs reach the market, which shapes investor access and competition among issuers.",
+      "title": "SEC reviews automatic filing pathways after wave of exotic crypto ETF proposals",
+      "summary": "The SEC is reviewing automatic, fast-track filing pathways for ETFs after a flood of exotic crypto and event-linked ETF proposals, CryptoSlate reports. The review suggests regulators want to reconsider how fast novel ETF structures can reach the market.",
+      "whyItMatters": "Faster or slower ETF approval pathways directly shape which crypto products reach everyday investors, and how soon.",
       "whatToWatch": [
-        "Any SEC guidance or rule change on generic listing standards",
-        "Whether new crypto ETF filings accelerate or pause during the review"
+        "Any formal rule change the SEC proposes",
+        "The outcome for pending exotic crypto ETF filings"
       ],
       "questions": [
-        "Which product types would qualify for an automatic pathway?",
-        "What is the timeline for any rule change?"
+        "Which specific proposals prompted this review?",
+        "Will the SEC tighten or loosen the fast-track pathway?"
       ],
       "sources": [
         {
@@ -78,56 +197,85 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-29T15:30:47.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/cracked-etf-capsule.jpg",
       "badge": "Regulatory",
-      "trendScore": 61,
+      "trendScore": 56,
       "confidence": "low"
     },
     {
-      "id": "crypto-0288f97a93",
-      "slug": "crypto-etfs-reported-10b-inflow-surge-doesn-t-hold-up-under-scrutiny",
+      "id": "crypto-061acd2daf",
+      "slug": "polygon-discloses-security-flaws-already-fixed-in-recent-hard-forks",
       "lane": "crypto",
-      "title": "Crypto ETFs' reported $10B inflow surge doesn't hold up under scrutiny",
-      "summary": "Headlines claimed crypto ETFs pulled in $10 billion within hours, but a CryptoSlate review of filing data found the figure reflects other flows rather than new investor cash. The finding complicates the narrative of a sudden institutional buying spree.",
-      "whyItMatters": "Inflow numbers drive market sentiment, and an overstated figure can mislead investors trying to gauge real institutional demand.",
+      "title": "Polygon discloses security flaws already fixed in recent hard forks",
+      "summary": "Polygon disclosed security flaws that recent hard forks had already fixed, Cointelegraph reports. Details on the specific vulnerabilities remain limited.",
+      "whyItMatters": "Retroactive disclosure of flaws in a major layer 2 network is a reminder that even established chains can carry undisclosed risk until patched.",
       "whatToWatch": [
-        "Whether other outlets correct or clarify the $10B figure",
-        "Follow-up reconciliation of actual ETF flow data"
+        "Full technical details on the disclosed flaws",
+        "Confirmation on whether any funds were at risk before the fixes"
       ],
       "questions": [
-        "What is the accurate inflow figure?",
-        "Which specific funds produced the apparent spike?"
+        "Were any funds exposed before the forks patched these flaws?",
+        "Why did disclosure come only now?"
       ],
       "sources": [
         {
-          "title": "Crypto ETFs appeared to hit $10B in hours, but filing data exposes where that money really came from",
-          "url": "https://cryptoslate.com/crypto-etfs-appeared-to-hit-10b-in-hours-but-filing-data-exposes-where-that-money-really-came-from/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-08-29T07:10:07.000Z"
+          "title": "Polygon discloses security flaws fixed in recent hard forks",
+          "url": "https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-29T20:28:51.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-29T07:10:07.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-etf-piggy-bank.jpg",
-      "badge": "Analysis",
-      "trendScore": 59,
-      "confidence": "low"
+      "publishedAt": "2026-08-29T20:28:51.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17JHBKVPG032T0G1E4PGVX3/hi-quadrigacx-ceo-died-what-next.png",
+      "badge": "Security",
+      "trendScore": 54,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-60379c04cb",
+      "slug": "stellar-s-tokenized-real-world-asset-market-more-than-quadruples-to-ne",
+      "lane": "crypto",
+      "title": "Stellar's tokenized real-world asset market more than quadruples to nearly $4 billion",
+      "summary": "The tokenized real-world asset market on Stellar grew to nearly $4 billion, more than four times its prior size, Cointelegraph reports.",
+      "whyItMatters": "Rapid growth in real-world asset tokenization on Stellar points to rising institutional use of the network for bonds, funds, and other traditional assets.",
+      "whatToWatch": [
+        "Which issuers and asset types drive most of the growth",
+        "Whether the growth pace continues"
+      ],
+      "questions": [
+        "What caused the sudden jump, and how concentrated is it among a few issuers?"
+      ],
+      "sources": [
+        {
+          "title": "Stellar tokenized RWA market more than quadruples to nearly $4B",
+          "url": "https://cointelegraph.com/markets/stellar-tokenized-rwa-market-nears-4b-after-fourfold-2026-growth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-08-29T19:12:42.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T19:12:42.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17DHDVASPVRK9KZ8KYFMNK1/hi-how-binance-plans-to-bring-tokenized-us-stocks-3.png",
+      "trendScore": 53,
+      "confidence": "medium"
     },
     {
       "id": "crypto-2d1ada4d48",
       "slug": "bitcoin-etfs-9-day-inflow-streak-ends-as-price-dips-below-78k",
       "lane": "crypto",
-      "title": "Bitcoin ETFs' 9-day inflow streak ends as price dips below $78K",
-      "summary": "US spot bitcoin ETFs' nine-day streak of net inflows has ended, coinciding with bitcoin's drop below $78,000, Cointelegraph reports.",
-      "whyItMatters": "ETF flows are a key gauge of institutional demand, and a reversal after a long streak may signal cooling appetite at current prices.",
+      "title": "Bitcoin ETFs end 9-day inflow streak as BTC dips below $78,000",
+      "summary": "US spot Bitcoin ETFs saw their nine-day inflow streak end as bitcoin's price fell below $78,000, Cointelegraph reports.",
+      "whyItMatters": "A break in ETF inflows alongside a price drop is worth watching as a signal of whether institutional demand is cooling.",
       "whatToWatch": [
-        "Whether outflows continue in coming days or reverse quickly"
+        "Whether outflows continue or inflows resume",
+        "Bitcoin's price action near the $75,000 to $78,000 range"
       ],
       "questions": [
-        "Is this a one-day blip or the start of a trend?",
-        "Which funds drove the outflow?"
+        "Is this outflow tied to broader market conditions or to bitcoin-specific concerns?"
       ],
       "sources": [
         {
@@ -139,55 +287,55 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-29T06:47:12.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M162QNJPWZZW5MZ2NTH7GFQ2/hi-what-is-a-bitcoin-node-a-beginners-guide-on-blockchain-nodes-etf3-1.jpg",
-      "badge": "Markets",
-      "trendScore": 58,
+      "trendScore": 53,
       "confidence": "medium"
     },
     {
-      "id": "crypto-dd1e0b0fd6",
-      "slug": "survey-suggests-americans-value-bitcoin-for-control-not-as-digital-gol",
+      "id": "crypto-5bae1444f2",
+      "slug": "bitcoin-faces-a-new-macro-test-as-fed-chair-warsh-flags-sticky-inflati",
       "lane": "crypto",
-      "title": "Survey suggests Americans value bitcoin for control, not as 'digital gold'",
-      "summary": "A Bitcoin Policy Institute study reported by CoinDesk found everyday American bitcoin holders are drawn more to personal control and small, regular investing than to the long-standing 'digital gold' store-of-value pitch.",
-      "whyItMatters": "If retail adoption is driven by motives different from the industry's usual marketing, that could reshape how issuers pitch bitcoin to new users.",
+      "title": "Bitcoin faces a new macro test as Fed Chair Warsh flags sticky inflation",
+      "summary": "Federal Reserve Chair Kevin Warsh highlighted sticky inflation metrics, CryptoSlate reports, creating a fresh macro test for bitcoin.",
+      "whyItMatters": "Fed comments on inflation shape rate expectations, and rate expectations directly affect risk appetite for bitcoin and other crypto assets.",
       "whatToWatch": [
-        "Whether industry messaging shifts toward control and micro-investing themes"
+        "Upcoming Fed statements or rate decisions",
+        "Bitcoin's price reaction to new inflation data"
       ],
       "questions": [
-        "How was the survey sample selected, and how representative is it?"
+        "Which specific inflation metrics did Warsh cite?",
+        "What policy response might follow?"
       ],
       "sources": [
         {
-          "title": "Ditching 'digital gold': BPI study suggests everyday Americans prefer control and micro-investing",
-          "url": "https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-29T15:00:00.000Z"
+          "title": "Bitcoin faces a new macro test as Fed Chair Kevin Warsh highlights sticky inflation metrics",
+          "url": "https://cryptoslate.com/bitcoin-faces-a-new-macro-test-as-fed-chair-kevin-warsh-highlights-sticky-inflation-metrics/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-08-29T16:30:58.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-29T15:00:00.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a157306e943dd581a50f1881a075dc427bda6fad-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Analysis",
-      "trendScore": 55,
-      "confidence": "medium"
+      "publishedAt": "2026-08-29T16:30:58.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-warsh-policy-collision.jpg",
+      "badge": "Macro",
+      "trendScore": 52,
+      "confidence": "low"
     },
     {
       "id": "crypto-6a7f96aad2",
       "slug": "swift-s-1-5-quadrillion-payments-network-faces-a-blockchain-test",
       "lane": "crypto",
-      "title": "Swift's $1.5 quadrillion payments network faces a blockchain test",
-      "summary": "CoinDesk reports that Swift, the bank messaging network underpinning global payments, faces a test of whether blockchain technology can handle its scale, as the industry watches if distributed ledgers can match Swift's role in traditional finance.",
-      "whyItMatters": "How Swift responds to blockchain competition matters for whether crypto rails displace or simply integrate with legacy cross-border payment systems.",
+      "title": "Swift's $1.5 quadrillion network faces a blockchain test",
+      "summary": "Swift, the messaging network behind $1.5 quadrillion in global payment flows, faces a test from blockchain-based alternatives, CoinDesk reports.",
+      "whyItMatters": "How Swift responds to blockchain competition will shape how fast institutional cross-border payments move onto crypto rails.",
       "whatToWatch": [
-        "Details of the specific blockchain pilot or trial involved",
-        "Results and timeline of the test"
+        "Any pilot programs or partnerships Swift announces",
+        "Whether competing blockchain payment networks gain share"
       ],
       "questions": [
-        "What blockchain protocol or partner is involved?",
-        "What would count as success or failure for Swift?"
+        "Which blockchain systems pose the most direct challenge to Swift?"
       ],
       "sources": [
         {
@@ -199,25 +347,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-29T15:00:00.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/508c78185616861e76dfe16cc9d55787a0ff9c41-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Analysis",
-      "trendScore": 55,
+      "trendScore": 50,
       "confidence": "medium"
     },
     {
       "id": "crypto-e52d6d6782",
       "slug": "the-next-trillion-dollar-digital-currency-might-not-be-a-stablecoin",
       "lane": "crypto",
-      "title": "The next trillion-dollar digital currency might not be a stablecoin",
-      "summary": "CoinDesk explores the idea that the next digital currency to reach trillion-dollar scale may not be a stablecoin, and may not even exist under a recognizable name yet, reflecting how fast digital money is evolving.",
-      "whyItMatters": "Stablecoins currently dominate crypto's payment use case, so a new challenger category would reshape competitive and regulatory dynamics.",
+      "title": "The next trillion-dollar currency may not be a stablecoin, and it may not have a name yet",
+      "summary": "CoinDesk argues the next currency to reach trillion-dollar scale might not be a stablecoin at all, and could take a form that has no name yet.",
+      "whyItMatters": "The idea challenges the assumption that stablecoins are the endpoint for digital money, a question worth tracking as the market for digital value evolves.",
       "whatToWatch": [
-        "Emerging digital currency models gaining institutional traction"
+        "Emerging currency models or projects that could fit this description"
       ],
       "questions": [
-        "What form would this currency take?",
-        "Which issuers or governments might drive it?"
+        "What form could this currency take if not a stablecoin?"
       ],
       "sources": [
         {
@@ -229,162 +376,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-08-29T15:00:00.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
       "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/486b2136ce091f05ce9e6f0e16a7660ee1fabe27-3840x2160.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
       "badge": "Analysis",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-04cb7c8f96",
-      "slug": "former-white-house-teleprompter-operator-ordered-to-pay-172-000-over-k",
-      "lane": "crypto",
-      "title": "Former White House teleprompter operator ordered to pay $172,000 over Kalshi trades",
-      "summary": "A former White House teleprompter operator has been ordered to pay $172,000 in connection with trades on Kalshi's mention markets, The Block reports. The case ties access to insider information about spoken remarks to bets on prediction-market platforms.",
-      "whyItMatters": "The case highlights integrity risks in fast-growing prediction markets, which increasingly overlap with crypto-adjacent trading platforms.",
-      "whatToWatch": [
-        "Whether Kalshi or regulators tighten rules around insider access to mention markets"
-      ],
-      "questions": [
-        "What specific violation triggered the penalty?",
-        "Are further enforcement actions expected against other traders?"
-      ],
-      "sources": [
-        {
-          "title": "Former White House teleprompter operator ordered to pay $172,000 for Kalshi trades on mention markets",
-          "url": "https://www.theblock.co/news/regulation/2026-08-29-former-white-house-teleprompter-operator-ordered-to-pay-172000-for-kalshi-trades-on-mention-markets-413058",
-          "publisher": "The Block",
-          "publishedAt": "2026-08-29T13:58:02.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-29T13:58:02.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://www.tbstat.com/wp/uploads/2025/04/20250424_Law_News_4-1200x675.jpg",
-      "badge": "Regulatory",
-      "trendScore": 54,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-0f079f3ce4",
-      "slug": "ripple-readies-xrp-ledger-for-a-future-q-day-when-quantum-computers-th",
-      "lane": "crypto",
-      "title": "Ripple readies XRP Ledger for a future 'Q-Day' when quantum computers threaten today's cryptography",
-      "summary": "CoinDesk reports Ripple is preparing the XRP Ledger for a future in which quantum computers could break current cryptographic protections, an event some in the industry call 'Q-Day.'",
-      "whyItMatters": "Quantum resistance is a looming, if uncertain-timeline, risk for every blockchain that relies on today's cryptographic signatures.",
-      "whatToWatch": [
-        "Specific quantum-resistant upgrades proposed for XRP Ledger",
-        "Whether other major chains announce similar preparations"
-      ],
-      "questions": [
-        "What is Ripple's estimated timeline for quantum risk?",
-        "How does its approach compare with other chains' quantum-resistance plans?"
-      ],
-      "sources": [
-        {
-          "title": "Ripple is preparing XRP Ledger for quantum computers before ‘Q-Day’ arrives",
-          "url": "https://www.coindesk.com/tech/2026/08/28/ripple-is-preparing-xrp-ledger-for-quantum-computers-before-q-day-arrives",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-29T02:30:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-29T02:30:00.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/3fdb04bd3eb1c1413ad0d70e8d1e464ee4866ad9-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Technical",
-      "trendScore": 54,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-b3566dec21",
-      "slug": "tokenized-asset-activity-may-be-undercounted-opinion-piece-argues",
-      "lane": "crypto",
-      "title": "Tokenized asset activity may be undercounted, opinion piece argues",
-      "summary": "A CoinDesk opinion piece argues that on-chain data understates real activity in tokenized assets, suggesting the true scale of tokenization exceeds what headline figures show.",
-      "whyItMatters": "Tokenization is pitched as a bridge between traditional finance and crypto rails, so how it's measured affects how seriously institutions treat it.",
-      "whatToWatch": [
-        "Any new data or methodology that better captures tokenized asset activity"
-      ],
-      "questions": [
-        "What specific activity is missed by current measurements, and why?"
-      ],
-      "sources": [
-        {
-          "title": "Tokenized assets are busier than the data shows",
-          "url": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
-          "publisher": "CoinDesk",
-          "publishedAt": "2026-08-29T13:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-29T13:00:00.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/8063c00aa61892be74b3d456dde16b88df485efc-8000x4099.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-      "badge": "Analysis",
-      "trendScore": 53,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-ecc3558883",
-      "slug": "bitcoin-s-oldest-coins-are-moving-again-at-an-unusually-fast-pace",
-      "lane": "crypto",
-      "title": "Bitcoin's oldest coins are moving again at an unusually fast pace",
-      "summary": "Decrypt reports that long-dormant bitcoin, held for years without moving, is being transferred in 2026 at a pace rarely seen before. The activity revives questions about early holders shifting custody or preparing to sell.",
-      "whyItMatters": "Movement of old coins can precede large sales or custody changes and is watched as a signal of new supply reaching the market.",
-      "whatToWatch": [
-        "Whether the moved coins reach exchanges or stay in new wallets",
-        "Any price impact tied to the increased movement"
-      ],
-      "questions": [
-        "Who is behind the moves — early miners, recovered wallets, or estate transfers?",
-        "Does this correlate with downward price pressure?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin's Oldest Coins Are Waking Up in 2026 at a Pace Rarely Seen",
-          "url": "https://decrypt.co/376866/bitcoin-oldest-coins-waking-up-2026",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-08-29T15:31:04.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-29T15:31:04.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-26-gID_7.png@png",
-      "badge": "Analysis",
-      "trendScore": 51,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-b024463dca",
-      "slug": "trump-linked-brand-promoted-gold-theme-just-before-its-token-collapsed",
-      "lane": "crypto",
-      "title": "Trump-linked brand promoted 'GOLD' theme just before its token collapsed",
-      "summary": "Cointelegraph reports that a brand promoted by Donald Trump touted a 'GOLD' theme shortly before an associated token's price collapsed, the latest in a string of controversies around Trump-linked crypto ventures.",
-      "whyItMatters": "Celebrity and political-figure-backed tokens carry outsized retail risk, and repeated collapses raise scrutiny of promotion practices and conflicts of interest.",
-      "whatToWatch": [
-        "Regulatory or investor response to the collapse",
-        "Further disclosures about the token's backers"
-      ],
-      "questions": [
-        "What caused the collapse — liquidity withdrawal, insider selling, or market conditions?",
-        "Are any investigations pending?"
-      ],
-      "sources": [
-        {
-          "title": "Trump-promoted brand touts GOLD before token collapse",
-          "url": "https://cointelegraph.com/news/trump-linked-account-list-gold-token-crash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-08-29T10:53:41.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-29T10:53:41.000Z",
-      "updatedAt": "2026-08-29T16:25:06.011Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M16D9NH0P7JYVR3ND526E5F5/trumps-influence-on-crypto.jpg",
-      "badge": "Incident",
-      "trendScore": 51,
+      "trendScore": 50,
       "confidence": "medium"
     }
   ]

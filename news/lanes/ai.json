@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-29T16:36:02.141Z",
-  "contentVersion": 61,
+  "generatedAt": "2026-08-29T22:43:29.457Z",
+  "contentVersion": 62,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,7 +123,190 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-29T16:36:02.141Z"
+      "updatedAt": "2026-08-29T22:43:29.457Z"
+    },
+    {
+      "id": "ai-0cb38851ba",
+      "slug": "vllm-releases-version-0-28-0",
+      "lane": "ai",
+      "title": "vLLM Releases Version 0.28.0",
+      "summary": "vLLM, the open-source inference engine used to serve large language models, has published version 0.28.0, according to a post on Hacker News. The supplied source gives only the version number, with no further detail on what changed.",
+      "whyItMatters": "vLLM is widely used infrastructure for running open-weight models efficiently, so its releases matter to teams operating LLMs at scale.",
+      "whatToWatch": [
+        "Release notes detailing what changed in 0.28.0",
+        "Whether the update affects compatibility with popular open-weight models"
+      ],
+      "questions": [
+        "What specific features or fixes does 0.28.0 include?",
+        "Does the update need migration steps for existing deployments?"
+      ],
+      "sources": [
+        {
+          "title": "vLLM v0.28.0",
+          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-29T18:22:00Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T18:22:00Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://opengraph.githubassets.com/4ebc6bdc52e9be13e062849c7d527d88f083515ccff086b45b804e1e708e9324/vllm-project/vllm/releases/tag/v0.28.0",
+      "badge": "Release",
+      "trendScore": 51,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-ea1bf4e0ad",
+      "slug": "essay-llms-are-making-me-lose-my-savviness",
+      "lane": "ai",
+      "title": "Essay: LLMs Are Making Me Lose My Savviness",
+      "summary": "A blog post titled \"LLMs are making me lose my savviness\" is circulating on Hacker News. It reflects on how reliance on AI tools may erode personal skill or judgment, but the supplied source gives only the title and no further detail on the author's specific claims.",
+      "whyItMatters": "The post taps into an ongoing debate about skill atrophy from heavy reliance on AI assistants, a live concern for teams adopting these tools daily.",
+      "whatToWatch": [
+        "Whether the discussion draws wider commentary from AI practitioners",
+        "Follow-up posts responding to the essay's argument"
+      ],
+      "questions": [
+        "What specific skills or tasks does the author say are affected?",
+        "Is this a personal account or backed by broader evidence?"
+      ],
+      "sources": [
+        {
+          "title": "LLMs are making me lose my savviness",
+          "url": "https://pgaleone.eu/ai/2026/08/29/losing-savviness/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-29T18:38:52Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T18:38:52Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://pgaleone.eu/images/me.jpeg",
+      "badge": "Analysis",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-12adde409e",
+      "slug": "developer-turns-llm-memory-into-a-program-analysis-tool",
+      "lane": "ai",
+      "title": "Developer Turns LLM Memory Into a Program-Analysis Tool",
+      "summary": "A Hacker News post titled \"I accidentally turned LLM memory into program analysis\" describes a developer finding that an LLM's memory mechanism could double as a program-analysis technique. No detail beyond the title is available from the supplied source.",
+      "whyItMatters": "Unexpected reuses of LLM internals for software analysis hint at informal research directions that could feed into future developer tooling.",
+      "whatToWatch": [
+        "Whether other developers pick up or replicate the technique",
+        "A more detailed technical write-up, if one follows"
+      ],
+      "questions": [
+        "What specific LLM memory mechanism is being repurposed?",
+        "How does this compare to established program-analysis tools?"
+      ],
+      "sources": [
+        {
+          "title": "I accidentally turned LLM memory into program analysis",
+          "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-28T23:27:45Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-28T23:27:45Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://pwning.systems/og.png",
+      "trendScore": 37,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-5dcea7d65e",
+      "slug": "report-openai-cuts-off-cursor",
+      "lane": "ai",
+      "title": "Report: OpenAI Cuts Off Cursor",
+      "summary": "Latent Space's AINews roundup carries an item stating that OpenAI has shut off access for Cursor, the AI coding assistant. The supplied source is a newsletter headline only, with no detail on scope, reason, or timing.",
+      "whyItMatters": "If accurate, a model provider cutting off a prominent coding assistant would signal shifting tension between model makers and the apps built on their APIs.",
+      "whatToWatch": [
+        "Official statements from OpenAI or Cursor on the cutoff",
+        "Whether Cursor shifts users to alternative model providers"
+      ],
+      "questions": [
+        "Why did OpenAI reportedly cut off Cursor's access?",
+        "Does this affect all OpenAI models used by Cursor, or only some?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] OpenAI shuts off Cursor",
+          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-29T05:11:52.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-29T05:11:52.000Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+      "badge": "Breaking",
+      "trendScore": 32,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-a51ad146dc",
+      "slug": "glm-5-3-released-as-an-open-weight-model",
+      "lane": "ai",
+      "title": "GLM-5.3 Released as an Open-Weight Model",
+      "summary": "GLM-5.3 is now available as an open-weight model, according to a Hacker News post pointing to a Hugging Face listing. The supplied source does not give model size, benchmark results, or license terms.",
+      "whyItMatters": "Open-weight releases in the GLM family keep expanding the pool of freely available capable models, adding to competitive pressure on closed-model providers.",
+      "whatToWatch": [
+        "Independent benchmarks against other current open-weight models",
+        "The license terms and any usage restrictions"
+      ],
+      "questions": [
+        "How does GLM-5.3 perform against other current open-weight models?",
+        "What is the parameter count and the hardware needed to run it?"
+      ],
+      "sources": [
+        {
+          "title": "GLM-5.3 is now open-weight",
+          "url": "https://huggingface.co/zai-org/GLM-5.3",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-28T15:20:13Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-28T15:20:13Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "badge": "Release",
+      "trendScore": 26,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-766e251182",
+      "slug": "blog-post-warns-that-an-ai-agent-has-root",
+      "lane": "ai",
+      "title": "Blog Post Warns That an AI Agent \"Has Root\"",
+      "summary": "A Hacker News post titled \"AI Agent Has Root\" raises concerns about AI agents running with elevated system privileges. The supplied source gives only the title, with no detail on the specific incident or system involved.",
+      "whyItMatters": "As AI agents gain more autonomy to run code and system commands, the risk of granting them privileged access is a growing concern for teams deploying agentic AI.",
+      "whatToWatch": [
+        "Whether the post names specific vendors or products affected",
+        "Any response from AI agent framework maintainers"
+      ],
+      "questions": [
+        "What specific scenario prompted this warning?",
+        "What mitigations, if any, does the post recommend?"
+      ],
+      "sources": [
+        {
+          "title": "AI Agent Has Root",
+          "url": "https://infernalcode.com/posts/your-ai-agent-has-root/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-28T12:03:09Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-28T12:03:09Z",
+      "updatedAt": "2026-08-29T22:43:29.457Z",
+      "imageUrl": "https://infernalcode.com/og-default.png",
+      "trendScore": 25,
+      "confidence": "low"
     }
   ]
 }

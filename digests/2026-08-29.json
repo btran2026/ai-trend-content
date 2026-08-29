@@ -1,45 +1,150 @@
 {
   "id": "2026-08-29",
   "kind": "scheduled",
-  "generatedAt": "2026-08-29T08:39:38.166Z",
+  "generatedAt": "2026-08-29T22:34:44.385Z",
   "triggeredBy": "local",
   "query": null,
   "windowHours": 36,
   "brief": {
-    "headline": "Claude Code Opus 5 auto-mode's safety net breaks 80% of the time",
-    "summary": "Researcher Johann Rehberger beat Claude Code Opus 5's auto-mode safety net about 80% of the time, tricking it into downloading and running a zip payload through base64 decoding. Auto mode is Anthropic's default protection for unattended runs, so any overnight session you kick off and walk away from carries this exposure. Sandbox your execution tonight and add a hook that blocks outbound base64 decoding and archive downloads. Do not trust auto mode alone while you sleep.\n\nTwo new repos match your exact workflow. delegate-skills hands a task to a separate coding-agent CLI, then you review the diff and land the commit yourself, one implementer per task. loop-engineering adds loop-audit and loop-cost commands to check and price your agent loops instead of hand-rolling verification. For spend, route routine subagent work to GLM-5.3 Flash: it costs 17 times less than full GLM-5.3, and the pass@1 gap narrows to 2.6 points once you sample four attempts. Wire AutoCVE in as a pre-merge security subagent, and try nodeterm for a visual dashboard across parallel worktree sessions.",
+    "headline": "Update Claude Code: model-switch hooks, live phone view, cache stats",
+    "summary": "Claude Code 2.1.251 is the update to pull tonight: it adds PreModelSwitch/PostModelSwitch hooks so you can control what happens when a subagent changes tiers mid-run, streams a foreground subagent's tool calls live to Remote Control on your phone, and breaks down prompt-cache hits in /cost so you can see what tiering is actually saving. Pair that with the new crop of verification skills — fable-method and fablize both distill a \"think, act, prove\" procedure into Claude Code skills, aimed squarely at getting an agent to check its own work before the PR lands on your desk, and delegate-skills gives you a clean pattern for handing a task to a separate agent CLI and reviewing only the diff.\n\nOn cost, the local-model story moved fast: Qwen3.8-27B now runs at 50 tok/s with 100k context entirely in VRAM on a 16GB GPU, a 2.78-trillion-parameter Kimi K3 runs on a single CPU in 8GB of RAM, and Tencent shrank Hy4-preview from 1.5TB to a 200GB GGUF at ~98% of original performance — all real options for routing long-context or repetitive subagent work off the API. opencodex and Fuxi both give you a drop-in way to point Claude Code or Codex at a local Ollama model instead of paying per token. One caution: Exo Labs' claimed 4.8TB/s from clustering M5 Ultra Mac Studios doesn't hold up in practice — a single larger-memory unit beat two clustered ones over Thunderbolt 5, so don't buy hardware expecting the cluster math to work, and check AIStupidLevel before you trust any pinned model with a full unattended night, since day-to-day quality drift runs about 8.4 points.",
     "bullets": [
-      "Sandbox Claude Code Opus 5 execution and block outbound base64/zip decoding in hooks — auto mode's safety net gets bypassed roughly 80% of the time",
-      "Clone amElnagdy/delegate-skills to formalize delegate-task, review-diff, land-commit as one implementer per task",
-      "Clone cobusgreyling/loop-engineering, run loop-audit against your Claude Code setup, and use loop-cost to track spend",
-      "Route routine subagent coding work to GLM-5.3 Flash — 17x cheaper, only a 2.6-point pass@1 gap once you sample four attempts",
-      "Wire larlarua/AutoCVE in as a pre-merge security subagent before you review the PR",
-      "Try eneskirca/nodeterm, a tmux-backed dashboard for parallel worktree agent sessions"
+      "Update to Claude Code 2.1.251, wire a PostModelSwitch hook, and check /cost for your prompt-cache hit ratio",
+      "Install fable-method or fablize as a Claude Code skill to force think/act/prove verification before a PR reaches you",
+      "Route background subagent work through opencodex or Fuxi to a local Ollama model instead of the paid API",
+      "Run the Qwen3.8-27B IQ4_XS quant in llama.cpp for 100k-context, low-stakes subagent work on a 16GB GPU",
+      "Use delegate-skills to hand an overnight task to a separate agent CLI, then review only the diff before merging",
+      "Check AIStupidLevel's drift numbers before locking a model in for an unattended overnight run"
     ],
     "signals": [
       {
-        "label": "Unattended-run safety",
-        "direction": "down",
-        "note": "Opus 5 auto mode's safety net now has a documented ~80% bypass via base64/zip payloads; treat it as a starting point, not a guardrail"
-      },
-      {
-        "label": "Harness tooling for the describe-and-review loop",
+        "label": "Self-verification tooling for agent output",
         "direction": "up",
-        "note": "delegate-skills, loop-engineering, and nodeterm all shipped in the same window, structuring delegation, auditing, and parallel-session tracking"
+        "note": "fable-method, fablize, ponytail, and delegate-skills all landed this cycle, each pushing agents to prove or minimize work before a human reviews it"
       },
       {
-        "label": "Cost of coding-capable inference",
+        "label": "Frontier-scale models fitting on hardware you own",
+        "direction": "up",
+        "note": "Qwen3.8-27B at 50tok/s on a 16GB GPU, Kimi K3 (2.78T params) on a CPU in 8GB RAM, and Hy4-preview compressed from 1.5TB to 200GB all landed within 36 hours"
+      },
+      {
+        "label": "Remote/phone control of running agents",
+        "direction": "up",
+        "note": "Claude Code 2.1.251 streams subagent tool calls to Remote Control, and Omnigent adds a cross-harness sandbox and policy layer controllable from any device"
+      },
+      {
+        "label": "Clustering local hardware for more bandwidth",
         "direction": "down",
-        "note": "GLM-5.3 Flash routing, 2.5-3bpw GGUFs for Qwen3.8-27B, and 181 tok/s on 2x DGX Spark all cut cost per token or per rollout"
-      },
-      {
-        "label": "Remote/away-from-desk control",
-        "direction": "flat",
-        "note": "nothing this cycle adds phone, voice, or scheduled-trigger control beyond what you already run"
+        "note": "Exo Labs' 4.8TB/s Mac Studio clustering claim was undercut by testers finding a single larger-memory unit outperforms two clustered ones over Thunderbolt 5"
       }
     ]
   },
   "items": [
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21251",
+      "title": "2.1.251",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-251",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-28T18:33:46.000Z",
+      "tldr": "Claude Code 2.1.251 adds PreModelSwitch/PostModelSwitch hooks, live streaming of a foreground subagent's tool calls to Remote Control, a spend-limit bar in /usage, and a per-session prompt-cache breakdown in /cost.",
+      "whyItMatters": "Gives you a hook point to control model switches mid-run, a way to watch subagents live from your phone via Remote Control, and real cache hit-rate numbers to cut cost.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "hooks",
+        "remote-control",
+        "cost"
+      ],
+      "entities": [
+        "Claude Code",
+        "Anthropic"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code, run /cost to check your prompt-cache hit ratio, and add a PostModelSwitch hook if you route subagents across model tiers."
+    },
+    {
+      "id": "reddit-rss-50tokswith100kcontextona",
+      "title": "Qwen 3.8 27B at 50 tok/s with 100k Context on a 16GB GPU! (beellama.cpp)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-29T12:50:05.000Z",
+      "tldr": "An operator got Qwen3.8-27B (IQ4_XS quant) running at 50 tok/s with 100k context entirely in VRAM on a 16GB RTX 4070 Ti Super via llama.cpp.",
+      "whyItMatters": "That's enough local headroom to route long-context, low-stakes subagent work off paid APIs onto hardware you already own.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "quantization",
+        "cost-cutting"
+      ],
+      "entities": [
+        "llama.cpp",
+        "Hugging Face"
+      ],
+      "models": [
+        "Qwen3.8-27B"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Pull the IQ4_XS-GGUF-Smaller quant from jrell on Hugging Face plus the Qwen-Sharp-Chat-Templates Jinja template and run it in llama.cpp.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w1lq7u/qwen_38_27b_at_50_toks_with_100k_context_on_a/"
+    },
+    {
+      "id": "gh-1266797999",
+      "title": "DietrichGebert/ponytail — Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-12T00:52:37Z",
+      "tldr": "ponytail is a prompt/rule set that pushes AI coding agents to default toward writing the least code needed, not the most.",
+      "whyItMatters": "Directly counters agents padding PRs with unneeded code, making autonomous output easier to review and merge as-is.",
+      "category": "technique",
+      "tags": [
+        "prompting",
+        "code-review",
+        "claude-code"
+      ],
+      "entities": [
+        "DietrichGebert/ponytail"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone DietrichGebert/ponytail and fold its rules into your CLAUDE.md or a project skill.",
+      "score": 116356
+    },
+    {
+      "id": "gh-1273824907",
+      "title": "lidge-jun/opencodex — Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-18T23:03:18Z",
+      "tldr": "opencodex is a proxy that lets Claude Code and Codex CLI call any LLM, including local Ollama models.",
+      "whyItMatters": "You can route cheap or repetitive subagent work to a local model and cut API spend without leaving your current CLI.",
+      "category": "technique",
+      "tags": [
+        "model-routing",
+        "local-models",
+        "cost",
+        "proxy"
+      ],
+      "entities": [
+        "opencodex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone lidge-jun/opencodex, point Claude Code's provider at it, and route background subagents to a local Ollama model.",
+      "score": 12533
+    },
     {
       "id": "gh-1263648864",
       "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
@@ -47,22 +152,104 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-09T06:28:20Z",
-      "tldr": "loop-engineering is a CLI toolkit of patterns for orchestrating AI coding agents, including loop-audit, loop-init, and loop-cost commands.",
-      "whyItMatters": "Gives ready-made commands for auditing and costing agent loops instead of hand-rolling verification and spend tracking for unattended runs.",
-      "category": "agentic",
+      "tldr": "loop-engineering ships CLI tools — loop-audit, loop-init, loop-cost — for designing and auditing agent orchestration loops.",
+      "whyItMatters": "loop-cost and loop-audit give concrete commands to check what an unattended agent loop is costing and whether it is behaving before you trust it overnight.",
+      "category": "technique",
       "tags": [
+        "orchestration",
         "cli",
-        "loop-engineering",
-        "cost",
-        "audit"
+        "cost"
       ],
-      "entities": [],
+      "entities": [
+        "cobusgreyling"
+      ],
       "models": [],
-      "importance": 5,
-      "actionability": 5,
+      "importance": 4,
+      "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against your current Claude Code setup.",
-      "score": 10727
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against your current agent loop setup.",
+      "score": 10730
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A 2.78-trillion-parameter Kimi K3 now runs inference in portable C99 on a single CPU using 8.24GB of RAM, no GPU or BLAS needed.",
+      "whyItMatters": "A frontier-scale model now fits on hardware you already own, giving you a real option for offline or overnight local runs.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "hardware",
+        "kimi"
+      ],
+      "entities": [
+        "Kimi"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and run it on a spare machine for one background subagent task instead of paying per-token API.",
+      "score": 6718
+    },
+    {
+      "id": "gh-1322651268",
+      "title": "fuxicodex/Fuxi — FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-04T07:32:11Z",
+      "tldr": "FuXi is a terminal coding agent with built-in cost-aware routing across LLM providers.",
+      "whyItMatters": "It's a direct answer to spending less: it shifts routine work to cheaper models automatically instead of you hand-tuning a router.",
+      "category": "technique",
+      "tags": [
+        "cost-routing",
+        "terminal-agent",
+        "model-tiering"
+      ],
+      "entities": [
+        "FuXi"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone fuxicodex/Fuxi and configure its provider routing to send routine edits to a cheap-tier model, reserving your main model for review-critical steps.",
+      "score": 2779
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills a 'think, act, prove' workflow with a built-in eval into portable Claude Code skills any model can run.",
+      "whyItMatters": "It gives you a concrete skill set to make agents verify their own work before you review the PR, which is your main goal.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "claude-code",
+        "workflow"
+      ],
+      "entities": [
+        "fable-method"
+      ],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method, add its skills to your Claude Code skills folder, and run its eval against one real task.",
+      "score": 2264
     },
     {
       "id": "gh-1269124956",
@@ -71,50 +258,23 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-14T10:35:48Z",
-      "tldr": "delegate-skills lets you hand a coding task to a separate coding-agent CLI, review its diff, and land the commit yourself, one implementer per task.",
-      "whyItMatters": "Matches the describe-work-then-review-PR loop directly, structuring delegation and diff review instead of trusting an agent to merge its own work.",
-      "category": "agentic",
+      "tldr": "delegate-skills lets you hand a coding task to a separate agent CLI, then review its diff and land the commit yourself, one implementer per delegate.",
+      "whyItMatters": "Matches the exact workflow of spawning subagents overnight and reviewing a finished diff in the morning.",
+      "category": "technique",
       "tags": [
-        "delegation",
-        "code-review",
         "subagents",
-        "workflow"
-      ],
-      "entities": [],
-      "models": [],
-      "importance": 5,
-      "actionability": 5,
-      "hasFailureReport": false,
-      "tryThis": "Clone amElnagdy/delegate-skills and wire it in as the handoff layer between task description and PR review.",
-      "score": 1387
-    },
-    {
-      "id": "rss-simon-willison-gclaudecodeopus5automode",
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
-      "source": "Simon Willison",
-      "sourceKind": "news",
-      "publishedAt": "2026-08-27T22:50:25.000Z",
-      "tldr": "Prompt injection researcher Johann Rehberger found an attack that beats Claude Code Opus 5's auto-mode safety net roughly 80% of the time, by tricking it into downloading and executing a zip payload via base64.",
-      "whyItMatters": "Auto mode is now Anthropic's default defense for unattended coding agents, so overnight Claude Code runs carry real exposure to this bypass.",
-      "category": "agentic",
-      "tags": [
-        "security",
-        "prompt-injection",
-        "claude-code",
-        "auto-mode"
+        "code-review",
+        "delegation"
       ],
       "entities": [
-        "Anthropic",
-        "Simon Willison"
+        "amElnagdy"
       ],
-      "models": [
-        "Claude Opus 5"
-      ],
-      "importance": 5,
+      "models": [],
+      "importance": 4,
       "actionability": 4,
-      "hasFailureReport": true,
-      "tryThis": "Don't rely on auto mode alone for unattended runs; sandbox execution and block outbound archive/base64 decoding in your hooks."
+      "hasFailureReport": false,
+      "tryThis": "Clone amElnagdy/delegate-skills and route one overnight task through it to a separate agent CLI before merging.",
+      "score": 1420
     },
     {
       "id": "gh-1270584305",
@@ -123,77 +283,182 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-15T21:25:13Z",
-      "tldr": "nodeterm is a tmux-backed terminal manager that lays out parallel AI coding-agent sessions as draggable nodes on an infinite canvas, for macOS, Linux, and browser.",
-      "whyItMatters": "Gives a visual way to track multiple simultaneous Claude Code/worktree sessions instead of juggling terminal tabs.",
-      "category": "agentic",
+      "tldr": "nodeterm is a tmux-backed terminal manager that arranges parallel AI-agent sessions as draggable nodes on an infinite canvas.",
+      "whyItMatters": "Gives a visual way to track many concurrent Claude Code worktree sessions instead of juggling terminal tabs.",
+      "category": "tooling",
       "tags": [
-        "tmux",
+        "terminal",
         "parallel-agents",
-        "worktrees",
-        "tooling"
+        "tmux"
       ],
       "entities": [
-        "nodeterm"
+        "eneskirca"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone eneskirca/nodeterm and use it as the dashboard for your parallel worktree agent sessions.",
-      "score": 1347
+      "tryThis": "Clone eneskirca/nodeterm and run it against your existing tmux-backed parallel agent sessions.",
+      "score": 1353
     },
     {
-      "id": "rss-together-ai-pswecostcodingandrouting",
-      "title": "GLM-5.3 vs. GLM-5.3 Flash on DeepSWE: Cost, Coding, and Routing",
-      "url": "https://www.together.ai/blog/glm-5-3-vs-glm-5-3-flash-on-deepswe-cost-coding-and-routing",
-      "source": "Together AI",
-      "sourceKind": "lab",
-      "publishedAt": "2026-08-28T00:00:00.000Z",
-      "tldr": "Together AI ran 900 DeepSWE rollouts and found GLM-5.3 Flash costs 17x less than GLM-5.3 for only 5.6 points less pass@1, narrowing to 2.6 points at pass@4.",
-      "whyItMatters": "Shows a cheap-tier model can handle most coding rollouts when you sample multiple attempts, cutting spend without much quality loss.",
+      "id": "gh-1268946118",
+      "title": "fivetaku/fablize — A Claude Code plugin that makes Opus behave like Fable — completion, evidence, and verification enforced as procedure. Ships only what a Fable-vs-Opus comparison proved transferable.",
+      "url": "https://github.com/fivetaku/fablize",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T05:49:06Z",
+      "tldr": "fablize is a Claude Code plugin that forces Opus through a completion/evidence/verification procedure, keeping only what a Fable-vs-Opus comparison proved useful.",
+      "whyItMatters": "It's a drop-in plugin aimed directly at making Opus prove its work before the PR reaches you, which is your top priority.",
       "category": "technique",
       "tags": [
-        "cost",
-        "routing",
-        "model-tiering",
-        "benchmark"
+        "claude-code",
+        "plugin",
+        "verification"
       ],
       "entities": [
-        "Together AI"
+        "fablize"
       ],
       "models": [
-        "GLM-5.3",
-        "GLM-5.3 Flash"
+        "Opus",
+        "Fable"
       ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Route routine subagent coding tasks to GLM-5.3 Flash and reserve full GLM-5.3 for pass@4 verification runs."
+      "tryThis": "Install fivetaku/fablize as a Claude Code plugin and run it on one real ticket to check the verification procedure holds up.",
+      "score": 895
     },
     {
-      "id": "reddit-rss-claudedailyandnoneofitis",
-      "title": "How I actually use Claude daily, and none of it is coding",
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w0wcvi/how_i_actually_use_claude_daily_and_none_of_it_is/",
+      "id": "rss-codex-releases-dexreleasestagrustv01510",
+      "title": "0.151.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.151.0",
+      "source": "Codex releases",
+      "sourceKind": "release",
+      "publishedAt": "2026-08-29T09:57:02.000Z",
+      "tldr": "Codex CLI 0.151.0 adds a configurable grace period for discovering optional MCP server tools, lets extensions inspect or replace MCP tool results before the model sees them, and fixes permission-profile and reasoning-effort handling across model switches.",
+      "whyItMatters": "The MCP tool-result interception hook and the /cd sandbox fix directly affect how safely you can let Codex run unattended.",
+      "category": "tooling",
+      "tags": [
+        "codex",
+        "mcp",
+        "hooks",
+        "release"
+      ],
+      "entities": [
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Update Codex and try the new extension hook for inspecting or replacing MCP tool results before they reach the model."
+    },
+    {
+      "id": "reddit-rss-odedrives12iossimulators",
+      "title": "Claude Code drives 12 iOS simulators simultaneously on my M1 Pro MacBook with 16 GB Ram",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w1khpc/claude_code_drives_12_ios_simulators/",
       "source": "r/ClaudeAI",
       "sourceKind": "discussion",
-      "publishedAt": "2026-08-28T17:05:25.000Z",
-      "tldr": "A user shares his exact Claude prompt templates for meeting recaps, document trimming, and email drafts, none of it coding.",
-      "whyItMatters": "These are ready-made prompt structures you can reuse for your own non-coding chat tasks to cut summarizing and writing time.",
+      "publishedAt": "2026-08-29T11:50:02.000Z",
+      "tldr": "A developer ran 12 Claude Code agents in parallel, each driving its own iOS simulator, on a 16GB M1 Pro by stripping background services.",
+      "whyItMatters": "Shows a concrete ceiling and technique for parallel agent-driven iOS testing on modest hardware, directly matching a solo mobile-dev worktree setup.",
       "category": "technique",
       "tags": [
-        "prompting",
-        "non-coding",
-        "productivity"
+        "ios",
+        "parallel-agents",
+        "simulators",
+        "hardware"
       ],
       "entities": [],
       "models": [
-        "Claude"
+        "Claude Code"
       ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Reuse the recap prompt as-is: paste a transcript and ask for \"decisions, owners, and open questions, nothing else.\"",
-      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1w0wcvi/how_i_actually_use_claude_daily_and_none_of_it_is/"
+      "tryThis": "Strip unnecessary background services before running many parallel iOS simulators under agent control on a 16GB Mac.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1w1khpc/claude_code_drives_12_ios_simulators/"
+    },
+    {
+      "id": "reddit-rss-bsmemorybandwidththrough",
+      "title": "Exo labs claiming 4.8 tb/s memory bandwidth through m5u Mac Studio clustering",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1nc1c/exo_labs_claiming_48_tbs_memory_bandwidth_through/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-29T14:00:49.000Z",
+      "tldr": "Exo Labs claims 4.8TB/s memory bandwidth from clustering M5 Ultra Mac Studios via RDMA, but community testers report a single 256GB M5 Ultra beats two clustered 96GB units due to Thunderbolt 5 bandwidth limits.",
+      "whyItMatters": "If you are weighing a local-model hardware purchase, this is a concrete data point against buying multiple smaller Mac Studios instead of one larger one.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "hardware",
+        "mac-studio"
+      ],
+      "entities": [
+        "Exo Labs"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "If sizing a local-inference Mac Studio, favor one larger-memory unit over clustering two smaller ones over Thunderbolt 5.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w1nc1c/exo_labs_claiming_48_tbs_memory_bandwidth_through/"
+    },
+    {
+      "id": "gh-1266212515",
+      "title": "omnigent-ai/omnigent — Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in rea",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-11T12:18:13Z",
+      "tldr": "Omnigent is an open-source meta-harness that orchestrates Claude Code, Codex, Cursor, and Pi under one policy and sandbox layer, controllable from any device.",
+      "whyItMatters": "It adds sandboxing and policy enforcement around unattended runs, and lets you steer agents from your phone instead of your desk.",
+      "category": "tooling",
+      "tags": [
+        "harness",
+        "sandboxing",
+        "remote-control",
+        "orchestration"
+      ],
+      "entities": [
+        "Omnigent"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone omnigent-ai/omnigent and wrap one overnight Claude Code worktree run in its sandbox policy before trusting it unattended.",
+      "score": 9482
+    },
+    {
+      "id": "gh-1269395331",
+      "title": "Waishnav/devspace — Turn ChatGPT into Codex! OR Turn Claude Web into Claude Code!",
+      "url": "https://github.com/Waishnav/devspace",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T16:57:27Z",
+      "tldr": "devspace lets you drive ChatGPT or Claude's web chat as if it were the Codex or Claude Code CLI agent.",
+      "whyItMatters": "It turns a flat-rate web subscription into an agent backend, which can undercut per-token API costs for some workloads.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "web-chat",
+        "codex",
+        "claude"
+      ],
+      "entities": [
+        "devspace"
+      ],
+      "models": [
+        "ChatGPT",
+        "Claude"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone Waishnav/devspace and test it on one low-stakes task to see if your existing web subscription beats API pricing.",
+      "score": 4195
     },
     {
       "id": "gh-1336502227",
@@ -202,14 +467,13 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-17T00:44:59Z",
-      "tldr": "CopilotKit releases OpenBot, an open-source framework where AI agents get their own browser and tools, with actions approved before execution and logged after.",
-      "whyItMatters": "It gives you a concrete pattern for action-level gating and audit trails, useful for trusting an agent through a longer unattended run.",
-      "category": "tooling",
+      "tldr": "OpenBot gives each open-source AI coworker its own browser and tools, gating every action for approval before it runs and logging it after.",
+      "whyItMatters": "An approval-before/audit-after pattern is exactly what unattended overnight agents need to stay reviewable and safe.",
+      "category": "technique",
       "tags": [
-        "agentic",
-        "audit",
-        "autonomy",
-        "repo"
+        "agent-safety",
+        "audit-log",
+        "approval-gate"
       ],
       "entities": [
         "CopilotKit"
@@ -218,127 +482,154 @@
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Clone CopilotKit/OpenBot and test its pre-action approval hook on one of your own agent workflows.",
-      "score": 3345
+      "tryThis": "Clone CopilotKit/OpenBot and check whether its action-approval/audit-log pattern can wrap your own unattended agent runs.",
+      "score": 3435
     },
     {
-      "id": "gh-1270272670",
-      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
-      "url": "https://github.com/larlarua/AutoCVE",
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-06-15T14:50:47Z",
-      "tldr": "AutoCVE open-sources an agent pipeline that finds, verifies, and writes reports on CVEs directly from source code.",
-      "whyItMatters": "You can wire this in as a pre-merge security-verification subagent, catching vulnerabilities a coding agent introduced before you review the PR.",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "moli is a new Rust headless browser built specifically for AI agents, positioned as lighter and more compatible than existing options.",
+      "whyItMatters": "Gives unattended agents a lighter browser tool for web-based verification steps without pulling in a full Chromium stack.",
       "category": "tooling",
       "tags": [
-        "security",
-        "subagent",
-        "verification",
-        "repo"
+        "browser",
+        "agent-tooling",
+        "rust"
       ],
       "entities": [
-        "AutoCVE"
+        "lexmount/moli"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Clone larlarua/AutoCVE and run it as a pre-merge check against your app's source tree.",
-      "score": 1337
+      "tryThis": "Clone lexmount/moli and wire it in as the browser tool for agent-driven web verification steps.",
+      "score": 1433
     },
     {
-      "id": "reddit-rss-yihit181tokssaggregateon",
-      "title": "Today I hit 181 toks/s (aggregate) on Qwen3.8-Flash-Next on 2x DGX Sparks",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1486l/today_i_hit_181_tokss_aggregate_on/",
-      "source": "r/LocalLLaMA",
+      "id": "hn-49479878",
+      "title": "GLM-5.3 is now open-weight",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "source": "Hacker News",
       "sourceKind": "discussion",
-      "publishedAt": "2026-08-28T22:00:36.000Z",
-      "tldr": "An operator reports 181 tok/s aggregate across 9 concurrent agent sessions on 2x NVIDIA DGX Spark (128GB unified memory each, ConnectX-7 linked) running Qwen3.8-Flash-Next.",
-      "whyItMatters": "It's a concrete hardware and throughput data point for pricing a self-hosted multi-agent fleet against per-token API spend.",
-      "category": "technique",
+      "publishedAt": "2026-08-28T15:20:13Z",
+      "tldr": "Z.ai released GLM-5.3 as open-weight.",
+      "whyItMatters": "A model that was previously closed can now be self-hosted or fine-tuned, changing the build-vs-rent math for your cheap-tier subagent work.",
+      "category": "open-models",
       "tags": [
-        "local-llm",
-        "hardware",
-        "throughput",
-        "cost"
+        "open-weight",
+        "license",
+        "self-host"
       ],
       "entities": [
-        "NVIDIA"
+        "Z.ai"
       ],
       "models": [
-        "Qwen3.8-Flash-Next"
+        "GLM-5.3"
       ],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "If you're pricing a self-hosted agent fleet, compare this 2x DGX Spark setup against your current API bill.",
-      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w1486l/today_i_hit_181_tokss_aggregate_on/"
+      "tryThis": "Pull the GLM-5.3 weights and benchmark it against your current cheap-tier model for routine subagent tasks.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49479878",
+      "score": 773
     },
     {
-      "id": "reddit-rss-forqwen3827bgsqrcoat25to",
-      "title": "[Release] SOTA GGUFs for Qwen3.8-27B: GSQ-RCO at 2.5 to 3.0 bpw",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w13vse/release_sota_ggufs_for_qwen3827b_gsqrco_at_25_to/",
+      "id": "reddit-rss-hourlyllmbenchmarkscores",
+      "title": "I analyzed 31,352 hourly LLM benchmark scores: within-day variation was 2.8 points, while between-day variation was 8.4 [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1w1jp1j/i_analyzed_31352_hourly_llm_benchmark_scores/",
+      "source": "r/MachineLearning",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-29T11:08:03.000Z",
+      "tldr": "An analysis of 31,352 hourly benchmark runs, using the open-source AIStupidLevel pipeline, found production LLM APIs drift about 8.4 points day-to-day versus 2.8 points within a day.",
+      "whyItMatters": "If you pin a model for unattended overnight runs, this is a way to check whether that model's quality has quietly drifted before trusting it with a full night of work.",
+      "category": "tooling",
+      "tags": [
+        "benchmarking",
+        "model-drift",
+        "monitoring"
+      ],
+      "entities": [
+        "AIStupidLevel"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Check the open-source AIStupidLevel (MIT-licensed) dashboard or repo for your model's day-to-day drift before locking it into an overnight run.",
+      "discussionUrl": "https://www.reddit.com/r/MachineLearning/comments/1w1jp1j/i_analyzed_31352_hourly_llm_benchmark_scores/"
+    },
+    {
+      "id": "reddit-rss-y4previewfrom15tbtoabout",
+      "title": "Tencent compressed Hy4-preview from 1.5TB to about 200GB GGUF and kept about 98% performance.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/",
       "source": "r/LocalLLaMA",
       "sourceKind": "discussion",
-      "publishedAt": "2026-08-28T21:46:58.000Z",
-      "tldr": "A new GSQ-RCO quantization method ships three GGUF files for Qwen3.8-27B at 2.5 to 3.0 bits per weight.",
-      "whyItMatters": "Lower-bit GGUFs let you run a larger, more capable local model in the same VRAM budget instead of dropping to a smaller one.",
+      "publishedAt": "2026-08-29T14:31:38.000Z",
+      "tldr": "Tencent's Hy4-preview model has been quantized from 1.5TB down to a roughly 200GB GGUF while keeping about 98% of original performance.",
+      "whyItMatters": "A model that needed datacenter-scale storage now fits on a single high-RAM workstation, opening it up for self-hosted inference instead of API calls.",
       "category": "open-models",
       "tags": [
         "quantization",
         "gguf",
-        "local-llm"
+        "local-inference",
+        "hunyuan"
       ],
-      "entities": [],
+      "entities": [
+        "Tencent"
+      ],
       "models": [
-        "Qwen3.8-27B"
+        "Hy4-preview"
       ],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Download the 2.75bpw GSQ-RCO GGUF for Qwen3.8-27B and drop it into your local llama.cpp/Ollama setup to check size versus quality.",
-      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w13vse/release_sota_ggufs_for_qwen3827b_gsqrco_at_25_to/"
+      "tryThis": "If you have a ~200GB-RAM box, pull the Hy4-preview GGUF and load it in llama.cpp/ollama to benchmark it against your current API cost.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w1o324/tencent_compressed_hy4preview_from_15tb_to_about/"
     }
   ],
   "clusters": [
     {
       "id": "c1",
-      "title": "Agent orchestration harness tooling",
-      "summary": "Three repos shipped in the same window, structuring delegation, auditing, and parallel-session visibility for agent-driven coding.",
+      "title": "Fable's think/act/prove workflow, distilled into skills",
+      "summary": "Two separate projects this cycle package the same idea: take whatever made Claude Fable 5 reliable and turn it into a portable Claude Code skill that forces completion, evidence, and verification before a task counts as done.",
       "itemIds": [
-        "gh-1263648864",
-        "gh-1269124956",
-        "gh-1270584305"
+        "gh-1291544092",
+        "gh-1268946118"
       ]
     },
     {
       "id": "c2",
-      "title": "Cheaper coding inference: routing and local hardware",
-      "summary": "Together AI's routing data, a new low-bit GGUF, and a DGX Spark throughput report all point at cutting cost per coding rollout.",
+      "title": "Local models keep shrinking to fit hardware you already own",
+      "summary": "Three separate releases this cycle each cut a large model down to run on prosumer or single-workstation hardware instead of a datacenter.",
       "itemIds": [
-        "rss-together-ai-pswecostcodingandrouting",
-        "reddit-rss-forqwen3827bgsqrcoat25to",
-        "reddit-rss-yihit181tokssaggregateon"
+        "reddit-rss-50tokswith100kcontextona",
+        "gh-1319154759",
+        "reddit-rss-y4previewfrom15tbtoabout"
       ]
     },
     {
       "id": "c3",
-      "title": "Gating and verifying agent actions before merge",
-      "summary": "OpenBot's pre-action approval hook and AutoCVE's pre-merge vulnerability pipeline both add a verification layer around agent output.",
+      "title": "Proxies and CLIs for routing off the paid API",
+      "summary": "opencodex, Fuxi, and devspace all solve the same problem from different angles: let Claude Code or Codex call a cheaper or local backend instead of metered API tokens.",
       "itemIds": [
-        "gh-1336502227",
-        "gh-1270272670"
+        "gh-1273824907",
+        "gh-1322651268",
+        "gh-1269395331"
       ]
     }
   ],
   "cost": {
-    "inputTokens": 10,
-    "outputTokens": 26008,
-    "usd": 0.6192,
+    "inputTokens": 24,
+    "outputTokens": 42577,
+    "usd": 1.2911,
     "model": "claude-sonnet-5",
-    "calls": 4,
+    "calls": 6,
     "billing": "subscription"
   },
-  "contentVersion": 1
+  "contentVersion": 2
 }

@@ -1,23 +1,52 @@
 {
-  "generatedAt": "2026-08-29T16:36:02.141Z",
-  "contentVersion": 69,
+  "generatedAt": "2026-08-29T22:43:29.457Z",
+  "contentVersion": 70,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-3e0f216ab3",
+        "slug": "bitcoin-etf-inflows-halt-after-3-billion-streak-but-eth-xrp-and-solana",
+        "lane": "crypto",
+        "title": "Bitcoin ETF inflows halt after $3 billion streak, but ETH, XRP, and Solana funds keep buying",
+        "summary": "US spot Bitcoin ETFs snapped a $3 billion inflow streak, CryptoSlate reports. At the same time, ETFs tied to Ethereum, XRP, and Solana kept pulling in net inflows. The split suggests money is rotating within crypto funds, not leaving the asset class.",
+        "whyItMatters": "ETF flows are a core gauge of institutional demand, and a pause for bitcoin while altcoin funds keep growing points to a shift in where big money now sits.",
+        "whatToWatch": [
+          "Whether bitcoin ETF flows turn negative or resume",
+          "Whether ETH, XRP, and Solana funds keep pace with recent inflows"
+        ],
+        "questions": [
+          "What is pulling investors toward ETH, XRP, and Solana funds over bitcoin right now?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin ETF inflows snap after $3 billion streak as ETH, XRP and Solana keep buying",
+            "url": "https://cryptoslate.com/bitcoin-etf-inflows-snap-after-3-billion-streak-as-eth-xrp-and-solana-keep-buying/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-29T17:40:52.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T17:40:52.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/crypto-etf-flow-escalators.jpg",
+        "badge": "ETF Flows",
+        "trendScore": 63,
+        "confidence": "low"
+      },
       {
         "id": "crypto-ddb4f247d3",
         "slug": "bitcoin-s-rally-stalls-near-81-000-but-its-gold-like-behavior-stands-o",
         "lane": "crypto",
-        "title": "Bitcoin's rally stalls near $81,000, but its gold-like behavior stands out",
-        "summary": "Bitcoin hit a three-month high this week and briefly outperformed stocks while trading more like gold, according to CoinDesk. But a failed breakout above $81,000 pulled it back below $78,000, and CryptoSlate notes some analysts now see $75,000 as the next support level. Separately, bitcoin miners are increasingly selling high-performance computing capacity alongside mining, a shift away from being pure crypto-price proxies.",
-        "whyItMatters": "The gold-like correlation and miner diversification are read as maturation signals, but the failed breakout shows the rally still lacks conviction.",
+        "title": "Bitcoin outperforms stocks and tracks gold as traders eye $75,000 support",
+        "summary": "Bitcoin has outperformed stocks and started to move more in line with gold, CoinDesk reports. The shift comes after bitcoin's push toward $81,000 failed, per CryptoSlate, which puts the $75,000 level back in focus as a possible support test. Separately, CryptoSlate reports that bitcoin miners now draw meaningful revenue from high-performance computing work, not just mining.",
+        "whyItMatters": "A closer link to gold could change how investors treat bitcoin as a hedge, and the miner shift toward computing work changes what \"bitcoin exposure\" means for stock investors.",
         "whatToWatch": [
-          "Whether $75,000 holds if bitcoin keeps falling",
-          "Whether the correlation with gold persists or fades",
-          "How far miners' shift into HPC revenue goes"
+          "Whether bitcoin holds $75,000 if the pullback continues",
+          "Whether the gold correlation lasts beyond a short window",
+          "How much revenue miners draw from HPC work in coming quarters"
         ],
         "questions": [
-          "Is the gold correlation a real shift or a short-term coincidence?",
-          "How much miner revenue will come from HPC versus mining over time?"
+          "Is the gold correlation a durable trend or a short-term coincidence?"
         ],
         "sources": [
           {
@@ -37,36 +66,126 @@
             "url": "https://www.coindesk.com/daybook-us/2026/08/28/bitcoin-is-outperforming-stocks-and-correlating-with-gold-just-when-it-matters-most",
             "publisher": "CoinDesk",
             "publishedAt": "2026-08-28T11:43:19.000Z"
-          },
-          {
-            "title": "Bitcoin hits highest level in 3 months before pulling back as altcoins consolidate",
-            "url": "https://www.coindesk.com/markets/2026/08/28/bitcoin-hits-highest-level-in-3-months-before-pulling-back-as-altcoins-consolidate",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-28T10:37:35.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-08-28T10:37:35.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "publishedAt": "2026-08-28T11:43:19.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/2f8437e589e595529cc560ac6a76355d8b08defb-5184x3456.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Markets",
-        "trendScore": 67,
+        "badge": "Analysis",
+        "trendScore": 62,
         "confidence": "medium"
+      },
+      {
+        "id": "crypto-4c42011f7f",
+        "slug": "fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-",
+        "lane": "crypto",
+        "title": "Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of supply",
+        "summary": "Layer 1 blockchain Fogo halted its mainnet after an attacker received 400 million FOGO tokens, about 10% of the circulating supply, The Block reports. The halt aims to stop further movement of the tokens while the network responds.",
+        "whyItMatters": "An exploit worth 10% of a token's supply is a serious incident that can hit confidence and price, and it shows the risk that still sits in newer layer 1 networks.",
+        "whatToWatch": [
+          "Fogo's explanation of how the tokens were obtained",
+          "Whether mainnet resumes and when",
+          "Any exchange action on the affected tokens"
+        ],
+        "questions": [
+          "How did the attacker obtain the tokens?",
+          "Will affected holders get compensation?"
+        ],
+        "sources": [
+          {
+            "title": "Layer 1 blockchain Fogo halts mainnet after attacker receives 400 million FOGO tokens, 10% of circulating supply",
+            "url": "https://www.theblock.co/news/defi/2026-08-29-layer-1-blockchain-fogo-halts-mainnet-after-attacker-receives-400-million-fogo-tokens-10-of-circulating-supply-413064",
+            "publisher": "The Block",
+            "publishedAt": "2026-08-29T21:16:51.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T21:16:51.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://www.tbstat.com/wp/uploads/2021/09/20210917_Hack_General-1200x675.jpg",
+        "badge": "Breaking",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-b3566dec21",
+        "slug": "tokenized-asset-activity-may-be-undercounted-opinion-piece-argues",
+        "lane": "crypto",
+        "title": "Tokenized stock transfer volume jumps 415% in a month to $29.5 billion",
+        "summary": "Monthly transfer volume for tokenized stocks rose 415% to $29.5 billion, Cointelegraph reports. CoinDesk adds that on-chain activity for tokenized assets overall is running well ahead of what headline figures show.",
+        "whyItMatters": "Fast growth in tokenized stock volume points to real use of blockchain rails for traditional assets, a key test of crypto's use beyond speculation.",
+        "whatToWatch": [
+          "Whether the growth rate holds up next month",
+          "Which platforms and issuers drive most of the volume"
+        ],
+        "questions": [
+          "How much of this volume is genuine investor activity rather than internal transfers?"
+        ],
+        "sources": [
+          {
+            "title": "Tokenized stock transfer volume jumps 415% in 30 days to $29.5B",
+            "url": "https://cointelegraph.com/markets/tokenized-stock-transfer-volume-jumps-416-in-30-days-to-295b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-29T16:27:28.000Z"
+          },
+          {
+            "title": "Tokenized assets are busier than the data shows",
+            "url": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
+            "publisher": "CoinDesk",
+            "publishedAt": "2026-08-29T13:00:00.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-29T13:00:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M174Y6XQHY999NVSQCZY6B3V/hi-cryptocurrency-vs-stocks-breaking-news-1.png",
+        "trendScore": 59,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-b1a2f352ea",
+        "slug": "bitcoin-miner-iren-still-draws-82-of-revenue-from-btc-despite-microsof",
+        "lane": "crypto",
+        "title": "Bitcoin miner IREN still draws 82% of revenue from BTC despite Microsoft AI cloud deal",
+        "summary": "Bitcoin miner IREN gets 82% of its revenue from bitcoin mining, even after it freed up capacity for a Microsoft AI cloud computing deal, CryptoSlate reports. The figure shows the AI hosting business is still a minority part of IREN's operation.",
+        "whyItMatters": "IREN's revenue mix shows how bitcoin miners can add AI compute work without giving up mining, which matters for how investors value miner stocks.",
+        "whatToWatch": [
+          "Whether IREN's AI revenue share grows in coming quarters",
+          "How the Microsoft partnership scales over time"
+        ],
+        "questions": [
+          "How much capacity has IREN committed to Microsoft, and for how long?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin miner IREN still gets 82% of revenue from BTC after clearing room for Microsoft AI cloud",
+            "url": "https://cryptoslate.com/iren-ai-cloud-revenue-639m-impairment-bitcoin-82-revenue/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-29T22:10:38.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T22:10:38.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/iren-mining-ai-crossing.jpg",
+        "trendScore": 57,
+        "confidence": "low"
       },
       {
         "id": "crypto-f1d75a804d",
         "slug": "sec-reviews-faster-etf-filing-rules-after-flood-of-crypto-and-event-li",
         "lane": "crypto",
-        "title": "SEC reviews faster ETF filing rules after flood of crypto and event-linked proposals",
-        "summary": "The SEC is reviewing automatic, or generic, filing pathways for ETFs after a wave of exotic crypto and event-linked fund proposals hit regulators' desks, CryptoSlate reports. The review suggests the agency is looking for a way to process the surge without slowing standard approvals.",
-        "whyItMatters": "Filing rules determine how fast new crypto ETFs reach the market, which shapes investor access and competition among issuers.",
+        "title": "SEC reviews automatic filing pathways after wave of exotic crypto ETF proposals",
+        "summary": "The SEC is reviewing automatic, fast-track filing pathways for ETFs after a flood of exotic crypto and event-linked ETF proposals, CryptoSlate reports. The review suggests regulators want to reconsider how fast novel ETF structures can reach the market.",
+        "whyItMatters": "Faster or slower ETF approval pathways directly shape which crypto products reach everyday investors, and how soon.",
         "whatToWatch": [
-          "Any SEC guidance or rule change on generic listing standards",
-          "Whether new crypto ETF filings accelerate or pause during the review"
+          "Any formal rule change the SEC proposes",
+          "The outcome for pending exotic crypto ETF filings"
         ],
         "questions": [
-          "Which product types would qualify for an automatic pathway?",
-          "What is the timeline for any rule change?"
+          "Which specific proposals prompted this review?",
+          "Will the SEC tighten or loosen the fast-track pathway?"
         ],
         "sources": [
           {
@@ -78,56 +197,85 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-29T15:30:47.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/cracked-etf-capsule.jpg",
         "badge": "Regulatory",
-        "trendScore": 61,
+        "trendScore": 56,
         "confidence": "low"
       },
       {
-        "id": "crypto-0288f97a93",
-        "slug": "crypto-etfs-reported-10b-inflow-surge-doesn-t-hold-up-under-scrutiny",
+        "id": "crypto-061acd2daf",
+        "slug": "polygon-discloses-security-flaws-already-fixed-in-recent-hard-forks",
         "lane": "crypto",
-        "title": "Crypto ETFs' reported $10B inflow surge doesn't hold up under scrutiny",
-        "summary": "Headlines claimed crypto ETFs pulled in $10 billion within hours, but a CryptoSlate review of filing data found the figure reflects other flows rather than new investor cash. The finding complicates the narrative of a sudden institutional buying spree.",
-        "whyItMatters": "Inflow numbers drive market sentiment, and an overstated figure can mislead investors trying to gauge real institutional demand.",
+        "title": "Polygon discloses security flaws already fixed in recent hard forks",
+        "summary": "Polygon disclosed security flaws that recent hard forks had already fixed, Cointelegraph reports. Details on the specific vulnerabilities remain limited.",
+        "whyItMatters": "Retroactive disclosure of flaws in a major layer 2 network is a reminder that even established chains can carry undisclosed risk until patched.",
         "whatToWatch": [
-          "Whether other outlets correct or clarify the $10B figure",
-          "Follow-up reconciliation of actual ETF flow data"
+          "Full technical details on the disclosed flaws",
+          "Confirmation on whether any funds were at risk before the fixes"
         ],
         "questions": [
-          "What is the accurate inflow figure?",
-          "Which specific funds produced the apparent spike?"
+          "Were any funds exposed before the forks patched these flaws?",
+          "Why did disclosure come only now?"
         ],
         "sources": [
           {
-            "title": "Crypto ETFs appeared to hit $10B in hours, but filing data exposes where that money really came from",
-            "url": "https://cryptoslate.com/crypto-etfs-appeared-to-hit-10b-in-hours-but-filing-data-exposes-where-that-money-really-came-from/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-08-29T07:10:07.000Z"
+            "title": "Polygon discloses security flaws fixed in recent hard forks",
+            "url": "https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-29T20:28:51.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-29T07:10:07.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/ethereum-etf-piggy-bank.jpg",
-        "badge": "Analysis",
-        "trendScore": 59,
-        "confidence": "low"
+        "publishedAt": "2026-08-29T20:28:51.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17JHBKVPG032T0G1E4PGVX3/hi-quadrigacx-ceo-died-what-next.png",
+        "badge": "Security",
+        "trendScore": 54,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-60379c04cb",
+        "slug": "stellar-s-tokenized-real-world-asset-market-more-than-quadruples-to-ne",
+        "lane": "crypto",
+        "title": "Stellar's tokenized real-world asset market more than quadruples to nearly $4 billion",
+        "summary": "The tokenized real-world asset market on Stellar grew to nearly $4 billion, more than four times its prior size, Cointelegraph reports.",
+        "whyItMatters": "Rapid growth in real-world asset tokenization on Stellar points to rising institutional use of the network for bonds, funds, and other traditional assets.",
+        "whatToWatch": [
+          "Which issuers and asset types drive most of the growth",
+          "Whether the growth pace continues"
+        ],
+        "questions": [
+          "What caused the sudden jump, and how concentrated is it among a few issuers?"
+        ],
+        "sources": [
+          {
+            "title": "Stellar tokenized RWA market more than quadruples to nearly $4B",
+            "url": "https://cointelegraph.com/markets/stellar-tokenized-rwa-market-nears-4b-after-fourfold-2026-growth?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-08-29T19:12:42.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T19:12:42.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M17DHDVASPVRK9KZ8KYFMNK1/hi-how-binance-plans-to-bring-tokenized-us-stocks-3.png",
+        "trendScore": 53,
+        "confidence": "medium"
       },
       {
         "id": "crypto-2d1ada4d48",
         "slug": "bitcoin-etfs-9-day-inflow-streak-ends-as-price-dips-below-78k",
         "lane": "crypto",
-        "title": "Bitcoin ETFs' 9-day inflow streak ends as price dips below $78K",
-        "summary": "US spot bitcoin ETFs' nine-day streak of net inflows has ended, coinciding with bitcoin's drop below $78,000, Cointelegraph reports.",
-        "whyItMatters": "ETF flows are a key gauge of institutional demand, and a reversal after a long streak may signal cooling appetite at current prices.",
+        "title": "Bitcoin ETFs end 9-day inflow streak as BTC dips below $78,000",
+        "summary": "US spot Bitcoin ETFs saw their nine-day inflow streak end as bitcoin's price fell below $78,000, Cointelegraph reports.",
+        "whyItMatters": "A break in ETF inflows alongside a price drop is worth watching as a signal of whether institutional demand is cooling.",
         "whatToWatch": [
-          "Whether outflows continue in coming days or reverse quickly"
+          "Whether outflows continue or inflows resume",
+          "Bitcoin's price action near the $75,000 to $78,000 range"
         ],
         "questions": [
-          "Is this a one-day blip or the start of a trend?",
-          "Which funds drove the outflow?"
+          "Is this outflow tied to broader market conditions or to bitcoin-specific concerns?"
         ],
         "sources": [
           {
@@ -139,55 +287,55 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-29T06:47:12.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M162QNJPWZZW5MZ2NTH7GFQ2/hi-what-is-a-bitcoin-node-a-beginners-guide-on-blockchain-nodes-etf3-1.jpg",
-        "badge": "Markets",
-        "trendScore": 58,
+        "trendScore": 53,
         "confidence": "medium"
       },
       {
-        "id": "crypto-dd1e0b0fd6",
-        "slug": "survey-suggests-americans-value-bitcoin-for-control-not-as-digital-gol",
+        "id": "crypto-5bae1444f2",
+        "slug": "bitcoin-faces-a-new-macro-test-as-fed-chair-warsh-flags-sticky-inflati",
         "lane": "crypto",
-        "title": "Survey suggests Americans value bitcoin for control, not as 'digital gold'",
-        "summary": "A Bitcoin Policy Institute study reported by CoinDesk found everyday American bitcoin holders are drawn more to personal control and small, regular investing than to the long-standing 'digital gold' store-of-value pitch.",
-        "whyItMatters": "If retail adoption is driven by motives different from the industry's usual marketing, that could reshape how issuers pitch bitcoin to new users.",
+        "title": "Bitcoin faces a new macro test as Fed Chair Warsh flags sticky inflation",
+        "summary": "Federal Reserve Chair Kevin Warsh highlighted sticky inflation metrics, CryptoSlate reports, creating a fresh macro test for bitcoin.",
+        "whyItMatters": "Fed comments on inflation shape rate expectations, and rate expectations directly affect risk appetite for bitcoin and other crypto assets.",
         "whatToWatch": [
-          "Whether industry messaging shifts toward control and micro-investing themes"
+          "Upcoming Fed statements or rate decisions",
+          "Bitcoin's price reaction to new inflation data"
         ],
         "questions": [
-          "How was the survey sample selected, and how representative is it?"
+          "Which specific inflation metrics did Warsh cite?",
+          "What policy response might follow?"
         ],
         "sources": [
           {
-            "title": "Ditching 'digital gold': BPI study suggests everyday Americans prefer control and micro-investing",
-            "url": "https://www.coindesk.com/business/2026/08/28/ditch-digital-gold-bpi-study-suggests-everyday-americans-prefer-control-and-micro-investing",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-29T15:00:00.000Z"
+            "title": "Bitcoin faces a new macro test as Fed Chair Kevin Warsh highlights sticky inflation metrics",
+            "url": "https://cryptoslate.com/bitcoin-faces-a-new-macro-test-as-fed-chair-kevin-warsh-highlights-sticky-inflation-metrics/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-08-29T16:30:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-29T15:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/a157306e943dd581a50f1881a075dc427bda6fad-1920x1080.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Analysis",
-        "trendScore": 55,
-        "confidence": "medium"
+        "publishedAt": "2026-08-29T16:30:58.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/08/bitcoin-warsh-policy-collision.jpg",
+        "badge": "Macro",
+        "trendScore": 52,
+        "confidence": "low"
       },
       {
         "id": "crypto-6a7f96aad2",
         "slug": "swift-s-1-5-quadrillion-payments-network-faces-a-blockchain-test",
         "lane": "crypto",
-        "title": "Swift's $1.5 quadrillion payments network faces a blockchain test",
-        "summary": "CoinDesk reports that Swift, the bank messaging network underpinning global payments, faces a test of whether blockchain technology can handle its scale, as the industry watches if distributed ledgers can match Swift's role in traditional finance.",
-        "whyItMatters": "How Swift responds to blockchain competition matters for whether crypto rails displace or simply integrate with legacy cross-border payment systems.",
+        "title": "Swift's $1.5 quadrillion network faces a blockchain test",
+        "summary": "Swift, the messaging network behind $1.5 quadrillion in global payment flows, faces a test from blockchain-based alternatives, CoinDesk reports.",
+        "whyItMatters": "How Swift responds to blockchain competition will shape how fast institutional cross-border payments move onto crypto rails.",
         "whatToWatch": [
-          "Details of the specific blockchain pilot or trial involved",
-          "Results and timeline of the test"
+          "Any pilot programs or partnerships Swift announces",
+          "Whether competing blockchain payment networks gain share"
         ],
         "questions": [
-          "What blockchain protocol or partner is involved?",
-          "What would count as success or failure for Swift?"
+          "Which blockchain systems pose the most direct challenge to Swift?"
         ],
         "sources": [
           {
@@ -199,25 +347,24 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-29T15:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/508c78185616861e76dfe16cc9d55787a0ff9c41-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Analysis",
-        "trendScore": 55,
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
         "id": "crypto-e52d6d6782",
         "slug": "the-next-trillion-dollar-digital-currency-might-not-be-a-stablecoin",
         "lane": "crypto",
-        "title": "The next trillion-dollar digital currency might not be a stablecoin",
-        "summary": "CoinDesk explores the idea that the next digital currency to reach trillion-dollar scale may not be a stablecoin, and may not even exist under a recognizable name yet, reflecting how fast digital money is evolving.",
-        "whyItMatters": "Stablecoins currently dominate crypto's payment use case, so a new challenger category would reshape competitive and regulatory dynamics.",
+        "title": "The next trillion-dollar currency may not be a stablecoin, and it may not have a name yet",
+        "summary": "CoinDesk argues the next currency to reach trillion-dollar scale might not be a stablecoin at all, and could take a form that has no name yet.",
+        "whyItMatters": "The idea challenges the assumption that stablecoins are the endpoint for digital money, a question worth tracking as the market for digital value evolves.",
         "whatToWatch": [
-          "Emerging digital currency models gaining institutional traction"
+          "Emerging currency models or projects that could fit this description"
         ],
         "questions": [
-          "What form would this currency take?",
-          "Which issuers or governments might drive it?"
+          "What form could this currency take if not a stablecoin?"
         ],
         "sources": [
           {
@@ -229,207 +376,341 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-29T15:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/486b2136ce091f05ce9e6f0e16a7660ee1fabe27-3840x2160.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
         "badge": "Analysis",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-04cb7c8f96",
-        "slug": "former-white-house-teleprompter-operator-ordered-to-pay-172-000-over-k",
-        "lane": "crypto",
-        "title": "Former White House teleprompter operator ordered to pay $172,000 over Kalshi trades",
-        "summary": "A former White House teleprompter operator has been ordered to pay $172,000 in connection with trades on Kalshi's mention markets, The Block reports. The case ties access to insider information about spoken remarks to bets on prediction-market platforms.",
-        "whyItMatters": "The case highlights integrity risks in fast-growing prediction markets, which increasingly overlap with crypto-adjacent trading platforms.",
-        "whatToWatch": [
-          "Whether Kalshi or regulators tighten rules around insider access to mention markets"
-        ],
-        "questions": [
-          "What specific violation triggered the penalty?",
-          "Are further enforcement actions expected against other traders?"
-        ],
-        "sources": [
-          {
-            "title": "Former White House teleprompter operator ordered to pay $172,000 for Kalshi trades on mention markets",
-            "url": "https://www.theblock.co/news/regulation/2026-08-29-former-white-house-teleprompter-operator-ordered-to-pay-172000-for-kalshi-trades-on-mention-markets-413058",
-            "publisher": "The Block",
-            "publishedAt": "2026-08-29T13:58:02.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T13:58:02.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://www.tbstat.com/wp/uploads/2025/04/20250424_Law_News_4-1200x675.jpg",
-        "badge": "Regulatory",
-        "trendScore": 54,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-0f079f3ce4",
-        "slug": "ripple-readies-xrp-ledger-for-a-future-q-day-when-quantum-computers-th",
-        "lane": "crypto",
-        "title": "Ripple readies XRP Ledger for a future 'Q-Day' when quantum computers threaten today's cryptography",
-        "summary": "CoinDesk reports Ripple is preparing the XRP Ledger for a future in which quantum computers could break current cryptographic protections, an event some in the industry call 'Q-Day.'",
-        "whyItMatters": "Quantum resistance is a looming, if uncertain-timeline, risk for every blockchain that relies on today's cryptographic signatures.",
-        "whatToWatch": [
-          "Specific quantum-resistant upgrades proposed for XRP Ledger",
-          "Whether other major chains announce similar preparations"
-        ],
-        "questions": [
-          "What is Ripple's estimated timeline for quantum risk?",
-          "How does its approach compare with other chains' quantum-resistance plans?"
-        ],
-        "sources": [
-          {
-            "title": "Ripple is preparing XRP Ledger for quantum computers before ‘Q-Day’ arrives",
-            "url": "https://www.coindesk.com/tech/2026/08/28/ripple-is-preparing-xrp-ledger-for-quantum-computers-before-q-day-arrives",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-29T02:30:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T02:30:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/3fdb04bd3eb1c1413ad0d70e8d1e464ee4866ad9-1500x1000.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Technical",
-        "trendScore": 54,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-b3566dec21",
-        "slug": "tokenized-asset-activity-may-be-undercounted-opinion-piece-argues",
-        "lane": "crypto",
-        "title": "Tokenized asset activity may be undercounted, opinion piece argues",
-        "summary": "A CoinDesk opinion piece argues that on-chain data understates real activity in tokenized assets, suggesting the true scale of tokenization exceeds what headline figures show.",
-        "whyItMatters": "Tokenization is pitched as a bridge between traditional finance and crypto rails, so how it's measured affects how seriously institutions treat it.",
-        "whatToWatch": [
-          "Any new data or methodology that better captures tokenized asset activity"
-        ],
-        "questions": [
-          "What specific activity is missed by current measurements, and why?"
-        ],
-        "sources": [
-          {
-            "title": "Tokenized assets are busier than the data shows",
-            "url": "https://www.coindesk.com/opinion/2026/08/29/tokenized-assets-are-busier-than-the-data-shows",
-            "publisher": "CoinDesk",
-            "publishedAt": "2026-08-29T13:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T13:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/8063c00aa61892be74b3d456dde16b88df485efc-8000x4099.jpg?fm=jpg&w=1920&h=1080&crop=focalpoint&fit=clip",
-        "badge": "Analysis",
-        "trendScore": 53,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-ecc3558883",
-        "slug": "bitcoin-s-oldest-coins-are-moving-again-at-an-unusually-fast-pace",
-        "lane": "crypto",
-        "title": "Bitcoin's oldest coins are moving again at an unusually fast pace",
-        "summary": "Decrypt reports that long-dormant bitcoin, held for years without moving, is being transferred in 2026 at a pace rarely seen before. The activity revives questions about early holders shifting custody or preparing to sell.",
-        "whyItMatters": "Movement of old coins can precede large sales or custody changes and is watched as a signal of new supply reaching the market.",
-        "whatToWatch": [
-          "Whether the moved coins reach exchanges or stay in new wallets",
-          "Any price impact tied to the increased movement"
-        ],
-        "questions": [
-          "Who is behind the moves — early miners, recovered wallets, or estate transfers?",
-          "Does this correlate with downward price pressure?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin's Oldest Coins Are Waking Up in 2026 at a Pace Rarely Seen",
-            "url": "https://decrypt.co/376866/bitcoin-oldest-coins-waking-up-2026",
-            "publisher": "Decrypt",
-            "publishedAt": "2026-08-29T15:31:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T15:31:04.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/Bitcoin-decrypt-style-26-gID_7.png@png",
-        "badge": "Analysis",
-        "trendScore": 51,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-b024463dca",
-        "slug": "trump-linked-brand-promoted-gold-theme-just-before-its-token-collapsed",
-        "lane": "crypto",
-        "title": "Trump-linked brand promoted 'GOLD' theme just before its token collapsed",
-        "summary": "Cointelegraph reports that a brand promoted by Donald Trump touted a 'GOLD' theme shortly before an associated token's price collapsed, the latest in a string of controversies around Trump-linked crypto ventures.",
-        "whyItMatters": "Celebrity and political-figure-backed tokens carry outsized retail risk, and repeated collapses raise scrutiny of promotion practices and conflicts of interest.",
-        "whatToWatch": [
-          "Regulatory or investor response to the collapse",
-          "Further disclosures about the token's backers"
-        ],
-        "questions": [
-          "What caused the collapse — liquidity withdrawal, insider selling, or market conditions?",
-          "Are any investigations pending?"
-        ],
-        "sources": [
-          {
-            "title": "Trump-promoted brand touts GOLD before token collapse",
-            "url": "https://cointelegraph.com/news/trump-linked-account-list-gold-token-crash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-08-29T10:53:41.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T10:53:41.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/08/01M16D9NH0P7JYVR3ND526E5F5/trumps-influence-on-crypto.jpg",
-        "badge": "Incident",
-        "trendScore": 51,
+        "trendScore": 50,
         "confidence": "medium"
       }
     ],
     "markets": [
       {
-        "id": "markets-4240d94fd7",
-        "slug": "analysts-name-7-stocks-poised-for-standout-earnings-growth-amazon-eyes",
+        "id": "markets-d9a4bcff8f",
+        "slug": "iran-s-foreign-trade-plunges-35-as-it-pushes-back-on-us-sanctions",
         "lane": "markets",
-        "title": "Analysts Name 7 Stocks Poised for Standout Earnings Growth; Amazon Eyes Key Level",
-        "summary": "A screen of analyst favorites highlights seven stocks seen as strong candidates for standout earnings growth, per Yahoo Finance. Amazon is called out specifically for holding a closely watched technical price level. The piece frames these names as ones Wall Street analysts favor heading into upcoming earnings.",
-        "whyItMatters": "Readers tracking earnings season want to know which names analysts expect to outperform, and Amazon's technical level is a widely watched signal for the broader market.",
+        "title": "Iran's Foreign Trade Plunges 35% as It Pushes Back on US Sanctions",
+        "summary": "Iran's foreign trade has fallen 35% under the ongoing US blockade, six months into the conflict, according to Investing.com. Iran's government called for global pushback against US sanctions. It said diplomacy with Washington \"isn't impossible,\" per CNBC.",
+        "whyItMatters": "Iran sanctions and the wider standoff carry direct risk for oil supply and prices, a key input for inflation and rate expectations.",
         "whatToWatch": [
-          "Whether Amazon holds the cited technical level in coming sessions",
-          "Upcoming earnings reports from the named stocks"
+          "Any sign of renewed US-Iran diplomatic contact",
+          "Further trade or sanctions data out of Iran",
+          "Oil price reaction to the standoff"
         ],
         "questions": [
-          "Which specific stocks besides Amazon made the list?",
-          "What earnings growth rate is being described as 'magnificent'?"
+          "What would a diplomatic opening actually require from each side?",
+          "How long can Iran's economy absorb a 35% trade drop?"
         ],
         "sources": [
           {
-            "title": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Amazon Holds Key Level",
-            "url": "https://www.investors.com/research/best-stocks-seven-magnificent-stocks-earnings-growth/?src=A00220&yptr=yahoo",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T12:00:21.000Z"
+            "title": "Iran foreign trade plunges 35% under US blockade as six-month war drags on",
+            "url": "https://www.investing.com/news/economy-news/iranian-trade-plunges-35-as-us-steps-up-economic-pressure-4881926",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-30T01:55:43.000Z"
+          },
+          {
+            "title": "Iran calls for global pushback against U.S. sanctions, says diplomacy 'isn't impossible'",
+            "url": "https://www.cnbc.com/2026/08/28/us-iran-war-trump-hormuz-oman-centcom.html",
+            "publisher": "CNBC Markets",
+            "publishedAt": "2026-08-28T12:39:02.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-08-28T12:39:02.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3610H_L.jpg",
+        "badge": "Geopolitics",
+        "trendScore": 59,
+        "confidence": "medium"
+      },
+      {
+        "id": "markets-c22faa7ce5",
+        "slug": "russia-stocks-close-lower-moex-index-little-changed",
+        "lane": "markets",
+        "title": "Russia Stocks Close Lower, MOEX Index Little Changed",
+        "summary": "Russian equities closed lower in Wednesday's session, even as the benchmark MOEX Russia Index ended roughly unchanged, per Investing.com. The report gave no further detail on what drove the moves.",
+        "whyItMatters": "Russian market moves remain a rough gauge of how sanctions and wartime isolation are affecting the country's access to capital.",
+        "whatToWatch": [],
+        "questions": [
+          "Which sectors or stocks moved beneath the flat headline index?"
+        ],
+        "sources": [
+          {
+            "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
+            "url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4881999",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-30T04:20:03.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-29T12:00:21.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/60db304efdc88fa55e8cacefa22c9a60.jpg",
+        "publishedAt": "2026-08-30T04:20:03.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://content-media.investing.com/news/MoscowExchange_800x533_L_1743580555.jpg",
+        "badge": "Markets",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-a59219655b",
+        "slug": "bond-traders-warm-to-warsh-s-tough-inflation-talk-for-now",
+        "lane": "markets",
+        "title": "Bond Traders Warm to Warsh's Tough Inflation Talk — For Now",
+        "summary": "Treasury traders gave a positive reception to hawkish inflation comments from Kevin Warsh, per a report picked up by Yahoo Finance from Barron's. The reaction suggests investors are testing how much weight to put behind the tougher rhetoric. The report frames the support as tentative rather than settled.",
+        "whyItMatters": "Bond market reaction to influential voices on inflation feeds directly into Treasury yields and broader rate expectations.",
+        "whatToWatch": [
+          "Whether upcoming inflation data reinforces or undercuts the tougher tone",
+          "Further public comments from Warsh"
+        ],
+        "questions": [
+          "What would cause traders to change their read on Warsh's credibility?"
+        ],
+        "sources": [
+          {
+            "title": "Bond Traders Buy Warsh’s Tough Talk on Inflation, for Now",
+            "url": "https://www.barrons.com/articles/treasury-bond-market-fed-warsh-inflation-7689b45a?siteid=yhoof2&yptr=yahoo",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T20:27:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T20:27:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/Barrons.com/640bd4c0d4826f67e6ffa8e9eb5f34d7.jpg",
+        "badge": "Fed Watch",
+        "trendScore": 55,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-3a8bee61a0",
+        "slug": "cramer-tells-investors-to-think-twice-before-picking-single-stocks",
+        "lane": "markets",
+        "title": "Cramer Tells Investors to Think Twice Before Picking Single Stocks",
+        "summary": "Jim Cramer delivered a blunt warning to investors who pick individual stocks, according to Yahoo Finance. The report did not detail specific names or the full reasoning behind the message. It reads as a caution aimed at retail investors weighing stock-picking against broader funds.",
+        "whyItMatters": "Cramer's commentary carries weight with a large retail audience and can shape near-term sentiment on individual names versus index investing.",
+        "whatToWatch": [],
+        "questions": [
+          "What specific stocks or conditions prompted the warning?"
+        ],
+        "sources": [
+          {
+            "title": "Jim Cramer sends blunt message to investors picking single stocks",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-sends-blunt-message-194700217.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T19:47:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T19:47:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/thestreet_881/b1ac025de9f65fb05cc700b59bcf8329.jpg",
         "badge": "Analysis",
-        "trendScore": 58,
+        "trendScore": 55,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-eb2a299c29",
+        "slug": "widow-discovers-late-husband-s-2-million-inheritance-was-concentrated-",
+        "lane": "markets",
+        "title": "Widow Discovers Late Husband's $2 Million Inheritance Was Concentrated in 3 Tech Stocks",
+        "summary": "A woman told Yahoo Finance she learned six years after her husband's death that his $2 million inheritance sat entirely in three technology stocks. He had never disclosed the holdings to her while alive. The report uses the case to illustrate the risks of concentrated, undisclosed positions.",
+        "whyItMatters": "The story is a reminder that concentration risk and poor estate disclosure can leave families exposed to a handful of stocks' fortunes.",
+        "whatToWatch": [],
+        "questions": [
+          "Which three stocks made up the position, and how did she unwind it?"
+        ],
+        "sources": [
+          {
+            "title": "Her Husband Inherited $2 Million And Never Told Her — Six Years Later, She Discovered It Was All In 3 Tech Stocks",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/her-husband-inherited-2-million-190008489.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T19:00:08.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T19:00:08.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/benzinga_79/365a157b3a19451937277b22f6e40345.jpg",
+        "trendScore": 54,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-e757cb730a",
+        "slug": "gm-worker-deal-would-add-sierra-pickup-assembly-at-canadian-plant-desp",
+        "lane": "markets",
+        "title": "GM-Worker Deal Would Add Sierra Pickup Assembly at Canadian Plant Despite Tariff Threat",
+        "summary": "A tentative agreement between General Motors and its workers would add assembly of the Sierra pickup at a Canadian plant, per Investing.com. The move comes despite the threat of US tariffs on vehicles built outside the country. The report did not specify the plant or a timeline.",
+        "whyItMatters": "The deal tests how automakers weigh labor agreements and cross-border production against the risk of new US tariffs.",
+        "whatToWatch": [
+          "Whether the deal is finalized and ratified by workers",
+          "Any US tariff action targeting Canadian-built vehicles"
+        ],
+        "questions": [
+          "Which Canadian plant would take on Sierra production, and when would output start?"
+        ],
+        "sources": [
+          {
+            "title": "GM deal with workers would add Sierra pickup assembly to Canadian plant despite US tariff threat",
+            "url": "https://www.investing.com/news/stock-market-news/gm-deal-with-workers-would-add-sierra-pickup-assembly-to-canadian-plant-despite-us-tariff-threat-4881994",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-08-30T01:24:27.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-30T01:24:27.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM7S0FM_L.jpg",
+        "badge": "Labor",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-4422c745a6",
+        "slug": "the-bull-case-for-tesla-stock-heading-into-2027",
+        "lane": "markets",
+        "title": "The Bull Case for Tesla Stock Heading Into 2027",
+        "summary": "A Yahoo Finance contributor argues Tesla stock still has room to run heading into 2027. The piece is framed as the author's opinion rather than a news event. No specific price target or catalyst was detailed beyond the general bullish view.",
+        "whyItMatters": "Tesla remains one of the most closely watched and heavily traded names in the market, so bullish or bearish takes move retail sentiment.",
+        "whatToWatch": [],
+        "questions": [
+          "What catalysts is the author counting on to justify further upside?"
+        ],
+        "sources": [
+          {
+            "title": "Tesla Stock in 2027: Why I Think TSLA Still Has Room to Run",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-2027-why-think-215000498.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T21:50:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T21:50:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/e07e0df8cba3bc5699442f4f98674a56.png",
+        "badge": "Analysis",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-b1a1b331ab",
+        "slug": "the-case-for-realty-income-over-tech-as-a-dividend-play",
+        "lane": "markets",
+        "title": "The Case for Realty Income Over Tech as a Dividend Play",
+        "summary": "A Yahoo Finance piece argues Realty Income, not a technology name, is the best dividend stock to own. It is presented as opinion rather than news. No specific yield figure or financial detail was included in the supplied report.",
+        "whyItMatters": "Dividend income investors weigh names like Realty Income against higher-growth tech stocks when building portfolio strategy.",
+        "whatToWatch": [],
+        "questions": [
+          "What yield and payout track record is the case actually built on?"
+        ],
+        "sources": [
+          {
+            "title": "Why I Think the Best Dividend Stock Isn't a Tech Name: It's Realty Income",
+            "url": "https://finance.yahoo.com/real-estate/articles/why-think-best-dividend-stock-203500371.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T20:35:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T20:35:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/7a59195e7e1bd94b20f40dc92b3cd824.jpg",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-b9535a6e81",
+        "slug": "comparing-growth-etfs-vanguard-s-vug-vs-invesco-s-rzg",
+        "lane": "markets",
+        "title": "Comparing Growth ETFs: Vanguard's VUG vs. Invesco's RZG",
+        "summary": "A Yahoo Finance piece compares two growth-stock ETFs: Vanguard's large-cap VUG and Invesco's small-cap RZG. It is framed as an opinion comparison rather than breaking news. No performance figures were included in the supplied report.",
+        "whyItMatters": "The choice between large-cap and small-cap growth exposure is a common portfolio decision for investors positioning around market-cap tilts.",
+        "whatToWatch": [],
+        "questions": [
+          "Which fund wins on cost, holdings concentration, or recent performance?"
+        ],
+        "sources": [
+          {
+            "title": "Better Growth Stock ETF: Vanguard's Large-Cap VUG vs. Invesco's Small-Cap RZG",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/better-growth-stock-etf-vanguards-201417595.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T20:14:17.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T20:14:17.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/057f0a4da36aed304d5126e836a6efed.png",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-dea6e3d0aa",
+        "slug": "jepq-s-10-7-yield-loses-its-shine-as-nvidia-rallies",
+        "lane": "markets",
+        "title": "JEPQ's 10.7% Yield Loses Its Shine as Nvidia Rallies",
+        "summary": "A Yahoo Finance piece notes that JEPQ's 10.7% yield looked attractive until Nvidia's rally changed the calculus. Covered-call funds like JEPQ tend to cap upside, which can look costly when a heavyweight holding like Nvidia surges. The supplied report did not include specific return comparison figures.",
+        "whyItMatters": "The piece highlights the trade-off income investors face between high current yield and giving up gains during sharp rallies in mega-cap names like Nvidia.",
+        "whatToWatch": [],
+        "questions": [
+          "How much upside did JEPQ actually miss relative to holding Nvidia directly?"
+        ],
+        "sources": [
+          {
+            "title": "Why JEPQ’s 10.7% Yield Looked Irresistible Until Nvidia Rallied",
+            "url": "https://finance.yahoo.com/markets/options/articles/why-jepq-10-7-yield-200023523.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T20:00:23.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T20:00:23.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/24_7_wall_st__718/9bae0dce35f50668ccda326890ba7b0e",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-fb8851774d",
+        "slug": "sam-altman-says-it-may-be-time-to-slow-ai-development-raising-question",
+        "lane": "markets",
+        "title": "Sam Altman Says It May Be Time to Slow AI Development, Raising Questions for OpenAI's IPO Path",
+        "summary": "Sam Altman told Time Magazine it may be a good time to slow down AI model development, following recent safety failures, according to Yahoo Finance. The report raises the question of what a slower pace would mean for OpenAI's growth story as it heads toward a possible IPO. No specific timeline or IPO detail was given in the supplied source.",
+        "whyItMatters": "Any deceleration at OpenAI would ripple through AI-linked stocks and reshape expectations for one of the sector's most anticipated IPOs.",
+        "whatToWatch": [
+          "Any formal announcement from OpenAI on its development pace",
+          "Further detail on OpenAI's IPO timeline"
+        ],
+        "questions": [
+          "What specific safety failures prompted Altman's comments?",
+          "Would a slower pace change OpenAI's valuation ahead of an IPO?"
+        ],
+        "sources": [
+          {
+            "title": "Sam Altman Told Time Magazine, \"I Think It Is a Good Time to Slow Down\" on AI Model Development After Recent Safety Failures. What Would a Pace Change Mean for OpenAI's Growth Story Heading Into an IPO?",
+            "url": "https://finance.yahoo.com/technology/ai/articles/sam-altman-told-time-magazine-195800246.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-08-29T19:58:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T19:58:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/73d9c9f3898f865b8b9a8065880a73ef.jpg",
+        "badge": "AI",
+        "trendScore": 50,
         "confidence": "low"
       },
       {
         "id": "markets-bf70e17a2f",
         "slug": "reader-asks-how-to-unlock-a-dementia-stricken-parent-s-100-000-stock-c",
         "lane": "markets",
-        "title": "Reader Asks: How to Unlock a Dementia-Stricken Parent's $100,000 Stock Certificate",
-        "summary": "A MarketWatch advice column addresses a reader whose 91-year-old mother has dementia and holds a $100,000 stock certificate that banks won't release without her signature. The piece explores the legal and practical hurdles families face when a loved one can no longer sign for their own assets. It is a personal-finance case study rather than a market-moving event.",
-        "whyItMatters": "It's a cautionary example for investors on why powers of attorney and estate planning matter before incapacity strikes.",
+        "title": "Reader Asks: How to Unlock a Dementia Patient's $100,000 Stock Certificate",
+        "summary": "A MarketWatch reader described how banks require her 91-year-old mother's signature to unlock a $100,000 stock certificate, even though the mother has dementia. The column addresses the legal bind facing families managing assets for an incapacitated relative. The supplied source did not include a specific resolution beyond the question itself.",
+        "whyItMatters": "It shows how power-of-attorney and capacity issues can freeze family access to real financial assets.",
         "whatToWatch": [],
         "questions": [
-          "What options, such as guardianship or power of attorney, does the column recommend?"
+          "What legal path, such as power of attorney or guardianship, resolves the standoff?"
         ],
         "sources": [
           {
@@ -441,312 +722,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-08-29T16:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
         "imageUrl": "https://images.mktw.net/im-33671200",
         "badge": "Advice",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-a8dc494f4c",
-        "slug": "goodyear-burns-cash-as-its-turnaround-plan-grinds-on",
-        "lane": "markets",
-        "title": "Goodyear Burns Cash as Its Turnaround Plan Grinds On",
-        "summary": "CNBC reports Goodyear continues to burn cash while its multiyear turnaround plan remains a work in progress. The report frames the tiremaker as still executing the plan without yet showing the cash generation investors want to see. Specific financial figures were not detailed in the source.",
-        "whyItMatters": "Investors weighing industrial turnaround stories need to see cash burn stabilize before betting on a recovery.",
-        "whatToWatch": [
-          "Goodyear's next earnings update on cash flow and turnaround progress"
-        ],
-        "questions": [
-          "How much cash is Goodyear burning, and over what timeframe?",
-          "What milestones remain in the turnaround plan?"
-        ],
-        "sources": [
-          {
-            "title": "Goodyear burning rubber and cash as turnaround plan continues",
-            "url": "https://www.cnbc.com/2026/08/29/goodyear-turnaround-cash-debt.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-29T13:56:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T13:56:58.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108354746-1787772909822-Goodyear_CEO_Mark_Stewart.png?v=1787838205&w=1920&h=1080",
-        "badge": "Earnings",
-        "trendScore": 54,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-d08bf36ce9",
-        "slug": "2-year-treasury-yield-jumps-after-warsh-says-fed-may-have-work-to-do",
-        "lane": "markets",
-        "title": "2-Year Treasury Yield Jumps After Warsh Says Fed 'May Have Work to Do'",
-        "summary": "The 2-year Treasury yield climbed after Kevin Warsh said the Federal Reserve may still have work to do, according to CNBC. His comments were read as pushing back on expectations for a quick end to the Fed's current rate stance. The move reflects markets recalibrating rate-path expectations off a single official's remarks.",
-        "whyItMatters": "Short-term yields are a direct read on Fed rate expectations, and any signal of a longer tightening path ripples through equities and borrowing costs.",
-        "whatToWatch": [
-          "Further Fed commentary ahead of the next policy meeting",
-          "Whether the 2-year yield holds its jump or reverses"
-        ],
-        "questions": [
-          "In what capacity did Warsh make these remarks?",
-          "How much did the 2-year yield move?"
-        ],
-        "sources": [
-          {
-            "title": "2-year Treasury yield jumps as Warsh says Fed may 'have work to do'",
-            "url": "https://www.cnbc.com/2026/08/28/treasury-yields-jackson-hole.html",
-            "publisher": "CNBC Markets",
-            "publishedAt": "2026-08-28T20:08:18.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-28T20:08:18.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://image.cnbcfm.com/api/v1/image/108355619-1787903748731-gettyimages-2291621193-FED_SYMPOSIUM.jpeg?v=1787903758&w=1920&h=1080",
-        "badge": "Fed",
-        "trendScore": 54,
-        "confidence": "medium"
-      },
-      {
-        "id": "markets-55a92db317",
-        "slug": "microsoft-palantir-in-focus-as-software-stocks-bounce-back",
-        "lane": "markets",
-        "title": "Microsoft, Palantir in Focus as Software Stocks Bounce Back",
-        "summary": "Software stocks are rebounding, with Microsoft and Palantir named among the shares to watch, according to Yahoo Finance. The report frames the move as a broader bounce across the software sector rather than news specific to either company. No specific price levels or catalysts were detailed in the source.",
-        "whyItMatters": "Software mega-caps carry heavy weight in major indexes, so a sector-wide bounce can move the broader market.",
-        "whatToWatch": [
-          "Whether the software rebound extends into coming sessions",
-          "Price action in Microsoft and Palantir shares specifically"
-        ],
-        "questions": [
-          "What triggered the software sector bounce?",
-          "Which other stocks besides Microsoft and Palantir are on the watch list?"
-        ],
-        "sources": [
-          {
-            "title": "Microsoft, Palantir Among Stocks To Watch As Software Bounces Back",
-            "url": "https://www.investors.com/news/microsoft-palantir-stocks-near-buy-points-software/?src=A00220&yptr=yahoo",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T11:55:57.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T11:55:57.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/196c76e5d53d0fc4647eeb0ac6c79f7d.jpg",
-        "badge": "Analysis",
-        "trendScore": 53,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-6f234c67de",
-        "slug": "five-defense-stocks-lead-the-sector-s-gains-this-year",
-        "lane": "markets",
-        "title": "Five Defense Stocks Lead the Sector's Gains This Year",
-        "summary": "A Yahoo Finance screen names five defense stocks as this year's top performers, describing them as surprising leaders in the sector. The piece does not detail specific tickers or return figures beyond framing them as standouts. It reads as a sector round-up rather than news tied to a single catalyst.",
-        "whyItMatters": "Defense stocks have been a resilient pocket of the market, and knowing the leaders helps readers track where sector strength is concentrated.",
-        "whatToWatch": [
-          "Whether the named defense leaders extend their outperformance"
-        ],
-        "questions": [
-          "Which five stocks made the list?",
-          "What is driving defense-sector strength this year?"
-        ],
-        "sources": [
-          {
-            "title": "What Are The Top Defense Stocks This Year? These 5 Leaders Will Surprise You.",
-            "url": "https://www.investors.com/news/defense-aerospace-stock-leaders-2026-sifco-ducommun-ati-spire-astronics-space-contractors-lmt-ba-rtx/?src=A00220&yptr=yahoo",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T11:30:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T11:30:31.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/082a456723a07faceed76599c00de18e.jpg",
-        "badge": "Analysis",
-        "trendScore": 53,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-34563d956b",
-        "slug": "hdfc-bank-ceo-sashidhar-jagdishan-to-step-down-in-october",
-        "lane": "markets",
-        "title": "HDFC Bank CEO Sashidhar Jagdishan to Step Down in October",
-        "summary": "HDFC Bank CEO Sashidhar Jagdishan will step down in October as governance pressures mount, according to Investing.com. The report ties the exit to rising scrutiny over governance at India's largest private lender. Details on a successor were not included in the source.",
-        "whyItMatters": "A leadership change at HDFC Bank, a major emerging-markets financial stock, matters for investors tracking Indian banking and governance risk.",
-        "whatToWatch": [
-          "Announcement of Jagdishan's successor",
-          "The October transition and any board statements on governance"
-        ],
-        "questions": [
-          "What specific governance pressures prompted the departure?",
-          "Who is likely to succeed him?"
-        ],
-        "sources": [
-          {
-            "title": "HDFC Bank CEO Jagdishan to step down in October as governance pressures mount",
-            "url": "https://www.investing.com/news/stock-market-news/hdfc-bank-ceo-jagdishan-to-step-down-in-october-as-governance-pressures-mount-4881988",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-29T23:04:26.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T23:04:26.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC3B0CQ_M.jpg",
-        "badge": "Leadership",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-11c36a5f93",
-        "slug": "goldman-sachs-draws-three-lessons-from-research-on-u-s-inflation-expec",
-        "lane": "markets",
-        "title": "Goldman Sachs Draws Three Lessons From Research on U.S. Inflation Expectations",
-        "summary": "Goldman Sachs research outlines three takeaways on how U.S. inflation expectations behave, according to Investing.com. The report frames these as lessons drawn from economic research rather than a new forecast. The specific lessons and figures were not detailed in the source.",
-        "whyItMatters": "Inflation expectations shape Fed policy and bond-market pricing, so new research from a major bank is a data point for anyone tracking rates.",
-        "whatToWatch": [
-          "Whether Goldman's lessons factor into its next Fed policy call"
-        ],
-        "questions": [
-          "What are the three specific lessons?",
-          "How do they change Goldman's inflation or rate-path outlook?"
-        ],
-        "sources": [
-          {
-            "title": "Goldman draws 3 lessons from economic research on U.S. inflation expectations",
-            "url": "https://www.investing.com/news/economy-news/goldman-draws-3-lessons-from-economic-research-on-us-inflation-expectations-4881977",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-08-29T19:47:09.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T19:47:09.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://content-media.investing.com/news/goldman_sachs_M_1440049080.jpg",
-        "badge": "Economy",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-d0d5673534",
-        "slug": "amgen-vs-axsome-therapeutics-which-healthcare-stock-wins-in-2026",
-        "lane": "markets",
-        "title": "Amgen vs. Axsome Therapeutics: Which Healthcare Stock Wins in 2026?",
-        "summary": "Yahoo Finance compares Amgen and Axsome Therapeutics as healthcare investment options for 2026. The piece frames it as a head-to-head stock comparison rather than news tied to a specific event. No specific financial metrics were detailed in the source.",
-        "whyItMatters": "Comparative stock analyses help readers weigh large-cap biotech stability against smaller-cap growth within healthcare.",
-        "whatToWatch": [],
-        "questions": [
-          "What metrics does the comparison favor: valuation, pipeline, or growth?",
-          "Which stock does the analysis conclude is the better buy?"
-        ],
-        "sources": [
-          {
-            "title": "Amgen vs. Axsome Therapeutics: Which Healthcare Stock Is a Better Buy in 2026?",
-            "url": "https://finance.yahoo.com/healthcare/articles/amgen-vs-axsome-therapeutics-healthcare-160501235.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T16:05:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T16:05:01.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/a6005da75497ce68031f2b5b4889e83c.png",
-        "badge": "Analysis",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-2c0f1a55c0",
-        "slug": "nuclear-ipo-stock-lands-multiyear-fuel-deal-is-it-a-buy",
-        "lane": "markets",
-        "title": "Nuclear IPO Stock Lands Multiyear Fuel Deal — Is It a Buy?",
-        "summary": "A recently IPO'd nuclear-energy stock has signed a multiyear fuel supply deal, according to Yahoo Finance. The piece weighs whether the stock is a buy on the strength of the deal, though the company and deal terms were not named in the supplied title. It reflects ongoing investor interest in nuclear-linked plays.",
-        "whyItMatters": "Nuclear power stocks have drawn heavy investor interest tied to rising electricity demand, and a fuel-supply deal is a concrete milestone for a young public company.",
-        "whatToWatch": [
-          "Details of the fuel supply agreement's terms and duration"
-        ],
-        "questions": [
-          "Which company is this, and who is the fuel supplier?",
-          "What are the financial terms of the deal?"
-        ],
-        "sources": [
-          {
-            "title": "This Nuclear IPO Stock Just Landed a Multiyear Fuel Deal. Is it a Buy?",
-            "url": "https://finance.yahoo.com/energy/articles/nuclear-ipo-stock-just-landed-160500388.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T16:05:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T16:05:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/77df16bce9de2c3686eeb05a811cbeab.jpg",
-        "badge": "Deal",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-1249eeb958",
-        "slug": "ebay-executive-sells-nearly-2-300-shares-worth-over-235-000",
-        "lane": "markets",
-        "title": "eBay Executive Sells Nearly 2,300 Shares Worth Over $235,000",
-        "summary": "An eBay executive sold nearly 2,300 shares of company stock valued at more than $235,000, according to Yahoo Finance. The report is a routine insider-transaction disclosure without further context on the executive's remaining holdings or reason for the sale.",
-        "whyItMatters": "Insider sales are one data point investors use to gauge executive sentiment, though routine sales don't necessarily signal a view on the stock.",
-        "whatToWatch": [
-          "Any pattern of continued insider selling at eBay"
-        ],
-        "questions": [
-          "Which executive made the sale?",
-          "Was this part of a pre-scheduled 10b5-1 trading plan?"
-        ],
-        "sources": [
-          {
-            "title": "Executive Sells Nearly 2,300 Shares of eBay Stock, Valued at More Than $235,000",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/executive-sells-nearly-2-300-160001453.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-08-29T16:00:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T16:00:01.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/2ce02d2925b9c600e0e66c2830a1e3c8.png",
-        "badge": "Insider Selling",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-c07173ef63",
-        "slug": "hiring-slows-again-and-a-rebound-looks-unlikely-soon",
-        "lane": "markets",
-        "title": "Hiring Slows Again, and a Rebound Looks Unlikely Soon",
-        "summary": "MarketWatch reports that U.S. hiring has slowed again and that the labor market likely won't speed back up soon. The piece frames this as a continuation of a cooling trend in job creation. Specific payroll figures were not detailed in the supplied title.",
-        "whyItMatters": "A cooling labor market feeds directly into the Fed's rate decisions and is a key signal for the economy's trajectory that markets watch closely.",
-        "whatToWatch": [
-          "The next jobs report for confirmation of the slowdown",
-          "Fed commentary on how labor data factors into policy"
-        ],
-        "questions": [
-          "What is the latest payroll or unemployment figure driving this story?",
-          "Which sectors are seeing the weakest hiring?"
-        ],
-        "sources": [
-          {
-            "title": "Where are all the new jobs? Hiring slows again — and it probably won’t speed up soon.",
-            "url": "https://www.marketwatch.com/story/where-are-all-the-new-jobs-hiring-slows-again-and-it-probably-wont-speed-up-soon-66920f1d?mod=mw_rss_topstories",
-            "publisher": "MarketWatch Top Stories",
-            "publishedAt": "2026-08-29T12:00:00.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-29T12:00:00.000Z",
-        "updatedAt": "2026-08-29T16:25:06.011Z",
-        "imageUrl": "https://images.mktw.net/im-04504407",
-        "badge": "Jobs Data",
-        "trendScore": 52,
+        "trendScore": 50,
         "confidence": "medium"
       }
     ],
@@ -871,372 +850,534 @@
             "Record per-task runtime and token cost so expensive stages can be redesigned"
           ]
         },
-        "updatedAt": "2026-08-29T16:36:02.141Z"
+        "updatedAt": "2026-08-29T22:43:29.457Z"
+      },
+      {
+        "id": "ai-0cb38851ba",
+        "slug": "vllm-releases-version-0-28-0",
+        "lane": "ai",
+        "title": "vLLM Releases Version 0.28.0",
+        "summary": "vLLM, the open-source inference engine used to serve large language models, has published version 0.28.0, according to a post on Hacker News. The supplied source gives only the version number, with no further detail on what changed.",
+        "whyItMatters": "vLLM is widely used infrastructure for running open-weight models efficiently, so its releases matter to teams operating LLMs at scale.",
+        "whatToWatch": [
+          "Release notes detailing what changed in 0.28.0",
+          "Whether the update affects compatibility with popular open-weight models"
+        ],
+        "questions": [
+          "What specific features or fixes does 0.28.0 include?",
+          "Does the update need migration steps for existing deployments?"
+        ],
+        "sources": [
+          {
+            "title": "vLLM v0.28.0",
+            "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-29T18:22:00Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T18:22:00Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://opengraph.githubassets.com/4ebc6bdc52e9be13e062849c7d527d88f083515ccff086b45b804e1e708e9324/vllm-project/vllm/releases/tag/v0.28.0",
+        "badge": "Release",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-ea1bf4e0ad",
+        "slug": "essay-llms-are-making-me-lose-my-savviness",
+        "lane": "ai",
+        "title": "Essay: LLMs Are Making Me Lose My Savviness",
+        "summary": "A blog post titled \"LLMs are making me lose my savviness\" is circulating on Hacker News. It reflects on how reliance on AI tools may erode personal skill or judgment, but the supplied source gives only the title and no further detail on the author's specific claims.",
+        "whyItMatters": "The post taps into an ongoing debate about skill atrophy from heavy reliance on AI assistants, a live concern for teams adopting these tools daily.",
+        "whatToWatch": [
+          "Whether the discussion draws wider commentary from AI practitioners",
+          "Follow-up posts responding to the essay's argument"
+        ],
+        "questions": [
+          "What specific skills or tasks does the author say are affected?",
+          "Is this a personal account or backed by broader evidence?"
+        ],
+        "sources": [
+          {
+            "title": "LLMs are making me lose my savviness",
+            "url": "https://pgaleone.eu/ai/2026/08/29/losing-savviness/",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-29T18:38:52Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T18:38:52Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://pgaleone.eu/images/me.jpeg",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-12adde409e",
+        "slug": "developer-turns-llm-memory-into-a-program-analysis-tool",
+        "lane": "ai",
+        "title": "Developer Turns LLM Memory Into a Program-Analysis Tool",
+        "summary": "A Hacker News post titled \"I accidentally turned LLM memory into program analysis\" describes a developer finding that an LLM's memory mechanism could double as a program-analysis technique. No detail beyond the title is available from the supplied source.",
+        "whyItMatters": "Unexpected reuses of LLM internals for software analysis hint at informal research directions that could feed into future developer tooling.",
+        "whatToWatch": [
+          "Whether other developers pick up or replicate the technique",
+          "A more detailed technical write-up, if one follows"
+        ],
+        "questions": [
+          "What specific LLM memory mechanism is being repurposed?",
+          "How does this compare to established program-analysis tools?"
+        ],
+        "sources": [
+          {
+            "title": "I accidentally turned LLM memory into program analysis",
+            "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-28T23:27:45Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-28T23:27:45Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://pwning.systems/og.png",
+        "trendScore": 37,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-5dcea7d65e",
+        "slug": "report-openai-cuts-off-cursor",
+        "lane": "ai",
+        "title": "Report: OpenAI Cuts Off Cursor",
+        "summary": "Latent Space's AINews roundup carries an item stating that OpenAI has shut off access for Cursor, the AI coding assistant. The supplied source is a newsletter headline only, with no detail on scope, reason, or timing.",
+        "whyItMatters": "If accurate, a model provider cutting off a prominent coding assistant would signal shifting tension between model makers and the apps built on their APIs.",
+        "whatToWatch": [
+          "Official statements from OpenAI or Cursor on the cutoff",
+          "Whether Cursor shifts users to alternative model providers"
+        ],
+        "questions": [
+          "Why did OpenAI reportedly cut off Cursor's access?",
+          "Does this affect all OpenAI models used by Cursor, or only some?"
+        ],
+        "sources": [
+          {
+            "title": "[AINews] OpenAI shuts off Cursor",
+            "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+            "publisher": "Latent Space",
+            "publishedAt": "2026-08-29T05:11:52.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T05:11:52.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+        "badge": "Breaking",
+        "trendScore": 32,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-a51ad146dc",
+        "slug": "glm-5-3-released-as-an-open-weight-model",
+        "lane": "ai",
+        "title": "GLM-5.3 Released as an Open-Weight Model",
+        "summary": "GLM-5.3 is now available as an open-weight model, according to a Hacker News post pointing to a Hugging Face listing. The supplied source does not give model size, benchmark results, or license terms.",
+        "whyItMatters": "Open-weight releases in the GLM family keep expanding the pool of freely available capable models, adding to competitive pressure on closed-model providers.",
+        "whatToWatch": [
+          "Independent benchmarks against other current open-weight models",
+          "The license terms and any usage restrictions"
+        ],
+        "questions": [
+          "How does GLM-5.3 perform against other current open-weight models?",
+          "What is the parameter count and the hardware needed to run it?"
+        ],
+        "sources": [
+          {
+            "title": "GLM-5.3 is now open-weight",
+            "url": "https://huggingface.co/zai-org/GLM-5.3",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-28T15:20:13Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-28T15:20:13Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "badge": "Release",
+        "trendScore": 26,
+        "confidence": "low"
+      },
+      {
+        "id": "ai-766e251182",
+        "slug": "blog-post-warns-that-an-ai-agent-has-root",
+        "lane": "ai",
+        "title": "Blog Post Warns That an AI Agent \"Has Root\"",
+        "summary": "A Hacker News post titled \"AI Agent Has Root\" raises concerns about AI agents running with elevated system privileges. The supplied source gives only the title, with no detail on the specific incident or system involved.",
+        "whyItMatters": "As AI agents gain more autonomy to run code and system commands, the risk of granting them privileged access is a growing concern for teams deploying agentic AI.",
+        "whatToWatch": [
+          "Whether the post names specific vendors or products affected",
+          "Any response from AI agent framework maintainers"
+        ],
+        "questions": [
+          "What specific scenario prompted this warning?",
+          "What mitigations, if any, does the post recommend?"
+        ],
+        "sources": [
+          {
+            "title": "AI Agent Has Root",
+            "url": "https://infernalcode.com/posts/your-ai-agent-has-root/",
+            "publisher": "Hacker News",
+            "publishedAt": "2026-08-28T12:03:09Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-28T12:03:09Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://infernalcode.com/og-default.png",
+        "trendScore": 25,
+        "confidence": "low"
       }
     ],
     "tech": [
       {
-        "id": "tech-198147ad1e",
-        "slug": "apple-unveils-m5-ultra-and-m6-chips",
+        "id": "tech-ed173e46c2",
+        "slug": "xbox-ceo-project-helix-is-a-family-of-devices",
         "lane": "tech",
-        "title": "Apple unveils M5 Ultra and M6 chips, its most powerful yet",
-        "summary": "Apple introduced two new chips, the M5 Ultra and the M6. The company calls the M5 Ultra its most powerful chip ever. Reports from TechCrunch and Hacker News confirm the announcement, but detailed specs and pricing were not included.",
-        "whyItMatters": "New silicon sets the pace for Apple's Mac lineup and its push into on-device AI, an area where it competes with Nvidia and Qualcomm.",
+        "title": "Xbox CEO: Project Helix is a 'family of devices'",
+        "summary": "Xbox's CEO described Project Helix as a family of devices, not a single product. Engadget and The Verge both covered the comments. The CEO did not name specific hardware.",
+        "whyItMatters": "The comment hints at a broader Xbox hardware strategy beyond one console or handheld, which matters for how Microsoft competes in gaming hardware.",
         "whatToWatch": [
-          "Which Mac models ship with the new chips",
-          "Independent benchmark results",
-          "Developer response to new AI capabilities"
+          "Official details on which devices belong to the Helix family",
+          "Future Microsoft hardware announcements"
         ],
         "questions": [
-          "What are the exact performance gains over the prior generation?",
-          "When will devices with these chips go on sale?"
+          "Which devices will carry the Helix name?",
+          "When will Microsoft show the hardware?"
         ],
         "sources": [
           {
-            "title": "Apple debuts its ‘most powerful chip ever’ in M5 Ultra and M6",
-            "url": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powerful-chip-ever-in-m5-ultra-and-m6/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-25T14:10:36.000Z"
-          },
-          {
-            "title": "Apple introduces M6 and M5 Ultra",
-            "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
-            "publisher": "Hacker News",
-            "publishedAt": "2026-08-25T13:01:22Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-25T13:01:22Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/Apple-M6-and-M5-Ultra-hero-260825_big.jpg.medium_2x.jpg?resize=1200,675",
-        "badge": "Hardware",
-        "trendScore": 64,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-a037d648cf",
-        "slug": "apple-s-new-desktop-macs-target-local-ai-development",
-        "lane": "tech",
-        "title": "Apple's new desktops target local AI work, as it reverses an email privacy change",
-        "summary": "Apple unveiled new desktop computers built specifically for local AI development, according to Ars Technica. Separately, Engadget reported that Apple decided to undo a change it had made to an email privacy feature. Both moves came from Apple on the same day.",
-        "whyItMatters": "The new desktops show Apple chasing on-device AI workloads, while the privacy reversal points to added scrutiny over feature tradeoffs.",
-        "whatToWatch": [
-          "Full specs and pricing for the new desktops",
-          "Whether the email privacy feature returns to its original design"
-        ],
-        "questions": [
-          "Which desktop models are involved?",
-          "What exactly changed in the email privacy feature, and why did Apple reverse it?"
-        ],
-        "sources": [
-          {
-            "title": "Apple decides undermining its own email privacy feature was a bad idea after all",
-            "url": "https://www.engadget.com/2243812/apple-decides-undermining-its-own-email-privacy-feature-was-a-bad-idea-after-all/",
+            "title": "Xbox Project Helix is a 'family of devices,' CEO reveals",
+            "url": "https://www.engadget.com/2246956/xbox-project-helix-family-of-devices/",
             "publisher": "Engadget",
-            "publishedAt": "2026-08-25T16:36:46.000Z"
+            "publishedAt": "2026-08-29T12:15:12.000Z"
           },
           {
-            "title": "Apple's new desktop computers are designed specifically for local AI development",
-            "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
-            "publisher": "Ars Technica",
-            "publishedAt": "2026-08-25T13:00:11.000Z"
-          }
-        ],
-        "sourceCount": 2,
-        "publishedAt": "2026-08-25T13:00:11.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Mac-Studio-2026-1152x648-1787611177.jpg",
-        "badge": "Hardware",
-        "trendScore": 59,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-5700b1aa91",
-        "slug": "robotics-startup-generalist-reportedly-reaches-3-billion-valuation",
-        "lane": "tech",
-        "title": "Robotics startup Generalist reportedly reaches $3 billion valuation",
-        "summary": "Robotics startup Generalist has reached a $3 billion valuation, TechCrunch reports, citing unnamed sources. No details on the funding round size or investors were included in the report.",
-        "whyItMatters": "The valuation shows continued investor appetite for robotics and physical-AI startups even as broader tech funding stays selective.",
-        "whatToWatch": [
-          "An official funding announcement from Generalist",
-          "Confirmation of the investors involved"
-        ],
-        "questions": [
-          "What does Generalist build, and who is funding this round?"
-        ],
-        "sources": [
-          {
-            "title": "Robotics startup Generalist reaches $3B valuation, sources say",
-            "url": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-26T00:40:59.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-08-26T00:40:59.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2025/09/GettyImages-640351099.jpg?resize=1200,849",
-        "badge": "Funding",
-        "trendScore": 57,
-        "confidence": "medium"
-      },
-      {
-        "id": "tech-1b8db47ad7",
-        "slug": "instagram-tests-first-draft-to-auto-trim-reels-clips",
-        "lane": "tech",
-        "title": "Instagram's new First Draft tool auto-trims Reels clips",
-        "summary": "Instagram launched First Draft, a feature that automatically trims Reels clips to make editing less tedious. TechCrunch and The Verge both reported the rollout.",
-        "whyItMatters": "Meta keeps lowering the effort needed to make short-form video, sharpening its competition with TikTok for creator time and attention.",
-        "whatToWatch": [
-          "Full rollout to all Instagram users",
-          "Creator feedback on the automatic edits"
-        ],
-        "questions": [
-          "How does the feature decide where to trim a clip?"
-        ],
-        "sources": [
-          {
-            "title": "Instagram’s ‘First Draft’ feature aims to make editing Reels less tedious",
-            "url": "https://techcrunch.com/2026/08/25/instagrams-first-draft-feature-aims-to-make-editing-reels-less-tedious/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-25T19:22:52.000Z"
-          },
-          {
-            "title": "Instagram’s ‘First Draft’ trims your Reels clips for you",
-            "url": "https://www.theverge.com/tech/984463/instagram-first-draft-edit-reels",
+            "title": "Xbox CEO calls Project Helix a ‘family of devices’",
+            "url": "https://www.theverge.com/games/986337/xbox-ceo-asha-sharma-project-helix-family-of-devices",
             "publisher": "The Verge",
-            "publishedAt": "2026-08-25T17:12:31.000Z"
+            "publishedAt": "2026-08-28T22:03:13.000Z"
           }
         ],
         "sourceCount": 2,
-        "publishedAt": "2026-08-25T17:12:31.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/insta-first-draft.png?quality=90&strip=all&crop=0,0,100,100",
-        "badge": "Product",
+        "publishedAt": "2026-08-28T22:03:13.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/268364_Inside_Microsofts_big_Xbox_leadership_shakeup_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Gaming",
         "trendScore": 56,
         "confidence": "medium"
       },
       {
-        "id": "tech-bae87cb127",
-        "slug": "openai-loses-a-top-data-center-executive-amid-ongoing-departures",
+        "id": "tech-4203fe95a9",
+        "slug": "the-galaxy-z-flip-8-reviewed",
         "lane": "tech",
-        "title": "OpenAI loses a top data center executive amid ongoing departures",
-        "summary": "OpenAI has lost a senior data center executive, according to TechCrunch. The report frames this as the latest in a series of high-profile departures at the company.",
-        "whyItMatters": "Data center leadership is central to OpenAI's compute buildout, so repeated exits raise questions about stability as it scales infrastructure.",
+        "title": "The Galaxy Z Flip 8, reviewed",
+        "summary": "The Verge reviewed Samsung's Galaxy Z Flip 8. The review says the phone works best when it embraces friction, rather than pure convenience. No other details were supplied.",
+        "whyItMatters": "Foldable phone reviews shape how buyers and rivals judge Samsung's push to keep the flip-phone format relevant in a competitive market.",
+        "whatToWatch": [],
+        "questions": [
+          "What does 'friction' mean in daily use of the phone?"
+        ],
+        "sources": [
+          {
+            "title": "The Galaxy Z Flip 8 is at its best when there’s friction",
+            "url": "https://www.theverge.com/tech/986033/samsung-galaxy-z-flip-8-review",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-29T13:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T13:00:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/samsung-galaxy-z-flip-8-review-13.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "badge": "Review",
+        "trendScore": 53,
+        "confidence": "medium"
+      },
+      {
+        "id": "tech-e94b3ac725",
+        "slug": "gta-6-s-budget-reportedly-dwarfs-every-other-game",
+        "lane": "tech",
+        "title": "GTA 6's budget reportedly dwarfs every other game",
+        "summary": "Engadget compared video game budgets and says none come close to GTA 6's spend. The piece did not disclose an exact figure for the game.",
+        "whyItMatters": "Ballooning AAA budgets raise the stakes for publishers and pressure the business model behind big-budget games.",
         "whatToWatch": [
-          "Who OpenAI names to fill the role",
-          "Whether additional executives leave"
+          "GTA 6's eventual release and sales performance",
+          "Whether other publishers disclose comparable budget figures"
         ],
         "questions": [
-          "Why did the executive leave, and where are they going?"
+          "What is GTA 6's actual budget?",
+          "How does this compare across publishers over time?"
         ],
         "sources": [
           {
-            "title": "OpenAI loses a top data center exec, as stream of high-profile departures continues",
-            "url": "https://techcrunch.com/2026/08/25/openai-loses-a-top-data-center-exec-as-stream-of-high-profile-departures-continues/",
-            "publisher": "TechCrunch",
-            "publishedAt": "2026-08-26T00:06:20.000Z"
+            "title": "The wildest video game budgets can't hold a candle to GTA 6",
+            "url": "https://www.engadget.com/2246918/video-games-rival-gta-6-budget/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-29T22:30:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T00:06:20.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/07/GettyImages-2236544023.jpeg?resize=1200,800",
-        "badge": "Personnel",
+        "publishedAt": "2026-08-29T22:30:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/the-wildest-video-game-budgets-cant-hold-a-candle-to-gta-6/l-intro-1787978932.jpg",
+        "badge": "Gaming",
         "trendScore": 52,
-        "confidence": "medium"
+        "confidence": "low"
       },
       {
-        "id": "tech-78d9dd7fe9",
-        "slug": "wired-publishes-promo-codes-for-adidas-and-sephora",
+        "id": "tech-c5de86629e",
+        "slug": "why-does-your-kindle-have-bluetooth",
         "lane": "tech",
-        "title": "Wired publishes promo codes for Adidas and Sephora",
-        "summary": "Wired posted a page listing an Adidas discount code and a Sephora discount code for August 2026. This is a coupon roundup, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+        "title": "Why does your Kindle have Bluetooth?",
+        "summary": "Engadget examined why Kindle e-readers include Bluetooth, a feature many owners may not realize is there. The piece does not detail specific models or Amazon's stated rationale beyond the question itself.",
+        "whyItMatters": "Small hardware choices like this show how e-readers keep adding smartphone-style features over time.",
         "whatToWatch": [],
-        "questions": [],
+        "questions": [
+          "What does Amazon say Bluetooth is for on Kindle?"
+        ],
         "sources": [
           {
-            "title": "25% Off Adidas Promo Code | August 2026",
-            "url": "https://www.wired.com/story/adidas-promo-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
-          },
-          {
-            "title": "20% Off Sephora Promo Code | August 2026",
-            "url": "https://www.wired.com/story/sephora-promo-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "Why does your Kindle even have Bluetooth?",
+            "url": "https://www.engadget.com/2242764/why-does-your-kindle-even-have-bluetooth/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-29T22:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/66ea077251891e6d3cb5d5cf/master/pass/WIRED-Coupons-3.jpg",
+        "publishedAt": "2026-08-29T22:00:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/why-does-your-kindle-even-have-bluetooth/l-intro-1787161033.jpg",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "tech-3fedd9ab8d",
+        "slug": "hollywood-celebrities-are-getting-into-microdrama-apps",
+        "lane": "tech",
+        "title": "Hollywood celebrities are getting into microdrama apps",
+        "summary": "TechCrunch reports Hollywood celebrities are joining the microdrama app trend, a category built on short, serialized mobile video. The report does not name which celebrities or apps are involved.",
+        "whyItMatters": "Celebrity involvement signals the microdrama format is moving from a niche mobile trend toward mainstream entertainment money and attention.",
+        "whatToWatch": [
+          "Which apps and celebrities get named",
+          "Whether major studios follow with their own microdrama investments"
+        ],
+        "questions": [
+          "Which celebrities and apps are involved?",
+          "How big is the microdrama market compared to traditional streaming?"
+        ],
+        "sources": [
+          {
+            "title": "Hollywood celebs are getting into microdrama apps",
+            "url": "https://techcrunch.com/2026/08/29/hollywood-celebs-are-getting-into-microdrama-apps/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-29T16:10:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T16:10:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2023/12/shutterstock_movie_director.jpg?resize=1200,717",
+        "badge": "Industry",
         "trendScore": 51,
         "confidence": "medium"
       },
       {
-        "id": "tech-51764bf095",
-        "slug": "wired-publishes-promo-codes-for-airdoctor-and-google-workspace",
+        "id": "tech-8d05056bc8",
+        "slug": "ai-companies-warn-of-a-looming-cybersecurity-crisis",
         "lane": "tech",
-        "title": "Wired publishes promo codes for AirDoctor and Google Workspace",
-        "summary": "Wired posted a page listing an AirDoctor coupon code and a Google Workspace promo code for August 2026. This is a coupon roundup, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
-        "whatToWatch": [],
-        "questions": [],
+        "title": "AI companies warn of a looming cybersecurity crisis",
+        "summary": "Wired reports that major AI companies are warning of a severe cybersecurity threat they say could arrive within months. The supplied source does not specify which companies or what exactly drives the timeline.",
+        "whyItMatters": "If AI-enabled attacks are escalating this fast, it raises the urgency for enterprise security teams and regulators across the industry.",
+        "whatToWatch": [
+          "Which AI companies detail the threat and why",
+          "Any government or industry response to the warning"
+        ],
+        "questions": [
+          "What specific capability is driving the 'months' timeline?",
+          "Which AI companies are making this warning?"
+        ],
         "sources": [
           {
-            "title": "AirDoctor Coupon Codes: 40% Off | August 2026",
-            "url": "https://www.wired.com/story/airdoctor-coupon-code/",
+            "title": "The Cybersecurity Apocalypse Is Coming in ‘Months,’ AI Giants Warn",
+            "url": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
             "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
-          },
-          {
-            "title": "Google Workspace Promo Codes: 14% Off for August 2026",
-            "url": "https://www.wired.com/story/google-workspace-promo-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "publishedAt": "2026-08-29T10:30:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/66ea07733dd51041d9bb38c6/master/pass/WIRED-Coupons-1.jpg",
+        "publishedAt": "2026-08-29T10:30:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://media.wired.com/photos/6a921e363b3f20c2f80986f3/master/pass/Security-News-This-Week-The-AI-Cybersecurity-Apocalypse-Is-Coming.jpg",
+        "badge": "Security",
         "trendScore": 51,
         "confidence": "medium"
       },
       {
-        "id": "tech-a510ec4479",
-        "slug": "wired-publishes-discount-codes-for-corsair-and-target",
+        "id": "tech-bf8d25a653",
+        "slug": "a-trail-tale-lets-you-hike-the-appalachian-trail-virtually",
         "lane": "tech",
-        "title": "Wired publishes discount codes for Corsair and Target",
-        "summary": "Wired posted a page listing a Corsair discount code and a Target promo code for August 2026. This is a coupon roundup, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+        "title": "A Trail Tale lets you hike the Appalachian Trail virtually",
+        "summary": "The Verge covered A Trail Tale, a game that lets players virtually hike the Appalachian Trail. Few other details are available beyond the outlet's praise for its visuals.",
+        "whyItMatters": "It's a small example of games using real-world landscapes for reflective, low-stakes experiences rather than competition.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "Corsair Discount Code: Up to 50% Off for August 2026",
-            "url": "https://www.wired.com/story/corsair-coupon/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
-          },
-          {
-            "title": "Target Promo Code: $50 Off | August 2026",
-            "url": "https://www.wired.com/story/target-promo-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "Vicariously hike the Appalachian in the gorgeous A Trail Tale",
+            "url": "https://www.theverge.com/entertainment/986461/hike-appalachian-trail-pixel-art-a-trail-tale",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-29T20:59:26.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/67b63b98fb14553f0ebd9ffd/master/pass/WIRED-Coupons-R2_15.png",
-        "trendScore": 51,
+        "publishedAt": "2026-08-29T20:59:26.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/Screenshot-2026-08-29-at-4.57.57-PM.png?quality=90&strip=all&crop=0,0,100,100",
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
-        "id": "tech-ba04824536",
-        "slug": "wired-publishes-hp-coupon-codes-and-deals",
+        "id": "tech-09fe9880b8",
+        "slug": "night-vale-cocreator-says-grim-fandango-shaped-his-storytelling",
         "lane": "tech",
-        "title": "Wired publishes HP coupon codes and deals",
-        "summary": "Wired posted a page listing HP coupon codes and deals for August 2026. This is a coupon roundup, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+        "title": "Night Vale cocreator says Grim Fandango shaped his storytelling",
+        "summary": "The Verge spoke with Welcome to Night Vale cocreator Joseph Fink, who said the video game Grim Fandango influenced how he approaches storytelling. No further details on the conversation were supplied.",
+        "whyItMatters": "It's a reminder of how video games shape storytelling methods across other media, including podcasts.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "HP Coupon Codes and Deals August 2026",
-            "url": "https://www.wired.com/story/hp-coupon-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "Welcome to Night Vale cocreator Joseph Fink learned storytelling from Grim Fandango",
+            "url": "https://www.theverge.com/entertainment/983448/welcome-to-night-vale-cocreator-joseph-fink-learned-storytelling-from-grim-fandango",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-29T15:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/67b63b9079f27a355461c964/master/pass/WIRED-Coupons-R2_2.png",
-        "trendScore": 51,
+        "publishedAt": "2026-08-29T15:00:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/unnamed.jpg?quality=90&strip=all&crop=0,0,100,100",
+        "trendScore": 50,
         "confidence": "medium"
       },
       {
-        "id": "tech-485e38c74f",
-        "slug": "wired-publishes-a-legalzoom-promo-code-for-llc-formations",
+        "id": "tech-5a82b2c8f2",
+        "slug": "milo-yiannopoulos-has-been-deported",
         "lane": "tech",
-        "title": "Wired publishes a LegalZoom promo code for LLC formations",
-        "summary": "Wired posted a page offering a LegalZoom promo code for a 10% discount on LLC formations. This is a coupon listing, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+        "title": "Milo Yiannopoulos has been deported",
+        "summary": "The Verge reports that Milo Yiannopoulos has been deported. The supplied source is a single headline, so no further details on the reason, timing, or destination are available.",
+        "whyItMatters": "This is a thin, single-source report; there is not yet enough context to judge why it matters for tech or internet policy.",
         "whatToWatch": [],
-        "questions": [],
+        "questions": [
+          "What led to the deportation?",
+          "Is there any connection to platform or immigration policy?"
+        ],
         "sources": [
           {
-            "title": "LegalZoom Promo Code: Exclusive 10% Off LLC Formations",
-            "url": "https://www.wired.com/story/legalzoom-promo-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "Alt-right troll Milo Yiannopoulos has been deported",
+            "url": "https://www.theverge.com/policy/986456/milo-yiannopoulos-deported-ice",
+            "publisher": "The Verge",
+            "publishedAt": "2026-08-29T19:49:59.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/67b63b9b7d355db73b38e0c2/master/pass/WIRED-Coupons-R2_11.png",
-        "trendScore": 51,
+        "publishedAt": "2026-08-29T19:49:59.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13604714/milopatreon.jpeg?quality=90&strip=all&crop=0,0,100,100",
+        "trendScore": 49,
         "confidence": "medium"
       },
       {
-        "id": "tech-616b85d7ef",
-        "slug": "wired-publishes-promo-codes-for-nomad-goods-and-surfshark",
+        "id": "tech-66d4876cc6",
+        "slug": "the-theragun-sense-reviewed",
         "lane": "tech",
-        "title": "Wired publishes promo codes for Nomad Goods and Surfshark",
-        "summary": "Wired posted a page listing a Nomad Goods promo code and a Surfshark promo code for August 2026. This is a coupon roundup, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
+        "title": "The Theragun Sense, reviewed",
+        "summary": "TechCrunch reviewed Therabody's Theragun Sense, saying it makes everyday muscle recovery easier. No pricing or spec details are included in the supplied source.",
+        "whyItMatters": "It reflects the continued push by recovery-tech makers to make health devices simpler for daily use.",
         "whatToWatch": [],
         "questions": [],
         "sources": [
           {
-            "title": "Nomad Goods Promo Codes: Get 25% Off in August 2026",
-            "url": "https://www.wired.com/story/nomad-discount-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
-          },
-          {
-            "title": "Surfshark Promo Codes: 87% Off | August 2026",
-            "url": "https://www.wired.com/story/surfshark-coupon/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "The Theragun Sense makes everyday recovery surprisingly easy",
+            "url": "https://techcrunch.com/2026/08/29/the-theragun-sense-makes-everyday-recovery-surprisingly-easy/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-29T14:00:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/66ea077283cd4f2fbb17d478/master/pass/WIRED-Coupons-2.jpg",
-        "trendScore": 51,
+        "publishedAt": "2026-08-29T14:00:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/08/theragun-sense.png?resize=1200,788",
+        "badge": "Review",
+        "trendScore": 49,
         "confidence": "medium"
       },
       {
-        "id": "tech-972d98204f",
-        "slug": "wired-publishes-a-playstation-discount-code-for-ps5-games",
+        "id": "tech-a07c3116b1",
+        "slug": "sony-music-and-warner-sue-anthropic-over-ai-training",
         "lane": "tech",
-        "title": "Wired publishes a PlayStation discount code for PS5 games",
-        "summary": "Wired posted a page listing a PlayStation discount code for PS5 games in August 2026. This is a coupon listing, not a news event.",
-        "whyItMatters": "This is commerce content, not a development affecting the tech industry, so it carries little relevance for this lane.",
-        "whatToWatch": [],
-        "questions": [],
+        "title": "Sony Music and Warner sue Anthropic over AI training",
+        "summary": "Sony Music and Warner have sued Anthropic, alleging what TechCrunch describes as a \"brazen campaign\" of intellectual property theft. The suit adds two major record labels to the wave of copyright litigation against AI companies. Specific claims and requested damages were not detailed in the supplied source.",
+        "whyItMatters": "A loss for Anthropic could set a costly precedent for how AI companies use copyrighted music and text to train models.",
+        "whatToWatch": [
+          "Anthropic's formal response to the lawsuit",
+          "Whether other labels or rightsholders file similar suits",
+          "Any early court rulings on AI training and copyright"
+        ],
+        "questions": [
+          "What specific works or artists are named in the complaint?",
+          "How much in damages are the labels seeking?"
+        ],
         "sources": [
           {
-            "title": "PlayStation Discount Code: Save on PS5 Games August 2026",
-            "url": "https://www.wired.com/story/playstation-discount-code/",
-            "publisher": "Wired",
-            "publishedAt": "2026-08-26T05:00:00.000Z"
+            "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+            "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+            "publisher": "TechCrunch",
+            "publishedAt": "2026-08-29T18:41:59.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-08-26T05:00:00.000Z",
-        "updatedAt": "2026-08-26T05:08:13.474Z",
-        "imageUrl": "https://media.wired.com/photos/67b63b9a4816461befb48207/master/pass/WIRED-Coupons-R2_12.png",
-        "trendScore": 51,
+        "publishedAt": "2026-08-29T18:41:59.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-1.jpg?w=1024",
+        "badge": "Legal",
+        "trendScore": 48,
         "confidence": "medium"
+      },
+      {
+        "id": "tech-eed82f58aa",
+        "slug": "why-pay-359-for-whoop-s-most-expensive-membership",
+        "lane": "tech",
+        "title": "Why pay $359 for Whoop's most expensive membership?",
+        "summary": "Engadget examined Whoop's priciest membership tier, priced at $359, and questioned its value. No further specifics on tier features are included in the supplied source.",
+        "whyItMatters": "It highlights the broader trend of wearable makers layering subscription tiers on top of hardware costs.",
+        "whatToWatch": [],
+        "questions": [
+          "What extra features justify the top membership price?"
+        ],
+        "sources": [
+          {
+            "title": "Why would you pay $359 for the most expensive Whoop membership?",
+            "url": "https://www.engadget.com/2242774/most-expensive-whoop-membership-life-why-pay/",
+            "publisher": "Engadget",
+            "publishedAt": "2026-08-29T18:30:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-08-29T18:30:00.000Z",
+        "updatedAt": "2026-08-29T22:43:29.457Z",
+        "imageUrl": "https://www.engadget.com/img/gallery/why-would-you-pay-359-for-the-most-expensive-whoop-membership/l-intro-1787317096.jpg",
+        "badge": "Review",
+        "trendScore": 48,
+        "confidence": "low"
       }
     ]
   }
