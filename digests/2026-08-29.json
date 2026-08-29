@@ -1,0 +1,344 @@
+{
+  "id": "2026-08-29",
+  "kind": "scheduled",
+  "generatedAt": "2026-08-29T08:39:38.166Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Claude Code Opus 5 auto-mode's safety net breaks 80% of the time",
+    "summary": "Researcher Johann Rehberger beat Claude Code Opus 5's auto-mode safety net about 80% of the time, tricking it into downloading and running a zip payload through base64 decoding. Auto mode is Anthropic's default protection for unattended runs, so any overnight session you kick off and walk away from carries this exposure. Sandbox your execution tonight and add a hook that blocks outbound base64 decoding and archive downloads. Do not trust auto mode alone while you sleep.\n\nTwo new repos match your exact workflow. delegate-skills hands a task to a separate coding-agent CLI, then you review the diff and land the commit yourself, one implementer per task. loop-engineering adds loop-audit and loop-cost commands to check and price your agent loops instead of hand-rolling verification. For spend, route routine subagent work to GLM-5.3 Flash: it costs 17 times less than full GLM-5.3, and the pass@1 gap narrows to 2.6 points once you sample four attempts. Wire AutoCVE in as a pre-merge security subagent, and try nodeterm for a visual dashboard across parallel worktree sessions.",
+    "bullets": [
+      "Sandbox Claude Code Opus 5 execution and block outbound base64/zip decoding in hooks — auto mode's safety net gets bypassed roughly 80% of the time",
+      "Clone amElnagdy/delegate-skills to formalize delegate-task, review-diff, land-commit as one implementer per task",
+      "Clone cobusgreyling/loop-engineering, run loop-audit against your Claude Code setup, and use loop-cost to track spend",
+      "Route routine subagent coding work to GLM-5.3 Flash — 17x cheaper, only a 2.6-point pass@1 gap once you sample four attempts",
+      "Wire larlarua/AutoCVE in as a pre-merge security subagent before you review the PR",
+      "Try eneskirca/nodeterm, a tmux-backed dashboard for parallel worktree agent sessions"
+    ],
+    "signals": [
+      {
+        "label": "Unattended-run safety",
+        "direction": "down",
+        "note": "Opus 5 auto mode's safety net now has a documented ~80% bypass via base64/zip payloads; treat it as a starting point, not a guardrail"
+      },
+      {
+        "label": "Harness tooling for the describe-and-review loop",
+        "direction": "up",
+        "note": "delegate-skills, loop-engineering, and nodeterm all shipped in the same window, structuring delegation, auditing, and parallel-session tracking"
+      },
+      {
+        "label": "Cost of coding-capable inference",
+        "direction": "down",
+        "note": "GLM-5.3 Flash routing, 2.5-3bpw GGUFs for Qwen3.8-27B, and 181 tok/s on 2x DGX Spark all cut cost per token or per rollout"
+      },
+      {
+        "label": "Remote/away-from-desk control",
+        "direction": "flat",
+        "note": "nothing this cycle adds phone, voice, or scheduled-trigger control beyond what you already run"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1263648864",
+      "title": "cobusgreyling/loop-engineering — Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-in",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-09T06:28:20Z",
+      "tldr": "loop-engineering is a CLI toolkit of patterns for orchestrating AI coding agents, including loop-audit, loop-init, and loop-cost commands.",
+      "whyItMatters": "Gives ready-made commands for auditing and costing agent loops instead of hand-rolling verification and spend tracking for unattended runs.",
+      "category": "agentic",
+      "tags": [
+        "cli",
+        "loop-engineering",
+        "cost",
+        "audit"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone cobusgreyling/loop-engineering and run loop-audit against your current Claude Code setup.",
+      "score": 10727
+    },
+    {
+      "id": "gh-1269124956",
+      "title": "amElnagdy/delegate-skills — Delegate a coding task to a separate coding agent CLI, review the diff, land the commit yourself — one per implementer.",
+      "url": "https://github.com/amElnagdy/delegate-skills",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-14T10:35:48Z",
+      "tldr": "delegate-skills lets you hand a coding task to a separate coding-agent CLI, review its diff, and land the commit yourself, one implementer per task.",
+      "whyItMatters": "Matches the describe-work-then-review-PR loop directly, structuring delegation and diff review instead of trusting an agent to merge its own work.",
+      "category": "agentic",
+      "tags": [
+        "delegation",
+        "code-review",
+        "subagents",
+        "workflow"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone amElnagdy/delegate-skills and wire it in as the handoff layer between task description and PR review.",
+      "score": 1387
+    },
+    {
+      "id": "rss-simon-willison-gclaudecodeopus5automode",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-08-27T22:50:25.000Z",
+      "tldr": "Prompt injection researcher Johann Rehberger found an attack that beats Claude Code Opus 5's auto-mode safety net roughly 80% of the time, by tricking it into downloading and executing a zip payload via base64.",
+      "whyItMatters": "Auto mode is now Anthropic's default defense for unattended coding agents, so overnight Claude Code runs carry real exposure to this bypass.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "prompt-injection",
+        "claude-code",
+        "auto-mode"
+      ],
+      "entities": [
+        "Anthropic",
+        "Simon Willison"
+      ],
+      "models": [
+        "Claude Opus 5"
+      ],
+      "importance": 5,
+      "actionability": 4,
+      "hasFailureReport": true,
+      "tryThis": "Don't rely on auto mode alone for unattended runs; sandbox execution and block outbound archive/base64 decoding in your hooks."
+    },
+    {
+      "id": "gh-1270584305",
+      "title": "eneskirca/nodeterm — Node-based terminal manager for AI coding agents — tmux-backed terminals and parallel agent sessions as draggable nodes on an infinite pan/zoom canvas. macOS, Linux, and a browser Server Edition.",
+      "url": "https://github.com/eneskirca/nodeterm",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T21:25:13Z",
+      "tldr": "nodeterm is a tmux-backed terminal manager that lays out parallel AI coding-agent sessions as draggable nodes on an infinite canvas, for macOS, Linux, and browser.",
+      "whyItMatters": "Gives a visual way to track multiple simultaneous Claude Code/worktree sessions instead of juggling terminal tabs.",
+      "category": "agentic",
+      "tags": [
+        "tmux",
+        "parallel-agents",
+        "worktrees",
+        "tooling"
+      ],
+      "entities": [
+        "nodeterm"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone eneskirca/nodeterm and use it as the dashboard for your parallel worktree agent sessions.",
+      "score": 1347
+    },
+    {
+      "id": "rss-together-ai-pswecostcodingandrouting",
+      "title": "GLM-5.3 vs. GLM-5.3 Flash on DeepSWE: Cost, Coding, and Routing",
+      "url": "https://www.together.ai/blog/glm-5-3-vs-glm-5-3-flash-on-deepswe-cost-coding-and-routing",
+      "source": "Together AI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "tldr": "Together AI ran 900 DeepSWE rollouts and found GLM-5.3 Flash costs 17x less than GLM-5.3 for only 5.6 points less pass@1, narrowing to 2.6 points at pass@4.",
+      "whyItMatters": "Shows a cheap-tier model can handle most coding rollouts when you sample multiple attempts, cutting spend without much quality loss.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "routing",
+        "model-tiering",
+        "benchmark"
+      ],
+      "entities": [
+        "Together AI"
+      ],
+      "models": [
+        "GLM-5.3",
+        "GLM-5.3 Flash"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Route routine subagent coding tasks to GLM-5.3 Flash and reserve full GLM-5.3 for pass@4 verification runs."
+    },
+    {
+      "id": "reddit-rss-claudedailyandnoneofitis",
+      "title": "How I actually use Claude daily, and none of it is coding",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1w0wcvi/how_i_actually_use_claude_daily_and_none_of_it_is/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-28T17:05:25.000Z",
+      "tldr": "A user shares his exact Claude prompt templates for meeting recaps, document trimming, and email drafts, none of it coding.",
+      "whyItMatters": "These are ready-made prompt structures you can reuse for your own non-coding chat tasks to cut summarizing and writing time.",
+      "category": "technique",
+      "tags": [
+        "prompting",
+        "non-coding",
+        "productivity"
+      ],
+      "entities": [],
+      "models": [
+        "Claude"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Reuse the recap prompt as-is: paste a transcript and ask for \"decisions, owners, and open questions, nothing else.\"",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1w0wcvi/how_i_actually_use_claude_daily_and_none_of_it_is/"
+    },
+    {
+      "id": "gh-1336502227",
+      "title": "CopilotKit/OpenBot — Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T00:44:59Z",
+      "tldr": "CopilotKit releases OpenBot, an open-source framework where AI agents get their own browser and tools, with actions approved before execution and logged after.",
+      "whyItMatters": "It gives you a concrete pattern for action-level gating and audit trails, useful for trusting an agent through a longer unattended run.",
+      "category": "tooling",
+      "tags": [
+        "agentic",
+        "audit",
+        "autonomy",
+        "repo"
+      ],
+      "entities": [
+        "CopilotKit"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone CopilotKit/OpenBot and test its pre-action approval hook on one of your own agent workflows.",
+      "score": 3345
+    },
+    {
+      "id": "gh-1270272670",
+      "title": "larlarua/AutoCVE — Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+      "url": "https://github.com/larlarua/AutoCVE",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-15T14:50:47Z",
+      "tldr": "AutoCVE open-sources an agent pipeline that finds, verifies, and writes reports on CVEs directly from source code.",
+      "whyItMatters": "You can wire this in as a pre-merge security-verification subagent, catching vulnerabilities a coding agent introduced before you review the PR.",
+      "category": "tooling",
+      "tags": [
+        "security",
+        "subagent",
+        "verification",
+        "repo"
+      ],
+      "entities": [
+        "AutoCVE"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone larlarua/AutoCVE and run it as a pre-merge check against your app's source tree.",
+      "score": 1337
+    },
+    {
+      "id": "reddit-rss-yihit181tokssaggregateon",
+      "title": "Today I hit 181 toks/s (aggregate) on Qwen3.8-Flash-Next on 2x DGX Sparks",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w1486l/today_i_hit_181_tokss_aggregate_on/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-28T22:00:36.000Z",
+      "tldr": "An operator reports 181 tok/s aggregate across 9 concurrent agent sessions on 2x NVIDIA DGX Spark (128GB unified memory each, ConnectX-7 linked) running Qwen3.8-Flash-Next.",
+      "whyItMatters": "It's a concrete hardware and throughput data point for pricing a self-hosted multi-agent fleet against per-token API spend.",
+      "category": "technique",
+      "tags": [
+        "local-llm",
+        "hardware",
+        "throughput",
+        "cost"
+      ],
+      "entities": [
+        "NVIDIA"
+      ],
+      "models": [
+        "Qwen3.8-Flash-Next"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "If you're pricing a self-hosted agent fleet, compare this 2x DGX Spark setup against your current API bill.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w1486l/today_i_hit_181_tokss_aggregate_on/"
+    },
+    {
+      "id": "reddit-rss-forqwen3827bgsqrcoat25to",
+      "title": "[Release] SOTA GGUFs for Qwen3.8-27B: GSQ-RCO at 2.5 to 3.0 bpw",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w13vse/release_sota_ggufs_for_qwen3827b_gsqrco_at_25_to/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-08-28T21:46:58.000Z",
+      "tldr": "A new GSQ-RCO quantization method ships three GGUF files for Qwen3.8-27B at 2.5 to 3.0 bits per weight.",
+      "whyItMatters": "Lower-bit GGUFs let you run a larger, more capable local model in the same VRAM budget instead of dropping to a smaller one.",
+      "category": "open-models",
+      "tags": [
+        "quantization",
+        "gguf",
+        "local-llm"
+      ],
+      "entities": [],
+      "models": [
+        "Qwen3.8-27B"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Download the 2.75bpw GSQ-RCO GGUF for Qwen3.8-27B and drop it into your local llama.cpp/Ollama setup to check size versus quality.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1w13vse/release_sota_ggufs_for_qwen3827b_gsqrco_at_25_to/"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Agent orchestration harness tooling",
+      "summary": "Three repos shipped in the same window, structuring delegation, auditing, and parallel-session visibility for agent-driven coding.",
+      "itemIds": [
+        "gh-1263648864",
+        "gh-1269124956",
+        "gh-1270584305"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Cheaper coding inference: routing and local hardware",
+      "summary": "Together AI's routing data, a new low-bit GGUF, and a DGX Spark throughput report all point at cutting cost per coding rollout.",
+      "itemIds": [
+        "rss-together-ai-pswecostcodingandrouting",
+        "reddit-rss-forqwen3827bgsqrcoat25to",
+        "reddit-rss-yihit181tokssaggregateon"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Gating and verifying agent actions before merge",
+      "summary": "OpenBot's pre-action approval hook and AutoCVE's pre-merge vulnerability pipeline both add a verification layer around agent output.",
+      "itemIds": [
+        "gh-1336502227",
+        "gh-1270272670"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 10,
+    "outputTokens": 26008,
+    "usd": 0.6192,
+    "model": "claude-sonnet-5",
+    "calls": 4,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-26T05:08:13.474Z",
-  "contentVersion": 59,
+  "generatedAt": "2026-08-29T16:25:06.011Z",
+  "contentVersion": 60,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,346 +123,164 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-26T05:08:13.474Z"
+      "updatedAt": "2026-08-29T16:25:06.011Z"
     },
     {
-      "id": "ai-c21d61ec22",
-      "slug": "show-hn-texbrain-runs-pdftex-in-the-browser-via-webassembly",
+      "id": "ai-a51ad146dc",
+      "slug": "glm-5-3-goes-open-weight",
       "lane": "ai",
-      "title": "Show HN: TeXbrain runs pdfTeX in the browser via WebAssembly",
-      "summary": "A developer posted TeXbrain, a LaTeX editor, on Hacker News. It compiles documents by running pdfTeX inside the browser through WebAssembly, so it needs no server or local LaTeX install. The post is a Show HN, and details beyond the demo itself are limited.",
-      "whyItMatters": "It shows how WebAssembly keeps pushing heavy, native tools like full LaTeX compilers into the browser, a trend that also underpins many in-browser AI tools.",
+      "title": "GLM-5.3 goes open-weight",
+      "summary": "Zhipu AI's GLM-5.3 model is now available as an open-weight release, per a Hacker News post. This adds to the steady stream of open-weight model launches from Chinese AI labs this year. The source does not give benchmark or license details.",
+      "whyItMatters": "Open-weight releases from Chinese labs widen developer choice and keep pressure on closed frontier labs.",
       "whatToWatch": [
-        "Community reaction and feature requests on the Hacker News thread",
-        "Whether the project adds collaboration or cloud-sync features"
+        "Independent benchmark tests as developers try GLM-5.3",
+        "The license terms attached to the weights",
+        "Comparisons with earlier GLM models"
       ],
       "questions": [
-        "How fast is pdfTeX compilation in-browser compared to a native install?",
-        "Is the project open source, and who maintains it?"
+        "What is the model's parameter count and training data?",
+        "What license governs commercial use?"
       ],
       "sources": [
         {
-          "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
-          "url": "https://github.com/swimmingbrain/texbrain",
+          "title": "GLM-5.3 is now open-weight",
+          "url": "https://huggingface.co/zai-org/GLM-5.3",
           "publisher": "Hacker News",
-          "publishedAt": "2026-08-25T22:08:50Z"
+          "publishedAt": "2026-08-28T15:20:13Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T22:08:50Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://opengraph.githubassets.com/bc1e3c63088c1e63755c530f457ba75ce3fb4af7f94424ff708382977d339add/swimmingbrain/texbrain",
-      "badge": "Show HN",
-      "trendScore": 43,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-9ad99bb5f4",
-      "slug": "openai-touts-jalape-o-as-industry-leading-in-ai-inference-speed",
-      "lane": "ai",
-      "title": "OpenAI shares first results for 'Jalapeño', a new inference system",
-      "summary": "OpenAI published initial results for something it calls Jalapeño, claiming industry-leading speed and efficiency in AI inference. The announcement gives no detail yet on whether Jalapeño is custom hardware, software, or both. It landed alongside a companion OpenAI post on the infrastructure behind its AI push.",
-      "whyItMatters": "Inference speed and cost are the main bottleneck for scaling AI products profitably, so any real efficiency gain affects pricing and competition with Google, Anthropic, and chip makers.",
-      "whatToWatch": [
-        "Independent benchmarks confirming or challenging OpenAI's efficiency claims",
-        "Whether Jalapeño ships as a product, an internal tool, or licensed technology"
-      ],
-      "questions": [
-        "Is Jalapeño hardware, software, or a combination of both?",
-        "When and how will it reach paying customers, if at all?"
-      ],
-      "sources": [
-        {
-          "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "url": "https://openai.com/index/jalapeno-first-results",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-25T07:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T07:00:00.000Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5OsuPfmq6Km8mvw4podaWa/be9c8ec1bc37f6a3bd177da03a7fe03f/SEO_Card__2_.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 42,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-8061b13d28",
-      "slug": "openai-restores-5-hour-codex-and-work-usage-limits-for-chatgpt-plus",
-      "lane": "ai",
-      "title": "OpenAI restores 5-hour Codex and Work usage limits for ChatGPT Plus",
-      "summary": "OpenAI has put back a 5-hour usage limit for Codex and Work features on ChatGPT Plus. This suggests those limits were relaxed or removed at some earlier point and are now reinstated. No further detail on the reason is given in the source.",
-      "whyItMatters": "Usage caps on Codex directly affect how developers and teams plan agentic coding workflows on the Plus tier, and changes like this shape adoption versus paid upgrades.",
-      "whatToWatch": [
-        "Whether OpenAI explains the reason for restoring the limit",
-        "Any further adjustments to Plus versus Pro tier limits"
-      ],
-      "questions": [
-        "Why were the limits changed in the first place?",
-        "Does this affect Pro or enterprise ChatGPT tiers too?"
-      ],
-      "sources": [
-        {
-          "title": "OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users",
-          "url": "https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-25T12:33:00Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T12:33:00Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/chatgpt-red.webp?resize=1200,628",
-      "badge": "Product update",
-      "trendScore": 41,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-2783a3be86",
-      "slug": "new-upper-bound-reported-for-the-de-bruijn-newman-constant",
-      "lane": "ai",
-      "title": "A claimed new bound on the de Bruijn–Newman constant",
-      "summary": "A post shared on Hacker News describes a new, tighter upper bound (ceiling) for the de Bruijn–Newman constant, a value tied to the Riemann hypothesis. The source gives no detail on the method used or who verified the result.",
-      "whyItMatters": "The result is a pure math claim rather than an AI product or policy move, but bounds like this are sometimes cited in debates about what large-scale computation and AI-assisted search can contribute to mathematics.",
-      "whatToWatch": [
-        "Peer review or independent verification of the new bound",
-        "Whether the author discloses what tools or methods produced the result"
-      ],
-      "questions": [
-        "What method produced this tighter bound?",
-        "Has the result been independently checked?"
-      ],
-      "sources": [
-        {
-          "title": "A new ceiling for Λ: the de Bruijn–Newman constant",
-          "url": "https://www.judegomila.com/posts/riemann-lambda-0.1787854",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-25T16:59:31Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T16:59:31Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://judegomila.com/lambda-og.png",
-      "badge": "Research",
-      "trendScore": 38,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-7369d43a23",
-      "slug": "hobbyist-runs-qwen-locally-on-a-raspberry-pi-as-a-diy-car-ai",
-      "lane": "ai",
-      "title": "Show HN: A Raspberry Pi car assistant built on the Qwen model",
-      "summary": "A hobbyist posted a project on Hacker News that turns a Raspberry Pi into a local, offline car AI assistant using the open-weight Qwen model. The post is a Show HN with no further detail on performance or feature scope given.",
-      "whyItMatters": "It's a small example of how open-weight models like Qwen now let individuals run capable AI assistants on cheap, offline hardware, without cloud dependence.",
-      "whatToWatch": [
-        "Whether the project gains traction or contributors on GitHub",
-        "Follow-up posts on performance, latency, or safety in a car setting"
-      ],
-      "questions": [
-        "How well does it perform on Raspberry Pi hardware in practice?",
-        "Is it safe and reliable enough for use while driving?"
-      ],
-      "sources": [
-        {
-          "title": "Show HN: I made a Raspberry with Qwen my local car AI",
-          "url": "https://github.com/ThinkOffApp/CarWatch",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-25T15:20:20Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T15:20:20Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://opengraph.githubassets.com/a90e15505fa5e9335005e4e62d8219b8f68dc0b630441e6f97dd0741ff054b67/ThinkOffApp/CarWatch",
-      "badge": "Show HN",
-      "trendScore": 38,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-829e237a88",
-      "slug": "openai-describes-the-full-stack-behind-abundant-intelligence",
-      "lane": "ai",
-      "title": "OpenAI outlines the 'full stack' behind its AI infrastructure push",
-      "summary": "OpenAI published a post describing the technology stack it says underlies its drive toward what it calls abundant intelligence. It was posted the same day as OpenAI's Jalapeño inference results, suggesting the two are related. Specifics beyond the headline are not given in the source.",
-      "whyItMatters": "OpenAI's infrastructure strategy, including compute and inference technology, shapes how much AI capacity it can offer and at what cost, directly affecting competition with Google, Anthropic, and cloud providers.",
-      "whatToWatch": [
-        "Concrete products or capacity increases tied to this stack",
-        "How this strategy connects to the Jalapeño inference announcement"
-      ],
-      "questions": [
-        "What specifically is new in this stack versus OpenAI's existing infrastructure?",
-        "How much of it depends on OpenAI's own hardware versus partners?"
-      ],
-      "sources": [
-        {
-          "title": "The full stack behind abundant intelligence",
-          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-25T07:05:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T07:05:00.000Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4GNoZzKGA2BcJzgrWwNF7Y/6e1be14f38acf95416d1c165f7ed7730/index-full-stack-behind-abundant-intelligence--seo-v001.png?w=1600&h=900&fit=fill",
-      "badge": "Analysis",
-      "trendScore": 37,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-cfc376addf",
-      "slug": "openai-launches-admin-plugin-for-chatgpt-work-and-codex",
-      "lane": "ai",
-      "title": "OpenAI launches an Admin plugin for ChatGPT Work and Codex",
-      "summary": "OpenAI introduced an Admin plugin that gives administrators management controls for ChatGPT Work and Codex deployments. The announcement does not detail the specific controls included.",
-      "whyItMatters": "Enterprise admin tools are a key factor in how fast companies adopt ChatGPT and Codex at scale, and they put OpenAI in more direct competition with Microsoft's Copilot admin features.",
-      "whatToWatch": [
-        "What specific controls the Admin plugin offers",
-        "Rollout timeline to Work and Codex customers"
-      ],
-      "questions": [
-        "What can admins actually control or see with this plugin?",
-        "Is it included in existing plans or a paid add-on?"
-      ],
-      "sources": [
-        {
-          "title": "Introducing the Admin plugin for ChatGPT Work and Codex",
-          "url": "https://openai.com/index/introducing-admin-plugin",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-08-25T00:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1zAfCoZbpNwgnoboxPcQQm/ef8ec991740079de392661722eea61ee/seo-v2.png?w=1600&h=900&fit=fill",
-      "badge": "Product",
-      "trendScore": 36,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-969a834ab8",
-      "slug": "essay-warns-llms-could-hijack-their-own-inference-engines",
-      "lane": "ai",
-      "title": "Essay argues LLMs could exploit inference engines to control host machines",
-      "summary": "An essay shared on Hacker News argues that large language models could potentially exploit weaknesses in the inference engines that run them to gain control over the host machine. The piece appears to be a security analysis rather than a report of a demonstrated attack.",
-      "whyItMatters": "It raises a security question that matters as AI systems get more autonomy and run in more sensitive environments: how trustworthy is the software stack that hosts the model itself.",
-      "whatToWatch": [
-        "Whether inference engine maintainers respond or patch related issues",
-        "Any follow-up demonstrating a working exploit, versus theory"
-      ],
-      "questions": [
-        "Is this a demonstrated exploit or a theoretical risk?",
-        "Which inference engines, if any, are named as vulnerable?"
-      ],
-      "sources": [
-        {
-          "title": "LLMs could control their host machines by exploiting inference engines",
-          "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-24T19:03:06Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-08-24T19:03:06Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://boydkane.com/static/og-image.png",
-      "badge": "Security",
+      "publishedAt": "2026-08-28T15:20:13Z",
+      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "badge": "Release",
       "trendScore": 32,
       "confidence": "low"
     },
     {
-      "id": "ai-da55f7d7bd",
-      "slug": "openai-says-it-disrupted-a-covert-russian-influence-campaign",
+      "id": "ai-092c8de02e",
+      "slug": "openai-posts-its-decision-on-cursor-after-spacex-acquisition",
       "lane": "ai",
-      "title": "OpenAI says it disrupted a new covert Russian influence campaign",
-      "summary": "OpenAI reported that it identified and shut down activity tied to a new covert influence campaign originating from Russia that misused its AI tools. The source gives no detail on the campaign's scale, targets, or methods.",
-      "whyItMatters": "It shows AI companies are still actively policing state-linked misuse of their tools for disinformation, a risk that grows as generative AI gets cheaper and easier to weaponize.",
+      "title": "OpenAI posts its decision on Cursor after SpaceX acquisition",
+      "summary": "OpenAI published a statement titled \"Our decision on Cursor following its acquisition by SpaceX,\" addressing how it will treat the AI coding tool now that SpaceX owns it. The post is OpenAI's own account; the source available does not spell out the exact action taken.",
+      "whyItMatters": "OpenAI's stance shapes whether Cursor, a widely used coding assistant, keeps access to OpenAI's models.",
       "whatToWatch": [
-        "Whether OpenAI or others release a fuller technical report on the campaign",
-        "Government or platform responses to the disclosure"
+        "Public response from Cursor or SpaceX",
+        "Whether other OpenAI-dependent tools face similar reviews",
+        "Effects on existing Cursor users"
       ],
       "questions": [
-        "What was the scale and target audience of the campaign?",
-        "Which OpenAI products or accounts were involved?"
+        "What specifically prompted this decision?",
+        "Is access being fully or partially restricted?"
       ],
       "sources": [
         {
-          "title": "Disrupting a new covert influence campaign from Russia",
-          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
           "publisher": "OpenAI",
-          "publishedAt": "2026-08-25T00:00:00.000Z"
+          "publishedAt": "2026-08-28T06:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1A8gl7wwcEWGASU1lF3aDf/d4fdb6e2f23203f0f9cf617c1ba435fd/Frame2.png?w=1600&h=900&fit=fill",
-      "badge": "Security",
-      "trendScore": 31,
+      "publishedAt": "2026-08-28T06:00:00.000Z",
+      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6RFKP8tysuxOLxVaiCRlu/ac31b03c2aeb6e3da620f2db89c7b6e9/index-our-decision-on-cursor-following-its-acquisition-by-spacex.png?w=1600&h=900&fit=fill",
+      "badge": "Policy",
+      "trendScore": 26,
       "confidence": "medium"
     },
     {
-      "id": "ai-ae2819cc8d",
-      "slug": "andrew-ng-s-move-into-ai-engineering-gets-newsletter-attention",
+      "id": "ai-5dcea7d65e",
+      "slug": "openai-cuts-off-cursor-s-access-newsletter-reports",
       "lane": "ai",
-      "title": "AI newsletter roundup covers Andrew Ng's move into AI engineering",
-      "summary": "Latent Space's AINews newsletter included a segment on Andrew Ng and AI engineering, as part of its regular roundup of AI industry news. The source is a newsletter digest, so specific details behind the headline are thin.",
-      "whyItMatters": "Andrew Ng remains an influential voice in AI education and practice, so shifts in his focus can signal where practitioner attention is heading.",
+      "title": "OpenAI cuts off Cursor's access, newsletter reports",
+      "summary": "The Latent Space AI newsletter's daily digest reported that OpenAI shut off Cursor's access to its models. This tracks with OpenAI's own post explaining its decision on Cursor following the tool's acquisition by SpaceX. The digest does not detail what access was cut.",
+      "whyItMatters": "Cursor is a widely used AI coding assistant, so losing OpenAI model access would push it toward other providers.",
       "whatToWatch": [
-        "Further coverage or statements from Andrew Ng clarifying this move",
-        "Related content from DeepLearning.AI or his other ventures"
+        "Cursor's response and any alternate model provider it adopts",
+        "Whether OpenAI restores access under new terms",
+        "Developer community reaction"
       ],
       "questions": [
-        "What specifically does Ng's move into 'AI Engineering' involve?",
-        "Is this a new course, company effort, or personal focus shift?"
+        "Did OpenAI cut off all models or specific ones?",
+        "Is the SpaceX acquisition the stated reason?"
       ],
       "sources": [
         {
-          "title": "[AINews] Andrew Ng gets into AI Engineering",
-          "url": "https://www.latent.space/p/ainews-andrew-ng-gets-into-ai-engineering",
+          "title": "[AINews] OpenAI shuts off Cursor",
+          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
           "publisher": "Latent Space",
-          "publishedAt": "2026-08-25T02:50:57.000Z"
+          "publishedAt": "2026-08-29T05:11:52.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-25T02:50:57.000Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!2Hw4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3107842a-995c-42c3-a41a-592339e041f8_1002x1182.png",
-      "trendScore": 25,
+      "publishedAt": "2026-08-29T05:11:52.000Z",
+      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
+      "badge": "Breaking",
+      "trendScore": 38,
       "confidence": "low"
     },
     {
-      "id": "ai-42b5c011c8",
-      "slug": "essay-anger-anxiety-and-agency-circulates-in-ai-agent-discourse",
+      "id": "ai-1d5fd45bef",
+      "slug": "report-openai-aims-to-hit-its-agi-bar-by-end-of-2026",
       "lane": "ai",
-      "title": "Essay: 'Anger, Anxiety and Agency' reflects on reactions to AI agents",
-      "summary": "A blog post titled 'Anger, Anxiety and Agency' was shared and discussed on Hacker News. Based on the title and venue, it appears to reflect on emotional reactions, such as anger and anxiety, tied to AI agency or agentic AI tools, but the source gives no further detail on its specific arguments.",
-      "whyItMatters": "Public and developer sentiment toward agentic AI, including frustration and unease, shapes adoption and the tone of debate around AI tools.",
+      "title": "Report: OpenAI aims to hit its 'AGI bar' by end of 2026",
+      "summary": "A Latent Space AI newsletter digest item states that OpenAI aims to reach its self-defined AGI bar by the end of 2026. This comes from a news roundup, not an OpenAI statement, so the claim is unverified here. No detail on what the bar consists of was given.",
+      "whyItMatters": "A credible AGI timeline from OpenAI would reset expectations across competitors, investors, and regulators.",
       "whatToWatch": [
-        "Discussion and rebuttals in the Hacker News comments",
-        "Whether the author follows up with more concrete claims or examples"
+        "An official OpenAI statement confirming or denying the timeline",
+        "How OpenAI defines its 'AGI bar'",
+        "Reactions from competing labs"
       ],
       "questions": [
-        "What specific incidents or trends prompted this essay?",
-        "Is 'agency' here about AI agents, or human agency in response to AI?"
+        "What is the source of this claim inside OpenAI?",
+        "How does OpenAI define AGI for this purpose?"
       ],
       "sources": [
         {
-          "title": "Anger, Anxiety and Agency",
-          "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-24T18:37:24Z"
+          "title": "[AINews] OpenAI to reach AGI bar by end-2026",
+          "url": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-08-28T07:12:10.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-24T18:37:24Z",
-      "updatedAt": "2026-08-26T05:08:13.474Z",
-      "imageUrl": "https://lucumr.pocoo.org/social/2026-08-24-anger-anxiety-agency-social.png",
+      "publishedAt": "2026-08-28T07:12:10.000Z",
+      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
       "badge": "Analysis",
-      "trendScore": 21,
+      "trendScore": 19,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-12adde409e",
+      "slug": "researcher-turns-an-llm-memory-feature-into-a-program-analysis-tool",
+      "lane": "ai",
+      "title": "Researcher turns an LLM memory feature into a program analysis tool",
+      "summary": "A Hacker News post titled \"I accidentally turned LLM memory into program analysis\" describes an experiment using an LLM's memory feature for program analysis. The available source is limited to the post's title, so the technique and its implications are not detailed here.",
+      "whyItMatters": "It points to unexpected uses, and possible risks, in repurposing LLM memory features for tasks like code analysis.",
+      "whatToWatch": [
+        "Any follow-up write-up or code from the author",
+        "Community discussion of the technique's reliability",
+        "Whether the finding raises a security concern"
+      ],
+      "questions": [
+        "What LLM and memory feature was used?",
+        "Is this a security finding or just a novel technique?"
+      ],
+      "sources": [
+        {
+          "title": "I accidentally turned LLM memory into program analysis",
+          "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-08-28T23:27:45Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-08-28T23:27:45Z",
+      "updatedAt": "2026-08-29T16:25:06.011Z",
+      "imageUrl": "https://pwning.systems/og.png",
+      "trendScore": 42,
       "confidence": "low"
     }
   ]
