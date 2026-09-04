@@ -76,7 +76,10 @@ if [ "$dry" = true ]; then
   exit 0
 fi
 
-git add manifest.json digests models news
+# `state` carries the published-memory index. Leave it out and every run starts
+# from an empty memory, which is exactly the repeat problem it exists to fix —
+# and it would fail silently, because a digest full of repeats still publishes.
+git add manifest.json digests models news state
 if git diff --cached --quiet; then
   echo "Nothing changed — no digest published this run."
   exit 0
