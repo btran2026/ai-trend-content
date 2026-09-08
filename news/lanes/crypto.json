@@ -1,22 +1,159 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-09-07T18:12:02.982Z",
-  "contentVersion": 82,
+  "generatedAt": "2026-09-08T05:57:41.268Z",
+  "contentVersion": 83,
   "stories": [
+    {
+      "id": "crypto-0c43d36d61",
+      "slug": "liquid-sidechain-prepares-restart-after-white-hats-return-270m-of-320m",
+      "lane": "crypto",
+      "title": "Liquid sidechain prepares restart after white hats return $270M of $320M taken",
+      "summary": "The Liquid Bitcoin sidechain paused on September 7 after purported \"white hat\" actors withdrew about $320 million in BTC. A day later, about $270 million came back, and the network is preparing to restart. Reporting does not say why the funds were taken or returned.",
+      "whyItMatters": "A pause and partial recovery this large tests confidence in Bitcoin sidechain custody models.",
+      "whatToWatch": [
+        "Confirmation the network has restarted",
+        "An accounting of the roughly $50M gap between taken and returned funds",
+        "Any official post-incident report from Liquid operators"
+      ],
+      "questions": [
+        "Who withdrew the funds, and why?",
+        "Will the remaining funds be returned?"
+      ],
+      "sources": [
+        {
+          "title": "Liquid ‘white hats’ return $270M in Bitcoin as network prepares restart",
+          "url": "https://cointelegraph.com/news/liquid-white-hats-return-270m-bitcoin-network-restart?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-08T03:46:17.000Z"
+        },
+        {
+          "title": "Bitcoin sidechain Liquid pauses after purported ‘white hats’ withdraw $320M in BTC",
+          "url": "https://cointelegraph.com/news/liquid-network-pauses-320m-bitcoin-withdrawal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-07T05:40:05.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T05:40:05.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1ZHYDRMBN9CQ2AV6CCP6WB8/hacky-hack.png",
+      "badge": "Breaking",
+      "trendScore": 64,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-e27e415e60",
+      "slug": "tether-backed-exchange-freezes-withdrawals-after-7m-leaves-custody",
+      "lane": "crypto",
+      "title": "Tether-backed exchange freezes withdrawals after $7M leaves custody",
+      "summary": "A crypto exchange backed by Tether froze customer withdrawals after about $7 million left its custody, CryptoSlate reported. The exchange's name and the cause of the loss are not detailed in current reporting.",
+      "whyItMatters": "Tether sits at the center of crypto liquidity, so any custody failure at a linked exchange draws regulatory and market attention.",
+      "whatToWatch": [
+        "An official statement from the exchange",
+        "Any comment from Tether",
+        "Whether withdrawals resume"
+      ],
+      "questions": [
+        "Which exchange is affected?",
+        "Was this a hack, an insider issue, or something else?"
+      ],
+      "sources": [
+        {
+          "title": "Tether-backed crypto exchange freezes withdrawals after $7 million leaves custody",
+          "url": "https://cryptoslate.com/tether-backed-crypto-exchange-freezes-withdrawals-after-7-million-leaves-custody/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-08T00:20:52.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-08T00:20:52.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/orionx-withdrawals-frozen.jpg",
+      "badge": "Incident",
+      "trendScore": 57,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-3742e79b4f",
+      "slug": "seven-year-old-blockchain-to-shut-down-its-own-network-and-move-to-eth",
+      "lane": "crypto",
+      "title": "Seven-year-old blockchain to shut down its own network and move to Ethereum",
+      "summary": "A blockchain that has run independently for seven years is abandoning its own network and migrating to Ethereum, per CryptoSlate. The supplied report does not name the chain or give a migration timeline.",
+      "whyItMatters": "Another independent chain folding into Ethereum points to ongoing consolidation among smaller layer-1 networks.",
+      "whatToWatch": [
+        "The migration timeline and mechanics",
+        "What happens to existing holders and assets on the old chain"
+      ],
+      "questions": [
+        "Which blockchain is this?",
+        "Why abandon the network now?"
+      ],
+      "sources": [
+        {
+          "title": "A seven-year-old blockchain is permanently abandoning its own network to seek refuge on Ethereum",
+          "url": "https://cryptoslate.com/a-seven-year-old-blockchain-is-permanently-abandoning-its-own-network-to-seek-refuge-on-ethereum/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-07T23:10:48.000Z"
+        },
+        {
+          "title": "Ethereum arbitrage study reveals builders receive $5 for every $1 burned by the network",
+          "url": "https://cryptoslate.com/ethereum-arbitrage-study-reveals-builders-receive-5-for-every-1-burned-by-the-network/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-07T21:05:07.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T21:05:07.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/harmony-token-ethereum-exit.jpg",
+      "trendScore": 56,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-d1296a49d1",
+      "slug": "ethereum-foundation-names-two-must-ship-eips-for-the-hegot-upgrade",
+      "lane": "crypto",
+      "title": "Ethereum Foundation names two 'must ship' EIPs for the Hegotá upgrade",
+      "summary": "The Ethereum Foundation has flagged two EIPs as \"must ship\" for the upcoming Hegotá network upgrade, Cointelegraph reported. The report does not identify the EIPs or give a firm upgrade date.",
+      "whyItMatters": "Naming must-ship EIPs signals which technical changes are locked in for Ethereum's next hard fork, which matters to developers and infrastructure operators.",
+      "whatToWatch": [
+        "Confirmation of which two EIPs are involved",
+        "A firm date for the Hegotá upgrade",
+        "Testnet activation before mainnet"
+      ],
+      "questions": [
+        "Which two EIPs were named?",
+        "When is Hegotá expected to ship?"
+      ],
+      "sources": [
+        {
+          "title": "Ethereum Foundation names 2 ‘must ship’ EIPs for Hegotá upgrade",
+          "url": "https://cointelegraph.com/news/ethereum-foundation-names-2-must-ship-eips-for-hegot-upgrade?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-07T20:21:31.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T20:21:31.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1YPGJP56PPJ9HZPSQ3THD23/hi-how-the-fusaka-upgrade-fits-into-ethereums-long-term-roadmap.jpg",
+      "trendScore": 53,
+      "confidence": "medium"
+    },
     {
       "id": "crypto-81423c7644",
       "slug": "vitalik-buterin-says-he-s-more-confident-ai-won-t-break-crypto-backs-i",
       "lane": "crypto",
-      "title": "Vitalik Buterin Says He's More Confident AI Won't Break Crypto, Backs It With 90% of His Net Worth",
-      "summary": "Ethereum co-founder Vitalik Buterin reportedly said he is now more confident that artificial intelligence will not undermine crypto's core value proposition, and is backing that view by committing roughly 90% of his net worth. CryptoSlate did not provide further detail on how the wager is structured or what prompted his earlier doubts.",
-      "whyItMatters": "Buterin's public confidence (or lack of it) on AI's effect on crypto's fundamentals carries weight among Ethereum-aligned builders and investors.",
+      "title": "Vitalik Buterin says he is now confident AI won't break crypto",
+      "summary": "Ethereum co-founder Vitalik Buterin said he is now confident that AI will not undermine crypto's core assumptions, and reportedly has staked a large share of his personal wealth on that view, per CryptoSlate. The report does not explain the form this \"bet\" takes.",
+      "whyItMatters": "Buterin's views carry weight in the Ethereum community, but a personal statement of confidence is not a technical guarantee against AI-related risks.",
       "whatToWatch": [
-        "Any follow-up detail on how the 90% commitment is structured",
-        "Further comment from Buterin or the Ethereum Foundation on AI-related risk"
+        "Any concrete detail on what the stated bet actually involves",
+        "Further comment from Buterin on specific AI risks"
       ],
       "questions": [
-        "What does \"betting 90% of his net worth\" actually involve in practice?",
-        "What specific AI threat to crypto was he previously worried about?"
+        "What does \"betting 90% of his net worth\" actually mean in practice?",
+        "What specific AI threat was he responding to?"
       ],
       "sources": [
         {
@@ -28,125 +165,27 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-07T17:30:40.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/vitalik-ai-crypto-shield.jpg",
-      "badge": "Commentary",
-      "trendScore": 61,
+      "badge": "Analysis",
+      "trendScore": 52,
       "confidence": "low"
-    },
-    {
-      "id": "crypto-f5994537d5",
-      "slug": "ethereum-s-privacy-push-hits-a-gas-limit-snag-as-a-simpler-rollup-fix-",
-      "lane": "crypto",
-      "title": "Ethereum's Privacy Push Hits a Gas-Limit Snag as a Simpler Rollup Fix Emerges",
-      "summary": "CryptoSlate reports that Ethereum's privacy roadmap has run into a technical problem: a single proof reportedly needs nearly twice the gas allowance currently proposed. A separate CryptoSlate report the same day suggested Ethereum may have found a simpler way to ease the computing burden created by its growing rollup ecosystem.",
-      "whyItMatters": "Gas-cost and proof-design questions directly determine when and how privacy features can actually ship on Ethereum, affecting users and rollups that depend on the roadmap.",
-      "whatToWatch": [
-        "Whether core developers revise the proposed gas allowance",
-        "Discussion or adoption of the simpler rollup-load approach"
-      ],
-      "questions": [
-        "Which specific privacy proof system is running into the gas shortfall?",
-        "Would the simpler rollup fix resolve the gas problem or is it unrelated?"
-      ],
-      "sources": [
-        {
-          "title": "Ethereum’s privacy push hits a numbers problem: one proof needs nearly twice the proposed gas allowance",
-          "url": "https://cryptoslate.com/ethereums-privacy-push-hits-a-numbers-problem-one-proof-needs-nearly-twice-the-proposed-gas-allowance/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-07T16:25:19.000Z"
-        },
-        {
-          "title": "Ethereum may have a simpler way to ease the computing burden of its growing rollup ecosystem",
-          "url": "https://cryptoslate.com/ethereum-may-have-a-simpler-way-to-ease-the-computing-burden-of-its-growing-rollup-ecosystem/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-07T13:30:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T13:30:00.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/ethereum-privacy-detour-1.jpg",
-      "badge": "Technical",
-      "trendScore": 61,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-c08ef8bb66",
-      "slug": "yen-intervention-and-us-inflation-data-five-things-to-watch-in-bitcoin",
-      "lane": "crypto",
-      "title": "Yen Intervention and US Inflation Data: Five Things to Watch in Bitcoin This Week",
-      "summary": "Cointelegraph's weekly bitcoin outlook flags potential Japanese yen intervention and upcoming US inflation data as the key macro catalysts likely to move bitcoin's price this week.",
-      "whyItMatters": "Currency intervention and inflation prints remain among the biggest short-term macro drivers of bitcoin volatility for traders and allocators.",
-      "whatToWatch": [
-        "This week's US inflation data release",
-        "Any confirmed yen intervention by Japanese authorities",
-        "Resulting shifts in Fed rate-path expectations"
-      ],
-      "questions": [
-        "How would bitcoin react if intervention and a hot inflation print land in the same week?"
-      ],
-      "sources": [
-        {
-          "title": "Yen intervention meets US inflation data: Five things to know in Bitcoin this week",
-          "url": "https://cointelegraph.com/markets/markets-tilt-toward-september-rate-hikes-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T12:10:22.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T12:10:22.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1XVQV0DBV1Z4W8PX2TG1AZJ/hi-heres-how-chamber-of-digital-commerce-wants-to-make-crypto-market-great2-1.jpg",
-      "badge": "Markets",
-      "trendScore": 61,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-36b6ccb940",
-      "slug": "capital-b-buys-376-more-bitcoin-for-29-million-lifting-holdings-to-3-5",
-      "lane": "crypto",
-      "title": "Capital B Buys 376 More Bitcoin for $29 Million, Lifting Holdings to 3,521 BTC",
-      "summary": "Capital B added 376 BTC to its treasury in a $29 million purchase, according to Cointelegraph, bringing its total holdings to 3,521 BTC.",
-      "whyItMatters": "Continued disclosed corporate bitcoin accumulation signals institutional demand persisting alongside ETF flows.",
-      "whatToWatch": [
-        "Future disclosed purchases from Capital B",
-        "The company's running average cost basis"
-      ],
-      "questions": [
-        "What is Capital B's average purchase price across its total holdings?"
-      ],
-      "sources": [
-        {
-          "title": "Capital B adds 376 Bitcoin in $29M purchase, boosting holdings to 3,521 BTC",
-          "url": "https://cointelegraph.com/news/capital-b-adds-376-bitcoin-in-29m-purchase-holdings-reach-3521-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T16:42:49.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T16:42:49.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1YATN0BBKTWZP5TX2YTRME4/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price.png",
-      "badge": "Corporate Treasury",
-      "trendScore": 60,
-      "confidence": "medium"
     },
     {
       "id": "crypto-80a1fe2ec4",
       "slug": "harmony-cites-ai-threats-in-proposal-to-shut-down-its-blockchain",
       "lane": "crypto",
-      "title": "Harmony Cites AI Threats in Proposal to Shut Down Its Blockchain",
-      "summary": "Harmony has put forward a proposal to shut down its blockchain, citing AI-related threats as a reason, according to Decrypt. The report did not detail the specific nature of the threats or a timeline for the proposed shutdown.",
-      "whyItMatters": "A live blockchain shutting down over AI-linked security concerns would be a notable precedent for how protocols are starting to weigh emerging AI-enabled attack risks.",
+      "title": "Harmony cites AI threats in proposal to shut down its blockchain",
+      "summary": "Harmony has proposed shutting down its blockchain and cited AI-related threats as a reason, according to Decrypt. The report does not detail the specific threats or the shutdown process.",
+      "whyItMatters": "A live layer-1 citing AI-specific security threats as grounds for shutdown would be an unusual and significant precedent.",
       "whatToWatch": [
-        "Whether the shutdown proposal advances to a formal vote",
-        "Further detail on the specific AI threats being cited",
-        "Guidance for existing token holders and dApps if the chain closes"
+        "Whether the shutdown proposal moves to a formal vote",
+        "Disclosure of the specific AI threat cited",
+        "What happens to existing tokens and validators on Harmony"
       ],
       "questions": [
-        "What specific AI-enabled threats is Harmony pointing to?",
-        "What happens to users and applications still on Harmony if it shuts down?"
+        "What specific AI threat is being cited?",
+        "Is this proposal binding or just a discussion draft?"
       ],
       "sources": [
         {
@@ -158,227 +197,196 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-07T16:16:48.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
       "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2022/06/harmony-gID_7.jpg@png",
-      "badge": "Security",
-      "trendScore": 60,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-3353dc0e62",
-      "slug": "solana-s-million-payments-a-second-ai-payment-system-may-leave-sellers",
-      "lane": "crypto",
-      "title": "Solana's 'Million-Payments-a-Second' AI Payment System May Leave Sellers Unpaid",
-      "summary": "CryptoSlate reports that a Solana-based payment system built to handle a million transactions per second for AI-driven commerce can leave sellers unpaid even after they have delivered goods or services, pointing to a flaw in how the system handles payment finality.",
-      "whyItMatters": "Settlement flaws in high-throughput payment rails undercut confidence in Solana's push toward AI-agent commerce, a use case it has been promoting heavily.",
-      "whatToWatch": [
-        "Whether the project behind the system issues a fix or a statement",
-        "Any confirmed cases of sellers losing funds"
-      ],
-      "questions": [
-        "Which specific project or protocol built this payment system?",
-        "Has any seller actually lost funds because of the flaw so far?"
-      ],
-      "sources": [
-        {
-          "title": "Solana’s “million-payments-a-second” AI system can leave sellers unpaid even after they deliver",
-          "url": "https://cryptoslate.com/solanas-million-payments-a-second-ai-system-can-leave-sellers-unpaid-even-after-they-deliver/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-07T14:20:31.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T14:20:31.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/solana-ai-refund-flow.jpg",
-      "badge": "Security",
-      "trendScore": 59,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-287fea6822",
-      "slug": "improperly-created-tokens-may-explain-how-320-million-in-bitcoin-left-",
-      "lane": "crypto",
-      "title": "Improperly Created Tokens May Explain How $320 Million in Bitcoin Left the Liquid Sidechain",
-      "summary": "CryptoSlate reports that tokens apparently minted without proper backing may explain how roughly $320 million worth of bitcoin exited the Liquid sidechain, pointing to a serious flaw in the network's peg mechanism.",
-      "whyItMatters": "A $320 million incident on a sidechain used to hold pegged bitcoin is a major event for anyone relying on cross-chain bitcoin infrastructure.",
-      "whatToWatch": [
-        "An official post-mortem from those operating Liquid",
-        "Whether the missing funds are recovered or frozen",
-        "Any patch to the token-issuance mechanism involved"
-      ],
-      "questions": [
-        "Who created the unbacked tokens and how did they bypass the peg controls?",
-        "Will affected users be made whole?"
-      ],
-      "sources": [
-        {
-          "title": "Tokens created out of thin air may explain how $320 million in Bitcoin left the Liquid sidechain",
-          "url": "https://cryptoslate.com/tokens-created-out-of-thin-air-may-explain-how-320-million-in-bitcoin-left-a-sidechain/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-07T13:05:17.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T13:05:17.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/liquid-network-bitcoin.jpg",
-      "badge": "Breaking",
-      "trendScore": 58,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-fd3971a2ed",
-      "slug": "polish-prosecutors-charge-suspect-in-zondacrypto-probe-seek-pretrial-d",
-      "lane": "crypto",
-      "title": "Polish Prosecutors Charge Suspect in Zondacrypto Probe, Seek Pretrial Detention",
-      "summary": "Prosecutors in Poland have filed charges against a suspect in an investigation involving crypto exchange Zondacrypto and are seeking pretrial detention, according to Cointelegraph.",
-      "whyItMatters": "Continued legal action against a major regional exchange underscores ongoing law-enforcement scrutiny of crypto platforms in Europe.",
-      "whatToWatch": [
-        "The court's ruling on the pretrial detention request",
-        "Whether additional charges or suspects follow",
-        "Any response from Zondacrypto"
-      ],
-      "questions": [
-        "What specific conduct is the suspect accused of?",
-        "Is Zondacrypto itself under investigation, or only this individual?"
-      ],
-      "sources": [
-        {
-          "title": "Polish prosecutors charge suspect in Zondacrypto probe, seek pretrial detention",
-          "url": "https://cointelegraph.com/news/polish-prosecutors-charge-man-in-zondacrypto-probe-seek-pretrial-detention?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T17:58:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T17:58:00.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1YE3WX83P6A9KHXBC6QXND1/courtroom-court-lawsuit-justice-jurisdiction-breaking-news-2.png",
       "badge": "Regulatory",
-      "trendScore": 56,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-84d59bd8eb",
-      "slug": "hodler-s-digest-white-hats-recover-4-000-btc-from-liquid-as-etfs-post-",
-      "lane": "crypto",
-      "title": "'White Hats' Recovered 4,000 BTC From Liquid as ETFs Post Best 2026 Inflows: Hodler's Digest",
-      "summary": "Cointelegraph's Hodler's Digest recaps the week, including a reported white-hat recovery of 4,000 BTC tied to the Liquid sidechain incident, alongside bitcoin ETFs posting their best weekly inflows of 2026.",
-      "whyItMatters": "The recap ties together two of the week's biggest storylines for this lane: a major sidechain security incident and a strong rebound in institutional ETF demand.",
-      "whatToWatch": [
-        "Confirmation of the total funds recovered from the Liquid incident",
-        "Whether the strong ETF inflow trend continues next week"
-      ],
-      "questions": [
-        "How does this 4,000 BTC white-hat recovery relate to the separately reported $320 million outflow from Liquid?",
-        "What specifically drove this week's surge in ETF inflows?"
-      ],
-      "sources": [
-        {
-          "title": "‘White hats’ take 4000 BTC from Liquid, ETFs see best inflows of 2026: Hodler’s Digest",
-          "url": "https://cointelegraph.com/magazine/white-hats-take-4000-btc-from-liquid-btc-etfs-best-week-of-2026-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T00:05:02.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T00:05:02.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1WEJ8K82HDZFDZDMKSQ89V0/cover-collage.png",
-      "badge": "Weekly Roundup",
-      "trendScore": 56,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-7dbe0b6278",
-      "slug": "bitcoin-fund-flows-show-investors-repositioning-on-fed-rate-path-not-e",
-      "lane": "crypto",
-      "title": "Bitcoin Fund Flows Show Investors Repositioning on Fed Rate Path, Not Exiting: CoinShares",
-      "summary": "CoinShares data cited by Cointelegraph suggests recent bitcoin fund flows reflect investors adjusting positions around expectations for the Fed's rate path, rather than pulling money out of the market altogether.",
-      "whyItMatters": "Distinguishing rotation from genuine exit matters for gauging whether institutional conviction in bitcoin remains intact through rate uncertainty.",
-      "whatToWatch": [
-        "Upcoming Federal Reserve policy decisions",
-        "CoinShares' next weekly fund flow report"
-      ],
-      "questions": [
-        "Which specific funds or products saw the largest flow shifts?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin fund flows show investors trading Fed rate path, not exiting market: CoinShares",
-          "url": "https://cointelegraph.com/markets/crypto-fund-flows-show-investors-trading-fed-rate-path-not-exiting-market-coinshares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T17:29:27.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T17:29:27.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1Y9G98A8H0F1JQME2K2Y5QF/teaching-bitcoin-board-fed.jpg",
-      "badge": "ETF Flows",
-      "trendScore": 55,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-6d54e9bb0f",
-      "slug": "bitcoin-starts-the-week-flat-while-chainlink-rallies",
-      "lane": "crypto",
-      "title": "Bitcoin Starts the Week Flat While Chainlink Rallies",
-      "summary": "Bitcoin opened the week largely unchanged while Chainlink (LINK) posted notable gains, according to Decrypt, which did not specify further detail on the size of the move or its cause.",
-      "whyItMatters": "A sharp altcoin move against a flat bitcoin backdrop can signal either a project-specific catalyst or broader rotation worth tracking.",
-      "whatToWatch": [
-        "Whether Chainlink's rally holds through the week",
-        "Any project-specific news or announcement behind the move"
-      ],
-      "questions": [
-        "What specifically is driving Chainlink's rally right now?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin Starts the Week Flat, But Chainlink Is Flying—Here's Why",
-          "url": "https://decrypt.co/377566/bitcoin-starts-flat-chainlink-price-flying",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-09-07T15:42:34.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-07T15:42:34.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/09/chainlink-decrypt-style-01-gID_7.jpg@png",
-      "badge": "Markets",
-      "trendScore": 55,
+      "trendScore": 51,
       "confidence": "low"
     },
     {
-      "id": "crypto-3b1e084873",
-      "slug": "citi-and-dbs-complete-first-weekend-tokenized-cross-border-deposit-tra",
+      "id": "crypto-c08ef8bb66",
+      "slug": "yen-intervention-and-us-inflation-data-five-things-to-watch-in-bitcoin",
       "lane": "crypto",
-      "title": "Citi and DBS Complete First Weekend Tokenized Cross-Border Deposit on Swift",
-      "summary": "Citi and DBS Bank completed what they describe as the first weekend tokenized cross-border deposit transaction run over Swift, according to Cointelegraph.",
-      "whyItMatters": "A successful weekend settlement shows institutional tokenization moving toward round-the-clock cross-border payments, historically limited by banking hours.",
+      "title": "Yen intervention and US inflation data top this week's Bitcoin watch list",
+      "summary": "Cointelegraph's weekly Bitcoin outlook flags possible yen intervention by Japanese authorities and upcoming US inflation data as the main macro catalysts to watch this week. The piece is a roundup, not a single news event, so detail beyond these two threads is limited.",
+      "whyItMatters": "Currency intervention and US inflation prints are among the macro triggers most closely tied to short-term bitcoin price swings.",
       "whatToWatch": [
-        "Whether Citi and DBS scale the service beyond this transaction",
-        "Other banks piloting similar tokenized deposit arrangements on Swift"
+        "This week's US inflation data release",
+        "Any confirmed yen intervention by Japan's central bank or finance ministry",
+        "Bitcoin's price reaction to both"
       ],
-      "questions": [
-        "Is this a live production offering or a one-off pilot transaction?"
-      ],
+      "questions": [],
       "sources": [
         {
-          "title": "Citi, DBS complete first weekend tokenized cross-border deposit on Swift",
-          "url": "https://cointelegraph.com/news/dbs-citi-first-weekend-tokenized-deposit-swift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "title": "Yen intervention meets US inflation data: Five things to know in Bitcoin this week",
+          "url": "https://cointelegraph.com/markets/markets-tilt-toward-september-rate-hikes-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-07T10:34:47.000Z"
+          "publishedAt": "2026-09-07T12:10:22.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-07T10:34:47.000Z",
-      "updatedAt": "2026-09-07T18:12:02.982Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1XP9EEWDQ84ZSGS1X5SFP19/hi-sbuidl-blackrocks-tokenized-treasury-fund.jpg",
-      "badge": "Institutional",
-      "trendScore": 55,
+      "publishedAt": "2026-09-07T12:10:22.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1XVQV0DBV1Z4W8PX2TG1AZJ/hi-heres-how-chamber-of-digital-commerce-wants-to-make-crypto-market-great2-1.jpg",
+      "badge": "Analysis",
+      "trendScore": 51,
       "confidence": "medium"
+    },
+    {
+      "id": "crypto-03cb879a12",
+      "slug": "australia-removed-45-crypto-and-remittance-registrations-over-the-past",
+      "lane": "crypto",
+      "title": "Australia removed 45 crypto and remittance registrations over the past year",
+      "summary": "An Australian regulator removed 45 crypto and remittance service registrations over the past year, Cointelegraph reported. The report does not name the regulator or give reasons for individual removals.",
+      "whyItMatters": "Registration removals are a concrete sign of tightening oversight on crypto and remittance providers in Australia.",
+      "whatToWatch": [
+        "Further enforcement actions from the regulator",
+        "Any published list naming the removed entities"
+      ],
+      "questions": [
+        "Which regulator carried out the removals?",
+        "What triggered them: compliance failures, fraud, or inactivity?"
+      ],
+      "sources": [
+        {
+          "title": "Australia says it removed 45 crypto, remittance registrations over the past year",
+          "url": "https://cointelegraph.com/news/australia-removes-45-crypto-remittance-registrations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-08T05:10:33.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-08T05:10:33.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1ZPQFTFP239F2S3DRF3524V/license-revoked",
+      "badge": "Regulatory",
+      "trendScore": 50,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-36b6ccb940",
+      "slug": "capital-b-buys-376-more-bitcoin-for-29-million-lifting-holdings-to-3-5",
+      "lane": "crypto",
+      "title": "Capital B buys 376 more Bitcoin, lifting holdings to 3,521 BTC",
+      "summary": "Capital B purchased 376 additional bitcoin for about $29 million, bringing its total holdings to 3,521 BTC, Cointelegraph reported.",
+      "whyItMatters": "Continued corporate treasury buying is one data point on institutional bitcoin demand, though a single company's purchase should not be read as a broad market signal.",
+      "whatToWatch": [
+        "Capital B's next disclosed purchase or holdings update",
+        "Other treasury companies' bitcoin buying activity"
+      ],
+      "questions": [
+        "How is the purchase being financed?",
+        "What is Capital B's average cost basis now?"
+      ],
+      "sources": [
+        {
+          "title": "Capital B adds 376 Bitcoin in $29M purchase, boosting holdings to 3,521 BTC",
+          "url": "https://cointelegraph.com/news/capital-b-adds-376-bitcoin-in-29m-purchase-holdings-reach-3521-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-07T16:42:49.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T16:42:49.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M1YATN0BBKTWZP5TX2YTRME4/hi-five-bitcoin-narratives-analysts-are-watching-beyond-price.png",
+      "trendScore": 50,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-acb2f67c8f",
+      "slug": "brazilian-banks-expand-crypto-offerings-as-regulation-takes-hold",
+      "lane": "crypto",
+      "title": "Brazilian banks expand crypto offerings as regulation takes hold",
+      "summary": "Banks in Brazil are expanding their crypto product offerings as the country's digital-asset regulatory framework takes hold, Decrypt reported. The report does not name specific banks or products.",
+      "whyItMatters": "Bank-level crypto adoption in a major Latin American market suggests regulatory clarity is opening mainstream access beyond crypto-native platforms.",
+      "whatToWatch": [
+        "Which banks launch new crypto products",
+        "Further guidance from Brazilian regulators",
+        "Early adoption numbers"
+      ],
+      "questions": [
+        "Which banks and products are involved?",
+        "What does the regulatory framework require of participating banks?"
+      ],
+      "sources": [
+        {
+          "title": "Brazilian Banks Expand Crypto Offerings as Regulation Takes Hold",
+          "url": "https://decrypt.co/377621/brazilian-banks-expand-crypto-offerings",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-09-07T20:31:03.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T20:31:03.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2026/03/decrypt-style-brazil-bitcoin-gID_7.png@png",
+      "badge": "Regulatory",
+      "trendScore": 49,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-b205e83675",
+      "slug": "liquid-hackers-return-270m-of-the-320m-taken-from-the-bitcoin-sidechai",
+      "lane": "crypto",
+      "title": "Liquid hackers return $270M of the $320M taken from the Bitcoin sidechain",
+      "summary": "Hackers who took about $320 million in bitcoin from the Liquid sidechain have returned roughly $270 million, Decrypt reported. Reporting does not identify those responsible or explain why most, but not all, funds were returned.",
+      "whyItMatters": "A recovery of this scale after a sidechain-level breach directly affects confidence in Bitcoin layer-2 and sidechain custody models.",
+      "whatToWatch": [
+        "A full accounting of returned versus missing funds",
+        "Any statement from Blockstream or Liquid operators",
+        "The network's restart"
+      ],
+      "questions": [
+        "Who carried out the withdrawal?",
+        "Why was most, but not all, of the money returned?"
+      ],
+      "sources": [
+        {
+          "title": "Liquid Hackers Return $270M in Bitcoin After Swiping $320 Million",
+          "url": "https://decrypt.co/377600/liquid-hackers-return-270m-bitcoin",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-09-07T19:13:56.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T19:13:56.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/07/Hacker-hack-decrypt-style-04-gID_7.jpg@png",
+      "badge": "Breaking",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-a7bb0cd953",
+      "slug": "solana-beats-bitcoin-on-one-metric-but-a-single-bug-could-still-take-d",
+      "lane": "crypto",
+      "title": "Solana beats Bitcoin on one metric, but a single bug could still take down the network",
+      "summary": "CryptoSlate reports that Solana now outperforms Bitcoin on one unspecified metric, while cautioning that a single software bug could still bring down the Solana network. The report does not specify which metric or which bug is being referenced.",
+      "whyItMatters": "The report points to a persistent trade-off in Solana's design: strong performance against concentrated technical risk from its architecture.",
+      "whatToWatch": [
+        "Any progress on client diversification for Solana",
+        "Network outages or incidents tied to the cited bug risk"
+      ],
+      "questions": [
+        "Which metric is Solana beating Bitcoin on?",
+        "What specific bug is being referenced, and has it been patched?"
+      ],
+      "sources": [
+        {
+          "title": "Solana beats Bitcoin on one key metric, but a single software bug could still take down the network",
+          "url": "https://cryptoslate.com/solana-beats-bitcoin-on-one-key-metric-but-a-single-software-bug-could-still-take-down-the-network/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-07T19:00:42.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-07T19:00:42.000Z",
+      "updatedAt": "2026-09-08T05:57:41.268Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/solana-threshold-fortress.jpg",
+      "badge": "Analysis",
+      "trendScore": 48,
+      "confidence": "low"
     }
   ]
 }
