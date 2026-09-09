@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { dedupeKey, titleKey } from './sources.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const MANIFEST_PATH = join(ROOT, 'manifest.json');
@@ -16,6 +17,12 @@ const RADAR_PATH = join(ROOT, 'models', 'radar.json');
 const NEWS_DIR = join(ROOT, 'news');
 const NEWS_LANES_DIR = join(NEWS_DIR, 'lanes');
 const FRONTPAGE_PATH = join(NEWS_DIR, 'frontpage.json');
+const PUBLISHED_PATH = join(ROOT, 'state', 'published.json');
+
+/** How long an item stays remembered as "already published". Long enough that a
+ * story can't come back inside a reader's memory of it, short enough that the
+ * file stays small and a genuinely revived topic can return after six weeks. */
+const PUBLISHED_RETENTION_DAYS = 45;
 
 /** How many digests stay in the manifest index. Files older than this remain on
  * disk (permalinks keep working) but drop out of the index so the manifest —
@@ -26,7 +33,16 @@ const DIGEST_INDEX_LIMIT = 60;
  * can't silently create an untyped manifest entry. */
 export const NEWS_LANES = ['crypto', 'markets', 'ai', 'tech'];
 
-export const paths = { ROOT, MANIFEST_PATH, DIGEST_DIR, RADAR_PATH, NEWS_DIR, NEWS_LANES_DIR, FRONTPAGE_PATH };
+export const paths = {
+  ROOT,
+  MANIFEST_PATH,
+  DIGEST_DIR,
+  RADAR_PATH,
+  NEWS_DIR,
+  NEWS_LANES_DIR,
+  FRONTPAGE_PATH,
+  PUBLISHED_PATH,
+};
 
 function readJson(path, fallback) {
   if (!existsSync(path)) return fallback;
@@ -114,6 +130,87 @@ export function publishDigest(digest) {
   });
 
   return { contentVersion, isLatest: latest === digest.id };
+}
+
+// ---------------------------------------------------------------------------
+// Published memory — what the reader has already been shown.
+//
+// The aggregator looks back 36h and runs daily, so without a record of what
+// already shipped, every digest re-serves most of yesterday's. Measured over the
+// first 20 dated digests: 443 items published, 190 unique — 57% of a "daily"
+// brief was a repeat, and the same story led the digest on four separate pairs
+// of consecutive days.
+//
+// This file is the fix. It lives in the repo (git is the database, as above) and
+// is served publicly like everything else here — it holds only URLs and titles
+// that were already published, so there is nothing in it to leak.
+// ---------------------------------------------------------------------------
+
+export function readPublishedIndex() {
+  return readJson(PUBLISHED_PATH, { version: 1, updatedAt: null, entries: [] });
+}
+
+/** Filesystem-backed I/O for recordPublished. A seam, for the same reason
+ * defaultNewsIo is one: tests must not write the repo's real state file. */
+function defaultPublishedIo() {
+  return {
+    read: readPublishedIndex,
+    write: data => writeJson(PUBLISHED_PATH, data),
+  };
+}
+
+/**
+ * Remember the items a digest actually published.
+ *
+ * Only what shipped goes in — deliberately not the candidate pool. An item that
+ * was fetched and then dropped by curation must stay eligible: it may be a
+ * story that only becomes interesting once a second source picks it up. Writing
+ * candidates here would blacklist it forever on the strength of one bad day.
+ *
+ * `firstSeenIn` never moves. A story that survives into a later digest (because
+ * a run passed `allowRepeats`) records the extra sighting in `timesPublished`
+ * but keeps pointing at the edition that broke it.
+ */
+export function recordPublished(items, digestId, generatedAt, io = defaultPublishedIo()) {
+  if (!items?.length) return 0;
+
+  const index = io.read();
+  const byKey = new Map((index.entries ?? []).map(e => [e.key, e]));
+  let added = 0;
+
+  for (const item of items) {
+    if (!item?.url) continue;
+    const key = dedupeKey(item.url);
+    const known = byKey.get(key);
+    if (known) {
+      known.timesPublished = (known.timesPublished ?? 1) + 1;
+      known.lastSeenIn = digestId;
+      continue;
+    }
+    byKey.set(key, {
+      key,
+      titleKey: titleKey(item.title ?? ''),
+      title: item.title ?? '',
+      firstSeenIn: digestId,
+      firstSeenAt: generatedAt,
+      lastSeenIn: digestId,
+      timesPublished: 1,
+    });
+    added += 1;
+  }
+
+  // Prune on write rather than on read, so the file can't grow without bound
+  // and a run never pays to parse years of history.
+  const cutoff = Date.parse(generatedAt) - PUBLISHED_RETENTION_DAYS * 86_400_000;
+  const entries = [...byKey.values()]
+    .filter(e => {
+      const at = Date.parse(e.firstSeenAt);
+      return Number.isNaN(at) ? true : at >= cutoff;
+    })
+    .sort((a, b) => String(b.firstSeenAt).localeCompare(String(a.firstSeenAt)));
+
+  io.write({ version: 1, updatedAt: generatedAt, entries });
+  return added;
 }
 
 /**

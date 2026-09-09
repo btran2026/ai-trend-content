@@ -20,9 +20,9 @@
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { fetchAll, preRank } from './lib/sources.mjs';
+import { fetchAll, preRank, filterAlreadyPublished, capKindShare } from './lib/sources.mjs';
 import { curateItems, writeBrief, extractModelReleases, usage, estimateUsd } from './lib/ai.mjs';
-import { publishDigest, mergeRadar, paths } from './lib/store.mjs';
+import { publishDigest, mergeRadar, readPublishedIndex, recordPublished, paths } from './lib/store.mjs';
 
 function arg(name, fallback = null) {
   const i = process.argv.indexOf(`--${name}`);
@@ -42,6 +42,19 @@ const dryRun = flag('dry-run');
 const windowHours = Number(arg('window-hours', mode === 'on-demand' ? '72' : '36'));
 // Cap on how many items reach the AI. The pre-ranker decides which ones.
 const maxItems = Number(arg('max-items', '70'));
+
+// A digest normally shows only what no earlier digest has shown. Pass this to
+// turn that off — useful when re-reporting a story that has genuinely moved on,
+// and when re-generating a day whose state file was already written.
+const allowRepeats = flag('allow-repeats');
+
+// If the fresh pool comes in under this, the run widens its own window once and
+// re-fetches rather than shipping a thin digest. Fetching costs nothing; only
+// the AI stages are billed, and they run once either way.
+const minFreshCandidates = Number(arg('min-fresh', '25'));
+
+/** Share of the published digest any single sourceKind may hold. */
+const REPO_SHARE_CAP = 0.45;
 
 function slug(text) {
   return String(text)
@@ -78,17 +91,54 @@ async function main() {
   // pre-ranker surfaces relevant items even when engagement is low.
   const keywords = query ? [...(config.keywords ?? []), query] : config.keywords ?? [];
 
-  const raw = await fetchAll({ ...config, keywords }, sinceMs);
+  // An on-demand run with a query is someone chasing a specific topic, and the
+  // answer usually includes things already published — suppressing those would
+  // make the search look broken. Every scheduled run filters.
+  const suppressRepeats = !allowRepeats && !query;
+  const published = suppressRepeats ? readPublishedIndex() : { entries: [] };
+  if (suppressRepeats) {
+    console.log(`  memory:   ${published.entries.length} item(s) already published, will be skipped`);
+  } else {
+    console.log(`  memory:   off (${allowRepeats ? '--allow-repeats' : 'query run'}) — repeats allowed`);
+  }
+  console.log('');
+
+  let effectiveWindow = windowHours;
+  let raw = await fetchAll({ ...config, keywords }, sinceMs);
+  let { fresh, dropped } = filterAlreadyPublished(raw, published);
+
+  if (dropped.length) {
+    console.log(`  skipped ${dropped.length} of ${raw.length} already-published item(s)`);
+  }
+
+  // Widen once if the day is genuinely quiet. Two dated digests came in at 8 and
+  // 13 items while their neighbours carried 25+; a wider look-back is free.
+  if (fresh.length < minFreshCandidates && !query) {
+    effectiveWindow = windowHours * 2;
+    console.log(
+      `  only ${fresh.length} fresh item(s) — widening to ${effectiveWindow}h and re-fetching`,
+    );
+    raw = await fetchAll({ ...config, keywords }, startedAt.getTime() - effectiveWindow * 3600_000);
+    ({ fresh, dropped } = filterAlreadyPublished(raw, published));
+    console.log(`  → ${fresh.length} fresh of ${raw.length} fetched`);
+  }
+
   if (raw.length === 0) {
     console.log('\nNo items fetched. Nothing to publish.');
     return;
   }
+  if (fresh.length === 0) {
+    console.log(
+      '\nEverything fetched has already been published. Nothing new to say — not publishing.',
+    );
+    return;
+  }
 
-  const candidates = preRank(raw, keywords, maxItems);
-  if (candidates.length < raw.length) {
+  const candidates = preRank(fresh, keywords, maxItems);
+  if (candidates.length < fresh.length) {
     // Be explicit about the cap — a silent truncation reads as "we covered
     // everything" when we didn't.
-    console.log(`  pre-ranked to top ${candidates.length} of ${raw.length} for AI curation`);
+    console.log(`  pre-ranked to top ${candidates.length} of ${fresh.length} for AI curation`);
   }
 
   if (dryRun) {
@@ -101,15 +151,24 @@ async function main() {
   }
 
   console.log('');
-  const items = await curateItems(candidates, { query });
-  if (items.length === 0) {
+  const curated = await curateItems(candidates, { query });
+  if (curated.length === 0) {
     console.log('\nCuration kept nothing. Not publishing an empty digest.');
     return;
   }
-  console.log(`  → kept ${items.length} items`);
+  console.log(`  → kept ${curated.length} items`);
+
+  // Trim before the brief, not after: the brief's clusters reference item ids,
+  // so anything cut here has to be gone before the editor sees the set.
+  const { items, dropped: overRepresented } = capKindShare(curated, 'repo', REPO_SHARE_CAP);
+  if (overRepresented.length) {
+    console.log(
+      `  → cut ${overRepresented.length} repo item(s) over the ${Math.round(REPO_SHARE_CAP * 100)}% share cap`,
+    );
+  }
 
   console.log('\nWriting brief…');
-  const brief = await writeBrief(items, { query, windowHours });
+  const brief = await writeBrief(items, { query, windowHours: effectiveWindow });
   if (!brief) {
     console.log('Brief generation failed. Not publishing — a digest without a brief is useless.');
     return;
@@ -128,7 +187,7 @@ async function main() {
     generatedAt,
     triggeredBy,
     query: query ?? null,
-    windowHours,
+    windowHours: effectiveWindow,
     brief: {
       headline: brief.headline,
       summary: brief.summary,
@@ -151,9 +210,15 @@ async function main() {
 
   const { contentVersion, isLatest } = publishDigest(digest);
 
+  // Only after the digest is on disk. Recording before publishing would burn
+  // these items on a run that then failed to ship them, and nothing would ever
+  // show them again.
+  const remembered = recordPublished(items, id, generatedAt);
+
   console.log('\n--- published ---');
   console.log(`  digests/${id}.json  (contentVersion ${contentVersion})`);
   console.log(`  items:     ${items.length}, in ${clusterIds.size ? `${brief.clusters.length} cluster(s)` : 'no clusters'}`);
+  console.log(`  remembered: ${remembered} new item(s) — a later digest will not repeat them`);
   console.log(`  latest:    ${isLatest ? 'yes — this is what "Today" will show' : 'no (a newer digest exists)'}`);
   console.log(`  AI spend:  $${digest.cost.usd} over ${usage.calls} call(s)`);
   console.log(`             ${usage.inputTokens} in / ${usage.outputTokens} out tokens`);
