@@ -1,0 +1,186 @@
+{
+  "id": "2026-09-14",
+  "kind": "scheduled",
+  "generatedAt": "2026-09-14T15:55:31.255Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Four local-model repos landed to offload agent work off the API meter",
+    "summary": "All four items this cycle are runtimes for running capable coding models on hardware you already own, with OpenAI-compatible endpoints so pointing an agent at them is a base_url change, not a rewrite. syv-ai's qwen38-27b-rtx3090 pushes roughly 1,000 tok/s at 64 concurrent requests (114-124 single-user) on one RTX 3090 using included int8/fp16 requant patches, and gavamedia/deltafin serves full Kimi K3 from a single device behind a standard OpenAI-compatible API — either is a plausible drop-in for background subagent calls tonight.\n\nOn the Mac side, mlx-dspark ports DeepSeek's DSpark and z-lab's DFlash speculative decoding into MLX for up to 4x faster lossless decoding across Gemma-4, Qwen3.8, Nemotron and others — on the same machine you already run Claude Code on. Swiftlet streams MoE expert weights from storage so 35B and 80B Qwen models run with low RAM on Apple devices, iPhone included, which is worth a real test given that's the hardware you ship to. None of these four have a failure report attached yet, so treat throughput claims as unverified until you've routed a real subagent task through one and watched what breaks.",
+    "bullets": [
+      "Clone syv-ai/qwen38-27b-rtx3090, run the requant scripts on a 3090, point background subagent calls at the vLLM endpoint",
+      "Clone gavamedia/deltafin, swap Claude Code's base URL to its OpenAI-compatible local server, test Kimi K3 on a low-stakes overnight task first",
+      "Clone ARahim3/mlx-dspark and wire its speculative decoding wrapper into your MLX serving loop for a 4x lossless speedup on the Mac you already dev on",
+      "Clone leonickson1/Swiftlet and load a 35B Qwen MoE checkpoint on an actual iPhone to measure real RAM and latency, not just the claim",
+      "None of these four ship a failure report yet — run one overnight before trusting it with anything unattended"
+    ],
+    "signals": [
+      {
+        "label": "Local/open-weight serving for coding agents",
+        "direction": "up",
+        "note": "Four separate repos this cycle alone building OpenAI-compatible local endpoints or quant/speculative tricks aimed at consumer GPUs and Macs"
+      },
+      {
+        "label": "Apple Silicon as a serious inference target",
+        "direction": "up",
+        "note": "mlx-dspark and Swiftlet both optimize specifically for the Mac/iPhone hardware he already owns and ships to"
+      },
+      {
+        "label": "Honest unattended-run failure reports",
+        "direction": "flat",
+        "note": "Zero of the four items include a failure report; throughput and RAM numbers are vendor-claimed and untested by him"
+      },
+      {
+        "label": "Remote/phone control of agents",
+        "direction": "flat",
+        "note": "Nothing in this batch addresses controlling agents away from the desk"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1334946608",
+      "title": "syv-ai/qwen38-27b-rtx3090 — Qwen3.8-27B on a single RTX 3090 with vLLM: ~1,000 tok/s at 64 concurrent (int8 tensor-core GEMMs, fp16 DeltaNet state), ~114 tok/s single-user at default sampling / ~124 greedy (MTP drafts, own-output draft voca",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-15T09:10:56Z",
+      "tldr": "syv-ai's repo runs Qwen3.8-27B on a single RTX 3090 via vLLM at roughly 1,000 tok/s with 64 concurrent requests, or 114-124 tok/s single-user, using included quantization patches.",
+      "whyItMatters": "Gives concrete throughput numbers for offloading cheap coding-agent work to a single consumer GPU instead of paying per-token API rates.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cost-cutting",
+        "rtx3090",
+        "vllm"
+      ],
+      "entities": [
+        "vLLM",
+        "syv-ai"
+      ],
+      "models": [
+        "Qwen3.8-27B"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone syv-ai/qwen38-27b-rtx3090, apply the requant scripts on a 3090, and route background subagent tasks to the resulting vLLM endpoint.",
+      "score": 1372
+    },
+    {
+      "id": "gh-1314404827",
+      "title": "gavamedia/deltafin — Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
+      "url": "https://github.com/gavamedia/deltafin",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-28T01:01:23Z",
+      "tldr": "deltafin runs full Kimi K3 on a single device and serves it through an OpenAI-compatible API for local chat and coding agents.",
+      "whyItMatters": "Drop-in local endpoint means he can point his coding agent's API client at a self-hosted model for zero-cost background or overnight runs.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "openai-compatible",
+        "cost-cutting",
+        "coding-agents"
+      ],
+      "entities": [],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone gavamedia/deltafin, point your agent's OpenAI-compatible base URL at its local server, and test Kimi K3 on a low-stakes subagent task.",
+      "score": 815
+    },
+    {
+      "id": "gh-1284414913",
+      "title": "ARahim3/mlx-dspark — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, ternary Bonsai-27B.",
+      "url": "https://github.com/ARahim3/mlx-dspark",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T20:57:35Z",
+      "tldr": "mlx-dspark ports DeepSeek's DSpark and z-lab's DFlash speculative decoding to MLX, giving up to 4x faster lossless LLM decoding on Apple Silicon across Gemma-4, Qwen3.8, Nemotron and other models.",
+      "whyItMatters": "Cuts local inference latency on the Mac hardware he already runs Claude Code on, making on-device model use for background agent tasks more viable.",
+      "category": "open-models",
+      "tags": [
+        "mlx",
+        "apple-silicon",
+        "speculative-decoding",
+        "local-inference"
+      ],
+      "entities": [
+        "DeepSeek",
+        "z-lab"
+      ],
+      "models": [
+        "Gemma-4",
+        "Qwen3.8",
+        "Nemotron",
+        "LFM2.5",
+        "Bonsai-27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone ARahim3/mlx-dspark and wire its speculative decoding wrapper into your MLX serving loop for a supported model.",
+      "score": 662
+    },
+    {
+      "id": "gh-1321790489",
+      "title": "leonickson1/Swiftlet — Swiftlet is a Swift and Metal runtime that runs large Qwen Mixture-of-Experts models locally on Apple devices by streaming expert weights from storage, enabling 35B and 80B models to run with low RAM, including on iPh",
+      "url": "https://github.com/leonickson1/Swiftlet",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-03T13:03:37Z",
+      "tldr": "Swiftlet is a Swift and Metal runtime that streams MoE expert weights from storage, letting 35B and 80B Qwen models run on Apple devices with low RAM, including iPhone.",
+      "whyItMatters": "Lets him test on-device large-model inference on the exact iPhone hardware he ships his apps to, without standing up a server.",
+      "category": "open-models",
+      "tags": [
+        "on-device",
+        "moe",
+        "ios",
+        "local-inference"
+      ],
+      "entities": [],
+      "models": [
+        "Qwen"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone leonickson1/Swiftlet and load a 35B Qwen MoE checkpoint on an iPhone or Mac to measure actual RAM and latency.",
+      "score": 638
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Single-device local serving for agent offload",
+      "summary": "Two repos turn a spare GPU or single machine into an OpenAI-compatible endpoint a coding agent can call instead of a paid API.",
+      "itemIds": [
+        "gh-1334946608",
+        "gh-1314404827"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Apple Silicon inference tricks",
+      "summary": "Two repos target Mac/iPhone specifically: one speeds up decoding losslessly, the other shrinks RAM needed for large MoE models via expert streaming.",
+      "itemIds": [
+        "gh-1284414913",
+        "gh-1321790489"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 10,
+    "outputTokens": 7289,
+    "usd": 0.2621,
+    "model": "claude-sonnet-5",
+    "calls": 3,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
