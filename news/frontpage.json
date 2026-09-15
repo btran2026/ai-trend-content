@@ -1,22 +1,121 @@
 {
-  "generatedAt": "2026-09-15T16:19:58.962Z",
-  "contentVersion": 106,
+  "generatedAt": "2026-09-15T22:23:52.017Z",
+  "contentVersion": 107,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-7cc0e4c057",
+        "slug": "bis-paper-finds-major-gap-in-bitcoin-on-chain-transfer-estimates",
+        "lane": "crypto",
+        "title": "BIS paper finds major gap in Bitcoin on-chain transfer estimates",
+        "summary": "A paper from the Bank for International Settlements says common methods for estimating Bitcoin's on-chain transfer volumes contain a significant gap, meaning widely cited activity figures may be less reliable than assumed. The report questions how analysts read economic activity directly off the blockchain.",
+        "whyItMatters": "On-chain volume figures feed into valuation models and policy debates, so a flagged measurement gap could undercut arguments built on those numbers.",
+        "whatToWatch": [
+          "Whether other researchers or data providers respond to or revise their methodologies",
+          "Any follow-up commentary from BIS on policy implications"
+        ],
+        "questions": [
+          "How large is the estimated gap, and which metrics does it distort most?",
+          "Does this change how regulators or index providers report Bitcoin activity data?"
+        ],
+        "sources": [
+          {
+            "title": "BIS paper finds major gap in Bitcoin onchain transfer estimates",
+            "url": "https://cointelegraph.com/news/bis-paper-finds-major-gap-in-bitcoin-onchain-transfer-estimates?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-09-15T21:23:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T21:23:00.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2KD2EQC101MZQX67TJ3JJQB/hi-statistical-indicators-for-crypto-investments.png",
+        "badge": "Research",
+        "trendScore": 70,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-2a40fd7097",
+        "slug": "week-long-aelf-outage-wipes-out-staking-rewards-after-emergency-shutdo",
+        "lane": "crypto",
+        "title": "Week-long aelf outage wipes out staking rewards after emergency shutdown",
+        "summary": "The aelf blockchain suffered a seven-day outage following an emergency shutdown, and the disruption erased a full week of staking rewards for holders. Details on the root cause of the shutdown are limited.",
+        "whyItMatters": "Extended outages that cost stakers real yield raise reliability questions for smaller layer-1 networks competing for capital and trust.",
+        "whatToWatch": [
+          "Any official post-mortem or root-cause disclosure from the aelf team",
+          "Whether affected stakers are compensated"
+        ],
+        "questions": [
+          "What triggered the emergency shutdown in the first place?",
+          "Will validators or token holders see any restitution for lost rewards?"
+        ],
+        "sources": [
+          {
+            "title": "7-day blockchain outage wipes out a full week of staking rewards after emergency aelf shutdown",
+            "url": "https://cryptoslate.com/aelf-restores-core-services-but-exchange-access-still-depends-on-venue/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-09-15T20:45:47.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T20:45:47.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/aelf-service-recovery.webp",
+        "badge": "Incident",
+        "trendScore": 66,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-45a23c1cbc",
+        "slug": "coinex-to-shut-down-after-9-years-citing-shrinking-crypto-trading-acti",
+        "lane": "crypto",
+        "title": "CoinEx to shut down after 9 years, citing shrinking crypto trading activity",
+        "summary": "Exchange CoinEx said it will cease operations after nine years, pointing to a \"significant\" contraction in crypto trading. Coverage frames the closure as part of a broader trend of trading volume concentrating at the largest exchanges.",
+        "whyItMatters": "A mid-sized exchange exiting the market signals consolidation pressure that could reduce competition and choice for traders.",
+        "whatToWatch": [
+          "Timeline and process for user fund withdrawals before shutdown",
+          "Whether other mid-tier exchanges follow with similar announcements"
+        ],
+        "questions": [
+          "Were there any operational, legal, or solvency issues beyond stated market contraction?",
+          "How will CoinEx handle remaining customer assets during wind-down?"
+        ],
+        "sources": [
+          {
+            "title": "CoinEx quits after 9 years as crypto trading activity concentrates at biggest exchanges",
+            "url": "https://cryptoslate.com/coinex-quits-after-9-years-as-crypto-trading-activity-concentrates-at-biggest-exchanges/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-09-15T21:55:12.000Z"
+          },
+          {
+            "title": "CoinEx to cease operation after 9 years, citing ‘significant’ crypto contraction",
+            "url": "https://cointelegraph.com/news/coinex-cease-operation-citing-significant-crypto-contraction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-09-15T04:19:16.000Z"
+          }
+        ],
+        "sourceCount": 2,
+        "publishedAt": "2026-09-15T04:19:16.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2HV2WP39A13M6VPCXQJBABW/single-leaf-on-tree-balance.png",
+        "badge": "Exchange",
+        "trendScore": 64,
+        "confidence": "medium"
+      },
       {
         "id": "crypto-367dc08c92",
         "slug": "standard-chartered-says-arbitrum-could-outperform-bitcoin-and-ether-th",
         "lane": "crypto",
-        "title": "Standard Chartered says Arbitrum could outperform Bitcoin and Ether through 2030",
-        "summary": "Standard Chartered issued a forecast saying the layer-2 network Arbitrum could outperform both Bitcoin and Ether through 2030. The bank's note ties into its broader research coverage of crypto assets and their long-term price paths.",
-        "whyItMatters": "A large bank publicly ranking an altcoin above Bitcoin and Ether signals growing institutional interest in layer-2 tokens, but bank price forecasts are opinions, not guarantees.",
+        "title": "Standard Chartered says Arbitrum could outperform Bitcoin, Ether through 2030",
+        "summary": "Standard Chartered analysts reportedly project that Arbitrum could outperform both Bitcoin and Ether through 2030. As with any long-dated price forecast, this is an analyst opinion rather than a settled outcome.",
+        "whyItMatters": "Bank-branded long-term price calls can move sentiment and retail flows even when the underlying reasoning and assumptions aren't disclosed.",
         "whatToWatch": [
-          "Whether other banks publish competing or supporting forecasts on Arbitrum",
-          "Arbitrum's price and adoption trends relative to Bitcoin and Ether over the coming months"
+          "Whether Standard Chartered publishes the underlying model or price targets",
+          "Any market or Arbitrum price reaction to the call"
         ],
         "questions": [
-          "What specific catalysts does Standard Chartered cite for Arbitrum's outperformance?",
-          "How does this forecast compare to the bank's track record on past crypto calls?"
+          "What assumptions and timeframe milestones underlie this specific forecast?",
+          "Does Standard Chartered have any disclosed position or business relationship with Arbitrum?"
         ],
         "sources": [
           {
@@ -28,58 +127,124 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-09-15T15:50:49.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2JRTG1Y6S9M2Y37M3XPJ1PC/hi-arbitrum-a-beginners-guide-to-the-next-generation-layer-2-for-ethereum-1.jpg",
         "badge": "Analysis",
-        "trendScore": 66,
+        "trendScore": 61,
         "confidence": "medium"
       },
       {
-        "id": "crypto-f67facce21",
-        "slug": "bitcoin-etf-inflows-return-with-blackrock-driving-most-of-the-gains-ah",
+        "id": "crypto-360a6206e5",
+        "slug": "crypto-stocks-slide-after-clarity-act-fails-to-advance-in-senate",
         "lane": "crypto",
-        "title": "Bitcoin ETF inflows return, with BlackRock driving most of the gains ahead of the Fed meeting",
-        "summary": "Spot Bitcoin ETFs are seeing inflows return after a stretch of outflows or stagnation, according to CryptoSlate, with BlackRock's fund accounting for the bulk of the new money. The rebound comes as markets position ahead of an upcoming Federal Reserve meeting.",
-        "whyItMatters": "ETF flow data is one of the clearest signals of institutional demand for Bitcoin, and a market leaning on one issuer suggests the rally may be narrower and more fragile than it looks.",
+        "title": "Crypto stocks slide after CLARITY Act fails to advance in Senate",
+        "summary": "Crypto-linked stocks fell after the US Senate failed to advance the CLARITY Act, a bill meant to set clearer digital-asset market rules. The setback removes, for now, a piece of regulatory certainty markets had been pricing in.",
+        "whyItMatters": "Market-structure legislation directly affects how exchanges, issuers, and token projects can legally operate in the US, so delays extend the current regulatory ambiguity.",
         "whatToWatch": [
-          "The Federal Reserve meeting outcome and its effect on risk assets including Bitcoin",
-          "Whether inflows broaden beyond BlackRock to other issuers"
+          "Whether Senate leadership schedules another vote or revised version of the bill",
+          "Continued stock price moves in crypto-exposed equities"
         ],
         "questions": [
-          "How concentrated are the inflows in BlackRock's fund versus the rest of the field?",
-          "Will flows hold up if the Fed's decision disappoints markets?"
+          "What specifically blocked the vote from advancing?",
+          "Is a revised bill likely before the end of the current session?"
         ],
         "sources": [
           {
-            "title": "Bitcoin ETF inflows are back, but BlackRock is carrying the market into the Fed meeting",
-            "url": "https://cryptoslate.com/bitcoin-etf-inflows-are-back-but-blackrock-is-carrying-the-market-into-the-fed-meeting/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-09-15T14:35:35.000Z"
+            "title": "Crypto stocks slide after CLARITY Act fails to advance in Senate",
+            "url": "https://cointelegraph.com/markets/crypto-stocks-slide-after-clarity-act-fails-to-advance-in-senate?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-09-15T20:37:34.000Z"
+          },
+          {
+            "title": "US Senate fails to advance CLARITY Act",
+            "url": "https://cointelegraph.com/news/us-senate-fails-to-advance-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-09-15T18:46:51.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-09-15T14:35:35.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/bitcoin-etf-rebound-track-final.webp",
-        "badge": "ETF Flows",
-        "trendScore": 61,
+        "publishedAt": "2026-09-15T18:46:51.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2KBJH6XJV6JTEGJY5Q2A9NA/hi-intel-research.png",
+        "badge": "Regulatory",
+        "trendScore": 60,
+        "confidence": "medium"
+      },
+      {
+        "id": "crypto-ae60812e80",
+        "slug": "is-defi-s-reported-20-billion-surge-real-growth-or-just-token-price-in",
+        "lane": "crypto",
+        "title": "Is DeFi's reported $20 billion surge real growth or just token price inflation?",
+        "summary": "An analysis questions whether a widely cited $20 billion jump in DeFi metrics reflects genuine new activity or is largely an artifact of rising token prices inflating dollar-denominated totals. The piece pushes back on headline TVL-style figures.",
+        "whyItMatters": "Total-value-locked and similar metrics are commonly used to gauge DeFi's health, so distinguishing real growth from price effects matters for anyone assessing the sector.",
+        "whatToWatch": [
+          "Whether TVL trackers or protocols publish price-adjusted growth figures",
+          "Any follow-up analysis confirming or disputing the inflation claim"
+        ],
+        "questions": [
+          "What portion of the reported surge is attributable to price versus new deposits?",
+          "Which specific protocols or chains account for most of the disputed gains?"
+        ],
+        "sources": [
+          {
+            "title": "Did crypto’s $20 Billion DeFi surge just get stolen by price inflation?",
+            "url": "https://cryptoslate.com/did-cryptos-20-billion-defi-surge-just-get-stolen-by-price-inflation/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-09-15T18:15:37.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T18:15:37.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/ethereum-solana-price-balloons.webp",
+        "badge": "Analysis",
+        "trendScore": 59,
         "confidence": "low"
+      },
+      {
+        "id": "crypto-165eeb618c",
+        "slug": "binance-adds-11-us-listed-etfs-to-its-wealth-management-offering",
+        "lane": "crypto",
+        "title": "Binance adds 11 US-listed ETFs to its wealth management offering",
+        "summary": "Binance has added 11 US-listed exchange-traded funds to its wealth management product lineup, expanding beyond crypto-native assets. No further detail on which specific funds were included was provided.",
+        "whyItMatters": "A major exchange broadening into traditional ETFs shows continued blending of crypto platforms with mainstream investment products.",
+        "whatToWatch": [
+          "Which specific ETFs are included and whether the list expands over time",
+          "Regulatory reaction in jurisdictions where Binance offers this service"
+        ],
+        "questions": [
+          "Which markets and customer segments can access this offering?",
+          "Does this require any new regulatory approval where Binance operates?"
+        ],
+        "sources": [
+          {
+            "title": "Binance adds 11 US-listed ETFs to wealth management offering",
+            "url": "https://cointelegraph.com/news/binance-adds-11-us-listed-etfs-to-wealth-management-offering?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+            "publisher": "Cointelegraph",
+            "publishedAt": "2026-09-15T17:22:04.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T17:22:04.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2JZT31WJSAPCWV4C5T6FJ1R/hi-bitcoin-etf-sec-deadline-on-nov-5-not-a-decision-on-etfs-but-deadline-for-the-public-to-submit-a-review-clarifying-piece.png",
+        "trendScore": 57,
+        "confidence": "medium"
       },
       {
         "id": "crypto-d25eaa2821",
         "slug": "us-house-crypto-tax-package-leaves-out-deferral-for-mining-and-staking",
         "lane": "crypto",
-        "title": "US House crypto tax package leaves out deferral for mining and staking rewards",
-        "summary": "A crypto tax package moving through the US House does not include a provision that would have deferred taxation on mining and staking rewards until sale, according to Cointelegraph. The omission means miners and stakers may still face tax obligations at the point rewards are received.",
-        "whyItMatters": "Tax treatment of staking and mining rewards has been a long-running dispute in the US crypto industry, and this omission keeps that uncertainty alive for validators and miners.",
+        "title": "US House crypto tax package leaves out mining and staking reward deferral",
+        "summary": "A crypto tax package moving through the US House reportedly does not include provisions that would have deferred taxation on mining and staking rewards. That omission keeps current tax treatment of those rewards in place for now.",
+        "whyItMatters": "Tax treatment of mining and staking rewards affects the economics of running validators and miners in the US, and the industry has long pushed for deferral.",
         "whatToWatch": [
-          "Whether lawmakers add mining/staking deferral language in later amendments",
-          "Industry and lobbying response to the omission",
-          "The bill's progress through further House votes"
+          "Whether the provision is added back through amendment before a floor vote",
+          "Industry response and lobbying efforts following the omission"
         ],
         "questions": [
-          "Why was the deferral provision left out of this version of the package?",
-          "Could a future Senate version restore it?"
+          "Why were mining and staking deferral provisions excluded from this version?",
+          "Could deferral language still be added in the Senate or in reconciliation?"
         ],
         "sources": [
           {
@@ -91,26 +256,88 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-09-15T10:04:21.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2J6TX6A7KEPZNSA4AMER8KE/regulations-us-tax.jpg",
         "badge": "Regulatory",
-        "trendScore": 61,
+        "trendScore": 56,
         "confidence": "medium"
+      },
+      {
+        "id": "crypto-f67facce21",
+        "slug": "bitcoin-etf-inflows-return-with-blackrock-driving-most-of-the-gains-ah",
+        "lane": "crypto",
+        "title": "Bitcoin ETF inflows return, but BlackRock is doing most of the heavy lifting",
+        "summary": "Bitcoin ETF inflows have turned positive again, but the rebound is reportedly concentrated in BlackRock's fund rather than spread across issuers. The renewed flows come as markets head into an upcoming Federal Reserve meeting.",
+        "whyItMatters": "Inflow concentration in a single issuer suggests the broader ETF market's demand recovery may be narrower and more fragile than headline totals imply.",
+        "whatToWatch": [
+          "Upcoming Federal Reserve meeting and its effect on risk appetite",
+          "Whether inflows broaden to other Bitcoin ETF issuers"
+        ],
+        "questions": [
+          "Why is demand concentrating so heavily in BlackRock's fund specifically?",
+          "How sensitive are these flows to the Fed's coming rate decision?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin ETF inflows are back, but BlackRock is carrying the market into the Fed meeting",
+            "url": "https://cryptoslate.com/bitcoin-etf-inflows-are-back-but-blackrock-is-carrying-the-market-into-the-fed-meeting/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-09-15T14:35:35.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T14:35:35.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/bitcoin-etf-rebound-track-final.webp",
+        "badge": "Markets",
+        "trendScore": 55,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-4e73238ea4",
+        "slug": "ethics-dispute-tied-to-trump-helps-sink-clarity-act-in-senate-vote",
+        "lane": "crypto",
+        "title": "Ethics dispute tied to Trump helps sink CLARITY Act in Senate vote",
+        "summary": "The CLARITY Act failed in a Senate vote amid a dispute over ethics concerns connected to Trump, according to reporting on the defeat. The ethics fight is described as a significant factor in the bill's collapse.",
+        "whyItMatters": "If a political dispute unrelated to market-structure policy is deciding the fate of crypto legislation, that adds an unpredictable variable to when clearer rules might arrive.",
+        "whatToWatch": [
+          "Whether the ethics dispute is resolved or continues to block future votes",
+          "Any revised bill introduced without the disputed elements"
+        ],
+        "questions": [
+          "What specifically is the ethics concern, and who raised it?",
+          "Can the bill be decoupled from this dispute in a future attempt?"
+        ],
+        "sources": [
+          {
+            "title": "Trump ethics fight sinks CLARITY Act in dramatic Senate defeat",
+            "url": "https://cryptoslate.com/trump-ethics-fight-sinks-clarity-act-in-dramatic-senate-defeat/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-09-15T19:20:33.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T19:20:33.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/clarity-act-cloture-failed-standard-image.jpg",
+        "badge": "Regulatory",
+        "trendScore": 54,
+        "confidence": "low"
       },
       {
         "id": "crypto-b7311da7f1",
         "slug": "usdt-payments-reportedly-featured-in-polish-energy-giant-s-failed-230m",
         "lane": "crypto",
         "title": "USDT payments reportedly featured in Polish energy giant's failed $230M oil deal",
-        "summary": "A Financial Times report cited by Cointelegraph says USDT payments were part of a Polish energy company's failed $230 million oil deal. Details of how the stablecoin was used and why the deal collapsed remain limited in the reporting available.",
-        "whyItMatters": "Stablecoin use in large cross-border commodity transactions, especially one that failed, raises questions about counterparty risk and oversight in energy trade financing.",
+        "summary": "According to a Financial Times report cited by Cointelegraph, USDT stablecoin payments were involved in a failed $230 million oil deal tied to a Polish energy company. Details of why the deal fell through are limited in what's been reported.",
+        "whyItMatters": "Stablecoin use surfacing in a large, failed commodity deal highlights how crypto rails are creeping into traditional trade finance, along with the risks when such deals go wrong.",
         "whatToWatch": [
-          "Further reporting on why the deal failed and USDT's specific role",
-          "Any regulatory or corporate follow-up from the Polish company"
+          "Further FT or company disclosures on why the deal collapsed",
+          "Any regulatory or legal scrutiny of the USDT payment component"
         ],
         "questions": [
-          "What role did USDT play beyond being a payment method — was it central to the deal's structure?",
-          "Who were the counterparties, and is any investigation underway?"
+          "What role did USDT actually play in the deal's failure?",
+          "Are other parties or counterparties involved facing exposure or investigation?"
         ],
         "sources": [
           {
@@ -122,620 +349,414 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-09-15T13:37:31.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
         "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2JGJQHSGWT0JCBGJ8YAJD8X/oil-tether-blockchain-sky-platform-production.jpg",
-        "badge": "Investigation",
-        "trendScore": 59,
+        "trendScore": 54,
         "confidence": "medium"
       },
       {
-        "id": "crypto-fd82ec834a",
-        "slug": "altcoins-gained-21-but-still-lost-ground-to-bitcoin-what-would-flip-th",
+        "id": "crypto-302fbad1fa",
+        "slug": "senator-lummis-says-it-s-now-or-never-for-the-clarity-act",
         "lane": "crypto",
-        "title": "Altcoins gained 21% but still lost ground to Bitcoin — what would flip that?",
-        "summary": "CryptoSlate reports altcoins rose 21% over a recent period but still underperformed Bitcoin on a relative basis. The piece examines what conditions might be needed for altcoins to finally outpace Bitcoin again.",
-        "whyItMatters": "Altcoin underperformance despite a solid nominal gain shows Bitcoin dominance remains strong, which shapes how traders and funds allocate across the broader crypto market.",
+        "title": "Senator Lummis says it's 'now or never' for the CLARITY Act",
+        "summary": "Senator Cynthia Lummis, known as a pro-Bitcoin voice in Congress, said it is \"now or never\" for the CLARITY Act, underscoring urgency around the crypto market-structure bill's prospects. The comment reflects growing pressure around the legislation's fate.",
+        "whyItMatters": "Lummis has been a key Senate advocate for crypto policy, so her framing signals how much political capital and time remain for this bill in the current session.",
         "whatToWatch": [
-          "Bitcoin dominance metrics in coming weeks",
-          "Any shift in capital rotation from Bitcoin into altcoins"
+          "Whether the Senate schedules another attempt at passing the bill",
+          "Lummis's next legislative moves if this version stalls"
         ],
         "questions": [
-          "What specific timeframe does the 21% gain cover?",
-          "What catalyst, if any, does the analysis identify as most likely to trigger an altcoin rotation?"
+          "What happens to crypto market-structure policy if this specific push fails?",
+          "Is Lummis proposing any changes to revive the bill's chances?"
         ],
         "sources": [
           {
-            "title": "Altcoins gained 21% and still lost ground to Bitcoin. What would finally turn the tables?",
-            "url": "https://cryptoslate.com/altcoins-gained-21-and-still-lost-ground-to-bitcoin-what-would-finally-turn-the-tables/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-09-15T10:25:57.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T10:25:57.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/bitcoin-fed-clarity.webp",
-        "badge": "Analysis",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-d1163b0066",
-        "slug": "bitcoin-falls-to-75-6k-september-low-as-global-bond-yields-hit-multide",
-        "lane": "crypto",
-        "title": "Bitcoin falls to $75.6K September low as global bond yields hit multidecade highs",
-        "summary": "Bitcoin dropped to a September low of $75,600, per Cointelegraph, coinciding with global government bond yields reaching multidecade highs. The moves suggest broader macro pressure on risk assets, including crypto.",
-        "whyItMatters": "Bitcoin's slide alongside surging bond yields points to tightening financial conditions weighing on risk assets generally, not an isolated crypto-specific problem.",
-        "whatToWatch": [
-          "Whether bond yields continue climbing and how Bitcoin responds",
-          "Any Fed or central bank action that could ease or worsen the pressure"
-        ],
-        "questions": [
-          "Is the bond yield surge driven by inflation expectations, fiscal concerns, or both?",
-          "How correlated has Bitcoin been with bonds versus equities in this move?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin price falls to $75.6K September low as global bonds hit multidecade highs",
-            "url": "https://cointelegraph.com/markets/bitcoin-price-falls-to-756k-september-low-as-global-bonds-hit-multidecade-highs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-09-15T16:02:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T16:02:01.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2JWDC9JXEQB4J55MT31ZEK2/hi-what-are-bonds-and-how-do-they-work-for-crypto-red.jpg",
-        "badge": "Markets",
-        "trendScore": 56,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-da2a4a930a",
-        "slug": "bitcoin-mobile-privacy-feature-aims-to-hide-incoming-payments-as-miner",
-        "lane": "crypto",
-        "title": "Bitcoin mobile privacy feature aims to hide incoming payments, as miner margins and self-custody tax gaps draw scrutiny",
-        "summary": "CryptoSlate covered a new Bitcoin mobile wallet privacy feature designed to obscure incoming payment details. The outlet also published related pieces the same day on Bitcoin miners facing a margin squeeze unless price reaches $82,900, and on a cost-basis reporting gap for self-custody holders ahead of 2026 tax filings.",
-        "whyItMatters": "Privacy tooling, miner economics, and tax reporting gaps each affect different parts of the Bitcoin ecosystem — users, infrastructure providers, and holders — and together suggest growing friction as the network matures.",
-        "whatToWatch": [
-          "Adoption of the new privacy feature and any exchange or regulatory reaction",
-          "Bitcoin's price relative to the $82,900 level miners reportedly need",
-          "Guidance from tax authorities on self-custody cost-basis reporting for 2026"
-        ],
-        "questions": [
-          "How does the privacy feature technically hide incoming funds, and does it affect compliance obligations?",
-          "How was the $82,900 miner breakeven figure calculated, and by whom?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin’s newest mobile privacy feature can make your incoming money completely invisible",
-            "url": "https://cryptoslate.com/bitcoins-newest-mobile-privacy-feature-could-make-your-incoming-money-completely-invisible/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-09-15T15:20:35.000Z"
-          },
-          {
-            "title": "Bitcoin needs to reach $82,900 to outrun a looming miner margin squeeze",
-            "url": "https://cryptoslate.com/bitcoin-needs-to-reach-82900-to-outrun-a-looming-miner-margin-squeeze/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-09-15T11:20:30.000Z"
-          },
-          {
-            "title": "Bitcoin self-custody creates a massive cost-basis blind spot on your 2026 crypto tax forms",
-            "url": "https://cryptoslate.com/bitcoin-self-custody-creates-a-massive-cost-basis-blind-spot-on-your-2026-crypto-tax-forms/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-09-15T08:40:57.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T08:40:57.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/bitcoin-indexer-scan-route.jpeg",
-        "badge": "Analysis",
-        "trendScore": 56,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-4735975b9a",
-        "slug": "eth-wallet-exploit-backfires-as-mev-bot-captures-7-7m-kelp-freezes-aff",
-        "lane": "crypto",
-        "title": "ETH wallet exploit backfires as MEV bot captures $7.7M, Kelp freezes affected address",
-        "summary": "An attempted exploit of an Ethereum wallet backfired when a MEV bot intercepted and captured $7.7 million intended for the attacker, according to Cointelegraph. Kelp has frozen the address connected to the incident.",
-        "whyItMatters": "The episode is a reminder that Ethereum's MEV ecosystem can redirect exploited funds unpredictably, and that protocols like Kelp retain some ability to freeze compromised addresses.",
-        "whatToWatch": [
-          "Whether Kelp or other parties recover and return the frozen funds",
-          "Any further details on how the original exploit was attempted"
-        ],
-        "questions": [
-          "Who was the original attacker, and what wallet or protocol did they target?",
-          "What legal or on-chain process will determine where the frozen $7.7M ultimately goes?"
-        ],
-        "sources": [
-          {
-            "title": "ETH wallet exploit backfires as MEV bot captures $7.7M, Kelp freezes address",
-            "url": "https://cointelegraph.com/news/mev-bot-intercepts-77m-in-rseth-from-ethereum-wallet-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-09-15T15:21:26.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T15:21:26.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2JRVDXPPS1RFJ7HQKY6AX30/hi-transactions-stopped-danger-1.jpg",
-        "badge": "Security",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-e9e3ac0a2d",
-        "slug": "talks-on-shared-ethereum-and-base-wallet-standards-have-collapsed-ethl",
-        "lane": "crypto",
-        "title": "Talks on shared Ethereum and Base wallet standards have collapsed, Ethlabs researcher says",
-        "summary": "Discussions aimed at establishing common wallet standards between Ethereum and Base have failed, according to an Ethlabs researcher cited by Cointelegraph. No further detail on the specific sticking points was provided in the report.",
-        "whyItMatters": "Fragmented wallet standards between Ethereum and its major layer-2 networks like Base could complicate user experience and interoperability across the ecosystem.",
-        "whatToWatch": [
-          "Whether talks resume or a unilateral standard emerges from either side",
-          "How wallet providers respond to the lack of a unified standard"
-        ],
-        "questions": [
-          "What specific proposals were on the table, and why did they fail?",
-          "Does this affect existing wallet interoperability today, or only future features?"
-        ],
-        "sources": [
-          {
-            "title": "Ethereum, Base wallet standards talks fail, Ethlabs researcher says",
-            "url": "https://cointelegraph.com/news/ethereum-base-wallet-standards-collaboration-breaks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-09-15T09:40:27.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T09:40:27.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2J4CY20932Q9DX6CEYR4793/robotethereum.jpg",
-        "badge": "Protocol",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-2d9514cfb3",
-        "slug": "bitcoin-short-term-holders-hit-30-day-profit-streak-boosting-bull-mark",
-        "lane": "crypto",
-        "title": "Bitcoin short-term holders hit 30-day profit streak, boosting bull-market odds: CryptoQuant",
-        "summary": "CryptoQuant data cited by Cointelegraph shows Bitcoin short-term holders have been in profit for 30 consecutive days, a pattern the firm links to improved odds of a sustained bull market.",
-        "whyItMatters": "Sustained profitability among short-term holders is a metric analysts watch for reduced sell pressure and confidence that a price uptrend can hold.",
-        "whatToWatch": [
-          "Whether the profit streak continues or breaks in coming weeks",
-          "Corresponding on-chain metrics like exchange flows and holder behavior"
-        ],
-        "questions": [
-          "How reliable has this specific metric been as a bull-market predictor historically?",
-          "Does this data account for the recent drop to a September low reported elsewhere?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin short-term holders hit 30-day profit streak as bull-market odds improve: CryptoQuant",
-            "url": "https://cointelegraph.com/markets/bitcoin-short-term-holders-hit-30-day-profit-streak-as-bull-market-odds-improve-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-09-15T09:30:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T09:30:31.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2J63GGEEN1J9P0Q9KPEPHYH/hodler-investment-bitcoin.jpg",
-        "badge": "Markets",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-ca76b14990",
-        "slug": "us-seeks-to-seize-61m-in-usdt-allegedly-linked-to-sanctioned-iranian-o",
-        "lane": "crypto",
-        "title": "US seeks to seize $61M in USDT allegedly linked to sanctioned Iranian oil sales",
-        "summary": "US authorities are seeking to seize $61 million in USDT allegedly tied to sanctioned Iranian oil sales, according to Cointelegraph. The action points to continued use of stablecoins in sanctions-evasion schemes flagged by US enforcement.",
-        "whyItMatters": "The case underscores how stablecoins remain a target of sanctions enforcement and could increase pressure on issuers like Tether to strengthen compliance controls.",
-        "whatToWatch": [
-          "Progress of the forfeiture case through US courts",
-          "Any response from Tether regarding the flagged funds"
-        ],
-        "questions": [
-          "Which entities or individuals are named in the action, and what is their alleged role?",
-          "Has Tether frozen or cooperated with authorities on the addresses in question?"
-        ],
-        "sources": [
-          {
-            "title": "US seeks $61M in USDT allegedly tied to sanctioned Iranian oil sales",
-            "url": "https://cointelegraph.com/news/doj-61m-usdt-forfeiture-iranian-oil?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-            "publisher": "Cointelegraph",
-            "publishedAt": "2026-09-15T08:46:35.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T08:46:35.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2J0JSDM845NTQMSBRH4G509/stablecoin-tetherr.png",
-        "badge": "Enforcement",
-        "trendScore": 55,
-        "confidence": "medium"
-      },
-      {
-        "id": "crypto-ca9e31340d",
-        "slug": "solana-treasury-firm-defi-dev-corp-launches-300m-chad-vehicle-to-buy-m",
-        "lane": "crypto",
-        "title": "Solana treasury firm DeFi Dev Corp launches $300M CHAD vehicle to buy more SOL",
-        "summary": "DeFi Dev Corp, a Solana-focused treasury company, has rolled out a $300 million vehicle called CHAD aimed at buying more SOL, according to Decrypt. The move adds to the growing trend of corporate treasury vehicles built around holding Solana's token.",
-        "whyItMatters": "Corporate treasury strategies concentrated in a single altcoin like SOL add a new source of demand but also concentration risk tied to one company's balance sheet decisions.",
-        "whatToWatch": [
-          "How quickly DeFi Dev Corp deploys the $300M into SOL purchases",
-          "SOL price and market reaction to the added treasury demand"
-        ],
-        "questions": [
-          "How is the $300M vehicle funded — debt, equity, or existing reserves?",
-          "What happens to DeFi Dev Corp's SOL holdings if the token's price falls significantly?"
-        ],
-        "sources": [
-          {
-            "title": "Solana Treasury Firm DeFi Dev Corp Rolls Out $300M CHAD to Buy More SOL",
-            "url": "https://decrypt.co/378183/solana-defi-development-corp-chad",
+            "title": "'It's Now or Never' for Clarity Act, Says 'Bitcoin Senator' Lummis",
+            "url": "https://decrypt.co/378268/now-or-never-clarity-act-bitcoin-cynthia-lummis",
             "publisher": "Decrypt",
-            "publishedAt": "2026-09-15T11:01:04.000Z"
+            "publishedAt": "2026-09-15T17:43:01.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-09-15T11:01:04.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/solana-decrypt-style-03-gID_7.png@png",
-        "badge": "Treasury",
+        "publishedAt": "2026-09-15T17:43:01.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/05/cynthia-lummis-decrypt-style-scaled-gID_7.jpg@png",
+        "badge": "Regulatory",
         "trendScore": 53,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-2de20a8d99",
-        "slug": "italy-stocks-close-lower-as-italy-40-index-falls-0-28",
+        "id": "markets-689239d24c",
+        "slug": "advanced-flower-capital-updates-progress-on-5-million-share-buyback",
         "lane": "markets",
-        "title": "Italy Stocks Close Lower as Italy 40 Index Falls 0.28%",
-        "summary": "Italian equities ended Tuesday's session lower, with the Investing.com Italy 40 index down 0.28%. The decline came alongside weaker closes across other major European indices that day. No further detail on the specific drivers was provided.",
-        "whyItMatters": "Italian equities are a bellwether for eurozone risk sentiment, so a broad regional pullback signals investor caution.",
+        "title": "Advanced Flower Capital updates progress on $5 million share buyback",
+        "summary": "Advanced Flower Capital reported progress on its $5 million stock repurchase program, Investing.com said. The update covers how the buyback is proceeding. No other financial details were disclosed in the report.",
+        "whyItMatters": "A share buyback signals management believes the stock is undervalued and can help support the share price.",
         "whatToWatch": [
-          "Whether the pullback extends into Wednesday's session across European indices"
+          "Future updates on how much of the $5 million authorization has been used",
+          "Next quarterly filing for further buyback details"
         ],
         "questions": [
-          "What specifically drove the day's weakness in Italian stocks?"
+          "How much of the $5 million program has been completed so far?",
+          "What is funding the repurchases?"
         ],
         "sources": [
           {
-            "title": "Italy stocks lower at close of trade; Investing.com Italy 40 down 0.28%",
-            "url": "https://www.investing.com/news/stock-market-news/italy-stocks-lower-at-close-of-trade-investingcom-italy-40-down-028-4902269",
+            "title": "Advanced Flower Capital reports progress on $5 million stock repurchase program",
+            "url": "https://www.investing.com/news/sec-filings/advanced-flower-capital-reports-progress-on-5-million-stock-repurchase-program-93CH-4902712",
             "publisher": "Investing.com",
-            "publishedAt": "2026-09-15T23:07:12.000Z"
+            "publishedAt": "2026-09-16T04:53:17.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-09-15T23:07:12.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB950WI_M.jpg",
-        "badge": "Europe",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-edf8f68f66",
-        "slug": "germany-s-dax-ends-mixed-slips-0-07",
-        "lane": "markets",
-        "title": "Germany's DAX Ends Mixed, Slips 0.07%",
-        "summary": "German stocks closed mixed on Tuesday, with the DAX edging down just 0.07%. The muted move suggests investors were largely directionless across large-cap German names that session.",
-        "whyItMatters": "The DAX is Germany's benchmark index and a proxy for eurozone industrial and export-driven sentiment.",
-        "whatToWatch": [
-          "Direction of the DAX in Wednesday's session"
-        ],
-        "questions": [
-          "Which sectors or stocks offset each other to produce the mixed close?"
-        ],
-        "sources": [
-          {
-            "title": "Germany stocks mixed at close of trade; DAX down 0.07%",
-            "url": "https://www.investing.com/news/stock-market-news/germany-stocks-mixed-at-close-of-trade-dax-down-007-4902266",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-09-15T23:06:19.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T23:06:19.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6609E_M.jpg",
-        "badge": "Europe",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-f0fb1e5ad7",
-        "slug": "france-s-cac-40-closes-0-34-lower",
-        "lane": "markets",
-        "title": "France's CAC 40 Closes 0.34% Lower",
-        "summary": "French stocks fell on Tuesday, with the CAC 40 down 0.34% at the close. The decline mirrored a softer tone across other major European indices that day.",
-        "whyItMatters": "The CAC 40 tracks France's largest listed companies and is a key gauge of eurozone equity sentiment.",
-        "whatToWatch": [
-          "Whether the CAC 40 stabilizes in upcoming sessions"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "France stocks lower at close of trade; CAC 40 down 0.34%",
-            "url": "https://www.investing.com/news/stock-market-news/france-stocks-lower-at-close-of-trade-cac-40-down-034-4902265",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-09-15T23:05:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T23:05:32.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC3B08E_M.jpg",
-        "badge": "Europe",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-40b66222d3",
-        "slug": "belgium-s-bel-20-slips-0-09-at-close",
-        "lane": "markets",
-        "title": "Belgium's BEL 20 Slips 0.09% at Close",
-        "summary": "Belgian stocks edged lower Tuesday, with the BEL 20 index down 0.09% at the close, a modest move in line with other European markets that session.",
-        "whyItMatters": "The BEL 20 is a smaller but useful read on broader eurozone risk appetite.",
-        "whatToWatch": [],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Belgium stocks lower at close of trade; BEL 20 down 0.09%",
-            "url": "https://www.investing.com/news/stock-market-news/belgium-stocks-lower-at-close-of-trade-bel-20-down-009-4902264",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-09-15T23:05:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T23:05:04.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB9M0BY_M.jpg",
-        "badge": "Europe",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-07300ba0cd",
-        "slug": "dow-dives-as-yields-jump-bitcoin-coinbase-fall-ahead-of-clarity-act-vo",
-        "lane": "markets",
-        "title": "Dow Dives as Yields Jump; Bitcoin, Coinbase Fall Ahead of Clarity Act Vote",
-        "summary": "The Dow fell sharply Tuesday as Treasury yields climbed, extending pressure on Wall Street. Bitcoin and Coinbase shares also dropped as investors awaited a vote on the Clarity Act.",
-        "whyItMatters": "Rising yields and pending crypto legislation together add uncertainty for both equity and digital-asset investors this week.",
-        "whatToWatch": [
-          "Outcome of the Clarity Act vote",
-          "Reaction in bitcoin and crypto-linked stocks like Coinbase once the vote result is known"
-        ],
-        "questions": [
-          "What does the Clarity Act propose, and how would passage affect crypto markets?"
-        ],
-        "sources": [
-          {
-            "title": "Stock Market Today: Dow Dives As Yields Jump; Bitcoin, Coinbase Fall Ahead Of Clarity Act Vote (Live Coverage)",
-            "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-treasury-yields-oil-prices-nvidia-stock/?src=A00220&yptr=yahoo",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T15:54:39.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T15:54:39.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/8fb95f11016681c1c55c91576913704b.jpg",
-        "badge": "Breaking",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-97286c31a7",
-        "slug": "dow-s-p-500-nasdaq-fall-as-10-year-treasury-yield-rises",
-        "lane": "markets",
-        "title": "Dow, S&P 500, Nasdaq Fall as 10-Year Treasury Yield Rises",
-        "summary": "US stocks fell Tuesday morning as the 10-year Treasury yield climbed, pressuring the Dow, S&P 500, and Nasdaq. Rising yields typically weigh on equity valuations by raising the discount rate applied to future earnings.",
-        "whyItMatters": "Treasury yields are a key input for stock valuations, and a sustained rise can pressure growth and rate-sensitive shares broadly.",
-        "whatToWatch": [
-          "Where the 10-year yield settles by the close",
-          "Whether the sell-off broadens or stabilizes through the session"
-        ],
-        "questions": [
-          "What is driving the jump in the 10-year yield?"
-        ],
-        "sources": [
-          {
-            "title": "Stock market today: Dow, S&P 500, Nasdaq fall after 10-year Treasury yield rises",
-            "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T08:13:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T08:13:07.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/eKtZh0fgqnxoFLMxnI_UJA--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/2026-09/8f9fca36-b5fe-42ce-8e4b-e11ff00eac2e",
-        "badge": "Rates",
-        "trendScore": 60,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-0f71f41c31",
-        "slug": "offshore-oil-stocks-rally-as-transocean-valaris-w-t-offshore-each-gain",
-        "lane": "markets",
-        "title": "Offshore Oil Stocks Rally as Transocean, Valaris, W&T Offshore Each Gain 6%",
-        "summary": "Offshore drilling stocks rallied Tuesday even as the broader market slipped, with Transocean, Valaris, and W&T Offshore each climbing roughly 6%. The gains stood out against a weaker overall tone for equities that day.",
-        "whyItMatters": "A rally concentrated in offshore drillers against a falling broad market can signal a sentiment shift in oil-and-gas names worth tracking apart from the wider indices.",
-        "whatToWatch": [
-          "Whether the rally in offshore drillers holds or fades",
-          "Any accompanying move in crude oil prices"
-        ],
-        "questions": [
-          "What specifically triggered today's rally in offshore oil names?"
-        ],
-        "sources": [
-          {
-            "title": "Offshore Oil Stocks Rally While the Broad Market Slips: Transocean Climbs 6%, Valaris Rises 6%, W&T Offshore Gains 6%",
-            "url": "https://finance.yahoo.com/energy/articles/offshore-oil-stocks-rally-while-160315565.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T16:03:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T16:03:15.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://media.zenfs.com/en/24_7_wall_st__718/3a04cdf26535799510832ef3dd5f8b09.jpg",
-        "badge": "Energy",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-b618de53b1",
-        "slug": "nvidia-ai-chip-stocks-try-to-stabilize-after-sell-off",
-        "lane": "markets",
-        "title": "Nvidia, AI Chip Stocks Try to Stabilize After Sell-Off",
-        "summary": "Nvidia and other AI-focused chipmakers attempted to steady themselves Tuesday following a recent sell-off in the group. The move came as broader markets also faced pressure from rising Treasury yields.",
-        "whyItMatters": "Nvidia and its AI-chip peers have been a dominant driver of market gains, so their stability or further weakness carries outsized weight for major indices.",
-        "whatToWatch": [
-          "Whether AI chip stocks hold their footing or resume declines",
-          "Nvidia's price action relative to the broader Nasdaq"
-        ],
-        "questions": [
-          "What originally triggered the sell-off in AI chip stocks?"
-        ],
-        "sources": [
-          {
-            "title": "Nvidia, AI Chip Stocks Look To Stem The Bleeding After Sell-Off",
-            "url": "https://www.investors.com/news/technology/chip-stocks-nvidia-seek-rebound-after-ai-sell-off/?src=A00220&yptr=yahoo",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T15:59:59.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T15:59:59.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://media.zenfs.com/en/ibd.com/b3666ec40b8b8e586ef06d5f02c1488b.jpg",
-        "badge": "Tech",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-6eb0f83df4",
-        "slug": "smartphone-chip-stocks-rally-as-skyworks-jumps-11-qorvo-7-qualcomm-4",
-        "lane": "markets",
-        "title": "Smartphone Chip Stocks Rally as Skyworks Jumps 11%, Qorvo 7%, Qualcomm 4%",
-        "summary": "Smartphone-focused chipmakers rallied Tuesday even as large-cap technology stocks broadly slipped. Skyworks jumped 11%, Qorvo rose 7%, and Qualcomm climbed 4%.",
-        "whyItMatters": "The divergence suggests investors are rotating within semiconductors, favoring smartphone-chip suppliers over broader tech and AI names that day.",
-        "whatToWatch": [
-          "Whether the rally in smartphone chip names extends into subsequent sessions",
-          "Any read-through to upcoming smartphone-cycle or earnings commentary"
-        ],
-        "questions": [
-          "What specifically is driving renewed interest in smartphone chip suppliers?"
-        ],
-        "sources": [
-          {
-            "title": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips: Skyworks Jumps 11%, Qorvo Rises 7%, Qualcomm Climbs 4%",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/smartphone-chip-stocks-rally-while-155513376.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T15:55:13.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T15:55:13.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://media.zenfs.com/en/24_7_wall_st__718/c0a7df0d7d2069c8012a8c35cdd2b5b2.jpg",
-        "badge": "Tech",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-50419fad89",
-        "slug": "gold-opens-at-lowest-level-in-weeks-as-treasury-yields-keep-rising",
-        "lane": "markets",
-        "title": "Gold Opens at Lowest Level in Weeks as Treasury Yields Keep Rising",
-        "summary": "Gold prices opened at their lowest level in weeks on Tuesday, pressured by a continued rise in Treasury yields. Higher yields tend to make non-yielding assets like gold less attractive to investors.",
-        "whyItMatters": "Gold's pullback alongside rising yields reflects the same rate dynamics hitting equities, and is a read on investor risk and inflation expectations.",
-        "whatToWatch": [
-          "Whether gold stabilizes or falls further if yields keep climbing",
-          "Direction of the 10-year Treasury yield in coming sessions"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Gold prices today, Tuesday, September 15, 2026: Gold sees lowest open in weeks as Treasury yields keep rising",
-            "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-tuesday-september-15-2026-gold-sees-lowest-open-in-weeks-as-treasury-yields-keep-rising-111454530.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T11:14:54.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T11:14:54.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/xs7mrxGI84M.xOkOI_ISMg--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/tuesday.png",
-        "badge": "Rates",
-        "trendScore": 53,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-df96ffb166",
-        "slug": "truist-reiterates-buy-on-rapport-therapeutics-ahead-of-data",
-        "lane": "markets",
-        "title": "Truist Reiterates Buy on Rapport Therapeutics Ahead of Data",
-        "summary": "Truist reiterated its Buy rating on Rapport Therapeutics stock ahead of upcoming data from the company. No further detail on the rating rationale or the pending data readout was provided.",
-        "whyItMatters": "Analyst calls made ahead of clinical data readouts can move biotech shares sharply once results are announced.",
-        "whatToWatch": [
-          "Release of the pending data from Rapport Therapeutics",
-          "Stock reaction once results are disclosed"
-        ],
-        "questions": [
-          "What specific trial or data readout is Truist anticipating?"
-        ],
-        "sources": [
-          {
-            "title": "Truist reiterates Buy on Rapport Therapeutics stock ahead of data",
-            "url": "https://www.investing.com/news/analyst-ratings/truist-reiterates-buy-on-rapport-therapeutics-stock-ahead-of-data-93CH-4902261",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-09-15T23:02:48.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-09-15T23:02:48.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0WG_1200_L.jpg",
-        "badge": "Analyst Call",
+        "publishedAt": "2026-09-16T04:53:17.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Buyback",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-e4d4346fcf",
-        "slug": "warren-buffett-bought-alphabet-a-year-ago-here-s-why-it-s-still-a-buy",
+        "id": "markets-2f42bae6c3",
+        "slug": "nvidia-ceo-to-attend-trump-dinner-for-xi-source-says",
         "lane": "markets",
-        "title": "Warren Buffett Bought Alphabet a Year Ago. Here's Why It's Still a Buy",
-        "summary": "About a year after Warren Buffett's Berkshire Hathaway took a stake in Alphabet, a new analysis lays out three reasons the stock still looks attractive today. The piece revisits the original investment case alongside more recent developments.",
-        "whyItMatters": "Berkshire Hathaway's moves are closely watched by investors as a signal of long-term value opportunities in large-cap tech.",
+        "title": "Nvidia CEO to attend Trump dinner for Xi, source says",
+        "summary": "Nvidia CEO Jensen Huang is expected to attend a dinner hosted by President Trump for Chinese President Xi Jinping, a source told Investing.com. The report did not give a date or agenda for the dinner.",
+        "whyItMatters": "Nvidia's business is highly exposed to US-China trade and chip-export policy, so contact between the two governments draws close investor attention.",
         "whatToWatch": [
-          "Any update on Berkshire's Alphabet stake in future 13F filings"
+          "Confirmation of the dinner date and full guest list",
+          "Any statements on chip export policy after the meeting"
         ],
         "questions": [
-          "Has Berkshire added to or trimmed its Alphabet position since the initial purchase?"
+          "When is the dinner scheduled?",
+          "Will chip export controls be part of the discussion?"
         ],
         "sources": [
           {
-            "title": "Warren Buffett Bought Alphabet Stock About a Year Ago. 3 Reasons It’s Still a Buy Today",
-            "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffett-bought-alphabet-stock-160501682.html",
-            "publisher": "Yahoo Finance",
-            "publishedAt": "2026-09-15T16:05:01.000Z"
+            "title": "Nvidia CEO to attend Trump dinner for Xi, source says",
+            "url": "https://www.investing.com/news/stock-market-news/nvidia-ceo-to-attend-trump-dinner-for-xi-source-says-4902711",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:55:13.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-09-15T16:05:01.000Z",
-        "updatedAt": "2026-09-15T16:19:58.962Z",
-        "imageUrl": "https://media.zenfs.com/en/motleyfool.com/9855cb3bce9e82fb64b74a91c4665990.png",
+        "publishedAt": "2026-09-16T04:55:13.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM8E23A_L.jpg",
+        "badge": "Geopolitics",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-b8b76b0387",
+        "slug": "bitcoin-falls-nearly-4-after-clarity-act-fails-senate-vote",
+        "lane": "markets",
+        "title": "Bitcoin falls nearly 4% after Clarity Act fails Senate vote",
+        "summary": "Bitcoin extended its losses, dropping nearly 4%, after the Clarity Act failed a Senate vote, Investing.com reported. The bill was a piece of crypto market-structure legislation that investors had been tracking.",
+        "whyItMatters": "Crypto markets had priced in hope for clearer US rules, so the failed vote adds to regulatory uncertainty for bitcoin and related assets.",
+        "whatToWatch": [
+          "Whether the Clarity Act is reintroduced or amended",
+          "Bitcoin's price action in the days after the vote"
+        ],
+        "questions": [
+          "Why did the Clarity Act fail to pass?",
+          "What is the next step in Congress on crypto market-structure rules?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin adds to losses, falls nearly 4% after Clarity Act fails Senate vote",
+            "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-steadies-at-774k-with-focus-on-clarity-vote-fed-meeting-4900866",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:49:19.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:49:19.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEI5D0BS_L.jpg",
+        "badge": "Crypto",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-676a25b5a7",
+        "slug": "enova-international-subsidiary-launches-500-million-asset-backed-notes",
+        "lane": "markets",
+        "title": "Enova International subsidiary launches $500 million asset-backed notes offering",
+        "summary": "A subsidiary of Enova International announced a $500 million asset-backed notes offering, Investing.com reported. The report did not disclose pricing, maturity, or use-of-proceeds details.",
+        "whyItMatters": "The offering shows Enova continuing to use securitization markets to fund its consumer and small-business lending.",
+        "whatToWatch": [
+          "Pricing and final terms of the notes once set",
+          "Disclosed use of proceeds"
+        ],
+        "questions": [
+          "What will the proceeds be used for?",
+          "What are the notes' maturities and coupon rates?"
+        ],
+        "sources": [
+          {
+            "title": "Enova International subsidiary announces $500 million asset-backed notes offering",
+            "url": "https://www.investing.com/news/sec-filings/enova-international-subsidiary-announces-500-million-assetbacked-notes-offering-93CH-4902710",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:48:56.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:48:56.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4416N_1200_L.jpg",
+        "badge": "Debt",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-8ba0f3a340",
+        "slug": "northrop-grumman-wins-34-4-million-navy-contract-modification",
+        "lane": "markets",
+        "title": "Northrop Grumman wins $34.4 million Navy contract modification",
+        "summary": "Northrop Grumman was awarded a $34.4 million modification to an existing Navy contract, Investing.com reported. The report did not specify which program or scope of work the modification covers.",
+        "whyItMatters": "Defense contract awards are a steady revenue source for Northrop Grumman and a signal of Navy procurement activity.",
+        "whatToWatch": [
+          "Details on which program the modification covers",
+          "Any follow-on awards tied to the same contract"
+        ],
+        "questions": [
+          "What specific program does this modification cover?",
+          "When is the work expected to be completed?"
+        ],
+        "sources": [
+          {
+            "title": "Northrop Grumman wins $34.4 million Navy contract modification",
+            "url": "https://www.investing.com/news/stock-market-news/northrop-grumman-wins-344-million-navy-contract-modification-93CH-4902709",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:47:02.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:47:02.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
+        "badge": "Defense",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-9ec5bdc8bc",
+        "slug": "ipower-completes-additional-3-million-closing-of-convertible-notes-fac",
+        "lane": "markets",
+        "title": "iPower completes additional $3 million closing of convertible notes facility",
+        "summary": "iPower completed an additional $3 million closing under its convertible notes facility, Investing.com reported. No further terms of the notes were disclosed.",
+        "whyItMatters": "The closing gives iPower more capital and shows continued investor participation in its notes facility.",
+        "whatToWatch": [
+          "Whether further closings under the facility follow",
+          "How the proceeds are used"
+        ],
+        "questions": [
+          "What are the conversion terms of the notes?",
+          "How much capacity remains under the facility?"
+        ],
+        "sources": [
+          {
+            "title": "iPower completes $3 million additional closing of convertible notes facility",
+            "url": "https://www.investing.com/news/sec-filings/ipower-completes-3-million-additional-closing-of-convertible-notes-facility-93CH-4902707",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:43:41.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:43:41.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Financing",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d2c24aaa5c",
+        "slug": "uber-completes-4-5-billion-senior-notes-offering-across-multiple-matur",
+        "lane": "markets",
+        "title": "Uber completes €4.5 billion senior notes offering across multiple maturities",
+        "summary": "Uber completed a €4.5 billion senior notes offering split across multiple maturities, Investing.com reported. The report did not detail tranche sizes, coupons, or intended use of proceeds.",
+        "whyItMatters": "A debt raise of this size shows Uber's continued access to European credit markets and could refinance existing debt or fund operations.",
+        "whatToWatch": [
+          "Disclosed use of proceeds",
+          "Coupon rates and maturity dates for each tranche"
+        ],
+        "questions": [
+          "What will Uber use the proceeds for?",
+          "How does this offering change Uber's overall debt maturity profile?"
+        ],
+        "sources": [
+          {
+            "title": "Uber completes €4.5 billion senior notes offering across multiple maturities",
+            "url": "https://www.investing.com/news/sec-filings/uber-completes-45-billion-senior-notes-offering-across-multiple-maturities-93CH-4902700",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:39:35.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:39:35.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEA6N0AC_M.jpg",
+        "badge": "Debt",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-92aa6a52ce",
+        "slug": "burnham-and-trump-to-hold-first-face-to-face-meeting-in-new-york-the-t",
+        "lane": "markets",
+        "title": "Burnham and Trump to hold first face-to-face meeting in New York, The Times reports",
+        "summary": "Burnham and Trump are set to hold their first face-to-face meeting, in New York, according to a report from The Times relayed by Investing.com. No date or agenda beyond the location was given.",
+        "whyItMatters": "High-level political meetings involving Trump can move markets when trade, tariffs, or foreign policy are on the agenda.",
+        "whatToWatch": [
+          "Confirmation of the meeting date",
+          "Any readout on the topics discussed"
+        ],
+        "questions": [
+          "What is the meeting's agenda?",
+          "When exactly will the meeting take place?"
+        ],
+        "sources": [
+          {
+            "title": "Burnham and Trump to hold first face-to-face meeting in New York - The Times",
+            "url": "https://www.investing.com/news/economy-news/burnham-and-trump-to-hold-first-facetoface-meeting-in-new-york--the-times-4902699",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:37:57.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:37:57.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM6J17K_1200_L.jpg",
+        "badge": "Diplomacy",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d528914d4f",
+        "slug": "lifeward-sets-date-for-2026-annual-and-extraordinary-shareholder-meeti",
+        "lane": "markets",
+        "title": "Lifeward sets date for 2026 annual and extraordinary shareholder meeting",
+        "summary": "Lifeward announced the date for its 2026 annual and extraordinary shareholder meeting, Investing.com reported. The specific date and the matters up for vote were not included in the report.",
+        "whyItMatters": "Shareholder meetings can include votes on board seats, executive pay, or corporate actions that affect the stock.",
+        "whatToWatch": [
+          "The confirmed meeting date and record date",
+          "Proxy materials outlining items up for vote"
+        ],
+        "questions": [
+          "What matters will be voted on at the meeting?",
+          "What prompted the extraordinary meeting alongside the annual one?"
+        ],
+        "sources": [
+          {
+            "title": "Lifeward sets date for 2026 annual and extraordinary shareholder meeting",
+            "url": "https://www.investing.com/news/sec-filings/lifeward-sets-date-for-2026-annual-and-extraordinary-shareholder-meeting-93CH-4902698",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-09-16T04:36:10.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-16T04:36:10.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
+        "badge": "Corporate",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d46189a148",
+        "slug": "how-a-costco-partner-s-bankruptcy-could-benefit-its-biggest-rival",
+        "lane": "markets",
+        "title": "How a Costco partner's bankruptcy could benefit its biggest rival",
+        "summary": "A Costco business partner has filed for bankruptcy, and Yahoo Finance reports the situation could open an opportunity for a major rival to pick up business. The report's title does not name the partner or the rival.",
+        "whyItMatters": "Shifts in Costco's partner relationships can ripple into supplier and competitor dynamics across retail.",
+        "whatToWatch": [
+          "Which rival stands to benefit",
+          "Any statement from Costco on the partner relationship"
+        ],
+        "questions": [
+          "Which Costco partner filed for bankruptcy?",
+          "Which rival is positioned to benefit?"
+        ],
+        "sources": [
+          {
+            "title": "How a Costco partner's bankruptcy could benefit its biggest rival",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/costco-partners-bankruptcy-could-benefit-133300901.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-09-15T13:33:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-15T13:33:00.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://media.zenfs.com/en/thestreet_881/aace976b2a13fb43e041b67d14219cd6.jpg",
         "badge": "Analysis",
-        "trendScore": 52,
+        "trendScore": 40,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-36e87e0845",
+        "slug": "chip-stocks-fall-as-oil-prices-rise-and-treasury-yields-stay-elevated",
+        "lane": "markets",
+        "title": "Chip stocks fall as oil prices rise and Treasury yields stay elevated",
+        "summary": "Chip stocks declined as oil prices gained and Treasury yields stayed elevated, according to Yahoo Finance's AlphaCheck. Higher yields and energy costs weighed on sentiment toward the semiconductor sector.",
+        "whyItMatters": "Chipmakers are rate-sensitive growth stocks, so rising yields and energy costs can pressure their valuations.",
+        "whatToWatch": [
+          "Direction of Treasury yields in coming sessions",
+          "Oil price trends and their effect on broader risk sentiment"
+        ],
+        "questions": [
+          "Which chip stocks led the decline?",
+          "How much did oil prices rise?"
+        ],
+        "sources": [
+          {
+            "title": "Chip stocks fall as oil prices gain, Treasury yields stay elevated: AlphaCheck",
+            "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-oil-prices-gain-treasury-yields-stay-elevated-alphacheck-134519544.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-09-14T13:45:19.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-14T13:45:19.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://s.yimg.com/uu/api/res/1.2/2yOxo7xWaqWtMHSxZozrJw--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/2026-09/a40370e4-cac3-46da-8827-0106f9c4047f",
+        "badge": "Markets",
+        "trendScore": 40,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-6454d9415e",
+        "slug": "nasdaq-s-p-500-fall-as-10-year-treasury-yield-hits-highest-level-since",
+        "lane": "markets",
+        "title": "Nasdaq, S&P 500 fall as 10-year Treasury yield hits highest level since 2023",
+        "summary": "The Nasdaq and S&P 500 fell on September 14, 2026, as the 10-year Treasury yield climbed to its highest level since 2023, Yahoo Finance reported. Rising oil prices and tensions tied to the AI sector also weighed on stocks.",
+        "whyItMatters": "A multi-year high in the 10-year yield raises borrowing costs economy-wide and pressures growth stock valuations, including AI-linked names.",
+        "whatToWatch": [
+          "Whether the 10-year yield keeps climbing",
+          "Oil price direction and any easing in AI-sector tensions"
+        ],
+        "questions": [
+          "What is driving the rise in the 10-year yield?",
+          "What specific AI tensions are referenced in the report?"
+        ],
+        "sources": [
+          {
+            "title": "Stock Market Today (Sept. 14, 2026): Nasdaq, S&P 500 falls as 10Y Treasury yield hits highest since 2023ising oil, AI tensions",
+            "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-14-133832281.html",
+            "publisher": "Yahoo Finance",
+            "publishedAt": "2026-09-14T13:38:32.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-09-14T13:38:32.000Z",
+        "updatedAt": "2026-09-15T22:23:52.017Z",
+        "imageUrl": "https://media.zenfs.com/en/thestreet_881/75ef62828f969b61d995645f07e36084.jpg",
+        "badge": "Markets",
+        "trendScore": 40,
         "confidence": "low"
       }
     ],
