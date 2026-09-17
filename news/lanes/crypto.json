@@ -1,68 +1,108 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-09-16T22:42:30.539Z",
-  "contentVersion": 98,
+  "generatedAt": "2026-09-17T05:41:46.902Z",
+  "contentVersion": 99,
   "stories": [
     {
-      "id": "crypto-3e3671b2a8",
-      "slug": "bitcoin-etfs-post-worst-day-since-june-after-clarity-act-vote-fails",
+      "id": "crypto-8a12c166f7",
+      "slug": "circle-launches-arc-mainnet-with-usdc-as-native-gas-token",
       "lane": "crypto",
-      "title": "Bitcoin ETFs post worst day since June after Clarity Act vote fails",
-      "summary": "US spot Bitcoin ETFs had their worst trading day since June, according to Decrypt, after the Clarity Act failed to pass a vote in Congress. The Act would have set clearer rules for digital assets. The failed vote appears to have shaken investor confidence in the near term.",
-      "whyItMatters": "Regulatory clarity has helped drive institutional ETF demand, so a stalled bill raises uncertainty for allocators watching this market.",
+      "title": "Circle launches Arc mainnet with USDC as native gas token",
+      "summary": "Circle has opened the mainnet for Arc, a new network that uses USDC as its native gas token instead of a separate protocol coin. The launch is Circle's push to make USDC the settlement layer for a chain it controls, rather than just an asset that runs on other networks.",
+      "whyItMatters": "A stablecoin issuer running its own settlement chain is a structural bet on USDC's future role, and it puts Circle in more direct competition with general-purpose chains.",
       "whatToWatch": [
-        "Next steps for the Clarity Act in Congress",
-        "Bitcoin ETF flow data over the coming days"
+        "Early transaction volume and validator or node participation on Arc",
+        "Whether other issuers or apps build on Arc versus rival chains"
       ],
       "questions": [
-        "What exactly caused the vote to fail?",
-        "Will lawmakers bring a revised bill back for another vote?"
+        "Who is actually running validators or sequencing on Arc, and how decentralized is it at launch?"
       ],
       "sources": [
         {
-          "title": "Bitcoin ETFs Had Their Worst Day Since June Following Failed Clarity Act Vote",
-          "url": "https://decrypt.co/378382/bitcoin-etfs-clarity-act-vote",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-09-16T15:50:07.000Z"
+          "title": "Circle opens Arc mainnet as it seeks an edge for USDC utility",
+          "url": "https://cryptoslate.com/circle-opens-arc-mainnet-as-it-seeks-an-edge-for-usdc-utility/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-17T01:50:26.000Z"
+        },
+        {
+          "title": "Circle launches Arc mainnet with USDC as native gas token",
+          "url": "https://cointelegraph.com/news/circle-arc-mainnet-launch-usdc-native-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-16T11:39:44.000Z"
+        }
+      ],
+      "sourceCount": 2,
+      "publishedAt": "2026-09-16T11:39:44.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MYP3FVRTZGH6TV5Y41301B/rocket-without-logo.png",
+      "badge": "Product",
+      "trendScore": 71,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-f50fd2359f",
+      "slug": "ethereum-s-client-diversity-estimates-diverge-muddying-a-key-safety-me",
+      "lane": "crypto",
+      "title": "Ethereum's client diversity estimates diverge, muddying a key safety metric",
+      "summary": "Reports on Ethereum's client diversity, a measure of how evenly the network relies on different software clients, are now producing incompatible estimates depending on methodology. Client diversity matters because if one client dominates and has a bug, it can threaten the whole network.",
+      "whyItMatters": "Ethereum's resilience depends partly on no single client being a point of failure, so disagreement over how to even measure that is a governance and monitoring problem, not just a statistics quibble.",
+      "whatToWatch": [
+        "Whether core developers converge on a standard measurement method",
+        "Any push for client teams or stakers to rebalance toward minority clients"
+      ],
+      "questions": [
+        "Which measurement is closer to reality, and does the discrepancy change the actual risk picture?"
+      ],
+      "sources": [
+        {
+          "title": "Ethereum’s client diversity picture fractures under incompatible estimates",
+          "url": "https://cryptoslate.com/ethereums-client-diversity-picture-fractures-under-incompatible-estimates/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-17T03:30:37.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-16T15:50:07.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/ETF2-gID_7.png@png",
-      "badge": "Regulatory",
-      "trendScore": 61,
+      "publishedAt": "2026-09-17T03:30:37.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/brave_yU2ZX1xZdq.jpg",
+      "badge": "Technical",
+      "trendScore": 55,
       "confidence": "low"
     },
     {
-      "id": "crypto-93580fd541",
-      "slug": "deutsche-bank-awaits-regulatory-approval-for-crypto-custody-launch",
+      "id": "crypto-4c19bf682a",
+      "slug": "ecb-seeks-online-merchants-for-2027-digital-euro-pilot",
       "lane": "crypto",
-      "title": "Deutsche Bank awaits regulatory approval for institutional crypto custody",
-      "summary": "Deutsche Bank is waiting for regulatory sign-off before it can launch crypto custody services for institutional clients, according to Cointelegraph. The report does not specify a timeline or which regulator must approve the plan.",
-      "whyItMatters": "A major global bank entering crypto custody signals growing mainstream institutional interest in digital asset services.",
+      "title": "ECB seeks online merchants for 2027 digital euro pilot",
+      "summary": "The European Central Bank has opened applications for online merchants to join a controlled pilot of the digital euro ahead of a planned 2027 rollout. The pilot is described as controlled, suggesting a limited scope rather than a broad public launch.",
+      "whyItMatters": "A digital euro would be a state-backed alternative to stablecoins and card networks for everyday payments, directly shaping the competitive landscape crypto payment projects operate in.",
       "whatToWatch": [
-        "Confirmation of regulatory approval",
-        "A formal launch announcement from Deutsche Bank"
+        "Which merchants and countries are selected for the pilot",
+        "Further ECB timeline updates ahead of the 2027 target"
       ],
       "questions": [
-        "Which regulator needs to approve the service?",
-        "Which assets will the custody offering cover?"
+        "How will the digital euro be positioned against existing euro-denominated stablecoins?"
       ],
       "sources": [
         {
-          "title": "Deutsche Bank awaits regulatory nod to launch institutional crypto custody solutions",
-          "url": "https://cointelegraph.com/news/deutsche-bank-regulatory-nod-institutional-crypto-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "title": "ECB opens merchant applications for controlled 2027 digital euro pilot",
+          "url": "https://cryptoslate.com/ecb-opens-merchant-applications-for-controlled-2027-digital-euro-pilot/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-17T00:20:31.000Z"
+        },
+        {
+          "title": "ECB seeks online merchants for 2027 digital euro pilot",
+          "url": "https://cointelegraph.com/news/ecb-online-merchants-2027-digital-euro-pilot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-16T10:33:12.000Z"
+          "publishedAt": "2026-09-16T08:36:44.000Z"
         }
       ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T10:33:12.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MVFM6AWTS8K6F6MEKXPCY1/hi-world-bank-initiatives-deutsche-bundesbank-blockchain.jpg",
-      "badge": "Institutional",
-      "trendScore": 61,
+      "sourceCount": 2,
+      "publishedAt": "2026-09-16T08:36:44.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MM52JKJD0W2B0RMKWYF0RK/euro-pilot.png",
+      "badge": "Regulatory",
+      "trendScore": 55,
       "confidence": "medium"
     },
     {
@@ -70,15 +110,14 @@
       "slug": "anchorage-digital-adds-etherlink-and-tokenized-uranium-to-custody-line",
       "lane": "crypto",
       "title": "Anchorage expands institutional custody to Etherlink and tokenized uranium",
-      "summary": "Anchorage Digital has added Etherlink and tokenized uranium to its institutional custody offerings, according to Cointelegraph. This extends the firm's custody business beyond mainstream crypto assets into newer tokenized products.",
-      "whyItMatters": "Custody providers moving into tokenized real-world assets points to growing institutional interest beyond standard crypto tokens.",
+      "summary": "Crypto custodian Anchorage Digital has added support for assets on the Etherlink network as well as tokenized uranium, broadening the range of institutional clients it can serve. The move extends Anchorage's custody business beyond mainstream tokens into more niche and real-world-asset categories.",
+      "whyItMatters": "Custody support for unusual tokenized assets like uranium signals institutional interest in real-world-asset tokenization is broadening beyond commodities like gold.",
       "whatToWatch": [
-        "Client adoption of the new custody products",
-        "Growth of the Etherlink ecosystem"
+        "Client uptake of the new Etherlink and tokenized uranium offerings",
+        "Whether other custodians follow with similar real-world-asset support"
       ],
       "questions": [
-        "Who are the initial clients for these offerings?",
-        "How is the tokenized uranium backed and verified?"
+        "Who is issuing the tokenized uranium, and what backs it physically?"
       ],
       "sources": [
         {
@@ -90,26 +129,181 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-16T16:03:35.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2NDB0Z3PMHZBGW6VE69Z32A/coin-crypto-silver.png",
       "badge": "Institutional",
-      "trendScore": 60,
+      "trendScore": 55,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-3e3671b2a8",
+      "slug": "bitcoin-etfs-post-worst-day-since-june-after-clarity-act-vote-fails",
+      "lane": "crypto",
+      "title": "Bitcoin ETFs post worst day since June after Clarity Act vote fails",
+      "summary": "US spot Bitcoin ETFs suffered their worst single day since June, following a failed vote on the Clarity Act, a crypto market-structure bill. The setback in Congress appears to have driven a sharp negative reaction in ETF flows or pricing.",
+      "whyItMatters": "Spot ETFs are now a primary channel for institutional Bitcoin exposure, so regulatory setbacks that hit ETF flows are a direct read on how much legislative uncertainty weighs on institutional demand.",
+      "whatToWatch": [
+        "Whether ETF outflows continue or reverse in coming days",
+        "Any rescheduled vote or amended version of the Clarity Act"
+      ],
+      "questions": [
+        "Was the reaction driven by the vote itself or by broader market conditions on the same day?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETFs Had Their Worst Day Since June Following Failed Clarity Act Vote",
+          "url": "https://decrypt.co/378382/bitcoin-etfs-clarity-act-vote",
+          "publisher": "Decrypt",
+          "publishedAt": "2026-09-16T15:50:07.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-16T15:50:07.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/06/ETF2-gID_7.png@png",
+      "badge": "Markets",
+      "trendScore": 55,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-93580fd541",
+      "slug": "deutsche-bank-awaits-regulatory-approval-for-crypto-custody-launch",
+      "lane": "crypto",
+      "title": "Deutsche Bank still awaiting regulatory approval for crypto custody launch",
+      "summary": "Deutsche Bank is reportedly waiting on regulatory sign-off before it can launch institutional crypto custody services. No specific timeline for approval was given.",
+      "whyItMatters": "A major global bank entering crypto custody would be a signal of mainstream institutional acceptance, and the regulatory holdup shows how much banks still depend on supervisors' pace on digital assets.",
+      "whatToWatch": [
+        "Confirmation of which regulator's approval is pending",
+        "An announced launch date once approval comes through"
+      ],
+      "questions": [
+        "Which specific licensing or supervisory hurdle is holding up the launch?"
+      ],
+      "sources": [
+        {
+          "title": "Deutsche Bank awaits regulatory nod to launch institutional crypto custody solutions",
+          "url": "https://cointelegraph.com/news/deutsche-bank-regulatory-nod-institutional-crypto-custody?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-16T10:33:12.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-16T10:33:12.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MVFM6AWTS8K6F6MEKXPCY1/hi-world-bank-initiatives-deutsche-bundesbank-blockchain.jpg",
+      "badge": "Institutional",
+      "trendScore": 55,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-16e22ba623",
+      "slug": "bitcoin-absorbs-fed-rate-hike-as-officials-signal-more-tightening-ahea",
+      "lane": "crypto",
+      "title": "Bitcoin absorbs Fed rate hike as officials signal more tightening ahead",
+      "summary": "Bitcoin had been trading below $76,000 while markets awaited the Federal Reserve's rate decision, with analysts downplaying chances of a dovish surprise. The Fed went on to raise rates, and Bitcoin's price held up despite officials signaling further tightening could follow.",
+      "whyItMatters": "Bitcoin's price has grown increasingly tied to Fed policy expectations, so a rate hike that doesn't trigger a selloff suggests the market had already priced in tighter conditions.",
+      "whatToWatch": [
+        "Bitcoin's price trajectory in the days following the hike",
+        "Fed commentary or data hinting at the timing of any further tightening"
+      ],
+      "questions": [
+        "How much of Bitcoin's resilience reflects genuine demand versus the move already being priced in?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin absorbs Fed rate hike as officials see more tightening",
+          "url": "https://cointelegraph.com/markets/bitcoin-absorbs-fed-rate-hike-as-officials-see-more-tightening?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-17T02:52:08.000Z"
+        },
+        {
+          "title": "Bitcoin awaits Fed rate decision below $76K as analysis discounts ‘dovish surprise’ odds",
+          "url": "https://cointelegraph.com/markets/bitcoin-awaits-fed-rate-decision-below-76k-as-analysis-discounts-dovish-surprise-odds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-16T15:30:49.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-16T15:30:49.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2PM955XFQTW2Q74Q14WCFR2/fed.jpg",
+      "badge": "Markets",
+      "trendScore": 54,
+      "confidence": "medium"
+    },
+    {
+      "id": "crypto-a075e67129",
+      "slug": "avalanche-s-helicon-upgrade-slashes-validator-lockup-from-14-days-to-4",
+      "lane": "crypto",
+      "title": "Avalanche's Helicon upgrade slashes validator lockup from 14 days to 48 hours",
+      "summary": "Avalanche has rolled out its Helicon upgrade, cutting the time validators must wait to unlock their staked tokens from 14 days down to 48 hours. Shorter lockups make it faster for validators to exit or reallocate stake.",
+      "whyItMatters": "Faster unbonding lowers the opportunity cost of staking and could make Avalanche more attractive to validators and delegators compared with chains that impose longer lockups.",
+      "whatToWatch": [
+        "Any change in validator participation or churn following the shorter lockup",
+        "Whether faster unbonding introduces new security or stability tradeoffs"
+      ],
+      "questions": [
+        "Does the shorter lockup weaken the economic deterrent against validator misbehavior?"
+      ],
+      "sources": [
+        {
+          "title": "Avalanche’s Helicon upgrade cuts validator lockups from 14 days to 48 hours",
+          "url": "https://cryptoslate.com/avalanches-helicon-upgrade-cuts-validator-lockups-from-14-days-to-48-hours/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-09-17T05:40:12.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-17T05:40:12.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/avalanche-helicon-validator-loop-standard-image.jpg",
+      "badge": "Technical",
+      "trendScore": 52,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-b5884f4b7c",
+      "slug": "us-lawmakers-advance-bill-to-codify-trump-s-bitcoin-reserve",
+      "lane": "crypto",
+      "title": "US lawmakers advance bill to codify Trump's Bitcoin reserve",
+      "summary": "US lawmakers have moved forward a bill that would lock the Trump administration's Bitcoin reserve into law. The move would give a strategic Bitcoin reserve, previously set up by executive action, a firmer legal foundation.",
+      "whyItMatters": "Codifying a national Bitcoin reserve in statute rather than executive order would make it far harder for a future administration to unwind, a significant marker of state-level crypto adoption.",
+      "whatToWatch": [
+        "Further committee or floor votes needed to advance the bill",
+        "Details on reserve size, custody, and any acquisition plans"
+      ],
+      "questions": [
+        "What happens to the reserve if the bill stalls or a future Congress opposes it?"
+      ],
+      "sources": [
+        {
+          "title": "US lawmakers advance bill to lock Trump’s Bitcoin reserve into law",
+          "url": "https://cointelegraph.com/news/us-bitcoin-reserve-bill-passes-house-committee?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publisher": "Cointelegraph",
+          "publishedAt": "2026-09-17T00:23:44.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-17T00:23:44.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2PBVVSYAZJ83B7SZQBHEASY/bitcoin-3.jpg",
+      "badge": "Regulatory",
+      "trendScore": 52,
       "confidence": "medium"
     },
     {
       "id": "crypto-b789fcfb2b",
       "slug": "house-tax-committee-advances-crypto-tax-overhaul-in-38-5-vote",
       "lane": "crypto",
-      "title": "House tax committee advances crypto tax overhaul in 38-5 vote",
-      "summary": "The US House tax committee voted 38-5 to advance a crypto tax overhaul, according to Cointelegraph. The report does not detail the specific provisions of the bill.",
-      "whyItMatters": "Changes to crypto tax rules would directly affect how US holders and traders report transactions and calculate what they owe.",
+      "title": "US House tax committee advances crypto tax overhaul in 38-5 vote",
+      "summary": "The US House tax committee voted 38-5 to advance a bill overhauling crypto tax rules. The lopsided vote suggests broad bipartisan support at the committee stage.",
+      "whyItMatters": "Clearer, more favorable crypto tax rules would remove a longstanding compliance headache for traders and businesses, making this a concrete step toward regulatory clarity beyond market-structure debates.",
       "whatToWatch": [
-        "A full House vote on the bill",
-        "Senate consideration of the measure"
+        "Scheduling of a full House vote on the bill",
+        "Specific provisions in the overhaul, such as treatment of staking or small transactions"
       ],
       "questions": [
-        "What specific tax rules would change?",
-        "When would any new rules take effect?"
+        "What specific tax changes does the bill include, and when would they take effect?"
       ],
       "sources": [
         {
@@ -121,118 +315,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-16T18:01:55.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2NKZPXXHGWMSP41E47Q6TRZ/hi-more-irs-crypto-reporting-more-danger.jpg",
       "badge": "Regulatory",
-      "trendScore": 57,
+      "trendScore": 51,
       "confidence": "medium"
-    },
-    {
-      "id": "crypto-8a12c166f7",
-      "slug": "circle-launches-arc-mainnet-with-usdc-as-native-gas-token",
-      "lane": "crypto",
-      "title": "Circle launches Arc mainnet with USDC as native gas token",
-      "summary": "Circle has launched the mainnet for Arc, a blockchain that uses its USDC stablecoin as the native gas token, according to Cointelegraph. This makes USDC the currency used to pay for transactions on the network.",
-      "whyItMatters": "A USDC-gas chain deepens stablecoin utility and could compete with existing blockchains for payments and DeFi activity.",
-      "whatToWatch": [
-        "Early transaction volume on Arc",
-        "Which developers and apps deploy on the network first"
-      ],
-      "questions": [
-        "What consensus mechanism and validators run Arc?",
-        "How does Arc plan to compete with existing settlement chains?"
-      ],
-      "sources": [
-        {
-          "title": "Circle launches Arc mainnet with USDC as native gas token",
-          "url": "https://cointelegraph.com/news/circle-arc-mainnet-launch-usdc-native-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-16T11:39:44.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T11:39:44.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MYP3FVRTZGH6TV5Y41301B/rocket-without-logo.png",
-      "badge": "Product",
-      "trendScore": 57,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-2ca208ec61",
-      "slug": "tonkeeper-rebrands-to-keeper-adds-bitcoin-ethereum-and-tron-support",
-      "lane": "crypto",
-      "title": "Tonkeeper rebrands to Keeper, adds Bitcoin, Ethereum, and Tron support",
-      "summary": "Tonkeeper has renamed itself Keeper and expanded its wallet beyond the TON network to support Bitcoin, Ethereum, and Tron, according to Decrypt.",
-      "whyItMatters": "Multi-chain wallet expansion reflects the ongoing push to offer users one wallet across multiple blockchain ecosystems.",
-      "whatToWatch": [
-        "User adoption of the rebranded app",
-        "Further blockchain integrations"
-      ],
-      "questions": [
-        "Does the rebrand change the wallet's custody or security model?",
-        "Will TON-specific features carry over unchanged?"
-      ],
-      "sources": [
-        {
-          "title": "Tonkeeper Becomes Keeper as Wallet Adds Bitcoin, Ethereum, and Tron",
-          "url": "https://decrypt.co/378265/tonkeeper-keeper-adds-bitcoin-ethereum-tron",
-          "publisher": "Decrypt",
-          "publishedAt": "2026-09-16T09:01:03.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T09:01:03.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2026/05/toncoin-ton-decrypt-style-1-gID_7.jpg@png",
-      "badge": "Product",
-      "trendScore": 56,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-b5f3f9cabd",
-      "slug": "uk-eases-rules-for-stablecoin-payments-while-tightening-crypto-lending",
-      "lane": "crypto",
-      "title": "UK eases rules for stablecoin payments while tightening crypto lending",
-      "summary": "The UK has introduced new rules that create an opening for stablecoin payments while tightening restrictions on crypto lending, according to CryptoSlate. The report does not specify further detail on the exact provisions.",
-      "whyItMatters": "The UK's split approach shows where regulators see the most risk in crypto markets: lending over payments.",
-      "whatToWatch": [
-        "Formal implementation of the new rules",
-        "Industry reaction from stablecoin issuers and lending platforms"
-      ],
-      "questions": [
-        "What exactly is the stablecoin payments opening?",
-        "How will the crypto lending restrictions be enforced?"
-      ],
-      "sources": [
-        {
-          "title": "UK opens a major loophole for stablecoin payments while clamping down on crypto lending",
-          "url": "https://cryptoslate.com/uk-opens-a-major-loophole-for-stablecoin-payments-while-clamping-down-on-crypto-lending/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-16T14:30:12.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T14:30:12.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/stablecoin-dealer-rules-split.webp",
-      "badge": "Regulatory",
-      "trendScore": 55,
-      "confidence": "low"
     },
     {
       "id": "crypto-d8f571d406",
       "slug": "bitcoin-s-coinbase-premium-falls-to-monthly-low-on-clarity-act-vote",
       "lane": "crypto",
-      "title": "Bitcoin's Coinbase Premium hits monthly low as Clarity Act vote weighs on US demand",
-      "summary": "The Coinbase Premium, a gauge of US buying demand for Bitcoin relative to other exchanges, fell to a monthly low, according to Cointelegraph. The report ties the drop to the failed Clarity Act vote squeezing US demand.",
-      "whyItMatters": "A weakening Coinbase Premium suggests US demand is cooling relative to global markets, a signal traders watch closely for price direction.",
+      "title": "Bitcoin's Coinbase Premium hits monthly low as Clarity Act vote squeezes US demand",
+      "summary": "The Coinbase Premium, a gauge of buying demand from US investors relative to other exchanges, fell to its lowest level in a month. The drop coincided with uncertainty around the pending Clarity Act vote in Congress.",
+      "whyItMatters": "A shrinking US buying premium suggests American investors were pulling back ahead of a key regulatory decision, a useful real-time gauge of how legislative risk affects demand.",
       "whatToWatch": [
-        "Whether the premium recovers as regulatory developments unfold",
-        "Near-term Bitcoin price action"
+        "Whether the Coinbase Premium recovers or falls further after the vote outcome",
+        "US-specific trading volume trends in the days ahead"
       ],
       "questions": [
-        "How much of the drop is regulatory versus broader market conditions?"
+        "How much of the premium drop reflects US-specific caution versus a broader global pullback?"
       ],
       "sources": [
         {
@@ -244,133 +345,40 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-16T09:55:16.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
       "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2MT4V83BPCA5X7B3XFWNYE8/hi-crypto-derivatives-are-now-available-how-much-interest-is-there-for-us-coinbase.jpg",
       "badge": "Markets",
-      "trendScore": 55,
+      "trendScore": 50,
       "confidence": "medium"
     },
     {
-      "id": "crypto-fe384c6468",
-      "slug": "solana-triples-transaction-size-limit-amid-upgrades-and-record-activit",
+      "id": "crypto-2ca208ec61",
+      "slug": "tonkeeper-rebrands-to-keeper-adds-bitcoin-ethereum-and-tron-support",
       "lane": "crypto",
-      "title": "Solana triples transaction size limit amid upgrades and record activity",
-      "summary": "Solana has tripled its transaction size limit as part of recent network upgrades, coinciding with record levels of network activity, according to CryptoSlate.",
-      "whyItMatters": "A higher transaction size limit could support more complex on-chain applications as Solana pushes for higher throughput use cases.",
+      "title": "Tonkeeper rebrands to Keeper, adds Bitcoin, Ethereum, and Tron support",
+      "summary": "Tonkeeper, a wallet built primarily for the TON network, has rebranded as Keeper and expanded to support Bitcoin, Ethereum, and Tron. The rebrand accompanies the wallet's shift from a single-chain to a multi-chain product.",
+      "whyItMatters": "A TON-focused wallet broadening to major chains reflects the wider trend of wallets consolidating around multi-chain support rather than staying tied to one ecosystem.",
       "whatToWatch": [
-        "Real-world usage of the larger transaction size",
-        "Any further scaling upgrades to the network"
+        "User adoption of the expanded multi-chain wallet",
+        "Whether further chains get added over time"
       ],
       "questions": [
-        "What specific upgrades enabled the increase?",
-        "Does the change involve tradeoffs for node operators?"
+        "Does the expansion change how the wallet handles security or custody across the different chains?"
       ],
       "sources": [
         {
-          "title": "Solana triples transaction size as major upgrades meet record network activity",
-          "url": "https://cryptoslate.com/solana-triples-transaction-size-as-major-upgrades-meet-record-network-activity/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-16T19:20:50.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T19:20:50.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/solana-data-highway.webp",
-      "badge": "Technical",
-      "trendScore": 54,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-886e7524b3",
-      "slug": "bitcoin-core-update-targets-speed-gains-and-security-patches",
-      "lane": "crypto",
-      "title": "Bitcoin Core update targets speed gains and security patches",
-      "summary": "A new Bitcoin Core software update has been released, aimed at improving speed and patching security issues, according to Decrypt.",
-      "whyItMatters": "Bitcoin Core is the software run by most node operators, so updates to it directly affect network security and performance.",
-      "whatToWatch": [
-        "How quickly node operators adopt the update",
-        "Any follow-up patches or fixes"
-      ],
-      "questions": [
-        "What specific vulnerabilities does the security patch address?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin Core Software Update Aims for Speed and Security Patches",
-          "url": "https://decrypt.co/378430/bitcoin-core-software-october-update",
+          "title": "Tonkeeper Becomes Keeper as Wallet Adds Bitcoin, Ethereum, and Tron",
+          "url": "https://decrypt.co/378265/tonkeeper-keeper-adds-bitcoin-ethereum-tron",
           "publisher": "Decrypt",
-          "publishedAt": "2026-09-16T18:53:48.000Z"
+          "publishedAt": "2026-09-16T09:01:03.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-16T18:53:48.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2025/09/Bitcoin-decrypt-style-24-gID_7.png@png",
-      "badge": "Technical",
-      "trendScore": 54,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-c359884a1d",
-      "slug": "bernstein-sec-and-cftc-likely-to-pursue-aggressive-rulemaking-after-cl",
-      "lane": "crypto",
-      "title": "Bernstein expects aggressive SEC and CFTC rulemaking after Clarity Act failure",
-      "summary": "Bernstein analysts expect the SEC and CFTC to pursue more aggressive rulemaking now that the Clarity Act has failed to pass, according to Cointelegraph.",
-      "whyItMatters": "With the bill stalled in Congress, agency-level rulemaking could become the main path for crypto regulation, shifting where the industry focuses its lobbying.",
-      "whatToWatch": [
-        "Specific rule proposals from the SEC or CFTC",
-        "Industry response to any new agency rules"
-      ],
-      "questions": [
-        "Which rules might each agency prioritize first?",
-        "Could agency rulemaking cover the same ground the Clarity Act aimed to address?"
-      ],
-      "sources": [
-        {
-          "title": "Bernstein expects ‘aggressive’ rulemaking from SEC, CFTC, following CLARITY Act failure",
-          "url": "https://cointelegraph.com/news/bernstein-aggressive-rulemaking-sec-cftc-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publisher": "Cointelegraph",
-          "publishedAt": "2026-09-16T12:36:20.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T12:36:20.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/2026/09/01M2N0MK84B62M60XV8Q5G8MYA/hi-trumps-strategic-reserve-and-clarity-act-1.jpg",
-      "badge": "Analysis",
-      "trendScore": 53,
-      "confidence": "medium"
-    },
-    {
-      "id": "crypto-574e234a89",
-      "slug": "bitcoin-miners-hold-100-billion-in-ai-deals-but-revenue-has-yet-to-sho",
-      "lane": "crypto",
-      "title": "Bitcoin miners hold $100 billion in AI deals, but revenue has yet to show up",
-      "summary": "Bitcoin mining companies have signed roughly $100 billion worth of AI-related deals, but CryptoSlate reports almost none of that revenue has materialized yet.",
-      "whyItMatters": "Miners' pivot to AI data-center hosting is a major bet on diversifying beyond Bitcoin mining economics, and the revenue gap tests whether that bet is paying off.",
-      "whatToWatch": [
-        "Timelines for these AI deals to start generating revenue",
-        "Upcoming miner earnings reports"
-      ],
-      "questions": [
-        "Which miners have the largest exposure to these deals?",
-        "What is causing the delay between signing and revenue?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin miners have amassed $100 billion of AI deals, but almost none of the revenue exists yet",
-          "url": "https://cryptoslate.com/bitcoin-miners-have-amassed-100-billion-of-ai-deals-but-almost-none-of-the-revenue-exists-yet/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-09-16T22:10:35.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-16T22:10:35.000Z",
-      "updatedAt": "2026-09-16T22:42:30.539Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/09/brave_QdBZ08AZNm.jpg",
-      "badge": "Analysis",
-      "trendScore": 52,
+      "publishedAt": "2026-09-16T09:01:03.000Z",
+      "updatedAt": "2026-09-17T05:41:46.902Z",
+      "imageUrl": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2026/05/toncoin-ton-decrypt-style-1-gID_7.jpg@png",
+      "badge": "Product",
+      "trendScore": 50,
       "confidence": "low"
     }
   ]
