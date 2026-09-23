@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-08-29T22:43:29.457Z",
-  "contentVersion": 62,
+  "generatedAt": "2026-09-23T22:15:24.717Z",
+  "contentVersion": 63,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,189 +123,327 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-08-29T22:43:29.457Z"
+      "updatedAt": "2026-09-23T22:15:24.717Z"
     },
     {
-      "id": "ai-0cb38851ba",
-      "slug": "vllm-releases-version-0-28-0",
+      "id": "ai-7cff1964bf",
+      "slug": "ringg-s-ai-voice-agents-resolve-up-to-65-of-customer-calls",
       "lane": "ai",
-      "title": "vLLM Releases Version 0.28.0",
-      "summary": "vLLM, the open-source inference engine used to serve large language models, has published version 0.28.0, according to a post on Hacker News. The supplied source gives only the version number, with no further detail on what changed.",
-      "whyItMatters": "vLLM is widely used infrastructure for running open-weight models efficiently, so its releases matter to teams operating LLMs at scale.",
+      "title": "Ringg's AI voice agents resolve up to 65% of customer calls",
+      "summary": "OpenAI published a customer story about Ringg, a voice AI company. Ringg says its AI agents, built on OpenAI models, now resolve up to 65% of customer service calls without human help. The post is part of OpenAI's ongoing series of customer case studies.",
+      "whyItMatters": "This shows how fast AI voice agents are moving into call-center work, a market OpenAI is targeting hard.",
       "whatToWatch": [
-        "Release notes detailing what changed in 0.28.0",
-        "Whether the update affects compatibility with popular open-weight models"
+        "Independent verification of the 65% resolution figure.",
+        "Similar claims from other voice-AI vendors."
       ],
       "questions": [
-        "What specific features or fixes does 0.28.0 include?",
-        "Does the update need migration steps for existing deployments?"
+        "How does Ringg define a 'resolved' call?",
+        "Does the figure include calls later escalated to a human?"
       ],
       "sources": [
         {
-          "title": "vLLM v0.28.0",
-          "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-29T18:22:00Z"
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "url": "https://openai.com/index/ringg",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T12:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-29T18:22:00Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "imageUrl": "https://opengraph.githubassets.com/4ebc6bdc52e9be13e062849c7d527d88f083515ccff086b45b804e1e708e9324/vllm-project/vllm/releases/tag/v0.28.0",
-      "badge": "Release",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/773XsnwO9QT1z6x55Ku0BG/678970983193f3c32961714f6eb63320/og.png?w=1600&h=900&fit=fill",
+      "badge": "Customer story",
+      "trendScore": 56,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-f7558dc5c9",
+      "slug": "harvey-uses-gpt-6-astra-to-strengthen-legal-drafting",
+      "lane": "ai",
+      "title": "Harvey uses GPT-6 Astra to strengthen legal drafting",
+      "summary": "OpenAI published a customer story about Harvey, a legal AI company. Harvey says GPT-6 Astra helps it bring more legal context into contract and document drafts. The post gives no further detail on accuracy gains or customer scale.",
+      "whyItMatters": "Harvey is one of the most closely watched legal-AI vendors, so its use of OpenAI's newest model shows frontier AI moving deeper into regulated professional work.",
+      "whatToWatch": [
+        "Wider rollout of GPT-6 Astra across Harvey's customer base.",
+        "Responses from competing legal-AI vendors."
+      ],
+      "questions": [
+        "What specific accuracy or error-rate gains come with 'stronger drafts'?"
+      ],
+      "sources": [
+        {
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T12:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1fGwmofg1NcZrX5mgNL2f2/b88c7bf0b4fc2daeff9ec92264b0afcc/og.png?w=1600&h=900&fit=fill",
+      "badge": "Customer story",
       "trendScore": 51,
-      "confidence": "low"
+      "confidence": "medium"
     },
     {
-      "id": "ai-ea1bf4e0ad",
-      "slug": "essay-llms-are-making-me-lose-my-savviness",
+      "id": "ai-7357353a1f",
+      "slug": "invideo-says-gpt-6-astra-triples-its-color-grading-speed",
       "lane": "ai",
-      "title": "Essay: LLMs Are Making Me Lose My Savviness",
-      "summary": "A blog post titled \"LLMs are making me lose my savviness\" is circulating on Hacker News. It reflects on how reliance on AI tools may erode personal skill or judgment, but the supplied source gives only the title and no further detail on the author's specific claims.",
-      "whyItMatters": "The post taps into an ongoing debate about skill atrophy from heavy reliance on AI assistants, a live concern for teams adopting these tools daily.",
-      "whatToWatch": [
-        "Whether the discussion draws wider commentary from AI practitioners",
-        "Follow-up posts responding to the essay's argument"
-      ],
+      "title": "invideo says GPT-6 Astra triples its color-grading speed",
+      "summary": "OpenAI's customer story series features invideo, a video-editing platform. invideo says GPT-6 Astra improved its automated color-grading process threefold. The post does not explain what the 3x figure measures.",
+      "whyItMatters": "It is a small but concrete sign that frontier models are moving into creative production tools, not just chat and text work.",
+      "whatToWatch": [],
       "questions": [
-        "What specific skills or tasks does the author say are affected?",
-        "Is this a personal account or backed by broader evidence?"
+        "Does the 3x gain refer to speed, output quality, or cost?"
       ],
       "sources": [
         {
-          "title": "LLMs are making me lose my savviness",
-          "url": "https://pgaleone.eu/ai/2026/08/29/losing-savviness/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-29T18:38:52Z"
+          "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+          "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T12:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-29T18:38:52Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "imageUrl": "https://pgaleone.eu/images/me.jpeg",
-      "badge": "Analysis",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7u3JLdLZ5U3DIRSRzYmCvQ/3e3b52a6a13808aa7cf360628410f5f7/og.png?w=1600&h=900&fit=fill",
+      "badge": "Customer story",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-01d4e543c9",
+      "slug": "sam-altman-addresses-the-un-security-council",
+      "lane": "ai",
+      "title": "Sam Altman addresses the UN Security Council",
+      "summary": "OpenAI published the text of Sam Altman's remarks to the United Nations Security Council. The source gives no detail on the content of the remarks or the Council's response.",
+      "whyItMatters": "A CEO of a major AI lab addressing the UN's top security body shows how central AI governance has become to international diplomacy.",
+      "whatToWatch": [
+        "Any formal Security Council action or statement on AI following the remarks."
+      ],
+      "questions": [
+        "What did Altman actually propose or request?",
+        "How did Council members respond?"
+      ],
+      "sources": [
+        {
+          "title": "Sam Altman’s remarks at the United Nations Security Council",
+          "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T12:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/MD52BCLFjD4H7Kf1wiCnz/56e1b7f4a0eaa3f90e62d36799987269/sam-altman-s-remarks-at-the-united-nations-security-council-seo.png?w=1600&h=900&fit=fill",
+      "badge": "Policy",
+      "trendScore": 51,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-9d02eeb8ce",
+      "slug": "openai-marks-two-years-of-openai-academy",
+      "lane": "ai",
+      "title": "OpenAI marks two years of OpenAI Academy",
+      "summary": "OpenAI published a retrospective on the second anniversary of OpenAI Academy, its training and education program. The post looks back on the program's history. It does not announce new features or expansions.",
+      "whyItMatters": "It is a reminder of OpenAI's continued push to build AI literacy among developers and users.",
+      "whatToWatch": [],
+      "questions": [
+        "How many people have used OpenAI Academy so far?"
+      ],
+      "sources": [
+        {
+          "title": "Two years of OpenAI Academy",
+          "url": "https://openai.com/index/two-years-of-openai-academy",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T16:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6A4AcxrMdo5oOri7Wm8qNg/34228cf221e3af874539412f71b28a44/two-years-of-openai-academy-seo.png?w=1600&h=900&fit=fill",
       "trendScore": 50,
-      "confidence": "low"
+      "confidence": "medium"
     },
     {
-      "id": "ai-12adde409e",
-      "slug": "developer-turns-llm-memory-into-a-program-analysis-tool",
+      "id": "ai-1d5a9cc2d9",
+      "slug": "openai-introduces-mentalhealthbench",
       "lane": "ai",
-      "title": "Developer Turns LLM Memory Into a Program-Analysis Tool",
-      "summary": "A Hacker News post titled \"I accidentally turned LLM memory into program analysis\" describes a developer finding that an LLM's memory mechanism could double as a program-analysis technique. No detail beyond the title is available from the supplied source.",
-      "whyItMatters": "Unexpected reuses of LLM internals for software analysis hint at informal research directions that could feed into future developer tooling.",
+      "title": "OpenAI introduces MentalHealthBench",
+      "summary": "OpenAI announced a new benchmark called MentalHealthBench. The source does not specify what the benchmark measures or how OpenAI plans to use it.",
+      "whyItMatters": "A benchmark focused on mental health signals growing pressure on AI labs to prove their models handle sensitive conversations safely.",
       "whatToWatch": [
-        "Whether other developers pick up or replicate the technique",
-        "A more detailed technical write-up, if one follows"
+        "Model scores published against the benchmark.",
+        "Whether other labs adopt or reference it."
       ],
       "questions": [
-        "What specific LLM memory mechanism is being repurposed?",
-        "How does this compare to established program-analysis tools?"
+        "What exactly does MentalHealthBench test?",
+        "Will it shape OpenAI's safety policy or product design?"
       ],
       "sources": [
         {
-          "title": "I accidentally turned LLM memory into program analysis",
-          "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-28T23:27:45Z"
+          "title": "Introducing MentalHealthBench",
+          "url": "https://openai.com/index/introducing-mentalhealthbench",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T10:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-28T23:27:45Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "imageUrl": "https://pwning.systems/og.png",
-      "trendScore": 37,
-      "confidence": "low"
+      "publishedAt": "2026-09-23T10:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "badge": "Research",
+      "trendScore": 50,
+      "confidence": "medium"
     },
     {
-      "id": "ai-5dcea7d65e",
-      "slug": "report-openai-cuts-off-cursor",
+      "id": "ai-1d77064cbe",
+      "slug": "openai-extends-cyber-defense-access-to-ukraine",
       "lane": "ai",
-      "title": "Report: OpenAI Cuts Off Cursor",
-      "summary": "Latent Space's AINews roundup carries an item stating that OpenAI has shut off access for Cursor, the AI coding assistant. The supplied source is a newsletter headline only, with no detail on scope, reason, or timing.",
-      "whyItMatters": "If accurate, a model provider cutting off a prominent coding assistant would signal shifting tension between model makers and the apps built on their APIs.",
+      "title": "OpenAI extends cyber-defense access to Ukraine",
+      "summary": "OpenAI said it is extending access to its tools to support civilian cyber defense in Ukraine. The announcement does not specify which tools, the scale of access, or its duration.",
+      "whyItMatters": "It shows an AI lab taking a direct role in an active conflict, raising questions about neutrality, dual-use risk, and precedent for other labs.",
       "whatToWatch": [
-        "Official statements from OpenAI or Cursor on the cutoff",
-        "Whether Cursor shifts users to alternative model providers"
+        "Whether other AI companies make similar commitments.",
+        "Reports on how the access is actually used."
       ],
       "questions": [
-        "Why did OpenAI reportedly cut off Cursor's access?",
-        "Does this affect all OpenAI models used by Cursor, or only some?"
+        "What specific capabilities is OpenAI providing?",
+        "What safeguards exist against misuse?"
       ],
       "sources": [
         {
-          "title": "[AINews] OpenAI shuts off Cursor",
-          "url": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+          "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T13:00:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T13:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5TR3Q7ZcZJbqxGHYfksNSt/de1f57d45927c818631c58ffedb01346/openai-extends-cyber-access-to-ukraine-for-civilian-defense-seo.png?w=1600&h=900&fit=fill",
+      "badge": "Policy",
+      "trendScore": 47,
+      "confidence": "medium"
+    },
+    {
+      "id": "ai-8d52960282",
+      "slug": "opinion-cloud-ai-agents-risk-becoming-inevitable-prisons",
+      "lane": "ai",
+      "title": "Opinion: cloud AI agents risk becoming 'inevitable prisons'",
+      "summary": "A post shared widely on Hacker News argues that cloud-hosted AI agents create structural lock-in for developers and users. It describes this dynamic as an 'inevitable AI prison.' The source gives no further detail beyond the headline claim.",
+      "whyItMatters": "It captures a growing developer debate about vendor lock-in and control as AI agents move from demos into core infrastructure.",
+      "whatToWatch": [
+        "Responses from cloud-agent vendors or a push toward more open alternatives."
+      ],
+      "questions": [
+        "What specific practices does the argument point to as creating lock-in?"
+      ],
+      "sources": [
+        {
+          "title": "Cloud Agents Are Inevitable AI Prisons",
+          "url": "https://normanponte.io/19df691f",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-23T18:16:41Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T18:16:41Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "badge": "Opinion",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-62f29a5a45",
+      "slug": "claude-opus-5-5-becomes-ainews-default-as-rivals-cut-prices-40-50",
+      "lane": "ai",
+      "title": "Claude Opus 5.5 becomes AINews default as rivals cut prices 40-50%",
+      "summary": "Latent Space's AINews newsletter says Claude Opus 5.5 is now its default model. The newsletter also reports that competing AI labs have cut prices 40-50% in response. This points to an intensifying price war among frontier model providers.",
+      "whyItMatters": "Price cuts of this size across the field suggest margin pressure is rising fast as several labs now field comparable frontier models.",
+      "whatToWatch": [
+        "Which specific labs cut prices, and by how much.",
+        "Whether Claude Opus 5.5 becomes a default beyond AINews."
+      ],
+      "questions": [
+        "Are the price cuts sustainable, or a short-term competitive response?",
+        "Is Opus 5.5 winning on capability, cost, or both?"
+      ],
+      "sources": [
+        {
+          "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+          "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
           "publisher": "Latent Space",
-          "publishedAt": "2026-08-29T05:11:52.000Z"
+          "publishedAt": "2026-09-23T06:41:41.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-29T05:11:52.000Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!DbYa!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F73b0838a-bd14-46a1-801c-b6a2046e5c1e_1130x1130.png",
-      "badge": "Breaking",
-      "trendScore": 32,
+      "publishedAt": "2026-09-23T06:41:41.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!tLrK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2102432417352929280.jpg",
+      "badge": "Competitive landscape",
+      "trendScore": 44,
       "confidence": "low"
     },
     {
-      "id": "ai-a51ad146dc",
-      "slug": "glm-5-3-released-as-an-open-weight-model",
+      "id": "ai-73fafdf6f4",
+      "slug": "airbnb-widens-access-to-gpt-6-astra-and-openai-s-frontier-models",
       "lane": "ai",
-      "title": "GLM-5.3 Released as an Open-Weight Model",
-      "summary": "GLM-5.3 is now available as an open-weight model, according to a Hacker News post pointing to a Hugging Face listing. The supplied source does not give model size, benchmark results, or license terms.",
-      "whyItMatters": "Open-weight releases in the GLM family keep expanding the pool of freely available capable models, adding to competitive pressure on closed-model providers.",
+      "title": "Airbnb widens access to GPT-6 Astra and OpenAI's frontier models",
+      "summary": "OpenAI's customer story series says Airbnb is expanding internal access to GPT-6 Astra and other OpenAI frontier models. The post does not detail specific use cases or the size of the rollout.",
+      "whyItMatters": "It shows a major consumer platform deepening its reliance on OpenAI's newest models, a sign frontier-model adoption keeps spreading across large enterprises.",
       "whatToWatch": [
-        "Independent benchmarks against other current open-weight models",
-        "The license terms and any usage restrictions"
+        "Which Airbnb products or features surface the expanded model access to users."
       ],
       "questions": [
-        "How does GLM-5.3 perform against other current open-weight models?",
-        "What is the parameter count and the hardware needed to run it?"
+        "What tasks is Airbnb actually using GPT-6 Astra for?"
       ],
       "sources": [
         {
-          "title": "GLM-5.3 is now open-weight",
-          "url": "https://huggingface.co/zai-org/GLM-5.3",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-28T15:20:13Z"
+          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+          "url": "https://openai.com/index/airbnb-gpt-6-astra",
+          "publisher": "OpenAI",
+          "publishedAt": "2026-09-23T01:00:00.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-28T15:20:13Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "badge": "Release",
-      "trendScore": 26,
-      "confidence": "low"
+      "publishedAt": "2026-09-23T01:00:00.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4EjU7S9AFpxyMlaAUQAoiu/9ad3eb003d32e0f6857f2e0e41d40e84/airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-seo.png?w=1600&h=900&fit=fill",
+      "badge": "Customer story",
+      "trendScore": 42,
+      "confidence": "medium"
     },
     {
-      "id": "ai-766e251182",
-      "slug": "blog-post-warns-that-an-ai-agent-has-root",
+      "id": "ai-bd03d329b1",
+      "slug": "bio-security-is-an-ai-arms-race-says-radical-numerics-ceo",
       "lane": "ai",
-      "title": "Blog Post Warns That an AI Agent \"Has Root\"",
-      "summary": "A Hacker News post titled \"AI Agent Has Root\" raises concerns about AI agents running with elevated system privileges. The supplied source gives only the title, with no detail on the specific incident or system involved.",
-      "whyItMatters": "As AI agents gain more autonomy to run code and system commands, the risk of granting them privileged access is a growing concern for teams deploying agentic AI.",
-      "whatToWatch": [
-        "Whether the post names specific vendors or products affected",
-        "Any response from AI agent framework maintainers"
-      ],
+      "title": "'Bio-security is an AI arms race,' says Radical Numerics CEO",
+      "summary": "In a Latent Space conversation, Radical Numerics CEO Eric Nguyen argues that AI has turned biosecurity into an arms race. The source does not detail the specific evidence or actors behind his claim.",
+      "whyItMatters": "Biosecurity is one of the most consequential risk areas in AI safety debates, and this reflects concern from within the AI research community itself.",
+      "whatToWatch": [],
       "questions": [
-        "What specific scenario prompted this warning?",
-        "What mitigations, if any, does the post recommend?"
+        "What specific capabilities or actors does Nguyen think are driving this race?",
+        "What policy response does he recommend?"
       ],
       "sources": [
         {
-          "title": "AI Agent Has Root",
-          "url": "https://infernalcode.com/posts/your-ai-agent-has-root/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-08-28T12:03:09Z"
+          "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
+          "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-09-23T13:27:18.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-08-28T12:03:09Z",
-      "updatedAt": "2026-08-29T22:43:29.457Z",
-      "imageUrl": "https://infernalcode.com/og-default.png",
-      "trendScore": 25,
+      "publishedAt": "2026-09-23T13:27:18.000Z",
+      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!sMML!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216723291%2Fc5daecec-8262-4632-b94a-ac5fcbb74077%2Ftranscoded-1790120123.png",
+      "badge": "Analysis",
+      "trendScore": 40,
       "confidence": "low"
     }
   ]

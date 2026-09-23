@@ -1,0 +1,481 @@
+{
+  "id": "2026-09-23",
+  "kind": "scheduled",
+  "generatedAt": "2026-09-23T22:03:12.759Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Model prices just dropped 40-50%, repoint cheap calls tonight",
+    "summary": "Anthropic shipped Claude Opus 5.5 and OpenAI shipped GPT-6 Sol and GPT-6 Luna at half of GPT-5.6 pricing, and Simon Willison's llm CLI already has aliases for all three (llm 0.36, llm-anthropic 0.29). That's a same-night change: update the CLI, point your cheap-tier subagent calls at Luna, keep Opus 5.5 for planning or the hard steps, and check whatever provider config sets your default model since it's probably still pointed at the old, pricier tier.\n\nOn the unattended-run side, a few things are worth wiring in before your next overnight pass. fable-method packages a think/act/prove eval you can drop in as a self-check gate before you trust a PR unread. dscode and chat-on-steroids both tackle the same problem from different harnesses: auto-approval plus a persistent shell, and a compact-and-resume flow, so a long run survives context limits instead of stalling on a prompt or dying mid-task. ARTEMIS lets an agent drive actual Android UI end to end overnight instead of just writing test code, and HarnessRouter or zeron give you one API or control plane across Claude Code, Codex, Cursor and friends if you're juggling more than one. Also confirm your Claude Code build has the AGENTS.md-with-telemetry-off fix, and take Harper Reed's point seriously: cap runs by token or turn count, not just wall-clock, since that budget is your actual containment control.",
+    "bullets": [
+      "Run pip install -U llm and llm install -U llm-anthropic, then llm -m gpt-6-luna for cheap subagent calls and llm -m claude-opus-5.5 for the hard steps",
+      "Check your provider's price list tonight, GPT-6 Sol and Luna are half of 5.6 pricing, update your default model config",
+      "Update Claude Code and confirm AGENTS.md still loads with telemetry off, the bug is fixed",
+      "Clone Sahir619/fable-method for a think/act/prove eval as a self-check gate before you trust an unread PR",
+      "Clone qiz029/dscode or totec448-spec/chat-on-steroids for auto-approval and compact-and-resume on long overnight runs",
+      "Cap unattended runs by token or turn count, not only wall-clock timeout, per Harper Reed's containment note"
+    ],
+    "signals": [
+      {
+        "label": "Frontier model pricing",
+        "direction": "down",
+        "note": "Opus 5.5 launch triggered a 40-50% across-the-board price cut, with GPT-6 Sol and Luna at half of 5.6 pricing."
+      },
+      {
+        "label": "Unattended-run tooling",
+        "direction": "up",
+        "note": "dscode, chat-on-steroids, HarnessRouter and zeron all shipped this cycle, each solving a piece of running agents unsupervised for hours."
+      },
+      {
+        "label": "Self-verification before PR review",
+        "direction": "up",
+        "note": "fable-method's think/act/prove eval is a concrete, cloneable answer to catching bad agent work before you review it."
+      },
+      {
+        "label": "Agents driving real devices, not just writing tests",
+        "direction": "up",
+        "note": "ARTEMIS automates actual Android UI workflows end to end, integrated directly with Claude Code and Codex."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "rss-simon-willison-26Sep22opusandsolandluna",
+      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T23:46:41.000Z",
+      "tldr": "Anthropic ships Claude Opus 5.5, and OpenAI ships GPT-6 Sol and GPT-6 Luna at half the price of GPT-5.6.",
+      "whyItMatters": "GPT-6 Luna was already Willison's pick for cheap, capable app-building; it now costs half as much again.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "model-release",
+        "cost"
+      ],
+      "entities": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "models": [
+        "Claude Opus 5.5",
+        "GPT-6 Sol",
+        "GPT-6 Luna",
+        "GPT-5.6 Luna"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Point your cheap-tier subagent calls at GPT-6 Luna and compare cost and output quality."
+    },
+    {
+      "id": "rss-simon-willison-nwillisonnet2026Sep22llm",
+      "title": "llm 0.36",
+      "url": "https://simonwillison.net/2026/Sep/22/llm/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T18:48:37.000Z",
+      "tldr": "llm 0.36 adds aliases for GPT-6 Sol and GPT-6 Luna, plus a flag that blocks multi-turn history on single-turn models.",
+      "whyItMatters": "One CLI now reaches the newest cheap models, and the new flag stops agents from crashing single-turn model calls.",
+      "category": "tooling",
+      "tags": [
+        "cli",
+        "llm-tool",
+        "cost"
+      ],
+      "entities": [
+        "Simon Willison",
+        "llm"
+      ],
+      "models": [
+        "GPT-6 Sol",
+        "GPT-6 Luna"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `pip install -U llm`, then call `llm -m gpt-6-luna` for cheap subagent tasks."
+    },
+    {
+      "id": "rss-simon-willison-net2026Sep22llmanthropic",
+      "title": "llm-anthropic 0.29",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T17:14:55.000Z",
+      "tldr": "llm-anthropic 0.29 adds Claude Opus 5.5 support to Simon Willison's llm CLI.",
+      "whyItMatters": "You can call Opus 5.5 from a script or agent pipeline today, right from the command line.",
+      "category": "tooling",
+      "tags": [
+        "cli",
+        "claude",
+        "tool-update"
+      ],
+      "entities": [
+        "Simon Willison",
+        "Anthropic",
+        "llm-anthropic"
+      ],
+      "models": [
+        "Claude Opus 5.5"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `llm install -U llm-anthropic`, then `llm -m claude-opus-5.5 \"prompt goes here\"`."
+    },
+    {
+      "id": "hn-49814947",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-23T12:15:33Z",
+      "tldr": "Claude Code read AGENTS.md files only when telemetry was on; the bug is now fixed.",
+      "whyItMatters": "If your skills or prompts depend on AGENTS.md, an old build could silently ignore it with telemetry off.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "bug",
+        "agents-md",
+        "telemetry"
+      ],
+      "entities": [
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": true,
+      "tryThis": "Update Claude Code, then confirm your AGENTS.md file loads with telemetry turned off.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49814947",
+      "score": 427
+    },
+    {
+      "id": "gh-1333399642",
+      "title": "google/artemis — ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code",
+      "url": "https://github.com/google/artemis",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T17:59:37Z",
+      "tldr": "Google's ARTEMIS turns natural-language instructions into Android automation and plugs into Claude Code and Codex.",
+      "whyItMatters": "You ship mobile apps solo; this lets your agent drive real Android UI test runs end to end, not just write test code.",
+      "category": "tooling",
+      "tags": [
+        "android",
+        "automation",
+        "testing",
+        "mobile"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone google/artemis and wire it into your Claude Code workflow for overnight Android UI test runs.",
+      "score": 9531
+    },
+    {
+      "id": "gh-1329163060",
+      "title": "HarnessRouter/harnessrouter — HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, streaming, fi",
+      "url": "https://github.com/HarnessRouter/harnessrouter",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-09T20:19:14Z",
+      "tldr": "HarnessRouter Community Edition (Apache-2.0) puts Codex, Claude Code, Hermes, and other harnesses behind one self-hosted API, with sessions, streaming, and cancellation.",
+      "whyItMatters": "You can route different subagents to different harnesses through one endpoint. Your keys and data stay on your own infrastructure.",
+      "category": "tooling",
+      "tags": [
+        "harness",
+        "self-hosted",
+        "agent-router",
+        "api"
+      ],
+      "entities": [
+        "HarnessRouter"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone HarnessRouter Community Edition and put your Claude Code and Codex sessions behind its unified API.",
+      "score": 2453
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills a working agent's process into reusable skills plus a think/act/prove eval any model can run.",
+      "whyItMatters": "A built-in eval that checks the agent's own work is the self-verification step you need before trusting an unread PR.",
+      "category": "technique",
+      "tags": [
+        "verification",
+        "skills",
+        "eval",
+        "workflow"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and drop its think/act/prove eval into your own skill set as a verification gate.",
+      "score": 2290
+    },
+    {
+      "id": "rss-latent-space-laudeopus55thenewdefault",
+      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+      "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+      "source": "Latent Space",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-23T06:41:41.000Z",
+      "tldr": "Claude Opus 5.5 becomes the new default model, and providers cut prices 40-50% across the board.",
+      "whyItMatters": "Lower prices let you run more agent work at the same budget. Check where your routing still points at the old, pricier models.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "claude",
+        "price-war"
+      ],
+      "entities": [
+        "Anthropic",
+        "Latent Space"
+      ],
+      "models": [
+        "Claude Opus 5.5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Check your provider's new price list tonight and update your default model config."
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "trailhq/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/trailhq/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft adds codebase-specific context to Claude Code, Cursor, Codex, and Gemini to speed up and cut the cost of agent runs.",
+      "whyItMatters": "Better per-call context can mean fewer retries and less wasted tokens on your own codebase.",
+      "category": "tooling",
+      "tags": [
+        "context",
+        "cost",
+        "coding-agent"
+      ],
+      "entities": [
+        "trailhq"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone trailhq/graft, index one of your repos, and compare token use against your current setup.",
+      "score": 9107
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A 2.78-trillion-parameter Kimi K3 runs inference on a single CPU in 8.24GB RAM, in portable C99 with no BLAS or GPU.",
+      "whyItMatters": "If the RAM figure holds up, you can test a frontier-scale model on hardware you already own, with no GPU rental.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "quantization",
+        "kimi"
+      ],
+      "entities": [],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and benchmark it on your own machine to verify the RAM and speed claims.",
+      "score": 8440
+    },
+    {
+      "id": "gh-1349601607",
+      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-28T12:57:24Z",
+      "tldr": "codex-with-chatgpt uses ChatGPT as the planning layer while Codex executes, keeping the Codex harness in place.",
+      "whyItMatters": "Splitting planning and execution across models is a concrete way to tier cost and quality per subagent role.",
+      "category": "technique",
+      "tags": [
+        "model-tiering",
+        "codex",
+        "planning",
+        "cost"
+      ],
+      "entities": [],
+      "models": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone XiaoDuoYa/codex-with-chatgpt and route your planning step to ChatGPT before Codex executes.",
+      "score": 6517
+    },
+    {
+      "id": "gh-1342876750",
+      "title": "totec448-spec/chat-on-steroids — Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
+      "url": "https://github.com/totec448-spec/chat-on-steroids",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-22T14:16:24Z",
+      "tldr": "chat-on-steroids adds local MCP tools, Chrome control, and Goal/Compact/Resume to ChatGPT for durable multi-agent workflows.",
+      "whyItMatters": "Compact-and-resume is the pattern that lets a long agent run survive context limits without you babysitting it.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "resume",
+        "chatgpt",
+        "durable-agents"
+      ],
+      "entities": [],
+      "models": [
+        "ChatGPT"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone totec448-spec/chat-on-steroids and test its Compact & Resume flow on a long-running task.",
+      "score": 3980
+    },
+    {
+      "id": "gh-1365776373",
+      "title": "qiz029/dscode — A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
+      "url": "https://github.com/qiz029/dscode",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-09-11T09:40:02Z",
+      "tldr": "dscode is a DeepSeek coding agent harness with a persistent shell, subagents, auto-approval, and Chrome MCP.",
+      "whyItMatters": "Auto-approval and a persistent shell are what an unattended overnight run needs to avoid stalling on a prompt.",
+      "category": "tooling",
+      "tags": [
+        "harness",
+        "auto-approval",
+        "subagents",
+        "deepseek"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone qiz029/dscode and test its auto-approval mode on a small task before trusting it overnight.",
+      "score": 349
+    },
+    {
+      "id": "rss-harper-reed-perblog20260922breakaway",
+      "title": "Why Don't My Agents Break Containment?",
+      "url": "https://harper.blog/2026/09/22/break-away/",
+      "source": "Harper Reed",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T18:10:00.000Z",
+      "tldr": "Harper Reed asks why his coding agents never break out of their sandboxes, and names unlimited tokens as the labs' hidden risk factor.",
+      "whyItMatters": "Your agents likely run under a token budget already; that budget acts as an accidental containment control the big labs lack.",
+      "category": "technique",
+      "tags": [
+        "agent-safety",
+        "containment",
+        "harness"
+      ],
+      "entities": [
+        "Harper Reed"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Cap unattended agent runs by token or turn count, not only by wall-clock timeout."
+    },
+    {
+      "id": "gh-1306727670",
+      "title": "zeronsh/zeron — A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
+      "url": "https://github.com/zeronsh/zeron",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-20T15:04:04Z",
+      "tldr": "zeron is a native control plane for Claude Code, Codex, Cursor, and Devin, written in Rust.",
+      "whyItMatters": "A single control plane across harnesses could let you check and steer overnight runs from one place instead of separate terminals.",
+      "category": "tooling",
+      "tags": [
+        "control-plane",
+        "multi-harness",
+        "rust"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 2,
+      "actionability": 2,
+      "hasFailureReport": false,
+      "tryThis": "Clone zeronsh/zeron and check whether it covers session status from outside your terminal, not just locally.",
+      "score": 2178
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Opus 5.5 launch triggers a price war, CLI catches up same day",
+      "summary": "Claude Opus 5.5, GPT-6 Sol and GPT-6 Luna landed with 40-50% price cuts, and Simon Willison's llm and llm-anthropic CLIs already have aliases for all three, so you can call them from a script tonight.",
+      "itemIds": [
+        "rss-simon-willison-26Sep22opusandsolandluna",
+        "rss-latent-space-laudeopus55thenewdefault",
+        "rss-simon-willison-nwillisonnet2026Sep22llm",
+        "rss-simon-willison-net2026Sep22llmanthropic"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "One API or control plane across harnesses",
+      "summary": "HarnessRouter and zeron both put multiple agent harnesses (Claude Code, Codex, Cursor, Devin, Hermes) behind a single self-hosted interface, letting you route or check sessions from one place.",
+      "itemIds": [
+        "gh-1329163060",
+        "gh-1306727670"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Durable unattended sessions: auto-approval and compact-and-resume",
+      "summary": "dscode and chat-on-steroids each add the mechanics a long overnight run needs to keep going without you: auto-approval with a persistent shell, and a compact-and-resume flow that survives context limits.",
+      "itemIds": [
+        "gh-1365776373",
+        "gh-1342876750"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 12,
+    "outputTokens": 23938,
+    "usd": 0.5028,
+    "model": "claude-sonnet-5",
+    "calls": 4,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
