@@ -1,7 +1,26 @@
 {
-  "contentVersion": 24,
-  "generatedAt": "2026-09-23T22:03:12.759Z",
+  "contentVersion": 25,
+  "generatedAt": "2026-09-24T04:16:32.671Z",
   "models": [
+    {
+      "id": "tev1-4b-experimental",
+      "name": "Tev1-4B-experimental",
+      "vendor": "Together AI",
+      "openness": "open-weights",
+      "license": "unknown",
+      "contextTokens": null,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "preview",
+      "firstSeenAt": "2026-09-24T04:16:32.671Z",
+      "timeline": [
+        {
+          "at": "2026-09-24T04:16:32.671Z",
+          "what": "Together AI published a guide to fine-tuning Tev1-4B-experimental, a classifier built on Qwen3.5 4B, for $17 on its serverless platform.",
+          "url": "https://www.together.ai/blog/how-to-train-your-own-jev"
+        }
+      ]
+    },
     {
       "id": "claude-opus-5-5",
       "name": "Claude Opus 5.5",
@@ -17,6 +36,11 @@
         {
           "at": "2026-09-23T22:03:12.759Z",
           "what": "Anthropic released Claude Opus 5.5 and made it the new default model, with a price cut.",
+          "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
+        },
+        {
+          "at": "2026-09-24T04:16:32.671Z",
+          "what": "Anthropic released Claude Opus 5.5, which became Latent Space's default model and gained support in llm-anthropic 0.29.",
           "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
         }
       ]
@@ -37,6 +61,11 @@
           "at": "2026-09-23T22:03:12.759Z",
           "what": "OpenAI released GPT-6 Sol at half the price of the prior GPT-5.6 model.",
           "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
+        },
+        {
+          "at": "2026-09-24T04:16:32.671Z",
+          "what": "OpenAI released GPT-6 Sol at roughly half the price of its GPT-5.6 predecessor, with an alias added in llm 0.36.",
+          "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
         }
       ]
     },
@@ -55,6 +84,11 @@
         {
           "at": "2026-09-23T22:03:12.759Z",
           "what": "OpenAI released GPT-6 Luna alongside GPT-6 Sol, at half the price of GPT-5.6.",
+          "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
+        },
+        {
+          "at": "2026-09-24T04:16:32.671Z",
+          "what": "OpenAI released GPT-6 Luna at roughly half the price of its GPT-5.6 predecessor, with an alias added in llm 0.36.",
           "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/"
         }
       ]

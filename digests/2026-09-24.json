@@ -1,0 +1,758 @@
+{
+  "id": "2026-09-24",
+  "kind": "scheduled",
+  "generatedAt": "2026-09-24T04:16:32.671Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Claude Code skipped AGENTS.md unless telemetry was on — now fixed",
+    "summary": "Update Claude Code tonight: it was silently ignoring AGENTS.md files unless telemetry was enabled, a bug now fixed in the 2.1.280/2.1.281 releases that also add blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode desktop policy flags. If any skill or instruction file seemed to get ignored in an overnight run, this was likely why — update, then verify your AGENTS.md loads with telemetry off. Same release window also brings 97 fixes and 16 behavior changes, so diff your hooks and skills against the changelog before trusting it unattended.\n\nOn cost, Opus 5.5 and OpenAI's GPT-6 Sol/Luna landed together with a 40-50% price cut across the board, and both are already wired into the `llm` CLI (0.36 and llm-anthropic 0.29) for scripted subagent calls today. Pair that with Graft for codebase-context indexing, fable-method's think/act/prove eval as a self-verification hook, and google/artemis for real Android-device checks before a PR opens, and you've got cheaper models plus more of the unattended pipeline actually verifying itself. The DeepSeek harness ecosystem (dscode, deepseek-harness, awesome-deepseek-harness) and two ChatGPT-as-backend repos for Codex are worth a look if you want to route work off Claude/OpenAI metering entirely.",
+    "bullets": [
+      "Update Claude Code and confirm AGENTS.md loads with telemetry off — it silently didn't before",
+      "Set blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode in your 2.1.281 desktop policy for locked-down unattended runs",
+      "Run `llm -m claude-opus-5.5` or `llm -m gpt-6-luna` to script cheap verification calls now that prices are down 40-50%",
+      "Index your repo with trailhq/Graft before the next overnight run to cut token spend on re-discovery",
+      "Clone Sahir619/fable-method and adapt its think/act/prove eval into a pre-PR self-verification hook",
+      "Wire google/artemis into your pipeline for a real Android device check before the agent opens the PR"
+    ],
+    "signals": [
+      {
+        "label": "Frontier model cost",
+        "direction": "down",
+        "note": "Opus 5.5 and GPT-6 Sol/Luna both cut prices 40-50% in the same window, and llm/llm-anthropic already support scripting them."
+      },
+      {
+        "label": "Claude Code unattended-run reliability",
+        "direction": "up",
+        "note": "Two rapid point releases (2.1.280, 2.1.281) with 290 combined changes and new lockdown policy flags, but the AGENTS.md-telemetry bug shows silent breakage is still possible."
+      },
+      {
+        "label": "Self-hosted/open harness alternatives",
+        "direction": "up",
+        "note": "DeepSeek's plugin harness ecosystem (dscode, deepseek-harness, awesome-deepseek-harness) and HarnessRouter are maturing as ways to route work off metered APIs."
+      },
+      {
+        "label": "Self-verification patterns before PR",
+        "direction": "up",
+        "note": "fable-method's prove step and google/artemis device automation both target closing the loop before a human reviews the PR."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "hn-49814947",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-23T12:15:33Z",
+      "tldr": "Claude Code only read AGENTS.md files when telemetry was on, and the bug is now fixed.",
+      "whyItMatters": "If AGENTS.md-based instructions or skills seemed ignored, telemetry settings were the hidden cause.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "bugfix",
+        "agents-md",
+        "telemetry"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": true,
+      "tryThis": "Update Claude Code and verify AGENTS.md loads correctly with telemetry off.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49814947",
+      "score": 458
+    },
+    {
+      "id": "gh-1312807575",
+      "title": "miuuyy/codex-chatgpt-web — Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex quota.",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-26T13:04:44Z",
+      "tldr": "codex-chatgpt-web lets Codex use your ChatGPT Web session, including Pro, as a model backend with tools, streaming and images, without touching Codex API quota.",
+      "whyItMatters": "You can shift Codex work onto a ChatGPT Pro subscription instead of paying per-token API costs, directly cutting agent spend.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "codex",
+        "quota",
+        "routing"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install miuuyy/codex-chatgpt-web and point a Codex subagent at your ChatGPT Web session for quota-free runs.",
+      "score": 10937
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "kimi-k3-in-c runs a 2.78-trillion-parameter Kimi K3 model for CPU-only inference in 8.24GB of RAM, in portable C99 with no BLAS or GPU.",
+      "whyItMatters": "You could run a frontier-scale model locally on ordinary hardware for offline or zero-marginal-cost inference instead of paying per-token API fees.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "quantization",
+        "open-models"
+      ],
+      "entities": [
+        "FareedKhan-dev"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and benchmark inference speed and quality on your own machine.",
+      "score": 8460
+    },
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21281",
+      "title": "2.1.281",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-281",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-09-23T19:28:00.000Z",
+      "tldr": "Claude Code 2.1.281 adds Bedrock upstream assume_role/STS, per-upstream Bedrock guardrails, new desktop policy blocks (blockReadsOutsideWorkingDirectories, disableBypassPermissionsMode), and telemetry.resource_attributes.",
+      "whyItMatters": "These are direct config knobs for locking down and auditing unattended agent runs through the Claude apps gateway.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "config",
+        "gateway",
+        "guardrails"
+      ],
+      "entities": [
+        "Anthropic",
+        "AWS Bedrock"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Update to Claude Code 2.1.281 and set blockReadsOutsideWorkingDirectories / disableBypassPermissionsMode in your desktop policy block for unattended runs."
+    },
+    {
+      "id": "rss-simon-willison-nwillisonnet2026Sep22llm",
+      "title": "llm 0.36",
+      "url": "https://simonwillison.net/2026/Sep/22/llm/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T18:48:37.000Z",
+      "tldr": "The llm CLI hits version 0.36, adding gpt-6-sol and gpt-6-luna model aliases plus a supports_conversation flag that blocks single-turn-only models from receiving chat history.",
+      "whyItMatters": "If you script agent calls through llm, upgrading gets you the new cheap GPT-6 models today and stops silent errors on single-turn models.",
+      "category": "tooling",
+      "tags": [
+        "llm-cli",
+        "cost-routing",
+        "cli"
+      ],
+      "entities": [
+        "Simon Willison"
+      ],
+      "models": [
+        "GPT-6 Sol",
+        "GPT-6 Luna"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Upgrade with your package manager, then run `llm -m gpt-6-luna` for cheap scripted subagent tasks."
+    },
+    {
+      "id": "rss-simon-willison-net2026Sep22llmanthropic",
+      "title": "llm-anthropic 0.29",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T17:14:55.000Z",
+      "tldr": "The llm-anthropic plugin hits version 0.29, adding support for Claude Opus 5.5 via `llm -m claude-opus-5.5 \"prompt goes here\"`.",
+      "whyItMatters": "Lets you script and batch Opus 5.5 calls from the command line today, useful for cheap scripted verification or batch subagent tasks outside Claude Code itself.",
+      "category": "tooling",
+      "tags": [
+        "llm-cli",
+        "claude",
+        "cli"
+      ],
+      "entities": [
+        "Simon Willison",
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Opus 5.5"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Run `llm install -U llm-anthropic` then call `llm -m claude-opus-5.5 \"prompt\"` for scripted Opus 5.5 calls."
+    },
+    {
+      "id": "gh-1333399642",
+      "title": "google/artemis — ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code",
+      "url": "https://github.com/google/artemis",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T17:59:37Z",
+      "tldr": "Google's ARTEMIS turns natural-language instructions into end-to-end Android automation and plugs into Claude Code, Codex, and Antigravity.",
+      "whyItMatters": "Gives a mobile-app shipper a way to script real device verification into an overnight agent run instead of relying on unit tests alone.",
+      "category": "tooling",
+      "tags": [
+        "android",
+        "automation",
+        "testing",
+        "mobile"
+      ],
+      "entities": [
+        "Google"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone google/artemis and wire it into your PR workflow to drive an Android UI check before the agent opens the PR.",
+      "score": 9588
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "trailhq/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/trailhq/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft adds codebase-specific contextual indexing to Claude Code, Cursor, Codex, and Gemini to speed up and cut the cost of agent runs.",
+      "whyItMatters": "Directly targets longer unattended runs with less wasted token spend re-discovering codebase structure each session.",
+      "category": "tooling",
+      "tags": [
+        "context",
+        "indexing",
+        "cost",
+        "claude-code"
+      ],
+      "entities": [
+        "Graft"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Graft and index your repo before your next overnight agent run.",
+      "score": 9129
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1500+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway connecting AI agents to 1500+ SaaS providers via SDK, CLI, MCP, HTTP and OpenAPI.",
+      "whyItMatters": "It replaces bespoke per-service auth plumbing with one gateway, so agent tool-calls can hit real SaaS accounts directly.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Deploy oomol-lab/open-connector and register it as an MCP server for the SaaS tools your agents need.",
+      "score": 5882
+    },
+    {
+      "id": "gh-1342876750",
+      "title": "totec448-spec/chat-on-steroids — Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
+      "url": "https://github.com/totec448-spec/chat-on-steroids",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-22T14:16:24Z",
+      "tldr": "chat-on-steroids adds local MCP tools, Chrome integration, and a Compact & Resume mode for durable multi-agent ChatGPT workflows.",
+      "whyItMatters": "Compact & Resume is a concrete pattern for keeping long agent sessions alive past context limits without babysitting them.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "context-management",
+        "multi-agent",
+        "resume"
+      ],
+      "entities": [],
+      "models": [
+        "ChatGPT"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone the repo and test Compact & Resume on a long multi-step task to see if it survives a context reset unattended.",
+      "score": 3985
+    },
+    {
+      "id": "gh-1322651268",
+      "title": "fuxicodex/Fuxi — FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-04T07:32:11Z",
+      "tldr": "FuXi is a terminal-based AI coding agent with built-in cost-aware routing across multiple LLM providers.",
+      "whyItMatters": "It automates model-tiering, routing cheap subtasks to cheap models, without you hand-wiring that logic yourself.",
+      "category": "technique",
+      "tags": [
+        "cost-routing",
+        "cli-agent",
+        "model-tiering"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install fuxicodex/Fuxi and configure its provider routing rules to send cheap subtasks to a low-cost model.",
+      "score": 3365
+    },
+    {
+      "id": "gh-1329163060",
+      "title": "HarnessRouter/harnessrouter — HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, streaming, fi",
+      "url": "https://github.com/HarnessRouter/harnessrouter",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-09T20:19:14Z",
+      "tldr": "HarnessRouter Community Edition is a self-hosted, Apache-2.0 API that unifies Codex, Claude Code, Hermes, and other agent harnesses behind one interface.",
+      "whyItMatters": "Lets him route different subagents to different harnesses or models from one control point, with keys and session state on his own infrastructure.",
+      "category": "tooling",
+      "tags": [
+        "harness",
+        "self-hosted",
+        "routing",
+        "open-source"
+      ],
+      "entities": [
+        "HarnessRouter"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone HarnessRouter Community Edition and put it in front of your Claude Code and Codex sessions.",
+      "score": 2485
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills Claude Fable 5's internal workflow into reusable skills plus an eval, following a think/act/prove structure.",
+      "whyItMatters": "Gives him a ready-made self-verification skill pattern to bolt onto his own agents so they check their own work before a PR.",
+      "category": "technique",
+      "tags": [
+        "skills",
+        "verification",
+        "eval",
+        "workflow"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone fable-method and adapt its prove-step eval as a pre-PR verification hook.",
+      "score": 2290
+    },
+    {
+      "id": "gh-1365776373",
+      "title": "qiz029/dscode — A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
+      "url": "https://github.com/qiz029/dscode",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-09-11T09:40:02Z",
+      "tldr": "dscode is a DeepSeek-based coding agent harness with a persistent shell, subagents, auto-approval, Chrome MCP, and session telemetry.",
+      "whyItMatters": "Auto-approval and a persistent shell cut the interruptions that stall unattended runs, and DeepSeek backing is cheaper per token than Claude or GPT.",
+      "category": "open-models",
+      "tags": [
+        "deepseek",
+        "auto-approval",
+        "cost",
+        "harness"
+      ],
+      "entities": [],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try dscode with auto-approval on for a low-risk overnight task and compare its cost to your current harness.",
+      "score": 425
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21280",
+      "title": "Claude Code v2.1.280",
+      "url": "https://www.claudeupdates.dev/version/2.1.280",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-09-22T16:37:53.000Z",
+      "tldr": "Claude Code ships v2.1.280 with 114 changes: 10 additions, 18 improvements, 59 fixes, 8 changes, 1 removal.",
+      "whyItMatters": "This is the CLI he runs unattended every night; fixes here can affect hook, worktree, or subagent reliability.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "release",
+        "cli",
+        "update"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Update Claude Code to v2.1.280 and skim the changelog for hook, worktree, or subagent fixes before your next overnight run."
+    },
+    {
+      "id": "rss-together-ai-bloghowtotrainyourownjev",
+      "title": "How to train your own Jev for $17",
+      "url": "https://www.together.ai/blog/how-to-train-your-own-jev",
+      "source": "Together AI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-09-23T00:00:00.000Z",
+      "tldr": "Together AI publishes a guide to fine-tuning your own classifier, together/Tev1-4B-experimental, on Qwen3.5 4B for $17 on its serverless platform.",
+      "whyItMatters": "Gives a concrete, cheap recipe for a custom small-model judge, useful for a PR-quality or log-triage classifier instead of paying per-call for a frontier model.",
+      "category": "technique",
+      "tags": [
+        "fine-tuning",
+        "cost",
+        "classifier",
+        "open-models"
+      ],
+      "entities": [
+        "Together AI"
+      ],
+      "models": [
+        "Qwen3.5 4B",
+        "Tev1-4B-experimental"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Follow the Together AI blog post to fine-tune a 4B classifier on your own labeled data for about $17."
+    },
+    {
+      "id": "rss-openai-tterpromptcachingforgpt6",
+      "title": "Better prompt caching for GPT-6",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-09-22T21:00:00.000Z",
+      "tldr": "OpenAI upgrades GPT-6 prompt caching with higher cache-hit rates, explicit cache breakpoints, and new diagnostics.",
+      "whyItMatters": "Explicit breakpoints let him restructure long agent-context prompts to hit cache more reliably, cutting per-run API spend.",
+      "category": "technique",
+      "tags": [
+        "prompt-caching",
+        "cost",
+        "gpt-6",
+        "api"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [
+        "GPT-6"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Add explicit cache breakpoints to your GPT-6 agent prompts and check the new cache diagnostics for hit rate."
+    },
+    {
+      "id": "rss-latent-space-laudeopus55thenewdefault",
+      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+      "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+      "source": "Latent Space",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-23T06:41:41.000Z",
+      "tldr": "Anthropic ships Claude Opus 5.5 as Latent Space's new default model, and vendors across the board cut prices 40-50%.",
+      "whyItMatters": "A default model swap now costs roughly half what it did last week, so it is worth re-running your per-task cost math before the next unattended overnight run.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "claude",
+        "cost-routing"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Opus 5.5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Point your agent config's default model at Opus 5.5 and compare per-task cost against your current model."
+    },
+    {
+      "id": "rss-simon-willison-26Sep22opusandsolandluna",
+      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+      "source": "Simon Willison",
+      "sourceKind": "news",
+      "publishedAt": "2026-09-22T23:46:41.000Z",
+      "tldr": "Anthropic released Claude Opus 5.5, then OpenAI released GPT-6 Sol and GPT-6 Luna at roughly half the price of their GPT-5.6 predecessors.",
+      "whyItMatters": "GPT-6 Luna was already Simon's cheapest strong pick for building apps against; at half that price again it is worth testing as a cheap subagent model.",
+      "category": "closed-models",
+      "tags": [
+        "pricing",
+        "gpt-6",
+        "cost-routing"
+      ],
+      "entities": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "models": [
+        "Claude Opus 5.5",
+        "GPT-6 Sol",
+        "GPT-6 Luna"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Route a cheap subagent task (lint, summarize, verify) to GPT-6 Luna and compare cost per call against your current choice."
+    },
+    {
+      "id": "gh-1333065091",
+      "title": "deepseek-ai/deepseek-harness — DeepSeek Harness: Everything is a Plugin.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T11:56:32Z",
+      "tldr": "DeepSeek released deepseek-harness, a TypeScript coding-agent harness built entirely around a plugin architecture.",
+      "whyItMatters": "It's a reference implementation you can raid for hook and verification patterns when hardening your own unattended-agent setup.",
+      "category": "tooling",
+      "tags": [
+        "agent-harness",
+        "plugins",
+        "open-source"
+      ],
+      "entities": [
+        "DeepSeek"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone deepseek-ai/deepseek-harness and read its plugin system for hook patterns to port into your own harness.",
+      "score": 234479
+    },
+    {
+      "id": "gh-1349601607",
+      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-28T12:57:24Z",
+      "tldr": "codex-with-chatgpt uses ChatGPT as a separate planning layer while keeping Codex as the execution harness.",
+      "whyItMatters": "Splitting a stronger planner from a cheaper executor is a concrete model-tiering pattern he can copy for his own subagents.",
+      "category": "technique",
+      "tags": [
+        "model-tiering",
+        "planning",
+        "codex",
+        "cost"
+      ],
+      "entities": [],
+      "models": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Have one model draft the plan, then feed it to Codex for execution only, and compare cost and quality.",
+      "score": 6552
+    },
+    {
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "moli is a lightweight, fast headless browser built in Rust, designed specifically for AI agent use.",
+      "whyItMatters": "Swapping a heavier headless-Chrome setup for moli could cut resource use and latency for agents doing browser automation.",
+      "category": "tooling",
+      "tags": [
+        "browser-automation",
+        "rust",
+        "agent-tooling"
+      ],
+      "entities": [],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Try lexmount/moli as the browser backend for any agent that needs web scraping or UI testing.",
+      "score": 2305
+    },
+    {
+      "id": "gh-1306727670",
+      "title": "zeronsh/zeron — A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
+      "url": "https://github.com/zeronsh/zeron",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-20T15:04:04Z",
+      "tldr": "zeron is a native control plane for running Claude Code, Codex, Cursor, and Devin sessions from one interface.",
+      "whyItMatters": "A single control plane is a step toward monitoring and triggering overnight agent runs remotely instead of per-tool.",
+      "category": "tooling",
+      "tags": [
+        "control-plane",
+        "remote",
+        "multi-agent"
+      ],
+      "entities": [
+        "zeron"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Install zeron and connect it to your existing Claude Code sessions to test remote control.",
+      "score": 2195
+    },
+    {
+      "id": "gh-1330942675",
+      "title": "0xsline/awesome-deepseek-harness — DeepSeek Harness (DSH) ecosystem: curated plugins, tools, and infrastructure from dsh-external/hub and the public dsh-plugin topic.",
+      "url": "https://github.com/0xsline/awesome-deepseek-harness",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-11T13:14:49Z",
+      "tldr": "awesome-deepseek-harness curates plugins, tools, and infrastructure for the DeepSeek Harness (DSH) agent ecosystem, at 1,100 stars with a push last week.",
+      "whyItMatters": "A ready list of harness plugins for an open-weight agent stack, useful if you want to route cheap background subagent work off Claude to a self-hosted DeepSeek setup.",
+      "category": "open-models",
+      "tags": [
+        "harness",
+        "open-weight",
+        "cost-routing"
+      ],
+      "entities": [
+        "0xsline",
+        "DeepSeek"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone 0xsline/awesome-deepseek-harness and skim the dsh-plugin topic for a plugin that fits a background subagent role.",
+      "score": 1100
+    },
+    {
+      "id": "rss-claude-updates-deupdatesdevversion21281",
+      "title": "Claude Code v2.1.281",
+      "url": "https://www.claudeupdates.dev/version/2.1.281",
+      "source": "Claude Updates",
+      "sourceKind": "release",
+      "publishedAt": "2026-09-23T19:18:58.000Z",
+      "tldr": "Claude Code v2.1.281 ships 176 changes: 10 additions, 32 improvements, 97 fixes, 16 behavior changes, and 1 removal.",
+      "whyItMatters": "With 16 changed behaviors and a removal, a hook, skill, or flag in his existing setup could silently break on update.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "changelog",
+        "release",
+        "breaking-changes"
+      ],
+      "entities": [
+        "Anthropic"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Read the full changelog before updating and check your hooks and skills against the changed and removed entries."
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Claude Code's rapid-fire updates fix AGENTS.md and add lockdown flags",
+      "summary": "2.1.280 and 2.1.281 landed close together with nearly 300 combined changes, including the AGENTS.md-telemetry fix and new desktop policy blocks for restricting unattended runs.",
+      "itemIds": [
+        "hn-49814947",
+        "rss-claude-code-changelog-ecomdocsenchangelog21281",
+        "rss-claude-updates-deupdatesdevversion21280",
+        "rss-claude-updates-deupdatesdevversion21281"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Opus 5.5 and GPT-6 Sol/Luna arrive with a price war",
+      "summary": "Anthropic shipped Claude Opus 5.5 and OpenAI answered with GPT-6 Sol and Luna, both sides cutting prices roughly in half.",
+      "itemIds": [
+        "rss-latent-space-laudeopus55thenewdefault",
+        "rss-simon-willison-26Sep22opusandsolandluna"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "llm CLI adds the new models same-day",
+      "summary": "Both llm 0.36 and the llm-anthropic 0.29 plugin shipped support for GPT-6 Sol/Luna and Opus 5.5, so scripted subagent calls can use them immediately.",
+      "itemIds": [
+        "rss-simon-willison-nwillisonnet2026Sep22llm",
+        "rss-simon-willison-net2026Sep22llmanthropic"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "DeepSeek's plugin-based harness ecosystem fills out",
+      "summary": "dscode wraps DeepSeek in a persistent-shell coding harness, deepseek-harness is the plugin core it's built on, and awesome-deepseek-harness catalogs the growing plugin list.",
+      "itemIds": [
+        "gh-1365776373",
+        "gh-1333065091",
+        "gh-1330942675"
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "Two ways to plug ChatGPT into a Codex harness",
+      "summary": "codex-chatgpt-web routes execution through a ChatGPT Web session to dodge Codex quota, while codex-with-chatgpt uses ChatGPT purely as a planning layer ahead of Codex execution.",
+      "itemIds": [
+        "gh-1312807575",
+        "gh-1349601607"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 16,
+    "outputTokens": 47165,
+    "usd": 0.8615,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

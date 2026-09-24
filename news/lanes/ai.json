@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-09-23T22:15:24.717Z",
-  "contentVersion": 63,
+  "generatedAt": "2026-09-24T04:25:51.378Z",
+  "contentVersion": 64,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-09-23T22:15:24.717Z"
+      "updatedAt": "2026-09-24T04:25:51.378Z"
     },
     {
       "id": "ai-7cff1964bf",
       "slug": "ringg-s-ai-voice-agents-resolve-up-to-65-of-customer-calls",
       "lane": "ai",
-      "title": "Ringg's AI voice agents resolve up to 65% of customer calls",
-      "summary": "OpenAI published a customer story about Ringg, a voice AI company. Ringg says its AI agents, built on OpenAI models, now resolve up to 65% of customer service calls without human help. The post is part of OpenAI's ongoing series of customer case studies.",
-      "whyItMatters": "This shows how fast AI voice agents are moving into call-center work, a market OpenAI is targeting hard.",
+      "title": "Ringg's AI voice agents resolve up to 65% of customer calls, OpenAI says",
+      "summary": "OpenAI published a customer story about Ringg, a company that builds AI phone agents on OpenAI's models. The post says Ringg's agents now resolve up to 65% of customer service calls without a human agent. The methodology behind that figure and the industries served were not detailed beyond the headline.",
+      "whyItMatters": "It is another proof point OpenAI is using to sell enterprise adoption, and it shows how fast call-center automation is advancing.",
       "whatToWatch": [
-        "Independent verification of the 65% resolution figure.",
-        "Similar claims from other voice-AI vendors."
+        "Independent verification of the 65% resolution claim",
+        "Whether rival AI phone-agent vendors publish similar figures"
       ],
       "questions": [
-        "How does Ringg define a 'resolved' call?",
-        "Does the figure include calls later escalated to a human?"
+        "What counts as a \"resolved\" call in this measurement?",
+        "Which OpenAI model powers Ringg's agents?"
       ],
       "sources": [
         {
@@ -150,25 +150,118 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T12:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/773XsnwO9QT1z6x55Ku0BG/678970983193f3c32961714f6eb63320/og.png?w=1600&h=900&fit=fill",
-      "badge": "Customer story",
-      "trendScore": 56,
+      "badge": "Case Study",
+      "trendScore": 51,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-9c2f631dad",
+      "slug": "mercury-2-5-claims-770-tokens-per-second-inference-speed",
+      "lane": "ai",
+      "title": "Mercury 2.5 claims 770 tokens-per-second inference speed",
+      "summary": "A report highlighted on Hacker News says an LLM called Mercury 2.5 can generate text at up to 770 tokens per second. That is a notably high throughput figure for a modern model. The developer's identity, benchmark conditions, and hardware used were not detailed in the available reporting.",
+      "whyItMatters": "Faster inference cuts latency and cost for real-time AI apps, and adds a new front to competition beyond raw capability.",
+      "whatToWatch": [
+        "Independent benchmarks confirming the throughput claim",
+        "Official details on pricing and availability"
+      ],
+      "questions": [
+        "What hardware and batch size produced the 770 tokens/second figure?",
+        "How does output quality compare with slower frontier models?"
+      ],
+      "sources": [
+        {
+          "title": "Mercury 2.5 LLM hits 770 tokens per second",
+          "url": "https://artificialanalysis.ai/models/mercury-2-5",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-23T22:16:19Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T22:16:19Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
+      "imageUrl": "https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?ea6b93c60ecab06d",
+      "trendScore": 49,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-2886d8572f",
+      "slug": "report-us-officials-label-ai-critics-as-foreign-agents",
+      "lane": "ai",
+      "title": "Report: US officials label AI critics as \"foreign agents\"",
+      "summary": "A report circulating on Hacker News says federal officials are targeting critics of the AI industry by labeling them foreign agents. The specific agencies involved, who has been targeted, and the legal basis for the label were not detailed beyond the headline. If accurate, this would mark a notable escalation in government pressure on AI policy critics.",
+      "whyItMatters": "Labeling critics as foreign agents could chill independent oversight of AI companies at a moment of intense regulatory debate.",
+      "whatToWatch": [
+        "Confirmation or denial from named individuals or agencies",
+        "Any formal foreign-agent filings or legal actions",
+        "Reaction from AI policy and civil liberties groups"
+      ],
+      "questions": [
+        "Who specifically has been labeled a foreign agent, and by which agency?",
+        "What evidence supports the designation?"
+      ],
+      "sources": [
+        {
+          "title": "Feds Target AI Critics as \"Foreign Agents\"",
+          "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-24T00:41:31Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-24T00:41:31Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!HqSQ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F597f5afa-4bae-4a2a-aa5b-48f84d0525e7_8161x5441.jpeg",
+      "badge": "Regulatory",
+      "trendScore": 47,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-4de1641fc6",
+      "slug": "qualcomm-brings-linux-support-to-the-snapdragon-x2-series",
+      "lane": "ai",
+      "title": "Qualcomm brings Linux support to the Snapdragon X2 Series",
+      "summary": "Qualcomm announced Linux support for its Snapdragon X2 Series chips, which power a wave of AI-focused laptops. The move opens the platform to Linux users and developers who previously had to rely on Windows. Technical details and rollout timing were not specified beyond the announcement headline.",
+      "whyItMatters": "Wider OS support could broaden adoption of on-device AI hardware beyond the current Windows-only AI PC market.",
+      "whatToWatch": [
+        "Which Linux distributions get official support first",
+        "Developer and PC-maker response to the announcement"
+      ],
+      "questions": [
+        "Does the support cover the NPU used for on-device AI acceleration?",
+        "What is the timeline for general availability?"
+      ],
+      "sources": [
+        {
+          "title": "Linux support is coming to Snapdragon X2 Series",
+          "url": "https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-23T22:38:16Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-23T22:38:16Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
+      "imageUrl": "https://s7d1.scene7.com/is/image/dmqualcommprod/snapdragon-summit-agentic-ai-pcs-linux",
+      "trendScore": 46,
+      "confidence": "low"
     },
     {
       "id": "ai-f7558dc5c9",
       "slug": "harvey-uses-gpt-6-astra-to-strengthen-legal-drafting",
       "lane": "ai",
-      "title": "Harvey uses GPT-6 Astra to strengthen legal drafting",
-      "summary": "OpenAI published a customer story about Harvey, a legal AI company. Harvey says GPT-6 Astra helps it bring more legal context into contract and document drafts. The post gives no further detail on accuracy gains or customer scale.",
-      "whyItMatters": "Harvey is one of the most closely watched legal-AI vendors, so its use of OpenAI's newest model shows frontier AI moving deeper into regulated professional work.",
+      "title": "Harvey uses GPT-6 Astra to sharpen legal drafting with case context",
+      "summary": "OpenAI published a customer story about legal AI company Harvey, saying it uses a model called GPT-6 Astra to fold case and client context into stronger draft legal documents. The post did not detail how GPT-6 Astra differs from OpenAI's current lineup or when it becomes broadly available. It is one of several OpenAI customer stories published the same day featuring the new model.",
+      "whyItMatters": "A named next-generation OpenAI model appearing in customer case studies signals where OpenAI's roadmap and enterprise push are headed, especially in high-value professional services.",
       "whatToWatch": [
-        "Wider rollout of GPT-6 Astra across Harvey's customer base.",
-        "Responses from competing legal-AI vendors."
+        "A formal OpenAI announcement of GPT-6 Astra's release and availability",
+        "Harvey's reported results after wider adoption"
       ],
       "questions": [
-        "What specific accuracy or error-rate gains come with 'stronger drafts'?"
+        "Is GPT-6 Astra a successor to GPT-5-series models or a distinct branch?",
+        "What legal-specific improvements does it introduce over prior models?"
       ],
       "sources": [
         {
@@ -180,22 +273,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T12:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/1fGwmofg1NcZrX5mgNL2f2/b88c7bf0b4fc2daeff9ec92264b0afcc/og.png?w=1600&h=900&fit=fill",
-      "badge": "Customer story",
-      "trendScore": 51,
+      "badge": "Case Study",
+      "trendScore": 46,
       "confidence": "medium"
     },
     {
       "id": "ai-7357353a1f",
       "slug": "invideo-says-gpt-6-astra-triples-its-color-grading-speed",
       "lane": "ai",
-      "title": "invideo says GPT-6 Astra triples its color-grading speed",
-      "summary": "OpenAI's customer story series features invideo, a video-editing platform. invideo says GPT-6 Astra improved its automated color-grading process threefold. The post does not explain what the 3x figure measures.",
-      "whyItMatters": "It is a small but concrete sign that frontier models are moving into creative production tools, not just chat and text work.",
-      "whatToWatch": [],
+      "title": "invideo triples color-grading speed with GPT-6 Astra, OpenAI says",
+      "summary": "OpenAI shared a customer story saying video platform invideo improved its color grading threefold using GPT-6 Astra. What exactly the 3x figure measures, speed, accuracy, or output quality, was not specified beyond the headline. It is another example of OpenAI showcasing GPT-6 Astra across different professional tools the same day.",
+      "whyItMatters": "It shows OpenAI rolling GPT-6 Astra out across creative and production tooling, not just text-heavy fields like law.",
+      "whatToWatch": [
+        "Further detail on what the \"3x\" improvement actually measures",
+        "Broader rollout of GPT-6 Astra to other creative-tool partners"
+      ],
       "questions": [
-        "Does the 3x gain refer to speed, output quality, or cost?"
+        "What does the 3x color-grading improvement measure exactly?"
       ],
       "sources": [
         {
@@ -207,25 +303,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T12:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/7u3JLdLZ5U3DIRSRzYmCvQ/3e3b52a6a13808aa7cf360628410f5f7/og.png?w=1600&h=900&fit=fill",
-      "badge": "Customer story",
-      "trendScore": 51,
+      "badge": "Case Study",
+      "trendScore": 46,
       "confidence": "medium"
     },
     {
       "id": "ai-01d4e543c9",
       "slug": "sam-altman-addresses-the-un-security-council",
       "lane": "ai",
-      "title": "Sam Altman addresses the UN Security Council",
-      "summary": "OpenAI published the text of Sam Altman's remarks to the United Nations Security Council. The source gives no detail on the content of the remarks or the Council's response.",
-      "whyItMatters": "A CEO of a major AI lab addressing the UN's top security body shows how central AI governance has become to international diplomacy.",
+      "title": "Sam Altman addresses the UN Security Council on AI",
+      "summary": "OpenAI published Sam Altman's remarks delivered to the United Nations Security Council. The content of the address beyond its connection to AI was not detailed in the available material. The appearance puts OpenAI's CEO directly before one of the world's top security bodies.",
+      "whyItMatters": "It shows AI governance now reaching the highest levels of international security diplomacy, with a leading AI company CEO directly involved.",
       "whatToWatch": [
-        "Any formal Security Council action or statement on AI following the remarks."
+        "Full transcript or summary of Altman's remarks",
+        "Reactions from UN member states and other AI labs"
       ],
       "questions": [
-        "What did Altman actually propose or request?",
-        "How did Council members respond?"
+        "What specific AI risks or policies did Altman address?",
+        "Did the Security Council take or plan any action following the remarks?"
       ],
       "sources": [
         {
@@ -237,22 +334,24 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T12:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/MD52BCLFjD4H7Kf1wiCnz/56e1b7f4a0eaa3f90e62d36799987269/sam-altman-s-remarks-at-the-united-nations-security-council-seo.png?w=1600&h=900&fit=fill",
       "badge": "Policy",
-      "trendScore": 51,
+      "trendScore": 46,
       "confidence": "medium"
     },
     {
       "id": "ai-9d02eeb8ce",
       "slug": "openai-marks-two-years-of-openai-academy",
       "lane": "ai",
-      "title": "OpenAI marks two years of OpenAI Academy",
-      "summary": "OpenAI published a retrospective on the second anniversary of OpenAI Academy, its training and education program. The post looks back on the program's history. It does not announce new features or expansions.",
-      "whyItMatters": "It is a reminder of OpenAI's continued push to build AI literacy among developers and users.",
-      "whatToWatch": [],
+      "title": "OpenAI marks two years of its Academy education program",
+      "summary": "OpenAI published a retrospective on two years of OpenAI Academy, its program for teaching people to use its AI tools. Details on reach, curriculum changes, or new offerings were not specified beyond the headline.",
+      "whyItMatters": "It marks OpenAI's continued investment in driving adoption and AI literacy, part of the broader fight for developer and user mindshare.",
+      "whatToWatch": [
+        "Any new courses or expansion announced alongside the anniversary"
+      ],
       "questions": [
-        "How many people have used OpenAI Academy so far?"
+        "How many people has OpenAI Academy trained in two years?"
       ],
       "sources": [
         {
@@ -264,25 +363,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T16:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/6A4AcxrMdo5oOri7Wm8qNg/34228cf221e3af874539412f71b28a44/two-years-of-openai-academy-seo.png?w=1600&h=900&fit=fill",
-      "trendScore": 50,
+      "trendScore": 45,
       "confidence": "medium"
     },
     {
       "id": "ai-1d5a9cc2d9",
       "slug": "openai-introduces-mentalhealthbench",
       "lane": "ai",
-      "title": "OpenAI introduces MentalHealthBench",
-      "summary": "OpenAI announced a new benchmark called MentalHealthBench. The source does not specify what the benchmark measures or how OpenAI plans to use it.",
-      "whyItMatters": "A benchmark focused on mental health signals growing pressure on AI labs to prove their models handle sensitive conversations safely.",
+      "title": "OpenAI introduces MentalHealthBench, a mental-health benchmark",
+      "summary": "OpenAI announced MentalHealthBench, described as a new benchmark tied to mental health. What the benchmark measures, how it was built, and which models were tested were not specified beyond the headline.",
+      "whyItMatters": "It signals AI labs are trying to measure and improve how chatbots handle sensitive mental-health conversations amid rising scrutiny of that behavior.",
       "whatToWatch": [
-        "Model scores published against the benchmark.",
-        "Whether other labs adopt or reference it."
+        "Full methodology and initial benchmark results",
+        "Reactions from mental-health professionals and AI safety researchers"
       ],
       "questions": [
-        "What exactly does MentalHealthBench test?",
-        "Will it shape OpenAI's safety policy or product design?"
+        "What specific behaviors or risks does MentalHealthBench evaluate?",
+        "Will other AI labs adopt or test against this benchmark?"
       ],
       "sources": [
         {
@@ -294,25 +393,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T10:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
-      "badge": "Research",
-      "trendScore": 50,
+      "updatedAt": "2026-09-24T04:25:51.378Z",
+      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5KrG4TnUmqAhgDo0zdLrUk/5dda4aa9e8fe694141b9fff6926ca82e/SEO_Card.png?w=1600&h=900&fit=fill",
+      "badge": "Safety",
+      "trendScore": 45,
       "confidence": "medium"
     },
     {
       "id": "ai-1d77064cbe",
       "slug": "openai-extends-cyber-defense-access-to-ukraine",
       "lane": "ai",
-      "title": "OpenAI extends cyber-defense access to Ukraine",
-      "summary": "OpenAI said it is extending access to its tools to support civilian cyber defense in Ukraine. The announcement does not specify which tools, the scale of access, or its duration.",
-      "whyItMatters": "It shows an AI lab taking a direct role in an active conflict, raising questions about neutrality, dual-use risk, and precedent for other labs.",
+      "title": "OpenAI extends cyber-defense access for Ukraine's civilian infrastructure",
+      "summary": "OpenAI announced it is extending access to its tools for cyber-defense purposes to support Ukraine's civilian infrastructure. The specific tools, scope, and duration of the extension were not detailed beyond the headline.",
+      "whyItMatters": "It is another example of a major AI company directly supporting a wartime ally with security-relevant capability, raising questions about AI's role in conflict.",
       "whatToWatch": [
-        "Whether other AI companies make similar commitments.",
-        "Reports on how the access is actually used."
+        "Details on which OpenAI tools or access levels are involved",
+        "Any similar extensions offered to other allied nations"
       ],
       "questions": [
-        "What specific capabilities is OpenAI providing?",
-        "What safeguards exist against misuse?"
+        "What specific cyber threats is this access meant to counter?",
+        "Is this arrangement paid or donated?"
       ],
       "sources": [
         {
@@ -324,24 +424,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T13:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/5TR3Q7ZcZJbqxGHYfksNSt/de1f57d45927c818631c58ffedb01346/openai-extends-cyber-access-to-ukraine-for-civilian-defense-seo.png?w=1600&h=900&fit=fill",
       "badge": "Policy",
-      "trendScore": 47,
+      "trendScore": 42,
       "confidence": "medium"
     },
     {
       "id": "ai-8d52960282",
       "slug": "opinion-cloud-ai-agents-risk-becoming-inevitable-prisons",
       "lane": "ai",
-      "title": "Opinion: cloud AI agents risk becoming 'inevitable prisons'",
-      "summary": "A post shared widely on Hacker News argues that cloud-hosted AI agents create structural lock-in for developers and users. It describes this dynamic as an 'inevitable AI prison.' The source gives no further detail beyond the headline claim.",
-      "whyItMatters": "It captures a growing developer debate about vendor lock-in and control as AI agents move from demos into core infrastructure.",
+      "title": "Opinion: cloud agents risk becoming \"inevitable AI prisons\"",
+      "summary": "An opinion piece circulating on Hacker News argues that cloud-hosted AI agents risk locking users and developers into vendor-controlled environments, calling them \"AI prisons.\" The full argument and which specific vendors or products it targets were not detailed beyond the headline.",
+      "whyItMatters": "It reflects ongoing industry debate over control, openness, and lock-in as agentic AI products spread across major vendors.",
       "whatToWatch": [
-        "Responses from cloud-agent vendors or a push toward more open alternatives."
+        "Community response and counterarguments from AI developers",
+        "Whether major cloud or agent vendors address the lock-in critique"
       ],
       "questions": [
-        "What specific practices does the argument point to as creating lock-in?"
+        "What specific vendors or products does the piece single out?",
+        "What alternative architecture, if any, does the author propose?"
       ],
       "sources": [
         {
@@ -353,95 +455,7 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T18:16:41Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
-      "badge": "Opinion",
-      "trendScore": 45,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-62f29a5a45",
-      "slug": "claude-opus-5-5-becomes-ainews-default-as-rivals-cut-prices-40-50",
-      "lane": "ai",
-      "title": "Claude Opus 5.5 becomes AINews default as rivals cut prices 40-50%",
-      "summary": "Latent Space's AINews newsletter says Claude Opus 5.5 is now its default model. The newsletter also reports that competing AI labs have cut prices 40-50% in response. This points to an intensifying price war among frontier model providers.",
-      "whyItMatters": "Price cuts of this size across the field suggest margin pressure is rising fast as several labs now field comparable frontier models.",
-      "whatToWatch": [
-        "Which specific labs cut prices, and by how much.",
-        "Whether Claude Opus 5.5 becomes a default beyond AINews."
-      ],
-      "questions": [
-        "Are the price cuts sustainable, or a short-term competitive response?",
-        "Is Opus 5.5 winning on capability, cost, or both?"
-      ],
-      "sources": [
-        {
-          "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
-          "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-09-23T06:41:41.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-23T06:41:41.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!tLrK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2102432417352929280.jpg",
-      "badge": "Competitive landscape",
-      "trendScore": 44,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-73fafdf6f4",
-      "slug": "airbnb-widens-access-to-gpt-6-astra-and-openai-s-frontier-models",
-      "lane": "ai",
-      "title": "Airbnb widens access to GPT-6 Astra and OpenAI's frontier models",
-      "summary": "OpenAI's customer story series says Airbnb is expanding internal access to GPT-6 Astra and other OpenAI frontier models. The post does not detail specific use cases or the size of the rollout.",
-      "whyItMatters": "It shows a major consumer platform deepening its reliance on OpenAI's newest models, a sign frontier-model adoption keeps spreading across large enterprises.",
-      "whatToWatch": [
-        "Which Airbnb products or features surface the expanded model access to users."
-      ],
-      "questions": [
-        "What tasks is Airbnb actually using GPT-6 Astra for?"
-      ],
-      "sources": [
-        {
-          "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-          "url": "https://openai.com/index/airbnb-gpt-6-astra",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-09-23T01:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-23T01:00:00.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/4EjU7S9AFpxyMlaAUQAoiu/9ad3eb003d32e0f6857f2e0e41d40e84/airbnb-widens-access-to-gpt-6-astra-and-openai-frontier-models-seo.png?w=1600&h=900&fit=fill",
-      "badge": "Customer story",
-      "trendScore": 42,
-      "confidence": "medium"
-    },
-    {
-      "id": "ai-bd03d329b1",
-      "slug": "bio-security-is-an-ai-arms-race-says-radical-numerics-ceo",
-      "lane": "ai",
-      "title": "'Bio-security is an AI arms race,' says Radical Numerics CEO",
-      "summary": "In a Latent Space conversation, Radical Numerics CEO Eric Nguyen argues that AI has turned biosecurity into an arms race. The source does not detail the specific evidence or actors behind his claim.",
-      "whyItMatters": "Biosecurity is one of the most consequential risk areas in AI safety debates, and this reflects concern from within the AI research community itself.",
-      "whatToWatch": [],
-      "questions": [
-        "What specific capabilities or actors does Nguyen think are driving this race?",
-        "What policy response does he recommend?"
-      ],
-      "sources": [
-        {
-          "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
-          "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-09-23T13:27:18.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-23T13:27:18.000Z",
-      "updatedAt": "2026-09-23T22:15:24.717Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!sMML!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F216723291%2Fc5daecec-8262-4632-b94a-ac5fcbb74077%2Ftranscoded-1790120123.png",
+      "updatedAt": "2026-09-24T04:25:51.378Z",
       "badge": "Analysis",
       "trendScore": 40,
       "confidence": "low"
