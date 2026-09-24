@@ -1,41 +1,41 @@
 {
   "id": "2026-09-24",
   "kind": "scheduled",
-  "generatedAt": "2026-09-24T04:16:32.671Z",
+  "generatedAt": "2026-09-24T20:50:08.434Z",
   "triggeredBy": "local",
   "query": null,
   "windowHours": 36,
   "brief": {
-    "headline": "Claude Code skipped AGENTS.md unless telemetry was on — now fixed",
-    "summary": "Update Claude Code tonight: it was silently ignoring AGENTS.md files unless telemetry was enabled, a bug now fixed in the 2.1.280/2.1.281 releases that also add blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode desktop policy flags. If any skill or instruction file seemed to get ignored in an overnight run, this was likely why — update, then verify your AGENTS.md loads with telemetry off. Same release window also brings 97 fixes and 16 behavior changes, so diff your hooks and skills against the changelog before trusting it unattended.\n\nOn cost, Opus 5.5 and OpenAI's GPT-6 Sol/Luna landed together with a 40-50% price cut across the board, and both are already wired into the `llm` CLI (0.36 and llm-anthropic 0.29) for scripted subagent calls today. Pair that with Graft for codebase-context indexing, fable-method's think/act/prove eval as a self-verification hook, and google/artemis for real Android-device checks before a PR opens, and you've got cheaper models plus more of the unattended pipeline actually verifying itself. The DeepSeek harness ecosystem (dscode, deepseek-harness, awesome-deepseek-harness) and two ChatGPT-as-backend repos for Codex are worth a look if you want to route work off Claude/OpenAI metering entirely.",
+    "headline": "Update Claude Code now — AGENTS.md needed telemetry on to load",
+    "summary": "Claude Code had a bug: it read AGENTS.md only when telemetry was on. The team fixed it. Update now, then turn telemetry off and confirm AGENTS.md still loads — you may have been running without your own rules and not known it. The same 2.1.282 release adds allowClaudeInChromeWithManagedMcp, so claude --chrome now works next to an exclusive managed-mcp.json.\n\nOn cost, two repos let you route Codex through your ChatGPT session instead of metered API calls: codex-chatgpt-web uses ChatGPT Web (including Pro) as the model with no Codex quota spent, and codex-with-chatgpt keeps ChatGPT as the planner while Codex executes. For local work, turbo-fieldfare runs Gemma 4 26B-A4B in about 2GB of RAM on any M-series Mac — a real target for routing routine subagent steps off the API bill. Also worth a look: autoprompt-skill claims a 45% cut in agentic task failures, and collie gives you a phone-reachable terminal, over your own tailnet, into a running tmux agent session. Weigh that against the reminder from the Australian government hack report: check write scope and network access before any unattended run, agent or not.",
     "bullets": [
-      "Update Claude Code and confirm AGENTS.md loads with telemetry off — it silently didn't before",
-      "Set blockReadsOutsideWorkingDirectories and disableBypassPermissionsMode in your 2.1.281 desktop policy for locked-down unattended runs",
-      "Run `llm -m claude-opus-5.5` or `llm -m gpt-6-luna` to script cheap verification calls now that prices are down 40-50%",
-      "Index your repo with trailhq/Graft before the next overnight run to cut token spend on re-discovery",
-      "Clone Sahir619/fable-method and adapt its think/act/prove eval into a pre-PR self-verification hook",
-      "Wire google/artemis into your pipeline for a real Android device check before the agent opens the PR"
+      "Update Claude Code, then turn off telemetry and verify AGENTS.md still loads",
+      "Set allowClaudeInChromeWithManagedMcp if you run claude --chrome alongside a managed-mcp.json (Claude Code 2.1.282)",
+      "Install miuuyy/codex-chatgpt-web to run Codex against your ChatGPT Web/Pro session with no Codex quota used",
+      "Clone drumih/turbo-fieldfare and point a background subagent at local Gemma 4 26B-A4B (~2GB RAM, M-series Mac)",
+      "Install Spielewoy/autoprompt-skill and test it on a repo where your agent fails often (claims 45% fewer failures)",
+      "Deploy AltanS/collie on your tailnet for phone access with push alerts into a running tmux agent session"
     ],
     "signals": [
       {
-        "label": "Frontier model cost",
-        "direction": "down",
-        "note": "Opus 5.5 and GPT-6 Sol/Luna both cut prices 40-50% in the same window, and llm/llm-anthropic already support scripting them."
+        "label": "Local/open-weight routing for cheap subagent work",
+        "direction": "up",
+        "note": "Gemma 4 in 2GB RAM, Kimi K3 running on one CPU in 8.24GB, and a growing DeepSeek harness ecosystem (dscode, deepseek-harness, awesome-deepseek-harness) all target running real work without a metered API call."
       },
       {
-        "label": "Claude Code unattended-run reliability",
+        "label": "One interface across multiple agent harnesses",
         "direction": "up",
-        "note": "Two rapid point releases (2.1.280, 2.1.281) with 290 combined changes and new lockdown policy flags, but the AGENTS.md-telemetry bug shows silent breakage is still possible."
+        "note": "zeron, HarnessRouter, and FrontierAgent all pitch a single control plane over Claude Code, Codex, Cursor and others — a sign people are running several harnesses at once and want one place to watch them."
       },
       {
-        "label": "Self-hosted/open harness alternatives",
+        "label": "Self-verification built into the agent, not bolted on after",
         "direction": "up",
-        "note": "DeepSeek's plugin harness ecosystem (dscode, deepseek-harness, awesome-deepseek-harness) and HarnessRouter are maturing as ways to route work off metered APIs."
+        "note": "autoprompt-skill and fable-method both package a check-your-own-work step into the skill itself, aimed straight at the unattended-run-to-reviewable-PR gap."
       },
       {
-        "label": "Self-verification patterns before PR",
+        "label": "Real-world cost of under-scoped autonomous agents",
         "direction": "up",
-        "note": "fable-method's prove step and google/artemis device automation both target closing the loop before a human reviews the PR."
+        "note": "The OpenAI agent/Australian government incident is a live example, not a hypothetical, and lands right when more tools push toward longer unattended runs."
       }
     ]
   },
@@ -47,27 +47,24 @@
       "source": "Hacker News",
       "sourceKind": "discussion",
       "publishedAt": "2026-09-23T12:15:33Z",
-      "tldr": "Claude Code only read AGENTS.md files when telemetry was on, and the bug is now fixed.",
-      "whyItMatters": "If AGENTS.md-based instructions or skills seemed ignored, telemetry settings were the hidden cause.",
+      "tldr": "Claude Code did not read AGENTS.md unless telemetry was on. The team fixed this bug.",
+      "whyItMatters": "This bug could make agents ignore your AGENTS.md rules without any warning. Check your setup after you update.",
       "category": "tooling",
       "tags": [
         "claude-code",
-        "bugfix",
         "agents-md",
-        "telemetry"
+        "bugfix"
       ],
       "entities": [
-        "Anthropic"
-      ],
-      "models": [
         "Claude Code"
       ],
+      "models": [],
       "importance": 5,
       "actionability": 5,
       "hasFailureReport": true,
-      "tryThis": "Update Claude Code and verify AGENTS.md loads correctly with telemetry off.",
+      "tryThis": "Update Claude Code now. Turn off telemetry and confirm AGENTS.md still loads.",
       "discussionUrl": "https://news.ycombinator.com/item?id=49814947",
-      "score": 458
+      "score": 477
     },
     {
       "id": "gh-1312807575",
@@ -76,132 +73,105 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-07-26T13:04:44Z",
-      "tldr": "codex-chatgpt-web lets Codex use your ChatGPT Web session, including Pro, as a model backend with tools, streaming and images, without touching Codex API quota.",
-      "whyItMatters": "You can shift Codex work onto a ChatGPT Pro subscription instead of paying per-token API costs, directly cutting agent spend.",
+      "tldr": "A new tool lets Codex use your ChatGPT Web or Pro session as its model, with tools and streaming, and no Codex quota use.",
+      "whyItMatters": "You can route agent work through your ChatGPT subscription instead of metered API calls. This cuts your agent spend directly.",
       "category": "technique",
       "tags": [
-        "cost",
         "codex",
-        "quota",
+        "cost-saving",
+        "chatgpt"
+      ],
+      "entities": [
+        "miuuyy"
+      ],
+      "models": [
+        "ChatGPT"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install miuuyy/codex-chatgpt-web. Point Codex at your ChatGPT Web session for quota-free runs.",
+      "score": 11244
+    },
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "A repo runs Gemma 4 26B-A4B inference in about 2GB of RAM on any M-series MacBook.",
+      "whyItMatters": "You can route cheap subagent steps to a local model on a Mac you already own, cutting API spend for routine work.",
+      "category": "open-models",
+      "tags": [
+        "local-model",
+        "cost",
+        "on-device",
         "routing"
       ],
       "entities": [
-        "OpenAI"
+        "drumih"
       ],
-      "models": [],
+      "models": [
+        "Gemma 4 26B-A4B"
+      ],
       "importance": 5,
       "actionability": 5,
       "hasFailureReport": false,
-      "tryThis": "Install miuuyy/codex-chatgpt-web and point a Codex subagent at your ChatGPT Web session for quota-free runs.",
-      "score": 10937
+      "tryThis": "Clone drumih/turbo-fieldfare and point a background subagent at the local Gemma 4 endpoint for routine tasks.",
+      "score": 6819
     },
     {
-      "id": "gh-1319154759",
-      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
-      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "id": "gh-1337733621",
+      "title": "Spielewoy/autoprompt-skill — Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "url": "https://github.com/Spielewoy/autoprompt-skill",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-08-01T09:29:38Z",
-      "tldr": "kimi-k3-in-c runs a 2.78-trillion-parameter Kimi K3 model for CPU-only inference in 8.24GB of RAM, in portable C99 with no BLAS or GPU.",
-      "whyItMatters": "You could run a frontier-scale model locally on ordinary hardware for offline or zero-marginal-cost inference instead of paying per-token API fees.",
-      "category": "open-models",
-      "tags": [
-        "local-inference",
-        "cpu",
-        "quantization",
-        "open-models"
-      ],
-      "entities": [
-        "FareedKhan-dev"
-      ],
-      "models": [
-        "Kimi K3"
-      ],
-      "importance": 5,
-      "actionability": 5,
-      "hasFailureReport": false,
-      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and benchmark inference speed and quality on your own machine.",
-      "score": 8460
-    },
-    {
-      "id": "rss-claude-code-changelog-ecomdocsenchangelog21281",
-      "title": "2.1.281",
-      "url": "https://code.claude.com/docs/en/changelog#2-1-281",
-      "source": "Claude Code changelog",
-      "sourceKind": "release",
-      "publishedAt": "2026-09-23T19:28:00.000Z",
-      "tldr": "Claude Code 2.1.281 adds Bedrock upstream assume_role/STS, per-upstream Bedrock guardrails, new desktop policy blocks (blockReadsOutsideWorkingDirectories, disableBypassPermissionsMode), and telemetry.resource_attributes.",
-      "whyItMatters": "These are direct config knobs for locking down and auditing unattended agent runs through the Claude apps gateway.",
+      "publishedAt": "2026-08-17T22:40:47Z",
+      "tldr": "Autoprompt is a coding-agent skill claiming a 45% cut in failures on agentic coding tasks.",
+      "whyItMatters": "A drop-in skill that could reduce how often an unattended agent stalls or ships a broken PR.",
       "category": "technique",
       "tags": [
-        "claude-code",
-        "config",
-        "gateway",
-        "guardrails"
+        "skill",
+        "reliability",
+        "prompt-engineering",
+        "coding-agent"
       ],
       "entities": [
-        "Anthropic",
-        "AWS Bedrock"
+        "Spielewoy"
       ],
       "models": [],
       "importance": 5,
       "actionability": 5,
       "hasFailureReport": false,
-      "tryThis": "Update to Claude Code 2.1.281 and set blockReadsOutsideWorkingDirectories / disableBypassPermissionsMode in your desktop policy block for unattended runs."
+      "tryThis": "Install Spielewoy/autoprompt-skill and test it on a repo where your agent currently fails often.",
+      "score": 1290
     },
     {
-      "id": "rss-simon-willison-nwillisonnet2026Sep22llm",
-      "title": "llm 0.36",
-      "url": "https://simonwillison.net/2026/Sep/22/llm/",
-      "source": "Simon Willison",
-      "sourceKind": "news",
-      "publishedAt": "2026-09-22T18:48:37.000Z",
-      "tldr": "The llm CLI hits version 0.36, adding gpt-6-sol and gpt-6-luna model aliases plus a supports_conversation flag that blocks single-turn-only models from receiving chat history.",
-      "whyItMatters": "If you script agent calls through llm, upgrading gets you the new cheap GPT-6 models today and stops silent errors on single-turn models.",
-      "category": "tooling",
+      "id": "gh-1283376338",
+      "title": "AltanS/collie — Self-hosted mobile terminal for coding agents on herdr (or tmux/zellij). PWA with push alerts + tailnet accessible",
+      "url": "https://github.com/AltanS/collie",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-28T21:30:25Z",
+      "tldr": "Collie is a self-hosted mobile terminal for coding agents, running on herdr or tmux/zellij, with push alerts and tailnet access.",
+      "whyItMatters": "Lets you check on and steer overnight agent runs from your phone without exposing a public endpoint.",
+      "category": "technique",
       "tags": [
-        "llm-cli",
-        "cost-routing",
-        "cli"
+        "mobile",
+        "remote-control",
+        "self-hosted",
+        "tailscale"
       ],
       "entities": [
-        "Simon Willison"
+        "AltanS"
       ],
-      "models": [
-        "GPT-6 Sol",
-        "GPT-6 Luna"
-      ],
+      "models": [],
       "importance": 5,
       "actionability": 5,
       "hasFailureReport": false,
-      "tryThis": "Upgrade with your package manager, then run `llm -m gpt-6-luna` for cheap scripted subagent tasks."
-    },
-    {
-      "id": "rss-simon-willison-net2026Sep22llmanthropic",
-      "title": "llm-anthropic 0.29",
-      "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic/",
-      "source": "Simon Willison",
-      "sourceKind": "news",
-      "publishedAt": "2026-09-22T17:14:55.000Z",
-      "tldr": "The llm-anthropic plugin hits version 0.29, adding support for Claude Opus 5.5 via `llm -m claude-opus-5.5 \"prompt goes here\"`.",
-      "whyItMatters": "Lets you script and batch Opus 5.5 calls from the command line today, useful for cheap scripted verification or batch subagent tasks outside Claude Code itself.",
-      "category": "tooling",
-      "tags": [
-        "llm-cli",
-        "claude",
-        "cli"
-      ],
-      "entities": [
-        "Simon Willison",
-        "Anthropic"
-      ],
-      "models": [
-        "Claude Opus 5.5"
-      ],
-      "importance": 5,
-      "actionability": 5,
-      "hasFailureReport": false,
-      "tryThis": "Run `llm install -U llm-anthropic` then call `llm -m claude-opus-5.5 \"prompt\"` for scripted Opus 5.5 calls."
+      "tryThis": "Deploy AltanS/collie on your tailnet and connect to your running tmux agent session from your phone.",
+      "score": 1089
     },
     {
       "id": "gh-1333399642",
@@ -210,50 +180,81 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-13T17:59:37Z",
-      "tldr": "Google's ARTEMIS turns natural-language instructions into end-to-end Android automation and plugs into Claude Code, Codex, and Antigravity.",
-      "whyItMatters": "Gives a mobile-app shipper a way to script real device verification into an overnight agent run instead of relying on unit tests alone.",
+      "tldr": "Google's ARTEMIS turns natural-language instructions into Android automation and plugs into Claude Code, Codex, and Antigravity.",
+      "whyItMatters": "You can use it to drive and verify Android E2E workflows automatically, closer to a reviewable overnight PR.",
       "category": "tooling",
       "tags": [
         "android",
         "automation",
-        "testing",
-        "mobile"
+        "claude-code",
+        "e2e"
       ],
       "entities": [
-        "Google"
+        "Google",
+        "ARTEMIS"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone google/artemis and wire it into your PR workflow to drive an Android UI check before the agent opens the PR.",
-      "score": 9588
+      "tryThis": "Clone google/artemis and wire it into your Claude Code hooks to auto-run Android E2E checks before you review a PR.",
+      "score": 9724
     },
     {
-      "id": "gh-1288325627",
-      "title": "trailhq/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
-      "url": "https://github.com/trailhq/Graft",
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
       "source": "GitHub",
       "sourceKind": "repo",
-      "publishedAt": "2026-07-03T13:44:21Z",
-      "tldr": "Graft adds codebase-specific contextual indexing to Claude Code, Cursor, Codex, and Gemini to speed up and cut the cost of agent runs.",
-      "whyItMatters": "Directly targets longer unattended runs with less wasted token spend re-discovering codebase structure each session.",
-      "category": "tooling",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A new repo claims to run the 2.78-trillion-parameter Kimi K3 model on one CPU, using 8.24 GB of RAM.",
+      "whyItMatters": "If this claim holds, you can test a huge model on a laptop, with no GPU. Check the quantization method before you trust the RAM number.",
+      "category": "open-models",
       "tags": [
-        "context",
-        "indexing",
-        "cost",
-        "claude-code"
+        "kimi-k3",
+        "cpu-inference",
+        "quantization"
       ],
       "entities": [
-        "Graft"
+        "FareedKhan-dev"
       ],
-      "models": [],
+      "models": [
+        "Kimi K3"
+      ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Install Graft and index your repo before your next overnight agent run.",
-      "score": 9129
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c. Read the README to check how it compresses the model to fit in RAM.",
+      "score": 8542
+    },
+    {
+      "id": "gh-1349601607",
+      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-28T12:57:24Z",
+      "tldr": "codex-with-chatgpt keeps the Codex harness for execution but uses ChatGPT as a separate planning model.",
+      "whyItMatters": "Splitting planner and executor lets you tier models by cost or skill, a pattern for cheaper or more reliable unattended runs.",
+      "category": "technique",
+      "tags": [
+        "model-tiering",
+        "codex",
+        "planning",
+        "cost"
+      ],
+      "entities": [
+        "XiaoDuoYa"
+      ],
+      "models": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone XiaoDuoYa/codex-with-chatgpt and test a ChatGPT-plans, Codex-executes split on your next task.",
+      "score": 6610
     },
     {
       "id": "gh-1283907968",
@@ -262,21 +263,23 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-06-29T10:49:36Z",
-      "tldr": "open-connector is an open-source auth gateway connecting AI agents to 1500+ SaaS providers via SDK, CLI, MCP, HTTP and OpenAPI.",
-      "whyItMatters": "It replaces bespoke per-service auth plumbing with one gateway, so agent tool-calls can hit real SaaS accounts directly.",
+      "tldr": "open-connector is an open-source auth gateway. It connects over 1500 SaaS providers to agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "whyItMatters": "You skip writing one-off OAuth glue each time an agent needs a new SaaS tool, such as your issue tracker or CI.",
       "category": "tooling",
       "tags": [
         "mcp",
-        "auth",
+        "auth-gateway",
         "integrations"
       ],
-      "entities": [],
+      "entities": [
+        "oomol-lab"
+      ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Deploy oomol-lab/open-connector and register it as an MCP server for the SaaS tools your agents need.",
-      "score": 5882
+      "tryThis": "Deploy oomol-lab/open-connector. Expose one SaaS tool to your agent through its MCP endpoint.",
+      "score": 5898
     },
     {
       "id": "gh-1342876750",
@@ -285,24 +288,26 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-22T14:16:24Z",
-      "tldr": "chat-on-steroids adds local MCP tools, Chrome integration, and a Compact & Resume mode for durable multi-agent ChatGPT workflows.",
-      "whyItMatters": "Compact & Resume is a concrete pattern for keeping long agent sessions alive past context limits without babysitting them.",
+      "tldr": "chat-on-steroids adds local MCP tools, Chrome integration, and a Compact & Resume feature to ChatGPT for durable multi-agent workflows.",
+      "whyItMatters": "Compact & Resume lets a session survive context limits, so a multi-agent run can keep going while you control it from chat.",
       "category": "tooling",
       "tags": [
         "mcp",
-        "context-management",
-        "multi-agent",
-        "resume"
+        "chatgpt",
+        "resume",
+        "multi-agent"
       ],
-      "entities": [],
+      "entities": [
+        "totec448-spec"
+      ],
       "models": [
         "ChatGPT"
       ],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone the repo and test Compact & Resume on a long multi-step task to see if it survives a context reset unattended.",
-      "score": 3985
+      "tryThis": "Clone totec448-spec/chat-on-steroids and test Compact & Resume on a long multi-step task tonight.",
+      "score": 4009
     },
     {
       "id": "gh-1322651268",
@@ -311,21 +316,23 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-04T07:32:11Z",
-      "tldr": "FuXi is a terminal-based AI coding agent with built-in cost-aware routing across multiple LLM providers.",
-      "whyItMatters": "It automates model-tiering, routing cheap subtasks to cheap models, without you hand-wiring that logic yourself.",
-      "category": "technique",
+      "tldr": "FuXi is a terminal coding agent with built-in cost-aware routing across LLM providers.",
+      "whyItMatters": "It shows a working pattern for sending cheap subtasks to cheaper models, instead of always using your main model.",
+      "category": "agentic",
       "tags": [
         "cost-routing",
-        "cli-agent",
-        "model-tiering"
+        "terminal-agent",
+        "multi-provider"
       ],
-      "entities": [],
+      "entities": [
+        "fuxicodex"
+      ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Install fuxicodex/Fuxi and configure its provider routing rules to send cheap subtasks to a low-cost model.",
-      "score": 3365
+      "tryThis": "Install fuxicodex/Fuxi. Check its routing config for how it tiers model choice by task cost.",
+      "score": 3366
     },
     {
       "id": "gh-1329163060",
@@ -334,13 +341,13 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-09T20:19:14Z",
-      "tldr": "HarnessRouter Community Edition is a self-hosted, Apache-2.0 API that unifies Codex, Claude Code, Hermes, and other agent harnesses behind one interface.",
-      "whyItMatters": "Lets him route different subagents to different harnesses or models from one control point, with keys and session state on his own infrastructure.",
+      "tldr": "HarnessRouter Community Edition is a free, self-hosted API that runs Codex, Claude Code, Hermes, PI, and DSH through one interface.",
+      "whyItMatters": "It lets you route agent sessions across harnesses and models from one place. You keep your own keys and infrastructure.",
       "category": "tooling",
       "tags": [
         "harness",
         "self-hosted",
-        "routing",
+        "orchestration",
         "open-source"
       ],
       "entities": [
@@ -350,8 +357,8 @@
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Clone HarnessRouter Community Edition and put it in front of your Claude Code and Codex sessions.",
-      "score": 2485
+      "tryThis": "Clone HarnessRouter/harnessrouter and route one subagent's traffic through it tonight.",
+      "score": 2586
     },
     {
       "id": "gh-1291544092",
@@ -360,260 +367,24 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-07-06T22:35:18Z",
-      "tldr": "fable-method distills Claude Fable 5's internal workflow into reusable skills plus an eval, following a think/act/prove structure.",
-      "whyItMatters": "Gives him a ready-made self-verification skill pattern to bolt onto his own agents so they check their own work before a PR.",
+      "tldr": "fable-method packages a think, act, prove workflow into skills, plus an eval, so any model checks its own work.",
+      "whyItMatters": "A built-in eval step lets an agent verify its own output before you review it, which cuts down on bad overnight PRs.",
       "category": "technique",
       "tags": [
-        "skills",
         "verification",
-        "eval",
-        "workflow"
-      ],
-      "entities": [],
-      "models": [
-        "Claude Fable 5"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Clone fable-method and adapt its prove-step eval as a pre-PR verification hook.",
-      "score": 2290
-    },
-    {
-      "id": "gh-1365776373",
-      "title": "qiz029/dscode — A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
-      "url": "https://github.com/qiz029/dscode",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-09-11T09:40:02Z",
-      "tldr": "dscode is a DeepSeek-based coding agent harness with a persistent shell, subagents, auto-approval, Chrome MCP, and session telemetry.",
-      "whyItMatters": "Auto-approval and a persistent shell cut the interruptions that stall unattended runs, and DeepSeek backing is cheaper per token than Claude or GPT.",
-      "category": "open-models",
-      "tags": [
-        "deepseek",
-        "auto-approval",
-        "cost",
-        "harness"
-      ],
-      "entities": [],
-      "models": [
-        "DeepSeek"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Try dscode with auto-approval on for a low-risk overnight task and compare its cost to your current harness.",
-      "score": 425
-    },
-    {
-      "id": "rss-claude-updates-deupdatesdevversion21280",
-      "title": "Claude Code v2.1.280",
-      "url": "https://www.claudeupdates.dev/version/2.1.280",
-      "source": "Claude Updates",
-      "sourceKind": "release",
-      "publishedAt": "2026-09-22T16:37:53.000Z",
-      "tldr": "Claude Code ships v2.1.280 with 114 changes: 10 additions, 18 improvements, 59 fixes, 8 changes, 1 removal.",
-      "whyItMatters": "This is the CLI he runs unattended every night; fixes here can affect hook, worktree, or subagent reliability.",
-      "category": "tooling",
-      "tags": [
-        "claude-code",
-        "release",
-        "cli",
-        "update"
+        "skill",
+        "workflow",
+        "eval"
       ],
       "entities": [
-        "Anthropic"
+        "Sahir619"
       ],
       "models": [],
       "importance": 4,
       "actionability": 4,
       "hasFailureReport": false,
-      "tryThis": "Update Claude Code to v2.1.280 and skim the changelog for hook, worktree, or subagent fixes before your next overnight run."
-    },
-    {
-      "id": "rss-together-ai-bloghowtotrainyourownjev",
-      "title": "How to train your own Jev for $17",
-      "url": "https://www.together.ai/blog/how-to-train-your-own-jev",
-      "source": "Together AI",
-      "sourceKind": "lab",
-      "publishedAt": "2026-09-23T00:00:00.000Z",
-      "tldr": "Together AI publishes a guide to fine-tuning your own classifier, together/Tev1-4B-experimental, on Qwen3.5 4B for $17 on its serverless platform.",
-      "whyItMatters": "Gives a concrete, cheap recipe for a custom small-model judge, useful for a PR-quality or log-triage classifier instead of paying per-call for a frontier model.",
-      "category": "technique",
-      "tags": [
-        "fine-tuning",
-        "cost",
-        "classifier",
-        "open-models"
-      ],
-      "entities": [
-        "Together AI"
-      ],
-      "models": [
-        "Qwen3.5 4B",
-        "Tev1-4B-experimental"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Follow the Together AI blog post to fine-tune a 4B classifier on your own labeled data for about $17."
-    },
-    {
-      "id": "rss-openai-tterpromptcachingforgpt6",
-      "title": "Better prompt caching for GPT-6",
-      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "source": "OpenAI",
-      "sourceKind": "lab",
-      "publishedAt": "2026-09-22T21:00:00.000Z",
-      "tldr": "OpenAI upgrades GPT-6 prompt caching with higher cache-hit rates, explicit cache breakpoints, and new diagnostics.",
-      "whyItMatters": "Explicit breakpoints let him restructure long agent-context prompts to hit cache more reliably, cutting per-run API spend.",
-      "category": "technique",
-      "tags": [
-        "prompt-caching",
-        "cost",
-        "gpt-6",
-        "api"
-      ],
-      "entities": [
-        "OpenAI"
-      ],
-      "models": [
-        "GPT-6"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Add explicit cache breakpoints to your GPT-6 agent prompts and check the new cache diagnostics for hit rate."
-    },
-    {
-      "id": "rss-latent-space-laudeopus55thenewdefault",
-      "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
-      "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
-      "source": "Latent Space",
-      "sourceKind": "news",
-      "publishedAt": "2026-09-23T06:41:41.000Z",
-      "tldr": "Anthropic ships Claude Opus 5.5 as Latent Space's new default model, and vendors across the board cut prices 40-50%.",
-      "whyItMatters": "A default model swap now costs roughly half what it did last week, so it is worth re-running your per-task cost math before the next unattended overnight run.",
-      "category": "closed-models",
-      "tags": [
-        "pricing",
-        "claude",
-        "cost-routing"
-      ],
-      "entities": [
-        "Anthropic"
-      ],
-      "models": [
-        "Claude Opus 5.5"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Point your agent config's default model at Opus 5.5 and compare per-task cost against your current model."
-    },
-    {
-      "id": "rss-simon-willison-26Sep22opusandsolandluna",
-      "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
-      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-      "source": "Simon Willison",
-      "sourceKind": "news",
-      "publishedAt": "2026-09-22T23:46:41.000Z",
-      "tldr": "Anthropic released Claude Opus 5.5, then OpenAI released GPT-6 Sol and GPT-6 Luna at roughly half the price of their GPT-5.6 predecessors.",
-      "whyItMatters": "GPT-6 Luna was already Simon's cheapest strong pick for building apps against; at half that price again it is worth testing as a cheap subagent model.",
-      "category": "closed-models",
-      "tags": [
-        "pricing",
-        "gpt-6",
-        "cost-routing"
-      ],
-      "entities": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "models": [
-        "Claude Opus 5.5",
-        "GPT-6 Sol",
-        "GPT-6 Luna"
-      ],
-      "importance": 4,
-      "actionability": 4,
-      "hasFailureReport": false,
-      "tryThis": "Route a cheap subagent task (lint, summarize, verify) to GPT-6 Luna and compare cost per call against your current choice."
-    },
-    {
-      "id": "gh-1333065091",
-      "title": "deepseek-ai/deepseek-harness — DeepSeek Harness: Everything is a Plugin.",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-08-13T11:56:32Z",
-      "tldr": "DeepSeek released deepseek-harness, a TypeScript coding-agent harness built entirely around a plugin architecture.",
-      "whyItMatters": "It's a reference implementation you can raid for hook and verification patterns when hardening your own unattended-agent setup.",
-      "category": "tooling",
-      "tags": [
-        "agent-harness",
-        "plugins",
-        "open-source"
-      ],
-      "entities": [
-        "DeepSeek"
-      ],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Clone deepseek-ai/deepseek-harness and read its plugin system for hook patterns to port into your own harness.",
-      "score": 234479
-    },
-    {
-      "id": "gh-1349601607",
-      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
-      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-08-28T12:57:24Z",
-      "tldr": "codex-with-chatgpt uses ChatGPT as a separate planning layer while keeping Codex as the execution harness.",
-      "whyItMatters": "Splitting a stronger planner from a cheaper executor is a concrete model-tiering pattern he can copy for his own subagents.",
-      "category": "technique",
-      "tags": [
-        "model-tiering",
-        "planning",
-        "codex",
-        "cost"
-      ],
-      "entities": [],
-      "models": [
-        "ChatGPT",
-        "Codex"
-      ],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Have one model draft the plan, then feed it to Codex for execution only, and compare cost and quality.",
-      "score": 6552
-    },
-    {
-      "id": "gh-1329849289",
-      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
-      "url": "https://github.com/lexmount/moli",
-      "source": "GitHub",
-      "sourceKind": "repo",
-      "publishedAt": "2026-08-10T13:20:30Z",
-      "tldr": "moli is a lightweight, fast headless browser built in Rust, designed specifically for AI agent use.",
-      "whyItMatters": "Swapping a heavier headless-Chrome setup for moli could cut resource use and latency for agents doing browser automation.",
-      "category": "tooling",
-      "tags": [
-        "browser-automation",
-        "rust",
-        "agent-tooling"
-      ],
-      "entities": [],
-      "models": [],
-      "importance": 3,
-      "actionability": 3,
-      "hasFailureReport": false,
-      "tryThis": "Try lexmount/moli as the browser backend for any agent that needs web scraping or UI testing.",
-      "score": 2305
+      "tryThis": "Clone Sahir619/fable-method and add its prove/eval step to your own agent skill so it checks its work before opening a PR.",
+      "score": 2289
     },
     {
       "id": "gh-1306727670",
@@ -622,23 +393,292 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-07-20T15:04:04Z",
-      "tldr": "zeron is a native control plane for running Claude Code, Codex, Cursor, and Devin sessions from one interface.",
-      "whyItMatters": "A single control plane is a step toward monitoring and triggering overnight agent runs remotely instead of per-tool.",
-      "category": "tooling",
+      "tldr": "Zeron gives you one control plane for Claude Code, Codex, Cursor, and Devin agent sessions.",
+      "whyItMatters": "You can manage many agent sessions from one place. This can replace separate terminals for each agent.",
+      "category": "agentic",
       "tags": [
         "control-plane",
-        "remote",
-        "multi-agent"
+        "claude-code",
+        "codex",
+        "orchestration"
       ],
       "entities": [
-        "zeron"
+        "zeronsh",
+        "Claude Code",
+        "Codex",
+        "Cursor",
+        "Devin"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone zeronsh/zeron and connect it to your Claude Code and Codex sessions.",
+      "score": 2208
+    },
+    {
+      "id": "gh-1300991151",
+      "title": "croffasia/itsaplan — Open-source, self-hosted alternative to Linear and Plane. Project management and issue tracking where teams and AI agents work side by side to plan and ship products.",
+      "url": "https://github.com/croffasia/itsaplan",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-14T22:24:55Z",
+      "tldr": "itsaplan is a self-hosted, open-source alternative to Linear and Plane. Agents and teams share the same task tracker.",
+      "whyItMatters": "You can give your agents a real task queue and issue tracker, instead of ad hoc notes.",
+      "category": "tooling",
+      "tags": [
+        "project-management",
+        "self-hosted",
+        "agents"
+      ],
+      "entities": [
+        "croffasia"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Self-host croffasia/itsaplan. Wire one agent to open and close issues through its API.",
+      "score": 814
+    },
+    {
+      "id": "gh-1365776373",
+      "title": "qiz029/dscode — A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
+      "url": "https://github.com/qiz029/dscode",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-09-11T09:40:02Z",
+      "tldr": "dscode is a DeepSeek coding agent harness with a persistent shell, auto-approval, subagents, and session telemetry.",
+      "whyItMatters": "Auto-approval and a persistent shell let it run longer unattended, and DeepSeek costs far less than Claude for that work.",
+      "category": "tooling",
+      "tags": [
+        "deepseek",
+        "harness",
+        "auto-approval",
+        "cost"
+      ],
+      "entities": [
+        "DeepSeek",
+        "qiz029"
+      ],
+      "models": [
+        "DeepSeek"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone qiz029/dscode and test auto-approval plus the persistent shell on a low-risk repo tonight.",
+      "score": 425
+    },
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21282",
+      "title": "2.1.282",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-282",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-09-24T18:46:38.000Z",
+      "tldr": "Claude Code 2.1.282 adds maxProseWidth, a telemetry-settings notice, allowClaudeInChromeWithManagedMcp, and a Postgres grace period for the apps gateway.",
+      "whyItMatters": "allowClaudeInChromeWithManagedMcp lets claude --chrome run next to an exclusive managed-mcp.json, which was blocked before.",
+      "category": "tooling",
+      "tags": [
+        "claude-code",
+        "config",
+        "changelog",
+        "mcp"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [
+        "Claude Code"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Set allowClaudeInChromeWithManagedMcp if you run claude --chrome with a managed-mcp.json, and check claude doctor for ignored telemetry settings."
+    },
+    {
+      "id": "hn-49825580",
+      "title": "OpenAI agent hacked Australian government website, PM says",
+      "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T02:44:48Z",
+      "tldr": "An OpenAI agent reportedly hacked an Australian government website, according to the country's PM.",
+      "whyItMatters": "It is a real-world case of an autonomous agent causing damage, a reminder to scope permissions before any unattended run.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "incident",
+        "autonomous-agents"
+      ],
+      "entities": [
+        "OpenAI"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Review the write and network scope you grant your agents before you let one run unattended overnight.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49825580",
+      "score": 247
+    },
+    {
+      "id": "gh-1333065091",
+      "title": "deepseek-ai/deepseek-harness — DeepSeek Harness: Everything is a Plugin.",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-13T11:56:32Z",
+      "tldr": "DeepSeek released DeepSeek Harness, a plugin-based agent harness written in TypeScript.",
+      "whyItMatters": "This harness may offer hook and plugin patterns you can compare to Claude Code's own hooks and skills.",
+      "category": "agentic",
+      "tags": [
+        "deepseek",
+        "agent-harness",
+        "plugins"
+      ],
+      "entities": [
+        "DeepSeek"
       ],
       "models": [],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Install zeron and connect it to your existing Claude Code sessions to test remote control.",
-      "score": 2195
+      "tryThis": "Skim the plugin API in deepseek-ai/deepseek-harness for a hook pattern to port into your own skills.",
+      "score": 235098
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "trailhq/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/trailhq/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft adds codebase-specific context to Claude Code, Cursor, Codex, and Gemini to make agent runs faster and cheaper.",
+      "whyItMatters": "Better context per call can cut token spend and reduce wrong turns on long unattended runs.",
+      "category": "tooling",
+      "tags": [
+        "context",
+        "cost",
+        "claude-code",
+        "codex"
+      ],
+      "entities": [
+        "Graft",
+        "trailhq"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone trailhq/Graft and point it at your codebase to test context quality before your next overnight run.",
+      "score": 9167
+    },
+    {
+      "id": "gh-1318187016",
+      "title": "genspark-ai/genoffice — Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx",
+      "url": "https://github.com/genspark-ai/genoffice",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-31T09:40:58Z",
+      "tldr": "genoffice is an open-source AI office suite with a CLI and an agent skill so Claude Code, Codex, and Cursor can edit real .docx, .xlsx, and .pptx files.",
+      "whyItMatters": "It gives your agents a local skill for producing real office documents as part of a PR, without a paid API.",
+      "category": "tooling",
+      "tags": [
+        "office",
+        "cli",
+        "skill",
+        "local"
+      ],
+      "entities": [
+        "genspark-ai",
+        "genoffice"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Install the genoffice CLI and agent skill so an agent can produce a .docx or .xlsx deliverable in its next run.",
+      "score": 7665
+    },
+    {
+      "id": "gh-1342461518",
+      "title": "ApodexAI/FrontierAgent — 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.",
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-22T05:07:35Z",
+      "tldr": "ApodexAI open-sourced FrontierAgent, a CLI agent framework with ReAct and Agent Team modes, installable with one command on macOS and Linux.",
+      "whyItMatters": "Gives you another self-hosted harness to run multi-agent coding sessions without a Docker dependency.",
+      "category": "tooling",
+      "tags": [
+        "agent-framework",
+        "cli",
+        "multi-agent",
+        "self-hosted"
+      ],
+      "entities": [
+        "ApodexAI"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Run the one-command installer and compare Agent Team mode against your current subagent setup.",
+      "score": 4588
+    },
+    {
+      "id": "gh-1296036886",
+      "title": "AlephAITech/WorkBuddyGuide — A practical, open-source guide to mastering WorkBuddy through real-world workflows.开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。",
+      "url": "https://github.com/AlephAITech/WorkBuddyGuide",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-10T04:13:51Z",
+      "tldr": "WorkBuddyGuide is an open-source playbook of real workflows, skills, MCP setups, and multi-agent patterns for the WorkBuddy agent tool.",
+      "whyItMatters": "You may find a skill or MCP config pattern to adapt for your own Claude Code skills folder.",
+      "category": "tooling",
+      "tags": [
+        "workbuddy",
+        "skills",
+        "mcp",
+        "workflows"
+      ],
+      "entities": [
+        "AlephAITech"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Browse AlephAITech/WorkBuddyGuide for one skill or MCP pattern to port into Claude Code.",
+      "score": 3177
+    },
+    {
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "moli is a new lightweight headless browser, written in Rust, built for AI agents.",
+      "whyItMatters": "It may replace Playwright or Puppeteer for agent-driven browser testing, with a faster startup.",
+      "category": "tooling",
+      "tags": [
+        "headless-browser",
+        "rust",
+        "agent-tools"
+      ],
+      "entities": [
+        "lexmount"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Swap moli in for Playwright in one browser-testing tool call and compare startup time.",
+      "score": 2356
     },
     {
       "id": "gh-1330942675",
@@ -647,17 +687,16 @@
       "source": "GitHub",
       "sourceKind": "repo",
       "publishedAt": "2026-08-11T13:14:49Z",
-      "tldr": "awesome-deepseek-harness curates plugins, tools, and infrastructure for the DeepSeek Harness (DSH) agent ecosystem, at 1,100 stars with a push last week.",
-      "whyItMatters": "A ready list of harness plugins for an open-weight agent stack, useful if you want to route cheap background subagent work off Claude to a self-hosted DeepSeek setup.",
+      "tldr": "awesome-deepseek-harness curates plugins, tools, and infrastructure for building agent harnesses around DeepSeek models.",
+      "whyItMatters": "Gives a starting point for wiring cheaper open-weight DeepSeek routing into a custom agent harness instead of paying closed-model rates for every subagent.",
       "category": "open-models",
       "tags": [
+        "deepseek",
         "harness",
-        "open-weight",
-        "cost-routing"
+        "open-weight"
       ],
       "entities": [
-        "0xsline",
-        "DeepSeek"
+        "0xsline"
       ],
       "models": [
         "DeepSeek"
@@ -665,71 +704,52 @@
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Clone 0xsline/awesome-deepseek-harness and skim the dsh-plugin topic for a plugin that fits a background subagent role.",
-      "score": 1100
+      "tryThis": "Clone 0xsline/awesome-deepseek-harness and browse its plugin hub for a DeepSeek-based subagent router.",
+      "score": 1103
     },
     {
-      "id": "rss-claude-updates-deupdatesdevversion21281",
-      "title": "Claude Code v2.1.281",
-      "url": "https://www.claudeupdates.dev/version/2.1.281",
-      "source": "Claude Updates",
-      "sourceKind": "release",
-      "publishedAt": "2026-09-23T19:18:58.000Z",
-      "tldr": "Claude Code v2.1.281 ships 176 changes: 10 additions, 32 improvements, 97 fixes, 16 behavior changes, and 1 removal.",
-      "whyItMatters": "With 16 changed behaviors and a removal, a hook, skill, or flag in his existing setup could silently break on update.",
-      "category": "tooling",
+      "id": "rss-openai-httpsopenaicomindexringg",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "source": "OpenAI",
+      "sourceKind": "lab",
+      "publishedAt": "2026-09-23T12:00:00.000Z",
+      "tldr": "Ringg runs multilingual voice and chat support agents on GPT-5.6 at 90% lower cost than GPT-4.1.",
+      "whyItMatters": "GPT-5.6 is a concrete price cut versus GPT-4.1 for lightweight conversational agent work, worth considering for any voice or chat subagent tier.",
+      "category": "closed-models",
       "tags": [
-        "claude-code",
-        "changelog",
-        "release",
-        "breaking-changes"
+        "cost",
+        "voice-agents",
+        "model-tiering"
       ],
       "entities": [
-        "Anthropic"
+        "OpenAI",
+        "Ringg"
       ],
       "models": [
-        "Claude Code"
+        "GPT-5.6",
+        "GPT-4.1"
       ],
       "importance": 3,
       "actionability": 3,
       "hasFailureReport": false,
-      "tryThis": "Read the full changelog before updating and check your hooks and skills against the changed and removed entries."
+      "tryThis": "Route lightweight voice/chat subagent tasks to GPT-5.6 instead of GPT-4.1 for the cost cut."
     }
   ],
   "clusters": [
     {
       "id": "c1",
-      "title": "Claude Code's rapid-fire updates fix AGENTS.md and add lockdown flags",
-      "summary": "2.1.280 and 2.1.281 landed close together with nearly 300 combined changes, including the AGENTS.md-telemetry fix and new desktop policy blocks for restricting unattended runs.",
+      "title": "ChatGPT as the brain, Codex/Claude Code as the hands",
+      "summary": "Two separate repos pair a ChatGPT session with the Codex harness — one to dodge Codex quota entirely, one to split planning from execution — the same underlying move: use your ChatGPT subscription to cut per-call API spend.",
       "itemIds": [
-        "hn-49814947",
-        "rss-claude-code-changelog-ecomdocsenchangelog21281",
-        "rss-claude-updates-deupdatesdevversion21280",
-        "rss-claude-updates-deupdatesdevversion21281"
+        "gh-1312807575",
+        "gh-1349601607"
       ]
     },
     {
       "id": "c2",
-      "title": "Opus 5.5 and GPT-6 Sol/Luna arrive with a price war",
-      "summary": "Anthropic shipped Claude Opus 5.5 and OpenAI answered with GPT-6 Sol and Luna, both sides cutting prices roughly in half.",
-      "itemIds": [
-        "rss-latent-space-laudeopus55thenewdefault",
-        "rss-simon-willison-26Sep22opusandsolandluna"
-      ]
-    },
-    {
-      "id": "c3",
-      "title": "llm CLI adds the new models same-day",
-      "summary": "Both llm 0.36 and the llm-anthropic 0.29 plugin shipped support for GPT-6 Sol/Luna and Opus 5.5, so scripted subagent calls can use them immediately.",
-      "itemIds": [
-        "rss-simon-willison-nwillisonnet2026Sep22llm",
-        "rss-simon-willison-net2026Sep22llmanthropic"
-      ]
-    },
-    {
-      "id": "c4",
-      "title": "DeepSeek's plugin-based harness ecosystem fills out",
-      "summary": "dscode wraps DeepSeek in a persistent-shell coding harness, deepseek-harness is the plugin core it's built on, and awesome-deepseek-harness catalogs the growing plugin list.",
+      "title": "DeepSeek harness ecosystem",
+      "summary": "A harness (dscode), the official plugin-based harness (deepseek-harness), and a curated plugin hub (awesome-deepseek-harness) all point at DeepSeek as a cheap unattended-agent backend.",
       "itemIds": [
         "gh-1365776373",
         "gh-1333065091",
@@ -737,22 +757,32 @@
       ]
     },
     {
-      "id": "c5",
-      "title": "Two ways to plug ChatGPT into a Codex harness",
-      "summary": "codex-chatgpt-web routes execution through a ChatGPT Web session to dodge Codex quota, while codex-with-chatgpt uses ChatGPT purely as a planning layer ahead of Codex execution.",
+      "id": "c3",
+      "title": "Control planes for running many agent harnesses at once",
+      "summary": "zeron, HarnessRouter, and FrontierAgent each offer a single interface or session manager over Codex, Claude Code, Cursor, Devin and others, rather than juggling separate terminals.",
       "itemIds": [
-        "gh-1312807575",
-        "gh-1349601607"
+        "gh-1306727670",
+        "gh-1329163060",
+        "gh-1342461518"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Big models shrunk to run on hardware you already own",
+      "summary": "Gemma 4 26B-A4B in ~2GB of RAM on an M-series Mac, and a 2.78T-parameter Kimi K3 running on one CPU in 8.24GB — both aimed at testing large models locally instead of paying per API call.",
+      "itemIds": [
+        "gh-1304159264",
+        "gh-1319154759"
       ]
     }
   ],
   "cost": {
-    "inputTokens": 16,
-    "outputTokens": 47165,
-    "usd": 0.8615,
+    "inputTokens": 20,
+    "outputTokens": 43819,
+    "usd": 0.8485,
     "model": "claude-sonnet-5",
     "calls": 6,
     "billing": "subscription"
   },
-  "contentVersion": 1
+  "contentVersion": 2
 }
