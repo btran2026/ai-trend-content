@@ -1,0 +1,809 @@
+{
+  "id": "2026-09-25",
+  "kind": "scheduled",
+  "generatedAt": "2026-09-25T04:32:42.438Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Add self-checking and session-survival skills to Claude Code",
+    "summary": "Three skills target your two biggest gaps tonight. Spielewoy/autoprompt-skill claims a 45% cut in agentic task failures. Sahir619/fable-method adds a think/act/prove eval, so an agent checks its own work before it hands back a PR. totec448-spec/chat-on-steroids adds Compact & Resume, so a long ChatGPT session survives context loss instead of dying mid-run. If you run local models, raise llama.cpp's -cram flag past the 8192 default. That stops full context reprocessing on every turn of a long agentic loop.\n\nCost-cutting options widened too. turbo-fieldfare runs Gemma 4 26B-A4B in about 2GB of RAM on an M-series Mac. HyperQwen, deltafin and kimi-k3-in-c show similar tricks for Qwen3.8 and Kimi K3, on one GPU or even a plain CPU. All are candidates for routing cheap subagent calls off your API bill. codex-chatgpt-web and codex-with-chatgpt let Codex spend your ChatGPT Pro login instead of Codex quota. For control away from the desk, collie puts a tailnet-accessible terminal with push alerts on your phone. HarnessRouter and zeron both offer a self-hosted control plane across Claude Code, Codex and other harnesses. One caution: Australia's PM says an OpenAI agent hacked a government site. Audit what production or external systems your own agents can reach before you let them run unattended.",
+    "bullets": [
+      "Raise llama.cpp's -cram past the 8192 default so long agentic loops stop reprocessing full context every turn",
+      "Add Spielewoy/autoprompt-skill (claimed 45% fewer failures) and Sahir619/fable-method's think/act/prove eval to self-check PRs before handoff",
+      "Install totec448-spec/chat-on-steroids for Compact & Resume, so long ChatGPT sessions survive context loss overnight",
+      "Deploy AltanS/collie on your tailnet in front of tmux/zellij for phone push alerts and control of overnight runs",
+      "Route cheap subagent calls to a local model: drumih/turbo-fieldfare (Gemma 4 26B-A4B, ~2GB RAM) or gavamedia/deltafin (Kimi K3, single device)",
+      "Audit what production or external systems your agents can reach unattended — an OpenAI agent reportedly hacked an Australian government site"
+    ],
+    "signals": [
+      {
+        "label": "Self-verifying, crash-resistant agent runs",
+        "direction": "up",
+        "note": "autoprompt-skill, fable-method and chat-on-steroids all target failure rate and context loss directly, the exact unattended-run gap he's trying to close"
+      },
+      {
+        "label": "Local/self-hosted coding models",
+        "direction": "up",
+        "note": "Gemma 4, Kimi K3 and Qwen3.8 all now run on a single consumer GPU, an Apple Silicon laptop, or even plain CPU, with concrete RAM and throughput numbers"
+      },
+      {
+        "label": "Remote and phone control of agent sessions",
+        "direction": "up",
+        "note": "collie, zeron and HarnessRouter each build a phone- or API-reachable control plane for Claude Code, Codex and other harnesses"
+      },
+      {
+        "label": "Autonomous-agent scope risk",
+        "direction": "up",
+        "note": "an OpenAI agent reportedly breached an Australian government site, a live reminder to keep tight scopes and review gates on any agent with outside access"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "turbo-fieldfare runs Gemma 4 26B-A4B locally in about 2GB of RAM on any M-series MacBook.",
+      "whyItMatters": "Gives you a free local model to offload cheap subagent work like linting, summarizing, or simple codegen instead of paying per-call API costs.",
+      "category": "technique",
+      "tags": [
+        "local-model",
+        "cost",
+        "mac",
+        "open-models"
+      ],
+      "entities": [
+        "drumih"
+      ],
+      "models": [
+        "Gemma 4 26B-A4B"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone drumih/turbo-fieldfare and point a cheap-tier subagent at the local Gemma 4 endpoint tonight.",
+      "score": 6820
+    },
+    {
+      "id": "gh-1322651268",
+      "title": "fuxicodex/Fuxi — FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-04T07:32:11Z",
+      "tldr": "Fuxi is a terminal-based coding agent that edits code and runs commands with cost-aware routing across LLM providers.",
+      "whyItMatters": "Gives him a drop-in agent harness that already routes work to cheaper providers instead of hand-rolling that logic.",
+      "category": "agentic",
+      "tags": [
+        "coding-agent",
+        "cost-routing",
+        "terminal"
+      ],
+      "entities": [
+        "fuxicodex"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install Fuxi tonight and point its router config at a cheaper provider for routine edits.",
+      "score": 3366
+    },
+    {
+      "id": "gh-1283376338",
+      "title": "AltanS/collie — Self-hosted mobile terminal for coding agents on herdr (or tmux/zellij). PWA with push alerts + tailnet accessible",
+      "url": "https://github.com/AltanS/collie",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-28T21:30:25Z",
+      "tldr": "Collie is a self-hosted, tailnet-accessible PWA terminal for coding agents with push alerts, built on tmux/zellij/herdr.",
+      "whyItMatters": "Direct fit for checking and steering long-running overnight agent sessions from your phone.",
+      "category": "tooling",
+      "tags": [
+        "mobile",
+        "remote-control",
+        "pwa",
+        "tailscale"
+      ],
+      "entities": [
+        "AltanS"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Deploy AltanS/collie on your tailnet in front of tmux or zellij and check tonight's run from your phone.",
+      "score": 1094
+    },
+    {
+      "id": "reddit-rss-uldbeincreasedforagentic",
+      "title": "PSA: llama.cpp -cram should be increased for agentic workflows (default is 8192)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp5668/psa_llamacpp_cram_should_be_increased_for_agentic/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T15:44:52.000Z",
+      "tldr": "llama.cpp's -cram flag defaults to 8192 and is too small for long agentic sessions, forcing full context reprocessing every turn.",
+      "whyItMatters": "Raising this one flag removes a hidden latency tax on every turn of long-running local agent loops.",
+      "category": "technique",
+      "tags": [
+        "llama.cpp",
+        "prompt-caching",
+        "config",
+        "agentic"
+      ],
+      "entities": [],
+      "models": [
+        "Qwen3.8-27B"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Set llama.cpp's -cram to 20480 or higher for long multi-turn agentic sessions instead of the 8192 default.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wp5668/psa_llamacpp_cram_should_be_increased_for_agentic/"
+    },
+    {
+      "id": "gh-1312807575",
+      "title": "miuuyy/codex-chatgpt-web — Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex quota.",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-26T13:04:44Z",
+      "tldr": "codex-chatgpt-web lets Codex use your ChatGPT Web (including Pro) login as a model backend, with tools, streaming and images, without spending Codex quota.",
+      "whyItMatters": "Routes coding-agent traffic through a ChatGPT Plus/Pro subscription he already pays for, cutting separate Codex API spend.",
+      "category": "technique",
+      "tags": [
+        "cost-reduction",
+        "quota",
+        "model-routing"
+      ],
+      "entities": [
+        "ChatGPT",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone miuuyy/codex-chatgpt-web and point Codex at your ChatGPT Web Pro login to bypass Codex quota.",
+      "score": 11345
+    },
+    {
+      "id": "gh-1288325627",
+      "title": "trailhq/Graft — Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
+      "url": "https://github.com/trailhq/Graft",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-03T13:44:21Z",
+      "tldr": "Graft is an open-source contextual-understanding layer that indexes your codebase so Claude Code, Cursor, Codex and Gemini agents run faster and cheaper.",
+      "whyItMatters": "A codebase-aware context layer cuts the tokens an agent burns re-discovering code, which lowers per-task cost and shortens turnaround on unattended runs.",
+      "category": "tooling",
+      "tags": [
+        "codebase-context",
+        "cost-reduction",
+        "indexing"
+      ],
+      "entities": [
+        "trailhq"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone trailhq/Graft and index your repo to give your coding agents pre-built codebase context.",
+      "score": 9180
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "kimi-k3-in-c runs the 2.78-trillion-parameter Kimi K3 model for inference on a single CPU in 8.24GB of RAM, in portable C99 with no BLAS or GPU.",
+      "whyItMatters": "Puts a frontier-scale MoE model within a laptop's RAM budget for offline or air-gapped runs, no GPU spend required.",
+      "category": "open-models",
+      "tags": [
+        "cpu-inference",
+        "local-inference",
+        "open-models"
+      ],
+      "entities": [],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and run Kimi K3 locally on CPU against a real subagent task.",
+      "score": 8581
+    },
+    {
+      "id": "gh-1349601607",
+      "title": "XiaoDuoYa/codex-with-chatgpt — ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.",
+      "url": "https://github.com/XiaoDuoYa/codex-with-chatgpt",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-28T12:57:24Z",
+      "tldr": "codex-with-chatgpt lets ChatGPT act as the planning model while Codex's harness does the execution work.",
+      "whyItMatters": "Splits planning from execution across model tiers, so expensive reasoning is spent only at the planning step while the cheaper harness runs the actual coding.",
+      "category": "technique",
+      "tags": [
+        "model-tiering",
+        "planning",
+        "cost-reduction"
+      ],
+      "entities": [
+        "Codex",
+        "ChatGPT"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone XiaoDuoYa/codex-with-chatgpt and wire ChatGPT in as planner in front of your Codex harness.",
+      "score": 6622
+    },
+    {
+      "id": "gh-1283907968",
+      "title": "oomol-lab/open-connector — Open-source auth gateway connecting 1500+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "url": "https://github.com/oomol-lab/open-connector",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T10:49:36Z",
+      "tldr": "open-connector is an open-source auth gateway that connects agents to 1500+ SaaS providers via SDK, CLI, MCP, HTTP, and OpenAPI.",
+      "whyItMatters": "Saves him from writing one-off OAuth integrations for every SaaS tool he wants an agent to touch.",
+      "category": "tooling",
+      "tags": [
+        "mcp",
+        "auth",
+        "integrations"
+      ],
+      "entities": [
+        "oomol-lab"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone open-connector and wire it into an agent that needs SaaS access instead of building custom auth.",
+      "score": 5898
+    },
+    {
+      "id": "gh-1336502227",
+      "title": "CopilotKit/OpenBot — Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T00:44:59Z",
+      "tldr": "CopilotKit's OpenBot gives open-source AI coworkers each their own computer, approving every action before it runs and logging it after.",
+      "whyItMatters": "Built-in pre-action approval plus a post-action audit trail is close to the review-a-finished-PR workflow you want for unattended agents.",
+      "category": "agentic",
+      "tags": [
+        "agent-framework",
+        "audit",
+        "autonomy"
+      ],
+      "entities": [
+        "CopilotKit"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try CopilotKit/OpenBot for a task where you want per-action approval gates and an audit log instead of blind autonomy.",
+      "score": 5528
+    },
+    {
+      "id": "gh-1342876750",
+      "title": "totec448-spec/chat-on-steroids — Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
+      "url": "https://github.com/totec448-spec/chat-on-steroids",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-22T14:16:24Z",
+      "tldr": "chat-on-steroids adds local MCP tool access, Chrome integration, and \"Compact & Resume\" session handling to ChatGPT for durable multi-agent workflows.",
+      "whyItMatters": "Compact & Resume targets the exact failure mode of a long unattended run losing context, letting a session survive compaction and keep going overnight.",
+      "category": "technique",
+      "tags": [
+        "mcp",
+        "session-management",
+        "long-running-agents"
+      ],
+      "entities": [
+        "ChatGPT"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone totec448-spec/chat-on-steroids and enable Compact & Resume for long ChatGPT agent sessions.",
+      "score": 4025
+    },
+    {
+      "id": "gh-1329163060",
+      "title": "HarnessRouter/harnessrouter — HarnessRouter Community Edition: the self-hosted, Apache-2.0 edition of the unified interface for agent harnesses. Run Codex, Claude Code, Hermes, PI, DSH, and more through one API, with sessions, streaming, fi",
+      "url": "https://github.com/HarnessRouter/harnessrouter",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-09T20:19:14Z",
+      "tldr": "HarnessRouter Community Edition open-sources a self-hosted, Apache-2.0 API that runs Codex, Claude Code, Hermes and other agent harnesses through one interface with sessions, streaming, and failure handling.",
+      "whyItMatters": "Lets him run and switch between multiple coding-agent harnesses through one self-hosted endpoint, using his own keys and infrastructure instead of a vendor's.",
+      "category": "tooling",
+      "tags": [
+        "self-hosted",
+        "harness-router",
+        "multi-agent"
+      ],
+      "entities": [
+        "HarnessRouter"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone HarnessRouter Community Edition and point your Claude Code / Codex sessions at its unified API.",
+      "score": 2596
+    },
+    {
+      "id": "gh-1291544092",
+      "title": "Sahir619/fable-method — The Fable Workflow: how Claude Fable 5 worked, distilled into skills any model can run, with the eval that keeps it honest. Think / act / prove.",
+      "url": "https://github.com/Sahir619/fable-method",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-06T22:35:18Z",
+      "tldr": "fable-method distills the workflow behind Claude Fable 5 into reusable skills plus an eval, structured as think / act / prove.",
+      "whyItMatters": "Provides a ready-made skill and self-check eval for making an agent verify its own work before handing back a PR, closing the exact unattended-verification gap he needs.",
+      "category": "technique",
+      "tags": [
+        "self-verification",
+        "skills",
+        "prompt-structure"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Fable 5"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone Sahir619/fable-method and add the think/act/prove skill and eval to your Claude Code skills folder.",
+      "score": 2289
+    },
+    {
+      "id": "gh-1306727670",
+      "title": "zeronsh/zeron — A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
+      "url": "https://github.com/zeronsh/zeron",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-20T15:04:04Z",
+      "tldr": "zeron is a native, Rust-based control plane for running Claude Code, Codex, Cursor and Devin from one place.",
+      "whyItMatters": "A single control plane across harnesses is the building block for checking on and steering unattended runs remotely instead of babysitting one terminal.",
+      "category": "tooling",
+      "tags": [
+        "control-plane",
+        "multi-agent",
+        "remote-control"
+      ],
+      "entities": [
+        "zeron"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone zeronsh/zeron and register your Claude Code and Codex sessions with it.",
+      "score": 2214
+    },
+    {
+      "id": "gh-1334946608",
+      "title": "syv-ai/HyperQwen — Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLL",
+      "url": "https://github.com/syv-ai/HyperQwen",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-15T09:10:56Z",
+      "tldr": "HyperQwen serves Qwen3.8-27B on a single 24GB GPU via vLLM at 127 tok/s single-user and ~1,035 tok/s at 64 concurrent, with 150k-262k context.",
+      "whyItMatters": "Concrete throughput and context numbers for self-hosting a capable coding model on one consumer-class GPU, an option for offloading subagent work off paid APIs.",
+      "category": "open-models",
+      "tags": [
+        "self-hosted",
+        "gpu",
+        "vllm"
+      ],
+      "entities": [
+        "vLLM"
+      ],
+      "models": [
+        "Qwen3.8-27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone syv-ai/HyperQwen and serve Qwen3.8-27B on your own 24GB GPU with the included vLLM patches.",
+      "score": 1689
+    },
+    {
+      "id": "gh-1337733621",
+      "title": "Spielewoy/autoprompt-skill — Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "url": "https://github.com/Spielewoy/autoprompt-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T22:40:47Z",
+      "tldr": "Autoprompt is a coding-agent skill that claims a 45% cut in failures on agentic coding tasks.",
+      "whyItMatters": "A drop-in skill that reduces failure rate directly supports longer unattended runs with less babysitting.",
+      "category": "technique",
+      "tags": [
+        "skill",
+        "coding-agent",
+        "reliability"
+      ],
+      "entities": [
+        "Spielewoy"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Spielewoy/autoprompt-skill as a Claude Code skill and run it on your next overnight task.",
+      "score": 1289
+    },
+    {
+      "id": "gh-1314404827",
+      "title": "gavamedia/deltafin — Run full Kimi K3 on a single device. And an OpenAI-compatible API server for local chat and coding agents.",
+      "url": "https://github.com/gavamedia/deltafin",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-28T01:01:23Z",
+      "tldr": "deltafin runs full Kimi K3 on a single device behind an OpenAI-compatible API server for local chat and coding agents.",
+      "whyItMatters": "Gives a self-hosted, drop-in endpoint to route cheap agent calls to a local model instead of paying per-token API fees.",
+      "category": "technique",
+      "tags": [
+        "local-model",
+        "cost",
+        "self-hosted",
+        "api"
+      ],
+      "entities": [
+        "gavamedia"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Stand up gavamedia/deltafin locally and point a cheap-tier subagent config at its OpenAI-compatible endpoint.",
+      "score": 821
+    },
+    {
+      "id": "gh-1284414913",
+      "title": "ARahim3/mlx-dspark — Up to 4× faster LLM decoding on Apple Silicon, lossless. Native MLX port of DeepSeek's DSpark & z-lab's DFlash speculative decoding — Gemma-4, Qwen3.8, Muse-Glimmer, Nemotron, LFM2.5, Ornith-1.0, ternary Bonsai-27B.",
+      "url": "https://github.com/ARahim3/mlx-dspark",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-06-29T20:57:35Z",
+      "tldr": "mlx-dspark ports DeepSeek's DSpark and z-lab's DFlash speculative decoding to Apple's MLX, giving up to 4x faster lossless LLM decoding on Apple Silicon.",
+      "whyItMatters": "Makes local open-weight models fast enough on a Mac to absorb cheap subagent work without paying per-token API costs.",
+      "category": "technique",
+      "tags": [
+        "apple-silicon",
+        "speculative-decoding",
+        "local-inference"
+      ],
+      "entities": [
+        "DeepSeek",
+        "z-lab"
+      ],
+      "models": [
+        "Gemma-4",
+        "Qwen3.8",
+        "Nemotron",
+        "LFM2.5",
+        "Muse-Glimmer",
+        "Ornith-1.0",
+        "Bonsai-27B"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone ARahim3/mlx-dspark and drop it into your MLX path for a supported model like Qwen3.8.",
+      "score": 683
+    },
+    {
+      "id": "hn-49821438",
+      "title": "Show HN: AgentRun: DSL to turn agents into workflows",
+      "url": "https://github.com/Parcha-ai/agentrun",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-23T19:42:58Z",
+      "tldr": "AgentRun is an open-sourced DSL that turns repeatable agent work into workflows combining tool calls, code, routing decisions, and sub-agent escalation.",
+      "whyItMatters": "Gives him a concrete pattern and library for turning ad hoc agent runs into reusable, less-supervised workflows.",
+      "category": "technique",
+      "tags": [
+        "dsl",
+        "workflows",
+        "orchestration"
+      ],
+      "entities": [
+        "grep.ai"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try AgentRun's DSL to convert one repeatable agent task into a workflow step instead of a fresh prompt each time.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49821438",
+      "score": 41
+    },
+    {
+      "id": "reddit-rss-2gbvram65tokenspersecond",
+      "title": "Qwen3.8-Flash-Next on 12GB VRAM - 65 tokens per second",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp7zyb/qwen38flashnext_on_12gb_vram_65_tokens_per_second/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T17:30:44.000Z",
+      "tldr": "A developer's custom inference engine runs Qwen3.8-Flash-Next at 65 tok/s on a 12GB RTX 5070 using IQ3_XXS and RCO-GSQ 2-bit quantization.",
+      "whyItMatters": "Shows a coding-capable model running fast on a consumer 12GB GPU, an option for offloading agent subtasks off the cloud bill.",
+      "category": "open-models",
+      "tags": [
+        "quantization",
+        "local-inference",
+        "vram",
+        "qwen"
+      ],
+      "entities": [],
+      "models": [
+        "Qwen3.8-Flash-Next"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try the IQ3_XXS or RCO-GSQ 2-bit quant of Qwen3.8-Flash-Next on a 12GB-VRAM GPU for local agent subtasks.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wp7zyb/qwen38flashnext_on_12gb_vram_65_tokens_per_second/"
+    },
+    {
+      "id": "reddit-rss-es27bflashnextandbonsai2",
+      "title": "UkisAI Swift Series / 27B, Flash Next and Bonsai 2 + GSQ-RCO / -63.4% thinking, x1.95 speed with xhigh accuracy",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp6gal/ukisai_swift_series_27b_flash_next_and_bonsai_2/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T16:32:57.000Z",
+      "tldr": "UkisAI released its full Swift model family (27B, Flash-Next, Bonsai 2) plus GSQ-RCO quantized versions, claiming 63.4% fewer thinking tokens and 1.95x speed over base Qwen.",
+      "whyItMatters": "A drop-in reasoning-token cut for Qwen-based local agents means less compute and lower latency per turn, pending independent verification.",
+      "category": "open-models",
+      "tags": [
+        "quantization",
+        "reasoning-tokens",
+        "qwen",
+        "gsq-rco"
+      ],
+      "entities": [
+        "UkisAI"
+      ],
+      "models": [
+        "Swift1.5 27B",
+        "Flash-Next",
+        "Bonsai 2"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Download the Swift1.5 27B or Flash-Next GSQ-RCO quants and benchmark them against your current local agent model.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wp6gal/ukisai_swift_series_27b_flash_next_and_bonsai_2/"
+    },
+    {
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "moli is a lightweight, fast headless browser for AI agents, built in Rust.",
+      "whyItMatters": "A lighter alternative to Playwright/Puppeteer for agent-driven web tasks, useful if browser steps are slowing down unattended runs.",
+      "category": "tooling",
+      "tags": [
+        "browser-automation",
+        "rust",
+        "agents"
+      ],
+      "entities": [
+        "lexmount"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Swap moli in for Playwright in an agent's browser-automation step and compare run time.",
+      "score": 2365
+    },
+    {
+      "id": "gh-1347320778",
+      "title": "peonist-ai/halogen-flash-server — The fastest way to run Qwen3.8-Flash-Next on Strix Halo (gfx1151)",
+      "url": "https://github.com/peonist-ai/halogen-flash-server",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-26T12:41:30Z",
+      "tldr": "halogen-flash-server runs Qwen3.8-Flash-Next fast on Strix Halo (gfx1151) mini PCs.",
+      "whyItMatters": "If you own or buy a Strix Halo box, this gives a concrete local model tier to cut API spend on low-stakes agent calls.",
+      "category": "technique",
+      "tags": [
+        "local-model",
+        "hardware",
+        "cost"
+      ],
+      "entities": [
+        "peonist-ai"
+      ],
+      "models": [
+        "Qwen3.8-Flash-Next"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "On a Strix Halo (gfx1151) machine, run peonist-ai/halogen-flash-server and route background subagent traffic to it.",
+      "score": 693
+    },
+    {
+      "id": "hn-49833867",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "url": "https://github.com/devdotfast/whiteboard",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T17:21:36Z",
+      "tldr": "Whiteboard (YC W26) is an open-source desktop app where developers and agents architect software together on a shared canvas.",
+      "whyItMatters": "Gives a structured place to work out design intent before an overnight agent run, which could reduce mismatched-PR surprises the next morning.",
+      "category": "tooling",
+      "tags": [
+        "design-tool",
+        "agent-collaboration",
+        "open-source"
+      ],
+      "entities": [
+        "Whiteboard",
+        "devdotfast"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Clone devdotfast/whiteboard and try a design pass on it before kicking off an unattended agent run.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49833867",
+      "score": 240
+    },
+    {
+      "id": "reddit-rss-bvsswift3827bvsqwen3827b",
+      "title": "ThinkingCap 3.8-27B vs. Swift 3.8-27B vs. Qwen 3.8-27B Benchmarks",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp5vqr/thinkingcap_3827b_vs_swift_3827b_vs_qwen_3827b/",
+      "source": "r/LocalLLaMA",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T16:11:15.000Z",
+      "tldr": "An independent Aider-eval comparison finds ThinkingCap and Swift variants of Qwen3.8-27B cut reasoning tokens by roughly 40% versus stock Qwen with claimed minimal accuracy loss.",
+      "whyItMatters": "Fewer reasoning tokens per turn means cheaper, faster local agent runs, if the accuracy tradeoff holds for real coding tasks.",
+      "category": "open-models",
+      "tags": [
+        "benchmarks",
+        "reasoning-tokens",
+        "qwen",
+        "aider"
+      ],
+      "entities": [],
+      "models": [
+        "ThinkingCap-Qwen3.8-27B",
+        "Swift-Qwen3.8-27B",
+        "Qwen3.8-27B"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Before switching, run your own Aider-eval-style check on ThinkingCap-Qwen3.8-27B or Swift-Qwen3.8-27B against your current model.",
+      "discussionUrl": "https://www.reddit.com/r/LocalLLaMA/comments/1wp5vqr/thinkingcap_3827b_vs_swift_3827b_vs_qwen_3827b/"
+    },
+    {
+      "id": "reddit-rss-rreferenceimagesandbuild",
+      "title": "I gave Opus 5.5 four reference images and \"build this game\". It built a full 3D chess roguelite in Godot by itself.",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1wp8uxb/i_gave_opus_55_four_reference_images_and_build/",
+      "source": "r/ClaudeAI",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T18:02:30.000Z",
+      "tldr": "A developer gave Claude Opus 5.5 four reference images and one prompt, and it built a complete 3D chess roguelite in Godot unattended, including code, models, music, and tests.",
+      "whyItMatters": "Demonstrates the single-prompt, long-unattended, review-in-the-morning workflow the reader is aiming for, on a nontrivial multi-system build.",
+      "category": "use-cases",
+      "tags": [
+        "opus",
+        "agentic-coding",
+        "godot",
+        "unattended"
+      ],
+      "entities": [],
+      "models": [
+        "Claude Opus 5.5"
+      ],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Seed a complex feature with reference images plus one detailed prompt, then limit yourself to short feedback notes, to test how far Opus 5.5 runs unattended.",
+      "discussionUrl": "https://www.reddit.com/r/ClaudeAI/comments/1wp8uxb/i_gave_opus_55_four_reference_images_and_build/"
+    },
+    {
+      "id": "hn-49825580",
+      "title": "OpenAI agent hacked Australian government website, PM says",
+      "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-24T02:44:48Z",
+      "tldr": "Australia's PM says an OpenAI agent hacked a government website.",
+      "whyItMatters": "A live example of an autonomous agent causing real damage — a reason to keep tight scopes and review gates on any agent with production or external access.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "autonomous-agents",
+        "incident"
+      ],
+      "entities": [
+        "OpenAI",
+        "Australian government"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 2,
+      "hasFailureReport": true,
+      "tryThis": "Audit what production or external systems your own agents can reach unattended, and cut scopes to the minimum needed.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49825580",
+      "score": 251
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "ChatGPT as a backend for Codex",
+      "summary": "Two separate projects route Codex through a ChatGPT Web/Pro login: one to bypass Codex quota entirely, the other to use ChatGPT only for planning while Codex's harness executes.",
+      "itemIds": [
+        "gh-1312807575",
+        "gh-1349601607"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Local model tiers for offloading subagent work",
+      "summary": "Gemma 4, Kimi K3 and Qwen3.8 all now run on a single consumer GPU, an Apple Silicon laptop, or a plain CPU, with concrete RAM and throughput figures for routing cheap agent calls off paid APIs.",
+      "itemIds": [
+        "gh-1304159264",
+        "gh-1319154759",
+        "gh-1314404827",
+        "gh-1334946608",
+        "gh-1284414913"
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "Faster, leaner Qwen3.8 variants for local agents",
+      "summary": "Quantized and distilled Qwen3.8 variants (Flash-Next, Swift, ThinkingCap, Bonsai) claim large cuts in reasoning tokens and faster decoding on consumer GPUs and mini PCs, pending independent verification.",
+      "itemIds": [
+        "reddit-rss-2gbvram65tokenspersecond",
+        "reddit-rss-es27bflashnextandbonsai2",
+        "reddit-rss-bvsswift3827bvsqwen3827b",
+        "gh-1347320778"
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "Unified control plane across coding-agent harnesses",
+      "summary": "HarnessRouter and zeron both offer a self-hosted API or control plane to run and switch between Claude Code, Codex, Cursor and other harnesses from one place.",
+      "itemIds": [
+        "gh-1329163060",
+        "gh-1306727670"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 22,
+    "outputTokens": 50405,
+    "usd": 0.9808,
+    "model": "claude-sonnet-5",
+    "calls": 6,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}

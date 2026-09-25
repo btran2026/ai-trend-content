@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-09-24T20:59:12.632Z",
-  "contentVersion": 65,
+  "generatedAt": "2026-09-25T05:25:30.892Z",
+  "contentVersion": 66,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,49 +123,83 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-09-24T20:59:12.632Z"
+      "updatedAt": "2026-09-25T05:25:30.892Z"
     },
     {
-      "id": "ai-5bd0bd4954",
-      "slug": "a-crowdsourced-tracker-ranks-the-best-llm-for-every-budget",
+      "id": "ai-b28faeb337",
+      "slug": "researchers-use-llms-to-trace-alchemical-knowledge-in-old-letters",
       "lane": "ai",
-      "title": "A crowdsourced tracker ranks the best LLM for every budget",
-      "summary": "A Hacker News post points to a resource that tracks which large language model gives the best value at each price tier, updated daily. It targets developers who pick between paid API options as pricing and performance shift often. The source gives no detail on who maintains it or which benchmarks it uses.",
-      "whyItMatters": "Model pricing and quality change fast, so a running budget-to-quality comparison helps buyers choose without guessing.",
+      "title": "Researchers use LLMs to trace alchemical knowledge in old letters",
+      "summary": "A Hacker News post describes a project that uses large language models to trace alchemical knowledge and decode letters from the 17th century. The post treats this as a case study in AI-assisted historical research. The source gives no detail on the method, the archive, or the findings.",
+      "whyItMatters": "It shows a growing use of LLMs as research tools for history and archives, beyond typical business tasks.",
       "whatToWatch": [
-        "Whether the tracker adds more providers or benchmark categories over time"
+        "Whether the project gets wider coverage or peer review.",
+        "Whether other archives try similar LLM-based decoding work."
       ],
       "questions": [
-        "Who maintains the ranking, and what benchmarks feed it?"
+        "How accurate is the LLM's reading of the historical text?",
+        "Which letters or archive does this project use?"
       ],
       "sources": [
         {
-          "title": "Best LLM for every budget, updated daily",
-          "url": "https://bestmodelforyourbudget.terrydjony.com/",
+          "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
+          "url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
           "publisher": "Hacker News",
-          "publishedAt": "2026-09-24T14:09:57Z"
+          "publishedAt": "2026-09-24T19:14:27Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-24T14:09:57Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "badge": "Tool",
-      "trendScore": 50,
+      "publishedAt": "2026-09-24T19:14:27Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "badge": "Research",
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-6c1df0eaae",
+      "slug": "runway-s-worldprompt-pushes-toward-real-time-ai-generated-worlds",
+      "lane": "ai",
+      "title": "Runway's WorldPrompt pushes toward real-time AI-generated worlds",
+      "summary": "Latent Space published a piece on Runway's WorldPrompt, an effort to build real-time, AI-generated interactive worlds. The article looks at the engineering behind rendering such worlds on the fly. It fits a wider push by AI video companies toward real-time interactivity.",
+      "whyItMatters": "Real-time world generation is a key frontier for AI video and gaming tools, and Runway is a leading player in that race.",
+      "whatToWatch": [
+        "Whether Runway ships WorldPrompt as a public product.",
+        "How competitors respond with their own real-time world tools."
+      ],
+      "questions": [
+        "How close is WorldPrompt to true real-time performance today?",
+        "What hardware or cost does real-time generation require?"
+      ],
+      "sources": [
+        {
+          "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+          "url": "https://www.latent.space/p/runway",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-09-25T01:30:57.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-25T01:30:57.000Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!hB4W!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217289983%2Ffa899450-7781-454b-838b-85a733c16fce%2Ftranscoded-1790297181.png",
+      "badge": "Analysis",
+      "trendScore": 44,
       "confidence": "low"
     },
     {
       "id": "ai-56a7f60305",
       "slug": "provocative-essay-claims-the-bay-area-ai-safety-scene-resembles-a-cult",
       "lane": "ai",
-      "title": "Provocative essay claims the Bay Area AI safety scene resembles a cult",
-      "summary": "A widely shared opinion piece argues that parts of the Bay Area AI safety community act more like a social or cult-like scene than a rigorous research field. It drew heavy debate on Hacker News. The piece is an essay, not a reported investigation, and its specific claims are not independently verified in the source.",
-      "whyItMatters": "How outsiders view the AI safety community's culture affects how much its warnings and policy proposals get trusted.",
+      "title": "Provocative post claims the AI safety scene has cult-like dynamics",
+      "summary": "A Hacker News-linked post, titled \"AI safety is mostly a sex cult in Berkeley,\" argues that parts of the AI safety community show cult-like social dynamics. This is a single opinion piece, not a verified investigation, and the supplied source gives no further specifics. It has drawn attention as a pointed critique of the Bay Area AI safety scene.",
+      "whyItMatters": "The AI safety community shapes major lab policy and safety research, so questions about its culture matter to the field.",
       "whatToWatch": [
-        "Whether AI safety organizations respond publicly",
-        "Follow-up commentary or rebuttals"
+        "Whether AI safety organizations or figures respond publicly.",
+        "Whether follow-up reporting confirms or disputes the claims."
       ],
       "questions": [
-        "What evidence, if any, backs the essay's central claim?"
+        "What evidence backs the post's claims?",
+        "Is this a fringe view or a wider critique within the community?"
       ],
       "sources": [
         {
@@ -177,9 +211,38 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T14:38:31Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "badge": "Opinion",
-      "trendScore": 48,
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "badge": "Commentary",
+      "trendScore": 43,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-5bd0bd4954",
+      "slug": "a-crowdsourced-tracker-ranks-the-best-llm-for-every-budget",
+      "lane": "ai",
+      "title": "New tool ranks the best LLM for every budget, updated daily",
+      "summary": "A Hacker News post highlights a resource that ranks large language models by cost and performance, updated daily. The tool aims to help users pick a model that fits their budget. The source gives no detail on the ranking method.",
+      "whyItMatters": "Model choices and prices shift often, so buyers need current comparisons to avoid overpaying or underperforming.",
+      "whatToWatch": [
+        "Whether the tool gains traction as a reference for model selection.",
+        "How rankings shift as new models and price cuts arrive."
+      ],
+      "questions": [
+        "What criteria does the tool use to rank models?",
+        "How often do the underlying prices and benchmarks actually change?"
+      ],
+      "sources": [
+        {
+          "title": "Best LLM for every budget, updated daily",
+          "url": "https://bestmodelforyourbudget.terrydjony.com/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-24T14:09:57Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-24T14:09:57Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "trendScore": 43,
       "confidence": "low"
     },
     {
@@ -187,14 +250,15 @@
       "slug": "yc-backed-whiteboard-launches-as-an-open-source-ide-for-software-desig",
       "lane": "ai",
       "title": "YC-backed Whiteboard launches as an open-source IDE for software design",
-      "summary": "A Y Combinator W26 startup shared Whiteboard, an open-source IDE meant to help developers plan software design before writing code. It appeared as a Show HN post. Details on its AI features beyond the basic description are not given in the source.",
-      "whyItMatters": "Tools that formalize the design step of coding could change how developers work alongside AI coding assistants.",
+      "summary": "A Show HN post introduces Whiteboard, a YC W26-backed, open-source IDE built for thoughtful software design. The tool targets the design phase of building software, ahead of writing code. The source gives few other details beyond the launch announcement.",
+      "whyItMatters": "It signals continued developer interest in tools that rethink how software gets planned, in an era when AI speeds up the coding itself.",
       "whatToWatch": [
-        "Early user feedback and adoption on GitHub",
-        "Whether Whiteboard adds AI-assisted design features"
+        "How the developer community responds to the open-source release.",
+        "Whether Whiteboard adds AI features beyond its initial design focus."
       ],
       "questions": [
-        "How does Whiteboard integrate with existing AI coding tools?"
+        "What makes Whiteboard different from existing design or diagramming tools?",
+        "How does it fit into an AI-assisted coding workflow?"
       ],
       "sources": [
         {
@@ -206,26 +270,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T17:21:36Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "imageUrl": "https://opengraph.githubassets.com/e11a00fd3ede099638b929a08e1c660d813fb4ada84f439a2b039988c25d5fb1/devdotfast/whiteboard",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "imageUrl": "https://opengraph.githubassets.com/955318eaeffc69ddd6dbfa2d4f9d34cf5787e3abb94c1918729c0161c28711a1/devdotfast/whiteboard",
       "badge": "Launch",
-      "trendScore": 47,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
       "id": "ai-e82bf04022",
       "slug": "researchers-spot-early-signs-of-rogue-ai-agents-attempting-hacks-in-th",
       "lane": "ai",
-      "title": "Researchers spot early signs of rogue AI agents attempting hacks in the wild",
-      "summary": "Transluce.org reported finding early activity from autonomous AI agents attempting hacking behavior, found through logs on urlquery.net. The finding was shared on Hacker News. The source gives no detail on scale or which models were involved.",
-      "whyItMatters": "Real-world sightings of unsupervised AI agents attempting intrusions test how ready defenders and model providers are for autonomous misuse.",
+      "title": "Researchers spot early signs of rogue AI agents attempting hacks",
+      "summary": "A Hacker News post, tied to Transluce.org, describes early rogue AI agent activity and attempted hacking behavior spotted via the site urlquery.net. The report frames this as an early, small-scale signal, not a large incident. The source gives no further detail on the activity.",
+      "whyItMatters": "As autonomous AI agents spread, unsupervised or malicious agent behavior is a rising safety and security concern for the industry.",
       "whatToWatch": [
-        "Whether Transluce publishes a fuller report or dataset",
-        "Responses from affected model providers"
+        "Whether Transluce or others publish a fuller writeup of the findings.",
+        "Whether security researchers find more instances of similar agent activity."
       ],
       "questions": [
-        "Which models or agent frameworks were behind the activity?",
-        "How widespread is this behavior beyond the reported instances?"
+        "How many agents or attempts were actually observed?",
+        "Were the agents acting autonomously or under human direction?"
       ],
       "sources": [
         {
@@ -237,24 +301,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T05:21:10Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
       "imageUrl": "https://transluce.org/cards/urlquery-agent-activity-social.png",
-      "badge": "Security",
-      "trendScore": 43,
+      "badge": "Safety",
+      "trendScore": 36,
       "confidence": "low"
     },
     {
       "id": "ai-383cf544a6",
       "slug": "analysis-foundries-vs-navigators-and-the-cost-of-doing-science-with-ai",
       "lane": "ai",
-      "title": "Analysis: 'Foundries vs Navigators' and the cost of doing science with AI",
-      "summary": "A Latent Space piece compares two models for using AI to lower the cost of scientific research, framed as foundries versus navigators. The article is an analysis, not a product announcement. The source names no specific organizations or funding figures.",
-      "whyItMatters": "How the industry organizes AI-for-science efforts could shape which research problems get funded and solved first.",
+      "title": "Latent Space compares 'foundries' and 'navigators' for cutting science costs",
+      "summary": "Latent Space published an analysis, \"Foundries vs Navigators: Lowering the Cost of Science,\" that compares two approaches to using AI in scientific research. The piece looks at how each model aims to bring down the cost of doing science. The supplied source gives no further specifics of the comparison.",
+      "whyItMatters": "AI-for-science is an emerging investment category, and its structure affects which approach scales fastest.",
       "whatToWatch": [
-        "Whether either model gains adoption among research labs or funders"
+        "Whether specific companies adopt a 'foundry' or 'navigator' label for their approach.",
+        "Follow-up coverage on real cost reductions in scientific research."
       ],
       "questions": [
-        "Which specific organizations fit each category, foundry or navigator?"
+        "What concrete examples does the piece cite for each model?",
+        "Which approach is drawing more investor or lab interest?"
       ],
       "sources": [
         {
@@ -266,24 +332,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T15:03:16.000Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!-Em5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc4f2dad0-1897-4b86-aa39-f4772f76e474_1591x828.png",
       "badge": "Analysis",
-      "trendScore": 42,
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "ai-636605f414",
       "slug": "blog-post-explains-rlcd-the-technique-reportedly-behind-the-jev-model",
       "lane": "ai",
-      "title": "Blog post explains RLCD, the technique reportedly behind the Jev model",
-      "summary": "A blog post breaks down RLCD, described as a training method behind a model called Jev, and was shared on Hacker News. The source does not name the author or Jev's developer, and it gives no independent benchmark results. It reads as a technical explainer, not an official announcement.",
-      "whyItMatters": "New training techniques like RLCD could shape how future models are built and how they compare on cost and quality.",
+      "title": "Blog post explains a technique called RLCD behind a system called 'Jev'",
+      "summary": "A Hacker News-linked blog post explains a technique it calls RLCD and claims it is behind a system called Jev. The post is a technical explainer, not an official announcement from Jev's creators. The source gives no further detail on what Jev is.",
+      "whyItMatters": "New training techniques can shape how future models are built and how efficiently they learn.",
       "whatToWatch": [
-        "Whether Jev's developer or others publish benchmarks confirming RLCD's claimed benefits"
+        "Whether Jev's creators confirm or detail the RLCD claim.",
+        "Whether other researchers test or adopt RLCD."
       ],
       "questions": [
-        "Who built Jev, and has RLCD been used in other released models?"
+        "What is Jev, and who built it?",
+        "How does RLCD compare to established training techniques?"
       ],
       "sources": [
         {
@@ -295,24 +363,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T12:21:16Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
       "imageUrl": "https://di-zhang-llm.github.io/images/blog/what-is-rlcd-the-secret-behind-jev/01-rlcd-lineage.png",
       "badge": "Research",
-      "trendScore": 42,
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "ai-61d94d6598",
       "slug": "notion-post-outlines-an-approach-to-contrastive-language-models",
       "lane": "ai",
-      "title": "Notion post outlines an approach to contrastive language models",
-      "summary": "A Notion-hosted write-up on contrastive language models circulated on Hacker News. It describes a research direction, not a released product, and names no author or institution. Benchmark results are not given in the source.",
-      "whyItMatters": "New training approaches are one path to efficiency or capability gains beyond current scaling methods.",
+      "title": "New write-up explores contrastive language models",
+      "summary": "A Hacker News-linked post, hosted on Notion, discusses contrastive language models as a training approach. The piece reads as a technical explainer. The source gives no further detail on findings, authors, or results.",
+      "whyItMatters": "Contrastive methods are an alternative training approach that could influence how future language models get built.",
       "whatToWatch": [
-        "Whether the approach is adopted by a lab or produces a released model"
+        "Whether the approach gets picked up by model builders.",
+        "Follow-up discussion or benchmarks from the AI research community."
       ],
       "questions": [
-        "Who authored the write-up, and has the approach been tested at scale?"
+        "Who wrote this, and what lab or project is behind it?",
+        "How does contrastive training compare to standard LLM pretraining?"
       ],
       "sources": [
         {
@@ -324,55 +394,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T04:20:59Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
       "imageUrl": "https://app.notion.com/images/meta/default.png",
       "badge": "Research",
-      "trendScore": 41,
+      "trendScore": 34,
       "confidence": "low"
-    },
-    {
-      "id": "ai-7cff1964bf",
-      "slug": "ringg-s-ai-voice-agents-resolve-up-to-65-of-customer-calls",
-      "lane": "ai",
-      "title": "OpenAI case study: Ringg's voice AI agents resolve up to 65% of customer calls",
-      "summary": "OpenAI published a customer story saying Ringg's AI agents, built on its models, resolve as much as 65% of customer service calls without a human. The figure comes from an OpenAI-published case study, so it reflects the vendor's own framing. It is another example of OpenAI promoting enterprise voice-agent deployments on its platform.",
-      "whyItMatters": "Call-center automation is one of the clearest near-term revenue paths for AI agents, and figures like this shape enterprise buying decisions.",
-      "whatToWatch": [
-        "Independent verification of resolution rates outside OpenAI's own case studies",
-        "Whether competitors publish comparable figures"
-      ],
-      "questions": [
-        "What counts as a 'resolved' call in this figure, and how was it measured?"
-      ],
-      "sources": [
-        {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "url": "https://openai.com/index/ringg",
-          "publisher": "OpenAI",
-          "publishedAt": "2026-09-23T12:00:00.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-23T12:00:00.000Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/773XsnwO9QT1z6x55Ku0BG/678970983193f3c32961714f6eb63320/og.png?w=1600&h=900&fit=fill",
-      "badge": "Enterprise",
-      "trendScore": 38,
-      "confidence": "medium"
     },
     {
       "id": "ai-eb58386549",
       "slug": "meta-connect-2026-recap-muse-glasses-voice-and-video-features-and-char",
       "lane": "ai",
-      "title": "Meta Connect 2026 recap: Muse glasses, voice and video features, and Charm",
-      "summary": "Meta's Connect 2026 conference covered new Muse smart glasses, plus voice and video features and a product called Charm, according to a Latent Space recap. The source is a summary roundup, so details beyond these names are not confirmed here. The event continues Meta's push to build AI deeper into its hardware and social products.",
-      "whyItMatters": "Meta's hardware and AI assistant strategy is a major bet on where consumer AI interaction moves next, beyond the chat interface.",
+      "title": "Meta Connect 2026 recap: Muse glasses, voice, video, and Charm",
+      "summary": "Latent Space's AI News roundup covers Meta Connect 2026, highlighting Meta's Muse glasses along with new voice and video features and a product called Charm. The recap frames these as the event's key AI-related announcements. The supplied source gives no detail beyond the names.",
+      "whyItMatters": "Meta Connect is a major venue for Meta's AI and hardware roadmap, and these announcements show where the company is pushing its consumer AI products.",
       "whatToWatch": [
-        "Pricing and availability details for Muse glasses",
-        "How Charm is positioned against rival AI assistants"
+        "Official Meta details and release timing for Muse glasses.",
+        "Rollout details for the new voice and video features and Charm."
       ],
       "questions": [
-        "What exactly is Charm, and when do these features ship to consumers?"
+        "What exactly is Charm, and what does it do?",
+        "When do Muse glasses and these features actually reach consumers?"
       ],
       "sources": [
         {
@@ -384,25 +425,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T08:12:59.000Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
       "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/JvyVwlP_nlw",
       "badge": "Product",
-      "trendScore": 36,
+      "trendScore": 29,
       "confidence": "low"
     },
     {
       "id": "ai-9c2f631dad",
       "slug": "mercury-2-5-claims-770-tokens-per-second-inference-speed",
       "lane": "ai",
-      "title": "Mercury 2.5 language model hits 770 tokens per second in benchmarks",
-      "summary": "Artificial Analysis benchmarked a model called Mercury 2.5 running at up to 770 tokens per second, a speed figure highlighted on Hacker News. The source does not name Mercury 2.5's developer or give pricing and quality comparisons alongside the speed number. Fast inference like this matters most for interactive and agentic workloads with heavy token use.",
-      "whyItMatters": "Inference speed increasingly competes with raw quality as a selling point, especially for real-time and agent workloads.",
+      "title": "Mercury 2.5 model reaches 770 tokens per second in benchmark",
+      "summary": "Artificial Analysis reported that the Mercury 2.5 language model hit 770 tokens per second, an inference speed figure shared via Hacker News. The claim centers on raw generation speed, not broader capability. The supplied source gives no further context on the benchmark setup.",
+      "whyItMatters": "Inference speed is a growing competitive front for LLMs, especially for real-time and agentic uses that need fast responses.",
       "whatToWatch": [
-        "Independent benchmarks comparing Mercury 2.5's quality against its speed",
-        "Pricing details from its developer"
+        "Independent verification of the 770 tokens-per-second figure.",
+        "How Mercury 2.5 performs on benchmarks beyond raw speed."
       ],
       "questions": [
-        "Who develops Mercury 2.5, and how does its output quality compare to slower models?"
+        "What hardware and conditions produced this speed figure?",
+        "How does Mercury 2.5 perform on accuracy or reasoning tests?"
       ],
       "sources": [
         {
@@ -414,40 +456,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-23T22:16:19Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "imageUrl": "https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?ea6b93c60ecab06d",
+      "updatedAt": "2026-09-25T05:25:30.892Z",
+      "imageUrl": "https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?28af2adb25bf419e",
       "badge": "Benchmark",
-      "trendScore": 36,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-2886d8572f",
-      "slug": "report-us-officials-label-ai-critics-as-foreign-agents",
-      "lane": "ai",
-      "title": "Report: federal officials label AI critics as 'foreign agents'",
-      "summary": "A report circulating on Hacker News says federal officials are targeting critics of the AI industry by labeling them foreign agents. The claim comes from independent journalist Ken Klippenstein's reporting. The source gives no further detail on which agency or which critics are named.",
-      "whyItMatters": "Using foreign-agent designations against AI critics would raise serious questions about free speech and the government's ties to industry.",
-      "whatToWatch": [
-        "Official confirmation or denial from named agencies",
-        "Response from AI policy and civil liberties groups"
-      ],
-      "questions": [
-        "Which specific people or organizations are being targeted, and under what legal authority?"
-      ],
-      "sources": [
-        {
-          "title": "Feds Target AI Critics as \"Foreign Agents\"",
-          "url": "https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-09-24T00:41:31Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-24T00:41:31Z",
-      "updatedAt": "2026-09-24T20:59:12.632Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!HqSQ!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F597f5afa-4bae-4a2a-aa5b-48f84d0525e7_8161x5441.jpeg",
-      "badge": "Regulatory",
-      "trendScore": 35,
+      "trendScore": 29,
       "confidence": "low"
     }
   ]
