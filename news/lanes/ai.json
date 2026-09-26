@@ -1,7 +1,7 @@
 {
   "lane": "ai",
-  "generatedAt": "2026-09-25T18:28:12.272Z",
-  "contentVersion": 67,
+  "generatedAt": "2026-09-26T04:17:59.185Z",
+  "contentVersion": 68,
   "stories": [
     {
       "id": "ai-tutorial-software-factory-seven-agents",
@@ -123,22 +123,22 @@
           "Record per-task runtime and token cost so expensive stages can be redesigned"
         ]
       },
-      "updatedAt": "2026-09-25T18:28:12.272Z"
+      "updatedAt": "2026-09-26T04:17:59.185Z"
     },
     {
       "id": "ai-d2d497e5ee",
       "slug": "openai-case-study-codex-helped-proaction-boost-sales-60-and-save-75-ho",
       "lane": "ai",
-      "title": "OpenAI case study: Codex helped Proaction boost sales 60% and save 75+ hours",
-      "summary": "OpenAI published a customer case study about Proaction, a company that used its Codex coding tool. The company reports a 60% sales increase and more than 75 hours saved. These figures come from OpenAI's own customer story, not an independent audit.",
-      "whyItMatters": "Vendor case studies show how OpenAI sells Codex to businesses, but the numbers are self-reported and unverified.",
+      "title": "OpenAI case study: Codex helps Proaction lift sales 60%, save 75+ hours",
+      "summary": "OpenAI published a customer case study about Proaction, a company that says it used Codex and saw a 60% increase in sales along with more than 75 hours saved. The post is part of OpenAI's ongoing series showcasing customer results with its coding tools. No independent details on Proaction's size, industry, or how the figures were measured are given.",
+      "whyItMatters": "OpenAI keeps leaning on customer case studies to argue Codex delivers measurable business value, a pitch aimed squarely at enterprise buyers.",
       "whatToWatch": [
-        "Independent confirmation of the reported results",
-        "More customer case studies from OpenAI"
+        "Whether OpenAI or Proaction share more detail on methodology",
+        "Additional customer case studies in this OpenAI series"
       ],
       "questions": [
-        "What method produced the 60% and 75-hour figures?",
-        "Do these results generalize beyond one company?"
+        "What does Proaction's business do, and how large is it?",
+        "How were the sales and time-saved figures calculated?"
       ],
       "sources": [
         {
@@ -150,22 +150,78 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-25T19:00:00.000Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
       "imageUrl": "https://images.ctfassets.net/kftzwdyauwt9/2ZDFcePalT1BpkNxHdwpnS/521705b27328ebf7f7449136dcd428c2/proaction-option-a-seo-og.png?w=1600&h=900&fit=fill",
       "badge": "Case Study",
-      "trendScore": 60,
+      "trendScore": 52,
       "confidence": "medium"
+    },
+    {
+      "id": "ai-91bbe0224a",
+      "slug": "alan-kay-talk-on-shannon-s-information-theory-resurfaces-on-hacker-new",
+      "lane": "ai",
+      "title": "Alan Kay talk on Shannon's information theory resurfaces on Hacker News",
+      "summary": "A video of computing pioneer Alan Kay discussing how Claude Shannon's work gave engineers a way to handle noisy communication channels is circulating on Hacker News. The clip touches on foundational information theory rather than a new product or policy event. Beyond the title, no further specifics were supplied.",
+      "whyItMatters": "Shannon's ideas underpin much of modern computing and machine learning, so this is a reminder of the theoretical roots practitioners still draw on, though it is not itself industry news.",
+      "whatToWatch": [],
+      "questions": [
+        "Is this an archival talk or a new recording, and from what event?"
+      ],
+      "sources": [
+        {
+          "title": "Alan Kay: Shannon gave us a way of dealing with noisy channels [video]",
+          "url": "https://www.youtube.com/watch?v=Cjntrqhn8pk",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-25T18:37:05Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-25T18:37:05Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
+      "trendScore": 47,
+      "confidence": "low"
+    },
+    {
+      "id": "ai-30b26e0786",
+      "slug": "latent-space-podcast-openrouter-s-alex-atallah-on-going-from-seed-to-s",
+      "lane": "ai",
+      "title": "Latent Space podcast: OpenRouter's Alex Atallah on going 'from Seed to Stripe'",
+      "summary": "The Latent Space podcast released an episode featuring OpenRouter co-founder Alex Atallah and AMP's Anjney Midha, framed around OpenRouter's path 'from Seed to Stripe.' The title suggests a conversation about OpenRouter's growth and business trajectory. No further detail on specific claims or numbers was provided in the source.",
+      "whyItMatters": "OpenRouter has become key infrastructure for routing requests across AI model providers, so insight into its growth and business model matters for anyone tracking the model-serving layer of the industry.",
+      "whatToWatch": [
+        "Any concrete growth or revenue figures OpenRouter discloses going forward"
+      ],
+      "questions": [
+        "What does 'from Seed to Stripe' specifically refer to in OpenRouter's story?"
+      ],
+      "sources": [
+        {
+          "title": "OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha",
+          "url": "https://www.latent.space/p/openrouter",
+          "publisher": "Latent Space",
+          "publishedAt": "2026-09-25T23:14:41.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-09-25T23:14:41.000Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
+      "imageUrl": "https://substackcdn.com/image/fetch/$s_!aJ4B!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217456046%2Fcfdbb355-dae4-4659-9766-9c8031b653bf%2Ftranscoded-1790372655.png",
+      "badge": "Podcast",
+      "trendScore": 43,
+      "confidence": "low"
     },
     {
       "id": "ai-658e36b5c1",
       "slug": "latent-space-newsletter-publishes-issue-titled-the-future-of-latent-sp",
       "lane": "ai",
-      "title": "Latent Space newsletter publishes issue titled 'The Future of Latent Space'",
-      "summary": "The Latent Space newsletter published an issue called 'The Future of Latent Space,' part of its regular AI news roundup. The supplied title gives no further detail on the issue's contents.",
-      "whyItMatters": "Latent Space is a widely read AI industry newsletter, and its editorial focus can signal which topics are gaining attention.",
-      "whatToWatch": [],
+      "title": "AINews newsletter previews changes ahead for Latent Space",
+      "summary": "Latent Space published an AINews edition titled 'The Future of Latent Space,' apparently addressing changes coming to the publication or newsletter itself. The supplied source gives only the title and publication date, with no specifics on what is changing.",
+      "whyItMatters": "Latent Space is a widely followed source for AI industry commentary, so shifts in its format or direction can affect how readers track the space, though the concrete changes are not yet clear.",
+      "whatToWatch": [
+        "Follow-up posts detailing what specifically is changing"
+      ],
       "questions": [
-        "What specific topics does this issue cover?"
+        "What change to Latent Space is this post actually announcing?"
       ],
       "sources": [
         {
@@ -177,21 +233,22 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-25T05:37:00.000Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!Ndvv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6eb94ca5-a315-4307-9f69-724a59c08af1_2132x1120.png",
-      "trendScore": 36,
+      "trendScore": 28,
       "confidence": "low"
     },
     {
       "id": "ai-b28faeb337",
       "slug": "researchers-use-llms-to-trace-alchemical-knowledge-in-old-letters",
       "lane": "ai",
-      "title": "Writer uses LLMs to trace alchemical knowledge in 17th-century letters",
-      "summary": "A piece shared on Hacker News describes using large language models to help trace alchemical knowledge and decode handwriting in 17th-century letters. The work applies LLMs to historical research rather than to a commercial product.",
-      "whyItMatters": "It is a small example of LLMs finding use outside typical business and consumer tasks, in humanities research.",
+      "title": "Researchers use LLMs to trace alchemical knowledge in 17th-century letters",
+      "summary": "A piece discussed on Hacker News describes using large language models to help trace alchemical knowledge and decode 17th-century correspondence. This is a historical-research application of LLMs rather than a new product launch. Specifics on the researchers, institution, or methods were not included in the supplied source.",
+      "whyItMatters": "It's a small example of LLMs being applied to historical document analysis, illustrating a growing niche use case beyond mainstream commercial AI products.",
       "whatToWatch": [],
       "questions": [
-        "Which models were used, and how accurate were the results?"
+        "Who conducted this research, and has it been peer reviewed?",
+        "What LLM or tools were used for the decoding work?"
       ],
       "sources": [
         {
@@ -203,24 +260,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T19:14:27Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!nc6g!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbf3f1f49-cf38-4488-af40-f09834e5210f_871x704.png",
-      "trendScore": 36,
+      "badge": "Research",
+      "trendScore": 28,
       "confidence": "low"
     },
     {
       "id": "ai-6c1df0eaae",
       "slug": "runway-s-worldprompt-pushes-toward-real-time-ai-generated-worlds",
       "lane": "ai",
-      "title": "Latent Space examines Runway's WorldPrompt for real-time world generation",
-      "summary": "Latent Space published a piece on Runway's WorldPrompt, a system for generating real-time interactive worlds. The article looks at the engineering behind building these worlds, per the supplied title.",
-      "whyItMatters": "Real-time generative world tools mark a step beyond static image and video generation, an area Runway has pushed into.",
+      "title": "Latent Space digs into Runway's WorldPrompt and real-time world models",
+      "summary": "Latent Space published a piece on Runway's WorldPrompt, described as involving the engineering behind real-time generated worlds. The source indicates this covers technical work on real-time world generation but does not detail specific capabilities, release status, or pricing.",
+      "whyItMatters": "Real-time generative world models are an emerging front in AI video and simulation, an area Runway has been pushing alongside other video-generation competitors.",
       "whatToWatch": [
-        "Further detail on WorldPrompt's capabilities and release plans"
+        "Any public release or demo of WorldPrompt",
+        "How competitors in AI video/world models respond"
       ],
       "questions": [
-        "Is WorldPrompt a shipped product or a research preview?",
-        "What are its technical limits?"
+        "Is WorldPrompt a shipped product or still in development?"
       ],
       "sources": [
         {
@@ -232,80 +290,49 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-25T01:30:57.000Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
       "imageUrl": "https://substackcdn.com/image/fetch/$s_!hB4W!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217289983%2Ffa899450-7781-454b-838b-85a733c16fce%2Ftranscoded-1790297181.png",
-      "badge": "Analysis",
-      "trendScore": 33,
+      "trendScore": 25,
       "confidence": "low"
     },
     {
-      "id": "ai-56a7f60305",
-      "slug": "provocative-essay-claims-the-bay-area-ai-safety-scene-resembles-a-cult",
+      "id": "ai-e8e5eb3096",
+      "slug": "llvm-community-remembers-compiler-engineer-johannes-doerfert",
       "lane": "ai",
-      "title": "Opinion piece claims AI safety culture in Berkeley resembles a 'cult'",
-      "summary": "A blog post, widely shared on Hacker News, argues that the AI safety scene in Berkeley has cult-like and sexual dynamics. This is one commentator's opinion; the supplied source does not establish it as verified fact.",
-      "whyItMatters": "AI safety research shapes policy debates and hiring across the field, so the culture of that community draws scrutiny.",
-      "whatToWatch": [
-        "Whether the AI safety community responds publicly to the claims"
-      ],
-      "questions": [
-        "Who is the author, and what evidence backs the claim?",
-        "Is this experience representative or a fringe view?"
-      ],
-      "sources": [
-        {
-          "title": "AI safety is mostly a sex cult in Berkeley",
-          "url": "https://www.verysane.ai/p/ai-safety-is-mostly-a-sex-cult-in",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-09-24T14:38:31Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-24T14:38:31Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "badge": "Opinion",
-      "trendScore": 32,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-5bd0bd4954",
-      "slug": "a-crowdsourced-tracker-ranks-the-best-llm-for-every-budget",
-      "lane": "ai",
-      "title": "New site ranks the best LLM for every budget, updated daily",
-      "summary": "A project shared on Hacker News offers a daily-updated guide to the best large language model for different budget levels. The supplied title does not name the site or explain its ranking method.",
-      "whyItMatters": "With frequent new model releases and price changes, buyers want a current way to compare cost against performance.",
+      "title": "LLVM community remembers compiler engineer Johannes Doerfert",
+      "summary": "An LLVM blog post pays tribute to Johannes Doerfert, a compiler engineer known within the LLVM community. The supplied source is a memorial post with no additional biographical or career details included.",
+      "whyItMatters": "LLVM underpins compiler infrastructure used across GPU and ML toolchains, so contributors to that ecosystem indirectly shape the tooling AI workloads run on.",
       "whatToWatch": [],
       "questions": [
-        "What criteria and pricing data drive the rankings?",
-        "How often do the rankings actually change?"
+        "What specific LLVM or compiler projects was Doerfert known for?"
       ],
       "sources": [
         {
-          "title": "Best LLM for every budget, updated daily",
-          "url": "https://bestmodelforyourbudget.terrydjony.com/",
+          "title": "Remembering Johannes Doerfert",
+          "url": "https://blog.llvm.org/posts/2026-09-24-rememberingjohannesdoerfert/",
           "publisher": "Hacker News",
-          "publishedAt": "2026-09-24T14:09:57Z"
+          "publishedAt": "2026-09-24T23:36:50Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-24T14:09:57Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "trendScore": 32,
+      "publishedAt": "2026-09-24T23:36:50Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
+      "badge": "Obituary",
+      "trendScore": 25,
       "confidence": "low"
     },
     {
       "id": "ai-185ddb0abc",
       "slug": "yc-backed-whiteboard-launches-as-an-open-source-ide-for-software-desig",
       "lane": "ai",
-      "title": "YC-backed 'Whiteboard' launches as an open-source IDE for software design",
-      "summary": "A Y Combinator W26 startup introduced Whiteboard, an open-source IDE for planning software design before writing code, in a Hacker News 'Show HN' post. The supplied source gives no detail beyond the announcement itself.",
-      "whyItMatters": "New YC-backed developer tools show where builders and investors think AI-assisted coding workflows are headed.",
+      "title": "YC-backed Whiteboard launches as open-source IDE for software design",
+      "summary": "A Show HN post introduces Whiteboard, a YC W26 startup building an open-source IDE aimed at supporting thoughtful software design. The supplied source does not specify whether or how AI is used within the tool.",
+      "whyItMatters": "New developer-tooling startups from YC are worth tracking given how many now build AI-assisted coding or design features, though this one's AI angle isn't confirmed here.",
       "whatToWatch": [
-        "Community feedback and adoption on Hacker News",
-        "Future feature or funding updates"
+        "Whether Whiteboard incorporates AI-assisted features as it develops"
       ],
       "questions": [
-        "Does Whiteboard use AI in its design workflow, and if so, how?"
+        "Does Whiteboard use AI models, or is it a traditional design IDE?"
       ],
       "sources": [
         {
@@ -317,94 +344,38 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-09-24T17:21:36Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "imageUrl": "https://opengraph.githubassets.com/31633e09a794aac7e3cfa936a8bbeb45d3d465e32ffd9d3f59f4fc63441a93f2/devdotfast/whiteboard",
-      "badge": "Launch",
-      "trendScore": 31,
+      "updatedAt": "2026-09-26T04:17:59.185Z",
+      "imageUrl": "https://opengraph.githubassets.com/f00c054556e8525b927688bf1509557c818ff2dceb59a6458ef06437a9f2d92f/devdotfast/whiteboard",
+      "trendScore": 23,
       "confidence": "low"
     },
     {
-      "id": "ai-383cf544a6",
-      "slug": "analysis-foundries-vs-navigators-and-the-cost-of-doing-science-with-ai",
+      "id": "ai-e68f196594",
+      "slug": "blog-post-argues-losing-factories-means-losing-technical-expertise",
       "lane": "ai",
-      "title": "Latent Space contrasts 'foundries' and 'navigators' for lowering science costs",
-      "summary": "Latent Space published an analysis comparing two approaches, called 'foundries' and 'navigators,' for using AI to lower the cost of scientific research. The supplied title gives the framing but no further specifics.",
-      "whyItMatters": "AI's role in speeding up scientific discovery is a growing front in the industry, beyond chatbots and coding tools.",
-      "whatToWatch": [],
-      "questions": [
-        "Which organizations or products represent each approach?"
-      ],
-      "sources": [
-        {
-          "title": "Foundries vs Navigators: Lowering the Cost of Science",
-          "url": "https://www.latent.space/p/foundries-vs-navigators-lowering",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-09-24T15:03:16.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-24T15:03:16.000Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "imageUrl": "https://substackcdn.com/image/fetch/$s_!-Em5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc4f2dad0-1897-4b86-aa39-f4772f76e474_1591x828.png",
-      "badge": "Analysis",
-      "trendScore": 24,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-636605f414",
-      "slug": "blog-post-explains-rlcd-the-technique-reportedly-behind-the-jev-model",
-      "lane": "ai",
-      "title": "Blog post explains RLCD, the technique behind an AI system called Jev",
-      "summary": "A technical blog post describes RLCD, said to be the method behind a system named Jev. The supplied source does not explain what RLCD stands for or what Jev is, beyond the post's own title.",
-      "whyItMatters": "New training techniques like this can shape how future models get built and improved.",
-      "whatToWatch": [],
-      "questions": [
-        "What does RLCD stand for, and what is Jev?",
-        "Who built it, and has it been independently reviewed?"
-      ],
-      "sources": [
-        {
-          "title": "What Is RLCD? The Secret Behind Jev",
-          "url": "https://di-zhang-llm.github.io/blog/what-is-rlcd-the-secret-behind-jev/",
-          "publisher": "Hacker News",
-          "publishedAt": "2026-09-24T12:21:16Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-09-24T12:21:16Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "imageUrl": "https://di-zhang-llm.github.io/images/blog/what-is-rlcd-the-secret-behind-jev/01-rlcd-lineage.png",
-      "trendScore": 24,
-      "confidence": "low"
-    },
-    {
-      "id": "ai-eb58386549",
-      "slug": "meta-connect-2026-recap-muse-glasses-voice-and-video-features-and-char",
-      "lane": "ai",
-      "title": "Meta Connect 2026 roundup covers Muse glasses, voice, video, and Charm",
-      "summary": "An AINews roundup from Latent Space recaps Meta Connect 2026 announcements, including Muse glasses and new voice, video, and 'Charm' features. The supplied source is a newsletter summary, not Meta's own announcement.",
-      "whyItMatters": "Meta Connect lays out Meta's AI and hardware roadmap, shaping competition in AI-powered glasses and assistants.",
+      "title": "Blog post argues losing factories means losing technical expertise",
+      "summary": "A blog post discussed on Hacker News argues that a country or company loses expertise once it no longer has the factories to build things. The supplied source gives only this title, without specifying whether it focuses on chips, hardware, or another industry.",
+      "whyItMatters": "This argument echoes broader debates about semiconductor and AI-hardware manufacturing capacity, a recurring concern in AI supply-chain and industrial policy discussions.",
       "whatToWatch": [
-        "Hands-on reports on Muse glasses and the Charm feature",
-        "Rollout timing for the announced features"
+        "Whether this argument ties into ongoing chip manufacturing or industrial policy debates"
       ],
       "questions": [
-        "What exactly is 'Charm,' and when do these features ship?"
+        "What industry or specific factories does the post's argument focus on?"
       ],
       "sources": [
         {
-          "title": "[AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm",
-          "url": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses",
-          "publisher": "Latent Space",
-          "publishedAt": "2026-09-24T08:12:59.000Z"
+          "title": "If you don't have the factories, you lose the expertise",
+          "url": "https://lemire.me/blog/2026/09/24/if-you-dont-have-the-factories-you-lose-the-expertise/",
+          "publisher": "Hacker News",
+          "publishedAt": "2026-09-24T17:52:00Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-09-24T08:12:59.000Z",
-      "updatedAt": "2026-09-25T18:28:12.272Z",
-      "imageUrl": "https://substackcdn.com/image/youtube/w_728,c_limit/JvyVwlP_nlw",
-      "badge": "Product",
-      "trendScore": 18,
+      "publishedAt": "2026-09-24T17:52:00Z",
+      "updatedAt": "2026-09-26T04:17:59.185Z",
+      "imageUrl": "https://lemire.me/blog/wp-content/uploads/2026/09/factories-1024x392.jpg",
+      "badge": "Analysis",
+      "trendScore": 20,
       "confidence": "low"
     }
   ]
