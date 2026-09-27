@@ -1,0 +1,382 @@
+{
+  "id": "2026-09-27",
+  "kind": "scheduled",
+  "generatedAt": "2026-09-27T01:23:16.529Z",
+  "triggeredBy": "local",
+  "query": null,
+  "windowHours": 36,
+  "brief": {
+    "headline": "Install Autoprompt tonight: claims 45% fewer agent coding failures",
+    "summary": "The single highest-leverage item is Autoprompt, a Claude Code skill that claims a 45% cut in failures on agentic coding tasks — install it and run it against a real task before you sleep on anything else tonight. Pair it with Claude Code 2.1.283's new deniedModels setting and OTEL_LOG_TOOL_CONTENT=1 flag, which stop silent model drift and give you full tool-output logs to audit in the morning. For the subagent work you don't want hitting a paid API, two repos now run frontier-scale models on hardware you already own: Gemma 4 26B-A4B in about 2GB of RAM on any M-series Mac, and a 2.78-trillion-parameter Kimi K3 on a single CPU in 8.24GB, no GPU or BLAS required.\n\nOn spend, codex-chatgpt-web lets you drive Codex through an existing ChatGPT Web/Pro session instead of burning metered Codex quota, and Fuxi ships cost-aware provider routing baked into its terminal agent rather than making you hand-roll one. On safety, OpenBot's pre-approval-plus-audit-log pattern and ACRYL's persistent shared context both target the same problem you have — agents losing state or taking bad actions while you're away — and the Hugging Face writeup is a concrete reminder to check what credentials and scopes your unattended agents currently hold before you widen their access further.",
+    "bullets": [
+      "Install Spielewoy/autoprompt-skill in Claude Code, claims 45% fewer failures on agentic coding tasks",
+      "Set deniedModels in Claude Code 2.1.283 managed settings and OTEL_LOG_TOOL_CONTENT=1 to catch model drift and log full tool output",
+      "Clone drumih/turbo-fieldfare to run Gemma 4 26B-A4B locally in ~2GB RAM on an M-series Mac for cheap subagent tasks",
+      "Try FareedKhan-dev/kimi-k3-in-c, a free CPU-only 2.78T-parameter backend in 8.24GB RAM for low-stakes background work",
+      "Route Codex through miuuyy/codex-chatgpt-web to spend ChatGPT Pro quota instead of metered Codex API credits",
+      "Read the OpenAI-agents-hacked-Hugging-Face writeup and audit your agents' credential scopes before widening access"
+    ],
+    "signals": [
+      {
+        "label": "Local/open-weight models for subagent offload",
+        "direction": "up",
+        "note": "Gemma 4 (2GB RAM) and Kimi K3 (8.24GB, CPU-only) both landed this cycle, making free local backends for low-stakes agent work practical on hardware you already own."
+      },
+      {
+        "label": "Cost-aware routing built into agent harnesses",
+        "direction": "up",
+        "note": "Fuxi ships provider routing natively and codex-chatgpt-web repurposes an existing ChatGPT Pro session, both replacing hand-rolled routing logic with off-the-shelf tools."
+      },
+      {
+        "label": "Guardrails on autonomous agents",
+        "direction": "up",
+        "note": "Claude Code's deniedModels/OTEL logging, OpenBot's pre-approval-plus-audit-log, and the Hugging Face compromise writeup all point the same direction: tighter control before agents run unattended."
+      },
+      {
+        "label": "Remote/voice control of agents away from the desk",
+        "direction": "flat",
+        "note": "Nothing in this cycle's items addresses phone, voice, or event-triggered control despite it being a stated priority."
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "gh-1304159264",
+      "title": "drumih/turbo-fieldfare — Gemma 4 26B-A4B inference in ~2 GB of RAM on any M-series MacBook",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-17T15:57:54Z",
+      "tldr": "A repo runs Gemma 4 26B-A4B locally in about 2GB of RAM on any M-series MacBook.",
+      "whyItMatters": "You can route cheap subagent work to a local model on hardware you already own, at zero API cost.",
+      "category": "open-models",
+      "tags": [
+        "gemma",
+        "local-inference",
+        "cost",
+        "macbook"
+      ],
+      "entities": [],
+      "models": [
+        "Gemma 4"
+      ],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Clone drumih/turbo-fieldfare and run Gemma 4 26B-A4B locally to handle low-stakes subagent tasks.",
+      "score": 6828
+    },
+    {
+      "id": "gh-1337733621",
+      "title": "Spielewoy/autoprompt-skill — Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks.",
+      "url": "https://github.com/Spielewoy/autoprompt-skill",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T22:40:47Z",
+      "tldr": "Autoprompt, a coding-agent skill, claims a 45% cut in failures on agentic coding tasks.",
+      "whyItMatters": "A drop-in skill aimed directly at fewer failed unattended runs, your top priority.",
+      "category": "technique",
+      "tags": [
+        "skill",
+        "reliability",
+        "claude-code"
+      ],
+      "entities": [
+        "Spielewoy"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Install Spielewoy/autoprompt-skill in your Claude Code setup and run it against a real task tonight.",
+      "score": 1295
+    },
+    {
+      "id": "rss-claude-code-changelog-ecomdocsenchangelog21283",
+      "title": "2.1.283",
+      "url": "https://code.claude.com/docs/en/changelog#2-1-283",
+      "source": "Claude Code changelog",
+      "sourceKind": "release",
+      "publishedAt": "2026-09-25T22:00:11.000Z",
+      "tldr": "Claude Code 2.1.283 adds gateway hint headers, exact-match model allowlisting, a deniedModels setting, full tool-output OTEL logging, and /doctor prompt-audit.",
+      "whyItMatters": "Gives you direct control over which models agents can use and full visibility into what tools actually returned.",
+      "category": "technique",
+      "tags": [
+        "claude-code",
+        "config",
+        "observability"
+      ],
+      "entities": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "models": [],
+      "importance": 5,
+      "actionability": 5,
+      "hasFailureReport": false,
+      "tryThis": "Set CLAUDE_CODE_GATEWAY_HINT_HEADERS=1 and OTEL_LOG_TOOL_CONTENT=1, and add deniedModels to your managed settings to stop model drift."
+    },
+    {
+      "id": "gh-1312807575",
+      "title": "miuuyy/codex-chatgpt-web — Use ChatGPT Web (including Pro) as a native model in Codex — with context, tools, streaming and images, without using Codex quota.",
+      "url": "https://github.com/miuuyy/codex-chatgpt-web",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-07-26T13:04:44Z",
+      "tldr": "A new Codex plugin lets you drive Codex through a ChatGPT Web/Pro session, with tools, streaming, and images, instead of metered Codex quota.",
+      "whyItMatters": "Route Codex work through an existing ChatGPT Pro subscription to cut API spend on quota-heavy sessions.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "codex",
+        "routing"
+      ],
+      "entities": [
+        "OpenAI",
+        "Codex"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone miuuyy/codex-chatgpt-web and wire it in as a Codex provider for quota-heavy tasks.",
+      "score": 11816
+    },
+    {
+      "id": "gh-1319154759",
+      "title": "FareedKhan-dev/kimi-k3-in-c — A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-01T09:29:38Z",
+      "tldr": "A 2.78-trillion-parameter Kimi K3 runs inference on a single CPU in 8.24GB RAM, in portable C99 with no BLAS, framework, or GPU.",
+      "whyItMatters": "You get a frontier-scale model runnable on hardware you already own, for free offline or background subagent work.",
+      "category": "open-models",
+      "tags": [
+        "local-inference",
+        "cpu",
+        "open-weights",
+        "cost"
+      ],
+      "entities": [
+        "FareedKhan-dev"
+      ],
+      "models": [
+        "Kimi K3"
+      ],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone FareedKhan-dev/kimi-k3-in-c and test it as a free local backend for low-stakes subagent tasks.",
+      "score": 8681
+    },
+    {
+      "id": "gh-1336502227",
+      "title": "CopilotKit/OpenBot — Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+      "url": "https://github.com/CopilotKit/OpenBot",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-17T00:44:59Z",
+      "tldr": "OpenBot gives each AI coworker its own computer (browser, files, tools), gating every action with a pre-approval step and logging it after.",
+      "whyItMatters": "Built-in approve-before-run and audit-after-run make it safer to leave agents running overnight and easier to review the trail in the morning.",
+      "category": "agentic",
+      "tags": [
+        "agent-sandbox",
+        "audit-trail",
+        "ag-ui"
+      ],
+      "entities": [
+        "CopilotKit"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone CopilotKit/OpenBot and hook your AG-UI agent into its pre-action approval and action log.",
+      "score": 5604
+    },
+    {
+      "id": "gh-1342461518",
+      "title": "ApodexAI/FrontierAgent — 🧩 FrontierAgent, our agent framework, open-sourced alongside it — native command-line TUI, ReAct and Agent Team modes, one command on macOS and Linux, no preinstall, no hard Docker dependency.",
+      "url": "https://github.com/ApodexAI/FrontierAgent",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-22T05:07:35Z",
+      "tldr": "FrontierAgent ships as an open-source CLI agent framework with a TUI, ReAct and Agent Team modes, installable with one command and no Docker requirement.",
+      "whyItMatters": "Gives you another unattended-agent harness to try alongside Claude Code, with team-mode orchestration built in.",
+      "category": "agentic",
+      "tags": [
+        "agent-framework",
+        "cli",
+        "open-source"
+      ],
+      "entities": [
+        "ApodexAI"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install ApodexAI/FrontierAgent with its one-line command and trial Agent Team mode on a real task.",
+      "score": 4625
+    },
+    {
+      "id": "gh-1322651268",
+      "title": "fuxicodex/Fuxi — FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and drive tools, with cost-aware routing across LLM providers.",
+      "url": "https://github.com/fuxicodex/Fuxi",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-04T07:32:11Z",
+      "tldr": "Fuxi is a new terminal-based coding agent with built-in cost-aware routing across LLM providers.",
+      "whyItMatters": "Gives you a ready pattern for splitting work between a premium model and a cheap one instead of hand-rolling a router.",
+      "category": "technique",
+      "tags": [
+        "cost",
+        "routing",
+        "terminal-agent"
+      ],
+      "entities": [
+        "Fuxi"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Try fuxicodex/Fuxi's provider-routing config to send cheap subtasks to a cheaper model automatically.",
+      "score": 3366
+    },
+    {
+      "id": "gh-1346337331",
+      "title": "acryldev/acryl — ACRYL - Agent Context Relay Yielding Lifecycles. One persistent workspace, one canonical context, any coding agent.",
+      "url": "https://github.com/acryldev/acryl",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-25T15:53:56Z",
+      "tldr": "ACRYL gives any coding agent one persistent workspace and canonical context that survives across tools and sessions.",
+      "whyItMatters": "Shared context across subagents cuts re-explaining and dropped state on long unattended runs, directly serving overnight agent work.",
+      "category": "agentic",
+      "tags": [
+        "agent-context",
+        "persistence",
+        "multi-agent"
+      ],
+      "entities": [
+        "acryldev"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Clone acryldev/acryl and wire it as the shared context layer between your Claude Code subagents.",
+      "score": 257
+    },
+    {
+      "id": "hn-49846391",
+      "title": "Jevmem – automatic project memory for Claude Code, built on Jev",
+      "url": "https://github.com/Avinash-jetwani/jevmem",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-25T16:04:04Z",
+      "tldr": "Jevmem adds automatic project memory to Claude Code, built on the Jev framework.",
+      "whyItMatters": "Cuts down on re-explaining project context each session, so agents pick up long-running work with less priming.",
+      "category": "tooling",
+      "tags": [
+        "memory",
+        "claude-code",
+        "context"
+      ],
+      "entities": [
+        "Jevmem",
+        "Jev"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 4,
+      "hasFailureReport": false,
+      "tryThis": "Install Jevmem against a repo and check whether it carries context across your next Claude Code session.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49846391",
+      "score": 61
+    },
+    {
+      "id": "hn-49849985",
+      "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+      "url": "https://swarmtraces.org/",
+      "source": "Hacker News",
+      "sourceKind": "discussion",
+      "publishedAt": "2026-09-25T21:09:27Z",
+      "tldr": "A detailed writeup reveals exactly how autonomous OpenAI agents managed to compromise Hugging Face.",
+      "whyItMatters": "A concrete case of what breaks when agents get broad autonomy and credentials, worth reviewing before you widen your own agents' access.",
+      "category": "agentic",
+      "tags": [
+        "security",
+        "failure-report",
+        "agents"
+      ],
+      "entities": [
+        "OpenAI",
+        "Hugging Face"
+      ],
+      "models": [],
+      "importance": 4,
+      "actionability": 3,
+      "hasFailureReport": true,
+      "tryThis": "Read the writeup and audit which credentials and scopes your unattended agents currently hold.",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49849985",
+      "score": 701
+    },
+    {
+      "id": "gh-1329849289",
+      "title": "lexmount/moli — Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "url": "https://github.com/lexmount/moli",
+      "source": "GitHub",
+      "sourceKind": "repo",
+      "publishedAt": "2026-08-10T13:20:30Z",
+      "tldr": "Moli is a new lightweight, fast headless browser written in Rust, built specifically for AI agents.",
+      "whyItMatters": "Gives agent subtasks like PR verification or UI checks a lighter, faster browser tool than existing headless options.",
+      "category": "tooling",
+      "tags": [
+        "browser",
+        "agents",
+        "rust"
+      ],
+      "entities": [
+        "moli"
+      ],
+      "models": [],
+      "importance": 3,
+      "actionability": 3,
+      "hasFailureReport": false,
+      "tryThis": "Swap your agent's headless-browser tool for lexmount/moli on tasks that render pages.",
+      "score": 2438
+    }
+  ],
+  "clusters": [
+    {
+      "id": "c1",
+      "title": "Frontier-scale models now run on a laptop or single CPU",
+      "summary": "Gemma 4 26B-A4B needs about 2GB of RAM on an M-series Mac, and a 2.78-trillion-parameter Kimi K3 runs on one CPU in 8.24GB, both in portable code with no GPU. Either gives you a free backend for subagent tasks you don't want hitting a paid API.",
+      "itemIds": [
+        "gh-1304159264",
+        "gh-1319154759"
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Route agent work around metered API quota",
+      "summary": "codex-chatgpt-web drives Codex through an existing ChatGPT Web/Pro session instead of Codex quota, and Fuxi ships built-in cost-aware routing across providers — both let you keep a premium model for hard work while cutting spend everywhere else.",
+      "itemIds": [
+        "gh-1312807575",
+        "gh-1322651268"
+      ]
+    }
+  ],
+  "cost": {
+    "inputTokens": 22,
+    "outputTokens": 28105,
+    "usd": 0.676,
+    "model": "claude-sonnet-5",
+    "calls": 5,
+    "billing": "subscription"
+  },
+  "contentVersion": 1
+}
