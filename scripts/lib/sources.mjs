@@ -667,3 +667,58 @@ export function preRank(items, keywords, limit) {
 
   return picked.map(x => x.item);
 }
+
+/**
+ * Drop candidates that a previous digest already published.
+ *
+ * This runs *before* preRank on purpose. Filtering here means the kind quota
+ * fills its slots with items the reader hasn't seen, and we never pay curation
+ * tokens to re-judge yesterday's news.
+ *
+ * Matching is on both axes fetchAll already dedupes within a run: the canonical
+ * URL, and the normalised title. The title pass is what catches a repo that
+ * resurfaces under a different tracking URL, or an announcement that HN and
+ * Reddit link differently.
+ */
+export function filterAlreadyPublished(items, publishedIndex) {
+  const entries = publishedIndex?.entries ?? [];
+  if (entries.length === 0) return { fresh: items, dropped: [] };
+
+  const seenUrls = new Set(entries.map(e => e.key));
+  const seenTitles = new Set(entries.map(e => e.titleKey).filter(Boolean));
+
+  const fresh = [];
+  const dropped = [];
+  for (const item of items) {
+    const tKey = titleKey(item.title ?? '');
+    if (seenUrls.has(dedupeKey(item.url)) || (tKey && seenTitles.has(tKey))) dropped.push(item);
+    else fresh.push(item);
+  }
+  return { fresh, dropped };
+}
+
+/**
+ * Hold one `sourceKind` to a share of the final digest.
+ *
+ * `KIND_QUOTA` above caps what reaches the curator, but nothing capped what the
+ * curator returned — and it kept nearly every repo it was handed. Measured
+ * across the first 20 digests, GitHub repos were 12–18 items of a ~22-item
+ * digest: 60–75% of the feed was "here is a repo", which is what makes it read
+ * like a scraper rather than a brief.
+ *
+ * Excess is dropped from the bottom of the caller's ordering, so curation's own
+ * ranking decides which repos survive. `floor` stops the cap biting on a thin
+ * day: if losing the excess would take the digest under it, the digest keeps
+ * them. A short digest that repeats nothing is fine; an empty one is not.
+ */
+export function capKindShare(items, kind, share, floor = 8) {
+  const ofKind = items.filter(i => i.sourceKind === kind);
+  const cap = Math.max(1, Math.floor(items.length * share));
+  if (ofKind.length <= cap) return { items, dropped: [] };
+
+  const excess = ofKind.slice(cap);
+  if (items.length - excess.length < floor) return { items, dropped: [] };
+
+  const cut = new Set(excess.map(i => i.id));
+  return { items: items.filter(i => !cut.has(i.id)), dropped: excess };
+}

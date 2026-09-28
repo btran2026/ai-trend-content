@@ -138,7 +138,10 @@ jobs:
           set -euo pipefail
           git config user.name  'ai-trend-bot'
           git config user.email 'ai-trend-bot@users.noreply.github.com'
-          git add manifest.json digests models news
+          # `state` carries the published-memory index. Leave it out and every
+          # run starts from an empty memory — the repeat problem it exists to
+          # fix, failing silently, because a digest of repeats still publishes.
+          git add manifest.json digests models news state
           if git diff --cached --quiet; then
             echo 'Nothing changed — no digest published this run.'
             exit 0
