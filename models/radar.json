@@ -1,7 +1,26 @@
 {
-  "contentVersion": 26,
-  "generatedAt": "2026-09-25T04:32:42.438Z",
+  "contentVersion": 27,
+  "generatedAt": "2026-09-28T23:26:29.518Z",
   "models": [
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "vendor": "Anthropic",
+      "openness": "closed",
+      "license": "unknown",
+      "contextTokens": 1000000,
+      "priceInPerMTok": null,
+      "priceOutPerMTok": null,
+      "status": "current",
+      "firstSeenAt": "2026-09-28T23:26:29.518Z",
+      "timeline": [
+        {
+          "at": "2026-09-28T23:26:29.518Z",
+          "what": "Anthropic released Claude Sonnet 5.5 as the new API default, with 1M context, priced the same as Sonnet 5 but faster and cheaper to run.",
+          "url": "https://code.claude.com/docs/en/changelog#2-1-284"
+        }
+      ]
+    },
     {
       "id": "ukisai-swift-1-5-27b",
       "name": "Swift 1.5 27B",
