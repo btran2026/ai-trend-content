@@ -15,6 +15,9 @@
  * quality for spend — see README.
  */
 import { spawn } from 'node:child_process';
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import Anthropic from '@anthropic-ai/sdk';
 
 const MODEL = process.env.AGGREGATOR_MODEL || 'claude-opus-5';
@@ -23,16 +26,20 @@ const CURATION_BATCH_SIZE = 20;
 /**
  * Which way we reach the model.
  *
- *   api — the Anthropic SDK on ANTHROPIC_API_KEY. What Actions uses. Gets real
- *         structured outputs and the refusal fallback.
- *   cli — `claude -p` against whatever session you're already logged into, so a
- *         local run bills your subscription instead of API credits.
+ *   api     — the Anthropic SDK on ANTHROPIC_API_KEY. What Actions uses. Gets
+ *             real structured outputs and the refusal fallback.
+ *   cli     — `claude -p` against whatever session you're already logged into,
+ *             so a local run bills your subscription instead of API credits.
+ *   copilot — `copilot -p` against your GitHub Copilot subscription. Same
+ *             motive as `cli`, different subscription — and it opens up the
+ *             GPT-5.6 / Gemini tiers for the cheap bulk-curation stage.
  *
  * Auto-selects: a key means api, no key means cli. Actions always has the key,
- * so the hosted path is untouched. Force either with AI_BACKEND.
+ * so the hosted path is untouched. Force any of them with AI_BACKEND.
  */
 const BACKEND = process.env.AI_BACKEND || (process.env.ANTHROPIC_API_KEY ? 'api' : 'cli');
 const CLI_BIN = process.env.CLAUDE_BIN || 'claude';
+const COPILOT_BIN = process.env.COPILOT_BIN || 'copilot';
 const CLI_TIMEOUT_MS = 10 * 60_000;
 
 /** Server-side refusal fallback. Opus 5's safety classifiers can decline a
@@ -66,6 +73,9 @@ const PRICING = {
 };
 
 export function estimateUsd() {
+  // Copilot reports no token counts and no cost, so there is no honest figure
+  // to give. Zero here means "unknown", which the digest marks via billing.
+  if (BACKEND === 'copilot') return 0;
   // The CLI reports what each call would have cost at API rates; on a
   // subscription that's notional, not a charge, but it's the honest number to
   // record and it already accounts for cache reads we can't see from here.
@@ -310,6 +320,122 @@ ${JSON.stringify(schema)}`;
 }
 
 /**
+ * One call through `copilot -p`, on your GitHub Copilot subscription.
+ *
+ * Copilot narrates to stdout — progress, tool calls, commentary — so parsing
+ * its stdout for JSON is unreliable. Instead we do what this environment has
+ * already proven works: give it a scratch directory, tell it to WRITE the JSON
+ * to a file, and read the file. stdout is then only useful for diagnostics.
+ *
+ * The prompt goes in via a file and shell redirection rather than argv, because
+ * a curation batch is tens of kilobytes and would blow the argument limit.
+ */
+async function callCopilot({ system, prompt, schema }) {
+  const dir = await mkdtemp(join(tmpdir(), 'ai-trend-copilot-'));
+  const outPath = join(dir, 'out.json');
+  const promptPath = join(dir, 'prompt.txt');
+
+  const body = `${system}
+
+Write ONLY a single JSON object conforming to the schema below to the file ${outPath}. Create that file. Do not print the JSON to stdout, do not wrap it in a code fence, and do not write anything else to that file.
+
+${JSON.stringify(schema)}
+
+--- INPUT ---
+
+${prompt}`;
+
+  try {
+    await writeFile(promptPath, body, 'utf8');
+
+    // Least privilege, deliberately narrower than the PR risk analyser's
+    // --allow-all-tools: this stage is a text transform whose only legitimate
+    // side effect is creating one JSON file in a scratch dir. `write` is the
+    // only tool it needs; shell is denied outright so an unattended,
+    // cron-triggered run cannot execute anything against the repo.
+    const model = MODEL ? `--model ${shellEscape(MODEL)} ` : '';
+    const shellCommand =
+      `${shellEscape(COPILOT_BIN)} --no-ask-user ` +
+      `--allow-tool ${shellEscape('write')} --deny-tool ${shellEscape('shell')} ${model}` +
+      `--add-dir ${shellEscape(dir)} < ${shellEscape(promptPath)}`;
+
+    // Retry: `Model "…" from --model flag is not available` is a transient
+    // failure, not a bad slug — measured, the same slug that failed one call
+    // answered fine on the next. The PR risk analyser retries 3× for the same
+    // class of reason. Without this a whole run dies on one flaky stage.
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      const { code, stderr } = await runShell(shellCommand, dir);
+
+      let raw = null;
+      try {
+        raw = await readFile(outPath, 'utf8');
+      } catch {
+        /* no file — fall through to the retry decision */
+      }
+
+      if (raw !== null) {
+        usage.calls += 1; // Copilot reports no token counts, so that's all we know.
+        const parsed = extractJson(raw);
+        if (parsed) return parsed;
+        console.warn(`  ! copilot output was not parseable JSON (attempt ${attempt}/3)`);
+      } else {
+        const why = stderr.trim().slice(0, 200) || `exit ${code}`;
+        console.warn(`  ! copilot wrote no output file (attempt ${attempt}/3): ${why}`);
+      }
+
+      if (attempt < 3) await new Promise(r => setTimeout(r, 3000 * attempt));
+    }
+    console.warn('  ! copilot failed 3 times — skipping stage');
+    return null;
+  } finally {
+    await rm(dir, { recursive: true, force: true }).catch(() => {});
+  }
+}
+
+/** Single-quote for `bash -c`, the way the Preflight risk analyser does it. */
+function shellEscape(s) {
+  return `'${String(s).replace(/'/g, `'\\''`)}'`;
+}
+
+/**
+ * Run a shell command, hardened the way this environment requires: the CLIs are
+ * Node programs installed under nvm/superset, so PATH has to be augmented or a
+ * non-interactive parent process cannot find node.
+ */
+function runShell(shellCommand, cwd) {
+  const extra = [
+    `${process.env.HOME}/.superset/bin`,
+    `${process.env.HOME}/.npm-global/bin`,
+    '/opt/homebrew/bin',
+    '/usr/local/bin',
+  ];
+  return new Promise(resolve => {
+    const child = spawn('bash', ['-c', shellCommand], {
+      cwd,
+      env: {
+        ...process.env,
+        PATH: [...extra, process.env.PATH ?? ''].join(':'),
+        NODE_OPTIONS: '',
+      },
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    let stdout = '';
+    let stderr = '';
+    const timer = setTimeout(() => child.kill('SIGKILL'), CLI_TIMEOUT_MS);
+    child.stdout.on('data', d => (stdout += d));
+    child.stderr.on('data', d => (stderr += d));
+    child.on('error', e => {
+      clearTimeout(timer);
+      resolve({ code: -1, stdout, stderr: e.message });
+    });
+    child.on('close', code => {
+      clearTimeout(timer);
+      resolve({ code, stdout, stderr });
+    });
+  });
+}
+
+/**
  * One structured call. Returns the validated object, or null if the model
  * refused (after the server-side fallback also declined) — callers treat null
  * as "this stage produced nothing" and carry on.
@@ -323,6 +449,7 @@ ${JSON.stringify(schema)}`;
  */
 export async function callJson({ system, prompt, schema, maxTokens = 16000, effort = 'high' }) {
   if (BACKEND === 'cli') return callCli({ system, prompt, schema });
+  if (BACKEND === 'copilot') return callCopilot({ system, prompt, schema });
   return callApi({ system, prompt, schema, maxTokens, effort });
 }
 
