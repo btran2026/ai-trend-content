@@ -1,23 +1,272 @@
 {
-  "generatedAt": "2026-10-02T20:59:38.553Z",
-  "contentVersion": 140,
+  "generatedAt": "2026-10-03T16:22:05.615Z",
+  "contentVersion": 141,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-588fba715a",
+        "slug": "esma-proposes-cutting-off-custody-and-transfer-services-for-non-compli",
+        "lane": "crypto",
+        "title": "ESMA proposes cutting off custody and transfer services for non-compliant stablecoins",
+        "summary": "The EU securities regulator ESMA has proposed a rule to end custody and transfer services for stablecoins that do not meet EU compliance standards. The proposal would restrict how such tokens move through regulated EU infrastructure. Further details on scope and timing were not included in the available report.",
+        "whyItMatters": "A formal ESMA move against non-compliant stablecoins could reshape which tokens EU-regulated firms can custody or transfer, affecting liquidity and access for holders in the bloc.",
+        "whatToWatch": [
+          "Formal publication of the proposal and its consultation period",
+          "Which stablecoins or issuers get named as non-compliant",
+          "Industry and issuer response to the proposed restrictions"
+        ],
+        "questions": [
+          "Which stablecoins would be classified as non-compliant under this proposal?",
+          "What is the proposed timeline for enforcement?"
+        ],
+        "sources": [
+          {
+            "title": "ESMA proposes ending EU custody and transfer services for non-compliant stablecoins",
+            "url": "https://cryptoslate.com/esma-proposes-ending-eu-custody-and-transfer-services-for-non-compliant-stablecoins/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T16:00:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T16:00:54.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/eu-stablecoin-compliance-split.webp",
+        "badge": "Regulatory",
+        "trendScore": 62,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-aa05353141",
+        "slug": "leveraged-funds-trim-bitcoin-futures-shorts-by-5-300-btc-equivalent-as",
+        "lane": "crypto",
+        "title": "Leveraged funds trim Bitcoin futures shorts by 5,300 BTC-equivalent as longs also shrink",
+        "summary": "Leveraged funds reduced their Bitcoin futures short positions by about 5,300 BTC-equivalent, according to the latest positioning data. Long positions shrank as well, pointing to an overall pullback in leveraged exposure rather than a clear directional bet. No further detail on the underlying data source or time frame was provided.",
+        "whyItMatters": "Shifts in leveraged futures positioning can signal changing risk appetite among active traders, though a two-sided pullback like this is less a directional signal than a sign of reduced conviction.",
+        "whatToWatch": [
+          "Next positioning report for continued deleveraging or a rebuild of shorts or longs",
+          "Whether spot price action aligns with the reduced futures exposure"
+        ],
+        "questions": [
+          "What is driving the simultaneous reduction in both shorts and longs?"
+        ],
+        "sources": [
+          {
+            "title": "Leveraged funds’ Bitcoin futures shorts fall by 5,300 BTC-equivalent as longs shrink",
+            "url": "https://cryptoslate.com/leveraged-funds-bitcoin-futures-shorts-fall-by-5300-btc-equivalent-as-longs-shrink/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T11:30:07.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T11:30:07.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-futures-road-ahead.webp",
+        "badge": "Analysis",
+        "trendScore": 53,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-b666dc0cfa",
+        "slug": "arbitrum-pauses-new-stylus-contract-activations-over-ai-assisted-attac",
+        "lane": "crypto",
+        "title": "Arbitrum pauses new Stylus contract activations over AI-assisted attack concerns",
+        "summary": "Arbitrum has paused activation of new contracts built with Stylus, its system for running Rust and other non-Solidity code, citing concerns about AI-assisted attacks. The pause stops new deployments while the risk is assessed. No detail on an existing exploit or a resolution timeline was given.",
+        "whyItMatters": "A major layer-2 pausing a core feature over AI-assisted attack risk signals that automated tooling is becoming a serious threat model for smart contract security, not just a theoretical concern.",
+        "whatToWatch": [
+          "Arbitrum's technical post-mortem or security advisory explaining the specific risk",
+          "When and whether Stylus activations resume",
+          "Any disclosed incidents tied to AI-assisted exploits"
+        ],
+        "questions": [
+          "Has an actual attack occurred, or is this a preemptive precaution?",
+          "What specifically about Stylus makes it more exposed to AI-assisted attacks than Solidity contracts?"
+        ],
+        "sources": [
+          {
+            "title": "Arbitrum pauses new Stylus activations over AI-assisted attack risks",
+            "url": "https://cryptoslate.com/arbitrum-pauses-new-stylus-activations-over-ai-assisted-attack-risks/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T09:50:30.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T09:50:30.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/arbitrum-stylus-activation-tray.webp",
+        "badge": "Security",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-5364d83614",
+        "slug": "stablecoin-issuers-have-absorbed-40-of-china-s-lost-us-treasury-demand",
+        "lane": "crypto",
+        "title": "Stablecoin issuers have absorbed 40% of China's lost US Treasury demand",
+        "summary": "Stablecoin issuers, which hold large reserves in US Treasuries to back their tokens, have reportedly replaced about 40% of the Treasury demand lost as China has reduced its holdings. This points to stablecoin issuers becoming a meaningful source of demand for US government debt. The report did not specify the time period or methodology behind the 40% figure.",
+        "whyItMatters": "If stablecoin issuers are becoming a structurally important buyer of US Treasuries, that ties the crypto sector more closely to US fiscal and monetary policy than most investors assume.",
+        "whatToWatch": [
+          "Future Treasury auction data on stablecoin-issuer-linked demand",
+          "Stablecoin market cap growth and its correlation with Treasury purchases",
+          "Any policy response addressing this concentration of demand"
+        ],
+        "questions": [
+          "Which issuers and what data sources underlie the 40% estimate?",
+          "Is this trend durable, or dependent on continued stablecoin growth?"
+        ],
+        "sources": [
+          {
+            "title": "Stablecoin issuers have replaced 40% of China’s lost US Treasury demand",
+            "url": "https://cryptoslate.com/stablecoin-issuers-have-replaced-40-of-chinas-lost-us-treasury-demand/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-02T21:50:39.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-02T21:50:39.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-treasury-buyers-standard.jpg",
+        "badge": "Analysis",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-6dd761e5c5",
+        "slug": "six-us-banks-have-failed-in-2026-but-the-pattern-differs-from-2023",
+        "lane": "crypto",
+        "title": "Six US banks have failed in 2026, but the pattern differs from 2023",
+        "summary": "Six US banks have failed so far in 2026, according to the report, but the circumstances are described as looking different from the 2023 regional bank failures. The report did not specify the banks' size, causes of failure, or what distinguishes this year's pattern. No connection to crypto-specific deposit flows was detailed in the source.",
+        "whyItMatters": "Bank failures affect the stablecoin and crypto sector indirectly, since stablecoin issuers and crypto firms rely on banking partners for reserves and settlement.",
+        "whatToWatch": [
+          "Regulatory statements on the cause of the 2026 failures",
+          "Whether any failed banks had crypto-industry banking relationships"
+        ],
+        "questions": [
+          "What specifically makes the 2026 failures different from 2023?",
+          "Are any of the six banks tied to crypto or stablecoin reserve banking?"
+        ],
+        "sources": [
+          {
+            "title": "Six US banks have failed in 2026 but the numbers look nothing like 2023",
+            "url": "https://cryptoslate.com/six-us-banks-have-failed-in-2026-but-the-numbers-look-nothing-like-2023/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T13:20:17.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T13:20:17.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/us-bank-failure-count.webp",
+        "badge": "Markets",
+        "trendScore": 44,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-28f7b594a4",
+        "slug": "falling-gpu-prices-pressure-ai-hosting-firms-as-new-hedging-tools-emer",
+        "lane": "crypto",
+        "title": "Falling GPU prices pressure AI hosting firms as new hedging tools emerge",
+        "summary": "GPU prices have dropped sharply, which the report says threatens the economics of AI hosting providers. New hedging instruments are reportedly stepping in to help firms manage that price risk. The source did not specify which hosts or hedging products are involved, or any direct crypto-mining angle.",
+        "whyItMatters": "Some crypto-mining firms have pivoted hardware and facilities toward AI compute hosting, so GPU price swings and new hedging markets could affect that overlapping business model.",
+        "whatToWatch": [
+          "Which AI hosting firms adopt GPU price hedges",
+          "Further GPU price movement and its effect on hosting margins"
+        ],
+        "questions": [
+          "Does this GPU price pressure extend to crypto miners that diversified into AI hosting?",
+          "What do these new hedging instruments look like in practice?"
+        ],
+        "sources": [
+          {
+            "title": "Plunging GPU prices threaten AI hosts, and new hedges step in",
+            "url": "https://cryptoslate.com/plunging-gpu-prices-threaten-ai-hosts-and-new-hedges-step-in/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T07:30:22.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T07:30:22.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ai-compute-price-crossroads-1.webp",
+        "badge": "Markets",
+        "trendScore": 40,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-d9e8df42f3",
+        "slug": "new-sec-crypto-rules-reportedly-favor-large-firms-over-small-advisers",
+        "lane": "crypto",
+        "title": "New SEC crypto rules reportedly favor large firms over small advisers",
+        "summary": "New SEC rules on crypto are described as creating compliance burdens that threaten small advisory firms, while larger firms are better positioned to absorb the costs. The report did not detail the specific rule changes or their effective date. No named firms or figures were included in the source.",
+        "whyItMatters": "If new SEC rules raise the cost of serving crypto clients, that could concentrate crypto advisory services among a handful of large firms, reducing competition and options for investors.",
+        "whatToWatch": [
+          "Official SEC rule text and effective date",
+          "Small-adviser industry response or legal challenges"
+        ],
+        "questions": [
+          "What specific provisions in the new rules create the cost burden?",
+          "Is a compliance grace period or exemption planned for smaller firms?"
+        ],
+        "sources": [
+          {
+            "title": "New SEC crypto rules threaten small advisers, but big firms win",
+            "url": "https://cryptoslate.com/new-sec-crypto-rules-threaten-small-advisers-but-big-firms-win/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T01:30:40.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T01:30:40.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sec-crypto-custody-scale-cost-standard.jpg",
+        "badge": "Regulatory",
+        "trendScore": 40,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-3c636c753c",
+        "slug": "us-judge-dismisses-lawsuit-over-milei-linked-libra-memecoin-leaving-in",
+        "lane": "crypto",
+        "title": "US judge dismisses lawsuit over Milei-linked LIBRA memecoin, leaving investors without recourse",
+        "summary": "A US judge has dismissed the lawsuit tied to the LIBRA memecoin, which was linked to Argentine President Javier Milei. The dismissal reportedly leaves investors who lost money on the token without a path to recovery through this case. The source did not state the legal grounds for dismissal.",
+        "whyItMatters": "The outcome shows how hard it remains for retail investors to recover losses from memecoin collapses through US courts, even when a prominent political figure is involved.",
+        "whatToWatch": [
+          "Whether investors file an appeal or a new suit in a different jurisdiction",
+          "Any parallel investigation in Argentina"
+        ],
+        "questions": [
+          "On what legal grounds was the case dismissed?",
+          "Do investors have any remaining legal options, in the US or elsewhere?"
+        ],
+        "sources": [
+          {
+            "title": "US judge kills Milei’s LIBRA memecoin lawsuit, leaving investors stranded",
+            "url": "https://cryptoslate.com/us-judge-kills-mileis-libra-memecoin-lawsuit-leaving-investors-stranded/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-03T03:40:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T03:40:54.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/libra-rico-timeline-standard-v2.jpg",
+        "badge": "Legal",
+        "trendScore": 36,
+        "confidence": "low"
+      },
       {
         "id": "crypto-0c22519814",
         "slug": "bitcoin-s-85-000-sell-wall-disappears-as-traders-eye-100-000",
         "lane": "crypto",
-        "title": "Bitcoin's $85,000 Sell Wall Disappears as Traders Eye $100,000",
-        "summary": "A large sell order at $85,000 has vanished from Bitcoin's order book, and traders are now positioning for a move toward $100,000. Separately, a reported $88 billion drop in bank reserves is raising liquidity-squeeze concerns, though analysts say it does not yet prove one. Bitcoin has also held up through a period of 5% yields, but commentators argue crypto's broader cheap-money era is ending.",
-        "whyItMatters": "These three signals together show a market testing new highs just as the macro backdrop for cheap liquidity shifts.",
+        "title": "Bitcoin's $85,000 order-book sell wall disappears as some traders eye $100,000",
+        "summary": "A large sell order (\"sell wall\") near $85,000 on Bitcoin's order books has reportedly disappeared, and some traders are now positioning for a move toward $100,000. This reflects shifting order-book structure and trader sentiment, not a confirmed price move. The report gave no data on actual price levels reached or the size of positions involved.",
+        "whyItMatters": "Order-book and positioning shifts are worth tracking, but a thin order book and bullish chatter are not the same as a confirmed trend, so this should be read as sentiment, not a forecast.",
         "whatToWatch": [
-          "Whether price action confirms a push toward $100,000",
-          "Further data on bank reserve levels and liquidity conditions",
-          "How crypto markets adjust to a higher-yield environment"
+          "Whether Bitcoin's spot price actually approaches $100,000",
+          "New resistance levels forming on the order book"
         ],
         "questions": [
-          "Is the $100,000 bet based on real demand or thin order books?",
-          "Does the bank reserve drop actually tighten crypto liquidity?"
+          "What removed the $85,000 sell wall: large orders filled, cancelled, or moved?",
+          "How much of the $100,000 talk is backed by real options or futures positioning versus commentary?"
         ],
         "sources": [
           {
@@ -25,528 +274,351 @@
             "url": "https://cryptoslate.com/bitcoins-85000-sell-wall-is-gone-and-traders-are-now-betting-on-100000/",
             "publisher": "CryptoSlate",
             "publishedAt": "2026-10-02T20:30:33.000Z"
-          },
-          {
-            "title": "Why an $88 billion bank reserve drop doesn’t prove a Bitcoin liquidity squeeze – yet",
-            "url": "https://cryptoslate.com/why-an-88-billion-bank-reserve-drop-doesnt-prove-a-bitcoin-liquidity-squeeze-yet/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T14:40:37.000Z"
-          },
-          {
-            "title": "Bitcoin survived 5% yields but crypto’s cheap-money era did not",
-            "url": "https://cryptoslate.com/bitcoin-survived-5-yields-but-cryptos-cheap-money-era-did-not/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T12:20:47.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-02T12:20:47.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
+        "publishedAt": "2026-10-02T20:30:33.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-green-signal.webp",
         "badge": "Markets",
-        "trendScore": 62,
+        "trendScore": 35,
         "confidence": "low"
       },
       {
-        "id": "crypto-57e04880e2",
-        "slug": "hackers-exploit-third-party-aave-tool-to-steal-114-eth",
+        "id": "crypto-2de1cc6e4b",
+        "slug": "blast-shuts-down-its-20m-layer-2-network-sets-october-26-exit-deadline",
         "lane": "crypto",
-        "title": "Hackers Exploit Third-Party Aave Tool to Steal 114 ETH",
-        "summary": "Attackers exploited a third-party tool connected to the Aave lending protocol and stole 114 ETH. The core Aave protocol itself was not reported as compromised; the breach points to a tool built on top of it.",
-        "whyItMatters": "It shows that DeFi users remain exposed to risk through third-party integrations, even when the underlying protocol holds up.",
+        "title": "Blast shuts down its $20M layer-2 network, sets October 26 exit deadline",
+        "summary": "Blast, the layer-2 network that reportedly held around $20 million in value, is shutting down. Users have been given until October 26 to withdraw their funds before the deadline. The source did not state the reason for the shutdown.",
+        "whyItMatters": "A layer-2 network shutdown is a reminder that even funded projects can wind down, and users need to act fast on exit deadlines or risk losing access to their funds.",
         "whatToWatch": [
-          "Any response or patch from the tool's developers",
-          "Whether Aave issues its own statement or guidance",
-          "Reports on recovery of the stolen funds"
+          "User withdrawal activity ahead of the October 26 deadline",
+          "Any official explanation from Blast for the shutdown",
+          "What happens to funds not withdrawn by the deadline"
         ],
         "questions": [
-          "Which third-party tool was exploited, and how?",
-          "Can the stolen ETH be recovered or frozen?"
+          "Why is Blast shutting down the network?",
+          "What recourse exists for users who miss the October 26 deadline?"
         ],
         "sources": [
           {
-            "title": "Crypto hackers exploit third-party Aave tool to steal 114 ETH",
-            "url": "https://cryptoslate.com/crypto-hackers-exploit-third-party-aave-tool-to-steal-114-eth/",
+            "title": "Blast shuts down $20M layer-2 network, forcing Oct. 26 exit deadline",
+            "url": "https://cryptoslate.com/blast-shuts-down-20m-layer-2-network-forcing-oct-26-exit-deadline/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T19:10:35.000Z"
+            "publishedAt": "2026-10-02T23:10:14.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-02T19:10:35.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-adapter-breach.webp",
-        "badge": "Security",
-        "trendScore": 60,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-c8041848dc",
-        "slug": "bitcoin-rallies-overnight-as-etf-demand-returns-ahead-of-jobs-report",
-        "lane": "crypto",
-        "title": "Bitcoin Rallies Overnight as ETF Demand Returns Ahead of Jobs Report",
-        "summary": "Bitcoin posted a sharp overnight rally, with reports pointing to renewed ETF demand. The move comes just before a closely watched US jobs report that could shape near-term Fed rate expectations.",
-        "whyItMatters": "ETF flows are a key gauge of institutional demand, and the jobs report could swing the rate outlook that drives crypto risk appetite.",
-        "whatToWatch": [
-          "The upcoming US jobs report",
-          "Whether ETF inflows continue in the following days"
-        ],
-        "questions": [
-          "How large were the actual ETF inflows behind this rally?",
-          "Will the rally hold once jobs data lands?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin sees big overnight rally as ETF demand returns before the next US jobs test",
-            "url": "https://cryptoslate.com/bitcoin-sees-big-overnight-rally-as-etf-demand-returns-before-the-next-us-jobs-test/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T11:30:01.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T11:30:01.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-jobs-report-alarm.webp",
-        "badge": "Markets",
-        "trendScore": 49,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-92850d512a",
-        "slug": "unpatched-eclair-lightning-nodes-risk-repeated-crashes-on-restart",
-        "lane": "crypto",
-        "title": "Unpatched Eclair Lightning Nodes Risk Repeated Crashes on Restart",
-        "summary": "A flaw in the Eclair Lightning Network implementation can cause unpatched Bitcoin nodes to crash again each time they restart. Node operators running Eclair without the fix remain exposed.",
-        "whyItMatters": "Lightning Network reliability underpins Bitcoin's main payment-layer use case, so a recurring crash bug threatens that infrastructure.",
-        "whatToWatch": [
-          "Operator adoption of the patch",
-          "Whether the flaw is exploited in the wild before nodes update"
-        ],
-        "questions": [
-          "How many Eclair nodes remain unpatched?",
-          "Has the bug already caused outages for users?"
-        ],
-        "sources": [
-          {
-            "title": "Unpatched Eclair Bitcoin Lightning nodes could crash again every time they restart",
-            "url": "https://cryptoslate.com/unpatched-eclair-bitcoin-lightning-nodes-could-crash-again-every-time-they-restart/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T15:40:12.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T15:40:12.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/eclair-lightning-crash-loop.webp",
-        "badge": "Security",
-        "trendScore": 48,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-af81d7df5d",
-        "slug": "cardano-s-defi-activity-has-shrunk-by-more-than-half-as-realfi-bets-on",
-        "lane": "crypto",
-        "title": "Cardano's DeFi Activity Has Shrunk by More Than Half as RealFi Bets on Credit",
-        "summary": "Activity in Cardano's DeFi ecosystem has fallen by more than half. A newer effort called RealFi is betting that real-world credit products can bring capital and users back.",
-        "whyItMatters": "The outcome will test whether real-world-asset lending can revive activity on a smaller layer-1 chain that has lost DeFi momentum.",
-        "whatToWatch": [
-          "RealFi's rollout and early adoption numbers",
-          "Whether Cardano DeFi metrics stabilize or keep declining"
-        ],
-        "questions": [
-          "What drove the more-than-50% decline in the first place?",
-          "Can credit products attract capital that other DeFi apps could not?"
-        ],
-        "sources": [
-          {
-            "title": "Cardano’s DeFi has shrunk by more than half and RealFi is betting credit can revive it",
-            "url": "https://cryptoslate.com/cardanos-defi-has-shrunk-by-more-than-half-and-realfi-is-betting-credit-can-revive-it/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T13:40:24.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T13:40:24.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/realfi-market-institution-split.webp",
-        "badge": "Analysis",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-7ef565cbda",
-        "slug": "evernorth-s-nasdaq-xrp-treasury-approved-but-buying-power-falls-short-",
-        "lane": "crypto",
-        "title": "Evernorth's Nasdaq XRP Treasury Approved, but Buying Power Falls Short of $300 Million",
-        "summary": "Evernorth's XRP treasury vehicle has won approval for a Nasdaq listing. Its actual buying power, however, is reportedly less than the $300 million figure that had been expected.",
-        "whyItMatters": "Investors watch XRP treasury vehicles as a proxy for institutional demand, so the gap between the expected and real funding matters more than the approval itself.",
-        "whatToWatch": [
-          "The vehicle's Nasdaq trading debut",
-          "Clarified figures on its actual available capital"
-        ],
-        "questions": [
-          "Why is the real buying power lower than the $300 million expected?",
-          "What is the confirmed funding figure?"
-        ],
-        "sources": [
-          {
-            "title": "Evernorth’s Nasdaq XRP treasury is approved, but its real buying power isn’t the $300 million expected",
-            "url": "https://cryptoslate.com/evernorths-nasdaq-xrp-treasury-is-approved-but-its-real-buying-power-isnt-the-300-million-expected/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T17:50:25.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T17:50:25.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/evernorth-xrp-funding-bridge.webp",
-        "badge": "Markets",
-        "trendScore": 44,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-fa8cfbc4c3",
-        "slug": "strategy-s-strc-calculator-shows-210-for-a-share-redeemable-at-101",
-        "lane": "crypto",
-        "title": "Strategy's STRC Calculator Shows $210 for a Share Redeemable at $101",
-        "summary": "Strategy's published calculator values its STRC shares at $210, but the company can redeem those same shares at $101. The gap has drawn scrutiny over what the calculator actually represents.",
-        "whyItMatters": "Investors relying on the calculator's figure for a Bitcoin-linked instrument need to know it does not match the redemption price.",
-        "whatToWatch": [
-          "Any clarification or correction from Strategy",
-          "Investor and analyst reaction to the discrepancy"
-        ],
-        "questions": [
-          "Why do the calculator value and redemption price differ so much?",
-          "Is the calculator's methodology flawed or just misleading?"
-        ],
-        "sources": [
-          {
-            "title": "Why Strategy’s STRC calculator shows $210 for a share it can redeem at $101",
-            "url": "https://cryptoslate.com/why-strategys-strc-calculator-shows-210-for-a-share-it-can-redeem-at-101/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T16:40:55.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T16:40:55.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/strc-call-option-risk.webp",
-        "badge": "Analysis",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-d5c40261ac",
-        "slug": "us-targets-17-billion-russia-linked-crypto-payment-network-built-on-us",
-        "lane": "crypto",
-        "title": "US Targets $17 Billion Russia-Linked Crypto Payment Network Built on USDT",
-        "summary": "US authorities have taken action against a crypto payment network valued at $17 billion that is allegedly linked to Russia. The network reportedly used Tether's USDT stablecoin as a route around sanctions.",
-        "whyItMatters": "It shows regulators are increasingly focused on stablecoins as a channel for sanctions evasion, which could bring more scrutiny to USDT.",
-        "whatToWatch": [
-          "Further US Treasury or enforcement actions against the network",
-          "Any response from Tether"
-        ],
-        "questions": [
-          "How will the action actually be enforced against the network?",
-          "Does this affect USDT's broader liquidity or usage?"
-        ],
-        "sources": [
-          {
-            "title": "US targets $17 billion Russia-linked crypto payment network using USDT as an escape route",
-            "url": "https://cryptoslate.com/us-targets-17-billion-russia-linked-crypto-payment-network-using-usdt-as-an-escape-route/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-02T11:00:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-02T11:00:15.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/a7-sanctions-container-route.webp",
-        "badge": "Regulatory",
-        "trendScore": 39,
+        "publishedAt": "2026-10-02T23:10:14.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/blast-ethereum-exodus.webp",
+        "badge": "Protocol",
+        "trendScore": 33,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-bc2f37516e",
-        "slug": "bond-yields-midterms-and-earnings-set-to-test-stocks-fourth-quarter-st",
+        "id": "markets-02701b4756",
+        "slug": "investingpro-s-fair-value-tool-flags-62-upside-in-dime-community-stock",
         "lane": "markets",
-        "title": "Bond yields, midterms, and earnings set to test stocks' fourth-quarter strength",
-        "summary": "US stocks typically gain in the fourth quarter. This year, rising bond yields, the midterm elections, and a new round of corporate earnings threaten that seasonal pattern, Investing.com reports.",
-        "whyItMatters": "A weak fourth quarter would break a seasonal pattern many investors count on, so the test matters for portfolio positioning.",
+        "title": "InvestingPro's Fair Value Tool Flags 62% Upside in Dime Community Stock",
+        "summary": "Investing.com reported that its InvestingPro Fair Value model identified a potential 62% gain in Dime Community Bancshares stock. The report did not detail the specific earnings or balance-sheet drivers behind the estimate. Dime Community is a U.S. community bank holding company.",
+        "whyItMatters": "Readers tracking regional bank valuations may want to know which names a quantitative model flags as undervalued.",
         "whatToWatch": [
-          "Bond yield moves in coming weeks",
-          "Midterm election results",
-          "Q3 earnings reports from major companies"
+          "Whether Dime Community's results support the valuation gap",
+          "Future InvestingPro updates on the stock"
         ],
         "questions": [
-          "How high do yields need to climb to derail stocks?",
-          "Will earnings season offset the political uncertainty?"
+          "What specific metrics drove the 62% fair-value estimate?",
+          "Has Dime Community management commented on its valuation?"
         ],
         "sources": [
           {
-            "title": "Spiking bond yields, midterms, earnings to test US stocks’ typical fourth-quarter strength",
-            "url": "https://www.investing.com/news/economy-news/spiking-bond-yields-midterms-earnings-to-test-us-stocks-typical-fourthquarter-strength-4929370",
+            "title": "InvestingPro’s Fair Value spotted 62% gain in Dime Community stock",
+            "url": "https://www.investing.com/news/investment-ideas/investingpros-fair-value-spotted-62-gain-in-dime-community-stock-93CH-4930836",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:36:46.000Z"
+            "publishedAt": "2026-10-03T18:09:31.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:36:46.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM910QN_L.jpg",
+        "publishedAt": "2026-10-03T18:09:31.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1AG_1200_L.jpg",
         "badge": "Analysis",
-        "trendScore": 67,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-ddae942473",
-        "slug": "dow-closes-up-0-49-as-us-stocks-rise",
-        "lane": "markets",
-        "title": "Dow closes up 0.49% as US stocks rise",
-        "summary": "US stocks ended higher, with the Dow Jones Industrial Average gaining 0.49% at the close of trade, Investing.com reports.",
-        "whyItMatters": "Daily index moves set the backdrop for how investors read upcoming data and earnings.",
-        "whatToWatch": [
-          "Follow-through in the next trading session"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "U.S. stocks higher at close of trade; Dow Jones Industrial Average up 0.49%",
-            "url": "https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-049-4930390",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:31:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:31:04.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM502AK_1200_L.jpg",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-0a945359a8",
-        "slug": "g7-agrees-to-release-diesel-and-oil-stocks-after-us-pressure",
-        "lane": "markets",
-        "title": "G7 agrees to release diesel and oil stocks after US pressure",
-        "summary": "G7 countries have agreed to release diesel and oil stockpiles after pressure from the United States, Investing.com reports.",
-        "whyItMatters": "Releases from strategic stocks can ease fuel prices and move energy markets, which feeds into inflation readings.",
-        "whatToWatch": [
-          "Timing and size of the stock releases",
-          "Reaction in oil and diesel prices"
-        ],
-        "questions": [
-          "How much supply will the release add?",
-          "Which countries release stock first?"
-        ],
-        "sources": [
-          {
-            "title": "G7 countries agree on release of diesel and oil stocks after US pressure",
-            "url": "https://www.investing.com/news/stock-market-news/europe-discussing-plan-for-diesel-stock-releases-after-us-pressure-source-says-4929100",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:36:29.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:36:29.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM910J4_L.jpg",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-7f87529727",
-        "slug": "national-healthcare-properties-converts-class-a-shares-to-common-stock",
-        "lane": "markets",
-        "title": "National Healthcare Properties converts Class A shares to common stock",
-        "summary": "National Healthcare Properties has converted its Class A shares into common stock, Investing.com reports.",
-        "whyItMatters": "Share class conversions can change voting rights and trading liquidity, which matters to current shareholders.",
-        "whatToWatch": [
-          "Trading volume and price reaction after the conversion"
-        ],
-        "questions": [
-          "What prompted the conversion?"
-        ],
-        "sources": [
-          {
-            "title": "National Healthcare Properties converts Class A shares to common stock",
-            "url": "https://www.investing.com/news/company-news/national-healthcare-properties-converts-class-a-shares-to-common-stock-93CH-4930395",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:36:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:36:31.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3917D_1200_L.jpg",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-faf7e7ba6a",
-        "slug": "explainer-what-we-know-about-a-rape-investigation-at-cornell-universit",
+        "id": "markets-7962339e7e",
+        "slug": "key-shinyhunters-hacker-detained-in-jordan-reportedly-cooperating",
         "lane": "markets",
-        "title": "Explainer: what we know about a rape investigation at Cornell University",
-        "summary": "Investing.com published an explainer on a rape investigation at Cornell University. This is not a markets or economic story.",
-        "whyItMatters": "This item has no direct link to markets; it is noted here only because it appeared in today's news feed.",
-        "whatToWatch": [],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Explainer-What we know about the Cornell University rape investigation",
-            "url": "https://www.investing.com/news/economy-news/explainerwhat-we-know-about-the-cornell-university-rape-investigation-4930399",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:42:47.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:42:47.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM903WQ_L.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-1c396f3b65",
-        "slug": "archer-says-court-narrowed-its-joby-aero-lawsuit-claims",
-        "lane": "markets",
-        "title": "Archer says court narrowed its Joby Aero lawsuit claims",
-        "summary": "Archer Aviation said a US court has narrowed the claims in its lawsuit against Joby Aero, Investing.com reports.",
-        "whyItMatters": "Archer and Joby are rival eVTOL makers, so the lawsuit's path can affect competitive and legal risk for both stocks.",
+        "title": "Key ShinyHunters Hacker Detained in Jordan, Reportedly Cooperating",
+        "summary": "A key figure in the ShinyHunters hacking group has been detained in Jordan and is cooperating with investigators, Investing.com reported, citing sources. ShinyHunters has been linked to a string of high-profile corporate data breaches. The report did not name the individual or detail the scope of the cooperation.",
+        "whyItMatters": "ShinyHunters breaches have hit major companies and triggered costly disclosures, so an arrest could affect ongoing investigations and future attacks.",
         "whatToWatch": [
-          "Further rulings on the remaining claims",
-          "Any response from Joby Aero"
+          "Whether authorities confirm the detention publicly",
+          "Any new disclosures from companies tied to past ShinyHunters breaches"
         ],
         "questions": [
-          "Which claims survived, and which were dismissed?"
+          "Which prior breaches might this cooperation help clarify?",
+          "Will the individual face extradition or charges?"
         ],
         "sources": [
           {
-            "title": "Archer says US court narrows Joby Aero lawsuit claims",
-            "url": "https://www.investing.com/news/stock-market-news/archer-says-us-court-narrows-joby-aero-lawsuit-claims-4930398",
+            "title": "Exclusive-Key ShinyHunters hacker detained in Jordan, is cooperating, sources say",
+            "url": "https://www.investing.com/news/stock-market-news/exclusivekey-shinyhunters-hacker-detained-in-jordan-is-cooperating-sources-say-4930864",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:42:29.000Z"
+            "publishedAt": "2026-10-03T22:18:33.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:42:29.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM911OX_L.jpg",
+        "publishedAt": "2026-10-03T22:18:33.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM920DN_L.jpg",
+        "badge": "Breaking",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-d9f0a6cf69",
-        "slug": "community-banks-sue-regulator-over-crypto-firm-charters",
+        "id": "markets-b711195215",
+        "slug": "pennymac-mortgage-chief-accounting-officer-sells-19-209-in-shares",
         "lane": "markets",
-        "title": "Community banks sue regulator over crypto firm charters",
-        "summary": "A group of community banks has sued a federal regulator over its decision to grant charters to crypto firms, Investing.com reports.",
-        "whyItMatters": "The case could shape how crypto firms access the banking system and how community banks compete with them.",
+        "title": "PennyMac Mortgage Chief Accounting Officer Sells $19,209 in Shares",
+        "summary": "PennyMac Mortgage Investment Trust's Chief Accounting Officer, Hendry, disposed of $19,209 worth of company shares, according to a regulatory filing reported by Investing.com. The filing did not state the reason for the sale or the executive's remaining stake.",
+        "whyItMatters": "Insider sales are routine, but some investors track them for signals on executive sentiment toward the stock.",
         "whatToWatch": [
-          "Court proceedings and any regulator response"
+          "Future insider filings from PennyMac Mortgage executives"
         ],
         "questions": [
-          "Which regulator and which crypto charters are at issue?",
-          "Could this delay charters for other crypto applicants?"
+          "Was the sale part of a pre-scheduled trading plan?"
         ],
         "sources": [
           {
-            "title": "Community banks sue regulator over crypto firm charters",
-            "url": "https://www.investing.com/news/stock-market-news/community-banks-sue-regulator-over-crypto-firm-charters-93CH-4930397",
+            "title": "PennyMac Mortgage CAO Hendry disposes of $19,209 in shares",
+            "url": "https://www.investing.com/news/insider-trading-news/pennymac-mortgage-cao-hendry-disposes-of-19209-in-shares-93CH-4930860",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:41:13.000Z"
+            "publishedAt": "2026-10-03T21:46:14.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:41:13.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/news/ProSharesBitcoinStrategyETFBITO_800x533_L_1637450616.jpg",
-        "badge": "Regulatory",
+        "publishedAt": "2026-10-03T21:46:14.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM40318_1200_L.jpg",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-ecce3163e7",
-        "slug": "vertical-aerospace-gets-nyse-non-compliance-notice",
+        "id": "markets-5348409b75",
+        "slug": "prediction-market-startup-raven-raises-funding-at-90-million-valuation",
         "lane": "markets",
-        "title": "Vertical Aerospace gets NYSE non-compliance notice",
-        "summary": "Vertical Aerospace has received a non-compliance notice from the NYSE, Investing.com reports.",
-        "whyItMatters": "Non-compliance notices can pressure a stock and raise delisting risk if the company fails to regain compliance.",
+        "title": "Prediction-Market Startup Raven Raises Funding at $90 Million Valuation",
+        "summary": "Raven, a prediction-markets startup, raised new funding at a $90 million valuation led by CMCC Global and Coinbase Ventures, Investing.com reported. The report did not disclose the round's size or other participants.",
+        "whyItMatters": "Crypto-linked venture backers continue to fund prediction markets, a sector drawing growing trader and regulatory attention.",
         "whatToWatch": [
-          "Vertical Aerospace's plan to regain NYSE compliance",
-          "Any deadline set by the exchange"
+          "Whether Raven discloses the round size or additional investors",
+          "Regulatory moves affecting prediction-market platforms"
         ],
         "questions": [
-          "Which listing standard did the company fail to meet?"
+          "How large was the actual funding round?",
+          "What is Raven's current trading volume or user base?"
         ],
         "sources": [
           {
-            "title": "Vertical Aerospace receives NYSE non-compliance notice",
-            "url": "https://www.investing.com/news/company-news/vertical-aerospace-receives-nyse-noncompliance-notice-93CH-4930396",
+            "title": "Raven Raises at $90M Valuation From CMCC Global and Coinbase Ventures for Prediction Markets",
+            "url": "https://www.investing.com/news/press-releases/raven-raises-at-90m-valuation-from-cmcc-global-and-coinbase-ventures-for-prediction-markets-4930857",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:36:33.000Z"
+            "publishedAt": "2026-10-03T21:02:17.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:36:33.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM431CY_1200_L.jpg",
+        "publishedAt": "2026-10-03T21:02:17.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/CoinbaseGlobalIncthebiggestUScryptocurrencyexchange_800x533_L_1621446837.jpg",
+        "badge": "Funding",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-391787918c",
-        "slug": "pershing-square-declares-0-103-quarterly-dividend-for-q4-2026",
+        "id": "markets-18d9d15750",
+        "slug": "u-s-reportedly-to-lend-vistra-4-2-billion-to-expand-nuclear-power-outp",
         "lane": "markets",
-        "title": "Pershing Square declares $0.103 quarterly dividend for Q4 2026",
-        "summary": "Pershing Square has declared a quarterly dividend of $0.103 per share for the fourth quarter of 2026, Investing.com reports.",
-        "whyItMatters": "Dividend announcements signal the fund's payout policy and matter to income-focused shareholders.",
+        "title": "U.S. Reportedly to Lend Vistra $4.2 Billion to Expand Nuclear Power Output",
+        "summary": "The U.S. government is reportedly set to lend Vistra $4.2 billion to expand its nuclear power output, Investing.com reported. The report did not specify which plants would receive the funds or the loan's terms.",
+        "whyItMatters": "The loan signals continued federal support for nuclear power as electricity demand rises, a theme that matters for utility and power stocks.",
         "whatToWatch": [
-          "The dividend payment and record dates"
-        ],
-        "questions": [],
-        "sources": [
-          {
-            "title": "Pershing Square declares $0.103 quarterly dividend for Q4 2026",
-            "url": "https://www.investing.com/news/company-news/pershing-square-declares-0103-quarterly-dividend-for-q4-2026-93CH-4930394",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:36:30.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:36:30.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM5F12L_1200_L.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-edc96623e2",
-        "slug": "faa-says-boeing-737-max-software-glitch-is-not-a-safety-issue",
-        "lane": "markets",
-        "title": "FAA says Boeing 737 MAX software glitch is not a safety issue",
-        "summary": "The US FAA said a software glitch found in the Boeing 737 MAX does not pose a safety issue, Investing.com reports.",
-        "whyItMatters": "Boeing remains under close safety scrutiny, so any FAA statement on the 737 MAX affects investor confidence in the stock.",
-        "whatToWatch": [
-          "Whether Boeing issues a fix or update for the software",
-          "Any further FAA guidance"
+          "Official confirmation of the loan terms",
+          "Which Vistra nuclear facilities would see expanded capacity"
         ],
         "questions": [
-          "What caused the software glitch?"
+          "What are the loan's repayment terms?",
+          "How much capacity would the expansion add?"
         ],
         "sources": [
           {
-            "title": "US FAA says Boeing 737 MAX software glitch poses no safety issue",
-            "url": "https://www.investing.com/news/stock-market-news/us-faa-finds-boeing-737-max-software-glitch-does-not-pose-safety-issue-4930307",
+            "title": "U.S. to reportedly lend Vistra $4.2 billion to expand nuclear power output",
+            "url": "https://www.investing.com/news/stock-market-news/us-to-reportedly-lend-vistra-42-billion-to-expand-nuclear-power-output-4930854",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-03T03:30:51.000Z"
+            "publishedAt": "2026-10-03T20:39:07.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-03T03:30:51.000Z",
-        "updatedAt": "2026-10-02T20:59:38.553Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM911KZ_L.jpg",
+        "publishedAt": "2026-10-03T20:39:07.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPED62164_M.jpg",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-61bb7085cc",
+        "slug": "smoke-and-fire-reported-near-aramco-facility-in-riyadh-amid-houthi-ten",
+        "lane": "markets",
+        "title": "Smoke and Fire Reported Near Aramco Facility in Riyadh Amid Houthi Tensions",
+        "summary": "Smoke and fire were reported near an Aramco facility in Riyadh as tensions with Houthi forces escalated, Investing.com reported. Details on the cause, any damage, or impact on Aramco's operations were not immediately available.",
+        "whyItMatters": "Any disruption near Saudi Aramco facilities raises oil-supply risk and can move crude prices quickly.",
+        "whatToWatch": [
+          "Official Aramco or Saudi government statements on cause and damage",
+          "Any effect on oil production or crude prices"
+        ],
+        "questions": [
+          "What caused the fire?",
+          "Did the incident affect Aramco's output or operations?"
+        ],
+        "sources": [
+          {
+            "title": "Smoke and fire reported near Aramco facility in Riyadh as Houthi tensions escalate",
+            "url": "https://www.investing.com/news/economy-news/smoke-and-fire-reported-near-aramco-facility-in-riyadh-as-houthi-tensions-escalate-4930846",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-03T19:12:49.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T19:12:49.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPED4G0W4_M.jpg",
+        "badge": "Breaking",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-0e136aa94a",
+        "slug": "renault-to-invest-over-10-billion-in-france-for-ev-production",
+        "lane": "markets",
+        "title": "Renault to Invest Over €10 Billion in France for EV Production",
+        "summary": "Renault plans to invest more than €10 billion in France to support its electric vehicle production, Investing.com reported. The report did not detail the timeline or which plants would be involved.",
+        "whyItMatters": "The investment underscores automakers' continued commitment to EV manufacturing in Europe despite uneven demand growth.",
+        "whatToWatch": [
+          "Renault's official announcement with timeline and plant details",
+          "EV sales trends across the European market"
+        ],
+        "questions": [
+          "Over what time period will the €10 billion be spent?",
+          "Which Renault plants or models will benefit?"
+        ],
+        "sources": [
+          {
+            "title": "Renault to invest over €10 billion in France for EVs",
+            "url": "https://www.investing.com/news/stock-market-news/renault-to-invest-over-10-billion-in-france-for-evs-93CH-4930845",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-03T19:05:10.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T19:05:10.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXNPEL0S0U6_L.jpg",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-5e5a069716",
+        "slug": "flydubai-co-pilot-attacked-pilot-with-axe-in-attempted-terrorist-attac",
+        "lane": "markets",
+        "title": "Flydubai Co-Pilot Attacked Pilot With Axe in Attempted 'Terrorist Attack,' UAE Says",
+        "summary": "A Flydubai co-pilot attacked the pilot with an axe in what UAE authorities called an attempted terrorist attack, Investing.com reported. Details on the flight, any injuries, or the co-pilot's custody status were not disclosed.",
+        "whyItMatters": "Aviation security incidents can affect airline operations and investor sentiment toward carriers and regional travel demand.",
+        "whatToWatch": [
+          "Further statements or charges from UAE authorities",
+          "Flydubai's response and any operational changes"
+        ],
+        "questions": [
+          "What happened to the flight and its passengers?",
+          "What motive have authorities identified?"
+        ],
+        "sources": [
+          {
+            "title": "Flydubai co-pilot attacked pilot with axe in attempted ’terrorist attack’, UAE says",
+            "url": "https://www.investing.com/news/commodities-news/flydubai-copilot-attacked-pilot-with-axe-attempted-terrorist-attack-uae-says-4930768",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-03T18:36:26.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T18:36:26.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM92049_L.jpg",
+        "badge": "Breaking",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-761918ad0b",
+        "slug": "how-a-fair-value-model-flagged-sable-offshore-s-51-stock-decline-11-mo",
+        "lane": "markets",
+        "title": "How a Fair Value Model Flagged Sable Offshore's 51% Stock Decline 11 Months Early",
+        "summary": "Investing.com reported that its InvestingPro Fair Value tool showed warning signs in Sable Offshore stock 11 months before shares fell 51%. The report did not detail which specific metrics triggered the early signal.",
+        "whyItMatters": "Investors who watch quantitative valuation tools may find this a case study in spotting downside risk ahead of a selloff.",
+        "whatToWatch": [
+          "Whether Sable Offshore stock stabilizes or keeps declining",
+          "Future Fair Value flags on other energy names"
+        ],
+        "questions": [
+          "What specific fundamentals drove the decline?",
+          "Is the stock still flagged as overvalued now?"
+        ],
+        "sources": [
+          {
+            "title": "how Fair Value spotted Sable Offshore’s 51% decline 11 months early",
+            "url": "https://www.investing.com/news/investment-ideas/how-fair-value-spotted-sable-offshores-51-decline-11-months-early-93CH-4930834",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-03T18:02:02.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T18:02:02.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
+        "badge": "Analysis",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-b8f3d88ee8",
+        "slug": "beyond-the-gas-pump-how-much-oil-does-the-world-really-consume",
+        "lane": "markets",
+        "title": "Beyond the Gas Pump: How Much Oil Does the World Really Consume?",
+        "summary": "Investing.com published an explainer on global oil consumption that looks beyond gasoline use at the pump to the broader range of products and sectors that rely on crude oil. The available report does not include specific consumption figures.",
+        "whyItMatters": "Understanding the full scope of oil demand helps readers judge how resilient crude prices are to shifts in any single sector, like transportation.",
+        "whatToWatch": [
+          "Upcoming oil demand data from agencies such as the IEA or EIA"
+        ],
+        "questions": [
+          "How does non-transportation demand compare with gasoline demand?",
+          "Which sectors show the fastest growth in oil consumption?"
+        ],
+        "sources": [
+          {
+            "title": "Beyond the gas pump: How much oil do we really consume?",
+            "url": "https://www.investing.com/news/commodities-news/beyond-the-gas-pump-how-much-oil-do-we-really-consume-4930832",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-03T17:51:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-03T17:51:54.000Z",
+        "updatedAt": "2026-10-03T16:22:05.615Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB050EH_M.jpg",
+        "badge": "Analysis",
         "trendScore": 47,
         "confidence": "low"
       }
