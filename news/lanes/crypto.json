@@ -1,84 +1,240 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-10-21T11:46:31.561Z",
-  "contentVersion": 155,
+  "generatedAt": "2026-10-21T17:48:45.220Z",
+  "contentVersion": 156,
   "stories": [
     {
-      "id": "crypto-ad7c7903e9",
-      "slug": "switzerland-approves-its-first-bitcoin-etf-after-ruling-trading-volume",
+      "id": "crypto-48ce0868f1",
+      "slug": "bitcoin-lightning-developers-warn-of-security-flaws-after-second-patch",
       "lane": "crypto",
-      "title": "Switzerland approves landmark Bitcoin ETF after ruling trading volume sufficient",
-      "summary": "Swiss regulators approved a Bitcoin ETF after determining that trading volume in the underlying market met the bar required for approval. The report does not name the issuer or give a launch date. This adds a new regulated route to Bitcoin exposure in a major European financial center.",
-      "whyItMatters": "A formal ETF approval in Switzerland gives institutional and retail investors another regulated path into Bitcoin, and may push other regulators to reconsider their own standards.",
+      "title": "Bitcoin Lightning developers warn of security flaws after second patch in five days",
+      "summary": "Lightning Network developers issued a second security patch within five days, CryptoSlate reported, after flagging flaws in the protocol's implementations. The report did not detail the specific vulnerabilities or which node software was affected. Two emergency patches in such quick succession suggest the underlying issues were serious.",
+      "whyItMatters": "Lightning is Bitcoin's main payments scaling layer, so repeated emergency patches raise questions about its reliability for users and businesses that depend on it.",
       "whatToWatch": [
-        "Confirmation of the ETF issuer and launch date",
-        "Reaction from other European regulators on similar products"
+        "Whether additional patches follow",
+        "Node operators' upgrade adoption rates",
+        "Any disclosure of compromised funds or channels"
       ],
       "questions": [
-        "Which issuer is behind the approved ETF?",
-        "What trading-volume threshold did regulators use to justify approval?"
+        "What specific vulnerabilities were patched?",
+        "Were any funds or channels compromised before the fix?"
       ],
       "sources": [
         {
-          "title": "Switzerland approves landmark Bitcoin ETF after ruling trading volume sufficient",
-          "url": "https://cryptoslate.com/switzerland-approves-landmark-bitcoin-etf-after-ruling-trading-volume-sufficient/",
+          "title": "Bitcoin Lightning developers sound alarm over security flaws as second patch lands in five days",
+          "url": "https://cryptoslate.com/bitcoin-lightning-developers-sound-alarm-over-security-flaws-as-second-patch-lands-in-five-days/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-21T04:40:25.000Z"
+          "publishedAt": "2026-10-21T16:30:34.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-10-21T04:40:25.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/finma-bitcoin-cable-car.webp",
-      "badge": "Regulatory",
+      "publishedAt": "2026-10-21T16:30:34.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/eclair-network-protection-upgrade.webp",
+      "badge": "Security",
       "trendScore": 56,
       "confidence": "low"
     },
     {
-      "id": "crypto-ce915634c4",
-      "slug": "quantum-resistant-bitcoin-signatures-could-make-node-data-ten-times-la",
+      "id": "crypto-4e5658eb3c",
+      "slug": "study-crypto-rallies-slow-usdc-growth-while-speeding-up-usdt-growth",
       "lane": "crypto",
-      "title": "Quantum-resistant Bitcoin signatures could make node data ten times larger",
-      "summary": "A report on proposed quantum-resistant signature schemes for Bitcoin says they would increase transaction data size roughly tenfold versus current signatures. That raises concerns about the storage and bandwidth burden on nodes running the network. No specific proposal or adoption timeline was given.",
-      "whyItMatters": "How Bitcoin handles the eventual quantum-computing threat to its cryptography will shape node costs and, by extension, how decentralized the network stays.",
+      "title": "Study: Crypto rallies slow USDC growth while speeding up USDT growth",
+      "summary": "A study cited by CryptoSlate found that crypto market rallies tend to coincide with slower growth in USDC's supply and faster growth in USDT's supply. The finding points to different behavior between the two largest stablecoins depending on market conditions. The source did not give the study's methodology or time period.",
+      "whyItMatters": "Stablecoin supply shifts are a proxy for trading liquidity, so a divergence between USDC and USDT growth could signal where traders are parking capital during rallies.",
       "whatToWatch": [
-        "Specific proposals under discussion for quantum-resistant signatures",
-        "Any formal Bitcoin Improvement Proposal addressing the tradeoff"
+        "Whether the pattern holds through future market cycles",
+        "Any resulting shift in market share between USDC and USDT"
       ],
       "questions": [
-        "Which signature scheme produces this tenfold size increase?",
-        "How urgent is the quantum threat seen to be by core developers?"
+        "What is driving the divergence—issuer policy, exchange listings, or regulatory treatment?",
+        "Does this pattern hold across prior rallies, or is it new?"
       ],
       "sources": [
         {
-          "title": "Quantum-proof Bitcoin signatures would clog network nodes with 10x larger data",
-          "url": "https://cryptoslate.com/quantum-proof-bitcoin-signatures-would-clog-network-nodes-with-10x-larger-data/",
+          "title": "Crypto rallies point to slower USDC growth and faster USDT growth, study finds",
+          "url": "https://cryptoslate.com/usdc-and-usdt-growth-challenge-bitcoins-dry-powder-signal/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-21T08:30:07.000Z"
+          "publishedAt": "2026-10-21T13:50:28.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-10-21T08:30:07.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-quantum-security-risks.webp",
-      "badge": "Technical",
+      "publishedAt": "2026-10-21T13:50:28.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-crossroads-bitcoin-demand.webp",
+      "badge": "Analysis",
       "trendScore": 54,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-cc1990176b",
+      "slug": "stablecoins-moved-891-billion-in-a-quarter-once-exchange-and-bot-activ",
+      "lane": "crypto",
+      "title": "Stablecoins moved $891 billion in a quarter once exchange and bot activity is excluded",
+      "summary": "CryptoSlate reported that stablecoins transferred $891 billion in a quarter after filtering out activity tied to exchanges and automated bots. The adjusted figure is meant to better reflect organic, real-world stablecoin usage rather than trading-related volume. The report did not specify which stablecoins or exact quarter the figure covers.",
+      "whyItMatters": "Stripping out exchange and bot noise offers a cleaner read on genuine payments and transfer demand, a metric regulators and adoption watchers care about.",
+      "whatToWatch": [
+        "Follow-up data on quarter-over-quarter trends",
+        "How regulators cite adjusted volume figures in stablecoin policy debates"
+      ],
+      "questions": [
+        "Which quarter and which stablecoins does the $891 billion figure cover?",
+        "How was \"bot\" activity defined and filtered out?"
+      ],
+      "sources": [
+        {
+          "title": "Stablecoins moved $891 billion in a quarter after exchanges and bots were excluded",
+          "url": "https://cryptoslate.com/stablecoins-moved-891-billion-in-q3-after-exchanges-and-bots-were-excluded/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-21T12:50:35.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-21T12:50:35.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-global-money-rails.webp",
+      "badge": "Data",
+      "trendScore": 53,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-25143983b9",
+      "slug": "declining-a-bitcoin-loan-may-not-exempt-a-cash-purchase-from-futures-r",
+      "lane": "crypto",
+      "title": "Declining a Bitcoin loan may not exempt a cash purchase from futures rules, CFTC says",
+      "summary": "The CFTC indicated that turning down a Bitcoin loan does not necessarily shield a later cash purchase of Bitcoin from being treated under futures rules, according to CryptoSlate. The report points to regulatory scrutiny of structured bitcoin financing arrangements. Details of the underlying case or guidance document were not included in the source.",
+      "whyItMatters": "This signals the CFTC is scrutinizing how crypto lending and purchase structures intersect with futures regulation, which could affect how lenders and exchanges design bitcoin-backed products.",
+      "whatToWatch": [
+        "Formal CFTC guidance or enforcement action",
+        "Industry response from crypto lenders and exchanges"
+      ],
+      "questions": [
+        "What specific transaction or product prompted this CFTC position?",
+        "Does this apply broadly or only to a narrow set of structures?"
+      ],
+      "sources": [
+        {
+          "title": "Declining a Bitcoin loan may not spare a cash purchase from futures rules, CFTC says",
+          "url": "https://cryptoslate.com/declining-a-bitcoin-loan-may-not-spare-a-cash-purchase-from-futures-rules-cftc-says/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-21T17:40:18.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-21T17:40:18.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-delivery-custody.webp",
+      "badge": "Regulatory",
+      "trendScore": 52,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-17a1f80582",
+      "slug": "crypto-security-chiefs-raise-alarm-as-emergency-php-patch-scrambles-de",
+      "lane": "crypto",
+      "title": "Crypto security chiefs raise alarm as emergency PHP patch scrambles developers worldwide",
+      "summary": "Crypto security officials warned about an emergency PHP patch that prompted developers worldwide to scramble, CryptoSlate reported. The urgency reflects risk to crypto infrastructure built on PHP. The source did not specify the vulnerability itself or which platforms were directly affected.",
+      "whyItMatters": "Many crypto exchanges and backend services run on PHP, so a widespread emergency patch raises exposure concerns across the industry until systems are updated.",
+      "whatToWatch": [
+        "Confirmation of which crypto platforms were affected",
+        "Whether any exploits occurred before patching completed"
+      ],
+      "questions": [
+        "What is the underlying PHP vulnerability?",
+        "Which crypto platforms, if any, were directly impacted?"
+      ],
+      "sources": [
+        {
+          "title": "Crypto security chiefs sound alarm as PHP emergency patch scrambles devs worldwide",
+          "url": "https://cryptoslate.com/crypto-security-chiefs-sound-alarm-as-php-emergency-patch-scrambles-devs-worldwide/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-21T17:00:04.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-21T17:00:04.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-server-vulnerability-threat.webp",
+      "badge": "Security",
+      "trendScore": 51,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-724fbc202d",
+      "slug": "xrp-flashes-potential-bottom-signal-but-15-7-billion-in-exchange-suppl",
+      "lane": "crypto",
+      "title": "XRP flashes potential bottom signal, but $15.7 billion in exchange supply threatens recovery",
+      "summary": "XRP showed a technical signal that some read as a potential market bottom, CryptoSlate reported, but noted that roughly $15.7 billion worth of XRP sitting on exchanges could weigh on any recovery. Large exchange balances are typically viewed as latent sell pressure. The report did not specify which indicator produced the bottom signal.",
+      "whyItMatters": "Exchange supply is a closely watched gauge of potential sell pressure, so the tension between a bullish technical signal and a large supply overhang matters for assessing XRP's near-term direction.",
+      "whatToWatch": [
+        "Whether exchange balances decline, easing sell-pressure risk",
+        "Confirmation or failure of the bottom signal in coming sessions"
+      ],
+      "questions": [
+        "What specific technical indicator is flagging the bottom?",
+        "Is the $15.7 billion exchange balance rising or falling versus recent history?"
+      ],
+      "sources": [
+        {
+          "title": "XRP flashes a potential bottom signal, but $15.7 billion in exchange supply threatens recovery",
+          "url": "https://cryptoslate.com/xrp-flashes-a-potential-bottom-signal-but-15-7-billion-in-exchange-supply-threatens-recovery/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-21T15:10:57.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-21T15:10:57.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-altcoin-leverage-struggle.webp",
+      "badge": "Analysis",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-6f41e9b431",
+      "slug": "lido-s-proposed-exit-mechanism-would-pay-lenders-using-borrower-collat",
+      "lane": "crypto",
+      "title": "Lido's proposed exit mechanism would pay lenders using borrower collateral",
+      "summary": "Lido has proposed a mechanism for handling exits that would pay lenders by drawing on borrowers' collateral, CryptoSlate reported. The proposal appears aimed at managing liquidity or risk within Lido-related lending arrangements. The report did not detail the specific protocol, vote status, or parties involved.",
+      "whyItMatters": "Changes to how collateral settles lender claims affect risk for anyone using Lido's liquid staking tokens as collateral elsewhere in DeFi.",
+      "whatToWatch": [
+        "Governance vote or community response to the proposal",
+        "Implementation timeline if the proposal is approved"
+      ],
+      "questions": [
+        "Which lending markets or protocols does this proposal affect?",
+        "Has it been put to a governance vote yet?"
+      ],
+      "sources": [
+        {
+          "title": "Lido’s proposed exits would pay lenders with borrower collateral",
+          "url": "https://cryptoslate.com/lidos-proposed-exits-could-unwind-eth-loans-before-borrowers-reach-liquidation/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-21T11:50:55.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-21T11:50:55.000Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/lido-collateral-waterfall-risk.webp",
+      "badge": "DeFi",
+      "trendScore": 47,
       "confidence": "low"
     },
     {
       "id": "crypto-a530d38f95",
       "slug": "bitcoin-returns-near-83-000-as-traders-assess-support-levels",
       "lane": "crypto",
-      "title": "Bitcoin returns near $83,000 as traders assess support levels",
-      "summary": "Bitcoin's price moved back up near $83,000, prompting commentary on where technical support levels now sit. The report is price analysis rather than news of a fundamental development, and it does not identify a clear driver for the move.",
-      "whyItMatters": "Short-term price levels draw attention, but without a stated catalyst this is trading commentary, not a structural signal worth acting on.",
+      "title": "Bitcoin back near $83,000: assessing its support levels",
+      "summary": "Bitcoin has moved back toward the $83,000 level, and CryptoSlate examined how to assess support at that price. The piece frames this as technical analysis amid recent price swings. No specific fundamental catalyst for the move was cited in the source.",
+      "whyItMatters": "Bitcoin's price level and support zones shape sentiment across the broader crypto market, though this is technical commentary rather than a fundamental development.",
       "whatToWatch": [
-        "Whether $83,000 holds as support or gives way to further declines",
-        "Any news catalyst that later explains the move"
+        "Whether Bitcoin holds or breaks the $83,000 area",
+        "Broader market reaction if support fails"
       ],
       "questions": [
-        "What specifically drove Bitcoin back to this level?",
-        "Is this tied to broader risk-asset moves or crypto-specific news?"
+        "What is driving the current price move?",
+        "Are there fundamental catalysts behind this level, or is the signal purely technical?"
       ],
       "sources": [
         {
@@ -90,26 +246,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-21T11:20:29.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-demand-support-retest.webp",
-      "badge": "Analysis",
-      "trendScore": 52,
+      "badge": "Markets",
+      "trendScore": 47,
       "confidence": "low"
     },
     {
       "id": "crypto-88b7e08980",
       "slug": "binance-will-reprice-stock-token-collateral-even-when-wall-street-is-c",
       "lane": "crypto",
-      "title": "Binance will reprice stock-token collateral even when Wall Street is closed",
-      "summary": "Binance said it will update the collateral value of tokenized stocks on its platform outside normal Wall Street trading hours. This changes how positions backed by stock tokens get margined, since the tokens can trade around the clock while their underlying shares cannot. The report does not detail the pricing source Binance will use.",
-      "whyItMatters": "Repricing collateral during off-hours changes liquidation risk for traders using tokenized stocks, since positions could be hit when the underlying market is shut.",
+      "title": "Binance to reprice stock-token collateral even while Wall Street is closed",
+      "summary": "Binance will adjust the valuation of stock-token collateral on its platform even during hours when Wall Street markets are closed, CryptoSlate reported. This suggests the exchange is changing how it prices tokenized equities used as collateral outside normal trading hours. The report did not specify which tokens or the pricing mechanism to be used off-hours.",
+      "whyItMatters": "Collateral repricing outside normal market hours affects margin and liquidation risk for users holding tokenized stocks on Binance, a still lightly regulated product category.",
       "whatToWatch": [
-        "How Binance sources pricing for stock tokens outside market hours",
-        "Trader reaction, especially around liquidation risk"
+        "Rollout details and which stock tokens are affected",
+        "User or market reaction to off-hours repricing"
       ],
       "questions": [
-        "What pricing source or oracle feeds the off-hours repricing?",
-        "Could this increase liquidations during volatile after-hours moves?"
+        "What pricing source will Binance use when Wall Street is closed?",
+        "Could this increase liquidation risk during volatile off-hours price moves?"
       ],
       "sources": [
         {
@@ -121,26 +277,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-21T10:50:30.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-afterhours-stock-pricing.webp",
       "badge": "Exchange",
-      "trendScore": 51,
+      "trendScore": 46,
       "confidence": "low"
     },
     {
       "id": "crypto-fc4e2f86e4",
       "slug": "spacex-s-194-billion-share-unlock-highlights-risk-in-aave-s-tokenized-",
       "lane": "crypto",
-      "title": "SpaceX's $194 billion share unlock highlights risk in Aave's tokenized-stock plans",
-      "summary": "A reported $194 billion share unlock at SpaceX has drawn scrutiny to plans for using tokenized private-company shares, including SpaceX stock, as DeFi collateral on platforms like Aave. The concern is that large supply or valuation changes in illiquid private shares could ripple through any tokenized version used on-chain. The report does not detail Aave's current tokenized-stock offerings.",
-      "whyItMatters": "Tokenizing illiquid private equity for use as DeFi collateral carries valuation and liquidity risks that differ sharply from tokenizing liquid public stocks.",
+      "title": "SpaceX's $194 billion share unlock highlights risk in Aave's tokenized stock plans",
+      "summary": "A $194 billion SpaceX share unlock has exposed a potential risk in Aave's ambitions around tokenized stocks, CryptoSlate reported. The report ties the scale of the unlock to concerns about how tokenized equity products handle large changes in underlying share supply. Specific details of Aave's tokenized stock plans or how the unlock affects them were not elaborated in the source.",
+      "whyItMatters": "As DeFi protocols like Aave push into tokenized real-world equities, corporate events like share unlocks could create mismatches or risks that traditional crypto collateral doesn't face.",
       "whatToWatch": [
-        "Whether Aave adjusts collateral terms for tokenized private shares",
-        "How the SpaceX unlock affects any tokenized SpaceX stock products"
+        "Any statement from Aave on handling corporate actions like unlocks",
+        "Further scrutiny of tokenized-stock risk models"
       ],
       "questions": [
-        "Does Aave currently list tokenized SpaceX shares as collateral?",
-        "How is tokenized private stock valued without public trading?"
+        "How exactly would the SpaceX unlock affect an Aave tokenized-stock product?",
+        "Is SpaceX stock actually tokenized on Aave, or is this a hypothetical risk scenario?"
       ],
       "sources": [
         {
@@ -152,165 +308,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-21T09:50:35.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
+      "updatedAt": "2026-10-21T17:48:45.220Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-collateral-risk-assessment.webp",
       "badge": "DeFi",
-      "trendScore": 50,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-b3837bd928",
-      "slug": "germany-s-main-savings-bank-network-launches-bitcoin-trading",
-      "lane": "crypto",
-      "title": "Germany's main savings bank network launches Bitcoin trading",
-      "summary": "Germany's Sparkassen savings bank network, which serves a large share of the country's retail banking customers, has launched Bitcoin trading. This brings crypto access into a mainstream, traditionally conservative banking channel. The report does not specify the rollout pace across the network's branches.",
-      "whyItMatters": "Mainstream retail bank access to Bitcoin in a major European economy marks a further step in crypto's integration with traditional finance.",
-      "whatToWatch": [
-        "Rollout pace across the savings bank network's branches and apps",
-        "Customer uptake and published fee or custody details"
-      ],
-      "questions": [
-        "Which banks within the network are live first?",
-        "What custody arrangement backs the new Bitcoin trading service?"
-      ],
-      "sources": [
-        {
-          "title": "Germany’s main savings bank network launches Bitcoin trading",
-          "url": "https://cryptoslate.com/germanys-main-savings-bank-network-launches-bitcoin-trading/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-21T07:10:17.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-21T07:10:17.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sparkasse-bitcoin-railway.webp",
-      "badge": "Adoption",
-      "trendScore": 48,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-105924131a",
-      "slug": "kazakhstan-blocks-mobile-access-to-six-major-crypto-exchanges",
-      "lane": "crypto",
-      "title": "Kazakhstan blocks mobile access to six major crypto exchanges",
-      "summary": "Kazakhstan has shut down mobile access to six major cryptocurrency exchanges in the country. The report does not name the exchanges affected or state the government's reasoning. It follows a broader pattern of governments tightening control over crypto trading access.",
-      "whyItMatters": "Access restrictions in a country long active in crypto mining and trading could push local activity underground or offshore, complicating oversight.",
-      "whatToWatch": [
-        "Which exchanges were blocked and whether they respond publicly",
-        "Whether Kazakhstan extends restrictions beyond mobile access"
-      ],
-      "questions": [
-        "Which six exchanges were blocked?",
-        "What is the stated regulatory justification?"
-      ],
-      "sources": [
-        {
-          "title": "Kazakhstan shuts down mobile access to 6 major crypto exchanges",
-          "url": "https://cryptoslate.com/kazakhstan-shuts-down-mobile-access-to-6-major-crypto-exchanges/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-21T02:20:32.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-21T02:20:32.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-appstore-checkpoint.webp",
-      "badge": "Regulatory",
-      "trendScore": 44,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-767e8a2d33",
-      "slug": "kraken-s-80-stablecoin-fee-gap-exposes-hidden-costs",
-      "lane": "crypto",
-      "title": "Kraken's $80 stablecoin fee gap exposes hidden trading costs",
-      "summary": "A reported $80 discrepancy in stablecoin fees on Kraken has been cited as an example of hidden costs that may not be obvious to users. The report does not specify which stablecoin or transaction type produced the gap, or whether Kraken has responded.",
-      "whyItMatters": "Fee transparency matters for traders who use stablecoins as a supposedly low-cost way to move funds between markets.",
-      "whatToWatch": [
-        "Kraken's response, if any, to the reported fee gap",
-        "Whether similar fee discrepancies turn up on other exchanges"
-      ],
-      "questions": [
-        "Which stablecoin and transaction type produced the $80 gap?",
-        "Is this an isolated case or a systemic fee structure issue?"
-      ],
-      "sources": [
-        {
-          "title": "Kraken’s $80 stablecoin fee gap exposes hidden costs",
-          "url": "https://cryptoslate.com/krakens-80-stablecoin-fee-gap-exposes-hidden-costs/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-21T00:10:07.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-21T00:10:07.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/kraken-usdc-fee-routes.webp",
-      "badge": "Exchange",
-      "trendScore": 42,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-26eb08fb14",
-      "slug": "bnb-chain-burns-1-2b-in-october-tokens-but-supply-impact-stays-unclear",
-      "lane": "crypto",
-      "title": "BNB Chain burns $1.2 billion in tokens in October, but real supply impact stays unclear",
-      "summary": "BNB Chain carried out token burns totaling $1.2 billion in October as part of its periodic supply-reduction process. The report notes that the actual effect on circulating supply is harder to pin down than the headline figure suggests. No further detail on burn mechanics or market reaction was given.",
-      "whyItMatters": "Token burns get cited as bullish supply events, but without clarity on net circulating-supply effects, the headline number alone should be treated with caution.",
-      "whatToWatch": [
-        "Official reporting on net circulating supply after the burn",
-        "Any market reaction tied to the announcement"
-      ],
-      "questions": [
-        "How does this burn compare with BNB Chain's prior burns?",
-        "What portion of the burned tokens were already locked or unused?"
-      ],
-      "sources": [
-        {
-          "title": "BNB Chain burns $1.2B in October tokens, leaving real supply impact hidden",
-          "url": "https://cryptoslate.com/bnb-chain-burns-1-2b-in-october-tokens-leaving-real-supply-impact-hidden/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-20T22:50:17.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-20T22:50:17.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bnb-burn-freight-contrast.webp",
-      "badge": "Tokenomics",
-      "trendScore": 41,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-f7dfb47049",
-      "slug": "drift-hacker-moves-63m-through-tornado-cash-clouding-recovery-hopes",
-      "lane": "crypto",
-      "title": "Drift hacker launders $63 million through Tornado Cash",
-      "summary": "The attacker behind the Drift protocol hack has moved $63 million through Tornado Cash, a mixer used to obscure the trail of stolen funds. This complicates efforts to trace or recover the money. The report does not detail how the original hack occurred.",
-      "whyItMatters": "The use of mixers after major DeFi hacks remains a persistent barrier to fund recovery and underscores ongoing security risks across DeFi protocols.",
-      "whatToWatch": [
-        "Whether Drift or investigators make further progress tracing the funds",
-        "Any law enforcement or sanctions action tied to the laundering"
-      ],
-      "questions": [
-        "How did the original Drift hack occur?",
-        "Were any funds frozen or recovered before reaching Tornado Cash?"
-      ],
-      "sources": [
-        {
-          "title": "Drift hacker washes $63M through Tornado Cash, leaving recovery claims in limbo",
-          "url": "https://cryptoslate.com/drift-hacker-washes-63m-through-tornado-cash-leaving-recovery-claims-in-limbo/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-20T21:40:15.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-20T21:40:15.000Z",
-      "updatedAt": "2026-10-21T11:46:31.561Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-mixer-conveyor-flow.webp",
-      "badge": "Security",
-      "trendScore": 40,
+      "trendScore": 45,
       "confidence": "low"
     }
   ]

@@ -1,84 +1,240 @@
 {
-  "generatedAt": "2026-10-21T11:46:31.561Z",
-  "contentVersion": 167,
+  "generatedAt": "2026-10-21T17:48:45.220Z",
+  "contentVersion": 168,
   "lanes": {
     "crypto": [
       {
-        "id": "crypto-ad7c7903e9",
-        "slug": "switzerland-approves-its-first-bitcoin-etf-after-ruling-trading-volume",
+        "id": "crypto-48ce0868f1",
+        "slug": "bitcoin-lightning-developers-warn-of-security-flaws-after-second-patch",
         "lane": "crypto",
-        "title": "Switzerland approves landmark Bitcoin ETF after ruling trading volume sufficient",
-        "summary": "Swiss regulators approved a Bitcoin ETF after determining that trading volume in the underlying market met the bar required for approval. The report does not name the issuer or give a launch date. This adds a new regulated route to Bitcoin exposure in a major European financial center.",
-        "whyItMatters": "A formal ETF approval in Switzerland gives institutional and retail investors another regulated path into Bitcoin, and may push other regulators to reconsider their own standards.",
+        "title": "Bitcoin Lightning developers warn of security flaws after second patch in five days",
+        "summary": "Lightning Network developers issued a second security patch within five days, CryptoSlate reported, after flagging flaws in the protocol's implementations. The report did not detail the specific vulnerabilities or which node software was affected. Two emergency patches in such quick succession suggest the underlying issues were serious.",
+        "whyItMatters": "Lightning is Bitcoin's main payments scaling layer, so repeated emergency patches raise questions about its reliability for users and businesses that depend on it.",
         "whatToWatch": [
-          "Confirmation of the ETF issuer and launch date",
-          "Reaction from other European regulators on similar products"
+          "Whether additional patches follow",
+          "Node operators' upgrade adoption rates",
+          "Any disclosure of compromised funds or channels"
         ],
         "questions": [
-          "Which issuer is behind the approved ETF?",
-          "What trading-volume threshold did regulators use to justify approval?"
+          "What specific vulnerabilities were patched?",
+          "Were any funds or channels compromised before the fix?"
         ],
         "sources": [
           {
-            "title": "Switzerland approves landmark Bitcoin ETF after ruling trading volume sufficient",
-            "url": "https://cryptoslate.com/switzerland-approves-landmark-bitcoin-etf-after-ruling-trading-volume-sufficient/",
+            "title": "Bitcoin Lightning developers sound alarm over security flaws as second patch lands in five days",
+            "url": "https://cryptoslate.com/bitcoin-lightning-developers-sound-alarm-over-security-flaws-as-second-patch-lands-in-five-days/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-21T04:40:25.000Z"
+            "publishedAt": "2026-10-21T16:30:34.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-21T04:40:25.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/finma-bitcoin-cable-car.webp",
-        "badge": "Regulatory",
+        "publishedAt": "2026-10-21T16:30:34.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/eclair-network-protection-upgrade.webp",
+        "badge": "Security",
         "trendScore": 56,
         "confidence": "low"
       },
       {
-        "id": "crypto-ce915634c4",
-        "slug": "quantum-resistant-bitcoin-signatures-could-make-node-data-ten-times-la",
+        "id": "crypto-4e5658eb3c",
+        "slug": "study-crypto-rallies-slow-usdc-growth-while-speeding-up-usdt-growth",
         "lane": "crypto",
-        "title": "Quantum-resistant Bitcoin signatures could make node data ten times larger",
-        "summary": "A report on proposed quantum-resistant signature schemes for Bitcoin says they would increase transaction data size roughly tenfold versus current signatures. That raises concerns about the storage and bandwidth burden on nodes running the network. No specific proposal or adoption timeline was given.",
-        "whyItMatters": "How Bitcoin handles the eventual quantum-computing threat to its cryptography will shape node costs and, by extension, how decentralized the network stays.",
+        "title": "Study: Crypto rallies slow USDC growth while speeding up USDT growth",
+        "summary": "A study cited by CryptoSlate found that crypto market rallies tend to coincide with slower growth in USDC's supply and faster growth in USDT's supply. The finding points to different behavior between the two largest stablecoins depending on market conditions. The source did not give the study's methodology or time period.",
+        "whyItMatters": "Stablecoin supply shifts are a proxy for trading liquidity, so a divergence between USDC and USDT growth could signal where traders are parking capital during rallies.",
         "whatToWatch": [
-          "Specific proposals under discussion for quantum-resistant signatures",
-          "Any formal Bitcoin Improvement Proposal addressing the tradeoff"
+          "Whether the pattern holds through future market cycles",
+          "Any resulting shift in market share between USDC and USDT"
         ],
         "questions": [
-          "Which signature scheme produces this tenfold size increase?",
-          "How urgent is the quantum threat seen to be by core developers?"
+          "What is driving the divergence—issuer policy, exchange listings, or regulatory treatment?",
+          "Does this pattern hold across prior rallies, or is it new?"
         ],
         "sources": [
           {
-            "title": "Quantum-proof Bitcoin signatures would clog network nodes with 10x larger data",
-            "url": "https://cryptoslate.com/quantum-proof-bitcoin-signatures-would-clog-network-nodes-with-10x-larger-data/",
+            "title": "Crypto rallies point to slower USDC growth and faster USDT growth, study finds",
+            "url": "https://cryptoslate.com/usdc-and-usdt-growth-challenge-bitcoins-dry-powder-signal/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-21T08:30:07.000Z"
+            "publishedAt": "2026-10-21T13:50:28.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-21T08:30:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-quantum-security-risks.webp",
-        "badge": "Technical",
+        "publishedAt": "2026-10-21T13:50:28.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-crossroads-bitcoin-demand.webp",
+        "badge": "Analysis",
         "trendScore": 54,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-cc1990176b",
+        "slug": "stablecoins-moved-891-billion-in-a-quarter-once-exchange-and-bot-activ",
+        "lane": "crypto",
+        "title": "Stablecoins moved $891 billion in a quarter once exchange and bot activity is excluded",
+        "summary": "CryptoSlate reported that stablecoins transferred $891 billion in a quarter after filtering out activity tied to exchanges and automated bots. The adjusted figure is meant to better reflect organic, real-world stablecoin usage rather than trading-related volume. The report did not specify which stablecoins or exact quarter the figure covers.",
+        "whyItMatters": "Stripping out exchange and bot noise offers a cleaner read on genuine payments and transfer demand, a metric regulators and adoption watchers care about.",
+        "whatToWatch": [
+          "Follow-up data on quarter-over-quarter trends",
+          "How regulators cite adjusted volume figures in stablecoin policy debates"
+        ],
+        "questions": [
+          "Which quarter and which stablecoins does the $891 billion figure cover?",
+          "How was \"bot\" activity defined and filtered out?"
+        ],
+        "sources": [
+          {
+            "title": "Stablecoins moved $891 billion in a quarter after exchanges and bots were excluded",
+            "url": "https://cryptoslate.com/stablecoins-moved-891-billion-in-q3-after-exchanges-and-bots-were-excluded/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-21T12:50:35.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-21T12:50:35.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-global-money-rails.webp",
+        "badge": "Data",
+        "trendScore": 53,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-25143983b9",
+        "slug": "declining-a-bitcoin-loan-may-not-exempt-a-cash-purchase-from-futures-r",
+        "lane": "crypto",
+        "title": "Declining a Bitcoin loan may not exempt a cash purchase from futures rules, CFTC says",
+        "summary": "The CFTC indicated that turning down a Bitcoin loan does not necessarily shield a later cash purchase of Bitcoin from being treated under futures rules, according to CryptoSlate. The report points to regulatory scrutiny of structured bitcoin financing arrangements. Details of the underlying case or guidance document were not included in the source.",
+        "whyItMatters": "This signals the CFTC is scrutinizing how crypto lending and purchase structures intersect with futures regulation, which could affect how lenders and exchanges design bitcoin-backed products.",
+        "whatToWatch": [
+          "Formal CFTC guidance or enforcement action",
+          "Industry response from crypto lenders and exchanges"
+        ],
+        "questions": [
+          "What specific transaction or product prompted this CFTC position?",
+          "Does this apply broadly or only to a narrow set of structures?"
+        ],
+        "sources": [
+          {
+            "title": "Declining a Bitcoin loan may not spare a cash purchase from futures rules, CFTC says",
+            "url": "https://cryptoslate.com/declining-a-bitcoin-loan-may-not-spare-a-cash-purchase-from-futures-rules-cftc-says/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-21T17:40:18.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-21T17:40:18.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-delivery-custody.webp",
+        "badge": "Regulatory",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-17a1f80582",
+        "slug": "crypto-security-chiefs-raise-alarm-as-emergency-php-patch-scrambles-de",
+        "lane": "crypto",
+        "title": "Crypto security chiefs raise alarm as emergency PHP patch scrambles developers worldwide",
+        "summary": "Crypto security officials warned about an emergency PHP patch that prompted developers worldwide to scramble, CryptoSlate reported. The urgency reflects risk to crypto infrastructure built on PHP. The source did not specify the vulnerability itself or which platforms were directly affected.",
+        "whyItMatters": "Many crypto exchanges and backend services run on PHP, so a widespread emergency patch raises exposure concerns across the industry until systems are updated.",
+        "whatToWatch": [
+          "Confirmation of which crypto platforms were affected",
+          "Whether any exploits occurred before patching completed"
+        ],
+        "questions": [
+          "What is the underlying PHP vulnerability?",
+          "Which crypto platforms, if any, were directly impacted?"
+        ],
+        "sources": [
+          {
+            "title": "Crypto security chiefs sound alarm as PHP emergency patch scrambles devs worldwide",
+            "url": "https://cryptoslate.com/crypto-security-chiefs-sound-alarm-as-php-emergency-patch-scrambles-devs-worldwide/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-21T17:00:04.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-21T17:00:04.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-server-vulnerability-threat.webp",
+        "badge": "Security",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-724fbc202d",
+        "slug": "xrp-flashes-potential-bottom-signal-but-15-7-billion-in-exchange-suppl",
+        "lane": "crypto",
+        "title": "XRP flashes potential bottom signal, but $15.7 billion in exchange supply threatens recovery",
+        "summary": "XRP showed a technical signal that some read as a potential market bottom, CryptoSlate reported, but noted that roughly $15.7 billion worth of XRP sitting on exchanges could weigh on any recovery. Large exchange balances are typically viewed as latent sell pressure. The report did not specify which indicator produced the bottom signal.",
+        "whyItMatters": "Exchange supply is a closely watched gauge of potential sell pressure, so the tension between a bullish technical signal and a large supply overhang matters for assessing XRP's near-term direction.",
+        "whatToWatch": [
+          "Whether exchange balances decline, easing sell-pressure risk",
+          "Confirmation or failure of the bottom signal in coming sessions"
+        ],
+        "questions": [
+          "What specific technical indicator is flagging the bottom?",
+          "Is the $15.7 billion exchange balance rising or falling versus recent history?"
+        ],
+        "sources": [
+          {
+            "title": "XRP flashes a potential bottom signal, but $15.7 billion in exchange supply threatens recovery",
+            "url": "https://cryptoslate.com/xrp-flashes-a-potential-bottom-signal-but-15-7-billion-in-exchange-supply-threatens-recovery/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-21T15:10:57.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-21T15:10:57.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/xrp-altcoin-leverage-struggle.webp",
+        "badge": "Analysis",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-6f41e9b431",
+        "slug": "lido-s-proposed-exit-mechanism-would-pay-lenders-using-borrower-collat",
+        "lane": "crypto",
+        "title": "Lido's proposed exit mechanism would pay lenders using borrower collateral",
+        "summary": "Lido has proposed a mechanism for handling exits that would pay lenders by drawing on borrowers' collateral, CryptoSlate reported. The proposal appears aimed at managing liquidity or risk within Lido-related lending arrangements. The report did not detail the specific protocol, vote status, or parties involved.",
+        "whyItMatters": "Changes to how collateral settles lender claims affect risk for anyone using Lido's liquid staking tokens as collateral elsewhere in DeFi.",
+        "whatToWatch": [
+          "Governance vote or community response to the proposal",
+          "Implementation timeline if the proposal is approved"
+        ],
+        "questions": [
+          "Which lending markets or protocols does this proposal affect?",
+          "Has it been put to a governance vote yet?"
+        ],
+        "sources": [
+          {
+            "title": "Lido’s proposed exits would pay lenders with borrower collateral",
+            "url": "https://cryptoslate.com/lidos-proposed-exits-could-unwind-eth-loans-before-borrowers-reach-liquidation/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-21T11:50:55.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-21T11:50:55.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/lido-collateral-waterfall-risk.webp",
+        "badge": "DeFi",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
         "id": "crypto-a530d38f95",
         "slug": "bitcoin-returns-near-83-000-as-traders-assess-support-levels",
         "lane": "crypto",
-        "title": "Bitcoin returns near $83,000 as traders assess support levels",
-        "summary": "Bitcoin's price moved back up near $83,000, prompting commentary on where technical support levels now sit. The report is price analysis rather than news of a fundamental development, and it does not identify a clear driver for the move.",
-        "whyItMatters": "Short-term price levels draw attention, but without a stated catalyst this is trading commentary, not a structural signal worth acting on.",
+        "title": "Bitcoin back near $83,000: assessing its support levels",
+        "summary": "Bitcoin has moved back toward the $83,000 level, and CryptoSlate examined how to assess support at that price. The piece frames this as technical analysis amid recent price swings. No specific fundamental catalyst for the move was cited in the source.",
+        "whyItMatters": "Bitcoin's price level and support zones shape sentiment across the broader crypto market, though this is technical commentary rather than a fundamental development.",
         "whatToWatch": [
-          "Whether $83,000 holds as support or gives way to further declines",
-          "Any news catalyst that later explains the move"
+          "Whether Bitcoin holds or breaks the $83,000 area",
+          "Broader market reaction if support fails"
         ],
         "questions": [
-          "What specifically drove Bitcoin back to this level?",
-          "Is this tied to broader risk-asset moves or crypto-specific news?"
+          "What is driving the current price move?",
+          "Are there fundamental catalysts behind this level, or is the signal purely technical?"
         ],
         "sources": [
           {
@@ -90,26 +246,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-21T11:20:29.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-demand-support-retest.webp",
-        "badge": "Analysis",
-        "trendScore": 52,
+        "badge": "Markets",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
         "id": "crypto-88b7e08980",
         "slug": "binance-will-reprice-stock-token-collateral-even-when-wall-street-is-c",
         "lane": "crypto",
-        "title": "Binance will reprice stock-token collateral even when Wall Street is closed",
-        "summary": "Binance said it will update the collateral value of tokenized stocks on its platform outside normal Wall Street trading hours. This changes how positions backed by stock tokens get margined, since the tokens can trade around the clock while their underlying shares cannot. The report does not detail the pricing source Binance will use.",
-        "whyItMatters": "Repricing collateral during off-hours changes liquidation risk for traders using tokenized stocks, since positions could be hit when the underlying market is shut.",
+        "title": "Binance to reprice stock-token collateral even while Wall Street is closed",
+        "summary": "Binance will adjust the valuation of stock-token collateral on its platform even during hours when Wall Street markets are closed, CryptoSlate reported. This suggests the exchange is changing how it prices tokenized equities used as collateral outside normal trading hours. The report did not specify which tokens or the pricing mechanism to be used off-hours.",
+        "whyItMatters": "Collateral repricing outside normal market hours affects margin and liquidation risk for users holding tokenized stocks on Binance, a still lightly regulated product category.",
         "whatToWatch": [
-          "How Binance sources pricing for stock tokens outside market hours",
-          "Trader reaction, especially around liquidation risk"
+          "Rollout details and which stock tokens are affected",
+          "User or market reaction to off-hours repricing"
         ],
         "questions": [
-          "What pricing source or oracle feeds the off-hours repricing?",
-          "Could this increase liquidations during volatile after-hours moves?"
+          "What pricing source will Binance use when Wall Street is closed?",
+          "Could this increase liquidation risk during volatile off-hours price moves?"
         ],
         "sources": [
           {
@@ -121,26 +277,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-21T10:50:30.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-afterhours-stock-pricing.webp",
         "badge": "Exchange",
-        "trendScore": 51,
+        "trendScore": 46,
         "confidence": "low"
       },
       {
         "id": "crypto-fc4e2f86e4",
         "slug": "spacex-s-194-billion-share-unlock-highlights-risk-in-aave-s-tokenized-",
         "lane": "crypto",
-        "title": "SpaceX's $194 billion share unlock highlights risk in Aave's tokenized-stock plans",
-        "summary": "A reported $194 billion share unlock at SpaceX has drawn scrutiny to plans for using tokenized private-company shares, including SpaceX stock, as DeFi collateral on platforms like Aave. The concern is that large supply or valuation changes in illiquid private shares could ripple through any tokenized version used on-chain. The report does not detail Aave's current tokenized-stock offerings.",
-        "whyItMatters": "Tokenizing illiquid private equity for use as DeFi collateral carries valuation and liquidity risks that differ sharply from tokenizing liquid public stocks.",
+        "title": "SpaceX's $194 billion share unlock highlights risk in Aave's tokenized stock plans",
+        "summary": "A $194 billion SpaceX share unlock has exposed a potential risk in Aave's ambitions around tokenized stocks, CryptoSlate reported. The report ties the scale of the unlock to concerns about how tokenized equity products handle large changes in underlying share supply. Specific details of Aave's tokenized stock plans or how the unlock affects them were not elaborated in the source.",
+        "whyItMatters": "As DeFi protocols like Aave push into tokenized real-world equities, corporate events like share unlocks could create mismatches or risks that traditional crypto collateral doesn't face.",
         "whatToWatch": [
-          "Whether Aave adjusts collateral terms for tokenized private shares",
-          "How the SpaceX unlock affects any tokenized SpaceX stock products"
+          "Any statement from Aave on handling corporate actions like unlocks",
+          "Further scrutiny of tokenized-stock risk models"
         ],
         "questions": [
-          "Does Aave currently list tokenized SpaceX shares as collateral?",
-          "How is tokenized private stock valued without public trading?"
+          "How exactly would the SpaceX unlock affect an Aave tokenized-stock product?",
+          "Is SpaceX stock actually tokenized on Aave, or is this a hypothetical risk scenario?"
         ],
         "sources": [
           {
@@ -152,451 +308,319 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-21T09:50:35.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/aave-collateral-risk-assessment.webp",
         "badge": "DeFi",
-        "trendScore": 50,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-b3837bd928",
-        "slug": "germany-s-main-savings-bank-network-launches-bitcoin-trading",
-        "lane": "crypto",
-        "title": "Germany's main savings bank network launches Bitcoin trading",
-        "summary": "Germany's Sparkassen savings bank network, which serves a large share of the country's retail banking customers, has launched Bitcoin trading. This brings crypto access into a mainstream, traditionally conservative banking channel. The report does not specify the rollout pace across the network's branches.",
-        "whyItMatters": "Mainstream retail bank access to Bitcoin in a major European economy marks a further step in crypto's integration with traditional finance.",
-        "whatToWatch": [
-          "Rollout pace across the savings bank network's branches and apps",
-          "Customer uptake and published fee or custody details"
-        ],
-        "questions": [
-          "Which banks within the network are live first?",
-          "What custody arrangement backs the new Bitcoin trading service?"
-        ],
-        "sources": [
-          {
-            "title": "Germany’s main savings bank network launches Bitcoin trading",
-            "url": "https://cryptoslate.com/germanys-main-savings-bank-network-launches-bitcoin-trading/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-21T07:10:17.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T07:10:17.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sparkasse-bitcoin-railway.webp",
-        "badge": "Adoption",
-        "trendScore": 48,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-105924131a",
-        "slug": "kazakhstan-blocks-mobile-access-to-six-major-crypto-exchanges",
-        "lane": "crypto",
-        "title": "Kazakhstan blocks mobile access to six major crypto exchanges",
-        "summary": "Kazakhstan has shut down mobile access to six major cryptocurrency exchanges in the country. The report does not name the exchanges affected or state the government's reasoning. It follows a broader pattern of governments tightening control over crypto trading access.",
-        "whyItMatters": "Access restrictions in a country long active in crypto mining and trading could push local activity underground or offshore, complicating oversight.",
-        "whatToWatch": [
-          "Which exchanges were blocked and whether they respond publicly",
-          "Whether Kazakhstan extends restrictions beyond mobile access"
-        ],
-        "questions": [
-          "Which six exchanges were blocked?",
-          "What is the stated regulatory justification?"
-        ],
-        "sources": [
-          {
-            "title": "Kazakhstan shuts down mobile access to 6 major crypto exchanges",
-            "url": "https://cryptoslate.com/kazakhstan-shuts-down-mobile-access-to-6-major-crypto-exchanges/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-21T02:20:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T02:20:32.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-appstore-checkpoint.webp",
-        "badge": "Regulatory",
-        "trendScore": 44,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-767e8a2d33",
-        "slug": "kraken-s-80-stablecoin-fee-gap-exposes-hidden-costs",
-        "lane": "crypto",
-        "title": "Kraken's $80 stablecoin fee gap exposes hidden trading costs",
-        "summary": "A reported $80 discrepancy in stablecoin fees on Kraken has been cited as an example of hidden costs that may not be obvious to users. The report does not specify which stablecoin or transaction type produced the gap, or whether Kraken has responded.",
-        "whyItMatters": "Fee transparency matters for traders who use stablecoins as a supposedly low-cost way to move funds between markets.",
-        "whatToWatch": [
-          "Kraken's response, if any, to the reported fee gap",
-          "Whether similar fee discrepancies turn up on other exchanges"
-        ],
-        "questions": [
-          "Which stablecoin and transaction type produced the $80 gap?",
-          "Is this an isolated case or a systemic fee structure issue?"
-        ],
-        "sources": [
-          {
-            "title": "Kraken’s $80 stablecoin fee gap exposes hidden costs",
-            "url": "https://cryptoslate.com/krakens-80-stablecoin-fee-gap-exposes-hidden-costs/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-21T00:10:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T00:10:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/kraken-usdc-fee-routes.webp",
-        "badge": "Exchange",
-        "trendScore": 42,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-26eb08fb14",
-        "slug": "bnb-chain-burns-1-2b-in-october-tokens-but-supply-impact-stays-unclear",
-        "lane": "crypto",
-        "title": "BNB Chain burns $1.2 billion in tokens in October, but real supply impact stays unclear",
-        "summary": "BNB Chain carried out token burns totaling $1.2 billion in October as part of its periodic supply-reduction process. The report notes that the actual effect on circulating supply is harder to pin down than the headline figure suggests. No further detail on burn mechanics or market reaction was given.",
-        "whyItMatters": "Token burns get cited as bullish supply events, but without clarity on net circulating-supply effects, the headline number alone should be treated with caution.",
-        "whatToWatch": [
-          "Official reporting on net circulating supply after the burn",
-          "Any market reaction tied to the announcement"
-        ],
-        "questions": [
-          "How does this burn compare with BNB Chain's prior burns?",
-          "What portion of the burned tokens were already locked or unused?"
-        ],
-        "sources": [
-          {
-            "title": "BNB Chain burns $1.2B in October tokens, leaving real supply impact hidden",
-            "url": "https://cryptoslate.com/bnb-chain-burns-1-2b-in-october-tokens-leaving-real-supply-impact-hidden/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-20T22:50:17.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-20T22:50:17.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bnb-burn-freight-contrast.webp",
-        "badge": "Tokenomics",
-        "trendScore": 41,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-f7dfb47049",
-        "slug": "drift-hacker-moves-63m-through-tornado-cash-clouding-recovery-hopes",
-        "lane": "crypto",
-        "title": "Drift hacker launders $63 million through Tornado Cash",
-        "summary": "The attacker behind the Drift protocol hack has moved $63 million through Tornado Cash, a mixer used to obscure the trail of stolen funds. This complicates efforts to trace or recover the money. The report does not detail how the original hack occurred.",
-        "whyItMatters": "The use of mixers after major DeFi hacks remains a persistent barrier to fund recovery and underscores ongoing security risks across DeFi protocols.",
-        "whatToWatch": [
-          "Whether Drift or investigators make further progress tracing the funds",
-          "Any law enforcement or sanctions action tied to the laundering"
-        ],
-        "questions": [
-          "How did the original Drift hack occur?",
-          "Were any funds frozen or recovered before reaching Tornado Cash?"
-        ],
-        "sources": [
-          {
-            "title": "Drift hacker washes $63M through Tornado Cash, leaving recovery claims in limbo",
-            "url": "https://cryptoslate.com/drift-hacker-washes-63m-through-tornado-cash-leaving-recovery-claims-in-limbo/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-20T21:40:15.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-20T21:40:15.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-mixer-conveyor-flow.webp",
-        "badge": "Security",
-        "trendScore": 40,
+        "trendScore": 45,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-2f1cdc99ab",
-        "slug": "h-c-wainwright-reiterates-buy-rating-on-agomab-therapeutics",
+        "id": "markets-ae04b43bfe",
+        "slug": "jefferies-raises-united-airlines-price-target-after-earnings-beat",
         "lane": "markets",
-        "title": "H.C. Wainwright reiterates Buy rating on Agomab Therapeutics",
-        "summary": "H.C. Wainwright reiterated its Buy rating on Agomab Therapeutics stock. The firm gave no new price target. The report included no further detail on the reason for the reiteration.",
-        "whyItMatters": "The reiteration signals continued analyst confidence in Agomab, a clinical-stage biotech, though it offers investors little new information.",
+        "title": "Jefferies raises United Airlines price target after earnings beat",
+        "summary": "Jefferies raised its price target on United Airlines stock. The airline beat earnings expectations. Investing.com reported the update on October 22.",
+        "whyItMatters": "A higher price target from Jefferies shows analyst confidence in United's results. It can also move the stock price.",
         "whatToWatch": [
-          "Agomab's next clinical trial update.",
-          "Any price target change from H.C. Wainwright."
+          "Reaction in United Airlines shares",
+          "Other analysts' responses to the earnings beat"
         ],
         "questions": [
-          "What drove the firm to reaffirm its rating now?",
-          "Did the price target change along with the rating?"
-        ],
-        "sources": [
-          {
-            "title": "Agomab Therapeutics stock rating reiterated at Buy by H.C. Wainwright",
-            "url": "https://www.investing.com/news/analyst-ratings/agomab-therapeutics-stock-rating-reiterated-at-buy-by-hc-wainwright-93CH-4962691",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM40318_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-ca81f348ae",
-        "slug": "guggenheim-cuts-netflix-price-target-to-78-after-ad-revenue-miss",
-        "lane": "markets",
-        "title": "Guggenheim cuts Netflix price target to $78 after ad revenue miss",
-        "summary": "Guggenheim lowered its stock price target on Netflix to $78. The firm cited a miss in Netflix's advertising revenue. The report gave no further detail on the size of the miss.",
-        "whyItMatters": "Netflix's ad-tier business is a key growth driver for investors, so a revenue miss there raises questions about the pace of that expansion.",
-        "whatToWatch": [
-          "Netflix's next earnings report for ad revenue trends.",
-          "Whether other analysts follow with similar cuts."
-        ],
-        "questions": [
-          "How large was the ad revenue miss?",
-          "Does the shortfall affect Netflix's subscriber growth outlook?"
-        ],
-        "sources": [
-          {
-            "title": "Guggenheim cuts Netflix stock price target to $78 on ad revenue miss",
-            "url": "https://www.investing.com/news/analyst-ratings/guggenheim-cuts-netflix-stock-price-target-to-78-on-ad-revenue-miss-93CH-4962692",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPED1P0OE_M.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-90b2889dcc",
-        "slug": "jpmorgan-trims-price-targets-on-corning-and-ge-aerospace-over-valuatio",
-        "lane": "markets",
-        "title": "JPMorgan trims price targets on Corning and GE Aerospace over valuation",
-        "summary": "JPMorgan cut its stock price target on Corning, citing valuation concerns. The firm also lowered its target on GE Aerospace, citing valuation pressure. Both cuts came the same day.",
-        "whyItMatters": "The cuts suggest JPMorgan sees both stocks priced above what their fundamentals support, a signal for investors weighing further upside.",
-        "whatToWatch": [
-          "New price targets or ratings from other banks on both stocks.",
-          "Corning's and GE Aerospace's next earnings reports."
-        ],
-        "questions": [
-          "What specific valuation metrics drove JPMorgan's cuts?",
-          "Did JPMorgan change its underlying rating, or only the price target?"
-        ],
-        "sources": [
-          {
-            "title": "JPMorgan cuts Corning stock price target on valuation concerns",
-            "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-cuts-corning-stock-price-target-on-valuation-concerns-93CH-4962688",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:07.000Z"
-          },
-          {
-            "title": "JPMorgan cuts GE Aerospace stock price target on valuation pressure",
-            "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-cuts-ge-aerospace-stock-price-target-on-valuation-pressure-93CH-4962684",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:06.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4416N_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-1d94b6da6d",
-        "slug": "jpmorgan-raises-3m-price-target-on-turnaround-progress",
-        "lane": "markets",
-        "title": "JPMorgan raises 3M price target on turnaround progress",
-        "summary": "JPMorgan raised its stock price target on 3M. The firm pointed to progress in 3M's turnaround effort. The report gave no further detail on the new target level.",
-        "whyItMatters": "3M has worked to rebuild investor confidence after years of legal and operational setbacks, so an improving analyst view marks a milestone.",
-        "whatToWatch": [
-          "3M's next earnings report for turnaround progress.",
-          "Further price target or rating changes from other analysts."
-        ],
-        "questions": [
-          "What specific turnaround milestones did JPMorgan cite?",
-          "What is the new price target level?"
-        ],
-        "sources": [
-          {
-            "title": "JPMorgan raises 3M stock price target on turnaround progress",
-            "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-raises-3m-stock-price-target-on-turnaround-progress-93CH-4962689",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:07.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM450ND_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-188a567939",
-        "slug": "rosenblatt-raises-super-micro-computer-price-target-after-revenue-beat",
-        "lane": "markets",
-        "title": "Rosenblatt raises Super Micro Computer price target after revenue beat",
-        "summary": "Rosenblatt raised its stock price target on Super Micro Computer. The firm cited a beat in the company's revenue. The report gave no further detail on the size of the beat.",
-        "whyItMatters": "Super Micro is a key supplier for AI server infrastructure, so a revenue beat points to continued demand in that market.",
-        "whatToWatch": [
-          "Super Micro's next earnings report.",
-          "Other analysts' reaction to the revenue beat."
-        ],
-        "questions": [
-          "How large was the revenue beat?",
+          "What drove the earnings beat?",
           "What is the new price target?"
         ],
         "sources": [
           {
-            "title": "Rosenblatt raises Super Micro Computer stock price target on revenue beat",
-            "url": "https://www.investing.com/news/analyst-ratings/rosenblatt-raises-super-micro-computer-stock-price-target-on-revenue-beat-93CH-4962690",
+            "title": "Jefferies raises United Airlines stock price target on earnings beat",
+            "url": "https://www.investing.com/news/analyst-ratings/jefferies-raises-united-airlines-stock-price-target-on-earnings-beat-93CH-4963782",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:07.000Z"
+            "publishedAt": "2026-10-22T00:32:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:07.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1AG_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
+        "publishedAt": "2026-10-22T00:32:58.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB2912P_M.jpg",
+        "badge": "Analyst Call",
+        "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-59ed1d687a",
-        "slug": "guggenheim-raises-northrop-grumman-price-target-on-growth-outlook",
+        "id": "markets-7a4f0a7417",
+        "slug": "palatin-may-be-next-obesity-drug-target-as-big-pharma-looks-beyond-glp",
         "lane": "markets",
-        "title": "Guggenheim raises Northrop Grumman price target on growth outlook",
-        "summary": "Guggenheim raised its stock price target on Northrop Grumman. The firm cited an improved growth outlook for the defense contractor. The report gave no further detail on the new target.",
-        "whyItMatters": "Northrop Grumman's outlook ties to defense spending trends, which investors watch for signals on the broader defense sector.",
+        "title": "Palatin may be next obesity-drug target as Big Pharma looks beyond GLP-1 drugs",
+        "summary": "Big pharmaceutical companies search for obesity treatments beyond GLP-1 drugs, according to a report from Investing.com. The report says Palatin Technologies (NASDAQ: PTN) may fit that pattern. It does not name a specific deal or buyer.",
+        "whyItMatters": "Obesity drugs are a major growth area in pharma. Takeover speculation can move smaller biotech stocks sharply.",
         "whatToWatch": [
-          "Northrop Grumman's next earnings report.",
-          "Defense budget and contract news that could affect the growth outlook."
+          "Any confirmed deal activity involving Palatin",
+          "Further reports on Big Pharma's obesity-drug targets"
         ],
         "questions": [
-          "What specific growth drivers did Guggenheim cite?",
-          "What is the new price target?"
+          "Has any company approached Palatin?",
+          "What non-GLP-1 approaches draw interest?"
         ],
         "sources": [
           {
-            "title": "Guggenheim raises Northrop Grumman stock price target on growth outlook",
-            "url": "https://www.investing.com/news/analyst-ratings/guggenheim-raises-northrop-grumman-stock-price-target-on-growth-outlook-93CH-4962685",
+            "title": "Big Pharma’s Obesity Shopping Spree Is Moving Beyond GLP-1s. Palatin May Fit the Pattern (NASDAQ: PTN)",
+            "url": "https://www.investing.com/news/company-news/big-pharmas-obesity-shopping-spree-is-moving-beyond-glp1s-palatin-may-fit-the-pattern-nasdaq-ptn-4963780",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:06.000Z"
+            "publishedAt": "2026-10-22T00:32:16.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:06.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM431A2_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-1e44f4e988",
-        "slug": "h-c-wainwright-maintains-12-price-target-on-microbot-medical",
-        "lane": "markets",
-        "title": "H.C. Wainwright maintains $12 price target on Microbot Medical",
-        "summary": "H.C. Wainwright kept its stock price target on Microbot Medical at $12. The firm did not change its rating. The report gave no further detail.",
-        "whyItMatters": "The maintained target signals steady analyst confidence in Microbot Medical, a small medical device company, with no new catalyst cited.",
-        "whatToWatch": [
-          "Microbot Medical's next product or clinical update.",
-          "Any future change to the price target."
-        ],
-        "questions": [
-          "What supports the $12 target level?",
-          "Is there a near-term catalyst the firm is waiting on?"
-        ],
-        "sources": [
-          {
-            "title": "Microbot Medical stock price target maintained at $12 by H.C. Wainwright",
-            "url": "https://www.investing.com/news/analyst-ratings/microbot-medical-stock-price-target-maintained-at-12-by-hc-wainwright-93CH-4962686",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:06.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
-        "badge": "Analyst Rating",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-2b121f0a70",
-        "slug": "jpmorgan-sees-strategic-logic-in-a-potential-spacex-tesla-merger",
-        "lane": "markets",
-        "title": "JPMorgan sees strategic logic in a potential SpaceX-Tesla merger",
-        "summary": "JPMorgan said it sees strategic logic in a potential merger between SpaceX and Tesla. The report did not confirm that a merger is planned or underway. It gave no financial terms or timeline.",
-        "whyItMatters": "Elon Musk leads both companies, so any sign of closer ties would reshape how investors value Tesla stock and SpaceX's private worth.",
-        "whatToWatch": [
-          "Any official statement from Tesla, SpaceX, or Elon Musk on a merger.",
-          "Further analyst commentary on the idea."
-        ],
-        "questions": [
-          "Is a merger actually under discussion, or is this speculative analysis?",
-          "What would a merger mean for Tesla's public shareholders?"
-        ],
-        "sources": [
-          {
-            "title": "JPMorgan sees strategic logic in potential SpaceX-Tesla merger",
-            "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-sees-strategic-logic-in-potential-spacextesla-merger-93CH-4962687",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:43:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:43:06.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEJ6I0HO_L.jpg",
+        "publishedAt": "2026-10-22T00:32:16.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3F1FY_1200_L.jpg",
         "badge": "Analysis",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-af7ac4446e",
+        "slug": "brookings-paper-lays-out-plan-to-shrink-the-fed-s-balance-sheet",
+        "lane": "markets",
+        "title": "Brookings paper lays out plan to shrink the Fed's balance sheet",
+        "summary": "A new Brookings Institution paper proposes a broad plan for the Federal Reserve to shrink its balance sheet. Investing.com covered the paper. The available reporting does not include the plan's specific steps.",
+        "whyItMatters": "How the Fed manages its balance sheet affects bank reserves and liquidity, and shapes the backdrop for interest-rate policy.",
+        "whatToWatch": [
+          "Any Fed comment on the proposal",
+          "Future Fed balance-sheet decisions"
+        ],
+        "questions": [
+          "Which specific steps does the plan recommend?",
+          "Will the Fed adopt any of these ideas?"
+        ],
+        "sources": [
+          {
+            "title": "Brookings paper offers broad plan to shrink Fed balance sheet",
+            "url": "https://www.investing.com/news/economy-news/brookings-paper-offers-broad-plan-to-shrink-fed-balance-sheet-4963227",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:24:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:24:54.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9K1CO_L.jpg",
+        "badge": "Analysis",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-8c3e85317f",
+        "slug": "skyx-platforms-discusses-merger-and-patent-strategy-at-ld-micro-event",
+        "lane": "markets",
+        "title": "SKYX Platforms discusses merger and patent strategy at LD Micro event",
+        "summary": "SKYX Platforms presented at the LD Micro main event. The company discussed a merger, its patent portfolio, and plans for growth. Investing.com covered the presentation. The available reporting did not disclose financial details.",
+        "whyItMatters": "Small-cap investors watch these events for early signals on company strategy and deal activity.",
+        "whatToWatch": [
+          "Further details on the merger mentioned at the event",
+          "Updates on SKYX's growth plans"
+        ],
+        "questions": [
+          "What merger is SKYX referring to?",
+          "Which patents are central to its growth strategy?"
+        ],
+        "sources": [
+          {
+            "title": "SKYX Platforms at LD Micro main event: merger, patents and growth push",
+            "url": "https://www.investing.com/news/transcripts/skyx-platforms-at-ld-micro-main-event-merger-patents-and-growth-push-93CH-4963784",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:36:01.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:36:01.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0L0PD_M.jpg",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-9819395e08",
-        "slug": "ubs-turns-bearish-on-maersk-over-shipping-glut-risk",
+        "id": "markets-b27008541d",
+        "slug": "b-riley-raises-cleveland-cliffs-price-target-to-18",
         "lane": "markets",
-        "title": "UBS turns bearish on Maersk over shipping glut risk",
-        "summary": "UBS turned bearish on Maersk stock. The firm warned that a glut of ships threatens freight rates and profits at the container shipping company. The report gave no specific rating or price target detail.",
-        "whyItMatters": "Maersk is a key indicator of global trade conditions, so a warning on freight rates signals wider pressure on shipping industry profits.",
+        "title": "B. Riley raises Cleveland-Cliffs price target to $18",
+        "summary": "B. Riley raised its price target on Cleveland-Cliffs to $18. It cited an improved outlook for the steelmaker. Investing.com reported the update. The report did not give further detail on the outlook.",
+        "whyItMatters": "Analyst price-target changes can move Cleveland-Cliffs shares and offer a read on sentiment toward the steel sector.",
         "whatToWatch": [
-          "Freight rate trends in the container shipping market.",
-          "Maersk's next earnings report for margin impact."
+          "Cleveland-Cliffs share price reaction",
+          "Other analysts following with similar revisions"
         ],
         "questions": [
-          "How large is the ship oversupply UBS is flagging?",
-          "Which shipping routes face the most rate pressure?"
+          "What specifically improved in Cleveland-Cliffs' outlook?"
         ],
         "sources": [
           {
-            "title": "UBS turns bearish on Maersk as ship glut threatens freight rates, profits",
-            "url": "https://www.investing.com/news/stock-market-news/ubs-turns-bearish-on-maersk-as-ship-glut-threatens-freight-rates-profits-4962683",
+            "title": "B.Riley raises Cleveland-Cliffs price target to $18 on improved outlook",
+            "url": "https://www.investing.com/news/analyst-ratings/briley-raises-clevelandcliffs-price-target-to-18-on-improved-outlook-93CH-4963781",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-21T18:42:21.000Z"
+            "publishedAt": "2026-10-22T00:32:56.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-21T18:42:21.000Z",
-        "updatedAt": "2026-10-21T11:46:31.561Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEE7G0P7_M.jpg",
-        "badge": "Analysis",
+        "publishedAt": "2026-10-22T00:32:56.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM450ND_1200_L.jpg",
+        "badge": "Analyst Call",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-9538d4899e",
+        "slug": "fdj-united-reports-revenue-decline-on-tax-hikes-and-weak-jackpots",
+        "lane": "markets",
+        "title": "FDJ United reports revenue decline on tax hikes and weak jackpots",
+        "summary": "FDJ United's Q3 2026 earnings slides showed a revenue decline. The company said tax increases and weak jackpot activity caused the drop. Investing.com reported the results. The available reporting did not include specific revenue figures.",
+        "whyItMatters": "The results show how tax policy and lottery jackpot cycles can directly hit a gaming operator's revenue.",
+        "whatToWatch": [
+          "FDJ United's full Q3 2026 results",
+          "Any guidance update tied to tax policy"
+        ],
+        "questions": [
+          "How large was the revenue decline?",
+          "Which tax increases weigh on results?"
+        ],
+        "sources": [
+          {
+            "title": "FDJ United Q3 2026 slides: tax increases, weak jackpots drive revenue decline",
+            "url": "https://www.investing.com/news/company-news/fdj-united-q3-2026-slides-tax-increases-weak-jackpots-drive-revenue-decline-93CH-4963779",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:31:50.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:31:50.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3E1BM_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-33ac613689",
+        "slug": "judge-orders-meta-to-pay-25-billion-in-new-mexico-lawsuit",
+        "lane": "markets",
+        "title": "Judge orders Meta to pay $25 billion in New Mexico lawsuit",
+        "summary": "A judge ordered Meta to pay $25 billion in a case brought by New Mexico. Investing.com reported the ruling. A related report on the same case gives more detail on the jury's findings.",
+        "whyItMatters": "A $25 billion judgment is a major legal and financial risk for Meta. It also signals the regulatory and legal pressure on big tech.",
+        "whatToWatch": [
+          "Meta's response, including any appeal",
+          "Impact on Meta's stock and legal reserves"
+        ],
+        "questions": [
+          "Will Meta appeal the ruling?",
+          "What specific conduct did the court cite?"
+        ],
+        "sources": [
+          {
+            "title": "Judge orders Meta to pay $25 billion in New Mexico case",
+            "url": "https://www.investing.com/news/stock-market-news/judge-orders-meta-to-pay-25-billion-in-new-mexico-case-4963778",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:31:30.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:31:30.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM680TJ_L.jpg",
+        "badge": "Breaking",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-6d33d739f9",
+        "slug": "moncler-s-growth-stalls-in-q3-despite-major-new-york-expansion",
+        "lane": "markets",
+        "title": "Moncler's growth stalls in Q3 despite major New York expansion",
+        "summary": "Moncler's Q3 2026 earnings slides showed growth stalled. The company also pursues a major store expansion in New York City. Investing.com reported the results. The available reporting did not include specific sales figures.",
+        "whyItMatters": "Slowing growth at a luxury brand like Moncler is a signal worth watching for the health of high-end consumer spending.",
+        "whatToWatch": [
+          "Moncler's full Q3 2026 results",
+          "Performance of the new New York expansion"
+        ],
+        "questions": [
+          "What caused growth to stall?",
+          "Is the slowdown specific to one region or global?"
+        ],
+        "sources": [
+          {
+            "title": "Moncler Q3 2026 slides: growth stalls despite major NYC expansion",
+            "url": "https://www.investing.com/news/company-news/moncler-q3-2026-slides-growth-stalls-despite-major-nyc-expansion-93CH-4963777",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:31:29.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:31:29.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM0P15Q_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-7b3e012ae6",
+        "slug": "meta-ordered-to-pay-25-billion-after-jury-finds-it-misled-new-mexico-c",
+        "lane": "markets",
+        "title": "Meta ordered to pay $25 billion after jury finds it misled New Mexico consumers on data privacy",
+        "summary": "A jury found that Meta misled consumers in New Mexico about data privacy. The jury ordered Meta to pay $25 billion. Investing.com reported the verdict. The report did not specify which Meta products or practices were at issue.",
+        "whyItMatters": "A jury verdict of this size over data-privacy claims could invite similar suits elsewhere. It also adds to Meta's legal costs.",
+        "whatToWatch": [
+          "Whether Meta appeals the verdict",
+          "Other states pursuing similar data-privacy claims"
+        ],
+        "questions": [
+          "Which Meta products or practices did the jury find misleading?",
+          "Will Meta appeal?"
+        ],
+        "sources": [
+          {
+            "title": "Meta ordered to pay $25 billion to New Mexico after jury finds company misled consumers about data privacy",
+            "url": "https://www.investing.com/news/stock-market-news/meta-ordered-to-pay-25-billion-to-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy-4963776",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:30:26.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:30:26.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9K1QK_L.jpg",
+        "badge": "Breaking",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-590f2b5c09",
+        "slug": "advisory-firm-pushes-sec-to-end-shareholder-anonymity-targets-january",
+        "lane": "markets",
+        "title": "Advisory firm pushes SEC to end shareholder anonymity, targets January",
+        "summary": "An advisory firm lobbies the SEC to end shareholder anonymity. It plans a push in January. Investing.com reported the effort. The report did not name the firm or give the SEC's response.",
+        "whyItMatters": "Ending shareholder anonymity would change how companies and investors see who holds their stock. It could affect activist campaigns and disclosure rules.",
+        "whatToWatch": [
+          "SEC response to the lobbying effort",
+          "Any rule proposal expected around January"
+        ],
+        "questions": [
+          "Which advisory firm leads this push?",
+          "What specific rule change is proposed?"
+        ],
+        "sources": [
+          {
+            "title": "Advisory firm lobbies SEC to end shareholder anonymity, eyes January push",
+            "url": "https://www.investing.com/news/stock-market-news/advisory-firm-lobbies-sec-to-end-shareholder-anonymity-eyes-january-push-4963775",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-22T00:25:53.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T00:25:53.000Z",
+        "updatedAt": "2026-10-21T17:48:45.220Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM430JU_L.jpg",
+        "badge": "Regulatory",
         "trendScore": 47,
         "confidence": "low"
       }
