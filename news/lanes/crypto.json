@@ -1,22 +1,53 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-10-22T17:05:54.691Z",
-  "contentVersion": 158,
+  "generatedAt": "2026-10-22T23:22:30.117Z",
+  "contentVersion": 159,
   "stories": [
+    {
+      "id": "crypto-ce04a45820",
+      "slug": "bitcoin-etfs-sold-through-7-of-8-crashes-even-as-wall-street-tames-btc",
+      "lane": "crypto",
+      "title": "Bitcoin ETFs sold through 7 of 8 crashes even as Wall Street tames BTC selloffs",
+      "summary": "An analysis found spot bitcoin ETFs saw net outflows during seven of the last eight major bitcoin price crashes, meaning ETF holders kept selling under stress rather than holding firm. At the same time, growing Wall Street participation appears to be making BTC selloffs less violent overall. The findings cut against the idea that ETF adoption alone stabilizes price during downturns.",
+      "whyItMatters": "ETF flow behavior during crashes is a key test of whether institutional adoption reduces or amplifies bitcoin's volatility.",
+      "whatToWatch": [
+        "How ETF flows behave in the next major bitcoin drawdown",
+        "Whether outflow patterns shift as the ETF holder base matures"
+      ],
+      "questions": [
+        "What was different about the one crash where ETFs didn't sell?",
+        "Are the outflows concentrated among a few large holders or broad-based?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin ETFs sold through 7 of 8 crashes even as Wall Street makes BTC selloffs less violent",
+          "url": "https://cryptoslate.com/bitcoin-etfs-sold-through-7-of-8-crashes-even-as-wall-street-makes-btc-selloffs-less-violent/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-22T22:30:38.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-22T22:30:38.000Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallstreet-outflows.webp",
+      "badge": "Analysis",
+      "trendScore": 66,
+      "confidence": "low"
+    },
     {
       "id": "crypto-b7e8c0b3f7",
       "slug": "robinhood-earns-51-million-in-blockchain-fees-pays-just-69-000-to-sett",
       "lane": "crypto",
-      "title": "Robinhood earns $51 million in blockchain fees, pays just $69,000 to settle on Ethereum",
-      "summary": "Robinhood collected $51 million in fees tied to its blockchain-based products, according to CryptoSlate. Actual Ethereum network settlement costs for that activity came to about $69,000. The gap shows a wide margin between what Robinhood charges and the underlying cost of settling on-chain.",
-      "whyItMatters": "The gap shows how much profit brokerages can extract from tokenized products, a factor worth watching as crypto-linked trading grows.",
+      "title": "Robinhood earns $51 million in blockchain fees while Ethereum settlement costs just $69,000",
+      "summary": "Robinhood generated roughly $51 million in blockchain-related fees, while the underlying Ethereum network settlement costs for that activity totaled only about $69,000, according to CryptoSlate. The gap shows most of the fee revenue around crypto trading goes to intermediaries, not the base-layer network processing the transactions.",
+      "whyItMatters": "The disparity shows where value capture actually happens in crypto trading infrastructure, relevant to anyone assessing fee economics across exchanges and layer-1 networks.",
       "whatToWatch": [
-        "Whether Robinhood discloses more detail on its blockchain fee structure.",
-        "Whether competitors adjust pricing on similar tokenized products."
+        "Whether other brokerages show a similar gap between fees charged and on-chain costs",
+        "Any response from Robinhood on its fee structure"
       ],
       "questions": [
-        "What specific products generated the $51 million in fees?",
-        "Does Robinhood plan to pass more of the savings to customers?"
+        "What specific services make up the $51 million in fees?",
+        "Does this reflect Robinhood's product mix or a broader industry pattern?"
       ],
       "sources": [
         {
@@ -28,26 +59,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-22T15:00:14.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/layer-two-fee-divide.webp",
-      "badge": "Analysis",
-      "trendScore": 60,
+      "trendScore": 55,
       "confidence": "low"
     },
     {
       "id": "crypto-132a867fac",
       "slug": "midnight-privacy-vault-demo-relies-on-outside-signers-to-release-ether",
       "lane": "crypto",
-      "title": "Midnight privacy-vault demo relies on outside signers to release Ethereum tokens",
-      "summary": "A demonstration of a privacy vault on the Midnight network shows that releasing Ethereum tokens from the vault needs sign-off from outside signers, not just the vault owner. This suggests a multisig-style control layer sits on top of Midnight's privacy features. The report did not say who the outside signers are or how many are required.",
-      "whyItMatters": "Privacy tools that still depend on external signers raise questions about how self-custodial these systems really are.",
+      "title": "Midnight privacy-vault demo needs outside signers to release Ethereum tokens",
+      "summary": "A demonstration of a privacy vault on the Midnight network reportedly needs external signers to approve the release of Ethereum tokens, rather than relying only on the vault's own cryptographic design. CryptoSlate's report flags this as a trust dependency built into the current demo.",
+      "whyItMatters": "A privacy tool that depends on outside signers raises questions about how decentralized and trust-minimized it actually is.",
       "whatToWatch": [
-        "Whether Midnight publishes more detail on the signer setup.",
-        "Whether the design moves from demo to production use."
+        "Whether Midnight removes the signer dependency before a wider release",
+        "Community scrutiny of the vault's security model"
       ],
       "questions": [
-        "Who controls the outside signers?",
-        "Does this reduce the privacy or custody guarantees Midnight promises?"
+        "Who are the outside signers and how are they chosen?",
+        "Is this a demo-only limitation or part of the permanent design?"
       ],
       "sources": [
         {
@@ -59,55 +89,116 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-22T14:00:42.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/midnight-shielded-claim-redemption.webp",
-      "trendScore": 59,
+      "trendScore": 54,
       "confidence": "low"
     },
     {
-      "id": "crypto-40cf390793",
-      "slug": "solana-pushes-for-faster-finality-as-wall-street-cuts-settlement-cash-",
+      "id": "crypto-d303a15d30",
+      "slug": "occ-drops-proposed-affiliate-rewards-presumption-but-keeps-stablecoin-",
       "lane": "crypto",
-      "title": "Solana pushes for faster finality as Wall Street cuts settlement cash needs",
-      "summary": "Solana is working toward faster transaction finality on its network. CryptoSlate linked the push to a separate trend of traditional finance firms reducing the cash they hold to cover settlement. The report gave few specifics on Solana's technical timeline.",
-      "whyItMatters": "Faster finality makes Solana more attractive for institutional use cases like tokenized markets, where settlement speed affects how much capital firms tie up.",
+      "title": "OCC drops proposed affiliate-rewards presumption but keeps stablecoin yield ban",
+      "summary": "The Office of the Comptroller of the Currency withdrew a proposed presumption on affiliate rewards programs, but left its existing ban on stablecoin yield in place, per CryptoSlate. The move narrows one part of the regulator's proposal while keeping the restriction crypto firms have objected to.",
+      "whyItMatters": "The stablecoin yield ban directly affects whether issuers and partner banks can offer interest-bearing stablecoin products in the US.",
       "whatToWatch": [
-        "Any announced timeline for Solana's finality upgrade.",
-        "Signs institutional players cite Solana speed in adoption decisions."
+        "Industry reaction to the remaining yield ban",
+        "Any further OCC rulemaking on bank-crypto partnerships"
       ],
       "questions": [
-        "What specific technical change is driving the faster finality claim?",
-        "How does Solana's finality compare with competing chains after the change?"
+        "Why did the OCC drop the affiliate-rewards presumption specifically?",
+        "Could the yield ban still be revised or challenged?"
       ],
       "sources": [
         {
-          "title": "Solana targets faster finality, while Wall Street cuts the cash that must move",
-          "url": "https://cryptoslate.com/solana-targets-faster-finality-while-wall-street-cuts-the-cash-that-must-move/",
+          "title": "OCC drops proposed affiliate rewards presumption, but stablecoin yield ban stays",
+          "url": "https://cryptoslate.com/occ-drops-proposed-affiliate-rewards-presumption-but-stablecoin-yield-ban-stays/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-22T11:00:54.000Z"
+          "publishedAt": "2026-10-22T21:20:12.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-10-22T11:00:54.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-netting-barrier.webp",
-      "trendScore": 52,
+      "publishedAt": "2026-10-22T21:20:12.000Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/occ-stablecoin-rulebook-revision.webp",
+      "badge": "Regulatory",
+      "trendScore": 50,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-3eb18a4baf",
+      "slug": "standard-chartered-brings-crypto-custody-in-house-amid-wall-street-inf",
+      "lane": "crypto",
+      "title": "Standard Chartered brings crypto custody in-house amid Wall Street infrastructure race",
+      "summary": "Standard Chartered is moving to bring its crypto custody operations in-house, according to CryptoSlate, as traditional banks compete to build out digital-asset infrastructure. The shift points toward direct control of client crypto holdings rather than reliance on third-party custodians.",
+      "whyItMatters": "A major bank internalizing crypto custody signals institutional adoption is moving from pilot projects into core infrastructure.",
+      "whatToWatch": [
+        "Timeline for Standard Chartered's in-house custody rollout",
+        "Whether other banks announce similar moves"
+      ],
+      "questions": [
+        "Which third-party custodian, if any, does this replace?",
+        "Which client segments will the in-house custody serve first?"
+      ],
+      "sources": [
+        {
+          "title": "Standard Chartered moves to bring crypto custody in-house as Wall Street’s digital asset infrastructure race accelerates",
+          "url": "https://cryptoslate.com/standard-chartered-moves-to-bring-crypto-custody-in-house-as-wall-streets-digital-asset-infrastructure-race-accelerates/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-22T19:20:56.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-22T19:20:56.000Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/zodia-custody-transaction-split.webp",
+      "trendScore": 49,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-4876b64a56",
+      "slug": "bitcoin-core-32-bug-can-stall-multisig-signing-on-older-nodes-fix-dela",
+      "lane": "crypto",
+      "title": "Bitcoin Core 32 bug can stall multisig signing on older nodes; fix delayed",
+      "summary": "A bug in Bitcoin Core version 32 can stall multisig transaction signing on older nodes, and the fix has slipped to a future patch instead of shipping immediately, per CryptoSlate. Users running the affected node versions remain exposed to the signing issue until the patch lands.",
+      "whyItMatters": "Multisig setups secure large bitcoin holdings for exchanges and custodians, so a signing bug affects custody security and operations across the ecosystem.",
+      "whatToWatch": [
+        "Release timing for the patch that fixes the bug",
+        "Guidance from Bitcoin Core maintainers for affected node operators in the meantime"
+      ],
+      "questions": [
+        "How many nodes or wallets are actually affected?",
+        "Is there a workaround for multisig signing until the patch ships?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin Core 32 can stall multisig signing on older nodes as fix slips to next patch",
+          "url": "https://cryptoslate.com/bitcoin-core-32s-wallet-change-can-break-co-signing-with-older-nodes/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-22T18:00:57.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-22T18:00:57.000Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallet-version-divide.webp",
+      "trendScore": 48,
       "confidence": "low"
     },
     {
       "id": "crypto-c3243c0d33",
       "slug": "solana-bot-turns-12-000-into-1-4-billion-in-volume-flooding-raydium-wi",
       "lane": "crypto",
-      "title": "Solana bot turns $12,000 into $1.4 billion in volume, flooding Raydium with fake liquidity",
-      "summary": "A trading bot on Solana reportedly used just $12,000 in capital to generate $1.4 billion in trading volume on the Raydium decentralized exchange. The pattern points to wash trading or similar volume-inflation tactics rather than genuine liquidity. CryptoSlate flagged the activity on October 22.",
-      "whyItMatters": "Fake volume distorts token rankings and liquidity data that traders and platforms rely on, undermining trust in on-chain metrics.",
+      "title": "Solana bot turns $12,000 into $1.4 billion in volume as fake liquidity floods Raydium",
+      "summary": "A trading bot on Solana reportedly generated $1.4 billion in trading volume from just $12,000 in starting capital, flooding the Raydium decentralized exchange with what CryptoSlate describes as fake liquidity. The pattern points to wash-trading-style volume inflation rather than genuine market demand.",
+      "whyItMatters": "Inflated DEX volume can mislead traders about real liquidity and distort token rankings or incentive programs tied to volume metrics.",
       "whatToWatch": [
-        "Whether Raydium or Solana responds with filters or penalties.",
-        "Whether other DEXs report similar bot activity."
+        "Whether Raydium or the Solana ecosystem takes action against the bot",
+        "Any broader look into wash trading on Solana DEXs"
       ],
       "questions": [
-        "Which tokens or pools were most affected by the fake volume?",
-        "Will exchanges or data providers adjust how they report volume as a result?"
+        "Is this activity illegal or just exploiting incentive mechanics?",
+        "How widespread is similar bot activity on other Solana DEXs?"
       ],
       "sources": [
         {
@@ -119,87 +210,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-22T16:20:56.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/raydium-liquidity-display-gap.webp",
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-48f4e9a93b",
+      "slug": "railway-urges-credential-resets-after-investigator-alleges-371-000-cry",
+      "lane": "crypto",
+      "title": "Railway urges credential resets after investigator alleges $371,000 crypto theft",
+      "summary": "Cloud hosting platform Railway is urging users to reset credentials after an investigator alleged a theft of about $371,000 in crypto tied to the platform, according to CryptoSlate. The exact attack method wasn't detailed beyond the credential-reset guidance.",
+      "whyItMatters": "The incident shows crypto theft increasingly exploits developer infrastructure and hosting platforms, not just exchange hacks.",
+      "whatToWatch": [
+        "Railway's official incident response and findings",
+        "Whether affected users recover funds or face further exposure"
+      ],
+      "questions": [
+        "How were the credentials initially compromised?",
+        "Is this an isolated incident or part of a broader campaign?"
+      ],
+      "sources": [
+        {
+          "title": "Railway urges credential resets as investigator alleges $371,000 crypto theft",
+          "url": "https://cryptoslate.com/railway-credential-resets-crypto-theft-allegation/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-10-22T20:20:13.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-10-22T20:20:13.000Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/railway-crypto-risk-allegation.webp",
       "badge": "Breaking",
-      "trendScore": 51,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-d8cc22db41",
-      "slug": "us-quietly-eases-stablecoin-reserve-rules-banks-warn-of-lending-shift",
-      "lane": "crypto",
-      "title": "US quietly eases stablecoin reserve rules, banks warn of lending shift",
-      "summary": "US regulators have loosened reserve requirements for stablecoins, according to CryptoSlate. Banking industry voices warn the change could push billions of dollars out of traditional lending and into stablecoin reserves. The report did not name the agency or detail the exact new rules.",
-      "whyItMatters": "Reserve rules determine how stablecoin issuers back their tokens, and any shift affects both crypto market stability and banks competing for the same deposits.",
-      "whatToWatch": [
-        "Official confirmation or details from the regulator involved.",
-        "Bank industry responses or lobbying in reaction to the change."
-      ],
-      "questions": [
-        "Which regulator eased the rules, and what exactly changed?",
-        "How much deposit outflow from banks is realistic versus industry warning rhetoric?"
-      ],
-      "sources": [
-        {
-          "title": "US quietly eases stablecoin reserve rules as banks warn billions could shift away from lending",
-          "url": "https://cryptoslate.com/treasury-hails-americas-new-stablecoin-system-as-occ-removes-safeguards-banks-wanted-against-deposit-flight/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-22T10:00:16.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-22T10:00:16.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-bank-conveyor.webp",
-      "badge": "Regulatory",
-      "trendScore": 51,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-fad44b3ed5",
-      "slug": "bitcoin-s-80-000-floor-faces-friday-inflation-test-as-etf-inflows-slow",
-      "lane": "crypto",
-      "title": "Bitcoin's $80,000 floor faces Friday inflation test as ETF inflows slow",
-      "summary": "Bitcoin is holding near an $80,000 support level heading into a Friday inflation data release, per CryptoSlate. Inflows into Bitcoin ETFs have slowed, removing a source of buying pressure that had helped support the price. Traders are watching whether the inflation print pushes Bitcoin below $80,000.",
-      "whyItMatters": "ETF flows have been a key driver of Bitcoin's price in recent cycles, so a slowdown combined with a macro data risk raises the chance of a sharper move.",
-      "whatToWatch": [
-        "Friday's inflation data release and Bitcoin's reaction.",
-        "Whether ETF inflows recover or continue to slow."
-      ],
-      "questions": [
-        "What specific inflation report is due Friday?",
-        "Is the ETF slowdown a short-term pause or a longer trend?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin’s $80,000 floor faces Friday inflation test as ETF inflows lose momentum",
-          "url": "https://cryptoslate.com/bitcoins-80000-floor-faces-friday-inflation-test-as-etf-inflows-lose-momentum/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-22T08:40:20.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-22T08:40:20.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-friday-inflation-test.webp",
-      "trendScore": 50,
+      "trendScore": 44,
       "confidence": "low"
     },
     {
       "id": "crypto-f4d13fa83e",
       "slug": "binance-excludes-disrupted-overnight-data-from-stock-futures-funding-r",
       "lane": "crypto",
-      "title": "Binance excludes disrupted overnight data from stock-futures funding rate",
-      "summary": "Binance is adjusting how it calculates funding rates for its stock-futures products, excluding data from a period of disrupted overnight trading. The move aims to stop the funding rate from being skewed by the disruption. CryptoSlate did not specify what caused the overnight data disruption.",
-      "whyItMatters": "Funding rate calculations affect what traders pay or receive on futures positions, so data problems can directly change trading costs.",
+      "title": "Binance to exclude disrupted overnight data from stock-futures funding calculations",
+      "summary": "Binance is adjusting how it calculates funding rates for its stock-related futures products by excluding data from periods of overnight disruption, per CryptoSlate. The change is meant to stop abnormal or interrupted data feeds from skewing funding rates on these products.",
+      "whyItMatters": "Funding-rate calculations directly affect trader costs and returns on leveraged futures positions, so changes to the methodology matter operationally.",
       "whatToWatch": [
-        "Binance's explanation of what caused the overnight disruption.",
-        "Whether other exchanges offering similar products make the same adjustment."
+        "How Binance defines and detects future data disruptions",
+        "Trader reaction to the revised funding methodology"
       ],
       "questions": [
-        "What caused the overnight data disruption in the first place?",
-        "Will affected traders get any adjustment for funding paid during the disruption?"
+        "What specific disruption prompted this change?",
+        "Will other exchanges offering similar products adopt the same approach?"
       ],
       "sources": [
         {
@@ -211,55 +271,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-22T13:00:21.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-funding-data-review.webp",
-      "trendScore": 44,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-78bbe69192",
-      "slug": "sideswap-reopens-bitcoin-swaps-but-liquid-reserves-stay-locked",
-      "lane": "crypto",
-      "title": "SideSwap reopens Bitcoin swaps, but Liquid reserves stay locked",
-      "summary": "SideSwap, a service built on the Bitcoin-linked Liquid Network, has reopened Bitcoin swaps after a pause, according to CryptoSlate. Reserves on Liquid tied to the service remain locked, so full functionality has not yet returned. The report did not state why swaps were paused or when reserves might unlock.",
-      "whyItMatters": "Liquidity freezes on sidechains like Liquid can signal deeper reserve or solvency issues, which matter to anyone holding assets on that network.",
-      "whatToWatch": [
-        "When or whether Liquid reserves tied to SideSwap unlock.",
-        "Any explanation from SideSwap on the original pause."
-      ],
-      "questions": [
-        "Why were swaps paused and reserves locked in the first place?",
-        "Are user funds at risk, or is this a technical delay?"
-      ],
-      "sources": [
-        {
-          "title": "SideSwap reopens Bitcoin swaps while Liquid reserves stay locked",
-          "url": "https://cryptoslate.com/sideswap-reopens-bitcoin-swaps-while-liquid-reserves-stay-locked/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-22T07:10:36.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-22T07:10:36.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sideswap-holder-restricted-exit.webp",
-      "trendScore": 44,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
       "id": "crypto-6c46ea6547",
       "slug": "qubic-requires-ownership-checks-before-releasing-funds-from-vulnerable",
       "lane": "crypto",
-      "title": "Qubic requires ownership checks before releasing funds from vulnerable wallets",
-      "summary": "Qubic has set rules for recovering funds from wallets flagged as vulnerable, requiring proof of ownership even when the funds were never stolen. CryptoSlate reported the policy without detailing the vulnerability itself or how many wallets are affected. The requirement adds a verification step before any funds move.",
-      "whyItMatters": "How a project handles at-risk but unstolen funds signals its approach to security and user protection, which matters for trust across the ecosystem.",
+      "title": "Qubic's recovery rules require ownership checks even for unstolen funds in vulnerable wallets",
+      "summary": "Qubic has set recovery rules that require ownership verification even for funds that weren't stolen but sit in wallets identified as vulnerable, according to CryptoSlate. The policy applies broadly to at-risk wallets rather than only to confirmed theft cases.",
+      "whyItMatters": "How a protocol handles recovery for vulnerable-but-unstolen funds sets a precedent for balancing security intervention against user custody rights.",
       "whatToWatch": [
-        "Details on the wallet vulnerability that prompted the rules.",
-        "How many wallets or how much value is affected."
+        "Response from wallet holders subject to the ownership checks",
+        "Whether other chains adopt similar vulnerability-based recovery policies"
       ],
       "questions": [
-        "What makes these wallets vulnerable in the first place?",
-        "What proof of ownership does Qubic actually require?"
+        "What makes a wallet count as \"vulnerable\" under Qubic's criteria?",
+        "Could ownership checks be used to freeze funds without clear evidence of theft?"
       ],
       "sources": [
         {
@@ -271,40 +301,9 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-10-22T12:00:24.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
+      "updatedAt": "2026-10-22T23:22:30.117Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/qubic-ownership-review-barrier.webp",
-      "trendScore": 43,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-8ddb794752",
-      "slug": "occ-waiver-rule-puts-active-stablecoin-issuers-on-notice",
-      "lane": "crypto",
-      "title": "OCC waiver rule puts active stablecoin issuers on notice",
-      "summary": "The Office of the Comptroller of the Currency has introduced a waiver rule affecting stablecoin issuers currently operating, according to CryptoSlate. The report frames the rule as a warning to issuers rather than an outright ban. Specifics of the waiver's requirements were not detailed.",
-      "whyItMatters": "OCC rules shape which stablecoin issuers can operate under federal oversight, directly affecting market structure for dollar-pegged tokens.",
-      "whatToWatch": [
-        "Full text or details of the OCC waiver rule.",
-        "Which issuers are named or affected first."
-      ],
-      "questions": [
-        "What exactly does the waiver require issuers to do?",
-        "Which issuers are currently out of compliance?"
-      ],
-      "sources": [
-        {
-          "title": "OCC waiver rule puts active stablecoin issuers on notice",
-          "url": "https://cryptoslate.com/occ-waiver-rule-puts-active-stablecoin-issuers-on-notice/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-10-22T03:20:53.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-10-22T03:20:53.000Z",
-      "updatedAt": "2026-10-22T17:05:54.691Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-regulatory-deadline.webp",
-      "badge": "Regulatory",
-      "trendScore": 41,
+      "trendScore": 38,
       "confidence": "low"
     }
   ]

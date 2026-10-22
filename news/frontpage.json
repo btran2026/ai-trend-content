@@ -1,22 +1,53 @@
 {
-  "generatedAt": "2026-10-22T17:05:54.691Z",
-  "contentVersion": 170,
+  "generatedAt": "2026-10-22T23:22:30.117Z",
+  "contentVersion": 171,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-ce04a45820",
+        "slug": "bitcoin-etfs-sold-through-7-of-8-crashes-even-as-wall-street-tames-btc",
+        "lane": "crypto",
+        "title": "Bitcoin ETFs sold through 7 of 8 crashes even as Wall Street tames BTC selloffs",
+        "summary": "An analysis found spot bitcoin ETFs saw net outflows during seven of the last eight major bitcoin price crashes, meaning ETF holders kept selling under stress rather than holding firm. At the same time, growing Wall Street participation appears to be making BTC selloffs less violent overall. The findings cut against the idea that ETF adoption alone stabilizes price during downturns.",
+        "whyItMatters": "ETF flow behavior during crashes is a key test of whether institutional adoption reduces or amplifies bitcoin's volatility.",
+        "whatToWatch": [
+          "How ETF flows behave in the next major bitcoin drawdown",
+          "Whether outflow patterns shift as the ETF holder base matures"
+        ],
+        "questions": [
+          "What was different about the one crash where ETFs didn't sell?",
+          "Are the outflows concentrated among a few large holders or broad-based?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin ETFs sold through 7 of 8 crashes even as Wall Street makes BTC selloffs less violent",
+            "url": "https://cryptoslate.com/bitcoin-etfs-sold-through-7-of-8-crashes-even-as-wall-street-makes-btc-selloffs-less-violent/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-22T22:30:38.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T22:30:38.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallstreet-outflows.webp",
+        "badge": "Analysis",
+        "trendScore": 66,
+        "confidence": "low"
+      },
       {
         "id": "crypto-b7e8c0b3f7",
         "slug": "robinhood-earns-51-million-in-blockchain-fees-pays-just-69-000-to-sett",
         "lane": "crypto",
-        "title": "Robinhood earns $51 million in blockchain fees, pays just $69,000 to settle on Ethereum",
-        "summary": "Robinhood collected $51 million in fees tied to its blockchain-based products, according to CryptoSlate. Actual Ethereum network settlement costs for that activity came to about $69,000. The gap shows a wide margin between what Robinhood charges and the underlying cost of settling on-chain.",
-        "whyItMatters": "The gap shows how much profit brokerages can extract from tokenized products, a factor worth watching as crypto-linked trading grows.",
+        "title": "Robinhood earns $51 million in blockchain fees while Ethereum settlement costs just $69,000",
+        "summary": "Robinhood generated roughly $51 million in blockchain-related fees, while the underlying Ethereum network settlement costs for that activity totaled only about $69,000, according to CryptoSlate. The gap shows most of the fee revenue around crypto trading goes to intermediaries, not the base-layer network processing the transactions.",
+        "whyItMatters": "The disparity shows where value capture actually happens in crypto trading infrastructure, relevant to anyone assessing fee economics across exchanges and layer-1 networks.",
         "whatToWatch": [
-          "Whether Robinhood discloses more detail on its blockchain fee structure.",
-          "Whether competitors adjust pricing on similar tokenized products."
+          "Whether other brokerages show a similar gap between fees charged and on-chain costs",
+          "Any response from Robinhood on its fee structure"
         ],
         "questions": [
-          "What specific products generated the $51 million in fees?",
-          "Does Robinhood plan to pass more of the savings to customers?"
+          "What specific services make up the $51 million in fees?",
+          "Does this reflect Robinhood's product mix or a broader industry pattern?"
         ],
         "sources": [
           {
@@ -28,26 +59,25 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-22T15:00:14.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/layer-two-fee-divide.webp",
-        "badge": "Analysis",
-        "trendScore": 60,
+        "trendScore": 55,
         "confidence": "low"
       },
       {
         "id": "crypto-132a867fac",
         "slug": "midnight-privacy-vault-demo-relies-on-outside-signers-to-release-ether",
         "lane": "crypto",
-        "title": "Midnight privacy-vault demo relies on outside signers to release Ethereum tokens",
-        "summary": "A demonstration of a privacy vault on the Midnight network shows that releasing Ethereum tokens from the vault needs sign-off from outside signers, not just the vault owner. This suggests a multisig-style control layer sits on top of Midnight's privacy features. The report did not say who the outside signers are or how many are required.",
-        "whyItMatters": "Privacy tools that still depend on external signers raise questions about how self-custodial these systems really are.",
+        "title": "Midnight privacy-vault demo needs outside signers to release Ethereum tokens",
+        "summary": "A demonstration of a privacy vault on the Midnight network reportedly needs external signers to approve the release of Ethereum tokens, rather than relying only on the vault's own cryptographic design. CryptoSlate's report flags this as a trust dependency built into the current demo.",
+        "whyItMatters": "A privacy tool that depends on outside signers raises questions about how decentralized and trust-minimized it actually is.",
         "whatToWatch": [
-          "Whether Midnight publishes more detail on the signer setup.",
-          "Whether the design moves from demo to production use."
+          "Whether Midnight removes the signer dependency before a wider release",
+          "Community scrutiny of the vault's security model"
         ],
         "questions": [
-          "Who controls the outside signers?",
-          "Does this reduce the privacy or custody guarantees Midnight promises?"
+          "Who are the outside signers and how are they chosen?",
+          "Is this a demo-only limitation or part of the permanent design?"
         ],
         "sources": [
           {
@@ -59,55 +89,116 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-22T14:00:42.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/midnight-shielded-claim-redemption.webp",
-        "trendScore": 59,
+        "trendScore": 54,
         "confidence": "low"
       },
       {
-        "id": "crypto-40cf390793",
-        "slug": "solana-pushes-for-faster-finality-as-wall-street-cuts-settlement-cash-",
+        "id": "crypto-d303a15d30",
+        "slug": "occ-drops-proposed-affiliate-rewards-presumption-but-keeps-stablecoin-",
         "lane": "crypto",
-        "title": "Solana pushes for faster finality as Wall Street cuts settlement cash needs",
-        "summary": "Solana is working toward faster transaction finality on its network. CryptoSlate linked the push to a separate trend of traditional finance firms reducing the cash they hold to cover settlement. The report gave few specifics on Solana's technical timeline.",
-        "whyItMatters": "Faster finality makes Solana more attractive for institutional use cases like tokenized markets, where settlement speed affects how much capital firms tie up.",
+        "title": "OCC drops proposed affiliate-rewards presumption but keeps stablecoin yield ban",
+        "summary": "The Office of the Comptroller of the Currency withdrew a proposed presumption on affiliate rewards programs, but left its existing ban on stablecoin yield in place, per CryptoSlate. The move narrows one part of the regulator's proposal while keeping the restriction crypto firms have objected to.",
+        "whyItMatters": "The stablecoin yield ban directly affects whether issuers and partner banks can offer interest-bearing stablecoin products in the US.",
         "whatToWatch": [
-          "Any announced timeline for Solana's finality upgrade.",
-          "Signs institutional players cite Solana speed in adoption decisions."
+          "Industry reaction to the remaining yield ban",
+          "Any further OCC rulemaking on bank-crypto partnerships"
         ],
         "questions": [
-          "What specific technical change is driving the faster finality claim?",
-          "How does Solana's finality compare with competing chains after the change?"
+          "Why did the OCC drop the affiliate-rewards presumption specifically?",
+          "Could the yield ban still be revised or challenged?"
         ],
         "sources": [
           {
-            "title": "Solana targets faster finality, while Wall Street cuts the cash that must move",
-            "url": "https://cryptoslate.com/solana-targets-faster-finality-while-wall-street-cuts-the-cash-that-must-move/",
+            "title": "OCC drops proposed affiliate rewards presumption, but stablecoin yield ban stays",
+            "url": "https://cryptoslate.com/occ-drops-proposed-affiliate-rewards-presumption-but-stablecoin-yield-ban-stays/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-22T11:00:54.000Z"
+            "publishedAt": "2026-10-22T21:20:12.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T11:00:54.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-netting-barrier.webp",
-        "trendScore": 52,
+        "publishedAt": "2026-10-22T21:20:12.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/occ-stablecoin-rulebook-revision.webp",
+        "badge": "Regulatory",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-3eb18a4baf",
+        "slug": "standard-chartered-brings-crypto-custody-in-house-amid-wall-street-inf",
+        "lane": "crypto",
+        "title": "Standard Chartered brings crypto custody in-house amid Wall Street infrastructure race",
+        "summary": "Standard Chartered is moving to bring its crypto custody operations in-house, according to CryptoSlate, as traditional banks compete to build out digital-asset infrastructure. The shift points toward direct control of client crypto holdings rather than reliance on third-party custodians.",
+        "whyItMatters": "A major bank internalizing crypto custody signals institutional adoption is moving from pilot projects into core infrastructure.",
+        "whatToWatch": [
+          "Timeline for Standard Chartered's in-house custody rollout",
+          "Whether other banks announce similar moves"
+        ],
+        "questions": [
+          "Which third-party custodian, if any, does this replace?",
+          "Which client segments will the in-house custody serve first?"
+        ],
+        "sources": [
+          {
+            "title": "Standard Chartered moves to bring crypto custody in-house as Wall Street’s digital asset infrastructure race accelerates",
+            "url": "https://cryptoslate.com/standard-chartered-moves-to-bring-crypto-custody-in-house-as-wall-streets-digital-asset-infrastructure-race-accelerates/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-22T19:20:56.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T19:20:56.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/zodia-custody-transaction-split.webp",
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-4876b64a56",
+        "slug": "bitcoin-core-32-bug-can-stall-multisig-signing-on-older-nodes-fix-dela",
+        "lane": "crypto",
+        "title": "Bitcoin Core 32 bug can stall multisig signing on older nodes; fix delayed",
+        "summary": "A bug in Bitcoin Core version 32 can stall multisig transaction signing on older nodes, and the fix has slipped to a future patch instead of shipping immediately, per CryptoSlate. Users running the affected node versions remain exposed to the signing issue until the patch lands.",
+        "whyItMatters": "Multisig setups secure large bitcoin holdings for exchanges and custodians, so a signing bug affects custody security and operations across the ecosystem.",
+        "whatToWatch": [
+          "Release timing for the patch that fixes the bug",
+          "Guidance from Bitcoin Core maintainers for affected node operators in the meantime"
+        ],
+        "questions": [
+          "How many nodes or wallets are actually affected?",
+          "Is there a workaround for multisig signing until the patch ships?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin Core 32 can stall multisig signing on older nodes as fix slips to next patch",
+            "url": "https://cryptoslate.com/bitcoin-core-32s-wallet-change-can-break-co-signing-with-older-nodes/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-22T18:00:57.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T18:00:57.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-wallet-version-divide.webp",
+        "trendScore": 48,
         "confidence": "low"
       },
       {
         "id": "crypto-c3243c0d33",
         "slug": "solana-bot-turns-12-000-into-1-4-billion-in-volume-flooding-raydium-wi",
         "lane": "crypto",
-        "title": "Solana bot turns $12,000 into $1.4 billion in volume, flooding Raydium with fake liquidity",
-        "summary": "A trading bot on Solana reportedly used just $12,000 in capital to generate $1.4 billion in trading volume on the Raydium decentralized exchange. The pattern points to wash trading or similar volume-inflation tactics rather than genuine liquidity. CryptoSlate flagged the activity on October 22.",
-        "whyItMatters": "Fake volume distorts token rankings and liquidity data that traders and platforms rely on, undermining trust in on-chain metrics.",
+        "title": "Solana bot turns $12,000 into $1.4 billion in volume as fake liquidity floods Raydium",
+        "summary": "A trading bot on Solana reportedly generated $1.4 billion in trading volume from just $12,000 in starting capital, flooding the Raydium decentralized exchange with what CryptoSlate describes as fake liquidity. The pattern points to wash-trading-style volume inflation rather than genuine market demand.",
+        "whyItMatters": "Inflated DEX volume can mislead traders about real liquidity and distort token rankings or incentive programs tied to volume metrics.",
         "whatToWatch": [
-          "Whether Raydium or Solana responds with filters or penalties.",
-          "Whether other DEXs report similar bot activity."
+          "Whether Raydium or the Solana ecosystem takes action against the bot",
+          "Any broader look into wash trading on Solana DEXs"
         ],
         "questions": [
-          "Which tokens or pools were most affected by the fake volume?",
-          "Will exchanges or data providers adjust how they report volume as a result?"
+          "Is this activity illegal or just exploiting incentive mechanics?",
+          "How widespread is similar bot activity on other Solana DEXs?"
         ],
         "sources": [
           {
@@ -119,87 +210,56 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-22T16:20:56.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/raydium-liquidity-display-gap.webp",
+        "trendScore": 46,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-48f4e9a93b",
+        "slug": "railway-urges-credential-resets-after-investigator-alleges-371-000-cry",
+        "lane": "crypto",
+        "title": "Railway urges credential resets after investigator alleges $371,000 crypto theft",
+        "summary": "Cloud hosting platform Railway is urging users to reset credentials after an investigator alleged a theft of about $371,000 in crypto tied to the platform, according to CryptoSlate. The exact attack method wasn't detailed beyond the credential-reset guidance.",
+        "whyItMatters": "The incident shows crypto theft increasingly exploits developer infrastructure and hosting platforms, not just exchange hacks.",
+        "whatToWatch": [
+          "Railway's official incident response and findings",
+          "Whether affected users recover funds or face further exposure"
+        ],
+        "questions": [
+          "How were the credentials initially compromised?",
+          "Is this an isolated incident or part of a broader campaign?"
+        ],
+        "sources": [
+          {
+            "title": "Railway urges credential resets as investigator alleges $371,000 crypto theft",
+            "url": "https://cryptoslate.com/railway-credential-resets-crypto-theft-allegation/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-22T20:20:13.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-22T20:20:13.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/railway-crypto-risk-allegation.webp",
         "badge": "Breaking",
-        "trendScore": 51,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-d8cc22db41",
-        "slug": "us-quietly-eases-stablecoin-reserve-rules-banks-warn-of-lending-shift",
-        "lane": "crypto",
-        "title": "US quietly eases stablecoin reserve rules, banks warn of lending shift",
-        "summary": "US regulators have loosened reserve requirements for stablecoins, according to CryptoSlate. Banking industry voices warn the change could push billions of dollars out of traditional lending and into stablecoin reserves. The report did not name the agency or detail the exact new rules.",
-        "whyItMatters": "Reserve rules determine how stablecoin issuers back their tokens, and any shift affects both crypto market stability and banks competing for the same deposits.",
-        "whatToWatch": [
-          "Official confirmation or details from the regulator involved.",
-          "Bank industry responses or lobbying in reaction to the change."
-        ],
-        "questions": [
-          "Which regulator eased the rules, and what exactly changed?",
-          "How much deposit outflow from banks is realistic versus industry warning rhetoric?"
-        ],
-        "sources": [
-          {
-            "title": "US quietly eases stablecoin reserve rules as banks warn billions could shift away from lending",
-            "url": "https://cryptoslate.com/treasury-hails-americas-new-stablecoin-system-as-occ-removes-safeguards-banks-wanted-against-deposit-flight/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-22T10:00:16.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T10:00:16.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-bank-conveyor.webp",
-        "badge": "Regulatory",
-        "trendScore": 51,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-fad44b3ed5",
-        "slug": "bitcoin-s-80-000-floor-faces-friday-inflation-test-as-etf-inflows-slow",
-        "lane": "crypto",
-        "title": "Bitcoin's $80,000 floor faces Friday inflation test as ETF inflows slow",
-        "summary": "Bitcoin is holding near an $80,000 support level heading into a Friday inflation data release, per CryptoSlate. Inflows into Bitcoin ETFs have slowed, removing a source of buying pressure that had helped support the price. Traders are watching whether the inflation print pushes Bitcoin below $80,000.",
-        "whyItMatters": "ETF flows have been a key driver of Bitcoin's price in recent cycles, so a slowdown combined with a macro data risk raises the chance of a sharper move.",
-        "whatToWatch": [
-          "Friday's inflation data release and Bitcoin's reaction.",
-          "Whether ETF inflows recover or continue to slow."
-        ],
-        "questions": [
-          "What specific inflation report is due Friday?",
-          "Is the ETF slowdown a short-term pause or a longer trend?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin’s $80,000 floor faces Friday inflation test as ETF inflows lose momentum",
-            "url": "https://cryptoslate.com/bitcoins-80000-floor-faces-friday-inflation-test-as-etf-inflows-lose-momentum/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-22T08:40:20.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T08:40:20.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-friday-inflation-test.webp",
-        "trendScore": 50,
+        "trendScore": 44,
         "confidence": "low"
       },
       {
         "id": "crypto-f4d13fa83e",
         "slug": "binance-excludes-disrupted-overnight-data-from-stock-futures-funding-r",
         "lane": "crypto",
-        "title": "Binance excludes disrupted overnight data from stock-futures funding rate",
-        "summary": "Binance is adjusting how it calculates funding rates for its stock-futures products, excluding data from a period of disrupted overnight trading. The move aims to stop the funding rate from being skewed by the disruption. CryptoSlate did not specify what caused the overnight data disruption.",
-        "whyItMatters": "Funding rate calculations affect what traders pay or receive on futures positions, so data problems can directly change trading costs.",
+        "title": "Binance to exclude disrupted overnight data from stock-futures funding calculations",
+        "summary": "Binance is adjusting how it calculates funding rates for its stock-related futures products by excluding data from periods of overnight disruption, per CryptoSlate. The change is meant to stop abnormal or interrupted data feeds from skewing funding rates on these products.",
+        "whyItMatters": "Funding-rate calculations directly affect trader costs and returns on leveraged futures positions, so changes to the methodology matter operationally.",
         "whatToWatch": [
-          "Binance's explanation of what caused the overnight disruption.",
-          "Whether other exchanges offering similar products make the same adjustment."
+          "How Binance defines and detects future data disruptions",
+          "Trader reaction to the revised funding methodology"
         ],
         "questions": [
-          "What caused the overnight data disruption in the first place?",
-          "Will affected traders get any adjustment for funding paid during the disruption?"
+          "What specific disruption prompted this change?",
+          "Will other exchanges offering similar products adopt the same approach?"
         ],
         "sources": [
           {
@@ -211,55 +271,25 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-22T13:00:21.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/binance-funding-data-review.webp",
-        "trendScore": 44,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-78bbe69192",
-        "slug": "sideswap-reopens-bitcoin-swaps-but-liquid-reserves-stay-locked",
-        "lane": "crypto",
-        "title": "SideSwap reopens Bitcoin swaps, but Liquid reserves stay locked",
-        "summary": "SideSwap, a service built on the Bitcoin-linked Liquid Network, has reopened Bitcoin swaps after a pause, according to CryptoSlate. Reserves on Liquid tied to the service remain locked, so full functionality has not yet returned. The report did not state why swaps were paused or when reserves might unlock.",
-        "whyItMatters": "Liquidity freezes on sidechains like Liquid can signal deeper reserve or solvency issues, which matter to anyone holding assets on that network.",
-        "whatToWatch": [
-          "When or whether Liquid reserves tied to SideSwap unlock.",
-          "Any explanation from SideSwap on the original pause."
-        ],
-        "questions": [
-          "Why were swaps paused and reserves locked in the first place?",
-          "Are user funds at risk, or is this a technical delay?"
-        ],
-        "sources": [
-          {
-            "title": "SideSwap reopens Bitcoin swaps while Liquid reserves stay locked",
-            "url": "https://cryptoslate.com/sideswap-reopens-bitcoin-swaps-while-liquid-reserves-stay-locked/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-22T07:10:36.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T07:10:36.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sideswap-holder-restricted-exit.webp",
-        "trendScore": 44,
+        "trendScore": 38,
         "confidence": "low"
       },
       {
         "id": "crypto-6c46ea6547",
         "slug": "qubic-requires-ownership-checks-before-releasing-funds-from-vulnerable",
         "lane": "crypto",
-        "title": "Qubic requires ownership checks before releasing funds from vulnerable wallets",
-        "summary": "Qubic has set rules for recovering funds from wallets flagged as vulnerable, requiring proof of ownership even when the funds were never stolen. CryptoSlate reported the policy without detailing the vulnerability itself or how many wallets are affected. The requirement adds a verification step before any funds move.",
-        "whyItMatters": "How a project handles at-risk but unstolen funds signals its approach to security and user protection, which matters for trust across the ecosystem.",
+        "title": "Qubic's recovery rules require ownership checks even for unstolen funds in vulnerable wallets",
+        "summary": "Qubic has set recovery rules that require ownership verification even for funds that weren't stolen but sit in wallets identified as vulnerable, according to CryptoSlate. The policy applies broadly to at-risk wallets rather than only to confirmed theft cases.",
+        "whyItMatters": "How a protocol handles recovery for vulnerable-but-unstolen funds sets a precedent for balancing security intervention against user custody rights.",
         "whatToWatch": [
-          "Details on the wallet vulnerability that prompted the rules.",
-          "How many wallets or how much value is affected."
+          "Response from wallet holders subject to the ownership checks",
+          "Whether other chains adopt similar vulnerability-based recovery policies"
         ],
         "questions": [
-          "What makes these wallets vulnerable in the first place?",
-          "What proof of ownership does Qubic actually require?"
+          "What makes a wallet count as \"vulnerable\" under Qubic's criteria?",
+          "Could ownership checks be used to freeze funds without clear evidence of theft?"
         ],
         "sources": [
           {
@@ -271,335 +301,261 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-22T12:00:24.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/qubic-ownership-review-barrier.webp",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-8ddb794752",
-        "slug": "occ-waiver-rule-puts-active-stablecoin-issuers-on-notice",
-        "lane": "crypto",
-        "title": "OCC waiver rule puts active stablecoin issuers on notice",
-        "summary": "The Office of the Comptroller of the Currency has introduced a waiver rule affecting stablecoin issuers currently operating, according to CryptoSlate. The report frames the rule as a warning to issuers rather than an outright ban. Specifics of the waiver's requirements were not detailed.",
-        "whyItMatters": "OCC rules shape which stablecoin issuers can operate under federal oversight, directly affecting market structure for dollar-pegged tokens.",
-        "whatToWatch": [
-          "Full text or details of the OCC waiver rule.",
-          "Which issuers are named or affected first."
-        ],
-        "questions": [
-          "What exactly does the waiver require issuers to do?",
-          "Which issuers are currently out of compliance?"
-        ],
-        "sources": [
-          {
-            "title": "OCC waiver rule puts active stablecoin issuers on notice",
-            "url": "https://cryptoslate.com/occ-waiver-rule-puts-active-stablecoin-issuers-on-notice/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-22T03:20:53.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T03:20:53.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-regulatory-deadline.webp",
-        "badge": "Regulatory",
-        "trendScore": 41,
+        "trendScore": 38,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-d773991f4a",
-        "slug": "european-stocks-drop-as-french-yields-rise-and-tech-earnings-disappoin",
+        "id": "markets-16cd6d3850",
+        "slug": "stocks-drop-as-meta-fuels-ai-worries-treasuries-gain",
         "lane": "markets",
-        "title": "European stocks drop as French yields rise and tech earnings disappoint",
-        "summary": "European equities fell as French government bond yields climbed and mixed earnings from tech companies added pressure. The combination weighed on sentiment across regional markets.",
-        "whyItMatters": "Rising French yields point to fresh fiscal or political strain in the eurozone, and soft tech earnings raise doubts about the sector's growth story.",
+        "title": "Stocks drop as Meta fuels AI worries, Treasuries gain",
+        "summary": "Stocks fell after Meta raised new worries about AI spending. Treasuries gained as investors moved to safer assets. The report does not give specific index or yield moves.",
+        "whyItMatters": "AI spending worries can hit big tech valuations and shift risk appetite across the market.",
         "whatToWatch": [
-          "Further moves in French bond yields",
-          "Additional European tech earnings reports"
+          "Comments from other big tech firms on AI spending plans",
+          "Treasury yield moves in the days ahead"
         ],
         "questions": [
-          "What is driving the rise in French yields?",
-          "Which tech companies posted the weak results?"
+          "What exactly did Meta say or report that raised AI worries?",
+          "Did the drop spread beyond tech stocks?"
         ],
         "sources": [
           {
-            "title": "European stocks drop as French yields, mixed tech earnings weigh",
-            "url": "https://www.investing.com/news/stock-market-news/european-stocks-buckle-as-french-yields-cross-5-barrier-4964797",
+            "title": "Stocks drop as Meta fans AI worries, Treasuries gain",
+            "url": "https://www.investing.com/news/economy-news/asian-markets-dip-as-investors-weigh-tech-earnings-gulf-tensions-4964558",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:32:35.000Z"
+            "publishedAt": "2026-10-23T06:00:27.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:32:35.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEI1R0AR_L.jpg",
+        "publishedAt": "2026-10-23T06:00:27.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L04T_L.jpg",
         "badge": "Markets",
-        "trendScore": 67,
+        "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-dd118af432",
-        "slug": "freedom-broker-reiterates-buy-on-meta-cites-ad-growth",
+        "id": "markets-eb2861b911",
+        "slug": "provident-financial-authorizes-5-buyback-declares-0-14-dividend",
         "lane": "markets",
-        "title": "Freedom Broker reiterates Buy on Meta, cites ad growth",
-        "summary": "Freedom Broker reaffirmed its Buy rating on Meta stock, pointing to growth in the company's advertising business as the key reason.",
-        "whyItMatters": "A reiterated Buy from an analyst citing ad growth signals continued confidence in Meta's core revenue engine.",
+        "title": "Provident Financial authorizes 5% buyback, declares $0.14 dividend",
+        "summary": "Provident Financial's board approved a stock buyback program covering 5% of its shares. The company also declared a quarterly dividend of $0.14 per share. Both moves were announced the same day.",
+        "whyItMatters": "A buyback plus a steady dividend signals how management wants to return capital to shareholders.",
         "whatToWatch": [
-          "Meta's next earnings report for ad revenue trends"
+          "Start date and pace of the buyback",
+          "The next quarterly dividend payment date"
         ],
         "questions": [
-          "What price target does Freedom Broker attach to the rating?"
+          "What is the buyback worth in dollar terms?",
+          "Why did the board act on both moves now?"
         ],
         "sources": [
           {
-            "title": "Freedom Broker reiterates Buy on Meta stock, cites ad growth",
-            "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-reiterates-buy-on-meta-stock-cites-ad-growth-93CH-4967026",
+            "title": "Provident Financial authorizes 5% stock buyback program",
+            "url": "https://www.investing.com/news/company-news/provident-financial-authorizes-5-stock-buyback-program-93CH-4967794",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:34:45.000Z"
+            "publishedAt": "2026-10-23T06:04:26.000Z"
+          },
+          {
+            "title": "Provident Financial declares $0.14 quarterly dividend",
+            "url": "https://www.investing.com/news/company-news/provident-financial-declares-014-quarterly-dividend-93CH-4967785",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-23T05:52:28.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:34:45.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEJ65074_L.jpg",
-        "badge": "Analyst Rating",
+        "publishedAt": "2026-10-23T05:52:28.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM4P18K_1200_L.jpg",
+        "badge": "Capital Return",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-09f1a6743e",
-        "slug": "globe-life-misses-q3-2026-eps-estimate-shares-fall",
+        "id": "markets-92a8337a88",
+        "slug": "apple-svp-jennifer-newstead-sells-814-748-in-aapl-stock",
         "lane": "markets",
-        "title": "Globe Life misses Q3 2026 EPS estimate, shares fall",
-        "summary": "Globe Life reported third-quarter 2026 earnings per share below analyst estimates. Shares fell following the earnings call.",
-        "whyItMatters": "An EPS miss at Globe Life signals pressure on the insurer's profitability and may weigh on investor confidence in the stock.",
+        "title": "Apple SVP Jennifer Newstead sells $814,748 in AAPL stock",
+        "summary": "Jennifer Newstead, an Apple senior vice president, sold about $814,748 worth of Apple shares. The sale appears in a regulatory filing. No reason for the sale is given.",
+        "whyItMatters": "Insider sales at Apple draw attention, though many follow routine, pre-set trading plans.",
         "whatToWatch": [
-          "Management commentary on the earnings call transcript for guidance"
+          "Future filings from other Apple executives"
         ],
         "questions": [
-          "What specifically drove the EPS miss?"
+          "Was this sale made under a pre-set trading plan?",
+          "How much Apple stock does Newstead still hold?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Globe Life misses Q3 2026 EPS view as shares fall",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-globe-life-misses-q3-2026-eps-view-as-shares-fall-93CH-4967022",
+            "title": "Apple SVP Jennifer Newstead sells $814,748 in AAPL stock",
+            "url": "https://www.investing.com/news/insider-trading-news/apple-svp-jennifer-newstead-sells-814748-in-aapl-stock-93CH-4967792",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:31:23.000Z"
+            "publishedAt": "2026-10-23T06:01:11.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:31:23.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6U08A_M.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-10-23T06:01:11.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEL3M0VC_L.jpg",
+        "badge": "Insider Activity",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-d21a69a8e0",
-        "slug": "firstservice-tops-q3-2026-estimates-shares-jump",
+        "id": "markets-b1d053e784",
+        "slug": "glenbrook-capital-management-buys-74-838-of-senestech-stock",
         "lane": "markets",
-        "title": "FirstService tops Q3 2026 estimates, shares jump",
-        "summary": "FirstService reported third-quarter 2026 results that beat analyst estimates. Shares rose following the earnings call.",
-        "whyItMatters": "A beat-and-rally at FirstService suggests resilient demand in its property services business, a reassuring sign for investors watching the sector.",
+        "title": "Glenbrook Capital Management buys $74,838 of SenesTech stock",
+        "summary": "Glenbrook Capital Management bought about $74,838 of SenesTech stock. The purchase appears in a regulatory filing. SenesTech is a small-cap company.",
+        "whyItMatters": "Institutional buying in a small-cap stock can signal investor confidence in the company.",
         "whatToWatch": [
-          "Full-year guidance updates from the earnings call"
+          "Further filings from Glenbrook on SenesTech"
         ],
         "questions": [
-          "Which business segment drove the outperformance?"
+          "What stake does Glenbrook now hold in SenesTech?",
+          "What is driving Glenbrook's interest in the stock?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: FirstService tops Q3 2026 estimates as shares jump",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-firstservice-tops-q3-2026-estimates-as-shares-jump-93CH-4967020",
+            "title": "Glenbrook Capital Management purchases $74,838 of SenesTech stock",
+            "url": "https://www.investing.com/news/insider-trading-news/glenbrook-capital-management-purchases-74838-of-senestech-stock-93CH-4967791",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:31:03.000Z"
+            "publishedAt": "2026-10-23T06:01:09.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:31:03.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-10-23T06:01:09.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
+        "badge": "Insider Activity",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-e809f5f9bf",
-        "slug": "saudi-aramco-tells-staff-to-evacuate-dhahran-amid-houthi-clashes",
+        "id": "markets-2c2124e482",
+        "slug": "tredegar-director-john-gottwald-sells-267-530-in-company-stock",
         "lane": "markets",
-        "title": "Saudi Aramco tells staff to evacuate Dhahran amid Houthi clashes",
-        "summary": "Saudi Aramco told staff to evacuate its Dhahran site as clashes between Saudi forces and Yemen's Houthis continued nearby. The order points to an escalation in regional security risk.",
-        "whyItMatters": "Aramco is the world's largest oil exporter, so any threat to its facilities can move global oil supply expectations and prices.",
+        "title": "Tredegar director John Gottwald sells $267,530 in company stock",
+        "summary": "John Gottwald, a director at Tredegar, sold about $267,530 of company stock. The sale appears in a regulatory filing. No reason for the sale is given.",
+        "whyItMatters": "Director sales can draw scrutiny from investors watching for shifts in insider sentiment.",
         "whatToWatch": [
-          "Further Aramco safety or operational updates",
-          "Developments in the Saudi-Houthi conflict"
+          "Further filings from Tredegar insiders"
         ],
         "questions": [
-          "Has the evacuation affected Aramco's output or exports?"
+          "Was this sale part of a planned schedule?",
+          "How much Tredegar stock does Gottwald still hold?"
         ],
         "sources": [
           {
-            "title": "Saudi Aramco tells staff to evacuate Dhahran as clashes with Yemen’s Houthis continue",
-            "url": "https://www.investing.com/news/commodities-news/saudi-aramco-tells-staff-to-evacuate-dhahran-as-clashes-with-yemens-houthis-continue-4965766",
+            "title": "Tredegar director John Gottwald sells $267,530 in company stock",
+            "url": "https://www.investing.com/news/insider-trading-news/tredegar-director-john-gottwald-sells-267530-in-company-stock-93CH-4967782",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:37:15.000Z"
+            "publishedAt": "2026-10-23T05:45:56.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:37:15.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L17E_L.jpg",
-        "badge": "Breaking",
+        "publishedAt": "2026-10-23T05:45:56.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0WG_1200_L.jpg",
+        "badge": "Insider Activity",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-0c39c02bb1",
+        "slug": "block-director-anthony-eisen-sells-1-41-million-in-block-shares",
+        "lane": "markets",
+        "title": "Block director Anthony Eisen sells $1.41 million in Block shares",
+        "summary": "Anthony Eisen, a director at Block, sold about $1.41 million worth of Block stock, ticker XYZ. The sale appears in a regulatory filing. No reason for the sale is given.",
+        "whyItMatters": "A large insider sale at Block may draw investor attention to the stock.",
+        "whatToWatch": [
+          "Further insider filings at Block",
+          "Block's next earnings report"
+        ],
+        "questions": [
+          "Was this sale discretionary or under a pre-set plan?",
+          "How much Block stock does Eisen still hold?"
+        ],
+        "sources": [
+          {
+            "title": "Block director Anthony Eisen sells $1.41m in Block (XYZ) shares",
+            "url": "https://www.investing.com/news/insider-trading-news/block-director-anthony-eisen-sells-141m-in-block-xyz-shares-93CH-4967790",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-23T06:01:07.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-23T06:01:07.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1AG_1200_L.jpg",
+        "badge": "Insider Activity",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-b4599326ea",
-        "slug": "us-airlines-struggle-to-offset-soaring-fuel-costs-with-fare-hikes",
+        "id": "markets-2ce851012e",
+        "slug": "newmont-posts-record-cash-flow-in-q3-2026-red-chris-decision-nears",
         "lane": "markets",
-        "title": "US airlines struggle to offset soaring fuel costs with fare hikes",
-        "summary": "US airlines are raising fares but still struggling to fully offset sharply higher fuel costs, according to reporting on the sector.",
-        "whyItMatters": "Squeezed airline margins can signal broader cost pressure in travel and transport, and may affect airline stock earnings outlooks.",
+        "title": "Newmont posts record cash flow in Q3 2026, Red Chris decision nears",
+        "summary": "Newmont's third-quarter 2026 investor slides showed record cash flow. The company also said a decision on its Red Chris project is approaching. No further detail on the figures or the decision timeline is given.",
+        "whyItMatters": "Newmont is a major gold miner, so its cash flow strength and project decisions shape its growth outlook.",
         "whatToWatch": [
-          "Upcoming airline earnings reports for margin impact",
-          "Fuel price trends in coming weeks"
+          "The Red Chris project decision",
+          "Details from Newmont's full Q3 2026 earnings call"
         ],
         "questions": [
-          "Which airlines are most exposed to the fuel cost pressure?"
+          "What drove the record cash flow: gold prices or production?",
+          "What does Newmont plan to do with Red Chris?"
         ],
         "sources": [
           {
-            "title": "US airlines struggle to offset soaring fuel costs with big fare hikes",
-            "url": "https://www.investing.com/news/stock-market-news/american-airlines-forecasts-2026-loss-as-fuel-costs-outpace-fare-gains-4965492",
+            "title": "Newmont Q3 2026 slides: record cash flow, Red Chris nears decision",
+            "url": "https://www.investing.com/news/company-news/newmont-q3-2026-slides-record-cash-flow-red-chris-nears-decision-93CH-4967786",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:37:03.000Z"
+            "publishedAt": "2026-10-23T05:53:26.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:37:03.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L13X_L.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-e515845452",
-        "slug": "kinder-morgan-to-invest-4-7-billion-in-two-gas-pipeline-projects",
-        "lane": "markets",
-        "title": "Kinder Morgan to invest $4.7 billion in two gas pipeline projects",
-        "summary": "Kinder Morgan announced plans to invest $4.7 billion in two natural gas pipeline projects, citing surging demand for gas infrastructure.",
-        "whyItMatters": "The investment signals strong expected growth in US natural gas demand and marks a major capital commitment from a leading pipeline operator.",
-        "whatToWatch": [
-          "Project construction timelines and regulatory approvals",
-          "Kinder Morgan's financing plans for the investment"
-        ],
-        "questions": [
-          "What is driving the surge in gas demand behind these projects?"
-        ],
-        "sources": [
-          {
-            "title": "Kinder Morgan to invest $4.7 billion in two gas pipeline projects as demand surges",
-            "url": "https://www.investing.com/news/stock-market-news/kinder-morgan-to-invest-47-billion-in-two-gas-pipeline-projects-as-demand-surges-4964384",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:33:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:33:06.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9K241_L.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-ab86fcfc11",
-        "slug": "musk-s-political-baggage-clouds-prospects-for-a-spacex-tesla-deal",
-        "lane": "markets",
-        "title": "Musk's political baggage clouds prospects for a SpaceX-Tesla deal",
-        "summary": "An analysis piece examines how Elon Musk's political involvement is complicating prospects for a potential deal between SpaceX and Tesla.",
-        "whyItMatters": "Any tie-up between Musk's two companies would be closely watched by Tesla investors, and political controversy adds uncertainty to the outlook.",
-        "whatToWatch": [
-          "Further reporting on deal terms or talks between the two companies"
-        ],
-        "questions": [
-          "What would a SpaceX-Tesla deal actually involve?",
-          "How is Musk's political activity affecting investor sentiment specifically?"
-        ],
-        "sources": [
-          {
-            "title": "Analysis-Musk’s political baggage clouds prospects for SpaceX-Tesla deal",
-            "url": "https://www.investing.com/news/stock-market-news/analysismusks-political-baggage-clouds-prospects-for-spacextesla-deal-4965229",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:32:43.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:32:43.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L0WR_L.jpg",
-        "badge": "Analysis",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-270dd72f03",
-        "slug": "first-industrial-posts-5-6-same-store-growth-in-q3-2026-shares-fall",
-        "lane": "markets",
-        "title": "First Industrial posts 5.6% same-store growth in Q3 2026, shares fall",
-        "summary": "First Industrial reported 5.6% same-store growth in its third-quarter 2026 results. Despite the growth, shares fell after the report.",
-        "whyItMatters": "A share decline despite positive same-store growth suggests investors had expected more, or are reacting to other details in the report.",
-        "whatToWatch": [
-          "Full earnings call details for guidance or other metrics"
-        ],
-        "questions": [
-          "What in the report led shares to fall despite the growth figure?"
-        ],
-        "sources": [
-          {
-            "title": "First Industrial Q3 2026 slides: 5.6% same-store growth, shares fall",
-            "url": "https://www.investing.com/news/company-news/first-industrial-q3-2026-slides-56-samestore-growth-shares-fall-93CH-4967023",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:31:48.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:31:48.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM5F17R_1200_L.jpg",
+        "publishedAt": "2026-10-23T05:53:26.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC140H9_M.jpg",
         "badge": "Earnings",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-2efe8474af",
-        "slug": "venezuela-eyes-qatar-bridge-loan-to-clear-idb-arrears-sources-say",
+        "id": "markets-8994917fbb",
+        "slug": "fcc-grants-intel-a-waiver-for-foreign-made-robotic-devices",
         "lane": "markets",
-        "title": "Venezuela eyes Qatar bridge loan to clear IDB arrears, sources say",
-        "summary": "Venezuela is reportedly exploring a bridge loan from Qatar to clear its arrears with the Inter-American Development Bank, according to sources.",
-        "whyItMatters": "Clearing IDB arrears could reopen Venezuela's access to international lending, a notable shift for a country long cut off from such financing.",
+        "title": "FCC grants Intel a waiver for foreign-made robotic devices",
+        "summary": "The FCC granted Intel a waiver covering foreign-made robotic devices. The report does not say which products the waiver applies to or why Intel sought it.",
+        "whyItMatters": "A regulatory waiver can affect Intel's supply chain or its rollout of robotics-related hardware.",
         "whatToWatch": [
-          "Confirmation of loan terms between Venezuela and Qatar",
-          "IDB response on arrears status"
+          "Details on which Intel products the waiver covers",
+          "Any related Intel announcements on robotics hardware"
         ],
         "questions": [
-          "How large is the arrears amount, and what would the loan terms be?"
+          "What product line does this waiver apply to?",
+          "Why did Intel need this exception?"
         ],
         "sources": [
           {
-            "title": "Venezuela eyes Qatar bridge loan to clear IDB arrears, sources say",
-            "url": "https://www.investing.com/news/commodities-news/venezuela-eyes-qatar-bridge-loan-to-clear-idb-arrears-sources-say-4967021",
+            "title": "FCC grants Intel waiver for foreign-made robotic devices",
+            "url": "https://www.investing.com/news/stock-market-news/fcc-grants-intel-waiver-for-foreignmade-robotic-devices-4967773",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-22T23:31:16.000Z"
+            "publishedAt": "2026-10-23T05:42:26.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-22T23:31:16.000Z",
-        "updatedAt": "2026-10-22T17:05:54.691Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L1OG_L.jpg",
+        "publishedAt": "2026-10-23T05:42:26.000Z",
+        "updatedAt": "2026-10-22T23:22:30.117Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9L1ZL_L.jpg",
+        "badge": "Regulatory",
         "trendScore": 47,
         "confidence": "low"
       }
