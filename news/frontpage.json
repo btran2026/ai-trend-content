@@ -1,22 +1,83 @@
 {
-  "generatedAt": "2026-10-27T16:25:45.174Z",
-  "contentVersion": 182,
+  "generatedAt": "2026-10-27T22:30:20.031Z",
+  "contentVersion": 183,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-013e5bae16",
+        "slug": "kraken-opens-bitcoin-and-ethereum-options-to-eligible-european-traders",
+        "lane": "crypto",
+        "title": "Kraken opens Bitcoin and Ethereum options to eligible European traders",
+        "summary": "Kraken launched options trading on Bitcoin and Ethereum for eligible traders in Europe. The move adds a new derivatives product to the exchange's regional lineup. CryptoSlate did not specify the exact eligibility rules or which countries get access first.",
+        "whyItMatters": "Wider regulated derivatives access in Europe shows major exchanges are deepening their product range there.",
+        "whatToWatch": [
+          "Which European markets gain access first",
+          "Early trading volume on the new options"
+        ],
+        "questions": [
+          "What eligibility rules apply to traders?",
+          "Will Kraken add options on other assets next?"
+        ],
+        "sources": [
+          {
+            "title": "Kraken opens Bitcoin and Ethereum options to eligible European traders",
+            "url": "https://cryptoslate.com/kraken-opens-bitcoin-and-ether-options-to-eligible-european-traders/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-27T17:00:57.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-27T17:00:57.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/kraken-european-crypto-options.webp",
+        "badge": "Product Launch",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-036ca06635",
+        "slug": "openai-claims-a-cryptography-breakthrough-does-it-threaten-bitcoin",
+        "lane": "crypto",
+        "title": "OpenAI claims a cryptography breakthrough. Does it threaten Bitcoin?",
+        "summary": "OpenAI announced a cryptography breakthrough, and CryptoSlate raised the question of whether it threatens Bitcoin's security. The report frames this as an open question, not a confirmed risk. No technical details of the claimed breakthrough were given.",
+        "whyItMatters": "Bitcoin's security rests on cryptographic assumptions, so any claim that challenges them draws scrutiny, even when unproven.",
+        "whatToWatch": [
+          "Technical details or peer review of OpenAI's claim",
+          "Any response from Bitcoin developers"
+        ],
+        "questions": [
+          "What exactly did OpenAI claim to break?",
+          "Does the claim touch the cryptography Bitcoin actually uses?"
+        ],
+        "sources": [
+          {
+            "title": "OpenAI claims a cryptography breakthrough. Does that threaten Bitcoin?",
+            "url": "https://cryptoslate.com/openai-claims-a-math-breakthrough-does-that-threaten-bitcoin/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-27T21:00:20.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-27T21:00:20.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/sat-bitcoin-security-question.webp",
+        "badge": "Analysis",
+        "trendScore": 56,
+        "confidence": "low"
+      },
       {
         "id": "crypto-69e0e987fd",
         "slug": "bitcoin-s-next-rally-could-trigger-selling-from-holders-of-874-000-btc",
         "lane": "crypto",
-        "title": "Bitcoin's next rally could trigger selling from holders of 874,000 BTC",
-        "summary": "CryptoSlate analysis flags a cohort of roughly 874,000 BTC held by wallets that may sell once prices rise again. The piece frames this as a supply overhang, where a price rally could prompt holders near breakeven or sitting on dormant coins to take profit. No specific price trigger or timeline is given beyond this framing.",
-        "whyItMatters": "A large pool of latent supply can cap or reverse a bitcoin rally, so traders watching for a breakout should weigh this overhang.",
+        "title": "Analysis: a Bitcoin rally could push holders of 874,000 BTC to sell",
+        "summary": "A CryptoSlate analysis says a future Bitcoin rally could trigger selling from a group of holders who control about 874,000 BTC. The piece presents this as a possible scenario drawn from on-chain data, not a forecast. No price level or timeframe was given for when this might happen.",
+        "whyItMatters": "Large holder cohorts can shape how a rally unfolds, but readers should treat this as speculation, not a signal to act on.",
         "whatToWatch": [
-          "Whether BTC rises enough to test this cohort's breakeven levels",
-          "On-chain data showing movement from the identified wallets"
+          "On-chain movement from this holder group if price rises"
         ],
         "questions": [
-          "What price level would actually trigger this selling?",
-          "Who holds these 874,000 BTC — long-term holders, exchanges, or institutions?"
+          "How is this 874,000 BTC cohort defined?",
+          "How reliable is this kind of on-chain modeling?"
         ],
         "sources": [
           {
@@ -28,26 +89,119 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-27T15:00:26.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-overhead-supply-wall.webp",
         "badge": "Analysis",
-        "trendScore": 61,
+        "trendScore": 56,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-f31cacba3b",
+        "slug": "lightning-network-tightens-invoice-rules-after-attack-made-withdrawals",
+        "lane": "crypto",
+        "title": "Lightning Network tightens invoice rules after attack made withdrawals look unpaid",
+        "summary": "The Lightning Network tightened its invoice rules after a reported attack made some Bitcoin withdrawals appear unpaid when they had gone through. CryptoSlate reported the change as a direct response to the exploit. The report did not name the affected services or explain the attack's mechanics.",
+        "whyItMatters": "Lightning is Bitcoin's main payment layer, so a flaw in payment confirmation affects trust for wallets and merchants that rely on it.",
+        "whatToWatch": [
+          "Adoption of the new rules across wallets and nodes",
+          "Further disclosure on which services were hit"
+        ],
+        "questions": [
+          "Which services or users were affected?",
+          "Does the fix need a coordinated upgrade across implementations?"
+        ],
+        "sources": [
+          {
+            "title": "Lightning tightens invoice rules after reported attack made Bitcoin withdrawals look unpaid",
+            "url": "https://cryptoslate.com/lightning-tightens-invoice-rules-after-reported-attack-made-bitcoin-withdrawals-look-unpaid/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-27T19:00:10.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-27T19:00:10.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/lightning-withdrawal-hash-mismatch.webp",
+        "badge": "Security",
+        "trendScore": 54,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-a1e2e17eb7",
+        "slug": "ripple-receives-final-us-trust-bank-approval",
+        "lane": "crypto",
+        "title": "Ripple receives final US trust bank approval",
+        "summary": "Ripple received final approval for a US trust bank charter, CryptoSlate reported. This closes the last regulatory step in a process the company had pursued. The report treats the effect on XRP as an open question, not a settled outcome.",
+        "whyItMatters": "A trust bank charter lets Ripple hold and manage customer assets under federal oversight, a significant regulatory milestone for a major crypto firm.",
+        "whatToWatch": [
+          "How Ripple uses the charter in its stablecoin and custody business",
+          "Any product changes tied to the approval"
+        ],
+        "questions": [
+          "What can Ripple now do that it could not before?",
+          "Does this have a direct effect on XRP's price or use?"
+        ],
+        "sources": [
+          {
+            "title": "Ripple gets final US trust bank approval. What does XRP gain?",
+            "url": "https://cryptoslate.com/ripple-gets-final-us-trust-bank-approval-what-does-xrp-gain/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-27T20:00:02.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-27T20:00:02.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ripple-institutional-charter.webp",
+        "badge": "Regulatory",
+        "trendScore": 50,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-23bc4d7ebe",
+        "slug": "iran-linked-bitcoin-activity-fell-80-then-rebounded-during-a-blackout",
+        "lane": "crypto",
+        "title": "Iran-linked Bitcoin activity fell 80%, then rebounded during a blackout",
+        "summary": "Iran-linked Bitcoin activity dropped by about 80% and then rebounded during a reported blackout, CryptoSlate said. The pattern points to a connectivity disruption that interrupted on-chain activity before it recovered. The report gave no further detail on the blackout's cause or length.",
+        "whyItMatters": "Bitcoin use in sanctioned or restricted jurisdictions stays a recurring concern for regulators and exchanges.",
+        "whatToWatch": [
+          "Official confirmation of the blackout's cause",
+          "Further on-chain tracking of Iran-linked wallets"
+        ],
+        "questions": [
+          "What caused the blackout?",
+          "How is 'Iran-linked' activity identified, and how reliable is that method?"
+        ],
+        "sources": [
+          {
+            "title": "Iran-linked Bitcoin activity fell about 80%, then rebounded during the blackout",
+            "url": "https://cryptoslate.com/iran-linked-bitcoin-activity-fell-about-80-then-rebounded-during-the-blackout/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-27T18:00:28.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-27T18:00:28.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/iran-bitcoin-access-divide.webp",
+        "badge": "On-chain",
+        "trendScore": 48,
         "confidence": "low"
       },
       {
         "id": "crypto-d56083906a",
         "slug": "bitcoin-simulations-suggest-a-126-000-rebound-would-not-hold-as-miners",
         "lane": "crypto",
-        "title": "Bitcoin simulations suggest a $126,000 rebound would not hold, as miners earn little from heavy trading volume",
-        "summary": "CryptoSlate modeling suggests that if bitcoin returns to $126,000, the move would likely not be sustained. A separate report from the same outlet notes that bitcoin moved over $5 billion in value in a recent period, yet miners collected only $185,000 in transaction fees, a small return relative to the value settled.",
-        "whyItMatters": "Thin miner fee revenue raises questions about the network's long-term security budget, and the simulation adds skepticism to any quick price recovery.",
+        "title": "Bitcoin moved $5 billion on-chain while miners collected just $185,000 in fees",
+        "summary": "Bitcoin's network moved over $5 billion in value in a period where miners collected only about $185,000 in transaction fees, CryptoSlate reported. Separately, the outlet ran simulations suggesting a price return to $126,000 would not hold. The fee figure is a concrete data point; the price scenario is a model, not a forecast.",
+        "whyItMatters": "Low fee revenue against high transaction value matters for miner economics, while the price simulation is speculative and should not be read as a prediction.",
         "whatToWatch": [
-          "Whether BTC approaches the $126,000 level again",
-          "Trends in miner fee revenue as transaction volume shifts"
+          "Miner fee trends if transaction volume stays high",
+          "Whether Bitcoin's price approaches $126,000 again"
         ],
         "questions": [
-          "What assumptions underlie the simulation's conclusion?",
-          "Is the low fee-to-volume ratio a temporary lull or a structural trend?"
+          "What is driving the low fee-to-value ratio?",
+          "What assumptions underlie the simulation's conclusion?"
         ],
         "sources": [
           {
@@ -65,27 +219,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-27T12:40:41.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-recovery-broken-crossing.webp",
-        "badge": "Analysis",
-        "trendScore": 50,
+        "badge": "Market Data",
+        "trendScore": 45,
         "confidence": "low"
       },
       {
         "id": "crypto-10ccb7554a",
         "slug": "coinbase-sets-a-3-day-mica-deadline-for-usdt-paypal-s-pyusd-and-a-trum",
         "lane": "crypto",
-        "title": "Coinbase sets a 3-day MiCA deadline for USDT, PayPal's PYUSD, and a Trump-linked stablecoin",
-        "summary": "Coinbase has given a three-day deadline tied to the EU's MiCA stablecoin rules, naming Tether's USDT, PayPal's PYUSD, and a Trump-linked stablecoin as tokens that are not yet compliant, according to CryptoSlate. MiCA requires stablecoin issuers to meet EU licensing standards to keep operating in the bloc.",
-        "whyItMatters": "Exchange-level MiCA enforcement can cut off EU access to major stablecoins, reshaping which tokens EU users can trade.",
+        "title": "Coinbase sets 3-day MiCA deadline for USDT, PayPal, and Trump-linked stablecoins",
+        "summary": "Coinbase set a three-day deadline tied to MiCA compliance for stablecoins including USDT, PayPal's stablecoin, and a Trump-linked stablecoin, CryptoSlate reported. The deadline suggests these tokens face restriction on Coinbase's European platform if they miss EU rules in time. The report did not specify the exact compliance gap or Coinbase's planned action after the deadline.",
+        "whyItMatters": "MiCA enforcement is reshaping which stablecoins exchanges can offer in the EU, directly affecting liquidity and access to major tokens like USDT.",
         "whatToWatch": [
-          "What action Coinbase takes once the 3-day deadline passes",
-          "Whether Tether, PayPal, or the other issuer secures MiCA compliance in time",
-          "Whether other EU-facing exchanges follow Coinbase's move"
+          "Coinbase's action once the 3-day deadline passes",
+          "Whether issuers reach MiCA compliance in time"
         ],
         "questions": [
-          "Will this mean a full delisting or just new trading restrictions?",
-          "Which Trump-linked stablecoin is named here?"
+          "What MiCA requirement are these stablecoins failing to meet?",
+          "Will other EU exchanges set similar deadlines?"
         ],
         "sources": [
           {
@@ -97,26 +250,25 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-27T11:20:33.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-stablecoin-conversion-pressure.webp",
         "badge": "Regulatory",
-        "trendScore": 48,
+        "trendScore": 43,
         "confidence": "low"
       },
       {
         "id": "crypto-8fe8d76846",
         "slug": "japan-s-split-services-inflation-data-complicates-the-boj-outlook-befo",
         "lane": "crypto",
-        "title": "Japan's split services inflation data complicates the BOJ outlook before Friday's decision",
-        "summary": "New data shows a divide within Japan's services inflation, according to CryptoSlate, adding uncertainty to the Bank of Japan's policy calculus ahead of its decision on Friday. The report does not spell out a specific rate path, only that the split data makes the central bank's next move harder to call.",
-        "whyItMatters": "BOJ policy shifts affect global liquidity and yen funding costs, which can spill into crypto markets through carry trades and risk appetite.",
+        "title": "Japan's split services inflation complicates the BOJ outlook before Friday's decision",
+        "summary": "A split in Japan's services inflation data is complicating the outlook for the Bank of Japan ahead of its policy decision on Friday, CryptoSlate reported. The report did not specify the direction of the split or the decision markets expect.",
+        "whyItMatters": "BOJ policy shifts affect global liquidity and risk appetite, which can spill over into crypto markets.",
         "whatToWatch": [
-          "The BOJ's rate decision on Friday",
-          "Any follow-up commentary on the services inflation split"
+          "The Bank of Japan's policy decision on Friday"
         ],
         "questions": [
-          "Which services categories are diverging, and why?",
-          "How might the BOJ's decision affect risk assets like bitcoin?"
+          "What is driving the divergence in services inflation?",
+          "How might the BOJ's decision affect crypto and other risk assets?"
         ],
         "sources": [
           {
@@ -128,421 +280,286 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-10-27T16:00:16.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/yen-funding-policy-crossroads.webp",
         "badge": "Macro",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-7593338632",
-        "slug": "faster-solana-slots-fail-to-stop-memecoin-bot-snipers",
-        "lane": "crypto",
-        "title": "Faster Solana slots fail to stop memecoin bot snipers",
-        "summary": "A CryptoSlate report finds that recent Solana network upgrades, which sped up slot times, have not stopped bots from sniping new memecoin launches. Snipers reportedly still gain an edge over regular traders despite the performance improvements.",
-        "whyItMatters": "Persistent bot advantage undercuts the idea that faster blocks make Solana's memecoin markets fairer for everyday traders.",
-        "whatToWatch": [
-          "Any further Solana protocol changes aimed at curbing sniping",
-          "Responses from Solana developers or memecoin launch platforms"
-        ],
-        "questions": [
-          "What specific techniques let these bots stay ahead of faster slots?",
-          "Could future upgrades close this gap?"
-        ],
-        "sources": [
-          {
-            "title": "Faster Solana slots fail to stop memecoin bot snipers",
-            "url": "https://cryptoslate.com/solana-study-finds-rapid-pump-fun-buying-persisted-as-blocks-sped-up/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-27T04:20:34.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T04:20:34.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-bot-race-clock.webp",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-f630c8b7db",
-        "slug": "public-wallet-logs-expose-crypto-founders-histories-and-a-zcash-group-",
-        "lane": "crypto",
-        "title": "Public wallet logs expose crypto founders' histories, and a Zcash group demands a fix",
-        "summary": "CryptoSlate reports that publicly accessible wallet logs have exposed the transaction histories of crypto project founders. A Zcash-affiliated group is now demanding a fix, arguing the exposure runs counter to the privacy focus Zcash is built around.",
-        "whyItMatters": "A privacy failure at the wallet or infrastructure level undercuts the core promise of privacy-focused coins like Zcash.",
-        "whatToWatch": [
-          "What fix the Zcash group proposes",
-          "Whether wallet providers or infrastructure operators respond"
-        ],
-        "questions": [
-          "Which wallet logs or services exposed this data?",
-          "Does the exposure affect only founders, or a wider set of users?"
-        ],
-        "sources": [
-          {
-            "title": "Public wallet logs expose founder histories, and Zcash group demands fix",
-            "url": "https://cryptoslate.com/atkinss-zcash-crypto-privacy-vision-faces-a-test-what-must-founders-reveal/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-27T08:50:22.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T08:50:22.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/zcash-wallet-disclosure-debate.webp",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-16695eefc8",
-        "slug": "aave-s-native-bitcoin-market-runs-on-three-payment-rules-but-only-wbtc",
-        "lane": "crypto",
-        "title": "Aave's native Bitcoin market runs on three payment rules, but only WBTC can settle them",
-        "summary": "CryptoSlate reports that Aave's native Bitcoin lending market operates under three payment rules, yet only wrapped bitcoin (WBTC) currently satisfies the conditions needed to settle them. Other forms of bitcoin collateral reportedly cannot fully participate in the market as designed.",
-        "whyItMatters": "The gap shows how a DeFi product marketed as \"native Bitcoin\" can still depend on a custodial wrapped asset, a key risk for users who assume trustless exposure.",
-        "whatToWatch": [
-          "Whether Aave adds settlement support for other BTC-backed assets",
-          "Liquidity and usage trends in Aave's Bitcoin market"
-        ],
-        "questions": [
-          "Why do only WBTC transactions meet the settlement rules?",
-          "Does this limit the market's growth or adoption?"
-        ],
-        "sources": [
-          {
-            "title": "3 payment rules control Aave’s native Bitcoin market, but only WBTC settles them",
-            "url": "https://cryptoslate.com/3-payment-rules-control-aaves-native-bitcoin-market-but-only-wbtc-settles-them/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-26T23:50:22.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-26T23:50:22.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/wbtc-vault-funding-constraint.webp",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-7996f90db2",
-        "slug": "coindcx-s-16-million-loss-draws-comparisons-to-ftx-and-celsius",
-        "lane": "crypto",
-        "title": "CoinDCX's $16 million loss draws comparisons to FTX and Celsius",
-        "summary": "Indian exchange CoinDCX has disclosed a $16 million loss, according to CryptoSlate, a figure the outlet says revives memories of the FTX and Celsius collapses. The available reporting does not specify the exact cause of the loss.",
-        "whyItMatters": "A loss at an exchange that invites comparison to past collapses raises fresh questions about reserve practices and risk controls across the industry.",
-        "whatToWatch": [
-          "CoinDCX's official explanation and any customer communication",
-          "Whether regulators in India respond",
-          "Any sign of withdrawal issues or a run on deposits"
-        ],
-        "questions": [
-          "What caused the $16 million loss?",
-          "Are customer funds affected?"
-        ],
-        "sources": [
-          {
-            "title": "CoinDCX’s $16 million loss revives uncomfortable memories of FTX and Celsius",
-            "url": "https://cryptoslate.com/coindcxs-16-million-loss-revives-uncomfortable-memories-of-ftx-and-celsius/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-27T10:00:59.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T10:00:59.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/coindcx-wallet-warning.webp",
-        "badge": "Breaking",
         "trendScore": 42,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-d9415f8198",
-        "slug": "optimism-s-draft-governance-manual-quietly-removes-tokenholder-electio",
-        "lane": "crypto",
-        "title": "Optimism's draft governance manual quietly removes tokenholder elections",
-        "summary": "CryptoSlate reports that a draft of Optimism's governance manual would strip out elections currently held by tokenholders, without clearly flagging the change. The report frames this as a quiet reduction in direct tokenholder control over the protocol's governance.",
-        "whyItMatters": "Reduced tokenholder voting power is a significant governance shift for a major Ethereum layer-2, affecting how much say OP holders have in decisions.",
-        "whatToWatch": [
-          "Community reaction and any pushback from OP tokenholders",
-          "Whether the draft manual is revised before final adoption",
-          "A formal vote or approval process for the manual"
-        ],
-        "questions": [
-          "Who drafted the manual, and why remove the elections?",
-          "What governance mechanism would replace tokenholder elections?"
-        ],
-        "sources": [
-          {
-            "title": "How Optimism’s draft manual silently strips tokenholder elections",
-            "url": "https://cryptoslate.com/how-optimisms-draft-manual-silently-strips-tokenholder-elections/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-27T01:30:08.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T01:30:08.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/optimism-security-council-veto.webp",
-        "badge": "Governance",
-        "trendScore": 40,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-4e38d4ad97",
-        "slug": "amd-rallies-on-expanded-meta-ai-deal-chip-sector-gains",
+        "id": "markets-0b2a4e3ace",
+        "slug": "intapp-shares-drop-sharply-after-q1-2027-revenue-miss",
         "lane": "markets",
-        "title": "AMD Rallies on Expanded Meta AI Deal, Chip Sector Gains",
-        "summary": "AMD shares rallied after news of an expanded AI infrastructure deal with Meta. The move came alongside a broader rally across chip stocks. Investing.com reported the gains on Monday.",
-        "whyItMatters": "Deal flow between chipmakers and major AI buyers like Meta signals ongoing strength in AI infrastructure spending, a key driver of chip valuations.",
+        "title": "Intapp shares drop sharply after Q1 2027 revenue miss",
+        "summary": "Intapp reported first-quarter fiscal 2027 revenue below estimates. The miss triggered a sharp drop in the stock, according to the earnings call transcript. Investing.com published the transcript on October 28, 2026.",
+        "whyItMatters": "A revenue miss at Intapp may signal softer enterprise software demand that other vendors could also face.",
         "whatToWatch": [
-          "More detail on the scope and terms of the expanded Meta deal",
-          "Whether the broader chip rally holds in coming sessions"
+          "Intapp's next guidance update",
+          "Analyst price-target changes after the miss"
         ],
         "questions": [
-          "What are the financial terms of the expanded Meta deal?",
-          "Is the sector-wide chip rally tied to this news or other catalysts?"
+          "What caused the revenue shortfall?",
+          "Did management change its full-year guidance?"
         ],
         "sources": [
           {
-            "title": "AMD stock rallies on expanded Meta AI infrastructure deal and broader chip rally",
-            "url": "https://www.investing.com/news/stock-market-news/amd-stock-rallies-on-expanded-meta-ai-infrastructure-deal-and-broader-chip-rally-4976452",
+            "title": "Earnings call transcript: Intapp Q1 2027 revenue miss sparks sharp stock drop",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-intapp-q1-2027-revenue-miss-sparks-sharp-stock-drop-93CH-4977142",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:14:17.000Z"
+            "publishedAt": "2026-10-28T05:10:34.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:14:17.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEL7410N_L.jpg",
-        "badge": "Tech",
+        "publishedAt": "2026-10-28T05:10:34.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEDAF0IH_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-76d1efb05c",
+        "slug": "cheesecake-factory-beats-q3-2026-estimates-but-shares-slip",
+        "lane": "markets",
+        "title": "Cheesecake Factory beats Q3 2026 estimates, but shares slip",
+        "summary": "Cheesecake Factory topped Wall Street's third-quarter 2026 estimates, per the earnings call transcript. The stock slipped despite the beat. Investing.com published the transcript on October 28, 2026.",
+        "whyItMatters": "Shares falling despite a beat often points to weak guidance or margin worries, a useful signal for the restaurant sector.",
+        "whatToWatch": [
+          "Management's guidance comments on the call",
+          "Analyst reaction in the days ahead"
+        ],
+        "questions": [
+          "Why did shares slip despite the earnings beat?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Cheesecake Factory beats Q3 2026 estimates, shares slip",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cheesecake-factory-beats-q3-2026-estimates-shares-slip-93CH-4977152",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:16:29.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:16:29.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM431A2_1200_L.jpg",
+        "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-4a83aecb59",
-        "slug": "bladex-posts-record-15b-commercial-portfolio-in-q3",
+        "id": "markets-12f3fc67d4",
+        "slug": "enphase-energy-shares-fall-after-q3-2026-profit-miss",
         "lane": "markets",
-        "title": "Bladex Posts Record $15B Commercial Portfolio in Q3",
-        "summary": "Bladex's third-quarter 2026 earnings slides show its commercial portfolio reached a record $15 billion. The bank disclosed the figure in its investor presentation.",
-        "whyItMatters": "Growth in Bladex's loan book points to continued trade-finance demand across Latin America, a region closely watched by emerging-market investors.",
+        "title": "Enphase Energy shares fall after Q3 2026 profit miss",
+        "summary": "Enphase Energy missed third-quarter 2026 profit estimates. Shares fell in response, according to the earnings call transcript published by Investing.com on October 28, 2026.",
+        "whyItMatters": "Enphase is a bellwether for residential solar demand, so a profit miss raises questions about the sector's near-term health.",
         "whatToWatch": [
-          "Full Q3 earnings results and management commentary on growth drivers"
+          "Enphase's guidance for the next quarter",
+          "How other solar stocks react"
         ],
         "questions": [
-          "What is driving the portfolio growth: new clients or expanded limits?",
-          "Does asset quality hold up alongside the growth?"
+          "What drove the profit miss: demand, costs, or something else?"
         ],
         "sources": [
           {
-            "title": "Bladex Q3 2026 slides: commercial portfolio hits record $15B",
-            "url": "https://www.investing.com/news/company-news/bladex-q3-2026-slides-commercial-portfolio-hits-record-15b-93CH-4976449",
+            "title": "Earnings call transcript: Enphase Energy Q3 2026 profit miss sends shares lower",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-enphase-energy-q3-2026-profit-miss-sends-shares-lower-93CH-4977145",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:47.000Z"
+            "publishedAt": "2026-10-28T05:14:23.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:47.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
+        "publishedAt": "2026-10-28T05:14:23.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0D0AP_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-7d33d09c1c",
+        "slug": "seagate-and-sensata-beat-estimates-but-shares-fall-after-hours",
+        "lane": "markets",
+        "title": "Seagate and Sensata beat estimates, but shares fall after hours",
+        "summary": "Seagate topped its first-quarter fiscal 2026 forecasts, and Sensata beat its third-quarter 2026 forecasts. Both stocks fell after hours despite the beats, according to separate Investing.com earnings call transcripts published October 28, 2026.",
+        "whyItMatters": "Two beat-and-drop reactions on the same day suggest investors are weighing forward guidance more than headline results.",
+        "whatToWatch": [
+          "Each company's guidance detail from the full call",
+          "Whether the after-hours drop carries into the next session"
+        ],
+        "questions": [
+          "What guidance or commentary pushed shares down despite the beats?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Seagate beats Q1 2026 forecasts, shares fall after hours",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-seagate-beats-q1-2026-forecasts-shares-fall-after-hours-93CH-4977144",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:13:00.000Z"
+          },
+          {
+            "title": "Earnings call transcript: Sensata tops Q3 2026 forecasts, shares slip after hours",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-sensata-tops-q3-2026-forecasts-shares-slip-after-hours-93CH-4977143",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:11:31.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:11:31.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0D0AP_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-2153e96979",
+        "slug": "invo-fertility-announces-1-for-4-reverse-stock-split",
+        "lane": "markets",
+        "title": "INVO Fertility announces 1-for-4 reverse stock split",
+        "summary": "INVO Fertility announced a 1-for-4 reverse stock split, per Investing.com on October 28, 2026.",
+        "whyItMatters": "Reverse splits often aim to meet exchange listing requirements, a signal worth tracking for small-cap stock health.",
+        "whatToWatch": [
+          "The split's effective date",
+          "The stock's price and listing status afterward"
+        ],
+        "questions": [
+          "Why did the company choose this ratio?",
+          "Is the company at risk of delisting?"
+        ],
+        "sources": [
+          {
+            "title": "INVO Fertility announces 1-for-4 reverse stock split",
+            "url": "https://www.investing.com/news/company-news/invo-fertility-announces-1for4-reverse-stock-split-93CH-4977140",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:04:31.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:04:31.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM2I1CG_1200_L.jpg",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-3417b2fafa",
+        "slug": "ensign-group-surges-on-raised-earnings-guidance",
+        "lane": "markets",
+        "title": "Ensign Group surges on raised earnings guidance",
+        "summary": "Ensign Group shares surged after the company raised its earnings guidance, per Investing.com on October 28, 2026.",
+        "whyItMatters": "A guidance raise signals management confidence and can lift sentiment across healthcare-services stocks.",
+        "whatToWatch": [
+          "The updated full-year guidance figures",
+          "Analyst estimate revisions after the raise"
+        ],
+        "questions": [
+          "What drove the stronger outlook?"
+        ],
+        "sources": [
+          {
+            "title": "Ensign Group surges on raised earnings guidance",
+            "url": "https://www.investing.com/news/earnings/ensign-group-surges-on-raised-earnings-guidance-4977137",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:00:39.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:00:39.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM211DX_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-ba470efd6e",
+        "slug": "deep-sea-minerals-names-raj-matthew-as-cfo",
+        "lane": "markets",
+        "title": "Deep Sea Minerals names Raj Matthew as CFO",
+        "summary": "Deep Sea Minerals appointed Raj Matthew as chief financial officer, per Investing.com on October 28, 2026.",
+        "whyItMatters": "A CFO change can signal a shift in financial strategy or come ahead of a fundraising push.",
+        "whatToWatch": [
+          "Matthew's first public comments or strategy moves",
+          "Any related capital-raising plans"
+        ],
+        "questions": [
+          "What is Matthew's background, and why does this change come now?"
+        ],
+        "sources": [
+          {
+            "title": "Deep Sea Minerals appoints Raj Matthew as CFO",
+            "url": "https://www.investing.com/news/company-news/deep-sea-minerals-appoints-raj-matthew-as-cfo-93CH-4977141",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:04:34.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:04:34.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3S13F_1200_L.jpg",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-721fe6dd35",
+        "slug": "f5-posts-23-product-growth-ai-bookings-top-100m-in-q4-fy26",
+        "lane": "markets",
+        "title": "F5 posts 23% product growth, AI bookings top $100M in Q4 FY26",
+        "summary": "F5's fiscal fourth-quarter 2026 earnings slides show 23% product revenue growth. AI-related bookings surpassed $100 million, per Investing.com on October 28, 2026.",
+        "whyItMatters": "Growing AI bookings at an infrastructure vendor like F5 point to continued enterprise spending on AI deployment.",
+        "whatToWatch": [
+          "Guidance and margin detail from the full earnings call",
+          "Whether AI bookings growth continues next quarter"
+        ],
+        "questions": [
+          "How much of total revenue do AI bookings now represent?"
+        ],
+        "sources": [
+          {
+            "title": "F5 Q4 FY26 slides: 23% product growth, AI bookings top $100M",
+            "url": "https://www.investing.com/news/company-news/f5-q4-fy26-slides-23-product-growth-ai-bookings-top-100m-93CH-4977138",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-28T05:00:59.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-28T05:00:59.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
         "imageUrl": "https://content-media.investing.com/news/LYNXMPEM4R1OV_1200_L.jpg",
         "badge": "Earnings",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-d11a41cbf9",
-        "slug": "oracle-adds-ai-focused-networking-features-and-a-new-data-platform",
+        "id": "markets-228d8d0179",
+        "slug": "robinhood-profit-misses-estimates-as-crypto-trading-slows",
         "lane": "markets",
-        "title": "Oracle Adds AI-Focused Networking Features and a New Data Platform",
-        "summary": "Oracle announced new networking features built for AI workloads on its cloud service. It also unveiled an AI data platform with ontology capabilities. Both announcements are part of Oracle's push to expand its AI cloud offerings.",
-        "whyItMatters": "Oracle's AI infrastructure buildout puts it in direct competition with AWS, Azure, and Google Cloud for enterprise AI workloads.",
+        "title": "Robinhood profit misses estimates as crypto trading slows",
+        "summary": "Robinhood's profit fell short of estimates. Crypto trading activity slowed, per Investing.com on October 28, 2026.",
+        "whyItMatters": "Robinhood's results gauge retail trading appetite, especially in crypto, which has driven recent swings in its revenue.",
         "whatToWatch": [
-          "Rollout timeline and availability of the new networking features",
-          "Early customer adoption of the AI data platform"
+          "Trading volume trends in coming months",
+          "Robinhood's commentary on the crypto demand outlook"
         ],
         "questions": [
-          "How does the networking offering compare with hyperscaler rivals?",
-          "What does the ontology capability add for enterprise customers?"
+          "Which other revenue lines offset the crypto slowdown, if any?"
         ],
         "sources": [
           {
-            "title": "Oracle adds networking features for AI workloads in cloud service",
-            "url": "https://www.investing.com/news/company-news/oracle-adds-networking-features-for-ai-workloads-in-cloud-service-93CH-4976448",
+            "title": "Robinhood profit misses estimates as crypto trading slows",
+            "url": "https://www.investing.com/news/stock-market-news/robinhood-quarterly-profit-falls-as-softer-crypto-activity-outweighs-robust-trading-4976781",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:38.000Z"
-          },
-          {
-            "title": "Oracle unveils AI data platform with ontology capabilities",
-            "url": "https://www.investing.com/news/company-news/oracle-unveils-ai-data-platform-with-ontology-capabilities-93CH-4976444",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:33.000Z"
+            "publishedAt": "2026-10-28T05:00:24.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:33.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM241CI_L.jpg",
-        "badge": "Product",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-409ea889bb",
-        "slug": "oracle-to-add-google-tpus-to-its-cloud-in-2027",
-        "lane": "markets",
-        "title": "Oracle to Add Google TPUs to Its Cloud in 2027",
-        "summary": "Oracle said it will offer Google's TPU chips on its cloud infrastructure starting in 2027. The move gives Oracle customers a hardware option beyond Nvidia GPUs for AI workloads.",
-        "whyItMatters": "A multi-vendor chip lineup at a major cloud provider signals growing competition in AI hardware, a trend investors watch for shifts away from Nvidia's dominance.",
-        "whatToWatch": [
-          "Progress toward the 2027 launch",
-          "Whether other cloud providers add similar multi-chip options"
-        ],
-        "questions": [
-          "What pricing or performance tradeoffs will TPU instances offer versus GPU instances?",
-          "How significant is this deal for Google's TPU business outside its own cloud?"
-        ],
-        "sources": [
-          {
-            "title": "Oracle to offer Google TPUs on cloud infrastructure in 2027",
-            "url": "https://www.investing.com/news/company-news/oracle-to-offer-google-tpus-on-cloud-infrastructure-in-2027-93CH-4976446",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:35.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:35.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEHBE01E_L.jpg",
-        "badge": "AI",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-970993ed8a",
-        "slug": "jpmorgan-ex-banker-rana-pressured-witnesses-to-lie-in-assault-case",
-        "lane": "markets",
-        "title": "JPMorgan: Ex-Banker Rana Pressured Witnesses to Lie in Assault Case",
-        "summary": "JPMorgan said a former banker, identified as Rana, pushed a sister and a friend to lie in support of a sexual assault case. The available reporting does not give further detail on the case or the court proceeding.",
-        "whyItMatters": "Legal disputes involving former JPMorgan personnel draw scrutiny to the bank's conduct and legal exposure.",
-        "whatToWatch": [
-          "Further court filings or statements from JPMorgan and the parties involved"
-        ],
-        "questions": [
-          "What is the full context of the case, and what role did JPMorgan play?",
-          "Has Rana responded to the allegation?"
-        ],
-        "sources": [
-          {
-            "title": "JPMorgan says ex-banker Rana pushed sister, friend to lie to support sexual assault case",
-            "url": "https://www.investing.com/news/stock-market-news/jpmorgan-says-exbanker-rana-pushed-sister-friend-to-lie-to-support-sexual-assault-case-4976447",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:35.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:35.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9Q1NC_L.jpg",
-        "badge": "Legal",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-385c669ea0",
-        "slug": "oracle-partners-with-openai-on-enterprise-ai-launches-security-mesh",
-        "lane": "markets",
-        "title": "Oracle Partners With OpenAI on Enterprise AI, Launches Security Mesh",
-        "summary": "Oracle announced a partnership with OpenAI for enterprise AI integration. It also launched an AI security mesh powered by OpenAI models. Both moves add to a broader set of AI-focused updates Oracle disclosed the same day.",
-        "whyItMatters": "Deeper OpenAI ties strengthen Oracle's position in the enterprise AI race, where Microsoft already holds a major OpenAI partnership.",
-        "whatToWatch": [
-          "Rollout details for the enterprise AI integration",
-          "Which enterprise customers adopt the security mesh first"
-        ],
-        "questions": [
-          "How does this partnership differ from Microsoft's existing OpenAI relationship?",
-          "What does the AI security mesh protect against in practice?"
-        ],
-        "sources": [
-          {
-            "title": "Oracle partners with OpenAI on enterprise AI integration",
-            "url": "https://www.investing.com/news/company-news/oracle-partners-with-openai-on-enterprise-ai-integration-93CH-4976445",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:34.000Z"
-          },
-          {
-            "title": "Oracle launches AI security mesh powered by OpenAI models",
-            "url": "https://www.investing.com/news/company-news/oracle-launches-ai-security-mesh-powered-by-openai-models-93CH-4976443",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:33.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:33.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB5G1C7_M.jpg",
-        "badge": "Partnership",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-75dd140e0e",
-        "slug": "oracle-to-offer-snowflake-as-a-native-cloud-service",
-        "lane": "markets",
-        "title": "Oracle to Offer Snowflake as a Native Cloud Service",
-        "summary": "Oracle said it will offer Snowflake as a native service on its cloud infrastructure. The announcement is part of a wider set of Oracle cloud and AI updates disclosed the same day.",
-        "whyItMatters": "A native Snowflake integration could widen Oracle Cloud's appeal to data-analytics customers already using Snowflake.",
-        "whatToWatch": [
-          "Availability timeline for the native Snowflake service",
-          "Terms of the Oracle-Snowflake arrangement"
-        ],
-        "questions": [
-          "Does this signal closer strategic ties between Oracle and Snowflake?",
-          "How will pricing compare with running Snowflake elsewhere?"
-        ],
-        "sources": [
-          {
-            "title": "Oracle to offer Snowflake as native service on its cloud",
-            "url": "https://www.investing.com/news/company-news/oracle-to-offer-snowflake-as-native-service-on-its-cloud-93CH-4976442",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:12:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:12:32.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEA7L0UO_M.jpg",
-        "badge": "Product",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-bc71613c91",
-        "slug": "boeing-q3-slides-defense-strength-offsets-commercial-headwinds",
-        "lane": "markets",
-        "title": "Boeing Q3 Slides: Defense Strength Offsets Commercial Headwinds",
-        "summary": "Boeing's third-quarter 2026 earnings slides show strength in its defense business offsetting headwinds in commercial aircraft. The company disclosed the figures in its investor presentation.",
-        "whyItMatters": "Boeing's results matter for the broader aerospace supply chain and for investor confidence in its commercial aircraft recovery.",
-        "whatToWatch": [
-          "Full Q3 earnings call for detail on commercial delivery rates and defense contract performance"
-        ],
-        "questions": [
-          "What specific headwinds are hitting the commercial unit?",
-          "How durable is the defense segment's strength?"
-        ],
-        "sources": [
-          {
-            "title": "Boeing Q3 2026 slides: defense strength offsets commercial headwinds",
-            "url": "https://www.investing.com/news/company-news/boeing-q3-2026-slides-defense-strength-offsets-commercial-headwinds-93CH-4976438",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-27T23:08:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-27T23:08:04.000Z",
-        "updatedAt": "2026-10-27T16:25:45.174Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC4F07A_M.jpg",
+        "publishedAt": "2026-10-28T05:00:24.000Z",
+        "updatedAt": "2026-10-27T22:30:20.031Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9Q1ZH_L.jpg",
         "badge": "Earnings",
         "trendScore": 47,
         "confidence": "low"
