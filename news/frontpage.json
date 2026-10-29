@@ -1,593 +1,566 @@
 {
-  "generatedAt": "2026-10-28T22:16:07.598Z",
-  "contentVersion": 185,
+  "generatedAt": "2026-10-29T16:41:13.814Z",
+  "contentVersion": 186,
   "lanes": {
     "crypto": [
       {
-        "id": "crypto-3dc8b841d0",
-        "slug": "ethereum-clients-ship-security-fixes-but-binary-users-need-a-separate-",
+        "id": "crypto-2df480a5ab",
+        "slug": "circle-wants-the-sec-to-scrap-a-wall-street-rule-it-says-hurts-stablec",
         "lane": "crypto",
-        "title": "Ethereum clients ship security fixes, but binary users need a separate Java check",
-        "summary": "Ethereum client teams released security fixes. Users who run binary installations, not Java-based builds, must do a separate check to confirm they have the patch. CryptoSlate's report does not state the vulnerability's severity or name every affected client.",
-        "whyItMatters": "Node operators who miss the check may run unpatched software, which puts network security and their own funds at risk.",
+        "title": "Circle wants the SEC to scrap a Wall Street rule it says hurts stablecoins",
+        "summary": "Circle has asked the SEC to remove a long-standing Wall Street rule that it says raises costs for stablecoin issuers, according to CryptoSlate. The report does not name the specific rule or detail any SEC response so far.",
+        "whyItMatters": "A rule change could lower compliance costs for stablecoin issuers and shape how regulators treat dollar-pegged tokens going forward.",
         "whatToWatch": [
-          "A fuller vulnerability disclosure from the client teams",
-          "Confirmation of which Ethereum clients are affected"
+          "Whether the SEC responds to Circle's request",
+          "Any formal rulemaking petition or comment period"
         ],
         "questions": [
-          "What is the underlying vulnerability?",
-          "How many node operators remain unpatched?"
+          "Which specific SEC rule is Circle targeting?",
+          "How would other stablecoin issuers be affected?"
         ],
         "sources": [
           {
-            "title": "Ethereum client security fixes leave binary users with a separate Java check",
-            "url": "https://cryptoslate.com/ethereum-client-security-fixes-leave-binary-users-with-a-separate-java-check/",
+            "title": "Circle wants SEC to erase a costly Wall Street rule holding stablecoins back",
+            "url": "https://cryptoslate.com/circle-wants-sec-to-erase-a-costly-wall-street-rule-holding-stablecoins-back/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T15:40:51.000Z"
+            "publishedAt": "2026-10-29T16:30:28.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-28T15:40:51.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ethereum-certificate-trust-risk.webp",
-        "badge": "Security",
-        "trendScore": 57,
+        "publishedAt": "2026-10-29T16:30:28.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/stablecoin-cash-recognition-test.webp",
+        "badge": "Regulatory",
+        "trendScore": 62,
         "confidence": "low"
       },
       {
-        "id": "crypto-8c2c16f01a",
-        "slug": "ethena-pay-s-11x-leverage-loop-offers-high-yield-but-can-hide-losses",
+        "id": "crypto-d57a0d425e",
+        "slug": "ripple-s-rlusd-stablecoin-lands-on-coinbase-and-earns-an-investment-gr",
         "lane": "crypto",
-        "title": "Ethena Pay's 11x leverage loop offers high yield, but can hide losses",
-        "summary": "Ethena Pay offers a leverage loop with exposure up to 11x and promises high yield. CryptoSlate reports the structure can hide losses that surface only later. The report gives no figures on current adoption or past performance.",
-        "whyItMatters": "High-leverage DeFi products have caused cascading losses before, so hidden risk in a yield product matters to anyone chasing returns in crypto.",
+        "title": "Ripple's RLUSD stablecoin lands on Coinbase and earns an investment-grade rating from Moody's",
+        "summary": "Ripple's RLUSD stablecoin became accessible on Coinbase, and Moody's gave it an investment-grade rating, according to CryptoSlate. The two developments give RLUSD both a major exchange listing and a credit-rating endorsement as it seeks wider adoption.",
+        "whyItMatters": "Exchange access plus a rating from a major credit agency gives RLUSD more legitimacy as it competes with Tether and Circle's USDC.",
         "whatToWatch": [
-          "Any loss or liquidation reports tied to Ethena Pay",
-          "Responses from Ethena or other protocols on leveraged yield risk"
+          "RLUSD trading activity on Coinbase",
+          "Whether other rating agencies follow Moody's"
         ],
         "questions": [
-          "How is the leverage collateralized?",
-          "What exactly triggers the hidden losses the report flags?"
+          "What criteria did Moody's use for the rating?",
+          "Does Coinbase access cover all trading pairs or a limited set?"
         ],
         "sources": [
           {
-            "title": "Ethena Pay’s 11x leverage loop promises high yield, but risks hidden losses",
-            "url": "https://cryptoslate.com/ethena-pays-11x-leverage-loop-promises-high-yield-but-risks-hidden-losses/",
+            "title": "Ripple’s RLUSD stablecoin gains Coinbase access as Moody’s awards investment-grade rating",
+            "url": "https://cryptoslate.com/ripples-rlusd-stablecoin-gains-coinbase-access-as-moodys-awards-investment-grade-rating/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T22:10:04.000Z"
+            "publishedAt": "2026-10-29T05:30:07.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-28T22:10:04.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/ethena-earn-plus-usde-price-lenses-standard-v4.jpg",
+        "publishedAt": "2026-10-29T05:30:07.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/rlusd-coinbase-base-launch-standard.jpg",
+        "badge": "Stablecoins",
+        "trendScore": 58,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-f5ca6f833e",
+        "slug": "bitcoin-developers-rush-to-patch-three-ai-discovered-security-flaws",
+        "lane": "crypto",
+        "title": "Bitcoin developers rush to patch three AI-discovered security flaws",
+        "summary": "Bitcoin software developers moved quickly to fix three security flaws that an AI tool uncovered, CryptoSlate reported. Separately, CryptoSlate noted that bitcoin options markets priced in a much smaller premium around the recent election than in 2024, and cited a forecast claiming bitcoin could reach $1.6 million by 2036 — though it said 82% of that projection rests on a single assumption.",
+        "whyItMatters": "Flaws in core Bitcoin software carry network-wide risk, while muted options pricing suggests traders see less event risk now; the long-range price forecast is speculative and worth treating with caution.",
+        "whatToWatch": [
+          "Confirmation that all three flaws are fully patched",
+          "Node operators adopting the fix",
+          "Options pricing around future market catalysts"
+        ],
+        "questions": [
+          "Were the flaws in consensus code or node software?",
+          "What single assumption drives most of the $1.6 million forecast?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin developers rush to fix 3 security flaws after AI uncovers them",
+            "url": "https://cryptoslate.com/bitcoin-developers-rush-to-fix-3-security-flaws-after-ai-uncovers-them/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T15:10:59.000Z"
+          },
+          {
+            "title": "Bitcoin options carried a far smaller election premium than in 2024",
+            "url": "https://cryptoslate.com/bitcoin-holders-waiting-for-a-2024-style-election-rally-face-a-different-test/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T13:00:19.000Z"
+          },
+          {
+            "title": "Bitcoin could reach $1.6 million by 2036, but 82% of the forecast rests on one bet",
+            "url": "https://cryptoslate.com/bitcoin-could-reach-1-6-million-by-2036-but-82-of-the-forecast-rests-on-one-bet/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T09:50:24.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T09:50:24.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-core-node-overload.webp",
+        "badge": "Security",
+        "trendScore": 56,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-e4bb93eb67",
+        "slug": "strategy-s-strc-preferred-shares-near-100-a-level-that-could-reopen-a-",
+        "lane": "crypto",
+        "title": "Strategy's STRC preferred shares near $100, a level that could reopen a Bitcoin funding channel",
+        "summary": "Shares of Strategy's STRC preferred stock are approaching the $100 mark, a level CryptoSlate says could reopen a financing channel the company has used to fund bitcoin purchases. The report ties STRC's price to Strategy's capacity to raise further capital for its bitcoin treasury strategy.",
+        "whyItMatters": "Strategy is one of the largest corporate holders of bitcoin, so its financing capacity directly affects demand for the asset.",
+        "whatToWatch": [
+          "Whether STRC crosses the $100 level",
+          "Any new Strategy bitcoin purchase that follows"
+        ],
+        "questions": [
+          "What specifically reopens at the $100 threshold — new issuance or a redemption feature?"
+        ],
+        "sources": [
+          {
+            "title": "Strategy’s STRC nears $100 level that could reopen a Bitcoin funding channel",
+            "url": "https://cryptoslate.com/strategys-strc-returns-to-brink-of-100-after-saylor-wins-approval-for-daily-dividends-reviving-bitcoin-buying-hopes/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T14:30:41.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T14:30:41.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/strc-bitcoin-funding-threshold.webp",
+        "badge": "Markets",
+        "trendScore": 55,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-98b6725bdb",
+        "slug": "only-10-of-wallets-using-the-fomo-app-on-solana-were-profitable-after-",
+        "lane": "crypto",
+        "title": "Only 10% of wallets using the FOMO app on Solana were profitable after fees",
+        "summary": "A review found that just 10% of wallets using the Solana-based FOMO app ended up profitable once fees were counted, according to CryptoSlate. The finding suggests fees and losses erode returns for most users of the app.",
+        "whyItMatters": "It is a reminder that retail trading apps and memecoin-style platforms often leave most users worse off, despite hype about quick gains.",
+        "whatToWatch": [
+          "Whether FOMO or similar apps change their fee structure",
+          "Any response from the app's operators"
+        ],
+        "questions": [
+          "How was profitability measured — gross gains or net of all costs?",
+          "How does this compare with other Solana trading apps?"
+        ],
+        "sources": [
+          {
+            "title": "Only 10% of FOMO app’s Solana wallets were profitable after fees",
+            "url": "https://cryptoslate.com/fomo-fees-erased-gains-for-32-of-its-pre-fee-winning-solana-wallets/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T14:00:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T14:00:54.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/solana-fee-trap.webp",
         "badge": "Analysis",
+        "trendScore": 55,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-202c89577c",
+        "slug": "north-korea-s-600-million-fake-worker-scheme-has-a-hidden-crypto-conne",
+        "lane": "crypto",
+        "title": "North Korea's $600 million fake-worker scheme has a hidden crypto connection",
+        "summary": "A report detailed a North Korean scheme that used fake remote IT workers to generate roughly $600 million, and found a crypto connection tied to the operation, according to CryptoSlate. The available report does not fully specify how crypto was used in the scheme.",
+        "whyItMatters": "Sanctioned state actors using crypto to fund operations remains a key concern for regulators and exchanges working to curb illicit finance.",
+        "whatToWatch": [
+          "Any sanctions or enforcement action tied to the scheme",
+          "Exchange responses to flagged wallets"
+        ],
+        "questions": [
+          "Which crypto assets or exchanges were involved?",
+          "How was the $600 million figure calculated?"
+        ],
+        "sources": [
+          {
+            "title": "North Korea’s $600 million fake-worker empire has a hidden crypto connection",
+            "url": "https://cryptoslate.com/north-koreas-600-million-fake-worker-empire-has-a-hidden-crypto-connection/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-10-29T11:00:06.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T11:00:06.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/crypto-cargo-sanctions.webp",
+        "badge": "Security",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "crypto-bf78528bdf",
-        "slug": "euro-area-banks-report-record-deterioration-in-retail-funding-access",
+        "id": "crypto-b8e3ca69da",
+        "slug": "a-divided-fed-rate-decision-threatens-bitcoin-s-rebound-as-a-december-",
         "lane": "crypto",
-        "title": "Euro-area banks report record deterioration in retail-funding access",
-        "summary": "Euro-area banks reported a record deterioration in retail-funding access, CryptoSlate reports. The report does not name the underlying survey or give specific figures beyond this top-line finding.",
-        "whyItMatters": "Weak retail-funding conditions at banks can push savers and institutions toward alternative assets, including crypto, as traditional banking tightens.",
+        "title": "A divided Fed rate decision threatens Bitcoin's rebound as a December hike looms",
+        "summary": "The Federal Reserve's latest rate decision reportedly showed division among policymakers, and CryptoSlate says this could threaten bitcoin's recent recovery given the possibility of a December rate hike. The report ties bitcoin's price momentum to the broader interest-rate outlook.",
+        "whyItMatters": "Interest-rate expectations shape risk appetite across markets, including crypto, so a hawkish shift could pressure bitcoin prices.",
         "whatToWatch": [
-          "Follow-up data from euro-area banking surveys",
-          "Any shift in retail deposit or investment flows that follows"
+          "The Fed's December policy meeting",
+          "Bitcoin's price reaction to further Fed commentary"
         ],
         "questions": [
-          "What is driving the funding deterioration?",
-          "Which banks or countries are most affected?"
+          "How divided was the vote, and which officials dissented?",
+          "How likely is a December hike based on current market pricing?"
         ],
         "sources": [
           {
-            "title": "Euro-area banks report record deterioration in retail-funding access",
-            "url": "https://cryptoslate.com/euro-area-banks-report-record-deterioration-in-retail-funding-access/",
+            "title": "Fed’s divided rate decision threatens Bitcoin’s comeback as December hike looms",
+            "url": "https://cryptoslate.com/feds-divided-rate-decision-threatens-bitcoins-comeback-as-december-hike-looms/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T16:40:28.000Z"
+            "publishedAt": "2026-10-29T08:30:16.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-28T16:40:28.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bank-credit-restrictions.webp",
+        "publishedAt": "2026-10-29T08:30:16.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-rate-pressure-press.webp",
         "badge": "Macro",
-        "trendScore": 47,
+        "trendScore": 50,
         "confidence": "low"
       },
       {
-        "id": "crypto-9a4a387251",
-        "slug": "robinhood-posts-record-1-4-billion-revenue-but-a-14-profit-drop-reveal",
+        "id": "crypto-a593752da3",
+        "slug": "china-s-tech-stock-crash-wiped-out-480-billion-while-bitcoin-rose-27-o",
         "lane": "crypto",
-        "title": "Robinhood posts record $1.4 billion revenue, but a 14% profit drop reveals portfolio losses",
-        "summary": "Robinhood reported record quarterly revenue of $1.4 billion, yet profit fell 14%, a drop that CryptoSlate says exposes hidden portfolio losses. A related CryptoSlate report says Robinhood now earns more from prediction markets than from crypto trading.",
-        "whyItMatters": "Robinhood is a major retail on-ramp to crypto, so a revenue mix shift away from crypto trading signals changing retail interest.",
+        "title": "China's tech stock crash wiped out $480 billion while Bitcoin rose 27% over the same stretch",
+        "summary": "A sharp selloff erased about $480 billion from Chinese tech stocks, while bitcoin gained 27% over the same dates, according to CryptoSlate. The report frames this as a divergence between the two markets rather than proof of a direct cause-and-effect link.",
+        "whyItMatters": "Divergence between equities and bitcoin feeds the argument that crypto can act as a hedge, though a short overlapping window is not strong evidence of that pattern.",
         "whatToWatch": [
-          "Robinhood's next earnings report for the crypto-versus-prediction-market revenue trend",
-          "More detail on what drove the portfolio losses"
+          "Whether the divergence holds over a longer period",
+          "Capital flows from Chinese investors into crypto markets"
         ],
         "questions": [
-          "What specifically caused the hidden portfolio losses?",
-          "How much of Robinhood's revenue now comes from prediction markets?"
+          "Is there evidence of capital rotating from Chinese tech stocks into bitcoin?",
+          "How much of bitcoin's gain came from unrelated factors?"
         ],
         "sources": [
           {
-            "title": "Robinhood posts record $1.4 billion revenue, but a 14% profit drop exposes hidden portfolio losses",
-            "url": "https://cryptoslate.com/robinhood-posts-record-1-4-billion-revenue-but-a-14-profit-drop-exposes-hidden-portfolio-losses/",
+            "title": "China’s tech crash erased $480 billion. Bitcoin rose 27% over the same dates",
+            "url": "https://cryptoslate.com/chinas-near-40-tech-rout-contrasts-with-bitcoins-27-gain-over-the-same-dates/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T20:50:25.000Z"
-          },
-          {
-            "title": "Robinhood now makes more money from predicting the future than trading crypto",
-            "url": "https://cryptoslate.com/robinhood-now-makes-more-money-from-predicting-the-future-than-trading-crypto/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T12:20:28.000Z"
+            "publishedAt": "2026-10-29T12:00:16.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-28T12:20:28.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/robinhood-event-contract-carnival.webp",
-        "badge": "Earnings",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-a068b68741",
-        "slug": "bitcoin-option-buyers-pay-a-fed-week-premium-that-can-fade-after-the-d",
-        "lane": "crypto",
-        "title": "Bitcoin option buyers pay a Fed-week premium that can fade after the decision",
-        "summary": "Bitcoin options carry an elevated premium ahead of this week's Federal Reserve decision, CryptoSlate reports. That premium has tended to fade once the decision is announced, a pattern seen around past Fed meetings.",
-        "whyItMatters": "Options pricing around Fed meetings shows how much macro policy, rather than crypto-specific news, now drives bitcoin's volatility expectations.",
-        "whatToWatch": [
-          "The Fed's rate decision this week",
-          "Bitcoin options pricing right after the announcement"
-        ],
-        "questions": [
-          "How large is the current premium compared to past Fed weeks?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin option buyers face a Fed-week premium that can fade after the decision",
-            "url": "https://cryptoslate.com/bitcoin-option-buyers-face-a-fed-week-premium-that-can-fade-after-the-decision/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T14:40:38.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-28T14:40:38.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/bitcoin-options-time-decay.webp",
+        "publishedAt": "2026-10-29T12:00:16.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/china-bitcoin-market-chasm.webp",
         "badge": "Markets",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-a047b1e732",
-        "slug": "coinbase-says-it-wasn-t-breached-but-hackers-don-t-need-to-steal-crypt",
-        "lane": "crypto",
-        "title": "Coinbase says it wasn't breached, but hackers don't need to steal crypto to hurt users",
-        "summary": "Coinbase said it was not breached, CryptoSlate reports, but the report notes attackers do not need direct access to crypto holdings to harm users. The report gives no further detail on the specific incident or attack method.",
-        "whyItMatters": "Exchange-adjacent attacks, such as phishing, can hurt users and erode trust even without a direct hack of exchange systems.",
-        "whatToWatch": [
-          "Whether Coinbase discloses more about the incident behind the statement",
-          "Any reports from affected users"
-        ],
-        "questions": [
-          "What incident prompted Coinbase's statement?",
-          "What method did hackers use if not a direct breach?"
-        ],
-        "sources": [
-          {
-            "title": "Coinbase says it wasn’t breached, but hackers don’t need to steal crypto to hurt users",
-            "url": "https://cryptoslate.com/coinbase-says-it-wasnt-breached-but-hackers-dont-need-to-steal-crypto-to-hurt-users/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T19:40:47.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-28T19:40:47.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/coinbase-funds-data-divide.webp",
-        "badge": "Security",
-        "trendScore": 45,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-172ad4f571",
-        "slug": "polymarket-built-a-14-billion-us-trading-business-almost-entirely-on-s",
-        "lane": "crypto",
-        "title": "Polymarket built a $14 billion US trading business almost entirely on sports bets",
-        "summary": "Polymarket has built a $14 billion US trading business, CryptoSlate reports, with sports bets making up almost all of it. The finding shows the platform's US growth leans heavily on sports wagering, not political or other event markets.",
-        "whyItMatters": "Polymarket's sports-driven growth tests how a crypto-based prediction market fits into US sports-betting and gambling rules.",
-        "whatToWatch": [
-          "US regulatory response to Polymarket's sports-betting volume",
-          "Whether Polymarket grows volume outside sports markets"
-        ],
-        "questions": [
-          "How does this volume compare to licensed US sportsbooks?",
-          "What regulatory scrutiny applies to crypto-based sports betting?"
-        ],
-        "sources": [
-          {
-            "title": "Polymarket built a $14 billion US trading business almost entirely on sports bets",
-            "url": "https://cryptoslate.com/polymarket-built-a-14-billion-us-trading-business-almost-entirely-on-sports-bets/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T18:40:30.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-28T18:40:30.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/polymarket-sports-regulatory-clash.webp",
-        "badge": "Markets",
-        "trendScore": 44,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-18d9927d26",
-        "slug": "galaxy-s-ai-data-centers-bring-in-79-million-in-lease-revenue-with-a-s",
-        "lane": "crypto",
-        "title": "Galaxy's AI data centers bring in $79 million in lease revenue, with a small net loss",
-        "summary": "Galaxy reported $79 million in lease revenue from its AI data center business, CryptoSlate reports, alongside a small net loss for the period. The result reflects Galaxy's push to diversify from crypto trading into AI infrastructure.",
-        "whyItMatters": "A crypto-native firm's move into AI infrastructure shows how some companies hedge against crypto market cycles with other revenue.",
-        "whatToWatch": [
-          "Galaxy's future earnings for data center revenue growth",
-          "Whether the net loss narrows as the AI business scales"
-        ],
-        "questions": [
-          "What drove the net loss despite the lease revenue?",
-          "How large is Galaxy's total AI infrastructure investment?"
-        ],
-        "sources": [
-          {
-            "title": "Galaxy’s AI data centers bring $79 million in lease revenue and a small net loss",
-            "url": "https://cryptoslate.com/galaxys-ai-data-centers-bring-79-million-in-lease-revenue-and-a-small-net-loss/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T17:40:30.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-28T17:40:30.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/galaxy-ai-balance-sheet.webp",
-        "badge": "Earnings",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-0788997dbf",
-        "slug": "kraken-to-cancel-orders-across-176-crypto-markets-in-sweeping-trading-",
-        "lane": "crypto",
-        "title": "Kraken to cancel orders across 176 crypto markets in sweeping trading overhaul",
-        "summary": "Kraken plans to cancel outstanding orders across 176 crypto markets as part of a broad trading overhaul, CryptoSlate reports. The report does not give the overhaul's full scope or timeline beyond the order cancellations.",
-        "whyItMatters": "Traders with open orders on the affected markets need to act, and the scale of the change points to a major shift in Kraken's trading infrastructure.",
-        "whatToWatch": [
-          "The date Kraken cancels the orders",
-          "Further detail on what the trading overhaul changes"
-        ],
-        "questions": [
-          "Why is Kraken canceling orders across so many markets at once?",
-          "Will affected users need to resubmit orders manually?"
-        ],
-        "sources": [
-          {
-            "title": "Kraken to cancel orders across 176 crypto markets in sweeping trading overhaul",
-            "url": "https://cryptoslate.com/kraken-to-cancel-orders-across-176-crypto-markets-in-sweeping-trading-overhaul/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-10-28T13:40:44.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-28T13:40:44.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/kraken-synthetic-market-gateway.webp",
-        "badge": "Exchange",
-        "trendScore": 40,
+        "trendScore": 48,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-98a8651986",
-        "slug": "mgm-resorts-misses-q3-2026-eps-estimates-but-shares-hold-steady",
+        "id": "markets-a674b6c9e0",
+        "slug": "nasdaq-falls-over-1-as-alphabet-s-post-earnings-slide-weighs-on-ai-tra",
         "lane": "markets",
-        "title": "MGM Resorts misses Q3 2026 EPS estimates, but shares hold steady",
-        "summary": "MGM Resorts reported third-quarter 2026 earnings per share below analyst estimates, according to an earnings call transcript carried by Investing.com. Despite the miss, the stock steadied rather than sold off. The transcript does not specify the exact size of the miss or management's stated reason for it.",
-        "whyItMatters": "MGM is a bellwether for US consumer spending on travel and gaming, so a muted stock reaction to a miss says something about investor confidence in the sector.",
+        "title": "Nasdaq falls over 1% as Alphabet's post-earnings slide weighs on AI trade",
+        "summary": "The Nasdaq dropped more than 1% as Alphabet shares slid after its earnings report, dragging down the broader AI trade. The decline shows how much weight AI-linked names like Alphabet now carry for the index.",
+        "whyItMatters": "A single mega-cap earnings reaction moving the whole Nasdaq shows how concentrated the AI trade has become, and how fragile it may be.",
         "whatToWatch": [
-          "Analyst commentary on what offset the EPS miss",
-          "Next quarter's guidance from management"
+          "Whether other AI-linked megacaps follow Alphabet's post-earnings move",
+          "How the Nasdaq trades in the sessions following the drop"
         ],
         "questions": [
-          "What drove the EPS shortfall?",
-          "Why did shares steady instead of falling on the miss?"
+          "What specifically in Alphabet's earnings triggered the slide?",
+          "Is this a one-day reaction or the start of a broader AI-trade pullback?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: MGM Resorts posts Q3 2026 EPS miss as stock steadies",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-mgm-resorts-posts-q3-2026-eps-miss-as-stock-steadies-93CH-4981087",
+            "title": "Nasdaq falls over 1% as post-earnings slide in Alphabet weighs on AI trade",
+            "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-drop-as-alphabet-slides-on-soft-earnings-microsoft-firms-4981271",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:05:09.000Z"
+            "publishedAt": "2026-10-29T23:25:51.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:05:09.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6R0AQ_M.jpg",
+        "publishedAt": "2026-10-29T23:25:51.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM5H1MW_1200_L.jpg",
         "badge": "Earnings",
         "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-c8d3328f93",
-        "slug": "porch-group-shares-jump-21-after-q3-2026-earnings-beat",
+        "id": "markets-00374f9299",
+        "slug": "imf-says-fed-is-appropriately-watching-the-data-closely",
         "lane": "markets",
-        "title": "Porch Group shares jump 21% after Q3 2026 earnings beat",
-        "summary": "Porch Group topped Wall Street's Q3 2026 estimates, according to its earnings call transcript. Shares jumped 21% in response. The transcript does not detail which specific metrics drove the beat.",
-        "whyItMatters": "A 21% single-day jump shows how sharply the market can reprice a smaller-cap stock on an earnings surprise.",
+        "title": "IMF says Fed is 'appropriately' watching the data closely",
+        "summary": "The IMF said the Federal Reserve is appropriately keeping a close eye on economic data. The comment signals the IMF's view of the Fed's current data-dependent approach.",
+        "whyItMatters": "IMF commentary on Fed policy can shape market expectations for interest rate decisions.",
         "whatToWatch": [
-          "Whether the stock holds its gains in coming sessions",
-          "Detail from the transcript on the drivers of the beat"
+          "Upcoming Fed statements or decisions for signs of this data-watching approach in action"
         ],
         "questions": [
-          "Which line items beat estimates, and by how much?"
+          "Which data points is the IMF referring to?",
+          "Does this comment hint at IMF views on near-term rate moves?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Porch Group tops Q3 2026 estimates, shares jump 21%",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-porch-group-tops-q3-2026-estimates-shares-jump-21-93CH-4981089",
+            "title": "IMF says Federal Reserve is ’appropriately’ keeping close eye on data",
+            "url": "https://www.investing.com/news/economy-news/imf-says-federal-reserve-is-appropriately-keeping-close-eye-on-data-4984746",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:06:09.000Z"
+            "publishedAt": "2026-10-29T23:25:06.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:06:09.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPED0C0KP_M.jpg",
+        "publishedAt": "2026-10-29T23:25:06.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9S25T_L.jpg",
+        "badge": "Analysis",
+        "trendScore": 57,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-7518550e35",
+        "slug": "tenet-healthcare-beats-q3-2026-estimates-but-shares-slip",
+        "lane": "markets",
+        "title": "Tenet Healthcare beats Q3 2026 estimates but shares slip",
+        "summary": "Tenet Healthcare topped Wall Street's Q3 2026 earnings estimates, according to its earnings call transcript. Despite the beat, the company's shares slipped.",
+        "whyItMatters": "A beat-but-sell-off reaction suggests investors found something in the details, such as guidance or margins, that concerned them more than the headline numbers.",
+        "whatToWatch": [
+          "Analyst commentary on what drove the share slide despite the beat"
+        ],
+        "questions": [
+          "What in the earnings call explains the share price drop despite the beat?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Tenet Healthcare beats Q3 2026 estimates, shares slip",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tenet-healthcare-beats-q3-2026-estimates-shares-slip-93CH-4984741",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-29T23:22:41.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T23:22:41.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
         "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-8b9a27b1b8",
-        "slug": "nextpower-tops-q2-2026-estimates-and-raises-its-outlook",
+        "id": "markets-09e39019a9",
+        "slug": "sonic-automotive-misses-q3-2026-eps-forecast-as-shares-fall",
         "lane": "markets",
-        "title": "Nextpower tops Q2 2026 estimates and raises its outlook",
-        "summary": "Nextpower beat Q2 2026 estimates and raised its outlook, according to its earnings call transcript. The size of the beat and the new guidance figures are not specified in the available coverage.",
-        "whyItMatters": "A raised outlook signals management's confidence in forward demand, which matters to investors tracking the company's sector.",
+        "title": "Sonic Automotive misses Q3 2026 EPS forecast as shares fall",
+        "summary": "Sonic Automotive missed its Q3 2026 earnings-per-share forecast, based on its earnings call transcript. Shares fell on the news.",
+        "whyItMatters": "An EPS miss at an auto retailer can signal broader pressure on consumer vehicle spending.",
         "whatToWatch": [
-          "The specific new guidance figures once detailed",
-          "Next quarter's results against the raised bar"
+          "Sonic Automotive's guidance commentary for the next quarter"
         ],
         "questions": [
-          "What specifically drove the stronger outlook?"
+          "What drove the EPS miss: costs, demand, or margins?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Nextpower tops Q2 2026 estimates and raises outlook",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-nextpower-tops-q2-2026-estimates-and-raises-outlook-93CH-4981088",
+            "title": "Earnings call transcript: Sonic Automotive misses Q3 2026 EPS forecast as shares fall",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-sonic-automotive-misses-q3-2026-eps-forecast-as-shares-fall-93CH-4984740",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:05:48.000Z"
+            "publishedAt": "2026-10-29T23:22:21.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:05:48.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPECBE0OL_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-ed4739b48c",
-        "slug": "lumentum-stock-surges",
-        "lane": "markets",
-        "title": "Lumentum stock surges",
-        "summary": "Shares of Lumentum rose sharply today, according to Investing.com. The available coverage does not state the specific catalyst behind the move.",
-        "whyItMatters": "Lumentum sits in the optical-components supply chain for data centers and AI infrastructure, so a sharp move can reflect broader sentiment toward that trade.",
-        "whatToWatch": [
-          "Confirmation of what drove today's move",
-          "Reaction in peer optical and networking stocks"
-        ],
-        "questions": [
-          "What specifically caused the surge?"
-        ],
-        "sources": [
-          {
-            "title": "Why is Lumentum stock surging today?",
-            "url": "https://www.investing.com/news/stock-market-news/why-is-lumentum-stock-surging-today-93CH-4981083",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:03:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:03:32.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
+        "publishedAt": "2026-10-29T23:22:21.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
         "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0Q1B5_M.jpg",
-        "badge": "Market move",
+        "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-566d7c4a31",
-        "slug": "marvell-technology-stock-slides",
+        "id": "markets-a6f843c699",
+        "slug": "mechanics-bancorp-posts-q3-2026-revenue-beat-but-eps-miss",
         "lane": "markets",
-        "title": "Marvell Technology stock slides",
-        "summary": "Shares of Marvell Technology fell today, according to Investing.com. The available coverage does not state the specific cause of the decline.",
-        "whyItMatters": "Marvell is a closely watched chipmaker tied to data center and AI demand, so its moves are read as a signal for the broader semiconductor trade.",
+        "title": "Mechanics Bancorp posts Q3 2026 revenue beat but EPS miss",
+        "summary": "Mechanics Bancorp beat revenue expectations for Q3 2026 but missed on earnings per share, according to its earnings call transcript.",
+        "whyItMatters": "A revenue-beat, EPS-miss pattern at a bank often points to cost or credit pressures worth tracking across the sector.",
         "whatToWatch": [
-          "Confirmation of what drove today's decline",
-          "Reaction in peer semiconductor stocks"
+          "Whether other regional banks report similar revenue-EPS splits this earnings season"
         ],
         "questions": [
-          "What specifically caused the slide?"
+          "What caused the EPS miss despite stronger revenue?"
         ],
         "sources": [
           {
-            "title": "Why is Marvell Technology stock sliding today?",
-            "url": "https://www.investing.com/news/stock-market-news/why-is-marvell-technology-stock-sliding-today-93CH-4981081",
+            "title": "Earnings call transcript: Mechanics Bancorp posts Q3 2026 revenue beat, EPS miss",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-mechanics-bancorp-posts-q3-2026-revenue-beat-eps-miss-93CH-4984739",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:03:21.000Z"
+            "publishedAt": "2026-10-29T23:21:36.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:03:21.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0Q0MJ_M.jpg",
-        "badge": "Market move",
+        "publishedAt": "2026-10-29T23:21:36.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB59082_M.jpg",
+        "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-f62b121f61",
-        "slug": "towne-bank-beats-earnings-estimates-by-0-09-revenue-also-tops-forecast",
+        "id": "markets-544366dd2c",
+        "slug": "maa-posts-mixed-q3-2026-results-as-guidance-dips",
         "lane": "markets",
-        "title": "Towne Bank beats earnings estimates by $0.09, revenue also tops forecasts",
-        "summary": "Towne Bank reported earnings per share $0.09 above analyst estimates, and revenue also came in ahead of forecasts, according to Investing.com. No further detail on the drivers was given.",
-        "whyItMatters": "Regional bank earnings are an early read on loan demand and credit conditions heading into the rest of the reporting season.",
+        "title": "MAA posts mixed Q3 2026 results as guidance dips",
+        "summary": "Apartment REIT MAA reported mixed Q3 2026 results and lowered its guidance, according to its earnings call transcript.",
+        "whyItMatters": "A guidance cut from a major apartment landlord can signal softening in rental demand or pricing power.",
         "whatToWatch": [
-          "Stock reaction to the beat",
-          "Commentary on loan growth and credit quality"
+          "MAA's updated full-year guidance details and rent trend commentary"
         ],
         "questions": [
-          "What drove the revenue beat?"
+          "Which part of MAA's business drove the guidance dip: occupancy, rents, or costs?"
         ],
         "sources": [
           {
-            "title": "Towne Bank earnings beat by $0.09, revenue topped estimates",
-            "url": "https://www.investing.com/news/earnings/towne-bank-earnings-beat-by-009-revenue-topped-estimates-4981079",
+            "title": "Earnings call transcript: MAA posts mixed Q3 2026 results as guidance dips",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-maa-posts-mixed-q3-2026-results-as-guidance-dips-93CH-4984738",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:02:37.000Z"
+            "publishedAt": "2026-10-29T23:21:29.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:02:37.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
+        "publishedAt": "2026-10-29T23:21:29.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6J0AJ_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-a942fc0d6a",
+        "slug": "deutsche-bank-tops-q3-2026-estimates-shares-rise-4",
+        "lane": "markets",
+        "title": "Deutsche Bank tops Q3 2026 estimates, shares rise 4%",
+        "summary": "Deutsche Bank beat Q3 2026 earnings estimates, according to its earnings call transcript, and shares rose 4% in response.",
+        "whyItMatters": "A strong beat at a major European bank offers a read on the health of global banking and trading revenue.",
+        "whatToWatch": [
+          "Deutsche Bank's forward commentary on trading and investment banking revenue"
+        ],
+        "questions": [
+          "Which business line drove the beat: trading, investment banking, or retail?"
+        ],
+        "sources": [
+          {
+            "title": "Earnings call transcript: Deutsche Bank tops Q3 2026 estimates as shares rise 4%",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-deutsche-bank-tops-q3-2026-estimates-as-shares-rise-4-93CH-4984737",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-10-29T23:21:03.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-10-29T23:21:03.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
         "imageUrl": "https://content-media.investing.com/news/LYNXMPED0C0KP_M.jpg",
         "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-bc207f0bf6",
-        "slug": "carlisle-beats-q3-2026-estimates-but-shares-fall-anyway",
+        "id": "markets-2511e1316d",
+        "slug": "doordash-s-instacart-deal-may-draw-ftc-scrutiny-amid-cost-of-living-co",
         "lane": "markets",
-        "title": "Carlisle beats Q3 2026 estimates, but shares fall anyway",
-        "summary": "Carlisle beat Q3 2026 earnings estimates, according to its earnings call transcript, yet its shares fell on the news. The transcript does not specify what in the report concerned investors.",
-        "whyItMatters": "A stock falling despite a beat often points to a soft spot elsewhere in the report, such as guidance, which matters for anyone holding or watching the name.",
+        "title": "DoorDash's Instacart deal may draw FTC scrutiny amid cost-of-living concerns",
+        "summary": "DoorDash's deal to acquire Instacart may face scrutiny from the Federal Trade Commission, reportedly tied to cost-of-living concerns. The report flags potential antitrust risk for the tie-up.",
+        "whyItMatters": "Regulatory scrutiny could delay or reshape one of the largest pending deals in the food and grocery delivery sector.",
         "whatToWatch": [
-          "Analyst notes explaining the disconnect between the beat and the share drop",
-          "Management's forward guidance from the call"
+          "Any formal FTC review or request for information on the deal",
+          "DoorDash and Instacart statements responding to scrutiny reports"
         ],
         "questions": [
-          "What in the report drove shares lower despite the beat?"
+          "Has the FTC opened a formal review, or is this still preliminary scrutiny?",
+          "What specific cost-of-living concerns are driving the regulatory interest?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Carlisle beats Q3 2026 estimates but shares fall",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-carlisle-beats-q3-2026-estimates-but-shares-fall-93CH-4981078",
+            "title": "DoorDash’s Instacart deal may draw FTC scrutiny amid cost-of-living concerns",
+            "url": "https://www.investing.com/news/stock-market-news/doordashs-instacart-deal-may-draw-ftc-scrutiny-amid-costofliving-concerns-4984745",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:02:08.000Z"
+            "publishedAt": "2026-10-29T23:24:28.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:02:08.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-7465e07be4",
-        "slug": "us-confirms-new-world-screwworm-case-in-a-dog-in-arizona",
-        "lane": "markets",
-        "title": "US confirms New World screwworm case in a dog in Arizona",
-        "summary": "US authorities confirmed a case of New World screwworm in a dog in Arizona, according to Investing.com. The pest is a livestock health concern that has previously affected cattle trade.",
-        "whyItMatters": "Screwworm outbreaks can disrupt cattle supply chains and trade policy, which matters to anyone tracking agricultural commodity markets.",
-        "whatToWatch": [
-          "Whether further cases are confirmed in the region",
-          "Any response from agriculture or trade officials"
-        ],
-        "questions": [
-          "Could this affect cattle imports or futures prices?",
-          "Is this an isolated case or a wider outbreak?"
-        ],
-        "sources": [
-          {
-            "title": "US confirms New World screwworm in a dog in Arizona",
-            "url": "https://www.investing.com/news/commodities-news/us-confirms-new-world-screwworm-in-a-dog-in-arizona-4981068",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:06:22.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:06:22.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9R2JM_L.jpg",
-        "badge": "Commodities",
+        "publishedAt": "2026-10-29T23:24:28.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9S261_L.jpg",
+        "badge": "Regulatory",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-de39bb2967",
-        "slug": "boot-barn-posts-margin-gains-and-keeps-expanding-stores-despite-slowin",
+        "id": "markets-f459fdb1a1",
+        "slug": "ftc-and-states-sue-toast-over-fees-and-subscription-practices",
         "lane": "markets",
-        "title": "Boot Barn posts margin gains and keeps expanding stores despite slowing trends",
-        "summary": "Boot Barn's Q2 FY2027 results showed margin gains and continued store expansion, even as underlying sales trends slowed, according to slides reported by Investing.com. Specific figures beyond this were not detailed.",
-        "whyItMatters": "A retailer expanding and improving margins while growth slows is a signal worth watching for the health of discretionary consumer spending.",
+        "title": "FTC and states sue Toast over fees and subscription practices",
+        "summary": "The FTC and a group of states have sued restaurant payments company Toast, alleging deceptive fees and subscription practices.",
+        "whyItMatters": "The lawsuit adds Toast to a growing list of companies facing regulatory action over fee transparency and subscription practices.",
         "whatToWatch": [
-          "Same-store sales trends in coming quarters",
-          "Pace of further store openings"
+          "Toast's formal response to the lawsuit",
+          "Any court proceedings or settlement developments"
         ],
         "questions": [
-          "How much did growth actually slow, and why?"
+          "What specific fees or subscription practices are at the center of the suit?",
+          "Which states joined the FTC in the action?"
         ],
         "sources": [
           {
-            "title": "Boot Barn Q2 FY2027 slides: margin gains, store expansion amid slowing trends",
-            "url": "https://www.investing.com/news/company-news/boot-barn-q2-fy2027-slides-margin-gains-store-expansion-amid-slowing-trends-93CH-4981082",
+            "title": "FTC, states sue Toast over fees, deceptive subscription practices",
+            "url": "https://www.investing.com/news/stock-market-news/ftc-states-sue-toast-over-fees-deceptive-subscription-practices-4984736",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:03:28.000Z"
+            "publishedAt": "2026-10-29T23:19:13.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:03:28.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM1P0ZM_1200_L.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-10-29T23:19:13.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEM9S25G_L.jpg",
+        "badge": "Regulatory",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-be047e3769",
-        "slug": "bausch-health-notches-14th-straight-growth-quarter-raises-guidance",
+        "id": "markets-e352a8dc40",
+        "slug": "first-russian-diesel-from-putin-trump-deal-arrives-in-us-shipping-data",
         "lane": "markets",
-        "title": "Bausch Health notches 14th straight growth quarter, raises guidance",
-        "summary": "Bausch Health posted its 14th consecutive quarter of growth in Q3 2026 and raised its guidance, according to slides reported by Investing.com. Specific revenue and guidance figures were not detailed in the available coverage.",
-        "whyItMatters": "A sustained multi-year growth streak with raised guidance signals steady execution, which matters for investors assessing the company's turnaround.",
+        "title": "First Russian diesel from Putin-Trump deal arrives in US shipping data",
+        "summary": "Shipping data reportedly shows the first cargo of Russian diesel tied to a Putin-Trump deal heading to the United States, according to an exclusive report.",
+        "whyItMatters": "Russian fuel flows into the US would mark a notable shift in energy trade patterns tied to US-Russia relations.",
         "whatToWatch": [
-          "The specific updated guidance figures",
-          "Whether the growth streak extends into the next quarter"
+          "Confirmation of the cargo's arrival and volume",
+          "Any official US or Russian statements on the diesel deal"
         ],
         "questions": [
-          "What is driving the sustained growth streak?"
+          "What are the terms of the underlying Putin-Trump deal?",
+          "Does this shipment signal a broader resumption of Russian energy trade with the US?"
         ],
         "sources": [
           {
-            "title": "Bausch Health Q3 2026 slides: 14th straight growth quarter, guidance raised",
-            "url": "https://www.investing.com/news/company-news/bausch-health-q3-2026-slides-14th-straight-growth-quarter-guidance-raised-93CH-4981077",
+            "title": "Exclusive-First Russian diesel from Putin-Trump deal heading for US, data shows",
+            "url": "https://www.investing.com/news/economic-indicators/exclusivefirst-russian-diesel-from-putintrump-deal-heading-for-us-data-shows-4984735",
             "publisher": "Investing.com",
-            "publishedAt": "2026-10-29T05:01:58.000Z"
+            "publishedAt": "2026-10-29T23:18:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-10-29T05:01:58.000Z",
-        "updatedAt": "2026-10-28T22:16:07.598Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM1J0WY_1200_L.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-10-29T23:18:58.000Z",
+        "updatedAt": "2026-10-29T16:41:13.814Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXMPEM9M0UY_L.jpg",
+        "badge": "Breaking",
         "trendScore": 47,
         "confidence": "low"
       }
