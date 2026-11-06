@@ -1,23 +1,115 @@
 {
-  "generatedAt": "2026-11-06T04:05:16.729Z",
-  "contentVersion": 194,
+  "generatedAt": "2026-11-06T10:07:21.468Z",
+  "contentVersion": 195,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-a2c1a82051",
+        "slug": "bitcoin-and-ethereum-etfs-shed-530-million-as-broader-market-selloff-h",
+        "lane": "crypto",
+        "title": "Bitcoin and Ethereum ETFs Shed $530 Million as Broader Market Selloff Hits Crypto",
+        "summary": "Bitcoin and Ethereum ETFs lost a combined $530 million in one day. The outflow came alongside a wider selloff that erased about $3 trillion from Wall Street. CryptoSlate ties the ETF outflows to that broader market stress, not to a crypto-specific trigger.",
+        "whyItMatters": "ETF flows show institutional demand for crypto. A sharp one-day reversal shows crypto still trades like a risk asset tied to broader markets.",
+        "whatToWatch": [
+          "Next ETF flow reports, to see if outflows continue",
+          "Whether the broader equity selloff stabilizes"
+        ],
+        "questions": [
+          "Were the outflows concentrated in a few large funds?",
+          "Is this a one-day event or the start of a longer trend?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin and Ethereum ETFs lose $530 million in one day as $3 trillion Wall Street wipeout rattles crypto",
+            "url": "https://cryptoslate.com/bitcoin-and-ethereum-etfs-lose-530-million-in-one-day-as-3-trillion-wall-street-wipeout-rattles-crypto/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-06T09:55:27.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T09:55:27.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/crypto-etf-fractured-bridge.webp",
+        "badge": "Markets",
+        "trendScore": 67,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-a1d971413f",
+        "slug": "bitcoin-s-rate-cut-rally-stalls-as-service-inflation-picks-up",
+        "lane": "crypto",
+        "title": "Bitcoin's Rate-Cut Rally Stalls as Service Inflation Picks Up",
+        "summary": "Bitcoin's recent gains, driven by hopes for a rate cut, have stalled. New data shows a pickup in service-sector inflation. CryptoSlate reports this has clouded the rate-cut outlook and weighed on bitcoin's momentum.",
+        "whyItMatters": "Rate expectations drive money into risk assets like bitcoin. A shift in the inflation picture can reverse recent price gains.",
+        "whatToWatch": [
+          "Upcoming inflation reports",
+          "Signals from policymakers on rate-cut timing"
+        ],
+        "questions": [
+          "How much of bitcoin's recent rally was priced on a rate cut alone?"
+        ],
+        "sources": [
+          {
+            "title": "Bitcoin’s rate cut relief stalls as service inflation flares",
+            "url": "https://cryptoslate.com/bitcoins-rate-cut-relief-stalls-as-service-inflation-flares/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-06T06:40:14.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T06:40:14.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-rate-relief-heat-jammed-lever.jpg",
+        "badge": "Markets",
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-5843ba305c",
+        "slug": "bug-in-unpatched-bitcoin-lightning-nodes-could-drain-payment-channels",
+        "lane": "crypto",
+        "title": "Bug in Unpatched Bitcoin Lightning Nodes Could Drain Payment Channels",
+        "summary": "CryptoSlate reports a bug in unpatched Bitcoin Lightning Network nodes. The bug could let an attacker drain funds from open payment channels. Node operators who have not applied a fix remain exposed.",
+        "whyItMatters": "The Lightning Network handles a large share of bitcoin payments. A channel-draining bug puts funds in unpatched nodes at risk.",
+        "whatToWatch": [
+          "Whether node operators patch quickly",
+          "Any reports of the bug being exploited",
+          "Further detail from Lightning implementation teams"
+        ],
+        "questions": [
+          "How many nodes remain unpatched right now?",
+          "Has the bug been exploited in the wild?"
+        ],
+        "sources": [
+          {
+            "title": "Unpatched Bitcoin Lightning nodes face channel-draining bug",
+            "url": "https://cryptoslate.com/unpatched-bitcoin-lightning-nodes-face-channel-draining-bug/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-06T04:30:28.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T04:30:28.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/core-lightning-channel-drain.jpg",
+        "badge": "Security",
+        "trendScore": 47,
+        "confidence": "low"
+      },
       {
         "id": "crypto-e214ba440b",
         "slug": "solana-developers-propose-major-overhaul-to-fix-hidden-network-risk",
         "lane": "crypto",
-        "title": "Solana Developers Propose Major Overhaul to Fix Hidden Network Risk",
-        "summary": "Solana developers proposed a major overhaul to the protocol. The plan targets a hidden risk that could disrupt the network. CryptoSlate reported the proposal on November 5. The report did not give full technical details on the risk.",
-        "whyItMatters": "A core protocol fix affects the reliability of one of the largest layer-1 blockchains, which matters to developers and holders alike.",
+        "title": "Solana Developers Propose Overhaul to Fix Hidden Network Risk",
+        "summary": "Solana developers have proposed a major overhaul of the network. The goal is to address a hidden risk that could disrupt Solana, according to CryptoSlate. The report does not give full detail on the risk or the proposal's specifics.",
+        "whyItMatters": "Changes to Solana's core design affect how reliable the network is for anyone holding or building on it.",
         "whatToWatch": [
-          "Whether the proposal moves to a formal vote",
-          "Technical details on the specific risk",
-          "Response from validators and core developers"
+          "Community and validator response to the proposal",
+          "A formal vote or rollout timeline"
         ],
         "questions": [
           "What exactly is the hidden risk?",
-          "How soon could the fix ship?"
+          "How soon could the overhaul ship?"
         ],
         "sources": [
           {
@@ -29,26 +121,56 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-05T22:00:30.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-client-rulebook.webp",
         "badge": "Protocol",
-        "trendScore": 52,
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-a1ca7f1366",
+        "slug": "xrp-sellers-hit-by-heavy-slippage-as-order-book-depth-misleads",
+        "lane": "crypto",
+        "title": "XRP Sellers Hit by Heavy Slippage as Order Book Depth Misleads",
+        "summary": "CryptoSlate reports that XRP sellers are facing unusually large slippage. The USD order book's displayed depth does not match the liquidity actually available. Large sell orders are moving the price more than the order book would suggest.",
+        "whyItMatters": "Misleading liquidity makes XRP more volatile to trade and raises doubts about how reliable its listed order books are.",
+        "whatToWatch": [
+          "Whether exchanges address the order book discrepancy",
+          "XRP price swings on large sell orders"
+        ],
+        "questions": [
+          "Which trading venues show the biggest gap between displayed and real depth?"
+        ],
+        "sources": [
+          {
+            "title": "XRP sellers face massive slip as USD order book depth fakes size",
+            "url": "https://cryptoslate.com/xrp-sellers-face-massive-slip-as-usd-order-book-depth-fakes-size/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-06T08:50:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T08:50:00.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/xrp-funded-depth-hollow-order-book.jpg",
+        "badge": "Markets",
+        "trendScore": 46,
         "confidence": "low"
       },
       {
         "id": "crypto-8be9a5afda",
         "slug": "gate-s-104-cold-reserve-claim-questioned-over-mismatched-snapshot-date",
         "lane": "crypto",
-        "title": "Gate's 104% Cold Reserve Claim Questioned Over Mismatched Snapshot Dates",
-        "summary": "Exchange Gate reported 104% cold reserve coverage, meaning it says it holds more assets in cold storage than it owes users. CryptoSlate noted the reserve and liability figures came from separate snapshot dates. That gap makes the comparison harder to verify.",
-        "whyItMatters": "Proof-of-reserve reports are meant to rebuild trust after past exchange collapses, so a methodology gap weakens the claim's value.",
+        "title": "Gate Reports 104% Cold Reserve Coverage, but Mismatched Snapshot Dates Raise Doubts",
+        "summary": "Exchange Gate reported cold reserve coverage of 104%, according to CryptoSlate. The proof-of-reserves used separate snapshot dates for assets and liabilities. The report says this timing gap undercuts confidence in the figure.",
+        "whyItMatters": "Proof-of-reserves is one of the few checks users have on exchange solvency. Mismatched snapshot timing weakens that assurance.",
         "whatToWatch": [
-          "Whether Gate aligns snapshot dates in future reports",
-          "Any independent audit of the reserve ratio"
+          "Whether Gate issues a reserve report with matched snapshot dates",
+          "Reaction from auditors or users"
         ],
         "questions": [
-          "Why were the two snapshots taken on different dates?",
-          "Does the mismatch change the real coverage ratio?"
+          "Why were the snapshot dates not aligned?",
+          "Does the timing gap change the real coverage ratio?"
         ],
         "sources": [
           {
@@ -60,42 +182,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-06T00:40:44.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/gate-verification-in-focus.webp",
         "badge": "Exchange",
-        "trendScore": 49,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-83d5763383",
-        "slug": "strategy-s-strc-preferred-shares-stage-a-comeback-could-fund-more-bitc",
-        "lane": "crypto",
-        "title": "Strategy's $100 STRC Offering Could Fund New Bitcoin Buys",
-        "summary": "Strategy is reviving its STRC preferred stock offering at $100 a share. CryptoSlate reports the raise could offset cash outflows and give the company fresh capital for more Bitcoin purchases. Strategy has used several debt and equity tools to keep growing its Bitcoin holdings.",
-        "whyItMatters": "Strategy is one of the largest corporate Bitcoin holders, so its financing moves can signal new buy-side demand for the asset.",
-        "whatToWatch": [
-          "Size and investor uptake of the STRC offering",
-          "Confirmation that proceeds go toward Bitcoin purchases",
-          "Strategy's next disclosed Bitcoin buy"
-        ],
-        "questions": [
-          "How much capital will the offering actually raise?",
-          "Does repeated reliance on capital markets raise risk?"
-        ],
-        "sources": [
-          {
-            "title": "Strategy’s $100 STRC comeback could turn a cash drain into fresh Bitcoin buying power",
-            "url": "https://cryptoslate.com/strategys-100-strc-comeback-could-turn-a-cash-drain-into-fresh-bitcoin-buying-power/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-05T18:30:02.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-05T18:30:02.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/strc-funding-gate-reopens.webp",
-        "badge": "Markets",
-        "trendScore": 49,
+        "trendScore": 44,
         "confidence": "low"
       },
       {
@@ -103,15 +193,15 @@
         "slug": "bitcoin-traders-brace-for-2-7-billion-options-expiry-with-a-five-hour-",
         "lane": "crypto",
         "title": "Bitcoin's $2.7 Billion Friday Options Expiry Carries a Five-Hour Blind Spot",
-        "summary": "Bitcoin traders are watching Friday's $2.7 billion options expiry. CryptoSlate flagged a five-hour window around the event with reduced market visibility, which raises the risk of sharp price moves. Large expiries like this have coincided with volatility before.",
-        "whyItMatters": "An expiry this size can swing the spot price fast, which affects anyone holding or trading Bitcoin around that date.",
+        "summary": "Bitcoin traders face a $2.7 billion options expiry on Friday, CryptoSlate reports. The report flags a five-hour window around the expiry with limited market visibility. That gap adds risk for traders positioned around the event.",
+        "whyItMatters": "Large options expiries can move bitcoin's price sharply, and a known visibility gap raises the odds of a surprise move.",
         "whatToWatch": [
-          "Bitcoin's price action into and through Friday's expiry",
-          "Whether the five-hour gap produces unusual volatility"
+          "Friday's expiry and the resulting price action",
+          "Unusual volatility during the flagged five-hour window"
         ],
         "questions": [
           "What causes the five-hour blind spot?",
-          "How concentrated is positioning around key strike prices?"
+          "Have past expiries this size moved the price significantly?"
         ],
         "sources": [
           {
@@ -123,10 +213,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-05T20:40:25.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-payrolls-missed-connection.webp",
         "badge": "Markets",
-        "trendScore": 46,
+        "trendScore": 41,
         "confidence": "low"
       },
       {
@@ -134,15 +224,15 @@
         "slug": "optimism-proposal-would-curb-council-s-power-over-standalone-chains",
         "lane": "crypto",
         "title": "Optimism Proposal Would Curb Council's Power Over Standalone Chains",
-        "summary": "A new governance proposal in the Optimism ecosystem would reduce the Security Council's authority over standalone chains built on its stack. CryptoSlate reported the plan on November 6. The change would shift control away from centralized oversight for chains that run independently of the core Optimism collective.",
-        "whyItMatters": "Governance structure sets how much autonomy and risk standalone chains carry, which affects developers and users building on Optimism.",
+        "summary": "A new proposal in the Optimism ecosystem would reduce the governing council's authority over standalone chains, CryptoSlate reports. The change would shift some control away from central oversight toward the chains themselves.",
+        "whyItMatters": "Council power over connected chains affects decentralization and independence for projects built on Optimism's stack.",
         "whatToWatch": [
-          "A community vote or discussion period on the proposal",
-          "Reaction from standalone chain operators"
+          "A governance vote on the proposal",
+          "Response from standalone chain operators"
         ],
         "questions": [
-          "Which standalone chains are most affected?",
-          "What oversight, if any, replaces the council's current role?"
+          "Which standalone chains would be most affected?",
+          "What prompted this proposal now?"
         ],
         "sources": [
           {
@@ -154,42 +244,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-06T02:10:05.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/optimism-locked-key-cabinet-1280x720-1.jpg",
         "badge": "Governance",
-        "trendScore": 45,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-9c77e940ba",
-        "slug": "bitcoin-falls-below-76-000-as-ai-bubble-fears-erase-2-5-trillion-from-",
-        "lane": "crypto",
-        "title": "Bitcoin Falls Below $76,000 as AI Bubble Fears Erase $2.5 Trillion From Wall Street",
-        "summary": "Bitcoin dropped below $76,000 as fears of an AI stock bubble wiped roughly $2.5 trillion from Wall Street. CryptoSlate reported the decline on November 5 and linked it to the broader equity sell-off. The move shows Bitcoin still trades in step with risk sentiment in stock markets.",
-        "whyItMatters": "A sharp, correlated drop shows Bitcoin still behaves like a risk asset tied to equities, not as an independent hedge.",
-        "whatToWatch": [
-          "Whether Bitcoin stabilizes or falls further below $76,000",
-          "Follow-through selling in AI-linked tech stocks",
-          "Any shift in the Bitcoin-equity correlation"
-        ],
-        "questions": [
-          "How much of the drop is AI-sector contagion versus crypto-specific selling?",
-          "Could the sell-off trigger further leveraged liquidations?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin crashes below $76,000 as AI bubble fears wipe $2.5 trillion from Wall Street",
-            "url": "https://cryptoslate.com/bitcoin-crashes-below-76000-as-ai-bubble-fears-wipe-2-5-trillion-from-wall-street/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-05T18:50:46.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-05T18:50:46.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-wall-street-dominoes.webp",
-        "badge": "Breaking",
-        "trendScore": 44,
+        "trendScore": 40,
         "confidence": "low"
       },
       {
@@ -197,15 +255,14 @@
         "slug": "treasury-s-6-billion-bond-buyback-draws-skepticism-from-dealers",
         "lane": "crypto",
         "title": "Treasury's $6 Billion Bond Buyback Draws Skepticism From Dealers",
-        "summary": "The U.S. Treasury bought back $6 billion in bonds. Bond dealers say the operation is too small to ease market strains. CryptoSlate reported the dealer pushback on November 5.",
-        "whyItMatters": "Treasury market liquidity and rate conditions shape the risk appetite that flows into Bitcoin and other crypto assets.",
+        "summary": "The US Treasury bought back $6 billion in bonds. CryptoSlate reports that bond dealers say the operation is not large enough to ease the underlying market strain. The buyback is part of efforts to support bond market liquidity.",
+        "whyItMatters": "Bond market stress and liquidity support shape the rate environment that influences flows into crypto and other risk assets.",
         "whatToWatch": [
-          "Whether Treasury increases the size of future buybacks",
-          "Bond market liquidity conditions in coming weeks"
+          "Future Treasury buyback operations",
+          "Further dealer commentary on bond market liquidity"
         ],
         "questions": [
-          "What specific strains are dealers pointing to?",
-          "Could larger buybacks shift crypto risk sentiment?"
+          "What size of buyback would dealers consider adequate?"
         ],
         "sources": [
           {
@@ -217,41 +274,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-05T23:20:13.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/treasury-dealer-exit.webp",
         "badge": "Macro",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-f798d9e44d",
-        "slug": "circle-s-182-million-token-sale-masks-a-revenue-decline-as-usdc-busine",
-        "lane": "crypto",
-        "title": "Circle's $182 Million Token Sale Masks a Decline in USDC Revenue",
-        "summary": "Circle raised $182 million through a token sale. CryptoSlate reports the raise masks weaker core revenue from its USDC stablecoin business. The sale appears to offset softer underlying performance rather than reflect new strength.",
-        "whyItMatters": "USDC is one of the largest stablecoins, so a weaker revenue base at Circle has implications for stablecoin market stability and competition.",
-        "whatToWatch": [
-          "Circle's next earnings disclosure",
-          "USDC market share against competing stablecoins"
-        ],
-        "questions": [
-          "What is driving the USDC revenue decline?",
-          "Is the token sale a one-time offset or a recurring strategy?"
-        ],
-        "sources": [
-          {
-            "title": "Circle’s $182 million crypto token sale masks revenue decline as USDC business weakens",
-            "url": "https://cryptoslate.com/circles-182-million-crypto-token-sale-masks-revenue-decline-as-usdc-business-weakens/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-05T16:30:57.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-05T16:30:57.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/circle-revenue-prism-split.webp",
-        "badge": "Earnings",
-        "trendScore": 42,
+        "trendScore": 38,
         "confidence": "low"
       },
       {
@@ -259,16 +285,15 @@
         "slug": "south-korea-weighs-another-delay-to-its-22-crypto-tax-plus-new-loss-re",
         "lane": "crypto",
         "title": "South Korea Weighs Another Delay to Its 22% Crypto Tax",
-        "summary": "South Korean officials are considering a new delay to the country's planned 22% crypto tax. CryptoSlate reports the plan would also give investors a new break on losses. The tax has already faced repeated delays amid industry pushback.",
-        "whyItMatters": "Tax policy directly shapes trading activity in South Korea, one of the world's most active retail crypto markets.",
+        "summary": "South Korea is considering another delay to its planned 22% crypto tax, CryptoSlate reports. A new provision would also let investors offset losses. This would mark a repeated postponement of the long-pending tax.",
+        "whyItMatters": "Tax treatment shapes retail and institutional participation in one of the world's most active crypto trading markets.",
         "whatToWatch": [
-          "Formal legislative action on the delay",
-          "A new effective date, if one is set",
-          "Details of the proposed loss break"
+          "A legislative decision on the delay",
+          "Details of the proposed loss-offset rule"
         ],
         "questions": [
-          "How many times has this tax now been delayed?",
-          "What is driving continued resistance to implementation?"
+          "How many times has this tax now been postponed?",
+          "When would it take effect if delayed again?"
         ],
         "sources": [
           {
@@ -280,249 +305,313 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-05T19:30:45.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/korea-tax-deadline-anchor.webp",
         "badge": "Regulatory",
-        "trendScore": 40,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-816a7658bc",
-        "slug": "india-warns-that-ai-assisted-hackers-are-targeting-crypto-wallet-keys",
-        "lane": "crypto",
-        "title": "India Warns AI-Assisted Hackers Are Targeting Crypto Wallet Keys",
-        "summary": "Indian authorities warned that hackers are using AI tools to steal crypto wallet keys. CryptoSlate reported the warning on November 5. The report did not detail specific attack methods or victim numbers.",
-        "whyItMatters": "Wallet key theft causes irreversible loss of funds, so new AI-assisted attack methods raise the stakes for personal crypto security.",
-        "whatToWatch": [
-          "Any official security guidance India releases",
-          "Reports of incidents tied to this threat"
-        ],
-        "questions": [
-          "How widespread are these attacks so far?",
-          "What specific techniques are the hackers using?"
-        ],
-        "sources": [
-          {
-            "title": "India warns AI-assisted hackers are stealing crypto wallet keys",
-            "url": "https://cryptoslate.com/india-warns-ai-assisted-hackers-are-stealing-crypto-wallet-keys/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-05T17:30:59.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-05T17:30:59.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/india-bank-monitoring-gaps.webp",
-        "badge": "Security",
-        "trendScore": 38,
+        "trendScore": 35,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-5e9f0e2d6f",
-        "slug": "south-korea-eases-margin-trading-rules-to-curb-forced-stock-sales",
+        "id": "markets-d2e6f18e5a",
+        "slug": "canaccord-cuts-nuscale-power-price-target-on-contract-uncertainty",
         "lane": "markets",
-        "title": "South Korea eases margin trading rules to curb forced stock sales",
-        "summary": "South Korean regulators loosened margin trading rules, aiming to reduce forced sales that occur when leveraged investors cannot meet margin calls. The move signals official concern about volatility tied to leveraged trading in the local market. The source does not detail the specific rule changes.",
-        "whyItMatters": "Forced selling from margin calls can amplify market swings, so this easing points to regulators trying to stabilize Korean equities.",
+        "title": "Canaccord cuts NuScale Power price target on contract uncertainty",
+        "summary": "Canaccord Genuity lowered its price target on NuScale Power, citing uncertainty around the company's contracts. The note did not detail specific contract terms. The call adds scrutiny to the small modular reactor maker's near-term revenue visibility.",
+        "whyItMatters": "A price target cut signals eroding analyst confidence in execution, which matters for investors watching nuclear and SMR contract wins.",
         "whatToWatch": [
-          "Market reaction in South Korean stocks after the change",
-          "Whether forced-sale volumes drop in coming sessions"
+          "Any new contract announcements from NuScale Power",
+          "Share price reaction to the target cut"
         ],
         "questions": [
-          "What specific margin requirements changed?",
-          "Which stocks or sectors faced the most forced selling?"
+          "Which specific contracts does Canaccord see as uncertain?",
+          "What is the new price target?"
         ],
         "sources": [
           {
-            "title": "S. Korea eases margin trading rules to stem forced stock sales",
-            "url": "https://www.investing.com/news/stock-market-news/s-korea-eases-margin-trading-rules-to-stem-forced-stock-sales-5006397",
+            "title": "Canaccord cuts Nuscale Power stock price target on contract uncertainty",
+            "url": "https://www.investing.com/news/analyst-ratings/canaccord-cuts-nuscale-power-stock-price-target-on-contract-uncertainty-93CH-5007065",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:48:38.000Z"
+            "publishedAt": "2026-11-06T17:52:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:48:38.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEH1L0L7_L.jpg",
-        "badge": "Regulatory",
+        "publishedAt": "2026-11-06T17:52:58.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
+        "badge": "Analyst Call",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-305661b6ac",
-        "slug": "softbank-stock-tumbles",
+        "id": "markets-4c9cbc38b6",
+        "slug": "kura-sushi-cut-to-market-perform-by-william-blair-on-weak-traffic",
         "lane": "markets",
-        "title": "SoftBank stock tumbles",
-        "summary": "SoftBank shares fell sharply, according to Investing.com. The source does not specify what caused the decline.",
-        "whyItMatters": "SoftBank holds major stakes in tech and AI-related firms, so sharp moves in its stock often reflect broader sentiment toward that sector.",
+        "title": "Kura Sushi cut to Market Perform by William Blair on weak traffic",
+        "summary": "William Blair downgraded Kura Sushi to Market Perform, citing weak customer traffic at the sushi chain. The downgrade points to limited near-term upside for the stock. The note did not disclose specific traffic figures.",
+        "whyItMatters": "Traffic trends are a key signal for restaurant stocks, and a sell-side downgrade can pressure sentiment on growth-focused chains like Kura Sushi.",
         "whatToWatch": [
-          "Any company statement explaining the drop",
-          "Whether the stock stabilizes in the next session"
+          "Kura Sushi's next earnings report for traffic data",
+          "Whether other analysts follow with similar rating changes"
         ],
         "questions": [
-          "What triggered the drop?",
-          "Is the move tied to a specific holding or a broader market shift?"
+          "How much has traffic declined, and over what period?"
         ],
         "sources": [
           {
-            "title": "Why is SoftBank stock tumbling today?",
-            "url": "https://www.investing.com/news/stock-market-news/why-is-softbank-stock-tumbling-today-93CH-5006386",
+            "title": "Kura Sushi stock rating cut to Market Perform by William Blair on weak traffic",
+            "url": "https://www.investing.com/news/analyst-ratings/kura-sushi-stock-rating-cut-to-market-perform-by-william-blair-on-weak-traffic-93CH-5007064",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:43:31.000Z"
+            "publishedAt": "2026-11-06T17:52:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:43:31.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEC0409P_M.jpg",
+        "publishedAt": "2026-11-06T17:52:58.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM450ND_1200_L.jpg",
+        "badge": "Analyst Call",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-5187bf5757",
-        "slug": "scientific-industries-chairman-buys-6-000-in-company-stock",
+        "id": "markets-37008423cc",
+        "slug": "truist-reiterates-cloudflare-at-buy-on-strong-q3-results",
         "lane": "markets",
-        "title": "Scientific Industries chairman buys $6,000 in company stock",
-        "summary": "John Moore, chairman of Scientific Industries, bought $6,000 worth of the company's stock, per a filing noted by Investing.com. The filing does not state his reason for the purchase.",
-        "whyItMatters": "Insider buying can signal a leader's confidence, though a $6,000 purchase is a small, modest-scale transaction.",
+        "title": "Truist reiterates Cloudflare at Buy on strong Q3 results",
+        "summary": "Truist Securities reiterated its Buy rating on Cloudflare after the company posted strong third-quarter results. The reaffirmed rating signals continued confidence in the network and security company's growth. Specific quarterly figures were not detailed in the note.",
+        "whyItMatters": "Cloudflare is a bellwether for enterprise cloud security spending, so a sell-side reaffirmation after earnings reinforces the read for the sector.",
         "whatToWatch": [
-          "Whether other insiders make their own purchases",
-          "Scientific Industries' next earnings report"
+          "Full details of Cloudflare's Q3 results and guidance",
+          "Price target changes from other analysts"
         ],
         "questions": [
-          "What motivated the purchase?"
+          "What specific metrics drove the strong Q3 results?"
         ],
         "sources": [
           {
-            "title": "Scientific Industries chairman John Moore buys $6,000 in stock",
-            "url": "https://www.investing.com/news/insider-trading-news/scientific-industries-chairman-john-moore-buys-6000-in-stock-93CH-5006379",
+            "title": "Truist reiterates Cloudflare stock Buy rating on strong Q3 results",
+            "url": "https://www.investing.com/news/analyst-ratings/truist-reiterates-cloudflare-stock-buy-rating-on-strong-q3-results-93CH-5007063",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:31:00.000Z"
+            "publishedAt": "2026-11-06T17:52:57.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:31:00.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
+        "publishedAt": "2026-11-06T17:52:57.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0WG_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d51c458648",
+        "slug": "canaccord-cuts-artivion-price-target-on-revenue-outlook",
+        "lane": "markets",
+        "title": "Canaccord cuts Artivion price target on revenue outlook",
+        "summary": "Canaccord Genuity lowered its price target on Artivion, a maker of cardiac and vascular devices, citing a weaker revenue outlook. The note did not specify the drivers behind the revised outlook.",
+        "whyItMatters": "A trimmed revenue outlook from a covering analyst can flag softer demand for medical device investors tracking Artivion.",
+        "whatToWatch": [
+          "Artivion's next earnings update for revenue trends",
+          "Whether other analysts revise their estimates"
+        ],
+        "questions": [
+          "What specific revenue concerns prompted the cut?"
+        ],
+        "sources": [
+          {
+            "title": "Canaccord cuts Artivion stock price target on revenue outlook",
+            "url": "https://www.investing.com/news/analyst-ratings/canaccord-cuts-artivion-stock-price-target-on-revenue-outlook-93CH-5007061",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-06T17:52:55.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T17:52:55.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0WG_1200_L.jpg",
+        "badge": "Analyst Call",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-310c4332fe",
+        "slug": "canaccord-reiterates-natera-rating-on-strong-q3-results",
+        "lane": "markets",
+        "title": "Canaccord reiterates Natera rating on strong Q3 results",
+        "summary": "Canaccord Genuity reiterated its rating on Natera after the genetic testing company reported strong third-quarter results. The reaffirmation points to continued confidence in Natera's growth. Specific quarterly figures were not detailed in the note.",
+        "whyItMatters": "Natera is a closely watched diagnostics name, and reaffirmed analyst support after earnings signals the growth story remains intact.",
+        "whatToWatch": [
+          "Full Q3 results and guidance details from Natera",
+          "Reaction from other sell-side analysts"
+        ],
+        "questions": [
+          "Which Natera product lines drove the strong quarter?"
+        ],
+        "sources": [
+          {
+            "title": "Canaccord reiterates Natera stock rating on strong Q3 results",
+            "url": "https://www.investing.com/news/analyst-ratings/canaccord-reiterates-natera-stock-rating-on-strong-q3-results-93CH-5007060",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-06T17:52:54.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T17:52:54.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM431A2_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-45b50b64f0",
+        "slug": "canaccord-raises-irhythm-price-target-on-strong-margins",
+        "lane": "markets",
+        "title": "Canaccord raises iRhythm price target on strong margins",
+        "summary": "Canaccord Genuity raised its price target on iRhythm Technologies, citing stronger-than-expected margins. The increase suggests improving profitability at the cardiac monitoring company. The note did not specify the new target level.",
+        "whyItMatters": "Margin improvement is a key watch point for iRhythm investors as the company works toward sustained profitability.",
+        "whatToWatch": [
+          "iRhythm's next earnings report for margin trends",
+          "New price target level versus consensus"
+        ],
+        "questions": [
+          "What drove the margin improvement this quarter?"
+        ],
+        "sources": [
+          {
+            "title": "Canaccord raises iRhythm stock price target on strong margins",
+            "url": "https://www.investing.com/news/analyst-ratings/canaccord-raises-irhythm-stock-price-target-on-strong-margins-93CH-5007059",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-06T17:52:48.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T17:52:48.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0V4_1200_L.jpg",
+        "badge": "Analyst Call",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-8a88bfa94d",
+        "slug": "evercore-isi-reiterates-in-line-rating-on-lyft-at-20-target",
+        "lane": "markets",
+        "title": "Evercore ISI reiterates In Line rating on Lyft at $20 target",
+        "summary": "Evercore ISI reiterated its In Line rating on Lyft with a $20 price target. The call signals a neutral near-term view on the ride-hailing company's stock. No additional rationale was given in the note.",
+        "whyItMatters": "A steady neutral rating gives investors a reference point for Lyft's valuation against the broader ride-hailing sector.",
+        "whatToWatch": [
+          "Lyft's share price relative to the $20 target",
+          "Updates to Lyft's ride volume or earnings outlook"
+        ],
+        "questions": [
+          "What factors keep Evercore ISI at a neutral stance on Lyft?"
+        ],
+        "sources": [
+          {
+            "title": "Evercore ISI reiterates In Line rating on Lyft stock at $20",
+            "url": "https://www.investing.com/news/analyst-ratings/evercore-isi-reiterates-in-line-rating-on-lyft-stock-at-20-93CH-5007058",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-06T17:52:47.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T17:52:47.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEF3025Q_M.jpg",
+        "badge": "Analyst Call",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-fc1c3870f3",
+        "slug": "guggenheim-reiterates-atlassian-rating-on-cloud-growth",
+        "lane": "markets",
+        "title": "Guggenheim reiterates Atlassian rating on cloud growth",
+        "summary": "Guggenheim reiterated its rating on Atlassian, citing growth in the software company's cloud business. The reaffirmation points to continued confidence in Atlassian's cloud transition. Specific growth figures were not detailed in the note.",
+        "whyItMatters": "Atlassian's cloud migration is central to its growth story, and reaffirmed analyst support signals that trend remains on track.",
+        "whatToWatch": [
+          "Atlassian's next earnings report for cloud revenue figures",
+          "Any changes to Guggenheim's price target"
+        ],
+        "questions": [
+          "How much of Atlassian's revenue now comes from cloud?"
+        ],
+        "sources": [
+          {
+            "title": "Guggenheim reiterates Atlassian stock rating on cloud growth",
+            "url": "https://www.investing.com/news/analyst-ratings/guggenheim-reiterates-atlassian-stock-rating-on-cloud-growth-93CH-5007057",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-06T17:52:45.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-06T17:52:45.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
         "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Analyst Call",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-af5054e408",
-        "slug": "nintendo-stock-slides",
+        "id": "markets-ccc53bd874",
+        "slug": "mitsubishi-heavy-raises-order-target-and-announces-first-share-buyback",
         "lane": "markets",
-        "title": "Nintendo stock slides",
-        "summary": "Nintendo shares declined, according to Investing.com, which did not detail the cause of the move.",
-        "whyItMatters": "Nintendo is a bellwether for the gaming industry, so a notable drop draws investor attention to the sector.",
+        "title": "Mitsubishi Heavy raises order target and announces first share buyback",
+        "summary": "Mitsubishi Heavy Industries raised its order target and announced its first-ever share buyback. The moves signal confidence in demand and a shift toward returning capital to shareholders. The size of the buyback was not disclosed in the reported note.",
+        "whyItMatters": "A first-ever buyback from a major Japanese industrial firm marks a notable shift in capital allocation that investors watch for broader governance trends.",
         "whatToWatch": [
-          "Any news or update from Nintendo explaining the move",
-          "Whether the decline continues or reverses"
+          "Size and timeline of the buyback program",
+          "Whether Mitsubishi Heavy hits its updated order target"
         ],
         "questions": [
-          "What caused the slide?"
+          "How large is the buyback, and over what period will it run?",
+          "What is driving the higher order target?"
         ],
         "sources": [
           {
-            "title": "Why is Nintendo stock sliding today?",
-            "url": "https://www.investing.com/news/stock-market-news/why-is-nintendo-stock-sliding-today-93CH-5006370",
+            "title": "Mitsubishi Heavy raises order target and announces first buyback",
+            "url": "https://www.investing.com/news/earnings/mitsubishi-heavy-raises-order-target-and-announces-first-buyback-93CH-5007066",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:23:48.000Z"
+            "publishedAt": "2026-11-06T17:53:29.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:23:48.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB8506G_M.jpg",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-9c0cbfda43",
-        "slug": "li-ning-stock-rallies",
-        "lane": "markets",
-        "title": "Li Ning stock rallies",
-        "summary": "Shares of Chinese sportswear maker Li Ning rose, according to Investing.com, which did not specify the reason for the rally.",
-        "whyItMatters": "Li Ning is a bellwether for Chinese consumer spending, so its rally can reflect broader sentiment toward China's retail sector.",
-        "whatToWatch": [
-          "Any company news or data behind the rally",
-          "Whether the gains hold in coming sessions"
-        ],
-        "questions": [
-          "What drove the rally?"
-        ],
-        "sources": [
-          {
-            "title": "Why is Li Ning stock rallying today?",
-            "url": "https://www.investing.com/news/stock-market-news/why-is-li-ning-stock-rallying-today-93CH-5006369",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:23:44.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:23:44.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB9M0BY_M.jpg",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-da0faa6217",
-        "slug": "doubleview-gold-closes-3-2-million-flow-through-financing-tranche",
-        "lane": "markets",
-        "title": "Doubleview Gold closes $3.2 million flow-through financing tranche",
-        "summary": "Doubleview Gold completed a $3.2 million tranche of flow-through financing, according to Investing.com. Flow-through financing is commonly used by resource companies to fund exploration while passing tax benefits to investors.",
-        "whyItMatters": "The financing adds capital for Doubleview Gold, a relevant signal for investors tracking small-cap mining and exploration funding.",
-        "whatToWatch": [
-          "How the company deploys the proceeds",
-          "Any further financing tranches"
-        ],
-        "questions": [
-          "What will the funds be used for specifically?"
-        ],
-        "sources": [
-          {
-            "title": "Doubleview Gold closes $3.2M flow-through financing tranche",
-            "url": "https://www.investing.com/news/company-news/doubleview-gold-closes-32m-flowthrough-financing-tranche-93CH-5006385",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:40:27.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:40:27.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM3K18K_1200_L.jpg",
+        "publishedAt": "2026-11-06T17:53:29.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
+        "badge": "Earnings",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-9d74cfdafb",
-        "slug": "coca-cola-hbc-says-it-has-received-no-notification-from-russia-on-asse",
+        "id": "markets-73a1caac74",
+        "slug": "genmab-shares-fall-3-after-q3-revenue-slightly-misses-expectations",
         "lane": "markets",
-        "title": "Coca-Cola HBC says it has received no notification from Russia on asset changes",
-        "summary": "Bottler Coca-Cola HBC said it has not been notified of any changes regarding its assets in Russia, according to Investing.com. The statement comes amid continued scrutiny of Western companies' assets in Russia.",
-        "whyItMatters": "Western firms' Russian assets have faced seizure or forced-sale risk since the war began, so this update matters to investors assessing that exposure.",
+        "title": "Genmab shares fall 3% after Q3 revenue slightly misses expectations",
+        "summary": "Shares of Genmab fell 3% after the biotech company reported third-quarter revenue that slightly missed expectations. The shortfall was described as slight rather than a major guidance disappointment. Further detail on the revenue gap was not given in the note.",
+        "whyItMatters": "Even small revenue misses can move biotech shares sharply and are watched closely for signs of slowing drug sales growth.",
         "whatToWatch": [
-          "Any formal move by Russian authorities on the company's assets",
-          "Coca-Cola HBC's next public update on its Russia operations"
+          "Full Q3 earnings details and management commentary from Genmab",
+          "Whether the stock recovers or guidance is revised"
         ],
         "questions": [
-          "What prompted this statement now?",
-          "What is the current status of Coca-Cola HBC's Russian assets?"
+          "Which product or segment drove the revenue shortfall?"
         ],
         "sources": [
           {
-            "title": "Bottler Coca-Cola HBC says no notification from Russia on asset changes",
-            "url": "https://www.investing.com/news/stock-market-news/bottler-cocacola-hbc-says-no-notification-from-russia-on-asset-changes-5006376",
+            "title": "Genmab shares fall 3% after Q3 revenue slightly misses expectations",
+            "url": "https://www.investing.com/news/stock-market-news/genmab-ninemonth-revenue-rises-22-as-latestage-pipeline-delivers-5005279",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-06T11:30:18.000Z"
+            "publishedAt": "2026-11-06T17:53:06.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-06T11:30:18.000Z",
-        "updatedAt": "2026-11-06T04:05:16.729Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA5084_L.jpg",
+        "publishedAt": "2026-11-06T17:53:06.000Z",
+        "updatedAt": "2026-11-06T10:07:21.468Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM5S0Q9_L.jpg",
+        "badge": "Earnings",
         "trendScore": 47,
         "confidence": "low"
       }

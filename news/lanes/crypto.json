@@ -1,23 +1,115 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-11-06T04:05:16.729Z",
-  "contentVersion": 180,
+  "generatedAt": "2026-11-06T10:07:21.468Z",
+  "contentVersion": 181,
   "stories": [
+    {
+      "id": "crypto-a2c1a82051",
+      "slug": "bitcoin-and-ethereum-etfs-shed-530-million-as-broader-market-selloff-h",
+      "lane": "crypto",
+      "title": "Bitcoin and Ethereum ETFs Shed $530 Million as Broader Market Selloff Hits Crypto",
+      "summary": "Bitcoin and Ethereum ETFs lost a combined $530 million in one day. The outflow came alongside a wider selloff that erased about $3 trillion from Wall Street. CryptoSlate ties the ETF outflows to that broader market stress, not to a crypto-specific trigger.",
+      "whyItMatters": "ETF flows show institutional demand for crypto. A sharp one-day reversal shows crypto still trades like a risk asset tied to broader markets.",
+      "whatToWatch": [
+        "Next ETF flow reports, to see if outflows continue",
+        "Whether the broader equity selloff stabilizes"
+      ],
+      "questions": [
+        "Were the outflows concentrated in a few large funds?",
+        "Is this a one-day event or the start of a longer trend?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin and Ethereum ETFs lose $530 million in one day as $3 trillion Wall Street wipeout rattles crypto",
+          "url": "https://cryptoslate.com/bitcoin-and-ethereum-etfs-lose-530-million-in-one-day-as-3-trillion-wall-street-wipeout-rattles-crypto/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-06T09:55:27.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-06T09:55:27.000Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/crypto-etf-fractured-bridge.webp",
+      "badge": "Markets",
+      "trendScore": 67,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-a1d971413f",
+      "slug": "bitcoin-s-rate-cut-rally-stalls-as-service-inflation-picks-up",
+      "lane": "crypto",
+      "title": "Bitcoin's Rate-Cut Rally Stalls as Service Inflation Picks Up",
+      "summary": "Bitcoin's recent gains, driven by hopes for a rate cut, have stalled. New data shows a pickup in service-sector inflation. CryptoSlate reports this has clouded the rate-cut outlook and weighed on bitcoin's momentum.",
+      "whyItMatters": "Rate expectations drive money into risk assets like bitcoin. A shift in the inflation picture can reverse recent price gains.",
+      "whatToWatch": [
+        "Upcoming inflation reports",
+        "Signals from policymakers on rate-cut timing"
+      ],
+      "questions": [
+        "How much of bitcoin's recent rally was priced on a rate cut alone?"
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin’s rate cut relief stalls as service inflation flares",
+          "url": "https://cryptoslate.com/bitcoins-rate-cut-relief-stalls-as-service-inflation-flares/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-06T06:40:14.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-06T06:40:14.000Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-rate-relief-heat-jammed-lever.jpg",
+      "badge": "Markets",
+      "trendScore": 49,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-5843ba305c",
+      "slug": "bug-in-unpatched-bitcoin-lightning-nodes-could-drain-payment-channels",
+      "lane": "crypto",
+      "title": "Bug in Unpatched Bitcoin Lightning Nodes Could Drain Payment Channels",
+      "summary": "CryptoSlate reports a bug in unpatched Bitcoin Lightning Network nodes. The bug could let an attacker drain funds from open payment channels. Node operators who have not applied a fix remain exposed.",
+      "whyItMatters": "The Lightning Network handles a large share of bitcoin payments. A channel-draining bug puts funds in unpatched nodes at risk.",
+      "whatToWatch": [
+        "Whether node operators patch quickly",
+        "Any reports of the bug being exploited",
+        "Further detail from Lightning implementation teams"
+      ],
+      "questions": [
+        "How many nodes remain unpatched right now?",
+        "Has the bug been exploited in the wild?"
+      ],
+      "sources": [
+        {
+          "title": "Unpatched Bitcoin Lightning nodes face channel-draining bug",
+          "url": "https://cryptoslate.com/unpatched-bitcoin-lightning-nodes-face-channel-draining-bug/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-06T04:30:28.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-06T04:30:28.000Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/core-lightning-channel-drain.jpg",
+      "badge": "Security",
+      "trendScore": 47,
+      "confidence": "low"
+    },
     {
       "id": "crypto-e214ba440b",
       "slug": "solana-developers-propose-major-overhaul-to-fix-hidden-network-risk",
       "lane": "crypto",
-      "title": "Solana Developers Propose Major Overhaul to Fix Hidden Network Risk",
-      "summary": "Solana developers proposed a major overhaul to the protocol. The plan targets a hidden risk that could disrupt the network. CryptoSlate reported the proposal on November 5. The report did not give full technical details on the risk.",
-      "whyItMatters": "A core protocol fix affects the reliability of one of the largest layer-1 blockchains, which matters to developers and holders alike.",
+      "title": "Solana Developers Propose Overhaul to Fix Hidden Network Risk",
+      "summary": "Solana developers have proposed a major overhaul of the network. The goal is to address a hidden risk that could disrupt Solana, according to CryptoSlate. The report does not give full detail on the risk or the proposal's specifics.",
+      "whyItMatters": "Changes to Solana's core design affect how reliable the network is for anyone holding or building on it.",
       "whatToWatch": [
-        "Whether the proposal moves to a formal vote",
-        "Technical details on the specific risk",
-        "Response from validators and core developers"
+        "Community and validator response to the proposal",
+        "A formal vote or rollout timeline"
       ],
       "questions": [
         "What exactly is the hidden risk?",
-        "How soon could the fix ship?"
+        "How soon could the overhaul ship?"
       ],
       "sources": [
         {
@@ -29,26 +121,56 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-05T22:00:30.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-client-rulebook.webp",
       "badge": "Protocol",
-      "trendScore": 52,
+      "trendScore": 47,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-a1ca7f1366",
+      "slug": "xrp-sellers-hit-by-heavy-slippage-as-order-book-depth-misleads",
+      "lane": "crypto",
+      "title": "XRP Sellers Hit by Heavy Slippage as Order Book Depth Misleads",
+      "summary": "CryptoSlate reports that XRP sellers are facing unusually large slippage. The USD order book's displayed depth does not match the liquidity actually available. Large sell orders are moving the price more than the order book would suggest.",
+      "whyItMatters": "Misleading liquidity makes XRP more volatile to trade and raises doubts about how reliable its listed order books are.",
+      "whatToWatch": [
+        "Whether exchanges address the order book discrepancy",
+        "XRP price swings on large sell orders"
+      ],
+      "questions": [
+        "Which trading venues show the biggest gap between displayed and real depth?"
+      ],
+      "sources": [
+        {
+          "title": "XRP sellers face massive slip as USD order book depth fakes size",
+          "url": "https://cryptoslate.com/xrp-sellers-face-massive-slip-as-usd-order-book-depth-fakes-size/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-06T08:50:00.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-06T08:50:00.000Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/xrp-funded-depth-hollow-order-book.jpg",
+      "badge": "Markets",
+      "trendScore": 46,
       "confidence": "low"
     },
     {
       "id": "crypto-8be9a5afda",
       "slug": "gate-s-104-cold-reserve-claim-questioned-over-mismatched-snapshot-date",
       "lane": "crypto",
-      "title": "Gate's 104% Cold Reserve Claim Questioned Over Mismatched Snapshot Dates",
-      "summary": "Exchange Gate reported 104% cold reserve coverage, meaning it says it holds more assets in cold storage than it owes users. CryptoSlate noted the reserve and liability figures came from separate snapshot dates. That gap makes the comparison harder to verify.",
-      "whyItMatters": "Proof-of-reserve reports are meant to rebuild trust after past exchange collapses, so a methodology gap weakens the claim's value.",
+      "title": "Gate Reports 104% Cold Reserve Coverage, but Mismatched Snapshot Dates Raise Doubts",
+      "summary": "Exchange Gate reported cold reserve coverage of 104%, according to CryptoSlate. The proof-of-reserves used separate snapshot dates for assets and liabilities. The report says this timing gap undercuts confidence in the figure.",
+      "whyItMatters": "Proof-of-reserves is one of the few checks users have on exchange solvency. Mismatched snapshot timing weakens that assurance.",
       "whatToWatch": [
-        "Whether Gate aligns snapshot dates in future reports",
-        "Any independent audit of the reserve ratio"
+        "Whether Gate issues a reserve report with matched snapshot dates",
+        "Reaction from auditors or users"
       ],
       "questions": [
-        "Why were the two snapshots taken on different dates?",
-        "Does the mismatch change the real coverage ratio?"
+        "Why were the snapshot dates not aligned?",
+        "Does the timing gap change the real coverage ratio?"
       ],
       "sources": [
         {
@@ -60,42 +182,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-06T00:40:44.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/gate-verification-in-focus.webp",
       "badge": "Exchange",
-      "trendScore": 49,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-83d5763383",
-      "slug": "strategy-s-strc-preferred-shares-stage-a-comeback-could-fund-more-bitc",
-      "lane": "crypto",
-      "title": "Strategy's $100 STRC Offering Could Fund New Bitcoin Buys",
-      "summary": "Strategy is reviving its STRC preferred stock offering at $100 a share. CryptoSlate reports the raise could offset cash outflows and give the company fresh capital for more Bitcoin purchases. Strategy has used several debt and equity tools to keep growing its Bitcoin holdings.",
-      "whyItMatters": "Strategy is one of the largest corporate Bitcoin holders, so its financing moves can signal new buy-side demand for the asset.",
-      "whatToWatch": [
-        "Size and investor uptake of the STRC offering",
-        "Confirmation that proceeds go toward Bitcoin purchases",
-        "Strategy's next disclosed Bitcoin buy"
-      ],
-      "questions": [
-        "How much capital will the offering actually raise?",
-        "Does repeated reliance on capital markets raise risk?"
-      ],
-      "sources": [
-        {
-          "title": "Strategy’s $100 STRC comeback could turn a cash drain into fresh Bitcoin buying power",
-          "url": "https://cryptoslate.com/strategys-100-strc-comeback-could-turn-a-cash-drain-into-fresh-bitcoin-buying-power/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-05T18:30:02.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-05T18:30:02.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/strc-funding-gate-reopens.webp",
-      "badge": "Markets",
-      "trendScore": 49,
+      "trendScore": 44,
       "confidence": "low"
     },
     {
@@ -103,15 +193,15 @@
       "slug": "bitcoin-traders-brace-for-2-7-billion-options-expiry-with-a-five-hour-",
       "lane": "crypto",
       "title": "Bitcoin's $2.7 Billion Friday Options Expiry Carries a Five-Hour Blind Spot",
-      "summary": "Bitcoin traders are watching Friday's $2.7 billion options expiry. CryptoSlate flagged a five-hour window around the event with reduced market visibility, which raises the risk of sharp price moves. Large expiries like this have coincided with volatility before.",
-      "whyItMatters": "An expiry this size can swing the spot price fast, which affects anyone holding or trading Bitcoin around that date.",
+      "summary": "Bitcoin traders face a $2.7 billion options expiry on Friday, CryptoSlate reports. The report flags a five-hour window around the expiry with limited market visibility. That gap adds risk for traders positioned around the event.",
+      "whyItMatters": "Large options expiries can move bitcoin's price sharply, and a known visibility gap raises the odds of a surprise move.",
       "whatToWatch": [
-        "Bitcoin's price action into and through Friday's expiry",
-        "Whether the five-hour gap produces unusual volatility"
+        "Friday's expiry and the resulting price action",
+        "Unusual volatility during the flagged five-hour window"
       ],
       "questions": [
         "What causes the five-hour blind spot?",
-        "How concentrated is positioning around key strike prices?"
+        "Have past expiries this size moved the price significantly?"
       ],
       "sources": [
         {
@@ -123,10 +213,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-05T20:40:25.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-payrolls-missed-connection.webp",
       "badge": "Markets",
-      "trendScore": 46,
+      "trendScore": 41,
       "confidence": "low"
     },
     {
@@ -134,15 +224,15 @@
       "slug": "optimism-proposal-would-curb-council-s-power-over-standalone-chains",
       "lane": "crypto",
       "title": "Optimism Proposal Would Curb Council's Power Over Standalone Chains",
-      "summary": "A new governance proposal in the Optimism ecosystem would reduce the Security Council's authority over standalone chains built on its stack. CryptoSlate reported the plan on November 6. The change would shift control away from centralized oversight for chains that run independently of the core Optimism collective.",
-      "whyItMatters": "Governance structure sets how much autonomy and risk standalone chains carry, which affects developers and users building on Optimism.",
+      "summary": "A new proposal in the Optimism ecosystem would reduce the governing council's authority over standalone chains, CryptoSlate reports. The change would shift some control away from central oversight toward the chains themselves.",
+      "whyItMatters": "Council power over connected chains affects decentralization and independence for projects built on Optimism's stack.",
       "whatToWatch": [
-        "A community vote or discussion period on the proposal",
-        "Reaction from standalone chain operators"
+        "A governance vote on the proposal",
+        "Response from standalone chain operators"
       ],
       "questions": [
-        "Which standalone chains are most affected?",
-        "What oversight, if any, replaces the council's current role?"
+        "Which standalone chains would be most affected?",
+        "What prompted this proposal now?"
       ],
       "sources": [
         {
@@ -154,42 +244,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-06T02:10:05.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/optimism-locked-key-cabinet-1280x720-1.jpg",
       "badge": "Governance",
-      "trendScore": 45,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-9c77e940ba",
-      "slug": "bitcoin-falls-below-76-000-as-ai-bubble-fears-erase-2-5-trillion-from-",
-      "lane": "crypto",
-      "title": "Bitcoin Falls Below $76,000 as AI Bubble Fears Erase $2.5 Trillion From Wall Street",
-      "summary": "Bitcoin dropped below $76,000 as fears of an AI stock bubble wiped roughly $2.5 trillion from Wall Street. CryptoSlate reported the decline on November 5 and linked it to the broader equity sell-off. The move shows Bitcoin still trades in step with risk sentiment in stock markets.",
-      "whyItMatters": "A sharp, correlated drop shows Bitcoin still behaves like a risk asset tied to equities, not as an independent hedge.",
-      "whatToWatch": [
-        "Whether Bitcoin stabilizes or falls further below $76,000",
-        "Follow-through selling in AI-linked tech stocks",
-        "Any shift in the Bitcoin-equity correlation"
-      ],
-      "questions": [
-        "How much of the drop is AI-sector contagion versus crypto-specific selling?",
-        "Could the sell-off trigger further leveraged liquidations?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin crashes below $76,000 as AI bubble fears wipe $2.5 trillion from Wall Street",
-          "url": "https://cryptoslate.com/bitcoin-crashes-below-76000-as-ai-bubble-fears-wipe-2-5-trillion-from-wall-street/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-05T18:50:46.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-05T18:50:46.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-wall-street-dominoes.webp",
-      "badge": "Breaking",
-      "trendScore": 44,
+      "trendScore": 40,
       "confidence": "low"
     },
     {
@@ -197,15 +255,14 @@
       "slug": "treasury-s-6-billion-bond-buyback-draws-skepticism-from-dealers",
       "lane": "crypto",
       "title": "Treasury's $6 Billion Bond Buyback Draws Skepticism From Dealers",
-      "summary": "The U.S. Treasury bought back $6 billion in bonds. Bond dealers say the operation is too small to ease market strains. CryptoSlate reported the dealer pushback on November 5.",
-      "whyItMatters": "Treasury market liquidity and rate conditions shape the risk appetite that flows into Bitcoin and other crypto assets.",
+      "summary": "The US Treasury bought back $6 billion in bonds. CryptoSlate reports that bond dealers say the operation is not large enough to ease the underlying market strain. The buyback is part of efforts to support bond market liquidity.",
+      "whyItMatters": "Bond market stress and liquidity support shape the rate environment that influences flows into crypto and other risk assets.",
       "whatToWatch": [
-        "Whether Treasury increases the size of future buybacks",
-        "Bond market liquidity conditions in coming weeks"
+        "Future Treasury buyback operations",
+        "Further dealer commentary on bond market liquidity"
       ],
       "questions": [
-        "What specific strains are dealers pointing to?",
-        "Could larger buybacks shift crypto risk sentiment?"
+        "What size of buyback would dealers consider adequate?"
       ],
       "sources": [
         {
@@ -217,41 +274,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-05T23:20:13.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/treasury-dealer-exit.webp",
       "badge": "Macro",
-      "trendScore": 43,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-f798d9e44d",
-      "slug": "circle-s-182-million-token-sale-masks-a-revenue-decline-as-usdc-busine",
-      "lane": "crypto",
-      "title": "Circle's $182 Million Token Sale Masks a Decline in USDC Revenue",
-      "summary": "Circle raised $182 million through a token sale. CryptoSlate reports the raise masks weaker core revenue from its USDC stablecoin business. The sale appears to offset softer underlying performance rather than reflect new strength.",
-      "whyItMatters": "USDC is one of the largest stablecoins, so a weaker revenue base at Circle has implications for stablecoin market stability and competition.",
-      "whatToWatch": [
-        "Circle's next earnings disclosure",
-        "USDC market share against competing stablecoins"
-      ],
-      "questions": [
-        "What is driving the USDC revenue decline?",
-        "Is the token sale a one-time offset or a recurring strategy?"
-      ],
-      "sources": [
-        {
-          "title": "Circle’s $182 million crypto token sale masks revenue decline as USDC business weakens",
-          "url": "https://cryptoslate.com/circles-182-million-crypto-token-sale-masks-revenue-decline-as-usdc-business-weakens/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-05T16:30:57.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-05T16:30:57.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/circle-revenue-prism-split.webp",
-      "badge": "Earnings",
-      "trendScore": 42,
+      "trendScore": 38,
       "confidence": "low"
     },
     {
@@ -259,16 +285,15 @@
       "slug": "south-korea-weighs-another-delay-to-its-22-crypto-tax-plus-new-loss-re",
       "lane": "crypto",
       "title": "South Korea Weighs Another Delay to Its 22% Crypto Tax",
-      "summary": "South Korean officials are considering a new delay to the country's planned 22% crypto tax. CryptoSlate reports the plan would also give investors a new break on losses. The tax has already faced repeated delays amid industry pushback.",
-      "whyItMatters": "Tax policy directly shapes trading activity in South Korea, one of the world's most active retail crypto markets.",
+      "summary": "South Korea is considering another delay to its planned 22% crypto tax, CryptoSlate reports. A new provision would also let investors offset losses. This would mark a repeated postponement of the long-pending tax.",
+      "whyItMatters": "Tax treatment shapes retail and institutional participation in one of the world's most active crypto trading markets.",
       "whatToWatch": [
-        "Formal legislative action on the delay",
-        "A new effective date, if one is set",
-        "Details of the proposed loss break"
+        "A legislative decision on the delay",
+        "Details of the proposed loss-offset rule"
       ],
       "questions": [
-        "How many times has this tax now been delayed?",
-        "What is driving continued resistance to implementation?"
+        "How many times has this tax now been postponed?",
+        "When would it take effect if delayed again?"
       ],
       "sources": [
         {
@@ -280,41 +305,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-05T19:30:45.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
+      "updatedAt": "2026-11-06T10:07:21.468Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/korea-tax-deadline-anchor.webp",
       "badge": "Regulatory",
-      "trendScore": 40,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-816a7658bc",
-      "slug": "india-warns-that-ai-assisted-hackers-are-targeting-crypto-wallet-keys",
-      "lane": "crypto",
-      "title": "India Warns AI-Assisted Hackers Are Targeting Crypto Wallet Keys",
-      "summary": "Indian authorities warned that hackers are using AI tools to steal crypto wallet keys. CryptoSlate reported the warning on November 5. The report did not detail specific attack methods or victim numbers.",
-      "whyItMatters": "Wallet key theft causes irreversible loss of funds, so new AI-assisted attack methods raise the stakes for personal crypto security.",
-      "whatToWatch": [
-        "Any official security guidance India releases",
-        "Reports of incidents tied to this threat"
-      ],
-      "questions": [
-        "How widespread are these attacks so far?",
-        "What specific techniques are the hackers using?"
-      ],
-      "sources": [
-        {
-          "title": "India warns AI-assisted hackers are stealing crypto wallet keys",
-          "url": "https://cryptoslate.com/india-warns-ai-assisted-hackers-are-stealing-crypto-wallet-keys/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-05T17:30:59.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-05T17:30:59.000Z",
-      "updatedAt": "2026-11-06T04:05:16.729Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/india-bank-monitoring-gaps.webp",
-      "badge": "Security",
-      "trendScore": 38,
+      "trendScore": 35,
       "confidence": "low"
     }
   ]
