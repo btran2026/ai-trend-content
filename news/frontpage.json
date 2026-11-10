@@ -1,22 +1,52 @@
 {
-  "generatedAt": "2026-11-09T18:29:12.839Z",
-  "contentVersion": 198,
+  "generatedAt": "2026-11-10T00:32:48.103Z",
+  "contentVersion": 199,
   "lanes": {
     "crypto": [
+      {
+        "id": "crypto-2bf7ad7105",
+        "slug": "amundi-puts-european-stocks-on-ethereum-but-access-terms-stay-hidden",
+        "lane": "crypto",
+        "title": "Amundi puts European stocks on Ethereum, but access terms stay hidden",
+        "summary": "CryptoSlate reports that asset manager Amundi has put European stocks onto the Ethereum blockchain. The report says Amundi has not disclosed who can access the product or under what terms. No other outlet has confirmed the details.",
+        "whyItMatters": "A large European asset manager moving stocks onto a public blockchain is a sign of growing institutional interest in tokenization, but hidden access terms leave real questions about who benefits.",
+        "whatToWatch": [
+          "Whether Amundi publishes eligibility and access terms",
+          "Any regulatory response to the move"
+        ],
+        "questions": [
+          "Who can actually buy or trade this product?",
+          "Which regulator, if any, oversees it?"
+        ],
+        "sources": [
+          {
+            "title": "Amundi puts European stocks on Ethereum, but access terms stay hidden",
+            "url": "https://cryptoslate.com/amundi-puts-european-stocks-on-ethereum-but-access-terms-stay-hidden/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-09T22:50:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-09T22:50:00.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/amundi-fund-unit-viewfinder.webp",
+        "badge": "Tokenization",
+        "trendScore": 56,
+        "confidence": "low"
+      },
       {
         "id": "crypto-5d168b4558",
         "slug": "warning-that-japan-could-trigger-bitcoin-s-next-selloff-skips-a-key-st",
         "lane": "crypto",
-        "title": "Warning that Japan could trigger Bitcoin's next selloff skips a key step, report says",
-        "summary": "A CryptoSlate report examines a circulating warning that developments in Japan could trigger a Bitcoin selloff. The report says this warning leaves out an important step in its reasoning. The source does not specify the missing step or the exact Japan-related risk.",
-        "whyItMatters": "Readers tracking macro risk to Bitcoin should know when a popular warning has a logical gap, so they do not overweight it.",
+        "title": "CryptoSlate pushes back on warning that Japan could trigger a Bitcoin selloff",
+        "summary": "CryptoSlate published a piece questioning a circulating warning that developments in Japan could trigger a major Bitcoin selloff. The article says the warning skips a key step in its reasoning. No other source has independently confirmed the underlying selloff claim.",
+        "whyItMatters": "Macro-to-crypto selloff warnings spread fast and shape sentiment, so a credible pushback is worth noting before readers treat the claim as settled.",
         "whatToWatch": [
-          "Follow-up reporting that names the missing analytical step",
-          "Any Japan policy move cited as the trigger"
+          "Whether other outlets address the gap CryptoSlate identifies"
         ],
         "questions": [
-          "What specific Japan-related event is the warning about?",
-          "What is the missing step the report identifies?"
+          "What exactly is the missing step in the original warning?",
+          "Does the original warning get revised or retracted?"
         ],
         "sources": [
           {
@@ -28,26 +58,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T18:20:52.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/japan-overseas-profit-loop.webp",
         "badge": "Analysis",
-        "trendScore": 57,
+        "trendScore": 52,
         "confidence": "low"
       },
       {
         "id": "crypto-2c55a8f2fe",
         "slug": "bitcoin-lightning-patches-one-flaw-but-a-critical-linux-bug-stays-open",
         "lane": "crypto",
-        "title": "Bitcoin Lightning patches one flaw, but a critical Linux bug stays open",
-        "summary": "Developers released a security update for the Bitcoin Lightning Network that closes one vulnerability, CryptoSlate reports. A separate, critical flaw in Linux remains unpatched. The source does not say how the Linux flaw could affect Lightning nodes.",
-        "whyItMatters": "Lightning Network security affects the safety of funds on Bitcoin's main payment layer, so any open flaw deserves attention.",
+        "title": "Bitcoin Lightning security update closes one hole, but a Linux flaw remains",
+        "summary": "CryptoSlate reports that a security update for the Bitcoin Lightning Network has fixed one vulnerability. A separate, critical flaw in Linux that affects Lightning infrastructure reportedly remains unpatched.",
+        "whyItMatters": "Lightning Network underpins fast bitcoin payments, so unresolved critical flaws in its infrastructure are a real operational risk for node operators and users.",
         "whatToWatch": [
-          "A patch or advisory for the Linux flaw",
-          "Guidance from Lightning node software on mitigating the exposure"
+          "A patch or mitigation for the Linux flaw",
+          "Guidance from Lightning implementers on exposure"
         ],
         "questions": [
-          "Which Linux component carries the flaw?",
-          "Do node operators need to act now?"
+          "How many nodes remain exposed to the Linux flaw?",
+          "Is there a workaround before a full patch ships?"
         ],
         "sources": [
           {
@@ -59,26 +89,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T16:40:20.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/lnd-update-linux-foundation.webp",
         "badge": "Security",
-        "trendScore": 55,
+        "trendScore": 50,
         "confidence": "low"
       },
       {
         "id": "crypto-1f2bea6219",
         "slug": "nigeria-tells-dollar-stablecoin-issuers-to-localize-or-lose-retail-acc",
         "lane": "crypto",
-        "title": "Nigeria tells dollar-stablecoin issuers to localize or lose retail access",
-        "summary": "Nigerian authorities have signaled that dollar-pegged stablecoin issuers must localize operations or risk losing access to retail customers, CryptoSlate reports. This is part of Nigeria's broader stance on foreign-currency stablecoins. The source does not give a compliance deadline or detailed rules.",
-        "whyItMatters": "Nigeria is one of Africa's largest crypto markets, so this stance could reshape how dollar stablecoins reach retail users there.",
+        "title": "Nigeria tells dollar-stablecoin issuers: localize or lose retail access",
+        "summary": "CryptoSlate reports that Nigerian authorities have told dollar-pegged stablecoin issuers to localize their operations or lose access to retail customers. The report does not specify a compliance deadline or named issuers.",
+        "whyItMatters": "Nigeria is one of the largest crypto markets in Africa, so a localization requirement could reshape how residents access dollar stablecoins like USDT and USDC.",
         "whatToWatch": [
-          "Formal rules or a deadline from Nigerian regulators",
-          "Issuer responses, including local partnerships"
+          "Any compliance deadline regulators set",
+          "How major stablecoin issuers respond"
         ],
         "questions": [
-          "What does 'go local' require in practice?",
-          "Which issuers face the most exposure?"
+          "Which issuers are affected?",
+          "What counts as 'local' under the new requirement?"
         ],
         "sources": [
           {
@@ -90,26 +120,57 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T15:10:52.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/nigeria-stablecoin-license-gate.webp",
         "badge": "Regulatory",
-        "trendScore": 54,
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-18592e4b8b",
+        "slug": "brazilian-exchange-plans-to-show-customers-their-funds-not-let-them-mo",
+        "lane": "crypto",
+        "title": "Brazilian exchange plans to show customers their funds, not let them move them",
+        "summary": "CryptoSlate reports that a Brazilian crypto exchange plans to let customers view their account balances, without restoring the ability to withdraw funds. The report does not explain why withdrawals remain blocked.",
+        "whyItMatters": "Visibility into balances without withdrawal rights echoes patterns seen at past troubled exchanges, so this is worth watching closely for signs of liquidity trouble.",
+        "whatToWatch": [
+          "Whether the exchange sets a timeline for restoring withdrawals",
+          "Any regulatory or customer response"
+        ],
+        "questions": [
+          "Why are withdrawals still restricted?",
+          "Is this a liquidity problem or a technical one?"
+        ],
+        "sources": [
+          {
+            "title": "A Brazilian crypto exchange plans to show customers their money, not let them move it",
+            "url": "https://cryptoslate.com/a-brazilian-crypto-exchange-plans-to-show-customers-their-money-not-let-them-move-it/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-09T19:10:21.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-09T19:10:21.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/mercado-bitcoin-viewing-window.webp",
+        "badge": "Markets",
+        "trendScore": 48,
         "confidence": "low"
       },
       {
         "id": "crypto-ff06a9161e",
         "slug": "two-bitcoin-miners-report-nearly-2-billion-in-profit-led-by-non-cash-g",
         "lane": "crypto",
-        "title": "Two Bitcoin miners report nearly $2 billion in profit, led by non-cash gains",
-        "summary": "Two Bitcoin mining companies reported close to $2 billion in combined profit, CryptoSlate reports. The largest driver was not cash, pointing instead to a non-cash gain, such as a rise in the value of Bitcoin held on their books. The source does not name the miners or break out the figures.",
-        "whyItMatters": "Profit driven by unrealized Bitcoin gains, rather than cash from operations, shows how tightly miner results now track Bitcoin's price.",
+        "title": "Two Bitcoin miners report nearly $2 billion in profit, mostly on paper",
+        "summary": "CryptoSlate reports that two Bitcoin mining companies posted combined profits of nearly $2 billion. The report says the largest driver was not cash from operations, pointing instead to non-cash gains such as the rising value of bitcoin holdings.",
+        "whyItMatters": "If miner profits lean on paper gains rather than operating cash flow, reported earnings may overstate the underlying health of mining businesses.",
         "whatToWatch": [
-          "Individual earnings filings that break out cash versus non-cash profit",
-          "Whether either miner sells holdings to lock in gains"
+          "Next quarterly results from the same miners",
+          "How reported profits move with the bitcoin price"
         ],
         "questions": [
-          "Which two miners does this refer to?",
-          "How much of the profit is unrealized?"
+          "How much of the profit is realized versus unrealized?",
+          "What do operating margins look like excluding holdings gains?"
         ],
         "sources": [
           {
@@ -121,26 +182,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T17:30:25.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/noncash-ledger-construction.webp",
         "badge": "Earnings",
-        "trendScore": 51,
+        "trendScore": 46,
         "confidence": "low"
       },
       {
         "id": "crypto-95584cde2b",
         "slug": "us-drops-a-proposed-crypto-rule-while-eu-oversight-can-still-delay-sma",
         "lane": "crypto",
-        "title": "US drops a proposed crypto rule, while EU oversight can still delay small transfers",
-        "summary": "US regulators have dropped a proposed crypto rule, CryptoSlate reports. The report contrasts this with Europe, where oversight can still hold up a transfer as small as $500. The source gives no further detail on the dropped US rule or the EU mechanism.",
-        "whyItMatters": "The contrast shows a widening gap between US and EU oversight of crypto transfers, which affects how easily funds move across borders.",
+        "title": "US drops proposed crypto rule as Europe keeps power to delay small transfers",
+        "summary": "CryptoSlate reports that US regulators have dropped a proposed crypto rule. The report says European rules can still hold up transfers as small as $500, highlighting a divergence between the two regions' approaches.",
+        "whyItMatters": "Diverging US and EU rules on crypto transfers mean compliance burden and friction will differ sharply depending on where a user or exchange operates.",
         "whatToWatch": [
-          "Any replacement rule from US regulators",
-          "EU guidance clarifying transfer-hold thresholds"
+          "Whether US regulators propose an alternative rule",
+          "Any review of the EU transfer threshold"
         ],
         "questions": [
-          "Which US rule was dropped, and by which agency?",
-          "What EU rule allows a hold on a $500 transfer?"
+          "Which specific US rule was dropped, and why?",
+          "Does the EU threshold apply to all crypto transfers or only some?"
         ],
         "sources": [
           {
@@ -152,10 +213,41 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T15:45:43.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/eu-transfer-collection-vault.webp",
         "badge": "Regulatory",
-        "trendScore": 50,
+        "trendScore": 45,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-0ebda83228",
+        "slug": "cardano-s-leios-upgrade-risks-instability-unless-a-fast-path-is-adopte",
+        "lane": "crypto",
+        "title": "Cardano's Leios upgrade risks instability unless a fast path is adopted",
+        "summary": "CryptoSlate reports that Cardano's Leios scaling upgrade could threaten network stability unless a faster implementation path is adopted. The report does not give a timeline for a decision.",
+        "whyItMatters": "Leios is a major scaling effort for Cardano, so how this risk is resolved will shape the network's performance and reliability going forward.",
+        "whatToWatch": [
+          "A governance decision on the fast path option",
+          "Any announced timeline for Leios rollout"
+        ],
+        "questions": [
+          "What specifically makes the current path unstable?",
+          "Who decides whether the fast path is adopted?"
+        ],
+        "sources": [
+          {
+            "title": "Leios scaling threatens Cardano stability unless fast path passes",
+            "url": "https://cryptoslate.com/leios-scaling-threatens-cardano-stability-unless-fast-path-passes/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-09T21:20:04.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-09T21:20:04.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/cardano-leios-rail-spur.webp",
+        "badge": "Technical",
+        "trendScore": 44,
         "confidence": "low"
       },
       {
@@ -163,15 +255,15 @@
         "slug": "coinbase-s-base-blockchain-gets-faster-but-some-apps-still-get-no-data",
         "lane": "crypto",
         "title": "Coinbase's Base blockchain gets faster, but some apps still get no data",
-        "summary": "Coinbase's Base blockchain has become faster, CryptoSlate reports. Some applications can still connect to the network but receive no data, pointing to a lingering compatibility or infrastructure issue. The source does not name the affected apps or the cause.",
-        "whyItMatters": "Reliability problems on Base could affect developers and users who depend on the network for trading or payments.",
+        "summary": "CryptoSlate reports that Coinbase's Base blockchain has become faster. The report says some applications can still connect to it but receive no data, pointing to an unresolved infrastructure issue.",
+        "whyItMatters": "Base is a widely used Ethereum layer-2 network, so data reliability problems during a performance upgrade can disrupt apps and users who depend on it.",
         "whatToWatch": [
-          "A fix or statement from the Base team on the data issue",
-          "Reports from affected app developers"
+          "A fix or statement from Coinbase on the affected apps",
+          "Whether node or data providers issue updates"
         ],
         "questions": [
-          "Which applications are affected?",
-          "Is the data gap tied to the speed upgrade?"
+          "Which apps are affected and how many users are impacted?",
+          "Is the data issue tied to the speed upgrade itself?"
         ],
         "sources": [
           {
@@ -183,433 +275,307 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-09T14:35:11.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/base-dry-data-pipe.webp",
-        "trendScore": 49,
+        "badge": "Infrastructure",
+        "trendScore": 44,
         "confidence": "low"
       },
       {
-        "id": "crypto-38f3520d95",
-        "slug": "bitcoin-traders-face-an-eight-hour-data-gap-as-deribit-prepares-to-del",
+        "id": "crypto-0c91d0ec76",
+        "slug": "xrp-s-new-euro-cash-out-route-launches-with-under-100-in-direct-liquid",
         "lane": "crypto",
-        "title": "Bitcoin traders face an eight-hour data gap as Deribit prepares to delay market data",
-        "summary": "Deribit, a major crypto options exchange, is preparing to delay the release of key market data, creating an eight-hour blind spot for Bitcoin traders, CryptoSlate reports. The source does not say why Deribit is making this change or when it takes effect.",
-        "whyItMatters": "Deribit is a primary venue for Bitcoin options pricing, so a data delay could reduce transparency for traders managing risk.",
+        "title": "XRP's new euro cash-out route launches with under €100 in direct liquidity",
+        "summary": "CryptoSlate reports that a new route for converting XRP to euros launched with less than €100 available in its direct market. The report does not name the venue or explain why liquidity started so thin.",
+        "whyItMatters": "Thin liquidity on a new fiat off-ramp undermines claims that it offers a practical way to cash out XRP, regardless of how the route is marketed.",
         "whatToWatch": [
-          "Deribit's official announcement with an effective date",
-          "Trader and market-maker reaction to the delay"
+          "Whether liquidity grows in the days after launch",
+          "Any market makers stepping in to support the pair"
         ],
         "questions": [
-          "Why is Deribit delaying this data?",
-          "Which specific data sets are affected?"
+          "Why did the route launch with so little direct liquidity?",
+          "Does volume route through indirect pairs instead?"
         ],
         "sources": [
           {
-            "title": "Bitcoin traders face an eight-hour blind spot as Deribit prepares to delay key market data",
-            "url": "https://cryptoslate.com/bitcoin-traders-face-an-eight-hour-blind-spot-as-deribit-prepares-to-delay-key-market-data/",
+            "title": "XRP’s new euro cash-out route had less than €100 in its direct market",
+            "url": "https://cryptoslate.com/xrps-new-euro-cash-out-route-had-less-than-e100-in-its-direct-market/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-09T14:00:34.000Z"
+            "publishedAt": "2026-11-09T20:00:36.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-09T14:00:34.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/deribit-rearview-data-lag.webp",
+        "publishedAt": "2026-11-09T20:00:36.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/xrp-eurgh-narrow-bridge.webp",
         "badge": "Markets",
-        "trendScore": 48,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-ea743189f9",
-        "slug": "jito-launches-a-paid-solana-data-feed-offering-early-sight-of-trades",
-        "lane": "crypto",
-        "title": "Jito launches a paid Solana data feed offering early sight of trades",
-        "summary": "Jito has introduced a Solana data feed that charges for earlier access to trade information, CryptoSlate reports. The move puts a price on seeing transaction activity before it is broadly available. The source does not detail pricing or the intended customers.",
-        "whyItMatters": "Paid early access to trade data raises fairness questions on Solana, since it could give paying users an edge over other participants.",
-        "whatToWatch": [
-          "Pricing and access details from Jito",
-          "Trader and developer reaction over fairness concerns"
-        ],
-        "questions": [
-          "Who can buy access to this feed?",
-          "Does this change MEV dynamics on Solana?"
-        ],
-        "sources": [
-          {
-            "title": "Jito’s Solana data feed puts a price on seeing trades early",
-            "url": "https://cryptoslate.com/jitos-solana-data-feed-puts-a-price-on-seeing-trades-early/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-09T13:15:24.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-09T13:15:24.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-bam-inspection-window.webp",
-        "trendScore": 48,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-a4c4fe7bb1",
-        "slug": "coinbase-now-accepts-tokenized-gold-as-loan-collateral-but-its-price-f",
-        "lane": "crypto",
-        "title": "Coinbase now accepts tokenized gold as loan collateral, but its price feed pauses on weekends",
-        "summary": "Coinbase now lets tokenized gold back a loan on its platform, CryptoSlate reports. The price feed used to value that collateral does not update on weekends. The source does not say how this gap is handled for loan risk during weekend price moves.",
-        "whyItMatters": "Tokenized gold expands what can back crypto loans, but a weekend pricing gap could leave borrowers and lenders exposed if gold's price moves while the feed is frozen.",
-        "whatToWatch": [
-          "Whether Coinbase addresses the weekend pricing gap",
-          "Loan terms covering weekend price risk"
-        ],
-        "questions": [
-          "What happens to a loan if gold's price moves sharply over a weekend?",
-          "Which oracle supplies the price feed?"
-        ],
-        "sources": [
-          {
-            "title": "Tokenized gold can now back a Coinbase loan. The price feed takes weekends off",
-            "url": "https://cryptoslate.com/tokenized-gold-can-now-back-a-coinbase-loan-the-price-feed-takes-weekends-off/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-09T12:40:42.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-09T12:40:42.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/paxg-base-liquidity-valve.webp",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-4247841983",
-        "slug": "crypto-crime-tracking-firm-restores-main-tools-after-breach-exposed-us",
-        "lane": "crypto",
-        "title": "Crypto crime-tracking firm restores main tools after breach exposed user login data",
-        "summary": "A major crypto crime-tracking company has restored its main tools after a hack exposed login data for all its users, CryptoSlate reports. The source does not name the firm or explain how the breach occurred. The exposure of login data suggests affected users may need to reset credentials.",
-        "whyItMatters": "This firm's tools are widely used by investigators and compliance teams, so a breach of its systems raises questions about the security of crypto crime investigations.",
-        "whatToWatch": [
-          "Full disclosure on the breach's cause and scope",
-          "Guidance for affected users on resetting credentials"
-        ],
-        "questions": [
-          "Which firm was breached?",
-          "Was any data beyond login credentials exposed?"
-        ],
-        "sources": [
-          {
-            "title": "Crypto’s crime-tracking giant restores its main tools after hackers exposed every user’s login data",
-            "url": "https://cryptoslate.com/cryptos-crime-tracking-giant-restores-its-main-tools-after-hackers-exposed-every-users-login-data/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-09T12:05:03.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-09T12:05:03.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/10/chainalysis-data-alert.webp",
-        "badge": "Breaking",
-        "trendScore": 42,
+        "trendScore": 43,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-6a7305051d",
-        "slug": "fed-will-have-little-patience-with-inflation-russell-investments-says",
+        "id": "markets-0f154ce744",
+        "slug": "us-stock-futures-steady-after-tech-led-rebound-cpi-data-in-focus",
         "lane": "markets",
-        "title": "Fed will have 'little patience' with inflation, Russell Investments says",
-        "summary": "Russell Investments said the Federal Reserve will show little patience with inflation going forward. The view points to a central bank ready to act if price pressures persist. The report did not cite a specific data release or policy move behind the comment.",
-        "whyItMatters": "Views on Fed patience shape rate-path expectations, which move both stocks and bonds.",
+        "title": "US stock futures steady after tech-led rebound, CPI data in focus",
+        "summary": "US stock futures held steady after a rebound led by technology shares. Investors are now focused on an upcoming CPI inflation report. The data could shape the Federal Reserve's next move on interest rates.",
+        "whyItMatters": "Inflation data drives Fed rate expectations, which move both stocks and bonds.",
         "whatToWatch": [
-          "Language in the next Fed policy statement",
-          "Upcoming inflation data releases"
+          "The CPI report's release",
+          "Fed commentary that follows the data"
         ],
         "questions": [
-          "What specific data or event prompted this view?",
-          "Does this mark a shift from recent Fed messaging?"
+          "How large was the tech-led rebound?",
+          "What will the CPI report show?"
         ],
         "sources": [
           {
-            "title": "Fed ‘going to have little patience with inflation’: Russell Investments",
-            "url": "https://www.investing.com/news/economy-news/fed-going-to-have-little-patience-with-inflation-russell-investments-5012976",
+            "title": "U.S. stock futures steady after tech-led rebound; CPI in focus",
+            "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-techled-rebound-cpi-in-focus-5013763",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:10:55.000Z"
+            "publishedAt": "2026-11-10T08:13:42.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:10:55.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEI710GU_L.jpg",
-        "badge": "Analysis",
+        "publishedAt": "2026-11-10T08:13:42.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM4J1W2_1200_L.jpg",
+        "badge": "Markets",
         "trendScore": 57,
         "confidence": "low"
       },
       {
-        "id": "markets-a309da73c6",
-        "slug": "american-healthcare-reit-shares-hit-all-time-high-of-58-71",
+        "id": "markets-27e1296086",
+        "slug": "equinix-chief-legal-officer-sells-200-807-in-company-stock",
         "lane": "markets",
-        "title": "American Healthcare REIT shares hit all-time high of $58.71",
-        "summary": "Shares of American Healthcare REIT climbed to a record $58.71. The move marks a new high for the stock. The report did not detail a specific catalyst for the rally.",
-        "whyItMatters": "A record high signals strong investor demand for healthcare-focused real estate names.",
+        "title": "Equinix chief legal officer sells $200,807 in company stock",
+        "summary": "Equinix's chief legal officer sold $200,807 in company stock, per a new regulatory filing. The filing does not state a reason for the sale. Insider sales like this are routine disclosures and do not by themselves signal a view on the stock.",
+        "whyItMatters": "Insider sale filings give investors a small window into how company executives treat their own stock.",
         "whatToWatch": [
-          "Whether the stock holds above its new high",
-          "The next earnings report for signs of underlying strength"
+          "Further insider filings from Equinix executives"
         ],
         "questions": [
-          "What drove the rally to a record level?"
+          "Was this a scheduled sale or a discretionary one?"
         ],
         "sources": [
           {
-            "title": "American Healthcare REIT stock hits all-time high at 58.71 USD",
-            "url": "https://www.investing.com/news/company-news/american-healthcare-reit-stock-hits-alltime-high-at-5871-usd-93CH-5012982",
+            "title": "Equinix chief legal officer sells $200,807 in company stock",
+            "url": "https://www.investing.com/news/insider-trading-news/equinix-chief-legal-officer-sells-200807-in-company-stock-93CH-5013769",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:14:00.000Z"
+            "publishedAt": "2026-11-10T08:16:05.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:14:00.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM5F17R_1200_L.jpg",
+        "publishedAt": "2026-11-10T08:16:05.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4416N_1200_L.jpg",
+        "badge": "Insider Trading",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-a7683e1d38",
-        "slug": "gcm-grosvenor-beats-earnings-estimate-by-a-penny-tops-revenue-forecast",
+        "id": "markets-38ea4edbf3",
+        "slug": "energy-evolution-master-fund-buys-203-811-of-empire-petroleum-stock",
         "lane": "markets",
-        "title": "GCM Grosvenor beats earnings estimate by a penny, tops revenue forecasts",
-        "summary": "GCM Grosvenor reported quarterly earnings that beat analyst estimates by $0.01 per share. Revenue also topped Wall Street forecasts.",
-        "whyItMatters": "A beat on both earnings and revenue supports confidence in the alternative asset manager's growth.",
+        "title": "Energy Evolution Master Fund buys $203,811 of Empire Petroleum stock",
+        "summary": "Energy Evolution Master Fund bought $203,811 of Empire Petroleum stock, according to a new regulatory filing. The filing does not state the fund's reason for the purchase. Filings like this disclose the trade but do not confirm the buyer's intent.",
+        "whyItMatters": "Institutional buying in a small energy name like Empire Petroleum can move its stock price.",
         "whatToWatch": [
-          "Management commentary on fundraising and fee-related earnings",
-          "Analyst reaction and any estimate revisions"
+          "Further filings on the fund's position in Empire Petroleum"
         ],
         "questions": [
-          "Did the growth come from new fund inflows or existing assets?"
+          "Does the fund plan to increase its stake further?"
         ],
         "sources": [
           {
-            "title": "GCM Grosvenor earnings beat by $0.01, revenue topped estimates",
-            "url": "https://www.investing.com/news/earnings/gcm-grosvenor-earnings-beat-by-001-revenue-topped-estimates-5012980",
+            "title": "Energy Evolution Master Fund buys $203,811 of Empire Petroleum stock",
+            "url": "https://www.investing.com/news/insider-trading-news/energy-evolution-master-fund-buys-203811-of-empire-petroleum-stock-93CH-5013768",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:12:56.000Z"
+            "publishedAt": "2026-11-10T08:15:59.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:12:56.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPED0C0KP_M.jpg",
+        "publishedAt": "2026-11-10T08:15:59.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM40318_1200_L.jpg",
+        "badge": "Insider Trading",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-d82eee80c1",
+        "slug": "lucky-strike-director-john-young-buys-56-990-in-stock",
+        "lane": "markets",
+        "title": "Lucky Strike director John Young buys $56,990 in stock",
+        "summary": "Lucky Strike director John Young bought $56,990 in company stock, per a regulatory filing. The filing does not state his reason for the purchase. Director purchases are disclosed to regulators but do not guarantee future stock performance.",
+        "whyItMatters": "Director buying can signal insider confidence, though a single purchase is a small data point.",
+        "whatToWatch": [
+          "Whether other Lucky Strike insiders make similar purchases"
+        ],
+        "questions": [
+          "What drove the timing of this purchase?"
+        ],
+        "sources": [
+          {
+            "title": "Lucky Strike director John Young buys $56,990 in stock",
+            "url": "https://www.investing.com/news/insider-trading-news/lucky-strike-director-john-young-buys-56990-in-stock-93CH-5013767",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-10T08:15:57.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-10T08:15:57.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM40318_1200_L.jpg",
+        "badge": "Insider Trading",
+        "trendScore": 52,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-e5a852836e",
+        "slug": "national-health-investors-earnings-beat-estimates-revenue-falls-short",
+        "lane": "markets",
+        "title": "National Health Investors earnings beat estimates, revenue falls short",
+        "summary": "National Health Investors reported quarterly earnings that beat analyst estimates by $10.28. Revenue, however, came in below estimates. The report shows profit outperforming expectations while sales lagged.",
+        "whyItMatters": "An earnings beat paired with a revenue miss signals cost control offsetting softer demand, a pattern investors track across sectors.",
+        "whatToWatch": [
+          "Management's comments on revenue trends in the earnings call"
+        ],
+        "questions": [
+          "What drove the revenue shortfall?"
+        ],
+        "sources": [
+          {
+            "title": "National Health Investors earnings beat by $10.28, revenue fell short of estimates",
+            "url": "https://www.investing.com/news/earnings/national-health-investors-earnings-beat-by-1028-revenue-fell-short-of-estimates-5013764",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-10T08:14:48.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-10T08:14:48.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0E0NG_M.jpg",
         "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-984a27fa73",
-        "slug": "telos-beats-earnings-estimate-by-0-06-revenue-tops-forecasts",
+        "id": "markets-1f0f279d17",
+        "slug": "hf-foods-earnings-beat-estimates-revenue-tops-forecasts",
         "lane": "markets",
-        "title": "Telos beats earnings estimate by $0.06, revenue tops forecasts",
-        "summary": "Telos reported quarterly earnings that came in $0.06 above analyst estimates. Revenue also exceeded forecasts for the period.",
-        "whyItMatters": "A beat on both lines suggests improving execution at the cybersecurity-focused company.",
+        "title": "HF Foods earnings beat estimates, revenue tops forecasts",
+        "summary": "HF Foods reported quarterly earnings per share that beat estimates by $0.04. Revenue also came in above analyst forecasts. The quarter outperformed expectations on both the top and bottom line.",
+        "whyItMatters": "A clean beat on both earnings and revenue is a positive signal for a company's operating momentum.",
         "whatToWatch": [
-          "Guidance for coming quarters",
-          "Stock reaction in the sessions that follow"
+          "HF Foods' guidance for the next quarter"
         ],
-        "questions": [
-          "Which segment drove the revenue beat?"
-        ],
+        "questions": [],
         "sources": [
           {
-            "title": "Telos earnings beat by $0.06, revenue topped estimates",
-            "url": "https://www.investing.com/news/earnings/telos-earnings-beat-by-006-revenue-topped-estimates-5012977",
+            "title": "Hf Foods earnings beat by $0.04, revenue topped estimates",
+            "url": "https://www.investing.com/news/earnings/hf-foods-earnings-beat-by-004-revenue-topped-estimates-5013762",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:11:04.000Z"
+            "publishedAt": "2026-11-10T08:13:41.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:11:04.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
+        "publishedAt": "2026-11-10T08:13:41.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
         "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6J0AJ_M.jpg",
         "badge": "Earnings",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-ec2dc12140",
-        "slug": "mp-materials-discusses-scaling-rare-earths-and-magnets-at-d-a-davidson",
+        "id": "markets-1fb6675e16",
+        "slug": "hims-hers-misses-q3-2026-profit-estimate-shares-fall",
         "lane": "markets",
-        "title": "MP Materials discusses scaling rare earths and magnets at D.A. Davidson conference",
-        "summary": "MP Materials executives spoke at a D.A. Davidson conference about plans to scale rare earth and magnet production. They also addressed the costs involved in that expansion.",
-        "whyItMatters": "MP Materials is a key US producer in rare earths, a sector central to supply-chain and national-security debates.",
+        "title": "Hims & Hers misses Q3 2026 profit estimate, shares fall",
+        "summary": "Hims & Hers missed its Q3 2026 profit estimate. Its shares fell in reaction. An earnings call transcript detailed the quarter's results.",
+        "whyItMatters": "As a closely watched telehealth stock, Hims & Hers' results are a gauge of investor sentiment toward consumer health spending.",
         "whatToWatch": [
-          "Updates on magnet manufacturing capacity",
-          "Cost trends as production scales up"
+          "Management's commentary on the path back to profit targets",
+          "Analyst reaction and any price target changes"
         ],
         "questions": [
-          "What cost targets did management lay out?",
-          "How soon could expanded capacity come online?"
+          "What drove the profit miss?",
+          "How much did shares fall?"
         ],
         "sources": [
           {
-            "title": "MP Materials at D.A. Davidson: scaling rare earths, magnets and costs",
-            "url": "https://www.investing.com/news/transcripts/mp-materials-at-da-davidson-scaling-rare-earths-magnets-and-costs-93CH-5012983",
+            "title": "Earnings call transcript: Hims & Hers misses Q3 2026 profit view, shares fall",
+            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-hims--hers-misses-q3-2026-profit-view-shares-fall-93CH-5013759",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:14:15.000Z"
+            "publishedAt": "2026-11-10T08:10:35.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:14:15.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0V4_1200_L.jpg",
-        "trendScore": 47,
+        "publishedAt": "2026-11-10T08:10:35.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-af3d98ad13",
-        "slug": "nvidia-shares-slide-as-ceo-huang-faces-board-scrutiny-over-alleged-aff",
+        "id": "markets-36f75824a4",
+        "slug": "evi-industries-earnings-beat-estimates-revenue-falls-short",
         "lane": "markets",
-        "title": "Nvidia shares slide as CEO Huang faces board scrutiny over alleged affair with spy",
-        "summary": "Nvidia stock fell after reports that CEO Jensen Huang faces board scrutiny over an alleged affair with a person described as an alleged spy. The report did not specify the scope of the board's review.",
-        "whyItMatters": "Governance concerns around the CEO of the world's most valuable chipmaker can weigh on investor confidence and the stock.",
+        "title": "EVI Industries earnings beat estimates, revenue falls short",
+        "summary": "EVI Industries reported quarterly earnings per share that beat estimates by $0.04. Revenue fell short of analyst forecasts. The results show profit outperformance alongside softer sales.",
+        "whyItMatters": "The mixed result adds to a pattern of earnings beats paired with revenue misses this reporting season.",
         "whatToWatch": [
-          "Any formal statement from Nvidia's board",
-          "Further reporting on the scope of the scrutiny"
+          "EVI Industries' guidance for coming quarters"
         ],
         "questions": [
-          "What exactly is the board reviewing?",
-          "Who is the alleged spy, and what evidence supports the claim?"
+          "What caused the revenue shortfall?"
         ],
         "sources": [
           {
-            "title": "Nvidia slides as CEO Huang faces board scrutiny over affair with alleged spy",
-            "url": "https://www.investing.com/news/economy-news/nvidias-outofhour-shares-fall-as-firm-probes-ceo-jensen-huang-5010476",
+            "title": "EVI Industries earnings beat by $0.04, revenue fell short of estimates",
+            "url": "https://www.investing.com/news/earnings/evi-industries-earnings-beat-by-004-revenue-fell-short-of-estimates-5013758",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:13:33.000Z"
+            "publishedAt": "2026-11-10T08:09:37.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:13:33.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA806Q_L.jpg",
-        "badge": "Breaking",
-        "trendScore": 47,
+        "publishedAt": "2026-11-10T08:09:37.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEBAG0BO_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-3fa3ab84ec",
-        "slug": "paraguay-names-schreiner-as-central-bank-chief-after-ueno-collapse",
+        "id": "markets-4173edbcc0",
+        "slug": "senate-advances-energy-permitting-bill-opposed-by-some-democrats-tribe",
         "lane": "markets",
-        "title": "Paraguay names Schreiner as central bank chief after Ueno collapse",
-        "summary": "Paraguay appointed Schreiner as its new central bank chief. The appointment follows the collapse of Ueno.",
-        "whyItMatters": "New central bank leadership after a financial institution's collapse signals how the country plans to handle the fallout.",
+        "title": "Senate advances energy permitting bill opposed by some Democrats, tribes",
+        "summary": "The US Senate advanced an energy permitting bill. Some Democrats and tribal groups oppose the legislation. The report did not detail the bill's next steps in the Senate.",
+        "whyItMatters": "Permitting rules affect the pace of oil, gas, and infrastructure projects, which matters for energy stocks and commodity markets.",
         "whatToWatch": [
-          "Schreiner's first policy statements",
-          "Further detail on the Ueno collapse fallout"
+          "The bill's next vote in the Senate",
+          "Reaction from affected tribes and Democratic senators"
         ],
         "questions": [
-          "What caused Ueno's collapse?",
-          "What immediate steps will Schreiner take?"
+          "What specific permitting changes does the bill include?",
+          "When might the bill reach a final Senate vote?"
         ],
         "sources": [
           {
-            "title": "Paraguay names Schreiner as central bank chief following Ueno collapse",
-            "url": "https://www.investing.com/news/stock-market-news/paraguay-names-schreiner-as-central-bank-chief-following-ueno-collapse-5012981",
+            "title": "Senate advances energy permitting bill opposed by some Democrats, tribes",
+            "url": "https://www.investing.com/news/commodities-news/democratic-us-senators-see-hope-for-permitting-bill-ahead-of-key-senate-vote-5013019",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:13:21.000Z"
+            "publishedAt": "2026-11-10T08:12:42.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:13:21.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA8129_L.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-31e30b30d2",
-        "slug": "trump-s-ties-to-nvidia-s-huang-scrutinized-amid-foreign-intelligence-c",
-        "lane": "markets",
-        "title": "Trump's ties to Nvidia's Huang scrutinized amid foreign intelligence concerns",
-        "summary": "Reports have put scrutiny on the close relationship between President Trump and Nvidia CEO Jensen Huang. The scrutiny follows concerns raised about foreign intelligence.",
-        "whyItMatters": "Political scrutiny of ties between a sitting president and a major chipmaker's CEO can carry regulatory and reputational risk for Nvidia.",
-        "whatToWatch": [
-          "Any official response from the White House or Nvidia",
-          "Further detail on the foreign intelligence concerns raised"
-        ],
-        "questions": [
-          "What specific foreign intelligence concerns are being examined?",
-          "Could this affect Nvidia's policy or export relationships?"
-        ],
-        "sources": [
-          {
-            "title": "Trump’s close ties to Nvidia’s Huang scrutinized after foreign intelligence concerns",
-            "url": "https://www.investing.com/news/stock-market-news/trumps-close-ties-to-nvidias-huang-scrutinized-after-foreign-intelligence-concerns-5012979",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:12:49.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:12:49.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA81PD_L.jpg",
-        "badge": "Breaking",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-1cd978b3ed",
-        "slug": "clover-health-talks-growth-and-margins-at-ubs-global-healthcare-confer",
-        "lane": "markets",
-        "title": "Clover Health talks growth and margins at UBS Global Healthcare Conference",
-        "summary": "Clover Health executives discussed growth and margin trends at the UBS Global Healthcare Conference. The report did not include specific figures from the discussion.",
-        "whyItMatters": "Margin trajectory matters for investors tracking Clover Health's path toward sustained profitability.",
-        "whatToWatch": [
-          "Specific margin targets disclosed by management",
-          "The next quarterly earnings report for confirmation of trends"
-        ],
-        "questions": [
-          "What margin levels did management point to?"
-        ],
-        "sources": [
-          {
-            "title": "Clover Health at UBS Global Healthcare Conference: growth and margins",
-            "url": "https://www.investing.com/news/transcripts/clover-health-at-ubs-global-healthcare-conference-growth-and-margins-93CH-5012978",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:12:34.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:12:34.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC0Q0MJ_M.jpg",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-2181f66407",
-        "slug": "boeing-to-cut-5-of-its-commercial-airplane-division-s-workforce",
-        "lane": "markets",
-        "title": "Boeing to cut 5% of its commercial airplane division's workforce",
-        "summary": "Boeing announced plans to cut 5% of the workforce in its commercial airplane division. The report did not give a timeline for the cuts.",
-        "whyItMatters": "Workforce cuts at Boeing's commercial unit signal ongoing cost pressure in a division central to the company's recovery.",
-        "whatToWatch": [
-          "Timeline for the job cuts",
-          "Any related guidance on production rates or deliveries"
-        ],
-        "questions": [
-          "What is driving the decision to cut staff now?",
-          "Which sites or roles are most affected?"
-        ],
-        "sources": [
-          {
-            "title": "Boeing to cut 5% of commercial airplane division’s workforce",
-            "url": "https://www.investing.com/news/stock-market-news/boeing-to-cut-5-of-planemaking-divisions-workforce-seattle-times-reports-5012939",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-10T02:12:31.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-10T02:12:31.000Z",
-        "updatedAt": "2026-11-09T18:29:12.839Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA81NK_L.jpg",
+        "publishedAt": "2026-11-10T08:12:42.000Z",
+        "updatedAt": "2026-11-10T00:32:48.103Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMA81SN_L.jpg",
+        "badge": "Policy",
         "trendScore": 47,
         "confidence": "low"
       }
