@@ -1,22 +1,21 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-11-12T23:04:19.632Z",
-  "contentVersion": 188,
+  "generatedAt": "2026-11-13T05:49:45.384Z",
+  "contentVersion": 189,
   "stories": [
     {
       "id": "crypto-9863ade778",
       "slug": "bitcoin-and-ethereum-fall-to-three-month-lows-amid-selloff-fears",
       "lane": "crypto",
-      "title": "Bitcoin and Ethereum fall to three-month lows amid selloff fears",
-      "summary": "Bitcoin and Ethereum dropped to their lowest levels in three months, according to CryptoSlate. The report also flags warnings that a bigger crypto selloff could still be ahead. No specific price levels or triggering events are detailed beyond the three-month-low mark.",
-      "whyItMatters": "A broad decline in the two largest crypto assets often sets the tone for risk appetite across the rest of the market.",
+      "title": "Bitcoin and Ethereum Fall to Three-Month Lows as Selloff Risk Grows",
+      "summary": "Bitcoin and Ethereum prices dropped to their lowest levels in three months, CryptoSlate reported. The report warns that a larger crypto-wide selloff may still be ahead. No specific price levels or triggers were given beyond this.",
+      "whyItMatters": "A broad drop in the two largest crypto assets tends to pressure altcoins and leveraged positions across the market.",
       "whatToWatch": [
-        "Whether Bitcoin and Ethereum hold current levels or break lower",
-        "Follow-on moves in altcoins and leveraged positions"
+        "Whether Bitcoin and Ethereum hold current levels or fall further",
+        "Signs of a wider selloff spreading to altcoins"
       ],
       "questions": [
-        "What is driving the selloff — macro conditions, liquidations, or something else?",
-        "How deep could a further decline go?"
+        "What is driving the drop: macro conditions or crypto-specific factors?"
       ],
       "sources": [
         {
@@ -28,25 +27,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T19:20:12.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-ethereum-support-risk.webp",
       "badge": "Markets",
-      "trendScore": 59,
+      "trendScore": 53,
       "confidence": "low"
     },
     {
       "id": "crypto-334d5d6ca2",
       "slug": "helius-adds-encryption-to-solana-transfers-but-operators-still-must-be",
       "lane": "crypto",
-      "title": "Helius adds encryption to Solana transfers, but operators still must be trusted",
-      "summary": "Helius introduced encryption for Solana transfers, according to CryptoSlate. The feature does not remove the need to trust network operators, so the privacy gain is partial rather than full.",
-      "whyItMatters": "Privacy tools on major chains like Solana are in high demand, but a partial trust model limits how much real protection this delivers.",
+      "title": "Helius Adds Encrypted Transfers to Solana, but Operators Still Hold Trust",
+      "summary": "Helius rolled out encryption for Solana transfers, CryptoSlate reported. The feature does not remove the need for users to trust node operators, so the privacy gain is limited.",
+      "whyItMatters": "Privacy upgrades on major chains like Solana affect how much protection users actually get versus how much is marketed.",
       "whatToWatch": [
-        "Adoption of the encrypted-transfer feature by wallets and apps",
-        "Whether a fuller, trust-minimized privacy option follows"
+        "Adoption of the encrypted-transfer feature",
+        "Any follow-up work to reduce reliance on operator trust"
       ],
       "questions": [
-        "What data remains visible to operators under this design?"
+        "What exact privacy guarantee does the encryption provide?",
+        "Has the feature been independently audited?"
       ],
       "sources": [
         {
@@ -58,25 +58,58 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T20:10:03.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-private-proof-development.webp",
-      "badge": "Protocol",
-      "trendScore": 55,
+      "badge": "Technical",
+      "trendScore": 49,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-0c62c95ecf",
+      "slug": "aave-user-loses-305-000-in-across-protocol-website-hijack",
+      "lane": "crypto",
+      "title": "Aave User Loses $305,000 in Across Protocol Website Hijack",
+      "summary": "An Aave user lost $305,000 after attackers hijacked the Across Protocol website, CryptoSlate reported. The report did not give further detail on how the site was compromised.",
+      "whyItMatters": "Front-end hijacks remain a recurring way attackers steal funds from DeFi users, even when the underlying protocol is secure.",
+      "whatToWatch": [
+        "Confirmation and response from Across Protocol",
+        "Whether any funds are recovered",
+        "Other users reporting similar losses"
+      ],
+      "questions": [
+        "How was the website compromised?",
+        "Will the user receive any form of restitution?"
+      ],
+      "sources": [
+        {
+          "title": "Aave user loses $305,000 after Across Protocol website hijack",
+          "url": "https://cryptoslate.com/across-protocol-website-attack-reached-an-aave-deposit-new-402000-loss-trace-shows/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-13T00:30:17.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-13T00:30:17.000Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/across-aave-hijack-cobalt-empty-rack.jpg",
+      "badge": "Security",
+      "trendScore": 48,
       "confidence": "low"
     },
     {
       "id": "crypto-b05dfcd38a",
       "slug": "solana-treasury-firm-forward-industries-trades-at-a-30-discount-to-its",
       "lane": "crypto",
-      "title": "Solana treasury firm Forward Industries trades at a 30% discount to its SOL holdings",
-      "summary": "Forward Industries, a company that holds SOL as a treasury asset, is trading at roughly a 30% discount to the value of its SOL holdings, according to CryptoSlate. The report notes a catch behind that discount, though it gives few details beyond the headline figure.",
-      "whyItMatters": "A treasury company trading below the value of its underlying crypto holdings signals investor caution and points to possible arbitrage or structural risk in the sector.",
+      "title": "Forward Industries' SOL Treasury Trades at 30% Discount, with a Catch",
+      "summary": "Forward Industries, a Solana treasury company, is trading at roughly a 30% discount to its SOL holdings, CryptoSlate reported. The report flags a catch that complicates the apparent bargain, though it does not spell out the detail.",
+      "whyItMatters": "A deep discount to net asset value signals investor doubt about crypto treasury vehicles, a structure now common among public SOL and BTC holders.",
       "whatToWatch": [
         "Whether the discount narrows or widens",
-        "Any disclosed reason behind the \"catch\" referenced in the report"
+        "Further detail on the stated catch"
       ],
       "questions": [
-        "What specifically causes the discount, and is it structural or driven by sentiment?"
+        "What specifically is the catch limiting the discount's value?",
+        "Is this discount pattern showing up at other crypto treasury companies?"
       ],
       "sources": [
         {
@@ -88,25 +121,57 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T22:50:29.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/forward-solana-share-claims.webp",
       "badge": "Markets",
-      "trendScore": 52,
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-aaeccd74fa",
+      "slug": "circle-hands-usdc-reserve-oversight-to-eu-regulators-risking-higher-fe",
+      "lane": "crypto",
+      "title": "Circle Hands USDC Reserve Oversight to EU Regulators, Risking Higher Fees",
+      "summary": "Circle has given EU regulators oversight of USDC reserves, CryptoSlate reported. The move could raise fees tied to USDC in Europe, though the report does not specify the new fee structure.",
+      "whyItMatters": "Stablecoin compliance costs in the EU can shape USDC's competitiveness and pricing for European users and businesses.",
+      "whatToWatch": [
+        "Any announced changes to USDC fees",
+        "Regulator statements on the reserve arrangement"
+      ],
+      "questions": [
+        "Which EU regulator is involved?",
+        "What prompted this change now?"
+      ],
+      "sources": [
+        {
+          "title": "Circle hands USDC reserves to EU regulators risking higher fees",
+          "url": "https://cryptoslate.com/circle-hands-usdc-reserves-to-eu-regulators-risking-higher-fees/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-13T03:30:19.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-13T03:30:19.000Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/03-dual-supervision.jpg",
+      "badge": "Regulatory",
+      "trendScore": 45,
       "confidence": "low"
     },
     {
       "id": "crypto-56a06c3b0c",
       "slug": "proposed-xrp-lending-vaults-would-lock-deposits-and-add-risk-for-holde",
       "lane": "crypto",
-      "title": "Proposed XRP lending vaults would lock deposits and add risk for holders",
-      "summary": "A proposal for XRP lending vaults would require holders to lock up their deposits, according to CryptoSlate. The report flags added risk exposure for participants, though it does not detail the proposal's backers or current status.",
-      "whyItMatters": "Lending products that lock up funds can expose holders to liquidity and counterparty risks similar to past crypto lending failures.",
+      "title": "Proposed XRP Lending Vaults Would Lock Deposits and Add Risk",
+      "summary": "A proposal for XRP-based lending vaults would lock user deposits, CryptoSlate reported. The report says this would expose holders to added risk, without detailing the specific mechanism.",
+      "whyItMatters": "New lending products on the XRP Ledger would change the risk profile for holders who currently just hold the token.",
       "whatToWatch": [
-        "Whether the proposal moves toward implementation",
-        "Lock-up terms and risk disclosures, if published"
+        "Whether the proposal advances toward implementation",
+        "Community and developer response"
       ],
       "questions": [
-        "Who is proposing the vaults, and what safeguards, if any, are planned?"
+        "Who is proposing the vaults?",
+        "What safeguards, if any, are built in?"
       ],
       "sources": [
         {
@@ -118,25 +183,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T18:50:20.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/xrp-lending-withdrawal-hatch.webp",
-      "badge": "Risk",
-      "trendScore": 48,
+      "badge": "DeFi",
+      "trendScore": 43,
       "confidence": "low"
     },
     {
       "id": "crypto-6b13067323",
       "slug": "zcash-drops-1-000-as-dormant-wallets-move-zec-to-exchanges",
       "lane": "crypto",
-      "title": "Zcash drops $1,000 as dormant wallets move ZEC to exchanges",
-      "summary": "Zcash (ZEC) fell by about $1,000 after previously dormant wallets sent coins to exchanges, according to CryptoSlate. Movement of long-held coins to exchanges often signals holders preparing to sell.",
-      "whyItMatters": "Sudden activity from dormant wallets can indicate large holders cashing out, which pressures price and unsettles other investors.",
+      "title": "Zcash Price Falls $1,000 as Dormant Wallets Move ZEC to Exchanges",
+      "summary": "Zcash's price fell by $1,000 after wallets that had been dormant sent ZEC to exchanges, CryptoSlate reported. Dormant-wallet movements to exchanges are often read as a sign of incoming selling pressure.",
+      "whyItMatters": "On-chain movement from long-dormant wallets is a closely watched signal for potential selling in thinly traded assets like ZEC.",
       "whatToWatch": [
-        "Whether more dormant ZEC wallets become active",
-        "ZEC price action following the exchange inflows"
+        "Whether ZEC price stabilizes",
+        "Further activity from previously dormant wallets"
       ],
       "questions": [
-        "Who controls the dormant wallets, and why did they move now?"
+        "Who controls these wallets?",
+        "Is the movement coordinated or coincidental?"
       ],
       "sources": [
         {
@@ -148,24 +214,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T17:45:18.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/zcash-dormant-wallet-pressure.webp",
-      "badge": "Markets",
-      "trendScore": 48,
+      "badge": "On-chain",
+      "trendScore": 42,
       "confidence": "low"
     },
     {
       "id": "crypto-9578d8e823",
       "slug": "anthropic-s-new-ai-model-tops-freelance-work-benchmarks-but-still-fail",
       "lane": "crypto",
-      "title": "Anthropic's new AI model tops freelance-work benchmarks but still fails most tasks",
-      "summary": "A new Anthropic AI model led benchmark tests for freelance-style work, but failed 58% of the tasks tested, according to CryptoSlate. The report does not name the specific model or benchmark used.",
-      "whyItMatters": "This is an AI-industry story rather than a crypto-market event, but it feeds the AI-agent and automation narratives some crypto readers track.",
+      "title": "Anthropic's New AI Tops Freelance Benchmarks but Still Fails Most Tasks",
+      "summary": "A new Anthropic AI model led freelance-work benchmark tests, CryptoSlate reported, yet still failed 58% of the tasks it attempted. The report does not specify which benchmark or model version was tested.",
+      "whyItMatters": "The result shows current limits of AI agents on real-world work, relevant to anyone assessing AI tools for trading, research, or development tasks.",
       "whatToWatch": [
-        "Further benchmark results as the model sees broader testing"
+        "Future benchmark results as models improve",
+        "Anthropic's next model release"
       ],
       "questions": [
-        "Which model and benchmark suite were used, and how was \"failure\" defined?"
+        "Which benchmark and task set were used?",
+        "Which Anthropic model was tested?"
       ],
       "sources": [
         {
@@ -177,25 +245,25 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T21:40:20.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/anthropic-freelance-reference-inspection.webp",
       "badge": "AI",
-      "trendScore": 46,
+      "trendScore": 40,
       "confidence": "low"
     },
     {
       "id": "crypto-ded5767f43",
       "slug": "bitcoin-s-spot-demand-improves-but-a-futures-slump-overshadows-it",
       "lane": "crypto",
-      "title": "Bitcoin's spot demand improves, but a futures slump overshadows it",
-      "summary": "CryptoSlate reports that Bitcoin's spot-demand signal is improving even as a larger slump in futures markets masks that strength. The report does not give specific figures for either the spot or futures measures.",
-      "whyItMatters": "Diverging spot and futures signals help show where real buying pressure sits versus leveraged speculation, which matters for judging the health of the current downturn.",
+      "title": "Bitcoin's Spot Demand Improves, but Futures Slump Overshadows It",
+      "summary": "A market signal shows Bitcoin spot demand improving, CryptoSlate reported, but a larger slump in futures markets is masking that improvement. The report does not give specific figures for either signal.",
+      "whyItMatters": "Separating spot demand from futures-driven moves helps readers judge whether price weakness reflects real selling or leveraged positioning.",
       "whatToWatch": [
-        "Whether spot demand keeps strengthening",
-        "Whether futures positioning stabilizes or drives further declines"
+        "Whether futures positioning resets",
+        "Continued strength in spot demand"
       ],
       "questions": [
-        "What specific indicators show the spot-demand improvement?"
+        "What specifically is driving the futures weakness?"
       ],
       "sources": [
         {
@@ -207,56 +275,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T15:45:21.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-demand-ballast-diver.webp",
       "badge": "Analysis",
-      "trendScore": 46,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-c2d1e8e846",
-      "slug": "bitcoin-plunges-to-71-000-as-nvidia-loses-2-trillion-after-jensen-huan",
-      "lane": "crypto",
-      "title": "Bitcoin plunges to $71,000 as Nvidia loses $2 trillion after Jensen Huang's resignation",
-      "summary": "Bitcoin dropped to around $71,000 after Nvidia CEO Jensen Huang abruptly resigned, which CryptoSlate reports triggered a $2 trillion wipeout in Nvidia's market value. The report ties the crypto decline directly to the shock from the resignation.",
-      "whyItMatters": "A shock of this scale at a major tech company can ripple into risk assets like crypto, testing whether Bitcoin trades as a hedge or as a high-beta risk asset.",
-      "whatToWatch": [
-        "Confirmation and details of Huang's resignation from other sources",
-        "Nvidia's market reaction and any successor announcement",
-        "Whether Bitcoin stabilizes or falls further"
-      ],
-      "questions": [
-        "Is this resignation confirmed beyond this single report?",
-        "What is the stated reason for the resignation?"
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin plunges to $71k as Jensen Huang abruptly resigns sending Nvidia into $2 trillion wipeout",
-          "url": "https://cryptoslate.com/bitcoin-plunges-to-71k-as-jensen-huang-abruptly-resigns-sending-nvidia-into-2-trillion-wipeout/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-12T15:04:58.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-12T15:04:58.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/nvidia-leadership-bitcoin.webp",
-      "badge": "Breaking",
-      "trendScore": 45,
+      "trendScore": 40,
       "confidence": "low"
     },
     {
       "id": "crypto-98568534ce",
       "slug": "google-s-new-ai-tool-finds-hidden-genetic-clues-in-immune-cell-researc",
       "lane": "crypto",
-      "title": "Google's new AI tool finds hidden genetic clues in immune-cell research",
-      "summary": "A new Google AI tool identified previously hidden genetic clues in an immune-cell test, according to CryptoSlate. The report does not name the tool or give further detail on the research.",
-      "whyItMatters": "This is a science and AI development outside core crypto markets; its relevance to this lane is limited beyond general interest in AI advances.",
+      "title": "Google's New AI Model Finds Hidden Genetic Clues in Immune-Cell Research",
+      "summary": "A new Google AI model surfaced previously hidden genetic clues in an immune-cell study, CryptoSlate reported. The source did not detail the methodology or the specific findings.",
+      "whyItMatters": "The result is a reminder of how fast AI capabilities are advancing in fields adjacent to the tools used across tech and crypto research.",
       "whatToWatch": [
-        "Further validation or publication of the research findings"
+        "Peer review or follow-up studies",
+        "Wider use of the tool in genetic research"
       ],
       "questions": [
-        "Which AI tool and which research team or institution is involved?"
+        "Which immune-cell test was used?",
+        "How were the findings validated?"
       ],
       "sources": [
         {
@@ -268,39 +306,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-12T16:45:25.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
+      "updatedAt": "2026-11-13T05:49:45.384Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/alphagenome-cell-focus.webp",
       "badge": "AI",
-      "trendScore": 42,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-2929f93793",
-      "slug": "voorhees-warns-against-letting-governments-control-ai-invoking-sauron-",
-      "lane": "crypto",
-      "title": "Voorhees warns against letting governments control AI, invoking 'Sauron's ring'",
-      "summary": "Crypto figure Erik Voorhees warned against giving governments veto power over AI, saying \"do not let Sauron have the ring,\" according to CryptoSlate. The remark frames centralized control over AI as a core risk, echoing arguments crypto advocates make about decentralization generally.",
-      "whyItMatters": "Voorhees is a prominent crypto industry voice, and his framing links AI-governance debates to the decentralization principles behind the broader crypto market.",
-      "whatToWatch": [
-        "Policy proposals on AI governance that Voorhees or others in crypto respond to"
-      ],
-      "questions": [
-        "What specific government AI proposal prompted this warning?"
-      ],
-      "sources": [
-        {
-          "title": "‘Do not let Sauron have the ring’: Voorhees warns against a government veto on AI",
-          "url": "https://cryptoslate.com/voorhees-sauron-government-ai-veto/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-12T14:45:29.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-12T14:45:29.000Z",
-      "updatedAt": "2026-11-12T23:04:19.632Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/ai-access-master-key.webp",
-      "badge": "Analysis",
-      "trendScore": 40,
+      "trendScore": 36,
       "confidence": "low"
     }
   ]

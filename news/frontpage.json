@@ -1,22 +1,21 @@
 {
-  "generatedAt": "2026-11-12T23:04:19.632Z",
-  "contentVersion": 202,
+  "generatedAt": "2026-11-13T05:49:45.384Z",
+  "contentVersion": 203,
   "lanes": {
     "crypto": [
       {
         "id": "crypto-9863ade778",
         "slug": "bitcoin-and-ethereum-fall-to-three-month-lows-amid-selloff-fears",
         "lane": "crypto",
-        "title": "Bitcoin and Ethereum fall to three-month lows amid selloff fears",
-        "summary": "Bitcoin and Ethereum dropped to their lowest levels in three months, according to CryptoSlate. The report also flags warnings that a bigger crypto selloff could still be ahead. No specific price levels or triggering events are detailed beyond the three-month-low mark.",
-        "whyItMatters": "A broad decline in the two largest crypto assets often sets the tone for risk appetite across the rest of the market.",
+        "title": "Bitcoin and Ethereum Fall to Three-Month Lows as Selloff Risk Grows",
+        "summary": "Bitcoin and Ethereum prices dropped to their lowest levels in three months, CryptoSlate reported. The report warns that a larger crypto-wide selloff may still be ahead. No specific price levels or triggers were given beyond this.",
+        "whyItMatters": "A broad drop in the two largest crypto assets tends to pressure altcoins and leveraged positions across the market.",
         "whatToWatch": [
-          "Whether Bitcoin and Ethereum hold current levels or break lower",
-          "Follow-on moves in altcoins and leveraged positions"
+          "Whether Bitcoin and Ethereum hold current levels or fall further",
+          "Signs of a wider selloff spreading to altcoins"
         ],
         "questions": [
-          "What is driving the selloff — macro conditions, liquidations, or something else?",
-          "How deep could a further decline go?"
+          "What is driving the drop: macro conditions or crypto-specific factors?"
         ],
         "sources": [
           {
@@ -28,25 +27,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T19:20:12.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-ethereum-support-risk.webp",
         "badge": "Markets",
-        "trendScore": 59,
+        "trendScore": 53,
         "confidence": "low"
       },
       {
         "id": "crypto-334d5d6ca2",
         "slug": "helius-adds-encryption-to-solana-transfers-but-operators-still-must-be",
         "lane": "crypto",
-        "title": "Helius adds encryption to Solana transfers, but operators still must be trusted",
-        "summary": "Helius introduced encryption for Solana transfers, according to CryptoSlate. The feature does not remove the need to trust network operators, so the privacy gain is partial rather than full.",
-        "whyItMatters": "Privacy tools on major chains like Solana are in high demand, but a partial trust model limits how much real protection this delivers.",
+        "title": "Helius Adds Encrypted Transfers to Solana, but Operators Still Hold Trust",
+        "summary": "Helius rolled out encryption for Solana transfers, CryptoSlate reported. The feature does not remove the need for users to trust node operators, so the privacy gain is limited.",
+        "whyItMatters": "Privacy upgrades on major chains like Solana affect how much protection users actually get versus how much is marketed.",
         "whatToWatch": [
-          "Adoption of the encrypted-transfer feature by wallets and apps",
-          "Whether a fuller, trust-minimized privacy option follows"
+          "Adoption of the encrypted-transfer feature",
+          "Any follow-up work to reduce reliance on operator trust"
         ],
         "questions": [
-          "What data remains visible to operators under this design?"
+          "What exact privacy guarantee does the encryption provide?",
+          "Has the feature been independently audited?"
         ],
         "sources": [
           {
@@ -58,25 +58,58 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T20:10:03.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-private-proof-development.webp",
-        "badge": "Protocol",
-        "trendScore": 55,
+        "badge": "Technical",
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-0c62c95ecf",
+        "slug": "aave-user-loses-305-000-in-across-protocol-website-hijack",
+        "lane": "crypto",
+        "title": "Aave User Loses $305,000 in Across Protocol Website Hijack",
+        "summary": "An Aave user lost $305,000 after attackers hijacked the Across Protocol website, CryptoSlate reported. The report did not give further detail on how the site was compromised.",
+        "whyItMatters": "Front-end hijacks remain a recurring way attackers steal funds from DeFi users, even when the underlying protocol is secure.",
+        "whatToWatch": [
+          "Confirmation and response from Across Protocol",
+          "Whether any funds are recovered",
+          "Other users reporting similar losses"
+        ],
+        "questions": [
+          "How was the website compromised?",
+          "Will the user receive any form of restitution?"
+        ],
+        "sources": [
+          {
+            "title": "Aave user loses $305,000 after Across Protocol website hijack",
+            "url": "https://cryptoslate.com/across-protocol-website-attack-reached-an-aave-deposit-new-402000-loss-trace-shows/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-13T00:30:17.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-13T00:30:17.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/across-aave-hijack-cobalt-empty-rack.jpg",
+        "badge": "Security",
+        "trendScore": 48,
         "confidence": "low"
       },
       {
         "id": "crypto-b05dfcd38a",
         "slug": "solana-treasury-firm-forward-industries-trades-at-a-30-discount-to-its",
         "lane": "crypto",
-        "title": "Solana treasury firm Forward Industries trades at a 30% discount to its SOL holdings",
-        "summary": "Forward Industries, a company that holds SOL as a treasury asset, is trading at roughly a 30% discount to the value of its SOL holdings, according to CryptoSlate. The report notes a catch behind that discount, though it gives few details beyond the headline figure.",
-        "whyItMatters": "A treasury company trading below the value of its underlying crypto holdings signals investor caution and points to possible arbitrage or structural risk in the sector.",
+        "title": "Forward Industries' SOL Treasury Trades at 30% Discount, with a Catch",
+        "summary": "Forward Industries, a Solana treasury company, is trading at roughly a 30% discount to its SOL holdings, CryptoSlate reported. The report flags a catch that complicates the apparent bargain, though it does not spell out the detail.",
+        "whyItMatters": "A deep discount to net asset value signals investor doubt about crypto treasury vehicles, a structure now common among public SOL and BTC holders.",
         "whatToWatch": [
           "Whether the discount narrows or widens",
-          "Any disclosed reason behind the \"catch\" referenced in the report"
+          "Further detail on the stated catch"
         ],
         "questions": [
-          "What specifically causes the discount, and is it structural or driven by sentiment?"
+          "What specifically is the catch limiting the discount's value?",
+          "Is this discount pattern showing up at other crypto treasury companies?"
         ],
         "sources": [
           {
@@ -88,25 +121,57 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T22:50:29.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/forward-solana-share-claims.webp",
         "badge": "Markets",
-        "trendScore": 52,
+        "trendScore": 46,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-aaeccd74fa",
+        "slug": "circle-hands-usdc-reserve-oversight-to-eu-regulators-risking-higher-fe",
+        "lane": "crypto",
+        "title": "Circle Hands USDC Reserve Oversight to EU Regulators, Risking Higher Fees",
+        "summary": "Circle has given EU regulators oversight of USDC reserves, CryptoSlate reported. The move could raise fees tied to USDC in Europe, though the report does not specify the new fee structure.",
+        "whyItMatters": "Stablecoin compliance costs in the EU can shape USDC's competitiveness and pricing for European users and businesses.",
+        "whatToWatch": [
+          "Any announced changes to USDC fees",
+          "Regulator statements on the reserve arrangement"
+        ],
+        "questions": [
+          "Which EU regulator is involved?",
+          "What prompted this change now?"
+        ],
+        "sources": [
+          {
+            "title": "Circle hands USDC reserves to EU regulators risking higher fees",
+            "url": "https://cryptoslate.com/circle-hands-usdc-reserves-to-eu-regulators-risking-higher-fees/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-13T03:30:19.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-13T03:30:19.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/03-dual-supervision.jpg",
+        "badge": "Regulatory",
+        "trendScore": 45,
         "confidence": "low"
       },
       {
         "id": "crypto-56a06c3b0c",
         "slug": "proposed-xrp-lending-vaults-would-lock-deposits-and-add-risk-for-holde",
         "lane": "crypto",
-        "title": "Proposed XRP lending vaults would lock deposits and add risk for holders",
-        "summary": "A proposal for XRP lending vaults would require holders to lock up their deposits, according to CryptoSlate. The report flags added risk exposure for participants, though it does not detail the proposal's backers or current status.",
-        "whyItMatters": "Lending products that lock up funds can expose holders to liquidity and counterparty risks similar to past crypto lending failures.",
+        "title": "Proposed XRP Lending Vaults Would Lock Deposits and Add Risk",
+        "summary": "A proposal for XRP-based lending vaults would lock user deposits, CryptoSlate reported. The report says this would expose holders to added risk, without detailing the specific mechanism.",
+        "whyItMatters": "New lending products on the XRP Ledger would change the risk profile for holders who currently just hold the token.",
         "whatToWatch": [
-          "Whether the proposal moves toward implementation",
-          "Lock-up terms and risk disclosures, if published"
+          "Whether the proposal advances toward implementation",
+          "Community and developer response"
         ],
         "questions": [
-          "Who is proposing the vaults, and what safeguards, if any, are planned?"
+          "Who is proposing the vaults?",
+          "What safeguards, if any, are built in?"
         ],
         "sources": [
           {
@@ -118,25 +183,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T18:50:20.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/xrp-lending-withdrawal-hatch.webp",
-        "badge": "Risk",
-        "trendScore": 48,
+        "badge": "DeFi",
+        "trendScore": 43,
         "confidence": "low"
       },
       {
         "id": "crypto-6b13067323",
         "slug": "zcash-drops-1-000-as-dormant-wallets-move-zec-to-exchanges",
         "lane": "crypto",
-        "title": "Zcash drops $1,000 as dormant wallets move ZEC to exchanges",
-        "summary": "Zcash (ZEC) fell by about $1,000 after previously dormant wallets sent coins to exchanges, according to CryptoSlate. Movement of long-held coins to exchanges often signals holders preparing to sell.",
-        "whyItMatters": "Sudden activity from dormant wallets can indicate large holders cashing out, which pressures price and unsettles other investors.",
+        "title": "Zcash Price Falls $1,000 as Dormant Wallets Move ZEC to Exchanges",
+        "summary": "Zcash's price fell by $1,000 after wallets that had been dormant sent ZEC to exchanges, CryptoSlate reported. Dormant-wallet movements to exchanges are often read as a sign of incoming selling pressure.",
+        "whyItMatters": "On-chain movement from long-dormant wallets is a closely watched signal for potential selling in thinly traded assets like ZEC.",
         "whatToWatch": [
-          "Whether more dormant ZEC wallets become active",
-          "ZEC price action following the exchange inflows"
+          "Whether ZEC price stabilizes",
+          "Further activity from previously dormant wallets"
         ],
         "questions": [
-          "Who controls the dormant wallets, and why did they move now?"
+          "Who controls these wallets?",
+          "Is the movement coordinated or coincidental?"
         ],
         "sources": [
           {
@@ -148,24 +214,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T17:45:18.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/zcash-dormant-wallet-pressure.webp",
-        "badge": "Markets",
-        "trendScore": 48,
+        "badge": "On-chain",
+        "trendScore": 42,
         "confidence": "low"
       },
       {
         "id": "crypto-9578d8e823",
         "slug": "anthropic-s-new-ai-model-tops-freelance-work-benchmarks-but-still-fail",
         "lane": "crypto",
-        "title": "Anthropic's new AI model tops freelance-work benchmarks but still fails most tasks",
-        "summary": "A new Anthropic AI model led benchmark tests for freelance-style work, but failed 58% of the tasks tested, according to CryptoSlate. The report does not name the specific model or benchmark used.",
-        "whyItMatters": "This is an AI-industry story rather than a crypto-market event, but it feeds the AI-agent and automation narratives some crypto readers track.",
+        "title": "Anthropic's New AI Tops Freelance Benchmarks but Still Fails Most Tasks",
+        "summary": "A new Anthropic AI model led freelance-work benchmark tests, CryptoSlate reported, yet still failed 58% of the tasks it attempted. The report does not specify which benchmark or model version was tested.",
+        "whyItMatters": "The result shows current limits of AI agents on real-world work, relevant to anyone assessing AI tools for trading, research, or development tasks.",
         "whatToWatch": [
-          "Further benchmark results as the model sees broader testing"
+          "Future benchmark results as models improve",
+          "Anthropic's next model release"
         ],
         "questions": [
-          "Which model and benchmark suite were used, and how was \"failure\" defined?"
+          "Which benchmark and task set were used?",
+          "Which Anthropic model was tested?"
         ],
         "sources": [
           {
@@ -177,25 +245,25 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T21:40:20.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/anthropic-freelance-reference-inspection.webp",
         "badge": "AI",
-        "trendScore": 46,
+        "trendScore": 40,
         "confidence": "low"
       },
       {
         "id": "crypto-ded5767f43",
         "slug": "bitcoin-s-spot-demand-improves-but-a-futures-slump-overshadows-it",
         "lane": "crypto",
-        "title": "Bitcoin's spot demand improves, but a futures slump overshadows it",
-        "summary": "CryptoSlate reports that Bitcoin's spot-demand signal is improving even as a larger slump in futures markets masks that strength. The report does not give specific figures for either the spot or futures measures.",
-        "whyItMatters": "Diverging spot and futures signals help show where real buying pressure sits versus leveraged speculation, which matters for judging the health of the current downturn.",
+        "title": "Bitcoin's Spot Demand Improves, but Futures Slump Overshadows It",
+        "summary": "A market signal shows Bitcoin spot demand improving, CryptoSlate reported, but a larger slump in futures markets is masking that improvement. The report does not give specific figures for either signal.",
+        "whyItMatters": "Separating spot demand from futures-driven moves helps readers judge whether price weakness reflects real selling or leveraged positioning.",
         "whatToWatch": [
-          "Whether spot demand keeps strengthening",
-          "Whether futures positioning stabilizes or drives further declines"
+          "Whether futures positioning resets",
+          "Continued strength in spot demand"
         ],
         "questions": [
-          "What specific indicators show the spot-demand improvement?"
+          "What specifically is driving the futures weakness?"
         ],
         "sources": [
           {
@@ -207,56 +275,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T15:45:21.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-demand-ballast-diver.webp",
         "badge": "Analysis",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-c2d1e8e846",
-        "slug": "bitcoin-plunges-to-71-000-as-nvidia-loses-2-trillion-after-jensen-huan",
-        "lane": "crypto",
-        "title": "Bitcoin plunges to $71,000 as Nvidia loses $2 trillion after Jensen Huang's resignation",
-        "summary": "Bitcoin dropped to around $71,000 after Nvidia CEO Jensen Huang abruptly resigned, which CryptoSlate reports triggered a $2 trillion wipeout in Nvidia's market value. The report ties the crypto decline directly to the shock from the resignation.",
-        "whyItMatters": "A shock of this scale at a major tech company can ripple into risk assets like crypto, testing whether Bitcoin trades as a hedge or as a high-beta risk asset.",
-        "whatToWatch": [
-          "Confirmation and details of Huang's resignation from other sources",
-          "Nvidia's market reaction and any successor announcement",
-          "Whether Bitcoin stabilizes or falls further"
-        ],
-        "questions": [
-          "Is this resignation confirmed beyond this single report?",
-          "What is the stated reason for the resignation?"
-        ],
-        "sources": [
-          {
-            "title": "Bitcoin plunges to $71k as Jensen Huang abruptly resigns sending Nvidia into $2 trillion wipeout",
-            "url": "https://cryptoslate.com/bitcoin-plunges-to-71k-as-jensen-huang-abruptly-resigns-sending-nvidia-into-2-trillion-wipeout/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-12T15:04:58.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-12T15:04:58.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/nvidia-leadership-bitcoin.webp",
-        "badge": "Breaking",
-        "trendScore": 45,
+        "trendScore": 40,
         "confidence": "low"
       },
       {
         "id": "crypto-98568534ce",
         "slug": "google-s-new-ai-tool-finds-hidden-genetic-clues-in-immune-cell-researc",
         "lane": "crypto",
-        "title": "Google's new AI tool finds hidden genetic clues in immune-cell research",
-        "summary": "A new Google AI tool identified previously hidden genetic clues in an immune-cell test, according to CryptoSlate. The report does not name the tool or give further detail on the research.",
-        "whyItMatters": "This is a science and AI development outside core crypto markets; its relevance to this lane is limited beyond general interest in AI advances.",
+        "title": "Google's New AI Model Finds Hidden Genetic Clues in Immune-Cell Research",
+        "summary": "A new Google AI model surfaced previously hidden genetic clues in an immune-cell study, CryptoSlate reported. The source did not detail the methodology or the specific findings.",
+        "whyItMatters": "The result is a reminder of how fast AI capabilities are advancing in fields adjacent to the tools used across tech and crypto research.",
         "whatToWatch": [
-          "Further validation or publication of the research findings"
+          "Peer review or follow-up studies",
+          "Wider use of the tool in genetic research"
         ],
         "questions": [
-          "Which AI tool and which research team or institution is involved?"
+          "Which immune-cell test was used?",
+          "How were the findings validated?"
         ],
         "sources": [
           {
@@ -268,316 +306,288 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-12T16:45:25.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/alphagenome-cell-focus.webp",
         "badge": "AI",
-        "trendScore": 42,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-2929f93793",
-        "slug": "voorhees-warns-against-letting-governments-control-ai-invoking-sauron-",
-        "lane": "crypto",
-        "title": "Voorhees warns against letting governments control AI, invoking 'Sauron's ring'",
-        "summary": "Crypto figure Erik Voorhees warned against giving governments veto power over AI, saying \"do not let Sauron have the ring,\" according to CryptoSlate. The remark frames centralized control over AI as a core risk, echoing arguments crypto advocates make about decentralization generally.",
-        "whyItMatters": "Voorhees is a prominent crypto industry voice, and his framing links AI-governance debates to the decentralization principles behind the broader crypto market.",
-        "whatToWatch": [
-          "Policy proposals on AI governance that Voorhees or others in crypto respond to"
-        ],
-        "questions": [
-          "What specific government AI proposal prompted this warning?"
-        ],
-        "sources": [
-          {
-            "title": "‘Do not let Sauron have the ring’: Voorhees warns against a government veto on AI",
-            "url": "https://cryptoslate.com/voorhees-sauron-government-ai-veto/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-12T14:45:29.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-12T14:45:29.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/ai-access-master-key.webp",
-        "badge": "Analysis",
-        "trendScore": 40,
+        "trendScore": 36,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-33928fe3ba",
-        "slug": "lineage-cell-shares-rise-after-q3-2026-pipeline-update",
+        "id": "markets-285bb1c0b5",
+        "slug": "australia-s-s-p-asx-200-falls-0-71-at-the-close",
         "lane": "markets",
-        "title": "Lineage Cell shares rise after Q3 2026 pipeline update",
-        "summary": "Lineage Cell Therapeutics gave a pipeline update on its Q3 2026 earnings call. Shares rose after the call. Investing.com reported the move in an earnings call transcript. No further detail on the pipeline update is available yet.",
-        "whyItMatters": "Investors in early-stage biotech watch pipeline news closely, since it often drives the stock more than quarterly financials.",
+        "title": "Australia's S&P/ASX 200 Falls 0.71% at the Close",
+        "summary": "Australian shares closed lower, with the S&P/ASX 200 index down 0.71% on the day, Investing.com reported. The report did not give a sector or stock-level breakdown.",
+        "whyItMatters": "The close gives an early read on risk appetite in Asia-Pacific trading ahead of the next global session.",
         "whatToWatch": [
-          "Further detail on the pipeline update",
-          "Next clinical or regulatory milestone"
+          "How the index opens in the next session",
+          "Whether losses extend or reverse"
         ],
         "questions": [
-          "What specific pipeline update drove the stock higher?"
+          "What drove the decline?",
+          "Was the move broad-based or led by a few sectors?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Lineage Cell rises on Q3 2026 pipeline update",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-lineage-cell-rises-on-q3-2026-pipeline-update-93CH-5023602",
+            "title": "Australia stocks lower at close of trade; S&P/ASX 200 down 0.71%",
+            "url": "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-071-5024165",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:52:29.000Z"
+            "publishedAt": "2026-11-13T13:30:04.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:52:29.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEDAF0IH_M.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-11-13T13:30:04.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEB1F00C_M.jpg",
+        "badge": "Markets",
+        "trendScore": 67,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-503ccbb6dc",
+        "slug": "redcloud-to-carry-out-100-for-1-reverse-stock-split-tuesday",
+        "lane": "markets",
+        "title": "RedCloud to Carry Out 100-for-1 Reverse Stock Split Tuesday",
+        "summary": "RedCloud will complete a 100-to-1 reverse stock split on Tuesday, Investing.com reported. The split will cut the number of shares outstanding while lifting the per-share price by the same ratio.",
+        "whyItMatters": "Reverse splits often point to a company managing its share price, sometimes to meet exchange listing rules.",
+        "whatToWatch": [
+          "The split taking effect Tuesday",
+          "Share price and volume right after the split"
+        ],
+        "questions": [
+          "What prompted the split?",
+          "Does RedCloud face a listing compliance issue?"
+        ],
+        "sources": [
+          {
+            "title": "RedCloud to implement 100-to-1 reverse stock split Tuesday",
+            "url": "https://www.investing.com/news/company-news/redcloud-to-implement-100to1-reverse-stock-split-tuesday-93CH-5024156",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-13T13:08:38.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-13T13:08:38.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM2I1CG_1200_L.jpg",
+        "badge": "Corporate Action",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-7fbdbfb6f3",
-        "slug": "u-s-antimony-and-dragonfly-energy-post-mixed-q3-2026-results",
+        "id": "markets-108e61d8be",
+        "slug": "jindal-power-signs-470-million-loan-for-botswana-power-project",
         "lane": "markets",
-        "title": "U.S. Antimony and Dragonfly Energy post mixed Q3 2026 results",
-        "summary": "U.S. Antimony missed Q3 2026 earnings estimates, and its shares fell. Dragonfly Energy also missed estimates on its own earnings call, but its shares rose instead. Investing.com covered both results in separate earnings call transcripts.",
-        "whyItMatters": "The opposite stock reactions show that guidance and other call details, not just the headline miss, move small-cap stocks.",
+        "title": "Jindal Power Signs $470 Million Loan for Botswana Power Project",
+        "summary": "Jindal Power has signed a $470 million loan to help fund a power project in Botswana, according to a report cited by Investing.com. No further terms were disclosed.",
+        "whyItMatters": "The deal points to continued financing activity in African power infrastructure, relevant for investors tracking emerging-market project debt.",
         "whatToWatch": [
-          "Follow-up guidance from each company",
-          "Next quarter's results for both firms"
+          "Confirmation of loan terms and lenders",
+          "Project construction timeline"
         ],
         "questions": [
-          "Why did Dragonfly Energy's shares rise despite missing estimates?",
-          "What caused U.S. Antimony's miss?"
+          "Which banks are providing the loan?",
+          "When is the project expected to be complete?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: U.S. Antimony misses Q3 2026 estimates as shares fall",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-us-antimony-misses-q3-2026-estimates-as-shares-fall-93CH-5023601",
+            "title": "Jindal Power signs $470 mln loan for Botswana power project - report",
+            "url": "https://www.investing.com/news/stock-market-news/jindal-power-signs-470-mln-loan-for-botswana-power-project--report-93CH-5024176",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:52:08.000Z"
-          },
-          {
-            "title": "Earnings call transcript: Dragonfly Energy misses Q3 2026 estimates but shares rise",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-dragonfly-energy-misses-q3-2026-estimates-but-shares-rise-93CH-5023592",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:46:25.000Z"
+            "publishedAt": "2026-11-13T13:44:15.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:46:25.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB9606Q_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
+        "publishedAt": "2026-11-13T13:44:15.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEK7P0NA_L.jpg",
+        "badge": "Deal",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-2a766f77cd",
-        "slug": "heartbeam-narrows-q3-2026-loss-as-cash-burn-eases",
+        "id": "markets-58b0b80a84",
+        "slug": "microsoft-still-working-to-fix-outage-hitting-teams-and-outlook",
         "lane": "markets",
-        "title": "HeartBeam narrows Q3 2026 loss as cash burn eases",
-        "summary": "HeartBeam reported a smaller loss for Q3 2026. The company said its cash burn eased during the quarter, according to its earnings call transcript.",
-        "whyItMatters": "Lower cash burn extends the runway for early-stage medtech firms still working toward commercial products.",
+        "title": "Microsoft Still Working to Fix Outage Hitting Teams and Outlook",
+        "summary": "Microsoft said it is still trying to fix a major outage affecting Teams and Outlook, Investing.com reported. The outage was ongoing at the time of the report.",
+        "whyItMatters": "Teams and Outlook outages disrupt work for businesses worldwide and can pressure sentiment toward Microsoft.",
         "whatToWatch": [
-          "HeartBeam's cash position in the next quarterly report",
-          "Progress toward commercialization"
+          "Microsoft's next status update",
+          "Confirmation that services are fully restored"
         ],
         "questions": [
-          "How much cash runway does HeartBeam now have?"
+          "What caused the outage?",
+          "How many users or regions are affected?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: HeartBeam narrows Q3 2026 loss as cash burn eases",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-heartbeam-narrows-q3-2026-loss-as-cash-burn-eases-93CH-5023600",
+            "title": "Microsoft says still attempting to fix major outage hitting Teams, Outlook",
+            "url": "https://www.investing.com/news/stock-market-news/microsoft-says-still-attempting-to-fix-major-outage-hitting-teams-outlook-5024175",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:51:15.000Z"
+            "publishedAt": "2026-11-13T13:41:34.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:51:15.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6R0AQ_M.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
+        "publishedAt": "2026-11-13T13:41:34.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEL4D0X5_L.jpg",
+        "badge": "Breaking",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-31e894b9b0",
-        "slug": "curis-posts-smaller-q3-2026-loss-but-shares-fall-after-hours",
+        "id": "markets-901bd5e056",
+        "slug": "smfg-raises-full-year-profit-forecast-12-after-strong-first-half",
         "lane": "markets",
-        "title": "Curis posts smaller Q3 2026 loss, but shares fall after hours",
-        "summary": "Curis reported a smaller loss for Q3 2026 than a year earlier. Despite the improvement, its shares fell in after-hours trading, per the earnings call transcript.",
-        "whyItMatters": "The drop shows investors weighed other details from the call more heavily than the smaller headline loss.",
+        "title": "SMFG Raises Full-Year Profit Forecast 12% After Strong First Half",
+        "summary": "Sumitomo Mitsui Financial Group raised its full-year profit forecast by 12%, after first-half profit surged, Investing.com reported.",
+        "whyItMatters": "The upgrade signals strength at one of Japan's largest banking groups, a read-through for investors watching Japanese financials.",
         "whatToWatch": [
-          "Reasons behind the after-hours decline",
-          "Curis's next quarterly update"
+          "Full fiscal-year results",
+          "Forecast updates from peer Japanese banks"
         ],
         "questions": [
-          "What in the earnings call made investors sell despite the smaller loss?"
+          "What drove the first-half profit surge?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Curis posts smaller q3 2026 loss, shares fall after hours",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-curis-posts-smaller-q3-2026-loss-shares-fall-after-hours-93CH-5023598",
+            "title": "SMFG raises full-year profit forecast by 12% after first-half profit surges",
+            "url": "https://www.investing.com/news/earnings/smfg-raises-fullyear-profit-forecast-by-12-after-firsthalf-profit-surges-5024174",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:49:52.000Z"
+            "publishedAt": "2026-11-13T13:38:58.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:49:52.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXNPEB6R0AQ_M.jpg",
+        "publishedAt": "2026-11-13T13:38:58.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXNPEM9T1B5_L.jpg",
         "badge": "Earnings",
-        "trendScore": 52,
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-a75cff0de1",
-        "slug": "stoneco-cuts-2026-outlook-amid-macro-strain",
+        "id": "markets-ea97860565",
+        "slug": "morning-bid-scandal-weighs-on-an-ai-sector-star",
         "lane": "markets",
-        "title": "StoneCo cuts 2026 outlook amid macro strain",
-        "summary": "StoneCo cut its 2026 outlook during its Q3 2026 earnings call. The company cited macroeconomic strain, according to the earnings call transcript.",
-        "whyItMatters": "StoneCo is a bellwether for Brazil's payments and fintech sector, so a cut outlook signals broader pressure there.",
+        "title": "Morning Bid: Scandal Weighs on an AI-Sector Star",
+        "summary": "A Morning Bid market commentary piece, cited by Investing.com, says a scandal has knocked down a prominent AI-linked name. The source gave no further detail on who or what is involved.",
+        "whyItMatters": "AI-sector sentiment has been a major driver of broader market moves, so trouble at a high-profile AI name can ripple into wider indexes.",
         "whatToWatch": [
-          "Updated 2026 guidance details",
-          "Brazil macroeconomic data in coming months"
+          "Further reporting that names the company or figure involved",
+          "Market reaction in AI-linked stocks"
         ],
         "questions": [
-          "Which specific macro factors pressured StoneCo's outlook?"
+          "Which company or figure does this involve?",
+          "What is the nature of the scandal?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: StoneCo cuts 2026 outlook in Q3 2026 amid macro strain",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-stoneco-cuts-2026-outlook-in-q3-2026-amid-macro-strain-93CH-5023597",
+            "title": "Morning Bid: Scandal topples the AI star",
+            "url": "https://www.investing.com/news/economy-news/morning-bid-scandal-topples-the-ai-star-5024173",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:49:43.000Z"
+            "publishedAt": "2026-11-13T13:36:36.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:49:43.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1AG_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
+        "publishedAt": "2026-11-13T13:36:36.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAC0CY_L.jpg",
+        "badge": "Morning Bid",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-ff8d27bf76",
-        "slug": "grown-rogue-lifts-2027-outlook-on-expansion-push",
+        "id": "markets-2bf79c3ad6",
+        "slug": "german-budget-committee-agrees-on-2027-budget",
         "lane": "markets",
-        "title": "Grown Rogue lifts 2027 outlook on expansion push",
-        "summary": "Grown Rogue raised its 2027 outlook during its Q3 2026 earnings call. The company pointed to an expansion push as the reason, per the transcript.",
-        "whyItMatters": "Outlook increases are uncommon in cannabis, so this signals rare confidence in growth for the sector.",
+        "title": "German Budget Committee Agrees on 2027 Budget",
+        "summary": "Germany's budget committee has reached agreement on the 2027 budget, Investing.com reported. No further detail on the budget's contents was given.",
+        "whyItMatters": "Fiscal decisions in Germany, the euro area's largest economy, feed into the region's growth outlook and bond markets.",
         "whatToWatch": [
-          "Details of the expansion plan",
-          "Progress updates toward the 2027 target"
+          "A full parliamentary vote on the budget",
+          "Release of budget details"
         ],
         "questions": [
-          "Which markets or products anchor Grown Rogue's expansion?"
+          "What are the key spending and revenue provisions?",
+          "When does parliament vote on the full budget?"
         ],
         "sources": [
           {
-            "title": "Earnings call transcript: Grown Rogue lifts 2027 outlook on expansion push in Q3 2026",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-grown-rogue-lifts-2027-outlook-on-expansion-push-in-q3-2026-93CH-5023595",
+            "title": "German budget committee agrees on 2027 budget",
+            "url": "https://www.investing.com/news/economy-news/german-budget-committee-agrees-on-2027-budget-5024172",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:48:30.000Z"
+            "publishedAt": "2026-11-13T13:36:19.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:48:30.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
+        "publishedAt": "2026-11-13T13:36:19.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAC0CO_L.jpg",
+        "badge": "Policy",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-76c5bd471a",
-        "slug": "nu-holdings-shares-rise-3-on-record-q3-net-income",
+        "id": "markets-8378d682b9",
+        "slug": "gold-rebounds-above-3-900-after-13-month-low-still-set-for-weekly-loss",
         "lane": "markets",
-        "title": "Nu Holdings shares rise 3% on record Q3 net income",
-        "summary": "Nu Holdings stock rose 3% after the company posted record net income for the third quarter, per Investing.com.",
-        "whyItMatters": "Nu Holdings is one of Latin America's largest digital banks, so record profit signals strength in that market.",
+        "title": "Gold Rebounds Above $3,900 After 13-Month Low, Still Set for Weekly Loss",
+        "summary": "Gold prices rebounded above $3,900 an ounce after touching a 13-month low, Investing.com reported. The metal is still on track for a loss on the week.",
+        "whyItMatters": "Gold moves track shifting rate expectations and risk sentiment, making them a closely watched macro signal.",
         "whatToWatch": [
-          "User growth and net income in the next quarterly report"
+          "This week's closing level for gold",
+          "Any shift in rate-cut expectations that could move the dollar"
         ],
         "questions": [
-          "What drove the record net income—loan growth, fees, or cost cuts?"
+          "What drove gold down to the 13-month low?",
+          "What sparked the rebound?"
         ],
         "sources": [
           {
-            "title": "Nu Holdings stock up 3% on hitting record Q3 net income",
-            "url": "https://www.investing.com/news/earnings/nu-holdings-stock-up-3-on-hitting-record-q3-net-income-93CH-5023594",
+            "title": "Gold rebounds above $3,900 after 13-month low, but weekly losses persist",
+            "url": "https://www.investing.com/news/commodities-news/gold-languishes-near-13month-low-as-96-oil-fuels-bets-on-bigger-fed-hikes-5023860",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:47:35.000Z"
+            "publishedAt": "2026-11-13T13:26:36.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:47:35.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
+        "publishedAt": "2026-11-13T13:26:36.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXNPEI3O02P_L.jpg",
+        "badge": "Commodities",
+        "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-7e522a1f80",
-        "slug": "pedevco-misses-on-earnings-but-tops-revenue-estimates",
+        "id": "markets-bf93f5aec1",
+        "slug": "warner-bros-discovery-shares-sold-by-david-kustoff",
         "lane": "markets",
-        "title": "PEDEVCO misses on earnings but tops revenue estimates",
-        "summary": "PEDEVCO's quarterly earnings missed estimates by $0.86 per share. The company's revenue, however, topped expectations, per Investing.com.",
-        "whyItMatters": "Mixed results like this test oil and gas investors over which metric—earnings or revenue—should carry more weight.",
+        "title": "Warner Bros. Discovery Shares Sold by David Kustoff",
+        "summary": "Investing.com reported a sale of Warner Bros. Discovery shares by David Kustoff. The report did not give the size of the sale or the reason behind it.",
+        "whyItMatters": "Disclosed trades in media stocks can draw investor attention, especially while Warner Bros. Discovery is in focus.",
         "whatToWatch": [
-          "PEDEVCO's next quarterly earnings",
-          "Oil and gas pricing trends"
+          "Any further disclosed trades in the stock",
+          "Company news from Warner Bros. Discovery"
         ],
         "questions": [
-          "What caused the sizable earnings miss despite higher revenue?"
+          "What is the size of the sale?",
+          "What prompted it?"
         ],
         "sources": [
           {
-            "title": "PEDEVCO earnings missed by $0.86, revenue topped estimates",
-            "url": "https://www.investing.com/news/earnings/pedevco-earnings-missed-by-086-revenue-topped-estimates-5023593",
+            "title": "Warner Bros. Discovery shares sold by David Kustoff",
+            "url": "https://www.investing.com/news/company-news/warner-bros-discovery-shares-sold-by-david-kustoff-93CH-5024152",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:46:59.000Z"
+            "publishedAt": "2026-11-13T13:03:14.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:46:59.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4416N_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 52,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-84418d6c5a",
-        "slug": "microvision-to-end-redmond-leases-cuts-convertible-notes-balance",
-        "lane": "markets",
-        "title": "MicroVision to end Redmond leases, cuts convertible notes balance",
-        "summary": "MicroVision plans to terminate its leases in Redmond, Washington. The company also reduced its convertible notes balance, according to an SEC filing reported by Investing.com.",
-        "whyItMatters": "The moves point to cost-cutting and balance-sheet cleanup at the lidar maker.",
-        "whatToWatch": [
-          "Where MicroVision's operations move after the lease terminations",
-          "Further steps to reduce debt or costs"
-        ],
-        "questions": [
-          "Where will MicroVision's operations relocate?",
-          "How much did the convertible notes balance decrease?"
-        ],
-        "sources": [
-          {
-            "title": "MicroVision to terminate Redmond leases, reduces convertible notes balance",
-            "url": "https://www.investing.com/news/sec-filings/microvision-to-terminate-redmond-leases-reduces-convertible-notes-balance-93CH-5023599",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-13T06:50:52.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-13T06:50:52.000Z",
-        "updatedAt": "2026-11-12T23:04:19.632Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0WG_1200_L.jpg",
+        "publishedAt": "2026-11-13T13:03:14.000Z",
+        "updatedAt": "2026-11-13T05:49:45.384Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEM1O173_1200_L.jpg",
         "trendScore": 47,
         "confidence": "low"
       }
