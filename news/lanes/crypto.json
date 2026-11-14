@@ -1,54 +1,208 @@
 {
   "lane": "crypto",
-  "generatedAt": "2026-11-14T03:34:04.195Z",
-  "contentVersion": 191,
+  "generatedAt": "2026-11-14T16:52:07.729Z",
+  "contentVersion": 192,
   "stories": [
     {
-      "id": "crypto-1aeb0bbacb",
-      "slug": "aave-proposal-could-cut-some-lenders-interest-share-by-60",
+      "id": "crypto-1000ae2c88",
+      "slug": "bitcoin-s-drop-to-67-000-puts-57-billion-holder-cluster-at-risk-as-etf",
       "lane": "crypto",
-      "title": "Aave proposal could cut some lenders' interest share by 60%",
-      "summary": "A new Aave proposal could cut the interest share for some lenders by as much as 60%, CryptoSlate reported. The report did not specify which pools or lender groups the change would affect, or the stated reason for it.",
-      "whyItMatters": "Aave is one of the largest DeFi lending protocols. A change to its interest split could cut yields for a large group of on-chain lenders.",
+      "title": "Bitcoin's drop to $67,000 puts $57 billion holder cluster at risk as ETF investors exit",
+      "summary": "Bitcoin fell to around $67,000, a move the report says puts roughly $57 billion held by one cluster of holders at risk of loss. The decline came alongside investors pulling money out of bitcoin ETFs. The report frames the ETF outflows and the price drop as connected.",
+      "whyItMatters": "ETF flows have become a major driver of bitcoin's price, so sustained outflows alongside large holder losses can signal more selling pressure ahead.",
       "whatToWatch": [
-        "Whether the proposal goes to a formal governance vote",
-        "The final terms if the vote passes",
-        "Community reaction from affected lenders"
+        "Daily bitcoin ETF inflow and outflow data",
+        "Whether bitcoin holds above $67,000 or falls further"
       ],
       "questions": [
-        "Which pools or lender groups does the cut affect?",
-        "What is the stated reason for the change?"
+        "What exactly defines the at-risk '$57 billion holder cluster'?",
+        "How much of the ETF outflow is from short-term versus long-term holders?"
       ],
       "sources": [
         {
-          "title": "Aave plan could cut some lenders’ share of interest by 60%",
-          "url": "https://cryptoslate.com/aave-lenders-interest-share-cut-proposal/",
+          "title": "Bitcoin’s $67,000 crash puts $57 billion holder cluster at risk as ETF investors flee",
+          "url": "https://cryptoslate.com/bitcoins-67000-crash-puts-57-billion-holder-cluster-at-risk-as-etf-investors-flee/",
           "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T18:30:35.000Z"
+          "publishedAt": "2026-11-14T16:20:11.000Z"
         }
       ],
       "sourceCount": 1,
-      "publishedAt": "2026-11-13T18:30:35.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/aave-interest-allocation-pattern.webp",
-      "badge": "DeFi",
-      "trendScore": 49,
+      "publishedAt": "2026-11-14T16:20:11.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-support-test.webp",
+      "badge": "Markets",
+      "trendScore": 62,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-f05ed9a31d",
+      "slug": "bitcoin-browser-extension-with-50-000-installs-is-up-for-sale-raising-",
+      "lane": "crypto",
+      "title": "Bitcoin browser extension with 50,000 installs is up for sale, raising control concerns",
+      "summary": "A Bitcoin-related browser extension used by about 50,000 people is reportedly being sold, which would hand control of it to a new owner. The report flags this as a risk, since a new owner could change the extension's code or permissions. No buyer is named in the report.",
+      "whyItMatters": "Browser extensions with wallet-adjacent permissions are a known supply-chain attack path, and an ownership change can turn a trusted tool malicious without users noticing.",
+      "whatToWatch": [
+        "Who buys the extension and what they say about their plans",
+        "Whether users are told to uninstall it or review its permissions"
+      ],
+      "questions": [
+        "What permissions does the extension hold, and what does it actually do?",
+        "Has the browser store been told about the ownership change?"
+      ],
+      "sources": [
+        {
+          "title": "50,000 people installed this Bitcoin browser extension. Now control of it is up for sale",
+          "url": "https://cryptoslate.com/50000-people-installed-this-bitcoin-browser-extension-now-control-of-it-is-up-for-sale/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-14T11:34:23.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-14T11:34:23.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-extension-sale-key.webp",
+      "badge": "Security",
+      "trendScore": 48,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-74cda5aee2",
+      "slug": "wall-street-s-push-for-24-7-trading-raises-the-question-of-who-funds-t",
+      "lane": "crypto",
+      "title": "Wall Street's push for 24/7 trading raises the question of who funds the weekend",
+      "summary": "Traditional finance firms want round-the-clock trading of stocks and other assets, following crypto's lead. The report says someone must still provide liquidity and funding during weekend hours, when banks and clearing systems are normally closed. It frames this as an unresolved hurdle for always-on markets.",
+      "whyItMatters": "Crypto already trades nonstop, so how traditional finance solves weekend liquidity will shape how closely stock and crypto market structure converge.",
+      "whatToWatch": [
+        "Exchanges or clearinghouses proposing weekend liquidity solutions",
+        "Regulatory response to extended-hours trading plans"
+      ],
+      "questions": [
+        "Which firms or exchanges are leading this push?",
+        "How would risk management and margin calls work outside banking hours?"
+      ],
+      "sources": [
+        {
+          "title": "Wall Street wants 24/7 trading, but somebody has to bankroll the weekend",
+          "url": "https://cryptoslate.com/wall-street-wants-24-7-trading-but-somebody-has-to-bankroll-the-weekend/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-14T15:20:06.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-14T15:20:06.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/weekend-trading-settlement-clock.webp",
+      "badge": "Markets",
+      "trendScore": 46,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-e39b5e7b96",
+      "slug": "elizabeth-warren-could-reopen-crypto-s-banking-access-fight-without-ne",
+      "lane": "crypto",
+      "title": "Elizabeth Warren could reopen crypto's banking access fight without new legislation",
+      "summary": "Senator Elizabeth Warren is positioned to revive the fight over crypto firms' access to banking services, the report says, without needing a new law. It suggests existing regulatory tools could be used to pressure banks against serving crypto businesses, echoing past debanking complaints from the industry.",
+      "whyItMatters": "Bank access has repeatedly been a chokepoint for crypto firms, so renewed pressure here could hit exchanges, custodians, and stablecoin issuers even without a formal rule change.",
+      "whatToWatch": [
+        "Statements or letters from Warren targeting bank-crypto relationships",
+        "Responses from banking regulators or industry groups"
+      ],
+      "questions": [
+        "What specific existing authority would she rely on?",
+        "Which crypto firms or banks would be most exposed?"
+      ],
+      "sources": [
+        {
+          "title": "Elizabeth Warren could reopen crypto’s banking fight without changing a single law",
+          "url": "https://cryptoslate.com/warren-could-reopen-crypto-banking-fight-without-changing-a-single-law/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-14T08:10:11.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-14T08:10:11.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/crypto-custody-records-labyrinth.webp",
+      "badge": "Regulatory",
+      "trendScore": 45,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-af1d0ec1ac",
+      "slug": "microsoft-researchers-show-how-a-helpful-ai-can-be-turned-into-a-sleep",
+      "lane": "crypto",
+      "title": "Microsoft researchers show how a helpful AI can be turned into a sleeper agent",
+      "summary": "Microsoft researchers reportedly demonstrated a way to turn a well-behaved AI model into one that acts maliciously once triggered, often called a sleeper agent. The report does not detail the exact method or which models were tested. It adds to wider research on hidden risks in AI systems.",
+      "whyItMatters": "AI agents are increasingly used in crypto trading, custody, and automation, so evidence that models can be covertly compromised is a relevant risk signal for that stack.",
+      "whatToWatch": [
+        "Whether Microsoft publishes the full research or a mitigation",
+        "Any response from AI labs whose models were involved"
+      ],
+      "questions": [
+        "Which AI models or products were used in the demonstration?",
+        "Does this risk extend to AI tools already used in crypto trading?"
+      ],
+      "sources": [
+        {
+          "title": "Microsoft found a way to turn a helpful AI into a sleeper agent",
+          "url": "https://cryptoslate.com/microsoft-found-a-way-to-turn-a-helpful-ai-into-a-sleeper-agent/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-14T13:20:37.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-14T13:20:37.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/microsoft-ai-hidden-door.webp",
+      "badge": "AI security",
+      "trendScore": 44,
+      "confidence": "low"
+    },
+    {
+      "id": "crypto-54fe98566f",
+      "slug": "coinbase-s-ai-trading-tool-pauses-bots-but-leaves-open-orders-active",
+      "lane": "crypto",
+      "title": "Coinbase's AI trading tool pauses bots but leaves open orders active",
+      "summary": "Coinbase's AI-driven trading tool reportedly paused automated bots during an issue, but orders already placed stayed open instead of being canceled. The report does not say what caused the pause or whether any users lost money as a result.",
+      "whyItMatters": "A pause that leaves orders live can expose users to unmanaged risk if a bot can no longer react to market moves, a real concern for anyone using automated crypto trading tools.",
+      "whatToWatch": [
+        "Coinbase's explanation of the cause and any fix",
+        "Reports from users about losses tied to open orders"
+      ],
+      "questions": [
+        "What triggered the pause?",
+        "Did any users lose money from orders left open?"
+      ],
+      "sources": [
+        {
+          "title": "Coinbase AI trading tool pauses bots, but leaves orders open",
+          "url": "https://cryptoslate.com/coinbase-ai-trading-tool-pauses-bots-but-leaves-orders-open/",
+          "publisher": "CryptoSlate",
+          "publishedAt": "2026-11-14T04:30:03.000Z"
+        }
+      ],
+      "sourceCount": 1,
+      "publishedAt": "2026-11-14T04:30:03.000Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
+      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/coinbase-01-mechanical-order-feed.jpg",
+      "badge": "Incident",
+      "trendScore": 37,
       "confidence": "low"
     },
     {
       "id": "crypto-5b95d8dcdd",
       "slug": "diesel-prices-drop-8-as-bitcoin-traders-face-a-squeeze",
       "lane": "crypto",
-      "title": "Diesel prices drop 8% as Bitcoin traders face a squeeze",
-      "summary": "Diesel prices fell 8%, and separately, Bitcoin traders face a squeeze, according to CryptoSlate. The report links the two moves, but it does not explain the mechanism that connects them.",
-      "whyItMatters": "Readers should treat claimed links between energy prices and Bitcoin trader positioning with caution until a clear mechanism is shown.",
+      "title": "Diesel prices fall 8%, yet Bitcoin traders still face a squeeze",
+      "summary": "Diesel prices dropped about 8%, a figure tied to energy and mining costs, but the report says bitcoin traders face a squeeze regardless. The report does not explain the direct link between the diesel move and the trading squeeze it describes.",
+      "whyItMatters": "Energy costs affect bitcoin mining economics, so fuel price swings are worth tracking even when the immediate trading link is unclear.",
       "whatToWatch": [
-        "Whether Bitcoin funding or liquidation data confirms a real squeeze",
-        "Any follow-up reporting that explains the diesel-Bitcoin link"
+        "Further bitcoin price action tied to this squeeze",
+        "Follow-up reporting on the diesel-bitcoin connection"
       ],
       "questions": [
-        "What specific data shows a trader squeeze?",
-        "Is the diesel price move actually connected to Bitcoin markets, or just coincidental timing?"
+        "What is the actual mechanism linking diesel prices to the trader squeeze?",
+        "Which traders or positions are most affected?"
       ],
       "sources": [
         {
@@ -60,28 +214,27 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-13T22:20:46.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/truck-stop-strap.jpg",
-      "badge": "Analysis",
-      "trendScore": 48,
+      "badge": "Markets",
+      "trendScore": 37,
       "confidence": "low"
     },
     {
       "id": "crypto-d5a39a960a",
       "slug": "unocoin-halts-all-services-after-hackers-bypass-a-bitgo-freeze",
       "lane": "crypto",
-      "title": "Unocoin halts all services after hackers bypass a BitGo freeze",
-      "summary": "Indian crypto exchange Unocoin suspended all services after attackers reportedly bypassed a freeze that custodian BitGo had put in place, CryptoSlate reported. The report did not give a confirmed loss amount.",
-      "whyItMatters": "The incident raises doubts about how reliable custodian-level freezes are for stopping theft after a breach.",
+      "title": "Indian exchange Unocoin halts services after hackers bypass a BitGo freeze",
+      "summary": "Indian crypto exchange Unocoin halted all services after hackers reportedly bypassed a funds freeze that custodian BitGo had put in place. The report indicates this followed a security breach but gives no dollar figure for losses and does not explain how the freeze was bypassed.",
+      "whyItMatters": "A freeze mechanism failing to stop stolen funds from moving raises doubts about custodial security assumptions other exchanges and their users rely on.",
       "whatToWatch": [
-        "A Unocoin statement on the scale of losses",
-        "Whether or when services resume",
-        "Any response or explanation from BitGo"
+        "Unocoin's official statement on losses and recovery plans",
+        "BitGo's explanation of how the freeze was bypassed",
+        "Any response from Indian regulators"
       ],
       "questions": [
-        "How much in user funds was taken?",
-        "How did attackers bypass the freeze?",
-        "Are all user funds safe?"
+        "How much was stolen?",
+        "How did the attackers bypass BitGo's freeze?"
       ],
       "sources": [
         {
@@ -93,57 +246,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-14T02:10:17.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/shutter-branded.jpg",
-      "badge": "Security",
-      "trendScore": 46,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-b4ce22159d",
-      "slug": "bitcoin-falls-below-70-000-as-870m-in-bullish-bets-are-liquidated",
-      "lane": "crypto",
-      "title": "Cost of hedging Bitcoin near $70,000 more than doubles in a day",
-      "summary": "The cost of hedging against Bitcoin price swings near $70,000 more than doubled in a single day, CryptoSlate reported. This points to a sharp jump in options market demand or implied volatility around that price level.",
-      "whyItMatters": "A fast rise in hedging costs often signals trader anxiety about near-term price swings, which matters to anyone sizing crypto risk.",
-      "whatToWatch": [
-        "Whether hedging costs stay elevated or fall back",
-        "Price action around the $70,000 level"
-      ],
-      "questions": [
-        "What specific event drove the spike?",
-        "Which options or strikes does the data cover?"
-      ],
-      "sources": [
-        {
-          "title": "The cost of a $70,000 Bitcoin hedge more than doubled in a day",
-          "url": "https://cryptoslate.com/bitcoin-hedge-cost-more-than-doubled/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T14:30:05.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-13T14:30:05.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-fixed-strike-hedge.webp",
-      "badge": "Markets",
-      "trendScore": 46,
+      "badge": "Security incident",
+      "trendScore": 35,
       "confidence": "low"
     },
     {
       "id": "crypto-711394b6a4",
       "slug": "us-courts-pursue-1-2b-in-stolen-binance-funds-as-victims-hit-a-new-hur",
       "lane": "crypto",
-      "title": "US courts pursue $1.2B in stolen Binance funds as victims hit a new hurdle",
-      "summary": "US courts are pursuing about $1.2 billion in funds stolen from Binance, but victims reportedly face a new obstacle in recovering their losses, CryptoSlate reported. The report did not detail the nature of that hurdle.",
-      "whyItMatters": "The outcome will set a precedent for how stolen exchange funds get returned to victims through US courts.",
+      "title": "US courts move to seize $1.2 billion in stolen Binance funds, but victims hit a new hurdle",
+      "summary": "US courts are reportedly pursuing about $1.2 billion in funds stolen from Binance, but the report says victims seeking repayment now face a new obstacle. It does not specify what that hurdle is or when the original theft occurred.",
+      "whyItMatters": "Large fund-recovery cases like this set precedent for how stolen crypto assets are handled in the US legal system, which matters for exchange users generally.",
       "whatToWatch": [
-        "Upcoming court rulings or forfeiture proceedings",
-        "Any claims process opened for victims"
+        "Court filings detailing the new hurdle victims face",
+        "Any timeline for returning funds to victims"
       ],
       "questions": [
-        "What exactly is the new hurdle victims face?",
-        "What is the expected timeline for any fund distribution?"
+        "What is the specific legal hurdle victims now face?",
+        "When and how were these funds originally stolen?"
       ],
       "sources": [
         {
@@ -155,119 +277,26 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-13T23:40:49.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/binance-frozen-inventory.jpg",
-      "badge": "Regulatory",
-      "trendScore": 44,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-aa7ea6aaaa",
-      "slug": "amazon-no-human-wrote-or-reviewed-code-for-its-new-cloud-testing-tool",
-      "lane": "crypto",
-      "title": "Amazon says AI wrote its new cloud testing tool with no human code review",
-      "summary": "Amazon said no human wrote or reviewed the code behind its newly launched cloud testing tool, with the code produced entirely by AI, CryptoSlate reported. The report did not detail what testing or validation the tool received before release.",
-      "whyItMatters": "The move tests how far AI-written code can go without human review, a question that also applies to smart contract and crypto infrastructure code.",
-      "whatToWatch": [
-        "How Amazon addresses security or audit concerns for the tool",
-        "Whether other cloud or crypto software providers adopt a similar approach"
-      ],
-      "questions": [
-        "What validation, if any, replaced human code review?",
-        "Could this approach extend to smart contract development?"
-      ],
-      "sources": [
-        {
-          "title": "Amazon says no human wrote or reviewed the code for its new cloud testing tool",
-          "url": "https://cryptoslate.com/amazon-ai-written-aws-emulator-code/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T17:30:52.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-13T17:30:52.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/aws-emulator-test-replica.webp",
-      "badge": "Tech",
-      "trendScore": 44,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-6cec283ee0",
-      "slug": "lido-earn-s-new-safety-net-still-leaves-depositors-on-the-hook-for-los",
-      "lane": "crypto",
-      "title": "Lido Earn's new safety net still leaves depositors exposed to losses",
-      "summary": "Liquid staking protocol Lido added a new safety-net feature to its Earn product, but depositors still bear ultimate responsibility for losses, CryptoSlate reported. The report did not detail the exact limits of the new safeguard.",
-      "whyItMatters": "Anyone using Lido's Earn product should know the backstop reduces, but does not remove, their downside risk.",
-      "whatToWatch": [
-        "Full published terms and limits of the safety net",
-        "Any incident that tests the new safeguard in practice"
-      ],
-      "questions": [
-        "What specific losses remain the depositor's responsibility?",
-        "How does this differ from Lido Earn's prior loss arrangement?"
-      ],
-      "sources": [
-        {
-          "title": "Lido Earn’s new safety net still leaves depositors on the hook for losses",
-          "url": "https://cryptoslate.com/lido-earn-loss-protection-depositors/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T16:30:25.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-13T16:30:25.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/lido-vault-layered-nets.webp",
-      "badge": "DeFi",
-      "trendScore": 43,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-3f66a8c43a",
-      "slug": "us-report-japan-s-yen-intervention-used-euros-not-dollars",
-      "lane": "crypto",
-      "title": "Report says yen intervention used euros, not dollars, reviving Bitcoin debate",
-      "summary": "A new US report found that an earlier intervention to support the Japanese yen was carried out using euros rather than dollars, CryptoSlate reported. Some commentators tie this detail to the broader debate over Bitcoin's role as an alternative to dollar-based reserves, though the link is not established by the report itself.",
-      "whyItMatters": "Currency choices in FX interventions feed debates about dollar dominance, a storyline Bitcoin bulls often cite, but the Bitcoin connection here is speculative and should be treated with caution.",
-      "whatToWatch": [
-        "Further detail from the underlying report",
-        "Market commentary that tests or challenges the Bitcoin link"
-      ],
-      "questions": [
-        "Which agency or body issued the report?",
-        "What is the actual causal link, if any, to Bitcoin markets?"
-      ],
-      "sources": [
-        {
-          "title": "New US report reveals yen rescue used euros, not dollars. That matters for Bitcoin",
-          "url": "https://cryptoslate.com/yen-intervention-euros-bitcoin-liquidity/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T15:30:50.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-13T15:30:50.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-yen-funding-lens.webp",
-      "badge": "Analysis",
-      "trendScore": 42,
+      "badge": "Legal",
+      "trendScore": 33,
       "confidence": "low"
     },
     {
       "id": "crypto-370b0d8b7e",
       "slug": "xrp-loans-trigger-883-liquidations-53m-more-at-risk",
       "lane": "crypto",
-      "title": "XRP-backed loans trigger 883 liquidations, with $53M still at risk",
-      "summary": "Loans backed by XRP as collateral triggered 883 liquidations, and roughly $53 million in positions remain at risk, CryptoSlate reported. The report did not name the specific platform or platforms involved.",
-      "whyItMatters": "The scale of liquidations signals stress in XRP-collateralized lending and offers a gauge of leverage risk in that market.",
+      "title": "XRP-backed loans trigger 883 liquidations, with $53 million still at risk",
+      "summary": "Loans collateralized by XRP triggered 883 liquidations, according to the report, and about $53 million in positions remain at risk of further liquidation. The report does not name the lending platform involved or the price move that set off the liquidations.",
+      "whyItMatters": "Liquidation cascades in collateralized lending can amplify price drops, so a large remaining at-risk balance points to possible continued volatility in XRP.",
       "whatToWatch": [
-        "Further liquidations if XRP's price falls more",
-        "Which platforms carry the remaining at-risk positions"
+        "Whether XRP's price stabilizes or triggers more liquidations",
+        "Which lending platforms carry the most exposure"
       ],
       "questions": [
-        "Which platform or platforms saw these liquidations?",
-        "What triggered the underlying price move?"
+        "Which platform hosted these XRP-collateralized loans?",
+        "What price move triggered the initial liquidations?"
       ],
       "sources": [
         {
@@ -279,41 +308,10 @@
       ],
       "sourceCount": 1,
       "publishedAt": "2026-11-13T20:50:08.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
+      "updatedAt": "2026-11-14T16:52:07.729Z",
       "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/station.jpg",
       "badge": "Markets",
-      "trendScore": 41,
-      "confidence": "low"
-    },
-    {
-      "id": "crypto-aaf55d09f2",
-      "slug": "fbi-warns-of-400m-crypto-scam-using-deepfake-face-swap-videos",
-      "lane": "crypto",
-      "title": "FBI warns of active $400M deepfake crypto scam that impersonates friends",
-      "summary": "The FBI warned of an active scam, tied to about $400 million in losses, that uses deepfake video to replace a trusted contact's face and impersonate friends of the victim, CryptoSlate reported. The warning targets crypto holders as a key group at risk.",
-      "whyItMatters": "Deepfake-enabled social engineering is a growing threat to crypto holders, since it exploits trust in familiar faces to drive transfers.",
-      "whatToWatch": [
-        "Further FBI guidance or advisories on the scam",
-        "Any platform response to block or flag related transfers"
-      ],
-      "questions": [
-        "How are the stolen funds moved or laundered?",
-        "Which messaging or video platforms do scammers exploit most?"
-      ],
-      "sources": [
-        {
-          "title": "FBI warns active $400M crypto scam targets your friends by replacing your face in videos",
-          "url": "https://cryptoslate.com/fbi-warns-facestealer-turns-crypto-victims-into-bait-for-the-next-attack/",
-          "publisher": "CryptoSlate",
-          "publishedAt": "2026-11-13T19:30:01.000Z"
-        }
-      ],
-      "sourceCount": 1,
-      "publishedAt": "2026-11-13T19:30:01.000Z",
-      "updatedAt": "2026-11-14T03:34:04.195Z",
-      "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/facestealer-recorded-identity-loop.webp",
-      "badge": "Security",
-      "trendScore": 40,
+      "trendScore": 30,
       "confidence": "low"
     }
   ]
