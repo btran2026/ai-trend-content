@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:51:41.740Z",
-  "contentVersion": 204,
+  "generatedAt": "2026-11-14T03:34:04.195Z",
+  "contentVersion": 205,
   "lanes": {
     "crypto": [
       {
@@ -8,16 +8,16 @@
         "slug": "aave-proposal-could-cut-some-lenders-interest-share-by-60",
         "lane": "crypto",
         "title": "Aave proposal could cut some lenders' interest share by 60%",
-        "summary": "Aave is weighing a proposal that could cut some lenders' share of interest by as much as 60%, CryptoSlate reports. The report does not name the affected pools or lenders. The mechanism and timeline are not yet clear from the single report available.",
-        "whyItMatters": "Changes to Aave's interest split affect returns for lenders on one of DeFi's largest lending protocols.",
+        "summary": "A new Aave proposal could cut the interest share for some lenders by as much as 60%, CryptoSlate reported. The report did not specify which pools or lender groups the change would affect, or the stated reason for it.",
+        "whyItMatters": "Aave is one of the largest DeFi lending protocols. A change to its interest split could cut yields for a large group of on-chain lenders.",
         "whatToWatch": [
-          "Whether the proposal reaches a formal governance vote",
-          "Which lender pools the change would affect",
-          "Reaction from lenders who stand to lose yield"
+          "Whether the proposal goes to a formal governance vote",
+          "The final terms if the vote passes",
+          "Community reaction from affected lenders"
         ],
         "questions": [
-          "Which lenders would see lower returns?",
-          "What problem is the proposal meant to solve?"
+          "Which pools or lender groups does the cut affect?",
+          "What is the stated reason for the change?"
         ],
         "sources": [
           {
@@ -29,27 +29,90 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T18:30:35.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/aave-interest-allocation-pattern.webp",
         "badge": "DeFi",
-        "trendScore": 55,
+        "trendScore": 49,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-5b95d8dcdd",
+        "slug": "diesel-prices-drop-8-as-bitcoin-traders-face-a-squeeze",
+        "lane": "crypto",
+        "title": "Diesel prices drop 8% as Bitcoin traders face a squeeze",
+        "summary": "Diesel prices fell 8%, and separately, Bitcoin traders face a squeeze, according to CryptoSlate. The report links the two moves, but it does not explain the mechanism that connects them.",
+        "whyItMatters": "Readers should treat claimed links between energy prices and Bitcoin trader positioning with caution until a clear mechanism is shown.",
+        "whatToWatch": [
+          "Whether Bitcoin funding or liquidation data confirms a real squeeze",
+          "Any follow-up reporting that explains the diesel-Bitcoin link"
+        ],
+        "questions": [
+          "What specific data shows a trader squeeze?",
+          "Is the diesel price move actually connected to Bitcoin markets, or just coincidental timing?"
+        ],
+        "sources": [
+          {
+            "title": "Diesel prices plunge 8%, yet Bitcoin traders face a squeeze",
+            "url": "https://cryptoslate.com/diesel-prices-plunge-8-yet-bitcoin-traders-face-a-squeeze/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-13T22:20:46.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-13T22:20:46.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/truck-stop-strap.jpg",
+        "badge": "Analysis",
+        "trendScore": 48,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-d5a39a960a",
+        "slug": "unocoin-halts-all-services-after-hackers-bypass-a-bitgo-freeze",
+        "lane": "crypto",
+        "title": "Unocoin halts all services after hackers bypass a BitGo freeze",
+        "summary": "Indian crypto exchange Unocoin suspended all services after attackers reportedly bypassed a freeze that custodian BitGo had put in place, CryptoSlate reported. The report did not give a confirmed loss amount.",
+        "whyItMatters": "The incident raises doubts about how reliable custodian-level freezes are for stopping theft after a breach.",
+        "whatToWatch": [
+          "A Unocoin statement on the scale of losses",
+          "Whether or when services resume",
+          "Any response or explanation from BitGo"
+        ],
+        "questions": [
+          "How much in user funds was taken?",
+          "How did attackers bypass the freeze?",
+          "Are all user funds safe?"
+        ],
+        "sources": [
+          {
+            "title": "Unocoin halts all services after hackers bypass BitGo freeze",
+            "url": "https://cryptoslate.com/unocoin-halts-all-services-after-hackers-bypass-bitgo-freeze/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-14T02:10:17.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-14T02:10:17.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/shutter-branded.jpg",
+        "badge": "Security",
+        "trendScore": 46,
         "confidence": "low"
       },
       {
         "id": "crypto-b4ce22159d",
         "slug": "bitcoin-falls-below-70-000-as-870m-in-bullish-bets-are-liquidated",
         "lane": "crypto",
-        "title": "Bitcoin falls below $70,000 as $870M in bullish bets are liquidated",
-        "summary": "Bitcoin fell below $70,000 and set off about $870 million in liquidations of bullish positions, CryptoSlate reports. The cost to hedge against a further drop near that level more than doubled in a single day. CryptoSlate also reports that the large pool of open futures positions now has less fresh cash behind it, which could limit a quick rebound.",
-        "whyItMatters": "Fast leveraged unwinds plus thin futures liquidity raise the odds of sharp price swings in either direction.",
+        "title": "Cost of hedging Bitcoin near $70,000 more than doubles in a day",
+        "summary": "The cost of hedging against Bitcoin price swings near $70,000 more than doubled in a single day, CryptoSlate reported. This points to a sharp jump in options market demand or implied volatility around that price level.",
+        "whyItMatters": "A fast rise in hedging costs often signals trader anxiety about near-term price swings, which matters to anyone sizing crypto risk.",
         "whatToWatch": [
-          "Whether Bitcoin holds support near $70,000",
-          "Funding rates and open interest over the next few days",
-          "Options prices for further downside hedges"
+          "Whether hedging costs stay elevated or fall back",
+          "Price action around the $70,000 level"
         ],
         "questions": [
-          "What triggered the initial drop below $70,000?",
-          "How much leveraged positioning is still at risk of liquidation?"
+          "What specific event drove the spike?",
+          "Which options or strikes does the data cover?"
         ],
         "sources": [
           {
@@ -57,43 +120,61 @@
             "url": "https://cryptoslate.com/bitcoin-hedge-cost-more-than-doubled/",
             "publisher": "CryptoSlate",
             "publishedAt": "2026-11-13T14:30:05.000Z"
-          },
-          {
-            "title": "Bitcoin’s futures pile has a problem: less cash to fuel a rebound",
-            "url": "https://cryptoslate.com/bitcoins-futures-pile-has-a-problem-less-cash-to-fuel-a-rebound/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-13T13:30:48.000Z"
-          },
-          {
-            "title": "Bitcoin falls below $70,000 as $870 million in bullish bets are liquidated",
-            "url": "https://cryptoslate.com/bitcoin-falls-below-70000-as-870-million-in-bullish-bets-are-liquidated/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-13T11:58:35.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-13T11:58:35.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "publishedAt": "2026-11-13T14:30:05.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-fixed-strike-hedge.webp",
         "badge": "Markets",
-        "trendScore": 52,
+        "trendScore": 46,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-711394b6a4",
+        "slug": "us-courts-pursue-1-2b-in-stolen-binance-funds-as-victims-hit-a-new-hur",
+        "lane": "crypto",
+        "title": "US courts pursue $1.2B in stolen Binance funds as victims hit a new hurdle",
+        "summary": "US courts are pursuing about $1.2 billion in funds stolen from Binance, but victims reportedly face a new obstacle in recovering their losses, CryptoSlate reported. The report did not detail the nature of that hurdle.",
+        "whyItMatters": "The outcome will set a precedent for how stolen exchange funds get returned to victims through US courts.",
+        "whatToWatch": [
+          "Upcoming court rulings or forfeiture proceedings",
+          "Any claims process opened for victims"
+        ],
+        "questions": [
+          "What exactly is the new hurdle victims face?",
+          "What is the expected timeline for any fund distribution?"
+        ],
+        "sources": [
+          {
+            "title": "US courts target $1.2B in stolen Binance funds, yet victims face a new hurdle",
+            "url": "https://cryptoslate.com/binance-funds-theft-us-court-orders-cover-over-1-2-billion-with-return-unresolved/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-13T23:40:49.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-13T23:40:49.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/binance-frozen-inventory.jpg",
+        "badge": "Regulatory",
+        "trendScore": 44,
         "confidence": "low"
       },
       {
         "id": "crypto-aa7ea6aaaa",
         "slug": "amazon-no-human-wrote-or-reviewed-code-for-its-new-cloud-testing-tool",
         "lane": "crypto",
-        "title": "Amazon: no human wrote or reviewed code for its new cloud testing tool",
-        "summary": "Amazon says a new cloud testing tool it released had no human author or reviewer; AI wrote and checked the code instead, CryptoSlate reports. The report does not describe the tool's scope or what testing happened before release. It stands as one of the clearest public claims yet of fully AI-built production code.",
-        "whyItMatters": "Crypto infrastructure runs heavily on cloud platforms, so unreviewed AI-written code at a major provider raises supply-chain risk questions for the sector.",
+        "title": "Amazon says AI wrote its new cloud testing tool with no human code review",
+        "summary": "Amazon said no human wrote or reviewed the code behind its newly launched cloud testing tool, with the code produced entirely by AI, CryptoSlate reported. The report did not detail what testing or validation the tool received before release.",
+        "whyItMatters": "The move tests how far AI-written code can go without human review, a question that also applies to smart contract and crypto infrastructure code.",
         "whatToWatch": [
-          "Whether other cloud providers make similar disclosures",
-          "Any bugs or security issues tied to the tool",
-          "Amazon's stated review process going forward"
+          "How Amazon addresses security or audit concerns for the tool",
+          "Whether other cloud or crypto software providers adopt a similar approach"
         ],
         "questions": [
-          "What testing, if any, happened before release?",
-          "Does 'no human reviewed' rule out all human oversight, not just code review?"
+          "What validation, if any, replaced human code review?",
+          "Could this approach extend to smart contract development?"
         ],
         "sources": [
           {
@@ -105,27 +186,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T17:30:52.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/aws-emulator-test-replica.webp",
-        "badge": "AI",
-        "trendScore": 49,
+        "badge": "Tech",
+        "trendScore": 44,
         "confidence": "low"
       },
       {
         "id": "crypto-6cec283ee0",
         "slug": "lido-earn-s-new-safety-net-still-leaves-depositors-on-the-hook-for-los",
         "lane": "crypto",
-        "title": "Lido Earn's new safety net still leaves depositors on the hook for losses",
-        "summary": "Lido added a new safety mechanism to its Earn product, but depositors still carry loss risk despite it, CryptoSlate reports. The report does not give the size of the buffer or which scenarios it covers. How much risk the new net actually removes is unclear from the single report available.",
-        "whyItMatters": "Lido is one of the largest liquid-staking protocols, so its handling of depositor risk sets a reference point for safety claims across DeFi yield products.",
+        "title": "Lido Earn's new safety net still leaves depositors exposed to losses",
+        "summary": "Liquid staking protocol Lido added a new safety-net feature to its Earn product, but depositors still bear ultimate responsibility for losses, CryptoSlate reported. The report did not detail the exact limits of the new safeguard.",
+        "whyItMatters": "Anyone using Lido's Earn product should know the backstop reduces, but does not remove, their downside risk.",
         "whatToWatch": [
-          "Published details on the safety net's coverage limits",
-          "Any depositor losses that test the mechanism",
-          "Auditor or community response to the design"
+          "Full published terms and limits of the safety net",
+          "Any incident that tests the new safeguard in practice"
         ],
         "questions": [
-          "What loss scenarios remain uncovered?",
-          "How does the new net compare with Lido's prior protections?"
+          "What specific losses remain the depositor's responsibility?",
+          "How does this differ from Lido Earn's prior loss arrangement?"
         ],
         "sources": [
           {
@@ -137,27 +217,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T16:30:25.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/lido-vault-layered-nets.webp",
         "badge": "DeFi",
-        "trendScore": 48,
+        "trendScore": 43,
         "confidence": "low"
       },
       {
         "id": "crypto-3f66a8c43a",
         "slug": "us-report-japan-s-yen-intervention-used-euros-not-dollars",
         "lane": "crypto",
-        "title": "US report: Japan's yen intervention used euros, not dollars",
-        "summary": "A new US report found that Japan's recent intervention to support the yen used euros rather than dollars, CryptoSlate reports. CryptoSlate links this detail to Bitcoin but does not explain the mechanism in detail. No figures on the size of the intervention appear in the available source.",
-        "whyItMatters": "Currency interventions shape global liquidity and risk appetite, a backdrop traders watch when they price Bitcoin.",
+        "title": "Report says yen intervention used euros, not dollars, reviving Bitcoin debate",
+        "summary": "A new US report found that an earlier intervention to support the Japanese yen was carried out using euros rather than dollars, CryptoSlate reported. Some commentators tie this detail to the broader debate over Bitcoin's role as an alternative to dollar-based reserves, though the link is not established by the report itself.",
+        "whyItMatters": "Currency choices in FX interventions feed debates about dollar dominance, a storyline Bitcoin bulls often cite, but the Bitcoin connection here is speculative and should be treated with caution.",
         "whatToWatch": [
-          "Further detail from the US report on intervention mechanics",
-          "Yen and dollar moves in response",
-          "Follow-on commentary on the link to Bitcoin"
+          "Further detail from the underlying report",
+          "Market commentary that tests or challenges the Bitcoin link"
         ],
         "questions": [
-          "Why would euros rather than dollars change the read for Bitcoin?",
-          "What is the source and scope of this US report?"
+          "Which agency or body issued the report?",
+          "What is the actual causal link, if any, to Bitcoin markets?"
         ],
         "sources": [
           {
@@ -169,27 +248,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T15:30:50.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-yen-funding-lens.webp",
-        "badge": "Macro",
-        "trendScore": 48,
+        "badge": "Analysis",
+        "trendScore": 42,
         "confidence": "low"
       },
       {
         "id": "crypto-370b0d8b7e",
         "slug": "xrp-loans-trigger-883-liquidations-53m-more-at-risk",
         "lane": "crypto",
-        "title": "XRP loans trigger 883 liquidations, $53M more at risk",
-        "summary": "A wave of XRP-collateralized loans triggered 883 liquidations, CryptoSlate reports. About $53 million in additional positions remain at risk. The report does not name the lending platform or the price move that set this off.",
-        "whyItMatters": "A liquidation cascade in XRP lending shows how concentrated leverage in one token can amplify price swings for borrowers and the wider market.",
+        "title": "XRP-backed loans trigger 883 liquidations, with $53M still at risk",
+        "summary": "Loans backed by XRP as collateral triggered 883 liquidations, and roughly $53 million in positions remain at risk, CryptoSlate reported. The report did not name the specific platform or platforms involved.",
+        "whyItMatters": "The scale of liquidations signals stress in XRP-collateralized lending and offers a gauge of leverage risk in that market.",
         "whatToWatch": [
-          "Whether XRP's price stabilizes enough to avoid further forced liquidations",
-          "The $53 million in positions still flagged at risk",
-          "Any platform response or change to risk parameters"
+          "Further liquidations if XRP's price falls more",
+          "Which platforms carry the remaining at-risk positions"
         ],
         "questions": [
-          "Which platform hosted these loans?",
-          "What price move triggered the initial liquidations?"
+          "Which platform or platforms saw these liquidations?",
+          "What triggered the underlying price move?"
         ],
         "sources": [
           {
@@ -201,27 +279,26 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T20:50:08.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/station.jpg",
         "badge": "Markets",
-        "trendScore": 47,
+        "trendScore": 41,
         "confidence": "low"
       },
       {
         "id": "crypto-aaf55d09f2",
         "slug": "fbi-warns-of-400m-crypto-scam-using-deepfake-face-swap-videos",
         "lane": "crypto",
-        "title": "FBI warns of $400M crypto scam using deepfake face-swap videos",
-        "summary": "The FBI warned of an active crypto scam already tied to about $400 million in losses, CryptoSlate reports. The scam uses deepfake video to swap in a familiar face, often a friend's, to build trust before victims send crypto. The report does not name the platforms where the scam spreads.",
-        "whyItMatters": "Deepfake scams that impersonate a trusted contact mark an escalation in crypto fraud tactics, with real losses already large.",
+        "title": "FBI warns of active $400M deepfake crypto scam that impersonates friends",
+        "summary": "The FBI warned of an active scam, tied to about $400 million in losses, that uses deepfake video to replace a trusted contact's face and impersonate friends of the victim, CryptoSlate reported. The warning targets crypto holders as a key group at risk.",
+        "whyItMatters": "Deepfake-enabled social engineering is a growing threat to crypto holders, since it exploits trust in familiar faces to drive transfers.",
         "whatToWatch": [
-          "Further FBI guidance or takedown action",
-          "Whether platforms add detection tools for face-swap videos",
-          "Updated loss figures as investigations continue"
+          "Further FBI guidance or advisories on the scam",
+          "Any platform response to block or flag related transfers"
         ],
         "questions": [
-          "How do victims first get contacted?",
-          "Which crypto assets or platforms carry the scam's payouts?"
+          "How are the stolen funds moved or laundered?",
+          "Which messaging or video platforms do scammers exploit most?"
         ],
         "sources": [
           {
@@ -233,340 +310,194 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-13T19:30:01.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/facestealer-recorded-identity-loop.webp",
         "badge": "Security",
-        "trendScore": 46,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-2aa1c750c9",
-        "slug": "crypto-s-rush-into-anthropic-s-ipo-comes-with-a-lockup-catch",
-        "lane": "crypto",
-        "title": "Crypto's rush into Anthropic's IPO comes with a lockup catch",
-        "summary": "Crypto investors are moving quickly to get exposure ahead of an expected Anthropic IPO, but CryptoSlate reports a catch: money locked into pre-IPO vehicles carries no guarantee of an eventual allocation. The report frames this as a risk for investors who seek access through crypto-linked structures. The available source gives no figures on lockup length or amounts raised.",
-        "whyItMatters": "Pre-IPO access vehicles tied to high-profile AI companies are pulling in crypto capital, so their terms and risks matter to anyone weighing in.",
-        "whatToWatch": [
-          "Timing of any Anthropic IPO announcement",
-          "Terms disclosed by specific pre-IPO vehicles marketed to crypto investors",
-          "Regulatory scrutiny of these access structures"
-        ],
-        "questions": [
-          "Which vehicles or platforms offer this exposure?",
-          "What are the actual lockup terms and allocation odds?"
-        ],
-        "sources": [
-          {
-            "title": "The catch in crypto’s Anthropic IPO rush: lock up your money and you could still miss out",
-            "url": "https://cryptoslate.com/the-catch-in-cryptos-anthropic-ipo-rush-lock-up-your-money-and-you-could-still-miss-out/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-13T12:30:32.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-13T12:30:32.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/anthropic-ipo-locked-funds.webp",
-        "badge": "Analysis",
         "trendScore": 40,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-63254cf2e9",
-        "slug": "fed-turns-hawkish-as-cpi-data-beats-forecasts",
+        "id": "markets-4379122480",
+        "slug": "galaxy-gaming-director-buys-17-775-in-stock",
         "lane": "markets",
-        "title": "Fed turns hawkish as CPI data beats forecasts",
-        "summary": "A new CPI report beat forecasts. Fed officials responded by backing more rate hikes. The shift moves away from recent rate-cut bets.",
-        "whyItMatters": "A more hawkish Fed changes the rate path. That path drives stock, bond, and borrowing costs.",
+        "title": "Galaxy Gaming director buys $17,775 in stock",
+        "summary": "A Galaxy Gaming director named Boushy bought $17,775 of common stock. Investing.com reported the purchase on November 14. The filing does not give a share count or price.",
+        "whyItMatters": "Insider buying can signal confidence in a company. This purchase is small, so it carries limited weight on its own.",
         "whatToWatch": [
-          "The next Fed meeting and official statements.",
-          "Future CPI reports."
+          "Future SEC filings from Galaxy Gaming insiders",
+          "Whether other directors make similar purchases"
         ],
         "questions": [
-          "How many more hikes will the Fed back?",
-          "Will markets drop their rate-cut bets?"
+          "What price per share did the director pay?",
+          "Is this part of a larger pattern of insider buying at Galaxy Gaming?"
         ],
         "sources": [
           {
-            "title": "Fed turns hawkish as CPI beats and officials back further rate hikes",
-            "url": "https://www.investing.com/news/stock-market-news/fed-turns-hawkish-as-cpi-beats-and-officials-back-further-rate-hikes-93CH-5026435",
+            "title": "Galaxy Gaming director Boushy buys $17,775 in common stock",
+            "url": "https://www.investing.com/news/insider-trading-news/galaxy-gaming-director-boushy-buys-17775-in-common-stock-93CH-5026999",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:21:01.000Z"
+            "publishedAt": "2026-11-14T11:31:10.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:21:01.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEHAG0E0_L.jpg",
-        "badge": "Fed",
-        "trendScore": 62,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-0f135fa411",
-        "slug": "brazil-s-bovespa-closes-up-0-65",
-        "lane": "markets",
-        "title": "Brazil's Bovespa closes up 0.65%",
-        "summary": "Brazil's Bovespa index closed 0.65% higher. The report does not state a specific cause for the gain.",
-        "whyItMatters": "The move matters to investors who track emerging-market stocks.",
-        "whatToWatch": [],
-        "questions": [
-          "What drove the gain?"
-        ],
-        "sources": [
-          {
-            "title": "Brazil stocks higher at close of trade; Bovespa up 0.65%",
-            "url": "https://www.investing.com/news/stock-market-news/brazil-stocks-higher-at-close-of-trade-bovespa-up-065-5026441",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:30:04.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:30:04.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/Bovespa_800x533_L_1665499297.jpg",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-30abebcc0c",
-        "slug": "undervalued-ai-stocks-emerge-as-nvidia-leadership-doubts-weigh-on-sect",
-        "lane": "markets",
-        "title": "Undervalued AI stocks emerge as Nvidia leadership doubts weigh on sector",
-        "summary": "Doubts about Nvidia's leadership have weighed on AI stocks. Analysts now point to other AI names they see as undervalued.",
-        "whyItMatters": "AI stocks drive much of the market's growth. Leadership doubts at Nvidia can spread to the wider sector.",
-        "whatToWatch": [
-          "How Nvidia resolves its leadership question.",
-          "Whether other AI stocks draw new buyers."
-        ],
-        "questions": [
-          "Which AI stocks do analysts call undervalued?",
-          "How long will the Nvidia leadership doubt last?"
-        ],
-        "sources": [
-          {
-            "title": "Undervalued AI stocks to watch as Nvidia leadership uncertainty weighs on the sector",
-            "url": "https://www.investing.com/news/stock-market-news/undervalued-ai-stocks-to-watch-as-nvidia-leadership-uncertainty-weighs-on-the-sector-93CH-5026436",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:21:03.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:21:03.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXNPEK1L0CN_L.jpg",
-        "badge": "Analysis",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-dcd4197e9f",
-        "slug": "infracommerce-s-q3-2026-loss-narrows-but-stock-falls-near-its-low",
-        "lane": "markets",
-        "title": "Infracommerce's Q3 2026 loss narrows, but stock falls near its low",
-        "summary": "Infracommerce reported a narrower loss for Q3 2026, per its earnings call transcript. The stock still fell near its low point.",
-        "whyItMatters": "The gap between improved results and a falling stock shows investor doubt. That doubt matters to anyone who holds the stock.",
-        "whatToWatch": [
-          "Infracommerce's next quarterly report."
-        ],
-        "questions": [
-          "Why did the stock fall despite the narrower loss?"
-        ],
-        "sources": [
-          {
-            "title": "Earnings call transcript: Infracommerce Q3 2026 loss narrows as stock falls near low",
-            "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-infracommerce-q3-2026-loss-narrows-as-stock-falls-near-low-93CH-5026431",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:20:17.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:20:17.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
-        "badge": "Earnings",
-        "trendScore": 57,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-534f24e64e",
-        "slug": "nvidia-stock-scenarios-weighed-after-jensen-huang-s-resignation",
-        "lane": "markets",
-        "title": "Nvidia stock scenarios weighed after Jensen Huang's resignation",
-        "summary": "Jensen Huang has resigned from Nvidia. Analysts now weigh different stock scenarios for the company after the news.",
-        "whyItMatters": "Nvidia leads the AI and chip trade. A leadership change raises questions about the company's path.",
-        "whatToWatch": [
-          "Who succeeds Huang as Nvidia's leader.",
-          "Nvidia's next statements on the change."
-        ],
-        "questions": [
-          "Why did Huang resign?",
-          "Who will replace him?"
-        ],
-        "sources": [
-          {
-            "title": "NVIDIA stock scenarios after Jensen Huang’s resignation",
-            "url": "https://www.investing.com/news/stock-market-news/nvidia-stock-scenarios-after-jensen-huangs-resignation-93CH-5026439",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:24:23.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:24:23.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEE0U1G1_M.jpg",
-        "badge": "Breaking",
+        "publishedAt": "2026-11-14T11:31:10.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM450ND_1200_L.jpg",
+        "badge": "Insider Buying",
         "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-9c5dcd4b3c",
-        "slug": "meta-employees-test-a-prediction-market-app-wsj-reports",
+        "id": "markets-1ec13dda01",
+        "slug": "trimas-director-buys-2-526-in-company-stock",
         "lane": "markets",
-        "title": "Meta employees test a prediction-market app, WSJ reports",
-        "summary": "Meta employees are testing an internal prediction-market app. The Wall Street Journal first reported the test.",
-        "whyItMatters": "A prediction-market tool at a major tech firm could point to new market-linked products ahead.",
+        "title": "Trimas director buys $2,526 in company stock",
+        "summary": "Trimas director Daniel Tredwell bought $2,526 of company stock. Investing.com reported the purchase on November 14. The filing does not give a share count or price.",
+        "whyItMatters": "The purchase is small. It is unlikely to move the stock or signal a major shift in insider sentiment.",
         "whatToWatch": [
-          "Whether Meta expands or formalizes the tool."
+          "Future insider filings at Trimas"
         ],
         "questions": [
-          "What will the app be used for?",
-          "Will Meta release it outside the company?"
+          "Does this purchase fit a regular buying pattern for this director?"
         ],
         "sources": [
           {
-            "title": "Meta employees test prediction-market app, WSJ reports",
-            "url": "https://www.investing.com/news/stock-market-news/meta-employees-test-predictionmarket-app-wsj-reports-5026444",
+            "title": "Trimas director Daniel Tredwell buys $2,526 in company stock",
+            "url": "https://www.investing.com/news/insider-trading-news/trimas-director-daniel-tredwell-buys-2526-in-company-stock-93CH-5026998",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:30:28.000Z"
+            "publishedAt": "2026-11-14T11:31:01.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:30:28.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAC1SJ_L.jpg",
-        "trendScore": 47,
+        "publishedAt": "2026-11-14T11:31:01.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Insider Buying",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-405bf5bc89",
-        "slug": "bitcoin-outlook-extreme-fear-and-oversold-signals-point-to-key-support",
+        "id": "markets-afb8024e8f",
+        "slug": "nexgel-interim-ceo-buys-732-688-in-stock",
         "lane": "markets",
-        "title": "Bitcoin outlook: extreme fear and oversold signals point to key support levels",
-        "summary": "Bitcoin sentiment gauges show extreme fear and oversold conditions. Analysts now watch key support levels for the cryptocurrency.",
-        "whyItMatters": "Bitcoin's price action affects broader risk appetite. It also affects stocks tied to crypto.",
+        "title": "NEXGEL interim CEO buys $732,688 in stock",
+        "summary": "NEXGEL interim CEO Brian Kieser bought $732,688 of common stock. Investing.com reported the purchase on November 14. This is a large purchase for a company at NEXGEL's size.",
+        "whyItMatters": "A large buy by an interim CEO is a stronger signal than a routine insider purchase. Readers tracking NEXGEL should note the size of this stake.",
         "whatToWatch": [
-          "Whether bitcoin holds its key support levels."
+          "Whether NEXGEL names a permanent CEO",
+          "Further insider filings at NEXGEL"
         ],
         "questions": [
-          "Where exactly do the key support levels sit?",
-          "Will sentiment turn from fear to recovery?"
+          "What drove the size of this purchase?",
+          "Does the board plan to confirm Kieser as permanent CEO?"
         ],
         "sources": [
           {
-            "title": "Bitcoin market outlook: extreme fear, oversold signals, and key support levels",
-            "url": "https://www.investing.com/news/stock-market-news/bitcoin-market-outlook-extreme-fear-oversold-signals-and-key-support-levels-93CH-5026440",
+            "title": "NEXGEL interim CEO Brian Kieser acquires $732,688 in common stock",
+            "url": "https://www.investing.com/news/insider-trading-news/nexgel-interim-ceo-brian-kieser-acquires-732688-in-common-stock-93CH-5026985",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:26:44.000Z"
+            "publishedAt": "2026-11-14T11:16:18.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:26:44.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXNPEL5112O_L.jpg",
-        "badge": "Crypto",
-        "trendScore": 47,
+        "publishedAt": "2026-11-14T11:16:18.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4416N_1200_L.jpg",
+        "badge": "Insider Buying",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-3010a306fa",
-        "slug": "brookfield-cppib-consortium-advances-in-uniper-sale-process-sources-sa",
+        "id": "markets-cd208a0930",
+        "slug": "nexgel-director-buys-25-003-in-common-stock",
         "lane": "markets",
-        "title": "Brookfield-CPPIB consortium advances in Uniper sale process, sources say",
-        "summary": "A consortium of Brookfield and CPPIB has entered the next round of the sale process for Uniper. Sources described the report as exclusive.",
-        "whyItMatters": "A Uniper sale would be a major European energy deal. It matters to infrastructure and utility investors.",
+        "title": "NEXGEL director buys $25,003 in common stock",
+        "summary": "NEXGEL director Steven Glassman bought $25,003 of common stock. Investing.com reported the purchase on November 14. This filing follows a much larger purchase by NEXGEL's interim CEO on the same day.",
+        "whyItMatters": "Multiple insiders buying stock around the same time can add weight to a confidence signal, even when each purchase is modest.",
         "whatToWatch": [
-          "Further rounds in the sale process.",
-          "A formal bid or final outcome."
+          "Further insider filings at NEXGEL",
+          "Whether the pattern of insider buying continues"
         ],
         "questions": [
-          "What price might Uniper fetch?",
-          "Who else remains in the process?"
+          "Is this purchase coordinated with the CEO's larger buy, or a coincidence?"
         ],
         "sources": [
           {
-            "title": "Exclusive-Brookfield, CPPIB consortium enters next round in Uniper sales process, sources say",
-            "url": "https://www.investing.com/news/stock-market-news/exclusivebrookfield-cppib-advance-to-next-round-in-uniper-sales-process-sources-say-5026330",
+            "title": "NEXGEL director Steven Glassman buys $25,003 in common stock",
+            "url": "https://www.investing.com/news/insider-trading-news/nexgel-director-steven-glassman-buys-25003-in-common-stock-93CH-5026983",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:24:21.000Z"
+            "publishedAt": "2026-11-14T11:15:57.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:24:21.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAC1OC_L.jpg",
-        "badge": "M&A",
-        "trendScore": 47,
+        "publishedAt": "2026-11-14T11:15:57.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
+        "badge": "Insider Buying",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-f2b82c10d2",
-        "slug": "caterpillar-financial-services-issues-1-billion-in-notes-due-2028",
+        "id": "markets-6f7e80eb26",
+        "slug": "carl-icahn-sells-33-7-million-of-centuri-holdings-stock",
         "lane": "markets",
-        "title": "Caterpillar Financial Services issues $1 billion in notes due 2028",
-        "summary": "Caterpillar Financial Services issued $1 billion in new notes due in 2028. The filing covers the debt sale.",
-        "whyItMatters": "The sale shows Caterpillar's financing activity. It also shows current borrowing costs for industrial firms.",
+        "title": "Carl Icahn sells $33.7 million of Centuri Holdings stock",
+        "summary": "Carl Icahn, a Centuri Holdings director, sold $33.7 million of company stock. Investing.com reported the sale on November 14. The filing does not state Icahn's reason for the sale or his remaining stake.",
+        "whyItMatters": "Icahn is a high-profile activist investor, so large sales by him draw market attention and can shape views on a stock's outlook.",
         "whatToWatch": [
-          "How Caterpillar will use the proceeds."
+          "Whether Icahn reports further sales of Centuri Holdings stock",
+          "Any public statement from Icahn or Centuri on the sale"
         ],
         "questions": [
-          "What coupon rate did the notes carry?",
-          "What will Caterpillar use the funds for?"
+          "Why did Icahn sell now?",
+          "How large is his remaining stake in Centuri Holdings?"
         ],
         "sources": [
           {
-            "title": "Caterpillar Financial Services issues $1 billion in new notes due 2028",
-            "url": "https://www.investing.com/news/sec-filings/caterpillar-financial-services-issues-1-billion-in-new-notes-due-2028-93CH-5026437",
+            "title": "Carl Icahn, director, sells $33.7M Centuri Holdings stock",
+            "url": "https://www.investing.com/news/insider-trading-news/carl-icahn-director-sells-337m-centuri-holdings-stock-93CH-5026974",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:22:42.000Z"
+            "publishedAt": "2026-11-14T11:01:00.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:22:42.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPED301WM_L.jpg",
-        "badge": "Debt",
-        "trendScore": 47,
+        "publishedAt": "2026-11-14T11:01:00.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4519D_1200_L.jpg",
+        "badge": "Insider Selling",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-10cfea8f72",
-        "slug": "grupo-mateus-profit-jumps-33-in-q3-2026-as-turnaround-continues",
+        "id": "markets-548529f973",
+        "slug": "exagen-director-sells-745-794-in-company-stock",
         "lane": "markets",
-        "title": "Grupo Mateus profit jumps 33% in Q3 2026 as turnaround continues",
-        "summary": "Grupo Mateus reported a 33% jump in Q3 2026 profit, per its earnings slides. The results show its turnaround gaining pace.",
-        "whyItMatters": "The profit trend matters to investors who track Brazilian retail stocks.",
+        "title": "Exagen director sells $745,794 in company stock",
+        "summary": "Exagen director Jorey Chernett sold $745,794 of XGN shares. Investing.com reported the sale on November 14. The filing does not give a reason for the sale.",
+        "whyItMatters": "A sale of this size by a director can raise questions for shareholders, even without a stated reason.",
         "whatToWatch": [
-          "Whether the turnaround continues into Q4."
+          "Further insider filings at Exagen",
+          "Any company statement addressing the sale"
         ],
         "questions": [
-          "What drove the 33% profit jump?"
+          "Why did Chernett sell now?",
+          "Does this sale reduce his stake substantially?"
         ],
         "sources": [
           {
-            "title": "Grupo Mateus Q3 2026 slides: profit jumps 33% as turnaround gains pace",
-            "url": "https://www.investing.com/news/company-news/grupo-mateus-q3-2026-slides-profit-jumps-33-as-turnaround-gains-pace-93CH-5026429",
+            "title": "Exagen director Jorey Chernett sells $745,794 in XGN shares",
+            "url": "https://www.investing.com/news/insider-trading-news/exagen-director-jorey-chernett-sells-745794-in-xgn-shares-93CH-5026975",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-14T04:19:02.000Z"
+            "publishedAt": "2026-11-14T11:01:22.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T04:19:02.000Z",
-        "updatedAt": "2026-11-13T20:51:41.740Z",
-        "imageUrl": "https://content-media.investing.com/news/GrupoMateus_800x533_L_1696862112.jpg",
-        "badge": "Earnings",
+        "publishedAt": "2026-11-14T11:01:22.000Z",
+        "updatedAt": "2026-11-14T03:34:04.195Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
+        "badge": "Insider Selling",
         "trendScore": 47,
         "confidence": "low"
       }
