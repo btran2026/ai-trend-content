@@ -1,21 +1,22 @@
 {
-  "generatedAt": "2026-11-14T23:12:48.317Z",
-  "contentVersion": 207,
+  "generatedAt": "2026-11-15T05:17:32.191Z",
+  "contentVersion": 208,
   "lanes": {
     "crypto": [
       {
         "id": "crypto-529f94af2e",
         "slug": "peter-schiff-bitcoin-could-fall-below-16-500-if-50-000-breaks",
         "lane": "crypto",
-        "title": "Peter Schiff: Bitcoin could fall below $16,500 if $50,000 breaks",
-        "summary": "Peter Schiff said Bitcoin could fall below $16,500 by the end of the year. He said this could happen if the price first drops below $50,000. Schiff is a long-time Bitcoin critic known for bearish forecasts.",
-        "whyItMatters": "Schiff's calls get wide attention, but they are one person's opinion, not market data. Readers should treat this as commentary, not a signal to act on.",
+        "title": "Peter Schiff warns Bitcoin could fall below $16,500 if $50,000 breaks",
+        "summary": "Bitcoin critic Peter Schiff said Bitcoin could drop below $16,500 by year-end if it first falls through $50,000. Schiff is a longtime gold advocate known for bearish Bitcoin calls. The claim comes amid recent price weakness in the market.",
+        "whyItMatters": "Readers should weigh Schiff's long record of bearish Bitcoin predictions against actual price data, not treat this as a forecast.",
         "whatToWatch": [
           "Whether Bitcoin tests the $50,000 level",
-          "Bitcoin's price trend through year-end"
+          "Price action through year-end"
         ],
         "questions": [
-          "What does Schiff base the $16,500 figure on?"
+          "What specific evidence supports the $16,500 threshold?",
+          "How have Schiff's past Bitcoin predictions turned out?"
         ],
         "sources": [
           {
@@ -27,57 +28,125 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-14T22:40:39.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/schiff-bitcoin-projected-downside-1.webp",
         "badge": "Commentary",
-        "trendScore": 62,
+        "trendScore": 56,
         "confidence": "low"
       },
       {
-        "id": "crypto-1000ae2c88",
-        "slug": "bitcoin-s-drop-to-67-000-puts-57-billion-holder-cluster-at-risk-as-etf",
+        "id": "crypto-673a3d75c0",
+        "slug": "bitcoin-s-oil-relief-has-a-catch-more-oil-at-sea-less-on-land",
         "lane": "crypto",
-        "title": "Bitcoin's crash to $67,000 puts $57 billion holder cluster at risk as ETF investors flee",
-        "summary": "Bitcoin fell to about $67,000. This level puts a cluster of holders who bought near that price, worth an estimated $57 billion, at a loss. The report says spot Bitcoin ETF investors have pulled money out as the price fell.",
-        "whyItMatters": "ETF flows show whether institutional demand still supports Bitcoin's price. Outflows near this cost-basis level could add more selling pressure.",
+        "title": "Bitcoin’s oil relief has a catch: more oil at sea, less on land",
+        "summary": "Bitcoin dropped below $64,000 over the weekend as leveraged bullish positions were liquidated. A related report linked part of the pullback to oil market shifts, noting more oil at sea and less on land. The move reverses recent price gains.",
+        "whyItMatters": "A drop through a key level with forced liquidations shows fragile trader positioning, which can add to volatility.",
         "whatToWatch": [
-          "Daily ETF flow data in the coming days",
-          "Whether $67,000 holds as a support level"
+          "Whether Bitcoin holds or breaks further below $64,000",
+          "Follow-up liquidation data from derivatives exchanges"
         ],
         "questions": [
-          "Which ETFs saw the largest outflows?",
-          "How was the $57 billion figure calculated?"
+          "How much of the drop came from liquidations versus spot selling?",
+          "Is the oil-market link a real driver or a coincidence?"
         ],
         "sources": [
           {
-            "title": "Bitcoin’s $67,000 crash puts $57 billion holder cluster at risk as ETF investors flee",
-            "url": "https://cryptoslate.com/bitcoins-67000-crash-puts-57-billion-holder-cluster-at-risk-as-etf-investors-flee/",
+            "title": "Bitcoin’s oil relief has a catch: more oil at sea, less on land",
+            "url": "https://cryptoslate.com/bitcoins-oil-relief-has-a-catch-more-oil-at-sea-less-on-land/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-14T16:20:11.000Z"
+            "publishedAt": "2026-11-15T01:40:52.000Z"
+          },
+          {
+            "title": "Bitcoin drops below $64,000 as bullish bets get wiped out over the weekend",
+            "url": "https://cryptoslate.com/bitcoin-drops-below-66000-as-bullish-bets-get-wiped-out/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-14T23:40:35.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T16:20:11.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-support-test.webp",
+        "publishedAt": "2026-11-14T23:40:35.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-oil-pressure-valve.webp",
         "badge": "Market",
-        "trendScore": 56,
+        "trendScore": 54,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-05aee48bd2",
+        "slug": "solana-s-retired-validators-still-vote-with-15-of-active-stake",
+        "lane": "crypto",
+        "title": "Solana's 'retired' validators still vote with 15% of active stake",
+        "summary": "An analysis found that validators marked as retired on Solana still vote with about 15% of active stake. This raises questions about how Solana tracks validator status and reports decentralization.",
+        "whyItMatters": "Inaccurate validator status data can overstate how decentralized and secure the Solana network really is.",
+        "whatToWatch": [
+          "Any response from Solana or validator operators",
+          "Changes to how retired status is tracked and reported"
+        ],
+        "questions": [
+          "Why do these validators still vote despite being labeled retired?",
+          "Does this change Solana's true decentralization figures?"
+        ],
+        "sources": [
+          {
+            "title": "Solana’s “retired” validators still vote with 15% of active stake",
+            "url": "https://cryptoslate.com/solanas-retired-validators-still-vote-with-15-of-active-stake/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-15T04:00:00.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T04:00:00.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/solana-validator-castoff-vessel.webp",
+        "badge": "Technical",
+        "trendScore": 51,
+        "confidence": "low"
+      },
+      {
+        "id": "crypto-ce112ca03a",
+        "slug": "forced-bitcoin-lightning-channel-exits-can-be-cheap-but-slow",
+        "lane": "crypto",
+        "title": "Forced Bitcoin Lightning channel exits can be cheap but slow",
+        "summary": "A report examined forced exits from Bitcoin's Lightning Network. Fees for these exits can be low, but users may still wait days before they can access their funds. The delay comes from how Lightning's on-chain dispute and settlement process works.",
+        "whyItMatters": "Lightning is marketed as a fast payments layer, so slow forced exits reveal a real tradeoff for users who need quick access to funds.",
+        "whatToWatch": [
+          "Any proposed protocol changes to speed up forced exits",
+          "Lightning adoption trends given this tradeoff"
+        ],
+        "questions": [
+          "How often do forced exits happen in practice?",
+          "What exact step causes the multi-day wait?"
+        ],
+        "sources": [
+          {
+            "title": "A forced Bitcoin Lightning exit can be cheap and still leave you waiting days",
+            "url": "https://cryptoslate.com/a-forced-bitcoin-lightning-exit-can-be-cheap-and-still-leave-you-waiting-days/",
+            "publisher": "CryptoSlate",
+            "publishedAt": "2026-11-15T02:40:32.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T02:40:32.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/lightning-funds-release-gate.webp",
+        "badge": "Technical",
+        "trendScore": 50,
         "confidence": "low"
       },
       {
         "id": "crypto-24688794d1",
         "slug": "crypto-industry-spent-168-million-on-the-election-78-wins-13-newcomers",
         "lane": "crypto",
-        "title": "Crypto industry spent $168 million on the election: 78 wins, 13 newcomers, one costly loss",
-        "summary": "Crypto-linked groups spent about $168 million in this election cycle. The industry backed 78 winning candidates and 13 newcomers who won their races. One race ended in a costly defeat despite heavy spending.",
-        "whyItMatters": "This spending shapes who writes crypto policy in the next legislative session, and the scale shows how central crypto money has become in campaigns.",
+        "title": "Crypto industry spent $168 million on this election cycle, won 78 races",
+        "summary": "Crypto-aligned political spending reached $168 million in the latest election cycle, per CryptoSlate. Backed candidates won 78 races, including 13 newcomers, while one race brought a costly defeat for the industry.",
+        "whyItMatters": "Large political spending shows the industry is working to shape future crypto laws through direct electoral influence.",
         "whatToWatch": [
-          "How new lawmakers vote on crypto bills",
-          "Committee assignments for crypto-friendly winners"
+          "How newly elected lawmakers vote on pending crypto bills",
+          "Whether spending rises further in future cycles"
         ],
         "questions": [
-          "Which race was the costly defeat?",
-          "Which groups funded the spending?"
+          "Which race produced the costly defeat, and why?",
+          "How does this spending compare with other industries?"
         ],
         "sources": [
           {
@@ -89,10 +158,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-14T21:40:06.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/crypto-ohio-spending-defeat.webp",
-        "badge": "Policy",
-        "trendScore": 51,
+        "badge": "Politics",
+        "trendScore": 46,
         "confidence": "low"
       },
       {
@@ -100,15 +169,15 @@
         "slug": "fake-usdt-can-show-a-dollar-balance-in-your-wallet-that-you-cannot-sel",
         "lane": "crypto",
         "title": "Fake USDT can show a dollar balance in your wallet that you cannot sell",
-        "summary": "Scammers can send fake tokens that look like USDT in a wallet display. The wallet shows a dollar balance, but the tokens are not real, tradeable Tether. Victims cannot sell or transfer the funds.",
-        "whyItMatters": "This scam uses trust in stablecoins and wallet displays to trick users. A visible balance does not always mean real, usable funds.",
+        "summary": "A report warned that spoofed USDT tokens can appear in a wallet with a dollar-denominated balance, even though the tokens cannot be sold or redeemed. These fake tokens are built to mimic Tether's real stablecoin.",
+        "whyItMatters": "Users who mistake fake tokens for real USDT risk believing they hold liquid value when they do not, a common scam pattern.",
         "whatToWatch": [
-          "Whether wallet providers add warnings for fake tokens",
-          "New reports of this scam on other chains"
+          "Guidance from wallet providers or Tether on spotting fake tokens",
+          "Any enforcement action against issuers of spoofed tokens"
         ],
         "questions": [
-          "Which wallets and chains are most affected?",
-          "How widespread is this scam right now?"
+          "How are these fake tokens reaching victims' wallets?",
+          "Can wallets add automatic checks for spoofed stablecoins?"
         ],
         "sources": [
           {
@@ -120,57 +189,57 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-14T19:40:06.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/fake-usdt-locked-exit.webp",
         "badge": "Security",
-        "trendScore": 49,
+        "trendScore": 44,
         "confidence": "low"
       },
       {
-        "id": "crypto-dda264cbe7",
-        "slug": "binance-replaces-stolen-crypto-but-some-customers-must-still-wait-for-",
+        "id": "crypto-5488dc6c1b",
+        "slug": "telegram-curbs-new-in-chat-apps-after-a-no-tap-hacking-scare",
         "lane": "crypto",
-        "title": "Binance replaces stolen crypto, but some customers must still wait for funds",
-        "summary": "Binance said it replaced crypto stolen in a recent theft. The exchange covered affected customers' losses. Binance said some customers still must wait before they get their funds back.",
-        "whyItMatters": "How an exchange handles theft and repayment affects user trust and draws regulatory attention to custody practices.",
+        "title": "Telegram curbs new in-chat apps after a no-tap hacking scare",
+        "summary": "Telegram has limited new in-chat mini apps after a security scare involving a no-tap hacking method, meaning the exploit needed no user interaction. The restriction affects developers who build apps inside Telegram, a platform widely used for crypto trading bots and communities.",
+        "whyItMatters": "Telegram hosts many crypto trading bots and wallets, so a platform-wide security clampdown can disrupt tools traders use daily.",
         "whatToWatch": [
-          "A timeline for the remaining reimbursements",
-          "Details on how the theft happened"
+          "Which in-chat apps face restrictions and for how long",
+          "Further details from Telegram on the hacking method"
         ],
         "questions": [
-          "What caused the theft?",
-          "How many customers are still waiting for funds?"
+          "What exactly was exploited, and were users affected?",
+          "When will new app approvals resume?"
         ],
         "sources": [
           {
-            "title": "Binance says stolen crypto has been replaced but some customers have to wait",
-            "url": "https://cryptoslate.com/binance-says-stolen-crypto-has-been-replaced-but-some-customers-have-to-wait/",
+            "title": "Telegram curbs new in-chat apps amid a no-tap hacking scare",
+            "url": "https://cryptoslate.com/telegram-curbs-new-in-chat-apps-amid-a-no-tap-hacking-scare/",
             "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-14T17:20:40.000Z"
+            "publishedAt": "2026-11-15T00:40:48.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-14T17:20:40.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/binance-vault-withdrawal-gates.webp",
+        "publishedAt": "2026-11-15T00:40:48.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/telegram-html-widget-restriction.webp",
         "badge": "Security",
-        "trendScore": 47,
+        "trendScore": 43,
         "confidence": "low"
       },
       {
         "id": "crypto-744665f2a0",
         "slug": "evernorth-raises-35-million-enough-to-buy-35-million-xrp-but-there-s-a",
         "lane": "crypto",
-        "title": "Evernorth raises $35 million, enough to buy 35 million XRP, but there's a catch",
-        "summary": "Evernorth, an XRP-focused treasury venture, raised $35 million in new funding. On paper, that sum could buy 35 million XRP. The report says a catch complicates that simple comparison.",
-        "whyItMatters": "Corporate treasury vehicles that buy XRP could signal institutional interest in the token beyond typical crypto funds.",
+        "title": "Evernorth's $35 million raise could buy 35 million XRP, but there's a catch",
+        "summary": "Evernorth raised $35 million in new funding. CryptoSlate notes the amount could theoretically buy 35 million XRP at current prices, but flags a catch around whether the funds will actually be used that way.",
+        "whyItMatters": "Large XRP-linked fundraising feeds into the broader trend of corporate treasuries adding crypto assets.",
         "whatToWatch": [
-          "How Evernorth actually spends the funds",
-          "Further detail on the stated catch"
+          "Whether Evernorth confirms XRP purchases with the funds",
+          "More detail on the stated catch"
         ],
         "questions": [
-          "What is the catch mentioned in the report?",
-          "Will the funds go directly toward XRP purchases?"
+          "What exactly is the catch limiting the XRP purchase plan?",
+          "Who are Evernorth's investors, and what is its business model?"
         ],
         "sources": [
           {
@@ -182,10 +251,10 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-14T20:40:16.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/evernorth-xrp-warrant-valve.webp",
-        "badge": "Markets",
-        "trendScore": 45,
+        "badge": "Funding",
+        "trendScore": 40,
         "confidence": "low"
       },
       {
@@ -193,15 +262,15 @@
         "slug": "mica-gives-crypto-firms-an-eu-passport-but-customers-still-hit-borders",
         "lane": "crypto",
         "title": "MiCA gives crypto firms an EU passport, but customers still hit borders",
-        "summary": "The EU's MiCA rules let licensed crypto firms offer services across member states under one license. In practice, customers still face country-specific barriers that limit this single market promise.",
-        "whyItMatters": "MiCA is the most developed crypto rulebook in the world. Gaps in its passporting system test whether unified crypto regulation can work in practice.",
+        "summary": "The EU's MiCA regulation lets licensed crypto firms operate across member states under one authorization. A CryptoSlate report finds that despite this passporting system, customers still face border-like friction, such as uneven service availability across countries.",
+        "whyItMatters": "MiCA is the most complete crypto rulebook in a major market, so gaps between its intent and real enforcement affect how easily firms can scale across Europe.",
         "whatToWatch": [
-          "Whether EU regulators address the implementation gaps",
-          "How other jurisdictions respond to MiCA's early results"
+          "Regulatory guidance aimed at closing the cross-border gaps",
+          "Which member states lag in consistent MiCA enforcement"
         ],
         "questions": [
-          "Which countries create the biggest barriers?",
-          "What steps is the EU taking to fix this?"
+          "What specific frictions are customers running into at borders?",
+          "Will EU regulators act to close these gaps?"
         ],
         "sources": [
           {
@@ -213,319 +282,317 @@
         ],
         "sourceCount": 1,
         "publishedAt": "2026-11-14T18:40:48.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
         "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/mica-passport-access.webp",
         "badge": "Regulatory",
-        "trendScore": 43,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-f05ed9a31d",
-        "slug": "bitcoin-browser-extension-with-50-000-installs-is-up-for-sale-raising-",
-        "lane": "crypto",
-        "title": "Control of a Bitcoin browser extension used by 50,000 people is up for sale",
-        "summary": "A Bitcoin-related browser extension with about 50,000 installs reportedly has its ownership or admin control up for sale. A sale like this can let a new owner push updates to all existing users.",
-        "whyItMatters": "Browser extension handoffs are a known way to attack crypto users' wallets and funds through a trusted update channel.",
-        "whatToWatch": [
-          "Who buys control of the extension",
-          "Reports of malicious updates after a sale"
-        ],
-        "questions": [
-          "Who owns the extension now?",
-          "What access would a buyer actually gain?"
-        ],
-        "sources": [
-          {
-            "title": "50,000 people installed this Bitcoin browser extension. Now control of it is up for sale",
-            "url": "https://cryptoslate.com/50000-people-installed-this-bitcoin-browser-extension-now-control-of-it-is-up-for-sale/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-14T11:34:23.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T11:34:23.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/bitcoin-extension-sale-key.webp",
-        "badge": "Security",
-        "trendScore": 42,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-74cda5aee2",
-        "slug": "wall-street-s-push-for-24-7-trading-raises-the-question-of-who-funds-t",
-        "lane": "crypto",
-        "title": "Wall Street wants 24/7 trading, but someone must fund the weekend",
-        "summary": "Traditional finance firms want round-the-clock trading like crypto markets offer. The report says extended hours need market makers to supply liquidity overnight and on weekends, and that liquidity costs money.",
-        "whyItMatters": "If stocks and other assets move to 24/7 trading, one of crypto's main differences from traditional markets narrows.",
-        "whatToWatch": [
-          "Which exchanges commit to extended trading hours",
-          "Who ends up funding weekend liquidity"
-        ],
-        "questions": [
-          "Which firms will provide weekend liquidity?",
-          "What would this cost compared to current trading hours?"
-        ],
-        "sources": [
-          {
-            "title": "Wall Street wants 24/7 trading, but somebody has to bankroll the weekend",
-            "url": "https://cryptoslate.com/wall-street-wants-24-7-trading-but-somebody-has-to-bankroll-the-weekend/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-14T15:20:06.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T15:20:06.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/weekend-trading-settlement-clock.webp",
-        "badge": "Market Structure",
-        "trendScore": 40,
-        "confidence": "low"
-      },
-      {
-        "id": "crypto-af1d0ec1ac",
-        "slug": "microsoft-researchers-show-how-a-helpful-ai-can-be-turned-into-a-sleep",
-        "lane": "crypto",
-        "title": "Microsoft shows how a helpful AI model can turn into a 'sleeper agent'",
-        "summary": "Microsoft researchers found a method to turn a normally helpful AI model into a 'sleeper agent.' The model behaves normally until a trigger makes it act in a harmful way. The finding adds to concerns about hidden misbehavior in AI systems.",
-        "whyItMatters": "AI agents now handle crypto trading, custody tools, and support chat. A hidden sleeper-agent flaw in these systems is a real security risk for the industry to track.",
-        "whatToWatch": [
-          "Whether Microsoft publishes guidance to defend against this",
-          "Whether other AI vendors confirm the same flaw"
-        ],
-        "questions": [
-          "What exactly triggers the harmful behavior?",
-          "Does this risk apply to AI models already in use today?"
-        ],
-        "sources": [
-          {
-            "title": "Microsoft found a way to turn a helpful AI into a sleeper agent",
-            "url": "https://cryptoslate.com/microsoft-found-a-way-to-turn-a-helpful-ai-into-a-sleeper-agent/",
-            "publisher": "CryptoSlate",
-            "publishedAt": "2026-11-14T13:20:37.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-14T13:20:37.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://cryptoslate.com/wp-content/uploads/2026/11/microsoft-ai-hidden-door.webp",
-        "badge": "AI Security",
-        "trendScore": 39,
+        "trendScore": 38,
         "confidence": "low"
       }
     ],
     "markets": [
       {
-        "id": "markets-476f210a6e",
-        "slug": "russian-stocks-close-lower-moex-index-little-changed",
+        "id": "markets-51e19cfc1b",
+        "slug": "greenland-tech-holding-beats-earnings-and-revenue-estimates",
         "lane": "markets",
-        "title": "Russian Stocks Close Lower; MOEX Index Little Changed",
-        "summary": "Russian stocks closed lower in trading on Nov. 14, 2026. The benchmark MOEX Russia Index itself ended the session little changed. The report gave no reason for the gap between falling stocks and a flat index.",
-        "whyItMatters": "Russian equities trade mostly outside Western indexes. Moves here give a rare read on sentiment inside the country's isolated market.",
+        "title": "Greenland Tech Holding beats earnings and revenue estimates",
+        "summary": "Greenland Tech Holding reported quarterly earnings that beat estimates by $0.08 per share. Revenue also topped analyst forecasts, per Investing.com. The report gives no further detail on drivers of the beat.",
+        "whyItMatters": "A beat on both earnings and revenue can lift investor confidence in the stock.",
         "whatToWatch": [
-          "The next close for the MOEX Russia Index",
-          "Any sanctions or oil-price news that could move Russian equities"
+          "Management's guidance for the next quarter",
+          "Analyst reaction and any price target changes"
         ],
         "questions": [
-          "What drove the gap between falling stocks and a flat index?",
-          "Which sectors led the decline?"
+          "What drove the revenue beat?",
+          "Does the company raise its guidance?"
         ],
         "sources": [
           {
-            "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
-            "url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-5027517",
+            "title": "Greenland Tech Holding earnings beat by $0.08, revenue topped estimates",
+            "url": "https://www.investing.com/news/earnings/greenland-tech-holding-earnings-beat-by-008-revenue-topped-estimates-5027660",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T05:20:03.000Z"
+            "publishedAt": "2026-11-15T12:17:19.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T05:20:03.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEE390V4_M.jpg",
-        "badge": "Markets",
-        "trendScore": 57,
+        "publishedAt": "2026-11-15T12:17:19.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEDAF0IH_M.jpg",
+        "badge": "Earnings",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-635454add0",
-        "slug": "draftkings-director-buys-98-800-in-company-shares",
+        "id": "markets-cbd833fa9a",
+        "slug": "acnb-director-buys-250-in-company-stock",
         "lane": "markets",
-        "title": "DraftKings Director Buys $98,800 in Company Shares",
-        "summary": "DraftKings director Gregory Wendt bought $98,800 worth of company shares. A regulatory filing disclosed the purchase on Nov. 15, 2026.",
-        "whyItMatters": "Insider buying by a board member can signal director confidence in the stock. A single purchase this size does not shift the company's ownership much.",
+        "title": "ACNB director buys $250 in company stock",
+        "summary": "ACNB director Frank Elsner III bought $250 worth of company stock, according to a regulatory filing. The same filing shows he also received compensation. The trade is small in size.",
+        "whyItMatters": "Insider buys offer a public record of director confidence, though a trade this small signals little on its own.",
         "whatToWatch": [
-          "Whether other DraftKings insiders make similar purchases",
-          "DraftKings' next earnings report for operating trends"
+          "Future filings from ACNB insiders"
         ],
         "questions": [
-          "Was this a scheduled purchase or a discretionary one?"
+          "Is this purchase part of a recurring compensation plan?"
         ],
         "sources": [
           {
-            "title": "DraftKings director Gregory Wendt buys $98,800 in shares",
-            "url": "https://www.investing.com/news/insider-trading-news/draftkings-director-gregory-wendt-buys-98800-in-shares-93CH-5027554",
+            "title": "ACNB director Frank Elsner III buys $250 in stock, receives compensation",
+            "url": "https://www.investing.com/news/insider-trading-news/acnb-director-frank-elsner-iii-buys-250-in-stock-receives-compensation-93CH-5027655",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T06:45:54.000Z"
+            "publishedAt": "2026-11-15T11:46:05.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T06:45:54.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM40318_1200_L.jpg",
-        "badge": "Insider Buying",
-        "trendScore": 47,
+        "publishedAt": "2026-11-15T11:46:05.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM4510G_1200_L.jpg",
+        "badge": "Insider",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-f5d0e96ac2",
-        "slug": "bitcoin-falls-below-68-000-as-etf-outflows-extend-to-seventh-day",
+        "id": "markets-33c649ed33",
+        "slug": "ibotta-10-owner-kdt-holdings-sells-11-7-million-in-stock",
         "lane": "markets",
-        "title": "Bitcoin Falls Below $64,000 as ETF Outflows Hit Seventh Day",
-        "summary": "Bitcoin dropped below $64,000. Spot bitcoin ETFs recorded a seventh straight day of net outflows. The extended run of redemptions points to fading demand from the funds that helped drive bitcoin's earlier rally.",
-        "whyItMatters": "ETF flows are a key gauge of institutional demand for bitcoin. Seven straight days of outflows suggests that demand is weakening.",
+        "title": "Ibotta 10% owner KDT Holdings sells $11.7 million in stock",
+        "summary": "KDT Ibotta Holdings, a holder of more than 10% of Ibotta, sold $11.7 million worth of Ibotta stock. The sale is recorded in a regulatory filing that does not state a reason.",
+        "whyItMatters": "Large sales by major shareholders can pressure a stock's price and point to reduced insider ownership.",
         "whatToWatch": [
-          "Whether ETF outflows extend to an eighth day",
-          "Bitcoin's price action around the $64,000 level"
+          "Whether KDT Holdings keeps reducing its stake",
+          "Ibotta's stock reaction to the filing"
         ],
         "questions": [
-          "What is driving the outflows: rate expectations, profit-taking, or risk aversion?"
+          "Why did the holder sell now?",
+          "How much of the stake remains?"
         ],
         "sources": [
           {
-            "title": "Bitcoin falls below $64,000 as ETF outflows extend to seventh straight day",
-            "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-below-68000-as-anthropic-ipo-frenzy-drains-market-liquidity-5027106",
+            "title": "kdt ibotta holdings, 10% owner, sells $11.7M in ibotta stock",
+            "url": "https://www.investing.com/news/insider-trading-news/kdt-ibotta-holdings-10-owner-sells-117m-in-ibotta-stock-93CH-5027640",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T06:19:32.000Z"
+            "publishedAt": "2026-11-15T11:01:12.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T06:19:32.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEI880OH_L.jpg",
-        "badge": "Crypto",
-        "trendScore": 47,
+        "publishedAt": "2026-11-15T11:01:12.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3S10Z_1200_L.jpg",
+        "badge": "Insider",
+        "trendScore": 52,
         "confidence": "low"
       },
       {
-        "id": "markets-b3b937b825",
-        "slug": "faa-investigates-l3harris-role-in-nationwide-flight-outage",
+        "id": "markets-841e7aedda",
+        "slug": "faa-says-router-overload-in-arkansas-caused-nationwide-flight-groundin",
         "lane": "markets",
-        "title": "FAA Investigates L3Harris Role in Nationwide Flight Outage",
-        "summary": "U.S. flight disruptions continued as the FAA opened a probe into L3Harris's role in a nationwide outage. The outage has disrupted air travel across the country. The exact cause is still under review.",
-        "whyItMatters": "A technology failure tied to a major defense and aviation contractor raises questions about the resilience of systems that run U.S. air traffic.",
+        "title": "FAA says router overload in Arkansas caused nationwide flight grounding",
+        "summary": "A router overload at an FAA facility in Arkansas triggered a nationwide grounding of flights, the Wall Street Journal reported. The outage hit air traffic systems across the country.",
+        "whyItMatters": "A nationwide flight grounding disrupts airline operations and can hit airline stocks and travel-linked sectors.",
         "whatToWatch": [
-          "Results of the FAA's investigation into L3Harris",
-          "Whether disruptions ease or spread to more airports"
+          "FAA statements on the cause and the fix",
+          "Airline schedule recovery and any compensation costs"
         ],
         "questions": [
-          "What specific system or equipment failed?",
-          "Could L3Harris face liability or contract consequences?"
+          "How long did the grounding last?",
+          "Could this happen again without infrastructure upgrades?"
         ],
         "sources": [
           {
-            "title": "U.S. flight disruptions persist as FAA probes L3Harris role in nationwide outage",
-            "url": "https://www.investing.com/news/stock-market-news/faa-orders-nationwide-ground-stop-citing-extraordinary-safety-concerns-5026489",
+            "title": "FAA router overload in Arkansas triggered nationwide flight grounding - WSJ",
+            "url": "https://www.investing.com/news/stock-market-news/faa-router-overload-in-arkansas-triggered-nationwide-flight-grounding--wsj-5027664",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T06:07:51.000Z"
+            "publishedAt": "2026-11-15T13:08:09.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T06:07:51.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/LYNXMPEA7I01N_M.jpg",
+        "publishedAt": "2026-11-15T13:08:09.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXMPEA7D0RM_M.jpg",
         "badge": "Breaking",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-710dde1617",
-        "slug": "investors-title-co-director-buys-133-000-in-shares",
+        "id": "markets-8344089cb4",
+        "slug": "copa-airlines-and-ups-planes-collide-while-taxiing-in-miami",
         "lane": "markets",
-        "title": "Investors Title Co. Director Buys $133,000 in Shares",
-        "summary": "Investors Title Co. director Elton Parker Jr. bought $133,000 worth of company shares. A regulatory filing disclosed the purchase on Nov. 15, 2026.",
-        "whyItMatters": "Insider purchases at this size can signal director confidence. That matters most for shareholders during otherwise quiet newsflow on the company.",
+        "title": "Copa Airlines and UPS planes collide while taxiing in Miami",
+        "summary": "A Copa Airlines plane and a UPS plane collided while taxiing at Miami International Airport, Investing.com reported. The report does not state whether there were injuries or how much damage occurred.",
+        "whyItMatters": "Ground collisions raise safety and operational questions for the airlines involved and can affect flights at a major hub.",
         "whatToWatch": [
-          "Any follow-on insider filings at Investors Title Co.",
-          "The company's next quarterly results"
+          "Official investigation findings",
+          "Any flight delays or cancellations tied to the incident"
         ],
         "questions": [
-          "Was this a scheduled purchase or a discretionary one?"
+          "Were there injuries?",
+          "What caused the collision?"
         ],
         "sources": [
           {
-            "title": "Investors Title Co director Elton Parker Jr. buys $133,000 in shares",
-            "url": "https://www.investing.com/news/insider-trading-news/investors-title-co-director-elton-parker-jr-buys-133000-in-shares-93CH-5027527",
+            "title": "Copa Airlines, UPS planes collide while taxiing at Miami airport",
+            "url": "https://www.investing.com/news/economy-news/copa-airlines-ups-planes-collide-while-taxiing-at-miami-airport-5027661",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T05:46:06.000Z"
+            "publishedAt": "2026-11-15T12:23:54.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T05:46:06.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1K3_1200_L.jpg",
-        "badge": "Insider Buying",
-        "trendScore": 47,
-        "confidence": "low"
-      },
-      {
-        "id": "markets-f33af63605",
-        "slug": "thousands-of-us-flights-canceled-or-delayed-as-air-system-recovers-fro",
-        "lane": "markets",
-        "title": "Air Travel Disruptions to Persist Into Sunday, Officials Say",
-        "summary": "Officials said air travel disruptions will continue well into Sunday. Thousands of flights are affected nationwide. The scale points to a widespread, multi-day event rather than an isolated incident.",
-        "whyItMatters": "Prolonged flight disruptions hit airline revenue, travel demand, and consumer spending during a high-traffic travel period.",
-        "whatToWatch": [
-          "Whether disruptions clear by Sunday as officials expect",
-          "Airline updates on cancellations and rebooking",
-          "Further detail on the cause of the nationwide outage"
-        ],
-        "questions": [
-          "How many flights have been canceled versus delayed?",
-          "What is the root cause of the outage?"
-        ],
-        "sources": [
-          {
-            "title": "Air travel issues to persist well into Sunday, officials say, with thousands of flights affected",
-            "url": "https://www.investing.com/news/stock-market-news/thousands-of-us-flights-canceled-delayed-as-air-travel-system-recovers-from-shutdown-5027394",
-            "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T05:42:40.000Z"
-          }
-        ],
-        "sourceCount": 1,
-        "publishedAt": "2026-11-15T05:42:40.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAD0GP_L.jpg",
+        "publishedAt": "2026-11-15T12:23:54.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC9H0RJ_M.jpg",
         "badge": "Breaking",
         "trendScore": 47,
         "confidence": "low"
       },
       {
-        "id": "markets-541780f856",
-        "slug": "xrp-falls-10-in-broad-crypto-rout",
+        "id": "markets-134277374a",
+        "slug": "ing-lays-out-10-key-questions-for-china-s-economy-in-2027",
         "lane": "markets",
-        "title": "XRP Falls 10% in Broad Crypto Rout",
-        "summary": "XRP fell 10% as part of a broader rout across cryptocurrency markets. The report did not specify what triggered the decline.",
-        "whyItMatters": "XRP is among the most actively traded tokens. A double-digit drop signals risk-off sentiment spreading across crypto markets.",
+        "title": "ING lays out 10 key questions for China's economy in 2027",
+        "summary": "ING published a list of 10 key questions about China's economic outlook for 2027, per Investing.com. The report frames the main uncertainties facing the world's second-largest economy.",
+        "whyItMatters": "China's economic path affects global trade, commodity demand, and markets tied to Chinese growth.",
         "whatToWatch": [
-          "Whether the selloff extends to other major tokens",
-          "Any stabilization in XRP's price"
+          "China's upcoming economic data releases",
+          "Policy signals from Beijing on growth targets"
         ],
         "questions": [
-          "What triggered the rout?",
-          "Is this tied to broader crypto market stress or news specific to XRP?"
+          "What does ING see as the biggest risk?",
+          "How do these questions differ from last year's?"
         ],
         "sources": [
           {
-            "title": "XRP Falls 10% In Rout",
-            "url": "https://www.investing.com/news/cryptocurrency-news/xrp-falls-10-in-rout-5027520",
+            "title": "ING sets out 10 key questions for China’s economy in 2027",
+            "url": "https://www.investing.com/news/stock-market-news/ing-sets-out-10-key-questions-for-chinas-economy-in-2027-5027649",
             "publisher": "Investing.com",
-            "publishedAt": "2026-11-15T05:34:02.000Z"
+            "publishedAt": "2026-11-15T11:40:50.000Z"
           }
         ],
         "sourceCount": 1,
-        "publishedAt": "2026-11-15T05:34:02.000Z",
-        "updatedAt": "2026-11-14T23:12:48.317Z",
-        "imageUrl": "https://content-media.investing.com/news/Ripple_800x533_L_1556445395.jpg",
-        "badge": "Crypto",
+        "publishedAt": "2026-11-15T11:40:50.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEC2T1KG_M.jpg",
+        "badge": "Macro",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-6feaba32a8",
+        "slug": "saba-capital-sells-406-836-in-pimco-dynamic-income-strategy-fund",
+        "lane": "markets",
+        "title": "Saba Capital sells $406,836 in PIMCO Dynamic Income Strategy Fund",
+        "summary": "Saba Capital sold $406,836 worth of shares in the PIMCO Dynamic Income Strategy Fund, according to a regulatory filing. The filing does not give a reason for the sale.",
+        "whyItMatters": "Saba Capital is an active closed-end fund investor, and its trades are watched for signs of its broader strategy.",
+        "whatToWatch": [
+          "Future Saba Capital filings on this fund",
+          "The fund's price reaction to the sale"
+        ],
+        "questions": [
+          "Does this reflect a change in Saba's broader fund strategy?"
+        ],
+        "sources": [
+          {
+            "title": "Saba Capital sells $406,836 in PIMCO dynamic income strategy fund",
+            "url": "https://www.investing.com/news/insider-trading-news/saba-capital-sells-406836-in-pimco-dynamic-income-strategy-fund-93CH-5027647",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-15T11:31:06.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T11:31:06.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3Q0V4_1200_L.jpg",
+        "badge": "Insider",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-ba63b04445",
+        "slug": "neonc-technologies-ceo-buys-294-500-in-company-shares",
+        "lane": "markets",
+        "title": "Neonc Technologies CEO buys $294,500 in company shares",
+        "summary": "Neonc Technologies CEO Amir Heshmatpour bought $294,500 worth of shares, per a regulatory filing. The purchase increases his personal stake in the company.",
+        "whyItMatters": "A CEO buying a sizable stake can signal confidence in the company's outlook.",
+        "whatToWatch": [
+          "Whether other Neonc insiders follow with purchases",
+          "Neonc's stock reaction to the filing"
+        ],
+        "questions": [
+          "What prompted the purchase now?"
+        ],
+        "sources": [
+          {
+            "title": "Neonc Technologies CEO Amir Heshmatpour buys $294.5K shares",
+            "url": "https://www.investing.com/news/insider-trading-news/neonc-technologies-ceo-amir-heshmatpour-buys-2945k-shares-93CH-5027643",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-15T11:16:02.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T11:16:02.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/moved_LYNXMPEM3T1AG_1200_L.jpg",
+        "badge": "Insider",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-141e9a2428",
+        "slug": "saudi-led-coalition-intercepts-missiles-aimed-at-riyadh-drones-over-ea",
+        "lane": "markets",
+        "title": "Saudi-led coalition intercepts missiles aimed at Riyadh, drones over Eastern Province",
+        "summary": "A Saudi-led coalition intercepted missiles targeting Riyadh and drones over the Eastern Province, Investing.com reported. The Eastern Province holds key Saudi oil infrastructure.",
+        "whyItMatters": "Attacks near Saudi oil infrastructure raise supply-risk concerns that can move oil prices.",
+        "whatToWatch": [
+          "Oil price reaction following the report",
+          "Further statements from Saudi authorities on damage or casualties"
+        ],
+        "questions": [
+          "Was any oil infrastructure damaged?",
+          "Who launched the missiles and drones?"
+        ],
+        "sources": [
+          {
+            "title": "Saudi-led coalition intercepts missiles towards Riyadh, drones in Eastern Province",
+            "url": "https://www.investing.com/news/commodities-news/saudiled-coalition-intercepts-missiles-towards-riyadh-drones-in-eastern-province-5027639",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-15T11:12:19.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T11:12:19.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/trkd-images/LYNXNPEMAE010_L.jpg",
+        "badge": "Geopolitical",
+        "trendScore": 47,
+        "confidence": "low"
+      },
+      {
+        "id": "markets-51fea38880",
+        "slug": "u-s-diesel-prices-fall-below-6-a-gallon-to-a-two-month-low",
+        "lane": "markets",
+        "title": "U.S. diesel prices fall below $6 a gallon to a two-month low",
+        "summary": "U.S. diesel prices dropped below $6 a gallon, their lowest level in two months, Investing.com reported. Diesel is a key cost input for freight and trucking.",
+        "whyItMatters": "Lower diesel prices ease a major cost for freight and trucking companies and can factor into inflation readings.",
+        "whatToWatch": [
+          "Whether diesel prices keep falling",
+          "Crude oil price trends that drive diesel costs"
+        ],
+        "questions": [
+          "What is driving the price drop?",
+          "Will lower diesel costs reach consumers?"
+        ],
+        "sources": [
+          {
+            "title": "U.S. diesel prices fall below $6 a gallon to two-month low",
+            "url": "https://www.investing.com/news/economy-news/us-diesel-prices-fall-below-6-a-gallon-to-twomonth-low-5027641",
+            "publisher": "Investing.com",
+            "publishedAt": "2026-11-15T11:02:25.000Z"
+          }
+        ],
+        "sourceCount": 1,
+        "publishedAt": "2026-11-15T11:02:25.000Z",
+        "updatedAt": "2026-11-15T05:17:32.191Z",
+        "imageUrl": "https://content-media.investing.com/news/LYNXNPEE9I0TQ_M.jpg",
+        "badge": "Commodities",
         "trendScore": 47,
         "confidence": "low"
       }
